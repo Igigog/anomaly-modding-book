@@ -28,7 +28,7 @@ Important note: Many antivirus softwares will block MO2 and Anomaly files causin
 
 <div style="text-align: center;">
 
-![download page](mo2-images/mo2dl.png)
+![download page](mo2-images/0.png)
 
 </div>
 
