@@ -8,6 +8,7 @@
 
 - [Getting Started](getting-started/README.md)
     - [Installing MO2](getting-started/installing-mo2.md)
+    - [Addon installers](getting-started/addon-installers.md)
 
 - [Quests](quests/README.md)
     - [Introduction](quests/introduction/README.md)
