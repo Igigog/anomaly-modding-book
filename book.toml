@@ -1,0 +1,6 @@
+[book]
+authors = ["Igor Anpilogov"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Anomaly Modding Book"
