@@ -144,3 +144,26 @@ mdbook serve --open
 
 </div>
 
+4. You should now be able to publish your changes
+
+<div style="text-align: center;">
+
+![Mod Organiser logo](contributing-images/9.png)
+
+</div>
+
+## Creating Pull Request
+
+1. In main book repository, open "Pull Requests" tab and press "New pull request"
+
+<div style="text-align: center;">
+
+![Mod Organiser logo](contributing-images/10.png)
+
+</div>
+
+2. Press "compare across forks". Choose your repository and press "Create pull request". 
+
+3. You're awesome. Probably. Now ping Igigog#6387 in Discord to get your pull request reviewed.
+
+4. Done. Your changes are added to the main book.
