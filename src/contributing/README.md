@@ -23,7 +23,7 @@ To install these we will use command-line installer called [Scoop](https://scoop
 
 <div style="text-align: center;">
 
-![Mod Organiser logo](contributing-images/1.png)
+![Mod Organiser logo](contributing-images/1.PNG)
 
 </div>
 
@@ -31,7 +31,7 @@ To install these we will use command-line installer called [Scoop](https://scoop
 
 <div style="text-align: center;">
 
-![Mod Organiser logo](contributing-images/2.png)
+![Mod Organiser logo](contributing-images/2.PNG)
 
 </div>
 
@@ -74,7 +74,7 @@ Welp, let's get started. I hope you already have a GitHub account.
 
 <div style="text-align: center;">
 
-![Mod Organiser logo](contributing-images/3.png)
+![Mod Organiser logo](contributing-images/3.PNG)
 
 </div>
 
@@ -82,7 +82,7 @@ Welp, let's get started. I hope you already have a GitHub account.
 
 <div style="text-align: center;">
 
-![Mod Organiser logo](contributing-images/4.png)
+![Mod Organiser logo](contributing-images/4.PNG)
 
 </div>
 
@@ -94,7 +94,7 @@ Welp, let's get started. I hope you already have a GitHub account.
 
 <div style="text-align: center;">
 
-![Mod Organiser logo](contributing-images/5.png)
+![Mod Organiser logo](contributing-images/5.PNG)
 
 </div>
 
@@ -103,7 +103,7 @@ Welp, let's get started. I hope you already have a GitHub account.
 
 <div style="text-align: center;">
 
-![Mod Organiser logo](contributing-images/6.png)
+![Mod Organiser logo](contributing-images/6.PNG)
 
 </div>
 
@@ -132,7 +132,7 @@ mdbook serve --open
 
 <div style="text-align: center;">
 
-![Mod Organiser logo](contributing-images/7.png)
+![Mod Organiser logo](contributing-images/7.PNG)
 
 </div>
 
@@ -140,7 +140,7 @@ mdbook serve --open
 
 <div style="text-align: center;">
 
-![Mod Organiser logo](contributing-images/8.png)
+![Mod Organiser logo](contributing-images/8.PNG)
 
 </div>
 
@@ -148,7 +148,7 @@ mdbook serve --open
 
 <div style="text-align: center;">
 
-![Mod Organiser logo](contributing-images/9.png)
+![Mod Organiser logo](contributing-images/9.PNG)
 
 </div>
 
@@ -158,7 +158,7 @@ mdbook serve --open
 
 <div style="text-align: center;">
 
-![Mod Organiser logo](contributing-images/10.png)
+![Mod Organiser logo](contributing-images/10.PNG)
 
 </div>
 
