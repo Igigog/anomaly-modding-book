@@ -1,7 +1,7 @@
-
 deploy:
     -git worktree add ./tmp/book gh-pages
     mdbook build
+    -mkdir tmp\book
     rm -rf ./tmp/book/*
     cp -rp book/* tmp/book
     cd tmp/book && \
