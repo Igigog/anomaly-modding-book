@@ -17,7 +17,7 @@
 - [Configs]()
     - [LTX files]()
     - [XML files]()
-    - [Condlists]()
+    - [Condlists](configs/condlists.md)
     - [Changing an item]()
     - [Creating your own item]()
     - [Dialogues]()
