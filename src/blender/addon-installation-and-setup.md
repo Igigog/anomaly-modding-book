@@ -37,11 +37,11 @@ These settings specify paths to external files or directories of X-Ray Engine or
 Example Path Settings:
 ![Setup-P3](blender-images/5.png)
 
-[About the required paths can be found here](main-folders-and-files/main-folders-and-files.md)
+- [About the required paths can be found here](addon-setting-options/addon-setting-options-pathes.md)
 
-[More Details (Addon Wiki)](https://github.com/PavelBlend/blender-xray/wiki/Preferences#paths-settings)
-[More Details](blender/addon-settings-options.md)
+- [Advanced Settings](blender/addon-settings-options.md)
 
+- [More Details (Addon Wiki)](https://github.com/PavelBlend/blender-xray/wiki/Preferences#paths-settings)
 
 Once the paths are installed, the setup is pretty much complete. Already at this stage you can work.
 

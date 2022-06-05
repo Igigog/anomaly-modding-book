@@ -15,5 +15,7 @@ Stores the parameters of the *.object plugin. There are two sections of settings
 
  ### Export:
 
+ TODO
+
  ## Sources
  [Source](https://github.com/PavelBlend/blender-xray/wiki/Preferences)
