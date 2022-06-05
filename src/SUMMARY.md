@@ -20,8 +20,8 @@
         - [.omf](main-folders-and-files/file-formats/omf.md)
 
 - [Configs]()
-    - [LTX files]()
-    - [XML files]()
+    - [LTX files](configs/ltx-files.md)
+    - [XML files](configs/xml-files.md)
     - [Condlists](configs/condlists.md)
     - [Changing an item]()
     - [Creating your own item]()
@@ -56,7 +56,7 @@
     - [Architecture]()
 
 - [Quests](quests/README.md)
-    - [Introduction TO REDO](quests/introduction/README.md)
+    - [Introduction TO REDO](quests/introduction.md)
     - [DON'T USE WTF]()
 
     
