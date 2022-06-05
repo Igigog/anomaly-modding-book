@@ -20,7 +20,7 @@ Official SDK with community enhancements:
 
 - SDK 0.5/0.6 (Clear Sky)
 
-- [SDK 0.7 (Call of Pripyat)()]
+- SDK 0.7 (Call of Pripyat)
 
 ## 3D packages
 
