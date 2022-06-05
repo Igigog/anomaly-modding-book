@@ -15,11 +15,9 @@
     - [Monkey patching](addon-compatibility/monkey-patching.md)
 
 - [Main Folders And Files](main-folders-and-files/README.md)
-    - [Main Folders And Files](main-folders-and-files/main-folders-and-files.md)
-
-- [File Formats](file-formats/README.md)
-    - [.object](file-formats/object.md)
-    - [.omf](file-formats/omf.md)
+    - [File Formats](main-folders-and-files/file-formats/README.md)
+        - [.object](main-folders-and-files/file-formats/object.md)
+        - [.omf](main-folders-and-files/file-formats/omf.md)
 
 - [Configs]()
     - [LTX files]()
