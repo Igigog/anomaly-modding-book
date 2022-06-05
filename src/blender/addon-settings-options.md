@@ -1,1 +1,0 @@
-# Addon settings options

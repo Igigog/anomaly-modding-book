@@ -82,7 +82,10 @@
     - [Blender](blender/README.md)
         - [Blender X-Ray Addon](blender/blender-x-ray-addon-summary.md)
         - [Addon installation and setup](blender/addon-installation-and-setup.md)
-        - [Creating model in Blender]()
+        - [Advanced settings](blender/addon-setting-options/README.md)
+            - [Pathes](blender/addon-setting-options/addon-setting-options-pathes.md)
+            - [Defaults](blender/addon-setting-options/addon-setting-options-defaults.md) 
+        - [Creating model in Blender](blender/creating-model-in-blender.md)
     - [Making a gun]()
 
 - [Map]()
