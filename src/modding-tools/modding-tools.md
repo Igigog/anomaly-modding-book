@@ -74,6 +74,10 @@ Official SDK with community enhancements:
 
 - [Decompressor of .efd files](https://cdn.discordapp.com/attachments/385903500581928969/590555274079633408/EFD_Reader.7z)
 
+## Compilers
+
+- [Universal x64 level compilers](https://drive.google.com/file/d/1ZR8bnMkTGqFiZgGE7DtHCRYfSgj0GrPz/view)
+
 ## Compression
 
 .db/.xdb archiver
