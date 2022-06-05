@@ -77,7 +77,7 @@ git clone LINK
 
 1. Download latest mdbook from [Github Releases](https://github.com/rust-lang/mdBook/releases). 
 1. Drop `mdbook.exe` in the root folder of your copy. 
-1. Run `run.bat`. 
+1. Run `run.bat`. In case it doesn't open by itself, open [localhost:3000](localhost:3000) in your browser.
 1. Done. You're awesome.
 
 #### Uploading your changes
