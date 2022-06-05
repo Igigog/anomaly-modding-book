@@ -9,49 +9,7 @@ This book is written using [mdBook](https://github.com/rust-lang/mdBook). To con
 
 VSCodium or VSCode is highly recommended to use. Although it is optional, I will assume you are using it.
 
-Below I describe the setup steps needed to run and contribute to this book.
-
-## Installing VSCodium
-
-Installing VSCodium is trivial, just go to the [link](https://vscodium.com/) and download it.
-
-## Installing git and mdbook
-To install these we will use command-line installer called [Scoop](https://scoop.sh/).
-
-1. Open VSCodium
-2. Open a new terminal window by using Terminal menu
-
-<div style="text-align: center;">
-
-![Mod Organiser logo](contributing-images/1.PNG)
-
-</div>
-
-3. Open a new Powershell session by using Terminal's "+" menu
-
-<div style="text-align: center;">
-
-![Mod Organiser logo](contributing-images/2.PNG)
-
-</div>
-
-4. Run the following commands to install Scoop
-```
-Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
-```
-```
-irm get.scoop.sh | iex
-```
-
-5. Run the following commands to install git and mdbook
-```
-scoop install git
-```
-```
-scoop install mdbook
-```
-
-6. Done. You're awesome.
+Below I describe the setup steps needed to run and contribute to this book. *__But before that, go and install VSCodium and Git__*.
 
 ## Forking book repository
 
@@ -117,12 +75,10 @@ git clone LINK
 
 #### Running local copy
 
-1. Open the folder with your project in VSCodium
-2. Run the following command in Terminal
-```
-mdbook serve --open
-```
-3. Local copy of the book will be opened in your browser
+1. Download latest mdbook from [Github Releases](https://github.com/rust-lang/mdBook/releases). 
+1. Drop `mdbook.exe` in the root folder of your copy. 
+1. Run `run.bat`. In case it doesn't open by itself, open [localhost:3000](localhost:3000) in your browser.
+1. Done. You're awesome.
 
 #### Uploading your changes
 
