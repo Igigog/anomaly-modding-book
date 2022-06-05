@@ -5,6 +5,13 @@
 Software to unpack gamedata
 
 - [Universal Extractor 2.0](https://disk.yandex.ru/d/GbgDm-JT2JtfNQ) - Unzips the gamedata from the original trilogy
+
+<div style="text-align: center;">
+
+![modding-tools-UE](../modding-tools/modding-tools-images/universal-extractor.png)
+
+</div>
+
 - db_unpacker.bat (tools/) - Anomaly's internal gamedata extractor, which extracts the scripts and configs files from the .db
 - db_unpacker_all.bat (tools/) - An internal gamedata extractor from Anomaly, which extracts all files from .db
 
@@ -43,6 +50,12 @@ Official SDK with community enhancements:
 3D Packages that have compatibility/addons to work with X-Ray:
 
 - [Blender(With X-Ray Addon)](../blender/index.html)
+
+<div style="text-align: center;">
+
+![modding-tools-blender](../modding-tools/modding-tools-images/blender.png)
+
+</div>
 
 - 3Ds Max
 
