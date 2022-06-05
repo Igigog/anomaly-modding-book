@@ -45,6 +45,9 @@ irm get.scoop.sh | iex
 
 5. Run the following commands to install git and mdbook
 ```
+scoop bucket add main
+```
+```
 scoop install git
 ```
 ```
