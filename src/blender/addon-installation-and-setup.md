@@ -39,7 +39,7 @@ Example Path Settings:
 
 - [About the required paths can be found here](addon-setting-options/addon-setting-options-pathes.md)
 
-- [Advanced Settings](blender/addon-settings-options.md)
+- [Advanced Settings](addon-setting-options/README.md)
 
 - [More Details (Addon Wiki)](https://github.com/PavelBlend/blender-xray/wiki/Preferences#paths-settings)
 

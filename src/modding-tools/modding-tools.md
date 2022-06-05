@@ -20,13 +20,13 @@ Official SDK with community enhancements:
 
 - SDK 0.5/0.6 (Clear Sky)
 
-- [SDK 0.7 (Call of Pripyat)()]()
+- [SDK 0.7 (Call of Pripyat)()]
 
 ## 3D packages
 
 3D Packages that have compatibility/addons to work with X-Ray:
 
-- [Blender(With X-Ray Addon)](blender/README.md)
+- [Blender(With X-Ray Addon)](../blender/index.html)
 
 - 3Ds Max
 
