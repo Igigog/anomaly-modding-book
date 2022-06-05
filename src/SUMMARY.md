@@ -61,14 +61,14 @@
     - [UI]()
     - [Scripted dialogues]()
 
-- [Modding Tools]()
-    - [Modding Tools]()
+- [Modding Tools](modding-tools/README.md)
+    - [Modding Tools](modding-tools/modding-tools.md)
 
 - [Modelling]()
     - [Blender](blender/README.md)
         - [Blender X-Ray Addon](blender/blender-x-ray-addon-summary.md)
         - [Addon installation and setup](blender/addon-installation-and-setup.md)
-    - [Creating your own model]()
+        - [Creating model in Blender]()
     - [Making a gun]()
 
 - [Map]()

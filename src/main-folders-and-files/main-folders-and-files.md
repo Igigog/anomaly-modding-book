@@ -12,29 +12,33 @@ Folder with files from any game in the S.T.A.L.K.E.R. series. Initially it does 
 
 This folder usually contains textures.
 
-## Gamemtl.xr File
+## gamemtl.xr File
 
 This file stores surface materials.
 
-## Lanims.xr
+## lanims.xr
 
-TODO
+Library of light animations.
 
-## Particles.xr
+## particles.xr
 
-TODO
+Particle Systems.
 
-## Senvironment.xr
+## senvironment.xr
 
-TODO
+Sound Environment.
 
-## Shaders_xrlc.xr
+## shaders.xr
 
-TODO
+Database of the shaders used by the graphics engine.
+
+## shaders_xrlc.xr
+
+Database of shaders used by the layer compiler
 
 ## Textures.ltx
 
-TODO
+Contains paths to all textures
 
 ## EShader File
 
