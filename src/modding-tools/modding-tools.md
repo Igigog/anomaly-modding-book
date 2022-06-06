@@ -46,7 +46,11 @@ Official SDK with community enhancements:
     - SDK 0.7 Full(Win32/Win64):
         - The heaviest version, it includes unpacked gamedata, rawdata with sources of CS, CoP objects (excluded objects from rawdata\objects\scenes folder because of its weight)
         - Preinstalled add-ons from other suites. 
-        - Weight: 2.64 GB/2.64 GB
+        - Weight: 2.64 GB/2.64 
+        
+- [SDK 0.8 by Red Panda](https://github.com/RedPandaProjects/XRayEngine/releases)- This is a port and a small upgrade of the classic 0.7 editor set. A lot of problems with the classic editor were related to the outdated development environment, which did not allow to upgrade it. Imgui was taken as a UI shell, as the easiest ui allowing to create simple forms with one line of code. All 4 editors were taken over.
+
+- [SDK 2.6 beta (Lost Alpha)](https://www.moddb.com/mods/lost-alpha/downloads/stalker-lostalpha-sdk-v26-beta)
 
 
 ## 3D packages
