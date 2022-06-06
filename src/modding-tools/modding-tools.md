@@ -1,6 +1,10 @@
 # Modding Tools
 
-## Gamedata Extractor
+## Toolsets
+
+- [AXRToolset](https://github.com/revolucas/AXRToolset) - AXRToolset is an AutoHotkey & Lua-based scripting engine that utilizes a Graphical User Interface to display scripted plugins that do various automated tasks. Although the current plugins are designed to aid in the development of S.T.A.L.K.E.R.: Call of Chernobyl, the engine itself can be used to create macros, scripts and other utilities for any application or purpose.
+
+## Gamedata Extractors
 
 Software to unpack gamedata
 
@@ -20,7 +24,26 @@ Official SDK with community enhancements:
 
 - SDK 0.5/0.6 (Clear Sky)
 
-- SDK 0.7 (Call of Pripyat)
+- [SDK 0.7 (Call of Pripyat)(RePack by DaaGuda V2)](https://mega.nz/folder/zFBiWSAJ#5_MSuGpVPb7QqcPH00nC7w)
+
+    - SDK 0.7 Easy: 
+        - The easiest version, but gamedata and rawdata are excluded from its composition, there are no add-ons.
+        - For full functionality you will need to unpack gamedata from CoP 1.6.02. 
+        - Weight: 22 MB
+
+    - SDK 0.7 Medium(Win32/Win64):
+        - The same as Easy, but with rawdata and some additions.
+        - Just to work fully need to unpack gamedata from CoP 1.6.02.
+        - Weight: 192.4 MB/190.2 MB
+
+    - SDK 0.7 Full(Win32/Win64):
+        - The heaviest version, it includes unpacked gamedata, rawdata with sources of CS, CoP objects (excluded objects from rawdata\objects\scenes folder because of its weight)
+        - Preinstalled add-ons from other suites. 
+        - Weight: 2.64 GB/2.64 
+
+- [SDK 0.8 by Red Panda](https://github.com/RedPandaProjects/XRayEngine/releases)- This is a port and a small upgrade of the classic 0.7 editor set. A lot of problems with the classic editor were related to the outdated development environment, which did not allow to upgrade it. Imgui was taken as a UI shell, as the easiest ui allowing to create simple forms with one line of code. All 4 editors were taken over.
+
+- [SDK 2.6 beta (Lost Alpha)](https://www.moddb.com/mods/lost-alpha/downloads/stalker-lostalpha-sdk-v26-beta)
 
 ## 3D packages
 
@@ -34,10 +57,16 @@ Official SDK with community enhancements:
 
 ## Textures
 
+- [OXR Texture Tool](https://github.com/revolucas/OXR-Texture-Tool) - This tools purpose is to unpack ui_icon_equipment.dds into separate individual icons so that they can be manipulated individually or merged more easily. This tool is capable of creating a new sprite sheet using the unpacked icons and writing the new geometry values (w,h,x,y) into the system configs. It also allows you to merge up to 4 existing unpacked ui_icon_equipment directories into a single sheet.
+
 - [THM Editor](https://gitlab.com/i-love-kfc/thm-editor/)
 - [THM Editor by Valerok](https://github.com/VaIeroK/THM-Editor)
 
 - [ThmValidator](https://github.com/gunslingermod/ThmValidator) - Allows you to check the THM files in the selected directory and automatically fix the most common bugs that occur during manual editing.
+
+- [Substance 3D Painter](https://store.steampowered.com/app/1775390/Substance_3D_Painter_2022/)
+
+- [Paint.net](https://www.getpaint.net/) - Most often used to properly compress textures
 
 ## Animations
 
@@ -74,6 +103,12 @@ Official SDK with community enhancements:
 
 - [Decompressor of .efd files](https://cdn.discordapp.com/attachments/385903500581928969/590555274079633408/EFD_Reader.7z)
 
+## Decompilers
+
+- [ACDC](https://disk.yandex.ru/d/4BEMg9aicjYhy) - Perl script, to unpack and pack all.spawn
+    - The program requires Perl to be installed.
+    - You also need [stkutils](https://disk.yandex.ru/d/nnjntzYZQv8sD) (put it in the folder with the script or in C:\Perl\lib)
+
 ## Compilers
 
 - [Universal x64 level compilers](https://drive.google.com/file/d/1ZR8bnMkTGqFiZgGE7DtHCRYfSgj0GrPz/view)
@@ -82,4 +117,5 @@ Official SDK with community enhancements:
 
 .db/.xdb archiver
 
+- [DB_Compressor by d_μaμ](https://cdn.discordapp.com/attachments/616764067670917131/846799604438532107/DB_Compressor.rar)
 - [xrCompress](https://ap-pro.ru/forums/topic/3500-obnovlyonnyy-xrcompress/)
