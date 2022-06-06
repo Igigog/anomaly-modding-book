@@ -18,6 +18,9 @@
     - [File Formats](main-folders-and-files/file-formats/README.md)
         - [.object](main-folders-and-files/file-formats/object.md)
         - [.omf](main-folders-and-files/file-formats/omf.md)
+        - [.hom](main-folders-and-files/file-formats/hom.md)
+        - [.efd](main-folders-and-files/file-formats/efd.md)
+        - [.seq](main-folders-and-files/file-formats/seq.md)
 
 - [Configs]()
     - [LTX files](configs/ltx-files.md)
@@ -45,8 +48,8 @@
         - [Blender X-Ray Addon](blender/blender-x-ray-addon-summary.md)
         - [Addon installation and setup](blender/addon-installation-and-setup.md)
         - [Creating model in Blender]()
-        - [Advanced settings](blender/addon-setting-options/README.md)
-            - [Pathes](blender/addon-setting-options/addon-setting-options-pathes.md)
+        - [Advanced settings](blender/addon-settings-options/README.md)
+            - [Pathes](blender/addon-settings-options/pathes.md)
 
 - [Map]()
     - [Why maps are bullshit]()

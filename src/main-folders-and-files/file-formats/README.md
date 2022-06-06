@@ -20,11 +20,11 @@ This section describes the extensions that are found in the game files and the S
 | .fog_vol | Volumetric fog |
 | .geom | Contains vertices (position, normals, texture coordinates, etc.), indices, and information for smooth geometry detail. |
 | .graph |  |
-| [.hom](hom.md) | Mapping of hierarchical cutoffs |
+| [.hom](../file-formats/hom.md) | Mapping of hierarchical cutoffs |
 | .hom | Mapping of hierarchical cutoffs |
 | .level | List of SDK scene objects |
 | .lights |  |
-| [.ltx](/anomaly-modding-book/src/configs/ltx-files.md/) | Configuration file, custom ini-like format |
+| [.ltx](../../configs/ltx-files.md/) | Configuration file, custom ini-like format |
 | [.object](object.md) | These files are intended for the X-Ray SDK to store 3D content in its original, uncompressed, lossless form. They are source files that store information before compilation into other game compressed formats.  |
 | .ogf | Compiled objects |
 | .ogg | The sound format used by the game engine. |
@@ -46,7 +46,6 @@ This section describes the extensions that are found in the game files and the S
 | .thm | The file contains a description of the texture/sound. |
 | .wallmarks | Decals. Bloodstains, faction emblems on walls, etc. Used for the compiled level? |
 | .wav | Source audio format for later setup and conversion to .ogg |
-| [.xml](/anomaly-modding-book/src/configs/xml-files.md) | Carry in text format data related to in-game text, UI element placement, and characters and information within the game world. |
+| [.xml](../../configs/xml-files.md) | Carry in text format data related to in-game text, UI element placement, and characters and information within the game world. |
 | .xrdemo | Recording camera flyover (demo). Created in the game with a console command. |
-| .xml | Stores the description of the game interface |
 | level | File with general information about the game location (light sources, object names, texture and shader names, sectors and portals). Created by xrLC during compilation. Opened only by the game. |
