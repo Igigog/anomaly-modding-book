@@ -3,7 +3,7 @@
 ## About:
 Table of AI heuristic parameters, contains constants for fine-tuning A-Life. They are used as input parameters in scripts.
 
-## Exampe
+## Example
 
 anomalydetectprobability.efd
 
