@@ -19,7 +19,7 @@ This section describes the extensions that are found in the game files and the S
 | .fog_vol | Volumetric fog |
 | .geom | Contains vertices (position, normals, texture coordinates, etc.), indices, and information for smooth geometry detail. |
 | .graph |  |
-| .hom | Mapping of hierarchical cutoffs |
+| [.hom](hom.md) | Mapping of hierarchical cutoffs |
 | .level | List of SDK scene objects |
 | .lights |  |
 | [.ltx](/anomaly-modding-book/src/configs/ltx-files.md/) | Configuration file, custom ini-like format |
