@@ -70,6 +70,8 @@ Official SDK with community enhancements:
 
 - [Substance 3D Painter](https://store.steampowered.com/app/1775390/Substance_3D_Painter_2022/)
 
+- [Paint.net](https://www.getpaint.net/) - Most often used to properly compress textures
+
 ## Animations
 
 - [OMF Editor](https://github.com/mortany/omf_editor)
