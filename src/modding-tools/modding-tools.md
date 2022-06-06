@@ -1,6 +1,10 @@
 # Modding Tools
 
-## Gamedata Extractor
+## Toolsets
+
+- [AXRToolset](https://github.com/revolucas/AXRToolset) - AXRToolset is an AutoHotkey & Lua-based scripting engine that utilizes a Graphical User Interface to display scripted plugins that do various automated tasks. Although the current plugins are designed to aid in the development of S.T.A.L.K.E.R.: Call of Chernobyl, the engine itself can be used to create macros, scripts and other utilities for any application or purpose.
+
+## Gamedata Extractors
 
 Software to unpack gamedata
 
@@ -63,6 +67,8 @@ Official SDK with community enhancements:
 
 ## Textures
 
+- [OXR Texture Tool](https://github.com/revolucas/OXR-Texture-Tool) - This tools purpose is to unpack ui_icon_equipment.dds into separate individual icons so that they can be manipulated individually or merged more easily. This tool is capable of creating a new sprite sheet using the unpacked icons and writing the new geometry values (w,h,x,y) into the system configs. It also allows you to merge up to 4 existing unpacked ui_icon_equipment directories into a single sheet.
+
 - [THM Editor](https://gitlab.com/i-love-kfc/thm-editor/)
 - [THM Editor by Valerok](https://github.com/VaIeroK/THM-Editor)
 
@@ -121,4 +127,5 @@ Official SDK with community enhancements:
 
 .db/.xdb archiver
 
+- [DB_Compressor by d_μaμ](https://cdn.discordapp.com/attachments/616764067670917131/846799604438532107/DB_Compressor.rar)
 - [xrCompress](https://ap-pro.ru/forums/topic/3500-obnovlyonnyy-xrcompress/)
