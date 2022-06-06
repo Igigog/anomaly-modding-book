@@ -4,6 +4,20 @@ This section describes the main files and folders for the game
 
 ## Folders
 
+### Appdata
+
+#### Logs
+This is where the game logs are created and stored (log of loading objects, textures, etc.)
+
+#### Savedgames
+This is where game saves are created and stored. Inside are files with the extensions .scop and .scoc.
+
+#### Screenshoots
+This is where game screenshots are created and stored
+
+#### Shaders_cache
+This is where the game shader cache is created and stored
+
 ### Gamedata
 
 Folder with files from any game in the S.T.A.L.K.E.R. series. Initially it does not exist explicitly, all game data is "embedded" in the game, but when you install modifications and even patches the directory will be created. Gamedata overrides standard game files: if there are no files in it, often their base versions are used.

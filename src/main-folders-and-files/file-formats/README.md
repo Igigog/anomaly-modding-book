@@ -30,6 +30,8 @@ This section describes the extensions that are found in the game files and the S
 | [.omf](omf.md) | A specialized S.T.A.L.K.E.R. game format containing animations. This is a separate dedicated file used in conjunction with .ogf models. Was created in order to optimize process when some different models use the same list of animations. |
 | .ppe | Postprocess file format. |
 | .ps_static | Particle systems. Flies, steam from pipes, etc. |
+| .scope | Save file. |
+| .scoc | Save file. |
 | .script | Game script. |
 | .seq | Text file containing a description of the frame sequence in the 2D animation |
 | .skl | Skeletal animation |
@@ -43,4 +45,5 @@ This section describes the extensions that are found in the game files and the S
 | .wallmarks | Decals. Bloodstains, faction emblems on walls, etc. Used for the compiled level? |
 | .wav | Source audio format for later setup and conversion to .ogg |
 | [.xml](/anomaly-modding-book/src/configs/xml-files.md) | Carry in text format data related to in-game text, UI element placement, and characters and information within the game world. |
+| .xrdemo | Recording camera flyover (demo). Created in the game with a console command. |
 | level | File with general information about the game location (light sources, object names, texture and shader names, sectors and portals). Created by xrLC during compilation. Opened only by the game. |
