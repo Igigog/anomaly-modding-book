@@ -45,7 +45,8 @@
         - [Blender X-Ray Addon](blender/blender-x-ray-addon-summary.md)
         - [Addon installation and setup](blender/addon-installation-and-setup.md)
         - [Creating model in Blender]()
-    - [Making a gun]()
+        - [Advanced settings](blender/addon-setting-options/README.md)
+            - [Pathes](blender/addon-setting-options/addon-setting-options-pathes.md)
 
 - [Map]()
     - [Why maps are bullshit]()
