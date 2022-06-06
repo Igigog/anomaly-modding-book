@@ -3,11 +3,15 @@
 These settings specify paths to external files or directories of X-Ray Engine or X-Ray SDK.It is possible to set paths automatically, based on one parameter. For example, if you specify the gamedata folder in the Gamedata Folder parameter, empty paths (except, fs.ltx File) will be filled in automatically. Automatically filled paths have text (auto) at the end of the name. To change the path manually, you have to click on the button with a wrench. The wrench button will disappear and the folder icon button will be displayed instead. You can then open the file browser using the folder button. In the browser, select the desired folder or file. Or you can change the path in the text box by typing it in from the keyboard. If the path is set manually, its value will not be changed automatically by the addon. To return the automatic path indication, you need to clear the path input field.
 The addon automatically sets these values:
 
-<div style="text-align: center;">
-
-![Settings](blender-images/blender-setting-paths.png)
-
-</div>
+| Parameter | Value |
+---|---|
+| fs.ltx File | - |
+| Gamedata Folder | . |
+| Textures Folder | .textures\ |
+| GameMtl File | .gamemtl.xr |
+| EShader File | .shaders.xr |
+| CShader File | .shaders_xrlc.xr |
+| Objects Folder | ..rawdata\objects |
 
 - - means that automatic path setting does not work for this parameter. The automatic path setting will work if you specify any parameter other than Objects Folder first.
 

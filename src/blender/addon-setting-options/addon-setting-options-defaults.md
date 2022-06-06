@@ -15,7 +15,17 @@ Stores the parameters of the *.object plugin. There are two sections of settings
 
  ### Export:
 
- TODO
+- Format Version:
+    - SoC
+    - CS/CoP
+
+- Smoothing:
+    - Edges
+    - Normals
+
+- Export Motions
+- Texture Names From Image Path
+- Use Export Path
 
  ## Sources
  [Source](https://github.com/PavelBlend/blender-xray/wiki/Preferences)

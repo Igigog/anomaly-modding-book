@@ -40,6 +40,8 @@
 - [Modding Tools](modding-tools/README.md)
     - [Modding Tools](modding-tools/modding-tools.md)
 
+- [SDK Flags]()
+
 - [Modelling]()
     - [Blender](blender/README.md)
         - [Blender X-Ray Addon](blender/blender-x-ray-addon-summary.md)
@@ -47,7 +49,8 @@
         - [Advanced settings](blender/addon-setting-options/README.md)
             - [Pathes](blender/addon-setting-options/addon-setting-options-pathes.md)
             - [Defaults](blender/addon-setting-options/addon-setting-options-defaults.md) 
-        - [Creating model in Blender](blender/creating-model-in-blender.md)
+        - [Creating model in Blender]()
+        - [Creating location in Blender]()
     - [Making a gun]()
 
 - [Map]()
