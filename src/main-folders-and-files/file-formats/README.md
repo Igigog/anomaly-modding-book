@@ -4,15 +4,16 @@ This section describes the extensions that are found in the game files and the S
 
 | Extension | Description |
 ---|---|
-| .ai |  |
+| .ai | AI location grid. Created by xrAI when compiling. Opened only by the game. |
 | .anm | A set of coordinates, which works as an animation of the actor's camera movement. It is also used for anomalies, which need to be given a path. |
 | .avi | Video file |
 | .bones | Skeleton data in SDK format |
 | .cform | Geometry for calculating collisions. Calculated by the level compiler. Contains a solid map structure. All tangible objects with materials live here. Thanks to it, the game knows with what sound and property the objects should react when they are hit by bullets or walked on. |
+| .db | archive of game resources. Used in late builds and the final version of the game, has several options (db."number", db."letter"). |
 | .dds | Graphic file used by DirectX to store textures |
 | .details | Detailed objects (grass, cigarette butts, construction debris) on the level. Created through LevelEditor SDK at compile time. |
 | .dm | Detail Model - the effect of a dynamic weather environment (e.g., rain or lightning) |
-| .efd | Evaluation Function Data - table of AI heuristic parameters, contains constants for fine-tuning A-Life. They are used as input parameters in scripts. |
+| [.efd](efd.md) | Table of AI heuristic parameters, contains constants for fine-tuning A-Life. They are used as input parameters in scripts. |
 | .env_mod | local environment modifiers (environment), set areas on the location with lighting different from the main weather cycle. |
 | .err | Geometry errors |
 | .fog_vol | Volumetric fog |
