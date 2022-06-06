@@ -1,6 +1,6 @@
 # .Object
 
-About:
+## About:
 These files are intended for the X-Ray SDK to store 3D content in its original, uncompressed, lossless form. They are source files that store information before compilation into other game compressed formats. 
 
 ## Technical information:
