@@ -8,6 +8,8 @@ This section describes the extensions that are found in the game files and the S
 | .anm | A set of coordinates, which works as an animation of the actor's camera movement. It is also used for anomalies, which need to be given a path. |
 | .avi | Video file |
 | .bones | Skeleton data in SDK format |
+| .bump | Normal map in A(BGR) format |
+| .bump# | File that fixes DXT compression errors in bump |
 | .cform | Geometry for calculating collisions. Calculated by the level compiler. Contains a solid map structure. All tangible objects with materials live here. Thanks to it, the game knows with what sound and property the objects should react when they are hit by bullets or walked on. |
 | .db | archive of game resources. Used in late builds and the final version of the game, has several options (db."number", db."letter"). |
 | .dds | Graphic file used by DirectX to store textures |
@@ -44,7 +46,7 @@ This section describes the extensions that are found in the game files and the S
 | .som | Geometry for calculating sound propagation. |
 | .spawn | A file storing spawn data. |
 | .tga | A bitmap graphics format with support for color depth of 1-32 bits per pixel, alpha channels, and RLE compression. Used as a source format. |
-| .thm | The file contains a description of the texture/sound. |
+| [.thm](thm.md) | They are used to set the parameters of textures - bump, detail, and more. |
 | .wallmarks | Decals. Bloodstains, faction emblems on walls, etc. Used for the compiled level? |
 | .wav | Source audio format for later setup and conversion to .ogg |
 | [.xml](../../configs/xml-files.md) | Carry in text format data related to in-game text, UI element placement, and characters and information within the game world. |
