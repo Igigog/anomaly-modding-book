@@ -43,7 +43,7 @@ Official SDK with community enhancements:
 
 - [SDK 0.8 by Red Panda](https://github.com/RedPandaProjects/XRayEngine/releases)- This is a port and a small upgrade of the classic 0.7 editor set. A lot of problems with the classic editor were related to the outdated development environment, which did not allow to upgrade it. Imgui was taken as a UI shell, as the easiest ui allowing to create simple forms with one line of code. All 4 editors were taken over.
 
-- [SDK 2.6 beta (Lost Alpha)](https://www.moddb.com/mods/lost-alpha/downloads/stalker-lostalpha-sdk-v26-beta)
+- [SDK 2.6 beta (Lost Alpha)](https://www.moddb.com/mods/lost-alpha/downloads/stalker-lostalpha-sdk-v26-beta) - Contains the basic editors and tools that were used to create Lost Alpha.
 
 ## 3D packages
 
@@ -93,7 +93,7 @@ Official SDK with community enhancements:
 
 ## Upgrades
 
-- [Upgrades Editor](https://github.com/gunslingermod/upgrades_editor)
+- [Upgrades Editor](https://github.com/gunslingermod/upgrades_editor) - A visual editor that makes it relatively quick and easy to create weapon upgrade schemes
 
 ## NPC's
 
@@ -106,6 +106,12 @@ Official SDK with community enhancements:
 ## Decompilers
 
 - [ACDC](https://disk.yandex.ru/d/4BEMg9aicjYhy) - Perl script, to unpack and pack all.spawn
+- [gamemtl_xr_cdc](https://disk.yandex.ru/d/hR79KfSn3PLtSK)
+- [lanims_xr_cdc](https://disk.yandex.ru/d/qKhybMU-3PLtTj)
+- [shaders_xr_cdc](https://disk.yandex.ru/d/RcMprj9W3PLtdj)
+- [shaders_xrlc_xr_cdc](https://disk.yandex.ru/d/FoQnY1VV3PLteX)
+- [senvironment_xr_cdc](https://disk.yandex.ru/d/jBnrr3Xg3PLtcc)
+- [particles_xr_cdc(Unpacking to binary files only)](https://disk.yandex.ru/d/LCkINfLw3PLtV5)
     - The program requires Perl to be installed.
     - You also need [stkutils](https://disk.yandex.ru/d/nnjntzYZQv8sD) (put it in the folder with the script or in C:\Perl\lib)
 
@@ -113,9 +119,7 @@ Official SDK with community enhancements:
 
 - [Universal x64 level compilers](https://drive.google.com/file/d/1ZR8bnMkTGqFiZgGE7DtHCRYfSgj0GrPz/view)
 
-## Compression
-
-.db/.xdb archiver
+## .db/.xdb archivers
 
 - [DB_Compressor by d_μaμ](https://cdn.discordapp.com/attachments/616764067670917131/846799604438532107/DB_Compressor.rar)
 - [xrCompress](https://ap-pro.ru/forums/topic/3500-obnovlyonnyy-xrcompress/)
