@@ -41,7 +41,7 @@ Official SDK with community enhancements:
         - Preinstalled add-ons from other suites. 
         - Weight: 2.64 GB/2.64 
 
-- [SDK 0.8 by Red Panda](https://github.com/RedPandaProjects/XRayEngine/releases)- This is a port and a small upgrade of the classic 0.7 editor set. A lot of problems with the classic editor were related to the outdated development environment, which did not allow to upgrade it. Imgui was taken as a UI shell, as the easiest ui allowing to create simple forms with one line of code. All 4 editors were taken over.
+- [SDK 0.8 by Red Panda](https://github.com/RedPandaProjects/XRayEngine/releases) - This is a port and a small upgrade of the classic 0.7 editor set. A lot of problems with the classic editor were related to the outdated development environment, which did not allow to upgrade it. Imgui was taken as a UI shell, as the easiest ui allowing to create simple forms with one line of code. All 4 editors were taken over.
 
 - [SDK 2.6 beta (Lost Alpha)](https://www.moddb.com/mods/lost-alpha/downloads/stalker-lostalpha-sdk-v26-beta) - Contains the basic editors and tools that were used to create Lost Alpha.
 
@@ -59,8 +59,9 @@ Official SDK with community enhancements:
 
 - [OXR Texture Tool](https://github.com/revolucas/OXR-Texture-Tool) - This tools purpose is to unpack ui_icon_equipment.dds into separate individual icons so that they can be manipulated individually or merged more easily. This tool is capable of creating a new sprite sheet using the unpacked icons and writing the new geometry values (w,h,x,y) into the system configs. It also allows you to merge up to 4 existing unpacked ui_icon_equipment directories into a single sheet.
 
-- [THM Editor](https://gitlab.com/i-love-kfc/thm-editor/)
-- [THM Editor by Valerok](https://github.com/VaIeroK/THM-Editor)
+- [THM Editor](https://gitlab.com/i-love-kfc/thm-editor/) - Utility for editing .thm files without the need to use the SDK
+- [THM Editor by Valerok](https://github.com/VaIeroK/THM-Editor) - The THM Editor from i-love-kfc was taken as the basis, finalized and fixed.
+    - [More](thm-editor-by-valerok.md)
 
 - [ThmValidator](https://github.com/gunslingermod/ThmValidator) - Allows you to check the THM files in the selected directory and automatically fix the most common bugs that occur during manual editing.
 
@@ -101,7 +102,7 @@ Official SDK with community enhancements:
 
 ## AI
 
-- [Decompressor of .efd files](https://cdn.discordapp.com/attachments/385903500581928969/590555274079633408/EFD_Reader.7z)
+- [Decompressor of [.efd](../main-folders-and-files/file-formats/efd.md) files](https://cdn.discordapp.com/attachments/385903500581928969/590555274079633408/EFD_Reader.7z)
 
 ## Decompilers
 
