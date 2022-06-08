@@ -145,9 +145,9 @@ The Shape that just appeared is automatically selected and the "Object Propertie
 
 In the same tab we see the "X-Ray Engine: Edit Helper" section with three buttons:
 
-- (![apply-shape](blender-images/apply-shape-logo.svg)) Apply Shape (accepts changes to the bone shape)
-- (![fit-shape](blender-images/fit-shape-logo.svg)) Fit Shape (Blender will automatically try to fit the Shape to the size of the object)
-- ([close-folder](blender-images/close-folder.svg)) Cancel (closes Shape editing mode)
+- ![apply-shape](blender-images/apply-shape-logo.svg) Apply Shape (accepts changes to the bone shape)
+- ![fit-shape](blender-images/fit-shape-logo.svg) Fit Shape (Blender will automatically try to fit the Shape to the size of the object)
+- ![close-folder](blender-images/close-folder.svg) Cancel (closes Shape editing mode)
 
 ![edit-helper](blender-images/x-ray-engine-edit-helper.png)
 
