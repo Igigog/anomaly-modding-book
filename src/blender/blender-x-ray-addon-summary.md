@@ -9,7 +9,7 @@ blender-xray is an addon for the 3D blender package (blender.org) that is design
 
 ## [Supported formats](https://github.com/PavelBlend/blender-xray/wiki#supported-formats)
 
-## Compatibility (Below are the versions of blender that support the addon. The addon is not tested in other versions of blender (https://github.com/PavelBlend/blender-xray/wiki#supported-blender-versions)):
+## [Compatibility (Below are the versions of blender that support the addon. The addon is not tested in other versions of blender](https://github.com/PavelBlend/blender-xray/wiki#supported-blender-versions)):
 
  2.77
  2.78
