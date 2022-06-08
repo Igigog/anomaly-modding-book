@@ -16,6 +16,8 @@
 
 - [Main Folders And Files](main-folders-and-files/README.md)
     - [File Formats](main-folders-and-files/file-formats/README.md)
+        - [.bump](main-folders-and-files/file-formats/bump.md)
+        - [.dds](main-folders-and-files/file-formats/dds.md)
         - [.object](main-folders-and-files/file-formats/object.md)
         - [.omf](main-folders-and-files/file-formats/omf.md)
         - [.hom](main-folders-and-files/file-formats/hom.md)
@@ -42,20 +44,24 @@
 
 - [Modding Tools](modding-tools/README.md)
     - [Modding Tools](modding-tools/modding-tools.md)
+        - [THM Editor by Valerok](modding-tools/thm-editor-by-valerok.md)
 
 - [Modelling]()
     - [Blender](blender/README.md)
         - [Blender X-Ray Addon](blender/blender-x-ray-addon-summary.md)
         - [Addon installation and setup](blender/addon-installation-and-setup.md)
-        - [Creating model in Blender]()
+        - [Creating model in Blender](blender/creating-model-in-blender.md)
         - [Advanced settings](blender/addon-settings-options/README.md)
             - [Pathes](blender/addon-settings-options/pathes.md)
+
+- [Texturing](texturing/README.md)
+    - [Creating and preparing textures](texturing/%D1%81reating-and-preparing-textures.md)
 
 - [Map]()
     - [Why maps are bullshit]()
     - [Compiling maps]()
 
-- [Engine]()
+- [Engine](engine/README.md)
     - [Compiling]()
     - [Architecture]()
 

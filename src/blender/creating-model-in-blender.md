@@ -5,7 +5,7 @@ This article is about creating a model and setting its parameters
 ## Beginning
 
 - First, familiarize yourself with the limitations and capabilities of the format [.object](../main-folders-and-files/file-formats/object.md) (because you may export to it more often than to .ogf) to avoid errors.
-- This article will talk about textures, read an article about creating and preparing them
+- This article will talk about textures, [read an article about creating and preparing them](../how-to/%D1%81reating-and-preparing-textures.md).
 
 ## Start
 
@@ -29,12 +29,12 @@ Texture:
 
 - ### Important note about texture maps
 In STALKER, due to its outdated engine, only the following texture maps are used:
-- Color Map ([.dds])
-- Normal Maps (For Stalker they are used as [.bump]() and .bump#) (The Blender X-Ray addon does not support the .bump format at this time (June 2022).)
+- Color Map ([.dds](../main-folders-and-files/file-formats/dds.md))
+- Normal Maps (For Stalker they are used as [.bump](../main-folders-and-files/file-formats/bump.md) and .bump#) (The Blender X-Ray addon does not support the [.bump](../main-folders-and-files/file-formats/bump.md) format at this time (June 2022).)
 
 So extra texture maps will have to be removed.
 
-Here you need to add your created texture in [.dds] format
+Here you need to add your created texture in [.dds](../main-folders-and-files/file-formats/dds.md) format
 
 As a result, in the Shader Editor (![shader-editor](blender-images/shader-editor.svg)) our textures should look something like this:
 ![model-example-texture-shading](blender-images/model-example-texture-shading.png)
