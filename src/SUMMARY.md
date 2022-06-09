@@ -55,7 +55,7 @@
             - [Pathes](blender/addon-settings-options/pathes.md)
 
 - [Texturing](texturing/README.md)
-    - [Creating and preparing textures](texturing/%D1%81reating-and-preparing-textures.md)
+    - [Creating and preparing textures](texturing/сreating-and-preparing-textures.md)
 
 - [Map]()
     - [Why maps are bullshit]()

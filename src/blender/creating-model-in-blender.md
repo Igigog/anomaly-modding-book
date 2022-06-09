@@ -5,7 +5,7 @@ This article is about creating a model and setting its parameters
 ## Beginning
 
 - First, familiarize yourself with the limitations and capabilities of the format [.object](../main-folders-and-files/file-formats/object.md) (because you may export to it more often than to .ogf) to avoid errors.
-- This article will talk about textures, [read an article about creating and preparing them](../how-to/%D1%81reating-and-preparing-textures.md).
+- This article will talk about textures, [read an article about creating and preparing them](../texturing/сreating-and-preparing-textures.md).
 
 ## Start
 
