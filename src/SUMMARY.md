@@ -24,6 +24,11 @@
         - [.efd](main-folders-and-files/file-formats/efd.md)
         - [.seq](main-folders-and-files/file-formats/seq.md)
 
+    - [Shaders List](main-folders-and-files/shaders-list/README.md)
+        - [Material Shaders List](main-folders-and-files/shaders-list/materials-list.md)
+        - [Shaders List](main-folders-and-files/shaders-list/shaders-list.md)
+        - [Compiler Shaders List](main-folders-and-files/shaders-list/compiler-shaders-list.md)
+
 - [Configs]()
     - [LTX files](configs/ltx-files.md)
     - [XML files](configs/xml-files.md)

@@ -196,7 +196,7 @@ The items we need for the model now are:
 - Compile (Here are descriptions of the settings that the level geometry compiler uses)
 - Material (Here you can select surface materials)
 
-You can leave everything as it is according to the default.
+Select the shaders you want. ([For a list of shaders, click here](../main-folders-and-files/shaders-list/README.md))
 
 Well, the model setup in Blender is done. Congratulations!
 
