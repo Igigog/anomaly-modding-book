@@ -11,3 +11,6 @@ The X-Ray "Monolith" Engine is an Anomaly mod open for use and modification. It 
 - Multi threaded sound prefetching
 - Discord integration
 - Animation Blending/Movement layers
+
+## Sources
+[Source Code](https://github.com/Roman-n/xray-monolith__)

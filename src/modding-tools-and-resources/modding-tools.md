@@ -68,7 +68,7 @@ Official SDK with community enhancements:
 
 3D Packages that have compatibility/addons to work with X-Ray:
 
-- [Blender(With X-Ray Addon)](../blender/index.html)
+- [Blender (With X-Ray Addon)](../blender/index.html)
 
 - 3Ds Max
 
@@ -78,30 +78,31 @@ Official SDK with community enhancements:
 
 - [OXR Texture Tool](https://github.com/revolucas/OXR-Texture-Tool) - This tools purpose is to unpack ui_icon_equipment.dds into separate individual icons so that they can be manipulated individually or merged more easily. This tool is capable of creating a new sprite sheet using the unpacked icons and writing the new geometry values (w,h,x,y) into the system configs. It also allows you to merge up to 4 existing unpacked ui_icon_equipment directories into a single sheet.
 
-- [THM Editor](https://gitlab.com/i-love-kfc/thm-editor/) - Utility for editing .thm files without the need to use the SDK
+- [THM Editor](https://gitlab.com/i-love-kfc/thm-editor/) - Utility for editing [.thm](../main-folders-and-files/file-formats/thm.md) files without the need to use the SDK
 - [THM Editor by Valerok](https://github.com/VaIeroK/THM-Editor) - The THM Editor from i-love-kfc was taken as the basis, finalized and fixed.
     - [More](thm-editor-by-valerok.md)
 
-- [ThmValidator](https://github.com/gunslingermod/ThmValidator) - Allows you to check the THM files in the selected directory and automatically fix the most common bugs that occur during manual editing.
+- [ThmValidator](https://github.com/gunslingermod/ThmValidator) - Allows you to check the [.thm](../main-folders-and-files/file-formats/thm.md) files in the selected directory and automatically fix the most common bugs that occur during manual editing.
 
 - [Substance 3D Painter](https://store.steampowered.com/app/1775390/Substance_3D_Painter_2022/)
 
-- [Paint.net](https://www.getpaint.net/) - Most often used to properly compress textures
+- [Paint.net](https://www.getpaint.net/) - Most often used to properly compress textures.
 
 ## Animations
 
-- [OMF Editor](https://github.com/mortany/omf_editor)
-- [OMF Editor by Valerok](https://github.com/VaIeroK/Omf-Editor)
+- [OMF Editor](https://github.com/mortany/omf_editor) - Tool for working with [.omf](../main-folders-and-files/file-formats/omf.md) format.
+- [OMF Editor by Valerok](https://github.com/VaIeroK/Omf-Editor) - Modified tool for working with [.omf](../main-folders-and-files/file-formats/omf.md) format.
+    - [More](omf-editor-by-valerok.md)
 
 ## Models
 
-- [OGF Editor](https://github.com/mortany/OGF-tool)
-- [OGF Editor by Valerok](https://github.com/VaIeroK/OGF-tool)
+- [OGF Editor](https://github.com/mortany/OGF-tool) - Tool for working with ogf format
+- [OGF Editor by Valerok](https://github.com/VaIeroK/OGF-tool) - Modified tool for working with ogf format
 
 - [MeshToolz](https://github.com/gunslingermod/MeshToolz) - Swiss knife for low-level editing of OGF models. Want to copy a piece of one model to another? Easy. Change texture paths and bindings? No problem. Move and scale an item by snapping it to another bone? No problem. Can work both interactively and in script processing mode.
     - [Scripts For MeshToolz](https://github.com/gunslingermod/additional_scopes)
 
-- [OGFViewer](https://www34.zippyshare.com/v/EvcVDW8S/file.html)
+- [OGFViewer](https://github.com/mrnotbadguy/OGFViewer) - legacy model viewer for [.ogf](../main-folders-and-files/file-formats/README.md) format.
 
 - [ObjectParamsCopier](https://github.com/gunslingermod/ObjectParamsCopier) -  Allows you to quickly copy surface settings with the same name from one object file to another
 
@@ -119,7 +120,7 @@ Official SDK with community enhancements:
 
 - [NPC creator](https://disk.yandex.ru/d/kQnkCrVdtW8clQ)
 
-- [NPC Editor](https://github.com/rayofhope-dev/npc-editor)
+- [NPC Editor](https://github.com/rayofhope-dev/npc-editor) - NPC editing tool
 
 ## AI
 
@@ -133,7 +134,7 @@ Official SDK with community enhancements:
 - [shaders_xr_cdc](https://disk.yandex.ru/d/RcMprj9W3PLtdj)
 - [shaders_xrlc_xr_cdc](https://disk.yandex.ru/d/FoQnY1VV3PLteX)
 - [senvironment_xr_cdc](https://disk.yandex.ru/d/jBnrr3Xg3PLtcc)
-- [particles_xr_cdc(Unpacking to binary files only)](https://disk.yandex.ru/d/LCkINfLw3PLtV5)
+- [particles_xr_cdc (Unpacking to binary files only)](https://disk.yandex.ru/d/LCkINfLw3PLtV5)
     - The program requires Perl to be installed.
     - You also need [stkutils](https://disk.yandex.ru/d/nnjntzYZQv8sD) (put it in the folder with the script or in C:\Perl\lib)
 

@@ -49,7 +49,7 @@ This section describes the extensions that are found in the game files and the S
 | .spawn | A file storing spawn data. |
 | .tga | A bitmap graphics format with support for color depth of 1-32 bits per pixel, alpha channels, and RLE compression. Used as a source format. |
 | [.thm](thm.md) | They are used to set the parameters of textures - bump, detail, and more. |
-| .wallmarks | Decals. Bloodstains, faction emblems on walls, etc. Used for the compiled level? |
+| .wallmarks | Decals. Bloodstains, faction emblems on walls, etc. Used for the compiled level. |
 | .wav | Source audio format for later setup and conversion to .ogg |
 | [.xml](../../configs/xml-files.md) | Carry in text format data related to in-game text, UI element placement, and characters and information within the game world. |
 | .xrdemo | Recording camera flyover (demo). Created in the game with a console command. |
