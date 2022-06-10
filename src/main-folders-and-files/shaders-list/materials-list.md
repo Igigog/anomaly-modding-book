@@ -5,7 +5,7 @@ This section contains a list and description of the shaders that are available i
 
 ## List
 
-| Materials of the creatures |
+| Materials of the creatures | Description |
 ---|---|
 | creatures\actor | person (actor) |
 | creatures\hoof | mutant with hooves |
@@ -16,7 +16,7 @@ This section contains a list and description of the shaders that are available i
 | creatures\phantom | phantom |
 | creatures\small | little mutant |
 
-| Static object materials |
+| Static object materials | Description |
 ---|---|
 | default | standard static material |
 | material\asphalt | asphalt |
@@ -53,7 +53,7 @@ This section contains a list and description of the shaders that are available i
 | material\wood | wooden surface, floor wooden steps |
 | material\wooden_board | wooden board, wooden wagon, box |
 
-| Dynamic object materials |
+| Dynamic object materials | Description |
 ---|---|
 | default_object | standard dynamic material |
 | objects\barrel | barrel |

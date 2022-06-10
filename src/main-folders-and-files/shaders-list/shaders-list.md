@@ -5,7 +5,7 @@ This section contains a list and description of the shaders that are available i
 
 ## List
 
-| Shaders for static objects |
+| Shaders for static objects | Description |
 ---|---|
 | default | basic lightmap shader |
 | def_vertex | main vertex shader |
@@ -16,7 +16,7 @@ This section contains a list and description of the shaders that are available i
 | font |  |
 | clouds |  |
 
-| Shaders for dynamic objects |
+| Shaders for dynamic objects | Description |
 ---|---|
 | models\model | basic shader |
 | models\antigas_glass | CubeMap reflection shader (variant 1) |

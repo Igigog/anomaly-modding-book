@@ -1,0 +1,5 @@
+# Resources
+
+## About:
+This section contains resources that may be useful for modding. (source models, rawdata from different SDKs, etc.)
+

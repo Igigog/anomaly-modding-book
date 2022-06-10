@@ -19,7 +19,9 @@ This section describes the extensions that are found in the game files and the S
 | .env_mod | local environment modifiers (environment), set areas on the location with lighting different from the main weather cycle. |
 | .err | Geometry errors |
 | .fog_vol | Volumetric fog |
+| .game | Coordinates of the player's spawn in the multiplayer game. Outdated file. |
 | .geom | Contains vertices (position, normals, texture coordinates, etc.), indices, and information for smooth geometry detail. |
+| .geomx |  |
 | .graph | Global graph of AI navigation. Used, among other things, for moving AI objects outside the active level. |
 | .gtc | Cross table of correspondence between the location graph and the AI grid. It is created when compiling the map in LE KFK (xrAI). |
 | [.hom](../file-formats/hom.md) | Mapping of hierarchical cutoffs |

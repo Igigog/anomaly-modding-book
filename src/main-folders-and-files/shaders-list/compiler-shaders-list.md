@@ -5,7 +5,7 @@ This section contains a list and description of the shaders that are available i
 
 ## List
 
-| Materials of the creatures |
+| Materials of the creatures | Description |
 ---|---|
 | default | basic lightmap shader |
 | default_smooth |  |

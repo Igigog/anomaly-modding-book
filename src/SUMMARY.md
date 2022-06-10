@@ -23,6 +23,7 @@
         - [.hom](main-folders-and-files/file-formats/hom.md)
         - [.efd](main-folders-and-files/file-formats/efd.md)
         - [.seq](main-folders-and-files/file-formats/seq.md)
+        - [.thm](main-folders-and-files/file-formats/thm.md)
 
     - [Shaders List](main-folders-and-files/shaders-list/README.md)
         - [Material Shaders List](main-folders-and-files/shaders-list/materials-list.md)

@@ -1,5 +1,17 @@
 # Modding Tools
 
+## In-game editors
+
+- Item Spawner - Spawn menu for items (Weapons, Outfits, etc)
+- Object Spawner - Spawn menu for objects (NPCs, Squads, Anomalys, etc)
+- Weather Editor - Editor for setting, saving weather
+- Lighting Editor - Weather Lighting Editor
+- Weapon HUD Editor - Allows you to customize the HUD of the weapon (position, location of the shot, etc.)
+- Weapon Stats Editor - Allows you to adjust the configuration of the weapon (bullet speed, aiming, etc.)
+- Outfits Stats Editor - Allows you to customize the configuration of the outfits (protection from different types of damage, etc.)
+- Pocket Workshop - Not an editor, but allows you to check the scheme of improvements.
+- NPC Logic/Execute - Allows you to edit NPC logic
+
 ## Toolsets
 
 - [AXRToolset](https://github.com/revolucas/AXRToolset) - AXRToolset is an AutoHotkey & Lua-based scripting engine that utilizes a Graphical User Interface to display scripted plugins that do various automated tasks. Although the current plugins are designed to aid in the development of S.T.A.L.K.E.R.: Call of Chernobyl, the engine itself can be used to create macros, scripts and other utilities for any application or purpose.
@@ -20,26 +32,33 @@ Software to unpack gamedata
 
 Official SDK with community enhancements:
 
-- SDK 0.4 (Shadows of Chernobyl)
+- [SDK 0.4 (Shadows of Chernobyl)](http://files.gsc-game.com/st/xray-sdk-setup-v0.4.exe)
+    - [SDK 0.4 by Yara](https://bitbucket.org/Yar0s1av/xray_stalker_sdk_04_fixed/src/master/) - This is a compiled from source SDK 0.4, which has dozens of fixes and improvements.
+    - [SDK 0.4 by YUSHAT](http://files.xray-engine.org/yurshat/repack/xray_sdk_yurshat_repack.rar)
+    - [SDK 0.4 by Political](https://disk.yandex.ru/d/KmVOitON3GnyuU)
 
-- SDK 0.5/0.6 (Clear Sky)
+- [SDK 0.5 (Clear Sky)](http://xfiles.gsc-game.com/st/xray-cs-sdk-setup.exe)
+    - [SDK B.O.R.S.C.H.T for CS by Lightning in a vacuum](https://bitbucket.org/stalker/xray-csky_borscht_sdk/src/master/)
 
-- [SDK 0.7 (Call of Pripyat)(RePack by DaaGuda V2)](https://mega.nz/folder/zFBiWSAJ#5_MSuGpVPb7QqcPH00nC7w)
+- [SDK 0.7 (Call of Pripyat)](https://www.moddb.com/games/stalker-call-of-pripyat/downloads/x-ray-16-engine-sdk-v07)
+    - [SDK 0.7 (Call of Pripyat)(RePack by DaaGuda V2)](https://mega.nz/folder/zFBiWSAJ#5_MSuGpVPb7QqcPH00nC7w)
 
-    - SDK 0.7 Easy: 
-        - The easiest version, but gamedata and rawdata are excluded from its composition, there are no add-ons.
-        - For full functionality you will need to unpack gamedata from CoP 1.6.02. 
-        - Weight: 22 MB
+        - SDK 0.7 Easy: 
+            - The easiest version, but gamedata and rawdata are excluded from its composition, there are no add-ons.
+            - For full functionality you will need to unpack gamedata from CoP 1.6.02. 
+            - Weight: 22 MB
 
-    - SDK 0.7 Medium(Win32/Win64):
-        - The same as Easy, but with rawdata and some additions.
-        - Just to work fully need to unpack gamedata from CoP 1.6.02.
-        - Weight: 192.4 MB/190.2 MB
+        - SDK 0.7 Medium(Win32/Win64):
+            - The same as Easy, but with rawdata and some additions.
+            - Just to work fully need to unpack gamedata from CoP 1.6.02.
+            - Weight: 192.4 MB/190.2 MB
 
-    - SDK 0.7 Full(Win32/Win64):
-        - The heaviest version, it includes unpacked gamedata, rawdata with sources of CS, CoP objects (excluded objects from rawdata\objects\scenes folder because of its weight)
-        - Preinstalled add-ons from other suites. 
-        - Weight: 2.64 GB/2.64 
+        - SDK 0.7 Full(Win32/Win64):
+            - The heaviest version, it includes unpacked gamedata, rawdata with sources of CS, CoP objects (excluded objects from rawdata\objects\scenes folder because of its weight)
+            - Preinstalled add-ons from other suites. 
+            - Weight: 2.64 GB/2.64 
+
+    - [SDK 0.7 by Range](https://disk.yandex.ru/d/wnzjuQkcti1CNw)
 
 - [SDK 0.8 by Red Panda](https://github.com/RedPandaProjects/XRayEngine/releases) - This is a port and a small upgrade of the classic 0.7 editor set. A lot of problems with the classic editor were related to the outdated development environment, which did not allow to upgrade it. Imgui was taken as a UI shell, as the easiest ui allowing to create simple forms with one line of code. All 4 editors were taken over.
 
@@ -100,9 +119,11 @@ Official SDK with community enhancements:
 
 - [NPC creator](https://disk.yandex.ru/d/kQnkCrVdtW8clQ)
 
+- [NPC Editor](https://github.com/rayofhope-dev/npc-editor)
+
 ## AI
 
-- [Decompressor of [.efd](../main-folders-and-files/file-formats/efd.md) files](https://cdn.discordapp.com/attachments/385903500581928969/590555274079633408/EFD_Reader.7z)
+- [Decompressor of .efd files](https://cdn.discordapp.com/attachments/385903500581928969/590555274079633408/EFD_Reader.7z)
 
 ## Decompilers
 
