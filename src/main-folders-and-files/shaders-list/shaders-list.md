@@ -5,6 +5,8 @@ This section contains a list and description of the shaders that are available i
 
 ## List
 
+### Shaders for static objects
+
 | Shaders for static objects | Description |
 ---|---|
 | zfill |  |
@@ -19,14 +21,20 @@ This section contains a list and description of the shaders that are available i
 | default | basic lightmap shader |
 | clouds |  |
 
+### ufp Shaders
+
 | ufp_shaders | Description |
 ---|---|
 | ufp_blend |  |
+
+### Test Shaders
 
 | test | Description |
 ---|---|
 | test\aaaaaaaa__ |  |
 | test\aass |  |
+
+### Sky Shaders
 
 | sky | Description |
 ---|---|
@@ -34,6 +42,8 @@ This section contains a list and description of the shaders that are available i
 | sky\clouds |  |
 | sky\clouds_old |  |
 | sky\skydome |  |
+
+### Particles Shaders
 
 | Particles | Description |
 ---|---|
@@ -45,6 +55,8 @@ This section contains a list and description of the shaders that are available i
 | particles\xadd |  |
 | particles\xblend |  |
 | particles\xdistort |  |
+
+### Shaders for dynamic objects
 
 | Shaders for dynamic objects | Description |
 ---|---|
@@ -81,6 +93,8 @@ This section contains a list and description of the shaders that are available i
 | models\xdistorinv |  |
 | models\xmonolith |  |
 | models\xwindows |  |
+
+### Levels Shaders
 
 | levels | Description |
 ---|---|
@@ -164,6 +178,8 @@ This section contains a list and description of the shaders that are available i
 | levels\zaton_plates |  |
 | levels\zaton_sand |  |
 
+### HUD Shaders
+
 | hud | Description |
 ---|---|
 | hud\add |  |
@@ -176,10 +192,14 @@ This section contains a list and description of the shaders that are available i
 | hud\set |  |
 | hud\seta |  |
 
+### Flora Shaders
+
 | flora | Description |
 ---|---|
 | flora\leaf_wave |  |
 | flora\trunk_wave |  |
+
+### Effects Shaders
 
 | Effects | Description |
 ---|---|
@@ -210,6 +230,8 @@ This section contains a list and description of the shaders that are available i
 | effects\watertest |  |
 | effects\watertest-1 |  |
 
+### SDK Shaders
+
 | editor | Description |
 ---|---|
 | editor\ai_node |  |
@@ -218,11 +240,15 @@ This section contains a list and description of the shaders that are available i
 | editor\spawn_icon |  |
 | editor\wire |  |
 
+### Details Shaders
+
 | details | Description |
 ---|---|
 | details\blend |  |
 | details\lod |  |
 | details\set |  |
+
+### Def_Shaders
 
 | def_shaders | Description |
 ---|---|
@@ -243,6 +269,8 @@ This section contains a list and description of the shaders that are available i
 | def_shaders\def_vertex_pn_hm |  |
 | def_shaders\lod |  |
 | def_shaders\lod_old |  |
+
+### Debug Shaders
 
 | debug | Description |
 ---|---|

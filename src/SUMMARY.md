@@ -24,7 +24,6 @@
         - [.efd](main-folders-and-files/file-formats/efd.md)
         - [.seq](main-folders-and-files/file-formats/seq.md)
         - [.thm](main-folders-and-files/file-formats/thm.md)
-
     - [Shaders List](main-folders-and-files/shaders-list/README.md)
         - [Material Shaders List](main-folders-and-files/shaders-list/materials-list.md)
         - [Shaders List](main-folders-and-files/shaders-list/shaders-list.md)
@@ -48,11 +47,13 @@
     - [UI]()
     - [Scripted dialogues]()
 
-- [Modding Tools And Resouces](modding-tools-and-resources/modding-tools/README.md)
-    - [Modding Tools](modding-tools-and-resources/modding-tools.md)
+- [Modding Tools And Resouces](modding-tools-and-resources/README.md)
+    - [Modding Tools](modding-tools-and-resources/modding-tools/modding-tools.md)
         - [THM Editor by Valerok](modding-tools-and-resources/modding-tools/thm-editor-by-valerok.md)
         - [OMF Editor by Valerok](modding-tools-and-resources/modding-tools/omf-editor-by-valerok.md)
     - [Resources](modding-tools-and-resources/resources/README.md)
+        - [Audio](modding-tools-and-resources/resources/audio.md)
+        - [Models](modding-tools-and-resources/resources/models-objects-locations.md)
 
 - [Modelling]()
     - [Blender](blender/README.md)

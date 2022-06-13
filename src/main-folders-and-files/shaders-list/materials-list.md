@@ -5,6 +5,8 @@ This section contains a list and description of the shaders that are available i
 
 ## List
 
+### Materials of the creatures
+
 | Materials of the creatures | Description |
 ---|---|
 | creatures\actor | person (actor) |
@@ -15,6 +17,8 @@ This section contains a list and description of the shaders that are available i
 | creatures\medium | medium mutant |
 | creatures\phantom | phantom |
 | creatures\small | little mutant |
+
+### Static object materials
 
 | Static object materials | Description |
 ---|---|
@@ -52,6 +56,9 @@ This section contains a list and description of the shaders that are available i
 | material\water_radiation | radiation water |
 | material\wood | wooden surface, floor wooden steps |
 | material\wooden_board | wooden board, wooden wagon, box |
+
+
+### Dynamic object materials
 
 | Dynamic object materials | Description |
 ---|---|
