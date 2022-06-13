@@ -50,12 +50,12 @@
 
 - [Modding Tools And Resouces](modding-tools-and-resources/modding-tools/)
     - [Modding Tools](modding-tools-and-resources/modding-tools.md)
-        - [THM Editor by Valerok](modding-tools-and-resources/thm-editor-by-valerok.md)
-        - [OMF Editor by Valerok](modding-tools-and-resources/omf-editor-by-valerok.md)
+        - [THM Editor by Valerok](modding-tools-and-resources/modding-tools/thm-editor-by-valerok.md)
+        - [OMF Editor by Valerok](modding-tools-and-resources/modding-tools/omf-editor-by-valerok.md)
     - [Resources](modding-tools-and-resources/resources/README.md)
 
 - [Modelling]()
-    - [Blender](blender/README.md) ![blender-logo](blender/blender-images/blender-images-icons/blender-logo.svg)
+    - [Blender](blender/README.md)
         - [Blender X-Ray Addon](blender/blender-x-ray-addon-summary.md)
         - [Addon installation and setup](blender/addon-installation-and-setup.md)
         - [Creating model in Blender](blender/creating-model-in-blender.md)
