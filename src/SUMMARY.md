@@ -23,6 +23,12 @@
         - [.hom](main-folders-and-files/file-formats/hom.md)
         - [.efd](main-folders-and-files/file-formats/efd.md)
         - [.seq](main-folders-and-files/file-formats/seq.md)
+        - [.thm](main-folders-and-files/file-formats/thm.md)
+
+    - [Shaders List](main-folders-and-files/shaders-list/README.md)
+        - [Material Shaders List](main-folders-and-files/shaders-list/materials-list.md)
+        - [Shaders List](main-folders-and-files/shaders-list/shaders-list.md)
+        - [Compiler Shaders List](main-folders-and-files/shaders-list/compiler-shaders-list.md)
 
 - [Configs]()
     - [LTX files](configs/ltx-files.md)
@@ -42,12 +48,14 @@
     - [UI]()
     - [Scripted dialogues]()
 
-- [Modding Tools](modding-tools/README.md)
-    - [Modding Tools](modding-tools/modding-tools.md)
-        - [THM Editor by Valerok](modding-tools/thm-editor-by-valerok.md)
+- [Modding Tools And Resouces](modding-tools-and-resources/modding-tools/)
+    - [Modding Tools](modding-tools-and-resources/modding-tools.md)
+        - [THM Editor by Valerok](modding-tools-and-resources/thm-editor-by-valerok.md)
+        - [OMF Editor by Valerok](modding-tools-and-resources/omf-editor-by-valerok.md)
+    - [Resources](modding-tools-and-resources/resources/README.md)
 
 - [Modelling]()
-    - [Blender](blender/README.md)
+    - [Blender](blender/README.md) ![blender-logo](blender/blender-images/blender-images-icons/blender-logo.svg)
         - [Blender X-Ray Addon](blender/blender-x-ray-addon-summary.md)
         - [Addon installation and setup](blender/addon-installation-and-setup.md)
         - [Creating model in Blender](blender/creating-model-in-blender.md)
@@ -62,6 +70,7 @@
     - [Compiling maps]()
 
 - [Engine](engine/README.md)
+    - [Console commands](engine/console-commands.md)
     - [Compiling]()
     - [Architecture]()
 

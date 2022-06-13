@@ -19,7 +19,9 @@ This section describes the extensions that are found in the game files and the S
 | .env_mod | local environment modifiers (environment), set areas on the location with lighting different from the main weather cycle. |
 | .err | Geometry errors |
 | .fog_vol | Volumetric fog |
+| .game | Coordinates of the player's spawn in the multiplayer game. Outdated file. |
 | .geom | Contains vertices (position, normals, texture coordinates, etc.), indices, and information for smooth geometry detail. |
+| .geomx |  |
 | .graph | Global graph of AI navigation. Used, among other things, for moving AI objects outside the active level. |
 | .gtc | Cross table of correspondence between the location graph and the AI grid. It is created when compiling the map in LE KFK (xrAI). |
 | [.hom](../file-formats/hom.md) | Mapping of hierarchical cutoffs |
@@ -47,7 +49,7 @@ This section describes the extensions that are found in the game files and the S
 | .spawn | A file storing spawn data. |
 | .tga | A bitmap graphics format with support for color depth of 1-32 bits per pixel, alpha channels, and RLE compression. Used as a source format. |
 | [.thm](thm.md) | They are used to set the parameters of textures - bump, detail, and more. |
-| .wallmarks | Decals. Bloodstains, faction emblems on walls, etc. Used for the compiled level? |
+| .wallmarks | Decals. Bloodstains, faction emblems on walls, etc. Used for the compiled level. |
 | .wav | Source audio format for later setup and conversion to .ogg |
 | [.xml](../../configs/xml-files.md) | Carry in text format data related to in-game text, UI element placement, and characters and information within the game world. |
 | .xrdemo | Recording camera flyover (demo). Created in the game with a console command. |
