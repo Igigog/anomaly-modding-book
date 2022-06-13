@@ -45,8 +45,8 @@ All the settings described below are stored in the file "user".ltx. (You can rea
 ---|---|---|
 | g_simple_pda | ??? | 'on/off' or '1/0' |
 | g_3d_pda | Switching between 2D and 3D PDA modes | 'on/off' or '1/0' |
-| hud_weapon | Показыват оружие и руки | 'on/off' or '1/0' |
-| hud_draw | Показывает UI | 'on/off' or '1/0' |
+| hud_weapon | Shows weapons and hands | 'on/off' or '1/0' |
+| hud_draw | Shows UI | 'on/off' or '1/0' |
 | hud_fov | FOV for HUD |  |
 
 #### UI
@@ -55,7 +55,7 @@ All the settings described below are stored in the file "user".ltx. (You can rea
 ---|---|---|
 | cl_dynamiccrosshair | Dynamic Sight (not working из-за прицела ввиде точки) | 'on/off' or '1/0' |
 | g_crosshair_color | Changes the color of the crosshair | -(255,255,255,255) - (255,255,255,255) |
-| g_feel_grenade | Чуствует гранату (нужны тесты) | 'on/off' or '1/0' |
+| g_feel_grenade | "Sensitivity" grenade | 'on/off' or '1/0' |
 | hud_crosshair | Show crosshair | 'on/off' or '1/0' |
 | hud_crosshair_dist | Show distance under crosshair | 'on/off' or '1/0' |
 

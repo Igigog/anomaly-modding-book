@@ -32,6 +32,10 @@ Path to the folder with the original 3D objects and animations. Usually found in
 
 ## Files
 
+- ### "username".ltx
+
+This file describes the game settings.
+
 - ### fs.ltx
 
 This file is in the X-Ray SDK and stores the directory paths.
