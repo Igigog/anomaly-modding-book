@@ -48,10 +48,11 @@
     - [UI]()
     - [Scripted dialogues]()
 
-- [Modding Tools And Resouces](modding-tools-and-resources/README.md)
+- [Modding Tools And Resouces](modding-tools-and-resources/modding-tools/)
     - [Modding Tools](modding-tools-and-resources/modding-tools.md)
         - [THM Editor by Valerok](modding-tools-and-resources/thm-editor-by-valerok.md)
         - [OMF Editor by Valerok](modding-tools-and-resources/omf-editor-by-valerok.md)
+    - [Resources](modding-tools-and-resources/resources/README.md)
 
 - [Modelling]()
     - [Blender](blender/README.md) ![blender-logo](blender/blender-images/blender-images-icons/blender-logo.svg)
@@ -69,6 +70,7 @@
     - [Compiling maps]()
 
 - [Engine](engine/README.md)
+    - [Console commands](engine/console-commands.md)
     - [Compiling]()
     - [Architecture]()
 
