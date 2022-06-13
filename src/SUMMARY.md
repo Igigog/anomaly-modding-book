@@ -48,7 +48,7 @@
     - [UI]()
     - [Scripted dialogues]()
 
-- [Modding Tools And Resouces](modding-tools-and-resources/modding-tools/)
+- [Modding Tools And Resouces](modding-tools-and-resources/modding-tools/README.md)
     - [Modding Tools](modding-tools-and-resources/modding-tools.md)
         - [THM Editor by Valerok](modding-tools-and-resources/modding-tools/thm-editor-by-valerok.md)
         - [OMF Editor by Valerok](modding-tools-and-resources/modding-tools/omf-editor-by-valerok.md)
