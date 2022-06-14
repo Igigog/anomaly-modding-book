@@ -32,12 +32,12 @@ Software to unpack gamedata
 
 Official SDK with community enhancements:
 
-- [SDK 0.4 (Shadows of Chernobyl)](http://files.gsc-game.com/st/xray-sdk-setup-v0.4.exe)
+- [SDK 0.4 (Shadows of Chernobyl)](https://sharedby.blomp.com/gI0i4B)
     - [SDK 0.4 by Yara](https://bitbucket.org/Yar0s1av/xray_stalker_sdk_04_fixed/src/master/) - This is a compiled from source SDK 0.4, which has dozens of fixes and improvements.
     - [SDK 0.4 by YUSHAT](http://files.xray-engine.org/yurshat/repack/xray_sdk_yurshat_repack.rar)
     - [SDK 0.4 by Political](https://disk.yandex.ru/d/KmVOitON3GnyuU)
 
-- [SDK 0.5 (Clear Sky)](http://xfiles.gsc-game.com/st/xray-cs-sdk-setup.exe)
+- [SDK 0.5 (Clear Sky)](https://sharedby.blomp.com/AWr3Vs)
     - [SDK B.O.R.S.C.H.T for CS by Lightning in a vacuum](https://bitbucket.org/stalker/xray-csky_borscht_sdk/src/master/)
 
 - [SDK 0.7 (Call of Pripyat)](https://www.moddb.com/games/stalker-call-of-pripyat/downloads/x-ray-16-engine-sdk-v07)
@@ -126,13 +126,14 @@ The versions of the SDK tools may differ depending on the version of the SDK its
 
 ## Upgrades
 
-- [Upgrades Editor](https://github.com/gunslingermod/upgrades_editor) - A visual editor that makes it relatively quick and easy to create weapon upgrade schemes
+- [Upgrades Editor](https://sharedby.blomp.com/7Lxeq9) - A visual editor that makes it relatively quick and easy to create weapon upgrade schemes
+    - More
 
 ## NPC's
 
 - [NPC creator](https://disk.yandex.ru/d/kQnkCrVdtW8clQ)
 
-- [NPC Editor](https://github.com/rayofhope-dev/npc-editor) - NPC editing tool
+- [NPC Editor](https://github.com/rayofhope-dev/npc-editor) - NPC editing tool (Currently not working for Anomaly!)
 
 ## AI
 

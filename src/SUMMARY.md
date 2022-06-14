@@ -17,6 +17,7 @@
 - [Main Folders And Files](main-folders-and-files/README.md)
     - [File Formats](main-folders-and-files/file-formats/README.md)
         - [.bump](main-folders-and-files/file-formats/bump.md)
+        - [.bump#](main-folders-and-files/file-formats/bump%23.md)
         - [.dds](main-folders-and-files/file-formats/dds.md)
         - [.object](main-folders-and-files/file-formats/object.md)
         - [.omf](main-folders-and-files/file-formats/omf.md)
