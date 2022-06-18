@@ -5,8 +5,8 @@ DDS is most often used to store textures and is used in many 3D applications, as
 
 ### Format
 
-RGB - Diffuse colour
-A - Alpha (Used for translucent/transparent shaders like glass/grass)
+- RGB - Diffuse colour
+- A - Alpha (Used for translucent/transparent shaders like glass/grass)
 
 ### The engine currently supports the following compressions:
 

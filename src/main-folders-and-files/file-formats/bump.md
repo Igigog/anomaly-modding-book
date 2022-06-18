@@ -5,10 +5,10 @@ The bump map is a regular normal map in A(BGR) format (typical for DXT5_nm compr
 
 ### Format
 
-R - Glossiness (Glossiness, aka inverted roughness. It works best in stalker, and allows for using better BRDF)
-G - Normal Z (Unused in Anomaly 1.6.0)
-B - Normal Y (DIRECTX format.)
-A - Normal X
+- R - Glossiness (Glossiness, aka inverted roughness. It works best in stalker, and allows for using better BRDF)
+- G - Normal Z (Unused in Anomaly 1.6.0)
+- B - Normal Y (DIRECTX format.)
+- A - Normal X
 
 ### The engine currently supports the following compressions:
 

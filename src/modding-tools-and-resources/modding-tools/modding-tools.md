@@ -100,6 +100,10 @@ The versions of the SDK tools may differ depending on the version of the SDK its
 
 - [Paint.net](https://www.getpaint.net/) - Most often used to properly compress textures.
 
+## Dialogs
+
+ - [S.T.A.L.K.E.R. Dialog Editor Extended](https://www.moddb.com/mods/call-of-chernobyl/addons/stalker-dialog-editor-extended-german) - Allows you to edit and create dialogs.
+
 ## Animations
 
 - [OMF Editor](https://github.com/mortany/omf_editor) - Tool for working with [.omf](../main-folders-and-files/file-formats/omf.md) format.
@@ -110,6 +114,7 @@ The versions of the SDK tools may differ depending on the version of the SDK its
 
 - [OGF Editor](https://github.com/mortany/OGF-tool) - Tool for working with ogf format
 - [OGF Editor by Valerok](https://github.com/VaIeroK/OGF-tool) - Modified tool for working with ogf format
+    - [More](ogf-editor-by-valerok.md)
 
 - [MeshToolz](https://github.com/gunslingermod/MeshToolz) - Swiss knife for low-level editing of OGF models. Want to copy a piece of one model to another? Easy. Change texture paths and bindings? No problem. Move and scale an item by snapping it to another bone? No problem. Can work both interactively and in script processing mode.
     - [Scripts For MeshToolz](https://github.com/gunslingermod/additional_scopes)
@@ -127,7 +132,6 @@ The versions of the SDK tools may differ depending on the version of the SDK its
 ## Upgrades
 
 - [Upgrades Editor](https://sharedby.blomp.com/7Lxeq9) - A visual editor that makes it relatively quick and easy to create weapon upgrade schemes
-    - More
 
 ## NPC's
 

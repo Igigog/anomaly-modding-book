@@ -12,7 +12,7 @@ In order to make a differential change to the LTX records, you have to follow th
 
 1. Find out which root LTX file is loading the variable you are trying to modify. You can either search the files manually and trace back the chain of #includes, or you can use LTXDiff for this purpose.
 
-<text style="color: red">LTXDiff findroot</text> <text style="color: yellow">[Base Folder] [Mod Folder] [Relative Path to File]</text>
+    <text style="color: red">LTXDiff findroot</text> <text style="color: yellow">[Base Folder] [Mod Folder] [Relative Path to File]</text>
 
 2. Once you have found the root file, create a new one in the same directory with the name "mod_[name of the root file]_[name of your choosing].ltx".
 

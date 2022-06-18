@@ -76,7 +76,7 @@ This section contains a list and description of the shaders that are available i
 | models\model_fur | transparency. alpha test - aref (no gradients) |
 | models\hm |  |
 | models\pn |  |
-| models\pn_hm |  |
+| models\pn_hm | enable tesselation on models (DX11 only) |
 | models\pautina | material with transparency and falloff effect |
 | models\selflight | basic self-lighting material |
 | models\seftlight_det |  |

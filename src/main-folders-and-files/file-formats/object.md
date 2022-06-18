@@ -12,7 +12,7 @@ These files are intended for the X-Ray SDK to store 3D content in its original, 
 - bones
 - skeleton animations
 
-### Possibilities and limitations of the object format
+### Possibilities and limitations of the .object format
 
 One *.object file can store:
 

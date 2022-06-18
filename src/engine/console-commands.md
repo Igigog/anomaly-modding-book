@@ -29,7 +29,7 @@ All the settings described below are stored in the file "user".ltx. (You can rea
 | quit | Exit to the desktop | - |
 | cl_cod_pickup_mode | Selecting items from the radius around the scope | 'on/off' or '1/0' |
 | disconnect | Ends the game | - |
-| time_factor | Ability to change the game time |  |
+| time_factor | Ability to change the game time | 0.001 - 1000.0 |
 
 
 #### Actor
@@ -43,11 +43,11 @@ All the settings described below are stored in the file "user".ltx. (You can rea
 
 | Сommand | Command description | Command's argument |
 ---|---|---|
-| g_simple_pda | ??? | 'on/off' or '1/0' |
+| g_simple_pda |  | 'on/off' or '1/0' |
 | g_3d_pda | Switching between 2D and 3D PDA modes | 'on/off' or '1/0' |
 | hud_weapon | Shows weapons and hands | 'on/off' or '1/0' |
 | hud_draw | Shows UI | 'on/off' or '1/0' |
-| hud_fov | FOV for HUD |  |
+| hud_fov | FOV for HUD | 0.100 - 1.000 |
 
 #### UI
 
@@ -64,7 +64,7 @@ All the settings described below are stored in the file "user".ltx. (You can rea
 | Сommand | Command description | Command's argument |
 ---|---|---|
 | rs_stats | Display engine statistics on the screen | 'on/off' or '1/0' |
-| rs_cam_pos | Display camera coordinates (not working?) | 'on/off' or '1/0' |
+| rs_cam_pos | Display camera coordinates | 'on/off' or '1/0' |
 | list_actions | Display a list of active console commands | - |
 | bind_list | Display a list of commands assigned to the keys | - |
 | hud_info | (not working?) |  |
@@ -132,7 +132,7 @@ All the settings described below are stored in the file "user".ltx. (You can rea
 ---|---|---|
 | cam_inert | Camera inertia |  |
 | cam_slide_inert |  |  |
-| fov | FOV for camera |  |
+| fov | FOV for camera | 5.000 - 180.000 |
 
 ### Graphics
 

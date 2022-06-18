@@ -11,13 +11,13 @@
     - [Addon installers](getting-started/addon-installers.md)
 
 - [Addon compatibility]()
-    - [DLTX]()
+    - [DLTX](addon-compatibility/dltx.md)
     - [Monkey patching](addon-compatibility/monkey-patching.md)
 
 - [Main Folders And Files](main-folders-and-files/README.md)
     - [File Formats](main-folders-and-files/file-formats/README.md)
         - [.bump](main-folders-and-files/file-formats/bump.md)
-        - [.bump#](main-folders-and-files/file-formats/bump#.md)
+        - [.bump#](main-folders-and-files/file-formats/bump_hash.md)
         - [.dds](main-folders-and-files/file-formats/dds.md)
         - [.object](main-folders-and-files/file-formats/object.md)
         - [.omf](main-folders-and-files/file-formats/omf.md)
@@ -55,6 +55,7 @@
     - [Resources](modding-tools-and-resources/resources/README.md)
         - [Audio](modding-tools-and-resources/resources/audio.md)
         - [Models](modding-tools-and-resources/resources/models-objects-locations.md)
+        - [SDK Rawdats And Unpacked .DB's](modding-tools-and-resources/resources/sdk-rawdatas-and-unpacked-db.md)
 
 - [Modelling]()
     - [Blender](blender/README.md)

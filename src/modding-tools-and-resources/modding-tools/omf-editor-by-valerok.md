@@ -77,7 +77,7 @@ Modified tool for working with [.omf](../main-folders-and-files/file-formats/omf
 | Parameters | Description |
 ---|---|
 | Stop at End | Animation will stop after playback |
-| No Mix |  |
+| No Mix | Does not mix animation when switching to other animations |
 | Sync Part |  |
 | Use Foot Steps |  |
 | Move XForm |  |
