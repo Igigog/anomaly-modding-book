@@ -1,4 +1,5 @@
 # THM Editor by Valerok
+## Program Developer: Valerok
 
 ## About:
 [THM Editor by Valerok](https://github.com/VaIeroK/THM-Editor) - The THM Editor from i-love-kfc was taken as the basis, finalized and fixed. Allows you to work with [.thm](../../main-folders-and-files/file-formats/thm.md) files.

@@ -8,7 +8,7 @@ A specialized S.T.A.L.K.E.R. game format containing animations. This is a separa
 
 ## Technical information:
 
-They are in RIFF format. That is, the file is divided into chunks.
+They are in [RIFF](https://en.wikipedia.org/wiki/Resource_Interchange_File_Format) format. That is, the file is divided into chunks.
 The omf file consists of two chunks:
 
 - 0xE - stores animations (rotation, movement of bones)

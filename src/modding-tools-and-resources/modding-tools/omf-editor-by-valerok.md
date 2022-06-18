@@ -1,7 +1,8 @@
 # Omf Editor by Valerok
+## Program Developer: Valerok
 
 ## About:
-Modified tool for working with [.omf](../main-folders-and-files/file-formats/omf.md) format.
+Modified tool for working with [.omf](../../main-folders-and-files/file-formats/omf.md) format.
 
 <div style="text-align: center;">
 

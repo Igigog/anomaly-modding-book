@@ -14,7 +14,7 @@ This table lists the X-Ray file formats that the addon can import/export.
 ---|---|---|---|---|
 | [.object](../main-folders-and-files/file-formats/object.md) | Source objects | + | + |  |
 | .anm | Animated paths | + | + |  |
-| .dm | Detailed effect models | + | + |  |
+| [.dm](../main-folders-and-files/file-formats/dm.md) | Detailed effect models | + | + |  |
 | .details | Detailed level models | + | + |  |
 | .skl | Skeletal animation | + | + |  |
 | .skls | Skeletal animations in a container | + | + |  |

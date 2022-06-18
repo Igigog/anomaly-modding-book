@@ -2,7 +2,7 @@
 
 ## About
 This section describes all console commands. 
-All the settings described below are stored in the file "user".ltx. (You can read more about [important files here](../main-folders-and-files/README.md))
+All the settings described below are stored in the file "user".ltx. (You can read more about [important files here](../main-folders-and-files/index.html))
 
 ### Game
 

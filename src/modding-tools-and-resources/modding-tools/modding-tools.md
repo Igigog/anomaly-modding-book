@@ -80,7 +80,7 @@ The versions of the SDK tools may differ depending on the version of the SDK its
 
 3D Packages that have compatibility/addons to work with X-Ray:
 
-- [Blender (With X-Ray Addon)](../blender/index.html)
+- [Blender (With X-Ray Addon)](../../blender/index.html)
 
 - 3Ds Max
 

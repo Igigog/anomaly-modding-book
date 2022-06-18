@@ -19,6 +19,7 @@
         - [.bump](main-folders-and-files/file-formats/bump.md)
         - [.bump#](main-folders-and-files/file-formats/bump_hash.md)
         - [.dds](main-folders-and-files/file-formats/dds.md)
+        - [.dm](main-folders-and-files/file-formats/dm.md)
         - [.object](main-folders-and-files/file-formats/object.md)
         - [.omf](main-folders-and-files/file-formats/omf.md)
         - [.hom](main-folders-and-files/file-formats/hom.md)

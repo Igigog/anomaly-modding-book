@@ -10,7 +10,7 @@ HOM is a geometry cutter, which is a mesh and is needed to increase performance.
 Consists of two blocks:
 
 | Block ID | Size (bytes) | Description | 
----|---|
+---|---|---|
 | 0x0 | 4 | header (contains information about the format version) |
 | 0x1 | number of polygons * 40 | vertex coordinates and polygon properties |
 

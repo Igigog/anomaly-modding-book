@@ -4,7 +4,7 @@ This section describes the main files and folders for the game
 
 ## Folders
 
-- ### Appdata
+### Appdata
 
  - #### Logs
 This is where the game logs are created and stored (log of loading objects, textures, etc.)
@@ -18,15 +18,15 @@ This is where game screenshots are created and stored
  - #### Shaders_cache
 This is where the game shader cache is created and stored
 
-- ### Gamedata
+### Gamedata
 
 Folder with files from any game in the S.T.A.L.K.E.R. series. Initially it does not exist explicitly, all game data is "embedded" in the game, but when you install modifications and even patches the directory will be created. Gamedata overrides standard game files: if there are no files in it, often their base versions are used.
 
-- ### Textures Folder
+### Textures Folder
 
 This folder usually contains textures.
 
-- ### Objects Folder
+### Objects Folder
 
 Path to the folder with the original 3D objects and animations. Usually found in the X-Ray SDK in the rawdata\objects folder.
 

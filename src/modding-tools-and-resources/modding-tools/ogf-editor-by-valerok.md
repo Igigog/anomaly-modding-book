@@ -1,4 +1,5 @@
 # OGF Editor by Valerok
+## Program Developer: Valerok
 
 ## About
 Modified tool for working with [.ogf](../../main-folders-and-files/file-formats/README.md) format

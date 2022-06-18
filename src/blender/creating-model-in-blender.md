@@ -1,4 +1,5 @@
 # Creating and setting up a model in Blender
+## Article author: TheParaziT
 
 This article is about creating a model and setting its parameters
 
@@ -54,6 +55,7 @@ Next, we need to adjust our model to normal size (so that in the game it will no
 If you have already set up the addon to use and set up the necessary paths to your folders, you need to import into the scene model of some person from the game.
 
 In the N-panel there should be a tab "X-Ray" in it unfolds the list "Viewer" and we click "Open Folder" (![folder-icon](blender-images/blender-images-icons/folder.svg)).
+
 ![viewer-n-panel](blender-images/viewer-section.png)
 
 The Blender explorer window opens. Go to our unpacked folder with the game files (namely the folder "meshes").

@@ -14,7 +14,7 @@ This section describes the extensions that are found in the game files and the S
 | .db | archive of game resources. Used in late builds and the final version of the game, has several options (db."number", db."letter"). |
 | .dds | Graphic file used by DirectX to store textures |
 | .details | Detailed objects (grass, cigarette butts, construction debris) on the level. Created through LevelEditor SDK at compile time. |
-| .dm |  Effect of a dynamic weather environment (e.g., rain or lightning) |
+| [.dm](dm.md) |  Effect of a dynamic weather environment (e.g., rain or lightning) |
 | [.efd](efd.md) | Table of AI heuristic parameters, contains constants for fine-tuning A-Life. They are used as input parameters in scripts. |
 | .env_mod | local environment modifiers (environment), set areas on the location with lighting different from the main weather cycle. |
 | .err | Geometry errors |
@@ -52,5 +52,5 @@ This section describes the extensions that are found in the game files and the S
 | .wallmarks | Decals. Bloodstains, faction emblems on walls, etc. Used for the compiled level. |
 | .wav | Source audio format for later setup and conversion to .ogg |
 | [.xml](../../configs/xml-files.md) | Carry in text format data related to in-game text, UI element placement, and characters and information within the game world. |
-| .xrdemo | Recording camera flyover (demo). Created in the game with a console command. |
+| .xrdemo | Recording camera flyover (demo). Created in the game with a [console command](../../engine/console-commands.md). |
 | level | File with general information about the game location (light sources, object names, texture and shader names, sectors and portals). Created by xrLC during compilation. Opened only by the game. |
