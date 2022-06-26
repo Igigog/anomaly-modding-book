@@ -67,9 +67,9 @@ All the settings described below are stored in the file "user".ltx. (You can rea
 | rs_cam_pos | Display camera coordinates | 'on/off' or '1/0' |
 | list_actions | Display a list of active console commands | - |
 | bind_list | Display a list of commands assigned to the keys | - |
-| hud_info | (not working?) |  |
+| hud_info |  | - |
 | render_memory_stats | Output information about memory usage | - |
-| stat_memory |  |  |
+| stat_memory |  | - |
 
 ### Control
 
@@ -346,11 +346,11 @@ All the settings described below are stored in the file "user".ltx. (You can rea
 
 | Сommand | Command description | Command's argument |
 ---|---|---|
-| ai_aim_max_angle |  |  |
-| ai_aim_min_angle |  |  |
-| ai_aim_min_speed |  |  |
-| ai_aim_predict_time |  |  |
+| ai_aim_max_angle | The maximum angle at which the angular velocity of the character when aiming is calculated by the formula |  |
+| ai_aim_min_angle | The minimum angle at which the angular velocity of the character when aiming is calculated by the formula |  |
+| ai_aim_min_speed | Minimum angular velocity of the character when aiming at a target |  |
+| ai_aim_predict_time | Time of the character's prediction of a change in target position |  |
 | ai_aim_use_smooth_aim |  |  |
 | ai_die_in_anomaly | Enables NPCs to die in anomalies | 'on/off' or '1/0' |
-| ai_use_old_vision |  |  |
+| ai_use_old_vision | Includes the old model of virtual character vision, in which random points on the surface of an ellipsoid inscribed into an axially oriented rectangular parallelepiped described around the object were taken to determine the visibility of the object. | 'on/off' or '1/0' |
 | ai_use_torch_dynamic_lights | Enables the use of flashlights by non-player characters (NPCs) | 'on/off' or '1/0' |

@@ -21,11 +21,10 @@ This section describes the extensions that are found in the game files and the S
 | .fog_vol | Volumetric fog |
 | .game | Coordinates of the player's spawn in the multiplayer game. Outdated file. |
 | .geom | Contains vertices (position, normals, texture coordinates, etc.), indices, and information for smooth geometry detail. |
-| .geomx |  |
+| .geomx | It contains only geometry. In the renderer it is used in the shadow rendering passes, due to the fact that there is less information - loading data into the buffers - faster. |
 | .graph | Global graph of AI navigation. Used, among other things, for moving AI objects outside the active level. |
 | .gtc | Cross table of correspondence between the location graph and the AI grid. It is created when compiling the map in LE KFK (xrAI). |
 | [.hom](../file-formats/hom.md) | Mapping of hierarchical cutoffs |
-| .hom | Mapping of hierarchical cutoffs |
 | .level | List of SDK scene objects |
 | .lights | Light sources for xrLC |
 | .log | Event log. It contains records of program start, operation and termination |

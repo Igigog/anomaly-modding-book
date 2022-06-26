@@ -119,7 +119,7 @@ The modifier has the following necessary items:
 - Object (![object-logo](blender-images/blender-images-icons/object-logo.svg))
 - Bind to (![checkbox](blender-images/blender-images-icons/checkbox.svg)) Vertex Groups
 
-In the "Object" (![object-logo](blender-images/object-logo.svg)) field, select our bone (you can select it with the pipette (![pipette](blender-images/blender-images-icons/pipette.svg))).
+In the "Object" (![object-logo](blender-images/blender-images-icons/object-logo.svg)) field, select our bone (you can select it with the pipette (![pipette](blender-images/blender-images-icons/pipette.svg))).
 Also make sure that the checkbox next to "Vertex Grops" (![checkbox](blender-images/blender-images-icons/checkbox.svg)) is marked.
 These actions allowed us to bond our object and bone, but not yet to the fullest extent.
 

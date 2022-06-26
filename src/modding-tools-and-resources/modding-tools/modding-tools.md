@@ -27,6 +27,7 @@ Software to unpack gamedata
 ## Converters
 
 - converter.exe (tools/) - Converts files from one format to another.
+- [X-Ray Export Tool](https://github.com/VaIeroK/XrayExportTool) - A simple exporter of [.obj](../../main-folders-and-files/file-formats/object.md) format to various other formats
 
 ## SDK's
 

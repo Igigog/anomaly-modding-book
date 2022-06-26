@@ -157,7 +157,7 @@
 
 - #### Bump
 
-- #### Narmal Map
+- #### Normal Map
 
 ## Sources
 [Source Code](https://github.com/VaIeroK/THM-Editor)

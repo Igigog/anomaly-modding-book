@@ -25,6 +25,8 @@ Modified tool for working with [.ogf](../../main-folders-and-files/file-formats/
 - Editing the position and rotation of the bones
 - Ability to remove unneeded Motion refs and Userdata chunks
 - Fix Gunslinger models (models are fixed automatically when you save them)
+- Tools for working with embedded animations
+- Integration with [OMF Editor](omf-editor-by-valerok.md) for editing parameters of embedded animations
 
 ## Functionality
 
@@ -67,6 +69,16 @@ Display information about the loaded OGF
 
 Opens the OGF View with the selected model
 
+- #### Motion Tools Button
+
+Becomes active only after switching to the Motions section.
+
+| Button | Description |
+---|---|
+| Delete Motions\Return Last Motions | Deletes the list of animations\returns the last list of animations |
+| Edit in OMF Editor | Editing Animations via OMF Editor (First, you must specify the path to the OMF Editor .exe) |
+| Replace Motions | Replaces the list of animations with another |
+
 ### Checkboxes
 
 | Field | Description |
@@ -93,6 +105,10 @@ File with userdata
 - #### Motion Refs
 
 A field with paths for animation
+
+- #### Motions
+
+Displays animations that are built into the model
 
 - #### Bone Names
 
