@@ -95,7 +95,7 @@ The versions of the SDK tools may differ depending on the version of the SDK its
 - [THM Editor by Valerok](https://github.com/VaIeroK/THM-Editor) - The THM Editor from i-love-kfc was taken as the basis, finalized and fixed.
     - [More](thm-editor-by-valerok.md)
 
-- [ThmValidator](https://github.com/gunslingermod/ThmValidator) - Allows you to check the [.thm](../main-folders-and-files/file-formats/thm.md) files in the selected directory and automatically fix the most common bugs that occur during manual editing.
+- [ThmValidator](https://sharedby.blomp.com/tnT8vj) - Allows you to check the [.thm](../main-folders-and-files/file-formats/thm.md) files in the selected directory and automatically fix the most common bugs that occur during manual editing.
 
 - [Substance 3D Painter](https://store.steampowered.com/app/1775390/Substance_3D_Painter_2022/)
 
@@ -122,11 +122,11 @@ The versions of the SDK tools may differ depending on the version of the SDK its
 
 - [OGFViewer](https://github.com/mrnotbadguy/OGFViewer) - legacy model viewer for [.ogf](../main-folders-and-files/file-formats/README.md) format.
 
-- [ObjectParamsCopier](https://github.com/gunslingermod/ObjectParamsCopier) -  Allows you to quickly copy surface settings with the same name from one object file to another
+- [ObjectParamsCopier](https://sharedby.blomp.com/BJRQn8) -  Allows you to quickly copy surface settings with the same name from one object file to another
 
-- [OgfRefEditor](https://github.com/gunslingermod/OgfRefEditor) - Editor of the list of OMFs connected to the model. It is intended primarily for changing the list of OMFs used in hand models, for this purpose it is possible to apply the OMF list to all OGFs in the selected folder
+- [OgfRefEditor](https://sharedby.blomp.com/XAwocF) - Editor of the list of OMFs connected to the model. It is intended primarily for changing the list of OMFs used in hand models, for this purpose it is possible to apply the OMF list to all OGFs in the selected folder
 
-- [BumpGenerator](https://github.com/gunslingermod/BumpGenerator) - Intended for DXT compression of bumps together with simultaneous generation of bump#maps (the purpose of which is to correct errors introduced by compression). It works similarly to a similar function in KFK. As input textures, both standard ("blue") bump textures and bump textures used directly in the game with rearranged channels are supported.
+- [BumpGenerator](https://sharedby.blomp.com/MT4WEx) - Intended for DXT compression of bumps together with simultaneous generation of bump#maps (the purpose of which is to correct errors introduced by compression). It works similarly to a similar function in KFK. As input textures, both standard ("blue") bump textures and bump textures used directly in the game with rearranged channels are supported.
 
 - [StalkerWeaponToolKit](https://disk.yandex.ru/d/x3771W3btrwtFw) - Tool for working with weapons
 
@@ -146,7 +146,7 @@ The versions of the SDK tools may differ depending on the version of the SDK its
 
 ## Decompilers
 
-- [ACDC](https://disk.yandex.ru/d/4BEMg9aicjYhy) - Perl script, to unpack and pack all.spawn
+- [Universal ACDC](https://disk.yandex.ru/d/-GBYa8DxQv8MF) - Perl script, to unpack and pack all.spawn
 - [gamemtl_xr_cdc](https://disk.yandex.ru/d/hR79KfSn3PLtSK)
 - [lanims_xr_cdc](https://disk.yandex.ru/d/qKhybMU-3PLtTj)
 - [shaders_xr_cdc](https://disk.yandex.ru/d/RcMprj9W3PLtdj)
@@ -164,3 +164,7 @@ The versions of the SDK tools may differ depending on the version of the SDK its
 
 - [DB_Compressor by d_μaμ](https://cdn.discordapp.com/attachments/616764067670917131/846799604438532107/DB_Compressor.rar)
 - [xrCompress](https://ap-pro.ru/forums/topic/3500-obnovlyonnyy-xrcompress/)
+
+## Formats
+
+- [ChunckTool](https://sharedby.blomp.com/p4wGo4)
