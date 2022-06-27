@@ -64,6 +64,7 @@
         - [Blender X-Ray Addon](blender/blender-x-ray-addon-summary.md)
         - [Addon installation and setup](blender/addon-installation-and-setup.md)
         - [Creating model in Blender](blender/creating-model-in-blender.md)
+        - [Creating an animation in Blender for a HUD object](blender/creating-hud-animation-in-blender.md)
         - [Advanced settings](blender/addon-settings-options/README.md)
             - [Pathes](blender/addon-settings-options/pathes.md)
 
