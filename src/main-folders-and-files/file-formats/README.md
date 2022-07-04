@@ -5,7 +5,7 @@ This section describes the extensions that are found in the game files and the S
 | Extension | Description |
 ---|---|
 | .ai | AI location grid. Created by xrAI when compiling. Opened only by the game. |
-| .anm | A set of coordinates, which works as an animation of the actor's camera movement. It is also used for anomalies, which need to be given a path. |
+| [.anm](anm.md) | A set of coordinates, which works as an animation of the actor's camera movement. It is also used for anomalies, which need to be given a path. |
 | .avi | Video file |
 | .bones | Skeleton data in SDK format |
 | [.bump](bump.md) | Normal map in A(BGR) format |
