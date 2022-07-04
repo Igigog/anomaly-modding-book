@@ -38,6 +38,7 @@
     - [Changing an item]()
     - [Creating your own item]()
     - [Dialogues]()
+        - [Weapon Configuration Parameters](configs/files/w_(weapon).ltx.md)
 
 - [Scripting]()
     - [Introduction to codebase]()
@@ -57,7 +58,7 @@
     - [Resources](modding-tools-and-resources/resources/README.md)
         - [Audio](modding-tools-and-resources/resources/audio.md)
         - [Models](modding-tools-and-resources/resources/models-objects-locations.md)
-        - [SDK Rawdats And Unpacked .DB's](modding-tools-and-resources/resources/sdk-rawdatas-and-unpacked-db.md)
+        - [SDK Rawdats](modding-tools-and-resources/resources/sdk-rawdatas.md)
 
 - [Modelling]()
     - [Blender](blender/README.md)

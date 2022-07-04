@@ -13,3 +13,7 @@
 [Riggered HUD in Blender](https://drive.google.com/file/d/1vpyBGOeLg1Gs1Rrtr11Mb3FG_5dukD0u/view?usp=sharing)
 
 ![riggered-hud](resources-images/hud-rig-animation.png)
+
+[Character Rig in Blender](https://drive.google.com/file/d/1sh5Ps6SxGDHns56tBaGsqs9Sv78s5bPT/view?usp=sharing)
+
+![character-rig](resources-images/character_rig.png)
