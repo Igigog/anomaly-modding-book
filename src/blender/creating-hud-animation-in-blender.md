@@ -71,63 +71,7 @@ For easier animation, I suggest creating help bones.
 Copy a weapon bone, remove the parent and add the "Child of" modifier to that bone and select some functional bone (e.g. a bolt bone) as a target. Further, if you add "Copy Transform" modifier to the hand bone and select the Help bone created as a target, it will simplify the animation (for example, when the bolt moves, the hand will move too).
 
 - P.P.S.
-The engine currently supports the following list of animations (First write the hand animation, and after the comma the weapon animation (if no weapon animation is specified, the idle weapon animation will be used)):
-
- - Idle animations
-
-|  | Description |
----|---|
-| anm_idle | Idle animation |
-| anm_idle_empty | Idle animation of an empty magazine |
-| anm_idle_aim | Idle animation in aiming mode |
-| anm_idle_g |  |
-| anm_idle_g_aim |  |
-| anm_idle_w_gl |  |
-| anm_idle_w_gl_aim |  |
-
- - Motion animations
-
-|  | Description |
----|---|
-| anm_idle_aim_moving | Animation in the aiming mode when moving |
-| anm_idle_aim_moving_crouch | Animation in the aiming mode when moving in a crouch |
-| anm_idle_moving | Motion animation |
-| anm_idle_moving_empty | Motion animation with an empty magazine |
-| anm_idle_moving_crouch_g_aim |  |
-| anm_idle_moving_crouch_w_gl_aim |  |
-| anm_idle_moving_g |  |
-| anm_idle_moving_g_aim |  |
-| anm_idle_moving_w_gl |  |
-| anm_idle_moving_w_gl_aim |  |
-| anm_idle_sprint | Running animation |
-| anm_idle_sprint_empty | Running animation with an empty magazine |
-| anm_idle_sprint_g |  |
-| anm_idle_sprint_w_gl |  |
-| anm_hide | Hiding animation |
-| anm_hide_empty | Hiding animation with an empty magazine |
-| anm_hide_g|  |
-| anm_hide_w_gl |  |
-| anm_show | Show animation |
-| anm_show_empty | Show animation with an empty magazine |
-| anm_show_g |  |
-| anm_show_w_gl |  
-| anm_bore | Boredom Animation |
-
-- Weapon animations
-
-|  | Description |
----|---|
-| anm_reload | Reloading (When there is still a bullet in the chamber) |
-| anm_reload_empty | Reloading |
-| anm_reload_g | Animation of the underbarrel grenade launcher reload |
-| anm_reload_w_gl |  |
-| anm_shots | Shot animation |
-| anm_shot_l | Last shot animation |
-| anm_shots_g | Underbarrel grenade launcher shot animation |
-| anm_shots_w_gl |  |
-| anm_switch | Animation of switching to alternate firing mode |
-| anm_switch_g | Animation of switching to underbarrel grenade launcher firing mode |
-
+The engine currently supports the [following list](../configs/files/w_(weapon).ltx.md) of animations (First write the hand animation, and after the comma the weapon animation (if no weapon animation is specified, the idle weapon animation will be used))
 
 Once created, you can export the animations to .skl, .skls, or [.omf](../main-folders-and-files/file-formats/omf.md)
 To export animations to [.omf](../main-folders-and-files/file-formats/omf.md) you must:
