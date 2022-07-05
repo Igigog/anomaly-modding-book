@@ -30,7 +30,7 @@ Parameters of the weapon are set for each sample in a separate *.ltx file, and c
 | default_to_ruck | whether the weapon will be moved to the backpack instead of the slot when picked up | false | true (yes) - false (no) |
 | sprint_allowed | this line means that you can run with the weapon | true | true (Yes) - false (No) |
 | kind |  | w_rifle |  |
-| cost | base price | 28780 | The parameter is specified in numbers |
+| cost | base price | 28780 | Specified in numbers |
 | hud | section with parameters for the hud model of the weapon (1st person view) | wpn_akm_hud | Specifies the name of the section |
 | visual | reference to the 3rd person model | dynamics\weapons\wpn_akm\wpn_akm.ogf | Specifies the path to the file |
 
@@ -55,7 +55,7 @@ Parameters of the weapon are set for each sample in a separate *.ltx file, and c
 | inv_grid_x | the coordinate of the upper left corner of the icon on a 50x50 pixel grid on the X axis | 35 | number of cells indented to the right |
 | inv_grid_y | The coordinate of the upper left corner of the icon on a 50x50 pixel grid on the Y axis | 0 | number of cells indenting downward |
 | inv_name | The name in the inventory | st_wpn_akm | Section name, in *.xml files included in the string_table section of gamedata\configs\localization.ltx |
-| inv_name_short | short name for the interface | st_wpn_akm | Section name, in *.xml files included in the string_table section of gamedata\configs\localization.ltx |
+| inv_name_short | short name in the inventory | st_wpn_akm | Section name, in *.xml files included in the string_table section of gamedata\configs\localization.ltx |
 | inv_weight | the inventory weight of the unloaded weapon | 3.3 | The number is given in kilograms |
 | description | Description in inventory | st_wpn_akm_descr | Section name, in *.xml files included in the string_table section of gamedata\configs\localization.ltx |
 | slot | Inventory slot number | 2 | 0 (knife) - 1 (gun) - 2 (shotgun, machine gun, rifle, grenade launcher) - 3 (grenade) - 4 (binoculars) - 5 (bolt) |
