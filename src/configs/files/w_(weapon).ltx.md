@@ -342,6 +342,9 @@ Parameters of the weapon are set for each sample in a separate *.ltx file, and c
 | anm_switch | Animation of switching to alternate firing mode | The name of the corresponding animation |
 | anm_switch_g | Animation of switching to underbarrel grenade launcher firing mode | The name of the corresponding animation |
 
+### Parameters of sounds
+You can read about the parameters of the sounds [here](weapon_sounds.ltx.md)
+
 ### Parameters of the shells sprite for HUD
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|

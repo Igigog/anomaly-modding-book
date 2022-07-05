@@ -8,10 +8,10 @@
 | $spawn | the ammo directory in the Level Editor | "weapons\ammo\ammo_11.43x23_hydro" |  |
 | class | engine ammo class | AMMO_S | AMMO_S - S_VOG25 - S_OG7B - S_M209 |
 | cform | parameter for dynamic objects; necessary for correct creation of the skeleton model | skeleton |  |
-| visual | World-модель коробки с патронами | dynamics\weapons\wpn_ammo\ammo_1143x23_fmj.ogf | Specifies the path to the file |
+| visual | World-model ammo box | dynamics\weapons\wpn_ammo\ammo_1143x23_fmj.ogf | Specifies the path to the file |
 | $prefetch | preload queue | 64 |  |
-| cost | Базовая цена | 910 | Specified in numbers |
-| box_size | Количество патронов в пачке | 16 | Specified in numbers |
+| cost | Base price | 910 | Specified in numbers |
+| box_size | number of bullets in a pack | 16 | Specified in numbers |
 
 ### Ammo parameters in the inventory
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |

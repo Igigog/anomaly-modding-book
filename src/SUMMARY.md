@@ -41,6 +41,8 @@
     - [Creating your own item]()
     - [Dialogues]()
         - [Weapon Configuration Parameters](configs/files/w_(weapon).ltx.md)
+        - [Ammo Configuration Parameters](configs/files/weapon_ammo.ltx.md)
+        - [Weapon Sounds Parameters](configs/files/weapon_sounds.ltx.md)
 
 - [Scripting]()
     - [Introduction to codebase]()
