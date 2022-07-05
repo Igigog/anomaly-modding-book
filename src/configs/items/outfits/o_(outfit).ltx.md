@@ -10,7 +10,7 @@
 | class | engine outfit class | EQU_STLK |  |
 | default_to_ruck | whether the weapon will be moved to the backpack instead of the slot when picked up | true | true (yes) - false (no) |
 | sprint_allowed | this line means that you can in outfit | true | true (Yes) - false (No) |
-| kind | Armor view for grouping to the appropriate section in the Item Spawner | o_light |  |
+| kind | The type of item to group into the appropriate section in the Item Spawner | o_light |  |
 | cost | base price | 32340 |  |
 | community | To which faction the suit belongs | csky |  |
 | helmet_avaliable	 | Is a helmet available for this costume | true | true (Yes) - false (No) |

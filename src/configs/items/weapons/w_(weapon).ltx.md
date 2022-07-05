@@ -29,7 +29,7 @@ Parameters of the weapon are set for each sample in a separate *.ltx file, and c
 | single_handed | held with one hand | 0 | 0 (no) - 1 (yes) |
 | default_to_ruck | whether the weapon will be moved to the backpack instead of the slot when picked up | false | true (yes) - false (no) |
 | sprint_allowed | this line means that you can run with the weapon | true | true (Yes) - false (No) |
-| kind |  | w_rifle |  |
+| kind | The type of item to group into the appropriate section in the Item Spawner | w_rifle |  |
 | cost | base price | 28780 | Specified in numbers |
 | hud | section with parameters for the hud model of the weapon (1st person view) | wpn_akm_hud | Specifies the name of the section |
 | visual | reference to the 3rd person model | dynamics\weapons\wpn_akm\wpn_akm.ogf | Specifies the path to the file |

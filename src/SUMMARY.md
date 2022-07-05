@@ -40,9 +40,10 @@
     - [Changing an item]()
     - [Creating your own item]()
     - [Dialogues]()
-        - [Weapon Configuration Parameters](configs/files/w_(weapon).ltx.md)
-        - [Ammo Configuration Parameters](configs/files/weapon_ammo.ltx.md)
-        - [Weapon Sounds Parameters](configs/files/weapon_sounds.ltx.md)
+        - [Weapon Configuration Parameters](configs/items/weapons/w_(weapon).ltx.md)
+        - [Ammo Configuration Parameters](configs/items/weapons/weapon_ammo.ltx.md)
+        - [Weapon Sounds Parameters](configs/items/weapons/weapon_sounds.ltx.md)
+        - [Oufits Configuration Parameters](configs/items/outfits/o_(outfit).ltx.md)
 
 - [Scripting]()
     - [Introduction to codebase]()

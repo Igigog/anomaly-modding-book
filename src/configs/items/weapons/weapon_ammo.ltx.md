@@ -10,6 +10,7 @@
 | cform | parameter for dynamic objects; necessary for correct creation of the skeleton model | skeleton |  |
 | visual | World-model ammo box | dynamics\weapons\wpn_ammo\ammo_1143x23_fmj.ogf | Specifies the path to the file |
 | $prefetch | preload queue | 64 |  |
+| kind | The type of item to group into the appropriate section in the Item Spawner | w_ammo |  |
 | cost | Base price | 910 | Specified in numbers |
 | box_size | number of bullets in a pack | 16 | Specified in numbers |
 
