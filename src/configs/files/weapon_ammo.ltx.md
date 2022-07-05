@@ -1,4 +1,4 @@
-# Weapon_Ammo
+# Weapon_Ammo Config File
 
 ## General parameters
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
