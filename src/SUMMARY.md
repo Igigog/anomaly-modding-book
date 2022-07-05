@@ -5,6 +5,7 @@
 - [Meta](meta/README.md)
     - [Links](meta/links.md)
     - [Contributing to this book](meta/contributing/README.md)
+    - [Acknowledgements](meta/acknowledgements.md)
 
 - [Getting Started](getting-started/README.md)
     - [Installing MO2](getting-started/installing-mo2.md)
@@ -16,6 +17,7 @@
 
 - [Main Folders And Files](main-folders-and-files/README.md)
     - [File Formats](main-folders-and-files/file-formats/README.md)
+        - [.anm](main-folders-and-files/file-formats/anm.md)
         - [.bump](main-folders-and-files/file-formats/bump.md)
         - [.bump#](main-folders-and-files/file-formats/bump_hash.md)
         - [.dds](main-folders-and-files/file-formats/dds.md)

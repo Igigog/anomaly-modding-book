@@ -2,10 +2,12 @@
 
 Parameters of the weapon are set for each sample in a separate *.ltx file, and consist of two sections (Each contains its own set of parameters):
 
-[wpn_name] - Main, it sets most of the parameters (for NPC and 3rd-person view)
+[wpn_name] - Main, it sets most of the parameters (for NPC and 3rd-person view).
+
 [wpn_name_hud] - Secondary, where you set first-person view parameters only.
 
-## [Name of weapon]: Here you can set additional characteristics of weapon from sections for example:
+## Parameters of the world model 
+[wpn_name]: Here you can set additional characteristics of weapon from sections for example:
 
     identity_immunities - a section that contains damage parameters for different game difficulty levels
     weapon_probability
