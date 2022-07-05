@@ -57,15 +57,15 @@
 ## Different levels of sound
 | Parameter Name | Parameter Description | Example value |
 ---|---|---|
-| snd_1_layer |  | weapons\9a91\9a91_shoot |  |
-| snd_1_layer1 |  | weapons\9a91\9a91_shoot1 |  |
-| snd_1_layer2 |  | weapons\9a91\9a91_shoot2 |  |
-| snd_1_layer3 |  | weapons\9a91\9a91_shoot3 |  |
-| snd_1_layer4 |  | weapons\9a91\9a91_shoot4 |  |
-| snd_1_layer5 |  | weapons\9a91\9a91_shoot5 |  |
-| snd_1_layer6 |  | weapons\9a91\9a91_shoot6 |  |
-| snd_1_layer7 |  | weapons\9a91\9a91_shoot7 |  |
-| snd_1_layer8 |  | weapons\9a91\9a91_shoot8 |  |
-| snd_2_layer |  | weapons\_distance_shooting_mid\g3sg1_distant |  |
-| snd_3_layer |  | weapons\_distance_shooting_far\g3sg1_distant |  |
-| snd_4_layer |  | weapons\_distance_shooting_far\saiga_distant |  |
+| snd_1_layer |  | weapons\9a91\9a91_shoot |
+| snd_1_layer1 |  | weapons\9a91\9a91_shoot1 |
+| snd_1_layer2 |  | weapons\9a91\9a91_shoot2 |
+| snd_1_layer3 |  | weapons\9a91\9a91_shoot3 |
+| snd_1_layer4 |  | weapons\9a91\9a91_shoot4 |
+| snd_1_layer5 |  | weapons\9a91\9a91_shoot5 |
+| snd_1_layer6 |  | weapons\9a91\9a91_shoot6 |
+| snd_1_layer7 |  | weapons\9a91\9a91_shoot7 |
+| snd_1_layer8 |  | weapons\9a91\9a91_shoot8 |
+| snd_2_layer |  | weapons\_distance_shooting_mid\g3sg1_distant |
+| snd_3_layer |  | weapons\_distance_shooting_far\g3sg1_distant |
+| snd_4_layer |  | weapons\_distance_shooting_far\saiga_distant |
