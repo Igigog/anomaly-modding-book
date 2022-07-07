@@ -2,7 +2,7 @@
 ## Program Developer: Valerok
 
 ## About
-Modified tool for working with [.ogf](../../main-folders-and-files/file-formats/README.md) format
+Modified tool for working with .ogf format
 
 ![ogf-editor](modding-tools-images/ogf-editor-by-valerok.png)
 
@@ -18,7 +18,7 @@ Modified tool for working with [.ogf](../../main-folders-and-files/file-formats/
 - Editing model description
 - View complete list of bones
 - Integration with OGF Viewer (WIP)
-- Saving [.ogf](../../main-folders-and-files/file-formats/README.md) in [.object](../../main-folders-and-files/file-formats/object.md), [.skl](../../main-folders-and-files/file-formats/README.md), [.skls](../../main-folders-and-files/file-formats/README.md), [.bones](../../main-folders-and-files/file-formats/README.md) formats
+- Saving .ogf in .object, .skl, .skls, .bones formats ([list of formats here](../../main-folders-and-files/file-formats/index.html))
 - Viewing the list of embedded animations
 - Hotkeys
 - Ability to write UserData and MotionRefs chunks (even if the model did not have them before)

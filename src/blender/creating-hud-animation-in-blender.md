@@ -4,7 +4,7 @@ This article is about creating an animation for a HUD object in Blender
 
 ## Beginning
 
-- First, check out the information about [.omf](../main-folders-and-files/file-formats/omf.md), .skl, and .skls formats (you can do that [here](../main-folders-and-files/file-formats/index.html))
+- First, check out the information about [.omf](../main-folders-and-files/file-formats/omf.md), .skl, and .skls formats ([list of file formats](../main-folders-and-files/file-formats/index.html))
 - To create the animation, we need a hand model (can be found in this [article](../modding-tools-and-resources/resources/models-objects-locations.md)) and a model of what will be animated in the hands (a weapon or other object).
 
 ### Preparing the HUD model
@@ -71,7 +71,7 @@ For easier animation, I suggest creating help bones.
 Copy a weapon bone, remove the parent and add the "Child of" modifier to that bone and select some functional bone (e.g. a bolt bone) as a target. Further, if you add "Copy Transform" modifier to the hand bone and select the Help bone created as a target, it will simplify the animation (for example, when the bolt moves, the hand will move too).
 
 - P.P.S.
-The engine currently supports the [following list](../configs/files/w_(weapon).ltx.md) of animations (First write the hand animation, and after the comma the weapon animation (if no weapon animation is specified, the idle weapon animation will be used))
+The engine currently supports the [following list](../configs/items/weapons/w_(weapon).ltx.md) of animations (First write the hand animation, and after the comma the weapon animation (if no weapon animation is specified, the idle weapon animation will be used))
 
 Once created, you can export the animations to .skl, .skls, or [.omf](../main-folders-and-files/file-formats/omf.md)
 To export animations to [.omf](../main-folders-and-files/file-formats/omf.md) you must:

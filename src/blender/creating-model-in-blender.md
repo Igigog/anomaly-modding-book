@@ -59,7 +59,7 @@ In the N-panel there should be a tab "X-Ray" in it unfolds the list "Viewer" and
 ![viewer-n-panel](blender-images/viewer-section.png)
 
 The Blender explorer window opens. Go to our unpacked folder with the game files (namely the folder "meshes").
-The character models you need are in the "actors" folder, where the faction models are sorted into folders. [(More about the structure of folders, main folders and files you can learn here)](../main-folders-and-files/README.md)
+The character models you need are in the "actors" folder, where the faction models are sorted into folders. [(More about the structure of folders, main folders and files you can learn here)](../main-folders-and-files/index.html)
 ![viewer-browser](blender-images/viewer-section-file-browser.png)
 
 Select the desired folder with the models and click on the "Open Folder" button.
@@ -201,11 +201,11 @@ There is no point in telling about each point here. (there is a separate section
 
 The items we need for the model now are:
 
-- Shader (This setting is responsible for the appearance of the surface.)
-- Compile (Here are descriptions of the settings that the level geometry compiler uses)
-- Material (Here you can select surface materials)
+- [Shader](../main-folders-and-files/shaders-list/shaders-list.md) (This setting is responsible for the appearance of the surface.)
+- [Compile](../main-folders-and-files/shaders-list/compiler-shaders-list.md) (Here are descriptions of the settings that the level geometry compiler uses)
+- [Material](../main-folders-and-files/shaders-list/materials-list.md) (Here you can select surface materials)
 
-Select the shaders you want. ([For a list of shaders, click here](../main-folders-and-files/shaders-list/README.md))
+Select the shaders you want.
 
 Well, the model setup in Blender is done. Congratulations!
 
@@ -216,4 +216,4 @@ To check the model you can go the following ways:
 
 - Load the model into the SDK and check
 - Export the model in .ogf format and add it directly to the game.
-- [Check the model and parameters through third-party programs](../modding-tools/modding-tools.md)
+- [Check the model and parameters through third-party programs](../modding-tools-and-resources/modding-tools/modding-tools.md)

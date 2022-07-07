@@ -103,7 +103,12 @@ The versions of the SDK tools may differ depending on the version of the SDK its
 
 ## Dialogs
 
- - [S.T.A.L.K.E.R. Dialog Editor Extended](https://www.moddb.com/mods/call-of-chernobyl/addons/stalker-dialog-editor-extended-german) - Allows you to edit and create dialogs.
+- [S.T.A.L.K.E.R. Dialog Editor Extended](https://www.moddb.com/mods/call-of-chernobyl/addons/stalker-dialog-editor-extended-german) - Allows you to edit and create dialogs.
+
+## Sounds
+
+- [Audacity](https://www.audacityteam.org/)
+- [Sound Attribute Viewer And Tweaker](http://www.metacognix.com/files/stlkrsoc/SAVandT_1.1.7z) - Simple program that can reduce the work needed to view and/or edit STALKER sound file attributes used by all three STALKER games to determine initial volume, volume drop-off, and sensitivity of NPCs to the sounds.
 
 ## Animations
 

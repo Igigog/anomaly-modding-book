@@ -1,7 +1,7 @@
 # .OMF (Open Motions Format)
 
 ## About:
-A specialized S.T.A.L.K.E.R. game format containing animations. This is a separate dedicated file used in conjunction with [.ogf](file-formats/.ogf.md) models. Was created in order to optimize process when some different models use the same list of animations.
+A specialized S.T.A.L.K.E.R. game format containing animations. This is a separate dedicated file used in conjunction with [.ogf](../file-formats/README.md) models. Was created in order to optimize process when some different models use the same list of animations.
 
 ## Example:
     stalker_scripts_animation.omf
