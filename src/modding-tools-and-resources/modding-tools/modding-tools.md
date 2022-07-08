@@ -28,6 +28,7 @@ Software to unpack gamedata
 
 - converter.exe (tools/) - Converts files from one format to another.
 - [X-Ray Export Tool](https://github.com/VaIeroK/XrayExportTool) - A simple exporter of [.obj](../../main-folders-and-files/file-formats/object.md) format to various other formats
+    - [More](xray-export-tool.md)
 
 ## SDK's
 
@@ -169,6 +170,10 @@ The versions of the SDK tools may differ depending on the version of the SDK its
 
 - [DB_Compressor by d_μaμ](https://cdn.discordapp.com/attachments/616764067670917131/846799604438532107/DB_Compressor.rar)
 - [xrCompress](https://ap-pro.ru/forums/topic/3500-obnovlyonnyy-xrcompress/)
+
+## Mod Creating
+
+- [FOMOD Creation Tool](https://drive.google.com/file/d/1MGaRpx0bUMgmWoZy1BHBWSMaaed7aAnP/view?usp=sharing)
 
 ## Formats
 
