@@ -164,7 +164,8 @@ The versions of the SDK tools may differ depending on the version of the SDK its
 
 ## Compilers
 
-- [Universal x64 level compilers](https://drive.google.com/file/d/1ZR8bnMkTGqFiZgGE7DtHCRYfSgj0GrPz/view)
+- [Universal x64 level compilers](https://drive.google.com/file/d/1ZR8bnMkTGqFiZgGE7DtHCRYfSgj0GrPz/view) - Universal level compiler that supports the compilation format for games of all series and has many keys to compile
+    - [More](universal-x64-level-compilers.md)
 
 ## .db/.xdb archivers
 

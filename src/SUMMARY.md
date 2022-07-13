@@ -60,6 +60,8 @@
         - [THM Editor by Valerok](modding-tools-and-resources/modding-tools/thm-editor-by-valerok.md)
         - [OMF Editor by Valerok](modding-tools-and-resources/modding-tools/omf-editor-by-valerok.md)
         - [OGF Editor by Valerok](modding-tools-and-resources/modding-tools/ogf-editor-by-valerok.md)
+        - [X-Ray Export Tool](modding-tools-and-resources/modding-tools/xray-export-tool.md)
+        - [Universal x64 level compilers](modding-tools-and-resources/modding-tools/universal-x64-level-compilers.md)
     - [Resources](modding-tools-and-resources/resources/README.md)
         - [Audio](modding-tools-and-resources/resources/audio.md)
         - [Models](modding-tools-and-resources/resources/models-objects-locations.md)

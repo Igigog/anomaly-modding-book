@@ -363,7 +363,7 @@ You can read about the parameters of the sounds [here](weapon_sounds.ltx.md)
 ### Camera
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
-| freeelook_z_offset_mul |  | 0.4 |  |
+| freeelook_z_offset_mul | Сamera displacement along the z-axis when the camera moves freely | 0.4 |  |
 
 ## Sources
 
