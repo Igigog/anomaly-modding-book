@@ -74,12 +74,14 @@ It requires Microsoft Visual C++ 2017 Redistributable x64 installed.
 
 ### Level Name
 
-Name - Select
+| Button | Description |
+---|---|
+| Select | Selects the level for compilation |
 
 #### Level Format
 
-Input Version:
-Output Version:
+- Input Version: (Input version of the level format)
+- Output Version: (Output version of the level format)
 
 ### Threads:
 
@@ -99,6 +101,8 @@ Output Version:
 
 #### Geometry Keys
 
+| Key | Description |
+---|---|
 | -silent | Close the program after compilation |
 | -sleep | Shutdown the computer after compilation |
 | -nohemi | Disable baking lighting |
@@ -112,6 +116,8 @@ Output Version:
 
 #### Grass
 
+| Key | Description |
+---|---|
 | -silent | Close the program after compilation |
 | -sleep | Shutdown the computer after compilation |
 | -nohemi | Disable baking lighting |
@@ -122,19 +128,27 @@ Output Version:
 
 Build Ai-Map
 
+| Key | Description |
+---|---|
 | -draft | Do not calculate covers |
 | -skipthm | Ignore missing thm-s and textures |
 
 Check Ai-Map
 
+| Key | Description |
+---|---|
 | -noverbose | Do not show info about single nodes |
 
 #### Spawn
 
+| Key | Description |
+---|---|
 | -no_separator_check | Disable some conflicts |
 
 ##### Additional spawns:
 
+| Buttons | Description |
+---|---|
 | Add |  |
 | Remove |  |
 | Clear |  |
@@ -151,6 +165,8 @@ Check Ai-Map
 
 #### Additional keys for geometry compilation
 
+| Key | Description |
+---|---|
 | -tex_rgba | do not use compression for stored textures |
 | -tex_bc7 | use BC7 compression for stored textures (format is only supported on DX11) |
 | -cform | export only collision level
@@ -175,6 +191,8 @@ Check Ai-Map
 
 #### Common additional keys
 
+| Key | Description |
+---|---|
 | -help | call help with a list of all startup keys |
 | -t <number> | set number of threads for multithreaded operations (does not work with the -tbb switch) |
 | -fsltx <file_name> | use your ltx instead of fsgame.ltx |
