@@ -36,6 +36,7 @@ This section describes the extensions that are found in the game files and the S
 | [.omf](omf.md) | A specialized S.T.A.L.K.E.R. game format containing animations. This is a separate dedicated file used in conjunction with .ogf models. Was created in order to optimize process when some different models use the same list of animations. |
 | .ppe | Postprocess file format. |
 | .ps_static | Particle systems. Flies, steam from pipes, etc. |
+| .prj | Format created by SDK to compile the location |
 | .scop | Save file. |
 | .scoc | Save file. |
 | .script | Game script. |

@@ -1,4 +1,4 @@
-# THM Editor by Valerok
+# Object Tool (or XRay Export Tool)
 ## Program Developer: Valerok
 
 ## About:

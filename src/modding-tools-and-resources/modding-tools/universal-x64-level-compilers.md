@@ -42,6 +42,10 @@ Universal level compiler that supports the compilation format for games of all s
 
 It requires Microsoft Visual C++ 2017 Redistributable x64 installed.
 
+## Setup
+
+The files must be moved to the root folder of the SDK
+
 ## Functionality
 
 ### Buttons

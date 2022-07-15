@@ -209,7 +209,7 @@ Parameters of the weapon are set for each sample in a separate *.ltx file, and c
 ### Parameters of the camera
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
-| cam_return | Возвращать ли камеру в изначальное положение | 0 |  |
+| cam_return | Whether to return the camera to its original position | 0 |  |
 | cam_relax_speed | camera return speed | 10 |  |
 | cam_dispersion | angle increase with each shot | 0.762 |  |
 | cam_dispersion_frac | barrel will rise by cam_dispersion*cam_dispersion_frac +- cam_dispersion*(1-cam_dispersion_frac) | 1.0 |  |

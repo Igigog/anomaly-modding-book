@@ -53,7 +53,7 @@ All the settings described below are stored in the file "user".ltx. (You can rea
 
 | Сommand | Command description | Command's argument |
 ---|---|---|
-| cl_dynamiccrosshair | Dynamic Sight (not working из-за прицела ввиде точки) | 'on/off' or '1/0' |
+| cl_dynamiccrosshair | Dynamic Sight (not working because of the dot sight) | 'on/off' or '1/0' |
 | g_crosshair_color | Changes the color of the crosshair | -(255,255,255,255) - (255,255,255,255) |
 | g_feel_grenade | "Sensitivity" grenade | 'on/off' or '1/0' |
 | hud_crosshair | Show crosshair | 'on/off' or '1/0' |
