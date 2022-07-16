@@ -73,16 +73,16 @@
         - [Addon installation and setup](blender/addon-installation-and-setup.md)
         - [Creating model in Blender](blender/creating-model-in-blender.md)
         - [Creating an animation in Blender for a HUD object](blender/creating-hud-animation-in-blender.md)
-        - [Creating a location in Blender and compiling it with the SDK](blender/creating-a-location-in-blender-and-compiling-it-with-the-sdk.md)
+        - [Creating a location in Blender and compiling it with the SDK](blender/creating-a-location-in-blender.md)
         - [Advanced settings](blender/addon-settings-options/README.md)
             - [Pathes](blender/addon-settings-options/pathes.md)
 
 - [Texturing](texturing/README.md)
     - [Creating and preparing textures](texturing/сreating-and-preparing-textures.md)
 
-- [Map]()
+- [Map](map/README.md)
     - [Why maps are bullshit]()
-    - [Compiling maps]()
+    - [Compiling maps](map/compiling-maps.md)
 
 - [Engine](engine/README.md)
     - [Console commands](engine/console-commands.md)

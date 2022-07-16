@@ -1,4 +1,4 @@
-# Creating a location in Blender and compiling it with the SDK
+# Creating a location in Blender
 
 ## For starters
 
@@ -24,26 +24,4 @@ Those objects that were created by yourself need to be exported in .obj format t
 
 Next you need to export the scene in the format .level
 
-And open it in your SDK.
-
-You need to add additional elements that you need, such as (for location assembly this is the minimum set):
-
-- 1 light source
-- 1 spawn element
-- 1 glow
-
-If the location will have stalkers, you need to create ai grid
-
-## Location building
-
-Created a folder with the name, which was specified in the scene properties.
-It contains all the data about the location. 
-
-## Compiling the location.
-
-In order to compile a location, you need to put it in the:
-
-- game_maps_single.ltx
-- game_levels.ltx
-
-After that you can use compilers that are included directly in SDK, or use third party compilers (such as [Universal x64 level compilers](../modding-tools-and-resources/modding-tools/universal-x64-level-compilers.md)).
+[Next, you need to build and compile the location](../map/compiling-maps.md).
