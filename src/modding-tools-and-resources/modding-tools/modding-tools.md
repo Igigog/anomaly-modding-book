@@ -106,6 +106,10 @@ The versions of the SDK tools may differ depending on the version of the SDK its
 
 - [S.T.A.L.K.E.R. Dialog Editor Extended](https://www.moddb.com/mods/call-of-chernobyl/addons/stalker-dialog-editor-extended-german) - Allows you to edit and create dialogs.
 
+## Parameters
+
+- [STLKObjectMan](https://drive.google.com/file/d/1OM2gZtj_Ubg7H03iI-Z_z3EAkwn1_S2R/view) - Universal parameters editor. Modifies *.ltx and *.xml files. (not compatible with Anomaly due to modified .ltx files)
+
 ## Sounds
 
 - [Audacity](https://www.audacityteam.org/)
@@ -178,4 +182,4 @@ The versions of the SDK tools may differ depending on the version of the SDK its
 
 ## Formats
 
-- [ChunckTool](https://sharedby.blomp.com/p4wGo4)
+- [ChunckTool](https://sharedby.blomp.com/p4wGo4) - The utility is intended for low-level work with chunks in files and allows to read, replace and add data.

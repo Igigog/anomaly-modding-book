@@ -30,6 +30,7 @@ All the settings described below are stored in the file "user".ltx. (You can rea
 | cl_cod_pickup_mode | Selecting items from the radius around the scope | 'on/off' or '1/0' |
 | disconnect | Ends the game | - |
 | time_factor | Ability to change the game time | 0.001 - 1000.0 |
+| jump_to_level | Moving to the selected level | k00_marsh - l01_escape - l02_garbage - l03_agroprom - k01_darkscape - l04_darkvalley - l05_bar - l06_rostok - l07_military - l08_yantar - l09_deadcity - l10_limansk - l10_radar - l10_red_forest - l11_hospital - l11_pripyat - l12_stancia - l12_stancia_2 - l13_generators - l03u_agr_underground - l04u_labx18 - l08u_brainlab - l10u_bunker - l12u_sarcofag - l12u_control_monolith - l13u_warlab - zaton - jupiter - jupiter_underground - pripyat - labx8 - k02_truck_cemetery - fake_start - y04_pole |
 
 
 #### Actor
