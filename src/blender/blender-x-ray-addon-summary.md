@@ -10,22 +10,27 @@ blender-xray is an addon for the 3D blender package (blender.org) that is design
 ## [Supported formats](https://github.com/PavelBlend/blender-xray/wiki#supported-formats)
 This table lists the X-Ray file formats that the addon can import/export.
 
-| Extension | Description | Import | Export | Remarks |
----|---|---|---|---|
-| [.object](../main-folders-and-files/file-formats/object.md) | Source objects | + | + |  |
-| [.anm](../main-folders-and-files/file-formats/anm.md) | Animated paths | + | + |  |
-| [.dm](../main-folders-and-files/file-formats/dm.md) | Detailed effect models | + | + |  |
-| .details | Detailed level models | + | + |  |
-| .skl | Skeletal animation | + | + |  |
-| .skls | Skeletal animations in a container | + | + |  |
-| .bones | Bone data | + | + |  |
-| .err | Geometry errors | + | + |  |
-| .level | List of scene objects in the SDK | + | + |  |
-| level | Game levels | + | + |  |
-| .ogf | Compiled objects | + | +* | *Experimental |
+| Extension | Description | Can Import | Can Export |
+---|---|---|---|
+| [.object](../main-folders-and-files/file-formats/object.md) | Source objects | Yes | Yes |
+| .skl | Skeletal animation | Yes | Yes |
+| .skls | Skeletal animations in a container | Yes | Yes |
+| .ogf | Compiled objects | Yes | Yes |
+| .omf | Game skeletal actions | Yes | Yes |
+| [.anm](../main-folders-and-files/file-formats/anm.md) | Animated paths | Yes | Yes |
+| .bones | Bones data | Yes | Yes |
+| [.dm](../main-folders-and-files/file-formats/dm.md) | Detailed effect models | Yes | Yes |
+| .details | Level details | Yes | Yes |
+| .level | List of scene objects in the SDK | Yes | Yes |
+| level | Game levels | Yes | Yes |
+| .part | Scene objects | Yes  | No |
+| .err | Error list | Yes  | No |
+
+
 | [.omf](../main-folders-and-files/file-formats/omf.md) | Compiled skeleton animations | + | + |  |
 
-## [Compatibility (Below are the versions of blender that support the addon. The addon is not tested in other versions of blender](https://github.com/PavelBlend/blender-xray/wiki#supported-blender-versions)):
+## [Compatibility](https://github.com/PavelBlend/blender-xray/wiki#supported-blender-versions)
+(Below are the versions of blender that support the addon. The addon is not tested in other versions of blender:
 
  2.77
  2.78

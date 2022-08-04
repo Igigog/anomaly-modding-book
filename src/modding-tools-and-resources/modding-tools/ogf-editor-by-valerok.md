@@ -1,7 +1,8 @@
-# OGF Editor by Valerok
-## Program Developer: Valerok
+# Modified OGF Editor by ValeroK
+## Program Developers: Mortany (Original Author), ValeroK
 
 ## About
+
 Modified tool for working with .ogf format
 
 ![ogf-editor](modding-tools-images/ogf-editor-by-valerok.png)
@@ -131,4 +132,5 @@ Editing the bone parameter
 | Rotation | Bone rotation |
 
 ## Sources
-[Source Code](https://github.com/VaIeroK/OGF-tool)
+[Source Code of Original OGF Editor by Mortany](https://github.com/mortany/OGF-tool)
+[Source Code of Modified OGF Editor by ValeroK](https://github.com/VaIeroK/OGF-tool)

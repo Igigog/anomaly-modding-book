@@ -57,9 +57,10 @@
 
 - [Modding Tools And Resouces](modding-tools-and-resources/README.md)
     - [Modding Tools](modding-tools-and-resources/modding-tools/modding-tools.md)
-        - [THM Editor by Valerok](modding-tools-and-resources/modding-tools/thm-editor-by-valerok.md)
-        - [OMF Editor by Valerok](modding-tools-and-resources/modding-tools/omf-editor-by-valerok.md)
-        - [OGF Editor by Valerok](modding-tools-and-resources/modding-tools/ogf-editor-by-valerok.md)
+        - [THM Editor](modding-tools-and-resources/modding-tools/thm-editor-by-i-love-kfc.md)
+        - [Modified THM Editor](modding-tools-and-resources/modding-tools/thm-editor-by-valerok.md)
+        - [Modified OMF Editor](modding-tools-and-resources/modding-tools/omf-editor-by-valerok.md)
+        - [Modified OGF Editor](modding-tools-and-resources/modding-tools/ogf-editor-by-valerok.md)
         - [X-Ray Export Tool](modding-tools-and-resources/modding-tools/xray-export-tool.md)
         - [Universal x64 level compilers](modding-tools-and-resources/modding-tools/universal-x64-level-compilers.md)
     - [Resources](modding-tools-and-resources/resources/README.md)
@@ -72,10 +73,13 @@
         - [Blender X-Ray Addon](blender/blender-x-ray-addon-summary.md)
         - [Addon installation and setup](blender/addon-installation-and-setup.md)
         - [Creating model in Blender](blender/creating-model-in-blender.md)
-        - [Creating an animation in Blender for a HUD object](blender/creating-hud-animation-in-blender.md)
         - [Creating a location in Blender](blender/creating-a-location-in-blender.md)
         - [Advanced settings](blender/addon-settings-options/README.md)
             - [Pathes](blender/addon-settings-options/pathes.md)
+
+- [Animating]()
+    - [Blender](blender/README.md)
+        - [Creating an animation in Blender for a HUD object](blender/creating-hud-animation-in-blender.md)
 
 - [Texturing](texturing/README.md)
     - [Creating and preparing textures](texturing/сreating-and-preparing-textures.md)

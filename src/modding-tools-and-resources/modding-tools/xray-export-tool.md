@@ -1,26 +1,41 @@
 # Object Tool (or XRay Export Tool)
-## Program Developer: Valerok
+## Program Developers: RedPandaProject (BearIvan and other) (Original Authors), ValeroK
 
 ## About:
 
 Tool for fast editing and exporting raw stalker formats
 
+![object-tool](modding-tools-images/object-tool-by-valerok.png)
+
 ## Features
 
 - Uncompressed ogf export (HQ Geometry+)
+- Removed the limit on the maximum number of vertexes in 65535
 - HQ Geometry with patches, exports better than SDK
-- Save and load .bones settings
-- Load, save, delete skls animations
+- Save and load [.bones]() settings
+- Load, save, delete [.skls]() animations
 - Export animations in 8 bit, 16 bit and uncompressed
 - Optimization of meshes with the same textures and shaders is disabled by default (they will not merge into one when exported so you can edit them in the OGF Editor)
 - Tuning and collision generation
-- Ability to resize models and animations when exporting, keeping the modifier in .object
-- Ability to assign to .object format
+- Ability to resize models and animations when exporting, keeping the modifier in [.object]()
+- Ability to assign to [.object]() format
 - Editing Userdata
 - Editing LOD
 - Editing Motion refs
 - Export models with original normals without X-Ray anti-aliasing groups
-- Generating boat models
+- Generating LOD models
+
+| Supported formats |
+---|
+| .object |
+| .ogf |
+| .omf |
+| .skl |
+| .skls |
+| .bones |
+| .dm |
+| .obj (wavefront) |
+| .ltx (bone parts) |
 
 ## Functionality
 
@@ -28,8 +43,9 @@ Tool for fast editing and exporting raw stalker formats
 
 - F3 - Export
 - F4 - Load
-- F5 - Quick Save .object
+- F5, Ctrl+S - Quick Save .object
 - F6 - Save
+- Ctrl+Del - Closing the current process
 
 ### Buttons
 
@@ -37,10 +53,12 @@ Tool for fast editing and exporting raw stalker formats
 
 | Button | Description |
 ---|---|
-| Load | Imports the selected .object, .skl/.skls, .bones, Bone Parts file |
-| Save | Saves the file as a .object, .skl, .skls, .bones, Bone Parts file |
+| Load | Imports the selected .object, .skl/.skls, .bones, Bone Parts, Motions Refs, User Data |
+| Save | Save file |
+| Save As | Saves the file as a .object, .skl, .skls, .bones, Bone Parts file |
 | Export | Exports the file as an .ogf, .omf, .object, .dm |
 | Delete | Deletes skls/ Make bone parts to default |
+| Batch Convert | From ltx/ From File Dialog (To OGF/ To OMF)/ From Folder Dialog (To OGF/ To OMF) |
 | Exit | Exit | Exit program
 
 - #### Tools
@@ -49,11 +67,30 @@ Tool for fast editing and exporting raw stalker formats
 ---|---|
 | Surface Params | Enable all 2 sided/Disable all 2 sided |
 | Shape Params | Generate Shapes/Type Helper (All None - All Box - All Sphere - All Cylinder) |
+| Generate Shapes | Generates shapes for bones |
 | Generate LOD | Open the LOD generation tab |
+| Import Object Params | Imports parameters from another object |
+
+- #### Object Info
+
+Outputs information about the loaded object
 
 - #### Help
 
-Outputs helpful information
+Outputs useful information about aspects and settings of the program
+
+- #### Settings
+
+The default settings menu, where you can set the default values of the parameters, as well as activate additional functions, such as:
+
+| Checkboxes | Description |
+---|---|
+| Use No Compress motions (Need STCoP Reader) | Activates a new animation compression option, by selecting which animations will be exported without compression. Requires a commit in the engine from STCoP WP |
+| Program debugging | Activates the tab with buttons for debugging |
+
+| Field | Description |
+---|---|
+| Game Mtl path: | Path to gamemtl.xr file. After that you can select and apply materials to the bones (Bones tab) |
 
 ### Sections
 
@@ -67,6 +104,7 @@ Outputs helpful information
 ---|---|
 | 8 bit | Compression animation for the SoC format |
 | 16 bit | Compression animation for CoP format |
+| Use build-in motions | When activated, the program will use the downloaded animations instead of the motion references. If there are no animations, the reference animations will be used, if any. When deactivated, the loaded animations will be ignored. Affects everything except Object saves. |
 
 | Field | Description |
 ---|---|
@@ -85,6 +123,19 @@ Outputs helpful information
 | Make Progressive Meshes | Creates progressive meshes when exporting OGF |
 | Make Stripify Meshes | Includes optimized vertices and faces on meshes (Optimize meshes for old DirectX and video cards) |
 | Optimize Surfaces | Combines meshes with the same texture and shader names |
+| SoC bone export | When exporting a dynamic OGF, the polygon will be affected by a maximum of 2 bones. When disabled, a CoP influence of 4 bones will be enabled (not supported in SoC). |
+
+###### Smooth Type
+
+| Checkboxes | Description |
+---|---|
+| SoC | Smoothing type for SoC |
+| CS\CoP | Smoothing type for CS/CoP |
+| Normals | Using the original Split normal, new format |
+
+###### Log
+
+Outputs the program log
 
 - #### Surfaces
 
@@ -114,6 +165,11 @@ Texture Name
 ---|---|
 | Shape Type: | None - Box - Sphere - Cylinder |
 
+| Field | Description |
+---|---|
+| Material | Determines the material of the bone on impact/collision, etc. Which affects sound and particles |
+| Mass | Bone mass |
+
 - #### Motions
 
 Shows the animations that are contained in the file
@@ -133,5 +189,5 @@ Shows Used Data file
 | LOD Path | Path to LOD |
 
 ## Sources
-
-[Source Code](https://github.com/VaIeroK/XrayExportTool)
+[Original Source Code by RedPandaProject (BearIvan and other)](https://github.com/RedPandaProjects/XRayEngine)
+[Modified Source Code by ValeroK](https://github.com/VaIeroK/XrayExportTool)

@@ -1,13 +1,6 @@
 # Audio
 
-## About
-
-
-## Music
-
 ### All the soundtrack from the original trilogy
-
-#### List
 
 | Artist | Soundtrack name | Preview |
 ---|---|---|
@@ -74,10 +67,10 @@
 
 | Artist | Soundtrack name | Preview |
 ---|---|---|
-| Gates of Morheim | Dying Machine |
-| Gates of Morheim | Mechanical Consciousness |
-| Gates of Morheim | Steel Dawn |
-| Gates of Morheim | Skyways |
-| Gates of Morheim | The Above |
-| Gates of Morheim | Fog |
-| Gates of Morheim | Home |
+| Gates of Morheim | Dying Machine | [Preview](https://gatesofmorheim.bandcamp.com/track/dying-machine-2) |
+| Gates of Morheim | Mechanical Consciousness | [Preview](https://gatesofmorheim.bandcamp.com/track/mechanical-consciousness) |
+| Gates of Morheim | Steel Dawn | [Preview](https://gatesofmorheim.bandcamp.com/track/steel-dawn) |
+| Gates of Morheim | Skyways | [Preview](https://gatesofmorheim.bandcamp.com/track/skyways) |
+| Gates of Morheim | The Above | [Preview](https://gatesofmorheim.bandcamp.com/track/the-above-2) |
+| Gates of Morheim | Fog | [Preview](https://gatesofmorheim.bandcamp.com/track/fog) |
+| Gates of Morheim | Home | [Preview](https://gatesofmorheim.bandcamp.com/track/home) |

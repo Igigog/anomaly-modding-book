@@ -1,12 +1,12 @@
-# THM Editor by Valerok
-## Program Developer: Valerok
+# Modified THM Editor by ValeroK
+## Program Developers: i-love-kfc (Original Author), ValeroK
 
 ## About:
 [THM Editor by Valerok](https://github.com/VaIeroK/THM-Editor) - The THM Editor from i-love-kfc was taken as the basis, finalized and fixed. Allows you to work with [.thm](../../main-folders-and-files/file-formats/thm.md) files.
 
 <div style="text-align: center;">
 
-![thm-editor](modding-tools-images/thm-editor-by-valerok.png)
+![thm-editor-by-valerok](modding-tools-images/thm-editor-by-valerok.png)
 
 </div>
 
@@ -19,7 +19,7 @@
 ### Hotkeys
 
 - F4 - Open file
-- F5 and Ctrl+S - Save file
+- F5, Ctrl+S - Save file
 - F6 - Save as
 
 ### Buttons
@@ -160,4 +160,5 @@
 - #### Normal Map
 
 ## Sources
-[Source Code](https://github.com/VaIeroK/THM-Editor)
+[Source Code of Original THM Editor by i-love-kfc](https://gitlab.com/i-love-kfc/thm-editor/)
+[Source Code of Modified THM Editor by ValeroK](https://github.com/VaIeroK/THM-Editor)
