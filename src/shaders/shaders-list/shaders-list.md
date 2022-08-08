@@ -10,7 +10,7 @@ This section contains a list and description of the shaders that are available i
 | Shaders for static objects | Description |
 ---|---|
 | zfill |  |
-| xwindow |  |
+| xwindow | Old unused glass shader |
 | selflight | self-lighting material |
 | glass |  |
 | friendly_indicator |  |

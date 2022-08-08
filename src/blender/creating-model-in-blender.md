@@ -201,9 +201,9 @@ There is no point in telling about each point here. (there is a separate section
 
 The items we need for the model now are:
 
-- [Shader](../main-folders-and-files/shaders-list/shaders-list.md) (This setting is responsible for the appearance of the surface.)
-- [Compile](../main-folders-and-files/shaders-list/compiler-shaders-list.md) (Here are descriptions of the settings that the level geometry compiler uses)
-- [Material](../main-folders-and-files/shaders-list/materials-list.md) (Here you can select surface materials)
+- [Shader](../shaders/shaders-list/shaders-list.md) (This setting is responsible for the appearance of the surface.)
+- [Compile](../shaders/shaders-list/compiler-shaders-list.md) (Here are descriptions of the settings that the level geometry compiler uses)
+- [Material](../shaders/shaders-list/materials-list.md) (Here you can select surface materials)
 
 Select the shaders you want.
 

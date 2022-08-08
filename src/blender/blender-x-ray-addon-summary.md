@@ -16,7 +16,7 @@ This table lists the X-Ray file formats that the addon can import/export.
 | .skl | Skeletal animation | Yes | Yes |
 | .skls | Skeletal animations in a container | Yes | Yes |
 | .ogf | Compiled objects | Yes | Yes |
-| .omf | Game skeletal actions | Yes | Yes |
+| [.omf](../main-folders-and-files/file-formats/omf.md) | Game skeletal actions | Yes | Yes |
 | [.anm](../main-folders-and-files/file-formats/anm.md) | Animated paths | Yes | Yes |
 | .bones | Bones data | Yes | Yes |
 | [.dm](../main-folders-and-files/file-formats/dm.md) | Detailed effect models | Yes | Yes |
@@ -25,9 +25,6 @@ This table lists the X-Ray file formats that the addon can import/export.
 | level | Game levels | Yes | Yes |
 | .part | Scene objects | Yes  | No |
 | .err | Error list | Yes  | No |
-
-
-| [.omf](../main-folders-and-files/file-formats/omf.md) | Compiled skeleton animations | + | + |  |
 
 ## [Compatibility](https://github.com/PavelBlend/blender-xray/wiki#supported-blender-versions)
 (Below are the versions of blender that support the addon. The addon is not tested in other versions of blender:

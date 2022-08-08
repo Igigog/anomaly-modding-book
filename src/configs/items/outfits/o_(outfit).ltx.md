@@ -34,7 +34,7 @@
 | description | Description in inventory | csky_light_novice_outfit_description |  |
 | slot | Inventory slot number | 6 |  |
 
-## Параметры визуала
+## Visual parameters
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 ---|---|---|---|
 | player_hud_section |  | actor_hud_cs1 |  |
@@ -59,7 +59,7 @@
 | upgr_icon_width | Width of the icon in the repair window | 309 | Specified in pixels |
 | upgr_icon_height | icon height in the repair window | 142 | Specified in pixels |
 
-### Параметры брони
+### Armor parameters
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 ---|---|---|---|
 | artefact_count | Number of artifact cells initially available | 1 |  |
@@ -70,7 +70,7 @@
 | additional_inventory_weight | Maximum weight at which the protagonist can walk | 5 | Specified in kilograms |
 | additional_inventory_weight2 | Additional carrying weight | 5 | Specified in kilograms |
 
-#### Параметры, которые влияют на протоганиста
+#### Parameters that affect the protoganist
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 ---|---|---|---|
 | bones_koeff_protection | Parameter coefficients of the "persistence" of the protagonist's bones in the suit | actor_armor_cs1 |  |

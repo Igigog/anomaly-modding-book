@@ -24,6 +24,7 @@ Tool for fast editing and exporting raw stalker formats
 - Editing Motion refs
 - Export models with original normals without X-Ray anti-aliasing groups
 - Generating LOD models
+- Removed the limit on the number of polygons for static meshes
 
 | Supported formats |
 ---|
@@ -190,4 +191,5 @@ Shows Used Data file
 
 ## Sources
 [Original Source Code by RedPandaProject (BearIvan and other)](https://github.com/RedPandaProjects/XRayEngine)
+
 [Modified Source Code by ValeroK](https://github.com/VaIeroK/XrayExportTool)

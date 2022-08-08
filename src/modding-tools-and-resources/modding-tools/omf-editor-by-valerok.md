@@ -103,4 +103,5 @@ Modified tool for working with [.omf](../../main-folders-and-files/file-formats/
 
 ## Sources
 [Source code of Original Omf Editor by Mortany](https://github.com/mortany/omf_editor)
+
 [Source code of Modified Omf Editor by ValeroK](https://github.com/VaIeroK/Omf-Editor)

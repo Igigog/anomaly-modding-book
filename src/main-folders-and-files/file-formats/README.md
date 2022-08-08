@@ -31,7 +31,7 @@ This section describes the extensions that are found in the game files and the S
 | [.ltx](../../configs/ltx-files.md/) | Configuration file, custom ini-like format |
 | [.object](object.md) | These files are intended for the X-Ray SDK to store 3D content in its original, uncompressed, lossless form. They are source files that store information before compilation into other game compressed formats.  |
 | .ogf | Compiled objects |
-| .ogg | The sound format used by the game engine. |
+| [.ogg](ogg.md) | The sound format used by the game engine. |
 | .ogm | The video format used by the game engine. |
 | [.omf](omf.md) | A specialized S.T.A.L.K.E.R. game format containing animations. This is a separate dedicated file used in conjunction with .ogf models. Was created in order to optimize process when some different models use the same list of animations. |
 | .ppe | Postprocess file format. |

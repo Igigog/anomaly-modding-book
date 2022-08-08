@@ -77,6 +77,7 @@ The versions of the SDK tools may differ depending on the version of the SDK its
 - Perticle Editor
 - Postprocess Editor
 - ShaderEditor
+- xrLC_net - Level compiler by machines connected to a local network
 
 ## 3D packages
 

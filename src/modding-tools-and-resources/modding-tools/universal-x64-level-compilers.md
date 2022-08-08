@@ -17,7 +17,7 @@ Universal level compiler that supports the compilation format for games of all s
 - Geometry compiler (SoC, CS, CoP)
 - Grass compiler (SoC, CS, CoP)
 - AI grid compiler (SoC, CS, CoP)
-- Spawn Compiler (CoP)
+- Spawn Compiler (CoP, CS)
 
 ## Features
 
@@ -173,7 +173,8 @@ Check Ai-Map
 ---|---|
 | -tex_rgba | do not use compression for stored textures |
 | -tex_bc7 | use BC7 compression for stored textures (format is only supported on DX11) |
-| -cform | export only collision level
+| -cform | export only collision level |
+| -nocform | skips the creation of level.cform |
 | -notess | do not tessellate the geometry |
 | -noweld | disable small triangles welding |
 | -nomerge | skip the Merging geometry stage |
@@ -189,9 +190,9 @@ Check Ai-Map
 | -saveobj_cform | save all the collision level in the obj file |
 | -qual_draft | set the quality of the scene in Draft (does not affect the exposed shaders) |
 | -qual_high | set the quality of the scene to High (does not affect the exposed shaders) |
-| -ppm number | set the quality of lightmaps instead of the value in KFK |
-| -weld_dist number | set Weld distance instead of the KFD value |
-| -hemi_bias number | set the offset of the beam position when baking hemi (default: 0.1, original: 0.001) |
+| -ppm <number> | set the quality of lightmaps instead of the value in KFK |
+| -weld_dist <number> | set Weld distance instead of the KFD value |
+| -hemi_bias <number> | set the offset of the beam position when baking hemi (default: 0.1, original: 0.001) |
 
 #### Common additional keys
 
