@@ -6,6 +6,8 @@ Introductory book for Stalker Anomaly modding
 # Why was this book made?
 The book is for people who need some help with modding and you can find it in this book!
 
+Also, hardcore modding dudes are also welcome.
+
 # Found something blank, incomplete, or wrong?
 The help of the community is always welcome. 
 You can contribute to the development of this book, which will be used as a base in modding. 
