@@ -189,15 +189,16 @@ All the settings described below are stored in the file "user".ltx. (You can rea
 ---|---|---|
 | r1_detail_textures | Detailed textures on static lighting | 'on/off' or '1/0' |
 | r1_dlights | Dynamic light sources on static lighting | 'on/off' or '1/0' |
-| r1_dlights_clip |  |  |
+| r1_dlights_clip | Sets the display radius (visibility range) of
+of dynamic light sources |  |
 | r1_fog_luminance | Fog brightness | 0.2 - 5.0 |
-| r1_glows_per_frame |  |  |
-| r1_lmodel_lerp |  |  |
-| r1_pps_u |  |  |
-| r1_pps_v |  |  |
+| r1_glows_per_frame | Controls the maximum number of light sources |  |
+| r1_lmodel_lerp | Controls Linear Lighting Interpolation |  |
+| r1_pps_u | Controls Per Pixel Shader value |  |
+| r1_pps_v | Controls Per Pixel Shader value |  |
 | r1_software_skinning |  |  |
-| r1_ssa_lod_a |  |  |
-| r1_ssa_lod_b |  |  |
+| r1_ssa_lod_a | Controls the level of detail (LOD) in the game world |  |
+| r1_ssa_lod_b | Controls the level of detail (LOD) in the game world |  |
 
 ##### R2 (DX9)
 
@@ -206,7 +207,7 @@ All the settings described below are stored in the file "user".ltx. (You can rea
 | r2_aa | "Pseudo-smoothing" on dynamic lighting | 'on/off' or '1/0' |
 | r2_aa_break | Distance at which the "Pseudo-smoothing" effect works |  |
 | r2_aa_kernel | The basic value of the "Pseudo-smoothing" effect |  |
-| r2_aa_weight |  |  |
+| r2_aa_weight | Controls the blurring of the fake AA more accurately |  |
 | r2_allow_r1_lights |  |  |
 | r2_detail_bump | Detail textures | 'on/off' or '1/0' |
 | r2_dof |  |  |
@@ -223,13 +224,14 @@ All the settings described below are stored in the file "user".ltx. (You can rea
 | r2_gloss_factor | Surface gloss level | 0.001 - 10.0 |
 | r2_gloss_min | Minimal gloss level | 0.001 - 1.0 |
 | r2_ls_bloom_fast | In theory, this should enable faster bloom implementation, yet it doesn't work correctly | 'on/off' or '1/0' |
-| r2_ls_bloom_kernel_b |  |  |
+| r2_ls_bloom_kernel_b | Determines the level of shading (haze) from the
+HDR and Bloom |  |
 | r2_ls_bloom_kernel_g | Bloom 'radius'. Higher values results in softer bloom | 1.0 - 7.0 |
 | r2_ls_bloom_kernel_scale | Bloom scale | 0.05 - 2.0 |
 | r2_ls_bloom_speed |  |  |
 | r2_ls_bloom_threshold | Brightness threshold | 0.0 - 1.0 |
-| r2_ls_depth_bias |  |  |
-| r2_ls_depth_scale |  |  |
+| r2_ls_depth_bias | Controls the range of light sources |  |
+| r2_ls_depth_scale | Controls the effect of lighting on shadows |  |
 | r2_ls_dsm_kernel |  |  |
 | r2_ls_psm_kernel |  |  |
 | r2_ls_squality |  |  |
@@ -263,14 +265,14 @@ All the settings described below are stored in the file "user".ltx. (You can rea
 | r2_sun_depth_near_scale |  |  |
 | r2_sun_details | Shadows of grass and other detailed objects | 'on/off' or '1/0' |
 | r2_sun_far |  |  |
-| r2_sun_focus |  |  |
+| r2_sun_focus | Focus of sun shadows | 'on/off' or '1/0' |
 | r2_sun_lumscale | Sun light brightness | 0.0 - 3.0 |
 | r2_sun_lumscale_amb | Ambient light brightness | 0.0 - 3.0 |
 | r2_sun_lumscale_hemi | Sky light brightness | 0.0 - 3.0 |
-| r2_sun_near |  |  |
+| r2_sun_near | The location of the sun from the earth |  |
 | r2_sun_near_border |  |  |
 | r2_sun_quality | Shadow filter quality | st_opt_low/st_opt_medium/st_opt_high/st_opt_ultra/st_opt_extreme |
-| r2_sun_tsm |  |  |
+| r2_sun_tsm | Clarity of sun shadows |  |
 | r2_sun_tsm_bias |  |  |
 | r2_sun_tsm_proj |  |  |
 | r2_sunshafts_min | Min. sun rays intensity | 0.0 - 0.5 |
@@ -291,8 +293,8 @@ All the settings described below are stored in the file "user".ltx. (You can rea
 | r2_tonemap | Enables eye-adaptation | 'on/off' or '1/0' |
 | r2_tonemap_adaptation | Eye-adaptation speed | 0.0 - 10.0 |
 | r2_tonemap_amount |  |  |
-| r2_tonemap_lowlum |  |  |
-| r2_tonemap_middlegray |  |  |
+| r2_tonemap_lowlum | Controls the tone mapping effect on dark locations |  |
+| r2_tonemap_middlegray | Controls the overall appearance of the HDR effect |  |
 | r2_volumetric_lights | Volumetric light | 'on/off' or '1/0' |
 | r2_wait_sleep |  |  |
 | r2_water_reflections |  |  |

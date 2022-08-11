@@ -3,6 +3,8 @@
 ## About:
 Corrects DXT compression errors in [.bump](bump.md) and is generated only with SDK
 
+## Technical information:
+
 ### Format
 
 - RGB - Error correction for normal map (bump.dds) - Not necessary if you're using good quality normal map. It's generated with SDK

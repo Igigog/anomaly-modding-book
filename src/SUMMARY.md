@@ -15,6 +15,8 @@
     - [DLTX](addon-compatibility/dltx.md)
     - [Monkey patching](addon-compatibility/monkey-patching.md)
 
+- [Crash List](crashes/crashes-list.md)
+
 - [Main Folders And Files](main-folders-and-files/README.md)
     - [File Formats](main-folders-and-files/file-formats/README.md)
         - [.anm](main-folders-and-files/file-formats/anm.md)
@@ -24,6 +26,7 @@
         - [.dm](main-folders-and-files/file-formats/dm.md)
         - [.object](main-folders-and-files/file-formats/object.md)
         - [.omf](main-folders-and-files/file-formats/omf.md)
+        - [.ogg](main-folders-and-files/file-formats/ogg.md)
         - [.hom](main-folders-and-files/file-formats/hom.md)
         - [.efd](main-folders-and-files/file-formats/efd.md)
         - [.seq](main-folders-and-files/file-formats/seq.md)
@@ -85,7 +88,7 @@
     - [Introduction TO REDO](quests/introduction.md)
     - [DON'T USE WTF]()
 
-    - [Modding Tools And Resouces](modding-tools-and-resources/README.md)
+- [Modding Tools And Resouces](modding-tools-and-resources/README.md)
     - [Modding Tools](modding-tools-and-resources/modding-tools/modding-tools.md)
         - [THM Editor](modding-tools-and-resources/modding-tools/thm-editor-by-i-love-kfc.md)
         - [Modified THM Editor](modding-tools-and-resources/modding-tools/thm-editor-by-valerok.md)
