@@ -4,33 +4,42 @@ This section describes the main files and folders for the game
 
 ## Folders
 
-### Appdata
+<details>
+    <summary>Appdata</summary>
 
- - #### Logs
+ - ### Logs
 This is where the game logs are created and stored (log of loading objects, textures, etc.)
 
- - #### Savedgames
+ - ### Savedgames
 This is where game saves are created and stored. Inside are files with the extensions .scop and .scoc.
 
- - #### Screenshoots
+ - ### Screenshoots
 This is where game screenshots are created and stored
 
- - #### Shaders_cache
+ - ### Shaders_cache
 This is where the game shader cache is created and stored
 
-### Gamedata
+</details>
+
+<details>
+    <summary>Gamedata</summary>
 
 Folder with files from any game in the S.T.A.L.K.E.R. series. Initially it does not exist explicitly, all game data is "embedded" in the game, but when you install modifications and even patches the directory will be created. Gamedata overrides standard game files: if there are no files in it, often their base versions are used.
 
-### Textures Folder
+- ### Textures Folder
 
 This folder usually contains textures.
 
-### Objects Folder
+- ### Objects Folder
 
 Path to the folder with the original 3D objects and animations. Usually found in the X-Ray SDK in the rawdata\objects folder.
 
+</details>
+
 ## Files
+
+<details>
+    <summary>Main Files</summary>
 
 - ### "username".ltx
 
@@ -75,3 +84,5 @@ This file contains descriptions of the shader settings. EShader is the engine sh
 - ### CShader File
 
 This file contains descriptions of the settings used by the level geometry compiler (xrLC.exe). CShader is a compilation shader, specifying to the level compiler the properties of the final (game) level geometry. The source geometry, depending on the compiler shader, may have no visible or tangible (for collisions) geometry, have a different way of storing lighting, etc.
+
+</details>

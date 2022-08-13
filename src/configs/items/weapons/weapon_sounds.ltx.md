@@ -7,6 +7,10 @@
 | Sound | Name of the sound | Volume (0.0 - 1.0) | Delay in seconds |
 
 ## General parameters
+
+<details>
+    <summary>General parameters</summary>
+
 | Parameter Name | Parameter Description | Example value |
 ---|---|---|
 | snd_draw | Draw Sound | weapons\bino_draw |
@@ -17,7 +21,13 @@
 | snd_switch | sound of switching firing mode | weapons\ak74\ak74_switch |
 | snd_close |  | weapons\generic_close |  |
 
+</details>
+
 ## Gunshot sounds
+
+<details>
+    <summary>Gunshot sounds</summary>
+
 | Parameter Name | Parameter Description | Example value |
 ---|---|---|
 | snd_shoot | shot sound | weapons\as50\as50_shoot |
@@ -28,13 +38,25 @@
 | snd_shoot_grenade | the sound of the underbarrel grenade launcher | weapons\explo\grenade_launch_explo |
 | snd_empty | sound when the magazine is empty | weapons\gen_empty |
 
+</details>
+
 ## Sounds for the detector
+
+<details>
+    <summary>Sounds for the detector</summary>
+
 | Parameter Name | Parameter Description | Example value |
 ---|---|---|
 | found_snd |  | detectors\DA-2_beep1 |
 | catch_snd |  | detectors\DA-2_beep1 |
 
+</details>
+
 ## Sounds for grenades/grenade launchers
+
+<details>
+    <summary>Sounds for grenades/grenade launchers</summary>
+
 | Parameter Name | Parameter Description | Example value |
 ---|---|---|
 | snd_explode | the sound of an explosion | grenade_f1_snd_explode |
@@ -43,7 +65,13 @@
 | snd_close_weapon | the sound of closing the drum/weapon magazine | weapons\rg6\rg6_reload_end |
 | snd_fly_sound | sound of rocket flight | weapons\rocket_fly |
 
+</details>
+
 ## Reload sounds
+
+<details>
+    <summary>Reload sounds</summary>
+
 | Parameter Name | Parameter Description | Example value |
 ---|---|---|
 | snd_reload | Sound of not fully reloading | weapons\abakan\abakan_reload |
@@ -54,7 +82,13 @@
 | snd_bore | the sound of boring | weapons\generic\eastern_bore |
 | snd_bore1 | bore 1 sound | weapons\mp5_bore |
 
+</details>
+
 ## Different levels of sound
+
+<details>
+    <summary>Different levels of sound</summary>
+
 | Parameter Name | Parameter Description | Example value |
 ---|---|---|
 | snd_1_layer |  | weapons\9a91\9a91_shoot |
@@ -69,3 +103,5 @@
 | snd_2_layer |  | weapons\_distance_shooting_mid\g3sg1_distant |
 | snd_3_layer |  | weapons\_distance_shooting_far\g3sg1_distant |
 | snd_4_layer |  | weapons\_distance_shooting_far\saiga_distant |
+
+</details>

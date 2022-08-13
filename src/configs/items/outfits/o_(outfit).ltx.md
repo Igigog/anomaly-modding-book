@@ -1,6 +1,10 @@
 # o_*Outfit*.ltx Config File
 
 ### General parameters
+
+<details>
+    <summary>General parameters</summary>
+
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 ---|---|---|---|
 | GroupControlSection |  | spawn_group |  |
@@ -16,9 +20,25 @@
 | helmet_avaliable	 | Is a helmet available for this costume | true | true (Yes) - false (No) |
 | backpack_avaliable | Is a backpack available for this suit | true | true (Yes) - false (No) |
 | can_trade |  | true |  |
+
+</details>
+
+## Sound parameters
+
+<details>
+    <summary>AI parameters</summary>
+
+| Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
+---|---|---|---|
 | snd_on_take |  | outfit |  |
 
+</details>
+
 ## Outfit parameters in inventory
+
+<details>
+    <summary>Outfit parameters in inventory</summary>
+
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 ---|---|---|---|
 | full_icon_name | the icon of the protagonist in a full-suit | npc_icon_svoboda_light_outfit | Not used (used only in the SoC inventory) |
@@ -34,7 +54,13 @@
 | description | Description in inventory | csky_light_novice_outfit_description |  |
 | slot | Inventory slot number | 6 |  |
 
+</details>
+
 ## Visual parameters
+
+<details>
+    <summary>Visual parameters</summary>
+
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 ---|---|---|---|
 | player_hud_section |  | actor_hud_cs1 |  |
@@ -42,7 +68,13 @@
 | actor_visual |  | actors\stalker_nebo\stalker_nebo_1 |  |
 | npc_visual |  | actors\stalker_nebo\stalker_nebo_1 |  |
 
+</details>
+
 ### Parameters of the upgrades/repairs
+
+<details>
+    <summary>Parameters of the upgrades/repairs</summary>
+
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 ---|---|---|---|
 | upgrades |  | up_gr_firstab_sunrise_3, up_gr_seconab_sunrise_3, up_gr_thirdab_sunrise_3 |  |
@@ -51,7 +83,13 @@
 | repair_type | item type for repair tools | outfit |  |
 | repair_part_bonus |  | 0.17 |  |
 
+</details>
+
 #### Icons of the upgrades
+
+<details>
+    <summary>Icons of the upgrades</summary>
+
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 ---|---|---|---|
 | upgr_icon_x | the X coordinate of the upper left corner of the icon in the repair window | 953 | Specified in pixels |
@@ -59,7 +97,13 @@
 | upgr_icon_width | Width of the icon in the repair window | 309 | Specified in pixels |
 | upgr_icon_height | icon height in the repair window | 142 | Specified in pixels |
 
+</details>
+
 ### Armor parameters
+
+<details>
+    <summary>Armor parameters</summary>
+
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 ---|---|---|---|
 | artefact_count | Number of artifact cells initially available | 1 |  |
@@ -70,7 +114,13 @@
 | additional_inventory_weight | Maximum weight at which the protagonist can walk | 5 | Specified in kilograms |
 | additional_inventory_weight2 | Additional carrying weight | 5 | Specified in kilograms |
 
+</details>
+
 #### Parameters that affect the protoganist
+
+<details>
+    <summary>Parameters that affect the protoganist</summary>
+
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 ---|---|---|---|
 | bones_koeff_protection | Parameter coefficients of the "persistence" of the protagonist's bones in the suit | actor_armor_cs1 |  |
@@ -80,7 +130,13 @@
 | health_restore_speed | Responsible for restoring health |  | Specified in percent |
 | power_restore_speed | Responsible for restoring powers |  | Specified in percent |
 
+</details>
+
 #### Parameters of the wearer's protection against various types of impacts provided by the outfits
+
+<details>
+    <summary>Parameters of the wearer's protection against various types of impacts provided by the outfits</summary>
+
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 ---|---|---|---|
 | burn_protection | Protection against fire | 0.145 |  |
@@ -93,7 +149,13 @@
 | wound_protection | Protection from Wounds | 0.31 |  |
 | fire_wound_protection | Protection from firearms | 0.25 |  |
 
+</details>
+
 #### Immunity parameters of the outfits itself
+
+<details>
+    <summary>Immunity parameters of the outfits itself</summary>
+
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 ---|---|---|---|
 | burn_immunity | Immunity to fire exposure | 0.25 |  |
@@ -106,7 +168,15 @@
 | telepatic_immunity | Immunity to psi exposure | 0.0 |  |
 | wound_immunity | Immunity to the effects of wounds | 0.122 |  |
 
+</details>
+
 ### AI parameters
+
+<details>
+    <summary>AI parameters</summary>
+
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 ---|---|---|---|
 | ef_equipment_type | Preference for NPCs | 3 |  |
+
+</details>

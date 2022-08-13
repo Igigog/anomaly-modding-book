@@ -10,3 +10,4 @@ During the development of this book, information was taken from many sites and f
 Also thanks for the advice of individuals:
 
 - Xottab_DUTY#7637 ([OpenXRay](https://github.com/OpenXRay/xray-16))
+- Daniel(SergeantRogers)#6813 - for providing crash logs

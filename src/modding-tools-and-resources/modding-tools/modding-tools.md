@@ -158,6 +158,10 @@ The versions of the SDK tools may differ depending on the version of the SDK its
 
 ## Decompilers
 
+- [X-Ray Converter](https://disk.yandex.ru/d/nivUmGybuCXSC) - Multifunctional utility for working with game file formats and X-Ray SDK
+    - [X-Ray Converter Extra](https://disk.yandex.ru/d/7137tI653PRnrU) - Improved components for the converter
+        - [GUI for Converter](https://modsfire.com/download/Fzg5Q2L2pcEHA8m/e9f70) - GUI for converter
+
 - [Universal ACDC](https://disk.yandex.ru/d/-GBYa8DxQv8MF) - Perl script, to unpack and pack all.spawn
 - [gamemtl_xr_cdc](https://disk.yandex.ru/d/hR79KfSn3PLtSK)
 - [lanims_xr_cdc](https://disk.yandex.ru/d/qKhybMU-3PLtTj)

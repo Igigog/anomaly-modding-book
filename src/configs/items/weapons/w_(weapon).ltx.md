@@ -9,11 +9,15 @@ Parameters of the weapon are set for each sample in a separate *.ltx file, and c
 ## Parameters of the world model 
 [wpn_name]: Here you can set additional characteristics of weapon from sections for example:
 
-    identity_immunities - a section that contains damage parameters for different game difficulty levels
-    weapon_probability
-    default_weapon_params
+- identity_immunities - a section that contains damage parameters for different game difficulty levels
+- weapon_probability
+- default_weapon_params
 
 ### General parameters
+
+<details>
+    <summary>General parameters</summary>
+
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 ---|---|---|---|
 | GroupControlSection |  | spawn_group |  |
@@ -34,7 +38,13 @@ Parameters of the weapon are set for each sample in a separate *.ltx file, and c
 | hud | section with parameters for the hud model of the weapon (1st person view) | wpn_akm_hud | Specifies the name of the section |
 | visual | reference to the 3rd person model | dynamics\weapons\wpn_akm\wpn_akm.ogf | Specifies the path to the file |
 
+</details>
+
 ### Position and Orientation of Weapons
+
+<details>
+    <summary>Position and Orientation of Weapons</summary>
+
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 ---|---|---|---|
 | position | position of the weapon in the hands of the NPC and the headspace when viewed from the 3rd person | -0.026, -0.175, 0.0 | x - left/+right, y + up/down, z - forward/+backward |
@@ -46,7 +56,13 @@ Parameters of the weapon are set for each sample in a separate *.ltx file, and c
 | strap_position | the position of the weapon on the NPC's back, when viewed from the third person | -0.26, -0.11, 0.25 | x - left/+right, y + up/down, z - forward/+backward |
 | strap_orientation | how the weapon is rotated on the NPC's back in 3rd person view | -15, -9, 110 | x - left/+right, y + up/down, z - forward/+backward |
 
+</details>
+
 ### Weapon parameters in inventory
+
+<details>
+    <summary>Weapon parameters in inventory</summary>
+
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
 | icons_texture |  |  |  |
@@ -60,7 +76,13 @@ Parameters of the weapon are set for each sample in a separate *.ltx file, and c
 | description | Description in inventory | st_wpn_akm_descr | Section name, in *.xml files included in the string_table section of gamedata\configs\localization.ltx |
 | slot | Inventory slot number | 2 | 0 (knife) - 1 (gun) - 2 (shotgun, machine gun, rifle, grenade launcher) - 3 (grenade) - 4 (binoculars) - 5 (bolt) |
 
-### Parameters for the multiplayer (there is no multiplayer in the game, so the parameters are useless)
+</details>
+
+### Parameters for multiplayer (there is no multiplayer in the game, so the parameters are useless)
+
+<details>
+    <summary>Parameters for multiplayer</summary>
+
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 ---|---|---|---|
 | weapon_class | is used exclusively for the purchase menu in multiplayer | shotgun - assault_rifle - sniper_rifle - heavy_weapon |
@@ -70,7 +92,13 @@ Parameters of the weapon are set for each sample in a separate *.ltx file, and c
 | kill_msg_width | the width of the kill icon | the value is specified in pixels |
 | kill_msg_height | kill icon height | value in pixels |
 
+</details>
+
 ### Particle parameters from the shot
+
+<details>
+    <summary>Particle parameters from the shot</summary>
+
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
 | flame_particles | gunshot fire particle | weapons\generic_weapon05 | Specifies the path to the file |
@@ -82,7 +110,13 @@ Parameters of the weapon are set for each sample in a separate *.ltx file, and c
 | light_var_color | Parameter of variation of the color of the fire particle from the shot | 0.05 | RGB Color |
 | light_var_range | varies the radius of the fire particle from the shot | 0.5 | Value 60.0 = 10 seconds |
 
+</details>
+
 ### Parameters of the upgrades/repairs
+
+<details>
+    <summary>Particle parameters from the shot</summary>
+
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
 | upgrades |  | up_gr_firstab_akm, up_gr_seconab_akm, up_gr_thirdab_akm, up_gr_fourtab_akm, up_gr_fifthab_akm, up_gr_fifthcd_akm |  |
@@ -90,7 +124,13 @@ Parameters of the weapon are set for each sample in a separate *.ltx file, and c
 | upgrade_scheme | upgrade_scheme | upgrade_scheme_ak74 |  |
 | repair_type | item type for repair tools | rifle_7 | pistol - shotgun - rifle_5 - rifle_7 |  |
 
+</details>
+
 #### Icons of the upgrades
+
+<details>
+    <summary>Icons of the upgrades</summary>
+
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
 | upgr_icon_x | the X coordinate of the upper left corner of the icon in the repair window | 300 | Specified in pixels |
@@ -98,7 +138,13 @@ Parameters of the weapon are set for each sample in a separate *.ltx file, and c
 | upgr_icon_width | Width of the icon in the repair window | 300 | Specified in pixels |
 | upgr_icon_height | icon height in the repair window | 100 | Specified in pixels |
 
+</details>
+
 ### Parameters of the weapon itself
+
+<details>
+    <summary>Parameters of the weapon itself</summary>
+
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
 | fire_modes | firing modes fire modes | 1, -1 | -1 (automatic) - 1 (single) - 2 (two-shot) - 3 (three-shot) |
@@ -107,7 +153,13 @@ Parameters of the weapon are set for each sample in a separate *.ltx file, and c
 | allow_inertion | whether inertia is enabled |  | true (Yes) - false (No) |
 | ph_mass | the weight of the unloaded weapon for the physical engine | 4 | The number is given in kilograms |
 
+</details>
+
 #### Shot parameters
+
+<details>
+    <summary>Shot parameters</summary>
+
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
 | hit_impulse | The force that the flying bullet transmits to the victim affects the ragdoll-body behavior | 34 | The more, the farther the body will fly away |
@@ -124,28 +176,52 @@ Parameters of the weapon are set for each sample in a separate *.ltx file, and c
 | PDM_disp_crouch_no_acc | Multiplier by which fire_dispersion_base is multiplied when the protagonist stands still while ducking | 1.0 | Specified in numbers |
 | PDM_disp_vel_factor | Multiplier by which fire_dispersion_base is multiplied when the protagonist spins a weapon or runs | 2.5 | Specified in numbers |
 
+</details>
+
 #### Ammo parameters
+
+<details>
+    <summary>Ammo parameters</summary>
+
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
 | ammo_class | ammo type for this weapon | ammo_7.62x39_fmj, ammo_7.62x39_fmj_bad, ammo_7.62x39_fmj_verybad, ammo_7.62x39_ap, ammo_7.62x39_ap_bad, ammo_7.62x39_ap_verybad | The names of the ammunition sections are indicated, separated by commas |
 | ammo_elapsed | magazine capacity at the moment of spawning | 30 | indicate the value equal to ammo_mag_size |
 | ammo_mag_size | ammunition capacity | 30 | The number of bullets is indicated |
 
+</details>
+
 ### Particle shell parameters
+
+<details>
+    <summary>Particle shell parameters</summary>
+
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
 | shell_point | coordinates of the shell partylock, when viewed from the 3rd person | 0, 0.216, 0.174 | x - left/+right, y + up/down, z - forward/+backward |
 | shell_dir | how the shell particle is rotated when viewed from the 3rd person | 0, 0, 0.4 | x - left/+right, y + up/down, z - forward/+backward |
 | shell_particles | shell particle | weapons\762x39 | Particles file path relative to particles.xr |
 
+</details>
+
 ### Aiming parameters
+
+<details>
+    <summary>Aiming parameters</summary>
+
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
 | scopes | Name of the gun sight section | 1p29, kobra, ps01 | Sections to models with these sights are indicated |
 | scope_status | Scope status | 0 | 0 (not available) - 1 (built-in) - 2 (removable) |
 | scope_zoom_factor | scope magnification | 0 | For the sight specified in the parameter scopes, the value can already be more |
 
+</details>
+
 ### Parameters of the silencer
+
+<details>
+    <summary>Parameters of the silencer</summary>
+
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
 | silencer_name | Name of the silencer section of the gun | wpn_sil_pbs1 |  |
@@ -157,13 +233,25 @@ Parameters of the weapon are set for each sample in a separate *.ltx file, and c
 | silencer_light_var_range | variation of the radius of the particle of the smoke from the shot from the weapon with silencer | 0.5 |  |
 | silencer_smoke_particles | particle smoke effect for a shot with silencer | weapons\generic_shoot_00 | Particles file path relative to particles.xr |
 
+</details>
+
 #### Silencer icons parameters
+
+<details>
+    <summary>Silencer icons parameters</summary>
+
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
 | silencer_x | the coordinates of the silencer icon superimposed on top of the weapon icon on the X coordinate | 235 | Specified in numbers |
 | silencer_y | the coordinates of the silencer icon superimposed over the weapon icon in Y coordinate | 10 | Specified in numbers |
 
+</details>
+
 ### Parameters of the underbarrel grenade launcher
+
+<details>
+    <summary>Parameters of the underbarrel grenade launcher</summary>
+
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
 | grenade_class | type of underbarrel grenades | ammo_vog-25, ammo_vog-25_bad, ammo_vog-25_verybad |  |
@@ -172,13 +260,25 @@ Parameters of the weapon are set for each sample in a separate *.ltx file, and c
 | launch_speed | launch speed of the underbarrel grenade launcher | 0 |  |
 | grenade_flame_particles | particle of the fire from the underbarrel grenade launcher | weapons\generic_weapon01 | Particles file path relative to particles.xr |
 
+</details>
+
 #### Underbarrel grenade launcher icons parameters
+
+<details>
+    <summary>Underbarrel grenade launcher icons parameters</summary>
+
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
 | grenade_launcher_x | grenade launcher icon coordinates superimposed over the weapon icon on the X coordinate | 127 | Specified in numbers |
 | grenade_launcher_y | grenade_launcher icon coordinates superimposed over the weapon icon on the Y coordinate | 18 | Specified in numbers |
 
+</details>
+
 ### Aiming parameters
+
+<details>
+    <summary>Aiming parameters</summary>
+
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
 | use_aim_bullet | whether the first bullet fired after a long period of inactivity will fly exactly into the crosshair | false | true (Yes) - false (No) |
@@ -190,7 +290,13 @@ Parameters of the weapon are set for each sample in a separate *.ltx file, and c
 | control_inertion_factor | Usability; aka inertia; affects how easily the weapon can be controlled with the mouse | 1.0f |  |
 | crosshair_inertion |  | 5.8 |  |
 
+</details>
+
 ### Misfire parameters
+
+<details>
+    <summary>Misfire parameters</summary>
+
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
 | misfire_probability | misfire_probability | maximum wear probability | 0.005 | 0 (never jams) - 1 (always jams) |
@@ -199,14 +305,26 @@ Parameters of the weapon are set for each sample in a separate *.ltx file, and c
 | misfire_end_condition | the chance of misfire when worn out is greater than misfireEndCondition | 0.05 |  |
 | misfire_end_prob | wear rate at which the chance of misfire becomes constant | 0.11 |  |
 
+</details>
+
 ### Wear parameters
+
+<details>
+    <summary>Wear parameters</summary>
+
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
 | condition_queue_shot_dec | condition_shot_dec | 0.0008 |  |
 | condition_shot_dec | increase wear on each shot | 0.0008 | 0 (no wear) - 1 (maximum wear) |
 | fire_dispersion_condition_factor | the effect of wear on the variance of the weapon as a percentage | 0.001 |  |
 
-### Parameters of the camera
+</details>
+
+### Сamera parameters
+
+<details>
+    <summary>Сamera parameters</summary>
+
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
 | cam_return | Whether to return the camera to its original position | 0 |  |
@@ -218,7 +336,13 @@ Parameters of the weapon are set for each sample in a separate *.ltx file, and c
 | cam_max_angle_horz | maximum horizontal recoil angle | 50.0 |  |
 | cam_step_angle_horz | barrel shift horizontally during firing | 1.38 |  |
 
+</details>
+
 ### Parameters of the camera when aiming
+
+<details>
+    <summary>Parameters of the camera when aiming</summary>
+
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
 | zoom_cam_relax_speed | similar to the return speed of the camera in the aiming mode | 10 |  |
@@ -229,7 +353,13 @@ Parameters of the weapon are set for each sample in a separate *.ltx file, and c
 | zoom_cam_max_angle_horz | Similar to cam_max_angle_horz in aiming mode | 50.0 |  |
 | zoom_cam_step_angle_horz | Similar to cam_step_angle_horz in aiming mode | 1.28 |  |
 
+</details>
+
 ### Parameters for AI
+
+<details>
+    <summary>Parameters for AI</summary>
+
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
 | ef_main_weapon_type | NPC weapon type | 2 | 0 (pistol) - 1 (shotgun) - 2 (assault rifle) - 3 (rifle) - 4 (grenade launcher) |
@@ -241,7 +371,13 @@ Parameters of the weapon are set for each sample in a separate *.ltx file, and c
 | min_radius |  |  |  |
 | max_radius |  |  |  |
 
+</details>
+
 ## Weapon HUD parameters
+
+<details>
+    <summary>General weapon HUD parameters</summary>
+
 [wpn_*weapon name*_hud]:
 
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
@@ -250,13 +386,25 @@ Parameters of the weapon are set for each sample in a separate *.ltx file, and c
 | attach_place_idx |  | 0 |  |
 | zoom_hide_crosshair | whether to remove the crosshair when aiming | true | true (Yes) - false (No) |
 
+</details>
+
 ### Parameters of the weapon position
+
+<details>
+    <summary>Parameters of the weapon position</summary>
+
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
 | item_position | weapon position in relation to the arms | 0, 0, 0 | x - left/+right, y + up/down, z - forward/+backward |
 | item_orientation | weapon orientation in relation to the arms | 0, 0, 0 | x - left/+right, y + up/down, z - forward/+backward |
 
+</details>
+
 #### Hand parameters
+
+<details>
+    <summary>Hand parameters</summary>
+
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
 | hands_position | Hands and weapon position | -0.072, -0.15, 0.1 | x - left/+right, y + up/down, z - forward/+backward |
@@ -264,7 +412,13 @@ Parameters of the weapon are set for each sample in a separate *.ltx file, and c
 | hands_orientation | direction (orientation) of the hands and arms | 0.55, 2.39, 0.15 | x - left/+right, y + up/down, z - forward/+backward |
 | hands_orientation_16x9 | direction (orientation) of arms and weapons for 16x9 monitors | 0.55, 2.39, 0.15 | x - left/+right, y + up/down, z - forward/+backward |
 
+</details>
+
 ### Parameters of the weapon HUD position when aiming
+
+<details>
+    <summary>Parameters of the weapon HUD position when aiming</summary>
+
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
 | aim_hud_offset_pos | aiming shift | -0.0818, 0.05494, -0.25 | x - left/+right, y + up/down, z - forward/+backward |
@@ -272,7 +426,13 @@ Parameters of the weapon are set for each sample in a separate *.ltx file, and c
 | aim_hud_offset_rot | orientation of the arms with the weapon when aiming | 0.0407, 0.00886, -0.00495 | x - left/+right, y + up/down, z - forward/+backward |
 | aim_hud_offset_rot_16x9 | aiming hand orientation for 16x9 monitors | 0.0407, 0.00886, -0.00495 | x - left/+right, y + up/down, z - forward/+backward |
 
+</details>
+
 ### Parameters of HUD weapon position for underbarrel grenade launcher
+
+<details>
+    <summary>Parameters of HUD weapon position for underbarrel grenade launcher</summary>
+
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
 | gl_hud_offset_pos | gun arm displacement when aiming from the holster | -0.0491, 0.005, -0.155 | x - left/+right, y + up/down, z - forward/+backward |
@@ -280,14 +440,24 @@ Parameters of the weapon are set for each sample in a separate *.ltx file, and c
 | gl_hud_offset_rot | the orientation of the arms with the weapon when aiming from the arming cube | -0.067, 0.0063, -0.02 | x - left/+right, y + up/down, z - forward/+backward |
 | gl_hud_offset_rot_16x9 | orientation of the arms with weapon when aiming from the arming cube for 16x9 monitors | -0.067, 0.0063, -0.02 | x - left/+right, y + up/down, z - forward/+backward |
 
+</details>
+
 ### Parameters of HUD arms position for the mode when the weapon is lowered
+
+<details>
+    <summary>Parameters of HUD arms position for the mode when the weapon is lowered</summary>
+
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
 | lean_hud_offset_pos | The offset of the arms with the weapon when the weapon is lowered | 0, 0, 0 | x - left/+right, y + up/down, z - forward/+backward |
 | lean_hud_offset_rot | orientation of the arms with the weapon down | 0, 0, 0 | x - left/+right, y + up/down, z - forward/+backward |
 
+</details>
+
 ### HUD animations parameters
-- Idle animations
+
+<details>
+    <summary>Idle animations</summary>
 
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
@@ -299,7 +469,10 @@ Parameters of the weapon are set for each sample in a separate *.ltx file, and c
 | anm_idle_w_gl | Idle animation with grenade launcher attached to the weapon |  |
 | anm_idle_w_gl_aim | Idle animation with a grenade launcher attached to the weapon when aiming |  |
 
- - Motion animations
+</details>
+
+<details>
+    <summary>Motion animations</summary>
 
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
@@ -327,7 +500,10 @@ Parameters of the weapon are set for each sample in a separate *.ltx file, and c
 | anm_show_w_gl | show animation of pulling out a weapon with a grenade launcher attached | The name of the corresponding animation | 
 | anm_bore | Boredom animation | The name of the corresponding animation |
 
-- Weapon animations
+</details>
+
+<details>
+    <summary>Weapon animations</summary>
 
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
@@ -342,17 +518,29 @@ Parameters of the weapon are set for each sample in a separate *.ltx file, and c
 | anm_switch | Animation of switching to alternate firing mode | The name of the corresponding animation |
 | anm_switch_g | Animation of switching to underbarrel grenade launcher firing mode | The name of the corresponding animation |
 
+</details>
+
 ### Parameters of sounds
 You can read about the parameters of the sounds [here](weapon_sounds.ltx.md)
 
 ### Parameters of the shells sprite for HUD
+
+<details>
+    <summary>Parameters of the shells sprite for HUD</summary>
+
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
 | shell_bone | bone which will be considered the origin of coordinates for the shell sprite in 1st person view | wpn_body | Bone Name |
 | shell_dir | the offset parameter of the shells after departure, in 1st person view | 0, 1, 0 | x - left/+right, y + up/down, z - forward/+backward |
 | shell_point | Coordinates of the bullets ejection point in 1st person view | 0, 0.064, 0.19 | x - left/+right, y + up/down, z - forward/+backward |
 
+</details>
+
 ### Particle sprite parameters for HUD
+
+<details>
+    <summary>Particle sprite parameters for HUD</summary>
+
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
 | fire_bone | the name of the fire particle bone of the weapon hud-model | wpn_body | Bone Name |
@@ -360,10 +548,18 @@ You can read about the parameters of the sounds [here](weapon_sounds.ltx.md)
 | fire_point | coordinates of the fire particle, when viewed from the 1st person | 0, 0.051841, 0.535482 | x - left/+right, y + up/down, z - forward/+backward |
 | fire_point2 | Coordinates of the fire particles, when viewed from the 1st person when firing the underbarrel grenade launcher | 0, -0.011, 0.553 | x - left/+right, y + up/down, z - forward/+backward |
 
+</details>
+
 ### Camera
+
+<details>
+    <summary>Camera</summary>
+
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
 | freeelook_z_offset_mul | Сamera displacement along the z-axis when the camera moves freely | 0.4 |  |
+
+</details>
 
 ## Sources
 

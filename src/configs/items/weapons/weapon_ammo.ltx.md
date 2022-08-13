@@ -1,6 +1,10 @@
 # Weapon_Ammo Config File
 
 ## General parameters
+
+<details>
+    <summary>General parameters</summary>
+
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 ---|---|---|---|
 | GroupControlSection |  | spawn_group |  |
@@ -14,7 +18,13 @@
 | cost | Base price | 910 | Specified in numbers |
 | box_size | number of bullets in a pack | 16 | Specified in numbers |
 
+</details>
+
 ### Ammo parameters in the inventory
+
+<details>
+    <summary>Ammo parameters in the inventory</summary>
+
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 ---|---|---|---|
 | inv_name | The name in the inventory | ammo-11.43x23-fmj |  |
@@ -22,7 +32,13 @@
 | inv_weight | inventory weight | .29 | The number is given in kilograms |
 | description | Description in inventory | ammo-11.43x23-fmj_descr |  |
 
+</details>
+
 #### Ammo icon parameters
+
+<details>
+    <summary>Ammo icon parameters</summary>
+
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 ---|---|---|---|
 | inv_grid_width | icon width | 2 | number of 50x50 pixels cells |
@@ -30,7 +46,13 @@
 | inv_grid_x | the coordinate of the upper left corner of the icon on a 50x50 pixel grid on the X axis | 55 | number of cells indented to the right |
 | inv_grid_y | The coordinate of the upper left corner of the icon on a 50x50 pixel grid on the Y axis | 11 | number of cells indenting downward |
 
+</details>
+
 ### Parameters of ammo coefficients
+
+<details>
+    <summary>Parameters of ammo coefficients</summary>
+
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 ---|---|---|---|
 | k_disp | Coefficient of accuracy of the bullet | 0.66 |  |
@@ -43,7 +65,13 @@
 | k_pierce | Penetration power of a bullet |  |  |
 | k_dist | Range coefficient | 0.75 |  |
 
+</details>
+
 ### Other parameters
+
+<details>
+    <summary>Other parameters</summary>
+
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 ---|---|---|---|
 | tracer_color_ID |  | 2 |  |
@@ -56,7 +84,15 @@
 | explosive | Will there be an explosion when touched | false | true (yes) - false (no) |
 | disassemble_parts |  | prt_i_ammo,prt_i_ammo |  |
 
+</details>
+
 ### Sound parameters
+
+<details>
+    <summary>Sound parameters</summary>
+
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 ---|---|---|---|
 | snd_on_take | The sound when taking | ammo |  |
+
+</details>
