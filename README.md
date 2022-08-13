@@ -15,6 +15,8 @@ So refer to this [article](src/meta/contributing/README.md) or open an [issue](h
 
 # Links
 
+[The Book Discord](https://discord.gg/8Pu2ekQYg3) - Come check us out!
+
 [Igigog](https://github.com/Igigog) - Book Creator
 
 [The book itself](https://igigog.github.io/anomaly-modding-book/)
