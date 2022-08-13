@@ -8,3 +8,4 @@ title = "Anomaly Modding Book"
 [output.html]
 git-repository-url = "https://github.com/Igigog/anomaly-modding-book"
 site-url = "/anomaly-modding-book/"
+additional-css = ["src/custom.css"]

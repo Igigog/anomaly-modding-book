@@ -5,13 +5,9 @@ _by [Ishmaeel](https://github.com/Ishmaeel)_
 
 While installing an addon, Mod Organizer 2 can extract a nice name from the archive (ZIP/7Z/RAR):
 
-<div style="text-align: center;">
-
 ![Quick Install](pn-images/Picture1.png)
 
-</div>
-
-For more advanced scenarios, you will eventually want to graduate to more powerful [installer formats](addon-installers.md), but for simpler addons, the least you can do for your users is naming your archive package in a way that can be parsed easily by MO2.
+For more advanced scenarios, you will eventually want to graduate to more powerful [installer formats](addon-installers.md), but for simpler addons, the least you can do for your users is naming your archive xpackage in a way that can be parsed easily by MO2.
 
 Follow these simple rules and your MO2-using audience will be thankful for it:
 
@@ -34,11 +30,7 @@ ToggleScope-v1.5.zip
 
 This is how MO2 will parse the name during installation:
 
-<div style="text-align: center;">
-
 ![Parsed Name](pn-images/Picture7.png)
-
-</div>
 
 See that everything after and including the dash is stripped away, leaving only the base name.
 
@@ -46,13 +38,9 @@ See that everything after and including the dash is stripped away, leaving only 
 
 As long as you adhere to a similar format and keep the same base name, MO2 will recognize your update as belonging to the same addon and offer to upgrade it in place:
 
-<div style="text-align: center;">
-
 ![Mod Exists](pn-images/Picture8.png)
 
 **_The End._**
-
-</div>
 
 ---
 
@@ -83,11 +71,7 @@ _Disclaimer:_ If your addon has a single-word name such as **Addon.zip** or a ze
 
 The fastest takeaway that you can get from this guide is **using a different file name** for every single release. If you can bring yourself to do this, you don’t need to read the rest of this guide. By default, MO2 will install every new version as a separate addon and the users will have to type out a name for every upgrade if they want a proper installation. It is a surefire way to piss of MO2 virgins:
 
-<div style="text-align: center;">
-
 ![Inconsistent Naming](pn-images/Picture2.png)
-
-</div>
 
 However, if you feel this one is too on the nose and are looking for subtler ways to annoy the unwashed masses, please read on.
 
@@ -106,11 +90,7 @@ MO2 does not think an addon name should include these. Anything after (and inclu
 
 You will remember that everything after the first dash is simply discarded. As such, you can use dashes to separate words, so that MO2 will mutilate the awesome and catchy name that you picked for your addon:
 
-<div style="text-align: center;">
-
 ![Dashes Between Words](pn-images/Picture3.png)
-
-</div>
 
 This also goes for other fancy characters such as apostrophes. Go crazy!
 
@@ -118,11 +98,7 @@ This also goes for other fancy characters such as apostrophes. Go crazy!
 
 What if you have a cool nickname such as **Blaze420** and want to flaunt it in your addon? What if you like putting release numbers first, such as **Version 1 of My Awesome Menu Replacement.zip**? That’s right. Your MO2-wielding audience is in for a surprise:
 
-<div style="text-align: center;">
-
 ![Numeric Mess](pn-images/Picture4.png)
-
-</div>
 
 > Note that if the file name starts immediately with a number, this trick will not work. 
 But good news! If you can manage to sneak the version number in with a cheaty name like **1.0.3_Brooks_Plagiarized_Audio_Patcher.zip**, your anemic MO2 users will now have to edit the name with **every**. **single**. **update**!
@@ -133,21 +109,13 @@ You are releasing a new update for your addon with features, bugfixes and locali
 
 This will instantly make your file names look more enterprisey and sophisticated:
 
-<div style="text-align: center;">
-
 ![Lonely V](pn-images/Picture5.png)
-
-</div>
 
 See the little “_v” at the end? It’s there to bug the MO2-weaklings. Mission accomplished!
 
 **Bonus:** For even more devious fun, try separating your version number with an “underscore”, so it gets treated as part of the name:
 
-<div style="text-align: center;">
-
 ![Lonely Underscore](pn-images/Picture6.png)
-
-</div>
 
 ## How Not to Smell Like a Filthy UX Hipster
 
