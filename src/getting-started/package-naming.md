@@ -7,7 +7,7 @@ While installing an addon, Mod Organizer 2 can extract a nice name from the arch
 
 ![Quick Install](pn-images/Picture1.png)
 
-For more advanced scenarios, you will eventually want to graduate to more powerful [installer formats](addon-installers.md), but for simpler addons, the least you can do for your users is naming your archive xpackage in a way that can be parsed easily by MO2.
+For more advanced scenarios, you will eventually want to graduate to more powerful [installer formats](addon-installers.md), but for simpler addons, the least you can do for your users is naming your archive package in a way that can be parsed easily by MO2.
 
 Follow these simple rules and your MO2-using audience will be thankful for it:
 
