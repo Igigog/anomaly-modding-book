@@ -30,19 +30,11 @@ Welp, let's get started. I hope you already have a GitHub account.
 1. Go to the [main repo](https://github.com/Igigog/anomaly-modding-book)
 2. Press the fork button
 
-<div style="text-align: center;">
-
-![Mod Organiser logo](contributing-images/3.PNG)
-
-</div>
+![centered](contributing-images/3.PNG)
 
 3. Create the fork 
 
-<div style="text-align: center;">
-
-![Mod Organiser logo](contributing-images/4.PNG)
-
-</div>
+![centered](contributing-images/4.PNG)
 
 4. You're awesome
 
@@ -50,20 +42,12 @@ Welp, let's get started. I hope you already have a GitHub account.
 
 1. Open the folder you want to download into in VSCodium. In my case, it will be Desktop.
 
-<div style="text-align: center;">
-
-![Mod Organiser logo](contributing-images/5.PNG)
-
-</div>
+![centered](contributing-images/5.PNG)
 
 2. Open Poweshell Terminal session
 3. Copy the link to your repo. 
 
-<div style="text-align: center;">
-
-![Mod Organiser logo](contributing-images/6.PNG)
-
-</div>
+![centered](contributing-images/6.PNG)
 
 4. Run the following command in your Powershell Terminal with your link instead of LINK.
 
@@ -86,37 +70,21 @@ git clone LINK
 
 2. Add your changes using VSCodium git tab. Open git tab, hover over "Changes" line and press "+".
 
-<div style="text-align: center;">
-
-![Mod Organiser logo](contributing-images/7.PNG)
-
-</div>
+![centered](contributing-images/7.PNG)
 
 3. Add a nice message and press "✔" to commit your changes
 
-<div style="text-align: center;">
-
-![Mod Organiser logo](contributing-images/8.PNG)
-
-</div>
+![centered](contributing-images/8.PNG)
 
 4. You should now be able to publish your changes
 
-<div style="text-align: center;">
-
-![Mod Organiser logo](contributing-images/9.PNG)
-
-</div>
+![centered](contributing-images/9.PNG)
 
 ## Creating Pull Request
 
 1. In main book repository, open "Pull Requests" tab and press "New pull request"
 
-<div style="text-align: center;">
-
-![Mod Organiser logo](contributing-images/10.PNG)
-
-</div>
+![centered](contributing-images/10.PNG)
 
 2. Press "compare across forks". Choose your repository and press "Create pull request". 
 
