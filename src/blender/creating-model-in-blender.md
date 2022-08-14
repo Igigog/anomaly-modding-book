@@ -56,7 +56,7 @@ If you have already set up the addon to use and set up the necessary paths to yo
 
 In the N-panel there should be a tab "X-Ray" in it unfolds the list "Viewer" and we click "Open Folder" (![folder-icon](blender-images/blender-images-icons/folder.svg)).
 
-![viewer-n-panel](blender-images/viewer-section.png)
+![viewer-n-panel centered](blender-images/viewer-section.png)
 
 The Blender explorer window opens. Go to our unpacked folder with the game files (namely the folder "meshes").
 The character models you need are in the "actors" folder, where the faction models are sorted into folders. [(More about the structure of folders, main folders and files you can learn here)](../main-folders-and-files/index.html)
@@ -64,7 +64,7 @@ The character models you need are in the "actors" folder, where the faction mode
 
 Select the desired folder with the models and click on the "Open Folder" button.
 
-![viewer-open-folder-button](blender-images/open-folder-button.png)
+![viewer-open-folder-button centered](blender-images/open-folder-button.png)
 
 Depending on the size of the models in the "Viewer" folder may take longer to open than you would like.
 So, "Viewer" is open. It shows all the models in the selected folder. Click on any model and a character model appears in front of us.
@@ -76,7 +76,7 @@ After fitting, apply transformations to our object.
 
 In the "Viewer" list, we can click on "Close Folder (![close-folder](blender-images/blender-images-icons/close-folder.svg))" to close the list of models and the model imported to us in the scene, too.
 
-![close-viewer-folder](blender-images/close-viewer-folder.png)
+![close-viewer-folder centered](blender-images/close-viewer-folder.png)
 
 At this point we have to decide what type of model we want to use (static, dynamic, or something else). (About the types of objects you can learn here)
 
@@ -87,19 +87,19 @@ Image here
 
 Under "Vertex Groups" click on the plus sign (a "Vertex Group" with the name "Group" (![vertex-group-logo](blender-images/blender-images-icons/vertex-group-logo.svg)) will be added) and double-click to rename it (the same name will be needed later for the bone).
 
-![vertex-group](blender-images/vertex-group.png)
+![vertex-group centered](blender-images/vertex-group.png)
 
 The next step is to create a bone (Shift + A > Armature > Single Bone).
 
-![bone-create](blender-images/create-bone.png)
+![bone-create centered](blender-images/create-bone.png)
 
 To make our model move like the bone in the future, we need to rename the bone to the name that was given to "Vertex Groups" (![vertex-group-logo](blender-images/blender-images-icons/vertex-group-logo.svg)).
 
-![bone-properties](blender-images/bone-properties.png)
+![bone-properties centered](blender-images/bone-properties.png)
 
 And rename the bone.
 
-![bone-rename](blender-images/bone-rename.png)
+![bone-rename centered](blender-images/bone-rename.png)
 
 Select our object and switch to "Wireframe" mode (![wireframe-mode](blender-images/blender-images-icons/wireframe.svg)) ("Z" Button) (this is optional).
 Place the bone approximately in the center of the model.
@@ -109,11 +109,11 @@ After that, apply the bone transformations (Ctrl + A > All Transform).
 
 Select our model and go to the "Modifier Properties" (![modifier-properties-logo](blender-images/blender-images-icons/wrench.svg)) tab.
 
-![modifier-properties](blender-images/modifier-properties.png)
+![modifier-properties centered](blender-images/modifier-properties.png)
 
 In the "Modifier Properties" (![modifier-properties-logo](blender-images/blender-images-icons/wrench.svg)) tab, add the "Armature" modifier (![armature-modifier-logo](blender-images/blender-images-icons/armature-modifier-logo.svg)) (Add Modifier > Armature (under Deform)).
 
-![armature-modif-create](blender-images/armature-modifier.png)
+![armature-modif-create centered](blender-images/armature-modifier.png)
 
 The modifier has the following necessary items:
 - Object (![object-logo](blender-images/blender-images-icons/object-logo.svg))
@@ -125,7 +125,7 @@ These actions allowed us to bond our object and bone, but not yet to the fullest
 
 Next step:
 First select the bone after selecting the model, press Ctrl + P. A list appears, select "Bone".
-![parenting](blender-images/parent-to-bone.png)
+![parenting centered](blender-images/parent-to-bone.png)
 
 This allowed the bone and the model to be fully bonded together. Now when the bone moves or rotates, the model will move with it.
 
@@ -134,11 +134,11 @@ Now you have to set the bone properties for X-Ray.
 - ### Bone
 Select the bone and go to the "Bone Properties" (![bone-properties-logo](blender-images/blender-images-icons/bone-propertties-logo.svg)) tab.
 
-![bone-properties-p2](blender-images/bone-properties.png)
+![bone-properties-p2 centered](blender-images/bone-properties.png)
 
 We see the "X-Ray Engine: Bone" section.
 
-![bone-section](blender-images/x-ray-engine-bone.png)
+![bone-section centered](blender-images/x-ray-engine-bone.png)
 
 The desired field is "Shape Type" (where you choose the type of shape (for collision)).
 From the whole list, our object is more suitable for the "Box" type. Let's choose it.
@@ -153,11 +153,7 @@ In the same tab we see the "X-Ray Engine: Edit Helper" section with three button
 - ![fit-shape](blender-images/blender-images-icons/fit-shape-logo.svg) Fit Shape (Blender will automatically try to fit the Shape to the size of the object)
 - ![close-folder](blender-images/blender-images-icons/close-folder.svg) Cancel (closes Shape editing mode)
 
-<div style="text-align: center;">
-
-![edit-helper](blender-images/x-ray-engine-edit-helper.png)
-
-</div>
+![edit-helper centered](blender-images/x-ray-engine-edit-helper.png)
 
 Apply Shape may help in some cases, but not in this one (nothing happens after clicking), so you need to adjust the Shape manually.
 Without going into Edit mode, press "S" and start fitting the Shape to the model. Going through the combinations, changing the shape of the Shape, we finally create an acceptable Shape.
@@ -166,24 +162,24 @@ Without going into Edit mode, press "S" and start fitting the Shape to the model
 Accept the transformation by clicking on "Apply Shape" (![apply-shape](blender-images/blender-images-icons/apply-shape-logo.svg)). Everything will apply and the Shape will disappear.
 To check the correctness of the shape and adjust the center of mass for the bone, go to the "Object Data Properties" (![object-data-properties-skeleton-logo](blender-images/blender-images-icons/object-data-properties-skeleton-logo.svg)) panel.
 
-![object-data-properties-panel](blender-images/object-data-properties-skeleton.png)
+![object-data-properties-panel centered](blender-images/object-data-properties-skeleton.png)
 
 Here we see the "X-Ray Engine: Skeleton" section and the two buttons we need:
 - Display Bone Shape
 - Display Bone Mass Centers
 
-![x-ray-engine-skeleton](blender-images/x-ray-engine-skeleton.png)
+![x-ray-engine-skeleton centered](blender-images/x-ray-engine-skeleton.png)
 
 Click on "Display Bone Shape" to check the bone shape
 ![display-bone-shape](blender-images/display-bone-shape.png)
 
 And by clicking on "Display Bone Mass Centers" a Cross will appear, from which you can understand where the center of mass is located (its mass and location can be edited in the tab "Bone Properties").
 
-![display-bone-mass](blender-images/center-of-mass-editing.png)
+![display-bone-mass centered](blender-images/center-of-mass-editing.png)
 
 Go to the "Object Properties" (![object-logo](blender-images/blender-images-icons/object-logo.svg)) tab.
 Here you will find the "X-Ray Engine: Object" section.
-![x-ray-engine-object](blender-images/x-ray-engine-object.png)
+![x-ray-engine-object centered](blender-images/x-ray-engine-object.png)
 
 Remember that our object, by design, will be dynamic, so click on the button "Object", where we select the type "Dynamic".
 
@@ -192,10 +188,10 @@ The editing of the bone parameters is finished, the next step is Materials.
 - ### Material
 Select our object and go to the "Material Priperties" (![material-properties-logo](blender-images/blender-images-icons/material-properties-logo.svg)) tab.
 
-![material-properties](blender-images/material-properties.png)
+![material-properties centered](blender-images/material-properties.png)
 
 Here we see the name of our material and a list of "X-Ray Engine: Material" with lots of items.
-![x-ray-engine-material](blender-images/x-ray-engine-material.png)
+![x-ray-engine-material centered](blender-images/x-ray-engine-material.png)
 
 There is no point in telling about each point here. (there is a separate section in the book)
 
