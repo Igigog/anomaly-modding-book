@@ -27,7 +27,7 @@ Software to unpack gamedata
 ## Converters
 
 - converter.exe (tools/) - Converts files from one format to another.
-- [X-Ray Export Tool](https://github.com/VaIeroK/XrayExportTool) - A simple exporter of [.obj](../../main-folders-and-files/file-formats/object.md) format to various other formats
+- [X-Ray Export Tool](https://github.com/VaIeroK/XrayExportTool) - Tool for fast editing and exporting raw stalker formats
     - [More](xray-export-tool.md)
 
 ## SDK's
@@ -78,6 +78,13 @@ The versions of the SDK tools may differ depending on the version of the SDK its
 - Postprocess Editor
 - ShaderEditor
 - xrLC_net - Level compiler by machines connected to a local network
+
+## Coding
+
+- Notepad
+- [Notepad++](https://notepad-plus-plus.org/downloads/)
+- [Visual Studio Code](https://code.visualstudio.com/)
+    - [LTX Support Extension by AziatkaVictor](https://marketplace.visualstudio.com/items?itemName=AziatkaVictor.ltx-support) - adds support for the logic syntax from S.T.A.L.K.E.R. CoP
 
 ## 3D packages
 
@@ -161,6 +168,7 @@ The versions of the SDK tools may differ depending on the version of the SDK its
 - [X-Ray Converter](https://disk.yandex.ru/d/nivUmGybuCXSC) - Multifunctional utility for working with game file formats and X-Ray SDK
     - [X-Ray Converter Extra](https://disk.yandex.ru/d/7137tI653PRnrU) - Improved components for the converter
         - [GUI for Converter](https://modsfire.com/download/Fzg5Q2L2pcEHA8m/e9f70) - GUI for converter
+    - [More](https://modfaq.ru/X-Ray_Converter)
 
 - [Universal ACDC](https://disk.yandex.ru/d/-GBYa8DxQv8MF) - Perl script, to unpack and pack all.spawn
 - [gamemtl_xr_cdc](https://disk.yandex.ru/d/hR79KfSn3PLtSK)

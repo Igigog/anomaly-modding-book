@@ -32,6 +32,25 @@
 ## Particles
 
 <details>
+    <summary>Line 68</summary>
+
+[error]Expression    : <no expression>
+
+[error]Function      : CResourceManager::_GetBlender
+
+[error]File          : ..\xrRender\ResourceManager.cpp
+
+[error]Line          : 68
+
+[error]Description   : fatal error
+
+[error]Arguments     : Shader 'models_laserbeam' not found in library.
+
+- Clarification:
+
+</details>
+
+<details>
     <summary>Line 683</summary>
 
 [error]Expression    : SG
@@ -91,6 +110,25 @@
 ## LUA
 
 <details>
+    <summary>Line 189</summary>
+
+[error]Expression    : <no expression>
+
+[error]Function      : CScriptEngine::lua_error
+
+[error]File          : ..\xrServerEntities\script_engine.cpp
+
+[error]Line          : 189
+
+[error]Description   : fatal error
+
+[error]Arguments     : LUA error: ...ly\anomaly\gamedata\scripts\alife_storage_manager.script:146: bad code
+
+- Clarification:
+
+</details>
+
+<details>
     <summary>Line 191</summary>
 
 [error]Expression    : <no expression>
@@ -127,6 +165,25 @@
 </details>
 
 ## LTX files
+
+<details>
+    <summary>Line 147</summary>
+
+[error]Expression    : <no expression>
+
+[error]Function      : CIni_IdToIndex<1,struct COMMUNITY_DATA,class shared_str,int,class CHARACTER_COMMUNITY>::GetByIndex
+
+[error]File          : g:\projects\stalker\anomaly2-engine\src\xrgame\ini_id_loader.h
+
+[error]Line          : 147
+
+[error]Description   : fatal error
+
+[error]Arguments     : item by index not found in section game_relations, line communities
+
+- Clarification:
+
+</details>
 
 <details>
     <summary>Line 544</summary>
@@ -184,6 +241,62 @@
 - Clarification: Duplicated the specified section in the .ltx files.
 
 </details>
+
+<details>
+    <summary>Line 520</summary>
+
+[error]Expression    : <no expression>
+
+[error]Function      : CInifile::r_section
+
+[error]File          : Xr_ini.cpp
+
+[error]Line          : 520
+
+[error]Description   : fatal error
+
+[error]Arguments     : Can't open section 'achievements'. Please attach [*.ini_log] file to your bug report
+
+- Clarification: The game cannot find this section
+
+</details>
+
+<details>
+    <summary>Line 703</summary>
+
+[error]Expression    : b
+
+[error]Function      : X:\stalker_addon\sources\trunk\xrCore\Xr_ini.cpp
+
+[error]File          : X:\stalker_addon\sources\trunk\xrCore\Xr_ini.cpp
+
+[error]Line          : 703
+
+[error]Description   : name[levels\l01_escape\l01_escape_part0967] already exist in section[d:\gamesedit\stalker-uni\sdk\editors\rawdata\levels\l01_escape.level]
+
+- Clarification:
+
+</details>
+
+<details>
+    <summary>Line 718</summary>
+
+[error]Expression    : <no expression>
+
+[error]Function      : CInifile::Load::<lambda_013765cd77135cd39b93c0fb9e7e180b>::operator ()
+
+[error]File          : Xr_ini.cpp
+
+[error]Line          : 718
+
+[error]Description   : fatal error
+
+[error]Arguments     : Section 'trasher' has cyclical dependencies. Ensure that sections with parents don't inherit in a loop. Check this file and its DLTX mods: d:/anomaly\gamedata\configs\items\trade\trade_stalker_flea_market.ltx
+
+- Clarification:
+
+</details>
+
 
 <details>
     <summary>Line 915</summary>
@@ -259,7 +372,7 @@
 
 </details>
 
-## XML
+## UI/XML
 
 <details>
     <summary>Line 154</summary>
@@ -283,59 +396,21 @@
 </details>
 
 <details>
-    <summary>Line 718</summary>
+    <summary>Line 205</summary>
 
-[error]Expression    : <no expression>
+[error]Expression    : xml_doc.NavigateToNode(path,index)
 
-[error]Function      : CInifile::Load::<lambda_013765cd77135cd39b93c0fb9e7e180b>::operator ()
+[error]Function      : CUIXmlInit::InitTextWnd
 
-[error]File          : Xr_ini.cpp
+[error]File          : ui\UIXmlInit.cpp
 
-[error]Line          : 718
+[error]Line          : 205
 
-[error]Description   : fatal error
+[error]Description   : XML node not found
 
-[error]Arguments     : Section 'trasher' has cyclical dependencies. Ensure that sections with parents don't inherit in a loop. Check this file and its DLTX mods: d:/anomaly\gamedata\configs\items\trade\trade_stalker_flea_market.ltx
+[error]Argument 0    : npc:rank
 
-- Clarification:
-
-</details>
-
-<details>
-    <summary>Line 63</summary>
-
-[error]Expression    : <no expression>
-
-[error]Function      : CBlender_default::Compile
-
-[error]File          : BlenderDefault.cpp
-
-[error]Line          : 63
-
-[error]Description   : fatal error
-
-[error]Arguments     : Not enought textures for shader, base tex: act\newloner\skadovskmedic\jackbaker_hair_d
-
-- Clarification:
-
-</details>
-
-<details>
-    <summary>Line 189</summary>
-
-[error]Expression    : <no expression>
-
-[error]Function      : CScriptEngine::lua_error
-
-[error]File          : ..\xrServerEntities\script_engine.cpp
-
-[error]Line          : 189
-
-[error]Description   : fatal error
-
-[error]Arguments     : LUA error: ...ly\anomaly\gamedata\scripts\alife_storage_manager.script:146: bad code
-
-- Clarification:
+[error]Argument 1    : ui\ui_inventory.xml
 
 </details>
 
@@ -411,56 +486,22 @@
 
 </details>
 
+## Textures
+
 <details>
-    <summary>Line 520</summary>
+    <summary>Line 63</summary>
 
 [error]Expression    : <no expression>
 
-[error]Function      : CInifile::r_section
+[error]Function      : CBlender_default::Compile
 
-[error]File          : Xr_ini.cpp
+[error]File          : BlenderDefault.cpp
 
-[error]Line          : 520
-
-[error]Description   : fatal error
-
-[error]Arguments     : Can't open section 'achievements'. Please attach [*.ini_log] file to your bug report
-
-- Clarification: The game cannot find this section
-
-</details>
-
-<details>
-    <summary>Line 147</summary>
-
-[error]Expression    : <no expression>
-
-[error]Function      : CIni_IdToIndex<1,struct COMMUNITY_DATA,class shared_str,int,class CHARACTER_COMMUNITY>::GetByIndex
-
-[error]File          : g:\projects\stalker\anomaly2-engine\src\xrgame\ini_id_loader.h
-
-[error]Line          : 147
+[error]Line          : 63
 
 [error]Description   : fatal error
 
-[error]Arguments     : item by index not found in section game_relations, line communities
-
-- Clarification:
-
-</details>
-
-<details>
-    <summary>Line 703</summary>
-
-[error]Expression    : b
-
-[error]Function      : X:\stalker_addon\sources\trunk\xrCore\Xr_ini.cpp
-
-[error]File          : X:\stalker_addon\sources\trunk\xrCore\Xr_ini.cpp
-
-[error]Line          : 703
-
-[error]Description   : name[levels\l01_escape\l01_escape_part0967] already exist in section[d:\gamesedit\stalker-uni\sdk\editors\rawdata\levels\l01_escape.level]
+[error]Arguments     : Not enought textures for shader, base tex: act\newloner\skadovskmedic\jackbaker_hair_d
 
 - Clarification:
 

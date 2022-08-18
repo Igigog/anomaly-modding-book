@@ -12,19 +12,19 @@ Tool for fast editing and exporting raw stalker formats
 - Uncompressed ogf export (HQ Geometry+)
 - Removed the limit on the maximum number of vertexes in 65535
 - HQ Geometry with patches, exports better than SDK
-- Save and load [.bones]() settings
-- Load, save, delete [.skls]() animations
+- Save and load .bones settings
+- Load, save, delete .skls animations
 - Export animations in 8 bit, 16 bit and uncompressed
 - Optimization of meshes with the same textures and shaders is disabled by default (they will not merge into one when exported so you can edit them in the OGF Editor)
 - Tuning and collision generation
-- Ability to resize models and animations when exporting, keeping the modifier in [.object]()
-- Ability to assign to [.object]() format
+- Ability to resize models and animations when exporting, keeping the modifier in .object
 - Editing Userdata
 - Editing LOD
 - Editing Motion refs
 - Export models with original normals without X-Ray anti-aliasing groups
 - Generating LOD models
 - Removed the limit on the number of polygons for static meshes
+- Viewport displaying the model with textures
 
 | Supported formats |
 ---|
@@ -109,6 +109,7 @@ The default settings menu, where you can set the default values of the parameter
 
 | Field | Description |
 ---|---|
+| Object Type| Object Type |
 | Object Scale | Changes the size of the object when exporting, affecting the size of the model and the size of animations |
 
 | Checkboxes | Description |

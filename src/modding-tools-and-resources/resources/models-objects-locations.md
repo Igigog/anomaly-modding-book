@@ -10,7 +10,7 @@
 
 #### Animations
 
-[Riggered HUD in Blender](https://drive.google.com/file/d/1vpyBGOeLg1Gs1Rrtr11Mb3FG_5dukD0u/view?usp=sharing)
+[Riggered HUD in Blender](https://drive.google.com/file/d/1DSnSXZzMsKkbE5AvY9PvqEbaION6P0C5/view?usp=sharing)
 
 ![riggered-hud](resources-images/hud-rig-animation.png)
 

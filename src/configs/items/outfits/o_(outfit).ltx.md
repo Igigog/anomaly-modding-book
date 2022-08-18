@@ -26,7 +26,7 @@
 ## Sound parameters
 
 <details>
-    <summary>AI parameters</summary>
+    <summary>Sound parameters</summary>
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 ---|---|---|---|

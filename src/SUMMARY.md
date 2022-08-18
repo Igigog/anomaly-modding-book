@@ -66,6 +66,7 @@
 - [Animating]()
     - [Blender](blender/README.md)
         - [Creating an animation in Blender for a HUD object](blender/creating-hud-animation-in-blender.md)
+        - [Creating animations for the camera](blender/creating-camera-animations.md)
 
 - [Texturing](texturing/README.md)
     - [Creating and preparing textures](texturing/сreating-and-preparing-textures.md)
