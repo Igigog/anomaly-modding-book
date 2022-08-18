@@ -1,0 +1,4 @@
+main>p>img[alt~="centered"] {
+    display: block;
+    margin: auto;
+}
