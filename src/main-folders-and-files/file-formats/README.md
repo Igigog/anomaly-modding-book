@@ -99,4 +99,6 @@ This section describes the extensions that are found in the game files and the S
 | .wallmarks | Decals. Bloodstains, faction emblems on walls, etc. Used for the compiled level. |
 
 ## Postprocess
+| Extension | Description |
+---|---|
 | .ppe | Postprocess file format. |

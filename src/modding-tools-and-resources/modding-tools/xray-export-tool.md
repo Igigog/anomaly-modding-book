@@ -1,5 +1,7 @@
 # Object Tool (or XRay Export Tool)
 ## Program Developers: RedPandaProject (BearIvan and other) (Original Authors), ValeroK
+## The version described in the article: 4.35
+## [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3577-object-editor-v435)
 
 ## About:
 
@@ -57,20 +59,28 @@ Tool for fast editing and exporting raw stalker formats
 | Load | Imports the selected .object, .skl/.skls, .bones, Bone Parts, Motions Refs, User Data |
 | Save | Save file |
 | Save As | Saves the file as a .object, .skl, .skls, .bones, Bone Parts file |
-| Export | Exports the file as an .ogf, .omf, .object, .dm |
-| Delete | Deletes skls/ Make bone parts to default |
+| Export | Exports the file as an .ogf, .omf, .object, .dm, C++ (All info/ Vertex/ Faces/ Vertex Normals/ Normals), Motions Refs, User Data |
+| Delete | Deletes skls/ Bone parts to default |
 | Batch Convert | From ltx/ From File Dialog (To OGF/ To OMF)/ From Folder Dialog (To OGF/ To OMF) |
-| Exit | Exit | Exit program
+| Exit | Exit program |
 
 - #### Tools
 
 | Button | Description |
 ---|---|
 | Surface Params | Enable all 2 sided/Disable all 2 sided |
-| Shape Params | Generate Shapes/Type Helper (All None - All Box - All Sphere - All Cylinder) |
+| Shape Params | All None - All Box - All Sphere - All Cylinder |
 | Generate Shapes | Generates shapes for bones |
 | Generate LOD | Open the LOD generation tab |
 | Import Object Params | Imports parameters from another object |
+
+##### Generate LOD
+
+Allows you to adjust the quality of Lod.
+
+| Checkbox | Description |
+---|---|
+| Make progressive meshes | Make progressive meshes |
 
 - #### Object Info
 
@@ -88,10 +98,22 @@ The default settings menu, where you can set the default values of the parameter
 ---|---|
 | Use No Compress motions (Need STCoP Reader) | Activates a new animation compression option, by selecting which animations will be exported without compression. Requires a commit in the engine from STCoP WP |
 | Program debugging | Activates the tab with buttons for debugging |
+| Force Viewport Load | Viewport is automatically loaded each time a file is loaded (slows down loading) |
 
 | Field | Description |
 ---|---|
+| Image path: | Folder for generated screenshots from viewport |
+| FS Ltx path: | If you select fs.ltx, the program will automatically add all other paths to the gamedata files |
+| Textures path: | Texture folder for viewport |
 | Game Mtl path: | Path to gamemtl.xr file. After that you can select and apply materials to the bones (Bones tab) |
+
+- #### View Port
+
+| Button | Description |
+---|---|
+| Reload | Reload viewport |
+| Refresh textures | Refresh textures in viewport |
+| Open Image folder | Open Image folder |
 
 ### Sections
 
@@ -191,6 +213,7 @@ Shows Used Data file
 | LOD Path | Path to LOD |
 
 ## Sources
+
 [Original Source Code by RedPandaProject (BearIvan and other)](https://github.com/RedPandaProjects/XRayEngine)
 
 [Modified Source Code by ValeroK](https://github.com/VaIeroK/XrayExportTool)

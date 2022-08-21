@@ -58,7 +58,9 @@ Official SDK with community enhancements:
         - SDK 0.7 Full(Win32/Win64):
             - The heaviest version, it includes unpacked gamedata, rawdata with sources of CS, CoP objects (excluded objects from rawdata\objects\scenes folder because of its weight)
             - Preinstalled add-ons from other suites. 
-            - Weight: 2.64 GB/2.64 
+            - Weight: 2.64 GB/2.64
+
+    - [GUI for X-Ray SDK](https://github.com/Graff46/GUI_for_X-Ray_SDK) - A graphical shell for quickly calling the Actor Editor, Level Editor, and compilers for selected locations.
 
     - [SDK 0.7 by Range](https://disk.yandex.ru/d/wnzjuQkcti1CNw)
 
@@ -100,6 +102,11 @@ The versions of the SDK tools may differ depending on the version of the SDK its
 
 - [OXR Texture Tool](https://github.com/revolucas/OXR-Texture-Tool) - This tools purpose is to unpack ui_icon_equipment.dds into separate individual icons so that they can be manipulated individually or merged more easily. This tool is capable of creating a new sprite sheet using the unpacked icons and writing the new geometry values (w,h,x,y) into the system configs. It also allows you to merge up to 4 existing unpacked ui_icon_equipment directories into a single sheet.
 
+- [BumpGenerator](https://sharedby.blomp.com/MT4WEx) - Intended for DXT compression of bumps together with simultaneous generation of bump#maps (the purpose of which is to correct errors introduced by compression). It works similarly to a similar function in KFK. As input textures, both standard ("blue") bump textures and bump textures used directly in the game with rearranged channels are supported. [Source Code](https://github.com/gunslingermod/BumpGenerator)
+
+- [Bump Generator by i-love-kfc](https://gitlab.com/i-love-kfc/bump-generator) - A simple bump and bump# texture generator from normal maps with the ability to use gloss maps, also, is capable of generating bump# for ready-made "green" bumps.
+    - [More](bump-generator.md)
+
 - [THM Editor](https://gitlab.com/i-love-kfc/thm-editor/) - Utility for editing [.thm](../main-folders-and-files/file-formats/thm.md) files without the need to use the SDK
     - [More](thm-editor-by-i-love-kfc.md)
 - [THM Editor by Valerok](https://github.com/VaIeroK/THM-Editor) - ValeroK's version of the original THM Editor
@@ -115,9 +122,11 @@ The versions of the SDK tools may differ depending on the version of the SDK its
 
 - [S.T.A.L.K.E.R. Dialog Editor Extended](https://www.moddb.com/mods/call-of-chernobyl/addons/stalker-dialog-editor-extended-german) - Allows you to edit and create dialogs.
 
-## Parameters
+## Parameters\LTX
 
 - [STLKObjectMan](https://drive.google.com/file/d/1OM2gZtj_Ubg7H03iI-Z_z3EAkwn1_S2R/view) - Universal parameters editor. Modifies *.ltx and *.xml files. (not compatible with Anomaly due to modified .ltx files)
+
+- [StalkerElementFinder](https://disk.yandex.ru/d/Rv-Mt1IAXyTihA%D0%B0) - A program for finding elements and resources
 
 ## Sounds
 
@@ -133,7 +142,7 @@ The versions of the SDK tools may differ depending on the version of the SDK its
 ## Models
 
 - [OGF Editor](https://github.com/mortany/OGF-tool) - Tool for working with ogf format
-- [OGF Editor by Valerok](https://github.com/VaIeroK/OGF-tool) - Modified tool for working with ogf format
+- [OGF Editor by Valerok](https://github.com/VaIeroK/OGF-tool) - Tool for working with .ogf and .dm format
     - [More](ogf-editor-by-valerok.md)
 
 - [MeshToolz](https://github.com/gunslingermod/MeshToolz) - Swiss knife for low-level editing of OGF models. Want to copy a piece of one model to another? Easy. Change texture paths and bindings? No problem. Move and scale an item by snapping it to another bone? No problem. Can work both interactively and in script processing mode.
@@ -144,8 +153,6 @@ The versions of the SDK tools may differ depending on the version of the SDK its
 - [ObjectParamsCopier](https://sharedby.blomp.com/BJRQn8) -  Allows you to quickly copy surface settings with the same name from one object file to another
 
 - [OgfRefEditor](https://sharedby.blomp.com/XAwocF) - Editor of the list of OMFs connected to the model. It is intended primarily for changing the list of OMFs used in hand models, for this purpose it is possible to apply the OMF list to all OGFs in the selected folder
-
-- [BumpGenerator](https://sharedby.blomp.com/MT4WEx) - Intended for DXT compression of bumps together with simultaneous generation of bump#maps (the purpose of which is to correct errors introduced by compression). It works similarly to a similar function in KFK. As input textures, both standard ("blue") bump textures and bump textures used directly in the game with rearranged channels are supported.
 
 - [StalkerWeaponToolKit](https://disk.yandex.ru/d/x3771W3btrwtFw) - Tool for working with weapons
 
@@ -177,18 +184,20 @@ The versions of the SDK tools may differ depending on the version of the SDK its
 - [shaders_xrlc_xr_cdc](https://disk.yandex.ru/d/FoQnY1VV3PLteX)
 - [senvironment_xr_cdc](https://disk.yandex.ru/d/jBnrr3Xg3PLtcc)
 - [particles_xr_cdc (Unpacking to binary files only)](https://disk.yandex.ru/d/LCkINfLw3PLtV5)
-    - The program requires Perl to be installed.
+- [converter-level](https://disk.yandex.ru/d/czZSLCzT3UrDa5)
+    - The program requires Perl [Old Version Perl](https://disk.yandex.ru/d/N6e73Ky2Wouqfg) to be installed.
     - You also need [stkutils](https://disk.yandex.ru/d/nnjntzYZQv8sD) (put it in the folder with the script or in C:\Perl\lib)
 
 ## Compilers
 
-- [Universal x64 level compilers](https://drive.google.com/file/d/1ZR8bnMkTGqFiZgGE7DtHCRYfSgj0GrPz/view) - Universal level compiler that supports the compilation format for games of all series and has many keys to compile
+- [Universal x64 level compilers](https://drive.google.com/file/d/1_aU3MsUM7X9RphjjJRx85iQBPneavAz_/view) - Universal level compiler that supports the compilation format for games of all series and has many keys to compile
     - [More](universal-x64-level-compilers.md)
 
 ## .db/.xdb archivers
 
 - [DB_Compressor by d_μaμ](https://cdn.discordapp.com/attachments/616764067670917131/846799604438532107/DB_Compressor.rar)
-- [xrCompress](https://ap-pro.ru/forums/topic/3500-obnovlyonnyy-xrcompress/)
+- [xrCompress by i-love-kfc](https://ap-pro.ru/forums/topic/3500-obnovlyonnyy-xrcompress/) - .db/.xdb archiver
+    - [More]()
 
 ## Mod Creating
 

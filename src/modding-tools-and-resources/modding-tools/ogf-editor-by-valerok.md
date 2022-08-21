@@ -1,11 +1,13 @@
 # Modified OGF Editor by ValeroK
 ## Program Developers: Mortany (Original Author), ValeroK
+## The version described in the article: 2.4
+## [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3549-ogfdm-editor-v24)
 
-## About
+## About:
 
-Modified tool for working with .ogf format
+Tool for working with .ogf and .dm format
 
-![ogf-editor](modding-tools-images/ogf-editor-by-valerok.png)
+![ogf-editor centered](modding-tools-images/ogf-editor-by-valerok.png)
 
 ## Features
 
@@ -46,9 +48,28 @@ Modified tool for working with .ogf format
 ---|---|
 | Load | Loads the selected .ogf |
 | Save | Save .ogf |
-| Save As | Save as .object, .skls, .skl or .bones |
+| Save As | Save as .ogf |
+| Export | Export as .object, .bones, .omf, .skl, .skls |
 | Reload | Reloads the program |
 | Exit | Exits the program |
+
+- #### Tools Button
+
+| Button | Description |
+---|---|
+| Open Skeleton in Object Editor |  |
+| Motion Tools |  |
+| Import data from same model |  |
+
+- ##### Motion Tools Button
+
+Becomes active only after switching to the Motions section.
+
+| Button | Description |
+---|---|
+| Delete Motions | Deletes the list of animations |
+| Edit in OMF Editor | Editing Animations via OMF Editor (First, you must specify the path to the OMF Editor .exe) |
+| Replace Motions | Replaces the list of animations with another |
 
 - #### OGF Info Button
 
@@ -59,26 +80,20 @@ Display information about the loaded OGF
 | OGF Version | The .ogf version |
 | Model Type | Model type |
 | Source File | Source file |
-| Converter |  |
+| Converter | Converter |
 | Creator | Creator |
 | Editor | Editor |
 | Export Time | Export Time |
 | Creation Time | Creation Time |
 | Modified Time | Modified Time |
 
+| Button | Description |
+---|---|
+| Repair timers |  |
+
 - #### View Button
 
 Opens the OGF View with the selected model
-
-- #### Motion Tools Button
-
-Becomes active only after switching to the Motions section.
-
-| Button | Description |
----|---|
-| Delete Motions\Return Last Motions | Deletes the list of animations\returns the last list of animations |
-| Edit in OMF Editor | Editing Animations via OMF Editor (First, you must specify the path to the OMF Editor .exe) |
-| Replace Motions | Replaces the list of animations with another |
 
 ### Checkboxes
 
@@ -130,6 +145,10 @@ Editing the bone parameter
 | Center Of Mass | Center of mass |
 | Position | Bone position |
 | Rotation | Bone rotation |
+
+- #### Lod
+
+Specifies the path to the Lod model
 
 ## Sources
 [Source Code of Original OGF Editor by Mortany](https://github.com/mortany/OGF-tool)

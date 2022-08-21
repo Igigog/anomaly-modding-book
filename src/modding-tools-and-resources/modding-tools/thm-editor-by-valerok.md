@@ -1,14 +1,13 @@
 # Modified THM Editor by ValeroK
 ## Program Developers: i-love-kfc (Original Author), ValeroK
+## The version described in the article: 1.1
+## [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3551-thm-editor-v10)
 
 ## About:
-[THM Editor by Valerok](https://github.com/VaIeroK/THM-Editor) - The THM Editor from i-love-kfc was taken as the basis, finalized and fixed. Allows you to work with [.thm](../../main-folders-and-files/file-formats/thm.md) files.
 
-<div style="text-align: center;">
+The [THM Editor](thm-editor-by-i-love-kfc.md) from i-love-kfc was taken as the basis, finalized and fixed. Allows you to work with [.thm](../../main-folders-and-files/file-formats/thm.md) files.
 
-![thm-editor-by-valerok](modding-tools-images/thm-editor-by-valerok.png)
-
-</div>
+![thm-editor-by-valerok centered](modding-tools-images/thm-editor-by-valerok.png)
 
 ## Features
 
@@ -160,6 +159,7 @@
 - #### Normal Map
 
 ## Sources
+
 [Source Code of Original THM Editor by i-love-kfc](https://gitlab.com/i-love-kfc/thm-editor/)
 
 [Source Code of Modified THM Editor by ValeroK](https://github.com/VaIeroK/THM-Editor)

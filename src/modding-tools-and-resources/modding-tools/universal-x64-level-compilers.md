@@ -2,22 +2,21 @@
 ## Program Developer: GSK
 ## Compiler edits and build: SkyLoader
 ## Acknowledgements: Abramcumner, K.D.
+## The version described in the article: 1.3
+## [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3341-universalnye-kompilyatory-urovney-h64)
 
 ## About:
+
 Universal level compiler that supports the compilation format for games of all series and has many keys to compile
 
-<div style="text-align: center;">
-
-![editor](modding-tools-images/universal-x64-level-compilers.png)
-
-</div>
+![editor centered](modding-tools-images/universal-x64-level-compilers.png)
 
 ## Compilation of compilers:
 
 - Geometry compiler (SoC, CS, CoP)
 - Grass compiler (SoC, CS, CoP)
 - AI grid compiler (SoC, CS, CoP)
-- Spawn Compiler (CoP, CS)
+- Spawn Compiler (SoC, CS, CoP)
 
 ## Features
 
@@ -193,6 +192,7 @@ Check Ai-Map
 | -ppm <number> | set the quality of lightmaps instead of the value in KFK |
 | -weld_dist <number> | set Weld distance instead of the KFD value |
 | -hemi_bias <number> | set the offset of the beam position when baking hemi (default: 0.1, original: 0.001) |
+| -insert_graph | enable adding graphs to common spawn when building a SoC Level (Key for SoC only) |
 
 #### Common additional keys
 

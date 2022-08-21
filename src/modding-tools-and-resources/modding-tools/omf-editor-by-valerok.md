@@ -1,14 +1,13 @@
 # Modified Omf Editor by ValeroK
 ## Program Developers: Mortany (Original Author), ValeroK
+## The version described in the article: 1.2
+## [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3550-omf-editor-v12)
 
 ## About:
+
 Modified tool for working with [.omf](../../main-folders-and-files/file-formats/omf.md) format.
 
-<div style="text-align: center;">
-
-![editor](modding-tools-images/omf-editor-by-valerok.png)
-
-</div>
+![editor centered](modding-tools-images/omf-editor-by-valerok.png)
 
 ## Features
 
@@ -42,6 +41,7 @@ Modified tool for working with [.omf](../../main-folders-and-files/file-formats/
 | Load | Loads the selected .omf |
 | Save | Save .omf |
 | Save As | Save as .omf or .skls or .skl |
+| Exit | Exits the program |
 
 - #### Tools Button
 
@@ -102,6 +102,7 @@ Modified tool for working with [.omf](../../main-folders-and-files/file-formats/
 | Ask for Overwrite | When merging animations will ask to overwrite each animation |
 
 ## Sources
+
 [Source code of Original Omf Editor by Mortany](https://github.com/mortany/omf_editor)
 
 [Source code of Modified Omf Editor by ValeroK](https://github.com/VaIeroK/Omf-Editor)

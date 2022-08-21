@@ -1,9 +1,13 @@
 # THM Editor
 ## Program Developer: i-love-kfc
+## The version described in the article: 1.4
+## [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3543-thm-editor)
 
 ## About:
 
-![thm-editor](modding-tools-images/thm-editor-by-i-love-kfc.png)
+Utility for editing .thm files without the need to use the SDK
+
+![thm-editor centered](modding-tools-images/thm-editor-by-i-love-kfc.png)
 
 ## Features
 
@@ -121,10 +125,10 @@ Imports .dds texture
 
 | Button | Description |
 ---|---|
-| Try repair thms |  |
-| Convert thms format (SOC/COP) |  |
+| Generate thms by .dds |  |
+| Fix invalid chunks in thms |  |
 | Validate thms with dds |  |
-| Generate thms for textures |  |
+| Convert thms format (SOC/COP) |  |
 
 - ### Chechboxes
 
@@ -163,4 +167,5 @@ Imports .dds texture
 - #### Normal Map name
 
 ## Sources
+
 [Source Code](https://gitlab.com/i-love-kfc/thm-editor/)
