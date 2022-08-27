@@ -1,7 +1,7 @@
 # Bump Generator
-## Program Developer: i-love-kfc
-## The version described in the article: initial (0.1)
-## [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3740-bump-generator)
+- Program Developer: i-love-kfc
+- The version described in the article: initial (0.1)
+- [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3740-bump-generator)
 
 ## About:
 
@@ -24,9 +24,9 @@ A simple .bump and .bump# texture generator from normal maps with the ability to
 | Read Specular map | Whether to use the Specular Map |
 | Bump height | Bump height |
 
-Checboxes
+Checkboxes
 
-| Checboxes | Description |
+| Checkboxes | Description |
 ---|---|
 | SOC Fromat thm | Generates SOC .thm file format |
 

@@ -238,7 +238,7 @@ Example value taken from vanilla m_bloodsucker.ltx
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 ---|---|---|---|
 | aom_enabled | Whether the ability to attack on the move is enabled | 1 |  |
-| aom_only_jump | Возможность атаки только в прыжке(?) | 1 |  |
+| aom_only_jump | Ability to attack only when jumping(?) | 1 |  |
 | aom_animation_left |  | stand_run_attack_right_ |  |
 | aom_animation_right |  | stand_run_attack_left_ |  |
 | aom_far_radius |  | 15 |  |
@@ -264,14 +264,14 @@ Example value taken from vanilla m_bloodsucker.ltx
 | satiety_critical | The critical satiety value at which health begins to decrease |  |  |
 | radiation_health_v | Reduced health when exposed to radiation | 0.0 |  |
 | morale_v | Rate of Moral Restoration | 0.01 |  |
-| health_hit_part | процент хита, уходящий на отнимание здоровья(?) | 1.0 |  |
-| power_hit_part | процент хита, уходящий на отнимание силы(?) | 1.0 |  |
+| health_hit_part | the percentage of the hit that goes to take away health(?) | 1.0 |  |
+| power_hit_part | the percentage of the hit that goes to take away power(?) | 1.0 |  |
 | psy_health_v | Speed of psy health recovery | 0.1 |  |
-| health_restore_v | Восстановление здоровья со временем(?) | 0.0001 |  |
+| health_restore_v | Restoring health over time(?) | 0.0001 |  |
 | immunities_sect | Mutant immunities section | bloodsucker_immunities |  |
 | protections_sect	 | Mutant protections section | bloodsucker_protections |  |
 | bleeding_v | Blood loss at nominal wound per second | 0.008 |  |
-| wound_incarnation_v | крутизна кривой заживления (какой процент раны останется после заживления в игровую секунду)(?) | 0.02 |  |
+| wound_incarnation_v | the steepness of the healing curve (what percentage of the wound remains after healing in a game second)(?) | 0.02 |  |
 | min_wound_size | Minimum value at which bleeding will start | 0.0226 |  |
 | DamagedThreshold | The value at which the wound animation starts to play | 0.36 |  |
 
@@ -285,11 +285,11 @@ coefficients of parameter change rates during sleep
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 ---|---|---|---|
-| sleep_health | Восстановление здаровья при сне(?) | 1.0 |  |
-| sleep_power | Восстановление сил при сне(?) | 1.0 |  |
-| sleep_satiety | Снижение сил при сне(?) | 1.0 |  |
-| sleep_radiation | Снижение радиации при сне(?) | 1.0 |  |
-| sleep_psy_health | Восстановление пси-здоровья при сне(?) | 1.0 |  |
+| sleep_health | Restoring health when sleeping(?) | 1.0 |  |
+| sleep_power | Recovering strength when sleeping(?) | 1.0 |  |
+| sleep_satiety | Decreased strength when sleeping(?) | 1.0 |  |
+| sleep_radiation | Reducing radiation when sleeping(?) | 1.0 |  |
+| sleep_psy_health | Restoring psi health when sleeping(?) | 1.0 |  |
 
 </details>
 
@@ -399,10 +399,10 @@ Unique abilitys for mutants. Each mutant may have its own individual abilities, 
 | max_view_distance | Maximum visibility distance | 1.0 | coefficient, which is multiplied by eye_range, depending on the angle |
 | visibility_threshold | value, when the sum is reached, the object is considered visible | 190.0 |  |
 | always_visible_distance |  | 0.05 |  |
-| time_quant | Используется при расчете видимости одним существом другого (в формуле участвует время, временной квант, освещенность, скорость обьекта, дистанция до него) | 0.0005 |  |
-| decrease_value | значение, на которое уменьшается вес, если объект попал в фрустум, но отсёкся по каким-то причинам | 0.01 |  |
+| time_quant | Used when calculating the visibility of one creature to another (the formula involves time, time quantum, illumination, speed of an object, and distance to it) | 0.0005 |  |
+| decrease_value | the value by which the weight is reduced if the object is caught in the frustum, but is detached for some reason | 0.01 |  |
 | velocity_factor |  | 0.2 |  |
-| luminocity_factor | фактор освещения (только для Актёра) | 0.6	 |  |
+| luminocity_factor | light factor (for Actor only) | 0.6	 |  |
 | transparency_threshold |  | 0.1 |  |
 | feel_enemy_who_just_hit_max_distance | the distance at which the monster will sense the shooter in any case | 350 |  |
 
@@ -439,6 +439,8 @@ Unique abilitys for mutants. Each mutant may have its own individual abilities, 
 
 ## Unique parameters of different engine classes
 
+___
+
 ### AI_Crow
 
 <details>
@@ -454,6 +456,8 @@ Unique abilitys for mutants. Each mutant may have its own individual abilities, 
 | idle_sound_delta |  | 400.f |  |
 
 </details>
+
+___
 
 ### SM_BLOOD (Bloodsucker)
 
@@ -516,6 +520,8 @@ Unique abilitys for mutants. Each mutant may have its own individual abilities, 
 
 </details>
 
+___
+
 ### SM_BOARW (Boar)
 
 <details>
@@ -533,6 +539,8 @@ Unique abilitys for mutants. Each mutant may have its own individual abilities, 
 | actor_restrictor |  | medium_monster |  |
 
 </details>
+
+___
 
 ### SM_BURER (Burer)
 
@@ -610,14 +618,16 @@ Unique abilitys for mutants. Each mutant may have its own individual abilities, 
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 ---|---|---|---|
-| scan_critical_value | граничное значение | 25.0 |  |
-| scan_radius | радиус сканирования | 50.0 |  |
-| scan_velocity_threshold | граничная скорость, до которой движение актера игнорируется | 4.0 |  |
-| scan_decrease_value | уменьшение текущей суммы в секунду | 0.3 |  |
-| scan_trace_time_freq | частота трейса скорости | 2 |  |
+| scan_critical_value | threshold value | 25.0 |  |
+| scan_radius | scanning radius | 50.0 |  |
+| scan_velocity_threshold | the boundary speed up to which the actor's movement is ignored | 4.0 |  |
+| scan_decrease_value | decrease in the current amount per second | 0.3 |  |
+| scan_trace_time_freq | speed trace frequency | 2 |  |
 | scan_effector_section |  | m_burer_scan_effector |  |
 
 </details>
+
+___
 
 ### SM_CAT_S (Cat)
 
@@ -643,6 +653,8 @@ Unique abilitys for mutants. Each mutant may have its own individual abilities, 
 
 </details>
 
+___
+
 ### SM_CHIMS (Chimera)
 
 <details>
@@ -661,6 +673,8 @@ Attack specific
 | num_prepare_jumps |  | 0 |  |
 
 </details>
+
+___
 
 ### SM_CONTR (Controller)
 
@@ -706,6 +720,8 @@ Attack specific
 
 </details>
 
+___
+
 ### SM_DOG_S (Dog)
 
 <details>
@@ -717,8 +733,8 @@ Parameters of a dog's behavior in the area designated for him home
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 ---|---|---|---|
-| anim_factor | анимации воя/рытья vs анимаций обнюхивания | 50 | Specified in percent (from 1 to 100) |
-| corpse_use_timeout | таймаут на юзание трупа | 10 | Specified in seconds |
+| anim_factor |  | 50 | Specified in percent (from 1 to 100) |
+| corpse_use_timeout | timeout on using a corpse | 10 | Specified in seconds |
 | min_life_time | minimum waking time | 10 | сек (расчитывается min_life_time + rand(10) * min_life_time) |
 | min_sleep_time | minimum sleep time | 5 | сек. (расчитывается min_sleep_time + rand(5) * min_sleep_time) |
 | drive_out_time | the time during which the dog will try to chase the enemy away | 5 |  |
@@ -726,6 +742,8 @@ Parameters of a dog's behavior in the area designated for him home
 | max_move_dist | maximum length of the patrol section | 6 | Specified in minutes |
 
 </details>
+
+___
 
 ### SM_FLESH (Flesh)
 
@@ -741,7 +759,11 @@ Parameters of a dog's behavior in the area designated for him home
 
 </details>
 
+___
+
 ### SM_IZLOM (Fracture)
+
+___
 
 ### SM_GIANT (Psevdogaint)
 
@@ -775,6 +797,8 @@ Parameters of a dog's behavior in the area designated for him home
 
 </details>
 
+___
+
 ### AI_PHANT (Phantom)
 
 <details>
@@ -805,6 +829,8 @@ Parameters of a dog's behavior in the area designated for him home
 | particles_shoot |  | monsters\phantom_death |  |
 
 </details>
+
+___
 
 ### SM_POLTR (poltergeist)
 
@@ -846,13 +872,23 @@ Parameters of a dog's behavior in the area designated for him home
 
 </details>
 
-### SM_P_DOG (pseudodog) 
+___
+
+### SM_P_DOG (pseudodog)
+
+___
 
 ### SM_DOG_P(psy_dog_s)
 
+___
+
 ### SM_DOG_F (psy_dog_phantom_s)
 
+___
+
 ### SM_RAT (Rat)
+
+___
 
 ### SM_SNORK (Snork)
 
@@ -880,7 +916,11 @@ Parameters of a dog's behavior in the area designated for him home
 
 </details>
 
+___
+
 ### SM_TUSH (tushkano)
+
+___
 
 ### SM_ZOMBI (Zombie)
 

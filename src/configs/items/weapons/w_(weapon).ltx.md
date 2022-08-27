@@ -1,10 +1,18 @@
 # w_*Weapon*.ltx Config File
 
+## About:
+
+Configuration parameters for weapons
+
+___
+
 Parameters of the weapon are set for each sample in a separate *.ltx file, and consist of two sections (Each contains its own set of parameters):
 
-[wpn_name] - Main, it sets most of the parameters (for NPC and 3rd-person view).
+- [wpn_name] - Main, it sets most of the parameters (for NPC and 3rd-person view).
 
-[wpn_name_hud] - Secondary, where you set first-person view parameters only.
+- [wpn_name_hud] - Secondary, where you set first-person view parameters only.
+
+___
 
 ## Parameters of the world model 
 [wpn_name]: Here you can set additional characteristics of weapon from sections for example:
@@ -372,6 +380,8 @@ Parameters of the weapon are set for each sample in a separate *.ltx file, and c
 | max_radius |  |  |  |
 
 </details>
+
+___
 
 ## Weapon HUD parameters
 

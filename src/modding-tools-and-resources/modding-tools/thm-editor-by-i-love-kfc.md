@@ -1,7 +1,7 @@
 # THM Editor
-## Program Developer: i-love-kfc
-## The version described in the article: 1.4
-## [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3543-thm-editor)
+- Program Developer: i-love-kfc
+- The version described in the article: 1.4
+- [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3543-thm-editor)
 
 ## About:
 

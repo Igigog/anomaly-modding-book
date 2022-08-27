@@ -1,5 +1,11 @@
 # o_*Outfit*.ltx Config File
 
+## About:
+
+Configuration parameters for outfits
+
+___
+
 ### General parameters
 
 <details>

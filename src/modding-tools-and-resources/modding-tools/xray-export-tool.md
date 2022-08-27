@@ -1,7 +1,7 @@
 # Object Tool (or XRay Export Tool)
-## Program Developers: RedPandaProject (BearIvan and other) (Original Authors), ValeroK
-## The version described in the article: 4.35
-## [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3577-object-editor-v435)
+- Program Developers: RedPandaProject (BearIvan and other) (Original Authors), ValeroK
+- The version described in the article: 4.35
+- [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3577-object-editor-v435)
 
 ## About:
 

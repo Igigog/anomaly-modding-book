@@ -1,7 +1,7 @@
 # Modified THM Editor by ValeroK
-## Program Developers: i-love-kfc (Original Author), ValeroK
-## The version described in the article: 1.1
-## [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3551-thm-editor-v10)
+- Program Developers: i-love-kfc (Original Author), ValeroK
+- The version described in the article: 1.1
+- [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3551-thm-editor-v10)
 
 ## About:
 

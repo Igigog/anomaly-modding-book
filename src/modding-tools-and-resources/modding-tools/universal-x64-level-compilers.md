@@ -1,9 +1,9 @@
 # Universal x64 level compilers
-## Program Developer: GSK
-## Compiler edits and build: SkyLoader
-## Acknowledgements: Abramcumner, K.D.
-## The version described in the article: 1.3
-## [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3341-universalnye-kompilyatory-urovney-h64)
+- Program Developer: GCS Game Word
+- Compiler edits and build: SkyLoader
+- Acknowledgements: Abramcumner, K.D.
+- The version described in the article: 1.3
+- [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3341-universalnye-kompilyatory-urovney-h64)
 
 ## About:
 
@@ -180,8 +180,8 @@ Check Ai-Map
 | -noimpl | don't bake lighting for terrain |
 | -noresize | don't resize bigger textures to 1024x1024 |
 | -nostrip | disable geometry optimization and streamlining |
--dx_opt | turn on D3DX optimizer geometry optimization instead of NvTriStrip
-| -gi | turn on the Radiosity phase
+| -dx_opt | turn on D3DX optimizer geometry optimization instead of NvTriStrip |
+| -gi | turn on the Radiosity phase |
 | -no_mt_mu | don't run the lighting calculation for Multiple Usage objects in parallel with the main compilation |
 | -high | higher priority for the threads |
 | -saveobj_base | save all level geometry in obj files (basic sweep) |
@@ -189,9 +189,9 @@ Check Ai-Map
 | -saveobj_cform | save all the collision level in the obj file |
 | -qual_draft | set the quality of the scene in Draft (does not affect the exposed shaders) |
 | -qual_high | set the quality of the scene to High (does not affect the exposed shaders) |
-| -ppm <number> | set the quality of lightmaps instead of the value in KFK |
-| -weld_dist <number> | set Weld distance instead of the KFD value |
-| -hemi_bias <number> | set the offset of the beam position when baking hemi (default: 0.1, original: 0.001) |
+| -ppm (number) | set the quality of lightmaps instead of the value in KFK |
+| -weld_dist (number) | set Weld distance instead of the KFD value |
+| -hemi_bias (number) | set the offset of the beam position when baking hemi (default: 0.1, original: 0.001) |
 | -insert_graph | enable adding graphs to common spawn when building a SoC Level (Key for SoC only) |
 
 #### Common additional keys
@@ -199,7 +199,7 @@ Check Ai-Map
 | Key | Description |
 ---|---|
 | -help | call help with a list of all startup keys |
-| -t <number> | set number of threads for multithreaded operations (does not work with the -tbb switch) |
-| -fsltx <file_name> | use your ltx instead of fsgame.ltx |
-| -log_name <file_name> | create a log file with this name. Useful for compiling locations by queue |
+| -t (number) | set number of threads for multithreaded operations (does not work with the -tbb switch) |
+| -fsltx (file_name) | use your ltx instead of fsgame.ltx |
+| -log_name (file_name) | create a log file with this name. Useful for compiling locations by queue |
 | -tbb | use TBB multithreading (not recommended) |
