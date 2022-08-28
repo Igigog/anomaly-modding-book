@@ -3,6 +3,8 @@
 - The version described in the article: 4.35
 - [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3577-object-editor-v435)
 
+___
+
 ## About:
 
 Tool for fast editing and exporting raw stalker formats

@@ -1,5 +1,7 @@
 # Contributing to this book
 
+___
+
 This book is written using [mdBook](https://github.com/rust-lang/mdBook). To contribute to this book, you will need:
 
 1. [mdBook](https://github.com/rust-lang/mdBook)

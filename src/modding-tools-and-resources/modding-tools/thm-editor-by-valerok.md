@@ -3,6 +3,8 @@
 - The version described in the article: 1.1
 - [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3551-thm-editor-v10)
 
+___
+
 ## About:
 
 The [THM Editor](thm-editor-by-i-love-kfc.md) from i-love-kfc was taken as the basis, finalized and fixed. Allows you to work with [.thm](../../main-folders-and-files/file-formats/thm.md) files.

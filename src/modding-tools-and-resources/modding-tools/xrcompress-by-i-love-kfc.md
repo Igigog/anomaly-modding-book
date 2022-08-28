@@ -3,6 +3,8 @@
 - The version described in the article: 0.1
 - [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3500-obnovlyonnyy-xrcompress)
 
+___
+
 ## fixes
 
 [Fix by macron](https://disk.yandex.ru/d/_C56bRIftKUMlg) - Replace the file xrCompress_Cfg.ltx with the downloaded

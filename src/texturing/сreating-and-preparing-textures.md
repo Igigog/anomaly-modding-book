@@ -1,5 +1,7 @@
 # Creating and preparing textures
 
+___
+
 ## Beginning
 
 First, familiarize yourself with the supported texture compression ([.dds](../main-folders-and-files/file-formats/dds.md) [.bump](../main-folders-and-files/file-formats/bump.md) [.bump#](../main-folders-and-files/file-formats/bump_hash.md))

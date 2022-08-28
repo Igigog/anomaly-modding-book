@@ -1,5 +1,7 @@
 # .dm (Detail Model)
 
+___
+
 ## About:
 
 Effect of a dynamic weather environment (e.g., rain or lightning)

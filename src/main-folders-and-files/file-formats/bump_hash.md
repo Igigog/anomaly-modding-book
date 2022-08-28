@@ -1,5 +1,7 @@
 # .bump#
 
+___
+
 ## About:
 
 Corrects DXT compression errors in [.bump](bump.md) and is generated only with SDK

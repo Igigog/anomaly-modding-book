@@ -1,5 +1,7 @@
 # Installing MO2
 
+___
+
 This guide is meant to show you how to setup Mod Organizer 2 and how to mod Anomaly in a simple and easy way step by step.
 
 Made by [Starcry](https://www.blogger.com/profile/07678551170854762591)

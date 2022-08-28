@@ -1,5 +1,7 @@
 # XML files
 
+___
+
 XML files are used to save text strings used for translation. All XML files are located in `gamedata/configs/text/*lang*`. XML files have these properties:
 
 1. They are saved in encoding Windows-1251. English translation won't break if you're using UTF, but russian will.

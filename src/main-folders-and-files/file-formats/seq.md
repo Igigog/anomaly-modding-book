@@ -1,5 +1,7 @@
 # .seq (Sequence)
 
+___
+
 ## About:
 
 Text file that is used to create a simple animation texture, by recording a sequence of "frames" and a playback speed.

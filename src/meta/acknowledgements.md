@@ -1,5 +1,7 @@
 # Acknowledgements
 
+___
+
 During the development of this book, information was taken from many sites and forums. Here are the main ones:
 
 - [Ap-Pro](https://ap-pro.ru/)

@@ -1,5 +1,7 @@
 # w_*Weapon*.ltx Config File
 
+___
+
 ## About:
 
 Configuration parameters for weapons

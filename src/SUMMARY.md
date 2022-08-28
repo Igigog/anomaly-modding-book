@@ -2,21 +2,31 @@
 
 [Introduction](README.md)
 
+___
+
 - [Meta](meta/README.md)
     - [Links](meta/links.md)
     - [Contributing to this book](meta/contributing/README.md)
     - [Acknowledgements](meta/acknowledgements.md)
+
+___
 
 - [Getting Started](getting-started/README.md)
     - [Installing MO2](getting-started/installing-mo2.md)
     - [Addon installers](getting-started/addon-installers.md)
     - [Package Naming for MO2](getting-started/package-naming.md)    
 
+___
+
 - [Addon compatibility]()
     - [DLTX](addon-compatibility/dltx.md)
     - [Monkey patching](addon-compatibility/monkey-patching.md)
 
+___
+
 - [Crash List](crashes/crashes-list.md)
+
+___
 
 - [Main Folders And Files](main-folders-and-files/README.md)
     - [File Formats](main-folders-and-files/file-formats/README.md)
@@ -33,6 +43,8 @@
         - [.seq](main-folders-and-files/file-formats/seq.md)
         - [.thm](main-folders-and-files/file-formats/thm.md)
 
+___
+
 - [Configs]()
     - [LTX files](configs/ltx-files.md)
     - [XML files](configs/xml-files.md)
@@ -46,6 +58,8 @@
         - [Oufits Configuration Parameters](configs/items/outfits/o_(outfit).ltx.md)
         - [Mutants Configuration Parameters](configs/creatures/m_(mutant).ltx.md)
 
+___
+
 - [Scripting]()
     - [Introduction to codebase]()
     - [Codestyle]()
@@ -56,6 +70,8 @@
     - [UI]()
     - [Scripted dialogues]()
 
+___
+
 - [Modelling]()
     - [Blender](blender/README.md)
         - [Blender X-Ray Addon](blender/blender-x-ray-addon-summary.md)
@@ -65,31 +81,45 @@
         - [Advanced settings](blender/addon-settings-options/README.md)
             - [Pathes](blender/addon-settings-options/pathes.md)
 
+___
+
 - [Animating]()
     - [Blender](blender/README.md)
         - [Creating an animation in Blender for a HUD object](blender/creating-hud-animation-in-blender.md)
         - [Creating animations for the camera](blender/creating-camera-animations.md)
 
+___
+
 - [Texturing](texturing/README.md)
     - [Creating and preparing textures](texturing/сreating-and-preparing-textures.md)
+
+___
 
 - [Shading](shaders/README.md)
     - [Material Shaders List](shaders/shaders-list/materials-list.md)
     - [Shaders List](shaders/shaders-list/shaders-list.md)
     - [Compiler Shaders List](shaders/shaders-list/compiler-shaders-list.md)
 
+___
+
 - [Map](map/README.md)
     - [Why maps are bullshit]()
     - [Compiling maps](map/compiling-maps.md)
+
+___
 
 - [Engine](engine/README.md)
     - [Console commands](engine/console-commands.md)
     - [Compiling]()
     - [Architecture]()
 
+___
+
 - [Quests](quests/README.md)
     - [Introduction TO REDO](quests/introduction.md)
     - [DON'T USE WTF]()
+
+___
 
 - [Modding Tools And Resouces](modding-tools-and-resources/README.md)
     - [Modding Tools](modding-tools-and-resources/modding-tools/modding-tools.md)

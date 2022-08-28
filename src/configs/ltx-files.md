@@ -1,5 +1,7 @@
 # LTX files
 
+___
+
 LTX files are basically ini files with some custom additions. They are located all over the `gamedata/configs` and are used for, well, configs.
 
 Here's how ltx config might look like:

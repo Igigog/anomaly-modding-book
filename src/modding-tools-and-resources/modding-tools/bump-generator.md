@@ -3,6 +3,8 @@
 - The version described in the article: initial (0.1)
 - [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3740-bump-generator)
 
+___
+
 ## About:
 
 A simple .bump and .bump# texture generator from normal maps with the ability to use specular maps, also, is capable of generating .bump# for ready-made "green" .bumps.

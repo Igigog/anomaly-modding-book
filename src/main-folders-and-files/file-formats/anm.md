@@ -1,5 +1,7 @@
 # .anm (Animated paths)
 
+___
+
 ## About:
 
 A set of coordinates, which works as an animation of the actor's camera movement. It is also used for anomalies, which need to be given a path.

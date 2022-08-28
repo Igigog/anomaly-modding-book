@@ -1,5 +1,7 @@
 # Modding Tools
 
+___
+
 ## In-game editors
 
 - Item Spawner - Spawn menu for items (Weapons, Outfits, etc)
@@ -12,9 +14,13 @@
 - Pocket Workshop - Not an editor, but allows you to check the scheme of improvements.
 - NPC Logic/Execute - Allows you to edit NPC logic
 
+___
+
 ## Toolsets
 
 - [AXRToolset](https://github.com/revolucas/AXRToolset) - AXRToolset is an AutoHotkey & Lua-based scripting engine that utilizes a Graphical User Interface to display scripted plugins that do various automated tasks. Although the current plugins are designed to aid in the development of S.T.A.L.K.E.R.: Call of Chernobyl, the engine itself can be used to create macros, scripts and other utilities for any application or purpose.
+
+___
 
 ## Gamedata Extractors
 
@@ -24,11 +30,15 @@ Software to unpack gamedata
 - db_unpacker.bat (tools/) - Anomaly's internal gamedata extractor, which extracts the scripts and configs files from the .db
 - db_unpacker_all.bat (tools/) - An internal gamedata extractor from Anomaly, which extracts all files from .db
 
+___
+
 ## Converters
 
 - converter.exe (tools/) - Converts files from one format to another.
 - [X-Ray Export Tool](https://github.com/VaIeroK/XrayExportTool) - Tool for fast editing and exporting raw stalker formats
     - [More](xray-export-tool.md)
+
+___
 
 ## SDK's
 
@@ -70,7 +80,7 @@ Official SDK with community enhancements:
 
 - [SDK 2.6 beta (Lost Alpha)](https://www.moddb.com/mods/lost-alpha/downloads/stalker-lostalpha-sdk-v26-beta) - Contains the basic editors and tools that were used to create Lost Alpha.
 
-## SDK tools
+### SDK tools
 The versions of the SDK tools may differ depending on the version of the SDK itself
 
 - Actor Editor
@@ -81,12 +91,16 @@ The versions of the SDK tools may differ depending on the version of the SDK its
 - ShaderEditor
 - xrLC_net - Level compiler by machines connected to a local network
 
+___
+
 ## Coding
 
 - Notepad
 - [Notepad++](https://notepad-plus-plus.org/downloads/)
 - [Visual Studio Code](https://code.visualstudio.com/)
     - [LTX Support Extension by AziatkaVictor](https://marketplace.visualstudio.com/items?itemName=AziatkaVictor.ltx-support) - adds support for the logic syntax from S.T.A.L.K.E.R. CoP
+
+___
 
 ## 3D packages
 
@@ -97,6 +111,8 @@ The versions of the SDK tools may differ depending on the version of the SDK its
 - 3Ds Max
 
 - MilkShape
+
+___
 
 ## Textures
 
@@ -118,9 +134,13 @@ The versions of the SDK tools may differ depending on the version of the SDK its
 
 - [Paint.net](https://www.getpaint.net/) - Most often used to properly compress textures.
 
+___
+
 ## Dialogs
 
 - [S.T.A.L.K.E.R. Dialog Editor Extended](https://www.moddb.com/mods/call-of-chernobyl/addons/stalker-dialog-editor-extended-german) - Allows you to edit and create dialogs.
+
+___
 
 ## Parameters\LTX
 
@@ -128,16 +148,22 @@ The versions of the SDK tools may differ depending on the version of the SDK its
 
 - [StalkerElementFinder](https://disk.yandex.ru/d/Rv-Mt1IAXyTihA%D0%B0) - A program for finding elements and resources
 
+___
+
 ## Sounds
 
 - [Audacity](https://www.audacityteam.org/)
 - [Sound Attribute Viewer And Tweaker](http://www.metacognix.com/files/stlkrsoc/SAVandT_1.1.7z) - Simple program that can reduce the work needed to view and/or edit STALKER sound file attributes used by all three STALKER games to determine initial volume, volume drop-off, and sensitivity of NPCs to the sounds.
+
+___
 
 ## Animations
 
 - [OMF Editor](https://github.com/mortany/omf_editor) - Tool for working with [.omf](../main-folders-and-files/file-formats/omf.md) format.
 - [OMF Editor by Valerok](https://github.com/VaIeroK/Omf-Editor) - Modified tool for working with [.omf](../main-folders-and-files/file-formats/omf.md) format.
     - [More](omf-editor-by-valerok.md)
+
+___
 
 ## Models
 
@@ -156,9 +182,13 @@ The versions of the SDK tools may differ depending on the version of the SDK its
 
 - [StalkerWeaponToolKit](https://disk.yandex.ru/d/x3771W3btrwtFw) - Tool for working with weapons
 
+___
+
 ## Upgrades
 
 - [Upgrades Editor](https://sharedby.blomp.com/7Lxeq9) - A visual editor that makes it relatively quick and easy to create weapon upgrade schemes
+
+___
 
 ## NPC's
 
@@ -166,9 +196,13 @@ The versions of the SDK tools may differ depending on the version of the SDK its
 
 - [NPC Editor](https://github.com/rayofhope-dev/npc-editor) - NPC editing tool (Currently not working for Anomaly!)
 
+___
+
 ## AI
 
 - [Decompressor of .efd files](https://cdn.discordapp.com/attachments/385903500581928969/590555274079633408/EFD_Reader.7z)
+
+___
 
 ## Decompilers
 
@@ -188,20 +222,28 @@ The versions of the SDK tools may differ depending on the version of the SDK its
     - The program requires Perl [Old Version Perl](https://disk.yandex.ru/d/N6e73Ky2Wouqfg) to be installed.
     - You also need [stkutils](https://disk.yandex.ru/d/nnjntzYZQv8sD) (put it in the folder with the script or in C:\Perl\lib)
 
+___
+
 ## Compilers
 
 - [Universal x64 level compilers](https://drive.google.com/file/d/1_aU3MsUM7X9RphjjJRx85iQBPneavAz_/view) - Universal level compiler that supports the compilation format for games of all series and has many keys to compile
     - [More](universal-x64-level-compilers.md)
 
+___
+
 ## .db/.xdb archivers
 
 - [DB_Compressor by d_μaμ](https://cdn.discordapp.com/attachments/616764067670917131/846799604438532107/DB_Compressor.rar)
 - [xrCompress by i-love-kfc](https://ap-pro.ru/forums/topic/3500-obnovlyonnyy-xrcompress/) - .db/.xdb archiver
-    - [More]()
+    - [More](xrcompress-by-i-love-kfc.md)
+
+___
 
 ## Mod Creating
 
 - [FOMOD Creation Tool](https://drive.google.com/file/d/1MGaRpx0bUMgmWoZy1BHBWSMaaed7aAnP/view?usp=sharing)
+
+___
 
 ## Formats
 

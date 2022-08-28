@@ -1,5 +1,7 @@
 # Creating a location in Blender
 
+___
+
 ## Beginning
 
 - download the SDK (0.7 or later Lost Alpha 2.6 or other (A list of SDKs can be found [here](../modding-tools-and-resources/modding-tools/modding-tools.md)))

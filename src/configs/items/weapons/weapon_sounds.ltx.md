@@ -1,5 +1,7 @@
 # Weapon Sounds Config File
 
+___
+
 ## Parameter writing formula
 
 | Sound | Name of the sound | Volume | Delay |

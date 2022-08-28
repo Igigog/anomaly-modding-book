@@ -1,5 +1,6 @@
 # Creating and setting up a model in Blender
-## Article author: TheParaziT
+
+___
 
 This article is about creating a model and setting its parameters
 

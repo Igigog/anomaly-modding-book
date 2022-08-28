@@ -1,5 +1,7 @@
 # Main Folders And Files
 
+___
+
 This section describes the main files and folders for the game
 
 ## Folders

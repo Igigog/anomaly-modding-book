@@ -1,6 +1,8 @@
 # Package Naming Guidelines
 **for Mod Organizer 2**
 
+___
+
 _by [Ishmaeel](https://github.com/Ishmaeel)_
 
 While installing an addon, Mod Organizer 2 can extract a nice name from the archive (ZIP/7Z/RAR):

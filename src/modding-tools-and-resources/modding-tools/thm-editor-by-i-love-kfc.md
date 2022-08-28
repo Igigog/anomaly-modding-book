@@ -3,6 +3,8 @@
 - The version described in the article: 1.4
 - [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3543-thm-editor)
 
+___
+
 ## About:
 
 Utility for editing .thm files without the need to use the SDK

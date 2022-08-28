@@ -1,5 +1,7 @@
 # Addon installation and setup
 
+___
+
 [Download the latest version of the addon](https://github.com/PavelBlend/blender-xray/releases)
 
 Go into Blender. Click "Edit" > Preferences

@@ -1,5 +1,7 @@
 # Creating animations for the camera in Blender
 
+___
+
 ## Beginning
 
 - First, familiarize yourself with the [.anm](../main-folders-and-files/file-formats/anm.md) file format.

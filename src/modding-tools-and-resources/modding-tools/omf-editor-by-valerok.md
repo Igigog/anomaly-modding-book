@@ -3,6 +3,8 @@
 - The version described in the article: 1.2
 - [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3550-omf-editor-v12)
 
+___
+
 ## About:
 
 Modified tool for working with [.omf](../../main-folders-and-files/file-formats/omf.md) format.

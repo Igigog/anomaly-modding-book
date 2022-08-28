@@ -3,6 +3,8 @@
 - The version described in the article: 2.4
 - [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3549-ogfdm-editor-v24)
 
+___
+
 ## About:
 
 Tool for working with .ogf and .dm format
