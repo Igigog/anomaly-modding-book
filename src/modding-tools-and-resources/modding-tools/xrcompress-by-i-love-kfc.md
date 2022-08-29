@@ -1,5 +1,7 @@
 # xrCompress
-- Program Developers: OGSR (Original Authors), i-love-kfc
+- Program Developers: 
+    - OGSR (Original Authors)
+    - i-love-kfc
 - The version described in the article: 0.1
 - [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3500-obnovlyonnyy-xrcompress)
 

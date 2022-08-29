@@ -1,5 +1,6 @@
 # Bump Generator
-- Program Developer: i-love-kfc
+- Program Developer:
+    - i-love-kfc
 - The version described in the article: initial (0.1)
 - [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3740-bump-generator)
 

@@ -153,7 +153,8 @@ ___
 ## Sounds
 
 - [Audacity](https://www.audacityteam.org/)
-- [Sound Attribute Viewer And Tweaker](http://www.metacognix.com/files/stlkrsoc/SAVandT_1.1.7z) - Simple program that can reduce the work needed to view and/or edit STALKER sound file attributes used by all three STALKER games to determine initial volume, volume drop-off, and sensitivity of NPCs to the sounds.
+- [Sound Attribute Viewer And Tweaker](https://www.metacognix.com/files/stlkrsoc/index.html#:~:text=Sound%20Attribute%20Viewer%20and%20Tweaker,of%20NPCs%20to%20the%20sounds.) - Simple program that can reduce the work needed to view and/or edit STALKER sound file attributes used by all three STALKER games to determine initial volume, volume drop-off, and sensitivity of NPCs to the sounds
+    - [More](savandt.md)
 
 ___
 

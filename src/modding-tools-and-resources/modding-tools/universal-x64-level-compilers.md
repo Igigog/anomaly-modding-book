@@ -1,7 +1,11 @@
 # Universal x64 level compilers
-- Program Developer: GCS Game Word
-- Compiler edits and build: SkyLoader
-- Acknowledgements: Abramcumner, K.D.
+- Program Developer: 
+    - GCS Game Word
+- Compiler edits and build: 
+    - SkyLoader
+- Acknowledgements: 
+    - Abramcumner
+    - K.D.
 - The version described in the article: 1.3
 - [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3341-universalnye-kompilyatory-urovney-h64)
 

@@ -10,3 +10,4 @@ The sound format used by the game engine
 
 - Supports up to 44.100 Hz
 - Only mono audio format
+- Audiocodek: [Vorbis](https://en.wikipedia.org/wiki/Vorbis)
