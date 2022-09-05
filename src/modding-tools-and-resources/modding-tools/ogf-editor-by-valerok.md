@@ -2,7 +2,7 @@
 - Program Developers: 
     - Mortany (Original Author)
     - ValeroK
-- The version described in the article: 2.4
+- The version described in the article: [2.6](https://github.com/VaIeroK/OGF-tool/releases/tag/2.6)
 - [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3549-ogfdm-editor-v24)
 
 ___
@@ -19,6 +19,7 @@ Tool for working with .ogf and .dm format
 - Editing Userdata
 - Editing Motion Refs
 - Editing Bone Names
+- Ability to delete mesh models
 - Bone materials editing
 - Editing Bone weights
 - Editing center of mass of bones
@@ -99,6 +100,10 @@ Display information about the loaded OGF
 
 Opens the OGF View with the selected model
 
+- #### Model Format Button
+
+Changes the format of motion references for the model
+
 ### Checkboxes
 
 | Field | Description |
@@ -109,7 +114,7 @@ Opens the OGF View with the selected model
 
 - #### Textures
 
-Section with texture and shader path editing
+Section with texture and shader path editing. Also here can delete the mash of the model (If there is only one mesh, you cannot delete it)
 
 ##### Set: [Texture number]
 

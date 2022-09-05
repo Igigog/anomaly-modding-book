@@ -86,7 +86,7 @@ The versions of the SDK tools may differ depending on the version of the SDK its
 - Actor Editor
 - Dialog Editor
 - Level Editor
-- Perticle Editor
+- Particle Editor
 - Postprocess Editor
 - ShaderEditor
 - xrLC_net - Level compiler by machines connected to a local network
@@ -110,7 +110,7 @@ ___
 
 - 3Ds Max
 
-- MilkShape
+- MilkShape ([With Stalker Plugin](https://disk.yandex.ru/d/q04vZyXIgRA9U))
 
 ___
 
@@ -139,6 +139,9 @@ ___
 ## Dialogs
 
 - [S.T.A.L.K.E.R. Dialog Editor Extended](https://www.moddb.com/mods/call-of-chernobyl/addons/stalker-dialog-editor-extended-german) - Allows you to edit and create dialogs.
+
+- [Dialog Editor](https://github.com/rayofhope-dev/dialog-editor) - Completely new dialog editor
+    - [More]()
 
 ___
 
@@ -183,6 +186,7 @@ ___
 
 - [StalkerWeaponToolKit](https://disk.yandex.ru/d/x3771W3btrwtFw) - Tool for working with weapons
 
+- [StalkerObjectVisual](https://disk.yandex.ru/d/ydy1eMOagGf80Q) - Viewer for .ogf models
 ___
 
 ## Upgrades
@@ -193,9 +197,11 @@ ___
 
 ## NPC's
 
-- [NPC creator](https://disk.yandex.ru/d/kQnkCrVdtW8clQ)
+- [NPC creator](https://disk.yandex.ru/d/kQnkCrVdtW8clQ) - Program designed to create NPC's
 
 - [NPC Editor](https://github.com/rayofhope-dev/npc-editor) - NPC editing tool (Currently not working for Anomaly!)
+
+- [NpcStalkerToolKit](https://disk.yandex.ru/d/QyDQTHHInCjDGg) - This program creates NPC in the game (but does not spawn them)
 
 ___
 

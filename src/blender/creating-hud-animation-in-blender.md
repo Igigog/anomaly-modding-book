@@ -24,7 +24,7 @@ How to create a basic skeleton was described in this [article](creating-model-in
 A more advanced skeleton and rig should be made for this model.
 
 - P.S.
-For a more convenient arrangement of the bones, it is advisable to check the "In Front" checkbox in the Object Data Properties (![object-data-properties-skeleton-logo](blender-images/blender-images-icons/object-data-properties-skeleton-logo.svg)) in the Viewport Display section.
+For a more convenient arrangement of the bones, it is advisable to check the "In Front" checkbox in the Object Data Properties (![svg-icon object-data-properties-skeleton-logo](blender-images/blender-images-icons/object-data-properties-skeleton-logo.svg)) in the Viewport Display section.
 
 The resulting skeleton:
 
@@ -48,14 +48,14 @@ To set the location where the magazine should be located, you can do the followi
 - Duplicate the store bone and name it *_rig.
 - Duplicate it again and name it *_place
 - Remove the parent of these bones.
-- Select the main magazine bone and add the Copy Trasform(![copy-transform](blender-images/blender-images-icons/copy-transform.svg)) modifier. Select the *_rig bone as the target. Then select *_rig and add the Copy Transform(![copy-transform](blender-images/blender-images-icons/copy-transform.svg)) modifier to it, and select *_place as the target.
+- Select the main magazine bone and add the Copy Trasform(![svg-icon copy-transform](blender-images/blender-images-icons/copy-transform.svg)) modifier. Select the *_rig bone as the target. Then select *_rig and add the Copy Transform(![svg-icon copy-transform](blender-images/blender-images-icons/copy-transform.svg)) modifier to it, and select *_place as the target.
 This will allow you to correctly attach the store bone to its original position without damaging the skeleton hierarchy for the HUD model.
 
-In order for the animation to apply to all bones, it is necessary to set their Bone Groups. You can do this by going to the Object Data Properties(![Object Data Properties](blender-images/blender-images-icons/object-data-properties-logo.svg)) tab. In the Bone Groups section, create a new group and add the HUD object's bones to it.
+In order for the animation to apply to all bones, it is necessary to set their Bone Groups. You can do this by going to the Object Data Properties(![svg-icon Object Data Properties](blender-images/blender-images-icons/object-data-properties-logo.svg)) tab. In the Bone Groups section, create a new group and add the HUD object's bones to it.
 
 After all the steps, you need to add a Bone Group for the bones of the HUD object. To do this, go to the Object Data Properties tab and create a new group in the Bone Groups list, adding all the bones of the HUD object there.
 
-Import hands for animation (Append Button). Select the main bone of your skeleton for the HUD object and add the Copy Transform(![copy-transform](blender-images/blender-images-icons/copy-transform.svg)) modifier via the Bone Constraint Properties(![Bone Constraint Properties](blender-images/blender-images-icons/bone-constraint-properties-icons.svg)) tab. Select the hand skeleton and lead_gun bone as the target. Be sure to check that your object HUD bones are equal to 1!
+Import hands for animation (Append Button). Select the main bone of your skeleton for the HUD object and add the Copy Transform(![svg-icon copy-transform](blender-images/blender-images-icons/copy-transform.svg)) modifier via the Bone Constraint Properties(![svg-icon Bone Constraint Properties](blender-images/blender-images-icons/bone-constraint-properties-icons.svg)) tab. Select the hand skeleton and lead_gun bone as the target. Be sure to check that your object HUD bones are equal to 1!
 
 ### Creating Animations
 

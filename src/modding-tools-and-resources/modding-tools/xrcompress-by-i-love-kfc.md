@@ -2,7 +2,7 @@
 - Program Developers: 
     - OGSR (Original Authors)
     - i-love-kfc
-- The version described in the article: 0.1
+- The version described in the article: [0.1](https://disk.yandex.ru/d/CwLjWTuxPmSAHg)
 - [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3500-obnovlyonnyy-xrcompress)
 
 ___
@@ -38,3 +38,7 @@ Updated .db/.xdb archiver
 | m_table_iterations |  |
 | m_table_seed |  |
 | m_encrypt_seed |  |
+
+## Sources
+
+[Program](https://disk.yandex.ru/d/CwLjWTuxPmSAHg)

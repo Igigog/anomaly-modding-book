@@ -25,7 +25,7 @@ This section describes the extensions that are found in the game files and the S
 ---|---|
 | [.bump](bump.md) | Normal map in A(BGR) format |
 | [.bump#](bump_hash.md) | File that fixes DXT compression errors in [.bump](bump.md) |
-| .dds | Graphic file used by DirectX to store textures |
+| [.dds](dds.md) | Graphic file used by DirectX to store textures |
 | .tga | A bitmap graphics format with support for color depth of 1-32 bits per pixel, alpha channels, and RLE compression. Used as a source format. |
 | [.thm](thm.md) | They are used to set the parameters of textures - bump, detail, and more. |
 

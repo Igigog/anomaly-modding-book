@@ -529,6 +529,10 @@ ___
 <details>
     <summary>SM_BOARW</summary>
 
+| Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
+---|---|---|---|
+| actor_restrictor |  | medium_monster |  |
+
 ### Abilitys
 
 #### Squad seperation behaviour Ability
@@ -538,7 +542,7 @@ ___
 | separate_factor | pushing force | 0.8 |  |
 | separate_range | radius in which the pushing acts | 3 |  |
 
-| actor_restrictor |  | medium_monster |  |
+
 
 </details>
 
@@ -692,13 +696,16 @@ ___
 | selector_approach |  |  |  |
 | selector_walk_around |  |  |  |
 
+| Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
+---|---|---|---|
 | tube_condition_see_duration |  | 10 |  |
 | tube_condition_min_delay |  | 2000 |  |
 | tube_damage |  | 1.0 |  |
 | tube_condition_min_distance |  | 3.5 |  |
 | tube_at_once |  | false |  |
 
-
+| Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
+---|---|---|---|
 | control_fx_texture |  | act\act_controller_hit |  |
 | control_fx_texture2 |  | act\act_controller_hit1 |  |
 
@@ -706,6 +713,8 @@ ___
 
 #### Controlling Ability
 
+| Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
+---|---|---|---|
 | Max_Controlled_Count |  | 10 |  |
 | control_effector |  | controller_control_effector |  |
 | Friend_Community_Overrides |  | monolith |  |
@@ -713,6 +722,8 @@ ___
 
 #### Anti-aim Ability
 
+| Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
+---|---|---|---|
 | anti_aim_timeout |  | 4 | sec |
 | anti_aim_effectors |  | effector_monster_hit_1, effector_monster_hit_2, effector_monster_hit_3, effector_monster_hit_4 |  |
 | anti_aim_animation |  | stand_attack_ |  |
@@ -843,15 +854,21 @@ ___
 ---|---|---|---|
 | squad_attack_algorithm |  | 1 |  |
 
+| Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
+---|---|---|---|
 | anger_hunger_threshold |  | 0.1 |  |
 | anger_loud_threshold |  | 0.7 |  |
 
+| Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
+---|---|---|---|
 | Invisible_Energy_Restore_Velocity |  | 0.1 |  |
 | Invisible_Energy_Decline_Velocity	|  | 0.0 |  |
 | Invisible_Energy_Critical_Value |  | 0.01 |  |
 | Invisible_Energy_Activate_Value |  | 0.99 |  |
 | Invisible_Energy_Aggressive_Restore_Velocity |  | 0.1 |  |
 
+| Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
+---|---|---|---|
 | Particles_Damage |  | monsters\polter_damage |  |
 | Particles_Death |  | monsters\polter_death_00 |  |
 | Particles_Idle |  | monsters\polter_idle_00 |  |
@@ -864,10 +881,14 @@ ___
 | Delay_Flame_Normal |  | 30001 |  |
 | Delay_Flame_Aggressive |  | 30001 |  |
 
+| Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
+---|---|---|---|
 | Delay_Tele_Min |  | 0 |  |
 | Delay_Tele_Normal |  | 100 |  |
 | Delay_Tele_Aggressive |  | 10 |  |
 
+| Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
+---|---|---|---|
 | Delay_Scare_Min |  | 30000 |  |
 | Delay_Scare_Normal |  | 30001 |  |
 | Delay_Scare_Aggressive |  | 30001 |  |

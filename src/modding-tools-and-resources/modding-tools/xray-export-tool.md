@@ -100,7 +100,7 @@ The default settings menu, where you can set the default values of the parameter
 
 | Checkboxes | Description |
 ---|---|
-| Use No Compress motions (Need STCoP Reader) | Activates a new animation compression option, by selecting which animations will be exported without compression. Requires a commit in the engine from STCoP WP |
+| Use No Compress motions ([Need STCoP Reader](https://github.com/mortany/stcop-engine/commit/7d6e967ff081f8f797890f2c1954ce493c8b7084)) | Activates a new animation compression option, by selecting which animations will be exported without compression. Requires a commit in the engine from STCoP WP |
 | Program debugging | Activates the tab with buttons for debugging |
 | Force Viewport Load | Viewport is automatically loaded each time a file is loaded (slows down loading) |
 

@@ -74,12 +74,8 @@ ___
 
 - [Modelling]()
     - [Blender](blender/README.md)
-        - [Blender X-Ray Addon](blender/blender-x-ray-addon-summary.md)
-        - [Addon installation and setup](blender/addon-installation-and-setup.md)
         - [Creating model in Blender](blender/creating-model-in-blender.md)
         - [Creating a location in Blender](blender/creating-a-location-in-blender.md)
-        - [Advanced settings](blender/addon-settings-options/README.md)
-            - [Pathes](blender/addon-settings-options/pathes.md)
 
 ___
 
@@ -123,8 +119,18 @@ ___
 
 - [Modding Tools And Resouces](modding-tools-and-resources/README.md)
     - [Modding Tools](modding-tools-and-resources/modding-tools/modding-tools.md)
+        - [SDK 0.7](sdk/README.md)
+            - [Interface]()
+            - [Actor Editor](sdk/actor-editor.md)
+            - [Level Editor]()
+        - [Blender](blender/README.md)
+            - [Blender X-Ray Addon](blender/blender-x-ray-addon-summary.md)
+                - [Addon installation and setup](blender/addon-installation-and-setup.md)
+                - [Advanced settings](blender/addon-settings-options/README.md)
+                    - [Pathes](blender/addon-settings-options/pathes.md)
         - [THM Editor](modding-tools-and-resources/modding-tools/thm-editor-by-i-love-kfc.md)
         - [Bump Generator](modding-tools-and-resources/modding-tools/bump-generator.md)
+        - [Sound Attribute Viewer And Tweaker](modding-tools-and-resources/modding-tools/savandt.md)
         - [Modified THM Editor](modding-tools-and-resources/modding-tools/thm-editor-by-valerok.md)
         - [Modified OMF Editor](modding-tools-and-resources/modding-tools/omf-editor-by-valerok.md)
         - [Modified OGF Editor](modding-tools-and-resources/modding-tools/ogf-editor-by-valerok.md)
