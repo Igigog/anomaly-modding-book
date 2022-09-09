@@ -1,5 +1,6 @@
 # Creating and setting up a model in Blender
 
+
 ___
 
 This article is about creating a model and setting its parameters
@@ -112,7 +113,11 @@ Select our model and go to the "Modifier Properties" (![svg-icon modifier-proper
 
 ![modifier-properties centered](blender-images/modifier-properties.png)
 
+<<<<<<< HEAD
 In the "Modifier Properties" (![svg-icon modifier-properties-logo](blender-images/blender-images-icons/wrench.svg)) tab, add the "Armature" modifier (![svg-icon armature-modifier-logo](blender-images/blender-images-icons/armature-modifier-logo.svg)) (Add Modifier > Armature (under Deform)).
+=======
+In the "Modifier Properties" (![svg-icon modifier-properties-logo](blender-images/blender-images-icons/wrench.svg)) tab, add the "Armature" modifier (![armature-modifier-logo](blender-images/blender-images-icons/armature-modifier-logo.svg)) (Add Modifier > Armature (under Deform)).
+>>>>>>> fc8b6a1e4b8845fa6b19ad64207444c9c9fb739e
 
 ![armature-modif-create centered](blender-images/armature-modifier.png)
 
@@ -120,7 +125,11 @@ The modifier has the following necessary items:
 - Object (![svg-icon object-logo](blender-images/blender-images-icons/object-logo.svg))
 - Bind to (![svg-icon checkbox](blender-images/blender-images-icons/checkbox.svg)) Vertex Groups
 
+<<<<<<< HEAD
 In the "Object" (![svg-icon object-logo](blender-images/blender-images-icons/object-logo.svg)) field, select our bone (you can select it with the pipette (![svg-icon pipette](blender-images/blender-images-icons/pipette.svg))).
+=======
+In the "Object" (![svg-icon object-logo](blender-images/blender-images-icons/object-logo.svg)) field, select our bone (you can select it with the pipette (![pipette](blender-images/blender-images-icons/pipette.svg))).
+>>>>>>> fc8b6a1e4b8845fa6b19ad64207444c9c9fb739e
 Also make sure that the checkbox next to "Vertex Grops" (![svg-icon checkbox](blender-images/blender-images-icons/checkbox.svg)) is marked.
 These actions allowed us to bond our object and bone, but not yet to the fullest extent.
 
@@ -187,7 +196,11 @@ Remember that our object, by design, will be dynamic, so click on the button "Ob
 The editing of the bone parameters is finished, the next step is Materials.
 
 - ### Material
+<<<<<<< HEAD
 Select our object and go to the "Material Priperties" (![svg-icon material-properties-logo](blender-images/blender-images-icons/material-icon.svg)) tab.
+=======
+Select our object and go to the "Material Priperties" (![svg-icon material-properties-logo](blender-images/blender-images-icons/material-properties-logo.svg)) tab.
+>>>>>>> fc8b6a1e4b8845fa6b19ad64207444c9c9fb739e
 
 ![material-properties centered](blender-images/material-properties.png)
 
