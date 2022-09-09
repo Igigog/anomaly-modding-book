@@ -122,6 +122,7 @@ ___
         - [SDK 0.7](sdk/README.md)
             - [Interface](sdk/interface.md)
             - [Actor Editor](sdk/actor-editor.md)
+            - [Image Editor](sdk/image-editor.md)
             - [Level Editor]()
         - [Blender](blender/README.md)
             - [Blender X-Ray Addon](blender/blender-x-ray-addon-summary.md)

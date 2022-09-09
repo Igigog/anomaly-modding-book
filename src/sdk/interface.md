@@ -1,5 +1,7 @@
 # Interface
 
+___
+
 Depending on the different versions of the SDK and the editors in it, the interface may be different
 
 SDK 0.7
@@ -50,6 +52,8 @@ Hotkeys in the table are standard (they can be set under Preference > Keyboard >
 | F | Zoom Extents Selected | Camera Flight Mode | - | - |
 | Simulate | Simulate |  |  | Only in Actor & Level Editor |
 | UseSimulatePositions | UseSimulatePositions |  |  | Only in Level Editor |
+
+___
 
 ## Scene Properties
 

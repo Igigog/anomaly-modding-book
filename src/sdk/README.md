@@ -1,12 +1,15 @@
 # Introduction
 
+___
+
 This section describes the operation, configuration and various tutorials in the SDK
 
 SDK or Software Development Kit helped the developers of the original trilogy and the modders to develop the game itself
 
 The SDK includes the following editors:
 
-- Actor Editor
+- [Actor Editor](actor-editor.md)
+- [Image Editor](image-editor.md)
 - Dialogue Editor
 - Level Editor
 - Particle Editor
