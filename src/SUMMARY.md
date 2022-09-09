@@ -120,7 +120,7 @@ ___
 - [Modding Tools And Resouces](modding-tools-and-resources/README.md)
     - [Modding Tools](modding-tools-and-resources/modding-tools/modding-tools.md)
         - [SDK 0.7](sdk/README.md)
-            - [Interface]()
+            - [Interface](sdk/interface.md)
             - [Actor Editor](sdk/actor-editor.md)
             - [Level Editor]()
         - [Blender](blender/README.md)

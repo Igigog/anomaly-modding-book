@@ -1,10 +1,10 @@
-# Введение
+# Introduction
 
-В данном разделе описывается работа, настройка и различные тутариалы в SDK
+This section describes the operation, configuration and various tutorials in the SDK
 
-SDK или Software Developement Kit помогало разработчикам оригинальной трилогии и модерам разрабатывать саму игру.
+SDK or Software Development Kit helped the developers of the original trilogy and the modders to develop the game itself
 
-В SDK входят следующие редакторы:
+The SDK includes the following editors:
 
 - Actor Editor
 - Dialogue Editor
@@ -13,5 +13,4 @@ SDK или Software Developement Kit помогало разработчикам
 - Post-process Editor
 - Shader Editor
 
-В зависимости от версии SDK (Оригинальной или модифицированной) этот список редакторов (и их версий) может отличаться.
-
+Depending on the SDK version (Original or modified) this list of editors (and their versions) may differ.
