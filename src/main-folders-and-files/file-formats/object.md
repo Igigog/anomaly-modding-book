@@ -29,5 +29,7 @@ One *.object file can store:
 - each mesh must have one UV scan
 - each material can store only one texture
 
+___
+
 ## Sources
 [Source](https://github.com/PavelBlend/blender-xray/wiki/Plugin-.object)

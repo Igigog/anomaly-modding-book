@@ -44,5 +44,7 @@ The polygon indices are not saved, but they can easily be generated, since all v
 
 The first triangle will be: 0, 1, 2, second: 3, 4, 5, third: 6, 7, 8, etc.
 
+___
+
 ## Sources
 [Source](http://stalkerin.gameru.net/wiki/index.php?title=Level.hom)

@@ -2,7 +2,7 @@
 - Program Developers: 
     - i-love-kfc (Original Author)
     - ValeroK
-- The version described in the article: 1.1
+- The version described in the article: [1.1](https://github.com/VaIeroK/THM-Editor/releases/tag/1.1)
 - [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3551-thm-editor-v10)
 
 ___
@@ -161,6 +161,8 @@ The [THM Editor](thm-editor-by-i-love-kfc.md) from i-love-kfc was taken as the b
 - #### Bump
 
 - #### Normal Map
+
+___
 
 ## Sources
 

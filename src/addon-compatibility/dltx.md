@@ -34,6 +34,8 @@ LTXDiff is capable of automatically converting conventional mods into a DLTX-rea
 
 Mod suffix in this case is the name that gets appended to the mod files, like in step 2 of the previous section.
 
+___
+
 ## Sources
 [DLTX on Moddb](https://www.moddb.com/mods/stalker-anomaly/addons/dltx-differential-ltx-loading)
 

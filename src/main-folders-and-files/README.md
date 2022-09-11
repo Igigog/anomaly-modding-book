@@ -38,6 +38,8 @@ Path to the folder with the original 3D objects and animations. Usually found in
 
 </details>
 
+___
+
 ## Files
 
 <details>

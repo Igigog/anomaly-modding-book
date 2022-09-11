@@ -2,7 +2,7 @@
 - Program Developers:
     - RedPandaProject (BearIvan and other) (Original Authors)
     - ValeroK
-- The version described in the article: 4.35
+- The version described in the article: [4.35](https://github.com/VaIeroK/XrayExportTool/releases/tag/4.35)
 - [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3577-object-editor-v435)
 
 ___
@@ -215,6 +215,8 @@ Shows Used Data file
 | Checkboxes | Description |
 ---|---|
 | LOD Path | Path to LOD |
+
+___
 
 ## Sources
 

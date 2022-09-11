@@ -54,5 +54,7 @@ offset_148: value_37 = 79.9762573242188
 
 There is a function in xrgame.dll where all files with this extension are opened. But then not all of them are used.
 
+___
+
 ## Sources
 [Source](https://www.gameru.net/forum/index.php?showtopic=41944)

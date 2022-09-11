@@ -20,3 +20,5 @@ So refer to this [article](src/meta/contributing/README.md) or open an [issue](h
 [Igigog](https://github.com/Igigog) - Book Creator
 
 [The book itself](https://igigog.github.io/anomaly-modding-book/)
+
+[mdBook](https://github.com/rust-lang/mdBook) - The platform on which the book was written

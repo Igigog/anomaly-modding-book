@@ -4,11 +4,15 @@ ___
 
 The Actor editor is usually needed to customize objects (NPCs, Objects, etc.)
 
+___
+
 ## Interface
 
 #### Toolbar:
 
 ![toolbar centered](sdk-image/toolbar.png)
+
+___
 
 ##### Scene
 
@@ -28,6 +32,8 @@ File Button
 | Export | Exports the model to formats  | <br>.ogf</br><br>[.omf](../main-folders-and-files/file-formats/omf.md)</br><br>[.obj](../main-folders-and-files/file-formats/object.md)</br><br>[.dm](../main-folders-and-files/file-formats/dm.md)</br><br>C++</br> |
 | Quit | Exiting the program | - |
 
+___
+
 Preview Object Button
 
 | Button | Description | Note |
@@ -36,17 +42,17 @@ Preview Object Button
 | Clear | Clears the scene of objects that were loaded via Preview Object | - |
 | Preference | Preference | - |
 
+___
+
 Images Button
 
 | Button | Description |
 ---|---|
-| Image Editor | Open Image Editor |
+| Image Editor | Open [Image Editor](image-editor.md) |
 | Synchronize Textures |  |
 | Check New Textures |  |
 
-Image Editor
-
-![image-editor centered](sdk-image/image-editor.png)
+___
 
 Sounds Button
 
@@ -55,29 +61,47 @@ Sounds Button
 | Sound Editor |  |
 | Synchronize Sounds |  |
 
+___
+
 Preferences Button
+
+Opens a window with preferences
+
+![preferences centered](sdk-image/actor-editor-preferences.png)
+
+___
 
 ##### Model
 
 Bone Parts Button
 
+Shows the Bone Parts of the object's skeleton
+
+![bone-parts centered](sdk-image/actor-editor-bone-parts.png)
+
+Example Bone Parts object shooting_target_1.object
+___
+
 Render Style
 
 | Render Style | Description |
 ---|---|
-| Editor |  |
-| Engine |  |
+| Editor | Editor Render Style |
+| Engine | Engine (X-Ray 1.6) Render Style |
 | Clip Maker |  |
+
+___
 
 ##### Object Items
 
-
+Shows available items at the object (Surface, Object, Motions, Bones, etc.)
+___
 
 ##### Item Properties
 
 Shows parameters of the selected element of the model object
 
-For the object
+- For the object
 
 | Flags | Description |
 ---|---|
@@ -93,7 +117,7 @@ For the object
 
 | LOD | Description |
 ---|---|
-| Reference |  |
+| Reference | LOD Reference |
 
 Summary
 
@@ -103,7 +127,7 @@ Displays information about the object
 ---|---|
 | User Data |  |
 
-For surface
+- For surface
 
 | Surface | Description |
 ---|---|

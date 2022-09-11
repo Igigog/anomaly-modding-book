@@ -9,7 +9,7 @@ ___
 
 ## About:
 
-Tool for working with .ogf and .dm format
+Tool for working with .ogf and [.dm](../../main-folders-and-files/file-formats/dm.md) format
 
 ![ogf-editor centered](modding-tools-images/ogf-editor-by-valerok.png)
 
@@ -158,6 +158,8 @@ Editing the bone parameter
 - #### Lod
 
 Specifies the path to the Lod model
+
+___
 
 ## Sources
 [Source Code of Original OGF Editor by Mortany](https://github.com/mortany/OGF-tool)

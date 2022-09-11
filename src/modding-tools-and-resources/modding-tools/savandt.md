@@ -48,4 +48,3 @@ Utility designed to simplify working with X-Ray Engine sound files in [.ogg](../
 | Minimum Distance | indicates the distance in meters from the sound source at which it can still be heard at 100% volume |  |
 | Maximum Distance | Distance in meters from the sound source at which you can no longer hear the sound |  |
 | Maximum AI Distance | Distance from the sound source (in meters) at which NPCs can no longer hear the sound |  |
-

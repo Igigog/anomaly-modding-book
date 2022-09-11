@@ -10,6 +10,8 @@ ___
 - Description - Possible problem description
 - Arguments - Argument causing the error
 
+___
+
 ## Models
 
 <details>
@@ -30,6 +32,8 @@ ___
 - Clarification: No 3D OGF model was found, in this case 'solder_trader.ogf' from the actors\stalker_soldier folder
 
 </details>
+
+___
 
 ## Particles
 
@@ -109,6 +113,8 @@ ___
 
 </details>
 
+___
+
 ## LUA
 
 <details>
@@ -165,6 +171,8 @@ ___
 - Clarification: 
 
 </details>
+
+___
 
 ## LTX files
 
@@ -374,6 +382,8 @@ ___
 
 </details>
 
+___
+
 ## UI/XML
 
 <details>
@@ -487,6 +497,8 @@ ___
 - Clarification:
 
 </details>
+
+___
 
 ## Textures
 

@@ -2,7 +2,7 @@
 - Program Developers: 
     - Mortany (Original Author)
     - ValeroK
-- The version described in the article: 1.2
+- The version described in the article: [1.2](https://github.com/VaIeroK/Omf-Editor/releases/tag/1.2)
 - [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3550-omf-editor-v12)
 
 ___
@@ -104,6 +104,8 @@ Modified tool for working with [.omf](../../main-folders-and-files/file-formats/
 ---|---|
 | Real Time Lenght | Multiplies all visual timers by animation speed |
 | Ask for Overwrite | When merging animations will ask to overwrite each animation |
+
+___
 
 ## Sources
 

@@ -4,6 +4,8 @@ ___
 
 This section describes the extensions that are found in the game files and the SDK.
 
+___
+
 ## General
 | Extension | Description |
 ---|---|
@@ -12,6 +14,8 @@ This section describes the extensions that are found in the game files and the S
 | .scoc | Save file. |
 | .xrdemo | Recording camera flyover (demo). Created in the game with a [console command](../../engine/console-commands.md). |
 
+___
+
 ## Configuration and script files
 | Extension | Description |
 ---|---|
@@ -19,6 +23,8 @@ This section describes the extensions that are found in the game files and the S
 | .script | Game script. |
 | [.xml](../../configs/xml-files.md) | Carry in text format data related to in-game text, UI element placement, and characters and information within the game world. |
 | [.seq](seq.md) | Text file containing a description of the frame sequence in the 2D animation |
+
+___
 
 ## Textures
 | Extension | Description |
@@ -29,20 +35,28 @@ This section describes the extensions that are found in the game files and the S
 | .tga | A bitmap graphics format with support for color depth of 1-32 bits per pixel, alpha channels, and RLE compression. Used as a source format. |
 | [.thm](thm.md) | They are used to set the parameters of textures - bump, detail, and more. |
 
+___
+
 ## AI
 | Extension | Description |
 ---|---|
 | [.efd](efd.md) | Table of AI heuristic parameters, contains constants for fine-tuning A-Life. They are used as input parameters in scripts. |
+
+___
 
 ## Video
 | Extension | Description |
 ---|---|
 | .ogm | The video format used by the game engine. |
 
+___
+
 ## Sound
 | Extension | Description |
 ---|---|
 | [.ogg](ogg.md) | The sound format used by the game engine. |
+
+___
 
 ## Shaders
 | Extension | Description |
@@ -53,6 +67,8 @@ This section describes the extensions that are found in the game files and the S
 | .ps | Pixel shader |
 | .s | Script shader. LUA version of engine blenders |
 
+___
+
 ## Models
 | Extension | Description |
 ---|---|
@@ -60,6 +76,8 @@ This section describes the extensions that are found in the game files and the S
 | [.object](object.md) | These files are intended for the X-Ray SDK to store 3D content in its original, uncompressed, lossless form. They are source files that store information before compilation into other game compressed formats.  |
 | .ogf | Compiled objects |
 | .err | Geometry errors |
+
+___
 
 ## Animations
 | Extension | Description |
@@ -69,11 +87,15 @@ This section describes the extensions that are found in the game files and the S
 | .skls | Skeletal animations(.skl) in a container |
 | [.omf](omf.md) | A specialized S.T.A.L.K.E.R. game format containing animations. This is a separate dedicated file used in conjunction with .ogf models. Was created in order to optimize process when some different models use the same list of animations. |
 
+___
+
 ## Archives and Resource Packages
 | Extension | Description |
 ---|---|
 | .db | archive of game resources. Used in late builds and the final version of the game, has several options (db."number", db."letter"). |
 | .xr | resource library. Contains resources such as partials, shaders, etc. in a packed format. |
+
+___
 
 ## Game level
 | Extension | Description |
@@ -99,6 +121,8 @@ This section describes the extensions that are found in the game files and the S
 | .snd_static | Static point sources of sound. Sound of flies, etc. |
 | .som | Geometry for calculating sound propagation. |
 | .wallmarks | Decals. Bloodstains, faction emblems on walls, etc. Used for the compiled level. |
+
+___
 
 ## Postprocess
 | Extension | Description |

@@ -140,8 +140,7 @@ ___
 
 - [S.T.A.L.K.E.R. Dialog Editor Extended](https://www.moddb.com/mods/call-of-chernobyl/addons/stalker-dialog-editor-extended-german) - Allows you to edit and create dialogs.
 
-- [Dialog Editor](https://github.com/rayofhope-dev/dialog-editor) - Completely new dialog editor
-    - [More]()
+- [Dialog Editor](https://github.com/rayofhope-dev/dialog-editor) - Completely new dialog editor (not compatible with Anomaly)
 
 ___
 
@@ -150,6 +149,8 @@ ___
 - [STLKObjectMan](https://drive.google.com/file/d/1OM2gZtj_Ubg7H03iI-Z_z3EAkwn1_S2R/view) - Universal parameters editor. Modifies *.ltx and *.xml files. (not compatible with Anomaly due to modified .ltx files)
 
 - [StalkerElementFinder](https://disk.yandex.ru/d/Rv-Mt1IAXyTihA%D0%B0) - A program for finding elements and resources
+
+- [DLTXIFY BY RIGHT CLICK](https://www.moddb.com/mods/stalker-anomaly/addons/dltxify-by-right-click-for-modders-tool) - This bundle allows to create DLTX version of the mod by simple right click on the folder of the mod and choosing "DLTXify mod" in context menu
 
 ___
 
