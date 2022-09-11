@@ -20,6 +20,7 @@ ___
 
 - [Addon compatibility]()
     - [DLTX](addon-compatibility/dltx.md)
+    - [DXML](addon-compatibility/dxml.md)
     - [Monkey patching](addon-compatibility/monkey-patching.md)
 
 ___
