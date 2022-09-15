@@ -22,9 +22,9 @@ This table lists the X-Ray file formats that the addon can import/export.
 | [.anm](../main-folders-and-files/file-formats/anm.md) | Animated paths | Yes | Yes |
 | .bones | Bones data | Yes | Yes |
 | [.dm](../main-folders-and-files/file-formats/dm.md) | Detailed effect models | Yes | Yes |
-| .details | Level details | Yes | Yes |
+| [.details](../main-folders-and-files/file-formats/detals.md) | Level details | Yes | Yes |
 | .level | List of scene objects in the SDK | Yes | Yes |
-| level | Game levels | Yes | Yes |
+| [level](../main-folders-and-files/file-formats/level.md) | Game levels | Yes | Yes |
 | .part | Scene objects | Yes  | No |
 | .err | Error list | Yes  | No |
 

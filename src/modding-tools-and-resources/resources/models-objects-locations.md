@@ -8,6 +8,8 @@ ___
 
 ![blender-stalker-asset-library](resources-images/BlenderStalkerAssetLibrary.png)
 
+[Source objects of the original trilogy](https://rutracker.org/forum/viewtopic.php?t=4008371)
+
 ___
 
 ### Animations

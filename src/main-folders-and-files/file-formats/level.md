@@ -1,0 +1,142 @@
+# .cform (Collision Form)
+
+___
+
+## About:
+
+Contains a solid map structure. All tangible objects with materials live here. Because of this, the game knows with what sound and property objects should react when they are hit by bullets or walked on
+
+## Technical information:
+
+- Format version: 14
+
+### General structure - file blocks
+
+|  | Block code |
+---|---|
+| Map compiler version | 1 |
+| Description of portals | 4 |
+| Light sources | 6 |
+| Coronas of light sources | 7 |
+| Objects | 3 |
+| Textures | 2 |
+| Sectors | 8 |
+
+### Map compiler version (the block is the same for all maps)
+
+|  | Value | Size |
+---|---|---|
+| Block code | 1 | Word(2) |
+| Data compression (0 - no, 32768 - yes) | 0 | Word(2) |
+| Block size (bytes) | 4 | DWord(4) |
+| Version number (the same for all) | 13 | DWord(4) |
+
+### Description of portals (the block for all maps is the same and contains no data)
+
+|  | Value | Size |
+---|---|---|
+| Block code | 4 | Word(2) |
+| Data compression (0 - no, 32768 - yes) | 0 | Word(2) |
+| Block size (bytes) | 0 | DWord(4) |
+
+### Light sources
+
+|  | Value | Size |
+---|---|---|
+| Block code | 6 | Word(2) |
+| Data compression (0 - no, 32768 - yes) | 0 | Word(2) |
+| Block size (bytes) | - | DWord(4) |
+| Light Source | - | (108*х) |
+
+#### Light Source
+
+|  | Offset | Size |
+---|---|---|
+| Type of light source (only 1 or 2 were encountered) | 0 | DWord(4) |
+| (only 1 or 3 were encountered) | 4 | DWord(4) |
+| Color Red | 8 | Single(4) |
+| Color Green | 12 | Single(4) |
+| Color Blue | 16 | Single(4) |
+|  | 20 | DWord(4) |
+|  | 24 | DWord(4) |
+|  | 28 | DWord(4) |
+|  | 32 | DWord(4) |
+|  | 36 | DWord(4) |
+|  | 40 | DWord(4) |
+|  | 44 | DWord(4) |
+|  | 48 | DWord(4) |
+|  | 52 | DWord(4) |
+| Coordinate X | 56 | Single(4) |
+| Coordinate Z | 60 | Single(4) |
+| Coordinate Y | 64 | Single(4) |
+| Angle of rotation by X | 68 | Single(4) |
+| Angle of rotation by Z | 72 | Single(4) |
+| Angle of rotation by Y | 76 | Single(4) |
+|  | 80 | DWord(4) |
+|  | 84 | DWord(4) |
+|  | 88 | Single(4) |
+|  | 92 | Single(4) |
+|  | 96 | Single(4) |
+|  | 100 | DWord(4) |
+|  | 104 | Single(4) |
+
+### Coronas of light sources
+
+|  | Value | Size |
+---|---|---|
+| Block code | 7 | Word(2) |
+| Data compression (0 - no, 32768 - yes) | 0 | Word(2) |
+| Block size (bytes) | - | DWord(4) |
+| Corona of the light source | - | (18*х) |
+
+#### Corona of the light source
+
+|  | Value | Size |
+---|---|---|
+| Coordinate X | 0 | Single(4) |
+| Coordinate Z | 4 | Single(4) |
+| Coordinate Y | 8 | Single(4) |
+| ??? | 12 | Single(4) |
+| ??? | 16 | Word(2) |
+
+### Textures
+
+|  | Value | Size |
+---|---|---|
+| Block code | 2 | Word(2) |
+| Data compression (0 - no, 32768 - yes) | 0 | Word(2) |
+| Block size (bytes) | - | DWord(4) |
+| Number of textures | - | DWord(4) |
+| Textures | - | - |
+
+#### Texture
+
+|  | Value | Size |
+---|---|---|
+| Shader (with path) | - | String |
+| Separator | "/" | Byte(1) |
+| Texture (with path) | - | String |
+| Beginning of the optional part | Beginning of the optional part | Beginning of the optional part |
+| Separator | "," | Byte(1) |
+| Lightmap 1 | - | String |
+| Separator | "," | Byte(1) |
+| Lightmap 2 | - | String |
+| End of the optional part | End of the optional part | End of the optional part |
+| The zero symbol is the end of the texture name | #0 | Byte(1) |
+
+**Note:** the zero texture is specified without the file name and consists only of the symbol #0. So, after the field "number of textures" right after the symbol #0, do not be alarmed :)
+
+### Sectors
+
+|  | Value | Size |
+---|---|---|
+| Block code | 8 | Word(2) |
+| Data compression (0 - no, 32768 - yes) | 32768 | Word(2) |
+| Block size (bytes) | - | DWord(4) |
+| Uncompressed block size (in bytes) | - | DWord(4) |
+| Description of Sectors | - | ???? |
+
+___
+
+## Sources
+[Source](http://stalkerin.gameru.net/wiki/index.php?title=Level)

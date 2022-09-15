@@ -100,11 +100,11 @@ ___
 ## Game level
 | Extension | Description |
 ---|---|
-| level | File with general information about the game location (light sources, object names, texture and shader names, sectors and portals). Created by xrLC during compilation. Opened only by the game. |
+| [level](../file-formats/level.md) | File with general information about the game location (light sources, object names, texture and shader names, sectors and portals). Created by xrLC during compilation. Opened only by the game. |
 | .prj | Level precompilation file |
 | .ai | AI location grid. Created by xrAI when compiling. Opened only by the game. |
-| .cform | Geometry for calculating collisions. Calculated by the level compiler. Contains a solid map structure. All tangible objects with materials live here. Thanks to it, the game knows with what sound and property the objects should react when they are hit by bullets or walked on. |
-| .details | Detailed objects (grass, cigarette butts, construction debris) on the level. Created through LevelEditor SDK at compile time. |
+| [.cform](../file-formats/cform.md) | Geometry for calculating collisions. Calculated by the level compiler. Contains a solid map structure. All tangible objects with materials live here. Because of this, the game knows with what sound and property objects should react when they are hit by bullets or walked on |
+| [.details](../file-formats/detals.md) | Detailed objects (grass, cigarette butts, construction debris) on the level. Created through LevelEditor SDK at compile time. |
 | .env_mod | local environment modifiers (environment), set areas on the location with lighting different from the main weather cycle. |
 | .fog_vol | Volumetric fog |
 | .game | Coordinates of the player's spawn in the multiplayer game. Outdated file. |
@@ -119,7 +119,7 @@ ___
 | .spawn | A file storing spawn data. |
 | .snd_env | Volumetric sound sources. |
 | .snd_static | Static point sources of sound. Sound of flies, etc. |
-| .som | Geometry for calculating sound propagation. |
+| [.som](../file-formats/som.md) | Geometry for calculating sound propagation. |
 | .wallmarks | Decals. Bloodstains, faction emblems on walls, etc. Used for the compiled level. |
 
 ___

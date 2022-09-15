@@ -196,6 +196,12 @@ ___
 
 ___
 
+## Postprocess
+
+- [ppeEditor](http://www.big-games.do.am/load/0-0-1-34-20) - Software for creating and editing files of the postprocessing .ppe files
+
+___
+
 ## NPC's
 
 - [NPC creator](https://disk.yandex.ru/d/kQnkCrVdtW8clQ) - Program designed to create NPC's
@@ -256,3 +262,5 @@ ___
 ## Formats
 
 - [ChunckTool](https://sharedby.blomp.com/p4wGo4) - The utility is intended for low-level work with chunks in files and allows to read, replace and add data.
+
+- [XrSpawner](http://sdk.stalker-game.com/ru/images/0/06/XrSpawner_v0.13.1Beta.rar) - A program that allows you to edit the .spawn file of the game containing the initial location and some properties of all dynamic objects
