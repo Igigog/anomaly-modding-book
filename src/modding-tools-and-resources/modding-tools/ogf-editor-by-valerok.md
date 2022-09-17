@@ -2,7 +2,7 @@
 - Program Developers: 
     - Mortany (Original Author)
     - ValeroK
-- The version described in the article: [2.6](https://github.com/VaIeroK/OGF-tool/releases/tag/2.6)
+- The version described in the article: [2.9](https://github.com/VaIeroK/OGF-tool/releases/tag/2.9)
 - [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3549-ogfdm-editor-v24)
 
 ___
@@ -19,6 +19,7 @@ Tool for working with .ogf and [.dm](../../main-folders-and-files/file-formats/d
 - Editing Userdata
 - Editing Motion Refs
 - Editing Bone Names
+- Viewport
 - Ability to delete mesh models
 - Bone materials editing
 - Editing Bone weights
@@ -62,9 +63,10 @@ Tool for working with .ogf and [.dm](../../main-folders-and-files/file-formats/d
 
 | Button | Description |
 ---|---|
-| Open Skeleton in Object Editor |  |
+| Open Skeleton in Object Editor | Open Skeleton in Object Editor |
 | Motion Tools |  |
-| Import data from same model |  |
+| Import OGF Params |  |
+| Change lod |  |
 
 - ##### Motion Tools Button
 
@@ -96,9 +98,16 @@ Display information about the loaded OGF
 ---|---|
 | Repair timers |  |
 
-- #### View Button
+- ### Settings
 
-Opens the OGF View with the selected model
+| Field | Description |
+---|---|
+| Image path |  |
+| FS Ltx path |  |
+| Textures path |  |
+| Game Mtl path |  |
+| OMF Editor path |  |
+| Object Editor path |  |
 
 - #### Model Format Button
 
@@ -158,6 +167,10 @@ Editing the bone parameter
 - #### Lod
 
 Specifies the path to the Lod model
+
+- #### View Port
+
+Viewport
 
 ___
 

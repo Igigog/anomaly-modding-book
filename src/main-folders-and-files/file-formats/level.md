@@ -111,18 +111,61 @@ Contains a solid map structure. All tangible objects with materials live here. B
 
 #### Texture
 
-|  | Value | Size |
----|---|---|
-| Shader (with path) | - | String |
-| Separator | "/" | Byte(1) |
-| Texture (with path) | - | String |
-| Beginning of the optional part | Beginning of the optional part | Beginning of the optional part |
-| Separator | "," | Byte(1) |
-| Lightmap 1 | - | String |
-| Separator | "," | Byte(1) |
-| Lightmap 2 | - | String |
-| End of the optional part | End of the optional part | End of the optional part |
-| The zero symbol is the end of the texture name | #0 | Byte(1) |
+<table>
+	<tbody>
+		<tr>
+			<td></td>
+			<td>Value</td>
+			<td>Size</td>
+		</tr>
+		<tr>
+			<td>Shader (with path)</td>
+			<td>-</td>
+			<td>String</td>
+		</tr>
+		<tr>
+			<td>Separator</td>
+			<td>"/"</td>
+			<td>Byte(1)</td>
+		</tr>
+		<tr>
+			<td>Texture (with path)</td>
+			<td>-</td>
+			<td>String</td>
+		</tr>
+		<tr>
+			<td colspan="3">Beginning of the optional part</td>
+		</tr>
+		<tr>
+			<td>Separator</td>
+			<td>","</td>
+			<td>Byte(1)</td>
+		</tr>
+		<tr>
+			<td>Lightmap 1</td>
+			<td>-</td>
+			<td>String</td>
+		</tr>
+		<tr>
+			<td>Separator</td>
+			<td>","</td>
+			<td>Byte(1)</td>
+		</tr>
+		<tr>
+			<td>Lightmap 2</td>
+			<td>-</td>
+			<td>String</td>
+		</tr>
+		<tr>
+			<td colspan="3">End of the optional part</td>
+		</tr>
+		<tr>
+			<td>The zero symbol is the end of the texture name</td>
+			<td>#0</td>
+			<td>Byte(1)</td>
+		</tr>
+	</tbody>
+</table>
 
 **Note:** the zero texture is specified without the file name and consists only of the symbol #0. So, after the field "number of textures" right after the symbol #0, do not be alarmed :)
 
