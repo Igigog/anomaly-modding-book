@@ -48,7 +48,7 @@ To set the location where the magazine should be located, you can do the followi
 - Duplicate the store bone and name it *_rig.
 - Duplicate it again and name it *_place
 - Remove the parent of these bones.
-- Select the main magazine bone and add the Copy Trasform(![svg-icon copy-transform](blender-images/blender-images-icons/copy-transform.svg)) modifier. Select the *_rig bone as the target. Then select *_rig and add the Copy Transform(![svg-icon copy-transform](blender-images/blender-images-icons/copy-transform.svg)) modifier to it, and select *_place as the target.
+- Select the main magazine bone and add the Copy Transform(![svg-icon copy-transform](blender-images/blender-images-icons/copy-transform.svg)) modifier. Select the *_rig bone as the target. Then select *_rig and add the Copy Transform(![svg-icon copy-transform](blender-images/blender-images-icons/copy-transform.svg)) modifier to it, and select *_place as the target.
 This will allow you to correctly attach the store bone to its original position without damaging the skeleton hierarchy for the HUD model.
 
 In order for the animation to apply to all bones, it is necessary to set their Bone Groups. You can do this by going to the Object Data Properties(![svg-icon Object Data Properties](blender-images/blender-images-icons/object-data-properties-logo.svg)) tab. In the Bone Groups section, create a new group and add the HUD object's bones to it.

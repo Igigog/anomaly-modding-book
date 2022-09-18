@@ -128,7 +128,7 @@ The modifier has the following necessary items:
 - Bind to (![svg-icon checkbox](blender-images/blender-images-icons/checkbox.svg)) Vertex Groups
 
 In the "Object" (![svg-icon object-logo](blender-images/blender-images-icons/object-logo.svg)) field, select our bone (you can select it with the pipette (![pipette](blender-images/blender-images-icons/pipette.svg))).
-Also make sure that the checkbox next to "Vertex Grops" (![svg-icon checkbox](blender-images/blender-images-icons/checkbox.svg)) is marked.
+Also make sure that the checkbox next to "Vertex Groups" (![svg-icon checkbox](blender-images/blender-images-icons/checkbox.svg)) is marked.
 These actions allowed us to bond our object and bone, but not yet to the fullest extent.
 
 Next step:
@@ -198,7 +198,7 @@ The editing of the bone parameters is finished, the next step is Materials.
 ___
 
 - ### Material
-Select our object and go to the "Material Priperties" (![svg-icon material-properties-logo](blender-images/blender-images-icons/material-properties-logo.svg)) tab.
+Select our object and go to the "Material Properties" (![svg-icon material-properties-logo](blender-images/blender-images-icons/material-properties-logo.svg)) tab.
 
 ![material-properties centered](blender-images/material-properties.png)
 

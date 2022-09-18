@@ -12,7 +12,7 @@ Add-ons > Install (![svg-icon install](blender-images/blender-images-icons/insta
 
 ![Installing-P2](blender-images/1.png)
 
-Сhoose the downloaded version of the addon (![svg-icon addon](blender-images/blender-images-icons/addon-icon.svg)).
+Choose the downloaded version of the addon (![svg-icon addon](blender-images/blender-images-icons/addon-icon.svg)).
 
 ![Installing-P3](blender-images/2.png)
 

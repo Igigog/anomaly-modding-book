@@ -11,7 +11,7 @@ The SDK includes the following editors:
 - [Actor Editor](actor-editor.md)
 - [Image Editor](image-editor.md)
 - Dialogue Editor
-- Level Editor
+- [Level Editor](level-editor.md)
 - Particle Editor
 - Post-process Editor
 - Shader Editor

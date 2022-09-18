@@ -113,7 +113,7 @@ Contains a solid map structure. All tangible objects with materials live here. B
 
 <table>
 	<tbody>
-		<tr>
+		<tr bgcolor="grey">
 			<td></td>
 			<td>Value</td>
 			<td>Size</td>
