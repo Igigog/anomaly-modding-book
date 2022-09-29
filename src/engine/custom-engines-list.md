@@ -27,7 +27,7 @@ Combining engine edits of different addons in one place and adding new ones
 ### Key Features:
 
 - [DLTX](../addon-compatibility/dltx.md) by MerelyMezz with edits and bugfixes by demonized
-- DXML by demonized
+- [DXML](../addon-compatibility/dxml.md) by demonized
 - Additional edits and bugfixes by demonized
 - Shader Scopes by CrookR and enhanced by Edzan
 - Screen Space Shaders by Ascii1457
@@ -35,3 +35,9 @@ Combining engine edits of different addons in one place and adding new ones
 ### Sources:
 
 - [Source](https://github.com/themrdemonized/STALKER-Anomaly-modded-exes)
+
+___
+
+## CryRay Engine
+
+Third-party engine and not a fork of the original "X-Ray "Monolith" Engine. Used only in the [Anomaly Redux](https://discord.gg/runBC7WgZK) 2.0 build.
