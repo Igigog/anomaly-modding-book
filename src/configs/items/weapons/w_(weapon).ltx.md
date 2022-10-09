@@ -2,7 +2,7 @@
 
 ___
 
-## About:
+## About
 
 Configuration parameters for weapons
 
@@ -16,7 +16,8 @@ Parameters of the weapon are set for each sample in a separate *.ltx file, and c
 
 ___
 
-## Parameters of the world model 
+## Parameters of the world model
+
 [wpn_name]: Here you can set additional characteristics of weapon from sections for example:
 
 - identity_immunities - a section that contains damage parameters for different game difficulty levels
@@ -37,7 +38,7 @@ ___
 | scheduled | online/offline switch; Works only for "live" objects with AI | off | on (Yes) - off (No) |
 | cform | parameter for dynamic objects; necessary for correct creation of the skeleton model | skeleton |  |
 | parent_section |  | wpn_akm |  |
-| class | engine weapon class | WP_AK74 | WP_BINOC - WP_KNIFE - WP_BM16 - WP_GROZA - WP_SVD - WP_AK74 - WP_LR300 - WP_HPSA - WP_PM - WP_RG6 - WP_RPG7 - WP_SHOTG - WP_ASHTG - WP_MAGAZ - WP_SVU - WP_USP45 - WP_VAL - WP_VINT - WP_WALTH - W_STMGUN |
+| class | engine weapon class | WP_AK74 | <br>WP_BINOC</br> <br>WP_KNIFE</br> <br>WP_BM16</br> <br>WP_GROZA</br> <br>WP_SVD</br> <br>WP_AK74</br> <br>WP_LR300</br> <br>WP_HPSA</br> <br>WP_PM</br> <br>WP_RG6</br> <br>WP_RPG7</br> <br>WP_SHOTG</br> <br>WP_ASHTG</br> <br>WP_MAGAZ</br> <br>WP_SVU</br> <br>WP_USP45</br> <br>WP_VAL</br> <br>WP_VINT</br> <br>WP_WALTH</br> <br>W_STMGUN</br> |
 | animation_slot | animation slot number | 2 | 1 (pistol) - 2 (automatic rifle) - 3 (rifle, shotgun) - 4 (RPG) - 5 (knife) - 7 (bolt, grenade) - 8 (submachine gun with integrated underbarrel grenade launcher) - 9 (Shotgun) - 10 (Drum Gun) - 13 (binoculars) |
 | hand_dependence | determines whether the weapon will be taken with one or two hands | 1 | 0 (no hands) - 1 (one hand) - 2 (two hands) |
 | single_handed | held with one hand | 0 | 0 (no) - 1 (yes) |
@@ -509,7 +510,7 @@ ___
 | anm_show | show animation | The name of the corresponding animation |
 | anm_show_empty | Show animation with an empty magazine | The name of the corresponding animation |
 | anm_show_g |  | The name of the corresponding animation |
-| anm_show_w_gl | show animation of pulling out a weapon with a grenade launcher attached | The name of the corresponding animation | 
+| anm_show_w_gl | show animation of pulling out a weapon with a grenade launcher attached | The name of the corresponding animation |
 | anm_bore | Boredom animation | The name of the corresponding animation |
 
 </details>
@@ -533,6 +534,7 @@ ___
 </details>
 
 ### Parameters of sounds
+
 You can read about the parameters of the sounds [here](weapon_sounds.ltx.md)
 
 ### Parameters of the shells sprite for HUD

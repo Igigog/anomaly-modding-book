@@ -2,7 +2,7 @@
 
 ___
 
-### All the soundtrack from the original trilogy
+## All the soundtrack from the original trilogy
 
 | Artist | Soundtrack name | Preview | Note |
 ---|---|---|---|
@@ -65,7 +65,7 @@ ___
 | Alexey Omelchuk | Combat Theme 4 | [Preview](https://youtu.be/WQU-GYROIgQ) |  |
 | Alexey Omelchuk | Outro | [Preview](https://youtu.be/cpi_VabA53M) |  |
 
-### All the soundtrack from Anomaly
+## All the soundtrack from Anomaly
 
 | Artist | Soundtrack name | Preview |
 ---|---|---|
