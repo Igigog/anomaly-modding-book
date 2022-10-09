@@ -2,7 +2,7 @@
 - Program Developers: 
     - Mortany (Original Author)
     - ValeroK
-- The version described in the article: [2.9](https://github.com/VaIeroK/OGF-tool/releases/tag/2.9)
+- The version described in the article: [3.1](https://github.com/VaIeroK/OGF-tool/releases/tag/3.1)
 - [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3549-ogfdm-editor-v24)
 
 ___
@@ -64,9 +64,9 @@ Tool for working with .ogf and [.dm](../../main-folders-and-files/file-formats/d
 | Button | Description |
 ---|---|
 | Open Skeleton in Object Editor | Open Skeleton in Object Editor |
-| Motion Tools |  |
-| Import OGF Params |  |
+| Import OGF Params | Imports parameters of another .ogf with selectable parameters |
 | Change lod |  |
+| Converter | <br>NPC CoP to SoC</br><br>NPC SoC to CoP</br> |
 
 - ##### Motion Tools Button
 

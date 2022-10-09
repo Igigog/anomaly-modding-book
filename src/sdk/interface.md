@@ -64,7 +64,7 @@ ___
 | Quality | Render quality |
 | Fill Mode |  |
 | Shade Mode |  |
-| Edged Face |  |
+| Edged Face | Enables displaying edges at polygons |
 | HW Render |  |
 | Linear Filter |  |
 | Textures |  |
@@ -75,7 +75,7 @@ ___
 | Draw Grid | Draw Grid |
 | Weather |  |
 | Fog |  |
-| Mute Sounds |  |
+| Mute Sounds | Mutes sounds from objects that have sound in the SDK |
 | Light Scene | Light Scene |
 | Real Time | Real Time |
 

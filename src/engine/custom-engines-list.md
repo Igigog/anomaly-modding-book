@@ -26,8 +26,8 @@ Combining engine edits of different addons in one place and adding new ones
 
 ### Key Features:
 
-- [DLTX](../addon-compatibility/dltx.md) by MerelyMezz with edits and bugfixes by demonized
-- DXML by demonized
+- [DLTX](../addons/dltx.md) by MerelyMezz with edits and bugfixes by demonized
+- [DXML](../addons/dxml.md) by demonized
 - Additional edits and bugfixes by demonized
 - Shader Scopes by CrookR and enhanced by Edzan
 - Screen Space Shaders by Ascii1457

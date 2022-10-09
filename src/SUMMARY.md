@@ -18,10 +18,11 @@ ___
 
 ___
 
-- [Addon compatibility]()
-    - [DLTX](addon-compatibility/dltx.md)
-    - [DXML](addon-compatibility/dxml.md)
-    - [Monkey patching](addon-compatibility/monkey-patching.md)
+- [Addons]()
+    - [DLTX](addons/dltx.md)
+    - [DXML](addons/dxml.md)
+    - [Monkey patching](addons/monkey-patching.md)
+    - [Useful addons and scripts](addons/useful-addons-and-scripts.md)
 
 ___
 
@@ -103,9 +104,9 @@ ___
 
 ___
 
-- [Map](map/README.md)
+- [Mapping](mapping/README.md)
     - [Why maps are bullshit]()
-    - [Compiling maps](map/compiling-maps.md)
+    - [Compiling maps](mapping/compiling-maps.md)
 
 ___
 

@@ -1,10 +1,10 @@
-# .cform (Collision Form)
+# level
 
 ___
 
 ## About:
 
-Contains a solid map structure. All tangible objects with materials live here. Because of this, the game knows with what sound and property objects should react when they are hit by bullets or walked on
+Contains all the essentials. This contains light sources, object descriptions, names of their corresponding textures and shaders, portals, and sectors.
 
 ## Technical information:
 

@@ -26,4 +26,4 @@ Those objects that were created by yourself need to be exported in .obj format t
 
 Next you need to export the scene in the format .level
 
-[Next, you need to build and compile the location](../map/compiling-maps.md).
+[Next, you need to build and compile the location](../mapping/compiling-maps.md).

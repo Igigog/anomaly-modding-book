@@ -245,7 +245,7 @@ Example value taken from vanilla m_bloodsucker.ltx
 | aom_animation_right |  | stand_run_attack_left_ |  |
 | aom_far_radius |  | 15 |  |
 | aom_max_go_close_time |  | 8 |  |
-| aom_prepare_time	 |  | 5 |  |
+| aom_prepare_time  |  | 5 |  |
 | aom_attack_radius |  | 1 |  |
 | aom_update_side_period |  | 4 |  |
 | aom_prediction_factor |  | 1.2 |  |
@@ -271,7 +271,7 @@ Example value taken from vanilla m_bloodsucker.ltx
 | psy_health_v | Speed of psy health recovery | 0.1 |  |
 | health_restore_v | Restoring health over time(?) | 0.0001 |  |
 | immunities_sect | Mutant immunities section | bloodsucker_immunities |  |
-| protections_sect	 | Mutant protections section | bloodsucker_protections |  |
+| protections_sect | Mutant protections section | bloodsucker_protections |  |
 | bleeding_v | Blood loss at nominal wound per second | 0.008 |  |
 | wound_incarnation_v | the steepness of the healing curve (what percentage of the wound remains after healing in a game second)(?) | 0.02 |  |
 | min_wound_size | Minimum value at which bleeding will start | 0.0226 |  |
@@ -404,7 +404,7 @@ Unique abilitys for mutants. Each mutant may have its own individual abilities, 
 | time_quant | Used when calculating the visibility of one creature to another (the formula involves time, time quantum, illumination, speed of an object, and distance to it) | 0.0005 |  |
 | decrease_value | the value by which the weight is reduced if the object is caught in the frustum, but is detached for some reason | 0.01 |  |
 | velocity_factor |  | 0.2 |  |
-| luminocity_factor | light factor (for Actor only) | 0.6	 |  |
+| luminocity_factor | light factor (for Actor only) | 0.6 |  |
 | transparency_threshold |  | 0.1 |  |
 | feel_enemy_who_just_hit_max_distance | the distance at which the monster will sense the shooter in any case | 350 |  |
 
