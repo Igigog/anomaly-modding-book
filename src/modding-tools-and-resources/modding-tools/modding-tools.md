@@ -36,7 +36,7 @@ ___
 
 - converter.exe (tools/) - Converts files from one format to another.
 - [X-Ray Export Tool](https://github.com/VaIeroK/XrayExportTool) - Tool for fast editing and exporting raw stalker formats
-    - [More](xray-export-tool.md)
+  - [More](xray-export-tool.md)
 
 ___
 
@@ -45,34 +45,36 @@ ___
 Official SDK with community enhancements:
 
 - [SDK 0.4 (Shadows of Chernobyl)](https://sharedby.blomp.com/gI0i4B)
-    - [SDK 0.4 by Yara](https://bitbucket.org/Yar0s1av/xray_stalker_sdk_04_fixed/src/master/) - This is a compiled from source SDK 0.4, which has dozens of fixes and improvements.
-    - [SDK 0.4 by YUSHAT](http://files.xray-engine.org/yurshat/repack/xray_sdk_yurshat_repack.rar)
-    - [SDK 0.4 by Political](https://disk.yandex.ru/d/KmVOitON3GnyuU)
+  - [SDK 0.4 by Yara](https://bitbucket.org/Yar0s1av/xray_stalker_sdk_04_fixed/src/master/) - This is a compiled from source SDK 0.4, which has dozens of fixes and improvements.
+  - [SDK 0.4 by YUSHAT](http://files.xray-engine.org/yurshat/repack/xray_sdk_yurshat_repack.rar)
+  - [SDK 0.4 by Political](https://disk.yandex.ru/d/KmVOitON3GnyuU)
 
 - [SDK 0.5 (Clear Sky)](https://sharedby.blomp.com/AWr3Vs)
-    - [SDK B.O.R.S.C.H.T for CS by Lightning in a vacuum](https://bitbucket.org/stalker/xray-csky_borscht_sdk/src/master/)
+  - [SDK B.O.R.S.C.H.T for CS by Lightning in a vacuum](https://bitbucket.org/stalker/xray-csky_borscht_sdk/src/master/)
+
+> ̀**These versions (SDK 0.4 and SDK 0.5/0.6) are not compatible with Anomaly!**
 
 - [SDK 0.7 (Call of Pripyat)](https://www.moddb.com/games/stalker-call-of-pripyat/downloads/x-ray-16-engine-sdk-v07)
-    - [SDK 0.7 (Call of Pripyat)(RePack by DaaGuda V2)](https://mega.nz/folder/zFBiWSAJ#5_MSuGpVPb7QqcPH00nC7w) - Official SDK 0.7 repack with customized components and various fixes
+  - [SDK 0.7 (Call of Pripyat)(RePack by DaaGuda V2)](https://mega.nz/folder/zFBiWSAJ#5_MSuGpVPb7QqcPH00nC7w) - Official SDK 0.7 repack with customized components and various fixes
 
-        - SDK 0.7 Easy: 
-            - The easiest version, but gamedata and rawdata are excluded from its composition, there are no add-ons.
-            - For full functionality you will need to unpack gamedata from CoP 1.6.02. 
-            - Weight: 22 MB
+    - SDK 0.7 Easy:
+      - The easiest version, but gamedata and rawdata are excluded from its composition, there are no add-ons.
+      - For full functionality you will need to unpack gamedata from CoP 1.6.02.
+      - Weight: 22 MB
 
-        - SDK 0.7 Medium(Win32/Win64):
-            - The same as Easy, but with rawdata and some additions.
-            - Just to work fully need to unpack gamedata from CoP 1.6.02.
-            - Weight: 192.4 MB/190.2 MB
+    - SDK 0.7 Medium(Win32/Win64):
+      - The same as Easy, but with rawdata and some additions.
+      - Just to work fully need to unpack gamedata from CoP 1.6.02.
+      - Weight: 192.4 MB/190.2 MB
 
-        - SDK 0.7 Full(Win32/Win64):
-            - The heaviest version, it includes unpacked gamedata, rawdata with sources of CS, CoP objects (excluded objects from rawdata\objects\scenes folder because of its weight)
-            - Preinstalled add-ons from other suites. 
-            - Weight: 2.64 GB/2.64
+    - SDK 0.7 Full(Win32/Win64):
+      - The heaviest version, it includes unpacked gamedata, rawdata with sources of CS, CoP objects (excluded objects from rawdata\objects\scenes folder because of its weight)
+      - Preinstalled add-ons from other suites.
+      - Weight: 2.64 GB/2.64
 
-    - [GUI for X-Ray SDK](https://github.com/Graff46/GUI_for_X-Ray_SDK) - A graphical shell for quickly calling the Actor Editor, Level Editor, and compilers for selected locations.
+- [GUI for X-Ray SDK](https://github.com/Graff46/GUI_for_X-Ray_SDK) - A graphical shell for quickly calling the Actor Editor, Level Editor, and compilers for selected locations.
 
-    - [SDK 0.7 by Range](https://disk.yandex.ru/d/wnzjuQkcti1CNw)
+- [SDK 0.7 by Range](https://disk.yandex.ru/d/wnzjuQkcti1CNw)
 
 - [Anomaly Unofficial SDK](https://drive.google.com/file/d/1LVOLpVUkIVyUJk3zVxBHvnsC1tADwlML/view) - Unofficial SDK with included fixes
 
@@ -81,6 +83,7 @@ Official SDK with community enhancements:
 - [SDK 2.6 beta (Lost Alpha)](https://www.moddb.com/mods/lost-alpha/downloads/stalker-lostalpha-sdk-v26-beta) - Contains the basic editors and tools that were used to create Lost Alpha.
 
 ### SDK tools
+
 The versions of the SDK tools may differ depending on the version of the SDK itself
 
 - Actor Editor
@@ -98,7 +101,7 @@ ___
 - Notepad
 - [Notepad++](https://notepad-plus-plus.org/downloads/)
 - [Visual Studio Code](https://code.visualstudio.com/)
-    - [LTX Support Extension by AziatkaVictor](https://marketplace.visualstudio.com/items?itemName=AziatkaVictor.ltx-support) - adds support for the logic syntax from S.T.A.L.K.E.R. CoP
+  - [LTX Support Extension by AziatkaVictor](https://marketplace.visualstudio.com/items?itemName=AziatkaVictor.ltx-support) - adds support for the logic syntax from S.T.A.L.K.E.R. CoP
 
 ___
 
@@ -121,12 +124,12 @@ ___
 - [BumpGenerator](https://sharedby.blomp.com/MT4WEx) - Intended for DXT compression of bumps together with simultaneous generation of bump#maps (the purpose of which is to correct errors introduced by compression). It works similarly to a similar function in KFK. As input textures, both standard ("blue") bump textures and bump textures used directly in the game with rearranged channels are supported. [Source Code](https://github.com/gunslingermod/BumpGenerator)
 
 - [Bump Generator by i-love-kfc](https://gitlab.com/i-love-kfc/bump-generator) - A simple bump and bump# texture generator from normal maps with the ability to use gloss maps, also, is capable of generating bump# for ready-made "green" bumps.
-    - [More](bump-generator.md)
+  - [More](bump-generator.md)
 
 - [THM Editor](https://gitlab.com/i-love-kfc/thm-editor/) - Utility for editing [.thm](../main-folders-and-files/file-formats/thm.md) files without the need to use the SDK
-    - [More](thm-editor-by-i-love-kfc.md)
+  - [More](thm-editor-by-i-love-kfc.md)
 - [THM Editor by Valerok](https://github.com/VaIeroK/THM-Editor) - ValeroK's version of the original THM Editor
-    - [More](thm-editor-by-valerok.md)
+  - [More](thm-editor-by-valerok.md)
 
 - [ThmValidator](https://sharedby.blomp.com/tnT8vj) - Allows you to check the [.thm](../main-folders-and-files/file-formats/thm.md) files in the selected directory and automatically fix the most common bugs that occur during manual editing.
 
@@ -146,7 +149,7 @@ ___
 
 ## Parameters\LTX
 
-- [STLKObjectMan](https://drive.google.com/file/d/1OM2gZtj_Ubg7H03iI-Z_z3EAkwn1_S2R/view) - Universal parameters editor. Modifies *.ltx and *.xml files. (not compatible with Anomaly due to modified .ltx files)
+- [STLKObjectMan](https://drive.google.com/file/d/1OM2gZtj_Ubg7H03iI-Z_z3EAkwn1_S2R/view) - Universal parameters editor. Modifies \*.ltx and \*.xml files. (not compatible with Anomaly due to modified .ltx files)
 
 - [StalkerElementFinder](https://disk.yandex.ru/d/Rv-Mt1IAXyTihA%D0%B0) - A program for finding elements and resources
 
@@ -158,7 +161,7 @@ ___
 
 - [Audacity](https://www.audacityteam.org/)
 - [Sound Attribute Viewer And Tweaker](https://www.metacognix.com/files/stlkrsoc/index.html#:~:text=Sound%20Attribute%20Viewer%20and%20Tweaker,of%20NPCs%20to%20the%20sounds.) - Simple program that can reduce the work needed to view and/or edit STALKER sound file attributes used by all three STALKER games to determine initial volume, volume drop-off, and sensitivity of NPCs to the sounds
-    - [More](savandt.md)
+  - [More](savandt.md)
 
 ___
 
@@ -166,7 +169,7 @@ ___
 
 - [OMF Editor](https://github.com/mortany/omf_editor) - Tool for working with [.omf](../main-folders-and-files/file-formats/omf.md) format.
 - [OMF Editor by Valerok](https://github.com/VaIeroK/Omf-Editor) - Modified tool for working with [.omf](../main-folders-and-files/file-formats/omf.md) format.
-    - [More](omf-editor-by-valerok.md)
+  - [More](omf-editor-by-valerok.md)
 
 ___
 
@@ -174,10 +177,10 @@ ___
 
 - [OGF Editor](https://github.com/mortany/OGF-tool) - Tool for working with ogf format
 - [OGF Editor by Valerok](https://github.com/VaIeroK/OGF-tool) - Tool for working with .ogf and .dm format
-    - [More](ogf-editor-by-valerok.md)
+  - [More](ogf-editor-by-valerok.md)
 
 - [MeshToolz](https://github.com/gunslingermod/MeshToolz) - Swiss knife for low-level editing of OGF models. Want to copy a piece of one model to another? Easy. Change texture paths and bindings? No problem. Move and scale an item by snapping it to another bone? No problem. Can work both interactively and in script processing mode.
-    - [Scripts For MeshToolz](https://github.com/gunslingermod/additional_scopes)
+  - [Scripts For MeshToolz](https://github.com/gunslingermod/additional_scopes)
 
 - [OGFViewer](https://github.com/mrnotbadguy/OGFViewer) - legacy model viewer for [.ogf](../main-folders-and-files/file-formats/README.md) format.
 
@@ -188,6 +191,7 @@ ___
 - [StalkerWeaponToolKit](https://disk.yandex.ru/d/x3771W3btrwtFw) - Tool for working with weapons
 
 - [StalkerObjectVisual](https://disk.yandex.ru/d/ydy1eMOagGf80Q) - Viewer for .ogf models
+
 ___
 
 ## Upgrades
@@ -221,9 +225,9 @@ ___
 ## Decompilers
 
 - [X-Ray Converter](https://disk.yandex.ru/d/nivUmGybuCXSC) - Multifunctional utility for working with game file formats and X-Ray SDK
-    - [X-Ray Converter Extra](https://disk.yandex.ru/d/7137tI653PRnrU) - Improved components for the converter
-        - [GUI for Converter](https://modsfire.com/download/Fzg5Q2L2pcEHA8m/e9f70) - GUI for converter
-    - [More](https://modfaq.ru/X-Ray_Converter)
+  - [X-Ray Converter Extra](https://disk.yandex.ru/d/7137tI653PRnrU) - Improved components for the converter
+    - [GUI for Converter](https://modsfire.com/download/Fzg5Q2L2pcEHA8m/e9f70) - GUI for converter
+  - [More](https://modfaq.ru/X-Ray_Converter)
 
 - [Universal ACDC](https://disk.yandex.ru/d/-GBYa8DxQv8MF) - Perl script, to unpack and pack all.spawn
 - [gamemtl_xr_cdc](https://disk.yandex.ru/d/hR79KfSn3PLtSK)
@@ -233,15 +237,15 @@ ___
 - [senvironment_xr_cdc](https://disk.yandex.ru/d/jBnrr3Xg3PLtcc)
 - [particles_xr_cdc (Unpacking to binary files only)](https://disk.yandex.ru/d/LCkINfLw3PLtV5)
 - [converter-level](https://disk.yandex.ru/d/czZSLCzT3UrDa5)
-    - The program requires Perl [Old Version Perl](https://disk.yandex.ru/d/N6e73Ky2Wouqfg) to be installed.
-    - You also need [stkutils](https://disk.yandex.ru/d/nnjntzYZQv8sD) (put it in the folder with the script or in C:\Perl\lib)
+  - The program requires Perl [Old Version Perl](https://disk.yandex.ru/d/N6e73Ky2Wouqfg) to be installed.
+  - You also need [stkutils](https://disk.yandex.ru/d/nnjntzYZQv8sD) (put it in the folder with the script or in C:\Perl\lib)
 
 ___
 
 ## Compilers
 
 - [Universal x64 level compilers](https://drive.google.com/file/d/1_aU3MsUM7X9RphjjJRx85iQBPneavAz_/view) - Universal level compiler that supports the compilation format for games of all series and has many keys to compile
-    - [More](universal-x64-level-compilers.md)
+  - [More](universal-x64-level-compilers.md)
 
 ___
 
@@ -249,7 +253,7 @@ ___
 
 - [DB_Compressor by d_μaμ](https://cdn.discordapp.com/attachments/616764067670917131/846799604438532107/DB_Compressor.rar)
 - [xrCompress by i-love-kfc](https://ap-pro.ru/forums/topic/3500-obnovlyonnyy-xrcompress/) - .db/.xdb archiver
-    - [More](xrcompress-by-i-love-kfc.md)
+  - [More](xrcompress-by-i-love-kfc.md)
 
 ___
 
