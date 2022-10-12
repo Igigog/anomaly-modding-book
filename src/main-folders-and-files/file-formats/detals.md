@@ -1,12 +1,18 @@
 # .details
 
+### Tags
+
 ___
 
-## About:
+[`#file formats`](tags.md#one-tag "Tag: one-tag")
+
+___
+
+## About
 
 Detailed objects (grass, cigarette butts, construction debris) on the level
 
-## Technical information:
+## Technical information
 
 - Format version: 3
 
@@ -130,4 +136,5 @@ The upper boundary of the slot is equal to: the lower boundary + the height of t
 ___
 
 ## Sources
+
 [Source](http://stalkerin.gameru.net/wiki/index.php?title=Level.details)

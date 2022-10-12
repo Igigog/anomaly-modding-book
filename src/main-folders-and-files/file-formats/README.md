@@ -7,6 +7,7 @@ This section describes the extensions that are found in the game files and the S
 ___
 
 ## General
+
 | Extension | Description |
 ---|---|
 | .log | Event log. It contains records of program start, operation and termination |
@@ -17,6 +18,7 @@ ___
 ___
 
 ## Configuration and script files
+
 | Extension | Description |
 ---|---|
 | [.ltx](../../configs/ltx-files.md/) | Configuration file, custom ini-like format |
@@ -27,6 +29,7 @@ ___
 ___
 
 ## Textures
+
 | Extension | Description |
 ---|---|
 | [.bump](bump.md) | Normal map in A(BGR) format |
@@ -38,6 +41,7 @@ ___
 ___
 
 ## AI
+
 | Extension | Description |
 ---|---|
 | [.efd](efd.md) | Table of AI heuristic parameters, contains constants for fine-tuning A-Life. They are used as input parameters in scripts. |
@@ -45,6 +49,7 @@ ___
 ___
 
 ## Video
+
 | Extension | Description |
 ---|---|
 | .ogm | The video format used by the game engine. |
@@ -52,6 +57,7 @@ ___
 ___
 
 ## Sound
+
 | Extension | Description |
 ---|---|
 | [.ogg](ogg.md) | The sound format used by the game engine. |
@@ -59,6 +65,7 @@ ___
 ___
 
 ## Shaders
+
 | Extension | Description |
 ---|---|
 | .cs | Compute shader |
@@ -70,16 +77,17 @@ ___
 ___
 
 ## Models
+
 | Extension | Description |
 ---|---|
 | [.dm](dm.md) |  Effect of a dynamic weather environment (e.g., rain or lightning) |
 | [.object](object.md) | These files are intended for the X-Ray SDK to store 3D content in its original, uncompressed, lossless form. They are source files that store information before compilation into other game compressed formats.  |
 | .ogf | Compiled objects |
-| .err | Geometry errors |
 
 ___
 
 ## Animations
+
 | Extension | Description |
 ---|---|
 | [.anm](anm.md) | A set of coordinates, which works as an animation of the actor's camera movement. It is also used for anomalies, which need to be given a path. |
@@ -90,6 +98,7 @@ ___
 ___
 
 ## Archives and Resource Packages
+
 | Extension | Description |
 ---|---|
 | .db | archive of game resources. Used in late builds and the final version of the game, has several options (db."number", db."letter"). |
@@ -98,8 +107,10 @@ ___
 ___
 
 ## Game level
+
 | Extension | Description |
 ---|---|
+| [.err] | Contains information about geometry errors during level compilation |
 | [level](../file-formats/level.md) | File with general information about the game location (light sources, object names, texture and shader names, sectors and portals). Created by xrLC during compilation. Opened only by the game. |
 | .prj | Level precompilation file |
 | .ai | AI location grid. Created by xrAI when compiling. Opened only by the game. |
@@ -125,6 +136,7 @@ ___
 ___
 
 ## Postprocess
+
 | Extension | Description |
 ---|---|
 | .ppe | Postprocess file format. |
