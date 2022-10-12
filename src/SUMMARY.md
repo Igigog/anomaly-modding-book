@@ -36,6 +36,7 @@ ___
 
 - [Main Folders And Files](main-folders-and-files/README.md)
   - [File Formats](main-folders-and-files/file-formats/README.md)
+    - [Binary files](main-folders-and-files/file-formats/binary-files.md)
     - [.anm](main-folders-and-files/file-formats/anm.md)
     - [.bump](main-folders-and-files/file-formats/bump.md)
     - [.cform](main-folders-and-files/file-formats/cform.md)
@@ -48,6 +49,7 @@ ___
     - [.ogg](main-folders-and-files/file-formats/ogg.md)
     - [.hom](main-folders-and-files/file-formats/hom.md)
     - [level](main-folders-and-files/file-formats/level.md)
+    - [.err](main-folders-and-files/file-formats/err.md)
     - [.efd](main-folders-and-files/file-formats/efd.md)
     - [.seq](main-folders-and-files/file-formats/seq.md)
     - [.som](main-folders-and-files/file-formats/som.md)

@@ -20,7 +20,7 @@ Blender will then notify you that the addon has been successfully installed.
 
 ___
 
-# Setup
+## Setup
 
 Find the installed addon in the list of addons.
 
@@ -47,12 +47,11 @@ Example Path Settings:
 
 - [More Details (Addon Wiki)](https://github.com/PavelBlend/blender-xray/wiki/Preferences#paths-settings)
 
-
 Once the paths are installed, the setup is pretty much complete. Already at this stage you can work.
 
 ___
 
-## P.S 
+## P.S
 
 For even more comfortable work it is recommended to go to the tab "Other" and check the box "Compact Import/Export Menus".
 

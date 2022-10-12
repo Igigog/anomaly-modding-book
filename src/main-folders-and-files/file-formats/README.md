@@ -4,6 +4,8 @@ ___
 
 This section describes the extensions that are found in the game files and the SDK.
 
+Before reading the files, it is recommended that you read [this](binary-files.md) article
+
 ___
 
 ## General
@@ -21,7 +23,7 @@ ___
 
 | Extension | Description |
 ---|---|
-| [.ltx](../../configs/ltx-files.md/) | Configuration file, custom ini-like format |
+| [.ltx](../../configs/ltx-files.md) | Configuration file, custom ini-like format |
 | .script | Game script. |
 | [.xml](../../configs/xml-files.md) | Carry in text format data related to in-game text, UI element placement, and characters and information within the game world. |
 | [.seq](seq.md) | Text file containing a description of the frame sequence in the 2D animation |
@@ -110,7 +112,7 @@ ___
 
 | Extension | Description |
 ---|---|
-| [.err] | Contains information about geometry errors during level compilation |
+| [.err](err.md) | Contains information about geometry errors during level compilation |
 | [level](../file-formats/level.md) | File with general information about the game location (light sources, object names, texture and shader names, sectors and portals). Created by xrLC during compilation. Opened only by the game. |
 | .prj | Level precompilation file |
 | .ai | AI location grid. Created by xrAI when compiling. Opened only by the game. |
