@@ -1,11 +1,5 @@
 # .details
 
-## Tags
-
-___
-
-[`#file formats`](tags.md#one-tag "Tag: one-tag")
-
 ___
 
 ## About
