@@ -6,7 +6,7 @@ XML files are used to save text strings used for translation. All XML files are 
 
 1. They are saved in encoding Windows-1251. English translation won't break if you're using UTF, but russian will.
 2. Every string must have an unique id assigned to it.
-1. There is a single namespace for all xml files of one language. That means, no matter in which file you are saving your strings, they will be available in one place, namely `game.translate_string(*id*)`.
+3. There is a single namespace for all xml files of one language. That means, no matter in which file you are saving your strings, they will be available in one place, namely `game.translate_string(*id*)`.
 
 XML file will look something like this:
 
@@ -24,3 +24,9 @@ XML file will look something like this:
     ...
 </string_table>
 ```
+
+___
+
+## Programs editing this file
+
+- Any code editor that supports .xml

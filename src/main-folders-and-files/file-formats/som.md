@@ -2,11 +2,11 @@
 
 ___
 
-## About:
+## About
 
 Geometry for calculating sound propagation. Used to allow sound to pass through walls, ceilings, floors, etc. with varying strength.
 
-## Technical information:
+## Technical information
 
 - Format version: 0
 
@@ -43,5 +43,11 @@ The first triangle will be: 0, 1, 2, second: 3, 4, 5, third: 6, 7, 8, etc.
 
 ___
 
+## Programs editing this file
+
+- [Blender (X-Ray Addon)](../../blender/index.html)
+- [SDK 0.7](../../sdk/index.html)
+
 ## Sources
+
 [Source](http://stalkerin.gameru.net/wiki/index.php?title=Level.som)

@@ -2,11 +2,11 @@
 
 ___
 
-## About:
+## About
 
 A specialized S.T.A.L.K.E.R. game format containing animations. This is a separate dedicated file used in conjunction with .ogf models. Was created in order to optimize process when some different models use the same list of animations.
 
-## Technical information:
+## Technical information
 
 They are in [RIFF](https://en.wikipedia.org/wiki/Resource_Interchange_File_Format) format. That is, the file is divided into chunks.
 The omf file consists of two chunks:
@@ -64,7 +64,7 @@ This movement is stored in 3 float numbers (4 bytes each).
 
 Below is a pseudocode that describes one animation:
 
-```
+```C++
 name = string
 length = uint32
 for bone in bones {
@@ -103,7 +103,7 @@ for bone in bones {
 Stores bone parts and animation parameters.
 The code that describes this chunk is shown below:
 
-```
+```C++
 params_version = uint16 // parameter format version
 partition_count = uint16 // number of bone parts
 for (i=0, i<partition_count, i++) {
@@ -132,5 +132,11 @@ for (i=0, i<partition_count, i++) {
 
 ___
 
+## Programs editing this file
+
+- [Blender (X-Ray Addon)](../../blender/index.html)
+- [OMF Editor by ValeroK](../../modding-tools-and-resources/modding-tools/omf-editor-by-valerok.md)
+
 ## Sources
+
 [Source](http://stalkerin.gameru.net/wiki/index.php?title=%D0%A4%D0%BE%D1%80%D0%BC%D0%B0%D1%82_%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2_*.omf)

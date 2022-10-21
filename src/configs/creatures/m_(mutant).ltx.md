@@ -357,7 +357,7 @@ coefficients of parameter change rates during sleep
 | idle_sound_delay |  | 95000 |  |
 | eat_sound_delay |  | 3000 |  |
 | attack_sound_delay |  | 1000 |  |
-| SoundThreshold |  | 0.05 | range [0..1] |
+| SoundThreshold |  | 0.05 | range [0 - 1] |
 | max_hear_dist | Distance at which sounds are heard | 60 |  |
 
 </details>

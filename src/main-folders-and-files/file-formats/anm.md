@@ -17,3 +17,8 @@ A set of coordinates, which works as an animation of the actor's camera movement
 - BEZIER_1D
 - LINEAR
 - [HERMITE](https://en.wikipedia.org/wiki/Hermite_interpolation)
+
+## Programs editing this file
+
+- [Blender (X-Ray Addon)](../../blender/index.html)
+- [SDK 0.7](../../sdk/index.html)

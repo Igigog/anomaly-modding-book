@@ -1,5 +1,7 @@
 # Binary files
 
+___
+
 ## About
 
 This article is an introduction to binary files.
@@ -39,7 +41,7 @@ As a result, the length of the string is equal to the number of characters in it
 
 ### Blocks
 
-In X-Ray, some binary files are in RIFF format.
+In X-Ray, some binary files are in [RIFF](https://en.wikipedia.org/wiki/Resource_Interchange_File_Format) format.
 
 Such files have blocks (also called chunks or sections).
 
@@ -56,7 +58,7 @@ Block structure
 
 You can see from the identifier what is stored in a particular block.
 
-If the compression is set to 0x0000, the block is uncompressed, and if it is set to 0x8000, the block is compressed by the Huffman method.
+If the compression is set to 0x0000, the block is uncompressed, and if it is set to 0x8000, the block is compressed by the [Huffman method](https://en.wikipedia.org/wiki/Huffman_coding).
 
 You can use a program from xray_re_tools (trunk\garbage\lzhuf\lzhuf.c) to decompress compressed blocks.
 

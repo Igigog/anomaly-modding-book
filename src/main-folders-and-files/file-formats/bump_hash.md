@@ -4,7 +4,7 @@ ___
 
 ## About
 
-Corrects DXT compression errors in [.bump](bump.md) and is generated only with SDK
+Corrects DXT compression errors in [.bump](bump.md)
 
 ## Technical information
 

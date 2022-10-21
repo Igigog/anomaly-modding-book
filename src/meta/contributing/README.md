@@ -2,6 +2,16 @@
 
 ___
 
+## First way to contribute
+
+You can easily suggest edits by clicking on the button at the top right
+
+![suggest an edit centered](contributing-images/suggest-an-edit.png)
+
+___
+
+## Second way to contribute
+
 This book is written using [mdBook](https://github.com/rust-lang/mdBook). To contribute to this book, you will need:
 
 1. [mdBook](https://github.com/rust-lang/mdBook)
@@ -93,3 +103,14 @@ git clone LINK
 3. You're awesome. Probably. Now ping Igigog#6387 in Discord to get your pull request reviewed.
 
 4. Done. Your changes are added to the main book.
+
+___
+
+### P.S
+
+If you will be using VSCodium or VSCode, it is recommended to install markdown extensions to make life easier or to avoid messing up the book structure. 
+
+For example such as:
+
+- [Markdown Link Updater](https://open-vsx.org/extension/mathiassoeholm/markdown-link-updater) - Updates Markdown links automatically, when files in the workspace are moved or renamed.
+- [markdownlint](https://open-vsx.org/extension/DavidAnson/vscode-markdownlint) - This is a rule library for encouraging standards and consistency for Markdown files.

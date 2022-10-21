@@ -2,17 +2,21 @@
 
 ___
 
-## About:
+## About
 
 DDS is most often used to store textures and is used in many 3D applications, as well as in modern 3D games. It allows you to store textures both in compressed and uncompressed form.
 
-## Technical information:
+## Technical information
 
 ### Format
 
 - RGB - Diffuse colour
 - A - Alpha (Used for translucent/transparent shaders like glass/grass)
 
-### The engine currently supports the following compressions:
+### The engine currently supports the following compressions
 
 - DXT1
+
+## Programs editing this file
+
+- Any program that works with .dds files (Example: Paint.net or GIMP)

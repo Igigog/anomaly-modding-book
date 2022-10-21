@@ -1,13 +1,14 @@
 # Modified Omf Editor by ValeroK
-- Program Developers: 
-    - Mortany (Original Author)
-    - ValeroK
+
+- Program Developers:
+  - Mortany (Original Author)
+  - ValeroK
 - The version described in the article: [1.2](https://github.com/VaIeroK/Omf-Editor/releases/tag/1.2)
 - [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3550-omf-editor-v12)
 
 ___
 
-## About:
+## About
 
 Modified tool for working with [.omf](../../main-folders-and-files/file-formats/omf.md) format.
 
@@ -91,6 +92,7 @@ Modified tool for working with [.omf](../../main-folders-and-files/file-formats/
 | Has Motion Marks | Adds the ability to use Motion Marks |
 
 - #### Motion Time Format
+
 | Format | Description |
 ---|---|
 | Keys |  |
@@ -98,8 +100,8 @@ Modified tool for working with [.omf](../../main-folders-and-files/file-formats/
 
 - #### Motion Marks
 
-
 ### Program parameters
+
 | Parameter | Description |
 ---|---|
 | Real Time Lenght | Multiplies all visual timers by animation speed |

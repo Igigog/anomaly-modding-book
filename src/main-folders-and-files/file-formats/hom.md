@@ -2,17 +2,17 @@
 
 ___
 
-## About:
+## About
 
 HOM is a geometry cutter, which is a mesh and is needed to increase performance. This file is created during level compilation.
 
-## Technical information:
+## Technical information
 
 ### Blocks
 
 Consists of two blocks:
 
-| Block ID | Size (bytes) | Description | 
+| Block ID | Size (bytes) | Description |
 ---|---|---|
 | 0x0 | 4 | header (contains information about the format version) |
 | 0x1 | number of polygons * 40 | vertex coordinates and polygon properties |
@@ -22,7 +22,7 @@ Consists of two blocks:
 #### Block 0x0 (header)
 
 | Type | Description |
----|---| 
+---|---|
 | I | format version |
 
 #### Block 0x1 (mesh data)
@@ -32,7 +32,7 @@ Contains the data of the triangles, which are written one by one.
 The data is for one triangle:
 
 | Type | Description |
----|---| 
+---|---|
 | fff | 3D coordinates of the first vertex of the triangle |
 | fff | 3D coordinates of the second vertex of the triangle |
 | fff | 3D coordinates of the third vertex of the triangle |
@@ -46,5 +46,11 @@ The first triangle will be: 0, 1, 2, second: 3, 4, 5, third: 6, 7, 8, etc.
 
 ___
 
+## Programs editing this file
+
+- [Blender (X-Ray Addon)](../../blender/index.html)
+- [SDK 0.7](../../sdk/index.html)
+
 ## Sources
+
 [Source](http://stalkerin.gameru.net/wiki/index.php?title=Level.hom)

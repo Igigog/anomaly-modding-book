@@ -17,10 +17,6 @@ It works like this: UV descends down the Y coordinates to the texture
 - Must have one material
 - Does not support antialiasing
 
-```admonish info
-A beautifully styled message.
-```
-
 ### General structure
 
 | Data |
@@ -109,6 +105,12 @@ The index structure:
 | Data | Type |
 ---|---|
 | vertex index | H |
+
+## Programs editing this file
+
+- [Blender (X-Ray Addon)](../../blender/index.html)
+- [X-Ray Export Tool (Object Tool)](../../modding-tools-and-resources/modding-modding-tools/xray-export-tool.md)
+- [SDK 0.7](../../sdk/index.html)
 
 ## Sources
 

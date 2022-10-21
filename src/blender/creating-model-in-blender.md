@@ -1,6 +1,5 @@
 # Creating and setting up a model in Blender
 
-
 ___
 
 This article is about creating a model and setting its parameters
@@ -17,7 +16,7 @@ ___
 Create or download the model you like.
 Do a UV if you don't have one.
 
-- ### Example:
+- ### Example
 
 The model itself:
 ![model-example](blender-images/model-example.png)
@@ -35,7 +34,9 @@ Texture:
 ![model-example-texture](blender-images/model-example-texture.png)
 
 - ### Important note about texture maps
+
 In STALKER, due to its outdated engine, only the following texture maps are used:
+
 - Color Map ([.dds](../main-folders-and-files/file-formats/dds.md))
 - Normal Maps (For Stalker they are used as [.bump](../main-folders-and-files/file-formats/bump.md) and .bump#) (The Blender X-Ray addon does not support the [.bump](../main-folders-and-files/file-formats/bump.md) format at this time (June 2022).)
 
@@ -53,6 +54,7 @@ ___
 ## Setting up
 
 - ### Model
+
 First, the model itself will be set up. 
 You can start by positioning the model over the origin in this way (The ["Drop It"](https://andreasaust.gumroad.com/l/drop_it) addon for Blender is highly recommended for such actions):
 ![model-example-coordinates](blender-images/model-example-coordinates.png)
@@ -88,7 +90,7 @@ In the "Viewer" list, we can click on "Close Folder (![svg-icon close-folder](bl
 
 At this point we have to decide what type of model we want to use (static, dynamic, or something else). (About the types of objects you can learn here)
 
-It was decided to make our object dynamic. 
+It was decided to make our object dynamic.
 To do this, you need to create a bone and a vertex group (so that the bone can affect exactly the vertices you choose).
 Select the model and go to the "Object Data Properties" (![svg-icon object-data-properties](blender-images/blender-images-icons/object-data-properties-logo.svg)) tab
 Image here
@@ -124,6 +126,7 @@ In the "Modifier Properties" (![svg-icon modifier-properties-logo](blender-image
 ![armature-modif-create centered](blender-images/armature-modifier.png)
 
 The modifier has the following necessary items:
+
 - Object (![svg-icon object-logo](blender-images/blender-images-icons/object-logo.svg))
 - Bind to (![svg-icon checkbox](blender-images/blender-images-icons/checkbox.svg)) Vertex Groups
 
@@ -142,6 +145,7 @@ Now you have to set the bone properties for X-Ray.
 ___
 
 - ### Bone
+
 Select the bone and go to the "Bone Properties" (![svg-icon bone-properties-logo](blender-images/blender-images-icons/bone-propertties-logo.svg)) tab.
 
 ![bone-properties-p2 centered](blender-images/bone-properties.png)
@@ -175,6 +179,7 @@ To check the correctness of the shape and adjust the center of mass for the bone
 ![object-data-properties-panel centered](blender-images/object-data-properties-skeleton.png)
 
 Here we see the "X-Ray Engine: Skeleton" section and the two buttons we need:
+
 - Display Bone Shape
 - Display Bone Mass Centers
 
@@ -198,6 +203,7 @@ The editing of the bone parameters is finished, the next step is Materials.
 ___
 
 - ### Material
+
 Select our object and go to the "Material Properties" (![svg-icon material-properties-logo](blender-images/blender-images-icons/material-properties-logo.svg)) tab.
 
 ![material-properties centered](blender-images/material-properties.png)
@@ -222,6 +228,7 @@ ___
 ## The final stage
 
 - ### Checking the model for correct operation
+
 To check the model you can go the following ways:
 
 - Load the model into the SDK and check

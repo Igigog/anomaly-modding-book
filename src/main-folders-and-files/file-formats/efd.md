@@ -2,7 +2,7 @@
 
 ___
 
-## About:
+## About
 
 Table of AI heuristic parameters, contains constants for fine-tuning A-Life. They are used as input parameters in scripts.
 
@@ -10,7 +10,7 @@ Table of AI heuristic parameters, contains constants for fine-tuning A-Life. The
 
 anomalydetectprobability.efd
 
-```
+```example
 [values]
 offset_0: value_0 = 1
 offset_4: value_1 = 1
@@ -56,5 +56,10 @@ There is a function in xrgame.dll where all files with this extension are opened
 
 ___
 
+## Programs editing this file
+
+- [Evaluation Function Cunsctructor)]()
+
 ## Sources
+
 [Source](https://www.gameru.net/forum/index.php?showtopic=41944)

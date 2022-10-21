@@ -2,13 +2,13 @@
 
 ___
 
-## About:
+## About
 
 Text file that is used to create a simple animation texture, by recording a sequence of "frames" and a playback speed.
 
-## Example:
+## Example
 
-```
+```example
 15
 ui\ui_ani_cursor_01
 ui\ui_ani_cursor_02
@@ -16,9 +16,10 @@ ui\ui_ani_cursor_03
 ui\ui_ani_cursor_04
 ui\ui_ani_cursor_05
 ```
+
 Order in which the textures are played will be 1234512312312345
 
-```
+```example
 cycled
 15
 ui\ui_ani_cursor_01
@@ -48,4 +49,5 @@ If you don't write it, it will play in a normal circular loop.
 ___
 
 ## Sources
+
 [Source](https://modfaq.ru/*.seq)

@@ -7,516 +7,258 @@ ___
 - Expression - Expression in the engine code, which gives an error
 - Function - Name of the function where the error occurred
 - File - File where the error occurred
+- Line - Line in File where the error occurred
 - Description - Possible problem description
 - Arguments - Argument causing the error
 
 ___
 
-## Models
+## <center>Models</center>
+
+### Line 120
 
 <details>
     <summary>Line 120</summary>
 
-[error]Expression    : <no expression>
+[error]Expression    : \<no expression>
 
-[error]Function      : CModelPool::Instance_Load
+[error]Function      : [CModelPool::Instance_Load](https://bitbucket.org/anomalymod/xray-monolith/src/d369db0ce75b8101c8d0fe1b2fa7a84b04910a35/src/Layers/xrRender/ModelPool.cpp#lines-100)
 
-[error]File          : ..\xrRender\ModelPool.cpp
+[error]File          : [..\xrRender\ModelPool.cpp](https://bitbucket.org/anomalymod/xray-monolith/src/master/src/Layers/xrRender/ModelPool.cpp)
 
-[error]Line          : 120
+[error]Line          : [120](https://bitbucket.org/anomalymod/xray-monolith/src/d369db0ce75b8101c8d0fe1b2fa7a84b04910a35/src/Layers/xrRender/ModelPool.cpp#lines-120)
 
 [error]Description   : fatal error
 
-[error]Arguments     : Can't find model file 'actors\stalker_soldier\solder_trader.ogf'.
+[error]Arguments     : Can't find model file "`path and file name`".
 
-- Clarification: No 3D OGF model was found, in this case 'solder_trader.ogf' from the actors\stalker_soldier folder
+- Clarification: No 3D .ogf model was found
+
+- Error fixing:
+  - Check that the model exists
+  - Check that the paths to it are correct
 
 </details>
 
 ___
 
-## Particles
+## <center>[Animations](../main-folders-and-files/file-formats/omf.md)</center>
+
+### Line 784
 
 <details>
-    <summary>Line 68</summary>
+    <summary>Line 784</summary>
 
-[error]Expression    : <no expression>
+[error]Expression    : \<no expression>
 
-[error]Function      : CResourceManager::_GetBlender
+[error]Function      : [CKinematicsAnimated::Load::<lambda_1d323dfa2c5eacee46e042904e528af6>::operator ()](https://bitbucket.org/anomalymod/xray-monolith/src/d369db0ce75b8101c8d0fe1b2fa7a84b04910a35/src/Layers/xrRender/SkeletonAnimated.cpp#lines-769)
 
-[error]File          : ..\xrRender\ResourceManager.cpp
+[error]File          : [..\xrRender\SkeletonAnimated.cpp](https://bitbucket.org/anomalymod/xray-monolith/src/master/src/Layers/xrRender/SkeletonAnimated.cpp)
 
-[error]Line          : 68
+[error]Line          : [784](https://bitbucket.org/anomalymod/xray-monolith/src/d369db0ce75b8101c8d0fe1b2fa7a84b04910a35/src/Layers/xrRender/SkeletonAnimated.cpp#lines-784)
 
 [error]Description   : fatal error
 
-[error]Arguments     : Shader 'models_laserbeam' not found in library.
+[error]Arguments     : Can't find motion file "`path and file name`".
 
-- Clarification:
+- Clarification: No .omf animation was found
 
-</details>
-
-<details>
-    <summary>Line 683</summary>
-
-[error]Expression    : SG
-
-[error]Function      : CRender::model_CreateParticles
-
-[error]File          : r4.cpp
-
-[error]Line          : 683
-
-[error]Description   : Particle effect or group doesn't exist
-
-[error]Arguments     : damage_fx\mod_cig_smoke
-
-- Clarification: Particle system *mod_cig_smoke* was not found in the damage_fx directory of the particles.xr file when playing on a r4(dx11) render
-
-</details>
-
-<details>
-    <summary>Line 521</summary>
-
-[error]Expression    : SG
-
-[error]Function      : CRender::model_CreateParticles
-
-[error]File          : r2.cpp
-
-[error]Line          : 521
-
-[error]Description   : Particle effect or group doesn't exist
-
-[error]Arguments     : ghost_particles\weapons\flame_eft_pistol
-
-- Clarification: Particle system *flame_eft_pistol* was not found in the ghost_particles\weapons\ directory of the particles.xr file when playing on a r2(dx9) render
-
-</details>
-
-<details>
-    <summary>Line 227</summary>
-
-[error]Expression    : SG
-
-[error]Function      : CRender::model_CreateParticles
-
-[error]File          : FStaticRender.cpp
-
-[error]Line          : 227
-
-[error]Description   : Particle effect or group doesn't exist
-
-[error]Arguments     : vehiclefx\exhaust_3
-
-- Clarification: Particle system *exhaust_3* was not found in the vehiclefx directory of the particles.xr file when playing on a static render
+- Error fixing:
+  - Check that the animation exists
+  - Check the correct paths to it in the Motions Reference of the model
 
 </details>
 
 ___
 
-## LUA
+## <center>[Animated Paths](../main-folders-and-files/file-formats/anm.md)</center>
+
+### Line 47
 
 <details>
-    <summary>Line 189</summary>
+    <summary>Line 47</summary>
 
-[error]Expression    : <no expression>
+[error]Expression    : \<no expression>
 
-[error]Function      : CScriptEngine::lua_error
+[error]Function      : [CObjectAnimator::LoadMotions](https://bitbucket.org/anomalymod/xray-monolith/src/d369db0ce75b8101c8d0fe1b2fa7a84b04910a35/src/xrEngine/ObjectAnimator.cpp#lines-42)
 
-[error]File          : ..\xrServerEntities\script_engine.cpp
+[error]File          : [ObjectAnimator.cpp](https://bitbucket.org/anomalymod/xray-monolith/src/master/src/xrEngine/ObjectAnimator.cpp)
 
-[error]Line          : 189
+[error]Line          : [47](https://bitbucket.org/anomalymod/xray-monolith/src/d369db0ce75b8101c8d0fe1b2fa7a84b04910a35/src/xrEngine/ObjectAnimator.cpp#lines-47)
 
 [error]Description   : fatal error
 
-[error]Arguments     : LUA error: ...ly\anomaly\gamedata\scripts\alife_storage_manager.script:146: bad code
+[error]Arguments     : Can't find motion file "`path and file name`".
 
-- Clarification:
+- Clarification: No .anm file was found
 
-</details>
-
-<details>
-    <summary>Line 191</summary>
-
-[error]Expression    : <no expression>
-
-[error]Function      : CScriptEngine::lua_error
-
-[error]File          : ..\xrServerEntities\script_engine.cpp
-
-[error]Line          : 191
-
-[error]Description   : fatal error
-
-[error]Arguments     : LUA error: ...-1.5.1/bin/..\gamedata\scripts\a_arti_jamming_mcm.script:67: attempt to concatenate a nil value
-
-- Clarification: 
-
-</details>
-
-<details>
-    <summary>Line 467</summary>
-
-[error]Expression    : sz < (tgt_sz - 1)
-
-[error]Function      : IReader::r_string
-
-[error]File          : FS.cpp
-
-[error]Line          : 467
-
-[error]Description   : Dest string less than needed.
-
-- Clarification: 
+- Error fixing:
+  - Check that the .anm file exists
+  - Check that the paths to it are correct
 
 </details>
 
 ___
 
-## LTX files
+## <center>A-Life</center>
+
+### Line 49
 
 <details>
-    <summary>Line 147</summary>
-
-[error]Expression    : <no expression>
-
-[error]Function      : CIni_IdToIndex<1,struct COMMUNITY_DATA,class shared_str,int,class CHARACTER_COMMUNITY>::GetByIndex
-
-[error]File          : g:\projects\stalker\anomaly2-engine\src\xrgame\ini_id_loader.h
-
-[error]Line          : 147
-
-[error]Description   : fatal error
-
-[error]Arguments     : item by index not found in section game_relations, line communities
-
-- Clarification:
-
-</details>
-
-<details>
-    <summary>Line 544</summary>
-
-[error]Expression    : <no expression>
-
-[error]Function      : CInifile::r_section
-
-[error]File          : Xr_ini.cpp
-
-[error]Line          : 544
-
-[error]Description   : fatal error
-
-[error]Arguments     : Can't open section 'string_table'. Please attach [*.ini_log] file to your bug report
-
-- Clarification: The engine cannot read the section *string_table*
-
-</details>
-
-<details>
-    <summary>Line 330</summary>
-
-[error]Expression    : <no expression>
-
-[error]Function      : CInifile::Load
-
-[error]File          : Xr_ini.cpp
-
-[error]Line          : 330
-
-[error]Description   : fatal error
-
-[error]Arguments     : Duplicate section 'esc_m_trader_task_1' wasn't marked as an override. Override section by prefixing it with '!' (![esc_m_trader_task_1]) or give it a unique name.
-
-- Clarification: 
-
-</details>
-
-<details>
-    <summary>Line 305</summary>
-
-[error]Expression    : <no expression>
-
-[error]Function      : CInifile::Load
-
-[error]File          : Xr_ini.cpp
-
-[error]Line          : 305
-
-[error]Description   : fatal error
-
-[error]Arguments     : Duplicate section 'ammo_23x75_shrapnel' found.
-
-- Clarification: Duplicated the specified section in the .ltx files.
-
-</details>
-
-<details>
-    <summary>Line 520</summary>
-
-[error]Expression    : <no expression>
-
-[error]Function      : CInifile::r_section
-
-[error]File          : Xr_ini.cpp
-
-[error]Line          : 520
-
-[error]Description   : fatal error
-
-[error]Arguments     : Can't open section 'achievements'. Please attach [*.ini_log] file to your bug report
-
-- Clarification: The game cannot find this section
-
-</details>
-
-<details>
-    <summary>Line 703</summary>
-
-[error]Expression    : b
-
-[error]Function      : X:\stalker_addon\sources\trunk\xrCore\Xr_ini.cpp
-
-[error]File          : X:\stalker_addon\sources\trunk\xrCore\Xr_ini.cpp
-
-[error]Line          : 703
-
-[error]Description   : name[levels\l01_escape\l01_escape_part0967] already exist in section[d:\gamesedit\stalker-uni\sdk\editors\rawdata\levels\l01_escape.level]
-
-- Clarification:
-
-</details>
-
-<details>
-    <summary>Line 718</summary>
-
-[error]Expression    : <no expression>
-
-[error]Function      : CInifile::Load::<lambda_013765cd77135cd39b93c0fb9e7e180b>::operator ()
-
-[error]File          : Xr_ini.cpp
-
-[error]Line          : 718
-
-[error]Description   : fatal error
-
-[error]Arguments     : Section 'trasher' has cyclical dependencies. Ensure that sections with parents don't inherit in a loop. Check this file and its DLTX mods: d:/anomaly\gamedata\configs\items\trade\trade_stalker_flea_market.ltx
-
-- Clarification:
-
-</details>
-
-
-<details>
-    <summary>Line 915</summary>
-
-[error]Expression : <no expression>
-
-[error]Function : CInifile::r_section
-
-[error] File : Xr_ini.cpp
-
-[error] Line : 915
-
-[error] Description : fatal error
-
-[error]Arguments : Can't open section 'ammo_knife_6'. Please attach [*.ini_log] file to your bug report
-
-- Clarification: The game cannot find this section
-
-</details>
-
-<details>
-    <summary>Line 918</summary>
-
-[error]Expression    : <no expression>
-
-[error]Function      : CInifile::r_section
-
-[error]File          : Xr_ini.cpp
-
-[error]Line          : 918
-
-[error]Description   : fatal error
-
-[error]Arguments     : Can't open section 'flesh_01a_normal'. Please attach [*.ini_log] file to your bug report
-
-- Clarification: The game cannot find this section
-
-</details>
-
-<details>
-    <summary>Line 204</summary>
-
-[error]Expression    : <no expression>
-
-[error]Function      : CScriptEngine::lua_pcall_failed
-
-[error]File          : ..\xrServerEntities\script_engine.cpp
-
-[error]Line          : 204
-
-[error]Description   : fatal error
-
-[error]Arguments     : LUA error: ...aly/bin/..\gamedata\scripts\release_npc_inventory.script:96: attempt to call field 'remove_extra_ammo' (a nil value)
-
-- Clarification:
-
-</details>
-
-<details>
-    <summary>Line 523</summary>
-
-[error]Expression    : S && strlen(S)
-
-[error]Function      : CInifile::r_section
-
-[error]File          : Xr_ini.cpp
-
-[error]Line          : 523
-
-[error]Description   : assertion failed
-
-- Clarification:
-
-</details>
-
-___
-
-## UI/XML
-
-<details>
-    <summary>Line 154</summary>
-
-[error]Expression    : xml_doc.NavigateToNode(path,index)
-
-[error]Function      : CUIXmlInit::InitStatic
-
-[error]File          : ui\UIXmlInit.cpp
-
-[error]Line          : 154
-
-[error]Description   : XML node not found
-
-[error]Argument 0    : equipment:cont_equ:cell_1:weight
-
-[error]Argument 1    : ui\ui_inventory_16.xml
-
-- Clarification: The game does not find the specified item in some .xml file
-
-</details>
-
-<details>
-    <summary>Line 205</summary>
-
-[error]Expression    : xml_doc.NavigateToNode(path,index)
-
-[error]Function      : CUIXmlInit::InitTextWnd
-
-[error]File          : ui\UIXmlInit.cpp
-
-[error]Line          : 205
-
-[error]Description   : XML node not found
-
-[error]Argument 0    : npc:rank
-
-[error]Argument 1    : ui\ui_inventory.xml
-
-</details>
-
-<details>
-    <summary>Line 995</summary>
-
-[error]Expression    : 
-
-[error]Function      : invalid_parameter_handler
-
-[error]File          : xrDebugNew.cpp
-
-[error]Line          : 995
-
-[error]Description   : invalid parameter
-
-- Clarification:
-
-</details>
-
-<details>
-    <summary>Line 112</summary>
-
-[error]Expression    : no_assert
-
-[error]Function      : CXML_IdToIndex<class CPhraseDialog>::GetById
-
-[error]File          : G:\Projects\STALKER\Anomaly2-Engine\src\xrServerEntities\xml_str_id_loader.h
-
-[error]Line          : 112
-
-[error]Description   : item not found, id
-
-[error]Arguments     : rogovets_hello_1_6_army_mlr
-
-- Clarification: The game does not find the id of some dialogue
-
-</details>
-
-<details>
-    <summary>Line 87</summary>
+    <summary>Line 49</summary>
 
 [error]Expression    : false
 
-[error]Function      : CXml::Load
+[error]Function      : [CPatternFunction::vfLoadEF](https://bitbucket.org/anomalymod/xray-monolith/src/d369db0ce75b8101c8d0fe1b2fa7a84b04910a35/src/xrGame/ef_pattern.cpp#lines-43)
 
-[error]File          : xrXMLParser.cpp
+[error]File          : [ef_pattern.cpp](https://bitbucket.org/anomalymod/xray-monolith/src/master/src/xrGame/ef_pattern.cpp)
 
-[error]Line          : 87
+[error]Line          : [49](https://bitbucket.org/anomalymod/xray-monolith/src/d369db0ce75b8101c8d0fe1b2fa7a84b04910a35/src/xrGame/ef_pattern.cpp#lines-49)
 
-[error]Description   : XML file:ui\actor_menu_16.xml value: errDescr:Error reading end tag.
+[error]Description   : assertion failed
 
-- Clarification: In the specified file, in this case ui\actor_menu_16.xml, do not match the opening and closing tags.
+- Clarification: No [.efd](../main-folders-and-files/file-formats/efd.md) file was found
+
+- Error fixing:
+  - Check that the .efd file exists
 
 </details>
 
+### Line 60 (<font style="color: red">This is a theoretical crash (needs checking!)</font>)
+
 <details>
-    <summary>Line 230</summary>
+    <summary>Line 60</summary>
 
-[error]Expression    : fatal error
+[error]Expression    : false
 
-[error]Function      : X:\stalker_addon\sources\trunk\xrCore\xrDebugNew.cpp
+[error]Function      : [CPatternFunction::vfLoadEF](https://bitbucket.org/anomalymod/xray-monolith/src/d369db0ce75b8101c8d0fe1b2fa7a84b04910a35/src/xrGame/ef_pattern.cpp#lines-43)
 
-[error]File          : X:\stalker_addon\sources\trunk\xrCore\xrDebugNew.cpp
+[error]File          : [ef_pattern.cpp](https://bitbucket.org/anomalymod/xray-monolith/src/master/src/xrGame/ef_pattern.cpp)
 
-[error]Line          : 230
+[error]Line          : [60](https://bitbucket.org/anomalymod/xray-monolith/src/d369db0ce75b8101c8d0fe1b2fa7a84b04910a35/src/xrGame/ef_pattern.cpp#lines-60)
 
-[error]Description   : <no expression>
+[error]Description   : assertion failed
 
-[error]Arguments     : nodefault reached
+- Clarification: Not supported version of the Evaluation Function Contructor
 
-- Clarification:
+- Error fixing:
+  - The .efd file must be generated with a supported version of the Evaluation Function Contructor (?)
 
 </details>
 
 ___
 
-## Textures
+## <center>Spawn</center>
+
+### Line 86
 
 <details>
-    <summary>Line 63</summary>
+    <summary>Line 86</summary>
 
-[error]Expression    : <no expression>
+[error]Expression    : FS.exist(file_name, "$game_spawn$", *m_spawn_name, ".spawn")
 
-[error]Function      : CBlender_default::Compile
+[error]Function      : [CALifeSpawnRegistry::load](https://bitbucket.org/anomalymod/xray-monolith/src/d369db0ce75b8101c8d0fe1b2fa7a84b04910a35/src/xrGame/alife_spawn_registry.cpp#lines-81)
 
-[error]File          : BlenderDefault.cpp
+[error]File          : [alife_spawn_registry.cpp](https://bitbucket.org/anomalymod/xray-monolith/src/master/src/xrGame/alife_spawn_registry.cpp)
 
-[error]Line          : 63
+[error]Line          : [86](https://bitbucket.org/anomalymod/xray-monolith/src/d369db0ce75b8101c8d0fe1b2fa7a84b04910a35/src/xrGame/alife_spawn_registry.cpp#lines-86)
 
-[error]Description   : fatal error
+[error]Description   : Can't find spawn file:
 
-[error]Arguments     : Not enought textures for shader, base tex: act\newloner\skadovskmedic\jackbaker_hair_d
+[error]Arguments     : "`file name`"
+
+- Clarification: No .spawn file was found
+
+- Error fixing:
+  - Check that the .spawn file exists
+
+</details>
+
+### Line 60 (<font style="color: red">This is a theoretical crash (needs checking!)</font>)
+
+<details>
+    <summary>Line 60</summary>
+
+[error]Expression    : R_ASSERT2(file_stream.find_chunk(SPAWN_CHUNK_DATA)
+
+[error]Function      : [CALifeSpawnRegistry::load](https://bitbucket.org/anomalymod/xray-monolith/src/d369db0ce75b8101c8d0fe1b2fa7a84b04910a35/src/xrGame/alife_spawn_registry.cpp#lines-54)
+
+[error]File          : [alife_spawn_registry.cpp](https://bitbucket.org/anomalymod/xray-monolith/src/master/src/xrGame/alife_spawn_registry.cpp)
+
+[error]Line          : [60](https://bitbucket.org/anomalymod/xray-monolith/src/d369db0ce75b8101c8d0fe1b2fa7a84b04910a35/src/xrGame/alife_spawn_registry.cpp#lines-60)
+
+[error]Description   : Cannot find chunk SPAWN_CHUNK_DATA!
+
+- Clarification: No chunk `SPAWN_CHUNK_DATA` was found in .spawn file
+
+- Error fixing:
+
+</details>
+
+### Line  111 (<font style="color: red">This is a theoretical crash (needs checking!)</font>)
+
+<details>
+    <summary>Line 111</summary>
+
+[error]Expression    : R_ASSERT2(!save_guid || (*save_guid == header().guid()) || ignore_save_incompatibility()
+
+[error]Function      : [CALifeSpawnRegistry::load](https://bitbucket.org/anomalymod/xray-monolith/src/d369db0ce75b8101c8d0fe1b2fa7a84b04910a35/src/xrGame/alife_spawn_registry.cpp#lines-105)
+
+[error]File          : [alife_spawn_registry.cpp](https://bitbucket.org/anomalymod/xray-monolith/src/master/src/xrGame/alife_spawn_registry.cpp)
+
+[error]Line          : [111](https://bitbucket.org/anomalymod/xray-monolith/src/d369db0ce75b8101c8d0fe1b2fa7a84b04910a35/src/xrGame/alife_spawn_registry.cpp#lines-111)
+
+[error]Description   : Saved game doesn't correspond to the spawn : DELETE SAVED GAME!
 
 - Clarification:
+
+- Error fixing:
+
+</details>
+
+### Line 141 or 147 (<font style="color: red">This is a theoretical crash (needs checking!)</font>)
+
+<details>
+    <summary>Line 141 or 147</summary>
+
+[error]Expression    : R_ASSERT2(chunk, "Spawn version mismatch - REBUILD SPAWN!"); or R_ASSERT2(m_chunk, "Spawn version mismatch - REBUILD SPAWN!");
+
+[error]Function      : [CALifeSpawnRegistry::load](https://bitbucket.org/anomalymod/xray-monolith/src/d369db0ce75b8101c8d0fe1b2fa7a84b04910a35/src/xrGame/alife_spawn_registry.cpp#lines-105)
+
+[error]File          : [alife_spawn_registry.cpp](https://bitbucket.org/anomalymod/xray-monolith/src/master/src/xrGame/alife_spawn_registry.cpp)
+
+[error]Line          : [141](https://bitbucket.org/anomalymod/xray-monolith/src/d369db0ce75b8101c8d0fe1b2fa7a84b04910a35/src/xrGame/alife_spawn_registry.cpp#lines-141) or [147](https://bitbucket.org/anomalymod/xray-monolith/src/d369db0ce75b8101c8d0fe1b2fa7a84b04910a35/src/xrGame/alife_spawn_registry.cpp#lines-147)
+
+[error]Description   : Spawn version mismatch - REBUILD SPAWN!
+
+- Clarification:
+
+- Error fixing:
+
+</details>
+
+___
+
+## <center>[LTX](../configs/ltx-files.md)</center>
+
+### Line 96
+
+<details>
+    <summary>Line 96</summary>
+
+[error]Expression    : FS.exist(fn, "$game_textures$", buf, ".ini")
+
+[error]Function      : [CGameFont::Initialize](https://bitbucket.org/anomalymod/xray-monolith/src/d369db0ce75b8101c8d0fe1b2fa7a84b04910a35/src/xrEngine/GameFont.cpp#lines-71)
+
+[error]File          : [GameFont.cpp](https://bitbucket.org/anomalymod/xray-monolith/src/master/src/xrEngine/GameFont.cpp)
+
+[error]Line          : [96](https://bitbucket.org/anomalymod/xray-monolith/src/d369db0ce75b8101c8d0fe1b2fa7a84b04910a35/src/xrEngine/GameFont.cpp#lines-96)
+
+[error]Description   : "`path and ui_font_hud_01.ini`"
+
+- Clarification: No ui_font_hud_01.ini file was found
+
+- Error fixing:
+  - Check that the .spawn file exists
 
 </details>

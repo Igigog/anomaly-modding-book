@@ -12,7 +12,7 @@ Detailed objects (grass, cigarette butts, construction debris) on the level
 
 ### General structure - file blocks
 
-It consists of three RIFF sections (blocks):
+It consists of three [RIFF](https://en.wikipedia.org/wiki/Resource_Interchange_File_Format) sections (blocks):
 
 | Block ID | Size (bytes) | Description |
 ---|---|---|
@@ -128,6 +128,11 @@ The maximum height of the slot (parallelepiped) is: 25.5 (0.1 * 255).
 The upper boundary of the slot is equal to: the lower boundary + the height of the slot.
 
 ___
+
+## Programs editing this file
+
+- [Blender (X-Ray Addon)](../../blender/index.html)
+- [SDK 0.7](../../sdk/index.html)
 
 ## Sources
 

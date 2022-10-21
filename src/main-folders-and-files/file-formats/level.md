@@ -2,11 +2,11 @@
 
 ___
 
-## About:
+## About
 
 Contains all the essentials. This contains light sources, object descriptions, names of their corresponding textures and shaders, portals, and sectors.
 
-## Technical information:
+## Technical information
 
 - Format version: 14
 
@@ -181,5 +181,11 @@ Contains all the essentials. This contains light sources, object descriptions, n
 
 ___
 
+## Programs editing this file
+
+- [Blender (X-Ray Addon)](../../blender/index.html)
+- [SDK 0.7](../../sdk/index.html)
+
 ## Sources
+
 [Source](http://stalkerin.gameru.net/wiki/index.php?title=Level)

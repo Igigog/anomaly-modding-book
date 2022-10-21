@@ -2,14 +2,17 @@
 
 ___
 
-## About:
+## About
+
 Improvement of the engine to allow overwriting [.ltx](../configs/ltx-files.md) files, avoiding addon conflicts.
 Allows modders to overwrite only the values they need.
 
 ### Installation
+
 Back up the contents of your "bin" folder and replace it with the one supplied. The contents of "tools" and "example_mod" include optional resources to make mods for DLTX or to convert existing ones. If you are using Mod Organizer 2 do NOT use it to install DLTX (you can still use it for other mods), you need to paste the files into your real "bin" folder.
 
-### Use by modders:
+### Use by modders
+
 In order to make a differential change to the LTX records, you have to follow these steps:
 
 1. Find out which root LTX file is loading the variable you are trying to modify. You can either search the files manually and trace back the chain of #includes, or you can use LTXDiff for this purpose.
@@ -37,6 +40,7 @@ Mod suffix in this case is the name that gets appended to the mod files, like in
 ___
 
 ## Sources
+
 [DLTX on Moddb](https://www.moddb.com/mods/stalker-anomaly/addons/dltx-differential-ltx-loading)
 
 [Source Code](https://github.com/MerelyMezz/LTXDiff)

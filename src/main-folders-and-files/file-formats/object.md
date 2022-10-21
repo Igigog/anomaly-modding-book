@@ -2,13 +2,13 @@
 
 ___
 
-## About:
+## About
 
-These files are intended for the X-Ray SDK to store 3D content in its original, uncompressed, lossless form. They are source files that store information before compilation into other game compressed formats. 
+These files are intended for the X-Ray SDK to store 3D content in its original, uncompressed, lossless form. They are source files that store information before compilation into other game compressed formats.
 
-## Technical information:
+## Technical information
 
-### The format can store the following basic data (the list is not complete):
+### The format can store the following basic data (the list is not complete)
 
 - meshes
 - materials
@@ -31,5 +31,13 @@ One *.object file can store:
 
 ___
 
+## Programs editing this file
+
+- [Blender (X-Ray Addon)](../../blender/index.html)
+- [X-Ray Export Tool (Object Tool)](../../modding-tools-and-resources/modding-modding-tools/xray-export-tool.md)
+- [Ogf Editor by ValeroK](../../modding-tools-and-resources/modding-tools/ogf-editor-by-valerok.md) - (Only as a converter!)
+- [SDK 0.7](../../sdk/index.html)
+
 ## Sources
+
 [Source](https://github.com/PavelBlend/blender-xray/wiki/Plugin-.object)

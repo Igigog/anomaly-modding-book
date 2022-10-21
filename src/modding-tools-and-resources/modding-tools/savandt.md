@@ -1,12 +1,13 @@
 # Sound Attribute Viewer And Tweaker
-- Program Developer: 
-    - NatVac
+
+- Program Developer:
+  - NatVac
 - The version described in the article: 1.1.7
 - [Official Site](https://www.metacognix.com/files/stlkrsoc/)
 
 ___
 
-## About: 
+## About
 
 Utility designed to simplify working with X-Ray Engine sound files in [.ogg](../../main-folders-and-files/file-formats/ogg.md) format.
 

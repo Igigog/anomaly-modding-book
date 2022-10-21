@@ -1,13 +1,14 @@
 # Modified OGF Editor by ValeroK
-- Program Developers: 
-    - Mortany (Original Author)
-    - ValeroK
-- The version described in the article: [3.1](https://github.com/VaIeroK/OGF-tool/releases/tag/3.1)
+
+- Program Developers:
+  - Mortany (Original Author)
+  - ValeroK
+- The version described in the article: [3.3](https://github.com/VaIeroK/OGF-tool/releases/tag/3.3)
 - [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3549-ogfdm-editor-v24)
 
 ___
 
-## About:
+## About
 
 Tool for working with .ogf and [.dm](../../main-folders-and-files/file-formats/dm.md) format
 
@@ -19,6 +20,7 @@ Tool for working with .ogf and [.dm](../../main-folders-and-files/file-formats/d
 - Editing Userdata
 - Editing Motion Refs
 - Editing Bone Names
+- Ability to change the position of meshes
 - Viewport
 - Ability to delete mesh models
 - Bone materials editing
@@ -41,10 +43,10 @@ Tool for working with .ogf and [.dm](../../main-folders-and-files/file-formats/d
 
 ### Hotkeys
 
-- F3 - Reload file
-- F4 - Open file
-- F5 or Ctrl+S - Save file
+- F4 - Load file
+- Ctrl+S - Save file
 - F6 - Save as
+- F3 - Reload file
 
 ### Buttons
 
@@ -55,7 +57,7 @@ Tool for working with .ogf and [.dm](../../main-folders-and-files/file-formats/d
 | Load | Loads the selected .ogf |
 | Save | Save .ogf |
 | Save As | Save as .ogf |
-| Export | Export as .object, .bones, .omf, .skl, .skls |
+| Export | Export as .object<br> .bones<br> .obj<br> .omf<br> .skl<br> .skls<br> |
 | Reload | Reloads the program |
 | Exit | Exits the program |
 
@@ -63,29 +65,27 @@ Tool for working with .ogf and [.dm](../../main-folders-and-files/file-formats/d
 
 | Button | Description |
 ---|---|
-| Open Skeleton in Object Editor | Open Skeleton in Object Editor |
+| Open in Object Editor | Open  in Object Editor |
 | Import OGF Params | Imports parameters of another .ogf with selectable parameters |
-| Change lod |  |
-| Converter | <br>NPC CoP to SoC</br><br>NPC SoC to CoP</br> |
-
-- ##### Motion Tools Button
-
-Becomes active only after switching to the Motions section.
-
-| Button | Description |
----|---|
-| Delete Motions | Deletes the list of animations |
-| Edit in OMF Editor | Editing Animations via OMF Editor (First, you must specify the path to the OMF Editor .exe) |
-| Replace Motions | Replaces the list of animations with another |
+| Recalc Normals | Пересчитывает нормали у выбранного меша |
+| Converter | NPC CoP to SoC<br> NPC SoC to CoP<br> |
 
 - #### OGF Info Button
 
-Display information about the loaded OGF 
+Display information about the loaded OGF
 
 | Field | Description |
 ---|---|
 | OGF Version | The .ogf version |
 | Model Type | Model type |
+| Motions Refs |  |
+| Motions |  |
+| Links |  |
+| Verts |  |
+| Faces |  |
+
+| Field | Description |
+---|---|
 | Source File | Source file |
 | Converter | Converter |
 | Creator | Creator |
@@ -98,7 +98,7 @@ Display information about the loaded OGF
 ---|---|
 | Repair timers |  |
 
-- ### Settings
+- #### Settings Button
 
 | Field | Description |
 ---|---|
@@ -108,6 +108,10 @@ Display information about the loaded OGF
 | Game Mtl path |  |
 | OMF Editor path |  |
 | Object Editor path |  |
+
+| Button | Description |
+---|---|
+| Load textures alpha channel in Viewport - slow loading |  |
 
 - #### Model Format Button
 
@@ -123,9 +127,9 @@ Changes the format of motion references for the model
 
 - #### Textures
 
-Section with texture and shader path editing. Also here can delete the mash of the model (If there is only one mesh, you cannot delete it)
+Section with texture and shader path editing. Also here can delete or move meshes of the model (If there is only one mesh, you cannot delete it)
 
-##### Set: [Texture number]
+##### Mesh: [Mesh number]
 
 | Field | Description |
 ---|---|
@@ -143,6 +147,14 @@ A field with paths for animation
 - #### Motions
 
 Displays animations that are built into the model
+
+If you right-click on this field, then the context menu will pop up where you can:
+
+| Button | Description |
+---|---|
+| Edit | Opens the OMF Editor (first, you need to specify the path to it in the settings) |
+| Load | Loads selected .omf files as an embedded movement |
+| Delete | Deletes all downloaded animations |
 
 - #### Bone Names
 
@@ -175,6 +187,7 @@ Viewport
 ___
 
 ## Sources
+
 [Source Code of Original OGF Editor by Mortany](https://github.com/mortany/OGF-tool)
 
 [Source Code of Modified OGF Editor by ValeroK](https://github.com/VaIeroK/OGF-tool)

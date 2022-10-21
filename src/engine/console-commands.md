@@ -2,44 +2,44 @@
 
 ___
 
-## About:
-This section describes all console commands. 
+## About
+
+This section describes all console commands.
+
 All the settings described below are stored in the file "user".ltx. (You can read more about [important files here](../main-folders-and-files/index.html))
 
 ### Game
 
-| Сommand | Command description | Command's argument |
----|---|---|
-| help | Outputs a list of console commands | - |
-| g_dead_body_collision | Enables collision for selected objects  | full/actor_only/off |
-| g_game_difficulty | Selects the game difficulty |  |
-| g_god | Enables God Mode | 'on/off' or '1/0' |
-| g_hit_pwr_modif |  | 0.500 - 3.000 |
-| g_ironsights_zoom_factor | Zoom factor of the mechanical sight | 1.000 - 2.000 |
-| g_unlimitedammo | Enables Infinite Ammo Mode | 'on/off' or '1/0' |
-| g_use_tracers |  | 'on/off' or '1/0' |
-| g_important_save | Saving at key points | 'on/off' or '1/0' |
-| g_autopickup | Enables the ability to pick up items automatically (not working) | 'on/off' or '1/0' |
-| g_always_active | The game will continue to work if the focus is not on it | 'on/off' or '1/0' |
-| demo_play | Plays the selected demo_record | "name" of demo |
-| demo_record |  |  |
-| demo_set_cam_position |  |  |
-| keypress_on_start | Whether to wait after loading a level to press the key to go into the game | 'on/off' or '1/0' |
-| load | Load specified save | save_name |
-| load_last_save | Load last save | - |
-| main_menu | Exit to the main menu | - |
-| quit | Exit to the desktop | - |
-| cl_cod_pickup_mode | Selecting items from the radius around the scope | 'on/off' or '1/0' |
-| disconnect | Ends the game | - |
-| time_factor | Ability to change the game time | 0.001 - 1000.0 |
-| jump_to_level | Moving to the selected level | <br>k00_marsh</br> <br>l01_escape</br> <br>l02_garbage</br> <br>l03_agroprom</br> <br>k01_darkscape</br> <br>l04_darkvalley</br> <br>l05_bar</br> <br>l06_rostok</br> <br>l07_military</br> <br>l08_yantar</br> <br>l09_deadcity</br> <br>l10_limansk</br> <br>l10_radar</br> <br>l10_red_forest</br> <br>l11_hospital</br> <br>l11_pripyat</br> <br>l12_stancia</br> <br>l12_stancia_2</br> <br>l13_generators</br> <br>l03u_agr_underground</br> <br>l04u_labx18</br> <br>l08u_brainlab</br> <br>l10u_bunker</br> <br>l12u_sarcofag</br> <br>l12u_control_monolith</br> <br>l13u_warlab</br> <br>zaton</br> <br>jupiter</br> <br>jupiter_underground</br> <br>pripyat</br> <br>labx8</br> <br>k02_truck_cemetery</br> <br>fake_start</br> <br>y04_pole</br> |
-
+| Сommand | Command description | Command's argument | Note |
+---|---|---|---|
+| help | Outputs a list of console commands | - | - |
+| g_dead_body_collision | Enables collision | full<br> actor_only<br> off | - |
+| g_game_difficulty | Selects the game difficulty | gd_novice<br> gd_stalker<br> gd_veteran<br> gd_master |  |
+| g_god | Enables God Mode | 'on/off' or '1/0' | - |
+| g_hit_pwr_modif | Bone damage modifier | 0.500 - 3.000 | - |
+| g_ironsights_zoom_factor | Zoom factor of the mechanical sight | 1.000 - 2.000 | - |
+| g_unlimitedammo | Enables Infinite Ammo Mode | 'on/off' or '1/0' | - |
+| g_use_tracers |  | 'on/off' or '1/0' | - |
+| g_important_save | Saving at key points | 'on/off' or '1/0' | - |
+| g_autopickup | Enables the ability to pick up items automatically | 'on/off' or '1/0' | Not working |
+| g_always_active | The game will continue to work if the focus is not on it | 'on/off' or '1/0' | - |
+| demo_play | Plays the selected demo_record | "name" of demo | - |
+| demo_record | Enables recording of camera overflights | "name" of demo | Space bar sets key points when the camera flies<br> <br>The Enter key exits record mode and takes the player to the exit point from demo_record mode |
+| demo_set_cam_position |  |  | - |
+| keypress_on_start | Whether to wait after loading a level to press the key to go into the game | 'on/off' or '1/0' | - |
+| load | Load specified save | save_name | - |
+| load_last_save | Load last save | - | - |
+| main_menu | Exit to the main menu | - | - |
+| quit | Exit to the desktop | - | - |
+| cl_cod_pickup_mode | Selecting items from the radius around the scope | 'on/off' or '1/0' | - |
+| disconnect | Ends the game | - | - |
+| time_factor | Ability to change the game time | 0.001 - 1000.0 | - |
+| jump_to_level | Moving to the selected level | k00_marsh<br> l01_escape<br> l02_garbage<br> l03_agroprom<br> k01_darkscape<br> l04_darkvalley<br> l05_bar<br> l06_rostok<br> l07_military<br> l08_yantar<br> l09_deadcity<br> l10_limansk<br> l10_radar<br> l10_red_forest<br> l11_hospital<br> l11_pripyat<br> l12_stancia<br> l12_stancia_2<br> l13_generators<br> l03u_agr_underground<br> l04u_labx18<br> l08u_brainlab<br> l10u_bunker<br> l12u_sarcofag<br> l12u_control_monolith<br> l13u_warlab<br> zaton<br> jupiter<br> jupiter_underground<br> pripyat<br> labx8<br> k02_truck_cemetery<br> fake_start<br> y04_pole | - |
 
 #### Actor
 
 | Сommand | Command description | Command's argument |
 ---|---|---|
-| g_backrun | Backward running mode (not working) | 'on/off' or '1/0' |
 | head_bob_factor | Basic head bobbing factor | 0 - 2 |
 
 #### HUD
@@ -54,13 +54,13 @@ All the settings described below are stored in the file "user".ltx. (You can rea
 
 #### UI
 
-| Сommand | Command description | Command's argument |
----|---|---|
-| cl_dynamiccrosshair | Dynamic Sight (not working because of the dot sight) | 'on/off' or '1/0' |
-| g_crosshair_color | Changes the color of the crosshair | -(255,255,255,255) - (255,255,255,255) |
-| g_feel_grenade | "Sensitivity" grenade | 'on/off' or '1/0' |
-| hud_crosshair | Show crosshair | 'on/off' or '1/0' |
-| hud_crosshair_dist | Show distance under crosshair | 'on/off' or '1/0' |
+| Сommand | Command description | Command's argument | Note |
+---|---|---|---|
+| cl_dynamiccrosshair | Dynamic Sight | 'on/off' or '1/0' | Not working because of the dot sight |
+| g_crosshair_color | Changes the color of the crosshair | (0 - 255, 0 - 255, 0 - 255, 0 - 255) | Argument is taken in [RGBA](https://en.wikipedia.org/wiki/RGBA_color_model) format<br> <br>First value (0 - 255) - Red</br> Second value (0 - 255) - Green<br> Third value (0 - 255) - Blue<br> Fourth value (0 - 255) - Alpha |
+| g_feel_grenade | "Sensitivity" grenade | 'on/off' or '1/0' | - |
+| hud_crosshair | Show crosshair | 'on/off' or '1/0' | - |
+| hud_crosshair_dist | Show distance to target under crosshair | 'on/off' or '1/0' | - |
 
 #### Debug
 
@@ -76,17 +76,18 @@ All the settings described below are stored in the file "user".ltx. (You can rea
 
 ### Control
 
-| Сommand | Command description | Command's argument |
----|---|---|
-| bind | Assign a command to the button | Action, key prefixed with k (kLeft, etc.) |
-| mouse_invert | Inverts the mouse | 'on/off' or '1/0' |
-| mouse_sens | Mouse sensitivity | 0.001 - 0.600 |
-| mouse_sens_aim | Mouse sensitivity when aiming | 0.500 - 2.000 |
-| default_controls | Resets key settings to defaults | - |
-| wpn_aim_toggle | Aiming Mode | 'on/off' or '1/0' |
-| g_crouch_toggle | Sit/stand mode | 'on/off' or '1/0' |
-| g_sprint_toggle | Sprint mode | 'on/off' or '1/0' |
-| g_walk_toggle |  | 'on/off' or '1/0' |
+| Сommand | Command description | Command's argument | Note |
+---|---|---|---|
+| bind | Assign a command to the button | Action, key prefixed with k (kLeft, etc.) | - |
+| mouse_invert | Inverts the mouse | 'on/off' or '1/0' | - |
+| mouse_sens | Mouse sensitivity | 0.001 - 0.600 | - |
+| mouse_sens_aim | Mouse sensitivity when aiming | 0.500 - 2.000 | - |
+| default_controls | Resets key settings to defaults | - | - |
+| wpn_aim_toggle | Aiming Mode | 'on/off' or '1/0' | - |
+| g_backrun | Backward running mode | 'on/off' or '1/0' | Not working |
+| g_crouch_toggle | Sit/stand mode | 'on/off' or '1/0' | - |
+| g_sprint_toggle | Sprint mode | 'on/off' or '1/0' | - |
+| g_walk_toggle |  | 'on/off' or '1/0' | - |
 
 ### Discord
 
@@ -107,13 +108,13 @@ All the settings described below are stored in the file "user".ltx. (You can rea
 | snd_targets | Maximum number of channels | 32 - 1024 |
 | snd_device |  | OpenAL Soft |
 
-#### Volume
+#### Music
 
-| Сommand | Command description | Command's argument |
----|---|---|
-| snd_volume_eff | Volume of sounds | 0.000 - 1.000 |
-| snd_volume_music | Music volume | 0.000 - 1.000 |
-| g_dynamic_music |  | 'on/off' or '1/0' |
+| Сommand | Command description | Command's argument | Note |
+---|---|---|---|
+| snd_volume_eff | Volume of sounds | 0.000 - 1.000 | - |
+| snd_volume_music | Music volume | 0.000 - 1.000 | - |
+| g_dynamic_music | Turns on dynamic music (during firefights) | 'on/off' or '1/0' | In the game the script `xrs_dyn_music.script` responsible for playing music is corrupted. An addon restoring this script can help to fix it (Example: [COMBAT MUSIC RESTORED + EXTENDED](https://www.moddb.com/mods/stalker-anomaly/addons/combat-music-restored-extended)) |
 
 #### Effects
 
@@ -143,8 +144,8 @@ All the settings described below are stored in the file "user".ltx. (You can rea
 
 | Сommand | Command description | Command's argument |
 ---|---|---|
-| _preset | Selecting a set of quality settings | Minimum/Low/Default/High/Extreme	 |
-| rs_screenmode | Resolution selection mode | Windowed/Fullscreen/Borderless/Windowed |
+| _preset | Selecting a set of quality settings | Minimum<br> Low<br> Default<br> High/Extreme |
+| rs_screenmode | Resolution selection mode | Windowed<br> Fullscreen<br> Borderless<br> Windowed |
 | rs_v_sync | Vertical Sync | 'on/off' or '1/0' |
 | rs_refresh_60hz | Screen refresh rate 60 Hz | 'on/off' or '1/0' |
 
@@ -183,7 +184,7 @@ All the settings described below are stored in the file "user".ltx. (You can rea
 | r__tf_mipbias | bias for initial texture mip level | -3.0 - 3.0 |
 | r__use_precompiled_shaders |  |  |
 | r__wallmark_ttl | Wallmark Lifetime | 1.000 - 600.000 |
-| r_screenshot_mode | Screenshot in the selected format | jpg/png/tga |
+| r_screenshot_mode | Screenshot in the selected format | jpg<br> png<br> tga |
 
 ##### R1 (DX8)
 
@@ -327,17 +328,17 @@ HDR and Bloom |  |
 
 #### Brightness-Contrast-Gamma
 
-| Сommand | Command description | Command's argument |
----|---|---|
-| rs_c_brightness | Brightness | 0.500 - 1.500 |
-| rs_c_contrast | Contrast | 0.500 - 1.500 |
-| rs_c_gamma | Gamma (not working) | 0.500 - 1.500 |
+| Сommand | Command description | Command's argument | Note |
+---|---|---|---|
+| rs_c_brightness | Brightness | 0.500 - 1.500 | - |
+| rs_c_contrast | Contrast | 0.500 - 1.500 | - |
+| rs_c_gamma | Gamma | 0.500 - 1.500 | Not working |
 
 #### Video
 
 | Сommand | Command description | Command's argument |
 ---|---|---|
-| vid_mode | Screen resolution | 800x600/1024x768/1280x720/1280x1024/1366x768/1600x900/1680x1050/1920x1080 |
+| vid_mode | Screen resolution | 800x600<br> 1024x768<br> 1280x720<br> 1280x1024<br> 1366x768<br> 1600x900<br> 1680x1050<br> 1920x1080 |
 | vid_restart | Reboot the video engine | - |
 
 #### Textures
@@ -354,7 +355,7 @@ HDR and Bloom |  |
 | ai_aim_min_angle | The minimum angle at which the angular velocity of the character when aiming is calculated by the formula |  |
 | ai_aim_min_speed | Minimum angular velocity of the character when aiming at a target |  |
 | ai_aim_predict_time | Time of the character's prediction of a change in target position |  |
-| ai_aim_use_smooth_aim |  |  |
+| ai_aim_use_smooth_aim |  | 'on/off' or '1/0' |
 | ai_die_in_anomaly | Enables NPCs to die in anomalies | 'on/off' or '1/0' |
 | ai_use_old_vision | Includes the old model of virtual character vision, in which random points on the surface of an ellipsoid inscribed into an axially oriented rectangular parallelepiped described around the object were taken to determine the visibility of the object. | 'on/off' or '1/0' |
 | ai_use_torch_dynamic_lights | Enables the use of flashlights by non-player characters (NPCs) | 'on/off' or '1/0' |
