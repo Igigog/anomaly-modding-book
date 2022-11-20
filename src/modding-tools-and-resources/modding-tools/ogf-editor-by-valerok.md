@@ -67,7 +67,7 @@ Tool for working with .ogf and [.dm](../../main-folders-and-files/file-formats/d
 ---|---|
 | Open in Object Editor | Open  in Object Editor |
 | Import OGF Params | Imports parameters of another .ogf with selectable parameters |
-| Recalc Normals | Пересчитывает нормали у выбранного меша |
+| Recalc Normals | Recalculates the normals of the selected mesh |
 | Converter | NPC CoP to SoC<br> NPC SoC to CoP<br> |
 
 - #### OGF Info Button

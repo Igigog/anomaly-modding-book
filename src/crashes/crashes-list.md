@@ -262,3 +262,28 @@ ___
   - Check that the .spawn file exists
 
 </details>
+
+## <center>LUA</center>
+
+### 191
+
+<details>
+    <summary>Line 204</summary>
+
+[error]Expression    : \<no expression>
+
+[error]Function      : [CScriptEngine::lua_pcall_failed](https://bitbucket.org/anomalymod/xray-monolith/src/d369db0ce75b8101c8d0fe1b2fa7a84b04910a35/src/xrServerEntities/script_engine.cpp#lines-197)
+
+[error]File          : [..\xrServerEntities\script_engine.cpp](https://bitbucket.org/anomalymod/xray-monolith/src/master/src/xrServerEntities/script_engine.cpp)
+
+[error]Line          : [204](https://bitbucket.org/anomalymod/xray-monolith/src/d369db0ce75b8101c8d0fe1b2fa7a84b04910a35/src/xrServerEntities/script_engine.cpp#lines-204)
+
+[error]Description   : fatal error
+
+[error]Arguments     : LUA error: ...e.r anomaly/bin/..\gamedata\scripts\xr_weapon_jam.script:62: bad argument #1 to 'pairs' (table expected, got nil)
+
+- Clarification:
+
+- Error fixing:
+
+</details>

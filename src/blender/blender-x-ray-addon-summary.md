@@ -46,3 +46,4 @@ This table lists the X-Ray file formats that the addon can import/export.
  2.93
 
  Remark: The addon also works on versions higher than 3.x
+ 

@@ -18,6 +18,8 @@ Allows you to change hud values in weapon hud editor by dragging your mouse
 
 [Addon on Moddb](https://www.moddb.com/mods/stalker-anomaly/addons/draggable-hud-editor)
 
+___
+
 ## Anomaly Dependencies
 
 Various autoinject script modules for use by other scripts
@@ -26,6 +28,8 @@ Various autoinject script modules for use by other scripts
 
 [Source on GitHub](https://github.com/ahuyn/anomaly-dependencies)
 
+___
+
 ## Anomaly Demonized Scripts
 
 Source of not so truthy repo for all uncommon anomaly dependencies
@@ -33,6 +37,8 @@ Source of not so truthy repo for all uncommon anomaly dependencies
 ### Source
 
 [Source on GitHub](https://github.com/themrdemonized/anomaly-demonized-scripts)
+
+___
 
 ## Anomaly Addon Dependencies
 
@@ -43,6 +49,8 @@ Various utility scripts of objectionable quality for STALKER: Anomaly
 [Source on GitHub](https://github.com/Aoldri/anomaly-addon-deps)
 
 [Guides](https://docs.google.com/document/d/1o3GjxHd0dMoe_QswrTS3AdInq4j8eWGA2LTiES6Om-E)
+
+___
 
 ## Monitor Mod DB
 

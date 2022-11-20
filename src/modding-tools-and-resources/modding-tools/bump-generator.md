@@ -1,12 +1,13 @@
 # Bump Generator
+
 - Program Developer:
-    - i-love-kfc
+  - i-love-kfc
 - The version described in the article: initial [0.1](https://gitlab.com/i-love-kfc/bump-generator/-/releases/%D0%A0%D0%B5%D0%BB%D0%B8%D0%B7)
 - [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3740-bump-generator)
 
 ___
 
-## About:
+## About
 
 A simple .bump and .bump# texture generator from normal maps with the ability to use specular maps, also, is capable of generating .bump# for ready-made "green" .bumps.
 

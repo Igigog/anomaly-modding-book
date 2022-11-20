@@ -160,8 +160,11 @@ ___
 ## Sounds
 
 - [Audacity](https://www.audacityteam.org/)
+
 - [Sound Attribute Viewer And Tweaker](https://www.metacognix.com/files/stlkrsoc/index.html#:~:text=Sound%20Attribute%20Viewer%20and%20Tweaker,of%20NPCs%20to%20the%20sounds.) - Simple program that can reduce the work needed to view and/or edit STALKER sound file attributes used by all three STALKER games to determine initial volume, volume drop-off, and sensitivity of NPCs to the sounds
   - [More](savandt.md)
+
+- [StkOggCommentViewer](https://cdn.discordapp.com/attachments/978593574893535274/979058737270644776/StkOggCommentViewer.exe) - Allows viewing comments in an .ogg file
 
 ___
 
@@ -220,14 +223,24 @@ ___
 
 - [Decompressor of .efd files](https://cdn.discordapp.com/attachments/385903500581928969/590555274079633408/EFD_Reader.7z)
 
+- [Game Graph Editor](https://cdn.discordapp.com/attachments/978593574893535274/979059136467726356/Game_Graph_Editor.rar)
+
 ___
 
-## Decompilers
+## Spawn
+
+- [XrSpawner](http://sdk.stalker-game.com/ru/images/0/06/XrSpawner_v0.13.1Beta.rar) - A program that allows you to edit the .spawn file of the game containing the initial location and some properties of all dynamic objects
+
+___
+
+## Decompilers\Compilers
 
 - [X-Ray Converter](https://disk.yandex.ru/d/nivUmGybuCXSC) - Multifunctional utility for working with game file formats and X-Ray SDK
   - [X-Ray Converter Extra](https://disk.yandex.ru/d/7137tI653PRnrU) - Improved components for the converter
     - [GUI for Converter](https://modsfire.com/download/Fzg5Q2L2pcEHA8m/e9f70) - GUI for converter
   - [More](https://modfaq.ru/X-Ray_Converter)
+
+- [Particle Editor Tools](https://cdn.discordapp.com/attachments/978593574893535274/979057726623735828/Particle_Editor_Tools.rar) - Decompiling/compiling particle.xr file
 
 - [Universal ACDC](https://disk.yandex.ru/d/-GBYa8DxQv8MF) - Perl script, to unpack and pack all.spawn
 - [gamemtl_xr_cdc](https://disk.yandex.ru/d/hR79KfSn3PLtSK)
@@ -242,7 +255,7 @@ ___
 
 ___
 
-## Compilers
+## Level Compilers
 
 - [Universal x64 level compilers](https://drive.google.com/file/d/1_aU3MsUM7X9RphjjJRx85iQBPneavAz_/view) - Universal level compiler that supports the compilation format for games of all series and has many keys to compile
   - [More](universal-x64-level-compilers.md)
@@ -266,5 +279,3 @@ ___
 ## Formats
 
 - [ChunckTool](https://sharedby.blomp.com/p4wGo4) - The utility is intended for low-level work with chunks in files and allows to read, replace and add data.
-
-- [XrSpawner](http://sdk.stalker-game.com/ru/images/0/06/XrSpawner_v0.13.1Beta.rar) - A program that allows you to edit the .spawn file of the game containing the initial location and some properties of all dynamic objects

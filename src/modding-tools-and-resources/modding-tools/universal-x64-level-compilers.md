@@ -1,23 +1,24 @@
 # Universal x64 level compilers
-- Program Developer: 
-    - GCS Game Word
-- Compiler edits and build: 
-    - SkyLoader
-- Acknowledgements: 
-    - Abramcumner
-    - K.D.
+
+- Program Developer:
+  - GCS Game Word
+- Compiler edits and build:
+  - SkyLoader
+- Acknowledgements:
+  - Abramcumner
+  - K.D.
 - The version described in the article: 1.3
 - [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3341-universalnye-kompilyatory-urovney-h64)
 
 ___
 
-## About:
+## About
 
 Universal level compiler that supports the compilation format for games of all series and has many keys to compile
 
 ![editor centered](modding-tools-images/universal-x64-level-compilers.png)
 
-## Compilation of compilers:
+## Compilation of compilers
 
 - Geometry compiler (SoC, CS, CoP)
 - Grass compiler (SoC, CS, CoP)
@@ -92,7 +93,7 @@ The files must be moved to the root folder of the SDK
 - Input Version: (Input version of the level format)
 - Output Version: (Output version of the level format)
 
-### Threads:
+### Threads
 
 | Checkboxes | Description |
 ---|---|
@@ -154,7 +155,7 @@ Check Ai-Map
 ---|---|
 | -no_separator_check | Disable some conflicts |
 
-##### Additional spawns:
+##### Additional spawns
 
 | Buttons | Description |
 ---|---|

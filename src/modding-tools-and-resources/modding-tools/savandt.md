@@ -42,10 +42,10 @@ Utility designed to simplify working with X-Ray Engine sound files in [.ogg](../
 
 | Parameters | Description | Possible parameters |
 ---|---|---|
-| Header (audio file name) | When clicked, it opens the media player installed on your computer and plays only the original .ogg sound (without affecting the settings) | <br>undefined</br> <br>anomaly_idle</br> <br>item_dropping</br> <br>item_hiding</br> <br>item_pickup</br> <br>item_taking</br> <br>item_using</br><br>NPC_attacking</br><br>NPC_dying</br><br>NPC_eating</br><br>NPC_injuring</br><br>NPC_step</br><br>NPC_talking</br><br>object_breaking</br><br>object_colliding</br><br>object_exploding</br><br>weapon_bullet_hit</br><br>weapon_empty_click</br><br>weapon_recharging</br><br>weapon_shooting</br><br>world_ambient</br> |
+| Header (audio file name) | When clicked, it opens the media player installed on your computer and plays only the original .ogg sound (without affecting the settings) | undefined<br> anomaly_idle<br> item_dropping<br> item_hiding<br> item_pickup<br> item_taking<br> item_using<br> NPC_attacking<br> NPC_dying<br> NPC_eating<br> NPC_injuring<br> NPC_step<br> NPC_talking<br> object_breaking<br> object_colliding<br> object_exploding<br> weapon_bullet_hit<br> weapon_empty_click<br> weapon_recharging<br> weapon_shooting<br> world_ambient |
 | Sound File Info | Displays some detailed information about the sound itself. These characteristics are shown for information and cannot be changed |  |
 | Game Sound Type | Determines how the sound will be perceived by NPCs and mutants in the game |  |
-| Base Sound Volume | Default sound volume in the game at the sound source location | Range is 0.0 to 2.0 |
+| Base Sound Volume | Default sound volume in the game at the sound source location | Range is 0.0 - 2.0 |
 | Minimum Distance | indicates the distance in meters from the sound source at which it can still be heard at 100% volume |  |
 | Maximum Distance | Distance in meters from the sound source at which you can no longer hear the sound |  |
 | Maximum AI Distance | Distance from the sound source (in meters) at which NPCs can no longer hear the sound |  |

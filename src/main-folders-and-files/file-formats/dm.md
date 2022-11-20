@@ -106,6 +106,8 @@ The index structure:
 ---|---|
 | vertex index | H |
 
+___
+
 ## Programs editing this file
 
 - [Blender (X-Ray Addon)](../../blender/index.html)

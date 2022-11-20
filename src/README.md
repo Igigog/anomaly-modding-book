@@ -11,3 +11,7 @@ Choose a chapter from our table of contents and start reading. I recommend start
 Good luck, have fun, don't die
 
 Igigog#6387
+
+___
+
+> **Please keep in mind that the book is still being written, and the information provided here may not be accurate, or may not be provided at all!**

@@ -50,7 +50,7 @@ Hotkeys in the table are standard (they can be set under Preference > Keyboard >
 | P | Zoom Extents | Free Camera Mode | - |  |
 | A | Zoom Extents Selected | Centers the camera view on the origin of coordinates | - | - |
 | F | Zoom Extents Selected | Camera Flight Mode | - | - |
-| Simulate | Simulate |  |  | Only in Actor & Level Editor |
+| Simulate | Simulate | Enables physics simulation |  | Only in Actor & Level Editor |
 | UseSimulatePositions | UseSimulatePositions |  |  | Only in Level Editor |
 
 ___

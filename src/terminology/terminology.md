@@ -2,9 +2,11 @@
 
 ___
 
-## Engine
+## <center>Engine</center>
 
 ### ODE
+
+![example centered](images/ode-logo.png)
 
 ODE (Open Dynamics Engine) - is an open physics engine distributed for free as a dynamically linked library. Its main components are an Absolute-Solid Dynamics system and a collision detection system.
 
@@ -16,11 +18,13 @@ A-Life (Artificial Life) - artificial intelligence system.
 
 ### OpenAL
 
+![example centered](images/openal-logo.png)
+
 OpenAL (Open Audio Library) - cross-platform application programming interface (API) for working with audio data. A key feature is working with sound in 3D space and using EAX effects.
 
 ___
 
-## Models
+## <center>Models</center>
 
 ## Dynamic object
 
@@ -46,7 +50,11 @@ Distinguishing features:
 
 - Does not have a bone collision
 
-### *object*_hud
+## Progressive Meshes
+
+One of the methods of dynamic level of detail
+
+## *object*_hud
 
 HUD (Head-Up Display) - is a set of graphical interfaces and decorative elements located in the foreground and/or in the game world, which are designed to clearly and quickly convey to the player the necessary information from the game at a given point in time, without interfering with the gameplay experience.
 
@@ -60,7 +68,7 @@ Distinguishing features:
 
 - Does not have a bone collision
 
-### *object*_world
+## *object*_world
 
 Model, in-game world (NPC weapons, 3rd-person view). The difference from the _hud model is that the _world must have a collision to calculate the interaction with the game.
 
@@ -75,7 +83,7 @@ Distinguishing features:
 
 ___
 
-## Animations
+## <center>Animations</center>
 
 ### *object*_hud animations
 

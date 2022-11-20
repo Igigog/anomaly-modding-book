@@ -38,10 +38,10 @@ ___
   - [File Formats](main-folders-and-files/file-formats/README.md)
     - [Binary files](main-folders-and-files/file-formats/binary-files.md)
     - [.anm](main-folders-and-files/file-formats/anm.md)
-    - [.bump](main-folders-and-files/file-formats/bump.md)
     - [.cform](main-folders-and-files/file-formats/cform.md)
-    - [.bump#](main-folders-and-files/file-formats/bump_hash.md)
     - [.dds](main-folders-and-files/file-formats/dds.md)
+      - [bump.dds](main-folders-and-files/file-formats/bump.md)
+      - [bump#.dds](main-folders-and-files/file-formats/bump_hash.md)
     - [.details](main-folders-and-files/file-formats/detals.md)
     - [.dm](main-folders-and-files/file-formats/dm.md)
     - [.object](main-folders-and-files/file-formats/object.md)
@@ -93,7 +93,6 @@ ___
 
 - [Animating]()
   - [Blender](blender/README.md)
-    - [Creating an animation in Blender for a HUD object](blender/creating-hud-animation-in-blender.md)
     - [Creating animations for the camera](blender/creating-camera-animations.md)
 
 ___
@@ -111,7 +110,6 @@ ___
 ___
 
 - [Mapping](mapping/README.md)
-  - [Why maps are bullshit]()
   - [Compiling maps](mapping/compiling-maps.md)
 
 ___
@@ -141,6 +139,7 @@ ___
       - [Blender X-Ray Addon](blender/blender-x-ray-addon-summary.md)
         - [Addon installation and setup](blender/addon-installation-and-setup.md)
         - [Advanced settings](blender/addon-settings-options/README.md)
+          - [N-panel description](blender/addon-settings-options/n-panel-description.md)
           - [Pathes](blender/addon-settings-options/pathes.md)
           - [Defaults](blender/addon-settings-options/defaults.md)
           - [Formats](blender/addon-settings-options/formats.md)

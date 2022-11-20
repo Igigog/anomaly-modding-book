@@ -48,6 +48,10 @@ If you don't write it, it will play in a normal circular loop.
 
 ___
 
+## Programs editing this file
+
+- Any text editor
+
 ## Sources
 
 [Source](https://modfaq.ru/*.seq)

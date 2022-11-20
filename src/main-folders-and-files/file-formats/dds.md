@@ -16,6 +16,9 @@ DDS is most often used to store textures and is used in many 3D applications, as
 ### The engine currently supports the following compressions
 
 - DXT1
+- DXT5
+
+___
 
 ## Programs editing this file
 

@@ -38,12 +38,12 @@ ___
 | scheduled | online/offline switch; Works only for "live" objects with AI | off | on (Yes) - off (No) |
 | cform | parameter for dynamic objects; necessary for correct creation of the skeleton model | skeleton |  |
 | parent_section |  | wpn_akm |  |
-| class | engine weapon class | WP_AK74 | <br>WP_BINOC</br> <br>WP_KNIFE</br> <br>WP_BM16</br> <br>WP_GROZA</br> <br>WP_SVD</br> <br>WP_AK74</br> <br>WP_LR300</br> <br>WP_HPSA</br> <br>WP_PM</br> <br>WP_RG6</br> <br>WP_RPG7</br> <br>WP_SHOTG</br> <br>WP_ASHTG</br> <br>WP_MAGAZ</br> <br>WP_SVU</br> <br>WP_USP45</br> <br>WP_VAL</br> <br>WP_VINT</br> <br>WP_WALTH</br> <br>W_STMGUN</br> |
-| animation_slot | animation slot number | 2 | 1 (pistol) - 2 (automatic rifle) - 3 (rifle, shotgun) - 4 (RPG) - 5 (knife) - 7 (bolt, grenade) - 8 (submachine gun with integrated underbarrel grenade launcher) - 9 (Shotgun) - 10 (Drum Gun) - 13 (binoculars) |
-| hand_dependence | determines whether the weapon will be taken with one or two hands | 1 | 0 (no hands) - 1 (one hand) - 2 (two hands) |
-| single_handed | held with one hand | 0 | 0 (no) - 1 (yes) |
-| default_to_ruck | whether the weapon will be moved to the backpack instead of the slot when picked up | false | true (yes) - false (no) |
-| sprint_allowed | this line means that you can run with the weapon | true | true (Yes) - false (No) |
+| class | engine weapon class | WP_AK74 | WP_BINOC <br>WP_KNIFE <br>WP_BM16 <br>WP_GROZA <br>WP_SVD <br>WP_AK74 <br>WP_LR300 <br>WP_HPSA <br>WP_PM <br>WP_RG6 <br>WP_RPG7 <br>WP_SHOTG <br>WP_ASHTG <br>WP_MAGAZ <br>WP_SVU <br>WP_USP45 <br>WP_VAL <br>WP_VINT <br>WP_WALTH W_STMGUN |
+| animation_slot | animation slot number | 2 | 1 (pistol) <br>2 (automatic rifle) <br>3 (rifle, shotgun) <br>4 (RPG) <br>5 (knife) <br>7 (bolt, grenade) <br>8 (submachine gun with integrated underbarrel grenade launcher) <br>9 (Shotgun) <br>10 (Drum Gun) 13 (binoculars) |
+| hand_dependence | determines whether the weapon will be taken with one or two hands | 1 | 0 (no hands) <br>1 (one hand) <br>2 (two hands) |
+| single_handed | held with one hand | 0 | 0 (no) <br>1 (yes) |
+| default_to_ruck | whether the weapon will be moved to the backpack instead of the slot when picked up | false | true (yes) <br>false (no) |
+| sprint_allowed | this line means that you can run with the weapon | true | true (Yes) <br>false (No) |
 | kind | The type of item to group into the appropriate section in the Item Spawner | w_rifle |  |
 | cost | base price | 28780 | Specified in numbers |
 | hud | section with parameters for the hud model of the weapon (1st person view) | wpn_akm_hud | Specifies the name of the section |
@@ -85,7 +85,7 @@ ___
 | inv_name_short | short name in the inventory | st_wpn_akm | Section name, in *.xml files included in the string_table section of gamedata\configs\localization.ltx |
 | inv_weight | the inventory weight of the unloaded weapon | 3.3 | The number is given in kilograms |
 | description | Description in inventory | st_wpn_akm_descr | Section name, in *.xml files included in the string_table section of gamedata\configs\localization.ltx |
-| slot | Inventory slot number | 2 | 0 (knife) - 1 (gun) - 2 (shotgun, machine gun, rifle, grenade launcher) - 3 (grenade) - 4 (binoculars) - 5 (bolt) |
+| slot | Inventory slot number | 2 | 0 (knife) <br>1 (gun) <br>2 (shotgun, machine gun, rifle, grenade launcher) <br>3 (grenade) <br>4 (binoculars) 5 (bolt) |
 
 </details>
 

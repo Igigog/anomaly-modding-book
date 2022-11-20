@@ -58,7 +58,7 @@ ___
 
 ## Programs editing this file
 
-- [Evaluation Function Cunsctructor)]()
+- Evaluation Function Cunsctructor
 
 ## Sources
 

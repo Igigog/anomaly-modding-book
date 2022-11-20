@@ -15,10 +15,6 @@ The X-Ray "Monolith" Engine is an Anomaly mod open for use and modification. It 
 - Discord integration
 - Animation Blending/Movement layers
 
-## Engine Structure
-
-![svg-icon engine-structure](engine-images/engine-structure.svg)
-
 ___
 
 ## Sources

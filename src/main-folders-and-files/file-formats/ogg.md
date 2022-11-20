@@ -14,6 +14,8 @@ The sound format used by the game engine
   - Stereo audio format (To play in the player's head)
 - Audiocodek: [Vorbis](https://en.wikipedia.org/wiki/Vorbis)
 
+___
+
 ## Programs editing this file
 
 - Any sound editor that supports .ogg (<font style="color: red">But it won't write comments into the chunks!</font>)
