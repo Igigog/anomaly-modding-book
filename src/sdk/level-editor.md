@@ -8,7 +8,7 @@ ___
 
 ## Interface
 
-### Toolbar:
+### Toolbar
 
 ![toolbar centered](sdk-image/toolbar-level-editor.png)
 

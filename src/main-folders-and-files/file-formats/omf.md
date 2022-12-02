@@ -135,7 +135,7 @@ ___
 ## Programs editing this file
 
 - [Blender (X-Ray Addon)](../../blender/index.html)
-- [OMF Editor by ValeroK](../../modding-tools-and-resources/modding-tools/omf-editor-by-valerok.md)
+- [OMF Editor by ValeroK](../../modding-tools/omf-editor-by-valerok.md)
 
 ## Sources
 

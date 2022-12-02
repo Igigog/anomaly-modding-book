@@ -186,7 +186,7 @@ All the settings described below are stored in the file "user".ltx. (You can rea
 | r__wallmark_ttl | Wallmark Lifetime | 1.000 - 600.000 |
 | r_screenshot_mode | Screenshot in the selected format | jpg<br> png<br> tga |
 
-##### R1 (DX8)
+##### R1 - SM2.0 (DX9.0)
 
 | Сommand | Command description | Command's argument |
 ---|---|---|
@@ -203,7 +203,7 @@ of dynamic light sources |  |
 | r1_ssa_lod_a | Controls the level of detail (LOD) in the game world |  |
 | r1_ssa_lod_b | Controls the level of detail (LOD) in the game world |  |
 
-##### R2 (DX9)
+##### R2 - SM3.0 (DX9.0c)
 
 | Сommand | Command description | Command's argument |
 ---|---|---|
@@ -305,7 +305,7 @@ HDR and Bloom |  |
 | r2_zfill_depth |  |  |
 | r2em |  |  |
 
-##### R3 (DX10)
+##### R3 - SM4.0 (DX10) or SM4.1 (DX10.1)
 
 | Сommand | Command description | Command's argument |
 ---|---|---|
@@ -319,7 +319,7 @@ HDR and Bloom |  |
 | r3_use_dx10_1 | Enables use of DX10.1 | 'on/off' or '1/0' |
 | r3_volumetric_smoke | Volumetric smoke | 'on/off' or '1/0' |
 
-##### R4 (DX11)
+##### R4 - SM5.0 (DX11)
 
 | Сommand | Command description | Command's argument |
 ---|---|---|

@@ -10,5 +10,5 @@ ___
 
 ## Programs editing this file
 
-- [THM Editor by ValeroK](../../modding-tools-and-resources/modding-tools/thm-editor-by-valerok.md) or [THM Editor by i-love-kfc](../../modding-tools-and-resources/modding-tools/thm-editor-by-i-love-kfc.md)
+- [THM Editor by ValeroK](../../modding-tools/thm-editor-by-valerok.md) or [THM Editor by i-love-kfc](../../modding-tools/thm-editor-by-i-love-kfc.md)
 - [SDK 0.7](../../sdk/index.html)

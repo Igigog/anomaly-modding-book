@@ -35,7 +35,7 @@ ___
 
 - [Blender (X-Ray Addon)](../../blender/index.html)
 - [X-Ray Export Tool (Object Tool)](../../modding-tools-and-resources/modding-modding-tools/xray-export-tool.md)
-- [Ogf Editor by ValeroK](../../modding-tools-and-resources/modding-tools/ogf-editor-by-valerok.md) - (Only as a converter!)
+- [Ogf Editor by ValeroK](../../modding-tools/ogf-editor-by-valerok.md) - (Only as a converter!)
 - [SDK 0.7](../../sdk/index.html)
 
 ## Sources

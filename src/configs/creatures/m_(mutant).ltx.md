@@ -29,9 +29,9 @@ Example value taken from vanilla m_bloodsucker.ltx
 | community | What type of monster belongs to. Taken from game_relations.ltx | bloodsucker |  |
 | species | biological species | bloodsucker |  |
 | monster_type |  |  |  |
-| can_spawn_phantom | Can spam phantoms | true |  |
+| can_spawn_phantom | Can spawn phantoms | true |  |
 | spawn_phantom |  | m_phantom_bloodsucker |  |
-| killer_clsids | Game classes of objects from which a mutant can die in offline | Z_MINCER,Z_GALANT,ZS_BFUZZ,ZS_MBALD,ZS_GALAN,ZS_MINCE |  |
+| killer_clsids | Game classes of objects from which a mutant can die in offline | Z_MINCER<br> Z_GALANT<br> ZS_BFUZZ<br> ZS_MBALD<br> ZS_GALAN<br> ZS_MINCE |  |
 | material | Mutant material specified in [Material Shaders](../../main-folders-and-files/shaders-list/materials-list.md) | creatures\medium |  |
 | selector_approach |  |  |  |
 | terrain |  | bloodsucker_terrain |  |
@@ -194,7 +194,6 @@ Example value taken from vanilla m_bloodsucker.ltx
 | Velocity_WalkFwdDamaged |  |  |  |
 | Velocity_Drag |  |  |  |
 | Velocity_Steal |  |  |  |
-
 
 </details>
 
@@ -862,7 +861,7 @@ ___
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 ---|---|---|---|
 | Invisible_Energy_Restore_Velocity |  | 0.1 |  |
-| Invisible_Energy_Decline_Velocity	|  | 0.0 |  |
+| Invisible_Energy_Decline_Velocity |  | 0.0 |  |
 | Invisible_Energy_Critical_Value |  | 0.01 |  |
 | Invisible_Energy_Activate_Value |  | 0.99 |  |
 | Invisible_Energy_Aggressive_Restore_Velocity |  | 0.1 |  |

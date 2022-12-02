@@ -19,5 +19,5 @@ ___
 ## Programs editing this file
 
 - Any sound editor that supports .ogg (<font style="color: red">But it won't write comments into the chunks!</font>)
-- [Sound Attribute Viewer And Tweaker](../../modding-tools-and-resources/modding-tools/savandt.md)
+- [Sound Attribute Viewer And Tweaker](../../modding-tools/savandt.md)
 - [SDK 0.7](../../sdk/index.html) - (<font style="color: red">Exactly Sound Editor!</font>)

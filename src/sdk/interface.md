@@ -12,7 +12,7 @@ SDK 0.8 by RedPanda
 
 But the basic buttons and their functionality remain in place
 
-## Editing Toolbar:
+## Editing Toolbar
 
 Hotkeys in the table are standard (they can be set under Preference > Keyboard > Hotkeys)
 
@@ -30,16 +30,16 @@ Hotkeys in the table are standard (they can be set under Preference > Keyboard >
 | ![lock-to-z](sdk-image/sdk-icons/lock-to-z.bmp) | Restrict to Z | Locks the object to the Z-Axis | - | allowing movement/rotation only on that axis |
 | ![lock-to-zx](sdk-image/sdk-icons/lock-to-zx.bmp) | Restrict to Z/X | Locks the object to the Z and X Axis | - | allowing movement/rotation only on that axis |
 | ![parent-cs-toggle](sdk-image/sdk-icons/parent-cs-toggle.bmp) | Parent CS Toggle |  |  |  |
-| ![non-uniform-scale](sdk-image/sdk-icons/non-uniform-scale.bmp) | Non-Uniform Scale |  |  | Scale object along the selected axis only |
-| ![grid-snap-toggle](sdk-image/sdk-icons/grid-snap-toggle.bmp) | Grid Snap Toggle |  |  |  |
-| ![object-snap-toggle](sdk-image/sdk-icons/object-snap-toggle.bmp) | Object Snap Toggle |  |  |  |
-| ![moving-snap-to-object-toggle](sdk-image/sdk-icons/moving-snap-to-object-toggle.bmp) | Moving Snap To Object Toggle |  |  |  |
-| ![normal-aligment](sdk-image/sdk-icons/normal-aligment.bmp) | Normal Aligment |  |  |  |
-| ![vertex-snap-toggle](sdk-image/sdk-icons/vertex-snap-toggle.bmp) | Vertex Snap Toggle |  |  |  |
-| ![angle-snap-toggle](sdk-image/sdk-icons/angle-snap-toggle.bmp) | Angle Snap Toggle |  |  |  |
-| ![moving-snap-toggle](sdk-image/sdk-icons/moving-snap-toggle.bmp) | Moving Snap Toggle |  |  |  |
-| ![zoom-extent](sdk-image/sdk-icons/zoom-extent.bmp) | Zoom Extent |  |  |  |
-| ![zoom-extent-selected](sdk-image/sdk-icons/zoom-extent-selected.bmp) | Zoom Extents Selected |  |  |  |
+| ![non-uniform-scale](sdk-image/sdk-icons/non-uniform-scale.bmp) | Non-Uniform Scale | Ignores proportions when scaling |  | Scale object along the selected axis only |
+| ![grid-snap-toggle](sdk-image/sdk-icons/grid-snap-toggle.bmp) | Grid Snap Toggle | Snap the object to the grid when creating or when Move + Ctrl + LMB |  | - |
+| ![object-snap-toggle](sdk-image/sdk-icons/object-snap-toggle.bmp) | Object Snap Toggle | Snap an object to an object when creating or with Move + Ctrl + LMB |  | - |
+| ![moving-snap-to-object-toggle](sdk-image/sdk-icons/moving-snap-to-object-toggle.bmp) | Moving Snap To Object Toggle | Snap an object to an object in Move mode |  | - |
+| ![normal-aligment](sdk-image/sdk-icons/normal-aligment.bmp) | Normal Aligment | Take into account the normal during object snapping |  | - |
+| ![vertex-snap-toggle](sdk-image/sdk-icons/vertex-snap-toggle.bmp) | Vertex Snap Toggle | Snap the object to the object vertices when creating or when Move + Ctrl + LMB |  | - |
+| ![angle-snap-toggle](sdk-image/sdk-icons/angle-snap-toggle.bmp) | Angle Snap Toggle | Discrete rotation |  | Works when the Rotate button is pressed |
+| ![moving-snap-toggle](sdk-image/sdk-icons/moving-snap-toggle.bmp) | Moving Snap Toggle | Discrete motion |  | Works when the Move button is pressed |
+| ![zoom-extent](sdk-image/sdk-icons/zoom-extent.bmp) | Zoom Extent | Standard zoom of the entire scene |  | - |
+| ![zoom-extent-selected](sdk-image/sdk-icons/zoom-extent-selected.bmp) | Zoom Extents Selected | Standard zoom of the selected object |  | - |
 | **F** | Front View | Front View | - | - |
 | **B** | Back View | Back View | - | - |
 | **L** | Left View | Left View | - | - |
@@ -47,7 +47,7 @@ Hotkeys in the table are standard (they can be set under Preference > Keyboard >
 | **T** | Top View | Top View | - | - |
 | **B** | Bottom View | Bottom View | - | - |
 | **X** | Reset View | Reset View | - | - |
-| P | Zoom Extents | Free Camera Mode | - |  |
+| P | Zoom Extents | Free Camera Mode | - | - |
 | A | Zoom Extents Selected | Centers the camera view on the origin of coordinates | - | - |
 | F | Zoom Extents Selected | Camera Flight Mode | - | - |
 | Simulate | Simulate | Enables physics simulation |  | Only in Actor & Level Editor |

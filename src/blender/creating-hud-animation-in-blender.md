@@ -7,7 +7,7 @@ This article is about creating an animation for a HUD object in Blender
 ## Beginning
 
 - First, check out the information about [.omf](../main-folders-and-files/file-formats/omf.md), .skl, and .skls formats ([list of file formats](../main-folders-and-files/file-formats/index.html))
-- To create the animation, we need a hand model (can be found in this [article](../modding-tools-and-resources/resources/models-objects-locations.md)) and a model of what will be animated in the hands (a weapon or other object).
+- To create the animation, we need a hand model (can be found in this [article](../resources/models-objects-locations.md)) and a model of what will be animated in the hands (a weapon or other object).
 
 ### Preparing the HUD model
 
@@ -80,5 +80,5 @@ To export animations to [.omf](../main-folders-and-files/file-formats/omf.md) yo
 Go to the Object Properties of the selected skeleton (Hands or HUD object)
 In the tab X-Ray Engine: Object expand the list of Motions.
 In the Dependency field select the skeleton you need (on which skeleton the animation needed for the skeleton will be played)
-Press the plus button to add the field, in it you need to select the desired animation and add all the animations you need for the selected skeleton. 
+Press the plus button to add the field, in it you need to select the desired animation and add all the animations you need for the selected skeleton.
 Then you can export the [.omf](../main-folders-and-files/file-formats/omf.md) by pre-selecting the skeleton with animations.

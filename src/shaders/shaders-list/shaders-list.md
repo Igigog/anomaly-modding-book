@@ -2,7 +2,8 @@
 
 ___
 
-## About:
+## About
+
 This section contains a list and description of the shaders that are available in the shaders.xr file. This file contains descriptions of shader settings.
 
 ## List

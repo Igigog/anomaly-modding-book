@@ -233,4 +233,4 @@ To check the model you can go the following ways:
 
 - Load the model into the SDK and check
 - Export the model in .ogf format and add it directly to the game.
-- [Check the model and parameters through third-party programs](../modding-tools-and-resources/modding-tools/modding-tools.md)
+- [Check the model and parameters through third-party programs](../modding-tools/modding-tools.md)

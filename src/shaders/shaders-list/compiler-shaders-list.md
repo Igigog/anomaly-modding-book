@@ -2,7 +2,8 @@
 
 ___
 
-## About:
+## About
+
 This section contains a list and description of the shaders that are available in the shaders_xrlc.xr file. This file contains descriptions of the settings that are used by the level geometry compiler.
 
 ## List
@@ -12,10 +13,10 @@ This section contains a list and description of the shaders that are available i
 | default | basic lightmap shader |
 | default_smooth |  |
 | def_shaders\def_ghost | lightmap shader without collision |
-| def_shaders\def_ghost_vertex |  |
-| def_shaders\def_kolizion |  |
+| def_shaders\def_ghost_vertex | geometry shader without collision |
+| def_shaders\def_kolizion | geometry shader with collision |
 | def_shaders\def_kolizion_lm |  |
-| def_shaders\def_kolizion_vertex | special invisible geometry shader |
+| def_shaders\def_kolizion_vertex | invisible geometry shader with collision |
 | def_shaders\def_normals |  |
 | def_shaders\def_noshadow |  |
 | def_shaders\def_noshadow_pol |  |
@@ -23,7 +24,7 @@ This section contains a list and description of the shaders that are available i
 | def_shaders\def_object_lod_collision |  |
 | def_shaders\def_object_lod_visual |  |
 | def_shaders\def_selflight |  |
-| def_shaders\def_translucensy |  |
+| def_shaders\def_translucensy | geometry shader with transparency |
 | def_shaders\def_vertex | basic vertex shader |
 | def_shaders\def_vertex_ghost |  |
 | def_shaders\def_vertex_ghost_no_shadow |  |

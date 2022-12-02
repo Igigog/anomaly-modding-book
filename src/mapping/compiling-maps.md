@@ -24,4 +24,4 @@ In order to compile a location, you need to put it in the:
 - game_maps_single.ltx
 - game_levels.ltx
 
-After that you can use compilers that are included directly in SDK, or use third party compilers (such as [Universal x64 level compilers](../modding-tools-and-resources/modding-tools/universal-x64-level-compilers.md)).
+After that you can use compilers that are included directly in SDK, or use third party compilers (such as [Universal x64 level compilers](../modding-tools/universal-x64-level-compilers.md)).

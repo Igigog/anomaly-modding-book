@@ -2,7 +2,8 @@
 
 ___
 
-## About:
+## About
+
 This section contains a list and description of the shaders that are available in the gamemtl.xr file. This file stores surface materials.
 
 ## List
@@ -58,7 +59,6 @@ This section contains a list and description of the shaders that are available i
 | material\water_radiation | radiation water |
 | material\wood | wooden surface, floor wooden steps |
 | material\wooden_board | wooden board, wooden wagon, box |
-
 
 ### Dynamic object materials
 
