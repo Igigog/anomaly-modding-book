@@ -1,8 +1,8 @@
-## Blender Stuff
+# Blender Stuff
 
 ___
 
-### Models
+## Models
 
 [Blender Stalker Asset Library](https://drive.google.com/file/d/1nrs1Po0lfQ1_ddtzTjDdomlIo4GjbwL4/view) - Library of models to place in Blender
 
@@ -12,7 +12,7 @@ ___
 
 ___
 
-### Animations
+## Animations
 
 [Riggered HUD in Blender](https://drive.google.com/file/d/1DSnSXZzMsKkbE5AvY9PvqEbaION6P0C5/view?usp=sharing)
 

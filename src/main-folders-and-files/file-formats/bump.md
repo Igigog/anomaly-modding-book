@@ -1,4 +1,4 @@
-# .bump.dds
+# bump.dds
 
 ___
 

@@ -145,7 +145,7 @@ ___
         - [Custom Props](blender/addon-settings-options/custom-props.md)
         - [Others](blender/addon-settings-options/others.md)
   - [THM Editor](modding-tools/thm-editor-by-i-love-kfc.md)
-  - [Bump Generator](modding-tools/thm-editor-by-i-love-kfc.md)
+  - [Bump Generator](modding-tools/bump-generator.md)
   - [Sound Attribute Viewer And Tweaker](modding-tools/savandt.md)
   - [Modified THM Editor](modding-tools/thm-editor-by-valerok.md)
   - [Modified OMF Editor](modding-tools/omf-editor-by-valerok.md)
@@ -156,7 +156,7 @@ ___
 
 ___
 
-- [Resources]()
+- [Resources](resources/README.md)
   - [Audio](resources/audio.md)
   - [Models](resources/models-objects-locations.md)
-  - [SDK Rawdatas](resources/sdk-rawdatas.md)
+  - [SDK resources](resources/sdk-resources.md)

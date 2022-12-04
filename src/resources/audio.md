@@ -65,6 +65,8 @@ ___
 | Alexey Omelchuk | Combat Theme 4 | [Preview](https://youtu.be/WQU-GYROIgQ) |  |
 | Alexey Omelchuk | Outro | [Preview](https://youtu.be/cpi_VabA53M) |  |
 
+[Full OST Archive](https://sharedby.blomp.com/AJm2yS)
+
 ## All the soundtrack from Anomaly
 
 | Artist | Soundtrack name | Preview |
