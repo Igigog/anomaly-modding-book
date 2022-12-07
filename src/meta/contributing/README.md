@@ -37,14 +37,14 @@ Here is the overview of steps needed for contributing:
 
 Welp, let's get started. I hope you already have a GitHub account.
 
-#### Forking
+### Forking
 
 1. Go to the [main repo](https://github.com/Igigog/anomaly-modding-book)
 2. Press the fork button
 
 ![centered](contributing-images/3.PNG)
 
-3. Create the fork 
+3. Create the fork
 
 ![centered](contributing-images/4.PNG)
 
@@ -57,13 +57,13 @@ Welp, let's get started. I hope you already have a GitHub account.
 ![centered](contributing-images/5.PNG)
 
 2. Open Poweshell Terminal session
-3. Copy the link to your repo. 
+3. Copy the link to your repo.
 
 ![centered](contributing-images/6.PNG)
 
 4. Run the following command in your Powershell Terminal with your link instead of LINK.
 
-```
+```git
 git clone LINK
 ```
 
@@ -71,8 +71,8 @@ git clone LINK
 
 #### Running local copy
 
-1. Download latest mdbook from [Github Releases](https://github.com/rust-lang/mdBook/releases). 
-1. Drop `mdbook.exe` in the root folder of your copy. 
+1. Download latest mdbook from [Github Releases](https://github.com/rust-lang/mdBook/releases).
+1. Drop `mdbook.exe` in the root folder of your copy.
 1. Run `run.bat`. In case it doesn't open by itself, open [localhost:3000](localhost:3000) in your browser.
 1. Done. You're awesome.
 
@@ -98,7 +98,7 @@ git clone LINK
 
 ![centered](contributing-images/10.PNG)
 
-2. Press "compare across forks". Choose your repository and press "Create pull request". 
+2. Press "compare across forks". Choose your repository and press "Create pull request".
 
 3. You're awesome. Probably. Now ping Igigog#6387 in Discord to get your pull request reviewed.
 
@@ -108,7 +108,7 @@ ___
 
 ### P.S
 
-If you will be using VSCodium or VSCode, it is recommended to install markdown extensions to make life easier or to avoid messing up the book structure. 
+If you will be using VSCodium or VSCode, it is recommended to install markdown extensions to make life easier or to avoid messing up the book structure.
 
 For example such as:
 

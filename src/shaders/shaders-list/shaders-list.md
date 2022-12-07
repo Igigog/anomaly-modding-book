@@ -10,7 +10,7 @@ This section contains a list and description of the shaders that are available i
 
 ### Shaders for static objects
 
-| Shaders for static objects | Description |
+| Shader name | Description |
 ---|---|
 | zfill |  |
 | xwindow | Old unused glass shader |
@@ -26,20 +26,20 @@ This section contains a list and description of the shaders that are available i
 
 ### ufp Shaders
 
-| ufp_shaders | Description |
+| Shader name | Description |
 ---|---|
 | ufp_blend |  |
 
 ### Test Shaders
 
-| test | Description |
+| Shader name and path | Description |
 ---|---|
 | test\aaaaaaaa__ |  |
 | test\aass |  |
 
 ### Sky Shaders
 
-| sky | Description |
+| Shader name and path | Description |
 ---|---|
 | sky\background |  |
 | sky\clouds |  |
@@ -48,7 +48,7 @@ This section contains a list and description of the shaders that are available i
 
 ### Particles Shaders
 
-| Particles | Description |
+| Shader name and path | Description |
 ---|---|
 | particles\add |  |
 | particles\alpha_add |  |
@@ -61,7 +61,7 @@ This section contains a list and description of the shaders that are available i
 
 ### Shaders for dynamic objects
 
-| Shaders for dynamic objects | Description |
+| Shader name and path | Description |
 ---|---|
 | models\antigas_glass | CubeMap reflection shader (variant 1) |
 | models\artefact | CubeMap reflection shader (variant 2) |
@@ -88,7 +88,7 @@ This section contains a list and description of the shaders that are available i
 | models\water |  |
 | models\water_ryaska |  |
 | models\weapons | CubeMap reflection shader (variant 4) |
-| models\window | semi-transparent shader with CubeMap reflection 
+| models\window | semi-transparent shader with CubeMap reflection |
 | models\xanomaly |  |
 | models\xdistor |  |
 | models\xdistorcolor |  |
@@ -99,7 +99,7 @@ This section contains a list and description of the shaders that are available i
 
 ### Levels Shaders
 
-| levels | Description |
+| Shader name and path | Description |
 ---|---|
 | levels\agroprom_asfalt | terrain shader (asphalt) |
 | levels\agroprom_grass | terrain shader (grass) |
@@ -183,7 +183,7 @@ This section contains a list and description of the shaders that are available i
 
 ### HUD Shaders
 
-| hud | Description |
+| Shader name and path | Description |
 ---|---|
 | hud\add |  |
 | hud\add-alpha |  |
@@ -197,14 +197,14 @@ This section contains a list and description of the shaders that are available i
 
 ### Flora Shaders
 
-| flora | Description |
+| Shader name and path | Description |
 ---|---|
 | flora\leaf_wave |  |
 | flora\trunk_wave |  |
 
 ### Effects Shaders
 
-| Effects | Description |
+| Shader name and path | Description |
 ---|---|
 | effects\bullet_tracer |  |
 | effects\flame |  |
@@ -235,7 +235,7 @@ This section contains a list and description of the shaders that are available i
 
 ### SDK Shaders
 
-| editor | Description |
+| Shader name and path | Description |
 ---|---|
 | editor\ai_node |  |
 | editor\do_base |  |
@@ -245,7 +245,7 @@ This section contains a list and description of the shaders that are available i
 
 ### Details Shaders
 
-| details | Description |
+| Shader name and path | Description |
 ---|---|
 | details\blend |  |
 | details\lod |  |
@@ -253,7 +253,7 @@ This section contains a list and description of the shaders that are available i
 
 ### Def_Shaders
 
-| def_shaders | Description |
+| Shader name and path | Description |
 ---|---|
 | def_shaders\def_add |  |
 | def_shaders\def_aref |  |
@@ -275,7 +275,7 @@ This section contains a list and description of the shaders that are available i
 
 ### Debug Shaders
 
-| debug | Description |
+| Shader name and path | Description |
 ---|---|
 | debug\ai_nodes |  |
 | debug\wireframe |  |

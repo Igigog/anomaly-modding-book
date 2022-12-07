@@ -239,7 +239,7 @@ ___
 
 ___
 
-## <center>[LTX](../configs/ltx-files.md)</center>
+## <center>[LTX](../configs/.ltx.md)</center>
 
 ### Line 96
 

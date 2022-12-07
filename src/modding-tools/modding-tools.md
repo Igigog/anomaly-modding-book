@@ -20,6 +20,8 @@ ___
 
 - [AXRToolset](https://github.com/revolucas/AXRToolset) - AXRToolset is an AutoHotkey & Lua-based scripting engine that utilizes a Graphical User Interface to display scripted plugins that do various automated tasks. Although the current plugins are designed to aid in the development of S.T.A.L.K.E.R.: Call of Chernobyl, the engine itself can be used to create macros, scripts and other utilities for any application or purpose.
 
+- [Stalker Studio V.0.5 Beta](https://disk.yandex.ru/d/fYRxr2e2cOiomQ) - Different tools in one place
+
 ___
 
 ## Gamedata Extractors
@@ -76,11 +78,13 @@ Official SDK with community enhancements:
 
 - [SDK 0.7 by Range](https://disk.yandex.ru/d/wnzjuQkcti1CNw)
 
+- [Call of Chernobyl SDK](https://sharedby.blomp.com/zIpxWK) - Contains the basic editors and tools that were used to create Call of Chernobyl
+
 - [Anomaly Unofficial SDK](https://drive.google.com/file/d/1LVOLpVUkIVyUJk3zVxBHvnsC1tADwlML/view) - Unofficial SDK with included fixes
 
 - [SDK 0.8 by Red Panda](https://github.com/RedPandaProjects/XRayEngine/releases) - This is a port and a small upgrade of the classic 0.7 editor set. A lot of problems with the classic editor were related to the outdated development environment, which did not allow to upgrade it. Imgui was taken as a UI shell, as the easiest ui allowing to create simple forms with one line of code. All 4 editors were taken over.
 
-- [SDK 2.6 beta (Lost Alpha)](https://www.moddb.com/mods/lost-alpha/downloads/stalker-lostalpha-sdk-v26-beta) - Contains the basic editors and tools that were used to create Lost Alpha.
+- [SDK 2.6 beta (Lost Alpha)](https://www.moddb.com/mods/lost-alpha/downloads/stalker-lostalpha-sdk-v26-beta) - Contains the basic editors and tools that were used to create Lost Alpha
 
 ### SDK tools
 

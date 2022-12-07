@@ -101,8 +101,6 @@ Save file
 
 - #### Save As
 
-
-
 - #### Import DDS
 
 Imports .dds texture

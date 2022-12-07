@@ -1,5 +1,6 @@
 # Package Naming Guidelines
-**for Mod Organizer 2**
+
+## for Mod Organizer 2
 
 ___
 
@@ -44,7 +45,7 @@ As long as you adhere to a similar format and keep the same base name, MO2 will 
 
 **_The End._**
 
----
+___
 
 _**Author's note:** The original version of this guide was motivated by annoyance and frustration, so it ended up missing its mark._
 
@@ -54,14 +55,15 @@ _If you are not interested in the rationale behind this advice or if you do not 
 
 _For a tongue-in-cheek accounting of commonly made mistakes and their grave consequences, proceed to the next section where we have guidance on..._
 
-# How to Annoy MO2 Users
+## How to Annoy MO2 Users
+
 **A Reverse Naming Guide for Mod Authors**
 
 Most people do not know about this, but some players prefer to use an obscure piece of software called [Mod Organizer 2](https://github.com/ModOrganizer2/modorganizer). In this section, we outline some simple mistakes you can make while naming your addon packages for maximum annoyance of those wimpy persons.
 
 > Please note that this guide does not cover how to annoy Chads™ who extract addons directly into gamedata, overwriting whatever is already there. Frankly, we do not think it is even possible to agitate such strong-willed individuals.
 
-MO2 is a tool that _enables_ those who are _unable_ to keep track of several thousand files. It even tries to _cleverly_ extract the addon name from the package name during installation. 
+MO2 is a tool that _enables_ those who are _unable_ to keep track of several thousand files. It even tries to _cleverly_ extract the addon name from the package name during installation.
 
 Thankfully, there are many ways to subvert this clever mechanism.
 
@@ -79,7 +81,7 @@ However, if you feel this one is too on the nose and are looking for subtler way
 
 ## All Characters Are Equal but Some Characters Are More Equal than Others
 
-As mentioned previously, MO2 tries to be _clever_ when determining the addon name from the installation package. To do this, MO2 treats some characters differently. 
+As mentioned previously, MO2 tries to be _clever_ when determining the addon name from the installation package. To do this, MO2 treats some characters differently.
 
 - **Alphabetic characters, underscore and space:** These are considered “good” characters for addon naming. 
 MO2 will extract all good characters to generate the default name until it finds a junk character. The rest of the file name is ignored.
@@ -123,4 +125,4 @@ See the little “_v” at the end? It’s there to bug the MO2-weaklings. Missi
 
 Most importantly, avoid giving descriptive names to your addons and never adhere to a consistent naming format.
 
-If you fail to include one or more of the mistakes above with your every release, those MO2-crybabies will have a minimal-friction upgrade experience, and we don’t want that to happen, do we? 
+If you fail to include one or more of the mistakes above with your every release, those MO2-crybabies will have a minimal-friction upgrade experience, and we don’t want that to happen, do we?

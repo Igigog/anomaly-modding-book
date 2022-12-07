@@ -55,7 +55,7 @@ ___
 
 - ### Model
 
-First, the model itself will be set up. 
+First, the model itself will be set up.
 You can start by positioning the model over the origin in this way (The ["Drop It"](https://andreasaust.gumroad.com/l/drop_it) addon for Blender is highly recommended for such actions):
 ![model-example-coordinates](blender-images/model-example-coordinates.png)
 

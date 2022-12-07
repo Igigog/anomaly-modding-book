@@ -13,8 +13,8 @@ ___
 | Extension | Description |
 ---|---|
 | .log | Event log. It contains records of program start, operation and termination |
-| .scop | Save file. |
-| .scoc | Save file. |
+| .scop | Save file |
+| .scoc | Save file |
 | .xrdemo | Recording camera flyover (demo). Created in the game with a [console command](../../engine/console-commands.md). |
 
 ___
@@ -23,9 +23,9 @@ ___
 
 | Extension | Description |
 ---|---|
-| [.ltx](../../configs/ltx-files.md) | Configuration file, custom ini-like format |
-| .script | Game script. |
-| [.xml](../../configs/xml-files.md) | Carry in text format data related to in-game text, UI element placement, and characters and information within the game world. |
+| [.ltx](../../configs/ltx.md) | Configuration file, custom ini-like format |
+| .script | Game script |
+| [.xml](../../configs/xml.md) | Carry in text format data related to in-game text, UI element placement, and characters and information within the game world |
 | [.seq](seq.md) | Text file containing a description of the frame sequence in the 2D animation |
 
 ___
@@ -104,7 +104,7 @@ ___
 | Extension | Description |
 ---|---|
 | .db | archive of game resources. Used in late builds and the final version of the game, has several options (db."number", db."letter"). |
-| .xr | resource library. Contains resources such as partials, shaders, etc. in a packed format. |
+| .xr | resource library. Contains resources such as particles, [shaders](../../shaders/shaders-list/shaders-list.md), etc. in a packed format. |
 
 ___
 

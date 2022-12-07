@@ -2,6 +2,8 @@
 
 ___
 
+## About
+
 LTX files are basically ini files with some custom additions. They are located all over the `gamedata/configs` and are used for, well, configs.
 
 Here's how ltx config might look like:
@@ -25,7 +27,7 @@ From this example we can see some fancy ltx features:
 3. Name of the section in square brackets - this is referred in scripts as `section_name` or just `section`.
 4. Key-value pairs. Values may include comma-separated lists.
 5. Comments start with `;`.
-6. `fancy_feature` uses something called "condlist". Refer to [condlists manual](condlists.md) to understand this bs.
+6. `fancy_feature` uses something called "condlist". Refer to [condlists manual](../../configs/condlists.md) to understand this bs.
 
 ___
 

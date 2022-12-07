@@ -70,7 +70,7 @@ Distinguishing features:
 
 ## *object*_world
 
-Model, in-game world (NPC weapons, 3rd-person view). The difference from the _hud model is that the _world must have a collision to calculate the interaction with the game.
+Model, in-game world (NPC weapons, 3rd-person view). The difference from the \_hud model is that the \_world must have a collision to calculate the interaction with the game.
 
 Example:
 

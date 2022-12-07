@@ -17,4 +17,4 @@ Everything is ready, you can create animations.
 
 ## Export
 
-To export the animation you need to select the blank through the export operator in .anm and export.
+To export the animation you need to select the blank through the export operator in .anm and export

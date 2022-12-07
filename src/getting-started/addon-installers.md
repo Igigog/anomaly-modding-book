@@ -4,14 +4,15 @@ ___
 
 Courtesy of RavenAscendant#7504
 
-MO2 supports 2 kinds of installers. 
+MO2 supports 2 kinds of installers.
 BAIN is the simpler.
 For BAIN to work you put the gamedata folder for for the main mod into a folder thats name starts with 00.
 Patches would then go in folders with subsequent numbers.
 These folders should all be at the root level of the archive.
 
 Example: *addon.zip*
-```
+
+```text
 00 Main
 01 BAS patch
 02 Optional thing

@@ -140,7 +140,7 @@ All the settings described below are stored in the file "user".ltx. (You can rea
 
 ### Graphics
 
-#### General settings
+#### Graphics General settings
 
 | Сommand | Command description | Command's argument |
 ---|---|---|

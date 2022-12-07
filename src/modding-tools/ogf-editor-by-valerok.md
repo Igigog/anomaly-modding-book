@@ -3,7 +3,7 @@
 - Program Developers:
   - Mortany (Original Author)
   - ValeroK
-- The version described in the article: [3.3](https://github.com/VaIeroK/OGF-tool/releases/tag/3.3)
+- The version described in the article: [3.8](https://github.com/VaIeroK/OGF-tool/releases/tag/3.8)
 - [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3549-ogfdm-editor-v24)
 
 ___
@@ -16,28 +16,13 @@ Tool for working with .ogf and [.dm](../../main-folders-and-files/file-formats/d
 
 ## Features
 
-- Editing textures and model shaders
-- Editing Userdata
-- Editing Motion Refs
-- Editing Bone Names
-- Ability to change the position of meshes
+- Ability to work with all .ogf parameters
+- Ability to work with meshes in .ogf
 - Viewport
-- Ability to delete mesh models
-- Bone materials editing
-- Editing Bone weights
-- Editing center of mass of bones
-- Editing model description
-- View complete list of bones
-- Integration with OGF Viewer (WIP)
+- Integration with OGF Viewer and [OMF Editor](omf-editor-by-valerok.md)
 - Saving .ogf in .object, .skl, .skls, .bones formats ([list of formats here](../../main-folders-and-files/file-formats/index.html))
-- Viewing the list of embedded animations
 - Hotkeys
-- Ability to write UserData and MotionRefs chunks (even if the model did not have them before)
-- Editing the position and rotation of the bones
-- Ability to remove unneeded Motion refs and Userdata chunks
 - Fix Gunslinger models (models are fixed automatically when you save them)
-- Tools for working with embedded animations
-- Integration with [OMF Editor](omf-editor-by-valerok.md) for editing parameters of embedded animations
 
 ## Functionality
 
@@ -57,7 +42,7 @@ Tool for working with .ogf and [.dm](../../main-folders-and-files/file-formats/d
 | Load | Loads the selected .ogf |
 | Save | Save .ogf |
 | Save As | Save as .ogf |
-| Export | Export as .object<br> .bones<br> .obj<br> .omf<br> .skl<br> .skls<br> |
+| Export | Export as<br> .object<br> .bones<br> .obj<br> .omf<br> .skl<br> .skls<br> |
 | Reload | Reloads the program |
 | Exit | Exits the program |
 
@@ -68,6 +53,9 @@ Tool for working with .ogf and [.dm](../../main-folders-and-files/file-formats/d
 | Open in Object Editor | Open  in Object Editor |
 | Import OGF Params | Imports parameters of another .ogf with selectable parameters |
 | Recalc Normals | Recalculates the normals of the selected mesh |
+| Recalc Bounding Box | Recalculates Bounding Box |
+| Remove Progressive Meshes | Remove Progressive Meshes |
+| Move/Rotate Model | Move/Rotate Model |
 | Converter | NPC CoP to SoC<br> NPC SoC to CoP<br> |
 
 - #### OGF Info Button
@@ -78,11 +66,11 @@ Display information about the loaded OGF
 ---|---|
 | OGF Version | The .ogf version |
 | Model Type | Model type |
-| Motions Refs |  |
-| Motions |  |
-| Links |  |
-| Verts |  |
-| Faces |  |
+| Motions Refs | Motions Refs |
+| Motions | Motions |
+| Links | Links |
+| Verts | Verts |
+| Faces | Faces |
 
 | Field | Description |
 ---|---|
@@ -94,24 +82,24 @@ Display information about the loaded OGF
 | Creation Time | Creation Time |
 | Modified Time | Modified Time |
 
-| Button | Description |
----|---|
-| Repair timers |  |
+| Button |
+---|
+| Repair timers |
 
 - #### Settings Button
 
-| Field | Description |
----|---|
-| Image path |  |
-| FS Ltx path |  |
-| Textures path |  |
-| Game Mtl path |  |
-| OMF Editor path |  |
-| Object Editor path |  |
+| Field |
+---|
+| Image path |
+| FS Ltx path |
+| Textures path |
+| Game Mtl path |
+| OMF Editor path |
+| Object Editor path |
 
-| Button | Description |
----|---|
-| Load textures alpha channel in Viewport - slow loading |  |
+| Button |
+---|
+| Load textures alpha channel in Viewport - slow loading |
 
 - #### Model Format Button
 

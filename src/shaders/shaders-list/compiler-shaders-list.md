@@ -8,7 +8,7 @@ This section contains a list and description of the shaders that are available i
 
 ## List
 
-| Compilation Shader Names | Description |
+| Shader name and path | Description |
 ---|---|
 | default | basic lightmap shader |
 | default_smooth |  |

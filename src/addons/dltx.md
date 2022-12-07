@@ -4,7 +4,7 @@ ___
 
 ## About
 
-Improvement of the engine to allow overwriting [.ltx](../configs/ltx-files.md) files, avoiding addon conflicts.
+Improvement of the engine to allow overwriting [.ltx](../configs/.ltx.md) files, avoiding addon conflicts.
 Allows modders to overwrite only the values they need.
 
 ### Installation

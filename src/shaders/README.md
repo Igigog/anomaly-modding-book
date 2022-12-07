@@ -2,7 +2,8 @@
 
 ___
 
-## About:
+## About
+
 These sections describe the shader lists used for the game
 
 - [Compiler Shaders List](shaders-list/compiler-shaders-list.md)

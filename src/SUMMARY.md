@@ -49,17 +49,17 @@ ___
     - [.ogg](main-folders-and-files/file-formats/ogg.md)
     - [.hom](main-folders-and-files/file-formats/hom.md)
     - [level](main-folders-and-files/file-formats/level.md)
+    - [.ltx](main-folders-and-files/file-formats/ltx.md)
     - [.err](main-folders-and-files/file-formats/err.md)
     - [.efd](main-folders-and-files/file-formats/efd.md)
     - [.seq](main-folders-and-files/file-formats/seq.md)
     - [.som](main-folders-and-files/file-formats/som.md)
     - [.thm](main-folders-and-files/file-formats/thm.md)
+    - [.xml](main-folders-and-files/file-formats/xml.md)
 
 ___
 
 - [Configs]()
-  - [LTX files](configs/ltx-files.md)
-  - [XML files](configs/xml-files.md)
   - [Condlists](configs/condlists.md)
   - [Changing an item]()
   - [Creating your own item]()

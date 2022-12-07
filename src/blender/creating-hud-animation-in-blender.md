@@ -2,7 +2,7 @@
 
 ___
 
-This article is about creating an animation for a HUD object in Blender 
+This article is about creating an animation for a HUD object in Blender
 
 ## Beginning
 
@@ -32,7 +32,7 @@ The resulting skeleton:
 
 Note that you need your own bones for the attached silencer and scope.
 
-Next, you need to assign Vertex Groups to the selected vertices. 
+Next, you need to assign Vertex Groups to the selected vertices.
 
 ![vertex-groups-example](blender-images/hud-animation-tutorial/bizon-vertex-groups.png)
 

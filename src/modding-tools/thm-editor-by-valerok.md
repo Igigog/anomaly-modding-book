@@ -62,7 +62,7 @@ The [THM Editor](thm-editor-by-i-love-kfc.md) from i-love-kfc was taken as the b
 
 - ### Chechboxes
 
-- Shoc format - 
+- Shoc format - Shoc format of thm
 
 ### Fields
 

@@ -15,9 +15,9 @@ If the location will have stalkers, you need to create ai grid
 ## Location building
 
 Created a folder with the name, which was specified in the scene properties.
-It contains all the data about the location. 
+It contains all the data about the location.
 
-## Compiling the location.
+## Compiling the location
 
 In order to compile a location, you need to put it in the:
 

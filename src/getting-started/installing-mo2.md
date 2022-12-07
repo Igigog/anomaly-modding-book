@@ -20,7 +20,6 @@ Made by [Starcry](https://www.blogger.com/profile/07678551170854762591)
 
 - Shows you which mods are conflicting in details.
 
-
 Important note: Many antivirus softwares will block MO2 and Anomaly files causing you to have strange crashes, the reliable solution is to scan your MO2 folder for safety, then set an antivirus exclusion to the entire MO2 folder (and to your Anomaly folder).
 
 ## Installation and instance setup
@@ -66,7 +65,6 @@ Important note: Many antivirus softwares will block MO2 and Anomaly files causin
 
 </div>
 
-
 5. Click next again as linking an account to Nexus is not needed.
 
 <div style="text-align: center;">
@@ -75,7 +73,6 @@ Important note: Many antivirus softwares will block MO2 and Anomaly files causin
 
 </div>
 
-
 6. After that you should see something like this.
 
 <div style="text-align: center;">
@@ -83,7 +80,6 @@ Important note: Many antivirus softwares will block MO2 and Anomaly files causin
 ![Creating a new instance](mo2-images/3.png)
 
 </div>
-
 
 7. Congratulations, you paired MO2 with Anomaly successfully.
 After you click finish MO2 will start up.
@@ -96,8 +92,6 @@ After MO2 boots up you will get 2 popups, one is for an optional tutorial and th
 ![Creating a new instance](mo2-images/4.png)
 
 </div>
-
-
 
 In case you skipped the tutorial or didn't fully understand it here's a quick explanation of the most important features:
 
@@ -115,9 +109,8 @@ In case you skipped the tutorial or didn't fully understand it here's a quick ex
 
 </div>
 
-
-
 ## Guide to modding and solving conflicts
+
 On the image below you can see how my MO2 looks, I have a little over 100 addons and a lot of conflicts.
 
 <div style="text-align: center;">
@@ -126,8 +119,8 @@ On the image below you can see how my MO2 looks, I have a little over 100 addons
 
 </div>
 
-
 After installing few addons you might notice these icons:
+
 - ![Creating a new instance](mo2-images/7.png) This little lightning icon with a red minus next to it shows that the addon is being overwritten.
 - ![Creating a new instance](mo2-images/8.png) A lightning icon with green plus means the addon is overwriting another addon.
 - ![Creating a new instance](mo2-images/9.png) If you see both of these icons it means the addon is overwriting an addon and is being overwritten by one.
@@ -137,21 +130,24 @@ To make things work together you need to maintain a load order, that means that 
 
 A good start would be [Grok's Community Curated Add-ons List for Anomaly 1.5.1](https://www.moddb.com/mods/stalker-anomaly/addons/groks-anomaly-community-curated-add-ons-list).
 
-
-#### Is it better to use a modpack or do everything yourself?
+### Is it better to use a modpack or do everything yourself?
 
 If you are new to modding you might think simply downloading a modpack is the best option, but that might not be the case as most of the time modpacks are the vision of the person who created it - meaning it might have features you won't like and it can be difficult to remove them, you also can't know if it works fine as it's all packed into one folder.
 
-Using a modpack will also mean you won't be able to get help from the community with your crashes as only the modpack creator knows what changes were made and you'll have to rely on them to help you. 
+Using a modpack will also mean you won't be able to get help from the community with your crashes as only the modpack creator knows what changes were made and you'll have to rely on them to help you.
 
 Most of the time modpacks aren't being updated frequently and it's near impossible to install any other addon with them.
-## Solving conflicts 
+
+## Solving conflicts
+
 Most of the time it's pretty easy because most popular addons already have existing patches, for example if you wanted to install Boomsticks and Sharpsticks with JSRS you would put BaS first, then JSRS files and then the patch for JSRS that comes with BaS.
 
-#### Making patches yourself (Not recommended for beginners)
+### Making patches yourself (Not recommended for beginners)
+
 What if there is no patch available and the addons won't work together? You either have to choose which one you want or you can make a patch yourself, the best guide for that is [Anomaly modding resource](https://www.moddb.com/mods/stalker-anomaly/addons/anomaly-modding-resource-compatibility-patching) made by community member Jack-it.
 
 ## Installing addons the right way
+
 Remember that every addon you install needs to have only one gamedata folder, if you find an addon with many optional files you need to install it again every time and select only one gamedata.
 
 As you can see in the picture below I get a popup when trying to install JSRS because it has multiple files, select one and install it, then do it again with the second file (Applies for every addon).
@@ -182,25 +178,27 @@ In case you get this popup instead of the one above, you need to expand the file
 
 </div>
                                          
-In case MO2 crashes when clicking on "manual" addon installation add this text to file ModOrganizer.ini found in Modding/Mo2/: 
+In case MO2 crashes when clicking on "manual" addon installation add this text to file ModOrganizer.ini found in Modding/Mo2/:
 
 ```ini
 [CompletedWindowTutorials]
 InstallDialog=true
 ```
 
+### Reporting crashes
 
-#### Reporting crashes
 Please ignore this if you are using a modpack and report any crashes to the modpack "creator".
 
 If your game crashes and you don't know what caused it go to addon-discussion in Anomaly discord and post your load order along with a log from appdata/logs, it will be a text file named "xray_username".
 
 #### Converting from JSGME to Mod Organizer 2
-To do this you simply have to delete your "gamedata" folder (This will not delete your saves and MO2 will recreate the folder for you) and install the addons you had with MO2, if you don't want to reinstall them you can simply copy the contents of MODS folder to User/AppData/Local/ModOrganizer/Name of your instance/mods. 
+
+To do this you simply have to delete your "gamedata" folder (This will not delete your saves and MO2 will recreate the folder for you) and install the addons you had with MO2, if you don't want to reinstall them you can simply copy the contents of MODS folder to User/AppData/Local/ModOrganizer/Name of your instance/mods.
 
 If you installed addons manually you also need to delete your gamedata folder.
 
 #### Additional info
+
 If you have any ideas what I should change, fix or add in this guide feel free to ping me on discord (Starcry#4447)
 
 Inspired by [lazy stalker guide](https://lazystalker.blogspot.com/2020/11/mod-organizer-2-stalker-anomaly-addons.html).
@@ -208,7 +206,6 @@ Inspired by [lazy stalker guide](https://lazystalker.blogspot.com/2020/11/mod-or
 Link to my patreon [here ( ͡° ͜ʖ ͡°)](https://cdn.discordapp.com/attachments/831306141904404491/833351054707654706/provak.png).
 
 Credits:
-
     d_nan: did absolutely nothing
     Caesar_salad: also did absolutely nothing
 
