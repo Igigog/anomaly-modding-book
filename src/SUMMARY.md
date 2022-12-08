@@ -72,10 +72,9 @@ ___
 
 ___
 
-- [Scripting]()
-  - [Introduction to codebase]()
-  - [Codestyle]()
-  - [General suggestions]()
+- [Scripting](scripting/README.md)
+  - [Introduction to codebase](scripting/codebase_introduction.md)
+  - [Codestyle](scripting/codestyle.md)
   - [Callbacks]()
   - [Engine classes]()
   - [MCM]()
