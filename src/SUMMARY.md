@@ -77,9 +77,9 @@ ___
   - [Introduction to codebase](scripting/codebase_introduction.md)
   - [Codestyle](scripting/codestyle.md)
   - [Wetting our hands](scripting/wetting_hands.md)
-  - [Callbacks]()
+  - [Callbacks](scripting/callbacks.md)
   - [Engine classes]()
-  - [MCM]()
+  - [MCM](scripting/mcm.md)
   - [UI]()
   - [Scripted dialogues]()
 
