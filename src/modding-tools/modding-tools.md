@@ -88,7 +88,7 @@ Official SDK with community enhancements:
 
 ### SDK tools
 
-The versions of the SDK tools may differ depending on the version of the SDK itself
+> The versions of the SDK tools may differ depending on the version of the SDK itself
 
 - Actor Editor
 - Dialog Editor
@@ -125,21 +125,21 @@ ___
 
 - [OXR Texture Tool](https://github.com/revolucas/OXR-Texture-Tool) - This tools purpose is to unpack ui_icon_equipment.dds into separate individual icons so that they can be manipulated individually or merged more easily. This tool is capable of creating a new sprite sheet using the unpacked icons and writing the new geometry values (w,h,x,y) into the system configs. It also allows you to merge up to 4 existing unpacked ui_icon_equipment directories into a single sheet.
 
-- [BumpGenerator](https://sharedby.blomp.com/MT4WEx) - Intended for DXT compression of bumps together with simultaneous generation of bump#maps (the purpose of which is to correct errors introduced by compression). It works similarly to a similar function in KFK. As input textures, both standard ("blue") bump textures and bump textures used directly in the game with rearranged channels are supported. [Source Code](https://github.com/gunslingermod/BumpGenerator)
+- [BumpGenerator](https://sharedby.blomp.com/MT4WEx) - Intended for DXT compression of bumps together with simultaneous generation of bump#maps (the purpose of which is to correct errors introduced by compression). It works similarly to a similar function in KFK. As input textures, both standard ("blue") bump textures and bump textures used directly in the game with rearranged channels are supported.
+  - [Source Code](https://github.com/gunslingermod/BumpGenerator)
 
 - [Bump Generator by i-love-kfc](https://gitlab.com/i-love-kfc/bump-generator) - A simple bump and bump# texture generator from normal maps with the ability to use gloss maps, also, is capable of generating bump# for ready-made "green" bumps.
   - [More](bump-generator.md)
 
 - [THM Editor](https://gitlab.com/i-love-kfc/thm-editor/) - Utility for editing [.thm](../main-folders-and-files/file-formats/thm.md) files without the need to use the SDK
   - [More](thm-editor-by-i-love-kfc.md)
+
 - [THM Editor by Valerok](https://github.com/VaIeroK/THM-Editor) - ValeroK's version of the original THM Editor
   - [More](thm-editor-by-valerok.md)
 
 - [ThmValidator](https://sharedby.blomp.com/tnT8vj) - Allows you to check the [.thm](../main-folders-and-files/file-formats/thm.md) files in the selected directory and automatically fix the most common bugs that occur during manual editing.
 
-- [Substance 3D Painter](https://store.steampowered.com/app/1775390/Substance_3D_Painter_2022/)
-
-- [Paint.net](https://www.getpaint.net/) - Most often used to properly compress textures.
+- Any program capable of creating textures or opening [.dds](../main-folders-and-files/file-formats/dds.md) files (e.g. [Paint.net](https://www.getpaint.net/))
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 ## Parameters\LTX
 
-- [STLKObjectMan](https://drive.google.com/file/d/1OM2gZtj_Ubg7H03iI-Z_z3EAkwn1_S2R/view) - Universal parameters editor. Modifies \*.ltx and \*.xml files. (not compatible with Anomaly due to modified .ltx files)
+- [STLKObjectMan](https://drive.google.com/file/d/1OM2gZtj_Ubg7H03iI-Z_z3EAkwn1_S2R/view) - Universal parameters editor. Modifies \*[.ltx](../main-folders-and-files/file-formats/ltx.md) and \*[.xml](../main-folders-and-files/file-formats/xml.md) files. (not compatible with Anomaly due to modified [.ltx](../main-folders-and-files/file-formats/ltx.md) files)
 
 - [StalkerElementFinder](https://disk.yandex.ru/d/Rv-Mt1IAXyTihA%D0%B0) - A program for finding elements and resources
 
@@ -168,7 +168,7 @@ ___
 - [Sound Attribute Viewer And Tweaker](https://www.metacognix.com/files/stlkrsoc/index.html#:~:text=Sound%20Attribute%20Viewer%20and%20Tweaker,of%20NPCs%20to%20the%20sounds.) - Simple program that can reduce the work needed to view and/or edit STALKER sound file attributes used by all three STALKER games to determine initial volume, volume drop-off, and sensitivity of NPCs to the sounds
   - [More](savandt.md)
 
-- [StkOggCommentViewer](https://cdn.discordapp.com/attachments/978593574893535274/979058737270644776/StkOggCommentViewer.exe) - Allows viewing comments in an .ogg file
+- [StkOggCommentViewer](https://cdn.discordapp.com/attachments/978593574893535274/979058737270644776/StkOggCommentViewer.exe) - Allows viewing comments in an [.ogg](../main-folders-and-files/file-formats/ogg.md) file
 
 ___
 
@@ -182,14 +182,14 @@ ___
 
 ## Models
 
-- [OGF Editor](https://github.com/mortany/OGF-tool) - Tool for working with ogf format
-- [OGF Editor by Valerok](https://github.com/VaIeroK/OGF-tool) - Tool for working with .ogf and .dm format
+- [OGF Editor](https://github.com/mortany/OGF-tool) - Tool for working with .ogf format
+- [OGF Editor by Valerok](https://github.com/VaIeroK/OGF-tool) - Tool for working with .ogf and [.dm](../main-folders-and-files/file-formats/dm.md) format
   - [More](ogf-editor-by-valerok.md)
 
 - [MeshToolz](https://github.com/gunslingermod/MeshToolz) - Swiss knife for low-level editing of OGF models. Want to copy a piece of one model to another? Easy. Change texture paths and bindings? No problem. Move and scale an item by snapping it to another bone? No problem. Can work both interactively and in script processing mode.
   - [Scripts For MeshToolz](https://github.com/gunslingermod/additional_scopes)
 
-- [OGFViewer](https://github.com/mrnotbadguy/OGFViewer) - legacy model viewer for [.ogf](../main-folders-and-files/file-formats/README.md) format.
+- [OGFViewer](https://github.com/mrnotbadguy/OGFViewer) - legacy model viewer for .ogf format.
 
 - [ObjectParamsCopier](https://sharedby.blomp.com/BJRQn8) -  Allows you to quickly copy surface settings with the same name from one object file to another
 

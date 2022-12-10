@@ -129,7 +129,7 @@ ___
 
 ___
 
-- [Modding Tools](modding-tools/modding-tools.md)
+- [Modding Tools List](modding-tools/modding-tools.md)
   - [SDK 0.7](sdk/README.md)
     - [Interface](sdk/interface.md)
     - [Actor Editor](sdk/actor-editor.md)
