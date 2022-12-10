@@ -19,6 +19,7 @@ ___
   - [Installing MO2](getting-started/installing-mo2.md)
   - [Addon installers](getting-started/addon-installers.md)
   - [Package Naming for MO2](getting-started/package-naming.md)
+  - [Configuring VSCode-like programs to handle game files](getting-started/vs-code-game-files-setup.md)
 
 ___
 
