@@ -2,91 +2,128 @@
 
 ___
 
-This section describes the main files and folders for the game
+## Root folder
 
-## Folders
+**fsgame.ltx**
 
-<details>
-    <summary>Appdata</summary>
-
- - ### Logs
-This is where the game logs are created and stored (log of loading objects, textures, etc.)
-
- - ### Savedgames
-This is where game saves are created and stored. Inside are files with the extensions .scop and .scoc.
-
- - ### Screenshoots
-This is where game screenshots are created and stored
-
- - ### Shaders_cache
-This is where the game shader cache is created and stored
-
-</details>
-
-<details>
-    <summary>Gamedata</summary>
-
-Folder with files from any game in the S.T.A.L.K.E.R. series. Initially it does not exist explicitly, all game data is "embedded" in the game, but when you install modifications and even patches the directory will be created. Gamedata overrides standard game files: if there are no files in it, often their base versions are used.
-
-- ### Textures Folder
-
-This folder usually contains textures.
-
-- ### Objects Folder
-
-Path to the folder with the original 3D objects and animations. Usually found in the X-Ray SDK in the rawdata\objects folder.
-
-</details>
+> Contains paths to folders with the necessary files
 
 ___
 
-## Files
+## appdata
 
-<details>
-    <summary>Main Files</summary>
+**logs**
 
-- ### "username".ltx
+> This is where the game logs are created and stored (log of loading objects, textures, etc.)
 
-This file describes the game settings.
+**savedgames**
 
-- ### fs.ltx
+> This is where game saves are created and stored. Inside are files with the extensions .scop and .scoc.
 
-This file is in the X-Ray SDK and stores the directory paths.
+**screenshoots**
 
-- ### gamemtl.xr File
+> This is where game screenshots are created and stored
 
-This file stores surface materials.
+**shaders_cache**
 
-- ### lanims.xr
+> This is where the game shader cache is created and stored
 
-Library of light animations.
+**"username".ltx**
 
-- ### particles.xr
+> This file describes the game settings.
 
-Particle Systems.
+___
 
-- ### senvironment.xr
+## bin
 
-Sound Environment.
+> Contains the .exe files of the game renders, the configuration for OpenAL and .dll libraries
 
-- ### shaders.xr
+___
 
-Database of the shaders used by the graphics engine.
+## db
 
-- ### shaders_xrlc.xr
+> Contains packaged game files. **This folder has a higher priority of files, which means that if there is no file in the gamedata folder, the game will look for it here**
 
-Database of shaders used by the layer compiler
+___
 
-- ### Textures.ltx
+## gamedata
 
-Contains paths to all textures
+> Folder with game files
 
-- ### EShader File
+### <center>Folders</center>
 
-This file contains descriptions of the shader settings. EShader is the engine shader, which is responsible for the appearance of the surface.
+**ai**
 
-- ### CShader File
+> Contains the [.efd](file-formats/efd.md) files needed for the AI
 
-This file contains descriptions of the settings used by the level geometry compiler (xrLC.exe). CShader is a compilation shader, specifying to the level compiler the properties of the final (game) level geometry. The source geometry, depending on the compiler shader, may have no visible or tangible (for collisions) geometry, have a different way of storing lighting, etc.
+**anims**
 
-</details>
+> Contains [.anm](file-formats/anm.md), [.anms](file-formats/anm.md) files for camera animation and .ppe files for postprocessing
+
+**configs**
+
+> Contains [.ltx](file-formats/ltx.md) for configuration files and [.xml](file-formats/xml.md) for text
+
+**levels**
+
+> Contains the [necessary files for the levels](file-formats/README.md#game-level)
+
+**meshes**
+
+> Contains .ogf, [.dm](file-formats/dm.md), [.omf](file-formats/omf.md) file needed for models and skeleton animation
+
+**scripts**
+
+> Contains .script files for game scripts
+
+**shaders**
+
+> Contains [various files for shaders](file-formats/README.md#shaders)
+
+**sounds**
+
+> Contains [.ogg](file-formats/ogg.md) files for various music, sounds, ambient, etc.
+
+**spawns**
+
+> Contains a file `all.spawn` - it describes all spawn spots on locations
+
+**textures**
+
+> Contains [.dds](file-formats/dds.md) textures
+
+### <center>Files</center>
+
+**gamemtl.xr**
+
+> Contains [game materials](../shaders/shaders-list/materials-list.md)
+
+**lanims.xr**
+
+> Contains animations of lights
+
+**particles.xr**
+
+> Contains Particles
+
+**senvironment.xr**
+
+> Contains settings for sound environment zones
+
+**shaders.xr**
+
+> Database of the [shaders used by the graphics engine](../shaders/shaders-list/shaders-list.md)
+
+**shaders_xrlc.xr**
+
+> Database of [shaders used by the level compiler](../shaders/shaders-list/compiler-shaders-list.md)
+
+**textures.ltx**
+
+> Contains pathes to all textures
+
+___
+
+## tools
+
+> Contains some resources for modding, like a version icon for addons, a resource converter and .bat files for unpacking .db files

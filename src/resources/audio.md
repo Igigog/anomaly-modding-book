@@ -2,10 +2,10 @@
 
 ___
 
-## All the soundtrack from the original trilogy
+## All soundtracks from the original trilogy
 
 | Artist | Soundtrack name | Preview | Note |
----|---|---|---|
+:---:|---|:---:|---|
 | MoozE | Theme of Escape | [Preview](https://youtu.be/pv1CgfFY6nY) |  |
 | MoozE | Stalker_extract (Alternative Version of "Theme of Escape") | [Preview](https://youtu.be/WF2kj3btLlQ) | Cut from the original game |
 | MoozE | Theme of Garbage | [Preview](https://youtu.be/7GXAGQgC9XI) |  |
@@ -38,8 +38,8 @@ ___
 | MoozE | Epilogue | [Preview](https://youtu.be/Ji66_C70I84) |  |
 | MoozE | Battle exp. | [Preview](https://youtu.be/yJgaZNmsAlY) | Cut from the original game |
 | MoozE | Predator | [Preview](https://youtu.be/RXPgDbzM-5s) | Cut from the original game |
-| MoozE | Trailer part 1 | [Preview]() |  |
-| MoozE | Trailer part 2 | [Preview]() |  |
+| MoozE | Trailer part 1 | [Preview](https://youtu.be/inID4-GjNLA) |  |
+| MoozE | Trailer part 2 | [Preview](https://youtu.be/Zyr2Uj3wAj4) |  |
 | MoozE | Mud | [Preview](https://youtu.be/CEt3nF20-Qw) | Cut from the original game |
 | MoozE | Mechanized Patrol  | [Preview](https://youtu.be/npAUK8iJ67c) |  |
 | Addaraя | Gurza Dreaming | [Preview](https://youtu.be/UqgAtnS0_bc) |  |
@@ -65,9 +65,11 @@ ___
 | Alexey Omelchuk | Combat Theme 4 | [Preview](https://youtu.be/WQU-GYROIgQ) |  |
 | Alexey Omelchuk | Outro | [Preview](https://youtu.be/cpi_VabA53M) |  |
 
-[Full OST Archive](https://sharedby.blomp.com/AJm2yS)
+> [Full OST Archive](https://sharedby.blomp.com/AJm2yS)
 
-## All the soundtrack from Anomaly
+___
+
+## All soundtracks from Anomaly
 
 | Artist | Soundtrack name | Preview |
 ---|---|---|

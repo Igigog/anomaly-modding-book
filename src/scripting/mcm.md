@@ -1,7 +1,8 @@
 # MCM
 
 ---
-The greatest victory is that which requires no battle. - Sun Tzu
+
+> "The greatest victory is that which requires no battle." - Sun Tzu
 
 ---
 

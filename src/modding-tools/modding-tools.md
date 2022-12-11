@@ -104,7 +104,7 @@ ___
 
 - Notepad
 - [Notepad++](https://notepad-plus-plus.org/downloads/)
-- [Visual Studio Code](https://code.visualstudio.com/)
+- [Visual Studio Code](https://code.visualstudio.com/) or [VSCodium](https://vscodium.com/)
   - [LTX Support Extension by AziatkaVictor](https://marketplace.visualstudio.com/items?itemName=AziatkaVictor.ltx-support) - adds support for the logic syntax from S.T.A.L.K.E.R. CoP
 
 ___

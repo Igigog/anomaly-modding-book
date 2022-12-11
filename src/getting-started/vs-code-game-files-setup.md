@@ -44,11 +44,16 @@ ___
 You need to install the following extensions:
 
 1. [audio-preview by sukumo28](https://marketplace.visualstudio.com/items?itemName=sukumo28.wav-preview) - provides more detailed data about the sound files. Needed for [.ogg](../main-folders-and-files/file-formats/ogg.md) files
+
 2. [LTX Support by AziatkaVictor](https://marketplace.visualstudio.com/items?itemName=AziatkaVictor.ltx-support) - adds support for [.ltx](../main-folders-and-files/file-formats/ltx.md) files
    - extension can be configured, to do this in his settings need to specify the path to the scripts of the game
+
 3. Two extensions for Lua. Needed for .script files:
    - [LUA by keyring](https://marketplace.visualstudio.com/items?itemName=keyring.Lua)
-   - [LUA by Tencent](https://marketplace.visualstudio.com/items?itemName=yinfei.luahelper)
+   - [LUA by yinfei](https://marketplace.visualstudio.com/items?itemName=yinfei.luahelper)
+
+   - You need a fully unpacked scripts folder to work. You also need to create a workspace for your project. Some files will always give error warnings (e.g. `lua_help` - This can be deleted or added to exceptions in the extension from yinfei)
+
 4. [Open in External App by YuTengjing](https://marketplace.visualstudio.com/items?itemName=YuTengjing.open-in-external-app) - ability to open the file in other applications. Needed for .ogf, [.object](../main-folders-and-files/file-formats/object.md), [.dm](../main-folders-and-files/file-formats/dm.md), [.omf](../main-folders-and-files/file-formats/omf.md), [.dds](../main-folders-and-files/file-formats/dds.md), [.thm](../main-folders-and-files/file-formats/thm.md), .ogm files
    - The extension can be configured by writing in `settings.json` in the `"openInExternalApp.openMapper": [` needed programs. Example:
 
@@ -94,4 +99,5 @@ You need to install the following extensions:
 5. HLSL support and preview for shaders:
    - [Shader languages support for VS Code by slevesque](https://marketplace.visualstudio.com/items?itemName=slevesque.shader)
    - [HLSL preview by A2K](https://marketplace.visualstudio.com/items?itemName=A2K.hlsl-preview)
+
 6. [TGA Image Preview by lunarwtr](https://marketplace.visualstudio.com/items?itemName=lunarwtr.tga-image-preview) - Preview .tga files
