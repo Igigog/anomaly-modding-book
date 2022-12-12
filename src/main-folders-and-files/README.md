@@ -66,7 +66,7 @@ ___
 
 **levels**
 
-> Contains the [necessary files for the levels](file-formats/README.md#game-level)
+> Contains the [necessary files for the levels](file-formats/index.html#game-level)
 
 **meshes**
 
@@ -78,7 +78,7 @@ ___
 
 **shaders**
 
-> Contains [various files for shaders](file-formats/README.md#shaders)
+> Contains [various files for shaders](file-formats/index.html#shaders)
 
 **sounds**
 

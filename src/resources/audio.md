@@ -72,7 +72,7 @@ ___
 ## All soundtracks from Anomaly
 
 | Artist | Soundtrack name | Preview |
----|---|---|
+:---:|---|:---:|
 | Gates of Morheim | Dying Machine | [Preview](https://gatesofmorheim.bandcamp.com/track/dying-machine-2) |
 | Gates of Morheim | Mechanical Consciousness | [Preview](https://gatesofmorheim.bandcamp.com/track/mechanical-consciousness) |
 | Gates of Morheim | Steel Dawn | [Preview](https://gatesofmorheim.bandcamp.com/track/steel-dawn) |
