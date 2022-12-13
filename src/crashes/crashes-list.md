@@ -13,6 +13,8 @@ ___
 
 ___
 
+> Warning! This list is only for the vanilla version of the game! If you use engine edits, the logs of crashes may be different!
+
 ## <center>Models</center>
 
 ### Line 120
