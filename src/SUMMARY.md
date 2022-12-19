@@ -52,6 +52,7 @@ ___
     - [level](main-folders-and-files/file-formats/level.md)
     - [.ltx](main-folders-and-files/file-formats/ltx.md)
     - [.err](main-folders-and-files/file-formats/err.md)
+    - [.geom](main-folders-and-files/file-formats/geom.md)
     - [.efd](main-folders-and-files/file-formats/efd.md)
     - [.seq](main-folders-and-files/file-formats/seq.md)
     - [.som](main-folders-and-files/file-formats/som.md)

@@ -121,7 +121,7 @@ ___
 | .env_mod | local environment modifiers (environment), set areas on the location with lighting different from the main weather cycle. |
 | .fog_vol | Volumetric fog |
 | .game | Coordinates of the player's spawn in the multiplayer game. Outdated file. |
-| .geom | Contains vertices (position, normals, texture coordinates, etc.), indices, and information for smooth geometry detail. |
+| [.geom](../file-formats/geom.md) | Contains vertices (position, normals, texture coordinates, etc.), indices, and information for smooth geometry detail. |
 | .geomx | It contains only geometry. In the renderer it is used in the shadow rendering passes, due to the fact that there is less information - loading data into the buffers - faster. |
 | .gtc | Cross table of correspondence between the location graph and the AI grid. It is created when compiling the map in LE KFK (xrAI). |
 | [.hom](../file-formats/hom.md) | Mapping of hierarchical cutoffs |
