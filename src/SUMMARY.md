@@ -117,9 +117,14 @@ ___
 
 ___
 
+- [AI]()
+  - [Editing .efd files]()
+
+___
+
 - [Engine](engine/README.md)
   - [Console commands](engine/console-commands.md)
-  - [Compiling]()
+  - [Compiling](engine/compiling.md)
   - [Architecture]()
   - [Engines List](engine/engines-list.md)
 
