@@ -149,7 +149,7 @@ ___
 > Based on this, we get, for example, this view of the vertex:
 
 **Brush**
-|  | Значение | Смещение | Размер |
+|  | Value | Offset | Size |
 ---|---|---|---|
 | Coordinate X | 30.76 | 0 | DWord(4) |
 | Coordinate Z | 0.2 | 4 | DWord(4) |
