@@ -168,9 +168,11 @@ ___
 - [Sound Attribute Viewer And Tweaker](https://www.metacognix.com/files/stlkrsoc/index.html#:~:text=Sound%20Attribute%20Viewer%20and%20Tweaker,of%20NPCs%20to%20the%20sounds.) - Simple program that can reduce the work needed to view and/or edit STALKER sound file attributes used by all three STALKER games to determine initial volume, volume drop-off, and sensitivity of NPCs to the sounds
   - [More](savandt.md)
 
-- [OGG Editor](https://disk.yandex.ru/d/Dcyo0Nt3A3b5g) - Утилита предназначена для быстрого просмотра и редактирования звуковых комментариев
+- [OGG Editor](https://disk.yandex.ru/d/Dcyo0Nt3A3b5g) - This utility is designed to quickly view and edit audio comments
 
 - [StkOggCommentViewer](https://cdn.discordapp.com/attachments/978593574893535274/979058737270644776/StkOggCommentViewer.exe) - Allows viewing comments in an [.ogg](../main-folders-and-files/file-formats/ogg.md) file
+
+- [OggCommentDecompiler](https://ap-pro.ru/applications/core/interface/file/attachment.php?id=22581) - Saves comments in a .ltx file, whose name and path are equivalent to the sound file
 
 ___
 

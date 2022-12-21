@@ -24,6 +24,7 @@ ___
 ___
 
 **Types of variables**
+
 | Type code | Value |
 ---|---|
 | 1 | DWord(4) + DWord(4) |
@@ -74,6 +75,7 @@ ___
 > At the very beginning of any vertex are the coordinates of its placement, so the vertex format does not include a description of the coordinates. There are only three vertex formats in the 2215 maps:
 
 **Vegetation**
+
 |  | Value | Size |
 ---|---|---|
 | zero | 0 | Word(2) |
@@ -96,6 +98,7 @@ ___
 > Thus, the total length of one vegetation vertex equals 32 bytes.
 
 **Brush**
+
 |  | Value | Size |
 ---|---|---|
 | zero | 0 | Word(2) |
@@ -122,6 +125,7 @@ ___
 > The total length of one brash vertex is 36 bytes.
 
 **Entity**
+
 |  | Value | Size |
 ---|---|---|
 | zero | 0 | Word(2) |
@@ -149,6 +153,7 @@ ___
 > Based on this, we get, for example, this view of the vertex:
 
 **Brush**
+
 |  | Value | Offset | Size |
 ---|---|---|---|
 | Coordinate X | 30.76 | 0 | DWord(4) |
