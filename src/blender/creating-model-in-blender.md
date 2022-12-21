@@ -33,12 +33,12 @@ Textures can be created in any program designed for this purpose, or you can sim
 Texture:
 ![model-example-texture](blender-images/model-example-texture.png)
 
-- ### Important note about texture maps
+### Important note about texture maps
 
 In STALKER, due to its outdated engine, only the following texture maps are used:
 
 - Color Map ([.dds](../main-folders-and-files/file-formats/dds.md))
-- Normal Maps (For Stalker they are used as [.bump](../main-folders-and-files/file-formats/bump.md) and .bump#) (The Blender X-Ray addon does not support the [.bump](../main-folders-and-files/file-formats/bump.md) format at this time (June 2022).)
+- Normal Maps (For Stalker they are used as [.bump](../main-folders-and-files/file-formats/bump.md) and [.bump#](../main-folders-and-files/file-formats/bump_hash.md)) (The Blender X-Ray addon does not support the [.bump](../main-folders-and-files/file-formats/bump.md) format at this time (June 2022).)
 
 So extra texture maps will have to be removed.
 
@@ -88,6 +88,8 @@ In the "Viewer" list, we can click on "Close Folder (![svg-icon close-folder](bl
 
 ![close-viewer-folder centered](blender-images/close-viewer-folder.png)
 
+## Creating a dynamic model
+
 At this point we have to decide what type of model we want to use (static, dynamic, or something else). (About the types of objects you can learn here)
 
 It was decided to make our object dynamic.
@@ -135,16 +137,16 @@ Also make sure that the checkbox next to "Vertex Groups" (![svg-icon checkbox](b
 These actions allowed us to bond our object and bone, but not yet to the fullest extent.
 
 Next step:
-First select the bone after selecting the model, press Ctrl + P. A list appears, select "Bone".
+First select the bone after selecting the model, press Ctrl + P. A list appears, select "Bone" (or other settings, because sometimes selecting "Bone" may not help).
 ![parenting centered](blender-images/parent-to-bone.png)
 
-This allowed the bone and the model to be fully bonded together. Now when the bone moves or rotates, the model will move with it.
+> This allowed the bone and the model to be fully bonded together. Now when the bone moves or rotates, the model will move with it.
 
 Now you have to set the bone properties for X-Ray.
 
 ___
 
-- ### Bone
+### Bone
 
 Select the bone and go to the "Bone Properties" (![svg-icon bone-properties-logo](blender-images/blender-images-icons/bone-propertties-logo.svg)) tab.
 

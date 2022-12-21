@@ -96,6 +96,7 @@ ___
 - [Animating]()
   - [Blender](blender/README.md)
     - [Creating animations for the camera](blender/creating-camera-animations.md)
+    - [Creating an animation in Blender for a HUD object](blender/creating-hud-animation-in-blender.md)
     - [Editing existing animations](blender/editing-existing-animations.md)
 
 ___
