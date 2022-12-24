@@ -1,10 +1,10 @@
 # Codestyle
 
-----
+___
 
 Every opinion on code style is valid. Mine is not only valid, but also right.
 
----
+___
 
 Hehe, I'm joking. Please don't hate me :<
 

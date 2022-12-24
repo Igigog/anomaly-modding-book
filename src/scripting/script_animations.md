@@ -1,15 +1,12 @@
-<h1>Scripted animations</h1>
+# Scripted animations
 
+____
 
-<h2>Theory</h2>
-
+## Theory
 
 The first thing to know is that animations can be divided into a few categories:
 
-<h3>Motions</h3>
-
-
-
+### Motions
 
 * They represent actual hands, NPCs or actor movements
 * Stored in .omf files
@@ -21,27 +18,22 @@ Why so many details, you may wonder? Point is, a motion can have interesting use
 
 Also, an .omf file itself is not a motion. .omf files usually store multiple motions. If you want to add a new motion, you’ll need to either
 
-
-
 1. put your motion into an existing .omf file or
 2. make a new .omf file that will store your motions.
 
-<h3>.anm animations</h3>
-
+### .anm animations
 
 In turn, these can be divided into two subcategories:
 
-<h4>Camera animations</h4>
+#### Camera animations
 
+These are much simpler due to their nature. Camera animations represent a screen effect - for example, leaning when an actor equips a helmet or a suit, ‘kickback’ effect when enhanced recoil effects are enabled, camera animations when reloading (mostly used by weapon mods like Boomsticks and Sharpsticks; not to be confused with hands motions) etc.
 
-These are much simpler due to their nature. Camera animations represent a screen effect - for example, leaning when an actor equips a helmet or a suit, ‘kickback’ effect when enhanced recoil effects are enabled, camera animations when reloading (mostly used by weapon mods like Boomsticks and Sharpsticks; not to be confused with hands motions) etc. 
-
-<h4>‘Universal’ animations</h4>
-
+#### ‘Universal’ animations
 
 This is not an official name, of course, it’s just something I came up with to distinguish these from the simple screen effects. I’d better describe them with an example.
 
-In Anomaly, there’s a ‘misfire’ animation. Try to shoot a gun without any ammo, and you’ll see slight hands movement. This is ‘misfire.anm’ animation. 
+In Anomaly, there’s a ‘misfire’ animation. Try to shoot a gun without any ammo, and you’ll see slight hands movement. This is ‘misfire.anm’ animation.
 
 Point is, this is not exactly a screen effect type of .anm file, and yet this is not an .omf-type motion. It can be used with any object the actor is holding, i.e. it’s not tied to a specific gun.
 
@@ -49,76 +41,65 @@ So technically, all the .anm files are the same and are played with the same fun
 
 .anm are separate files unlike motions from .omf files, and every single .anm file can be just placed into anims/ folder in gamedata and used directly.
 
-<h3>.ppe effects</h3>
-
+### .ppe effects
 
 These are camera animations with more possibilities: besides camera movements, they can also include, for example, duality effect (when drinking vodka or when there was an explosion next to the actor), grain effect in radiation zones etc. Vanilla night vision is also a .ppe effect.
 
 .ppe files work similarly to .anm files - they’re separate and go to anims/ folder as well.
 
-<h2>Practice</h2>
+____
 
+## Practice
 
 Now let’s have a look at what we need to play animations in scripts.
 
-<h3>Motions</h3>
-
+### Motions
 
 To play a motion, we need a few components:
 
-
-
-1. An .ltx file containing the basic parameters of the motion we’re going to use.
+1. An [.ltx](../main-folders-and-files/file-formats/ltx.md) file containing the basic parameters of the motion we’re going to use.
 2. A script function to play it.
 
-<h4>Setting up motion parameters</h4>
+#### Setting up motion parameters
 
-
-
-
-1. Create a config .ltx file in **configs/items/items** and give it any name, but make sure it starts with** items_**. Example: **items_my_anims.ltx**.
+1. Create a config [.ltx](../main-folders-and-files/file-formats/ltx.md) file in **configs/items/items** and give it any name, but make sure it starts with **items_**. Example: **items_my_anims.ltx**.
 2. Set the parameters. We’ll examine them by looking at this example.
 
-    _[anim_my_sec]_
+```ini
 
+_[anim_my_sec]_
 
-    _hands_position              	= 0.033, -0.155, 0.1_
+    _hands_position              = 0.033, -0.155, 0.1_
 
+    _hands_orientation           = 0, 0, 0_
 
-    _hands_orientation           	= 0, 0, 0_
+    _hands_position_16x9         = 0.033, -0.155, 0.1_
 
+    _hands_orientation_16x9      = 0, 0, 0_
 
-    _hands_position_16x9         	= 0.033, -0.155, 0.1_
+    _anm_my_anim                 = name_of_motion_that_will_be_played_
 
+```
 
-    _hands_orientation_16x9      	= 0, 0, 0_
+**[anim_my_sec]** is an animation section name. It’ll be used in the script.
 
+**hands_position**, **hands_orientation**, **hands_position_16x9** and **hands_orientation_16x9** are hands position/orientation parameters. They work similarly to weapon position parameters.
 
-    _anm_my_anim                  	= name_ of_motion_that_will_be_played_
+**anm_my_anim** is a motion name. From what I saw, it should always be started with **anm_** in such a config. Not to be confused with an .omf file name. For example, if your .omf file is called **my_new_file.omf** and it stores a motion called **my_motion_1**, specify **my_motion_1_** here.
 
+To make a test placeholder, you can also open any weapon config file and choose any of the motions specified there (like, _anm_ak74_reload_, \_anm_svd_sprint _etc.)
 
-    **[anim_my_sec] **is an animation section name. It’ll be used in the script.
+#### Script function
 
+The function that lets you play a motion is:
 
-    **hands_position**, **hands_orientation**, **hands_position_16x9 **and **hands_orientation_16x9 **are hands position/orientation parameters. They work similarly to weapon position parameters.
-
-
-    **anm_my_anim **is a motion name. From what I saw, it should always be started with **anm_** in such a config. Not to be confused with an .omf file name. For example, if your .omf file is called_ **my_new_file.omf**_ and it stores a motion called **my_motion_1**, specify **my_motion_1_ _**here.
-
-
-    To make a test placeholder, you can also open any weapon config file and choose any of the motions specified there (like, _anm_ak74_reload_, _anm_svd_sprint _etc.)
-
-
-<h4>Script function</h4>
-
-
-The function that lets you play a motion is: 
+```lua
 
 _game.play_hud_motion(hands, anim_section_name, motion_name, restart, speed)_
 
+```
+
 Now let’s have a closer look at its arguments.
-
-
 
 1. (int) **hands**
     1. Specifies what hands will be used to play an animation. 1 - left hand only, 0 - right hand only, 2 - both hands.
@@ -131,67 +112,75 @@ Now let’s have a closer look at its arguments.
     6. In our example this is **anm_my_anim**.
 4. (bool) **restart**
     7. Specified whether or not an animation can be restarted after it was finished, or it should only play once. Can be True or False.
-    8. Note that setting it to _false _with a looped animation may not work. It must be stopped manually - we’ll describe it later.
+    8. Note that setting it to \_false _with a looped animation may not work. It must be stopped manually - we’ll describe it later.
     9. This one is a bit unclear - it’s missing from lua_help.script, and I’m not sure if I understood how it works correctly.
 5. (float) **speed**
     10. Sets the playback speed of an animation. Example: 0.5, 1,2, 5.5 etc.
 
-<h4>Supplementary functions</h4>
+#### Supplementary functions
 
+```lua
 
 _game.hud_motion_allowed()_
 
+```
+
 Checks if a hands motion can be played at the moment. Useful as an additional safety check. Returns True or False.
+
+```lua
 
 _game.get_motion_length(anim_section_name, motion_name, speed)_
 
-Gets the specified motion length. The parameters are identical to those in _play_hud_motion_.
+```
+
+Gets the specified motion length. The parameters are identical to those in `_play_hud_motion_`.
 
 Note that it returns time in milliseconds, so in order to get the actual length you’ll need to divide the result by 1000. Useful to know when the motion is over.
 
+```lua
+
 _game.stop_hud_motion()_
+
+```
 
 It will stop any hands motion that is currently playing (since it can’t accept a specific motion as an argument), not only the one you’re playing in your script.
 
-<h4>Things to consider</h4>
+#### Things to consider
 
-
-
-
-1. It’s safer to always stop the looped animations explicitly. This can be done by: 
+1. It’s safer to always stop the looped animations explicitly. This can be done by:
     1. playing a non-looped and non-restart animation - the previous one will be stopped.
-    2. calling _game.stop_hud_motion()_. 
+    2. calling `_game.stop_hud_motion()_`.
 2. Consider adding more protection from breaking something.
-    3. Know when to stop an animation and how not to make it looped when it’s not wanted. Remember to check the necessary conditions to make sure it makes sense to play it at all at the current moment.
-    4. Know the callbacks you’re using to play animations. This may affect the animation behavior. Incorrect callback usage may lead to unwanted results, softlocks or sometimes even crashes.
-    5. Call _game.only_allow_movekeys(true) _if you don’t want the user to break an animation by pressing any action keys (like item quick use), and then restore the controls with _game.only_allow_movekeys(false)_.
-    6. _hide_hud_inventory()_ and _db.actor:activate_slot(0)_ can be used to close the backpack inventory or force hide an active weapon if needed. Detectors can be manipulated in a similar way with: 
+    1. Know when to stop an animation and how not to make it looped when it’s not wanted. Remember to check the necessary conditions to make sure it makes sense to play it at all at the current moment.
+    2. Know the callbacks you’re using to play animations. This may affect the animation behavior. Incorrect callback usage may lead to unwanted results, softlocks or sometimes even crashes.
+    3. Call `_game.only_allow_movekeys(true)_` if you don’t want the user to break an animation by pressing any action keys (like item quick use), and then restore the controls with `_game.only_allow_movekeys(false)_`.
+    4. `_hide_hud_inventory()_` and `_db.actor:activate_slot(0)_` can be used to close the backpack inventory or force hide an active weapon if needed. Detectors can be manipulated in a similar way with:
 
-        _local det = db.actor:active_detector() or nil_
+```lua
 
-
-        _det:switch_state(2)_
-
-
-        and then restored with _det:switch_state(1)_.
+    _local det = db.actor:active_detector() or nil_
 
 
-<h3>.anm animations</h3>
+    _det:switch_state(2)_
 
 
-It’s simpler to play these. Here we don’t need any configs. The files are played directly. The function is _game.play_hud_anm(path, hands, speed, power, looped, restart)_.
+    and then restored with _det:switch_state(1)_.
+
+```
+
+### .anm animations
+
+It’s simpler to play these. Here we don’t need any configs. The files are played directly. The function is `_game.play_hud_anm(path, hands, speed, power, looped, restart)_`.
 
 In this case I assume the played animation is “misfire.anm” mentioned earlier - I used this function for it in my addon. You can try it with different animations.
 
 The arguments are:
 
-
-
 1. (string) **path**
     1. Path to the .anm file.
-    2. It is predefined that a file is in the **gamedata/anims** folder. That being said, the path should look like this, for example: _"camera_effects\\actor_move\\strafe_left.anm"_. 
-    3. The real path is _gamedata/anims/camera_effects/actor_move/strafe_left.anm._
-    4. If the file is in the root **anims/ **folder, just specify the file name.
+    2. It is predefined that a file is in the **gamedata/anims** folder. That being said, the path should look like this, for example: `_"camera_effects\\actor_move\\strafe_left.anm"_`.
+    3. The real path is `_gamedata/anims/camera_effects/actor_move/strafe_left.anm._`
+    4. If the file is in the root **anims/** folder, just specify the file name.
 2. (int) **hands**
     5. Specifies what hands will be used to play an animation. 1 - left hand only, 0 - right hand only, 2 - both hands.
 3. (float) **speed**
@@ -203,58 +192,59 @@ The arguments are:
 6. (bool) **restart**
     9. Specified whether or not an animation can be restarted after it was finished, or it should only play once. Can be True or False.
 
-<h4>Supplementary functions</h4>
+#### Supplementary functions
 
+```lua
 
 _game.stop_hud_anm(path, force)_
 
-Makes it possible to stop a specific .anm from playing. _path _is identical to the one above. _force _is a boolean parameter which makes it possible to force stop it - a bit more ‘harsh’ method.
+```
+
+Makes it possible to stop a specific .anm from playing. _path_ is identical to the one above. _force_ is a boolean parameter which makes it possible to force stop it - a bit more ‘harsh’ method.
+
+```lua
 
 _game.stop_all_hud_anms(boolean)_
 
+```
+
 Stops all .anm’s that are currently played.
+
+```lua
 
 _game.set_hud_anm_time(path, time)_
 
-<h4>Things to consider</h4>
+```
 
+#### Things to consider
 
-
-
-1. Unlike motions, .anm’s can be stopped directly by calling _game.stop_hud_anm_.
+1. Unlike motions, .anm’s can be stopped directly by calling `_game.stop_hud_anm_`.
 2. .anm’s can be ‘layered’ - i.e. it’s possible to play two or more .anm files at the same time. This can provide interesting and good-looking results.
 3. However, it may be tricky to play a few .anm’s with the same name at the same time because the function relies on the file name (which is already played in this case). If you want to play the same effect but with different parameters, consider making a copy of the .anm you use, give it another name and call them with two functions with different arguments.
 
-<h3>.ppe effects</h3>
-
+### .ppe effects
 
 These are the functions for them:
 
-
-
-1. _level.add_pp_effector(path,id,looped)_
-2. _level.set_pp_effector_factor(id,power)_
-3. _level.remove_pp_effector(id)_
+1. `_level.add_pp_effector(path,id,looped)_`
+2. `_level.set_pp_effector_factor(id,power)_`
+3. `_level.remove_pp_effector(id)_`
 
 The first one is used to start a .ppe effect. Arguments:
 
-
-
 1. (string) **path**
-    1. It works absolutely the same way the **path **argument from _game.play_hud_anm _does.
+    1. It works absolutely the same way the **path** argument from `_game.play_hud_anm_` does.
 2. (int) **id**
-    2. An ID of the effect. Can be any number.
-    3. Used for removal of the effect later on.
+    1. An ID of the effect. Can be any number.
+    2. Used for removal of the effect later on.
 3. (bool) **looped**
-    4. Defines if the effect will loop until stopped by any means. Can be True or False.
+    1. Defines if the effect will loop until stopped by any means. Can be True or False.
 
-The second one is used to alter an already existing effect added by _add_pp_effector_. Arguments:
-
-
+The second one is used to alter an already existing effect added by `_add_pp_effector_`. Arguments:
 
 1. (int) **id**
     1. The ID of the previously created effect.
 2. (float) **power**
-    2. Effect intensity factor from 0 to 1.
+    1. Effect intensity factor from 0 to 1.
 
-The third one stops and removes the added effect. The only argument is **id **- use the same one you specified when adding the effect with _add_pp_effector_.
+The third one stops and removes the added effect. The only argument is **id** - use the same one you specified when adding the effect with `_add_pp_effector_`.

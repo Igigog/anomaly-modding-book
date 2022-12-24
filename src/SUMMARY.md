@@ -83,6 +83,7 @@ ___
   - [MCM](scripting/mcm.md)
   - [UI]()
   - [Scripted dialogues]()
+  - [Script Animations](scripting/script_animations.md)
 
 ___
 

@@ -1,12 +1,12 @@
 # Scripting
 
-----
+___
 
 Hey, you. You're finally awake! You were trying to cross the border, right?
 
------
+___
 
-So, well, scripting. 
+So, well, scripting.
 
 Writing scripts for this game is hard, really. You will want to start with  [Lua book](https://www.lua.org/pil/contents.html) to learn the basics of Lua programming language. I don't know how good it is at teaching general programming concepts, but you surely are brave enough to not concede before a mere programming skill? Right?)
 

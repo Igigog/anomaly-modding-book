@@ -1,10 +1,10 @@
 # Callbacks
 
-----
+___
 
 You could've been spending time with a girl instead.
 
-----
+___
 
 Callbacks are cool! We use them all over the place!
 
@@ -14,7 +14,8 @@ Whew, perfection.
 
 Callbacks are the main way of communication between the game and your code. The idea is: you want to call your function when something happens in a game, so you subscribe to a callback of this "something" with your function. 
 
-In the last chapter you've seen two callbacks: 
+In the last chapter you've seen two callbacks:
+
 1. `actor_on_first_update`, which is called once after game load
 2. `on_key_press`, which is called every time a player presses a key (xD why am I even explaining this)
 

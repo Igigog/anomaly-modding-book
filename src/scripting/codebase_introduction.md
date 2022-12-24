@@ -1,9 +1,10 @@
 # Introduction to codebase
-----
+
+___
 
 Prepare for the worst. You'll be either right, or pleasantly surprised.
 
----
+___
 
 Codebase. What a nice word for a folder filled with Poorly-But-Sometimes-Good written code. Say hello to our little friend `/gamedata/scripts` - here you will find every script in the game, and you will even be able to read some of them. Here are the important ones:
 
