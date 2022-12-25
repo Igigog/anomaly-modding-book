@@ -79,6 +79,7 @@ ___
   - [Codestyle](scripting/codestyle.md)
   - [Wetting our hands](scripting/wetting_hands.md)
   - [Callbacks](scripting/callbacks.md)
+  - [Server and game objects](scripting/server_and_game_objects.md)
   - [Engine classes]()
   - [MCM](scripting/mcm.md)
   - [UI]()
