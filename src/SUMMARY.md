@@ -150,6 +150,7 @@ ___
       - [Addon installation and setup](blender/addon-installation-and-setup.md)
       - [Advanced settings](blender/addon-settings-options/README.md)
         - [N-panel description](blender/addon-settings-options/n-panel-description.md)
+        - [Panels](blender/addon-settings-options/varius-properties.md)
         - [Pathes](blender/addon-settings-options/pathes.md)
         - [Defaults](blender/addon-settings-options/defaults.md)
         - [Formats](blender/addon-settings-options/formats.md)

@@ -1,4 +1,4 @@
-# Bruh
+# Panels
 
 ## Scene Properties
 
@@ -32,7 +32,7 @@ ___
 			<td></td>
 		</tr>
 		<tr>
-			<td>Progressive Dynamic</td>
+			<td href=https://igigog.github.io/anomaly-modding-book/terminology/terminology.html#progressive-meshes>Progressive Dynamic</td>
 			<td></td>
 		</tr>
 		<tr>
@@ -48,9 +48,9 @@ ___
 
 | Button/Checkbox | Description |
 ---|---|
-| HQ Export |  |
-| LOD Reference |  |
-| Export Path |  |
+| HQ Export | Enable HQ Export |
+| LOD Reference | LOD Reference Path |
+| Export Path | Export Path to rawdata folder |
 
 #### Details
 
@@ -291,9 +291,9 @@ ___
 
 | Button | Description |
 ---|---|
-| Display Bone Shapes |  |
-| Display Bone Mass Centers |  |
-| Display Bone Limits |  |
+| Display Bone Shapes | Display Bone Shapes |
+| Display Bone Mass Centers | Display Bone Mass Centers |
+| Display Bone Limits | Display Bone Limits |
 
 | Use Limits Button | Description |
 ---|---|
