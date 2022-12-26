@@ -120,7 +120,7 @@ ___
 
 ___
 
-- [AI]()
+- [A-Life (AI)](ai/README.md)
   - [Editing .efd files]()
 
 ___

@@ -14,7 +14,7 @@ ODE (Open Dynamics Engine) - is an open physics engine distributed for free as a
 
 ### A-Life
 
-A-Life (Artificial Life) - artificial intelligence system.
+A-Life (Artificial Life) - artificial intelligence system. [More About](../ai/index.html)
 
 ### OpenAL
 
