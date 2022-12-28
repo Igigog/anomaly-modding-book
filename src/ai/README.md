@@ -22,7 +22,7 @@ ___
 
 ### FSM (Finite State Machines)
 
-Finite State Machines (FSM) or finite state machines are a common and convenient technique for programming the behavior of bots (NPCs) in computer games.
+Finite State Machines (FSM) are a common and convenient technique for programming the behavior of bots (NPCs) in computer games.
 
 The FSM is based on the principle that at any given moment the NPC is in some well-defined state. Such states are a finite number, and all of them are known in advance. For example, the states of the bot can be: doing nothing, walking the route, playing sound or animation. A special state is when the NPC is under the control of the game's AI.
 
@@ -37,7 +37,7 @@ The FSM structure can be represented as an oriented graph, whose vertices (circl
 |||
 ---|---|
 | States | 0 – soldier's state under the control of the AI<br> 1 – the soldier says "stop, I'll shoot!"<br> 2 – the soldier says "gone bastard" |
-| Transition conditions | 0.1 – soldier sees actor for the first time<br> 1-0 – soldier finished saying the phrase "stop, I'll shoot!" and sees the actor<br> 1-2 - soldier finished saying the phrase "stop, I'll shoot!" and lost sight of the actor<br> 2-0 - soldier finished saying the phrase "gone bastard". |
+| Transition conditions | 0-1 – soldier sees actor for the first time<br> 1-0 – soldier finished saying the phrase "stop, I'll shoot!" and sees the actor<br> 1-2 - soldier finished saying the phrase "stop, I'll shoot!" and lost sight of the actor<br> 2-0 - soldier finished saying the phrase "gone bastard". |
 
 > Yuri Dobronravin 01.11.2003
 

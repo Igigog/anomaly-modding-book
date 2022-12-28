@@ -2,7 +2,7 @@
 
 ___
 
-## Others
+![others centered](../blender-images/panels/Others.png)
 
 | Extension | Description |
 ---|---|

@@ -4,6 +4,8 @@ ___
 
 Here you can set default parameters for many operators
 
+![defaults centered](../blender-images/panels/Defaults.png)
+
 ___
 
 ## Object

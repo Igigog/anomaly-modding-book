@@ -4,11 +4,15 @@
 
 ### X-Ray Engine: Project
 
+![project centered](../blender-images/panels/Project.png)
+
 ___
 
 ## Object Properties
 
 ### X-Ray Engine: Object
+
+![object centered](../blender-images/panels/Object.png)
 
 #### Object
 
@@ -281,6 +285,8 @@ ___
 
 ### X-Ray Engine: Mesh
 
+![mesh centered](../blender-images/panels/Mesh.png)
+
 | Button | Description |
 ---|---|
 | Visible |  |
@@ -288,6 +294,8 @@ ___
 | SGMask |  |
 
 ### X-Ray Engine: Skeleton
+
+![skeleton centered](../blender-images/panels/Skeleton.png)
 
 | Button | Description |
 ---|---|
@@ -306,8 +314,45 @@ ___
 
 ### X-Ray Engine: Material
 
+![material centered](../blender-images/panels/Meterial.png)
+
+| Button | Description | Note |
+---|---|---|
+| Two Sided | The model will be drawn from the outside and inside | The number of polygons in the model is doubled |
+| Shader | Shader | [list of shaders](../../shaders/shaders-list/shaders-list.md) |
+| Compile | Compile Shaders | [list of compile shaders](../../shaders/shaders-list/compiler-shaders-list.md) |
+| Material | Material | [list of materials](../../shaders/shaders-list/materials-list.md) |
+| Suppress Shadows |  |  |
+| Suppress Wallmarks |  |  |
+| Texture UV |  |  |
+| Light Map UV |  |  |
+| Light Map 1 |  |  |
+| Light Map 2 |  |  |
+| Light Vertex Color |  |  |
+| Sun Vertex Color |  |  |
+| Hemi Vertex Color |  |  |
+
 ___
 
 ## Bone Properties
 
 ### X-Ray Engine: Bone
+
+![bone centered](../blender-images/panels/Bone.png)
+
+| Button | Description | Note |
+---|---|---|
+| Exportable | Will the bone be exported | - |
+| Lenght |  |  |
+| Material | Material | [list of materials](../../shaders/shaders-list/materials-list.md) |
+| Shape Type | Shape type for ODE | None<br> Box<br> Sphere<br> Cylinder |
+| Edit Shape | Edit Shape | - |
+| No Pickable | <acronym title="Simply put, a beam of light (read DXR for more)">Ray Query Rays</acronym>, hit wallmarks will skip this element |  |
+| No Physics | The engine ignores shape physics | - |
+| Remove After Break | When activated, all dice will start a "remove_time" timer from the config, after which the object will be removed | Example: wooden box |
+| No Fog Collider | Volumetric Fog will ignore this element | - |
+| Joint Type | Joint type for ODE | None<br> Rigid<br> Cloth<br> Joint<br> Wheel<br> Slider |
+| Breakable |  |  |
+| Mass | Bone mass | - |
+| Center of Mass | Center of Mass | - |
+| Edit Center | Edit Center of Mass | - |
