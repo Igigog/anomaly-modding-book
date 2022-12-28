@@ -88,3 +88,14 @@ ___
 ### *object*_hud animations
 
 Animations for the _hud object
+
+## <center>Material</center>
+
+### Material
+
+In the X-Ray engine, [game material](../shaders/shaders-list/materials-list.md) is a set of surface properties, namely:
+
+- texture
+- [shader used in the game](../shaders/shaders-list/shaders-list.md)
+- [shader used by the level compiler](../shaders/shaders-list/compiler-shaders-list.md)
+- set of sounds of interaction with objects
