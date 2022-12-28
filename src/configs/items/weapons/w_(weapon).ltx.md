@@ -373,8 +373,8 @@ ___
 
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
-| ef_main_weapon_type | NPC weapon type | 2 | 0 (pistol) - 1 (shotgun) - 2 (assault rifle) - 3 (rifle) - 4 (grenade launcher) |
-| ef_weapon_type | NPC fire mode | 8 | 5 (fire single shots) - 6 (fire in bursts) - 7 (aim and fire single shots) - 8 (aim and fire (sniper)) - 9 (grenade launcher) |
+| ef_main_weapon_type | NPC weapon type | 2 | 0 - pistol<br> 1 -shotgun<br> 2 - assault rifle<br> 3 - rifle<br> 4 - grenade launcher<br> |
+| ef_weapon_type | NPC fire mode | 8 | 5 - fire single shots<br> 6 - fire in bursts<br> 7 - aim and fire single shots<br> 8 - aim and fire (sniper)<br> 9 - grenade launcher |
 | cam_relax_speed_ai |  | 360 |  |
 | zoom_cam_relax_speed_ai |  | 360 |  |
 | holder_fov_modifier | NPC angle of view multiplier (eye_fov) with this weapon | 1.0 | Specified in numbers |

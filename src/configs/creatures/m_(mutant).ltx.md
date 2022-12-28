@@ -32,7 +32,7 @@ Example value taken from vanilla m_bloodsucker.ltx
 | can_spawn_phantom | Can spawn phantoms | true |  |
 | spawn_phantom |  | m_phantom_bloodsucker |  |
 | killer_clsids | Game classes of objects from which a mutant can die in offline | Z_MINCER<br> Z_GALANT<br> ZS_BFUZZ<br> ZS_MBALD<br> ZS_GALAN<br> ZS_MINCE |  |
-| material | Mutant material specified in [Material Shaders](../../main-folders-and-files/shaders-list/materials-list.md) | creatures\medium |  |
+| material | Mutant material specified in [Materials](../../main-folders-and-files/shaders-list/materials-list.md) | creatures\medium |  |
 | selector_approach |  |  |  |
 | terrain |  | bloodsucker_terrain |  |
 | step_params | Step parameters | m_bloodsucker_step_params |  |
@@ -47,13 +47,13 @@ Example value taken from vanilla m_bloodsucker.ltx
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 ---|---|---|---|
-| DayTime_Begin | Beginning of a mutant's day | 22 |  |
-| DayTime_End | End of a mutant's day | 5 |  |
+| DayTime_Begin | Beginning of a mutant's day | 22 | Game Time |
+| DayTime_End | End of a mutant's day | 5 | Game Time |
 | Min_Satiety | Minimum hunger value | 0.000055 |  |
 | Max_Satiety | Maximum hunger value | 0.9 |  |
-| ef_creature_type |  | 13 |  |
+| ef_creature_type | Тип ИИ мутанта | 13 | -1 - No AI?<br> 1 - ?<br> 2 - Rat<br> 3 - Zombie<br> 4 - Zombified Man?<br> 5 - Poltergeist<br> 6 - Blind Dog<br> 7 - Flesh<br> 8 - ?<br> 9 - ?<br> 10 - ?<br> 11 - Boar<br> 12 - Controller<br> 13 - Bloodsucker<br> 14 - Soldier?<br> 15 - ?<br> 16 - Military Stalker?<br> 17 - Stalker<br> 18 - Burer<br> 19 - Psevdogiant<br> 20 - Chimera<br> 21 - Fracture |
 | ef_weapon_type |  | 2 |  |
-| ef_detector_type |  | 1 |  |
+| ef_detector_type | Type of detector used | 1 | 1 - no detector<br> 2 - simple detector<br> 3 - visual detector |
 | panic_threshold  | The threshold below which there will be panic | 0.01 |  |
 | weapon_usage | Ability to use weapons(?) | 0 |  |
 
@@ -188,12 +188,12 @@ Example value taken from vanilla m_bloodsucker.ltx
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 ---|---|---|---|
 | Velocity_Stand |  |  |  |
-| Velocity_RunFwdNormal |  |  |  |
-| Velocity_RunFwdDamaged |  |  |  |
-| Velocity_WalkFwdNormal |  |  |  |
-| Velocity_WalkFwdDamaged |  |  |  |
-| Velocity_Drag |  |  |  |
-| Velocity_Steal |  |  |  |
+| Velocity_RunFwdNormal | running speed |  |  |
+| Velocity_RunFwdDamaged | running speed when wounded |  |  |
+| Velocity_WalkFwdNormal | step velocity |  |  |
+| Velocity_WalkFwdDamaged | step velocity when wounded |  |  |
+| Velocity_Drag | velocity when dragging an object |  |  |
+| Velocity_Steal | sneak velocity |  |  |
 
 </details>
 
@@ -279,6 +279,7 @@ Example value taken from vanilla m_bloodsucker.ltx
 </details>
 
 #### Sleep settings
+
 coefficients of parameter change rates during sleep
 
 <details>
@@ -287,9 +288,9 @@ coefficients of parameter change rates during sleep
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 ---|---|---|---|
 | sleep_health | Restoring health when sleeping(?) | 1.0 |  |
-| sleep_power | Recovering strength when sleeping(?) | 1.0 |  |
-| sleep_satiety | Decreased strength when sleeping(?) | 1.0 |  |
-| sleep_radiation | Reducing radiation when sleeping(?) | 1.0 |  |
+| sleep_power | Recovering strength when sleeping | 1.0 |  |
+| sleep_satiety | Decreased strength when sleeping | 1.0 |  |
+| sleep_radiation | damage from radiation while sleeping in a radioactive zone | 1.0 |  |
 | sleep_psy_health | Restoring psi health when sleeping(?) | 1.0 |  |
 
 </details>
@@ -305,7 +306,7 @@ coefficients of parameter change rates during sleep
 | eat_slice | increase in satiety at one bite | 0.05 |  |
 | eat_slice_weight | reduction of food from a corpse in one bite | 10.0 |  |
 | satiety_threshold | If the value is lower than specified, the monster becomes hungry | 0.8 |  |
-| distance_to_corpse | Distance to corpse to start playing eating animation(?) | 0.8 |  |
+| distance_to_corpse | Distance to corpse to start playing eating animation | 0.8 |  |
 
 </details>
 
@@ -317,7 +318,7 @@ coefficients of parameter change rates during sleep
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 ---|---|---|---|
 | Morale_Hit_Quant |  | 0.1 |  |
-| Morale_Attack_Success_Quant |  | 0.1 |  |
+| Morale_Attack_Success_Quant | increase in morale during a successful attack | 0.1 |  |
 | Morale_Take_Heart_Speed |  | 0.1 |  |
 | Morale_Despondent_Speed |  | 0.01 |  |
 | Morale_Stable_Speed |  | 0.01 |  |
@@ -353,9 +354,9 @@ coefficients of parameter change rates during sleep
 ---|---|---|---|
 | distant_idle_sound_delay |  | 80000 |  |
 | distant_idle_sound_range |  | 100.0 |  |
-| idle_sound_delay |  | 95000 |  |
-| eat_sound_delay |  | 3000 |  |
-| attack_sound_delay |  | 1000 |  |
+| idle_sound_delay | random delay between sound playback at idle | 95000 | 0 to N |
+| eat_sound_delay | random delay between playing the sound of eating | 3000 | 0 to N |
+| attack_sound_delay | random delay between sound playback on attack | 1000 | 0 to N |
 | SoundThreshold |  | 0.05 | range [0 - 1] |
 | max_hear_dist | Distance at which sounds are heard | 60 |  |
 
@@ -393,7 +394,7 @@ Unique abilitys for mutants. Each mutant may have its own individual abilities, 
 ---|---|---|---|
 | eye_fov | Field of view | 180 |  |
 | eye_range | Visibility range | 150 |  |
-| DynamicObjectsCount | Determines how many objects the mutant can remember seeing | 32 | Захардкожено на 128 (или читается из конфига, но не может быть меньше 128 (OpenXRay))) |
+| DynamicObjectsCount | Determines how many objects the mutant can remember seeing | 32 |  |
 | vision_free_section |  | bloodsucker_vision_free |  |
 | vision_danger_section |  | bloodsucker_vision_danger |  |
 | min_view_distance | Minimum visibility distance | 0.8 | coefficient, which is multiplied by eye_range, depending on the angle |
@@ -541,8 +542,6 @@ ___
 | separate_factor | pushing force | 0.8 |  |
 | separate_range | radius in which the pushing acts | 3 |  |
 
-
-
 </details>
 
 ___
@@ -645,14 +644,14 @@ ___
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 ---|---|---|---|
-| jump_delay |  | 2500 |  |
-| jump_factor |  | 2.0 |  |
+| jump_delay | random delay between jumps | 2500 |  |
+| jump_factor | jump factor | 2.0 |  |
 | jump_ground_trace_range |  | 1.5 |  |
 | jump_hit_trace_range |  | 2.0 |  |
 | jump_build_line_distance |  | 5.0 |  |
-| jump_min_distance |  | 2.0 |  |
-| jump_max_distance |  | 8.0 |  |
-| jump_max_angle |  | 0.33 |  |
+| jump_min_distance | minimum jump distance | 2.0 |  |
+| jump_max_distance | maximum jump distance | 8.0 |  |
+| jump_max_angle | maximum angle between the direction of the monster's body and the victim | 0.33 |  |
 | jump_max_height |  | 5.0 |  |
 | jump_auto_aim_factor |  | 0.6 |  |
 
