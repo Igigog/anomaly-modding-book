@@ -4,7 +4,7 @@ ___
 
 ![image-editor centered](sdk-image/image-editor.png)
 
-## About:
+## About
 
 Allows you to edit texture parameters
 
@@ -36,11 +36,11 @@ Shows the characteristics of the texture. Width, height and alpha channel.
 | MipMaps | Description |
 ---|---|
 | Enabled |  |
-| Filter | <br>Advanced</br><br>Point</br><br>Box</br><br>Triangle</br><br>Quadratic</br><br>Cubic</br><br>Catrom</br><br>Michell</br><br>Gaussian</br><br>Sinc</br><br>Bessel</br><br>Hanning</br><br>Hamming</br><br>Blackman</br><br>Kaiser</br> |
+| Filter | Advanced<br> Point<br> Box<br> Triangle<br> Quadratic<br> Cubic<br> Catrom<br> Michell<br> Gaussian<br> Sinc<br> Bessel<br> Hanning<br> Hamming<br> Blackman<br> Kaiser |
 
 | Bump | Description |
 ---|---|
-| Mode | <br>None</br><br>Use</br><br>Use parallax</br> |
+| Mode | None<br> Use<br> Use parallax |
 | Texture | Path to Bump Textures |
 
 | Details | Description |
@@ -51,8 +51,8 @@ Shows the characteristics of the texture. Width, height and alpha channel.
 | Scale |  |
 
 | Material | Description |
----|---|
-| Base | <br>OrenNayar <-> Blin</br><br>Blin <-> Phong</br><br>Phong <-> Metal</br><br>Metal <-> OrenNayar</br> |
+---|:---:|
+| Base | OrenNayar <-> Blin<br> Blin <-> Phong<br> Phong <-> Metal<br> Metal <-> OrenNayar |
 | Weight |  |
 
 | Flags | Description |
@@ -65,7 +65,7 @@ Shows the characteristics of the texture. Width, height and alpha channel.
 ---|---|
 | Enable Color |  |
 | Enable Alpha |  |
-| Delay 'n'MIP |  |
+| Delay 'n' MIP |  |
 | % of colot to fade in  |  |
 | Color |  |
 | Alpha |  |

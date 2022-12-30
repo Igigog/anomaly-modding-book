@@ -14,10 +14,10 @@ Example value taken from vanilla m_bloodsucker.ltx
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 ---|---|---|---|
 | GroupControlSection |  | spawn_group |  |
-| SpaceRestrictionSection |  | space_restrictor,zone_mosquito_bald,zone_witches_galantine,zone_burning_fuzz1,zone_mincer,zone_gravi_zone |  |
+| SpaceRestrictionSection |  | space_restrictor<br> zone_mosquito_bald<br> zone_witches_galantine<br> zone_burning_fuzz1<br> zone_mincer<br> zone_gravi_zone |  |
 | $spawn |  | "monsters\bloodsuckers\bloodsucker_base" |  |
 | $npc |  | on |  |
-| $prefetch |  | 16 |  |
+| $prefetch | Preload order? | 16 |  |
 | visual | Model of a living mutant | monsters\krovosos\krovosos |  |
 | corpse_visual | Dead mutant model | monsters\krovosos\krovosos_dead |  |
 | destroyed_vis_name | visual, what remains when destroying a monster in an anomaly |  |  |
@@ -26,7 +26,7 @@ Example value taken from vanilla m_bloodsucker.ltx
 | script_binding  |  | bind_monster.bind |  |
 | rank |  | 16 |  |
 | spec_rank | Monster rank displayed in statistics | normal |  |
-| community | What type of monster belongs to. Taken from game_relations.ltx | bloodsucker |  |
+| community | What type of monster belongs to | bloodsucker | Taken from game_relations.ltx |
 | species | biological species | bloodsucker |  |
 | monster_type |  |  |  |
 | can_spawn_phantom | Can spawn phantoms | true |  |
@@ -51,9 +51,9 @@ Example value taken from vanilla m_bloodsucker.ltx
 | DayTime_End | End of a mutant's day | 5 | Game Time |
 | Min_Satiety | Minimum hunger value | 0.000055 |  |
 | Max_Satiety | Maximum hunger value | 0.9 |  |
-| ef_creature_type | Тип ИИ мутанта | 13 | -1 - No AI?<br> 1 - ?<br> 2 - Rat<br> 3 - Zombie<br> 4 - Zombified Man?<br> 5 - Poltergeist<br> 6 - Blind Dog<br> 7 - Flesh<br> 8 - ?<br> 9 - ?<br> 10 - ?<br> 11 - Boar<br> 12 - Controller<br> 13 - Bloodsucker<br> 14 - Soldier?<br> 15 - ?<br> 16 - Military Stalker?<br> 17 - Stalker<br> 18 - Burer<br> 19 - Psevdogiant<br> 20 - Chimera<br> 21 - Fracture |
+| ef_creature_type | Mutant AI type ([Evaluation Function](../../main-folders-and-files/file-formats/efd.md)) | 13 | -1 - No AI?<br> 1 - ?<br> 2 - Rat<br> 3 - Zombie<br> 4 - Zombified Man?<br> 5 - Poltergeist<br> 6 - Blind Dog<br> 7 - Flesh<br> 8 - ?<br> 9 - ?<br> 10 - ?<br> 11 - Boar<br> 12 - Controller<br> 13 - Bloodsucker<br> 14 - Soldier?<br> 15 - ?<br> 16 - Military Stalker?<br> 17 - Stalker<br> 18 - Burer<br> 19 - Psevdogiant<br> 20 - Chimera<br> 21 - Fracture |
 | ef_weapon_type |  | 2 |  |
-| ef_detector_type | Type of detector used | 1 | 1 - no detector<br> 2 - simple detector<br> 3 - visual detector |
+| ef_detector_type | Type of detector used ([Evaluation Function](../../main-folders-and-files/file-formats/efd.md)) | 1 | 1 - no detector<br> 2 - simple detector<br> 3 - visual detector |
 | panic_threshold  | The threshold below which there will be panic | 0.01 |  |
 | weapon_usage | Ability to use weapons(?) | 0 |  |
 

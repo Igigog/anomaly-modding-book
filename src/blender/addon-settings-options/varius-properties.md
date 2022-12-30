@@ -6,6 +6,13 @@
 
 ![project centered](../blender-images/panels/Project.png)
 
+| Button | Description |
+---|---|
+| Export Root | The root folder for export |
+| Format Version | Soc<br> CS/CoP |
+| Export Motions | Export Motions |
+| Texture Names from Image Paths | Generate Texture Names from image paths (by substact \<gamedata/textures> prefix and \<file-extension> suffix) |
+
 ___
 
 ## Object Properties

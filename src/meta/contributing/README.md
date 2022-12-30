@@ -30,10 +30,10 @@ Contributing to this book follows the standart "Pull Request" workflow. That bas
 Here is the overview of steps needed for contributing:
 
 1. Copy ("fork") the main repository
-1. Download your copy of repo
-1. Add your changes to your copy
-1. Upload your changes
-1. Open the Pull Request to merge your changes into main repository
+2. Download your copy of repo
+3. Add your changes to your copy
+4. Upload your changes
+5. Open the Pull Request to merge your changes into main repository
 
 Welp, let's get started. I hope you already have a GitHub account.
 
@@ -42,11 +42,11 @@ Welp, let's get started. I hope you already have a GitHub account.
 1. Go to the [main repo](https://github.com/Igigog/anomaly-modding-book)
 2. Press the fork button
 
-![centered](contributing-images/3.PNG)
+    ![centered](contributing-images/3.PNG)
 
 3. Create the fork
 
-![centered](contributing-images/4.PNG)
+    ![centered](contributing-images/4.PNG)
 
 4. You're awesome
 
@@ -54,27 +54,27 @@ Welp, let's get started. I hope you already have a GitHub account.
 
 1. Open the folder you want to download into in VSCodium. In my case, it will be Desktop.
 
-![centered](contributing-images/5.PNG)
+    ![centered](contributing-images/5.PNG)
 
 2. Open Poweshell Terminal session
 3. Copy the link to your repo.
 
-![centered](contributing-images/6.PNG)
+    ![centered](contributing-images/6.PNG)
 
 4. Run the following command in your Powershell Terminal with your link instead of LINK.
 
-```git
-git clone LINK
-```
+    ```git
+    git clone LINK
+    ```
 
 5. You're awesome.
 
 #### Running local copy
 
 1. Download latest mdbook from [Github Releases](https://github.com/rust-lang/mdBook/releases).
-1. Drop `mdbook.exe` in the root folder of your copy.
-1. Run `run.bat`. In case it doesn't open by itself, open [localhost:3000](localhost:3000) in your browser.
-1. Done. You're awesome.
+2. Drop `mdbook.exe` in the root folder of your copy.
+3. Run `run.bat`. In case it doesn't open by itself, open [localhost:3000](localhost:3000) in your browser.
+4. Done. You're awesome.
 
 #### Uploading your changes
 
@@ -82,21 +82,21 @@ git clone LINK
 
 2. Add your changes using VSCodium git tab. Open git tab, hover over "Changes" line and press "+".
 
-![centered](contributing-images/7.PNG)
+    ![centered](contributing-images/7.PNG)
 
 3. Add a nice message and press "✔" to commit your changes
 
-![centered](contributing-images/8.PNG)
+    ![centered](contributing-images/8.PNG)
 
 4. You should now be able to publish your changes
 
-![centered](contributing-images/9.PNG)
+    ![centered](contributing-images/9.PNG)
 
 ## Creating Pull Request
 
 1. In main book repository, open "Pull Requests" tab and press "New pull request"
 
-![centered](contributing-images/10.PNG)
+    ![centered](contributing-images/10.PNG)
 
 2. Press "compare across forks". Choose your repository and press "Create pull request".
 

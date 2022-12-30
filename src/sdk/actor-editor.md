@@ -8,13 +8,13 @@ ___
 
 ## Interface
 
-#### Toolbar:
+### Toolbar
 
 ![toolbar centered](sdk-image/toolbar.png)
 
 ___
 
-##### Scene
+#### Scene
 
 File Button
 
@@ -23,13 +23,13 @@ File Button
 | Clear | Clears scene | - |
 | Load | Loads an object into a new scene | - |
 | Save | Saves object | - |
-| Save As | Saves the object as | .object <br>.lwo</br> |
+| Save As | Saves the object as | .object<br> .lwo</br> |
 | Make Trumbnail | Creates trumbnail | Creates a thumbnail from the camera view |
 | Open Recent | Opens recent | - |
 | Import | Imports the model into the scene | - |
 | Optimize Motions |  |  |
 | Batch Convert |  |  |
-| Export | Exports the model to formats  | <br>.ogf</br><br>[.omf](../main-folders-and-files/file-formats/omf.md)</br><br>[.obj](../main-folders-and-files/file-formats/object.md)</br><br>[.dm](../main-folders-and-files/file-formats/dm.md)</br><br>C++</br> |
+| Export | Exports the model to formats  | .ogf<br> [.omf](../main-folders-and-files/file-formats/omf.md)<br> [.obj](../main-folders-and-files/file-formats/object.md)<br> [.dm](../main-folders-and-files/file-formats/dm.md)<br>C++ |
 | Quit | Exiting the program | - |
 
 ___
@@ -101,7 +101,7 @@ ___
 
 Shows parameters of the selected element of the model object
 
-- For the object
+**For the object**
 
 | Flags | Description |
 ---|---|
@@ -119,7 +119,7 @@ Shows parameters of the selected element of the model object
 ---|---|
 | Reference | LOD Reference |
 
-Summary
+**Summary**
 
 Displays information about the object
 
@@ -127,7 +127,7 @@ Displays information about the object
 ---|---|
 | User Data |  |
 
-- For surface
+**For surface**
 
 | Surface | Description |
 ---|---|

@@ -6,13 +6,10 @@ ___
 
 Engine development for the addon [Boomsticks and Sharpsticks](https://www.moddb.com/mods/stalker-anomaly/addons/boomsticks-and-sharpsticks)
 
-### Key Features:
+### Key Features
 
 - Support for *aim_in* and *aim_out* animations
-
-### Sources:
-
-- [Source](https://github.com/mortany/boomstick-engine)
+- Support for uncompressed animations
 
 ___
 
@@ -20,7 +17,7 @@ ___
 
 Combining engine edits of different addons in one place and adding new ones
 
-### Key Features:
+### Key Features
 
 - [DLTX](../addons/dltx.md) by MerelyMezz with edits and bugfixes by demonized
 - [DXML](../addons/dxml.md) by demonized
@@ -28,7 +25,7 @@ Combining engine edits of different addons in one place and adding new ones
 - Shader Scopes by CrookR and enhanced by Edzan
 - Screen Space Shaders by Ascii1457
 
-### Sources:
+### Sources
 
 - [Source](https://github.com/themrdemonized/STALKER-Anomaly-modded-exes)
 

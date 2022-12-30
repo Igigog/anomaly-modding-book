@@ -9,6 +9,7 @@ During the development of this book, information was taken from many sites and f
 - [s.t.a.l.k.e.r mod portal](http://sdk.stalker-game.com/)
 - [GAMERU](https://www.gameru.net/forum/index.php?showforum=186)
 - [xrWiki](https://xray-engine.org/index.php)
+- ["Союз Модмейкеров" Discord Server](https://discord.gg/WSaEzuu6Qs)
 
 ___
 

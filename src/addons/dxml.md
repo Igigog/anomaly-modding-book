@@ -29,7 +29,7 @@ function on_xml_read()
 end
 ```
 
-What this does is creating a function on_xml_read that will be auto-called from _g.script. This function will register function for new callback "on_xml_read", which accepts two arguments:
+What this does is creating a function on_xml_read that will be auto-called from dxml_core.script. This function will register function for new callback "on_xml_read", which accepts two arguments:
 
 * xml_file_name - current XML filename that engine is processing (for example: text\eng\_game_version.xml)
 * xml_obj - the object described above
@@ -40,7 +40,7 @@ ___
 
 ### Case 1: inserting new XML data
 
-**Examples: insert new dialog into gameplay\dialogs.xml, insert new scope texture into ui\scopes.xml**
+### Examples: insert new dialog into gameplay\dialogs.xml, insert new scope texture into ui\scopes.xml
 
 This is the simplest case of using DXML, where you just want to insert new data, much like `#include` directive in XML files
 
@@ -60,6 +60,7 @@ function on_xml_read()
 <wpn_crosshair_bino x="0" y="0" width="2048" height="1536">
     <auto_static x="0" y="0" width="1024" height="768" stretch="1">
     <texture>wpn_crosshair_bino</texture>
+#include "gameplay\character_criticals.xml"
     </auto_static>
 </wpn_crosshair_bino>
 ]]
@@ -70,6 +71,8 @@ end
 ```
 
 This example adds new scope texture into scopes.xml.
+DXML supports `#include` directive to include other xml files into string. `#include` must start from the beginning of the line like in the example.
+(BTW: For actually adding new scope you don't need include anything, its just an example. The `#include` is necessary when working with adding new special npcs or such)
 
 insertFromXMLString method has these arguments:
 
@@ -83,7 +86,7 @@ ___
 
 ## Case 2: inserting new XML data in specified element
 
-**Example: insert new menu item into ui\ui_mm_main.xml**
+### Example: insert new menu item into ui\ui_mm_main.xml
 
 In order to correctly insert new main menu item, we need to find the <menu_main> element first.
 
@@ -156,7 +159,7 @@ ___
 
 ## Case 3: Change text inside element
 
-**Example: change text of game version in text\eng\\_game_version.xml**
+### Example: change text of game version in text\eng\\_game_version.xml
 
 Getting and setting text is possible if element contains raw text inside, like `<text attr1="value1">My Text</text>`.
 To get text, you can use `getText(element)` function and to set it use `setText(element)`.
@@ -187,7 +190,7 @@ ___
 
 ## Case 4: changing attribute of element
 
-**Example: change position of money display in ui\ui_inventory.xml**
+### Example: change position of money display in ui\ui_inventory.xml
 
 First, find `<money>` element inside `<player>` element and then change its x, y attributes by using `setElementAttr` function
 
@@ -214,7 +217,6 @@ function on_xml_read()
 	RegisterScriptCallback("on_xml_read", function(xml_file_name, xml_obj)
 		if xml_file_name == [[ui\ui_inventory.xml]]
 		then
-			-- Find string element with "id=ui_st_game_version" text inside it
 			local res = xml_obj:query("player > money")
 			if res[1] then
 				el = res[1]
@@ -229,4 +231,4 @@ ___
 
 ## PS
 
-Full list of methods is described in _g.script in `COnXmlRead` function
+Full list of methods is described in dxml_core.script in `COnXmlRead` function

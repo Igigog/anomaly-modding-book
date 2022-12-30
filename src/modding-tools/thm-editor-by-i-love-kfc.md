@@ -21,9 +21,7 @@ Utility for editing .thm files without the need to use the SDK
 
 ## Functionality
 
-### Fields
-
-- #### Texture type
+### Texture type
 
 | Field | Description |
 ---|---|
@@ -33,25 +31,25 @@ Utility for editing .thm files without the need to use the SDK
 | Normal Map |  |
 | Terrain |  |
 
-- #### Texture format
+### Texture format
 
 | Field | Description |
 ---|---|
-| DXT1 |  |
-| ADXT1 |  |
-| DXT5 |  |
-| 4444 |  |
-| 1555 |  |
-| 565 |  |
-| RGB |  |
-| RGBA |  |
-| NVHS |  |
-| NVHU |  |
-| A8 |  |
-| L8 |  |
-| A8L8 |  |
+| [DXT1](https://www.fsdeveloper.com/wiki/index.php?title=DXT_compression_explained#DXT1) | Compression without alpha channel support |
+| [ADXT1](https://www.fsdeveloper.com/wiki/index.php?title=DXT_compression_explained#DXT1_with_alpha) | Compression with alpha channel support |
+| [DXT5](https://www.fsdeveloper.com/wiki/index.php?title=DXT_compression_explained#DXT5) | Compression with alpha channel support |
+| 4444 | RGBA4444? |
+| 1555 | RGBA1555? |
+| 565 | Uncompressed RGB565 or RGB16? |
+| RGB | Compression without alpha channel support |
+| RGBA | Compression with alpha channel support |
+| NVHS | NVidia Texture Format (GEForce 3) |
+| NVHU | NVidia Texture Format? |
+| [A8](https://learn.microsoft.com/en-us/windows/win32/direct3d9/d3dformat) | 8-bit alpha only DirectX Format |
+| [L8](https://learn.microsoft.com/en-us/windows/win32/direct3d9/d3dformat) | 8-bit luminance only DirectX Format |
+| [A8L8](https://learn.microsoft.com/en-us/windows/win32/direct3d9/d3dformat) | 16-bit using 8 bits each for alpha and luminance DirectX Format |
 
-- #### Bump Mode
+### Bump Mode
 
 | Field | Description |
 ---|---|
@@ -60,12 +58,14 @@ Utility for editing .thm files without the need to use the SDK
 | Use |  |
 | Use Parallax |  |
 
-- #### MIP Filter
+### MIP Filter
+
+> Different algorithms of MIP-map generation
 
 | Field | Description |
 ---|---|
-| Box |  |
-| Cubic |  |
+| Box | The simplest MIP-map generation algorithm. However, the box filter has a number of limitations that can be quite noticeable with certain textures. For example, if a texture contains very narrow features (e.g., lines), then aliasing artifacts may be very pronounced |
+| Cubic | Generation with weighted sum of eight pixels. The advantage of the cubic filter over the box is that it can have negative side lobes (weights) which help maintain sharpness while reducing the image. This can help reduce some of the blurring effect of filtering with mipmaps |
 | Point |  |
 | Triangle |  |
 | Quadratic |  |
@@ -80,36 +80,40 @@ Utility for editing .thm files without the need to use the SDK
 | Blackman |  |
 | Kaiser |  |
 
-- #### Material
+### Material
+
+> Different shading algorithms
 
 | Field | Description |
 ---|---|
-| OrenNayar Blin |  |
+| OrenNayar Blin | Oren-Nayar-Blinn shader is a variant of the Blinn shader. This shader is good for matte surfaces such as fabric, terra cotta, and so on. |
 | Blin Phong |  |
 | Phong Metal |  |
 | Metal OrenNayar |  |
 
 ### Buttons
 
-- #### Open thm
+**Open thm**
 
-Opens a .thm file
+> Opens a .thm file
 
-- #### Save
+**Save**
 
-Save file
+> Save file
 
-- #### Save As
+**Save As**
 
-- #### Import DDS
+> Save as
 
-Imports .dds texture
+**Import DDS**
 
-- #### Edit flags
+> Imports .dds texture
+
+### Edit flags
 
 | Checkbox | Description |
 ---|---|
-| Generate Mip Maps |  |
+| Generate Mip Maps | Enables MIP-map generation |
 | Has Alpha |  |
 | Binary Alpha |  |
 | Alpha Border |  |
@@ -123,7 +127,7 @@ Imports .dds texture
 | Detail Bump |  |
 | Grey Scale (S.T.A.L.K.E.R. builds) |  |
 
-- #### Tools
+### Tools
 
 | Button | Description |
 ---|---|
@@ -132,41 +136,59 @@ Imports .dds texture
 | Validate thms with dds |  |
 | Convert thms format (SOC/COP) |  |
 
-- ### Chechboxes
+### Chechboxes
 
-- SOC format
+**SOC format**
 
-- #### Border Color
+> SoC format of .thm
 
+**Border Color**
 
-- #### Fade Color
+> ?
 
+**Fade Color**
 
-- #### Fade Amout
+> ?
 
+**Fade Amout**
 
-- #### Material Weight
+> ?
 
+**Material Weight**
 
-- #### Detail Scale
+> ?
 
+**Detail Scale**
 
-- #### Texture Width
+> [Detail Map](../main-folders-and-files/file-formats/detail-map.md) Scale
 
+**Texture Width**
 
-- #### Texture Height
+> Texture Width
 
+**Texture Height**
 
-- #### Fade Delay
+> Texture Height
 
+**Fade Delay**
 
-- #### Bump Height
+> ?
 
-- #### Detail name
+**Bump Height**
 
-- #### Bump name
+> [Bump Map](../main-folders-and-files/file-formats/bump.md) Height
 
-- #### Normal Map name
+**Detail name**
+
+> Path to [Detail Map](../main-folders-and-files/file-formats/detail-map.md)
+
+**Bump name**
+
+> Path to [Bump Map](../main-folders-and-files/file-formats/bump.md)
+
+**Normal Map name**
+
+> Path to Normal Map
 
 ___
 

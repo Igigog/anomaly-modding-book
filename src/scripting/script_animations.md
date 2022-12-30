@@ -94,9 +94,7 @@ To make a test placeholder, you can also open any weapon config file and choose 
 The function that lets you play a motion is:
 
 ```lua
-
 game.play_hud_motion(hands, anim_section_name, motion_name, bMixIn, speed)
-
 ```
 
 Now let’s have a closer look at its arguments.
@@ -118,26 +116,20 @@ Now let’s have a closer look at its arguments.
 #### Supplementary functions
 
 ```lua
-
 game.hud_motion_allowed()
-
 ```
 
 Checks if a hands motion can be played at the moment. Useful as an additional safety check. Returns True or False.
 
 ```lua
-
 game.get_motion_length(anim_section_name, motion_name, speed)
-
 ```
 
 Gets the specified motion length. The parameters are identical to those in `play_hud_motion`.
 Note that it returns time in milliseconds, so in order to get the actual length you’ll need to divide the result by 1000. Useful to know when the motion is over.
 
 ```lua
-
 game.stop_hud_motion()
-
 ```
 
 It will stop any hands motion that is currently playing (since it can’t accept a specific motion as an argument), not only the one you’re playing in your script.
@@ -158,6 +150,7 @@ Example: you have an animation from FDDA that is currently being played. This fu
     local det = db.actor:active_detector() or nil
     det:switch_state(2)
 ```
+
 and then restored with:
 
 ```lua
@@ -191,33 +184,31 @@ The arguments are:
 #### Supplementary functions
 
 ```lua
-
-game.stop_hud_anm(path, force)
-
+game.stop_hud_anm(path, force
 ```
 
 Stops a specific .anm from playing. **path** is identical to the one above. **force** is a boolean parameter which makes it possible to force stop it - a bit more ‘harsh’ method.
 
 ```lua
-
 game.stop_all_hud_anms(boolean)
-
 ```
 
 Stops all .anm’s that are currently played.
 
 ```lua
-
 game.set_hud_anm_time(path, time)
-
 ```
-This function alters the playback speed of the specified .anm file. **path** is still the same as it was mentioned earlier, and **time** is actually a speed value (float). 
+
+This function alters the playback speed of the specified .anm file. **path** is still the same as it was mentioned earlier, and **time** is actually a speed value (float).
 
 The name may be a bit confusing, but judjing by the engine code it actually manipulates the .anm speed:
+
 ```lua
 float speed = (anm->anm->anim_param().max_t - anm->anm->anim_param().t_current) / time;
 ```
+
 And a descriptive example in `actor_effects.script`:
+
 ```lua
 game.play_hud_motion(1, mc_anm_sec, "anm_hide_hand", true, hide_hand_speed)
 new_speed = game.set_hud_anm_time(anm_name, ((mc_anm_time_1 + mc_anm_time_2) / 1000) + anm_additional_length)

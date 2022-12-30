@@ -8,9 +8,9 @@ Table of AI heuristic parameters, contains constants for fine-tuning A-Life. The
 
 ## Example
 
-anomalydetectprobability.efd
+`anomalydetectprobability.efd`
 
-```example
+```ini
 [values]
 offset_0: value_0 = 1
 offset_4: value_1 = 1
@@ -51,8 +51,6 @@ offset_140: value_35 = 39.9881286621094
 offset_144: value_36 = 49.9851608276367
 offset_148: value_37 = 79.9762573242188
 ```
-
-There is a function in xrgame.dll where all files with this extension are opened. But then not all of them are used.
 
 ___
 
