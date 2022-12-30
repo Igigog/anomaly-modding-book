@@ -12,7 +12,7 @@ The same as the [.dds](dds.md). But overlaid on top of an existing texture, for 
 
 > Example:
 
-![example](images/detail_stucco_det1.png)
+![example centered](images/detail_stucco_det1.png)
 
 ___
 

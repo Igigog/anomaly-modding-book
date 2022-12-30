@@ -352,13 +352,13 @@ ___
 | Exportable | Will the bone be exported | - |
 | Lenght |  |  |
 | Material | Material | [list of materials](../../shaders/shaders-list/materials-list.md) |
-| Shape Type | Shape type for ODE | None<br> Box<br> Sphere<br> Cylinder |
+| Shape Type | Shape type for [ODE](../../terminology/terminology.md#ode) | None<br> Box<br> Sphere<br> Cylinder |
 | Edit Shape | Edit Shape | - |
 | No Pickable | <acronym title="Simply put, a beam of light (read DXR for more)">Ray Query Rays</acronym>, hit wallmarks will skip this element |  |
 | No Physics | The engine ignores shape physics | - |
 | Remove After Break | When activated, all dice will start a "remove_time" timer from the config, after which the object will be removed | Example: wooden box |
 | No Fog Collider | Volumetric Fog will ignore this element | - |
-| Joint Type | Joint type for ODE | None<br> Rigid<br> Cloth<br> Joint<br> Wheel<br> Slider |
+| Joint Type | Joint type for [ODE](../../terminology/terminology.md#ode) | None<br> Rigid<br> Cloth<br> Joint<br> Wheel<br> Slider |
 | Breakable |  |  |
 | Mass | Bone mass | - |
 | Center of Mass | Center of Mass | - |

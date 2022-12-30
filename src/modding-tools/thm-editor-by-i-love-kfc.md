@@ -21,15 +21,51 @@ Utility for editing .thm files without the need to use the SDK
 
 ## Functionality
 
+### Buttons
+
+**Open thm**
+
+> Opens a .thm file
+
+**Save**
+
+> Save file
+
+**Save As**
+
+> Save as
+
+**Import DDS**
+
+> Imports .dds texture
+
+### Edit flags
+
+| Checkbox | Description |
+---|---|
+| Generate Mip Maps | Enables MIP-map generation |
+| Has Alpha |  |
+| Binary Alpha |  |
+| Alpha Border |  |
+| Color Border |  |
+| Fade To Color |  |
+| Fade To Alpha |  |
+| Dither Color |  |
+| Dither Each MIP Level |  |
+| Diffuse Detail |  |
+| Implicit Lighted |  |
+| Detail Bump |  |
+| Grey Scale (S.T.A.L.K.E.R. builds) |  |
+
 ### Texture type
 
 | Field | Description |
 ---|---|
-| Image |  |
-| Cube Map |  |
-| Bump Map |  |
-| Normal Map |  |
-| Terrain |  |
+| Image | 2D texture |
+| [Cube Map](https://en.wikipedia.org/wiki/Cube_mapping) | Is a method of environment mapping that uses the six faces of a cube as the map shape |
+| Bump Map | [Bump](../main-folders-and-files/file-formats/bump.md) Map |
+| Normal Map | Normal Map |
+| Terrain | Terrain Map? |
 
 ### Texture format
 
@@ -86,46 +122,10 @@ Utility for editing .thm files without the need to use the SDK
 
 | Field | Description |
 ---|---|
-| OrenNayar Blin | Oren-Nayar-Blinn shader is a variant of the Blinn shader. This shader is good for matte surfaces such as fabric, terra cotta, and so on. |
+| OrenNayar Blin | Oren-Nayar-Blinn shader is a variant of the Blinn shader. This shader is good for matte surfaces such as fabric, terra cotta, and so on |
 | Blin Phong |  |
 | Phong Metal |  |
 | Metal OrenNayar |  |
-
-### Buttons
-
-**Open thm**
-
-> Opens a .thm file
-
-**Save**
-
-> Save file
-
-**Save As**
-
-> Save as
-
-**Import DDS**
-
-> Imports .dds texture
-
-### Edit flags
-
-| Checkbox | Description |
----|---|
-| Generate Mip Maps | Enables MIP-map generation |
-| Has Alpha |  |
-| Binary Alpha |  |
-| Alpha Border |  |
-| Color Border |  |
-| Fade To Color |  |
-| Fade To Alpha |  |
-| Dither Color |  |
-| Dither Each MIP Level |  |
-| Diffuse Detail |  |
-| Implicit Lighted |  |
-| Detail Bump |  |
-| Grey Scale (S.T.A.L.K.E.R. builds) |  |
 
 ### Tools
 
