@@ -35,4 +35,4 @@ Special case: level object of actor is always online and is saved in `db.actor`.
 | To obtain | `alife_object(id)` | `get_object_by_id(id)` |
 | Common identifier | `se_obj` | `obj` |
 | Id | `se_obj.id` | `obj:id()` |
-| Section | `se_obj.section_name` | `obj:section()` |
+| Section | `se_obj:section_name()` | `obj:section()` |
