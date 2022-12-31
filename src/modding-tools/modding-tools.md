@@ -57,7 +57,7 @@ Official SDK with community enhancements:
 > ̀**These versions (SDK 0.4 and SDK 0.5/0.6) are not compatible with Anomaly!**
 
 - [SDK 0.7 (Call of Pripyat)](https://www.moddb.com/games/stalker-call-of-pripyat/downloads/x-ray-16-engine-sdk-v07)
-  - [SDK 0.7 (Call of Pripyat)(RePack by DaaGuda V2)](https://mega.nz/folder/zFBiWSAJ#5_MSuGpVPb7QqcPH00nC7w) - Official SDK 0.7 repack with customized components and various fixes
+  - [SDK 0.7 (Call of Pripyat)(RePack by DaaGuda V2)](https://mega.nz/folder/zFBiWSAJ#5_MSuGpVPb7QqcPH00nC7w) - Official SDK 0.7 repack with customized components and various fixes ([More About](../sdk/index.html))
 
     - SDK 0.7 Easy:
       - The easiest version, but gamedata and rawdata are excluded from its composition, there are no add-ons.
@@ -90,12 +90,12 @@ Official SDK with community enhancements:
 
 > The versions of the SDK tools may differ depending on the version of the SDK itself
 
-- Actor Editor
+- [Actor Editor](../sdk/actor-editor.md)
 - Dialog Editor
-- Level Editor
+- [Level Editor](../sdk/level-editor.md)
 - Particle Editor
 - Postprocess Editor
-- ShaderEditor
+- [ShaderEditor](../sdk/level-editor.md)
 - xrLC_net - Level compiler by machines connected to a local network
 
 ___

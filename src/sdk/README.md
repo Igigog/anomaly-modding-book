@@ -14,6 +14,6 @@ The SDK includes the following editors:
 - [Level Editor](level-editor.md)
 - Particle Editor
 - Post-process Editor
-- Shader Editor
+- [Shader Editor](shader-editor.md)
 
 Depending on the SDK version (Original or modified) this list of editors (and their versions) may differ.

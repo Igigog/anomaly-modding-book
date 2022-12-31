@@ -110,6 +110,11 @@ ___
 
 ___
 
+- [Sounds]()
+  - [Sound Enviroment List](sound/sound-environments-list.md)
+
+___
+
 - [Shading](shaders/README.md)
   - [Material Shaders List](shaders/shaders-list/materials-list.md)
   - [Shaders List](shaders/shaders-list/shaders-list.md)
@@ -147,6 +152,7 @@ ___
     - [Actor Editor](sdk/actor-editor.md)
     - [Image Editor](sdk/image-editor.md)
     - [Level Editor](sdk/level-editor.md)
+    - [Shader Editor](sdk/shader-editor.md)
   - [Blender](blender/README.md)
     - [Blender X-Ray Addon](blender/blender-x-ray-addon-summary.md)
       - [Addon installation and setup](blender/addon-installation-and-setup.md)

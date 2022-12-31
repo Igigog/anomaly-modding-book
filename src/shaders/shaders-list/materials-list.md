@@ -1,4 +1,4 @@
-# Materials List
+# Materials List (gamemtl.xr)
 
 ___
 
@@ -32,11 +32,11 @@ This section contains a list and description of the shaders that are available i
 | material\bush_sux | bushes, tree crowns, reeds, leaves, but dried out, or dead |
 | material\cloth | fabric |
 | material\concrete | monolithic concrete |
-| material\death | Passable material that kills the character (non-standard material) |
+| material\death | Deadly Earth (non-standard material) |
 | material\dirt | wet mud, swamp |
 | material\earth | dry, hard earth (standard material) |
-| material\earth_death | standard static material |
-| material\earth_slide | standard static material |
+| material\earth_death | Dry solid earth (non-standard material) |
+| material\earth_slide | dry, hard earth (standard material) |
 | material\fake | collision material (no sound, no bullet marks, no shadows) |
 | material\fake_ladders | invisible ladder |
 | material\fake_ladders_woods | invisible wooden ladder |

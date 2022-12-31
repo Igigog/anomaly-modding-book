@@ -1,4 +1,4 @@
-# Shaders List
+# Shaders List (shaders.xr)
 
 ___
 
@@ -253,25 +253,25 @@ This section contains a list and description of the shaders that are available i
 
 ### Def_Shaders
 
-| Shader name and path | Description |
----|---|
-| def_shaders\def_add |  |
-| def_shaders\def_aref |  |
-| def_shaders\def_aref_v |  |
-| def_shaders\def_objects_lod |  |
-| def_shaders\def_objects_lod_trans |  |
-| def_shaders\def_refl_alpha |  |
-| def_shaders\def_refl_alpha_heli |  |
-| def_shaders\def_refl_trans |  |
-| def_shaders\def_trans |  |
-| def_shaders\def_trans_v |  |
-| def_shaders\def_trans_v_tuchi |  |
-| def_shaders\def_vertex |  |
-| def_shaders\def_vertex_hm |  |
-| def_shaders\def_vertex_pn |  |
-| def_shaders\def_vertex_pn_hm |  |
-| def_shaders\lod |  |
-| def_shaders\lod_old |  |
+| Shader name and path | Description | Preview |
+---|---|---|
+| def_shaders\def_add |  | ![def_add](images/shaders-preview/def_add.png) |
+| def_shaders\def_aref |  | ![def_aref](images/shaders-preview/def_aref.png) |
+| def_shaders\def_aref_v |  | ![def_aref_v](images/shaders-preview/def_aref_v.png) |
+| def_shaders\def_objects_lod |  | ![def_objects_lod](images/shaders-preview/def_objects_lod.png) |
+| def_shaders\def_objects_lod_trans |  | ![Alt text](images/shaders-preview/def_objects_lod_trans.png) |
+| def_shaders\def_refl_alpha |  | ![Alt text](images/shaders-preview/def_refl_alpha.png) |
+| def_shaders\def_refl_alpha_heli |  | ![Alt text](images/shaders-preview/def_refl_alpha_heli.png) |
+| def_shaders\def_refl_trans |  | ![Alt text](images/shaders-preview/def_refl_trans.png) |
+| def_shaders\def_trans |  | ![Alt text](images/shaders-preview/def_trans.png) |
+| def_shaders\def_trans_v |  | ![Alt text](images/shaders-preview/def_trans_v.png) |
+| def_shaders\def_trans_v_tuchi |  | ![Alt text](images/shaders-preview/def_trans_v_tuchi.png) |
+| def_shaders\def_vertex |  | ![Alt text](images/shaders-preview/def_vertex.png) |
+| def_shaders\def_vertex_hm |  | ![Alt text](images/shaders-preview/def_vertex.png) |
+| def_shaders\def_vertex_pn |  | ![Alt text](images/shaders-preview/def_vertex.png) |
+| def_shaders\def_vertex_pn_hm |  | ![Alt text](images/shaders-preview/def_vertex.png) |
+| def_shaders\lod |  | ![Alt text](images/shaders-preview/lod.png) |
+| def_shaders\lod_old |  | ![Alt text](images/shaders-preview/lod.png) |
 
 ### Debug Shaders
 
