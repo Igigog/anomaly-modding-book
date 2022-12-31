@@ -17,6 +17,8 @@ ___
 | Remove | Remove Selected Shaders |
 | Clone | Clone Selected Shaders |
 
+___
+
 ### Engine Shader Parametres
 
 **Shader Types**
@@ -73,6 +75,8 @@ ___
 
 > ?
 
+___
+
 ### Compiler Shader Parametres
 
 **Name**
@@ -110,6 +114,8 @@ ___
 **Cast Shadow**
 
 > Enable shadow casting for object with this shader
+
+___
 
 ### Material Parametres
 
@@ -223,7 +229,110 @@ ___
 
 > how many m/s the bullet slows down when passing 1 m of material
 
+___
+
 ### Material Pair
+
+**Command**
+
+> ?
+
+**Parent**
+
+> ?
+
+**Breaking Sounds**
+
+> Breaking Sounds
+
+**Step Sounds**
+
+> Step Sounds
+
+**Collide Sounds**
+
+> Collide Sounds
+
+**Collide Particles**
+
+> Collide Particles
+
+**Collide Marks**
+
+> Collide Marks
+
+___
 
 ### Sound Env
 
+**Name**
+
+> Sound Environment Name
+
+#### Environment
+
+**Set**
+
+> ?
+
+**Preset**
+
+> ?
+
+**Size**
+
+> ?
+
+**Diffusion**
+
+> ?
+
+#### Room
+
+**Room**
+
+> ?
+
+**RoomHF**
+
+> ?
+
+#### Distance Effects
+
+**RoomRolloffFactor**
+
+> ?
+
+**AirAbsorptionHF**
+
+> ?
+
+#### Reflections
+
+**Reflections**
+
+> ?
+
+**ReflectionsDelay**
+
+> ?
+
+#### Reverb
+
+**Reverb**
+
+> ?
+
+**ReverbDelay**
+
+> ?
+
+#### Decay
+
+**DecayTime**
+
+> ?
+
+**DecayHFRatio**
+
+> ?
