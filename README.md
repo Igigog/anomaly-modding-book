@@ -20,10 +20,10 @@ So refer to this [article](src/meta/contributing/README.md) or open an [issue](h
 
 ## Links
 
-[The Book Discord](https://discord.gg/8Pu2ekQYg3) - Come check us out!
+- [![Discord](https://img.shields.io/discord/1005783763877363722?label=Discord&logo=Discord)](https://discord.gg/8Pu2ekQYg3) - The Book Discord. Come check us out!
 
-[Igigog](https://github.com/Igigog) - Book Creator
+- [Igigog](https://github.com/Igigog) - Book Creator
 
-[The book itself](https://igigog.github.io/anomaly-modding-book/)
+- [The book itself](https://igigog.github.io/anomaly-modding-book/)
 
-[mdBook](https://github.com/rust-lang/mdBook) - The platform on which the book was written
+- [mdBook](https://github.com/rust-lang/mdBook) - The platform on which the book was written

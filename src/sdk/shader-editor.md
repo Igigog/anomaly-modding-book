@@ -8,6 +8,8 @@ ___
 
 ## Interface
 
+![se centered](sdk-image/shader-editor.png)
+
 ## Tools
 
 | Button | Description |
@@ -20,6 +22,8 @@ ___
 ___
 
 ### Engine Shader Parametres
+
+![se-es centered](sdk-image/shader-editor-engine-shaders.png)
 
 **Shader Types**
 
@@ -79,6 +83,8 @@ ___
 
 ### Compiler Shader Parametres
 
+![se-cs centered](sdk-image/shader-editor-compiler-shaders.png)
+
 **Name**
 
 > Shader Name
@@ -118,6 +124,8 @@ ___
 ___
 
 ### Material Parametres
+
+![se-m centered](sdk-image/shader-editor-materials.png)
 
 **Name**
 
@@ -233,6 +241,8 @@ ___
 
 ### Material Pair
 
+![se-mp centered](sdk-image/shader-editor-material-pair.png)
+
 **Command**
 
 > ?
@@ -264,6 +274,8 @@ ___
 ___
 
 ### Sound Env
+
+![se-se centered](sdk-image/shader-editor-sound-env.png)
 
 **Name**
 
