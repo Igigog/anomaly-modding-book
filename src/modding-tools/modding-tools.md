@@ -153,7 +153,7 @@ ___
 
 ## Parameters\LTX
 
-- [STLKObjectMan](https://drive.google.com/file/d/1OM2gZtj_Ubg7H03iI-Z_z3EAkwn1_S2R/view) - Universal parameters editor. Modifies \*[.ltx](../main-folders-and-files/file-formats/ltx.md) and \*[.xml](../main-folders-and-files/file-formats/xml.md) files. (not compatible with Anomaly due to modified [.ltx](../main-folders-and-files/file-formats/ltx.md) files)
+- [STLKObjectMan](https://drive.google.com/file/d/1OM2gZtj_Ubg7H03iI-Z_z3EAkwn1_S2R/view) - Universal parameters editor. Modifies \*[.ltx](../main-folders-and-files/file-formats/ltx.md) and \*[.xml](../main-folders-and-files/file-formats/xml.md) files. **not compatible with Anomaly due to modified config files**
 
 - [StalkerElementFinder](https://disk.yandex.ru/d/Rv-Mt1IAXyTihA%D0%B0) - A program for finding elements and resources
 
@@ -172,7 +172,7 @@ ___
 
 - [StkOggCommentViewer](https://cdn.discordapp.com/attachments/978593574893535274/979058737270644776/StkOggCommentViewer.exe) - Allows viewing comments in an [.ogg](../main-folders-and-files/file-formats/ogg.md) file
 
-- [OggCommentDecompiler](https://ap-pro.ru/applications/core/interface/file/attachment.php?id=22581) - Saves comments in a .ltx file, whose name and path are equivalent to the sound file
+- [OggCommentDecompiler](https://ap-pro.ru/applications/core/interface/file/attachment.php?id=22581) - Saves comments in a [.ltx](../main-folders-and-files/file-formats/ltx.md) file, whose name and path are equivalent to the sound file
 
 ___
 
@@ -258,7 +258,7 @@ ___
 - [senvironment_xr_cdc](https://disk.yandex.ru/d/jBnrr3Xg3PLtcc)
 - [particles_xr_cdc (Unpacking to binary files only)](https://disk.yandex.ru/d/LCkINfLw3PLtV5)
 - [converter-level](https://disk.yandex.ru/d/czZSLCzT3UrDa5)
-  - The program requires Perl [Old Version Perl](https://disk.yandex.ru/d/N6e73Ky2Wouqfg) to be installed.
+  - The program requires Old Version Active Perl **(at least version 5 and up to about version 5.24)** to be installed.
   - You also need [stkutils](https://disk.yandex.ru/d/nnjntzYZQv8sD) (put it in the folder with the script or in C:\Perl\lib)
 
 ___

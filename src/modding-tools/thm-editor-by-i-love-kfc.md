@@ -90,9 +90,9 @@ Utility for editing .thm files without the need to use the SDK
 | Field | Description |
 ---|---|
 | Autogen (S.T.A.L.K.E.R. Builds) |  |
-| None |  |
-| Use |  |
-| Use Parallax |  |
+| None | None |
+| Use | Use Bump mapping method |
+| Use Parallax | Use Parallax mapping method |
 
 ### MIP Filter
 
@@ -114,7 +114,7 @@ Utility for editing .thm files without the need to use the SDK
 | Hanning |  |
 | Hamming |  |
 | Blackman |  |
-| Kaiser |  |
+| Kaiser | Increase readability of textures by increasing sharpness and contrast |
 
 ### Material
 
@@ -156,7 +156,11 @@ Utility for editing .thm files without the need to use the SDK
 
 **Material Weight**
 
-> ?
+> Shading model weight
+
+|||
+---|---|
+| Values | 0 - OrenNayar - Blin<br> 1 - Blin - Phong<br> 2 - Phong - Metal<br> 3 - Metal - OrenNayar |
 
 **Detail Scale**
 
