@@ -7,7 +7,7 @@
 - Acknowledgements:
   - Abramcumner
   - K.D.
-- The version described in the article: 1.3
+- The version described in the article: 1.4
 - [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3341-universalnye-kompilyatory-urovney-h64)
 
 ___
@@ -52,31 +52,33 @@ It requires Microsoft Visual C++ 2017 Redistributable x64 installed.
 
 The files must be moved to the root folder of the SDK
 
+___
+
 ## Functionality
 
 ### Buttons
 
-- #### File Button
+> #### File Button
 
 | Button | Description |
 ---|---|
 | Recent Projects | Recent Projects |
 | Exit | Exit |
 
-- #### Язык/Language Button
+> #### Язык/Language Button
 
 | Button | Description |
 ---|---|
 | English | English language |
 | Русский | Russian language|
 
-- #### Help Button
+> #### Help Button
 
 | Button | Description |
 ---|---|
 | Help | Shows helpful information |
 
-- #### About Button
+> #### About Button
 
 | Button | Description |
 ---|---|
@@ -118,7 +120,9 @@ The files must be moved to the root folder of the SDK
 | -nohemi | Disable baking lighting |
 | -static | Bake static lighting |
 | -underground | Bake as underground level |
+| -cform | export only collision level |
 | -nosmg | Do not use smooth groups |
+| -notess | do not tessellate geometry |
 | -noise | Do not create geometry of Progressive-type |
 | -skipinvalid | Skip invalid faces |
 | -removeinvalid | Skip and remove invalid faces |
@@ -154,14 +158,15 @@ Check Ai-Map
 | Key | Description |
 ---|---|
 | -no_separator_check | Disable some conflicts |
+| -large_aimap | Build for large AI-map (requires a modified game engine and SDK to work!) |
 
 ##### Additional spawns
 
 | Buttons | Description |
 ---|---|
-| Add |  |
-| Remove |  |
-| Clear |  |
+| Add | Add spawn file |
+| Remove | Remove spawn file |
+| Clear | Clear spawn files |
 
 ##### Spawn name
 
@@ -171,17 +176,28 @@ Check Ai-Map
 
 - Spawn name - Spawn name
 
-### Additional keys
+### The following keys are supported/required
 
-#### Additional keys for geometry compilation
+| Key | Description |
+---|---|
+| -? or -help | call help with a list of all startup keys |
+| -f \<NAME> | level name in GameData\levels\<NAME>\ |
+| -version \<NAME> | output level format (shoc/cs/cop) |
+| -fsltx \<NAME> | use custom fsgame.ltx |
+| -log_name \<NAME> | create a log file with custom name |
+| -discord | enable discord rich presence with showing project name |
+| -discord_s | enable discord rich presence without showing project name |
+| -tbb | use TBB multithreading (not recommended) |
+| -t \<NUM> | number of threads |
+
+### Additional keys for geometry compilation
 
 | Key | Description |
 ---|---|
 | -tex_rgba | do not use compression for stored textures |
 | -tex_bc7 | use BC7 compression for stored textures (format is only supported on DX11) |
-| -cform | export only collision level |
 | -nocform | skips the creation of level.cform |
-| -notess | do not tessellate the geometry |
+| -no_mt_cdb_pack | disable multithreaded collision packing |
 | -noweld | disable small triangles welding |
 | -nomerge | skip the Merging geometry stage |
 | -noimpl | don't bake lighting for terrain |
@@ -191,22 +207,14 @@ Check Ai-Map
 | -gi | turn on the Radiosity phase |
 | -no_mt_mu | don't run the lighting calculation for Multiple Usage objects in parallel with the main compilation |
 | -high | higher priority for the threads |
-| -saveobj_base | save all level geometry in obj files (basic sweep) |
-| -saveobj_lmap | save all the level geometry to the obj files (lightmap sweep)
-| -saveobj_cform | save all the collision level in the obj file |
+| -saveobj_base | save level objects as .obj models to temp folder (base UV) |
+| -saveobj_lmap | save level objects as .obj models to temp folder (lighmap UV)
+| -saveobj_cform | save level collision as .obj models to temp folder |
+| -force_default_shader | forced replacement of "`def_vertex`" shaders with "`default`" |
+| -force_vertex_shader | forced replacement of "`default`" shaders with "`def_vertex`" |
 | -qual_draft | set the quality of the scene in Draft (does not affect the exposed shaders) |
 | -qual_high | set the quality of the scene to High (does not affect the exposed shaders) |
-| -ppm (number) | set the quality of lightmaps instead of the value in KFK |
-| -weld_dist (number) | set Weld distance instead of the KFD value |
-| -hemi_bias (number) | set the offset of the beam position when baking hemi (default: 0.1, original: 0.001) |
+| -ppm \<float> | hemi lighmaps quality (`by default: use value from SDK`) |
+| -weld_dist \<float> | weld distance (`by default: use value from SDK`) |
+| -hemi_bias \<float> | position bias for hemi calc (`default: 0.1, vanilla: 0.001`) |
 | -insert_graph | enable adding graphs to common spawn when building a SoC Level (Key for SoC only) |
-
-#### Common additional keys
-
-| Key | Description |
----|---|
-| -help | call help with a list of all startup keys |
-| -t (number) | set number of threads for multithreaded operations (does not work with the -tbb switch) |
-| -fsltx (file_name) | use your ltx instead of fsgame.ltx |
-| -log_name (file_name) | create a log file with this name. Useful for compiling locations by queue |
-| -tbb | use TBB multithreading (not recommended) |
