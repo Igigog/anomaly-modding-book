@@ -50,7 +50,7 @@ Distinguishing features:
 
 - Does not have a bone collision
 
-## Progressive Meshes
+## [Progressive Meshes](https://en.wikipedia.org/wiki/Progressive_meshes)
 
 One of the methods of dynamic level of detail
 

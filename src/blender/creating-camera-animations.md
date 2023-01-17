@@ -12,7 +12,7 @@ Create or enter a Blender scene.
 
 In the N-panel in the X-Ray panel in the Add rollout, click on the "Add X-Ray Camera"(![svg-icon camera-icon](blender-images/blender-images-icons/camera.svg)) button.
 
-Choose a empty seat and animate it!
+Choose a empty and animate it!
 
 ## Export
 

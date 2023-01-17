@@ -204,7 +204,7 @@ Check Ai-Map
 | -noresize | don't resize bigger textures to 1024x1024 |
 | -nostrip | disable geometry optimization and streamlining |
 | -dx_opt | turn on D3DX optimizer geometry optimization instead of NvTriStrip |
-| -gi | turn on the Radiosity phase |
+| -gi | turn on the [Radiosity](https://en.wikipedia.org/wiki/Radiosity_(computer_graphics)) phase |
 | -no_mt_mu | don't run the lighting calculation for Multiple Usage objects in parallel with the main compilation |
 | -high | higher priority for the threads |
 | -saveobj_base | save level objects as .obj models to temp folder (base UV) |
