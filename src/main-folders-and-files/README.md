@@ -108,7 +108,7 @@ ___
 
 **senvironment.xr**
 
-> Contains settings for sound environment zones
+> Contains settings for [sound environment zones](../sound/sound-environments-list.md)
 
 **shaders.xr**
 

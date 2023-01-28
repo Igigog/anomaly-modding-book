@@ -89,9 +89,9 @@ ___
 
 Animations for the _hud object
 
-## <center>Material</center>
-
 ___
+
+## <center>Material</center>
 
 ### Material
 
