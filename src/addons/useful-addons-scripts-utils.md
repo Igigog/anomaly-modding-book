@@ -52,6 +52,22 @@ Various utility scripts of objectionable quality for STALKER: Anomaly
 
 ___
 
+## Stalker Anomaly Resources by Oiltanker
+
+Include:
+
+- [ITEM GENERATOR](https://github.com/oiltanker/stalker-anomaly-resources/tree/main/item_generator) - used as item drops, or other stuff, will generate other items, useful for disassembly to generate custom amounts of stuff
+
+- [WORKBECH TOOL AUTO INJECTION + FIXES](https://github.com/oiltanker/stalker-anomaly-resources/tree/main/workbench) - fixes some default behaviour and can be used to create recipes with same resulting item or 1 ingredient recipes or add other items as a tool to a recipe
+
+- [TERRAIN ENUMERATOR](https://github.com/oiltanker/stalker-anomaly-resources/blob/main/terrain_enumerator/terrain_enumerator.script) - enumerates spawnable points and caches them into files
+
+### Sources
+
+[Source on GitHub](https://github.com/oiltanker/stalker-anomaly-resources)
+
+___
+
 ## Monitor Mod DB
 
 Mod DB comment monitor for addon authors
