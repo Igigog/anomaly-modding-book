@@ -2,6 +2,14 @@
 
 ___
 
+## Anomaly Engine for VS2022
+
+### Sources
+
+- [Source](https://bitbucket.org/mrnuku/xray-monolith/src/master/)
+
+___
+
 ## Boomstick Engine
 
 Engine development for the addon [Boomsticks and Sharpsticks](https://www.moddb.com/mods/stalker-anomaly/addons/boomsticks-and-sharpsticks)
