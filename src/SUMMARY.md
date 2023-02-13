@@ -142,6 +142,7 @@ ___
 
 - [Quests](quests/README.md)
   - [Introduction TO REDO](quests/introduction.md)
+  - [NPC Creation](quests/npc_creation.md)
   - [DON'T USE WTF]()
 
 ___
