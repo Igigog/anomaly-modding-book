@@ -2,7 +2,8 @@ NPC Creation
 
 ___
 
-Courtesy of GhenTuong#1278
+Guide courtesy of GhenTuong#1278
+Formatting by NLTP_ASHES#0117
 
 ### Chapter 1: Configuration.
 
