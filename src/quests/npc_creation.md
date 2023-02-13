@@ -2,13 +2,13 @@ NPC Creation
 
 ___
 
-Guide courtesy of GhenTuong#1278
-Formatting by NLTP_ASHES#0117
+Guide courtesy of GhenTuong#1278  
+Formatting by NLTP_ASHES#0117  
 
 ### Chapter 1: Configuration.
 
-What is stalker configuration:
-All dynamic objects are configurated in `_unpacked\configs\system.ltx`
+What is stalker configuration:  
+All dynamic objects are configurated in `_unpacked\configs\system.ltx`.  
 To not overcrowd the file, different configurations are grouped into multiple files and they are included in system.ltx.
 
 What files to pay attention to:
@@ -33,7 +33,9 @@ This is an example of a section.
 
 - `[bar_visitors_barman_stalker_trader]:stalker_silent`
 
-	Section name is "bar_visitors_barman_stalker_trader". And this section inherits section "stalker_silent". "bar_visitors_barman_stalker_trader" has all the lines of "stalker_silent". It's useful for making multiple sections having similar lines and only have a few different lines to avoid mistakes and tediousness when modifying.
+	Section name is "bar_visitors_barman_stalker_trader". And this section inherits section "stalker_silent".  
+	"bar_visitors_barman_stalker_trader" has all the lines of "stalker_silent".  
+	It's useful for making multiple sections having similar lines and only have a few different lines to avoid mistakes and tediousness when modifying.
 
 - `$spawn`
 
@@ -47,7 +49,7 @@ This is an example of a section.
 
 	Used for scripting. Instead of searching every object in the game to find this character, you can get him from story objects storage. 
 
-Now you make your section. Let's call your new character "han_yue_ling"
+Now you make your section. Let's call your new character "han_yue_ling"  
 We create it right in this file.
 
 File: `_unpacked\configs\creatures\spawn_sections_bar.ltx`
@@ -128,7 +130,10 @@ File: `_unpacked\configs\gameplay\character_desc_bar.xml`
 
 - `<class>bar_visitors_barman_stalker_trader</class>`
 
-	Character profile. Not to confuse with character description. Multiple character descriptions can be linked to one character profile. When a stalker is spawned, it will randomly pick one character description. So although they are the same "stalker_level_4" they have different names, icons, models, voices.
+	Character profile. Not to confuse with character description.  
+	Multiple character descriptions can be linked to one character profile.  
+	When a stalker is spawned, it will randomly pick one character description.  
+	So although they are the same "stalker_level_4" they have different names, icons, models, voices.
 
 - `<community>trader</community>`
 
@@ -159,7 +164,7 @@ File: `_unpacked\configs\gameplay\character_desc_bar.xml`
 	One of the dialog options that actor can choose after `<start_dialog></start_dialog>`.
 
 
-So we make our character description like this.
+So we make our character description like this.  
 Don't forget to create a name string id, an icon id, making your unique model `actors\han_yue_ling.ogf`.
 
 File: `_unpacked\configs\gameplay\character_desc_bar.xml`
@@ -185,7 +190,7 @@ File: `_unpacked\configs\gameplay\character_desc_bar.xml`
 
 ### Chapter 2: Squad and smart terrain.
 
-You don't spawn a stalker object alone. Stalkers and monsters always come with squads. Even when there is only one NPC, you still have to put him in a squad.
+You don't spawn a stalker object alone. Stalkers and monsters always come with squads. Even when there is only one NPC, you still have to put him in a squad.  
 Squad configuration is in `_unpacked\configs\misc\squad_descr\*`.
 
 File: `_unpacked\configs\misc\squad_descr\squad_descr_bar.xml`
