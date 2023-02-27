@@ -84,7 +84,6 @@ ___
 ___
 
 - [Mapping](mapping/README.md)
-  - [Compiling maps](mapping/compiling-maps.md)
 
 ___
 
