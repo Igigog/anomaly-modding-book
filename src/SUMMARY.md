@@ -31,10 +31,6 @@ ___
 
 ___
 
-- [Crash List](crashes/crashes-list.md)
-
-___
-
 - [Main Folders And Files](main-folders-and-files/README.md)
   - [File Formats](main-folders-and-files/file-formats/README.md)
 
