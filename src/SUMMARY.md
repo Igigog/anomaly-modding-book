@@ -37,42 +37,16 @@ ___
 
 - [Main Folders And Files](main-folders-and-files/README.md)
   - [File Formats](main-folders-and-files/file-formats/README.md)
-    - [Binary files](main-folders-and-files/file-formats/binary-files.md)
-    - [.anm](main-folders-and-files/file-formats/anm.md)
-    - [.cform](main-folders-and-files/file-formats/cform.md)
-    - [.dds](main-folders-and-files/file-formats/dds.md)
-      - [bump.dds](main-folders-and-files/file-formats/bump.md)
-      - [bump#.dds](main-folders-and-files/file-formats/bump_hash.md)
-      - [detail_map.dds](main-folders-and-files/file-formats/detail-map.md)
-    - [.details](main-folders-and-files/file-formats/detals.md)
-    - [.dm](main-folders-and-files/file-formats/dm.md)
-    - [.object](main-folders-and-files/file-formats/object.md)
-    - [.omf](main-folders-and-files/file-formats/omf.md)
-    - [.ogg](main-folders-and-files/file-formats/ogg.md)
-    - [.hom](main-folders-and-files/file-formats/hom.md)
-    - [level](main-folders-and-files/file-formats/level.md)
-    - [.ltx](main-folders-and-files/file-formats/ltx.md)
-    - [.err](main-folders-and-files/file-formats/err.md)
-    - [.geom](main-folders-and-files/file-formats/geom.md)
-    - [.efd](main-folders-and-files/file-formats/efd.md)
-    - [.seq](main-folders-and-files/file-formats/seq.md)
-    - [.som](main-folders-and-files/file-formats/som.md)
-    - [.thm](main-folders-and-files/file-formats/thm.md)
-    - [.xml](main-folders-and-files/file-formats/xml.md)
 
 ___
 
 - [Configs]()
   - [Condlists](configs/condlists.md)
-  - [Changing an item]()
-  - [Creating your own item]()
-  - [Dialogues]()
-  - [Examples of configs]()
-    - [Weapon Configuration Parameters](configs/items/weapons/w_(weapon).ltx.md)
-    - [Ammo Configuration Parameters](configs/items/weapons/weapon_ammo.ltx.md)
-    - [Weapon Sounds Parameters](configs/items/weapons/weapon_sounds.ltx.md)
-    - [Oufits Configuration Parameters](configs/items/outfits/o_(outfit).ltx.md)
-    - [Mutants Configuration Parameters](configs/creatures/m_(mutant).ltx.md)
+  - [Weapon Configuration Parameters](configs/items/weapons/w_(weapon).ltx.md)
+  - [Ammo Configuration Parameters](configs/items/weapons/weapon_ammo.ltx.md)
+  - [Weapon Sounds Parameters](configs/items/weapons/weapon_sounds.ltx.md)
+  - [Oufits Configuration Parameters](configs/items/outfits/o_(outfit).ltx.md)
+  - [Mutants Configuration Parameters](configs/creatures/m_(mutant).ltx.md)
 
 ___
 
@@ -82,10 +56,7 @@ ___
   - [Wetting our hands](scripting/wetting_hands.md)
   - [Callbacks](scripting/callbacks.md)
   - [Server and game objects](scripting/server_and_game_objects.md)
-  - [Engine classes]()
   - [MCM](scripting/mcm.md)
-  - [UI]()
-  - [Scripted dialogues]()
   - [Script Animations](scripting/script_animations.md)
 
 ___
@@ -100,7 +71,6 @@ ___
 - [Animating]()
   - [Blender](blender/README.md)
     - [Creating animations for the camera](blender/creating-camera-animations.md)
-    - [Creating an animation in Blender for a HUD object]()
     - [Editing existing animations](blender/editing-existing-animations.md)
 
 ___
@@ -128,14 +98,12 @@ ___
 ___
 
 - [A-Life (AI)](ai/README.md)
-  - [Editing .efd files]()
 
 ___
 
 - [Engine](engine/README.md)
   - [Console commands](engine/console-commands.md)
   - [Compiling](engine/compiling.md)
-  - [Architecture]()
   - [Engines List](engine/engines-list.md)
 
 ___
@@ -143,7 +111,6 @@ ___
 - [Quests](quests/README.md)
   - [Introduction TO REDO](quests/introduction.md)
   - [NPC Creation](quests/npc_creation.md)
-  - [DON'T USE WTF]()
 
 ___
 
@@ -154,17 +121,8 @@ ___
     - [Image Editor](sdk/image-editor.md)
     - [Level Editor](sdk/level-editor.md)
     - [Shader Editor](sdk/shader-editor.md)
-  - [Blender](blender/README.md)
-    - [Blender X-Ray Addon](blender/blender-x-ray-addon-summary.md)
-      - [Addon installation and setup](blender/addon-installation-and-setup.md)
-      - [Advanced settings](blender/addon-settings-options/README.md)
-        - [N-panel description](blender/addon-settings-options/n-panel-description.md)
-        - [Panels](blender/addon-settings-options/varius-properties.md)
-        - [Pathes](blender/addon-settings-options/pathes.md)
-        - [Defaults](blender/addon-settings-options/defaults.md)
-        - [Formats](blender/addon-settings-options/formats.md)
-        - [Custom Props](blender/addon-settings-options/custom-props.md)
-        - [Others](blender/addon-settings-options/others.md)
+  - [Blender X-Ray Addon](blender/blender-x-ray-addon-summary.md)
+    - [Advanced settings](blender/advanced-settings.md)
   - [THM Editor](modding-tools/thm-editor-by-i-love-kfc.md)
     - [Modified THM Editor](modding-tools/thm-editor-by-valerok.md)
   - [Bump Generator](modding-tools/bump-generator.md)
