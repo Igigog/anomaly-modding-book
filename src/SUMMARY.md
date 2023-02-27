@@ -80,11 +80,6 @@ ___
 
 ___
 
-- [Sounds]()
-  - [Sound Enviroment List](sound/sound-environments-list.md)
-
-___
-
 - [Shading](shaders/README.md)
   - [Material Shaders List](shaders/shaders-list/materials-list.md)
   - [Shaders List](shaders/shaders-list/shaders-list.md)
@@ -97,14 +92,9 @@ ___
 
 ___
 
-- [A-Life (AI)](ai/README.md)
-
-___
-
 - [Engine](engine/README.md)
   - [Console commands](engine/console-commands.md)
-  - [Compiling](engine/compiling.md)
-  - [Engines List](engine/engines-list.md)
+  - [A-Life (AI)](engine/alife.md)
 
 ___
 
