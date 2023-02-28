@@ -5,21 +5,15 @@
 ___
 
 - [Meta](meta/README.md)
-  - [Links](meta/links.md)
   - [Contributing to this book](meta/contributing/README.md)
-  - [Acknowledgements](meta/acknowledgements.md)
 
 ___
 
-- [Terminology](terminology/terminology.md)
-
-___
-
-- [Getting Started](getting-started/README.md)
+- [Mod Organizer](getting-started/README.md)
   - [Installing MO2](getting-started/installing-mo2.md)
   - [Addon installers](getting-started/addon-installers.md)
   - [Package Naming for MO2](getting-started/package-naming.md)
-  - [Configuring VSCode-like programs to handle game files](getting-started/vs-code-game-files-setup.md)
+<!--   - [Configuring VSCode-like programs to handle game files](getting-started/vs-code-game-files-setup.md) -->
 
 ___
 
@@ -124,3 +118,7 @@ ___
   - [Audio](resources/audio.md)
   - [Models](resources/models-objects-locations.md)
   - [SDK resources](resources/sdk-resources.md)
+
+___
+
+- [Terminology](terminology/terminology.md)
