@@ -68,7 +68,7 @@ ___
 ___
 
 - [Quests](quests/README.md)
-  - [Introduction TO REDO](quests/introduction.md)
+  - [Introduction](quests/introduction.md)
   - [NPC Creation](quests/npc_creation.md)
 
 ___
