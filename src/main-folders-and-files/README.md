@@ -54,15 +54,15 @@ ___
 
 **ai**
 
-> Contains the [.efd](file-formats/efd.md) files needed for the AI
+> Contains the [.efd](file-formats/index.html#efd-evaluation-function-data) files needed for the AI
 
 **anims**
 
-> Contains [.anm](file-formats/anm.md), [.anms](file-formats/anm.md) files for camera animation and .ppe files for postprocessing
+> Contains [.anm](file-formats/index.html#anm-animated-paths), [.anms](file-formats/index.html#anm-animated-paths) files for camera animation and .ppe files for postprocessing
 
 **configs**
 
-> Contains [.ltx](file-formats/ltx.md) for configuration files and [.xml](file-formats/xml.md) for text
+> Contains [.ltx](file-formats/index.html#ltx-files) for configuration files and [.xml](file-formats/index.html#xml-files) for text
 
 **levels**
 
@@ -70,7 +70,7 @@ ___
 
 **meshes**
 
-> Contains .ogf, [.dm](file-formats/dm.md), [.omf](file-formats/omf.md) file needed for models and skeleton animation
+> Contains .ogf, [.dm](file-formats/index.html#dm-detail-model), [.omf](file-formats/index.html#omf-open-motions-format) file needed for models and skeleton animation
 
 **scripts**
 
@@ -82,7 +82,7 @@ ___
 
 **sounds**
 
-> Contains [.ogg](file-formats/ogg.md) files for various music, sounds, ambient, etc.
+> Contains [.ogg](file-formats/index.html#ogg) files for various music, sounds, ambient, etc.
 
 **spawns**
 
@@ -90,7 +90,7 @@ ___
 
 **textures**
 
-> Contains [.dds](file-formats/dds.md) textures
+> Contains [.dds](file-formats/index.html#dds-directdraw-surface) textures
 
 ### <center>Files</center>
 

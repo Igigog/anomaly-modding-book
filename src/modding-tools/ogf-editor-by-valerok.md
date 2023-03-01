@@ -10,7 +10,7 @@ ___
 
 ## About
 
-Tool for working with .ogf and [.dm](../../main-folders-and-files/file-formats/dm.md) format
+Tool for working with .ogf and [.dm](../../main-folders-and-files/file-formats/index.html#dm-detail-model) format
 
 ![ogf-editor centered](modding-tools-images/ogf-editor-by-valerok.png)
 

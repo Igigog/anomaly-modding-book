@@ -63,7 +63,7 @@ Utility for editing .thm files without the need to use the SDK
 ---|---|
 | Image | 2D texture |
 | [Cube Map](https://en.wikipedia.org/wiki/Cube_mapping) | Is a method of environment mapping that uses the six faces of a cube as the map shape |
-| Bump Map | [Bump](../main-folders-and-files/file-formats/bump.md) Map |
+| Bump Map | [Bump](../main-folders-and-files/file-formats/index.html#bumpdds-1) Map |
 | Normal Map | Normal Map |
 | Terrain | Terrain Map? |
 
@@ -164,7 +164,7 @@ Utility for editing .thm files without the need to use the SDK
 
 **Detail Scale**
 
-> [Detail Map](../main-folders-and-files/file-formats/detail-map.md) Scale
+> [Detail Map](../main-folders-and-files/file-formats/index.html#detail_map_name_with-bump-or-bumpdds) Scale
 
 **Texture Width**
 
@@ -180,15 +180,15 @@ Utility for editing .thm files without the need to use the SDK
 
 **Bump Height**
 
-> [Bump Map](../main-folders-and-files/file-formats/bump.md) Height
+> [Bump Map](../main-folders-and-files/file-formats/index.html#bumpdds-1) Height
 
 **Detail name**
 
-> Path to [Detail Map](../main-folders-and-files/file-formats/detail-map.md)
+> Path to [Detail Map](../main-folders-and-files/file-formats/index.html#detail_map_name_with-bump-or-bumpdds)
 
 **Bump name**
 
-> Path to [Bump Map](../main-folders-and-files/file-formats/bump.md)
+> Path to [Bump Map](../main-folders-and-files/file-formats/index.html#bumpdds-1)
 
 **Normal Map name**
 

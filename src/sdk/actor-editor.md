@@ -29,7 +29,7 @@ File Button
 | Import | Imports the model into the scene | - |
 | Optimize Motions |  |  |
 | Batch Convert |  |  |
-| Export | Exports the model to formats  | .ogf<br> [.omf](../main-folders-and-files/file-formats/omf.md)<br> [.obj](../main-folders-and-files/file-formats/object.md)<br> [.dm](../main-folders-and-files/file-formats/dm.md)<br>C++ |
+| Export | Exports the model to formats  | .ogf<br> [.omf](../main-folders-and-files/file-formats/index.html#omf-open-motions-format)<br> [.obj](../main-folders-and-files/file-formats/index.html#object)<br> [.dm](../main-folders-and-files/file-formats/index.html#dm-detail-model)<br>C++ |
 | Quit | Exiting the program | - |
 
 ___

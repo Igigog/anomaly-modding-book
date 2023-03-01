@@ -46,9 +46,9 @@ Compile Button
 ---|---|---|
 | Build | Creates a .prj precompilation file | - |
 | Make Game | Creates a .game file | - |
-| Make Details | Creates a [.details](../main-folders-and-files/file-formats/detals.md) file | - |
-| Make HOM | Creates a [.hom](../main-folders-and-files/file-formats/hom.md) file |  |
-| Make Sound Occluder | Creates a [.som](../main-folders-and-files/file-formats/som.md) file |  |
+| Make Details | Creates a [.details](../main-folders-and-files/file-formats/index.html#details) file | - |
+| Make HOM | Creates a [.hom](../main-folders-and-files/file-formats/index.html#hom-hierarchical-occlusion-mapping) file |  |
+| Make Sound Occluder | Creates a [.som](../main-folders-and-files/file-formats/index.html#som-sound-occluder-mesh) file |  |
 | Make Ai-Map | Creates a .ai file | - |
 | Import Error List | Import Error List | .err |
 | Export Error List | Export Error List | .err |

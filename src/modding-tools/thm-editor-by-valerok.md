@@ -10,7 +10,7 @@ ___
 
 ## About
 
-The [THM Editor](thm-editor-by-i-love-kfc.md) from i-love-kfc was taken as the basis, finalized and fixed. Allows you to work with [.thm](../../main-folders-and-files/file-formats/thm.md) files.
+The [THM Editor](thm-editor-by-i-love-kfc.md) from i-love-kfc was taken as the basis, finalized and fixed. Allows you to work with [.thm](../../main-folders-and-files/file-formats/index.html#thm) files.
 
 ![thm-editor-by-valerok centered](modding-tools-images/thm-editor-by-valerok.png)
 

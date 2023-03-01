@@ -1,1 +1,0 @@
-# Addon installation and setup

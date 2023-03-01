@@ -9,7 +9,7 @@ Description of addon settings
 - [Formats](#formats)
 - [Panels](#panels)
 
----
+___
 
 # Paths
 

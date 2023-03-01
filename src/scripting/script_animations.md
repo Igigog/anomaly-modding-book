@@ -57,12 +57,12 @@ Now let’s have a look at what we need to play animations in scripts.
 
 To play a motion, we need a few components:
 
-1. An [.ltx](../main-folders-and-files/file-formats/ltx.md) file containing the basic parameters of the motion we’re going to use.
+1. An [.ltx](../main-folders-and-files/file-formats/index.html#ltx-files) file containing the basic parameters of the motion we’re going to use.
 2. A script function to play it.
 
 #### Setting up motion parameters
 
-1. Create a config [.ltx](../main-folders-and-files/file-formats/ltx.md) file in **configs/items/items** and give it any name, but make sure it starts with **items_**. Example: **items_my_anims.ltx**.
+1. Create a config [.ltx](../main-folders-and-files/file-formats/index.html#ltx-files) file in **configs/items/items** and give it any name, but make sure it starts with **items_**. Example: **items_my_anims.ltx**.
 2. Set the parameters. We’ll examine them by looking at this example.
 
 ```ini

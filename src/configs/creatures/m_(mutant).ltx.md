@@ -51,9 +51,9 @@ Example value taken from vanilla m_bloodsucker.ltx
 | DayTime_End | End of a mutant's day | 5 | Game Time |
 | Min_Satiety | Minimum hunger value | 0.000055 |  |
 | Max_Satiety | Maximum hunger value | 0.9 |  |
-| ef_creature_type | Mutant AI type ([Evaluation Function](../../main-folders-and-files/file-formats/efd.md)) | 13 | -1 - No AI?<br> 1 - ?<br> 2 - Rat<br> 3 - Zombie<br> 4 - Zombified Man?<br> 5 - Poltergeist<br> 6 - Blind Dog<br> 7 - Flesh<br> 8 - ?<br> 9 - ?<br> 10 - ?<br> 11 - Boar<br> 12 - Controller<br> 13 - Bloodsucker<br> 14 - Soldier?<br> 15 - ?<br> 16 - Military Stalker?<br> 17 - Stalker<br> 18 - Burer<br> 19 - Psevdogiant<br> 20 - Chimera<br> 21 - Fracture |
+| ef_creature_type | Mutant AI type ([Evaluation Function](../../main-folders-and-files/file-formats/index.html#efd-evaluation-function-data)) | 13 | -1 - No AI?<br> 1 - ?<br> 2 - Rat<br> 3 - Zombie<br> 4 - Zombified Man?<br> 5 - Poltergeist<br> 6 - Blind Dog<br> 7 - Flesh<br> 8 - ?<br> 9 - ?<br> 10 - ?<br> 11 - Boar<br> 12 - Controller<br> 13 - Bloodsucker<br> 14 - Soldier?<br> 15 - ?<br> 16 - Military Stalker?<br> 17 - Stalker<br> 18 - Burer<br> 19 - Psevdogiant<br> 20 - Chimera<br> 21 - Fracture |
 | ef_weapon_type |  | 2 |  |
-| ef_detector_type | Type of detector used ([Evaluation Function](../../main-folders-and-files/file-formats/efd.md)) | 1 | 1 - no detector<br> 2 - simple detector<br> 3 - visual detector |
+| ef_detector_type | Type of detector used ([Evaluation Function](../../main-folders-and-files/file-formats/index.html#efd-evaluation-function-data)) | 1 | 1 - no detector<br> 2 - simple detector<br> 3 - visual detector |
 | panic_threshold  | The threshold below which there will be panic | 0.01 |  |
 | weapon_usage | Ability to use weapons(?) | 0 |  |
 

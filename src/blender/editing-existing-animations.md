@@ -10,8 +10,8 @@ ___
 
 Before you begin, familiarize yourself with the animation files:
 
-- skeleton animations ([.skl](../main-folders-and-files/file-formats/index.html#animations), [.skls](../main-folders-and-files/file-formats/index.html#animations), [.omf](../main-folders-and-files/file-formats/omf.md))
-- camera animations ([.anm](../main-folders-and-files/file-formats/anm.md))
+- skeleton animations ([.skl](../main-folders-and-files/file-formats/index.html#animations), [.skls](../main-folders-and-files/file-formats/index.html#animations), [.omf](../main-folders-and-files/file-formats/index.html#omf-open-motions-format))
+- camera animations ([.anm](../main-folders-and-files/file-formats/index.html#anm-animated-paths))
 
 ## Editing hud animations
 

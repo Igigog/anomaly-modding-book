@@ -10,7 +10,7 @@ ___
 
 ## About
 
-Modified tool for working with [.omf](../../main-folders-and-files/file-formats/omf.md) format.
+Modified tool for working with [.omf](../../main-folders-and-files/file-formats/index.html#omf-open-motions-format) format.
 
 ![editor centered](modding-tools-images/omf-editor-by-valerok.png)
 

@@ -6,7 +6,7 @@ This article is about creating a model and setting its parameters
 
 ## Beginning
 
-- First, familiarize yourself with the limitations and capabilities of the format [.object](../main-folders-and-files/file-formats/object.md) (because you may export to it more often than to .ogf) to avoid errors.
+- First, familiarize yourself with the limitations and capabilities of the format [.object](../main-folders-and-files/file-formats/index.html#object) (because you may export to it more often than to .ogf) to avoid errors.
 - This article will talk about textures, [read an article about creating and preparing them](../texturing/сreating-and-preparing-textures.md).
 
 ___
@@ -37,12 +37,12 @@ Texture:
 
 In STALKER, due to its outdated engine, only the following texture maps are used:
 
-- Color Map ([.dds](../main-folders-and-files/file-formats/dds.md))
-- Normal Maps (For Stalker they are used as [.bump](../main-folders-and-files/file-formats/bump.md) and [.bump#](../main-folders-and-files/file-formats/bump_hash.md)) (The Blender X-Ray addon does not support the [.bump](../main-folders-and-files/file-formats/bump.md) format at this time (June 2022).)
+- Color Map ([.dds](../main-folders-and-files/file-formats/index.html#dds-directdraw-surface))
+- Normal Maps (For Stalker they are used as [.bump](../main-folders-and-files/file-formats/index.html#bumpdds-1) and [.bump#](../main-folders-and-files/file-formats/index.html#bumpdds)) (The Blender X-Ray addon does not support the [.bump](../main-folders-and-files/file-formats/index.html#bumpdds-1) format at this time (June 2022).)
 
 So extra texture maps will have to be removed.
 
-Here you need to add your created texture in [.dds](../main-folders-and-files/file-formats/dds.md) format
+Here you need to add your created texture in [.dds](../main-folders-and-files/file-formats/index.html#dds-directdraw-surface) format
 
 As a result, in the Shader Editor (![svg-icon shader-editor](blender-images/blender-images-icons/shader-editor.svg)) our textures should look something like this:
 ![model-example-texture-shading](blender-images/model-example-texture-shading.png)

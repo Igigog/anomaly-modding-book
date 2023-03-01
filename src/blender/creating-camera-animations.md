@@ -4,7 +4,7 @@ ___
 
 ## Beginning
 
-- First, familiarize yourself with the [.anm](../main-folders-and-files/file-formats/anm.md) file format.
+- First, familiarize yourself with the [.anm](../main-folders-and-files/file-formats/index.html#anm-animated-paths) file format.
 
 ## Creating animations
 
