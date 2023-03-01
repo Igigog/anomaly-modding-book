@@ -25,18 +25,8 @@ ___
 
 ___
 
-- [Main Folders And Files](main-folders-and-files/README.md)
-  - [File Formats](main-folders-and-files/file-formats/README.md)
-
-___
-
 - [Configs]()
   - [Condlists](configs/condlists.md)
-  - [Weapon Configuration Parameters](configs/items/weapons/w_(weapon).ltx.md)
-  - [Ammo Configuration Parameters](configs/items/weapons/weapon_ammo.ltx.md)
-  - [Weapon Sounds Parameters](configs/items/weapons/weapon_sounds.ltx.md)
-  - [Oufits Configuration Parameters](configs/items/outfits/o_(outfit).ltx.md)
-  - [Mutants Configuration Parameters](configs/creatures/m_(mutant).ltx.md)
 
 ___
 
@@ -52,16 +42,14 @@ ___
 ___
 
 - [Modelling]()
-  - [Blender](blender/README.md)
-    - [Creating model in Blender](blender/creating-model-in-blender.md)
-    - [Creating a location in Blender](blender/creating-a-location-in-blender.md)
+  - [Creating model in Blender](blender/creating-model-in-blender.md)
+  - [Creating a location in Blender](blender/creating-a-location-in-blender.md)
 
 ___
 
 - [Animating]()
-  - [Blender](blender/README.md)
-    - [Creating animations for the camera](blender/creating-camera-animations.md)
-    - [Editing existing animations](blender/editing-existing-animations.md)
+  - [Creating animations for the camera](blender/creating-camera-animations.md)
+  - [Editing existing animations](blender/editing-existing-animations.md)
 
 ___
 
@@ -70,19 +58,11 @@ ___
 
 ___
 
-- [Shading](shaders/README.md)
-  - [Material Shaders List](shaders/shaders-list/materials-list.md)
-  - [Shaders List](shaders/shaders-list/shaders-list.md)
-  - [Compiler Shaders List](shaders/shaders-list/compiler-shaders-list.md)
-
-___
-
 - [Mapping](mapping/README.md)
 
 ___
 
 - [Engine](engine/README.md)
-  - [Console commands](engine/console-commands.md)
   - [A-Life (AI)](engine/alife.md)
 
 ___
@@ -93,7 +73,35 @@ ___
 
 ___
 
-- [Modding Tools List](modding-tools/modding-tools.md)
+___
+
+- [Reference/General](reference/README.md)
+  - [Terminology](terminology/terminology.md)
+  - [Main Folders And Files](main-folders-and-files/README.md)
+  - [File Formats](main-folders-and-files/file-formats/README.md)
+
+- [Reference/Configs](reference/README.md)
+  - [Weapon Configuration Parameters](configs/items/weapons/w_(weapon).ltx.md)
+  - [Ammo Configuration Parameters](configs/items/weapons/weapon_ammo.ltx.md)
+  - [Weapon Sounds Parameters](configs/items/weapons/weapon_sounds.ltx.md)
+  - [Oufits Configuration Parameters](configs/items/outfits/o_(outfit).ltx.md)
+  - [Mutants Configuration Parameters](configs/creatures/m_(mutant).ltx.md)
+
+- [Reference/Shaders](reference/README.md)
+  - [Material Shaders List](shaders/shaders-list/materials-list.md)
+  - [Shaders List](shaders/shaders-list/shaders-list.md)
+  - [Compiler Shaders List](shaders/shaders-list/compiler-shaders-list.md)
+
+- [Reference/Engine](reference/README.md)
+  - [Console commands](engine/console-commands.md)
+
+- [Reference/Resources](reference/README.md)
+  - [Audio](resources/audio.md)
+  - [Models](resources/models-objects-locations.md)
+  - [SDK resources](resources/sdk-resources.md)
+
+- [Reference/Tools](reference/README.md)
+  - [Modding Tools List](modding-tools/modding-tools.md)
   - [SDK 0.7](sdk/README.md)
     - [Interface](sdk/interface.md)
     - [Actor Editor](sdk/actor-editor.md)
@@ -111,14 +119,3 @@ ___
   - [X-Ray Export Tool](modding-tools/xray-export-tool.md)
   - [Universal x64 level compilers](modding-tools/universal-x64-level-compilers.md)
   - [xrCompress](modding-tools/xrcompress-by-i-love-kfc.md)
-
-___
-
-- [Resources](resources/README.md)
-  - [Audio](resources/audio.md)
-  - [Models](resources/models-objects-locations.md)
-  - [SDK resources](resources/sdk-resources.md)
-
-___
-
-- [Terminology](terminology/terminology.md)
