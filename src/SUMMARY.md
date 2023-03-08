@@ -21,6 +21,7 @@ ___
   - [DLTX](addons/dltx.md)
   - [DXML](addons/dxml.md)
   - [Monkey patching](addons/monkey-patching.md)
+  - [Lua Unlocalizer](addons/lua-unlocalizer.md)
   - [Useful addons, scripts and utils](addons/useful-addons-scripts-utils.md)
 
 ___
