@@ -28,6 +28,7 @@ ___
 
 - [Configs]()
   - [Condlists](configs/condlists.md)
+  - [Inventory Icons](configs/inventory_icons.md)
 
 ___
 
