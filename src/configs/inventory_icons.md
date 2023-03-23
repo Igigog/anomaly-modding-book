@@ -29,10 +29,12 @@ First, icons textures are contained in icon sheets : textures containing multipl
 **File :** `gamedata\configs\items\items\items_my_item.ltx` 
 ```ini
 [my_item]
-icons_texture           = ui\icons\my_icon_sheet        ; this is a path relative to 'gamedata\textures\'
+icons_texture           = ui\icons\my_icon_sheet
 ...
 ```
-In this example, the `icons_texture` field will tell the game to look for the icon sheet at `gamedata\textures\ui\icons\my_icon_sheet.dds`.  
+
+In this example, the `icons_texture` field contains a path, relative to `gamedata\textures\` where the game to look for the icon sheet at `gamedata\textures\ui\icons\my_icon_sheet.dds`.
+
 If you do not define this field, the game will default back to the vanilla icon sheet : `gamedata\textures\ui\ui_icon_equipment.dds`.
 
 ### I.B Placement on the icon sheet
@@ -43,10 +45,10 @@ Like will be later explained, your icon will be somewhere on this icon sheet. Th
 ```ini
 [my_item]
 ...
-inv_grid_width          = 2                             ; how many slots wide it should be
-inv_grid_height         = 1                             ; how many slots tall it should be
-inv_grid_x              = 4                             ; where on the 50px by 50px grid the icon is on the x axis (starts at 0)
-inv_grid_y              = 2                             ; where on the 50px by 50px grid the icon is on the y axis (starts at 0)
+inv_grid_width          = 2    ; how many slots wide it should be
+inv_grid_height         = 1    ; how many slots tall it should be
+inv_grid_x              = 4    ; where on the grid the icon is on the x axis
+inv_grid_y              = 2    ; where on the grid the icon is on the y axis
 ```
 
 ___
@@ -57,16 +59,14 @@ Now that we understand how the icon sheet is used, it's time to... well, create 
 
 ### II.A. Generalities
 
-To create and edit your icon sheet, you'll need a specialized software program. Many exist, and it's really up to your personal preferences.  
-I personally use [Paint.NET](https://www.getpaint.net/download.html)(Free), but you can use [GIMP](https://www.gimp.org/downloads/)(Free), [ImageMagick](https://imagemagick.org/script/download.php)(Free), [Adobe Photoshop](https://www.adobe.com/products/photoshop.html)(Paid), etc.
+To create and edit your icon sheet, you'll need a specialized software program. Many exist, and it's really up to your personal preferences. I personally use [Paint.NET](https://www.getpaint.net/download.html) (Free), but you can use [GIMP](https://www.gimp.org/downloads/) (Free), [ImageMagick](https://imagemagick.org/script/download.php) (Free), [Adobe Photoshop](https://www.adobe.com/products/photoshop.html) (Paid), etc.
 
-First, you will need to create a DirectDraw Surface (.dds) file at the location you defined in the item's config.  
-Here, following the same example, that will be `gamedata\textures\ui\icons\` with a file called `my_icon_sheet.dds`.
+First, you will need to create a DirectDraw Surface (.dds) file at the location you defined in the item's config. Here, following the same example, that will be `gamedata\textures\ui\icons\` with a file called `my_icon_sheet.dds`.
 
-For your icons to look good, and have maximum compatibility from DX8 to DX11, you want to respect two criteria :
-1. The x and y resolution of your texture must be a power of 2 : `128x256` or `256x256` or `1024x512`, etc.;
-2. When saving the icon sheet, use `ARGB8` (also called `A8R8G8B8`) format.
-3. The background of your icon sheet should be transparent (don't use a white background like in the rest of the guide).
+For your icons to look good, and have maximum compatibility, you should :
+1. Have the x and y resolution of your texture must be a power of 2 : `128x256` or `256x256`, etc.;
+2. Save the icon sheet, using `ARGB8` (also called `A8R8G8B8`) format;
+3. Make the background of your icon sheet should be transparent.
 
 You can think of your sheet as a grid of "slots". Each slot is 50px by 50px. So if you want your icon to be 1 slot, it should be 50px by 50px, two slots vertically 100px by 50px, etc.
 
@@ -76,30 +76,46 @@ Your icon(s) should :
 
 ### II.B. Setting up icons within the sheet
 
-Let us take the following icon sheet as an example. You can imagine each slot having a coordinate on this grid. Coordinates start a (0, 0).
+Let us take the following icon sheet as an example. 
 
 **Note :** The [black grid](https://forums.getpaint.net/topic/4175-grid-maker-plugin/) is here to help in the explanation, and is of course to be removed before using the icon sheet in-game !
+
+**Note 2 :** The white background is here to help you see the grid. Your icon sheet should not have a white background !
 
 **File :** `gamedata\textures\ui\icons\my_icon_sheet.dds`
 
 ![Image of an icon sheet](images/modding_book_icons_1.png)
+
+You can imagine each slot having a coordinate on this grid. Coordinates start a (0, 0).
+
+**File :** `gamedata\textures\ui\icons\my_icon_sheet.dds`
+
 ![Image of an icon sheet with coordinates shown](images/modding_book_icons_2.png)
 
-
-The coordinates for the box of Mon Cheri (the red box in the middle) are for example (4, 2). The size of the icon is 2 for the width, and 1 for the height.
+The coordinates for the box of Mon Cheri (the red box in the middle) are for example (4, 2).
 
 **File :** `gamedata\configs\items\my_item.ltx`
 ```ini
 [my_item]
 ...
-inv_grid_width          = 2                             ; how many slots wide it should be
-inv_grid_height         = 1                             ; how many slots tall it should be
-
-inv_grid_x              = 4                             ; where on the 50px by 50px grid the icon is on the x axis (starts at 0)
-inv_grid_y              = 2                             ; where on the 50px by 50px grid the icon is on the y axis (starts at 0)
+inv_grid_x              = 4    ; where on the grid the icon is on the x axis
+inv_grid_y              = 2    ; where on the grid the icon is on the y axis
 ```
 
 **File :** `gamedata\textures\ui\icons\my_icon_sheet.dds`
 
 ![Image of an icon sheet with coordinates shown](images/modding_book_icons_3.png)
+
+The size of the icon is 2 for the width, and 1 for the height.
+
+**File :** `gamedata\configs\items\my_item.ltx`
+```ini
+[my_item]
+...
+inv_grid_width          = 2    ; how many slots wide it should be
+inv_grid_height         = 1    ; how many slots tall it should be
+```
+
+**File :** `gamedata\textures\ui\icons\my_icon_sheet.dds`
+
 ![Image of an icon sheet with coordinates shown](images/modding_book_icons_4.png)

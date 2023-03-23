@@ -40,15 +40,21 @@ story_id                    = bar_visitors_barman_stalker_trader
 
 This is an example of a section.
 
-| Item                                                  | Details                                                                                                                                                                                                                                                                                                                                   |
-|:------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `[bar_visitors_barman_stalker_trader]:stalker_silent` | Section name is "bar_visitors_barman_stalker_trader". And this section inherits section "stalker_silent". "bar_visitors_barman_stalker_trader" has all the lines of "stalker_silent". It's useful for making multiple sections having similar lines and only have a few different lines to avoid mistakes and tediousness when modifying. |
-| `$spawn`                                              | This on is not important, ignore.                                                                                                                                                                                                                                                                                                         |
-| `character_profile`                                   | You will later create a profile for the character in _unpacked\configs\gameplay\.                                                                                                                                                                                                                                                         |
-| `story_id`                                            | Used for scripting. Instead of searching every object in the game to find this character, you can get him from story objects storage.                                                                                                                                                                                                     |
+- `[bar_visitors_barman_stalker_trader]:stalker_silent`  
+  Section name is `bar_visitors_barman_stalker_trader`, and inherits section `stalker_silent`.  
+  `bar_visitors_barman_stalker_trader` has all the lines of `stalker_silent`.  
+  It's useful for making multiple sections having similar lines and only have a few different lines to avoid mistakes and tediousness when modifying.
 
-Now you make your section. Let's call your new character "han_yue_ling"  
-We create it right in this file.
+- `$spawn`  
+  This on is not important, ignore.
+
+- `character_profile`  
+  You will later create a profile for the character in _unpacked\configs\gameplay\.
+
+- `story_id`  
+  Used for scripting. Instead of searching every object in the game to find this character, you can get him from story objects storage.
+
+Now you make your section. Let's call your new character "han_yue_ling". We create it right in this file.
 
 **File :** `_unpacked\configs\creatures\spawn_sections_bar.ltx`
 ```ini
@@ -62,6 +68,7 @@ I set it up to inherit "stalker" because I don't need the additional configurati
 ___
 
 ## Chapter 3 : NPC profile
+
 **File :** `_unpacked\configs\gameplay\npc_profile_mlr.xml`
 ```xml
 <!-- Bar -->
@@ -108,24 +115,49 @@ Now we create a character description.
 </specific_character>
 ```
 
-| Item                                                                              | Details                                                                                                                                                                                                                                                                                                             |
-|:----------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `<!-- Barkeep -->`                                                                | This is how you make comment in xml files. `<!-- -->`.                                                                                                                                                                                                                                                              |
-| `<specific_character id="bar_visitors_barman_stalker_trader" team_default = "1">` | Character description id.                                                                                                                                                                                                                                                                                           |
-| `<name>bar_barmen_name</name>`                                                    | Stalker name. The game will try to map this id with the strings in `_unpacked\configs\text\*`.                                                                                                                                                                                                                      |
-| `<icon>ui_inGame2_barman</icon>`                                                  | Same as `<name></name>` but in `_unpacked\configs\ui\textures_descr\*`.                                                                                                                                                                                                                                             |
-| `<bio>bar_barmen_bio</bio>`                                                       | Not important. Can just leave it `<bio></bio>`.                                                                                                                                                                                                                                                                     |
-| `<class>bar_visitors_barman_stalker_trader</class>`                               | Character profile. Not to confuse with character description. Multiple character descriptions can be linked to one character profile. When a stalker is spawned, it will randomly pick a character description. So although they are the same "stalker_level_4" they have different names, icons, models, voices.   |
-| `<community>trader</community>`                                                   | Faction. dolg,freedom,stalker,army, etc.                                                                                                                                                                                                                                                                            |
-| `<terrain_sect>stalker_terrain</terrain_sect>`                                    | Not important. Just keep it as is.                                                                                                                                                                                                                                                                                  |
-| `<visual>actors\barman\barman</visual>`                                           | Stalker model.                                                                                                                                                                                                                                                                                                      |
-| `<crouch_type>-1</crouch_type>`                                                   | No idea. Maybe it's because Barman has unique animations? I don't create this line in my character description.                                                                                                                                                                                                     |
-| `<supplies></supplies>`                                                           | Items that are guaranteed to be given to the stalker when he is spawned.                                                                                                                                                                                                                                            |
-| `<start_dialog>bar_visitors_barman_stalker_trader_start_dialog</start_dialog>`    | Stalkers will speak this dialog when initiating dialog.                                                                                                                                                                                                                                                             |
-| `<actor_dialog>dm_init_batender</actor_dialog>`                                   | One of the dialog options that actor can choose after `<start_dialog></start_dialog>`.                                                                                                                                                                                                                              |
+- `<!-- Barkeep -->`  
+  This is how you make comment in xml files. `<!-- -->`.
 
-So we make our character description like this.  
-Don't forget to create a name string id, an icon id, making your unique model `actors\han_yue_ling.ogf`.
+- `<specific_character id="bar_visitors_barman_stalker_trader" team_default = "1">`  
+  Character description id.
+
+- `<name>bar_barmen_name</name>`  
+  Stalker name. The game will try to map this id with the strings in `_unpacked\configs\text\*`.
+
+- `<icon>ui_inGame2_barman</icon>`  
+  Same as `<name></name>` but in `_unpacked\configs\ui\textures_descr\*`.
+
+- `<bio>bar_barmen_bio</bio>`  
+  Not important. Can just leave it `<bio></bio>`.
+
+- `<class>bar_visitors_barman_stalker_trader</class>`  
+  Character profile. Not to confuse with character description.  
+  Multiple character descriptions can be linked to one character profile.  
+  When a stalker is spawned, it will randomly pick one of the character descriptions.  
+  So although they are the same "stalker_level_4" they have different names, icons, models, voices.
+
+- `<community>trader</community>`  
+  Faction. dolg,freedom,stalker,army, etc.
+
+- `<terrain_sect>stalker_terrain</terrain_sect>`  
+  Not important. Just keep it as is.
+
+- `<visual>actors\barman\barman</visual>`  
+  Stalker model.
+
+- `<crouch_type>-1</crouch_type>`  
+  No idea. Maybe it's because Barman has unique animations? I don't create this line in my character description.
+
+- `<supplies></supplies>`  
+  Items that are guaranteed to be given to the stalker when he is spawned.
+
+- `<start_dialog>bar_visitors_barman_stalker_trader_start_dialog</start_dialog>`  
+  Stalkers will speak this dialog when initiating dialog.
+
+- `<actor_dialog>dm_init_batender</actor_dialog>`  
+  One of the dialog options that actor can choose after `<start_dialog></start_dialog>`.
+
+So we make our character description like this. Don't forget to create a name string id, an icon id, making your unique model `actors\han_yue_ling.ogf`.
 
 **File :** `_unpacked\configs\gameplay\character_desc_bar.xml`
 ```xml
@@ -152,7 +184,8 @@ ___
 
 ## Chapter 4 : Squad and smart terrain
 
-You don't spawn a stalker object alone. Stalkers and monsters always come with squads. Even when there is only one NPC, you still have to put him in a squad.  
+You don't spawn a stalker object alone. Stalkers and monsters always come with squads. Even when there is only one NPC, you still have to put him in a squad.
+
 Squad configuration is in `_unpacked\configs\misc\squad_descr\*`.
 
 **File :** `_unpacked\configs\misc\squad_descr\squad_descr_bar.xml`
@@ -166,15 +199,26 @@ story_id                    = bar_visitors_barman_stalker_trader_squad
 always_arrived              = true
 ```
 
-| Item                                                              | Details                                                                                                         |
-|:------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------|
-| `[bar_visitors_barman_stalker_trader_squad]:online_offline_group` | No need to explain again. See Chapter 1.                                                                        |
-| `faction = stalker`                                               | Squad faction.                                                                                                  |
-| `npc = bar_visitors_barman_stalker_trader`                        | NPCs that are guaranteed to be spawned in the squad. You put object section here. See Chapter 1.                |
-| `target_smart = bar_visitors`                                     | The squad will try to reach this smart terrain and will stay here forever. Can use a condlist to change target. |
-| `spawn_point = bar_barman_spawn`                                  | Where squad members appear when they are online. I don't find it useful so never use it.                        |
-| `story_id = bar_visitors_barman_stalker_trader_squad`             | Squad story id. See Chapter 1.                                                                                  |
-| `always_arrived = true`                                           | I don't know, never use it.                                                                                     |
+- `[bar_visitors_barman_stalker_trader_squad]:online_offline_group`  
+  No need to explain again. See Chapter 1.
+
+- `faction = stalker`  
+  Squad faction.
+
+- `npc = bar_visitors_barman_stalker_trader`  
+  NPCs that are guaranteed to be spawned in the squad. You put object section here. See Chapter 1.
+
+- `target_smart = bar_visitors`  
+  The squad will try to reach this smart terrain and will stay here forever. Can use a condlist to change target.
+
+- `spawn_point = bar_barman_spawn`  
+  Where squad members appear when they are online. I don't find it useful so never use it.
+
+- `story_id = bar_visitors_barman_stalker_trader_squad`  
+  Squad story id. See Chapter 1.
+
+- `always_arrived = true`  
+  I don't know, never use it.
 
 So we make our squad:
 
@@ -187,7 +231,9 @@ target_smart                = bar_dolg_general
 story_id                    = han_yue_ling_squad
 ```
 
-You can always find smart terrain name in here. `_unpacked\configs\scripts\<level name>\smart\<smart terrain name>`. Example: `_unpacked\configs\scripts\bar\smart\bar_dolg_bunker.ltx`
+You can always find smart terrain name in here. `_unpacked\configs\scripts\<level name>\smart\<smart terrain name>`. 
+
+Example: `_unpacked\configs\scripts\bar\smart\bar_dolg_bunker.ltx`
 
 ___
 
@@ -201,7 +247,7 @@ Make a new file in `_unpacked\scripts\` like this:
 
 **File :** `_unpacked\scripts\han_yue_ling.script`
 ```lua
---[[Bind function actor_on_first_update() to callback "actor_on_first_update"]]
+-- Bind function actor_on_first_update() to callback "actor_on_first_update"
 function on_game_start()
 	RegisterScriptCallback("actor_on_first_update",spawn_han_yue_ling)
 end
@@ -225,9 +271,9 @@ function spawn_han_yue_ling()
 end
 ```
 
-| Item                                      | Details                                      |
-|:------------------------------------------|:---------------------------------------------|
-| `--[[some comment]]` or `-- some comment` | Is how you make comment lines in lua script. |
+- `--[[ some comment ]]` or `-- some comment`  
+  Is how you make comment lines in lua script.
+
 
 Start a new game or load your save files and the npc will be spawned and stay around the campfire in duty headquarters yard.
 
