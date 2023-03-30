@@ -3,12 +3,12 @@
 Written by NLTP_ASHES#0117
 
 Table of content :
-- I. Item config
-- I.A. Defining an icon sheet
-- I.B Placement on the icon sheet
-- II. Icon sheet
-- II.A. Generalities
-- II.B. Setting up icons within the sheet
+- [I. Item config](inventory_icons.md#i-item-config)
+- [I.A. Defining an icon sheet](inventory_icons.md#ia-defining-an-icon-sheet)
+- [I.B Placement on the icon sheet](inventory_icons.md#ib-placement-on-the-icon-sheet)
+- [II. Icon sheet](inventory_icons.md#ii-icon-sheet)
+- [II.A. Generalities](inventory_icons.md#iia-generalities)
+- [II.B. Setting up icons within the sheet](inventory_icons.md#iib-setting-up-icons-within-the-sheet)
 
 ___
 
@@ -21,6 +21,8 @@ ___
 ## I. Item config
 
 Let's start from the end : the item's config. To assign an icon to an item, you need to consider two things. Which icon sheet to use, and where your icon is on this sheet.
+
+___
 
 ### I.A. Defining an icon sheet
 
@@ -36,6 +38,8 @@ icons_texture           = ui\icons\my_icon_sheet
 In this example, the `icons_texture` field contains a path, relative to `gamedata\textures\` where the game to look for the icon sheet at `gamedata\textures\ui\icons\my_icon_sheet.dds`.
 
 If you do not define this field, the game will default back to the vanilla icon sheet : `gamedata\textures\ui\ui_icon_equipment.dds`.
+
+___
 
 ### I.B Placement on the icon sheet
 
@@ -57,6 +61,8 @@ ___
 
 Now that we understand how the icon sheet is used, it's time to... well, create an icon sheet.
 
+___
+
 ### II.A. Generalities
 
 To create and edit your icon sheet, you'll need a specialized software program. Many exist, and it's really up to your personal preferences. I personally use [Paint.NET](https://www.getpaint.net/download.html) (Free), but you can use [GIMP](https://www.gimp.org/downloads/) (Free), [ImageMagick](https://imagemagick.org/script/download.php) (Free), [Adobe Photoshop](https://www.adobe.com/products/photoshop.html) (Paid), etc.
@@ -73,6 +79,8 @@ You can think of your sheet as a grid of "slots". Each slot is 50px by 50px. So 
 Your icon(s) should :
 1. Be at least 1 slot wide and 1 slot tall (otherwise there isn't really an icon you know?);
 2. Be at most 10 slots wide (that's the width of vanilla's inventory).
+
+___
 
 ### II.B. Setting up icons within the sheet
 

@@ -72,8 +72,7 @@ ___
 - [Quests](quests/README.md)
   - [Introduction](quests/introduction.md)
   - [NPC Creation](quests/npc_creation.md)
-
-___
+  - [Task Creation](quests/task_guide.md)
 
 ___
 

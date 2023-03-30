@@ -4,13 +4,13 @@ Guide courtesy of GhenTuong#1278
 Formatting and edited by NLTP_ASHES#0117  
 
 Table of content :
-- Chapter 1 : Configuration
-- Chapter 2 : NPC section
-- Chapter 3 : NPC profile
-- Chapter 4 : Squad and smart terrain.
-- Chapter 5 : Spawn
-- Chapter 5.A : Spawn by script
-- Chapter 5.B : Spawn by adding to simulation.ltx
+- [Chapter 1 : Configuration](npc_creation.md#chapter-1--configuration)
+- [Chapter 2 : NPC section](npc_creation.md#chapter-2--npc-section)
+- [Chapter 3 : NPC profile](npc_creation.md#chapter-3--npc-profile)
+- [Chapter 4 : Squad and smart terrain](npc_creation.md#chapter-4--squad-and-smart-terrain)
+- [Chapter 5 : Spawn](npc_creation.md#chapter-5--spawn)
+- [Chapter 5.A : Spawn by script](npc_creation.md#chapter-5a--spawn-by-script)
+- [Chapter 5.B : Spawn by adding to simulation.ltx](npc_creation.md#chapter-5b--spawn-by-adding-to-simulationltx)
 
 ___
 
@@ -79,10 +79,11 @@ ___
 
 Very simple. Just make your NPC profile in a similar way.
 
-**File :** `_unpacked\configs\gameplay\npc_profile.xml`
+**File :** `_unpacked\configs\gameplay\npc_profile_mlr.xml`
 ```xml
 <character id="han_yue_ling">
 	<class>han_yue_ling</class>
+    <specific_character>han_yue_ling</specific_character>
 </character>
 ```
 
