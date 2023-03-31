@@ -2,23 +2,25 @@
 
 ___
 
-> Внимание! Этот туториал соответсвует методу анимации от TheParaziT и может отличаться от других методов других аниматоров!
+> Attention: This tutorial corresponds to TheParaziT's animation method and may differ from other animators' methods!
 
-## Начало
+## Getting Started
 
-1. Изучите расширения анимаций (.anm, .skl, .skls, .omf)
+1. The tutorial assumes that you know Blender!
 
-2. Изучините терминологию (HUD)
+2. learn the animation extensions (.anm, .skl, .skls, .omf)
 
-3. Вам потребуется риг для анимации (например риг от TheParaziT или Ichigrow)
+3. learn the terminology (HUD).
 
-## Настройка HUD обьекта
+4. You will need a Rig for the animations (for example a Rig from TheParaziT or Ichigrow)
 
-1. Импортируем нужный нам обьект, который станет HUD обьектом
+## Customizing a HUD object
 
-2. Теперь нам нужно сделать риг для этого обьекта.
+Import the object you need, that will become a HUD object
 
-    1. Создаем арматуру и нужные кости
+Now we have to create a Rig for it:
 
-    2. В HUD обьекте создаем Vertex Groups с названиями наших костей
-    
+1. We create the armature and the necessary bones.
+
+2. In the HUD object we create Vertex Groups with the names of our bones
+

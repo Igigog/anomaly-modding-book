@@ -24,7 +24,7 @@ OpenAL (Open Audio Library) - cross-platform application programming interface (
 
 ___
 
-## <center>Models</center>
+## <center>Object Types</center>
 
 ## Dynamic object
 

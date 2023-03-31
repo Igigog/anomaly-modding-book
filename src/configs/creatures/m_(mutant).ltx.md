@@ -51,11 +51,11 @@ Example value taken from vanilla m_bloodsucker.ltx
 | DayTime_End | End of a mutant's day | 5 | Game Time |
 | Min_Satiety | Minimum hunger value | 0.000055 |  |
 | Max_Satiety | Maximum hunger value | 0.9 |  |
-| ef_creature_type | Mutant AI type ([Evaluation Function](../../main-folders-and-files/file-formats/index.html#efd-evaluation-function-data)) | 13 | -1 - No AI?<br> 1 - ?<br> 2 - Rat<br> 3 - Zombie<br> 4 - Zombified Man?<br> 5 - Poltergeist<br> 6 - Blind Dog<br> 7 - Flesh<br> 8 - ?<br> 9 - ?<br> 10 - ?<br> 11 - Boar<br> 12 - Controller<br> 13 - Bloodsucker<br> 14 - Soldier?<br> 15 - ?<br> 16 - Military Stalker?<br> 17 - Stalker<br> 18 - Burer<br> 19 - Psevdogiant<br> 20 - Chimera<br> 21 - Fracture |
+| ef_creature_type | Mutant AI type ([Evaluation Function](../../main-folders-and-files/file-formats/index.html#efd-evaluation-function-data)) | 13 | -1 - <abbr title="Unconfirmed">No AI?</abbr><br> 1 - ?<br> 2 - Rat<br> 3 - Zombie<br> 4 - <abbr title="Unconfirmed">Zombified Man?</abbr><br> 5 - Poltergeist<br> 6 - Blind Dog<br> 7 - Flesh<br> 8 - ?<br> 9 - ?<br> 10 - ?<br> 11 - Boar<br> 12 - Controller<br> 13 - Bloodsucker<br> 14 - <abbr title="Unconfirmed">Soldier?</abbr><br> 15 - ?<br> 16 - <abbr title="Unconfirmed">Military Stalker?</abbr><br> 17 - Stalker<br> 18 - Burer<br> 19 - Psevdogiant<br> 20 - Chimera<br> 21 - Fracture |
 | ef_weapon_type |  | 2 |  |
 | ef_detector_type | Type of detector used ([Evaluation Function](../../main-folders-and-files/file-formats/index.html#efd-evaluation-function-data)) | 1 | 1 - no detector<br> 2 - simple detector<br> 3 - visual detector |
 | panic_threshold  | The threshold below which there will be panic | 0.01 |  |
-| weapon_usage | Ability to use weapons(?) | 0 |  |
+| weapon_usage | <abbr title="Unconfirmed">Ability to use weapons(?)</abbr> | 0 |  |
 
 </details>
 
@@ -239,9 +239,9 @@ Example value taken from vanilla m_bloodsucker.ltx
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 ---|---|---|---|
 | aom_enabled | Whether the ability to attack on the move is enabled | 1 |  |
-| aom_only_jump | Ability to attack only when jumping(?) | 1 |  |
-| aom_animation_left |  | stand_run_attack_right_ |  |
-| aom_animation_right |  | stand_run_attack_left_ |  |
+| aom_only_jump | <abbr title="Unconfirmed">Ability to attack only when jumping?</abbr> | 1 |  |
+| aom_animation_left | <abbr title="Unconfirmed">Attack animations on the move left?</abbr> | stand_run_attack_left_ |  |
+| aom_animation_right | <abbr title="Unconfirmed">Attack animations on the move right?</abbr> | stand_run_attack_right_ |  |
 | aom_far_radius |  | 15 |  |
 | aom_max_go_close_time |  | 8 |  |
 | aom_prepare_time  |  | 5 |  |
@@ -265,14 +265,14 @@ Example value taken from vanilla m_bloodsucker.ltx
 | satiety_critical | The critical satiety value at which health begins to decrease |  |  |
 | radiation_health_v | Reduced health when exposed to radiation | 0.0 |  |
 | morale_v | Rate of Moral Restoration | 0.01 |  |
-| health_hit_part | the percentage of the hit that goes to take away health(?) | 1.0 |  |
-| power_hit_part | the percentage of the hit that goes to take away power(?) | 1.0 |  |
+| health_hit_part | <abbr title="Unconfirmed">the percentage of the hit that goes to take away health?</abbr> | 1.0 |  |
+| power_hit_part | <abbr title="Unconfirmed">the percentage of the hit that goes to take away power?</abbr> | 1.0 |  |
 | psy_health_v | Speed of psy health recovery | 0.1 |  |
-| health_restore_v | Restoring health over time(?) | 0.0001 |  |
+| health_restore_v | <abbr title="Unconfirmed">Restoring health over time?</abbr> | 0.0001 |  |
 | immunities_sect | Mutant immunities section | bloodsucker_immunities |  |
 | protections_sect | Mutant protections section | bloodsucker_protections |  |
 | bleeding_v | Blood loss at nominal wound per second | 0.008 |  |
-| wound_incarnation_v | the steepness of the healing curve (what percentage of the wound remains after healing in a game second)(?) | 0.02 |  |
+| wound_incarnation_v | <abbr title="Unconfirmed">the steepness of the healing curve (what percentage of the wound remains after healing in a game second)?</abbr> | 0.02 |  |
 | min_wound_size | Minimum value at which bleeding will start | 0.0226 |  |
 | DamagedThreshold | The value at which the wound animation starts to play | 0.36 |  |
 
@@ -287,11 +287,11 @@ coefficients of parameter change rates during sleep
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 ---|---|---|---|
-| sleep_health | Restoring health when sleeping(?) | 1.0 |  |
+| sleep_health | <abbr title="Unconfirmed">Restoring health when sleeping?</abbr> | 1.0 |  |
 | sleep_power | Recovering strength when sleeping | 1.0 |  |
 | sleep_satiety | Decreased strength when sleeping | 1.0 |  |
 | sleep_radiation | damage from radiation while sleeping in a radioactive zone | 1.0 |  |
-| sleep_psy_health | Restoring psi health when sleeping(?) | 1.0 |  |
+| sleep_psy_health | <abbr title="Unconfirmed">Restoring psi health when sleeping?</abbr> | 1.0 |  |
 
 </details>
 
@@ -341,7 +341,7 @@ coefficients of parameter change rates during sleep
 | sound_die | Sound of death | monsters\bloodsucker\die_ |  |
 | sound_panic | Sound of panic | monsters\bloodsucker\hit_ |  |
 | sound_die_in_anomaly | Sound when dying in an anomaly |  |  |
-| sound_distant_idle |  | monsters\bloodsucker\die_ |  |
+| sound_distant_idle | <abbr title="Unconfirmed">The sound of idling in the distance?</abbr> | monsters\bloodsucker\die_ |  |
 
 </details>
 

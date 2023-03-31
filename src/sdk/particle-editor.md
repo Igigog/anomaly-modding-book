@@ -534,7 +534,7 @@ ___
 </thead>
 <tbody>
   <tr>
-    <td class="tg-nrix" rowspan="4">Bounce</td>
+    <td class="tg-nrix" rowspan="4">Copy VertexB</td>
     <td class="tg-nrix">Name</td>
     <td class="tg-nrix"></td>
   </tr>
@@ -565,42 +565,42 @@ ___
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-nrix{text-align:center;vertical-align:middle}
-.tg .tg-0lax{text-align:left;vertical-align:top}
+.tg .tg-9wq8{border-color:inherit;text-align:center;vertical-align:middle}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
 <thead>
   <tr>
-    <th class="tg-nrix">Key</th>
-    <th class="tg-nrix">Value</th>
-    <th class="tg-nrix">Value Description</th>
+    <th class="tg-9wq8">Key</th>
+    <th class="tg-9wq8">Value</th>
+    <th class="tg-9wq8">Value Description</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td class="tg-nrix" rowspan="6">Bounce</td>
-    <td class="tg-nrix">Name</td>
-    <td class="tg-nrix"></td>
+    <td class="tg-9wq8" rowspan="6">Damping</td>
+    <td class="tg-9wq8">Name</td>
+    <td class="tg-9wq8"></td>
   </tr>
   <tr>
-    <td class="tg-nrix">Damping</td>
-    <td class="tg-nrix"></td>
+    <td class="tg-9wq8">Damping</td>
+    <td class="tg-9wq8"></td>
   </tr>
   <tr>
-    <td class="tg-0lax">V Low</td>
-    <td class="tg-0lax"></td>
+    <td class="tg-9wq8">V Low</td>
+    <td class="tg-0pky"></td>
   </tr>
   <tr>
-    <td class="tg-0lax">V High</td>
-    <td class="tg-0lax"></td>
+    <td class="tg-9wq8">V High</td>
+    <td class="tg-0pky"></td>
   </tr>
   <tr>
-    <td class="tg-nrix">Draw</td>
-    <td class="tg-nrix"></td>
+    <td class="tg-9wq8">Draw</td>
+    <td class="tg-9wq8"></td>
   </tr>
   <tr>
-    <td class="tg-nrix">Enabled</td>
-    <td class="tg-nrix"></td>
+    <td class="tg-9wq8">Enabled</td>
+    <td class="tg-9wq8"></td>
   </tr>
 </tbody>
 </table>

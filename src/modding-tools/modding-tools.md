@@ -93,7 +93,7 @@ Official SDK with community enhancements:
 - [Actor Editor](../sdk/actor-editor.md)
 - Dialog Editor
 - [Level Editor](../sdk/level-editor.md)
-- Particle Editor
+- [Particle Editor (Not finished)](../sdk/particle-editor.md)
 - Postprocess Editor
 - [ShaderEditor](../sdk/level-editor.md)
 - xrLC_net - Level compiler by machines connected to a local network
