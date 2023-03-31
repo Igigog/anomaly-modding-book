@@ -13,7 +13,7 @@ ___
   - [Installing MO2](getting-started/installing-mo2.md)
   - [Addon installers](getting-started/addon-installers.md)
   - [Package Naming for MO2](getting-started/package-naming.md)
-<!--   - [Configuring VSCode-like programs to handle game files](getting-started/vs-code-game-files-setup.md) -->
+  - [Configuring VSCode-like programs to handle game files](getting-started/vs-code-game-files-setup.md)
 
 ___
 
@@ -104,6 +104,7 @@ ___
 
 - [Reference/Tools](reference/README.md)
   - [Modding Tools List](modding-tools/modding-tools.md)
+  - [Ltx Support](modding-tools/ltx-support.md)
   - [SDK 0.7](sdk/README.md)
     - [Interface](sdk/interface.md)
     - [Actor Editor](sdk/actor-editor.md)
