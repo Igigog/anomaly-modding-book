@@ -66,7 +66,7 @@ Here is a complete task config, or section. It contains all the information to a
 title_functor           = my_task_title_f
 descr_functor           = my_task_descr_f
 target_functor          = my_task_target_f
-status_functor          = my_task_target_f
+status_functor          = my_task_status_f
 
 ...
 
