@@ -5,6 +5,7 @@ Formatting and edited by NLTP_ASHES#0117
 
 Table of content :
 - [Chapter 1 : Configuration](npc_creation.md#chapter-1--configuration)
+- [Chapter 1.A : Creating your own mod files for character creation](npc_creation.md#chapter-1a--creating-your-own-mod-files-for-character-creation)
 - [Chapter 2 : NPC section](npc_creation.md#chapter-2--npc-section)
 - [Chapter 3 : NPC profile](npc_creation.md#chapter-3--npc-profile)
 - [Chapter 4 : Squad and smart terrain](npc_creation.md#chapter-4--squad-and-smart-terrain)
@@ -25,6 +26,50 @@ What files to pay attention to:
 - `_unpacked\configs\gameplay\*`
 - `_unpacked\configs\misc\squad_descr\*`
 - `_unpacked\configs\scripts\*`
+
+## Chapter 1.A: Creating your own mod files for character creation
+
+While it's possible to configurate the files already present, for independent addons it's advisable to create your own files.
+
+One of the methods is by including your files: 
+
+NB: "my_mod_name" will stand for whatever name you choose.
+	- for example if you want to call your mod "revolution", the file names would be:
+		- spawn_sections_revolution.ltx
+		- character_desc_revolution.xml
+		- dialogs_revolution.xml
+		- npc_profile_revolution.xml
+		- squad_descr_revolution.ltx
+
+**File :** `_unpacked\configs\creatures\spawn_section.ltx` 
+
+- you add:  #include "spawn_sections_my_mod_name.ltx"
+
+**Folder :** `_unpacked\configs\creatures\`
+
+- you add a file called: spawn_sections_my_mod_name.ltx
+
+**File :** `_unpacked\configs\system.ltx`
+
+- you add in the line of [dialogs]: dialogs_my_mod_name
+- you add in the line of [profiles]: 
+	- in the line of "files": npc_profile_my_mod_name
+	- in the line of "specific_characters_files": character_desc_my_mod_name
+
+**Folder :** `_unpacked\configs\gameplay\`
+
+- you add the files:
+	- character_desc_my_mod_name.xml
+	- dialogs_my_mod_name.xml
+	- npc_profile_my_mod_name.xml
+
+**Folder :** `_unpacked\configs\misc\squad_descr`
+
+- you add a file: squad_descr_my_mod_name.ltx
+(This one you doesn't need an include, squad_descr.ltx does it automatically)
+
+For your own custom files, you can copy-paste already exisiting ones and rename them. In that case, be careful to delete everything in your copied file from the old file, except the opening and closing node. For exemple, in dialogs file, <game_dialogs> and </game_dialogs> have to remain, and your code has to be inbetween of these two nodes.
+
 
 ___
 
