@@ -2,7 +2,13 @@
 
 ___
 
-## Beginning
+## Related Videos
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HwTYYH5zLjo?start=418" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+___
+
+## Beginning (Via Paint.net)
 
 First, familiarize yourself with the supported texture compression ([.dds](../main-folders-and-files/file-formats/index.html#dds-directdraw-surface) [.bump](../main-folders-and-files/file-formats/index.html#bumpdds-1) [.bump#](../main-folders-and-files/file-formats/index.html#bumpdds))
 

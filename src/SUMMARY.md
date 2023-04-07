@@ -50,6 +50,7 @@ ___
 ___
 
 - [Animating]()
+  - [Creating an animation](blender/creating-hud-animation-in-blender.md)
   - [Creating animations for the camera](blender/creating-camera-animations.md)
   - [Editing existing animations](blender/editing-existing-animations.md)
 
@@ -57,6 +58,7 @@ ___
 
 - [Texturing](texturing/README.md)
   - [Creating and preparing textures](texturing/сreating-and-preparing-textures.md)
+  - [Working correctly with icon atlases](texturing/working-correctly-with-icon-atlases.md)
 
 ___
 
