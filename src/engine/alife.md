@@ -2,6 +2,8 @@
 
 ___
 
+> Important note, these articles were written a long time ago (approximately before Shadow of Chernobyl was released) and may not reflect the current state or principles of A-Life in Anomaly. So for example the FSM was only used by mutants in the release version of the game.
+
 ## About
 
 A-Life uses [GOAP](#goap), [FSM](#fsm-finite-state-machines) and [MG](#mg-motivational-graphs)

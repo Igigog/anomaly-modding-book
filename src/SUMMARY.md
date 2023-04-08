@@ -27,8 +27,10 @@ ___
 ___
 
 - [Configs]()
+  - [Structure of Files](configs/structure-of-files.md)
   - [Condlists](configs/condlists.md)
   - [Inventory Icons](configs/inventory_icons.md)
+  - [Algoritm of Logic](configs/algoritm-of-logic.md)
 
 ___
 
