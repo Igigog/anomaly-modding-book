@@ -39,12 +39,12 @@ ___
 | cform | parameter for dynamic objects; necessary for correct creation of the skeleton model | skeleton |  |
 | parent_section |  | wpn_akm |  |
 | class | engine weapon class | WP_AK74 | WP_BINOC <br>WP_KNIFE <br>WP_BM16 <br>WP_GROZA <br>WP_SVD <br>WP_AK74 <br>WP_LR300 <br>WP_HPSA <br>WP_PM <br>WP_RG6 <br>WP_RPG7 <br>WP_SHOTG <br>WP_ASHTG <br>WP_MAGAZ <br>WP_SVU <br>WP_USP45 <br>WP_VAL <br>WP_VINT <br>WP_WALTH W_STMGUN |
-| animation_slot | animation slot number | 2 | 1 (pistol) <br>2 (automatic rifle) <br>3 (rifle, shotgun) <br>4 (RPG) <br>5 (knife) <br>7 (bolt, grenade) <br>8 (submachine gun with integrated underbarrel grenade launcher) <br>9 (Shotgun) <br>10 (Drum Gun) 13 (binoculars) |
-| hand_dependence | determines whether the weapon will be taken with one or two hands | 1 | 0 (no hands) <br>1 (one hand) <br>2 (two hands) |
-| single_handed | held with one hand | 0 | 0 (no) <br>1 (yes) |
+| animation_slot | animation slot number | 2 | 1 - pistol <br>2 - automatic rifle <br>3 - rifle, shotgun <br>4 - RPG <br>5 - knife <br>7 - bolt, grenade <br>8 - submachine gun with integrated underbarrel grenade launcher <br>9 - Shotgun <br>10 - Drum Gun <br>13 - binoculars |
+| hand_dependence | determines whether the weapon will be taken with one or two hands | 1 | 0 - no hands <br>1 - one hand <br>2 - two hands |
+| single_handed | held with one hand | 0 | 0 - no <br>1 - yes |
 | default_to_ruck | whether the weapon will be moved to the backpack instead of the slot when picked up | false | true (yes) <br>false (no) |
 | sprint_allowed | this line means that you can run with the weapon | true | true (Yes) <br>false (No) |
-| kind | The type of item to group into the appropriate section in the Item Spawner | w_rifle |  |
+| kind | The type of item to group into the appropriate section in the Item Spawner | w_rifle | w_rifle<br> w_misc<br> w_explosive<br> w_melee<br> w_pistol<br> w_smg<br> w_shotgun<br> w_sniper |
 | cost | base price | 28780 | Specified in numbers |
 | hud | section with parameters for the hud model of the weapon (1st person view) | wpn_akm_hud | Specifies the name of the section |
 | visual | reference to the 3rd person model | dynamics\weapons\wpn_akm\wpn_akm.ogf | Specifies the path to the file |
@@ -96,7 +96,7 @@ ___
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 ---|---|---|---|
-| weapon_class | is used exclusively for the purchase menu in multiplayer | shotgun - assault_rifle - sniper_rifle - heavy_weapon |
+| weapon_class | is used exclusively for the purchase menu in multiplayer | shotgun<br> assault_rifle<br> sniper_rifle<br> heavy_weapon |
 | startup_ammo | startup amount of ammo in multiplayer | The number of rounds of ammunition is indicated |
 | kill_msg_x | the coordinate of the upper left corner of the kill icon on the X axis |  |
 | kill_msg_y | top-left corner coordinate of the kill icon on the Y axis | |
@@ -133,7 +133,7 @@ ___
 | upgrades |  | up_gr_firstab_akm, up_gr_seconab_akm, up_gr_thirdab_akm, up_gr_fourtab_akm, up_gr_fifthab_akm, up_gr_fifthcd_akm |  |
 | installed_upgrades | installed upgrades |  |  |
 | upgrade_scheme | upgrade_scheme | upgrade_scheme_ak74 |  |
-| repair_type | item type for repair tools | rifle_7 | pistol - shotgun - rifle_5 - rifle_7 |  |
+| repair_type | item type for repair tools | rifle_7 | pistol<br> shotgun<br> rifle_5<br> rifle_7 |  |
 
 </details>
 
@@ -158,7 +158,7 @@ ___
 
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
-| fire_modes | firing modes fire modes | 1, -1 | -1 (automatic) - 1 (single) - 2 (two-shot) - 3 (three-shot) |
+| fire_modes | firing modes fire modes | 1, -1 | -1 - automatic<br> 1 - single<br> 2 - two-shot<br> 3 - three-shot |
 | wallmark_section | section of wallmarks that appear on the ground/geometry when exploding |  | Section name (by default it is in the system.ltx file) |
 | wm_size | texture size of the mark left on the ground after the explosion |  | The bigger the number, the bigger the mark |
 | allow_inertion | whether inertia is enabled |  | true (Yes) - false (No) |
@@ -175,7 +175,7 @@ ___
 ---|---|---|---|
 | hit_impulse | The force that the flying bullet transmits to the victim affects the ragdoll-body behavior | 34 | The more, the farther the body will fly away |
 | hit_power | damage dealt | 0.58, 0.58, 0.58, 0.58 | Specifies a value for the level of difficulty in descending order, i.e. from master to beginner |
-| hit_type | Type of damage inflicted; used to calculate damage; armor suits (and others) are set to be immune to each type of damage separately | fire_wound | fire_wound (fire damage) - wound (stabbing) - wound_2 (cutting) - explosion (shrapnel damage) |
+| hit_type | Type of damage inflicted; used to calculate damage; armor suits (and others) are set to be immune to each type of damage separately | fire_wound | fire_wound - fire damage<br> wound - stabbing<br> wound_2 - cutting<br> explosion - shrapnel damage |
 | fire_distance | effective range of the shot after which the bullet disappears | 900 | Specified in meters |
 | bullet_speed | initial bullet speed | 715 | Specified in meters per second |
 | rpm | Shooting speed | 600 | Specifies the number of shots per minute |
@@ -223,7 +223,7 @@ ___
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
 | scopes | Name of the gun sight section | 1p29, kobra, ps01 | Sections to models with these sights are indicated |
-| scope_status | Scope status | 0 | 0 (not available) - 1 (built-in) - 2 (removable) |
+| scope_status | Scope status | 0 | 0 - not available<br> 1 - built-in<br> 2 - removable |
 | scope_zoom_factor | scope magnification | 0 | For the sight specified in the parameter scopes, the value can already be more |
 
 </details>
@@ -236,7 +236,7 @@ ___
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
 | silencer_name | Name of the silencer section of the gun | wpn_sil_pbs1 |  |
-| silencer_status | silencer status | 2 | 0 (not available) -  1 (built-in) - 2 (removable) |
+| silencer_status | silencer status | 2 | 0 - not available<br> 1 - built-in<br> 2 - removable |
 | silencer_light_color | Parameters for changing the color of the particle of the smoke from the shot from the weapon with silencer | 0.6, 0.5, 0.3 |  |
 | silencer_light_range | the radius of the particle of the haze when firing | 0.01 |  |
 | silencer_light_time | light time | 0.2 |  |
@@ -267,7 +267,7 @@ ___
 ---|---|---|---|
 | grenade_class | type of underbarrel grenades | ammo_vog-25, ammo_vog-25_bad, ammo_vog-25_verybad |  |
 | grenade_launcher_name | name of the section of the underbarrel grenade launcher | wpn_addon_grenade_launcher |  |
-| grenade_launcher_status | the status of the underbarrel grenade launcher | 0 | 0 (not available) -  1 (built-in) - 2 (removable) |
+| grenade_launcher_status | the status of the underbarrel grenade launcher | 0 | 0 - not available<br> 1 - built-in<br> 2 - removable |
 | launch_speed | launch speed of the underbarrel grenade launcher | 0 |  |
 | grenade_flame_particles | particle of the fire from the underbarrel grenade launcher | weapons\generic_weapon01 | Particles file path relative to particles.xr |
 
@@ -310,7 +310,7 @@ ___
 
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
-| misfire_probability | misfire_probability | maximum wear probability | 0.005 | 0 (never jams) - 1 (always jams) |
+| misfire_probability | misfire_probability | maximum wear probability | 0.005 | 0 - never jams<br> 1 - always jams |
 | misfire_start_condition | the wear at which there is a chance of misfire | 0.7 |  |
 | misfire_start_prob | misfire chance of misfire when wear is greater than misfireStartCondition | 0.007 |  |
 | misfire_end_condition | the chance of misfire when worn out is greater than misfireEndCondition | 0.05 |  |
@@ -326,7 +326,7 @@ ___
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
 | condition_queue_shot_dec | condition_shot_dec | 0.0008 |  |
-| condition_shot_dec | increase wear on each shot | 0.0008 | 0 (no wear) - 1 (maximum wear) |
+| condition_shot_dec | increase wear on each shot | 0.0008 | 0 - no wear<br> 1 - maximum wear |
 | fire_dispersion_condition_factor | the effect of wear on the variance of the weapon as a percentage | 0.001 |  |
 
 </details>

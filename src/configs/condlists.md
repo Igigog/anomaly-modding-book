@@ -8,6 +8,7 @@ Transfered to modding book by demonized#1084
 Condition list or condlist is one way to write dynamic configuration files and have this structure:
 
 ### somefile.ltx
+
 ```ini
 [some_section]
 my_condlist = {=A(a1:a2) !B +C -D ~30} X %=E(e1) +F -G%, Y
@@ -15,14 +16,15 @@ my_condlist = {=A(a1:a2) !B +C -D ~30} X %=E(e1) +F -G%, Y
 
 and are used like this:
 ### somescript.script
+
 ```lua
 local ini = ini_file("path\\to\\somefile.ltx")
 local condlist = ini:r_string_to_condlist("some_section","my_condlist")
 local result = xr_logic.pick_section_from_condlist(game_object_1, game_object_2, condlist)
 ```
 
-
 the code above is the equivalent of:
+
 ```lua
 if                                                                  -- {
     xr_conditions.A(game_object_1, game_object_2, {"a1","a2"}) and  -- =A(a1:a2)
@@ -47,8 +49,8 @@ Condlist can have more than one condition block:
 
     my_condlist = {-A -B} X, {-A +B} Y, Z
 
-
 this is the equivalent of:
+
 ```lua
 if                                                                     
     not db.actor:has_info("A") and
@@ -66,6 +68,7 @@ end
 ```
 
 All condlist elements are optional, these are all valid condlist:
+
 ```ini
 cond1 =                      ;returns nil
 cond2 = true                 ;returns "true"
@@ -86,7 +89,8 @@ this condlist has no condition (the part inside {}) and no return value, so call
 xr_logic.pick_section_from_condlist()
 ```
 
-on this is the equivalent of just calling 
+on this is the equivalent of just calling
+
 ```lua
 xr_effects.reward_stash(x, x, {"true"})
 ```
@@ -101,7 +105,6 @@ something = true
 
 but in reality it's a condlist that always returns "true", the only way to know for sure it's to search for "something" in all scripts and see if that config line is parsed as condlist anywhere.
 
-
 Condlist can be also be parsed from a string
 
 ```lua
@@ -115,6 +118,7 @@ condlist1 and condlist2 are the same, the first 3 arguments of xr_logic.parse_co
 Now we examine some condlist in Anomaly, what they mean and some examples of edits we can make.
 
 ## Example 1
+
 near the end of tm_dynamic.ltx in configs/misc
 
 ```ini
@@ -143,9 +147,11 @@ on_fail      = %=remove_quest_item(simulation_task_52) -simulation_task_52_dead_
 ```
 
 if we change precondition line to
+
 ```ini
 precondition = {=is_rain} true, false
 ```
+
 then npc will propose this quest only if you ask them while it's raining
 
 if we change it to
@@ -160,6 +166,7 @@ true and false dont have any special meaning in the condlist on their own, in th
 depending on the pick_section_from_condlist return value
 
 if we change on_complete to
+
 ```ini
 on_complete = aslkdjslakd %=inc_goodwill_by_tasker_comm(simulation_task_52:50) =reward_stash(true) =reward_random_money(10500:18500) =reward_random_item(beer:vodka:vodka2:cigarettes_lucky_3:cigarettes_russian_3) -simulation_task_52_dead_spawned -simulation_task_52_item_spawned -simulation_task_52_target_found =remove_quest_item(simulation_task_52) =forget_dead_npcs(simulation_task_52) =pstor_reset(simulation_task_52)%
 ```
@@ -167,7 +174,9 @@ on_complete = aslkdjslakd %=inc_goodwill_by_tasker_comm(simulation_task_52:50) =
 everything will still work as before, because the code that runs the pick_section_from_condlist on on_complete does nothing with the return value, so if it's nil, random text, true/false or whatever doesn't matter
 
 ## Example 2
+
 inside devushka.ltx in configs/scripts/escape
+
 ```ini
 [walker@devushka]
 path_walk = guard_2_walk
@@ -184,7 +193,9 @@ corpse_detection_enabled = false
 invulnerable = {=is_warfare} false, {!actor_enemy} true, false
 on_game_timer = 2400 | remark@smoking_stand
 ```
+
 we change on_info3 to
+
 ```ini
 on_info3 = {=is_rain =is_actor_enemy_to_faction(freedom)} walker@rain
 ```
@@ -192,9 +203,11 @@ on_info3 = {=is_rain =is_actor_enemy_to_faction(freedom)} walker@rain
 now Hip will seek shelter from rain only if we are enemy to Freedom, women be like that sometimes
 
 ## Custom conditions
+
 if you want to make custom conditions either create new functions inside xr_conditions or make your own script file defining functions inside xr_conditions scope
 
 ### my_conditons.script
+
 ```lua
 function xr_conditions.has_more_money_than(a,b,c)
     
@@ -213,16 +226,18 @@ function xr_conditions.has_more_money_than(a,b,c)
 end
 ```
 
-now we have has_more_money_than available as conditions for condlist, now we can do 
+now we have has_more_money_than available as conditions for condlist, now we can do
+
 ```ini
 on_info = {=has_more_money_than(50000)} walker@surge
 ```
 
 so Hip will stay outside during blowouts unless we have more than 50k rubles
 
-
 you can do the same with xr_effects
+
 ### my_effects.script
+
 ```lua
 function xr_effects.give_tuna_to_actor(a,b,c)
     alife():create('conserva',vector(),0,0,0)
@@ -230,6 +245,7 @@ end
 ```
 
 then change on_info2 to
+
 ```ini
 on_info2 = {=is_night} walker@sleeper_1 %=give_tuna_to_actor%
 ```

@@ -82,7 +82,7 @@ This section contains a list and description of the shaders that are available i
 | models\pn_hm | enable tesselation on models (DX11 only) |
 | models\pautina | material with transparency and falloff effect |
 | models\selflight | basic self-lighting material |
-| models\seftlight_det |  |
+| models\seftlight_det | uses an engine shader variable. For example, it is possible to make the detector screen turn off when the battery level is too low |
 | models\selflightl | self-lighting material with lower intensity |
 | models\transparent | transparency |
 | models\water |  |

@@ -115,6 +115,7 @@ ___
     - [Image Editor](sdk/image-editor.md)
     - [Level Editor](sdk/level-editor.md)
     - [Shader Editor](sdk/shader-editor.md)
+    - [Postprocess Editor](sdk/postprocess-editor.md)
     - [Particle Editor (Not finished)](sdk/particle-editor.md)
   - [Blender X-Ray Addon](blender/blender-x-ray-addon-summary.md)
     - [Advanced settings](blender/advanced-settings.md)

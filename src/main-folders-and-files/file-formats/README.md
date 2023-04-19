@@ -54,7 +54,7 @@ ___
 | .vs | Vertex shader |
 | .ps | Pixel shader |
 | .s | Script shader. LUA version of engine blenders |
-| .ppe | Postprocess file format. |
+| .ppe | Postprocess file format. Color-noise effects of the actor's screen |
 
 ___
 
