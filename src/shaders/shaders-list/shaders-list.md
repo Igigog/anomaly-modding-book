@@ -61,41 +61,41 @@ This section contains a list and description of the shaders that are available i
 
 ### Shaders for dynamic objects
 
-| Shader name and path | Description |
----|---|
-| models\antigas_glass | CubeMap reflection shader (variant 1) |
-| models\artefact | CubeMap reflection shader (variant 2) |
-| models\artefact2 | CubeMap reflection shader (variant 3) |
-| models\artifact-anim-env |  |
-| models\glass_stalker_refl |  |
-| models\lfo_black_lens_weapons |  |
-| models\lfo_black_soft_lens_weapons |  |
-| models\lfo_glass_lens_weapons |  |
-| models\lfo_light_dot_weapons |  |
-| models\lightplanes | self-lighting material with translucent and falloff effect |
-| models\mirror |  |
-| models\model | basic shader |
-| models\model_aref | transparency. alpha test - trans (with gradients) |
-| models\model_fur | transparency. alpha test - aref (no gradients) |
-| models\hm |  |
-| models\pn |  |
-| models\pn_hm | enable tesselation on models (DX11 only) |
-| models\pautina | material with transparency and falloff effect |
-| models\selflight | basic self-lighting material |
-| models\seftlight_det | uses an engine shader variable. For example, it is possible to make the detector screen turn off when the battery level is too low |
-| models\selflightl | self-lighting material with lower intensity |
-| models\transparent | transparency |
-| models\water |  |
-| models\water_ryaska |  |
-| models\weapons | CubeMap reflection shader (variant 4) |
-| models\window | semi-transparent shader with CubeMap reflection |
-| models\xanomaly |  |
-| models\xdistor |  |
-| models\xdistorcolor |  |
-| models\xdistorcolorl |  |
-| models\xdistorinv |  |
-| models\xmonolith |  |
-| models\xwindows |  |
+| Shader name and path | Description | Preview |
+---|---|---|
+| models\antigas_glass | CubeMap reflection shader (variant 1) |  |
+| models\artefact | CubeMap reflection shader (variant 2) | ![Alt text](images/shaders-preview/models-artefact.png) |
+| models\artefact2 | CubeMap reflection shader (variant 3) | ![Alt text](images/shaders-preview/models-artefact2.png) |
+| models\artifact-anim-env |  |  |
+| models\glass_stalker_refl |  |  |
+| models\lfo_black_lens_weapons |  |  |
+| models\lfo_black_soft_lens_weapons |  |  |
+| models\lfo_glass_lens_weapons |  |  |
+| models\lfo_light_dot_weapons |  |  |
+| models\lightplanes | self-lighting material with translucent and falloff effect | ![Alt text](images/shaders-preview/models-lightplanes.png) |
+| models\mirror |  | ![Alt text](images/shaders-preview/models-mirror.png) |
+| models\model | basic shader | ![Alt text](images/shaders-preview/models-model.png) |
+| models\model_aref | transparency. alpha test - trans (with gradients) | ![Alt text](images/shaders-preview/models-model_aref.png) |
+| models\model_fur | transparency. alpha test - aref (no gradients) | ![Alt text](images/shaders-preview/models-model_fur.png) |
+| models\hm |  | ![Alt text](images/shaders-preview/models-hm.png) |
+| models\pn |  | ![Alt text](images/shaders-preview/models-pn.png) |
+| models\pn_hm | enable tesselation on models (DX11 only) | ![Alt text](images/shaders-preview/models-pn_hm.png) |
+| models\pautina | material with transparency and falloff effect | ![Alt text](images/shaders-preview/models-pautina.png) |
+| models\selflight | basic self-lighting material | ![Alt text](images/shaders-preview/models-selflight.png) |
+| models\seftlight_det | uses an engine shader variable. For example, it is possible to make the detector screen turn off when the battery level is too low | ![Alt text](images/shaders-preview/models-seftlight_det.png) |
+| models\selflightl | self-lighting material with lower intensity | ![Alt text](images/shaders-preview/models-selflightl.png) |
+| models\transparent | transparency | ![Alt text](images/shaders-preview/models-transparent.png) |
+| models\water |  |  |
+| models\water_ryaska |  |  |
+| models\weapons | CubeMap reflection shader (variant 4) | ![Alt text](images/shaders-preview/models-weapons.png) |
+| models\window | semi-transparent shader with CubeMap reflection | ![Alt text](images/shaders-preview/models-window.png) |
+| models\xanomaly |  | ![Alt text](images/shaders-preview/models-xanomaly.png) |
+| models\xdistor |  | ![Alt text](images/shaders-preview/models-xdistor.png) |
+| models\xdistorcolor |  | ![Alt text](images/shaders-preview/models-xdistorcolor.png) |
+| models\xdistorcolorl |  | ![Alt text](images/shaders-preview/models-xdistorcolorl.png) |
+| models\xdistorinv |  | ![Alt text](images/shaders-preview/models-xdistorinv.png) |
+| models\xmonolith |  | ![Alt text](images/shaders-preview/models-xmonolith.png) |
+| models\xwindows |  | ![Alt text](images/shaders-preview/models-xwindows.png) |
 
 ### Levels Shaders
 
@@ -245,11 +245,11 @@ This section contains a list and description of the shaders that are available i
 
 ### Details Shaders
 
-| Shader name and path | Description |
----|---|
-| details\blend |  |
-| details\lod |  |
-| details\set |  |
+| Shader name and path | Description | Preview |
+---|---|---|
+| details\blend |  | ![Alt text](images/shaders-preview/details-blend.png) |
+| details\lod |  | ![Alt text](images/shaders-preview/details-lod.png) |
+| details\set |  | ![Alt text](images/shaders-preview/details-set.png) |
 
 ### Def_Shaders
 
