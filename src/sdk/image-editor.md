@@ -11,9 +11,9 @@ Allows you to edit texture parameters
 | Type | Description |
 ---|---|
 | 2D Texture |  |
-| Cube Map |  |
-| Bump Map |  |
-| Normal Map |  |
+| [Cube Map](https://en.wikipedia.org/wiki/Cube_mapping) | Is a method of environment mapping that uses the six faces of a cube as the map shape |
+| Bump Map | [Bump](../main-folders-and-files/file-formats/index.html#bumpdds-1) |
+| Normal Map | Normal Map |
 | Terrain |  |
 
 Source
@@ -22,16 +22,16 @@ Shows the characteristics of the texture. Width, height and alpha channel.
 
 | Format | Description |
 ---|---|
-| DXT1 |  |
-| DXT1 Alpha |  |
+| [DXT1](https://www.fsdeveloper.com/wiki/index.php?title=DXT_compression_explained#DXT1) | Compression without alpha channel support |
+| [DXT1 Alpha](https://www.fsdeveloper.com/wiki/index.php?title=DXT_compression_explained#DXT1_with_alpha) | Compression with alpha channel support |
 | DXT3 |  |
-| DXT5 |  |
+| [DXT5](https://www.fsdeveloper.com/wiki/index.php?title=DXT_compression_explained#DXT5) | Compression with alpha channel support |
 | 16 bit (1:5:5:5) |  |
 | 16 bit (5:6:5) |  |
 | 32 bit (8:8:8:8) |  |
-| 8 bit (alpha) |  |
-| 8 bit (luminance) |  |
-| 16 bit (alpha:luminance) |  |
+| [8 bit (alpha)](https://learn.microsoft.com/en-us/windows/win32/direct3d9/d3dformat) | 8-bit alpha only DirectX Format |
+| [8 bit (luminance)](https://learn.microsoft.com/en-us/windows/win32/direct3d9/d3dformat) | 8-bit luminance only DirectX Format |
+| [16 bit (alpha:luminance)](https://learn.microsoft.com/en-us/windows/win32/direct3d9/d3dformat) | 16-bit using 8 bits each for alpha and luminance DirectX Format |
 
 | MipMaps | Description |
 ---|---|

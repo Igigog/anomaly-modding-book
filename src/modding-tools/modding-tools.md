@@ -94,7 +94,7 @@ Official SDK with community enhancements:
 - Dialog Editor
 - [Level Editor](../sdk/level-editor.md)
 - [Particle Editor (Not finished)](../sdk/particle-editor.md)
-- Postprocess Editor
+- [Postprocess Editor](../sdk/postprocess-editor.md)
 - [ShaderEditor](../sdk/level-editor.md)
 - xrLC_net - Level compiler by machines connected to a local network
 
