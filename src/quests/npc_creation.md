@@ -323,6 +323,11 @@ end
 
 Start a new game or load your save files and the npc will be spawned and stay around the campfire in duty headquarters yard.
 
+
+NB: Potential bug 
+
+If you have multiple spawns of the same NPC, make sure that you gave the squad a story ID - the script checks for this story ID and if it can't find the ID it will spawn endlessly the same NPC.
+
 ### Chapter 5.B : Spawn by adding to simulation.ltx
 
 Locate the file `simulation.ltx`, in `_unpacked\configs\misc\`. Inside of that file, you can locate the smart terrain where you want your NPC to spawn, and add your NPC to the list.
