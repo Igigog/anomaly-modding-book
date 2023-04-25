@@ -192,8 +192,7 @@ All the settings described below are stored in the file "user".ltx. (You can rea
 ---|---|---|
 | r1_detail_textures | Detailed textures on static lighting | 'on/off' or '1/0' |
 | r1_dlights | Dynamic light sources on static lighting | 'on/off' or '1/0' |
-| r1_dlights_clip | Sets the display radius (visibility range) of
-of dynamic light sources |  |
+| r1_dlights_clip | Sets the display radius (visibility range) of dynamic light sources |  |
 | r1_fog_luminance | Fog brightness | 0.2 - 5.0 |
 | r1_glows_per_frame | Controls the maximum number of light sources |  |
 | r1_lmodel_lerp | Controls Linear Lighting Interpolation |  |
