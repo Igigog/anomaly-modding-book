@@ -77,7 +77,7 @@ ___
   - [Introduction](quests/introduction.md)
   - [NPC Creation](quests/npc_creation.md)
   - [Task Creation](quests/task_guide.md)
-
+  - [Dialogue Creation](quests/dialogues.md)
 ___
 
 - [Reference/General](reference/README.md)
