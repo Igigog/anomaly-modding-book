@@ -1,87 +1,299 @@
 # DLTX
 
+Guide written by NLTP_ASHES#0117
+
 ___
 
-## About
+## 1. About
 
-Improvement of the engine to allow overwriting [.ltx](../configs/.ltx.md) files, avoiding addon conflicts.
-Allows modders to overwrite only the values they need.
+Modding STALKER has this annoying tendency to result in conflicts when two different mods overwrite the same [.ltx](../configs/.ltx.md) file, but not the same variables and sections within that file. 
 
-### Installation
+DLTX aims to mitigate this by allowing a mod author to only override the values that they actually wish to change in a separate file, which should greatly reduce the amount of needless mod conflicts and the need to manually merge mods.
 
-Back up the contents of your "bin" folder and replace it with the one supplied. The contents of "tools" and "example_mod" include optional resources to make mods for DLTX or to convert existing ones. If you are using Mod Organizer 2 do NOT use it to install DLTX (you can still use it for other mods), you need to paste the files into your real "bin" folder.
+___
 
-### Use by modders
+## 2. Installation
+
+DLTX is built-in the Anomaly Modded Exes. 
+
+- Download the file `STALKER-Anomaly-modded-exes.zip` from [this repository](https://github.com/themrdemonized/STALKER-Anomaly-modded-exes);
+- Back up the contents of your "bin" folder;
+- Unpack the contents of the archive on top of your game's root folder.
+
+![Image explananing the installation process of the Modded Exes](images/img_dltx_install_1.png)
+![Image explananing the installation process of the Modded Exes](images/img_dltx_install_2.png)
+
+___
+
+## 3. Tools
+
+To make the process easier for people uncomfortable with DLTX, or to automatically DLTX-ify older addons, you can use the [LTXDiff](https://github.com/MerelyMezz/LTXDiff/releases/tag/1.4.2) tool.
+
+___
+
+### LTXDiff findroot
+
+In order to properly DLTX-ify a file, you need to find its root file. For this, you can either manually trace back the chain of #includes, or use the [LTXDiff](https://github.com/MerelyMezz/LTXDiff/releases/tag/1.4.2).
 
 In order to make a differential change to the LTX records, you have to follow these steps:
 
-1. Find out which root LTX file is loading the variable you are trying to modify. You can either search the files manually and trace back the chain of #includes, or you can use LTXDiff for this purpose.
+#### Step 1 : Find the root file
 
-    <text style="color: red">LTXDiff findroot</text> <text style="color: green">[Base Folder] [Mod Folder] [Relative Path to File]</text>
+Execute the following command :
 
-2. Once you have found the root file, create a new one in the same directory with the name "mod_[name of the root file]_[name of your choosing].ltx".
+<text style="color: red">LTXDiff findroot "</text><text style="color: green">[Base Folder]</text><text style="color: red">" "</text><text style="color: green">[Mod Folder]</text><text style="color: red">" "</text><text style="color: green">[Relative Path to File]</text><text style="color: red">"</text>
 
-3. Make an entry for the section and variable that you want to modify. The section that you want to override has to be prefixed with "!", e.g. ![medkit]. You do not need to include the sections parents again (i.e. do ![medkit], NOT ![medkit]:booster_multi), since they already are in the base definition. Now simply list your variables that you want changed as you usually would.
+Where :
+- <text style="color: green">[Base Folder]</text> : A path to the unpacked vanilla files of the game;
+- <text style="color: green">[Mod Folder]</text> : A path to your mod's folder;
+- <text style="color: green">[Relative Path to File]</text> : A path relative to `gamedata/` to the file you wish to find the root of.
 
-You can add parents by declaring them like you normally would, or remove them by prefixing them with "!", e.g. "![vodka2]:!vodka, medkit" makes vodka2 behave like a medkit instead of its original parent.
+For example : 
 
-If you want to delete a variable, simply add a line "!variable_name". You can delete sections too, by prefixing them with "!!", however they will only be deleted if all variables they own are deleted too, otherwise the flag won't come into effect.
+<text style="color: red">LTXDiff findroot "</text><text style="color: green">C:\Games\Anomaly\tools\_unpacked</text><text style="color: red">" "</text><text style="color: green">C:\Mods\MyMod\gamedata</text><text style="color: red">" "</text><text style="color: green">configs\items\items\items_repair.ltx</text><text style="color: red">"</text>
 
-You can only override sections that already have a base definition. Both loading an override without a base section, or loading multiple base sections will cause crashes. Multiple overrides can be applied to the same section. If multiple mods override the same value, the one that is loaded last will win the conflict over that particular variable. I haven't verified what actually affects the load order, but I'm going to guess it's probably based on the alphabetic order of the file names.
+#### Step 2 : Create your DLTX file
 
-### Additional DLTX functions (Modded Exes 1.5.2 only)
-[Modded Exes](https://github.com/themrdemonized/STALKER-Anomaly-modded-exes) enhances DLTX with providing additional functions:
+Once you have found the root file, create a new file in the same directory with the name :
 
-* DLTX received possibility to create section if it doesn't exists and override section if it does with the same symbol `@`.
-  Below is the example for `newsection` that wasn't defined. Firstly its created with one param `override = false`, then its overriden with `override = true`
+<text style="color: red">mod_</text><text style="color: green">[Root File Name]</text><text style="color: red">_</text><text style="color: green"></text><text style="color: red">.ltx</text>
 
-  ```
-  @[newsection]
-  override = false
+Where :
+- <text style="color: green">[Root File Name]</text> : The name of the root file you identified via [Step 1](#step-1--find-the-root-file);
+- <text style="color: green">[Mod Suffix]</text> : A unique name (as to not conflict with other addons) of your liking;
 
-  @[newsection]
-  override = true
-  
-  ```
+For example : 
 
-* DLTX received possibility to add items to parameter's list if the parameter has structure like 
+<text style="color: red">mod_</text><text style="color: green">system</text><text style="color: red">_</text><text style="color: green">my_name_jeff_addon</text><text style="color: red">.ltx</text>
 
-  ```name = item1, item2, item3```
+#### Step 3 : Write your DLTX edits/additions
 
-  * `>name = item4, item5` will add item4 and item5 to list, the result would be `name = item1, item2, item3, item4, item5`
-  * `<name = item3` will remove item3 from the list, the result would be `name = item1, item2`
+Apply the changes or additions of your liking. See [syntax chapter](#4-syntax) for more details.
 
-  example for mod_system_...ltx: 
+---
 
-  ```
-    ![info_portions]
-    >files                                    = ah_info, info_hidden_threat
+### LTXDiff dltxify
 
-    ![dialogs]
-    >files                                    = AH_dialogs, dialogs_hidden_threat
-    
-    ![profiles]
-    >files                                    = npc_profile_ah, npc_profile_hidden_threat
-    >specific_characters_files                = character_desc_ah, character_desc_hidden_threat
-  ```
+[LTXDiff](https://github.com/MerelyMezz/LTXDiff/releases/tag/1.4.2) is capable of automatically converting conventional mods into a DLTX-ready format.
 
-#### Converting already existing mods
+If you're lucky, the [DLTXify by right click](https://www.moddb.com/mods/stalker-anomaly/addons/dltxify-by-right-click-for-modders-tool) might work for you. Instructions about it are available on the addon's page. Alternatively, you can use LTXDiff dltxify.
 
-LTXDiff is capable of automatically converting conventional mods into a DLTX-ready format.
+Execute the following command :
 
-The preferable way of converting to DLTX is by using [DLTXify by right click](https://www.moddb.com/mods/stalker-anomaly/addons/dltxify-by-right-click-for-modders-tool) tool that includes LTXDiff to perform automatic conversion. Instructions on how to use it is inside mod page.
+<text style="color: red">LTXDiff dltxify "</text><text style="color: green">[Base Folder]</text><text style="color: red">" "</text><text style="color: green">[Mod Folder]</text><text style="color: red">" "</text><text style="color: green">[Mod Suffix]</text><text style="color: red">"</text>
 
-Additionaly you can use LTXDiff manually:
+Where :
+- <text style="color: green">[Base Folder]</text> : A path to the unpacked vanilla files of the game;
+- <text style="color: green">[Mod Folder]</text> : A path to your mod's folder;
+- <text style="color: green">[Mod Suffix]</text> : The unique name you want to be used for your addon's file.
 
-<text style="color: red">LTXDiff dltxify</text> <text style="color: green">[Base Folder] [Mod Folder] [Mod Suffix]</text>
+___
 
-Mod suffix in this case is the name that gets appended to the mod files, like in step 2 of the previous section.
+## 4. Syntax
+
+The following table connects the different symbols used by DLTX to their corresponding feature(s).
+
+| Symbol  |                                 Feature(s)                                 |
+|:-------:|:--------------------------------------------------------------------------:|
+|   `!`   | [Section override](#section-override) or [Field override](#field-override) |
+|  `!!`   |                   [Section deletion](#section-deletion)                    |
+|   `@`   |           [Section creation/override](#section-creationoverride)           |
+|   `>`   |            [Field CSV list addition](#field-csv-list-addition)             |
+|   `<`   |            [Field CSV list deletion](#field-csv-list-deletion)             |
+
+---
+
+### Section override
+
+To override a section, you use the `!` symbol before the section declaration.
+
+To override the section called `some_section` :
+```ini
+[some_section]:parent_section
+price       = 5000
+weight      = 1.0
+friends     = me, myself, i
+```
+You use :
+```ini
+![some_section]
+```
+
+Please note :
+- this alone does nothing, and needs to be used in combination with other things;
+- when you override a section, **you do not list again the parent sections inheritance**.
+
+---
+
+### Section deletion
+
+To delete a section, you [delete all the section's fields](#field-deletion), and you use the `!!` symbols before the section declaration.
+
+To delete the section called `some_section` :
+```ini
+[some_section]:parent_section
+price       = 5000
+weight      = 1.0
+friends     = me, myself, i
+```
+You use :
+```ini
+!![some_section]
+!price
+!weight
+!friends
+```
+
+---
+
+### Section creation/override
+
+To create a section if it doesn't exist, or override it if it already exists, you use the `@` symbol before the section declaration.
+
+To create/override the section called `some_section` :
+```ini
+[some_section]:parent_section
+price       = 5000
+weight      = 1.0
+friends     = me, myself, i
+```
+You use :
+```ini
+@[some_section]
+```
+
+Please note :
+- this alone does nothing, and needs to be used in combination with other things;
+- this only exists in the Anomaly 1.5.2 version of the Modded Exes.
+
+---
+
+### Section inheritance addition
+
+To add a new parent section to another section, you add the new parent as you normally would, **without listing all the existing parents again**.
+
+To add the `some_other_section` section as parent of `some_section` :
+```ini
+[some_section]:parent_section
+price       = 5000
+weight      = 1.0
+friends     = me, myself, i
+```
+You use :
+```ini
+![some_section]:some_other_section
+```
+
+---
+
+### Section inheritance deletion
+
+To remove a parent section of a section, you prefix the parent section you wish to remove with the `!` symbol in the list of parents.
+
+To remove the `parent_section` section from the parent of `some_section` :
+```ini
+[some_section]:parent_section
+price       = 5000
+weight      = 1.0
+friends     = me, myself, i
+```
+You use :
+```ini
+![some_section]:!parent_section
+```
+
+---
+
+### Field override
+
+To override a field within a section, you [override its section](#section-override) and you redefine the field.
+
+To override the field called `price` in `some_section` :
+```ini
+[some_section]:parent_section
+price       = 5000
+weight      = 1.0
+friends     = me, myself, i
+```
+You use :
+```ini
+![some_section]
+price       = 10000
+```
+
+---
+
+### Field deletion
+
+To delete a field within a section, you use the `!` symbol before the field declaration.
+
+To delete the field called `price` in `some_section` :
+```ini
+[some_section]:parent_section
+price       = 5000
+weight      = 1.0
+friends     = me, myself, i
+```
+You use :
+```ini
+![some_section]
+!price
+```
+
+___
+
+### Field CSV list addition
+
+To add an item in a CSV list, you use the `>` symbol before the field declaration, and list the elements you want to add.
+
+To add the item `you` in the field called `friends` in `some_section` :
+```ini
+[some_section]:parent_section
+price       = 5000
+weight      = 1.0
+friends     = me, myself, i
+```
+You use :
+```ini
+![some_section]
+>friends    = you
+```
+
+Please note :
+- do not list again the elements already present in this list;
+- this only exists in the Anomaly 1.5.2 version of the Modded Exes.
+
+___
+
+### Field CSV list deletion
+
+To remove an item from a CSV list, you use the `<` symbol before the field declaration, and list the elements you want to remove.
+
+To remove the item `myself` in the field called `friends` in `some_section` :
+```ini
+[some_section]:parent_section
+price       = 5000
+weight      = 1.0
+friends     = me, myself, i
+```
+You use :
+```ini
+![some_section]
+<friends    = myself
+```
+
+Please note :
+- do not list again the elements already present in this list;
+- this only exists in the Anomaly 1.5.2 version of the Modded Exes.
 
 ___
 
 ## Sources
+
 [Modded Exes (contains DLTX)](https://github.com/themrdemonized/STALKER-Anomaly-modded-exes)
 
 [Legacy page for DLTX on Moddb](https://www.moddb.com/mods/stalker-anomaly/addons/dltx-differential-ltx-loading)
 
 [LTXDiff Source Code](https://github.com/MerelyMezz/LTXDiff)
+
+[DLTXify by right click](https://www.moddb.com/mods/stalker-anomaly/addons/dltxify-by-right-click-for-modders-tool)
