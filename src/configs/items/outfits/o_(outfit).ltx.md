@@ -31,7 +31,7 @@ ___
 
 </details>
 
-## Sound parameters [!sound-icon](../../../icons/sound.svg)
+## Sound parameters ![sound-icon](../../../icons/sound.svg)
 
 <details>
     <summary>Sound parameters</summary>

@@ -68,11 +68,6 @@ ___
 
 ___
 
-- [Engine](engine/README.md)
-  - [A-Life (AI)](engine/alife.md)
-
-___
-
 - [Quests](quests/README.md)
   - [Introduction](quests/introduction.md)
   - [NPC Creation](quests/npc_creation.md)
@@ -98,8 +93,9 @@ ___
   - [Shaders List](shaders/shaders-list/shaders-list.md)
   - [Compiler Shaders List](shaders/shaders-list/compiler-shaders-list.md)
 
-- [Reference/Engine](reference/README.md)
+- [Reference/Engine](engine/README.md)
   - [Console commands](engine/console-commands.md)
+  - [A-Life (AI)](engine/alife.md)
 
 - [Reference/Resources](reference/README.md)
   - [Audio](resources/audio.md)
