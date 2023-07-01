@@ -61,6 +61,25 @@ ___
 
 </details>
 
+<details>
+    <summary>Line 857</summary>
+
+```ini
+[error]Expression    : m_Motions.size()
+[error]Function      : CKinematicsAnimated::Load
+[error]File          : ..\xrRender\SkeletonAnimated.cpp
+[error]Line          : 857
+
+section '(null)'
+model 'path to model'
+```
+
+- Clarification: 
+
+- Error fixing:
+
+</details>
+
 ___
 
 ## <center>[Animated Paths](../main-folders-and-files/file-formats/anm.md)</center>

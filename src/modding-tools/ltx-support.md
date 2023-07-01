@@ -43,5 +43,5 @@ If you're interested in poking around the extension yourself or just helping to 
 
 * [GitHub](https://github.com/AziatkaVictor/ltx-support)
 * [GitHub Wiki](https://github.com/AziatkaVictor/ltx-support/wiki)
-* [Profile on AP-PRO.RU](https://ap-pro.ru/profile/6-aziatkavictor/)
+* [Author Profile on AP-PRO.RU](https://ap-pro.ru/profile/6-aziatkavictor/)
 * [Forum topic](https://ap-pro.ru/forums/topic/3561-vscode-podderzhka-sintaksisa-cop/)

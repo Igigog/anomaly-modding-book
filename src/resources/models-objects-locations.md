@@ -14,10 +14,6 @@ ___
 
 ## Animations
 
-[Riggered HUD in Blender](https://drive.google.com/file/d/1YuI9oukDrJDGLkyNWzO155GFjVESydaX/view?usp=sharing)
-
-![riggered-hud](resources-images/hud-rig-animation.png)
-
 [Character Rig in Blender](https://drive.google.com/file/d/1sh5Ps6SxGDHns56tBaGsqs9Sv78s5bPT/view?usp=sharing)
 
 ![character-rig](resources-images/character_rig.png)
