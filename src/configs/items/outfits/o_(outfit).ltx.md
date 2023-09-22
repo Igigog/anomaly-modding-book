@@ -14,24 +14,24 @@ ___
     <summary>General parameters</summary>
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+---|---|:---:|---|
 | GroupControlSection |  | spawn_group |  |
-| $spawn | the Outfit Directory in the Level Editor | "outfit\cs_light_novice_outfit" |  |
+| $spawn | the Outfit Directory in the [Level Editor](../../../sdk/level-editor.md) | "outfit\cs_light_novice_outfit" |  |
 | cform | parameter for dynamic objects; necessary for correct creation of the skeleton model | skeleton | skeleton |
-| discovery_dependency |  |  |  |
+| discovery_dependency | Outdated parameter used in early SoC builds. Needed for discovery or improvement after working with scientists |  |  |
 | class | engine outfit class | EQU_STLK |  |
-| default_to_ruck | whether the outfit will be moved to the backpack instead of the slot when picked up | true | true (yes) - false (no) |
+| default_to_ruck | whether the outfit will be moved to the backpack instead of the slot when picked up | true | true (Yes) - false (No) |
 | sprint_allowed | Determines whether it is possible to run in this outfit | true | true (Yes) - false (No) |
-| kind | The type of item to group into the appropriate section in the Item Spawner | o_light<br> o_medium<br> o_sci<br> o_heavy |  |
+| kind | The type of item to group into the appropriate section in the [Item Spawner](../../../modding-tools/in-game-editors/item-spawner.md) | o_light<br> o_medium<br> o_sci<br> o_heavy |  |
 | cost | base price | 32340 |  |
-| community | To which faction the suit belongs | csky |  |
+| community | To which faction the suit belongs | dolg | army<br>csky<br>stalker<br>killer<br>dolg<br>bandit<br>freedom<br>monolith<br>isg<br>greh<br>ecolog<br>renegade |
 | helmet_avaliable | Is a helmet available for this costume | true | true (Yes) - false (No) |
 | backpack_avaliable | Is a backpack available for this suit | true | true (Yes) - false (No) |
 | can_trade |  | true |  |
 
 </details>
 
-## Sound parameters ![sound-icon](../../../icons/sound.svg)
+## Sound parameters
 
 <details>
     <summary>Sound parameters</summary>
@@ -60,7 +60,7 @@ ___
 | inv_name_short | short name in the inventory | csky_light_novice_outfit_name |  |
 | inv_weight | the inventory weight | 5.48 | The number is given in kilograms |
 | description | Description in inventory | csky_light_novice_outfit_description |  |
-| slot | Inventory slot number | 6 |  |
+| slot | Inventory slot number | 6 | 0 - knives (may be crashing)<br>1 - pistols (may be crashing)<br>2 - shotguns, machine guns, rifles, grenade launchers (may be crashing)<br>3 - grenades (may be crashing)<br>4 - binoculars (may be crashing)<br>5 - bolts (may be crashing)<br>6 - outfits |
 
 </details>
 
@@ -71,10 +71,10 @@ ___
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 ---|---|---|---|
-| player_hud_section |  | actor_hud_cs1 |  |
-| visual |  | dynamics\outfit\cs_light_outfit |  |
-| actor_visual |  | actors\stalker_nebo\stalker_nebo_1 |  |
-| npc_visual |  | actors\stalker_nebo\stalker_nebo_1 |  |
+| player_hud_section | First-person HUD section | actor_hud_cs1 |  |
+| visual | Oufit visual | dynamics\outfit\cs_light_outfit |  |
+| actor_visual | Visual of a character in outfit | actors\stalker_nebo\stalker_nebo_1 |  |
+| npc_visual | Visual of an NPC in outfit | actors\stalker_nebo\stalker_nebo_1 |  |
 
 </details>
 
@@ -90,16 +90,6 @@ ___
 | upgrade_scheme | upgrade_scheme | up_scheme_sunrise_1 |  |
 | repair_type | item type for repair tools | outfit |  |
 | repair_part_bonus |  | 0.17 |  |
-
-</details>
-
-#### Icons of the upgrades
-
-<details>
-    <summary>Icons of the upgrades</summary>
-
-| Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
 | upgr_icon_x | the X coordinate of the upper left corner of the icon in the repair window | 953 | Specified in pixels |
 | upgr_icon_y | top-left corner coordinate of the icon in the Y axis repair window | 365 | Specified in pixels |
 | upgr_icon_width | Width of the icon in the repair window | 309 | Specified in pixels |
@@ -119,8 +109,8 @@ ___
 | control_inertion_factor | inertia in the outfit | 1 |  |
 | use1_functor |  | gameplay_disguise.menu_patch |  |
 | use1_action_functor |  | gameplay_disguise.menu_patch_action |  |
-| additional_inventory_weight | Maximum weight at which the protagonist can walk | 5 | Specified in kilograms |
-| additional_inventory_weight2 | Additional carrying weight | 5 | Specified in kilograms |
+| additional_inventory_weight | Maximum weight at which the protagonist can walk and additional carrying weight| 5 | Specified in kilograms |
+| additional_inventory_weight2 | Not Used? | 5 | Specified in kilograms |
 
 </details>
 

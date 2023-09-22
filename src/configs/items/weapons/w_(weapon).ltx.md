@@ -44,7 +44,7 @@ ___
 | single_handed | held with one hand | 0 | 0 - no <br>1 - yes |
 | default_to_ruck | whether the weapon will be moved to the backpack instead of the slot when picked up | false | true (yes) <br>false (no) |
 | sprint_allowed | this line means that you can run with the weapon | true | true (Yes) <br>false (No) |
-| kind | The type of item to group into the appropriate section in the Item Spawner | w_rifle | w_rifle<br> w_misc<br> w_explosive<br> w_melee<br> w_pistol<br> w_smg<br> w_shotgun<br> w_sniper |
+| kind | The type of item to group into the appropriate section in the [Item Spawner](../../../modding-tools/in-game-editors/item-spawner.md) | w_rifle | w_rifle<br> w_misc<br> w_explosive<br> w_melee<br> w_pistol<br> w_smg<br> w_shotgun<br> w_sniper |
 | cost | base price | 28780 | Specified in numbers |
 | hud | section with parameters for the hud model of the weapon (1st person view) | wpn_akm_hud | Specifies the name of the section |
 | visual | reference to the 3rd person model | dynamics\weapons\wpn_akm\wpn_akm.ogf | Specifies the path to the file |
@@ -75,8 +75,8 @@ ___
     <summary>Weapon parameters in inventory</summary>
 
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
----|---|---|---|
-| icons_texture |  |  |  |
+---|---|:---:|---|
+| icons_texture | texture where the weapon icon will be taken from | ui\ui_icon_spas |  |
 | inv_grid_height | icon height | 2 | number of 50x50 pixels cells |
 | inv_grid_width | icon width | 5 | number of 50x50 pixels cells |
 | inv_grid_x | the coordinate of the upper left corner of the icon on a 50x50 pixel grid on the X axis | 35 | number of cells indented to the right |
@@ -85,7 +85,7 @@ ___
 | inv_name_short | short name in the inventory | st_wpn_akm | Section name, in *.xml files included in the string_table section of gamedata\configs\localization.ltx |
 | inv_weight | the inventory weight of the unloaded weapon | 3.3 | The number is given in kilograms |
 | description | Description in inventory | st_wpn_akm_descr | Section name, in *.xml files included in the string_table section of gamedata\configs\localization.ltx |
-| slot | Inventory slot number | 2 | 0 (knife) <br>1 (gun) <br>2 (shotgun, machine gun, rifle, grenade launcher) <br>3 (grenade) <br>4 (binoculars) 5 (bolt) |
+| slot | Inventory slot number | 2 | 0 - knives<br>1 - pistols<br>2 - shotguns, machine guns, rifles, grenade launchers<br>3 - grenades (may be crashing)<br>4 - binoculars<br>5 - bolts (may be crashing)<br>6 - outfits (may be crashing) |
 
 </details>
 
@@ -100,8 +100,8 @@ ___
 | startup_ammo | startup amount of ammo in multiplayer | The number of rounds of ammunition is indicated |
 | kill_msg_x | the coordinate of the upper left corner of the kill icon on the X axis |  |
 | kill_msg_y | top-left corner coordinate of the kill icon on the Y axis | |
-| kill_msg_width | the width of the kill icon | the value is specified in pixels |
-| kill_msg_height | kill icon height | value in pixels |
+| kill_msg_width | kill icon width | Specified in pixels |
+| kill_msg_height | kill icon height | Specified in pixels |
 
 </details>
 
@@ -114,7 +114,7 @@ ___
 ---|---|---|---|
 | flame_particles | gunshot fire particle | weapons\generic_weapon05 | Specifies the path to the file |
 | smoke_particles | shot smoke particle | weapons\generic_shoot_00 | Specifies the path to the file |
-| light_disabled | flash off when shot | false | true (yes) - false (no) |
+| light_disabled | flash off when shot | false | true (Yes) - false (No) |
 | light_color | Parameters for changing the color of the shot fire particle | 0.6, 0.5, 0.3 | RGB Color |
 | light_range | the radius of the fire partition from the shot | 5 |  |
 | light_time | time of light playback when shot | 0.2 |  |
@@ -144,10 +144,10 @@ ___
 
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
-| upgr_icon_x | the X coordinate of the upper left corner of the icon in the repair window | 300 | Specified in pixels |
-| upgr_icon_y | top-left corner coordinate of the icon in the Y axis repair window | 0 | Specified in pixels |
-| upgr_icon_width | Width of the icon in the repair window | 300 | Specified in pixels |
-| upgr_icon_height | icon height in the repair window | 100 | Specified in pixels |
+| upgr_icon_x | X coordinate of the upper left corner of the weapon icon in the upgrade window | 300 | Specified in pixels |
+| upgr_icon_y | Y coordinate of the upper left corner of the weapon icon in the upgrade window | 0 | Specified in pixels |
+| upgr_icon_width | icon width in the upgrade window | 300 | Specified in pixels |
+| upgr_icon_height | icon height in the upgrade window | 100 | Specified in pixels |
 
 </details>
 

@@ -60,14 +60,14 @@ ___
 ### Options Button
 
 | Render | Description |
----|---|
+---|:---:|
 | Quality | Render quality |
-| Fill Mode |  |
-| Shade Mode |  |
+| Fill Mode | Draw or Fill mode<br>Point<br>Wireframe<br>Solid |
+| Shade Mode | Shading mode selection<br>[Flat](https://en.wikipedia.org/wiki/Shading#Flat_shading)<br>[Gouraud](https://en.wikipedia.org/wiki/Gouraud_shading) |
 | Edged Face | Enables displaying edges at polygons |
-| HW Render |  |
-| Linear Filter |  |
-| Textures |  |
+| HW Render | Enables Hardware Rendering |
+| Linear Filter | Enables linear filtering |
+| Textures | Enables texture display |
 
 | Options | Description |
 ---|---|

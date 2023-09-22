@@ -36,6 +36,13 @@ All the settings described below are stored in the file "user".ltx. (You can rea
 | time_factor | Ability to change the game time | 0.001 - 1000.0 | - |
 | jump_to_level | Moving to the selected level | k00_marsh<br> l01_escape<br> l02_garbage<br> l03_agroprom<br> k01_darkscape<br> l04_darkvalley<br> l05_bar<br> l06_rostok<br> l07_military<br> l08_yantar<br> l09_deadcity<br> l10_limansk<br> l10_radar<br> l10_red_forest<br> l11_hospital<br> l11_pripyat<br> l12_stancia<br> l12_stancia_2<br> l13_generators<br> l03u_agr_underground<br> l04u_labx18<br> l08u_brainlab<br> l10u_bunker<br> l12u_sarcofag<br> l12u_control_monolith<br> l13u_warlab<br> zaton<br> jupiter<br> jupiter_underground<br> pripyat<br> labx8<br> k02_truck_cemetery<br> fake_start<br> y04_pole | - |
 
+#### Multiplayer
+
+| Сommand | Command description | Command's argument | Note |
+---|---|:---:|---|
+|  |  |  |  |
+
+
 #### Actor
 
 | Сommand | Command description | Command's argument |

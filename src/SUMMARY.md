@@ -47,7 +47,6 @@ ___
 
 - [Modelling]()
   - [Creating model in Blender](blender/creating-model-in-blender.md)
-  - [Creating a location in Blender](blender/creating-a-location-in-blender.md)
 
 ___
 
@@ -65,7 +64,8 @@ ___
 ___
 
 - [Mapping](mapping/README.md)
-
+  - [Creating a location in Blender](blender/creating-a-location-in-blender.md)
+  
 ___
 
 - [Quests](quests/README.md)
@@ -73,6 +73,7 @@ ___
   - [NPC Creation](quests/npc_creation.md)
   - [Task Creation](quests/task_guide.md)
   - [Dialogue Creation](quests/dialogues.md)
+
 ___
 
 - [Reference/General](reference/README.md)
@@ -96,6 +97,7 @@ ___
 - [Reference/Engine](engine/README.md)
   - [Console commands](engine/console-commands.md)
   - [A-Life (AI)](engine/alife.md)
+  - [Engine Classe](engine/engine-classes.md)
 
 - [Reference/Resources](reference/README.md)
   - [Audio](resources/audio.md)
@@ -104,6 +106,15 @@ ___
 
 - [Reference/Tools](reference/README.md)
   - [Modding Tools List](modding-tools/modding-tools.md)
+  - [In-Game Editors](modding-tools/modding-tools.md#in-game-editors)
+    - [Item Spawner](modding-tools/in-game-editors/item-spawner.md)
+    - [Lightning Editor](modding-tools/in-game-editors/lightning-editor.md)
+    - [NPC Logic/Execute]()
+    - [Object Spawner](modding-tools/in-game-editors/object-spawner.md)
+    - [Outfits/Weapons Stats Editor](modding-tools/in-game-editors/outfits-weapon-stats-editor.md)
+    - [Pocket Workshop]()
+    - [Weapon HUD Editor](modding-tools/in-game-editors/weapon-hud-editor.md)
+    - [Weather Editor](modding-tools/in-game-editors/weather-editor.md)
   - [Ltx Support](modding-tools/ltx-support.md)
   - [SDK 0.7](sdk/README.md)
     - [Interface](sdk/interface.md)

@@ -8,7 +8,7 @@ ___
 
 ___
 
-To compile, you need to make a location build. To do this, open or [create](../blender/creating-a-location-in-blender-and-compiling-it-with-the-sdk.md) a location in the Level Editor in the SDK.
+To compile, you need to make a location build. To do this, open or [create](../blender/creating-a-location-in-blender.md) a location in the Level Editor in the SDK.
 
 For location build this is the minimum set:
 

@@ -4,15 +4,20 @@ ___
 
 ## In-game editors
 
-- Item Spawner - Spawn menu for items (Weapons, Outfits, etc)
-- Object Spawner - Spawn menu for objects (NPCs, Squads, Anomalys, etc)
-- Weather Editor - Editor for setting, saving weather
-- Lighting Editor - Weather Lighting Editor
-- Weapon HUD Editor - Allows you to customize the HUD of the weapon (position, location of the shot, etc.)
-- Weapon Stats Editor - Allows you to adjust the configuration of the weapon (bullet speed, aiming, etc.)
-- Outfits Stats Editor - Allows you to customize the configuration of the outfits (protection from different types of damage, etc.)
+- [Item Spawner](in-game-editors/item-spawner.md) - Spawn menu for items (Weapons, Outfits, etc)
+- [Object Spawner](in-game-editors/object-spawner.md) - Spawn menu for objects (NPCs, Squads, Anomalys, etc)
+- [Weather Editor](in-game-editors/weather-editor.md) - Editor for setting, saving weather
+- [Lighting Editor](in-game-editors/lightning-editor.md) - Weather Lighting Editor
+- [Weapon HUD Editor](in-game-editors/weapon-hud-editor.md) - Allows you to customize the HUD of the weapon (position, location of the shot, etc.)
+- [Outfits/Weapon Stats Editor](in-game-editors/outfits-weapon-stats-editor.md) - Allows you to customize the configuration of the outfits or weapons
 - Pocket Workshop - Not an editor, but allows you to check the scheme of improvements.
 - NPC Logic/Execute - Allows you to edit NPC logic
+
+___
+
+## QoL Tools
+
+- [Stalker Modding Helper](https://github.com/Thial/StalkerModdingHelper) - Small utility that allows you to copy the mods you are working on into your dev S.T.A.L.K.E.R. dev installation. Anomaly and either run the game in a non-launched state + automatically load a save, or simply send a command to the game to reload a test save. The utility copies only those files that have been modified using MD5 hash check.
 
 ___
 
@@ -83,6 +88,7 @@ Official SDK with community enhancements:
 - [Anomaly Unofficial SDK](https://drive.google.com/file/d/1LVOLpVUkIVyUJk3zVxBHvnsC1tADwlML/view) - Unofficial SDK with included fixes
 
 - [SDK 0.8 by Red Panda](https://github.com/RedPandaProjects/XRayEngine/releases) - This is a port and a small upgrade of the classic 0.7 editor set. A lot of problems with the classic editor were related to the outdated development environment, which did not allow to upgrade it. Imgui was taken as a UI shell, as the easiest ui allowing to create simple forms with one line of code. All 4 editors were taken over.
+  - [HybridXRay](https://github.com/Roman-n/HybridXRay) - Further improvements to the SDK and X-Ray Engine from RedPanda.
 
 - [SDK 2.6 beta (Lost Alpha)](https://www.moddb.com/mods/lost-alpha/downloads/stalker-lostalpha-sdk-v26-beta) - Contains the basic editors and tools that were used to create Lost Alpha
 
@@ -138,6 +144,8 @@ ___
   - [More](thm-editor-by-valerok.md)
 
 - [ThmValidator](https://sharedby.blomp.com/tnT8vj) - Allows you to check the [.thm](../main-folders-and-files/file-formats/index.html#thm) files in the selected directory and automatically fix the most common bugs that occur during manual editing.
+
+- [xrAutoUI](https://cdn.discordapp.com/attachments/978593574893535274/1083798175896326206/xrAutoUI.exe) - Auto-transfer UI from 4:3 to 16:9
 
 - Any program capable of creating textures or opening [.dds](../main-folders-and-files/file-formats/index.html#dds-directdraw-surface) files (e.g. [Paint.net](https://www.getpaint.net/))
 
@@ -195,9 +203,9 @@ ___
 
 - [OGFViewer](https://github.com/mrnotbadguy/OGFViewer) - legacy model viewer for .ogf format.
 
-- [ObjectParamsCopier](https://sharedby.blomp.com/BJRQn8) -  Allows you to quickly copy surface settings with the same name from one object file to another
+- [ObjectParamsCopier](https://github.com/gunslingermod/compiled_toolz) -  Allows you to quickly copy surface settings with the same name from one object file to another
 
-- [OgfRefEditor](https://sharedby.blomp.com/XAwocF) - Editor of the list of OMFs connected to the model. It is intended primarily for changing the list of OMFs used in hand models, for this purpose it is possible to apply the OMF list to all OGFs in the selected folder
+- [OgfRefEditor](https://github.com/gunslingermod/compiled_toolz) - Editor of the list of OMFs connected to the model. It is intended primarily for changing the list of OMFs used in hand models, for this purpose it is possible to apply the OMF list to all OGFs in the selected folder
 
 - [StalkerWeaponToolKit](https://disk.yandex.ru/d/x3771W3btrwtFw) - Tool for working with weapons
 
@@ -207,7 +215,8 @@ ___
 
 ## Upgrades
 
-- [Upgrades Editor](https://sharedby.blomp.com/7Lxeq9) - A visual editor that makes it relatively quick and easy to create weapon upgrade schemes
+- [Upgrades Editor](https://github.com/gunslingermod/compiled_toolz) - A visual editor that makes it relatively quick and easy to create weapon upgrade schemes
+  - [More](upgrade-editor.md)
 
 ___
 
@@ -280,10 +289,10 @@ ___
 
 ## Mod Creating
 
-- [FOMOD Creation Tool](https://drive.google.com/file/d/1MGaRpx0bUMgmWoZy1BHBWSMaaed7aAnP/view?usp=sharing)
+- [FOMOD Creation Tool](https://www.nexusmods.com/fallout4/mods/6821)
 
 ___
 
 ## Formats
 
-- [ChunckTool](https://sharedby.blomp.com/p4wGo4) - The utility is intended for low-level work with chunks in files and allows to read, replace and add data.
+- [ChunckTool](https://github.com/gunslingermod/compiled_toolz) - The utility is intended for low-level work with chunks in files and allows to read, replace and add data.

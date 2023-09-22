@@ -16,6 +16,10 @@ ODE (Open Dynamics Engine) - is an open physics engine distributed for free as a
 
 A-Life (Artificial Life) - artificial intelligence system. [More About](../ai/index.html)
 
+#### Smart Terrain
+
+A smart-terrain is a specific script class in the game, which is used to populate locations. Smarts organize jobs for NPS, implement logic for certain exclusive characters, respawn NPS and monsters, and organize emission shelters for NPS.
+
 ### OpenAL
 
 ![example centered](images/openal-logo.png)
