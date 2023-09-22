@@ -23,6 +23,8 @@ ___
 
 ### Engine Shader Parametres
 
+[Shader List Here](../shaders/shaders-list/shaders-list.md)
+
 ![se-es centered](sdk-image/shader-editor-engine-shaders.png)
 
 **Shader Types**
@@ -82,6 +84,8 @@ ___
 ___
 
 ### Compiler Shader Parametres
+
+[Compiler Shader List Here](../shaders/shaders-list/compiler-shaders-list.md)
 
 ![se-cs centered](sdk-image/shader-editor-compiler-shaders.png)
 
@@ -240,6 +244,8 @@ ___
 ___
 
 ### Material Pair
+
+[Material List Here](../shaders/shaders-list/compiler-shaders-list.md)
 
 ![se-mp centered](sdk-image/shader-editor-material-pair.png)
 

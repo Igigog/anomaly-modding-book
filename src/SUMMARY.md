@@ -93,11 +93,12 @@ ___
   - [Material Shaders List](shaders/shaders-list/materials-list.md)
   - [Shaders List](shaders/shaders-list/shaders-list.md)
   - [Compiler Shaders List](shaders/shaders-list/compiler-shaders-list.md)
+  - [Sound Envornment List](shaders/shaders-list/sound-envornment-list.md)
 
 - [Reference/Engine](engine/README.md)
   - [Console commands](engine/console-commands.md)
   - [A-Life (AI)](engine/alife.md)
-  - [Engine Classe](engine/engine-classes.md)
+  - [Engine Classes](engine/engine-classes.md)
 
 - [Reference/Resources](reference/README.md)
   - [Audio](resources/audio.md)

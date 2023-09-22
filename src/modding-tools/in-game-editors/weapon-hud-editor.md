@@ -2,4 +2,4 @@
 
 ___
 
-> [Use Demonazed HUD Editor!!!](../../addons/useful-addons-scripts-utils.md#draggable-hud-editor)
+> [Use TheMrDemonized HUD Editor!!!](../../addons/useful-addons-scripts-utils.md#draggable-hud-editor)
