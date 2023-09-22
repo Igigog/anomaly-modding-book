@@ -106,7 +106,7 @@ ___
 
 - [Reference/Tools](reference/README.md)
   - [Modding Tools List](modding-tools/modding-tools.md)
-  - [In-Game Editors](modding-tools/modding-tools.md#in-game-editors)
+  - [In-Game Editors](modding-tools/in-game-editors/README.md)
     - [Item Spawner](modding-tools/in-game-editors/item-spawner.md)
     - [Lightning Editor](modding-tools/in-game-editors/lightning-editor.md)
     - [NPC Logic/Execute]()
