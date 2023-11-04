@@ -44,7 +44,7 @@ The order in which Callbacks from various scripts are run is not something that 
 
 ```lua
 function on_game_start()
-    UnregisterScriptCallback(("actor_on_item_use", itms_manager.actor_on_item_use)
+    UnregisterScriptCallback("actor_on_item_use", itms_manager.actor_on_item_use)
     RegisterScriptCallback("actor_on_item_use", test)
 end
 
