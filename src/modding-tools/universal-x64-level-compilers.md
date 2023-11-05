@@ -7,7 +7,7 @@
 - Acknowledgements:
   - Abramcumner
   - K.D.
-- The version described in the article: 1.4
+- The version described in the article: 1.5
 - [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3341-universalnye-kompilyatory-urovney-h64)
 
 ___
@@ -45,6 +45,9 @@ Universal level compiler that supports the compilation format for games of all s
 - Added major changes to past compilers
 - Expanded information output on some bugs
 - Fixed some crashes of the original compilers
+- Possibility to force the use of smoothing groups on a certain geometry even if the `-nosmg` key is present (To use smoothing groups on a model it is necessary to assign a compile shader with `_smg` in its name to its materials (e.g. `def_vertex\def_vertex_smg`). The compile shader itself is enough to declone from the original one and rename it with this postfix)
+- Possibility to disable tessellation on certain geometry (for example, on nosun boxes). To do this you need to name a compile shader with `_no_tess` in its name. Keep in mind that disabling tessellation can cause problems with UV
+- Ability to disable shadow baking from certain [MU models](../terminology/terminology.md#mu-multiply-usage-objects). Compile shaders of MU models must have `_no_mu_shadow` in the name. The difference between this solution and the usual disabling of the `Cast Shadow` checkbox is that in this case self-darkening of the MU model will be applied and the model will not be highlighted
 
 It requires Microsoft Visual C++ 2017 Redistributable x64 installed.
 
@@ -107,9 +110,21 @@ ___
 - Show compilation status only
 - Show level name and status
 
-### Recent Projects
-
 ### Keys
+
+#### The following keys are supported/required
+
+| Key | Description |
+---|---|
+| -? or -help | call help with a list of all startup keys |
+| -f \<NAME> | level name in `gamedata\levels\<NAME>\` |
+| -version \<NAME> | output level format (shoc/cs/cop) |
+| -fsltx \<NAME> | use custom fsgame.ltx |
+| -log_name \<NAME> | create a log file with custom name |
+| -discord | enable discord rich presence with showing project name |
+| -discord_s | enable discord rich presence without showing project name |
+| -tbb | use TBB multithreading (not recommended) |
+| -t \<NUM> | number of threads |
 
 #### Geometry Keys
 
@@ -128,6 +143,54 @@ ___
 | -removeinvalid | Skip and remove invalid faces |
 | -skipthm | Ignore missing thm-s and textures |
 
+##### Additional keys for geometry compilation
+
+| Key | Description |
+---|---|
+| -ppm \<float> | Hemi lighmaps quality (`by default: use value from SDK`) |
+| -weld_dist \<float> | Weld distance (`by default: use value from SDK`) |
+| -hemi_bias \<float> | Position bias for hemi calc (`default: 0.1, vanilla: 0.001`) |
+| -high | Higher priority for the threads |
+| -silent | Close the program after compilation |
+| -sleep | Turn off computer after compilation |
+| -static | Bake rgb+sun components of static lighting (doesn't work with -nohemi) |
+| -nohemi | Disable light and hemi calculating |
+| -noimpl | Don't bake lighting for terrain |
+| -underground | Don't bake directional light for underground levels |
+| -nomerge | Don't merge geometry |
+| -noweld | Don't weld geometry |
+| -nopool | Don't reload pool |
+| -notess | Don't tessellate geometry |
+| -nosmg | Don't use smooth groups (for cs/cop levels) |
+| -noise | Don't create geometry of Progressive-type |
+| -nocform | Don't create level.cform  |
+| -nostrip | Disable geometry striptification |
+| -dx_opt | Optimize geometry with D3DX optimizer instead of NvTriStrip |
+| -cform | Export level cform only |
+| -no_mt_cdb_pack | Disable multithreaded collision packing |
+| -gi | Enable [Radiosity](https://en.wikipedia.org/wiki/Radiosity_(computer_graphics)) phase |
+| -skipinvalid | Skip invalid faces |
+| -removeinvalid | Skip and remove invalid faces |
+| -skipthm | Skip surfaces and .thm files if they don't exist |
+| -noresize | Don't resize bigger textures to 1024x1024 |
+| -no_mt_mu | Don't run the lighting calculation for Multiple Usage objects in parallel with the main compilation |
+| -no_rnd_defl | Disable randomize deflectors |
+| -tex_rgba | Don't compress lightmap textures |
+| -tex_bc7 | Compress lightmap textures with BC7 format (`DX11 Only`) |
+| -qual_draft | set the quality of the scene in Draft (does not affect the exposed shaders) |
+| -qual_high | set the quality of the scene to High (does not affect the exposed shaders) |
+| -saveobj_base | save level objects as .obj models to temp folder (base UV) |
+| -saveobj_lmap | save level objects as .obj models to temp folder (lighmap UV)
+| -saveobj_cform | save level collision as .obj models to temp folder |
+| -force_default_shader | forced replacement of "`def_vertex`" shaders with "`default`" |
+| -force_vertex_shader | forced replacement of "`default`" shaders with "`def_vertex`" |
+| -no_bcform | Skip building rcast model and creating build.cform (works with -nohemi only) |
+| -old_merge | Use old merging algorithm |
+| -lmap_size \<NUM> | Lightmap size (`default: 1024`) |
+| -border \<NUM> | BORDER parameter, experimental key (`default: 1`) |
+| -subdiv_size \<NUM> | Box size for subdiving gemetry, experimental key (`default: 32`) |
+| -bparams_ext | Support for advanced level settings exported by Yara SDK |
+
 #### Grass
 
 | Key | Description |
@@ -137,6 +200,7 @@ ___
 | -nohemi | Disable baking lighting |
 | -static | Bake static lighting |
 | -skipthm | Ignore missing thm-s and textures |
+| -noresize | Don't resize bigger textures to 1024x1024 |
 
 #### AI-Map
 
@@ -146,6 +210,9 @@ Build Ai-Map
 ---|---|
 | -draft | Do not calculate covers |
 | -skipthm | Ignore missing thm-s and textures |
+| -f \<NAME> | Make AI-map |
+| -large_aimap | Build for large AI-map (`requires a modified game engine and SDK to work!`) |
+| -force_large_aimap | Force opening of AI-grid of original format with a large number of AI-nodes (more than 8 million). The key is experimental, correctness of AI-grid is not guaranteed. For correct export you need AI-grid of new format |
 
 Check Ai-Map
 
@@ -158,7 +225,10 @@ Check Ai-Map
 | Key | Description |
 ---|---|
 | -no_separator_check | Disable some conflicts |
-| -large_aimap | Build for large AI-map (requires a modified game engine and SDK to work!) |
+| -insert_graph | Enable adding graphs to common spawn when building a SoC Level (Key for SoC only) |
+| -actor_level \<level_name> | Select a level to spawn an actor. Avoids the routine of manually deleting an actor from each level. Only the actor from the selected level will be spawned, the others will be ignored. If it is not on the level, it will be automatically created in zero coordinates |
+| -no_levels_section | Ignore the list of levels from the [levels] section. Allows not to write each level to this section. |
+| -skip_invalid_class | Skip the "Can't create entity" crash. All objects with invalid and unknown classes will be ignored and will not be included in the common spawn |
 
 ##### Additional spawns
 
@@ -175,46 +245,3 @@ Check Ai-Map
 | by default | Renames the .spawn file by default (name chosen from the folder name) |
 
 - Spawn name - Spawn name
-
-### The following keys are supported/required
-
-| Key | Description |
----|---|
-| -? or -help | call help with a list of all startup keys |
-| -f \<NAME> | level name in GameData\levels\<NAME>\ |
-| -version \<NAME> | output level format (shoc/cs/cop) |
-| -fsltx \<NAME> | use custom fsgame.ltx |
-| -log_name \<NAME> | create a log file with custom name |
-| -discord | enable discord rich presence with showing project name |
-| -discord_s | enable discord rich presence without showing project name |
-| -tbb | use TBB multithreading (not recommended) |
-| -t \<NUM> | number of threads |
-
-### Additional keys for geometry compilation
-
-| Key | Description |
----|---|
-| -tex_rgba | do not use compression for stored textures |
-| -tex_bc7 | use BC7 compression for stored textures (format is only supported on DX11) |
-| -nocform | skips the creation of level.cform |
-| -no_mt_cdb_pack | disable multithreaded collision packing |
-| -noweld | disable small triangles welding |
-| -nomerge | skip the Merging geometry stage |
-| -noimpl | don't bake lighting for terrain |
-| -noresize | don't resize bigger textures to 1024x1024 |
-| -nostrip | disable geometry optimization and streamlining |
-| -dx_opt | turn on D3DX optimizer geometry optimization instead of NvTriStrip |
-| -gi | turn on the [Radiosity](https://en.wikipedia.org/wiki/Radiosity_(computer_graphics)) phase |
-| -no_mt_mu | don't run the lighting calculation for Multiple Usage objects in parallel with the main compilation |
-| -high | higher priority for the threads |
-| -saveobj_base | save level objects as .obj models to temp folder (base UV) |
-| -saveobj_lmap | save level objects as .obj models to temp folder (lighmap UV)
-| -saveobj_cform | save level collision as .obj models to temp folder |
-| -force_default_shader | forced replacement of "`def_vertex`" shaders with "`default`" |
-| -force_vertex_shader | forced replacement of "`default`" shaders with "`def_vertex`" |
-| -qual_draft | set the quality of the scene in Draft (does not affect the exposed shaders) |
-| -qual_high | set the quality of the scene to High (does not affect the exposed shaders) |
-| -ppm \<float> | hemi lighmaps quality (`by default: use value from SDK`) |
-| -weld_dist \<float> | weld distance (`by default: use value from SDK`) |
-| -hemi_bias \<float> | position bias for hemi calc (`default: 0.1, vanilla: 0.001`) |
-| -insert_graph | enable adding graphs to common spawn when building a SoC Level (Key for SoC only) |

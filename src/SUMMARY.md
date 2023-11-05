@@ -131,6 +131,7 @@ ___
     - [Modified THM Editor](modding-tools/thm-editor-by-valerok.md)
   - [Bump Generator](modding-tools/bump-generator.md)
   - [Sound Attribute Viewer And Tweaker](modding-tools/savandt.md)
+  - [Upgrade Editor](modding-tools/upgrade-editor.md)
   - [Modified OMF Editor](modding-tools/omf-editor-by-valerok.md)
   - [Modified OGF Editor](modding-tools/ogf-editor-by-valerok.md)
   - [X-Ray Export Tool](modding-tools/xray-export-tool.md)

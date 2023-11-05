@@ -58,6 +58,22 @@ Distinguishing features:
 
 One of the methods of dynamic level of detail
 
+## MU (Multiply Usage) Objects
+
+Needed for automatic creation of LOD at compilation stage
+
+## HOM (Hierarchical Occlusion Mapping)
+
+[One way to optimize the level](https://www.google.com/search?q=Hierarchical+Occlusion+Mapping)
+
+## Sector
+
+Sectors are a connected empty closed area bounded by static geometry and portals. In X-Ray 3D Engine, level geometry is not involved in sector creation, it uses HOM objects for this purpose.
+
+## Portal
+
+Portals are "windows" through which (and only through which) an observer can see the insides of other sectors.
+
 ## *object*_hud
 
 HUD (Head-Up Display) - is a set of graphical interfaces and decorative elements located in the foreground and/or in the game world, which are designed to clearly and quickly convey to the player the necessary information from the game at a given point in time, without interfering with the gameplay experience.

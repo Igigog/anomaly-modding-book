@@ -3,3 +3,4 @@ book
 mdbook.exe
 src/blender/creating-npc-animation-in-blender.md
 src/blender/creating-hud-animation-in-blender.md
+src/mapping/multimaterial-terrain.md
