@@ -25,7 +25,7 @@ ___
 
 - [AXRToolset](https://github.com/revolucas/AXRToolset) - AXRToolset is an AutoHotkey & Lua-based scripting engine that utilizes a Graphical User Interface to display scripted plugins that do various automated tasks. Although the current plugins are designed to aid in the development of S.T.A.L.K.E.R.: Call of Chernobyl, the engine itself can be used to create macros, scripts and other utilities for any application or purpose.
 
-- [Stalker Studio V.0.5 Beta](https://disk.yandex.ru/d/fYRxr2e2cOiomQ) - Different tools in one place
+- [Stalker Studio V.0.7 Beta](stalker-studio.md) - Different tools in one place
 
 ___
 
