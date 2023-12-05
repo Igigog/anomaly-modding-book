@@ -20,8 +20,7 @@ DLTX is built-in the Anomaly Modded Exes.
 - Back up the contents of your "bin" folder;
 - Unpack the contents of the archive on top of your game's root folder.
 
-![Image explananing the installation process of the Modded Exes](images/img_dltx_install_1.png)
-![Image explananing the installation process of the Modded Exes](images/img_dltx_install_2.png)
+![Image explananing the installation process of the Modded Exes](images/img_dltx_install.png)
 
 ___
 
@@ -56,7 +55,7 @@ For example :
 
 Once you have found the root file, create a new file in the same directory with the name :
 
-<text style="color: red">mod_</text><text style="color: green">[Root File Name]</text><text style="color: red">_</text><text style="color: green"></text><text style="color: red">.ltx</text>
+<text style="color: red">mod_</text><text style="color: green">[Root File Name]</text><text style="color: red">_</text><text style="color: green">[Mod Suffix]</text><text style="color: red">.ltx</text>
 
 Where :
 - <text style="color: green">[Root File Name]</text> : The name of the root file you identified via [Step 1](#step-1--find-the-root-file);
