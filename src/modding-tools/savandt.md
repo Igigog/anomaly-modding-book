@@ -9,7 +9,7 @@ ___
 
 ## About
 
-Utility designed to simplify working with X-Ray Engine sound files in [.ogg](../../main-folders-and-files/file-formats/index.html#ogg) format.
+Utility designed to simplify working with X-Ray Engine sound files in [.ogg](../main-folders-and-files/file-formats/README.md#ogg) format.
 
 ![editor centered](modding-tools-images/savandt.png)
 

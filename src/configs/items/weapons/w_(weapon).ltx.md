@@ -46,8 +46,8 @@ ___
 | sprint_allowed | this line means that you can run with the weapon | true | true (Yes) <br>false (No) |
 | kind | The type of item to group into the appropriate section in the [Item Spawner](../../../modding-tools/in-game-editors/item-spawner.md) | w_rifle | w_rifle<br> w_misc<br> w_explosive<br> w_melee<br> w_pistol<br> w_smg<br> w_shotgun<br> w_sniper |
 | cost | base price | 28780 | Specified in numbers |
-| hud | section with parameters for the hud model of the weapon (1st person view) | wpn_akm_hud | Specifies the name of the section |
-| visual | reference to the 3rd person model | dynamics\weapons\wpn_akm\wpn_akm.ogf | Specifies the path to the file |
+| hud | section with parameters for the [hud model of the weapon](../../../terminology/terminology.md#object_hud) | wpn_akm_hud | Specifies the name of the section |
+| visual | reference to the [world model](../../../terminology/terminology.md#object_world) | dynamics\weapons\wpn_akm\wpn_akm.ogf | Specifies the path to the file |
 
 </details>
 
@@ -58,14 +58,14 @@ ___
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 ---|---|---|---|
-| position | position of the weapon in the hands of the NPC and the headspace when viewed from the 3rd person | -0.026, -0.175, 0.0 | x - left/+right, y + up/down, z - forward/+backward |
-| orientation | orientation | how the weapon is rotated in the hands of the NPC and headgear, in the 3rd person view | 0, 0, 0 | x - left/+right, y + up/down, z - forward/+backward |
-| fire_point | coordinates of the fire particle from the shot, in the 3rd person view | 0, 0.218, 0.656 | x - left/+right, y + up/down, z - forward/+backward |
-| fire_point2 | Coordinates of the fire particle from the shot, when viewed from the 3rd person from the holster | 0, 0.161, 0.583 | x - left/+right, y + up/down, z - forward/+backward |
+| position | position of the weapon in the hands of the NPC and the headspace when viewed from the 3rd person | -0.026, -0.175, 0.0 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |
+| orientation | how the weapon is rotated in the hands of the NPC and headgear, in the 3rd person view | 0, 0, 0 | X - (`+`) left / (`-`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) roll to the right / (`+`) roll to the left |
+| fire_point | coordinates of the fire particle from the shot, in the 3rd person view | 0, 0.218, 0.656 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |
+| fire_point2 | Coordinates of the fire particle from the shot, when viewed from the 3rd person from the holster | 0, 0.161, 0.583 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |
 | strap_bone0 | the name of the first NPC model bone where the weapon is located when hidden | bip01_spine2 | Bone Name |
 | strap_bone1 | The name of the second NPC model bone that holds the weapon when hidden | bip01_spine1 | Bone Name |
-| strap_position | the position of the weapon on the NPC's back, when viewed from the third person | -0.26, -0.11, 0.25 | x - left/+right, y + up/down, z - forward/+backward |
-| strap_orientation | how the weapon is rotated on the NPC's back in 3rd person view | -15, -9, 110 | x - left/+right, y + up/down, z - forward/+backward |
+| strap_position | the position of the weapon on the NPC's back, when viewed from the third person | -0.26, -0.11, 0.25 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |
+| strap_orientation | how the weapon is rotated on the NPC's back in 3rd person view | -15, -9, 110 | X - (`+`) left / (`-`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) roll to the right / (`+`) roll to the left |
 
 </details>
 
@@ -81,10 +81,10 @@ ___
 | inv_grid_width | icon width | 5 | number of 50x50 pixels cells |
 | inv_grid_x | the coordinate of the upper left corner of the icon on a 50x50 pixel grid on the X axis | 35 | number of cells indented to the right |
 | inv_grid_y | The coordinate of the upper left corner of the icon on a 50x50 pixel grid on the Y axis | 0 | number of cells indenting downward |
-| inv_name | The name in the inventory | st_wpn_akm | Section name, in *.xml files included in the string_table section of gamedata\configs\localization.ltx |
-| inv_name_short | short name in the inventory | st_wpn_akm | Section name, in *.xml files included in the string_table section of gamedata\configs\localization.ltx |
+| inv_name | The name in the inventory | st_wpn_akm | Section name, in *.xml files included in the string_table section of `gamedata\configs\text\*localization*\st_items_weapons.xml` |
+| inv_name_short | short name in the inventory | st_wpn_akm | Section name, in *.xml files included in the string_table section of `gamedata\configs\text\*localization*\st_items_weapons.xml` |
 | inv_weight | the inventory weight of the unloaded weapon | 3.3 | The number is given in kilograms |
-| description | Description in inventory | st_wpn_akm_descr | Section name, in *.xml files included in the string_table section of gamedata\configs\localization.ltx |
+| description | Description in inventory | st_wpn_akm_descr | Section name, in *.xml files included in the string_table section of `gamedata\configs\text\*localization*\st_items_weapons.xml` |
 | slot | Inventory slot number | 2 | 0 - knives<br>1 - pistols<br>2 - shotguns, machine guns, rifles, grenade launchers<br>3 - grenades (may be crashing)<br>4 - binoculars<br>5 - bolts (may be crashing)<br>6 - outfits (may be crashing) |
 
 </details>
@@ -159,7 +159,7 @@ ___
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
 | fire_modes | firing modes fire modes | 1, -1 | -1 - automatic<br> 1 - single<br> 2 - two-shot<br> 3 - three-shot |
-| wallmark_section | section of wallmarks that appear on the ground/geometry when exploding |  | Section name (by default it is in the system.ltx file) |
+| wallmark_section | section of wallmarks that appear on the ground/geometry |  | Section name (by default it is in the system.ltx file) |
 | wm_size | texture size of the mark left on the ground after the explosion |  | The bigger the number, the bigger the mark |
 | allow_inertion | whether inertia is enabled |  | true (Yes) - false (No) |
 | ph_mass | the weight of the unloaded weapon for the physical engine | 4 | The number is given in kilograms |
@@ -243,16 +243,6 @@ ___
 | silencer_light_var_color | Parameter for varying the color of the particle of smoke from a shot from a weapon with silencer | 0.05 |  |
 | silencer_light_var_range | variation of the radius of the particle of the smoke from the shot from the weapon with silencer | 0.5 |  |
 | silencer_smoke_particles | particle smoke effect for a shot with silencer | weapons\generic_shoot_00 | Particles file path relative to particles.xr |
-
-</details>
-
-#### Silencer icons parameters
-
-<details>
-    <summary>Silencer icons parameters</summary>
-
-| Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
----|---|---|---|
 | silencer_x | the coordinates of the silencer icon superimposed on top of the weapon icon on the X coordinate | 235 | Specified in numbers |
 | silencer_y | the coordinates of the silencer icon superimposed over the weapon icon in Y coordinate | 10 | Specified in numbers |
 
@@ -270,16 +260,6 @@ ___
 | grenade_launcher_status | the status of the underbarrel grenade launcher | 0 | 0 - not available<br> 1 - built-in<br> 2 - removable |
 | launch_speed | launch speed of the underbarrel grenade launcher | 0 |  |
 | grenade_flame_particles | particle of the fire from the underbarrel grenade launcher | weapons\generic_weapon01 | Particles file path relative to particles.xr |
-
-</details>
-
-#### Underbarrel grenade launcher icons parameters
-
-<details>
-    <summary>Underbarrel grenade launcher icons parameters</summary>
-
-| Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
----|---|---|---|
 | grenade_launcher_x | grenade launcher icon coordinates superimposed over the weapon icon on the X coordinate | 127 | Specified in numbers |
 | grenade_launcher_y | grenade_launcher icon coordinates superimposed over the weapon icon on the Y coordinate | 18 | Specified in numbers |
 
@@ -395,9 +375,85 @@ ___
 
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
-| item_visual | Weapon hud-model; 1st person view | anomaly_weapons\wpn_akm\wpn_akm_hud.ogf | File path relative to the gamedata\meshes folder |
+| item_visual | Weapon [hud model](../../../terminology/terminology.md#object_hud) | anomaly_weapons\wpn_akm\wpn_akm_hud.ogf | File path relative to the gamedata\meshes folder |
 | attach_place_idx |  | 0 |  |
 | zoom_hide_crosshair | whether to remove the crosshair when aiming | true | true (Yes) - false (No) |
+
+</details>
+
+### Strafe/Inertion
+
+<details>
+    <summary>Strafe/Inertion</summary>
+
+> Strafe работает при перемещении персонажа (WASD)
+
+> Инерция работает при движении мышки
+
+| Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
+---|---|---|---|
+| strafe_enabled | Enabling Strafe | true | true (Yes) - false (No) |
+| strafe_aim_enabled | Enabling Aim Strafe | true | true (Yes) - false (No) |
+| strafe_hud_offset_rot |  | 1,-0.75,4.5 | X - (`+`) left / (`-`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) roll to the right / (`+`) roll to the left |
+| strafe_hud_offset_pos |  | 0,0.002,0 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |
+| strafe_hud_offset_rot_16x9 |  | 1,-1,5 | X - (`+`) left / (`-`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) roll to the right / (`+`) roll to the left |
+| strafe_hud_offset_pos_16x9 |  | 0,0.0023,0 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |
+| strafe_aim_hud_offset_rot |  | 0,-0.3,1.25 | X - (`+`) left / (`-`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) roll to the right / (`+`) roll to the left |
+| strafe_aim_hud_offset_pos |  | 0,0.002,0 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |
+| strafe_aim_hud_offset_rot_16x9 | Стрейф  | 0,-0.5,1.75 | X - (`+`) left / (`-`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) roll to the right / (`+`) roll to the left |
+| strafe_aim_hud_offset_pos_16x9 |  | 0,0.0023,0 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |
+| strafe_transition_time |  | 0.75 |  |
+| strafe_aim_transition_time |  | 0.35 |  |
+| strafe_cam_limit_aim_factor |  | 0.9 |  |
+| strafe_cam_min_angle |  | 0 |  |
+| inertion_min_angle_aim |  | 0 |  |
+| inertion_offset_LRUD_aim |  | 0.011, 0.011, 0.01, 0.005 |  |
+
+</details>
+
+### Visual Recoil
+
+<details>
+    <summary>Visual Recoil</summary>
+
+| Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
+---|---|---|---|
+| shooting_hud_effect |  | true | true (Yes) - false (No) |
+| shooting_max_LRUD |  | 0.005,0.005,0.005,0 |  |
+| shooting_max_LRUD_aim |  | 0.0025,0.0025,0,0 |  |
+| shooting_backward_offset |  | 0.02,0.015 |  |
+| shooting_ret_speed |  | 7.5 |  |
+| shooting_ret_aim_speed |  | 15 |  |
+| shooting_min_LRUD_power |  | 0.01 |  |
+
+</details>
+
+### hud_movement_layers
+
+<details>
+    <summary>hud_movement_layers</summary>
+
+| Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
+---|---|---|---|
+| movement_layer_0 | aim_walk | movement\aim_walk.anm |  |
+| movement_layer_1 | aim_crouch | movement\aim_walk.anm |  |
+| movement_layer_2 | crouch | movement\newwalk.anm |  |
+| movement_layer_3 | walk | movement\newwalk.anm |  |
+| movement_layer_4 | run | movement\newwalk.anm |  |
+| movement_layer_5 | sprint | movement\newrunreload.anm |  |
+
+</details>
+
+### empty_click_anm
+
+<details>
+    <summary>empty_click_anm</summary>
+
+| Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
+---|---|---|---|
+| empty_click_anm |  | script\misfire.anm |  |
+| empty_click_anm_speed |  | 2 |  |
+| empty_click_anm_power |  | 1 |  |
 
 </details>
 
@@ -408,43 +464,43 @@ ___
 
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
-| item_position | weapon position in relation to the arms | 0, 0, 0 | x - left/+right, y + up/down, z - forward/+backward |
-| item_orientation | weapon orientation in relation to the arms | 0, 0, 0 | x - left/+right, y + up/down, z - forward/+backward |
+| item_position | weapon position in relation to the arms | 0, 0, 0 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |
+| item_orientation | weapon orientation in relation to the arms | 0, 0, 0 | X - (`+`) left / (`-`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) roll to the right / (`+`) roll to the left |
 
 </details>
 
-#### Hand parameters
+#### HUD parameters with weapon
 
 <details>
-    <summary>Hand parameters</summary>
+    <summary>HUD parameters with weapon</summary>
 
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
-| hands_position | Hands and weapon position | -0.072, -0.15, 0.1 | x - left/+right, y + up/down, z - forward/+backward |
-| hands_position_16x9 | Hands and weapon position for 16x9 monitors | -0.072, -0.15, 0.1 | x - left/+right, y + up/down, z - forward/+backward |
-| hands_orientation | direction (orientation) of the hands and arms | 0.55, 2.39, 0.15 | x - left/+right, y + up/down, z - forward/+backward |
-| hands_orientation_16x9 | direction (orientation) of arms and weapons for 16x9 monitors | 0.55, 2.39, 0.15 | x - left/+right, y + up/down, z - forward/+backward |
+| hands_position | Hands and weapon position | -0.072, -0.15, 0.1 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |
+| hands_position_16x9 | Hands and weapon position for 16x9 monitors | -0.072, -0.15, 0.1 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |
+| hands_orientation | direction (orientation) of the hands and arms | 0.55, 2.39, 0.15 | X - (`+`) left / (`-`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) roll to the right / (`+`) roll to the left |
+| hands_orientation_16x9 | direction (orientation) of arms and weapons for 16x9 monitors | 0.55, 2.39, 0.15 | X - (`+`) left / (`-`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) roll to the right / (`+`) roll to the left |
 
 </details>
 
-### Parameters of the weapon HUD position when aiming
+### HUD parameters when aiming
 
 <details>
-    <summary>Parameters of the weapon HUD position when aiming</summary>
+    <summary>HUD parameters when aiming</summary>
 
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
-| aim_hud_offset_pos | aiming shift | -0.0818, 0.05494, -0.25 | x - left/+right, y + up/down, z - forward/+backward |
-| aim_hud_offset_pos_16x9 | aiming hand shift for 16x9 monitors | -0.0818, 0.05494, -0.25 | x - left/+right, y + up/down, z - forward/+backward |
-| aim_hud_offset_rot | orientation of the arms with the weapon when aiming | 0.0407, 0.00886, -0.00495 | x - left/+right, y + up/down, z - forward/+backward |
-| aim_hud_offset_rot_16x9 | aiming hand orientation for 16x9 monitors | 0.0407, 0.00886, -0.00495 | x - left/+right, y + up/down, z - forward/+backward |
+| aim_hud_offset_pos | aiming shift | -0.0818, 0.05494, -0.25 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |
+| aim_hud_offset_pos_16x9 | aiming hand shift for 16x9 monitors | -0.0818, 0.05494, -0.25 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |
+| aim_hud_offset_rot | orientation of the arms with the weapon when aiming | 0.0407, 0.00886, -0.00495 | X - (`+`) left / (`-`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) roll to the right / (`+`) roll to the left |
+| aim_hud_offset_rot_16x9 | aiming hand orientation for 16x9 monitors | 0.0407, 0.00886, -0.00495 | X - (`+`) left / (`-`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) roll to the right / (`+`) roll to the left |
 
 </details>
 
-### Parameters of HUD weapon position for underbarrel grenade launcher
+### HUD parameters when UGL is active
 
 <details>
-    <summary>Parameters of HUD weapon position for underbarrel grenade launcher</summary>
+    <summary>HUD parameters when UGL is active</summary>
 
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
@@ -455,15 +511,79 @@ ___
 
 </details>
 
-### Parameters of HUD arms position for the mode when the weapon is lowered
+### HUD parameters when weapon lowered
 
 <details>
-    <summary>Parameters of HUD arms position for the mode when the weapon is lowered</summary>
+    <summary>HUD parameters when weapon lowered</summary>
 
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
-| lean_hud_offset_pos | The offset of the arms with the weapon when the weapon is lowered | 0, 0, 0 | x - left/+right, y + up/down, z - forward/+backward |
-| lean_hud_offset_rot | orientation of the arms with the weapon down | 0, 0, 0 | x - left/+right, y + up/down, z - forward/+backward |
+| safemode_anm |  | script\to_lower.anm |  |
+| safemode_anm_speed |  | 1.2 |  |
+| safemode_anm_power |  | 1 |  |
+| safemode_anm2 |  | script\from_lower.anm |  |
+| safemode_anm_speed2 |  | 1.3 |  |
+| safemode_anm_power2 |  | 0.6 |  |
+| lowered_hud_offset_pos | Position of arms and hands when the weapon is lowered | 0, 0, 0 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |
+| lowered_hud_offset_rot | Rotation of arms and hands when the weapon is lowered | 0, 0, 0 | X - (`+`) left / (`-`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) roll to the right / (`+`) roll to the left |
+| lowered_hud_offset_pos_16x9 | Position of arms and hands when the weapon is lowered | 0, 0, 0 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |
+| lowered_hud_offset_rot_16x9 | Rotation of arms and hands when the weapon is lowered | 0, 0, 0 | X - (`+`) left / (`-`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) roll to the right / (`+`) roll to the left |
+
+</details>
+
+### HUD parameters when leaning
+
+<details>
+    <summary>HUD parameters when leaning</summary>
+
+| Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
+---|---|---|---|
+| lean_hud_offset_pos | Weapon and arm positions when the character is leaning | 0, 0, 0 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |
+| lean_hud_offset_rot | Weapon and arm rotation when the character is leaning | 0, 0, 0 | X - (`+`) left / (`-`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) roll to the right / (`+`) roll to the left |
+| lean_hud_offset_pos_16x9 | Weapon and arm positions when the character is leaning | 0, 0, 0 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |
+| lean_hud_offset_rot_16x9 | Weapon and arm rotation when the character is leaning | 0, 0, 0 | X - (`+`) left / (`-`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) roll to the right / (`+`) roll to the left |
+
+</details>
+
+### Parameters of sounds
+
+You can read about the parameters of the sounds [here](weapon_sounds.ltx.md)
+
+### HUD parameters of the shells sprite
+
+<details>
+    <summary>HUD parameters of the shells sprite</summary>
+
+| Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
+---|---|---|---|
+| shell_bone | bone which will be considered the origin of coordinates for the shell sprite in 1st person view | wpn_body | Bone Name |
+| shell_dir | the offset parameter of the shells after departure, in 1st person view | 0, 1, 0 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |
+| shell_point | Coordinates of the bullets ejection point in 1st person view | 0, 0.064, 0.19 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |
+
+</details>
+
+### HUD parameters of particle sprite
+
+<details>
+    <summary>HUD parameters of particle sprite</summary>
+
+| Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
+---|---|---|---|
+| fire_bone | the name of the fire particle bone of the weapon hud-model | wpn_body | Bone Name |
+| fire_bone2 |  | wpn_body | Bone Name |
+| fire_point | coordinates of the fire particle, when viewed from the 1st person | 0, 0.051841, 0.535482 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |
+| fire_point2 | Coordinates of the fire particles, when viewed from the 1st person when firing the underbarrel grenade launcher | 0, -0.011, 0.553 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |
+
+</details>
+
+### Camera
+
+<details>
+    <summary>Camera</summary>
+
+| Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
+---|---|---|---|
+| freeelook_z_offset_mul | Сamera displacement along the z-axis when the camera moves freely | 0.4 | Z - (`-`) forward / (`+`) backward |
 
 </details>
 
@@ -489,29 +609,29 @@ ___
 
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
-| anm_idle_aim_moving | animation in the aiming mode when moving | The name of the corresponding animation |
-| anm_idle_aim_moving_crouch | Animation in the aiming mode when moving in a crouch | The name of the corresponding animation |
-| anm_idle_moving | motion animation | The name of the corresponding animation |
-| anm_idle_moving_empty | motion animation with an empty magazine | The name of the corresponding animation |
-| anm_idle_moving_crouch_g_aim | crouch walking animation with a grenade launcher attached to the weapon | The name of the corresponding animation |
-| anm_idle_moving_crouch_w_gl_aim | animate walking while crouching with a grenade launcher attached to the weapon while aiming | The name of the corresponding animation |
-| anm_idle_moving_g |  | The name of the corresponding animation |
-| anm_idle_moving_g_aim |  | The name of the corresponding animation |
-| anm_idle_moving_w_gl | the walking animation with a grenade launcher attached to the weapon | The name of the corresponding animation |
-| anm_idle_moving_w_gl_aim | animate walking with a grenade launcher attached to the weapon while aiming | The name of the corresponding animation |
-| anm_idle_sprint | Running animation | The name of the corresponding animation |
-| anm_idle_sprint_empty | Running animation with an empty magazine | The name of the corresponding animation |
-| anm_idle_sprint_g | The name of the corresponding animation |
-| anm_idle_sprint_w_gl | running animation with a grenade launcher attached | The name of the corresponding animation |
-| anm_hide | hiding animation | The name of the corresponding animation |
-| anm_hide_empty | Hiding animation with an empty magazine | The name of the corresponding animation |
-| anm_hide_g| | The name of the corresponding animation |
-| anm_hide_w_gl | a hiding animation with an attached grenade launcher | The name of the corresponding animation |
-| anm_show | show animation | The name of the corresponding animation |
-| anm_show_empty | Show animation with an empty magazine | The name of the corresponding animation |
-| anm_show_g |  | The name of the corresponding animation |
-| anm_show_w_gl | show animation of pulling out a weapon with a grenade launcher attached | The name of the corresponding animation |
-| anm_bore | Boredom animation | The name of the corresponding animation |
+| anm_idle_aim_moving | animation in the aiming mode when moving | Animation Name |
+| anm_idle_aim_moving_crouch | Animation in the aiming mode when moving in a crouch | Animation Name |
+| anm_idle_moving | motion animation | Animation Name |
+| anm_idle_moving_empty | motion animation with an empty magazine | Animation Name |
+| anm_idle_moving_crouch_g_aim | crouch walking animation with a grenade launcher attached to the weapon | Animation Name |
+| anm_idle_moving_crouch_w_gl_aim | animate walking while crouching with a grenade launcher attached to the weapon while aiming | Animation Name |
+| anm_idle_moving_g |  | Animation Name |
+| anm_idle_moving_g_aim |  | Animation Name |
+| anm_idle_moving_w_gl | the walking animation with a grenade launcher attached to the weapon | Animation Name |
+| anm_idle_moving_w_gl_aim | animate walking with a grenade launcher attached to the weapon while aiming | Animation Name |
+| anm_idle_sprint | Running animation | Animation Name |
+| anm_idle_sprint_empty | Running animation with an empty magazine | Animation Name |
+| anm_idle_sprint_g | Animation Name |
+| anm_idle_sprint_w_gl | running animation with a grenade launcher attached | Animation Name |
+| anm_hide | hiding animation | Animation Name |
+| anm_hide_empty | Hiding animation with an empty magazine | Animation Name |
+| anm_hide_g| | Animation Name |
+| anm_hide_w_gl | a hiding animation with an attached grenade launcher | Animation Name |
+| anm_show | show animation | Animation Name |
+| anm_show_empty | Show animation with an empty magazine | Animation Name |
+| anm_show_g |  | Animation Name |
+| anm_show_w_gl | show animation of pulling out a weapon with a grenade launcher attached | Animation Name |
+| anm_bore | Boredom animation | Animation Name |
 
 </details>
 
@@ -520,58 +640,16 @@ ___
 
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
-| anm_reload | Reloading (When there is still a bullet in the chamber) | The name of the corresponding animation |
-| anm_reload_empty | Reloading | The name of the corresponding animation |
-| anm_reload_g | grenade launcher reload  | The name of the corresponding animation |
-| anm_reload_w_gl | reloading of the weapon with a grenade launcher attached | The name of the corresponding animation |
-| anm_shots | Shot animation | The name of the corresponding animation |
-| anm_shot_l | Last shot animation | The name of the corresponding animation |
-| anm_shots_g | underbarrel grenade launcher shot animation | The name of the corresponding animation |
-| anm_shots_w_gl | underbarrel grenade launcher shot animation | The name of the corresponding animation |
-| anm_switch | Animation of switching to alternate firing mode | The name of the corresponding animation |
-| anm_switch_g | Animation of switching to underbarrel grenade launcher firing mode | The name of the corresponding animation |
-
-</details>
-
-### Parameters of sounds
-
-You can read about the parameters of the sounds [here](weapon_sounds.ltx.md)
-
-### Parameters of the shells sprite for HUD
-
-<details>
-    <summary>Parameters of the shells sprite for HUD</summary>
-
-| Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
----|---|---|---|
-| shell_bone | bone which will be considered the origin of coordinates for the shell sprite in 1st person view | wpn_body | Bone Name |
-| shell_dir | the offset parameter of the shells after departure, in 1st person view | 0, 1, 0 | x - left/+right, y + up/down, z - forward/+backward |
-| shell_point | Coordinates of the bullets ejection point in 1st person view | 0, 0.064, 0.19 | x - left/+right, y + up/down, z - forward/+backward |
-
-</details>
-
-### Particle sprite parameters for HUD
-
-<details>
-    <summary>Particle sprite parameters for HUD</summary>
-
-| Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
----|---|---|---|
-| fire_bone | the name of the fire particle bone of the weapon hud-model | wpn_body | Bone Name |
-| fire_bone2 |  | wpn_body | Bone Name |
-| fire_point | coordinates of the fire particle, when viewed from the 1st person | 0, 0.051841, 0.535482 | x - left/+right, y + up/down, z - forward/+backward |
-| fire_point2 | Coordinates of the fire particles, when viewed from the 1st person when firing the underbarrel grenade launcher | 0, -0.011, 0.553 | x - left/+right, y + up/down, z - forward/+backward |
-
-</details>
-
-### Camera
-
-<details>
-    <summary>Camera</summary>
-
-| Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
----|---|---|---|
-| freeelook_z_offset_mul | Сamera displacement along the z-axis when the camera moves freely | 0.4 |  |
+| anm_reload | Reloading (When there is still a bullet in the chamber) | Animation Name |
+| anm_reload_empty | Reloading | Animation Name |
+| anm_reload_g | grenade launcher reload  | Animation Name |
+| anm_reload_w_gl | reloading of the weapon with a grenade launcher attached | Animation Name |
+| anm_shots | Shot animation | Animation Name |
+| anm_shot_l | Last shot animation | Animation Name |
+| anm_shots_g | underbarrel grenade launcher shot animation | Animation Name |
+| anm_shots_w_gl | underbarrel grenade launcher shot animation | Animation Name |
+| anm_switch | Animation of switching to alternate firing mode | Animation Name |
+| anm_switch_g | Animation of switching to underbarrel grenade launcher firing mode | Animation Name |
 
 </details>
 

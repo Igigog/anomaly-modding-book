@@ -65,6 +65,7 @@ ___
 
 - [Mapping](mapping/README.md)
   - [Creating a location in Blender](blender/creating-a-location-in-blender.md)
+  - [Multimaterial Terrain Guide](mapping/multimaterial-terrain.md)
   
 ___
 
@@ -123,6 +124,7 @@ ___
     - [Image Editor](sdk/image-editor.md)
     - [Level Editor](sdk/level-editor.md)
     - [Shader Editor](sdk/shader-editor.md)
+    - [Sound Editor](sdk/sound-editor.md)
     - [Postprocess Editor](sdk/postprocess-editor.md)
     - [Particle Editor (Not finished)](sdk/particle-editor.md)
   - [Blender X-Ray Addon](blender/blender-x-ray-addon-summary.md)

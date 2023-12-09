@@ -31,23 +31,9 @@ This table lists the X-Ray file formats that the addon can import/export.
 
 ## [Compatibility](https://github.com/PavelBlend/blender-xray/wiki#supported-blender-versions)
 
-(Below are the versions of blender that support the addon. The addon is not tested in other versions of blender:
+2.77 - 3.4
 
- 2.77
- 2.78
- 2.79
- 2.80
- 2.81
- 2.82
- 2.83
- 2.90
- 2.91
- 2.92
- 2.93
-
- > Remark: The addon also works on versions higher than 3.x
-
----
+___
 
 # Addon installation and setup
 

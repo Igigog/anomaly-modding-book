@@ -121,7 +121,11 @@ ___
 
 - [Blender (With X-Ray Addon)](../../blender/index.html)
 
-- 3Ds Max
+- 3Ds Max with scripts
+  - [Den Stash's Scripts](https://github.com/X-Ray-Engine-STALKER/xray_3ds_max_tools)
+  - [Mortan's Scrips (Need access to BaS Discord)](https://discord.com/channels/896909601323237406/1179650202580287508/1179652450618183732)
+- 3ds Maya with scripts
+  - [X-Ray Maya Tools](https://xray-engine.org/index.php?title=X-Ray_Maya_tools)
 
 - MilkShape ([With Stalker Plugin](https://disk.yandex.ru/d/q04vZyXIgRA9U))
 

@@ -8,9 +8,11 @@ ___
 
 ## Interface
 
+![actor editor centered](sdk-image/actor-editor.png)
+
 ### Toolbar
 
-![toolbar centered](sdk-image/toolbar.png)
+![toolbar centered](sdk-image/actor-editor-toolbar.png)
 
 ___
 
@@ -49,7 +51,7 @@ Images Button
 | Button | Description |
 ---|---|
 | Image Editor | Open [Image Editor](image-editor.md) |
-| Synchronize Textures |  |
+| Synchronize Textures | Synchronizes changes |
 | Check New Textures |  |
 
 ___
@@ -58,8 +60,8 @@ Sounds Button
 
 | Button | Description |
 ---|---|
-| Sound Editor |  |
-| Synchronize Sounds |  |
+| Sound Editor | Open [Sound Editor](sound-editor.md) |
+| Synchronize Sounds | Synchronizes changes |
 
 ___
 
@@ -75,11 +77,11 @@ ___
 
 Bone Parts Button
 
-Shows the Bone Parts of the object's skeleton
+Shows the [Bone Parts](../main-folders-and-files/file-formats/README.md#models) of the object's skeleton
 
 ![bone-parts centered](sdk-image/actor-editor-bone-parts.png)
 
-Example Bone Parts object shooting_target_1.object
+Example Bone Parts of `stalker_animation.object`
 ___
 
 Render Style

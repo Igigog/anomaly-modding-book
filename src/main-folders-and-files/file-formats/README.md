@@ -44,7 +44,6 @@ ___
 
 ___
 
-
 ## Shaders
 
 | Extension | Description |
@@ -65,6 +64,8 @@ ___
 | [.dm](#dm-detail-model) |  Effect of a dynamic weather environment (e.g., rain or lightning) |
 | [.object](#object) | These files are intended for the X-Ray SDK to store 3D content in its original, uncompressed, lossless form. They are source files that store information before compilation into other game compressed formats.  |
 | .ogf | Compiled objects |
+| .bones | Skeleton bone data files |
+| *bone_parts*.* | Bone part description file for an object/NPC |
 
 ___
 
@@ -115,18 +116,17 @@ ___
 | [.som](#som-sound-occluder-mesh) | Geometry for calculating sound propagation. |
 | .wallmarks | Decals. Bloodstains, faction emblems on walls, etc. Used for the compiled level. |
 
----
+___
 
-## Starting here, the details of the formats are written. You are encouraged to use links from the tables above to jump directly to the format you are interested in.
-
----
-
-
-# Binary files
+## Starting here, the details of the formats are written. You are encouraged to use links from the tables above to jump directly to the format you are interested in
 
 ___
 
-## About
+## Binary files
+
+___
+
+### About
 
 This article is an introduction to binary files.
 
@@ -198,7 +198,7 @@ ___
 
 [Source](http://stalkerin.gameru.net/wiki/index.php?title=%D0%91%D0%B8%D0%BD%D0%B0%D1%80%D0%BD%D1%8B%D0%B5_%D1%84%D0%B0%D0%B9%D0%BB%D1%8B)
 
----
+___
 
 # .anm (Animated paths)
 
@@ -1413,7 +1413,7 @@ ___
 
 - Any sound editor that supports .ogg (<font style="color: red">But it won't write comments into the chunks!</font>)
 - [Sound Attribute Viewer And Tweaker](../../modding-tools/savandt.md) or [OGG Editor](https://disk.yandex.ru/d/Dcyo0Nt3A3b5g)
-- [SDK 0.7](../../sdk/index.html) - (<font style="color: red">Exactly Sound Editor!</font>)
+- [SDK Sound Editor](../../sdk/sound-editor.md) - Only source .wav file
 
 ___
 

@@ -16,17 +16,16 @@ Modified tool for working with [.omf](../../main-folders-and-files/file-formats/
 
 ## Features
 
-- Multiple omf files
+- Multiple .omf files
 - Clone, delete, save selected animations
 - Working with motion marks
 - Working with flags
-- Ability to save in skls, skl via
+- Ability to save in .skls, .skl
 - Fix Gunslinger mod animations
 - Displaying of bone parts animation, possibility to convert into ltx format for import into SDK
-- Hotkeys
 - A lot of bug fixes and crashes from the original version.
 - Changing of name of bones
-- Viewing of Bone parts
+- Viewing [Bone Parts](../main-folders-and-files/file-formats/README.md#models)
 
 ## Functionality
 
@@ -57,7 +56,7 @@ Modified tool for working with [.omf](../../main-folders-and-files/file-formats/
 | Try Repair | Trying to fix an animation file (for example, the animation from Gunslinger Mod) |
 | Swap Anim Marks | Open the .omf file, make it the main file and transfer all the motion marks from the old file to the new one in the animation with the same names |
 | Rename Bones | Allows you to change the name of the bones |
-| Show Bone Parts | Ability to view Bone Parts |
+| Show Bone Parts | Ability to view [Bone Parts](../main-folders-and-files/file-formats/README.md#models) |
 
 - #### Help Button
 
@@ -69,34 +68,34 @@ Modified tool for working with [.omf](../../main-folders-and-files/file-formats/
 
 - #### Animation parameters
 
-| Parameters | Description |
----|---|
-| Motion Name | Animation name |
-| Speed | Animation speed |
-| Power | The power of animation |
-| Accrue |  |
-| Falloff |  |
-| Length | Animation length |
+| Parameters | Description | Note |
+---|---|---|
+| Motion Name | Animation name | - |
+| Speed | Animation speed | - |
+| Power | The power of animation | <abbr title="Unconfirmed">.anm</abbr> only |
+| Accrue | Blend In | - |
+| Falloff | Blend Out | - |
+| Length | Animation length | - |
 
 - #### SDK Flags
 
-| Parameters | Description |
----|---|
-| Stop at End | Animation will stop after playback |
-| No Mix | Does not mix animation when switching to other animations |
-| Sync Part |  |
-| Use Foot Steps |  |
-| Move XForm |  |
-| Idle |  |
-| Use Weapon Bone |  |
-| Has Motion Marks | Adds the ability to use Motion Marks |
+| Parameters | Description | Note |
+---|---|---|
+| Stop at End | Animation will stop after playback | For HUD and NPC's |
+| No Mix | Does not mix animations | NPC only |
+| Sync Part | Used to synchronize body parts (Bone Parts) in different animations. For example, when walking, the NPC will simultaneously play different animations of legs, body and head | NPC only |
+| Use Foot Steps | Needed to activate IK legs | NPC only |
+| Move XForm | ? | ? |
+| Idle | Idle animation | NPC only |
+| Use Weapon Bone | ? | ? |
+| Has Motion Marks | Adds the ability to use Motion Marks | For HUD and NPC's |
 
 - #### Motion Time Format
 
 | Format | Description |
 ---|---|
-| Keys |  |
-| Seconds |  |
+| Keys | Keys Motion Time Format |
+| Seconds | Seconds Motion Time Format |
 
 - #### Motion Marks
 
