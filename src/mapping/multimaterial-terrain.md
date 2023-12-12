@@ -1,6 +1,6 @@
 # Multimaterial Terrain Guide
 
-Написано командой мода New Project
+> Written by the New Project mod team
 
 - [VK](https://vk.com/stalker_new_project)
 - [AP-PRO](https://ap-pro.ru/forums/topic/1902-stalker-new-project)

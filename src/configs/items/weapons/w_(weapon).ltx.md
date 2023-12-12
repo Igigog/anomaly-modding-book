@@ -386,28 +386,28 @@ ___
 <details>
     <summary>Strafe/Inertion</summary>
 
-> Strafe работает при перемещении персонажа (WASD)
+> Strafe works when moving the character (WASD)
 
-> Инерция работает при движении мышки
+> Inertia works by moving the mouse
 
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
 | strafe_enabled | Enabling Strafe | true | true (Yes) - false (No) |
 | strafe_aim_enabled | Enabling Aim Strafe | true | true (Yes) - false (No) |
-| strafe_hud_offset_rot |  | 1,-0.75,4.5 | X - (`+`) left / (`-`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) roll to the right / (`+`) roll to the left |
-| strafe_hud_offset_pos |  | 0,0.002,0 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |
-| strafe_hud_offset_rot_16x9 |  | 1,-1,5 | X - (`+`) left / (`-`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) roll to the right / (`+`) roll to the left |
-| strafe_hud_offset_pos_16x9 |  | 0,0.0023,0 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |
-| strafe_aim_hud_offset_rot |  | 0,-0.3,1.25 | X - (`+`) left / (`-`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) roll to the right / (`+`) roll to the left |
-| strafe_aim_hud_offset_pos |  | 0,0.002,0 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |
-| strafe_aim_hud_offset_rot_16x9 | Стрейф  | 0,-0.5,1.75 | X - (`+`) left / (`-`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) roll to the right / (`+`) roll to the left |
-| strafe_aim_hud_offset_pos_16x9 |  | 0,0.0023,0 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |
-| strafe_transition_time |  | 0.75 |  |
-| strafe_aim_transition_time |  | 0.35 |  |
+| strafe_hud_offset_rot | HUD rotation | 1,-0.75,4.5 | X - (`+`) left / (`-`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) roll to the right / (`+`) roll to the left |
+| strafe_hud_offset_pos | HUD position | 0,0.002,0 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |
+| strafe_hud_offset_rot_16x9 | HUD rotation 16x9 | 1,-1,5 | X - (`+`) left / (`-`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) roll to the right / (`+`) roll to the left |
+| strafe_hud_offset_pos_16x9 | HUD position 16x9 | 0,0.0023,0 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |
+| strafe_aim_hud_offset_rot | HUD rotation while aiming | 0,-0.3,1.25 | X - (`+`) left / (`-`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) roll to the right / (`+`) roll to the left |
+| strafe_aim_hud_offset_pos | HUD position while aiming | 0,0.002,0 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |
+| strafe_aim_hud_offset_rot_16x9 | HUD rotation while aiming 16x9 | 0,-0.5,1.75 | X - (`+`) left / (`-`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) roll to the right / (`+`) roll to the left |
+| strafe_aim_hud_offset_pos_16x9 | HUD position while aiming 16x9 | 0,0.0023,0 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |
+| strafe_transition_time | time to return to the original weapon position (the longer the time, the slower the return) | 0.75 |  |
+| strafe_aim_transition_time | time to return to the original weapon position (the longer the time, the slower the return) | 0.35 |  |
 | strafe_cam_limit_aim_factor |  | 0.9 |  |
 | strafe_cam_min_angle |  | 0 |  |
 | inertion_min_angle_aim |  | 0 |  |
-| inertion_offset_LRUD_aim |  | 0.011, 0.011, 0.01, 0.005 |  |
+| inertion_offset_LRUD_aim | HUD inertion when aim | 0.011, 0.011, 0.01, 0.005 | L - (`-`) left / (`+`) right<br> R - (`-`) right / (`+`) left<br> U - (`-`) up / (`+`) down<br> D - (`-`) down / (`+`) up |
 
 </details>
 
@@ -418,12 +418,12 @@ ___
 
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
-| shooting_hud_effect |  | true | true (Yes) - false (No) |
-| shooting_max_LRUD |  | 0.005,0.005,0.005,0 |  |
-| shooting_max_LRUD_aim |  | 0.0025,0.0025,0,0 |  |
+| shooting_hud_effect | Enable Visual Recoil | true | true (Yes) - false (No) |
+| shooting_max_LRUD | Maximum LRUD position when firing | 0.005,0.005,0.005,0 | L - (`-`) left / (`+`) right<br> R - (`-`) right / (`+`) left<br> U - (`-`) up / (`+`) down<br> D - (`-`) down / (`+`) up |
+| shooting_max_LRUD_aim | Maximum LRUD position when firing while aim | 0.0025,0.0025,0,0 | L - (`-`) left / (`+`) right<br> R - (`-`) right / (`+`) left<br> U - (`-`) up / (`+`) down<br> D - (`-`) down / (`+`) up |
 | shooting_backward_offset |  | 0.02,0.015 |  |
-| shooting_ret_speed |  | 7.5 |  |
-| shooting_ret_aim_speed |  | 15 |  |
+| shooting_ret_speed | time to return to the original weapon position (the longer the time, the slower the return) | 7.5 |  |
+| shooting_ret_aim_speed | time to return to the original weapon position (the longer the time, the slower the return) | 15 |  |
 | shooting_min_LRUD_power |  | 0.01 |  |
 
 </details>
@@ -435,12 +435,12 @@ ___
 
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
-| movement_layer_0 | aim_walk | movement\aim_walk.anm |  |
-| movement_layer_1 | aim_crouch | movement\aim_walk.anm |  |
-| movement_layer_2 | crouch | movement\newwalk.anm |  |
-| movement_layer_3 | walk | movement\newwalk.anm |  |
-| movement_layer_4 | run | movement\newwalk.anm |  |
-| movement_layer_5 | sprint | movement\newrunreload.anm |  |
+| movement_layer_0 | aim_walk | movement\aim_walk.anm | path and animation name |
+| movement_layer_1 | aim_crouch | movement\aim_walk.anm | path and animation name |
+| movement_layer_2 | crouch | movement\newwalk.anm | path and animation name |
+| movement_layer_3 | walk | movement\newwalk.anm | path and animation name |
+| movement_layer_4 | run | movement\newwalk.anm | path and animation name |
+| movement_layer_5 | sprint | movement\newrunreload.anm | path and animation name |
 
 </details>
 
@@ -451,7 +451,7 @@ ___
 
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
-| empty_click_anm |  | script\misfire.anm |  |
+| empty_click_anm | Weapon animation when attempting to shoot with an empty magazine (camera animation is used) | script\misfire.anm | path and animation name |
 | empty_click_anm_speed |  | 2 |  |
 | empty_click_anm_power |  | 1 |  |
 
@@ -504,10 +504,10 @@ ___
 
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
-| gl_hud_offset_pos | gun arm displacement when aiming from the holster | -0.0491, 0.005, -0.155 | x - left/+right, y + up/down, z - forward/+backward |
-| gl_hud_offset_pos_16x9 | gun hand offset when aiming from the arming cradle for 16x9 monitors | -0.0491, 0.005, -0.155 | x - left/+right, y + up/down, z - forward/+backward |
-| gl_hud_offset_rot | the orientation of the arms with the weapon when aiming from the arming cube | -0.067, 0.0063, -0.02 | x - left/+right, y + up/down, z - forward/+backward |
-| gl_hud_offset_rot_16x9 | orientation of the arms with weapon when aiming from the arming cube for 16x9 monitors | -0.067, 0.0063, -0.02 | x - left/+right, y + up/down, z - forward/+backward |
+| gl_hud_offset_pos | gun arm displacement when aiming from the holster | -0.0491, 0.005, -0.155 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |
+| gl_hud_offset_pos_16x9 | gun hand offset when aiming from the arming cradle for 16x9 monitors | -0.0491, 0.005, -0.155 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |
+| gl_hud_offset_rot | the orientation of the arms with the weapon when aiming from the arming cube | -0.067, 0.0063, -0.02 | X - (`+`) left / (`-`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) roll to the right / (`+`) roll to the left |
+| gl_hud_offset_rot_16x9 | orientation of the arms with weapon when aiming from the arming cube for 16x9 monitors | -0.067, 0.0063, -0.02 | X - (`+`) left / (`-`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) roll to the right / (`+`) roll to the left |
 
 </details>
 
@@ -518,10 +518,10 @@ ___
 
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
-| safemode_anm |  | script\to_lower.anm |  |
+| safemode_anm | Weapon animation when weapon goes to safe mode (camera animation is used) | script\to_lower.anm | path and animation name |
 | safemode_anm_speed |  | 1.2 |  |
 | safemode_anm_power |  | 1 |  |
-| safemode_anm2 |  | script\from_lower.anm |  |
+| safemode_anm2 | Weapon animation when weapon comes out of safe mode (camera animation is used) | script\from_lower.anm | path and animation name |
 | safemode_anm_speed2 |  | 1.3 |  |
 | safemode_anm_power2 |  | 0.6 |  |
 | lowered_hud_offset_pos | Position of arms and hands when the weapon is lowered | 0, 0, 0 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |
@@ -570,7 +570,7 @@ You can read about the parameters of the sounds [here](weapon_sounds.ltx.md)
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
 | fire_bone | the name of the fire particle bone of the weapon hud-model | wpn_body | Bone Name |
-| fire_bone2 |  | wpn_body | Bone Name |
+| fire_bone2 | UGL fire particle bone | wpn_body | Bone Name |
 | fire_point | coordinates of the fire particle, when viewed from the 1st person | 0, 0.051841, 0.535482 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |
 | fire_point2 | Coordinates of the fire particles, when viewed from the 1st person when firing the underbarrel grenade launcher | 0, -0.011, 0.553 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |
 
