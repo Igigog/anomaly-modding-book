@@ -13,9 +13,9 @@
   <tr>
     <th>Params</th>
     <th>Description</th>
-    <th>Extra Params</th>
+    <th>Object Type</th>
     <th>Description</th>
-    <th>Type</th>
+    <th>Extra Type</th>
     <th>Species</th>
   </tr>
 </thead>
@@ -60,7 +60,7 @@
   </tr>
   <tr>
     <td>Progressive Dynamic</td>
-    <td></td>
+    <td>Progressive Dynamic Object</td>
     <td>-</td>
     <td>-</td>
   </tr>
@@ -113,6 +113,8 @@
 
 ##### Motions
 
+![Alt text centered](blender-images/panels/object-motions.png)
+
 | Button/Name | Description | Extra Params | Description |
 ---|---|---|---|
 | Play Active Motion | Play Active Motion | - | - |
@@ -131,6 +133,8 @@
 
 #### Details
 
+![Alt text centered](blender-images/panels/object-details.png)
+
 | Button/Name | Description |
 ---|---|
 | No Waving | ? |
@@ -140,6 +144,8 @@
 | *Color* | ? |
 
 #### Level
+
+![Alt text centered](blender-images/panels/object-level.png)
 
 <table>
 <thead>
@@ -398,9 +404,9 @@ ___
 
 | Button | Desctiption |
 ---|---|
-| Visible |  |
-| Locked |  |
-| SGMask |  |
+| Visible | ? |
+| Locked | ? |
+| SGMask | ? |
 
 ### X-Ray Engine: Armature
 
@@ -408,10 +414,10 @@ ___
 
 | Button | Desctiption | Extra | Extra Desc |
 ---|---|---|---|
-| Display Bone Shapes |  | - | - |
-| Display Bone Mass Centers |  | Cross Size |  |
-| Display Bone Limits |  | Gizmo Radius |  |
-| Use Limits |  | IK<br> X-Ray |  |
+| Display Bone Shapes | Display Bone Shapes | - | - |
+| Display Bone Mass Centers | Display Bone Mass Centers | Cross Size |  |
+| Display Bone Limits | Display Bone Limits | Gizmo Radius |  |
+| Use Limits | Use Limits | IK<br> X-Ray |  |
 
 ___
 
@@ -448,12 +454,10 @@ ___
 
 | Button | Note |
 ---|---|
-| Two Sided | The model will be drawn from the outside and inside. The number of polygons in the model is doubled. |
 | Shader | [list of shaders](../../shaders/shaders-list/shaders-list.md) |
 | Compile | [list of compile shaders](../../shaders/shaders-list/compiler-shaders-list.md) |
 | Material | [list of materials](../../shaders/shaders-list/materials-list.md) |
-| Suppress Shadows |  |
-| Suppress Wallmarks |  |
+| Two Sided | The model will be drawn from the outside and inside. The number of polygons in the model is doubled. |
 | Texture UV |  |
 | Light Map UV |  |
 | Light Map 1 |  |
@@ -461,3 +465,5 @@ ___
 | Light Vertex Color |  |
 | Sun Vertex Color |  |
 | Hemi Vertex Color |  |
+| Suppress Shadows |  |
+| Suppress Wallmarks |  |

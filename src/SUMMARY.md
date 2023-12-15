@@ -129,6 +129,8 @@ ___
     - [Particle Editor (Not finished)](sdk/particle-editor.md)
   - [Blender X-Ray Addon](blender/blender-x-ray-addon-summary.md)
     - [Advanced settings](blender/advanced-settings.md)
+    - [Panels](blender/x-ray-addon-panels.md)
+    - [Side Panel](blender/x-ray-side-panels.md)
   - [Stalker Studio](modding-tools/stalker-studio.md)
   - [THM Editor](modding-tools/thm-editor-by-i-love-kfc.md)
     - [Modified THM Editor](modding-tools/thm-editor-by-valerok.md)
