@@ -262,4 +262,5 @@ Others :
 * on_enemy_eval                            Params: (<game_object>,<game_object>,<table>)
 * on_before_surge                          Params: (<table>)
 * on_before_psi_storm                      Params: (<table>)
-* on_get_item_cost                         Params: look at bottom of utils_item.script for details```
+* on_get_item_cost                         Params: look at bottom of utils_item.script for details
+```
