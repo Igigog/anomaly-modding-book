@@ -20,6 +20,7 @@ ___
 - [Addons]()
   - [DLTX](addons/dltx.md)
   - [DXML](addons/dxml.md)
+  - [MCM](addons/mcm.md)
   - [Monkey patching](addons/monkey-patching.md)
   - [Lua Unlocalizer](addons/lua-unlocalizer.md)
   - [Useful addons, scripts and utils](addons/useful-addons-scripts-utils.md)
@@ -40,7 +41,6 @@ ___
   - [Wetting our hands](scripting/wetting_hands.md)
   - [Callbacks](scripting/callbacks.md)
   - [Server and game objects](scripting/server_and_game_objects.md)
-  - [MCM](scripting/mcm.md)
   - [Script Animations](scripting/script_animations.md)
 
 ___
