@@ -1,6 +1,6 @@
 # Inventory Icons
 
-Written by NLTP_ASHES#0117
+Written by @nltp_ashes
 
 Table of content :
 - [I. Item config](inventory_icons.md#i-item-config)
