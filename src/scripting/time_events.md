@@ -61,12 +61,13 @@ end, my_var_a, my_var_b)
 If you are having troubles reading the previous bit of code, note that it is equivalent to the following one.
 
 ```lua
-local my_var_a = 5
-local my_var_b = 10
-local my_func = function(some_var_a, some_var_b)
+function my_func(some_var_a, some_var_b)
     printf("My var A is %s and B is %s", some_var_a, some_var_b)
     return true
 end
+
+local my_var_a = 5
+local my_var_b = 10
 CreateTimeEvent("modding_book_event", "delay_func", 5, my_func, my_var_a, my_var_b)
 ```
 
