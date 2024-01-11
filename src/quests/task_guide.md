@@ -1,6 +1,6 @@
 # TASK GUIDE
  
-Written by NLTP_ASHES#0117
+Written by @nltp_ashes
 
 Table of content :
 - [I. INTRODUCTION](task_guide.md#i-introduction)

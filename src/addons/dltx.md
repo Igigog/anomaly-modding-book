@@ -1,6 +1,6 @@
 # DLTX
 
-Guide written by NLTP_ASHES#0117
+Written by @nltp_ashes
 
 ___
 

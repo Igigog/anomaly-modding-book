@@ -1,7 +1,7 @@
 # NPC Creation
 
-Guide courtesy of GhenTuong#1278  
-Formatting and edited by NLTP_ASHES#0117  
+Written by GhenTuong#1278
+Formatted and edited by @nltp_ashes
 
 Table of content :
 - [Chapter 1 : Configuration](npc_creation.md#chapter-1--configuration)
