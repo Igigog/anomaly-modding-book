@@ -1,0 +1,466 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Dialogue Creation - Anomaly Modding Book</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../src/custom.css">
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../meta/index.html"><strong aria-hidden="true">1.</strong> Meta</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../meta/contributing/index.html"><strong aria-hidden="true">1.1.</strong> Contributing to this book</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../getting-started/index.html"><strong aria-hidden="true">2.</strong> Mod Organizer</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../getting-started/installing-mo2.html"><strong aria-hidden="true">2.1.</strong> Installing MO2</a></li><li class="chapter-item expanded "><a href="../getting-started/addon-installers.html"><strong aria-hidden="true">2.2.</strong> Addon installers</a></li><li class="chapter-item expanded "><a href="../getting-started/package-naming.html"><strong aria-hidden="true">2.3.</strong> Package Naming for MO2</a></li><li class="chapter-item expanded "><a href="../getting-started/vs-code-game-files-setup.html"><strong aria-hidden="true">2.4.</strong> Configuring VSCode-like programs to handle game files</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Addons</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../addons/dltx.html"><strong aria-hidden="true">3.1.</strong> DLTX</a></li><li class="chapter-item expanded "><a href="../addons/dxml.html"><strong aria-hidden="true">3.2.</strong> DXML</a></li><li class="chapter-item expanded "><a href="../addons/mcm.html"><strong aria-hidden="true">3.3.</strong> MCM</a></li><li class="chapter-item expanded "><a href="../addons/pdb.html"><strong aria-hidden="true">3.4.</strong> PDB files</a></li><li class="chapter-item expanded "><a href="../addons/lua-unlocalizer.html"><strong aria-hidden="true">3.5.</strong> Lua Unlocalizer</a></li><li class="chapter-item expanded "><a href="../addons/useful-addons-scripts-utils.html"><strong aria-hidden="true">3.6.</strong> Useful addons, scripts and utils</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> Configs</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../configs/structure-of-files.html"><strong aria-hidden="true">4.1.</strong> Structure of Files</a></li><li class="chapter-item expanded "><a href="../configs/condlists.html"><strong aria-hidden="true">4.2.</strong> Condlists</a></li><li class="chapter-item expanded "><a href="../configs/inventory_icons.html"><strong aria-hidden="true">4.3.</strong> Inventory Icons</a></li><li class="chapter-item expanded "><a href="../configs/algoritm-of-logic.html"><strong aria-hidden="true">4.4.</strong> Algoritm of Logic</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../scripting/index.html"><strong aria-hidden="true">5.</strong> Scripting</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../scripting/codebase_introduction.html"><strong aria-hidden="true">5.1.</strong> Introduction to codebase</a></li><li class="chapter-item expanded "><a href="../scripting/codestyle.html"><strong aria-hidden="true">5.2.</strong> Codestyle</a></li><li class="chapter-item expanded "><a href="../scripting/wetting_hands.html"><strong aria-hidden="true">5.3.</strong> Wetting our hands</a></li><li class="chapter-item expanded "><a href="../scripting/server_and_game_objects.html"><strong aria-hidden="true">5.4.</strong> Server and game objects</a></li><li class="chapter-item expanded "><a href="../scripting/callbacks.html"><strong aria-hidden="true">5.5.</strong> Callbacks</a></li><li class="chapter-item expanded "><a href="../scripting/time_events.html"><strong aria-hidden="true">5.6.</strong> Time events</a></li><li class="chapter-item expanded "><a href="../scripting/monkey-patching.html"><strong aria-hidden="true">5.7.</strong> Monkey patching</a></li><li class="chapter-item expanded "><a href="../scripting/script_animations.html"><strong aria-hidden="true">5.8.</strong> Script Animations</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> Modelling</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../blender/creating-model-in-blender.html"><strong aria-hidden="true">6.1.</strong> Creating model in Blender</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.</strong> Animating</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../blender/creating-hud-animation-in-blender.html"><strong aria-hidden="true">7.1.</strong> Creating an animation</a></li><li class="chapter-item expanded "><a href="../blender/creating-camera-animations.html"><strong aria-hidden="true">7.2.</strong> Creating animations for the camera</a></li><li class="chapter-item expanded "><a href="../blender/editing-existing-animations.html"><strong aria-hidden="true">7.3.</strong> Editing existing animations</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../texturing/index.html"><strong aria-hidden="true">8.</strong> Texturing</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../texturing/сreating-and-preparing-textures.html"><strong aria-hidden="true">8.1.</strong> Creating and preparing textures</a></li><li class="chapter-item expanded "><a href="../texturing/working-correctly-with-icon-atlases.html"><strong aria-hidden="true">8.2.</strong> Working correctly with icon atlases</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../mapping/index.html"><strong aria-hidden="true">9.</strong> Mapping</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../blender/creating-a-location-in-blender.html"><strong aria-hidden="true">9.1.</strong> Creating a location in Blender</a></li><li class="chapter-item expanded "><a href="../mapping/multimaterial-terrain.html"><strong aria-hidden="true">9.2.</strong> Multimaterial Terrain Guide</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../quests/index.html"><strong aria-hidden="true">10.</strong> Quests</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../quests/introduction.html"><strong aria-hidden="true">10.1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../quests/npc_creation.html"><strong aria-hidden="true">10.2.</strong> NPC Creation</a></li><li class="chapter-item expanded "><a href="../quests/task_guide.html"><strong aria-hidden="true">10.3.</strong> Task Creation</a></li><li class="chapter-item expanded "><a href="../quests/dialogues.html" class="active"><strong aria-hidden="true">10.4.</strong> Dialogue Creation</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">11.</strong> Reference/General</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../terminology/terminology.html"><strong aria-hidden="true">11.1.</strong> Terminology</a></li><li class="chapter-item expanded "><a href="../main-folders-and-files/index.html"><strong aria-hidden="true">11.2.</strong> Main Folders And Files</a></li><li class="chapter-item expanded "><a href="../main-folders-and-files/file-formats/index.html"><strong aria-hidden="true">11.3.</strong> File Formats</a></li><li class="chapter-item expanded "><a href="../crash-list/crashes-list.html"><strong aria-hidden="true">11.4.</strong> Crash List</a></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">12.</strong> Reference/Configs</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../configs/items/weapons/w_(weapon).ltx.html"><strong aria-hidden="true">12.1.</strong> Weapon Configuration Parameters</a></li><li class="chapter-item expanded "><a href="../configs/items/weapons/weapon_ammo.ltx.html"><strong aria-hidden="true">12.2.</strong> Ammo Configuration Parameters</a></li><li class="chapter-item expanded "><a href="../configs/items/weapons/weapon_sounds.ltx.html"><strong aria-hidden="true">12.3.</strong> Weapon Sounds Parameters</a></li><li class="chapter-item expanded "><a href="../configs/items/outfits/o_(outfit).ltx.html"><strong aria-hidden="true">12.4.</strong> Oufits Configuration Parameters</a></li><li class="chapter-item expanded "><a href="../configs/creatures/m_(mutant).ltx.html"><strong aria-hidden="true">12.5.</strong> Mutants Configuration Parameters</a></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">13.</strong> Reference/Shaders</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../shaders/shaders-list/materials-list.html"><strong aria-hidden="true">13.1.</strong> Material Shaders List</a></li><li class="chapter-item expanded "><a href="../shaders/shaders-list/shaders-list.html"><strong aria-hidden="true">13.2.</strong> Shaders List</a></li><li class="chapter-item expanded "><a href="../shaders/shaders-list/compiler-shaders-list.html"><strong aria-hidden="true">13.3.</strong> Compiler Shaders List</a></li><li class="chapter-item expanded "><a href="../shaders/shaders-list/sound-envornment-list.html"><strong aria-hidden="true">13.4.</strong> Sound Envornment List</a></li></ol></li><li class="chapter-item expanded "><a href="../engine/index.html"><strong aria-hidden="true">14.</strong> Reference/Engine</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../engine/console-commands.html"><strong aria-hidden="true">14.1.</strong> Console commands</a></li><li class="chapter-item expanded "><a href="../engine/alife.html"><strong aria-hidden="true">14.2.</strong> A-Life (AI)</a></li><li class="chapter-item expanded "><a href="../engine/engine-classes.html"><strong aria-hidden="true">14.3.</strong> Engine Classes</a></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">15.</strong> Reference/Resources</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../resources/audio.html"><strong aria-hidden="true">15.1.</strong> Audio</a></li><li class="chapter-item expanded "><a href="../resources/models-objects-locations.html"><strong aria-hidden="true">15.2.</strong> Models</a></li><li class="chapter-item expanded "><a href="../resources/sdk-resources.html"><strong aria-hidden="true">15.3.</strong> SDK resources</a></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">16.</strong> Reference/Tools</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../modding-tools/modding-tools.html"><strong aria-hidden="true">16.1.</strong> Modding Tools List</a></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/index.html"><strong aria-hidden="true">16.2.</strong> In-Game Editors</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/item-spawner.html"><strong aria-hidden="true">16.2.1.</strong> Item Spawner</a></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/lightning-editor.html"><strong aria-hidden="true">16.2.2.</strong> Lightning Editor</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">16.2.3.</strong> NPC Logic/Execute</div></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/object-spawner.html"><strong aria-hidden="true">16.2.4.</strong> Object Spawner</a></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/outfits-weapon-stats-editor.html"><strong aria-hidden="true">16.2.5.</strong> Outfits/Weapons Stats Editor</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">16.2.6.</strong> Pocket Workshop</div></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/weapon-hud-editor.html"><strong aria-hidden="true">16.2.7.</strong> Weapon HUD Editor</a></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/weather-editor.html"><strong aria-hidden="true">16.2.8.</strong> Weather Editor</a></li></ol></li><li class="chapter-item expanded "><a href="../modding-tools/ltx-support.html"><strong aria-hidden="true">16.3.</strong> Ltx Support</a></li><li class="chapter-item expanded "><a href="../sdk/index.html"><strong aria-hidden="true">16.4.</strong> SDK 0.7</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../sdk/interface.html"><strong aria-hidden="true">16.4.1.</strong> Interface</a></li><li class="chapter-item expanded "><a href="../sdk/actor-editor.html"><strong aria-hidden="true">16.4.2.</strong> Actor Editor</a></li><li class="chapter-item expanded "><a href="../sdk/image-editor.html"><strong aria-hidden="true">16.4.3.</strong> Image Editor</a></li><li class="chapter-item expanded "><a href="../sdk/level-editor.html"><strong aria-hidden="true">16.4.4.</strong> Level Editor</a></li><li class="chapter-item expanded "><a href="../sdk/shader-editor.html"><strong aria-hidden="true">16.4.5.</strong> Shader Editor</a></li><li class="chapter-item expanded "><a href="../sdk/sound-editor.html"><strong aria-hidden="true">16.4.6.</strong> Sound Editor</a></li><li class="chapter-item expanded "><a href="../sdk/postprocess-editor.html"><strong aria-hidden="true">16.4.7.</strong> Postprocess Editor</a></li><li class="chapter-item expanded "><a href="../sdk/particle-editor.html"><strong aria-hidden="true">16.4.8.</strong> Particle Editor (Not finished)</a></li></ol></li><li class="chapter-item expanded "><a href="../blender/blender-x-ray-addon-summary.html"><strong aria-hidden="true">16.5.</strong> Blender X-Ray Addon</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../blender/advanced-settings.html"><strong aria-hidden="true">16.5.1.</strong> Advanced settings</a></li><li class="chapter-item expanded "><a href="../blender/x-ray-addon-panels.html"><strong aria-hidden="true">16.5.2.</strong> Panels</a></li><li class="chapter-item expanded "><a href="../blender/x-ray-side-panels.html"><strong aria-hidden="true">16.5.3.</strong> Side Panel</a></li></ol></li><li class="chapter-item expanded "><a href="../modding-tools/stalker-studio.html"><strong aria-hidden="true">16.6.</strong> Stalker Studio</a></li><li class="chapter-item expanded "><a href="../modding-tools/thm-editor-by-i-love-kfc.html"><strong aria-hidden="true">16.7.</strong> THM Editor</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../modding-tools/thm-editor-by-valerok.html"><strong aria-hidden="true">16.7.1.</strong> Modified THM Editor</a></li></ol></li><li class="chapter-item expanded "><a href="../modding-tools/bump-generator.html"><strong aria-hidden="true">16.8.</strong> Bump Generator</a></li><li class="chapter-item expanded "><a href="../modding-tools/savandt.html"><strong aria-hidden="true">16.9.</strong> Sound Attribute Viewer And Tweaker</a></li><li class="chapter-item expanded "><a href="../modding-tools/upgrade-editor.html"><strong aria-hidden="true">16.10.</strong> Upgrade Editor</a></li><li class="chapter-item expanded "><a href="../modding-tools/omf-editor-by-valerok.html"><strong aria-hidden="true">16.11.</strong> Modified OMF Editor</a></li><li class="chapter-item expanded "><a href="../modding-tools/ogf-editor-by-valerok.html"><strong aria-hidden="true">16.12.</strong> Modified OGF Editor</a></li><li class="chapter-item expanded "><a href="../modding-tools/xray-export-tool.html"><strong aria-hidden="true">16.13.</strong> X-Ray Export Tool</a></li><li class="chapter-item expanded "><a href="../modding-tools/universal-x64-level-compilers.html"><strong aria-hidden="true">16.14.</strong> Universal x64 level compilers</a></li><li class="chapter-item expanded "><a href="../modding-tools/xrcompress-by-i-love-kfc.html"><strong aria-hidden="true">16.15.</strong> xrCompress</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Anomaly Modding Book</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Igigog/anomaly-modding-book" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Igigog/anomaly-modding-book/edit/main/src/quests/dialogues.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="dialogues"><a class="header" href="#dialogues">Dialogues</a></h1>
+<p>Written by ComradeCatilina</p>
+<h2 id="chapter-1--concerned-files"><a class="header" href="#chapter-1--concerned-files">Chapter 1 : Concerned Files</a></h2>
+<p>The files you need are:</p>
+<p><strong>File :</strong> <code>_unpacked\configs\gameplay\character_desc_*.xml</code> </p>
+<p>In this file you have to add your dialogue to the concerned NPC. This is done by adding the line: &lt;actor_dialog&gt;XXX&lt;/actor_dialog&gt;</p>
+<p><strong>File :</strong> <code>_unpacked\configs\gameplay\dialogs_*.xml</code> </p>
+<p>In this file you construct the dialogue tree.</p>
+<p><strong>File :</strong> <code>_unpacked\configs\gameplay\text\eng\st_dialogs_*.xml</code> </p>
+<p>In this file you write the text of your dialogue.</p>
+<p>NB: If you're doing a custom NPC, it's advisable to not use preexisting files but to add your own. You can check under &quot;NPC creation&quot; how to include your own files.
+IF you're adding dialogue to a preexisting NPC, you will have to add your &lt;actor_dialog&gt;XXX&lt;/actor_dialog&gt; in his file, but you can use a 'custom dialogs_*.xml' file for the dialogue tree.</p>
+<p><strong>File :</strong> <code>_unpacked\configs\gameplay\text\eng\st_dialogs_*.xml</code> doesn't need to be included.</p>
+<h2 id="chapter-2--basic-dialogue-tree"><a class="header" href="#chapter-2--basic-dialogue-tree">Chapter 2 : Basic dialogue tree</a></h2>
+<p>As an example, we will use a preexisting NPC - the barman in Rostok.</p>
+<p>You will find him in </p>
+<p><strong>File :</strong> <code>_unpacked\configs\gameplay\character_desc_bar.xml</code> </p>
+<p>under the name &quot;bar_visitors_barman_stalker_trader&quot;.</p>
+<h3 id="step-1"><a class="header" href="#step-1">Step 1</a></h3>
+<p>Add &lt;actor_dialog&gt;my_custom_dialogue_1&lt;/actor_dialog&gt;</p>
+<p>&quot;my_custom_dialogue_1&quot; is an example, you can use whatever you want as long as it's unique.</p>
+<h3 id="step-2"><a class="header" href="#step-2">Step 2</a></h3>
+<p>We create the dialogue tree:</p>
+<p>In this example we will use a preexisting dialogs file, although it's strongly recommended to add your own file to your mod.</p>
+<p><strong>File :</strong> <code>_unpacked\configs\gameplay\dialogs_bar.xml</code> </p>
+<p>The basic structure of a dialogue tree is the following:</p>
+<pre><code class="language-ini">&lt;dialog id=&quot;my_custom_dialogue_1&quot;&gt;		
+				
+		&lt;phrase_list&gt;
+      
+				&lt;phrase id=&quot;0&quot;&gt;
+					&lt;text&gt;my_custom_dialogue_1_0&lt;/text&gt;
+					&lt;next&gt;1&lt;/next&gt;
+				&lt;/phrase&gt;
+        
+				&lt;phrase id=&quot;1&quot;&gt;
+					&lt;text&gt;my_custom_dialogue_1_1&lt;/text&gt;					
+				&lt;/phrase&gt;	
+      
+		&lt;/phrase_list&gt;
+  
+	&lt;/dialog&gt;		
+</code></pre>
+<ul>
+<li><code>&lt;dialog id=&quot;my_custom_dialogue_1&quot;&gt;</code></li>
+</ul>
+<p>This is the link between &lt;actor_dialog&gt;my_custom_dialogue_1&lt;/actor_dialog&gt; and the dialogue tree.</p>
+<ul>
+<li><code>&lt;phrase_list&gt;</code></li>
+</ul>
+<p>Your whole dialogue tree has to be inbetween these nodes.</p>
+<ul>
+<li><code>&lt;phrase id=&quot;0&quot;&gt;</code></li>
+</ul>
+<p>This is one branch of the tree. Note that 0 is the first line of the actor and 1 is the NPC's answer. </p>
+<p>The exception is &lt;start_dialog&gt; - the dialogue shown if you talk to the NPC the first time. In this case 0 is the NPC and 1 is the actor.</p>
+<ul>
+<li><code>&lt;text&gt;my_custom_dialogue_1_0&lt;/text&gt;</code></li>
+</ul>
+<p>my_custom_dialogue_1_0 is the text string which will get translated by the game. </p>
+<ul>
+<li><code>&lt;next&gt;1&lt;/next&gt;</code></li>
+</ul>
+<p>This handles which dialogue branch will be shown next. </p>
+<p>NB: notice that every node starts with <XXX> and is closed with a &quot;/&quot; : </XXX></p>
+<p>This is essential - take care to always close your nodes or the game will crash on boot.</p>
+<h3 id="step-3"><a class="header" href="#step-3">Step 3</a></h3>
+<p>Now we need to add the text of the dialogue.</p>
+<p>In order to do that, add in your </p>
+<p><strong>File :</strong> <code>_configs\gameplay\text\eng\st_dialogs_*.xml</code></p>
+<pre><code class="language-ini">&lt;string id=&quot;my_custom_dialogue_1_0&quot;&gt;
+		&lt;text&gt;Hy barkeep, I made my own dialogue.&lt;/text&gt;
+	&lt;/string&gt;
+  
+&lt;string id=&quot;my_custom_dialogue_1_1&quot;&gt;
+		&lt;text&gt;Very impressive.&lt;/text&gt;
+	&lt;/string&gt;  
+  
+</code></pre>
+<p>Now, if you load your mod, you whould see an dialogue option for the barkeep in Rostok &quot;Hy barkeep, I made my own dialogue.&quot; and he will answer &quot;Very impressive.&quot;</p>
+<h2 id="chapter-3--advanced-dialogue-tree"><a class="header" href="#chapter-3--advanced-dialogue-tree">Chapter 3 : Advanced dialogue tree</a></h2>
+<p>Now we will add multiple choice answers for the player:</p>
+<pre><code class="language-ini">&lt;dialog id=&quot;my_custom_dialogue_1&quot;&gt;		
+				
+		&lt;phrase_list&gt;
+      
+				&lt;phrase id=&quot;0&quot;&gt;
+					&lt;text&gt;my_custom_dialogue_1_0&lt;/text&gt;
+					&lt;next&gt;1&lt;/next&gt;
+				&lt;/phrase&gt;
+        
+				&lt;phrase id=&quot;1&quot;&gt;
+					&lt;text&gt;my_custom_dialogue_1_1&lt;/text&gt;
+          		                 &lt;next&gt;2&lt;/next&gt;
+               				 &lt;next&gt;3&lt;/next&gt;       
+			  	&lt;/phrase&gt;
+      
+         			  &lt;phrase id=&quot;2&quot;&gt;
+					&lt;text&gt;my_custom_dialogue_1_2&lt;/text&gt;
+					&lt;next&gt;4&lt;/next&gt;
+				&lt;/phrase&gt;
+        
+        			&lt;phrase id=&quot;3&quot;&gt;
+					&lt;text&gt;my_custom_dialogue_1_3&lt;/text&gt;
+					&lt;next&gt;5&lt;/next&gt;
+				&lt;/phrase&gt;
+      
+       				 &lt;phrase id=&quot;4&quot;&gt;
+					&lt;text&gt;my_custom_dialogue_1_4&lt;/text&gt;
+					
+				&lt;/phrase&gt;
+      
+       				 &lt;phrase id=&quot;5&quot;&gt;
+					&lt;text&gt;my_custom_dialogue_1_5&lt;/text&gt;
+					
+				&lt;/phrase&gt;
+      
+		&lt;/phrase_list&gt;
+  
+	&lt;/dialog&gt;
+</code></pre>
+<p>Now after the first exchange, the player will have two options to answer: either option 2 or 3.</p>
+<p>If the player chooses option 2, the NPC will answer with branch 4, and if the player chooses option 3, the NPC will answer with branch 5.</p>
+<p>Note that if the dialogue is over, there is no <next> in the branch. The player will again see the starting dialogue options.</p>
+<h2 id="chapter-4--the-four-horsemen-of-dialogue-and-the-executor"><a class="header" href="#chapter-4--the-four-horsemen-of-dialogue-and-the-executor">Chapter 4 : The four horsemen of dialogue and the executor</a></h2>
+<p>The four major tools to handle a dialogue tree are the following:</p>
+<ul>
+<li><code>&lt;has_info&gt;XXX&lt;/has_info&gt;</code></li>
+</ul>
+<p>Dialogue tree or dialogue branch will only show if the actor has the XXX info.</p>
+<ul>
+<li><code>&lt;dont_has_info&gt;XXX&lt;/dont_has_info&gt;</code></li>
+</ul>
+<p>Dialogue tree or dialogue branch will only show if the actor doesn't have the XXX info.</p>
+<ul>
+<li><code>&lt;give_info&gt;XXX&lt;/give_info&gt;</code></li>
+</ul>
+<p>Gives the actor the XXX info during a dialogue.</p>
+<p>Alternatives are:</p>
+<ul>
+<li>on_death = %+XXX%</li>
+</ul>
+<p>This has to be added in the squad_descr file, and gives the info on the death of the squad it is linked to.</p>
+<ul>
+<li>give_info(&quot;XXX&quot;)</li>
+</ul>
+<p>This gives the info during the execution of a script.</p>
+<ul>
+<li><code>&lt;precondition&gt;my_script_for_mod.my_condition&lt;/precondition&gt;</code></li>
+</ul>
+<p>Dialogue tree or dialogue branch will only show if the condition is met.</p>
+<p>&quot;my condition&quot; is the name of a function which has to be defined in the script file &quot;my_script_for_mod.script&quot;.</p>
+<p>This tool is quite versatile, and is only limited by your coding skills (and the limitations of lua).</p>
+<p>Last but not least, we have:</p>
+<ul>
+<li><code>&lt;action&gt;my_script_for_mod.my_action&lt;/action&gt;</code></li>
+</ul>
+<p>This will trigger a function &quot;my_action&quot; defined in the script file &quot;my_script_for_mod.script&quot;.</p>
+<p>This can be used to give a quest or to give the player an item, money etc.</p>
+<h2 id="chapter-5--putting-everything-together"><a class="header" href="#chapter-5--putting-everything-together">Chapter 5 : Putting everything together</a></h2>
+<p>Let's imagine the actor has a quest consisting in bringing a tuna can &quot;conserva&quot; to the barkeep.</p>
+<p>So we have to write two functions, the first for the <precondition> (so that you can only submit the quest if you have a tuna can in your inventory) and the second in order to give the tuna can.</p>
+<p>Create the file &quot;my_script_for_mod.script&quot;</p>
+<p><strong>File :</strong> <code>_gamedata\scripts\my_script_for_mod.script</code></p>
+<p>First we create the precondition:</p>
+<pre><code class="language-ini">function my_condition()
+  if db.actor:object(&quot;conserva&quot;) then
+    return true
+  end
+  return false
+end  
+</code></pre>
+<p>&quot;my_condition&quot; can be named as you like, take care to use the same name in the script file and in the precondition.</p>
+<p>We can see that the script works as follows: it returns &quot;false&quot; by default, except if the condition is met: if (inside the actors inventory is an item called conserva) then return true</p>
+<p>Now we create the transfer</p>
+<pre><code class="language-ini">function my_action(first_speaker, second_speaker)
+  dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, &quot;conserva&quot;)
+  dialogs.relocate_money_to_actor(first_speaker, second_speaker, 7500)
+end 
+</code></pre>
+<p>This will remove the tuna can from the player's inventory (but not add it to the NPC) and give the player 7500 roubles.</p>
+<p>Now that we added these two tools we can write the dialogue:</p>
+<h3 id="example-1-curtailing-the-dialogue-tree"><a class="header" href="#example-1-curtailing-the-dialogue-tree">Example 1: Curtailing the dialogue tree</a></h3>
+<p>We will use the dialogue tree in Chapter 2 as an example. </p>
+<p>In this example, you want the dialogue tree to be available to the player only if he has a tuna can in his inventory. </p>
+<p>But, you also want to show the dialogue tree only if the player accepted a mission beforehand (imagine another dialogue tree before this one in which the dialogue branch gave the mission and the info):</p>
+<ul>
+<li>this is done by adding &lt;has_info&gt;my_tuna_mission_given&lt;/has_info&gt;</li>
+</ul>
+<p>Now this option will only show if the player also has the info &quot;my_tuna_mission_given&quot;.</p>
+<p>But you also want to show the dialogue only once to the player, or else he will repeatatly be able to exchange tuna for money.</p>
+<ul>
+<li>this is done by adding &lt;dont_has_info&gt;my_tuna_mission_done&lt;/dont_has_info&gt; and later in the dialogue &lt;give_info&gt;my_tuna_mission_done&lt;/give_info&gt;</li>
+</ul>
+<p>Now this dialogue will only be shown until the player resolves the quest.</p>
+<p>In order to affect the dialogue tree, and not specific branches, the conditions, has_info, dont_has_info have to be before before &lt;phrase_list&gt;.</p>
+<pre><code class="language-ini">&lt;dialog id=&quot;my_custom_dialogue_1&quot;&gt;
+  
+	&lt;precondition&gt;my_script_for_mod.my_condition&lt;/precondition&gt;
+    
+   	&lt;has_info&gt;my_tuna_mission_given&lt;/has_info&gt;
+  
+   	&lt;dont_has_info&gt;my_tuna_mission_done&lt;/dont_has_info&gt;
+  
+		&lt;phrase_list&gt;
+      
+				&lt;phrase id=&quot;0&quot;&gt;
+					&lt;text&gt;my_custom_dialogue_1_0&lt;/text&gt;
+					&lt;next&gt;1&lt;/next&gt;
+				&lt;/phrase&gt;
+        
+				&lt;phrase id=&quot;1&quot;&gt;
+					&lt;text&gt;my_custom_dialogue_1_1&lt;/text&gt;
+					
+					&lt;action&gt;my_script_for_mod.my_action&lt;/action&gt;
+					
+					&lt;give_info&gt;my_tuna_mission_done&lt;/give_info&gt;	
+				
+				&lt;/phrase&gt;	
+      
+		&lt;/phrase_list&gt;
+  
+	&lt;/dialog&gt;	
+</code></pre>
+<h3 id="example-2-curtailing-the-dialogue-branches"><a class="header" href="#example-2-curtailing-the-dialogue-branches">Example 2: Curtailing the dialogue branches</a></h3>
+<p>In the precedent example we saw how to hide the dialogue option until the conditions are met. Now we will do the same, but with a dialogue branch.</p>
+<p>Again, we want this dialogue tree to be open only after the quest has been given and only until the quest has been resolved. This means we keep has_info and dont_has_info.</p>
+<p>But this time, precondition will be used to show the dialogue option / branch only if the player has the tuna in his inventory.</p>
+<p>In this example, the text is written directly inside the tree to ease the comprehension.</p>
+<pre><code class="language-ini">&lt;dialog id=&quot;my_custom_dialogue_1&quot;&gt;		
+	&lt;has_info&gt;my_tuna_mission_given&lt;/has_info&gt;
+  
+  	&lt;dont_has_info&gt;my_tuna_mission_done&lt;/dont_has_info&gt;		
+  
+		&lt;phrase_list&gt;
+      
+				&lt;phrase id=&quot;0&quot;&gt;
+					&lt;text&gt;ABOUT YOUR TUNA MISSION&lt;/text&gt;
+					&lt;next&gt;1&lt;/next&gt;
+				&lt;/phrase&gt;
+        
+				&lt;phrase id=&quot;1&quot;&gt;
+					&lt;text&gt;YES, WHAT ABOUT IT?&lt;/text&gt;
+          		                 &lt;next&gt;2&lt;/next&gt;
+               				 &lt;next&gt;3&lt;/next&gt;       
+			  	&lt;/phrase&gt;
+      
+         			  &lt;phrase id=&quot;2&quot;&gt;
+                  
+         				&lt;precondition&gt;my_script_for_mod.my_condition&lt;/precondition&gt;        
+                  
+					&lt;text&gt;I HAVE YOUR TUNA&lt;/text&gt;
+					&lt;next&gt;4&lt;/next&gt;
+				&lt;/phrase&gt;
+        
+        			&lt;phrase id=&quot;3&quot;&gt;
+					&lt;text&gt;I NEED MORE TIME TO FIND YOUR TUNA&lt;/text&gt;
+					&lt;next&gt;5&lt;/next&gt;
+				&lt;/phrase&gt;
+      
+       				 &lt;phrase id=&quot;4&quot;&gt;
+					&lt;text&gt;THANK YOU VERY MUCH&lt;/text&gt;
+                 
+					&lt;action&gt;my_script_for_mod.my_action&lt;/action&gt;
+					
+					&lt;give_info&gt;my_tuna_mission_done&lt;/give_info&gt;
+                 
+				&lt;/phrase&gt;
+      
+       				 &lt;phrase id=&quot;5&quot;&gt;
+					&lt;text&gt;NO PROBLEM&lt;/text&gt;
+					
+				&lt;/phrase&gt;
+      
+		&lt;/phrase_list&gt;
+  
+	&lt;/dialog&gt;
+</code></pre>
+<p>Now every instrument is playing together. After initiating the dialogue by saying &quot;about your tuna mission&quot;, the NPC will reply &quot;what about it?&quot;</p>
+<p>Now the player has two options: branch 2 which will only show if he has a tuna can in his inventory and branch 3 which will always show.</p>
+<p>If the player uses branch 2 - it will lead to branch 4 which triggers the tuna - money exchange and gives the info which will prevent the code to show the dialogue again (as we added &lt;dont_has_info&gt;my_tuna_mission_done&lt;/dont_has_info&gt;)</p>
+<p>Of course you can use has_info and dont_has_info also in the different dialogue branches in order to make the dialogue tree more complex.</p>
+<p>NB: I never tried it, but I believe you cannot use precondition, has_info and dont_has_info to curtail the NPC replies. The NPC should always have only one <next>.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../quests/task_guide.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../reference/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../quests/task_guide.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../reference/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

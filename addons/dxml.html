@@ -1,0 +1,460 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>DXML - Anomaly Modding Book</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../src/custom.css">
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../meta/index.html"><strong aria-hidden="true">1.</strong> Meta</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../meta/contributing/index.html"><strong aria-hidden="true">1.1.</strong> Contributing to this book</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../getting-started/index.html"><strong aria-hidden="true">2.</strong> Mod Organizer</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../getting-started/installing-mo2.html"><strong aria-hidden="true">2.1.</strong> Installing MO2</a></li><li class="chapter-item expanded "><a href="../getting-started/addon-installers.html"><strong aria-hidden="true">2.2.</strong> Addon installers</a></li><li class="chapter-item expanded "><a href="../getting-started/package-naming.html"><strong aria-hidden="true">2.3.</strong> Package Naming for MO2</a></li><li class="chapter-item expanded "><a href="../getting-started/vs-code-game-files-setup.html"><strong aria-hidden="true">2.4.</strong> Configuring VSCode-like programs to handle game files</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Addons</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../addons/dltx.html"><strong aria-hidden="true">3.1.</strong> DLTX</a></li><li class="chapter-item expanded "><a href="../addons/dxml.html" class="active"><strong aria-hidden="true">3.2.</strong> DXML</a></li><li class="chapter-item expanded "><a href="../addons/mcm.html"><strong aria-hidden="true">3.3.</strong> MCM</a></li><li class="chapter-item expanded "><a href="../addons/pdb.html"><strong aria-hidden="true">3.4.</strong> PDB files</a></li><li class="chapter-item expanded "><a href="../addons/lua-unlocalizer.html"><strong aria-hidden="true">3.5.</strong> Lua Unlocalizer</a></li><li class="chapter-item expanded "><a href="../addons/useful-addons-scripts-utils.html"><strong aria-hidden="true">3.6.</strong> Useful addons, scripts and utils</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> Configs</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../configs/structure-of-files.html"><strong aria-hidden="true">4.1.</strong> Structure of Files</a></li><li class="chapter-item expanded "><a href="../configs/condlists.html"><strong aria-hidden="true">4.2.</strong> Condlists</a></li><li class="chapter-item expanded "><a href="../configs/inventory_icons.html"><strong aria-hidden="true">4.3.</strong> Inventory Icons</a></li><li class="chapter-item expanded "><a href="../configs/algoritm-of-logic.html"><strong aria-hidden="true">4.4.</strong> Algoritm of Logic</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../scripting/index.html"><strong aria-hidden="true">5.</strong> Scripting</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../scripting/codebase_introduction.html"><strong aria-hidden="true">5.1.</strong> Introduction to codebase</a></li><li class="chapter-item expanded "><a href="../scripting/codestyle.html"><strong aria-hidden="true">5.2.</strong> Codestyle</a></li><li class="chapter-item expanded "><a href="../scripting/wetting_hands.html"><strong aria-hidden="true">5.3.</strong> Wetting our hands</a></li><li class="chapter-item expanded "><a href="../scripting/server_and_game_objects.html"><strong aria-hidden="true">5.4.</strong> Server and game objects</a></li><li class="chapter-item expanded "><a href="../scripting/callbacks.html"><strong aria-hidden="true">5.5.</strong> Callbacks</a></li><li class="chapter-item expanded "><a href="../scripting/time_events.html"><strong aria-hidden="true">5.6.</strong> Time events</a></li><li class="chapter-item expanded "><a href="../scripting/monkey-patching.html"><strong aria-hidden="true">5.7.</strong> Monkey patching</a></li><li class="chapter-item expanded "><a href="../scripting/script_animations.html"><strong aria-hidden="true">5.8.</strong> Script Animations</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> Modelling</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../blender/creating-model-in-blender.html"><strong aria-hidden="true">6.1.</strong> Creating model in Blender</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.</strong> Animating</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../blender/creating-hud-animation-in-blender.html"><strong aria-hidden="true">7.1.</strong> Creating an animation</a></li><li class="chapter-item expanded "><a href="../blender/creating-camera-animations.html"><strong aria-hidden="true">7.2.</strong> Creating animations for the camera</a></li><li class="chapter-item expanded "><a href="../blender/editing-existing-animations.html"><strong aria-hidden="true">7.3.</strong> Editing existing animations</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../texturing/index.html"><strong aria-hidden="true">8.</strong> Texturing</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../texturing/сreating-and-preparing-textures.html"><strong aria-hidden="true">8.1.</strong> Creating and preparing textures</a></li><li class="chapter-item expanded "><a href="../texturing/working-correctly-with-icon-atlases.html"><strong aria-hidden="true">8.2.</strong> Working correctly with icon atlases</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../mapping/index.html"><strong aria-hidden="true">9.</strong> Mapping</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../blender/creating-a-location-in-blender.html"><strong aria-hidden="true">9.1.</strong> Creating a location in Blender</a></li><li class="chapter-item expanded "><a href="../mapping/multimaterial-terrain.html"><strong aria-hidden="true">9.2.</strong> Multimaterial Terrain Guide</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../quests/index.html"><strong aria-hidden="true">10.</strong> Quests</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../quests/introduction.html"><strong aria-hidden="true">10.1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../quests/npc_creation.html"><strong aria-hidden="true">10.2.</strong> NPC Creation</a></li><li class="chapter-item expanded "><a href="../quests/task_guide.html"><strong aria-hidden="true">10.3.</strong> Task Creation</a></li><li class="chapter-item expanded "><a href="../quests/dialogues.html"><strong aria-hidden="true">10.4.</strong> Dialogue Creation</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">11.</strong> Reference/General</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../terminology/terminology.html"><strong aria-hidden="true">11.1.</strong> Terminology</a></li><li class="chapter-item expanded "><a href="../main-folders-and-files/index.html"><strong aria-hidden="true">11.2.</strong> Main Folders And Files</a></li><li class="chapter-item expanded "><a href="../main-folders-and-files/file-formats/index.html"><strong aria-hidden="true">11.3.</strong> File Formats</a></li><li class="chapter-item expanded "><a href="../crash-list/crashes-list.html"><strong aria-hidden="true">11.4.</strong> Crash List</a></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">12.</strong> Reference/Configs</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../configs/items/weapons/w_(weapon).ltx.html"><strong aria-hidden="true">12.1.</strong> Weapon Configuration Parameters</a></li><li class="chapter-item expanded "><a href="../configs/items/weapons/weapon_ammo.ltx.html"><strong aria-hidden="true">12.2.</strong> Ammo Configuration Parameters</a></li><li class="chapter-item expanded "><a href="../configs/items/weapons/weapon_sounds.ltx.html"><strong aria-hidden="true">12.3.</strong> Weapon Sounds Parameters</a></li><li class="chapter-item expanded "><a href="../configs/items/outfits/o_(outfit).ltx.html"><strong aria-hidden="true">12.4.</strong> Oufits Configuration Parameters</a></li><li class="chapter-item expanded "><a href="../configs/creatures/m_(mutant).ltx.html"><strong aria-hidden="true">12.5.</strong> Mutants Configuration Parameters</a></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">13.</strong> Reference/Shaders</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../shaders/shaders-list/materials-list.html"><strong aria-hidden="true">13.1.</strong> Material Shaders List</a></li><li class="chapter-item expanded "><a href="../shaders/shaders-list/shaders-list.html"><strong aria-hidden="true">13.2.</strong> Shaders List</a></li><li class="chapter-item expanded "><a href="../shaders/shaders-list/compiler-shaders-list.html"><strong aria-hidden="true">13.3.</strong> Compiler Shaders List</a></li><li class="chapter-item expanded "><a href="../shaders/shaders-list/sound-envornment-list.html"><strong aria-hidden="true">13.4.</strong> Sound Envornment List</a></li></ol></li><li class="chapter-item expanded "><a href="../engine/index.html"><strong aria-hidden="true">14.</strong> Reference/Engine</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../engine/console-commands.html"><strong aria-hidden="true">14.1.</strong> Console commands</a></li><li class="chapter-item expanded "><a href="../engine/alife.html"><strong aria-hidden="true">14.2.</strong> A-Life (AI)</a></li><li class="chapter-item expanded "><a href="../engine/engine-classes.html"><strong aria-hidden="true">14.3.</strong> Engine Classes</a></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">15.</strong> Reference/Resources</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../resources/audio.html"><strong aria-hidden="true">15.1.</strong> Audio</a></li><li class="chapter-item expanded "><a href="../resources/models-objects-locations.html"><strong aria-hidden="true">15.2.</strong> Models</a></li><li class="chapter-item expanded "><a href="../resources/sdk-resources.html"><strong aria-hidden="true">15.3.</strong> SDK resources</a></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">16.</strong> Reference/Tools</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../modding-tools/modding-tools.html"><strong aria-hidden="true">16.1.</strong> Modding Tools List</a></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/index.html"><strong aria-hidden="true">16.2.</strong> In-Game Editors</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/item-spawner.html"><strong aria-hidden="true">16.2.1.</strong> Item Spawner</a></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/lightning-editor.html"><strong aria-hidden="true">16.2.2.</strong> Lightning Editor</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">16.2.3.</strong> NPC Logic/Execute</div></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/object-spawner.html"><strong aria-hidden="true">16.2.4.</strong> Object Spawner</a></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/outfits-weapon-stats-editor.html"><strong aria-hidden="true">16.2.5.</strong> Outfits/Weapons Stats Editor</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">16.2.6.</strong> Pocket Workshop</div></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/weapon-hud-editor.html"><strong aria-hidden="true">16.2.7.</strong> Weapon HUD Editor</a></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/weather-editor.html"><strong aria-hidden="true">16.2.8.</strong> Weather Editor</a></li></ol></li><li class="chapter-item expanded "><a href="../modding-tools/ltx-support.html"><strong aria-hidden="true">16.3.</strong> Ltx Support</a></li><li class="chapter-item expanded "><a href="../sdk/index.html"><strong aria-hidden="true">16.4.</strong> SDK 0.7</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../sdk/interface.html"><strong aria-hidden="true">16.4.1.</strong> Interface</a></li><li class="chapter-item expanded "><a href="../sdk/actor-editor.html"><strong aria-hidden="true">16.4.2.</strong> Actor Editor</a></li><li class="chapter-item expanded "><a href="../sdk/image-editor.html"><strong aria-hidden="true">16.4.3.</strong> Image Editor</a></li><li class="chapter-item expanded "><a href="../sdk/level-editor.html"><strong aria-hidden="true">16.4.4.</strong> Level Editor</a></li><li class="chapter-item expanded "><a href="../sdk/shader-editor.html"><strong aria-hidden="true">16.4.5.</strong> Shader Editor</a></li><li class="chapter-item expanded "><a href="../sdk/sound-editor.html"><strong aria-hidden="true">16.4.6.</strong> Sound Editor</a></li><li class="chapter-item expanded "><a href="../sdk/postprocess-editor.html"><strong aria-hidden="true">16.4.7.</strong> Postprocess Editor</a></li><li class="chapter-item expanded "><a href="../sdk/particle-editor.html"><strong aria-hidden="true">16.4.8.</strong> Particle Editor (Not finished)</a></li></ol></li><li class="chapter-item expanded "><a href="../blender/blender-x-ray-addon-summary.html"><strong aria-hidden="true">16.5.</strong> Blender X-Ray Addon</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../blender/advanced-settings.html"><strong aria-hidden="true">16.5.1.</strong> Advanced settings</a></li><li class="chapter-item expanded "><a href="../blender/x-ray-addon-panels.html"><strong aria-hidden="true">16.5.2.</strong> Panels</a></li><li class="chapter-item expanded "><a href="../blender/x-ray-side-panels.html"><strong aria-hidden="true">16.5.3.</strong> Side Panel</a></li></ol></li><li class="chapter-item expanded "><a href="../modding-tools/stalker-studio.html"><strong aria-hidden="true">16.6.</strong> Stalker Studio</a></li><li class="chapter-item expanded "><a href="../modding-tools/thm-editor-by-i-love-kfc.html"><strong aria-hidden="true">16.7.</strong> THM Editor</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../modding-tools/thm-editor-by-valerok.html"><strong aria-hidden="true">16.7.1.</strong> Modified THM Editor</a></li></ol></li><li class="chapter-item expanded "><a href="../modding-tools/bump-generator.html"><strong aria-hidden="true">16.8.</strong> Bump Generator</a></li><li class="chapter-item expanded "><a href="../modding-tools/savandt.html"><strong aria-hidden="true">16.9.</strong> Sound Attribute Viewer And Tweaker</a></li><li class="chapter-item expanded "><a href="../modding-tools/upgrade-editor.html"><strong aria-hidden="true">16.10.</strong> Upgrade Editor</a></li><li class="chapter-item expanded "><a href="../modding-tools/omf-editor-by-valerok.html"><strong aria-hidden="true">16.11.</strong> Modified OMF Editor</a></li><li class="chapter-item expanded "><a href="../modding-tools/ogf-editor-by-valerok.html"><strong aria-hidden="true">16.12.</strong> Modified OGF Editor</a></li><li class="chapter-item expanded "><a href="../modding-tools/xray-export-tool.html"><strong aria-hidden="true">16.13.</strong> X-Ray Export Tool</a></li><li class="chapter-item expanded "><a href="../modding-tools/universal-x64-level-compilers.html"><strong aria-hidden="true">16.14.</strong> Universal x64 level compilers</a></li><li class="chapter-item expanded "><a href="../modding-tools/xrcompress-by-i-love-kfc.html"><strong aria-hidden="true">16.15.</strong> xrCompress</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Anomaly Modding Book</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Igigog/anomaly-modding-book" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Igigog/anomaly-modding-book/edit/main/src/addons/dxml.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="dxml"><a class="header" href="#dxml">DXML</a></h1>
+<hr />
+<h2 id="intro"><a class="header" href="#intro">Intro</a></h2>
+<p>DXML by demonized#1084</p>
+<p>DXML is a part of <a href="https://github.com/themrdemonized/STALKER-Anomaly-modded-exes">modded exes repo</a></p>
+<p>DXML allows to manipulate XML files before they loaded into the engine or scripts by utilizing Lua
+The engine sends XML string to Lua where it is transformed into DOM-like object (from now on lets call it xml_obj) that can be manipulated by Lua methods and then it is converted back to XML string and sent back to engine</p>
+<p>To use it in your mods, you have to create a new script file that is called <code>modxml_&lt;yourname&gt;.script</code>. The yourname can be any string, it doesnt matter. The &quot;modxml_&quot; part must be in the filename.</p>
+<p>Then, in this file, type:</p>
+<pre><code class="language-lua">function on_xml_read()
+    RegisterScriptCallback(&quot;on_xml_read&quot;, function(xml_file_name, xml_obj)
+        -- XML file i want to change
+        local xml_to_change = [[text\eng\_game_version.xml]]
+
+        -- Check if its the file i want to change
+        if xml_file_name == xml_to_change then
+            -- Here is my code to change XML
+        end
+    end)
+end
+</code></pre>
+<p>What this does is creating a function on_xml_read that will be auto-called from dxml_core.script. This function will register function for new callback &quot;on_xml_read&quot;, which accepts two arguments:</p>
+<ul>
+<li>xml_file_name - current XML filename that engine is processing (for example: text\eng_game_version.xml)</li>
+<li>xml_obj - the object described above</li>
+</ul>
+<p><strong>WARNING:</strong> DXML won't process translation strings other than from eng/rus folders and <code>gameplay\character_desc_general.xml</code> file. For how to manipulate that file check &quot;Additional functions&quot; paragraph below.</p>
+<p>To understand, what can be done with xml_obj and what functions it provides, let's take a look at typical usecases:</p>
+<hr />
+<h3 id="case-1-inserting-new-xml-data"><a class="header" href="#case-1-inserting-new-xml-data">Case 1: inserting new XML data</a></h3>
+<p><strong>Examples: insert new dialog into gameplay\dialogs.xml, insert new scope texture into ui\scopes.xml</strong></p>
+<p>This is the simplest case of using DXML, where you just want to insert new data, much like <code>#include</code> directive in XML files</p>
+<p>To do this, you can use <code>xml_obj:insertFromXMLString</code> function as in example below:</p>
+<pre><code class="language-lua">function on_xml_read()
+    RegisterScriptCallback(&quot;on_xml_read&quot;, function(xml_file_name, xml_obj)
+        -- XML file i want to change
+        local xml_to_change = [[ui\scopes.xml]]
+
+        -- Check if its the file i want to change
+        if xml_file_name == xml_to_change then
+            -- Here is my code to change XML
+            local my_new_scope = 
+[[
+&lt;wpn_crosshair_bino x=&quot;0&quot; y=&quot;0&quot; width=&quot;2048&quot; height=&quot;1536&quot;&gt;
+    &lt;auto_static x=&quot;0&quot; y=&quot;0&quot; width=&quot;1024&quot; height=&quot;768&quot; stretch=&quot;1&quot;&gt;
+    &lt;texture&gt;wpn_crosshair_bino&lt;/texture&gt;
+#include &quot;gameplay\character_criticals.xml&quot;
+    &lt;/auto_static&gt;
+&lt;/wpn_crosshair_bino&gt;
+]]
+            xml_obj:insertFromXMLString(my_new_scope)
+        end
+    end)
+end
+</code></pre>
+<p>This example adds new scope texture into scopes.xml.
+DXML supports <code>#include</code> directive to include other xml files into string. <code>#include</code> must start from the beginning of the line like in the example.
+(BTW: For actually adding new scope you don't need include anything, its just an example. The <code>#include</code> is necessary when working with adding new special npcs or such)</p>
+<p>insertFromXMLString method has these arguments:</p>
+<ul>
+<li>&quot;xml_string&quot; - XML string to process</li>
+<li>&quot;where&quot; - the element in xml_obj in which new data will be inserted argument is optional and specifies an element subtable of self.xml_table to insert (default - root element)</li>
+<li>&quot;pos&quot; argument is optional and specifies position to insert (default - to the end)</li>
+<li>&quot;useRootNode&quot; argument is optional and will hint DXML to insert contents inside the root node if it has one instead of whole string</li>
+</ul>
+<p>The function returns the position of first inserted element in &quot;where&quot;</p>
+<hr />
+<h3 id="case-11-inserting-new-xml-data-from-file"><a class="header" href="#case-11-inserting-new-xml-data-from-file">Case 1.1: inserting new XML data from file</a></h3>
+<p><strong>Examples: insert new dialog into gameplay\dialogs.xml from file plugins\new_dialog.xml</strong></p>
+<p>This case will insert new data from a xml file <code>plugins\new_dialog.xml</code> into <code>gameplay\dialogs.xml</code>.</p>
+<p>To do this, you can use <code>xml_obj:insertFromXMLFile</code> function, where you specify the path to the file and the arguments, which are exactly the same as in <code>xml_obj:insertFromXMLString</code> function.</p>
+<p>The path argument should be a path to the file WITH EXTENSION (example: <code>[[plugins\new_dialog.xml]]</code>).</p>
+<p>The base folder for xml files to read is gamedata/configs, for example if the path provided is <code>plugins\new_dialog.xml</code>, then the file should exist in <code>gamedata/configs/plugins/new_dialog.xml</code>.</p>
+<p>If the file has failed to read, the game will crash with the error message displaying what happened. </p>
+<pre><code class="language-lua">function on_xml_read()
+    RegisterScriptCallback(&quot;on_xml_read&quot;, function(xml_file_name, xml_obj)
+        -- XML file i want to change
+        local xml_to_change = [[gameplay\dialogs.xml]]
+
+        -- Check if its the file i want to change
+        if xml_file_name == xml_to_change then
+            -- Here is my code to change XML
+            xml_obj:insertFromXMLFile([[plugins\new_dialog.xml]])
+        end
+    end)
+end
+</code></pre>
+<hr />
+<h2 id="case-2-inserting-new-xml-data-in-specified-element"><a class="header" href="#case-2-inserting-new-xml-data-in-specified-element">Case 2: inserting new XML data in specified element</a></h2>
+<p><strong>Example: insert new menu item into ui\ui_mm_main.xml</strong></p>
+<p>In order to correctly insert new main menu item, we need to find the &lt;menu_main&gt; element first.</p>
+<p>To find an element, you can utilize CSS-like selectors in <code>query</code> function. An example of finding &lt;menu_main&gt; element would be:</p>
+<pre><code class="language-lua">local res = xml_obj:query(&quot;menu_main&quot;)
+</code></pre>
+<p>The function returns a table with all found elements matching this query.</p>
+<p>The element is represented by table with following fields:</p>
+<ul>
+<li>el = element type, consists of type symbol, name and attributes. The type symbols are:
+<ul>
+<li>&quot;&lt;&quot; - node element</li>
+<li>&quot;#&quot; - text element</li>
+</ul>
+</li>
+<li>parent = pointer to a table that contains this element</li>
+<li>kids = table that contains all children of this element</li>
+</ul>
+<p>Then we check if table is not empty (the element exists) and insert our xml string with new menu item in position before the end</p>
+<pre><code class="language-lua">if is_not_empty(res) then
+    local el = res[1]
+    xml_obj:insertFromXMLString([[&lt;btn name=&quot;btn_mcm&quot; caption=&quot;ui_mm_menu_mcm&quot;/&gt;]], el, #el.kids)
+</code></pre>
+<p>Full code would be:</p>
+<pre><code class="language-lua">function on_xml_read()
+    RegisterScriptCallback(&quot;on_xml_read&quot;, function(xml_file_name, xml_obj)
+        -- XML file i want to change
+        local xml_to_change = [[ui\ui_mm_main.xml]]
+
+        -- Check if its the file i want to change
+        if xml_file_name == xml_to_change then
+            -- Here is my code to change XML
+            local mcm_menu = [[&lt;btn name=&quot;btn_mcm&quot; caption=&quot;ui_mm_menu_mcm&quot; /&gt;]]
+            local res = xml_obj:query(&quot;menu_main&quot;)
+            if is_not_empty(res) then
+                local el = res[1]
+                xml_obj:insertFromXMLString(mcm_menu, el, #el.kids)
+            end
+        end
+    end)
+end
+</code></pre>
+<p>But, if there is already an MCM menu, then you might get duplicated element inside. So we have to check if its already exists before insertion. We can check if element <code>&lt;btn name=&quot;btn_mcm&quot;&gt;</code> exists before proceeding by utilizing <code>query</code> again.</p>
+<p>Here, similar to CSS, we want to find <code>&lt;btn&gt;</code> element with attribute <code>name=&quot;btn_mcm&quot;</code> first. if its found - then make early return from the function</p>
+<pre><code class="language-lua">    if is_not_empty(xml_obj:query(&quot;menu_main btn[name=btn_mcm]&quot;)) then
+        printf(&quot;MCM button already exists&quot;)
+        return
+    end
+</code></pre>
+<p>Full list of available CSS-like selectors are:</p>
+<ul>
+<li>&quot; &quot; (space) - find children of elemenents (can be any depth inside)</li>
+<li>&quot;&gt;&quot; - find direct children</li>
+<li>&quot;+&quot; - find first sibling of element</li>
+<li>&quot;~&quot; - find all siblings</li>
+<li>&quot;[attr1=value1]&quot; - describes attribute <code>attr1</code> with value <code>value1</code>. To find element that matches multiple attributes you can use <code>[attr1=value1][attr2=value2]</code> and so on</li>
+</ul>
+<hr />
+<h2 id="case-3-change-text-inside-element"><a class="header" href="#case-3-change-text-inside-element">Case 3: Change text inside element</a></h2>
+<p><strong>Example: change text of game version in text\eng\_game_version.xml</strong></p>
+<p>Getting and setting text is possible if element contains raw text inside, like <code>&lt;text attr1=&quot;value1&quot;&gt;My Text&lt;/text&gt;</code>.
+To get text, you can use <code>getText(element)</code> function and to set it use <code>setText(element)</code>.
+Example below of appending text to existing text in element</p>
+<pre><code class="language-lua">function on_xml_read()
+	RegisterScriptCallback(&quot;on_xml_read&quot;, function(xml_file_name, xml_obj)
+		if xml_file_name == [[text\eng\_game_version.xml]]
+		or xml_file_name == [[text\rus\_game_version.xml]]
+		then
+			-- Find string element with &quot;id=ui_st_game_version&quot; text inside it
+			local res = xml_obj:query(&quot;string[id=ui_st_game_version] &gt; text&quot;)
+			if res[1] then
+				local el = res[1]
+				local el_text = xml_obj:getText(el)
+				if el_text then
+					-- Set new text
+					xml_obj:setText(el, el_text .. &quot;. Modified exes (DLTX, DXML, Shader Scopes, SSS)&quot;)
+				end
+			end
+		end
+	end)
+end
+</code></pre>
+<hr />
+<h2 id="case-4-changing-attribute-of-element"><a class="header" href="#case-4-changing-attribute-of-element">Case 4: changing attribute of element</a></h2>
+<p><strong>Example: change position of money display in ui\ui_inventory.xml</strong></p>
+<p>First, find <code>&lt;money&gt;</code> element inside <code>&lt;player&gt;</code> element and then change its x, y attributes by using <code>setElementAttr</code> function</p>
+<p><code>setElementAttr(el, args)</code></p>
+<ul>
+<li>el - element found using <code>query</code></li>
+<li>args - table of attributes ({attr1 = value1, attr2 = value2})</li>
+</ul>
+<p>To get attributes of element, use <code>getElementAttr</code> function, it returns a table of attributes described above</p>
+<p><code>getElementAttr(el)</code></p>
+<ul>
+<li>el - element found using <code>query</code></li>
+</ul>
+<p>To remove attributes of element, use <code>removeElementAttr</code> function</p>
+<p><code>removeElementAttr(el, args)</code></p>
+<ul>
+<li>el - element found using <code>query</code></li>
+<li>args - list of attributes to remove ({attr1, attr2})</li>
+</ul>
+<pre><code class="language-lua">function on_xml_read()
+	RegisterScriptCallback(&quot;on_xml_read&quot;, function(xml_file_name, xml_obj)
+		if xml_file_name == [[ui\ui_inventory.xml]]
+		then
+			local res = xml_obj:query(&quot;player &gt; money&quot;)
+			if res[1] then
+				local el = res[1]
+				xml_obj:setElementAttr(el, {x=20, y=60})
+			end
+		end
+	end)
+end
+</code></pre>
+<p>Full list of methods is described in dxml_core.script in <code>COnXmlRead</code> function</p>
+<hr />
+<h2 id="additional-functions"><a class="header" href="#additional-functions">Additional functions</a></h2>
+<p>For now, it is impossible to use xml_obj from DXML to process <code>gameplay\character_desc_general.xml</code>. This file includes all information about generic NPCs you see in the Zone (name, bio, community, etc). As an alternative, DXML provides additional callbacks in this case.</p>
+<h3 id="on_specific_character_init"><a class="header" href="#on_specific_character_init">on_specific_character_init</a></h3>
+<p><code>on_specific_character_init</code> callback provides possibility to change NPCs' data. An example on how to use it:</p>
+<pre><code class="language-lua">function on_game_start()
+    RegisterScriptCallback(&quot;on_specific_character_init&quot;, function(character_id, data)
+  
+        --character_id is the id attribute of &lt;specific_character&gt; tag (ie. &quot;sim_default_csky_0_default_0&quot;)
+        if character_id == &quot;sim_default_csky_0_default_0&quot; then
+  
+            -- change appearance of this npc to Beard
+            data.visual = &quot;actors\stalker_neutral\stalker_neutral_3_face_1&quot;
+        end
+    end)
+end
+</code></pre>
+<p>Full list of fields available in &quot;data&quot; table:</p>
+<ul>
+<li>name</li>
+<li>bio</li>
+<li>community</li>
+<li>icon</li>
+<li>start_dialog</li>
+<li>panic_threshold</li>
+<li>hit_probability_factor</li>
+<li>crouch_type</li>
+<li>mechanic_mode</li>
+<li>critical_wound_weights</li>
+<li>supplies</li>
+<li>visual</li>
+<li>npc_config</li>
+<li>snd_config</li>
+<li>terrain_sect</li>
+<li>rank_min</li>
+<li>rank_max</li>
+<li>reputation_min</li>
+<li>reputation_max</li>
+<li>money_min</li>
+<li>money_max</li>
+<li>money_infinitive</li>
+</ul>
+<h3 id="on_specific_character_dialog_list"><a class="header" href="#on_specific_character_dialog_list">on_specific_character_dialog_list</a></h3>
+<p><code>on_specific_character_dialog_list</code> callback provides possibility to change available dialogs for NPCs. The callback sends character id and dialog list class object, that can be used to manupulate available dialogs. An example on how to use it:</p>
+<pre><code class="language-lua">function on_game_start()
+    RegisterScriptCallback(&quot;on_specific_character_dialog_list&quot;, function(character_id, dialog_list)
+
+        --character_id is the id attribute of &lt;specific_character&gt; tag (ie. &quot;sim_default_csky_0_default_0&quot;)
+        if character_id == &quot;sim_default_csky_0_default_0&quot; then
+
+            -- Add dialog about playing Blackjack
+            local res = dialog_list:add(&quot;cit_killers_minigame&quot;)
+
+            if res then
+                printf(&quot;adding dialog %s for %s, pos %s&quot;, &quot;cit_killers_minigame&quot;, character_id, res)
+            end
+        end
+    end)
+end
+</code></pre>
+<p>Full list of methods in dialog_list</p>
+<ul>
+<li>find(regex) - find existing dialog by regex, returns last found dialog matching regex and its position in the list</li>
+<li>has(string) - check if dialog by string exists, returns the position of found dialog in the list</li>
+<li>add(string, pos) - adds new dialog in specified position (by default adds before break dialog string if it exists)</li>
+<li>add_first(dialog) - adds dialog in the beginning of the list</li>
+<li>add_last(dialog) - adds dialog in the end of the list</li>
+<li>remove(string) - removes dialog by the string</li>
+<li>get_dialogs() - returns the list of all dialogs available</li>
+</ul>
+<hr />
+<h2 id="ps"><a class="header" href="#ps">PS</a></h2>
+<p>See <code>dxml_core.script</code> for all methods and callbacks available</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../addons/dltx.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../addons/mcm.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../addons/dltx.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../addons/mcm.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

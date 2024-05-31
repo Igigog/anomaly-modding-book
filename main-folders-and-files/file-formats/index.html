@@ -1,0 +1,1524 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>File Formats - Anomaly Modding Book</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../src/custom.css">
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../../index.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../../meta/index.html"><strong aria-hidden="true">1.</strong> Meta</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../meta/contributing/index.html"><strong aria-hidden="true">1.1.</strong> Contributing to this book</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../../getting-started/index.html"><strong aria-hidden="true">2.</strong> Mod Organizer</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../getting-started/installing-mo2.html"><strong aria-hidden="true">2.1.</strong> Installing MO2</a></li><li class="chapter-item expanded "><a href="../../getting-started/addon-installers.html"><strong aria-hidden="true">2.2.</strong> Addon installers</a></li><li class="chapter-item expanded "><a href="../../getting-started/package-naming.html"><strong aria-hidden="true">2.3.</strong> Package Naming for MO2</a></li><li class="chapter-item expanded "><a href="../../getting-started/vs-code-game-files-setup.html"><strong aria-hidden="true">2.4.</strong> Configuring VSCode-like programs to handle game files</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Addons</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../addons/dltx.html"><strong aria-hidden="true">3.1.</strong> DLTX</a></li><li class="chapter-item expanded "><a href="../../addons/dxml.html"><strong aria-hidden="true">3.2.</strong> DXML</a></li><li class="chapter-item expanded "><a href="../../addons/mcm.html"><strong aria-hidden="true">3.3.</strong> MCM</a></li><li class="chapter-item expanded "><a href="../../addons/pdb.html"><strong aria-hidden="true">3.4.</strong> PDB files</a></li><li class="chapter-item expanded "><a href="../../addons/lua-unlocalizer.html"><strong aria-hidden="true">3.5.</strong> Lua Unlocalizer</a></li><li class="chapter-item expanded "><a href="../../addons/useful-addons-scripts-utils.html"><strong aria-hidden="true">3.6.</strong> Useful addons, scripts and utils</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> Configs</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../configs/structure-of-files.html"><strong aria-hidden="true">4.1.</strong> Structure of Files</a></li><li class="chapter-item expanded "><a href="../../configs/condlists.html"><strong aria-hidden="true">4.2.</strong> Condlists</a></li><li class="chapter-item expanded "><a href="../../configs/inventory_icons.html"><strong aria-hidden="true">4.3.</strong> Inventory Icons</a></li><li class="chapter-item expanded "><a href="../../configs/algoritm-of-logic.html"><strong aria-hidden="true">4.4.</strong> Algoritm of Logic</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../../scripting/index.html"><strong aria-hidden="true">5.</strong> Scripting</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../scripting/codebase_introduction.html"><strong aria-hidden="true">5.1.</strong> Introduction to codebase</a></li><li class="chapter-item expanded "><a href="../../scripting/codestyle.html"><strong aria-hidden="true">5.2.</strong> Codestyle</a></li><li class="chapter-item expanded "><a href="../../scripting/wetting_hands.html"><strong aria-hidden="true">5.3.</strong> Wetting our hands</a></li><li class="chapter-item expanded "><a href="../../scripting/server_and_game_objects.html"><strong aria-hidden="true">5.4.</strong> Server and game objects</a></li><li class="chapter-item expanded "><a href="../../scripting/callbacks.html"><strong aria-hidden="true">5.5.</strong> Callbacks</a></li><li class="chapter-item expanded "><a href="../../scripting/time_events.html"><strong aria-hidden="true">5.6.</strong> Time events</a></li><li class="chapter-item expanded "><a href="../../scripting/monkey-patching.html"><strong aria-hidden="true">5.7.</strong> Monkey patching</a></li><li class="chapter-item expanded "><a href="../../scripting/script_animations.html"><strong aria-hidden="true">5.8.</strong> Script Animations</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> Modelling</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../blender/creating-model-in-blender.html"><strong aria-hidden="true">6.1.</strong> Creating model in Blender</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.</strong> Animating</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../blender/creating-hud-animation-in-blender.html"><strong aria-hidden="true">7.1.</strong> Creating an animation</a></li><li class="chapter-item expanded "><a href="../../blender/creating-camera-animations.html"><strong aria-hidden="true">7.2.</strong> Creating animations for the camera</a></li><li class="chapter-item expanded "><a href="../../blender/editing-existing-animations.html"><strong aria-hidden="true">7.3.</strong> Editing existing animations</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../../texturing/index.html"><strong aria-hidden="true">8.</strong> Texturing</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../texturing/сreating-and-preparing-textures.html"><strong aria-hidden="true">8.1.</strong> Creating and preparing textures</a></li><li class="chapter-item expanded "><a href="../../texturing/working-correctly-with-icon-atlases.html"><strong aria-hidden="true">8.2.</strong> Working correctly with icon atlases</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../../mapping/index.html"><strong aria-hidden="true">9.</strong> Mapping</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../blender/creating-a-location-in-blender.html"><strong aria-hidden="true">9.1.</strong> Creating a location in Blender</a></li><li class="chapter-item expanded "><a href="../../mapping/multimaterial-terrain.html"><strong aria-hidden="true">9.2.</strong> Multimaterial Terrain Guide</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../../quests/index.html"><strong aria-hidden="true">10.</strong> Quests</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../quests/introduction.html"><strong aria-hidden="true">10.1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../../quests/npc_creation.html"><strong aria-hidden="true">10.2.</strong> NPC Creation</a></li><li class="chapter-item expanded "><a href="../../quests/task_guide.html"><strong aria-hidden="true">10.3.</strong> Task Creation</a></li><li class="chapter-item expanded "><a href="../../quests/dialogues.html"><strong aria-hidden="true">10.4.</strong> Dialogue Creation</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../../reference/index.html"><strong aria-hidden="true">11.</strong> Reference/General</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../terminology/terminology.html"><strong aria-hidden="true">11.1.</strong> Terminology</a></li><li class="chapter-item expanded "><a href="../../main-folders-and-files/index.html"><strong aria-hidden="true">11.2.</strong> Main Folders And Files</a></li><li class="chapter-item expanded "><a href="../../main-folders-and-files/file-formats/index.html" class="active"><strong aria-hidden="true">11.3.</strong> File Formats</a></li><li class="chapter-item expanded "><a href="../../crash-list/crashes-list.html"><strong aria-hidden="true">11.4.</strong> Crash List</a></li></ol></li><li class="chapter-item expanded "><a href="../../reference/index.html"><strong aria-hidden="true">12.</strong> Reference/Configs</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../configs/items/weapons/w_(weapon).ltx.html"><strong aria-hidden="true">12.1.</strong> Weapon Configuration Parameters</a></li><li class="chapter-item expanded "><a href="../../configs/items/weapons/weapon_ammo.ltx.html"><strong aria-hidden="true">12.2.</strong> Ammo Configuration Parameters</a></li><li class="chapter-item expanded "><a href="../../configs/items/weapons/weapon_sounds.ltx.html"><strong aria-hidden="true">12.3.</strong> Weapon Sounds Parameters</a></li><li class="chapter-item expanded "><a href="../../configs/items/outfits/o_(outfit).ltx.html"><strong aria-hidden="true">12.4.</strong> Oufits Configuration Parameters</a></li><li class="chapter-item expanded "><a href="../../configs/creatures/m_(mutant).ltx.html"><strong aria-hidden="true">12.5.</strong> Mutants Configuration Parameters</a></li></ol></li><li class="chapter-item expanded "><a href="../../reference/index.html"><strong aria-hidden="true">13.</strong> Reference/Shaders</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../shaders/shaders-list/materials-list.html"><strong aria-hidden="true">13.1.</strong> Material Shaders List</a></li><li class="chapter-item expanded "><a href="../../shaders/shaders-list/shaders-list.html"><strong aria-hidden="true">13.2.</strong> Shaders List</a></li><li class="chapter-item expanded "><a href="../../shaders/shaders-list/compiler-shaders-list.html"><strong aria-hidden="true">13.3.</strong> Compiler Shaders List</a></li><li class="chapter-item expanded "><a href="../../shaders/shaders-list/sound-envornment-list.html"><strong aria-hidden="true">13.4.</strong> Sound Envornment List</a></li></ol></li><li class="chapter-item expanded "><a href="../../engine/index.html"><strong aria-hidden="true">14.</strong> Reference/Engine</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../engine/console-commands.html"><strong aria-hidden="true">14.1.</strong> Console commands</a></li><li class="chapter-item expanded "><a href="../../engine/alife.html"><strong aria-hidden="true">14.2.</strong> A-Life (AI)</a></li><li class="chapter-item expanded "><a href="../../engine/engine-classes.html"><strong aria-hidden="true">14.3.</strong> Engine Classes</a></li></ol></li><li class="chapter-item expanded "><a href="../../reference/index.html"><strong aria-hidden="true">15.</strong> Reference/Resources</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../resources/audio.html"><strong aria-hidden="true">15.1.</strong> Audio</a></li><li class="chapter-item expanded "><a href="../../resources/models-objects-locations.html"><strong aria-hidden="true">15.2.</strong> Models</a></li><li class="chapter-item expanded "><a href="../../resources/sdk-resources.html"><strong aria-hidden="true">15.3.</strong> SDK resources</a></li></ol></li><li class="chapter-item expanded "><a href="../../reference/index.html"><strong aria-hidden="true">16.</strong> Reference/Tools</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../modding-tools/modding-tools.html"><strong aria-hidden="true">16.1.</strong> Modding Tools List</a></li><li class="chapter-item expanded "><a href="../../modding-tools/in-game-editors/index.html"><strong aria-hidden="true">16.2.</strong> In-Game Editors</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../modding-tools/in-game-editors/item-spawner.html"><strong aria-hidden="true">16.2.1.</strong> Item Spawner</a></li><li class="chapter-item expanded "><a href="../../modding-tools/in-game-editors/lightning-editor.html"><strong aria-hidden="true">16.2.2.</strong> Lightning Editor</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">16.2.3.</strong> NPC Logic/Execute</div></li><li class="chapter-item expanded "><a href="../../modding-tools/in-game-editors/object-spawner.html"><strong aria-hidden="true">16.2.4.</strong> Object Spawner</a></li><li class="chapter-item expanded "><a href="../../modding-tools/in-game-editors/outfits-weapon-stats-editor.html"><strong aria-hidden="true">16.2.5.</strong> Outfits/Weapons Stats Editor</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">16.2.6.</strong> Pocket Workshop</div></li><li class="chapter-item expanded "><a href="../../modding-tools/in-game-editors/weapon-hud-editor.html"><strong aria-hidden="true">16.2.7.</strong> Weapon HUD Editor</a></li><li class="chapter-item expanded "><a href="../../modding-tools/in-game-editors/weather-editor.html"><strong aria-hidden="true">16.2.8.</strong> Weather Editor</a></li></ol></li><li class="chapter-item expanded "><a href="../../modding-tools/ltx-support.html"><strong aria-hidden="true">16.3.</strong> Ltx Support</a></li><li class="chapter-item expanded "><a href="../../sdk/index.html"><strong aria-hidden="true">16.4.</strong> SDK 0.7</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../sdk/interface.html"><strong aria-hidden="true">16.4.1.</strong> Interface</a></li><li class="chapter-item expanded "><a href="../../sdk/actor-editor.html"><strong aria-hidden="true">16.4.2.</strong> Actor Editor</a></li><li class="chapter-item expanded "><a href="../../sdk/image-editor.html"><strong aria-hidden="true">16.4.3.</strong> Image Editor</a></li><li class="chapter-item expanded "><a href="../../sdk/level-editor.html"><strong aria-hidden="true">16.4.4.</strong> Level Editor</a></li><li class="chapter-item expanded "><a href="../../sdk/shader-editor.html"><strong aria-hidden="true">16.4.5.</strong> Shader Editor</a></li><li class="chapter-item expanded "><a href="../../sdk/sound-editor.html"><strong aria-hidden="true">16.4.6.</strong> Sound Editor</a></li><li class="chapter-item expanded "><a href="../../sdk/postprocess-editor.html"><strong aria-hidden="true">16.4.7.</strong> Postprocess Editor</a></li><li class="chapter-item expanded "><a href="../../sdk/particle-editor.html"><strong aria-hidden="true">16.4.8.</strong> Particle Editor (Not finished)</a></li></ol></li><li class="chapter-item expanded "><a href="../../blender/blender-x-ray-addon-summary.html"><strong aria-hidden="true">16.5.</strong> Blender X-Ray Addon</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../blender/advanced-settings.html"><strong aria-hidden="true">16.5.1.</strong> Advanced settings</a></li><li class="chapter-item expanded "><a href="../../blender/x-ray-addon-panels.html"><strong aria-hidden="true">16.5.2.</strong> Panels</a></li><li class="chapter-item expanded "><a href="../../blender/x-ray-side-panels.html"><strong aria-hidden="true">16.5.3.</strong> Side Panel</a></li></ol></li><li class="chapter-item expanded "><a href="../../modding-tools/stalker-studio.html"><strong aria-hidden="true">16.6.</strong> Stalker Studio</a></li><li class="chapter-item expanded "><a href="../../modding-tools/thm-editor-by-i-love-kfc.html"><strong aria-hidden="true">16.7.</strong> THM Editor</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../modding-tools/thm-editor-by-valerok.html"><strong aria-hidden="true">16.7.1.</strong> Modified THM Editor</a></li></ol></li><li class="chapter-item expanded "><a href="../../modding-tools/bump-generator.html"><strong aria-hidden="true">16.8.</strong> Bump Generator</a></li><li class="chapter-item expanded "><a href="../../modding-tools/savandt.html"><strong aria-hidden="true">16.9.</strong> Sound Attribute Viewer And Tweaker</a></li><li class="chapter-item expanded "><a href="../../modding-tools/upgrade-editor.html"><strong aria-hidden="true">16.10.</strong> Upgrade Editor</a></li><li class="chapter-item expanded "><a href="../../modding-tools/omf-editor-by-valerok.html"><strong aria-hidden="true">16.11.</strong> Modified OMF Editor</a></li><li class="chapter-item expanded "><a href="../../modding-tools/ogf-editor-by-valerok.html"><strong aria-hidden="true">16.12.</strong> Modified OGF Editor</a></li><li class="chapter-item expanded "><a href="../../modding-tools/xray-export-tool.html"><strong aria-hidden="true">16.13.</strong> X-Ray Export Tool</a></li><li class="chapter-item expanded "><a href="../../modding-tools/universal-x64-level-compilers.html"><strong aria-hidden="true">16.14.</strong> Universal x64 level compilers</a></li><li class="chapter-item expanded "><a href="../../modding-tools/xrcompress-by-i-love-kfc.html"><strong aria-hidden="true">16.15.</strong> xrCompress</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Anomaly Modding Book</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Igigog/anomaly-modding-book" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Igigog/anomaly-modding-book/edit/main/src/main-folders-and-files/file-formats/README.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="file-formats"><a class="header" href="#file-formats">File Formats</a></h1>
+<hr />
+<p>This section describes the extensions that are found in the game files and the SDK.</p>
+<hr />
+<h2 id="general"><a class="header" href="#general">General</a></h2>
+<table><thead><tr><th>Extension</th><th>Description</th></tr></thead><tbody>
+<tr><td>.log</td><td>Event log. It contains records of program start, operation and termination</td></tr>
+<tr><td>.scop</td><td>Save file</td></tr>
+<tr><td>.scoc</td><td>Save file</td></tr>
+<tr><td>.xrdemo</td><td>Recording camera flyover (demo). Created in the game with a <a href="../../engine/console-commands.html">console command</a>.</td></tr>
+<tr><td>.ogm</td><td>The video format used by the game engine.</td></tr>
+<tr><td><a href="#ogg">.ogg</a></td><td>The sound format used by the game engine.</td></tr>
+</tbody></table>
+<hr />
+<h2 id="configuration-and-script-files"><a class="header" href="#configuration-and-script-files">Configuration and script files</a></h2>
+<table><thead><tr><th>Extension</th><th>Description</th></tr></thead><tbody>
+<tr><td><a href="#ltx-files">.ltx</a></td><td>Configuration file, custom ini-like format</td></tr>
+<tr><td>.script</td><td>Game script</td></tr>
+<tr><td><a href="#xml-files">.xml</a></td><td>Carry in text format data related to in-game text, UI element placement, and characters and information within the game world</td></tr>
+<tr><td><a href="#seq-sequence">.seq</a></td><td>Text file containing a description of the frame sequence in the 2D animation</td></tr>
+<tr><td><a href="#efd-evaluation-function-data">.efd</a></td><td>Table of AI heuristic parameters, contains constants for fine-tuning A-Life. They are used as input parameters in scripts.</td></tr>
+</tbody></table>
+<hr />
+<h2 id="textures"><a class="header" href="#textures">Textures</a></h2>
+<table><thead><tr><th>Extension</th><th>Description</th></tr></thead><tbody>
+<tr><td><a href="#bumpdds-1">.bump</a></td><td>Normal map in A(BGR) format</td></tr>
+<tr><td><a href="#bumpdds">.bump#</a></td><td>File that fixes DXT compression errors in <a href="#bumpdds">.bump</a></td></tr>
+<tr><td><a href="#dds-directdraw-surface">.dds</a></td><td>Graphic file used by DirectX to store textures</td></tr>
+<tr><td><a href="#detail_map_name_with-bump-or-bumpdds">detail_map.dds</a></td><td>Same as a regular .dds texture, needed as an extra map in a .thm</td></tr>
+<tr><td>.tga</td><td>A bitmap graphics format with support for color depth of 1-32 bits per pixel, alpha channels, and RLE compression. Used as a source format.</td></tr>
+<tr><td><a href="#thm">.thm</a></td><td>They are used to set the parameters of textures - bump, detail, and more.</td></tr>
+</tbody></table>
+<hr />
+<h2 id="shaders"><a class="header" href="#shaders">Shaders</a></h2>
+<table><thead><tr><th>Extension</th><th>Description</th></tr></thead><tbody>
+<tr><td>.cs</td><td>Compute shader</td></tr>
+<tr><td>.gs</td><td>Geometry shader</td></tr>
+<tr><td>.vs</td><td>Vertex shader</td></tr>
+<tr><td>.ps</td><td>Pixel shader</td></tr>
+<tr><td>.s</td><td>Script shader. LUA version of engine blenders</td></tr>
+<tr><td>.ppe</td><td>Postprocess file format. Color-noise effects of the actor's screen</td></tr>
+</tbody></table>
+<hr />
+<h2 id="models"><a class="header" href="#models">Models</a></h2>
+<table><thead><tr><th>Extension</th><th>Description</th></tr></thead><tbody>
+<tr><td><a href="#dm-detail-model">.dm</a></td><td>Effect of a dynamic weather environment (e.g., rain or lightning)</td></tr>
+<tr><td><a href="#object">.object</a></td><td>These files are intended for the X-Ray SDK to store 3D content in its original, uncompressed, lossless form. They are source files that store information before compilation into other game compressed formats.</td></tr>
+<tr><td>.ogf</td><td>Compiled objects</td></tr>
+<tr><td>.bones</td><td>Skeleton bone data files</td></tr>
+<tr><td><em>bone_parts</em>.*</td><td>Bone part description file for an object/NPC</td></tr>
+</tbody></table>
+<hr />
+<h2 id="animations"><a class="header" href="#animations">Animations</a></h2>
+<table><thead><tr><th>Extension</th><th>Description</th></tr></thead><tbody>
+<tr><td><a href="#anm-animated-paths">.anm</a></td><td>A set of coordinates, which works as an animation of the actor's camera movement. It is also used for anomalies, which need to be given a path.</td></tr>
+<tr><td>.skl</td><td>Skeletal animation</td></tr>
+<tr><td>.skls</td><td>Skeletal animations(.skl) in a container</td></tr>
+<tr><td><a href="#omf-open-motions-format">.omf</a></td><td>A specialized S.T.A.L.K.E.R. game format containing animations. This is a separate dedicated file used in conjunction with .ogf models. Was created in order to optimize process when some different models use the same list of animations.</td></tr>
+</tbody></table>
+<hr />
+<h2 id="archives-and-resource-packages"><a class="header" href="#archives-and-resource-packages">Archives and Resource Packages</a></h2>
+<table><thead><tr><th>Extension</th><th>Description</th></tr></thead><tbody>
+<tr><td>.db</td><td>archive of game resources. Used in late builds and the final version of the game, has several options (db.&quot;number&quot;, db.&quot;letter&quot;).</td></tr>
+<tr><td>.xr</td><td>resource library. Contains resources such as particles, <a href="../../shaders/shaders-list/shaders-list.html">shaders</a>, etc. in a packed format.</td></tr>
+</tbody></table>
+<hr />
+<h2 id="game-level"><a class="header" href="#game-level">Game level</a></h2>
+<table><thead><tr><th>Extension</th><th>Description</th></tr></thead><tbody>
+<tr><td><a href="#err">.err</a></td><td>Contains information about geometry errors during level compilation</td></tr>
+<tr><td><a href="#level">level</a></td><td>File with general information about the game location (light sources, object names, texture and shader names, sectors and portals). Created by xrLC during compilation. Opened only by the game.</td></tr>
+<tr><td>.prj</td><td>Level precompilation file</td></tr>
+<tr><td>.ai</td><td>AI location grid. Created by xrAI when compiling. Opened only by the game.</td></tr>
+<tr><td><a href="#cform-collision-form">.cform</a></td><td>Geometry for calculating collisions. Calculated by the level compiler. Contains a solid map structure. All tangible objects with materials live here. Because of this, the game knows with what sound and property objects should react when they are hit by bullets or walked on</td></tr>
+<tr><td><a href="#details">.details</a></td><td>Detailed objects (grass, cigarette butts, construction debris) on the level. Created through LevelEditor SDK at compile time.</td></tr>
+<tr><td>.env_mod</td><td>local environment modifiers (environment), set areas on the location with lighting different from the main weather cycle.</td></tr>
+<tr><td>.fog_vol</td><td>Volumetric fog</td></tr>
+<tr><td>.game</td><td>Coordinates of the player's spawn in the multiplayer game. Outdated file.</td></tr>
+<tr><td><a href="#geom">.geom</a></td><td>Contains vertices (position, normals, texture coordinates, etc.), indices, and information for smooth geometry detail.</td></tr>
+<tr><td>.geomx</td><td>It contains only geometry. In the renderer it is used in the shadow rendering passes, due to the fact that there is less information - loading data into the buffers - faster.</td></tr>
+<tr><td>.gtc</td><td>Cross table of correspondence between the location graph and the AI grid. It is created when compiling the map in LE KFK (xrAI).</td></tr>
+<tr><td><a href="#hom-hierarchical-occlusion-mapping">.hom</a></td><td>Mapping of hierarchical cutoffs</td></tr>
+<tr><td>.level</td><td>List of SDK scene objects</td></tr>
+<tr><td>.lights</td><td>Light sources for xrLC</td></tr>
+<tr><td>.ps_static</td><td>Particle systems. Flies, steam from pipes, etc.</td></tr>
+<tr><td>.graph</td><td>Global graph of AI navigation. Used, among other things, for moving AI objects outside the active level.</td></tr>
+<tr><td>.spawn</td><td>A file storing spawn data.</td></tr>
+<tr><td>.snd_env</td><td>Volumetric sound sources.</td></tr>
+<tr><td>.snd_static</td><td>Static point sources of sound. Sound of flies, etc.</td></tr>
+<tr><td><a href="#som-sound-occluder-mesh">.som</a></td><td>Geometry for calculating sound propagation.</td></tr>
+<tr><td>.wallmarks</td><td>Decals. Bloodstains, faction emblems on walls, etc. Used for the compiled level.</td></tr>
+</tbody></table>
+<hr />
+<h2 id="starting-here-the-details-of-the-formats-are-written-you-are-encouraged-to-use-links-from-the-tables-above-to-jump-directly-to-the-format-you-are-interested-in"><a class="header" href="#starting-here-the-details-of-the-formats-are-written-you-are-encouraged-to-use-links-from-the-tables-above-to-jump-directly-to-the-format-you-are-interested-in">Starting here, the details of the formats are written. You are encouraged to use links from the tables above to jump directly to the format you are interested in</a></h2>
+<hr />
+<h2 id="binary-files"><a class="header" href="#binary-files">Binary files</a></h2>
+<hr />
+<h3 id="about"><a class="header" href="#about">About</a></h3>
+<p>This article is an introduction to binary files.</p>
+<p>Before reading the other articles in the &quot;<a href="index.html">File Formats</a>&quot; category, you should read this one first.</p>
+<h3 id="structure"><a class="header" href="#structure">Structure</a></h3>
+<p>In binary files, bytes are represented in reverse order.</p>
+<p>For example, the number 0x12345678 in a file would look like this: 78 56 34 12.</p>
+<h3 id="data-types"><a class="header" href="#data-types">Data types</a></h3>
+<p>Let's introduce the notation of data types.</p>
+<p>These notations will be used in other articles.</p>
+<table><thead><tr><th>Designation</th><th>Type</th><th>Range</th><th>Size (bytes)</th></tr></thead><tbody>
+<tr><td>B</td><td>Integer</td><td>0 ... 255</td><td>1</td></tr>
+<tr><td>H</td><td>Integer</td><td>0 ... 65535</td><td>2</td></tr>
+<tr><td>I</td><td>Integer</td><td>0 ... 4294967295</td><td>4</td></tr>
+<tr><td>i</td><td>Integer</td><td>-2147483648 ... 2147483647</td><td>4</td></tr>
+<tr><td>f</td><td>Fractional number</td><td>-</td><td>4</td></tr>
+<tr><td>s</td><td>String</td><td>-</td><td>-</td></tr>
+</tbody></table>
+<p>In some files a value may not be stored in the whole byte, but only part of it (e.g. 4 bits).</p>
+<p>As a result, one byte will store two values.</p>
+<p>In articles about binary files, sizes will be specified either in bits or in bytes.</p>
+<p>Strings necessarily have a null byte at the end, which indicates that the string has ended. For example: &quot;test_string0x0&quot;.</p>
+<p>As a result, the length of the string is equal to the number of characters in it + 1 (null byte).</p>
+<h3 id="blocks"><a class="header" href="#blocks">Blocks</a></h3>
+<p>In X-Ray, some binary files are in <a href="https://en.wikipedia.org/wiki/Resource_Interchange_File_Format">RIFF</a> format.</p>
+<p>Such files have blocks (also called chunks or sections).</p>
+<p>A block is binary data with a header.</p>
+<p>Block structure</p>
+<table><thead><tr><th>Data</th><th>Type</th></tr></thead><tbody>
+<tr><td>Identifier</td><td>H</td></tr>
+<tr><td>Compression</td><td>H</td></tr>
+<tr><td>Content size (bytes)</td><td>I</td></tr>
+<tr><td>Content</td><td>Binary data</td></tr>
+</tbody></table>
+<p>You can see from the identifier what is stored in a particular block.</p>
+<p>If the compression is set to 0x0000, the block is uncompressed, and if it is set to 0x8000, the block is compressed by the <a href="https://en.wikipedia.org/wiki/Huffman_coding">Huffman method</a>.</p>
+<p>You can use a program from xray_re_tools (trunk\garbage\lzhuf\lzhuf.c) to decompress compressed blocks.</p>
+<p>In the files of the final version of the game most blocks are uncompressed.</p>
+<p>The size of the block content indicates only the number of bytes of data (not including identifier, compression and size bytes).</p>
+<p>Binary block data can be represented by nested blocks.</p>
+<hr />
+<h2 id="sources"><a class="header" href="#sources">Sources</a></h2>
+<p><a href="http://stalkerin.gameru.net/wiki/index.php?title=%D0%91%D0%B8%D0%BD%D0%B0%D1%80%D0%BD%D1%8B%D0%B5_%D1%84%D0%B0%D0%B9%D0%BB%D1%8B">Source</a></p>
+<hr />
+<h1 id="anm-animated-paths"><a class="header" href="#anm-animated-paths">.anm (Animated paths)</a></h1>
+<hr />
+<h2 id="about-1"><a class="header" href="#about-1">About</a></h2>
+<p>A set of coordinates, which works as an animation of the actor's camera movement. It is also used for anomalies, which need to be given a path.</p>
+<h2 id="technical-information"><a class="header" href="#technical-information">Technical information</a></h2>
+<ul>
+<li>Order of rotation: YXZ</li>
+</ul>
+<h3 id="interpolation-types"><a class="header" href="#interpolation-types">Interpolation types</a></h3>
+<ul>
+<li>TCB</li>
+<li>BEZIER_2D</li>
+<li>BEZIER_1D</li>
+<li>LINEAR</li>
+<li><a href="https://en.wikipedia.org/wiki/Hermite_interpolation">HERMITE</a></li>
+</ul>
+<hr />
+<h2 id="programs-editing-this-file"><a class="header" href="#programs-editing-this-file">Programs editing this file</a></h2>
+<ul>
+<li><a href="../../blender/index.html">Blender (X-Ray Addon)</a></li>
+<li><a href="../../sdk/index.html">SDK 0.7</a></li>
+</ul>
+<hr />
+<h1 id="bumpdds"><a class="header" href="#bumpdds">bump#.dds</a></h1>
+<hr />
+<h2 id="about-2"><a class="header" href="#about-2">About</a></h2>
+<p>Corrects DXT compression errors in <a href="bump.html">.bump</a></p>
+<h2 id="technical-information-1"><a class="header" href="#technical-information-1">Technical information</a></h2>
+<h3 id="format"><a class="header" href="#format">Format</a></h3>
+<ul>
+<li>RGB - Error correction for normal map (bump.dds) - Not necessary if you're using good quality normal map. It's generated with SDK</li>
+<li>A - height map; used for parallax, if the use of it was turned on when setting up the texture</li>
+</ul>
+<h3 id="the-engine-currently-supports-the-following-compressions"><a class="header" href="#the-engine-currently-supports-the-following-compressions">The engine currently supports the following compressions</a></h3>
+<ul>
+<li>DXT5</li>
+<li>BC7</li>
+</ul>
+<hr />
+<h2 id="can-be-generated-by"><a class="header" href="#can-be-generated-by">Can be generated by</a></h2>
+<ul>
+<li><a href="../../modding-tools/bump-generator.html">Bump Generator</a></li>
+<li><a href="../../sdk/index.html">SDK 0.7</a></li>
+</ul>
+<hr />
+<h1 id="bumpdds-1"><a class="header" href="#bumpdds-1">bump.dds</a></h1>
+<hr />
+<h2 id="about-3"><a class="header" href="#about-3">About</a></h2>
+<p>The bump map is a regular normal map in A(BGR) format (typical for DXT5_nm compression format). The developers used this order for a very simple reason - DXT compression &quot;spoils&quot; the texture much less, since the alpha channel is not subjected to compression and remains almost in its original form.</p>
+<h2 id="technical-information-2"><a class="header" href="#technical-information-2">Technical information</a></h2>
+<h3 id="format-1"><a class="header" href="#format-1">Format</a></h3>
+<ul>
+<li>R - Glossiness (Glossiness, aka inverted roughness. It works best in stalker, and allows for using better BRDF)</li>
+<li>G - Normal Z (Unused in Anomaly 1.6.0)</li>
+<li>B - Normal Y (DIRECTX format.)</li>
+<li>A - Normal X</li>
+</ul>
+<h3 id="the-engine-currently-supports-the-following-compressions-1"><a class="header" href="#the-engine-currently-supports-the-following-compressions-1">The engine currently supports the following compressions</a></h3>
+<ul>
+<li>DXT5</li>
+<li>BC7</li>
+</ul>
+<hr />
+<h2 id="can-be-generated-by-1"><a class="header" href="#can-be-generated-by-1">Can be generated by</a></h2>
+<ul>
+<li><a href="../../modding-tools/bump-generator.html">Bump Generator</a></li>
+<li><a href="../../sdk/index.html">SDK 0.7</a></li>
+</ul>
+<hr />
+<h1 id="cform-collision-form"><a class="header" href="#cform-collision-form">.cform (Collision Form)</a></h1>
+<hr />
+<h2 id="about-4"><a class="header" href="#about-4">About</a></h2>
+<p>Contains a solid map structure. All tangible objects with materials live here. Because of this, the game knows with what sound and property objects should react when they are hit by bullets or walked on</p>
+<h2 id="technical-information-3"><a class="header" href="#technical-information-3">Technical information</a></h2>
+<ul>
+<li>Format version: 4</li>
+</ul>
+<p>The file consists of one block, which contains the following</p>
+<table><thead><tr><th></th><th>Value</th><th>Size</th></tr></thead><tbody>
+<tr><td>Version</td><td>4 for build 1537 and higher</td><td>DWord(4)</td></tr>
+<tr><td>Number of vertices</td><td>-</td><td>DWord(4)</td></tr>
+<tr><td>Number of triangles</td><td>-</td><td>DWord(4)</td></tr>
+<tr><td>BBox diagonal</td><td>-</td><td>24 bytes</td></tr>
+<tr><td>vertices</td><td>-</td><td>-</td></tr>
+<tr><td>triangles</td><td>-</td><td>-</td></tr>
+</tbody></table>
+<h3 id="bbox"><a class="header" href="#bbox">BBox</a></h3>
+<p>BBox describes the entire map, including absolutely all static objects.
+The BBox diagonal is represented by two vertices that have the same format as the others:</p>
+<table><thead><tr><th>Coordinates</th><th>Offset</th><th>Size</th></tr></thead><tbody>
+<tr><td>X coordinate</td><td>0</td><td>Single(4)</td></tr>
+<tr><td>Z coordinate</td><td>4</td><td>Single(4)</td></tr>
+<tr><td>Y coordinate</td><td>8</td><td>Single(4)</td></tr>
+</tbody></table>
+<h3 id="triangle"><a class="header" href="#triangle">Triangle</a></h3>
+<table><thead><tr><th></th><th>Offset</th><th>Size</th></tr></thead><tbody>
+<tr><td>First Index</td><td>0</td><td>DWord(4)</td></tr>
+<tr><td>Second index</td><td>4</td><td>DWord(4)</td></tr>
+<tr><td>Third index</td><td>8</td><td>DWord(4)</td></tr>
+<tr><td>Material ID (14 bits) and flags in the two highest bits</td><td>12</td><td>Word(2)</td></tr>
+<tr><td>Sector number</td><td>14</td><td>Word(2)</td></tr>
+</tbody></table>
+<hr />
+<h2 id="programs-editing-this-file-1"><a class="header" href="#programs-editing-this-file-1">Programs editing this file</a></h2>
+<ul>
+<li><a href="../../blender/index.html">Blender (X-Ray Addon)</a></li>
+<li><a href="../../sdk/index.html">SDK 0.7</a></li>
+</ul>
+<h2 id="sources-1"><a class="header" href="#sources-1">Sources</a></h2>
+<p><a href="http://stalkerin.gameru.net/wiki/index.php?title=Level.cform">Source</a></p>
+<hr />
+<h1 id="dds-directdraw-surface"><a class="header" href="#dds-directdraw-surface"><a href="https://en.wikipedia.org/wiki/DirectDraw_Surface">.dds (DirectDraw Surface)</a></a></h1>
+<hr />
+<h2 id="about-5"><a class="header" href="#about-5">About</a></h2>
+<p>DDS is most often used to store textures and is used in many 3D applications, as well as in modern 3D games. It allows you to store textures both in compressed and uncompressed form.</p>
+<h2 id="technical-information-4"><a class="header" href="#technical-information-4">Technical information</a></h2>
+<h3 id="format-2"><a class="header" href="#format-2">Format</a></h3>
+<ul>
+<li>RGB - Diffuse colour</li>
+<li>A - Alpha (Used for translucent/transparent shaders like glass/grass)</li>
+</ul>
+<h3 id="the-engine-currently-supports-the-following-compressions-2"><a class="header" href="#the-engine-currently-supports-the-following-compressions-2">The engine currently supports the following compressions</a></h3>
+<ul>
+<li>DXT1</li>
+<li>DXT5</li>
+</ul>
+<hr />
+<h2 id="programs-editing-this-file-2"><a class="header" href="#programs-editing-this-file-2">Programs editing this file</a></h2>
+<ul>
+<li>Any program that works with .dds files (Example: Paint.net or GIMP)</li>
+</ul>
+<hr />
+<h1 id="detail_map_name_with-bump-or-bumpdds"><a class="header" href="#detail_map_name_with-bump-or-bumpdds"><em>detail_map_name_(with bump or bump#)</em>.dds</a></h1>
+<hr />
+<h2 id="about-6"><a class="header" href="#about-6">About</a></h2>
+<p>Same as a regular <a href="dds.html">.dds</a> texture, needed as an extra map in a <a href="thm.html">.thm</a></p>
+<h2 id="technical-information-5"><a class="header" href="#technical-information-5">Technical information</a></h2>
+<p>The same as the <a href="dds.html">.dds</a>. But overlaid on top of an existing texture, for more detail</p>
+<blockquote>
+<p>Example:</p>
+</blockquote>
+<p><img src="images/detail_stucco_det1.png" alt="example centered" /></p>
+<hr />
+<h2 id="programs-editing-this-file-3"><a class="header" href="#programs-editing-this-file-3">Programs editing this file</a></h2>
+<ul>
+<li>Any program that works with .dds files (Example: Paint.net or GIMP)</li>
+</ul>
+<hr />
+<h1 id="details"><a class="header" href="#details">.details</a></h1>
+<hr />
+<h2 id="about-7"><a class="header" href="#about-7">About</a></h2>
+<p>Detailed objects (grass, cigarette butts, construction debris) on the level</p>
+<h2 id="technical-information-6"><a class="header" href="#technical-information-6">Technical information</a></h2>
+<ul>
+<li>Format version: 3</li>
+</ul>
+<h3 id="general-structure---file-blocks"><a class="header" href="#general-structure---file-blocks">General structure - file blocks</a></h3>
+<p>It consists of three <a href="https://en.wikipedia.org/wiki/Resource_Interchange_File_Format">RIFF</a> sections (blocks):</p>
+<table><thead><tr><th>Block ID</th><th>Size (bytes)</th><th>Description</th></tr></thead><tbody>
+<tr><td>0x0</td><td>24</td><td>headline</td></tr>
+<tr><td>0x1</td><td>-</td><td>object models (in <a href="dm.html">.dm</a> format)</td></tr>
+<tr><td>0x2</td><td>-</td><td>table of 2x2 meter cells, setting the density and species diversity of objects on the map</td></tr>
+</tbody></table>
+<p>Block order in version 3: 0x1, 0x2, 0x0</p>
+<p>One cell (slot) is a parallelepiped.</p>
+<p>The dimensions of all cells along the X and Z axes are the same and equal to 2 meters.</p>
+<p>The height of the slot (the dimensions of the parallelepiped along the Y axis) in all the slots is individual.</p>
+<p><img src="images/Level_details_slot_in_level_editor.png" alt="level-details-slot-in-level-editor centered" /></p>
+<p>slot in the Level Editor</p>
+<h3 id="blocks-1"><a class="header" href="#blocks-1">Blocks</a></h3>
+<h4 id="block-0x0-header"><a class="header" href="#block-0x0-header">Block 0x0 (header)</a></h4>
+<table><thead><tr><th>Type</th><th>Description</th></tr></thead><tbody>
+<tr><td>I</td><td>format version</td></tr>
+<tr><td>I</td><td>number of dm models in the file</td></tr>
+<tr><td>i</td><td>offset of the table cells along the X axis</td></tr>
+<tr><td>i</td><td>offset of the table cells along the Z axis</td></tr>
+<tr><td>I</td><td>the number of table cells on the X axis</td></tr>
+<tr><td>I</td><td>the number of table cells on the Z axis</td></tr>
+</tbody></table>
+<h4 id="block-0x1-meshes"><a class="header" href="#block-0x1-meshes">Block 0x1 (meshes)</a></h4>
+<p>A block consists of nested blocks.</p>
+<p>The nested block identifier is the mesh index of the detailed object.</p>
+<p>Nested block data is a mesh in .dm format</p>
+<h4 id="block-0x2-slotscell-table"><a class="header" href="#block-0x2-slotscell-table">Block 0x2 (slots/cell table)</a></h4>
+<p>The block stores cells (slots).</p>
+<p>The slots in this block are written alternately.</p>
+<p>Up to four meshes of detailed objects can be attached to each slot.</p>
+<p>The mesh index of a detailed object can be in the range [0 ... 62] (63 is no mesh).</p>
+<p>One slot's data is stored in 16 bytes (128 bits), which store the following:</p>
+<table><thead><tr><th>Size (in bits)</th><th>Description</th></tr></thead><tbody>
+<tr><td>12</td><td>Coordinate of the bottom edge of the slot on the Y axis (this value should be multiplied by 0.2 meters)</td></tr>
+<tr><td>8</td><td>Height of the slot (this value should be multiplied by 0.1 meter)</td></tr>
+<tr><td>6</td><td>Identifier of the first mesh of vegetation</td></tr>
+<tr><td>6</td><td>Identifier of the second mesh of vegetation</td></tr>
+<tr><td>6</td><td>Identifier of the third mesh of vegetation</td></tr>
+<tr><td>6</td><td>Identifier of the fourth mesh of vegetation</td></tr>
+<tr><td>4</td><td>Shade from the sun</td></tr>
+<tr><td>4</td><td>Hemi lighting</td></tr>
+<tr><td>4</td><td>Red component of static light sources</td></tr>
+<tr><td>4</td><td>Green component of static light sources</td></tr>
+<tr><td>4</td><td>Blue component of static light sources</td></tr>
+<tr><td>4</td><td>Density of the first mesh in the left front corner of the slot</td></tr>
+<tr><td>4</td><td>Density of the first mesh in the right front corner of the slot</td></tr>
+<tr><td>4</td><td>Density of the first mesh in the left rear corner of the slot</td></tr>
+<tr><td>4</td><td>Density of the first mesh in the right rear corner of the slot</td></tr>
+<tr><td>4</td><td>Density of the second mesh in the left front corner of the slot</td></tr>
+<tr><td>4</td><td>Density of the second mesh in the right front corner of the slot</td></tr>
+<tr><td>4</td><td>Density of the second mesh in the left rear corner of the slot</td></tr>
+<tr><td>4</td><td>Density of the second mesh in the right rear corner of the slot</td></tr>
+<tr><td>4</td><td>Density of the third mesh in the left front corner of the slot</td></tr>
+<tr><td>4</td><td>Density of the third mesh in the right front corner of the slot</td></tr>
+<tr><td>4</td><td>Density of the third mesh in the left rear corner of the slot</td></tr>
+<tr><td>4</td><td>Density of the third mesh in the right rear corner of the slot</td></tr>
+<tr><td>4</td><td>Density of the fourth mesh in the left front corner of the slot</td></tr>
+<tr><td>4</td><td>Density of the fourth mesh in the right front corner of the slot</td></tr>
+<tr><td>4</td><td>Density of the fourth mesh in the left rear corner of the slot</td></tr>
+<tr><td>4</td><td>Density of the fourth mesh in the right rear corner of the slot</td></tr>
+</tbody></table>
+<p>As you can see from the table, each slot has 16 density values.</p>
+<p>Each of the four meshes has four density values (for the four corners of the slot).</p>
+<p>The density values within a slot are interpolated from the density values of the slot corners.</p>
+<p>Let us denote the densities as follows:</p>
+<ul>
+<li>
+<p>a0 - density for the left front corner of the slot</p>
+</li>
+<li>
+<p>a1 - density for the right front corner of the slot</p>
+</li>
+<li>
+<p>a2 - density for the left rear corner of the slot</p>
+</li>
+<li>
+<p>a3 - density for the right rear corner of the slot</p>
+</li>
+</ul>
+<p>If you look at the slot from above, the densities will look like this:</p>
+<p><img src="images/Level_details_slot_density_example.png" alt="level-details-slot-density-example centered" /></p>
+<p>Mesh density, slot view from above</p>
+<p>Restrictions are imposed on the position of slots along the Y axis.</p>
+<p>The lower limit is -200 meters.</p>
+<p>And the allowed range: from -200 meters to 619 meters (0.2 * 4095 - 200).</p>
+<p>The maximum height of the slot (parallelepiped) is: 25.5 (0.1 * 255).</p>
+<p>The upper boundary of the slot is equal to: the lower boundary + the height of the slot.</p>
+<hr />
+<h2 id="programs-editing-this-file-4"><a class="header" href="#programs-editing-this-file-4">Programs editing this file</a></h2>
+<ul>
+<li><a href="../../blender/index.html">Blender (X-Ray Addon)</a></li>
+<li><a href="../../sdk/index.html">SDK 0.7</a></li>
+</ul>
+<h2 id="sources-2"><a class="header" href="#sources-2">Sources</a></h2>
+<p><a href="http://stalkerin.gameru.net/wiki/index.php?title=Level.details">Source</a></p>
+<hr />
+<h1 id="dm-detail-model"><a class="header" href="#dm-detail-model">.dm (Detail Model)</a></h1>
+<hr />
+<h2 id="about-8"><a class="header" href="#about-8">About</a></h2>
+<p>Effect of a dynamic weather environment (e.g., rain or lightning)</p>
+<h2 id="technical-information-7"><a class="header" href="#technical-information-7">Technical information</a></h2>
+<p>It works like this: UV descends down the Y coordinates to the texture</p>
+<p><img src="images/dm.gif" alt="example" /></p>
+<h3 id="format-limitations"><a class="header" href="#format-limitations">Format limitations</a></h3>
+<ul>
+<li>Must have one material</li>
+<li>Does not support antialiasing</li>
+</ul>
+<h3 id="general-structure"><a class="header" href="#general-structure">General structure</a></h3>
+<table><thead><tr><th>Data</th></tr></thead><tbody>
+<tr><td><a href="#shader-name">shader name</a></td></tr>
+<tr><td><a href="#texture-name">texture name</a></td></tr>
+<tr><td><a href="#flags">flags</a></td></tr>
+<tr><td><a href="#minimum-size">minimum size</a></td></tr>
+<tr><td><a href="#maximum-size">maximum size</a></td></tr>
+<tr><td><a href="#number-of-vertices">number of vertices</a></td></tr>
+<tr><td><a href="#number-of-indexes">number of indexes</a></td></tr>
+<tr><td><a href="#vertices">vertices</a></td></tr>
+<tr><td><a href="#indexes">indexes</a></td></tr>
+</tbody></table>
+<h3 id="structure-description"><a class="header" href="#structure-description">Structure description</a></h3>
+<h4 id="shader-name"><a class="header" href="#shader-name">Shader name</a></h4>
+<table><thead><tr><th>Data</th><th>Type</th><th>Description</th><th>Example</th></tr></thead><tbody>
+<tr><td>shader name</td><td>s</td><td>The line that specifies the name of the shader from the shaders.xr file</td><td>effects\lightning0x00</td></tr>
+</tbody></table>
+<h4 id="texture-name"><a class="header" href="#texture-name">Texture name</a></h4>
+<table><thead><tr><th>Data</th><th>Type</th><th>Description</th><th>Example</th></tr></thead><tbody>
+<tr><td>texture name</td><td>s</td><td>A string that specifies the path and the name of the texture</td><td>fx\fx_rainsplash10x00</td></tr>
+</tbody></table>
+<h4 id="flags"><a class="header" href="#flags">Flags</a></h4>
+<table><thead><tr><th>Data</th><th>Type</th><th>Description</th><th>Example</th></tr></thead><tbody>
+<tr><td>flags</td><td>I</td><td>These are options. Used in the file level.details</td><td>If 0x0, the vegetation swings in the wind (bushes), and if 0x1, it is stationary (leaves)</td></tr>
+</tbody></table>
+<h4 id="minimum-size"><a class="header" href="#minimum-size">Minimum size</a></h4>
+<table><thead><tr><th>Data</th><th>Type</th><th>Description</th><th>Example</th></tr></thead><tbody>
+<tr><td>minimum size</td><td>f</td><td>The minimum size of the model. These values are used in the level.details files</td><td>-</td></tr>
+</tbody></table>
+<h4 id="maximum-size"><a class="header" href="#maximum-size">Maximum size</a></h4>
+<table><thead><tr><th>Data</th><th>Type</th><th>Description</th><th>Example</th></tr></thead><tbody>
+<tr><td>maximum size</td><td>f</td><td>Maximum model size. These values are used in the level.details files</td><td>-</td></tr>
+</tbody></table>
+<h4 id="number-of-vertices"><a class="header" href="#number-of-vertices">Number of vertices</a></h4>
+<table><thead><tr><th>Data</th><th>Type</th><th>Description</th><th>Example</th></tr></thead><tbody>
+<tr><td>number of vertices</td><td>I</td><td>Number of vertices in a mesh</td><td>-</td></tr>
+</tbody></table>
+<h4 id="number-of-indexes"><a class="header" href="#number-of-indexes">Number of indexes</a></h4>
+<table><thead><tr><th>Data</th><th>Type</th><th>Description</th><th>Example</th></tr></thead><tbody>
+<tr><td>number of indexes</td><td>I</td><td>Number of indexes by which triangles are built</td><td>-</td></tr>
+</tbody></table>
+<h4 id="vertices"><a class="header" href="#vertices">Vertices</a></h4>
+<p>The vertices are stored sequentially.</p>
+<p>The structure of a single vertex:</p>
+<table><thead><tr><th>Data</th><th>Type</th></tr></thead><tbody>
+<tr><td>3D coordinate x</td><td>f</td></tr>
+<tr><td>3D coordinate y</td><td>f</td></tr>
+<tr><td>3D coordinate z</td><td>f</td></tr>
+<tr><td>texture coordinate u</td><td>f</td></tr>
+<tr><td>texture coordinate v</td><td>f</td></tr>
+</tbody></table>
+<p>Restrictions are imposed on the vertices:</p>
+<ol>
+<li>one vertex may have only one texture coordinate. When saving the model in *.dm, a vertex that has two (or more) texture coordinates is converted into two (or more) vertices.</li>
+<li>Their number should not be more than 65536, because their triangle indices are stored in 2 bytes.</li>
+</ol>
+<h4 id="indexes"><a class="header" href="#indexes">Indexes</a></h4>
+<p>The indices of the vertices by which triangles are formed.</p>
+<p>The indexes are stored sequentially.</p>
+<p>The index structure:</p>
+<table><thead><tr><th>Data</th><th>Type</th></tr></thead><tbody>
+<tr><td>vertex index</td><td>H</td></tr>
+</tbody></table>
+<hr />
+<h2 id="programs-editing-this-file-5"><a class="header" href="#programs-editing-this-file-5">Programs editing this file</a></h2>
+<ul>
+<li><a href="../../blender/index.html">Blender (X-Ray Addon)</a></li>
+<li><a href="../../modding-tools-and-resources/modding-modding-tools/xray-export-tool.html">X-Ray Export Tool (Object Tool)</a></li>
+<li><a href="../../sdk/index.html">SDK 0.7</a></li>
+</ul>
+<h2 id="sources-3"><a class="header" href="#sources-3">Sources</a></h2>
+<p><a href="http://stalkerin.gameru.net/wiki/index.php?title=%D0%A4%D0%BE%D1%80%D0%BC%D0%B0%D1%82_%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2_*.dm">Source</a></p>
+<hr />
+<h1 id="efd-evaluation-function-data"><a class="header" href="#efd-evaluation-function-data">.efd (Evaluation Function Data)</a></h1>
+<hr />
+<h2 id="about-9"><a class="header" href="#about-9">About</a></h2>
+<p>Table of AI heuristic parameters, contains constants for fine-tuning A-Life. They are used as input parameters in scripts.</p>
+<h2 id="example"><a class="header" href="#example">Example</a></h2>
+<p><code>anomalydetectprobability.efd</code></p>
+<pre><code class="language-ini">[values]
+offset_0: value_0 = 1
+offset_4: value_1 = 1
+offset_8: value_2 = 2
+offset_12: value_3 = 8
+offset_16: value_4 = 3
+offset_20: value_5 = 49
+offset_24: value_6 = 9
+offset_28: value_7 = 79
+offset_32: value_8 = 20
+offset_36: value_9 = 100
+offset_40: value_10 = 1
+offset_44: value_11 = 2
+offset_48: value_12 = 0
+offset_52: value_13 = 1
+offset_56: value_14 = 19.9940643310547
+offset_60: value_15 = 59.9821968078613
+offset_64: value_16 = 99.9703216552734
+offset_68: value_17 = 19.9940643310547
+offset_72: value_18 = 59.9821968078613
+offset_76: value_19 = 99.9703216552734
+offset_80: value_20 = 29.9910984039307
+offset_84: value_21 = 59.9821968078613
+offset_88: value_22 = 89.9732894897461
+offset_92: value_23 = 69.9792251586914
+offset_96: value_24 = 74.9777450561523
+offset_100: value_25 = 84.9747772216797
+offset_104: value_26 = 89.9732894897461
+offset_108: value_27 = 89.9732894897461
+offset_112: value_28 = 89.9732894897461
+offset_116: value_29 = 79.9762573242188
+offset_120: value_30 = 79.9762573242188
+offset_124: value_31 = 79.9762573242188
+offset_128: value_32 = 79.9762573242188
+offset_132: value_33 = 79.9762573242188
+offset_136: value_34 = 79.9762573242188
+offset_140: value_35 = 39.9881286621094
+offset_144: value_36 = 49.9851608276367
+offset_148: value_37 = 79.9762573242188
+</code></pre>
+<hr />
+<h2 id="programs-editing-this-file-6"><a class="header" href="#programs-editing-this-file-6">Programs editing this file</a></h2>
+<ul>
+<li>Evaluation Function Consctructor</li>
+</ul>
+<h2 id="sources-4"><a class="header" href="#sources-4">Sources</a></h2>
+<p><a href="https://www.gameru.net/forum/index.php?showtopic=41944">Source</a></p>
+<hr />
+<h1 id="err"><a class="header" href="#err">.err</a></h1>
+<hr />
+<h2 id="about-10"><a class="header" href="#about-10">About</a></h2>
+<p>Contains information about geometry errors during level compilation with xrLC.exe</p>
+<h2 id="technical-information-8"><a class="header" href="#technical-information-8">Technical information</a></h2>
+<p>It consists of three blocks:</p>
+<table><thead><tr><th>Block ID</th><th>Size (bytes)</th><th>Description</th></tr></thead><tbody>
+<tr><td>0x0</td><td><a href="#block-0x0-vertices">number of vertices</a> * 12 + 4</td><td>vertices</td></tr>
+<tr><td>0x1</td><td><a href="#block-0x1-edges">number of edges</a> * 24 + 4</td><td>edges</td></tr>
+<tr><td>0x2</td><td><a href="#block-0x2-triangles">number of triangles</a> * 36 + 4</td><td>triangles</td></tr>
+</tbody></table>
+<h3 id="blocks-2"><a class="header" href="#blocks-2">Blocks</a></h3>
+<p>All vertices in the file are stored in the following structure:</p>
+<table><thead><tr><th>Type</th><th>Description</th></tr></thead><tbody>
+<tr><td>f</td><td>3D coordinate X</td></tr>
+<tr><td>f</td><td>3D coordinate Y</td></tr>
+<tr><td>f</td><td>3D coordinate Z</td></tr>
+</tbody></table>
+<h4 id="block-0x0-vertices"><a class="header" href="#block-0x0-vertices">Block 0x0 (vertices)</a></h4>
+<p>Contains vertices that were glued during compilation.</p>
+<p>Block structure:</p>
+<table><thead><tr><th>Type</th><th>Description</th></tr></thead><tbody>
+<tr><td>I</td><td>number of vertices</td></tr>
+<tr><td></td><td>vertices</td></tr>
+</tbody></table>
+<h4 id="block-0x1-edges"><a class="header" href="#block-0x1-edges">Block 0x1 (edges)</a></h4>
+<p>Contains edges that were deleted during compilation.</p>
+<p>Block structure:</p>
+<table><thead><tr><th>Type</th><th>Description</th></tr></thead><tbody>
+<tr><td>I</td><td>number of edges</td></tr>
+<tr><td></td><td>edges</td></tr>
+</tbody></table>
+<h5 id="structure-of-a-single-edge"><a class="header" href="#structure-of-a-single-edge">Structure of a single edge</a></h5>
+<table><thead><tr><th>Type</th><th>Description</th></tr></thead><tbody>
+<tr><td></td><td>first vertex</td></tr>
+<tr><td></td><td>second vertex</td></tr>
+</tbody></table>
+<h4 id="block-0x2-triangles"><a class="header" href="#block-0x2-triangles">Block 0x2 (triangles)</a></h4>
+<p>Contains broken triangles (the area of which is close to 0.0).</p>
+<p>Block structure:</p>
+<table><thead><tr><th>Type</th><th>Description</th></tr></thead><tbody>
+<tr><td>I</td><td>number of triangles</td></tr>
+<tr><td></td><td>triangles</td></tr>
+</tbody></table>
+<h5 id="structure-of-a-single-triangle"><a class="header" href="#structure-of-a-single-triangle">Structure of a single triangle</a></h5>
+<table><thead><tr><th>Type</th><th>Description</th></tr></thead><tbody>
+<tr><td></td><td>first vertex</td></tr>
+<tr><td></td><td>second vertex</td></tr>
+<tr><td></td><td>third vertex</td></tr>
+</tbody></table>
+<hr />
+<h2 id="programs-editing-this-file-7"><a class="header" href="#programs-editing-this-file-7">Programs editing this file</a></h2>
+<ul>
+<li><a href="../../blender/index.html">Blender (X-Ray Addon)</a></li>
+<li><a href="../../sdk/index.html">SDK 0.7</a></li>
+</ul>
+<h2 id="sources-5"><a class="header" href="#sources-5">Sources</a></h2>
+<p><a href="http://stalkerin.gameru.net/wiki/index.php?title=%D0%A4%D0%BE%D1%80%D0%BC%D0%B0%D1%82_%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2_*.err">Source</a></p>
+<hr />
+<h1 id="geom"><a class="header" href="#geom">.geom</a></h1>
+<hr />
+<blockquote>
+<p>The format was disassembled by Haper (not completely disassembled, adjustments are needed)</p>
+</blockquote>
+<h2 id="about-11"><a class="header" href="#about-11">About</a></h2>
+<p>Contains all visible map geometry. It contains all vertices with normals and coordinates for textures and indexes for building geometry, as well as synchronization.</p>
+<hr />
+<h2 id="technical-information-9"><a class="header" href="#technical-information-9">Technical information</a></h2>
+<h2 id="the-file-consists-of-the-following-blocks"><a class="header" href="#the-file-consists-of-the-following-blocks">The file consists of the following blocks</a></h2>
+<table><thead><tr><th></th><th>Block code</th></tr></thead><tbody>
+<tr><td><a href="#map-compiler-version-the-block-is-the-same-for-all-maps">Map compiler version</a></td><td>1</td></tr>
+<tr><td><a href="#vertex-description">Vertex description</a></td><td>9</td></tr>
+<tr><td><a href="#indexes-description">Indexes description</a></td><td>10</td></tr>
+<tr><td><a href="#synchronization-description">Synchronization description</a></td><td>11</td></tr>
+</tbody></table>
+<hr />
+<p><strong>Types of variables</strong></p>
+<table><thead><tr><th>Type code</th><th>Value</th></tr></thead><tbody>
+<tr><td>1</td><td>DWord(4) + DWord(4)</td></tr>
+<tr><td>4</td><td>Byte(1) + Byte(1) + Byte(1) + Byte(1)</td></tr>
+<tr><td>6</td><td>Word(2)/32768 + Word(2)/32768</td></tr>
+<tr><td>7</td><td>(Byte(1)-128)/128 + (Byte(1)-128)/128 + (Byte(1)-128)/128 + (Byte(1)-128)/128</td></tr>
+</tbody></table>
+<h3 id="map-compiler-version-the-block-is-the-same-for-all-maps"><a class="header" href="#map-compiler-version-the-block-is-the-same-for-all-maps">Map compiler version (the block is the same for all maps)</a></h3>
+<table><thead><tr><th></th><th>Value</th><th>Size</th></tr></thead><tbody>
+<tr><td>Block code</td><td>1</td><td>Word(2)</td></tr>
+<tr><td>Data compression (0 - no, 32768 - yes)</td><td>0</td><td>Word(2)</td></tr>
+<tr><td>Block size (bytes)</td><td>4</td><td>DWord(4)</td></tr>
+<tr><td>Version number (same for all)</td><td>13</td><td>DWord(4)</td></tr>
+</tbody></table>
+<h3 id="vertex-description"><a class="header" href="#vertex-description">Vertex description</a></h3>
+<table><thead><tr><th></th><th>Value</th><th>Size</th></tr></thead><tbody>
+<tr><td>Block code</td><td>9</td><td>Word(2)</td></tr>
+<tr><td>Data compression (0 - no, 32768 - yes)</td><td>0</td><td>Word(2)</td></tr>
+<tr><td>Block size (bytes)</td><td>4</td><td>DWord(4)</td></tr>
+<tr><td>Number of vertex description blocks</td><td>-</td><td>DWord(4)</td></tr>
+<tr><td>Vertex description block</td><td>-</td><td>-</td></tr>
+</tbody></table>
+<h4 id="vertex-description-block"><a class="header" href="#vertex-description-block">Vertex description block</a></h4>
+<table><thead><tr><th></th><th>Value</th><th>Size</th></tr></thead><tbody>
+<tr><td>Beginning of a new block</td><td>0</td><td>DWord(4)</td></tr>
+<tr><td>Beginning of the vertex format description</td><td>2</td><td>DWord(4)</td></tr>
+<tr><td>Vertex format</td><td>-</td><td>-</td></tr>
+<tr><td>End of vertex format description</td><td>255</td><td>DWord(4)</td></tr>
+<tr><td>Beginning of the vertex description</td><td>17</td><td>DWord(4)</td></tr>
+<tr><td>Number of vertices</td><td>-</td><td>DWord(4)</td></tr>
+<tr><td>Vertexes</td><td>-</td><td>-</td></tr>
+</tbody></table>
+<blockquote>
+<p>A few words about the vertex format. As you already know, there are several vertex description blocks in the file. Not all objects in the game are the same: you have to specify coordinates of lightmaps for brushes, and coordinates of textures for trees can be simplified. Therefore, vertices specified in different blocks may be different. The vertex format is specified using several structures - this is the standard D3D vertex buffer format. That is, the file contains ready assembled vertex buffers for D3D:</p>
+</blockquote>
+<table><thead><tr><th></th><th>Value</th><th>Size</th></tr></thead><tbody>
+<tr><td>???(always zero)</td><td>0</td><td>Word(2)</td></tr>
+<tr><td>Offset</td><td>-</td><td>Word(2)</td></tr>
+<tr><td>Type of variables</td><td>-</td><td>Word(2)</td></tr>
+<tr><td>What the variables describe</td><td>-</td><td>Word(2)</td></tr>
+</tbody></table>
+<blockquote>
+<p>At the very beginning of any vertex are the coordinates of its placement, so the vertex format does not include a description of the coordinates. There are only three vertex formats in the 2215 maps:</p>
+</blockquote>
+<p><strong>Vegetation</strong></p>
+<table><thead><tr><th></th><th>Value</th><th>Size</th></tr></thead><tbody>
+<tr><td>zero</td><td>0</td><td>Word(2)</td></tr>
+<tr><td>Offset</td><td>12</td><td>Word(2)</td></tr>
+<tr><td>Type of variables</td><td>4</td><td>Word(2)</td></tr>
+<tr><td>Normals</td><td>3</td><td>Word(2)</td></tr>
+<tr><td>Light factor(?)</td><td>?</td><td>Word(2)</td></tr>
+<tr><td>Offset</td><td>16</td><td>Word(2)</td></tr>
+<tr><td>Type of variables</td><td>4</td><td>Word(2)</td></tr>
+<tr><td>Tangents</td><td>6</td><td>Word(2)</td></tr>
+<tr><td>Texture corrector X coordinate</td><td>0/1</td><td>Word(2)</td></tr>
+<tr><td>Offset</td><td>20</td><td>Word(2)</td></tr>
+<tr><td>Type of variables</td><td>4</td><td>Word(2)</td></tr>
+<tr><td>Bi-Tangents</td><td>7</td><td>Word(2)</td></tr>
+<tr><td>Texture corrector Y coordinate</td><td>0/1</td><td>Word(2)</td></tr>
+<tr><td>Offset</td><td>24</td><td>Word(2)</td></tr>
+<tr><td>Type of variables</td><td>7</td><td>Word(2)</td></tr>
+<tr><td>Texture coordinates</td><td>5</td><td>Word(2)</td></tr>
+</tbody></table>
+<blockquote>
+<p>Thus, the total length of one vegetation vertex equals 32 bytes.</p>
+</blockquote>
+<p><strong>Brush</strong></p>
+<table><thead><tr><th></th><th>Value</th><th>Size</th></tr></thead><tbody>
+<tr><td>zero</td><td>0</td><td>Word(2)</td></tr>
+<tr><td>Offset</td><td>12</td><td>Word(2)</td></tr>
+<tr><td>Type of variables</td><td>4</td><td>Word(2)</td></tr>
+<tr><td>Normals</td><td>3</td><td>Word(2)</td></tr>
+<tr><td>Light factor(?)</td><td>?</td><td>Word(2)</td></tr>
+<tr><td>Offset</td><td>16</td><td>Word(2)</td></tr>
+<tr><td>Type of variables</td><td>4</td><td>Word(2)</td></tr>
+<tr><td>Tangents</td><td>6</td><td>Word(2)</td></tr>
+<tr><td>Texture corrector X coordinate</td><td>0/1</td><td>Word(2)</td></tr>
+<tr><td>Offset</td><td>20</td><td>Word(2)</td></tr>
+<tr><td>Type of variables</td><td>4</td><td>Word(2)</td></tr>
+<tr><td>Bi-Tangents</td><td>7</td><td>Word(2)</td></tr>
+<tr><td>Texture corrector Y coordinate</td><td>0/1</td><td>Word(2)</td></tr>
+<tr><td>Offset</td><td>24</td><td>Word(2)</td></tr>
+<tr><td>Type of variables</td><td>1</td><td>Word(2)</td></tr>
+<tr><td>Texture coordinates</td><td>5</td><td>Word(2)</td></tr>
+<tr><td>zero</td><td>0</td><td>Word(2)</td></tr>
+<tr><td>Offset</td><td>32</td><td>Word(2)</td></tr>
+<tr><td>Type of variables</td><td>6</td><td>Word(2)</td></tr>
+<tr><td>Lightmap coordinates</td><td>261</td><td>Word(2)</td></tr>
+</tbody></table>
+<blockquote>
+<p>The total length of one brash vertex is 36 bytes.</p>
+</blockquote>
+<p><strong>Entity</strong></p>
+<table><thead><tr><th></th><th>Value</th><th>Size</th></tr></thead><tbody>
+<tr><td>zero</td><td>0</td><td>Word(2)</td></tr>
+<tr><td>Offset</td><td>12</td><td>Word(2)</td></tr>
+<tr><td>Type of variables</td><td>4</td><td>Word(2)</td></tr>
+<tr><td>Normals</td><td>3</td><td>Word(2)</td></tr>
+<tr><td>Light factor(?)</td><td>?</td><td>Word(2)</td></tr>
+<tr><td>Offset</td><td>16</td><td>Word(2)</td></tr>
+<tr><td>Type of variables</td><td>4</td><td>Word(2)</td></tr>
+<tr><td>Tangents</td><td>6</td><td>Word(2)</td></tr>
+<tr><td>Texture corrector X coordinate</td><td>0/1</td><td>Word(2)</td></tr>
+<tr><td>Offset</td><td>20</td><td>Word(2)</td></tr>
+<tr><td>Type of variables</td><td>4</td><td>Word(2)</td></tr>
+<tr><td>Bi-Tangents</td><td>7</td><td>Word(2)</td></tr>
+<tr><td>Texture corrector Y coordinate</td><td>0/1</td><td>Word(2)</td></tr>
+<tr><td>Offset</td><td>24</td><td>Word(2)</td></tr>
+<tr><td>Type of variables</td><td>4</td><td>Word(2)</td></tr>
+<tr><td>???</td><td>10</td><td>Word(2)</td></tr>
+<tr><td>zero</td><td>0</td><td>Word(2)</td></tr>
+<tr><td>Offset</td><td>28</td><td>Word(2)</td></tr>
+<tr><td>Type of variables</td><td>1</td><td>Word(2)</td></tr>
+<tr><td>Texture coordinates</td><td>5</td><td>Word(2)</td></tr>
+</tbody></table>
+<blockquote>
+<p>The total length of one vertex of an entity is 36 bytes.
+Based on this, we get, for example, this view of the vertex:</p>
+</blockquote>
+<p><strong>Brush</strong></p>
+<table><thead><tr><th></th><th>Value</th><th>Offset</th><th>Size</th></tr></thead><tbody>
+<tr><td>Coordinate X</td><td>30.76</td><td>0</td><td>DWord(4)</td></tr>
+<tr><td>Coordinate Z</td><td>0.2</td><td>4</td><td>DWord(4)</td></tr>
+<tr><td>Coordinate Y</td><td>51.4</td><td>8</td><td>DWord(4)</td></tr>
+<tr><td>Normal at X</td><td>127</td><td>12</td><td>Byte(1)</td></tr>
+<tr><td>Normal at Z</td><td>255</td><td>13</td><td>Byte(1)</td></tr>
+<tr><td>Normal at Y</td><td>127</td><td>14</td><td>Byte(1)</td></tr>
+<tr><td>Light factor(?)</td><td>1</td><td>15</td><td>Byte(1)</td></tr>
+<tr><td>Tangent at X</td><td>127</td><td>16</td><td>Byte(1)</td></tr>
+<tr><td>Tangent at Z</td><td>255</td><td>17</td><td>Byte(1)</td></tr>
+<tr><td>Tangent at Y</td><td>255</td><td>18</td><td>Byte(1)</td></tr>
+<tr><td>Texture corrector X coordinate</td><td>0</td><td>19</td><td>Byte(1)</td></tr>
+<tr><td>Bi-Tangent at X</td><td>0</td><td>20</td><td>Byte(1)</td></tr>
+<tr><td>Bi-Tangent at Z</td><td>127</td><td>21</td><td>Byte(1)</td></tr>
+<tr><td>Bi-Tangent at Y</td><td>127</td><td>22</td><td>Byte(1)</td></tr>
+<tr><td>Texture corrector Y coordinate</td><td>0</td><td>23</td><td>Byte(1)</td></tr>
+<tr><td>Texture coordinate X</td><td>3.1802</td><td>24</td><td>Single(4)</td></tr>
+<tr><td>Texture coordinate Y</td><td>2.2143</td><td>28</td><td>Single(4)</td></tr>
+<tr><td>Lightmap coordinate X</td><td>0.4023</td><td>32</td><td>ShortSingle(2)</td></tr>
+<tr><td>Lightmap coordinate Y</td><td>0.000097</td><td>34</td><td>ShortSingle(2)</td></tr>
+</tbody></table>
+<h3 id="indexes-description"><a class="header" href="#indexes-description">Indexes description</a></h3>
+<table><thead><tr><th></th><th>Value</th><th>Size</th></tr></thead><tbody>
+<tr><td>Block code</td><td>10</td><td>Word(2)</td></tr>
+<tr><td>Data compression (0 - no, 32768 - yes)</td><td></td><td>Word(2)</td></tr>
+<tr><td>Block size (bytes)</td><td>-</td><td>DWord(4)</td></tr>
+<tr><td>Number of index description blocks</td><td>-</td><td>DWord(4)</td></tr>
+<tr><td>Index description block</td><td>-</td><td>-</td></tr>
+</tbody></table>
+<h4 id="index-description-block"><a class="header" href="#index-description-block">Index description block</a></h4>
+<table><thead><tr><th></th><th>Value</th><th>Size</th></tr></thead><tbody>
+<tr><td>Number of indexes in a block</td><td>-</td><td>DWord(4)</td></tr>
+<tr><td>Indexes</td><td>-</td><td>DWord(4)</td></tr>
+</tbody></table>
+<blockquote>
+<p>Index: Word(2) .
+The number of indexes must always be a multiple of three, because triangles are constructed using indexes.</p>
+</blockquote>
+<h3 id="synchronization-description"><a class="header" href="#synchronization-description">Synchronization description</a></h3>
+<blockquote>
+<p>(what they synchronize is still a mystery to scientists)</p>
+</blockquote>
+<table><thead><tr><th></th><th>Value</th><th>Size</th></tr></thead><tbody>
+<tr><td>Block code</td><td>11</td><td>Word(2)</td></tr>
+<tr><td>Data compression (0 - no, 32768 - yes)</td><td>0</td><td>Word(2)</td></tr>
+<tr><td>Block size (bytes)</td><td>-</td><td>DWord(4)</td></tr>
+<tr><td>Number of synchronization units</td><td>-</td><td>DWord(4)</td></tr>
+<tr><td>Synchronization units</td><td>-</td><td>-</td></tr>
+</tbody></table>
+<h4 id="synchronization-block"><a class="header" href="#synchronization-block">Synchronization block</a></h4>
+<table><thead><tr><th></th><th>Value</th><th>Size</th></tr></thead><tbody>
+<tr><td>???</td><td>0</td><td>DWord(4)</td></tr>
+<tr><td>???</td><td>0</td><td>DWord(4)</td></tr>
+<tr><td>???</td><td>0</td><td>DWord(4)</td></tr>
+<tr><td>???</td><td>0</td><td>DWord(4)</td></tr>
+<tr><td>Number of synchronization units</td><td>-</td><td>DWord(4)</td></tr>
+<tr><td>Synchronization units</td><td>-</td><td>-</td></tr>
+</tbody></table>
+<h5 id="synchronization-unit"><a class="header" href="#synchronization-unit">Synchronization unit</a></h5>
+<table><thead><tr><th></th><th>Value</th><th>Size</th></tr></thead><tbody>
+<tr><td>???</td><td></td><td>DWord(4)</td></tr>
+<tr><td>???</td><td></td><td>Word(2)</td></tr>
+<tr><td>???</td><td></td><td>Word(2)</td></tr>
+</tbody></table>
+<h2 id="sources-6"><a class="header" href="#sources-6">Sources</a></h2>
+<p><a href="http://stalkerin.gameru.net/wiki/index.php?title=Level.geom">Source</a></p>
+<hr />
+<h1 id="hom-hierarchical-occlusion-mapping"><a class="header" href="#hom-hierarchical-occlusion-mapping">.hom (Hierarchical Occlusion Mapping)</a></h1>
+<hr />
+<h2 id="about-12"><a class="header" href="#about-12">About</a></h2>
+<p>HOM is a geometry cutter, which is a mesh and is needed to increase performance. This file is created during level compilation.</p>
+<h2 id="technical-information-10"><a class="header" href="#technical-information-10">Technical information</a></h2>
+<h3 id="blocks-3"><a class="header" href="#blocks-3">Blocks</a></h3>
+<p>Consists of two blocks:</p>
+<table><thead><tr><th>Block ID</th><th>Size (bytes)</th><th>Description</th></tr></thead><tbody>
+<tr><td>0x0</td><td>4</td><td>header (contains information about the format version)</td></tr>
+<tr><td>0x1</td><td>number of polygons * 40</td><td>vertex coordinates and polygon properties</td></tr>
+</tbody></table>
+<h3 id="block-description"><a class="header" href="#block-description">Block description</a></h3>
+<h4 id="block-0x0-header-1"><a class="header" href="#block-0x0-header-1">Block 0x0 (header)</a></h4>
+<table><thead><tr><th>Type</th><th>Description</th></tr></thead><tbody>
+<tr><td>I</td><td>format version</td></tr>
+</tbody></table>
+<h4 id="block-0x1-mesh-data"><a class="header" href="#block-0x1-mesh-data">Block 0x1 (mesh data)</a></h4>
+<p>Contains the data of the triangles, which are written one by one.</p>
+<p>The data is for one triangle:</p>
+<table><thead><tr><th>Type</th><th>Description</th></tr></thead><tbody>
+<tr><td>fff</td><td>3D coordinates of the first vertex of the triangle</td></tr>
+<tr><td>fff</td><td>3D coordinates of the second vertex of the triangle</td></tr>
+<tr><td>fff</td><td>3D coordinates of the third vertex of the triangle</td></tr>
+<tr><td>I</td><td>two sided option</td></tr>
+</tbody></table>
+<p>Possible values of the &quot;two sided&quot; option: 0x0, 0x1</p>
+<p>The polygon indices are not saved, but they can easily be generated, since all vertices are saved so that the polygon indices are in ascending order.</p>
+<p>The first triangle will be: 0, 1, 2, second: 3, 4, 5, third: 6, 7, 8, etc.</p>
+<hr />
+<h2 id="programs-editing-this-file-8"><a class="header" href="#programs-editing-this-file-8">Programs editing this file</a></h2>
+<ul>
+<li><a href="../../blender/index.html">Blender (X-Ray Addon)</a></li>
+<li><a href="../../sdk/index.html">SDK 0.7</a></li>
+</ul>
+<h2 id="sources-7"><a class="header" href="#sources-7">Sources</a></h2>
+<p><a href="http://stalkerin.gameru.net/wiki/index.php?title=Level.hom">Source</a></p>
+<hr />
+<h1 id="level"><a class="header" href="#level">level</a></h1>
+<hr />
+<h2 id="about-13"><a class="header" href="#about-13">About</a></h2>
+<p>Contains all the essentials. This contains light sources, object descriptions, names of their corresponding textures and shaders, portals, and sectors.</p>
+<h2 id="technical-information-11"><a class="header" href="#technical-information-11">Technical information</a></h2>
+<ul>
+<li>Format version: 14</li>
+</ul>
+<h3 id="general-structure---file-blocks-1"><a class="header" href="#general-structure---file-blocks-1">General structure - file blocks</a></h3>
+<table><thead><tr><th></th><th>Block code</th></tr></thead><tbody>
+<tr><td>Map compiler version</td><td>1</td></tr>
+<tr><td>Description of portals</td><td>4</td></tr>
+<tr><td>Light sources</td><td>6</td></tr>
+<tr><td>Coronas of light sources</td><td>7</td></tr>
+<tr><td>Objects</td><td>3</td></tr>
+<tr><td>Textures</td><td>2</td></tr>
+<tr><td>Sectors</td><td>8</td></tr>
+</tbody></table>
+<h3 id="map-compiler-version-the-block-is-the-same-for-all-maps-1"><a class="header" href="#map-compiler-version-the-block-is-the-same-for-all-maps-1">Map compiler version (the block is the same for all maps)</a></h3>
+<table><thead><tr><th></th><th>Value</th><th>Size</th></tr></thead><tbody>
+<tr><td>Block code</td><td>1</td><td>Word(2)</td></tr>
+<tr><td>Data compression (0 - no, 32768 - yes)</td><td>0</td><td>Word(2)</td></tr>
+<tr><td>Block size (bytes)</td><td>4</td><td>DWord(4)</td></tr>
+<tr><td>Version number (the same for all)</td><td>13</td><td>DWord(4)</td></tr>
+</tbody></table>
+<h3 id="description-of-portals-the-block-for-all-maps-is-the-same-and-contains-no-data"><a class="header" href="#description-of-portals-the-block-for-all-maps-is-the-same-and-contains-no-data">Description of portals (the block for all maps is the same and contains no data)</a></h3>
+<table><thead><tr><th></th><th>Value</th><th>Size</th></tr></thead><tbody>
+<tr><td>Block code</td><td>4</td><td>Word(2)</td></tr>
+<tr><td>Data compression (0 - no, 32768 - yes)</td><td>0</td><td>Word(2)</td></tr>
+<tr><td>Block size (bytes)</td><td>0</td><td>DWord(4)</td></tr>
+</tbody></table>
+<h3 id="light-sources"><a class="header" href="#light-sources">Light sources</a></h3>
+<table><thead><tr><th></th><th>Value</th><th>Size</th></tr></thead><tbody>
+<tr><td>Block code</td><td>6</td><td>Word(2)</td></tr>
+<tr><td>Data compression (0 - no, 32768 - yes)</td><td>0</td><td>Word(2)</td></tr>
+<tr><td>Block size (bytes)</td><td>-</td><td>DWord(4)</td></tr>
+<tr><td>Light Source</td><td>-</td><td>(108*х)</td></tr>
+</tbody></table>
+<h4 id="light-source"><a class="header" href="#light-source">Light Source</a></h4>
+<table><thead><tr><th></th><th>Offset</th><th>Size</th></tr></thead><tbody>
+<tr><td>Type of light source (only 1 or 2 were encountered)</td><td>0</td><td>DWord(4)</td></tr>
+<tr><td>(only 1 or 3 were encountered)</td><td>4</td><td>DWord(4)</td></tr>
+<tr><td>Color Red</td><td>8</td><td>Single(4)</td></tr>
+<tr><td>Color Green</td><td>12</td><td>Single(4)</td></tr>
+<tr><td>Color Blue</td><td>16</td><td>Single(4)</td></tr>
+<tr><td></td><td>20</td><td>DWord(4)</td></tr>
+<tr><td></td><td>24</td><td>DWord(4)</td></tr>
+<tr><td></td><td>28</td><td>DWord(4)</td></tr>
+<tr><td></td><td>32</td><td>DWord(4)</td></tr>
+<tr><td></td><td>36</td><td>DWord(4)</td></tr>
+<tr><td></td><td>40</td><td>DWord(4)</td></tr>
+<tr><td></td><td>44</td><td>DWord(4)</td></tr>
+<tr><td></td><td>48</td><td>DWord(4)</td></tr>
+<tr><td></td><td>52</td><td>DWord(4)</td></tr>
+<tr><td>Coordinate X</td><td>56</td><td>Single(4)</td></tr>
+<tr><td>Coordinate Z</td><td>60</td><td>Single(4)</td></tr>
+<tr><td>Coordinate Y</td><td>64</td><td>Single(4)</td></tr>
+<tr><td>Angle of rotation by X</td><td>68</td><td>Single(4)</td></tr>
+<tr><td>Angle of rotation by Z</td><td>72</td><td>Single(4)</td></tr>
+<tr><td>Angle of rotation by Y</td><td>76</td><td>Single(4)</td></tr>
+<tr><td></td><td>80</td><td>DWord(4)</td></tr>
+<tr><td></td><td>84</td><td>DWord(4)</td></tr>
+<tr><td></td><td>88</td><td>Single(4)</td></tr>
+<tr><td></td><td>92</td><td>Single(4)</td></tr>
+<tr><td></td><td>96</td><td>Single(4)</td></tr>
+<tr><td></td><td>100</td><td>DWord(4)</td></tr>
+<tr><td></td><td>104</td><td>Single(4)</td></tr>
+</tbody></table>
+<h3 id="coronas-of-light-sources"><a class="header" href="#coronas-of-light-sources">Coronas of light sources</a></h3>
+<table><thead><tr><th></th><th>Value</th><th>Size</th></tr></thead><tbody>
+<tr><td>Block code</td><td>7</td><td>Word(2)</td></tr>
+<tr><td>Data compression (0 - no, 32768 - yes)</td><td>0</td><td>Word(2)</td></tr>
+<tr><td>Block size (bytes)</td><td>-</td><td>DWord(4)</td></tr>
+<tr><td>Corona of the light source</td><td>-</td><td>(18*х)</td></tr>
+</tbody></table>
+<h4 id="corona-of-the-light-source"><a class="header" href="#corona-of-the-light-source">Corona of the light source</a></h4>
+<table><thead><tr><th></th><th>Value</th><th>Size</th></tr></thead><tbody>
+<tr><td>Coordinate X</td><td>0</td><td>Single(4)</td></tr>
+<tr><td>Coordinate Z</td><td>4</td><td>Single(4)</td></tr>
+<tr><td>Coordinate Y</td><td>8</td><td>Single(4)</td></tr>
+<tr><td>???</td><td>12</td><td>Single(4)</td></tr>
+<tr><td>???</td><td>16</td><td>Word(2)</td></tr>
+</tbody></table>
+<h3 id="textures-1"><a class="header" href="#textures-1">Textures</a></h3>
+<table><thead><tr><th></th><th>Value</th><th>Size</th></tr></thead><tbody>
+<tr><td>Block code</td><td>2</td><td>Word(2)</td></tr>
+<tr><td>Data compression (0 - no, 32768 - yes)</td><td>0</td><td>Word(2)</td></tr>
+<tr><td>Block size (bytes)</td><td>-</td><td>DWord(4)</td></tr>
+<tr><td>Number of textures</td><td>-</td><td>DWord(4)</td></tr>
+<tr><td>Textures</td><td>-</td><td>-</td></tr>
+</tbody></table>
+<h4 id="texture"><a class="header" href="#texture">Texture</a></h4>
+<table>
+ <tbody>
+  <tr bgcolor="grey">
+   <td></td>
+   <td>Value</td>
+   <td>Size</td>
+  </tr>
+  <tr>
+   <td>Shader (with path)</td>
+   <td>-</td>
+   <td>String</td>
+  </tr>
+  <tr>
+   <td>Separator</td>
+   <td>"/"</td>
+   <td>Byte(1)</td>
+  </tr>
+  <tr>
+   <td>Texture (with path)</td>
+   <td>-</td>
+   <td>String</td>
+  </tr>
+  <tr>
+   <td colspan="3">Beginning of the optional part</td>
+  </tr>
+  <tr>
+   <td>Separator</td>
+   <td>","</td>
+   <td>Byte(1)</td>
+  </tr>
+  <tr>
+   <td>Lightmap 1</td>
+   <td>-</td>
+   <td>String</td>
+  </tr>
+  <tr>
+   <td>Separator</td>
+   <td>","</td>
+   <td>Byte(1)</td>
+  </tr>
+  <tr>
+   <td>Lightmap 2</td>
+   <td>-</td>
+   <td>String</td>
+  </tr>
+  <tr>
+   <td colspan="3">End of the optional part</td>
+  </tr>
+  <tr>
+   <td>The zero symbol is the end of the texture name</td>
+   <td>#0</td>
+   <td>Byte(1)</td>
+  </tr>
+ </tbody>
+</table>
+<p><strong>Note:</strong> the zero texture is specified without the file name and consists only of the symbol #0. So, after the field &quot;number of textures&quot; right after the symbol #0, do not be alarmed :)</p>
+<h3 id="sectors"><a class="header" href="#sectors">Sectors</a></h3>
+<table><thead><tr><th></th><th>Value</th><th>Size</th></tr></thead><tbody>
+<tr><td>Block code</td><td>8</td><td>Word(2)</td></tr>
+<tr><td>Data compression (0 - no, 32768 - yes)</td><td>32768</td><td>Word(2)</td></tr>
+<tr><td>Block size (bytes)</td><td>-</td><td>DWord(4)</td></tr>
+<tr><td>Uncompressed block size (in bytes)</td><td>-</td><td>DWord(4)</td></tr>
+<tr><td>Description of Sectors</td><td>-</td><td>????</td></tr>
+</tbody></table>
+<hr />
+<h2 id="programs-editing-this-file-9"><a class="header" href="#programs-editing-this-file-9">Programs editing this file</a></h2>
+<ul>
+<li><a href="../../blender/index.html">Blender (X-Ray Addon)</a></li>
+<li><a href="../../sdk/index.html">SDK 0.7</a></li>
+</ul>
+<h2 id="sources-8"><a class="header" href="#sources-8">Sources</a></h2>
+<p><a href="http://stalkerin.gameru.net/wiki/index.php?title=Level">Source</a></p>
+<hr />
+<h1 id="ltx-files"><a class="header" href="#ltx-files">LTX files</a></h1>
+<hr />
+<h2 id="about-14"><a class="header" href="#about-14">About</a></h2>
+<p>LTX files are basically ini files with some custom additions. They are located all over the <code>gamedata/configs</code> and are used for, well, configs.</p>
+<p>Here's how ltx config might look like:</p>
+<pre><code class="language-ini">#include &quot;tables/gun_*.ltx&quot;
+
+[some_nice_gun]
+recoil              = 0.8
+boosts              = a, b, c, d    ; list
+fancy_feature       = {=is_night()} true, false
+
+[some_other_gun]
+...
+</code></pre>
+<p>From this example we can see some fancy ltx features:</p>
+<ol>
+<li><code>#include</code> preprocessor command. This command basically merges the file into this config. Many of the configs are included into <code>system.ltx</code> this way, so you can access almost all sections through <code>ini_sys</code> handler.</li>
+<li>Wildcard imports - <code>*</code> in include statement corresponds to any text, so the given include will include both <code>gun_ak.ltx</code> and <code>gun_m4.ltx</code>. This feature was developed for Anomaly, so you may not find it in other mods.</li>
+<li>Name of the section in square brackets - this is referred in scripts as <code>section_name</code> or just <code>section</code>.</li>
+<li>Key-value pairs. Values may include comma-separated lists.</li>
+<li>Comments start with <code>;</code>.</li>
+<li><code>fancy_feature</code> uses something called &quot;condlist&quot;. Refer to <a href="../../configs/condlists.html">condlists manual</a> to understand this bs.</li>
+</ol>
+<hr />
+<h2 id="programs-editing-this-file-10"><a class="header" href="#programs-editing-this-file-10">Programs editing this file</a></h2>
+<ul>
+<li>Any text editor
+<ul>
+<li>There are also extensions for VSCode for .ltx (<a href="https://marketplace.visualstudio.com/items?itemName=AziatkaVictor.ltx-support">LTX Support Extension by AziatkaVictor</a>)</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h1 id="object"><a class="header" href="#object">.object</a></h1>
+<hr />
+<h2 id="about-15"><a class="header" href="#about-15">About</a></h2>
+<p>These files are intended for the X-Ray SDK to store 3D content in its original, uncompressed, lossless form. They are source files that store information before compilation into other game compressed formats.</p>
+<h2 id="technical-information-12"><a class="header" href="#technical-information-12">Technical information</a></h2>
+<h3 id="the-format-can-store-the-following-basic-data-the-list-is-not-complete"><a class="header" href="#the-format-can-store-the-following-basic-data-the-list-is-not-complete">The format can store the following basic data (the list is not complete)</a></h3>
+<ul>
+<li>meshes</li>
+<li>materials</li>
+<li>bones</li>
+<li>skeleton animations</li>
+</ul>
+<h3 id="possibilities-and-limitations-of-the-object-format"><a class="header" href="#possibilities-and-limitations-of-the-object-format">Possibilities and limitations of the .object format</a></h3>
+<p>One *.object file can store:</p>
+<ul>
+<li>one or more meshes if it has no skeleton and only one meshes if it has a skeleton</li>
+<li>one or more materials</li>
+<li>a skeleton can be absent, or it can hold at least one</li>
+<li>a skeleton can store a minimum of 1, a maximum of 64 bones (for X-Ray SDK 0.4)</li>
+<li>skeleton animations may not be present, or one or more animations may be stored</li>
+<li>skeleton animations do not support Scale keys</li>
+<li>each mesh can have one or more materials</li>
+<li>each mesh must have one UV scan</li>
+<li>each material can store only one texture</li>
+</ul>
+<hr />
+<h2 id="programs-editing-this-file-11"><a class="header" href="#programs-editing-this-file-11">Programs editing this file</a></h2>
+<ul>
+<li><a href="../../blender/index.html">Blender (X-Ray Addon)</a></li>
+<li><a href="../../modding-tools-and-resources/modding-modding-tools/xray-export-tool.html">X-Ray Export Tool (Object Tool)</a></li>
+<li><a href="../../modding-tools/ogf-editor-by-valerok.html">Ogf Editor by ValeroK</a> - (Only as a converter!)</li>
+<li><a href="../../sdk/index.html">SDK 0.7</a></li>
+</ul>
+<h2 id="sources-9"><a class="header" href="#sources-9">Sources</a></h2>
+<p><a href="https://github.com/PavelBlend/blender-xray/wiki/Plugin-.object">Source</a></p>
+<hr />
+<h1 id="ogg"><a class="header" href="#ogg"><a href="https://en.wikipedia.org/wiki/Ogg">.ogg</a></a></h1>
+<hr />
+<h2 id="about-16"><a class="header" href="#about-16">About</a></h2>
+<p>The sound format used by the game engine</p>
+<h2 id="technical-information-13"><a class="header" href="#technical-information-13">Technical information</a></h2>
+<ul>
+<li>Supports up to 44.100 Hz</li>
+<li>Audio format:
+<ul>
+<li>Mono audio format (For the game world)</li>
+<li>Stereo audio format (To play in the player's head)</li>
+</ul>
+</li>
+<li>Audiocodek: <a href="https://en.wikipedia.org/wiki/Vorbis">Vorbis</a></li>
+</ul>
+<hr />
+<h2 id="programs-editing-this-file-12"><a class="header" href="#programs-editing-this-file-12">Programs editing this file</a></h2>
+<ul>
+<li>Any sound editor that supports .ogg (<font style="color: red">But it won't write comments into the chunks!</font>)</li>
+<li><a href="../../modding-tools/savandt.html">Sound Attribute Viewer And Tweaker</a> or <a href="https://disk.yandex.ru/d/Dcyo0Nt3A3b5g">OGG Editor</a></li>
+<li><a href="../../sdk/sound-editor.html">SDK Sound Editor</a> - Only source .wav file</li>
+</ul>
+<hr />
+<h1 id="omf-open-motions-format"><a class="header" href="#omf-open-motions-format">.omf (Open Motions Format)</a></h1>
+<hr />
+<h2 id="about-17"><a class="header" href="#about-17">About</a></h2>
+<p>A specialized S.T.A.L.K.E.R. game format containing animations. This is a separate dedicated file used in conjunction with .ogf models. Was created in order to optimize process when some different models use the same list of animations.</p>
+<h2 id="technical-information-14"><a class="header" href="#technical-information-14">Technical information</a></h2>
+<p>They are in <a href="https://en.wikipedia.org/wiki/Resource_Interchange_File_Format">RIFF</a> format. That is, the file is divided into chunks.
+The omf file consists of two chunks:</p>
+<ul>
+<li>
+<p>0xE - stores animations (rotation, movement of bones)</p>
+</li>
+<li>
+<p>0xF - stores the Bone Parts and animation parameters.</p>
+</li>
+</ul>
+<p>These chunks can be found inside the ogf files.
+In other words, an omf file is a slice of an ogf file that is moved to an external file.
+The structure of the 0xE and 0xF chunks in ogf is identical to those in omf.</p>
+<h3 id="the-structure-of-the-0xe-chunk"><a class="header" href="#the-structure-of-the-0xe-chunk">The structure of the 0xE chunk</a></h3>
+<p>This chunk consists of nested chunks.
+The first nested chunk is the one with the identifier 0x0.
+The zero chunk stores an unsigned 32-bit integer number.
+This number indicates the number of animations in the omf file.
+The identifier of each subsequent chunk is one more than the previous one.
+That is, 0x0 is followed by 0x1, then 0x2, 0x3, etc.
+All the chunks following 0x0 contain animations.
+Description of the nested chunk that stores the animations
+The animation name comes first, which is a string ending with a null byte.
+Next is an unsigned 32-bit integer, which specifies the number of animation frames.
+The following data is the dice transforms. For each bone, rotation, movement, and flags are stored.
+Flags come first. Flags is an unsigned 8 bit integer.
+The first bit of this byte indicates if the movement is modifiable.
+If the bit is 1, then the movement has values throughout all frames.
+If the bit is 0, then the movement has only one value for the entire animation interval.
+This is done to optimize it so that it doesn't store a bunch of identical keys, but instead has a single value.
+The second bit of this byte indicates whether the rotation is static (not changing throughout the animation).
+The third bit is the High Quality flag. If it is 0, then the position has an 8-bit representation, otherwise it is 16-bit.
+Next comes the information about the rotation.
+What will be written to the file next depends on the flags.
+If the second bit of the flag is 0, the file will contain the following:
+One rotation value as a quaternion with two-byte signed components.
+That is, QXYZ, each 2 bytes, for a total of 8 bytes.
+And if the second bit of the flag is 1, then the following follows:
+crc32 sum as a 4 byte unsigned integer.
+And after that come the rotation quaternion values for each frame.
+The format of rotation is the same as described above (the same 8 bytes).
+Now comes the movement information.
+If the first bit of the flag is 1, then follows a 32-bit unsigned integer, which is the crc32 sum.
+This is followed by three eight-bit numbers, which indicate the position of the bone on the x, y, z axes.
+These positions are written for each frame.
+That is, the positions should be read in a loop, which is repeated as many times as the number of frames contains the animation.
+After all these positions are data about the initial conditions of movement:
+Amplitude or size of movement.
+These are three float numbers (4 bytes each).
+And then there is the initial value of movement. These are also 3 float numbers.
+These initial conditions are stored in a single instance for each bone in this animation.
+That is, these values do not change throughout the animation.
+If the first bit of the flag is 0, there is one move value for all frames.
+This movement is stored in 3 float numbers (4 bytes each).</p>
+<p>Below is a pseudocode that describes one animation:</p>
+<pre><code class="language-C++">name = string
+length = uint32
+for bone in bones {
+    flags = uint8
+    translate_present = flags(0)    // get bit 0
+    rotate_absent = flags(1)    // get bit 1
+    high_quality = flags(2)    // get bit 2
+    if rotate_absent {
+        quaternion = int16, int16, int16, int16    // Q, X, Y, Z
+    } else {
+        motion_crc32 = int32
+        for (i=0, i&lt;length, i++) {
+            quaternion = int16, int16, int16, int16    // Q, X, Y, Z
+        }
+    }
+    if translate_present {
+        motion_crc32 = int32
+        if high_quality {
+            for (i=0, i&lt;length, i++) {
+                translation = int16, int16, int16    // X, Y, Z
+            }
+        } else {
+            for (i=0, i&lt;length, i++) {
+                translation = int8, int8, int8    // X, Y, Z
+            }
+        }
+        translate_size = float, float, float    // X, Y, Z
+        translate_init = float, float, float    // X, Y, Z
+    } else {
+        translate = float, float, float    // X, Y, Z
+    }
+</code></pre>
+<h3 id="chunk-structure-0xf"><a class="header" href="#chunk-structure-0xf">Chunk structure 0xF</a></h3>
+<p>Stores bone parts and animation parameters.
+The code that describes this chunk is shown below:</p>
+<pre><code class="language-C++">params_version = uint16 // parameter format version
+partition_count = uint16 // number of bone parts
+for (i=0, i&lt;partition_count, i++) {
+    partition_name = string // name of the bone part
+    bone_count = uint16 // number of bones in this bone part
+    for (j=0, j&lt;bone_count, j++) {
+        if params_version == 3 {
+            bone_name = string // bone name
+            bone_id = uint32 // bone ID
+        }
+    }
+    motion_count = uint16 // number of animations
+    for (j=0, i&lt;motion_count, j++) {
+        // animation parameters
+        motion_name = string
+        motion_flags = uint32
+        bone_or_part = uint16
+        motion = uint16 // animation identifier from the 0xE chunk
+        speed = float32
+        power = float32
+        accrue = float32
+        falloff = float32
+    }
+}
+</code></pre>
+<hr />
+<h2 id="programs-editing-this-file-13"><a class="header" href="#programs-editing-this-file-13">Programs editing this file</a></h2>
+<ul>
+<li><a href="../../blender/index.html">Blender (X-Ray Addon)</a></li>
+<li><a href="../../modding-tools/omf-editor-by-valerok.html">OMF Editor by ValeroK</a></li>
+</ul>
+<h2 id="sources-10"><a class="header" href="#sources-10">Sources</a></h2>
+<p><a href="http://stalkerin.gameru.net/wiki/index.php?title=%D0%A4%D0%BE%D1%80%D0%BC%D0%B0%D1%82_%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2_*.omf">Source</a></p>
+<hr />
+<h1 id="seq-sequence"><a class="header" href="#seq-sequence">.seq (Sequence)</a></h1>
+<hr />
+<h2 id="about-18"><a class="header" href="#about-18">About</a></h2>
+<p>Text file that is used to create a simple animation texture, by recording a sequence of &quot;frames&quot; and a playback speed.</p>
+<h2 id="example-1"><a class="header" href="#example-1">Example</a></h2>
+<pre><code class="language-example">15
+ui\ui_ani_cursor_01
+ui\ui_ani_cursor_02
+ui\ui_ani_cursor_03
+ui\ui_ani_cursor_04
+ui\ui_ani_cursor_05
+</code></pre>
+<p>Order in which the textures are played will be 1234512312312345</p>
+<pre><code class="language-example">cycled
+15
+ui\ui_ani_cursor_01
+ui\ui_ani_cursor_02
+ui\ui_ani_cursor_03
+ui\ui_ani_cursor_04
+ui\ui_ani_cursor_05
+</code></pre>
+<p>In this case, because of &quot;cycled&quot; the playback order will be 1234543212345432123454321
+Speed of texture change is set in numerical format before the enumeration</p>
+<p>The number of textures in the list is arbitrary, but the more frames, the greater the load on the engine, respectively.
+The name of the file is set by the name of the assigned texture (without taking the extension into account). If there is a *<a href="dds.html">.dds</a> file in the folder with the same name as the *.seq file, the engine ignores the original texture, giving priority to the *.seq file. The priority of file search by extension is as follows:</p>
+<ul>
+<li>.ogm</li>
+<li>.avi</li>
+<li>.seq</li>
+<li><a href="dds.html">.dds</a></li>
+</ul>
+<h2 id="parameters"><a class="header" href="#parameters">Parameters</a></h2>
+<ul>
+<li>The &quot;cycled&quot; parameter is optional if you want to loop from the first texture to the last texture and from the last texture to the first texture.
+If you don't write it, it will play in a normal circular loop.</li>
+<li>Playback speed (frames per second) (written before the list of textures)</li>
+</ul>
+<hr />
+<h2 id="programs-editing-this-file-14"><a class="header" href="#programs-editing-this-file-14">Programs editing this file</a></h2>
+<ul>
+<li>Any text editor</li>
+</ul>
+<h2 id="sources-11"><a class="header" href="#sources-11">Sources</a></h2>
+<p><a href="https://modfaq.ru/*.seq">Source</a></p>
+<hr />
+<h1 id="som-sound-occluder-mesh"><a class="header" href="#som-sound-occluder-mesh">.som (Sound Occluder Mesh)</a></h1>
+<hr />
+<h2 id="about-19"><a class="header" href="#about-19">About</a></h2>
+<p>Geometry for calculating sound propagation. Used to allow sound to pass through walls, ceilings, floors, etc. with varying strength.</p>
+<h2 id="technical-information-15"><a class="header" href="#technical-information-15">Technical information</a></h2>
+<ul>
+<li>Format version: 0</li>
+</ul>
+<h3 id="blocks-4"><a class="header" href="#blocks-4">Blocks</a></h3>
+<p>It consists of two blocks:</p>
+<table><thead><tr><th>Block ID</th><th>Size (bytes)</th><th>Description</th></tr></thead><tbody>
+<tr><td>0x0</td><td>4</td><td>header (contains information about the format version)</td></tr>
+<tr><td>0x1</td><td>polygon count * 44</td><td>vertex coordinates and polygon properties</td></tr>
+</tbody></table>
+<p>The structure of the file is similar to .hom</p>
+<h4 id="block-0x0-header-2"><a class="header" href="#block-0x0-header-2">Block 0x0 (header)</a></h4>
+<table><thead><tr><th>Type</th><th>Description</th></tr></thead><tbody>
+<tr><td>I</td><td>format version</td></tr>
+</tbody></table>
+<h4 id="block-0x1-mesh-data-1"><a class="header" href="#block-0x1-mesh-data-1">Block 0x1 (mesh data)</a></h4>
+<table><thead><tr><th>Тип</th><th>Description</th><th>Note</th><th>Note 2</th></tr></thead><tbody>
+<tr><td>fff</td><td>3D coordinates of the first vertex of the triangle</td><td>-</td><td>-</td></tr>
+<tr><td>fff</td><td>3D coordinates of the second vertex of the triangle</td><td>-</td><td>-</td></tr>
+<tr><td>fff</td><td>3D coordinates of the third vertex of the triangle</td><td>-</td><td>-</td></tr>
+<tr><td>I</td><td>&quot;two sided&quot; option</td><td>Possible values of the &quot;two sided&quot; option: 0x0, 0x1</td><td>If 0x1, the polygon will cut off sound from both sides, and if 0x0, it will only cut off sound from the front side</td></tr>
+<tr><td>f</td><td>&quot;Sound Occlusion&quot; parameter</td><td>The &quot;Sound Occlusion&quot; parameter specifies how much of the sound volume will be heard. The value depends on the material of the SOM object before compilation.</td><td>The value of this parameter is prescribed in the materials and can be found in Shader Editor&gt;Material&gt;Item Properties&gt;Factors&gt;Sound Occlusion (Possible values are 0.0 - 1.0)</td></tr>
+</tbody></table>
+<p>Polygon indices are not saved, but they can be easily generated, because all vertices are saved so that polygon indices are in ascending order.</p>
+<p>The first triangle will be: 0, 1, 2, second: 3, 4, 5, third: 6, 7, 8, etc.</p>
+<hr />
+<h2 id="programs-editing-this-file-15"><a class="header" href="#programs-editing-this-file-15">Programs editing this file</a></h2>
+<ul>
+<li><a href="../../blender/index.html">Blender (X-Ray Addon)</a></li>
+<li><a href="../../sdk/index.html">SDK 0.7</a></li>
+</ul>
+<h2 id="sources-12"><a class="header" href="#sources-12">Sources</a></h2>
+<p><a href="http://stalkerin.gameru.net/wiki/index.php?title=Level.som">Source</a></p>
+<hr />
+<h1 id="thm"><a class="header" href="#thm">.thm</a></h1>
+<hr />
+<h2 id="about-20"><a class="header" href="#about-20">About</a></h2>
+<p>They are used to set the parameters of <a href="dds.html">.dds</a> textures - <a href="bump.html">bump</a>, <a href="detail-map.html">detail</a>, and more. Without them the game does not give textures the necessary parameters, and therefore they are obtained &quot;flat&quot;, worse than the static lighting.</p>
+<hr />
+<h2 id="programs-editing-this-file-16"><a class="header" href="#programs-editing-this-file-16">Programs editing this file</a></h2>
+<ul>
+<li><a href="../../modding-tools/thm-editor-by-valerok.html">THM Editor by ValeroK</a> or <a href="../../modding-tools/thm-editor-by-i-love-kfc.html">THM Editor by i-love-kfc</a></li>
+<li><a href="../../sdk/index.html">SDK 0.7</a></li>
+</ul>
+<hr />
+<h1 id="xml-files"><a class="header" href="#xml-files">XML files</a></h1>
+<hr />
+<h2 id="about-21"><a class="header" href="#about-21">About</a></h2>
+<p>XML files are used to save text strings used for translation. All XML files are located in <code>gamedata/configs/text/*lang*</code>. XML files have these properties:</p>
+<ol>
+<li>They are saved in encoding Windows-1251. English translation won't break if you're using UTF, but russian will.</li>
+<li>Every string must have an unique id assigned to it.</li>
+<li>There is a single namespace for all xml files of one language. That means, no matter in which file you are saving your strings, they will be available in one place, namely <code>game.translate_string(*id*)</code>.</li>
+</ol>
+<p>XML file will look something like this:</p>
+<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;windows-1251&quot;?&gt;
+&lt;string_table&gt;
+	&lt;string id=&quot;nice_text_id&quot;&gt;
+		&lt;text&gt;Cool text inside text tags&lt;/text&gt;
+	&lt;/string&gt;
+
+    &lt;string id=&quot;another_text_id&quot;&gt;
+		&lt;text&gt;...&lt;/text&gt;
+	&lt;/string&gt;
+    
+    ...
+&lt;/string_table&gt;
+</code></pre>
+<hr />
+<h2 id="programs-editing-this-file-17"><a class="header" href="#programs-editing-this-file-17">Programs editing this file</a></h2>
+<ul>
+<li>Any text editor</li>
+</ul>
+<hr />
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../main-folders-and-files/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../../crash-list/crashes-list.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../main-folders-and-files/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../../crash-list/crashes-list.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>
