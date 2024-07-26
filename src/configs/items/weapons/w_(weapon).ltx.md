@@ -589,6 +589,9 @@ You can read about the parameters of the sounds [here](weapon_sounds.ltx.md)
 
 </details>
 
+
+!!! Different engine classes have different animation parameters for different engine classes. Need to write !!!
+
 ### HUD animations parameters
 
 <details>
