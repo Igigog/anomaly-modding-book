@@ -2,13 +2,7 @@
 
 ___
 
-**In short: Don't work with maps. You can compile and run new maps in the game, but it is not a pleasant experience in any way. You cannot change existing maps. Anomaly devs are working hard to fix this, and we expect the situation to get better with Anomaly 1.6.**
-
-**But, if you really are adventurous:**
-
-___
-
-To compile, you need to make a location build. To do this, open or [create](../blender/creating-a-location-in-blender.md) a location in the Level Editor in the SDK.
+To compile, you need to make a location build. 
 
 For location build this is the minimum set:
 

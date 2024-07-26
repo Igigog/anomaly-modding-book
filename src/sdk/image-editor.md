@@ -10,7 +10,7 @@ Allows you to edit texture parameters
 
 | Type | Description |
 ---|---|
-| 2D Texture |  |
+| 2D Texture | Just a texture |
 | [Cube Map](https://en.wikipedia.org/wiki/Cube_mapping) | Is a method of environment mapping that uses the six faces of a cube as the map shape |
 | Bump Map | [Bump](../main-folders-and-files/file-formats/index.html#bumpdds-1) |
 | Normal Map | Normal Map |

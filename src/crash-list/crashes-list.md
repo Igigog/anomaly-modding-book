@@ -13,7 +13,7 @@ ___
 
 ___
 
-> Warning! This list is only for the vanilla version of the game! If you use engine edits, the logs of crashes may be different!
+> Warning! This list is only for the vanilla version of the game! If you use engine edits, the crash log may be different!
 
 ## <center>Models</center>
 
@@ -40,6 +40,25 @@ ___
 ___
 
 ## <center>[Animations](../main-folders-and-files/file-formats/omf.md)</center>
+
+<details>
+    <summary>Line 406</summary>
+
+```ini
+[error]Expression    : \<no expression>
+[error]Function      : CkinematicsAnimated::LL_PlayCycle
+[error]File          : ..\xrRender\SkeletonAnimated.cpp
+[error]Line          : 406
+[error]Description   : fatal error
+[error]Arguments     : ! MODEL: missing bone/wrong armature?: "path and file name".
+```
+
+- Clarification: Probably in the animation that is based on this skeleton there was no animation channel for a newly added or removed bone in the skeleton
+
+- Error fixing:
+  - Check the skeleton for bones that have been removed or added
+
+</details>
 
 <details>
     <summary>Line 784</summary>

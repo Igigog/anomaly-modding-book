@@ -270,16 +270,16 @@ ___
 <details>
     <summary>Aiming parameters</summary>
 
-| Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
+| Parameter name | Parameter description | Example value | Possible parameter values and their descriptions | Extra |
 ---|---|---|---|
-| use_aim_bullet | whether the first bullet fired after a long period of inactivity will fly exactly into the crosshair | false | true (Yes) - false (No) |
-| time_to_aim | the time of inactivity after which the use_aim_bullet is triggered | 0.0 |  |
-| zoom_dof |  | 0.5, 1.0, 180 |  |
-| zoom_enabled | the ability to aim | true | true (Yes) - false (No) |
-| zoom_rotate_time | the speed at which the weapon goes to the "aiming" state, in seconds | 0.25 | Specified in seconds |
-| reload_dof |  | 0.0, 0.5, 5, 2 |  |
-| control_inertion_factor | Usability; aka inertia; affects how easily the weapon can be controlled with the mouse | 1.0f |  |
-| crosshair_inertion |  | 5.8 |  |
+| use_aim_bullet | A game mechanic in which the first bullet fired after drawing and aiming the weapon does more damage to certain limbs | false | true (Yes) - false (No) | Значения умножения урона для конечностей можно найти в файле |
+| time_to_aim | Time during which the use_aim_bullet parameter can be activated when aiming and drawing a weapon | 0.0 | Specified in seconds |  |
+| zoom_dof |  | 0.5, 1.0, 180 |  |  |
+| zoom_enabled | the ability to aim | true | true (Yes) - false (No) |  |
+| zoom_rotate_time | the speed at which the weapon goes to the "aiming" state, in seconds | 0.25 | Specified in seconds |  |
+| reload_dof |  | 0.0, 0.5, 5, 2 |  |  |
+| control_inertion_factor | Usability; aka inertia; affects how easily the weapon can be controlled with the mouse | 1.0f |  |  |
+| crosshair_inertion |  | 5.8 |  |  |
 
 </details>
 
@@ -428,10 +428,10 @@ ___
 
 </details>
 
-### hud_movement_layers
+### HUD Movement Layers
 
 <details>
-    <summary>hud_movement_layers</summary>
+    <summary>HUD Movement Layers</summary>
 
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
@@ -444,16 +444,18 @@ ___
 
 </details>
 
-### empty_click_anm
+### Empty Click Anm
 
 <details>
-    <summary>empty_click_anm</summary>
+    <summary>Empty Click Anm</summary>
+
+> Weapon animation settings when attempting to shoot with an empty magazine (camera animation is used)
 
 | Parameter name | Parameter description | Example value | Possible parameter values and their descriptions |
 ---|---|---|---|
 | empty_click_anm | Weapon animation when attempting to shoot with an empty magazine (camera animation is used) | script\misfire.anm | path and animation name |
-| empty_click_anm_speed |  | 2 |  |
-| empty_click_anm_power |  | 1 |  |
+| empty_click_anm_speed | Animation speed | 2 | - |
+| empty_click_anm_power | Animation power | 1 | - |
 
 </details>
 

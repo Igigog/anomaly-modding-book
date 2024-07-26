@@ -85,8 +85,6 @@ Official SDK with community enhancements:
 
 - [Call of Chernobyl SDK](https://sharedby.blomp.com/zIpxWK) - Contains the basic editors and tools that were used to create Call of Chernobyl
 
-- [Anomaly Unofficial SDK](https://drive.google.com/file/d/1LVOLpVUkIVyUJk3zVxBHvnsC1tADwlML/view) - Unofficial SDK with included fixes
-
 - [SDK 0.8 by Red Panda](https://github.com/RedPandaProjects/XRayEngine/releases) - This is a port and a small upgrade of the classic 0.7 editor set. A lot of problems with the classic editor were related to the outdated development environment, which did not allow to upgrade it. Imgui was taken as a UI shell, as the easiest ui allowing to create simple forms with one line of code. All 4 editors were taken over.
   - [HybridXRay](https://github.com/Roman-n/HybridXRay) - Further improvements to the SDK and X-Ray Engine from RedPanda.
 
@@ -155,15 +153,17 @@ ___
 
 ___
 
-## Dialogs
+## Dialogs | XML
 
 - [S.T.A.L.K.E.R. Dialog Editor Extended](https://www.moddb.com/mods/call-of-chernobyl/addons/stalker-dialog-editor-extended-german) - Allows you to edit and create dialogs.
 
 - [Dialog Editor](https://github.com/rayofhope-dev/dialog-editor) - Completely new dialog editor (not compatible with Anomaly)
 
+- [STALKER TRANSLATION XML TOOL](https://www.moddb.com/mods/stalker-anomaly/addons/stalker-translation-xml-tool) - Python-based tool that automatically translates your mod's XML files using “googletrans” or "DeepL".
+
 ___
 
-## Parameters\LTX
+## Parameters | LTX
 
 - [STLKObjectMan](https://drive.google.com/file/d/1OM2gZtj_Ubg7H03iI-Z_z3EAkwn1_S2R/view) - Universal parameters editor. Modifies \*[.ltx](../main-folders-and-files/file-formats/index.html#ltx-files) and \*[.xml](../main-folders-and-files/file-formats/index.html#xml-files) files. **not compatible with Anomaly due to modified config files**
 
@@ -254,7 +254,7 @@ ___
 
 ___
 
-## Decompilers\Compilers
+## Decompilers | Compilers
 
 - [X-Ray Converter](https://disk.yandex.ru/d/nivUmGybuCXSC) - Multifunctional utility for working with game file formats and X-Ray SDK
   - [X-Ray Converter Extra](https://disk.yandex.ru/d/7137tI653PRnrU) - Improved components for the converter
@@ -283,7 +283,7 @@ ___
 
 ___
 
-## .db/.xdb archivers
+## .db | .xdb archivers
 
 - [DB_Compressor by d_μaμ](https://cdn.discordapp.com/attachments/616764067670917131/846799604438532107/DB_Compressor.rar)
 - [xrCompress by i-love-kfc](https://ap-pro.ru/forums/topic/3500-obnovlyonnyy-xrcompress/) - .db/.xdb archiver

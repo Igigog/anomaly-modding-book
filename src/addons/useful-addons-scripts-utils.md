@@ -20,6 +20,26 @@ Allows you to change hud values in weapon hud editor by dragging your mouse
 
 ___
 
+## S.T.A.L.K.E.R. Anomaly gamedata
+
+This repository contains the unpacked gamedata files of the version 1.5.2 of the stand-alone mod S.T.A.L.K.E.R. Anomaly
+
+### Source
+
+[GitHub](https://github.com/Tosox/STALKER-Anomaly-gamedata)
+
+___
+
+## DEMORECORD CUSTOMIZATION
+
+Now you have the ability to customize the speed of the camera flight during free view
+
+### Source
+
+[Addon on Moddb](https://www.moddb.com/mods/stalker-anomaly/addons/demorecord-customization)
+
+___
+
 ## Anomaly Dependencies
 
 Various autoinject script modules for use by other scripts
