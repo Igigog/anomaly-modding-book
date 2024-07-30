@@ -296,3 +296,12 @@ ___
 - Error fixing:
 
 </details>
+
+After -_g key
+
+[error]Expression    : <no expression>
+[error]Function      : CScriptEngine::lua_pcall_failed
+[error]File          : ..\xrServerEntities\script_engine.cpp
+[error]Line          : 204
+[error]Description   : fatal error
+[error]Arguments     : LUA error: ...y-1.5.2/bin/..\gamedata\scripts\class_registrator.script:9: attempt to call global 'editor' (a nil value)

@@ -51,6 +51,9 @@ ___
 ---|---|
 | .cs | Compute shader |
 | .gs | Geometry shader |
+| .ds | Domain shader |
+| .h | Header file |
+| .hs | Hull shader |
 | .vs | Vertex shader |
 | .ps | Pixel shader |
 | .s | Script shader. LUA version of engine blenders |
