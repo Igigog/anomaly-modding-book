@@ -138,9 +138,6 @@ friends     = me, myself, i
 You use :
 ```ini
 !![some_section]
-!price
-!weight
-!friends
 ```
 
 ---
