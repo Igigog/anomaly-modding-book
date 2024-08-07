@@ -1,0 +1,905 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Mutants Configuration Parameters - Anomaly Modding Book</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../src/custom.css">
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../../index.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../../meta/index.html"><strong aria-hidden="true">1.</strong> Meta</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../meta/contributing/index.html"><strong aria-hidden="true">1.1.</strong> Contributing to this book</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../../getting-started/index.html"><strong aria-hidden="true">2.</strong> Mod Organizer</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../getting-started/installing-mo2.html"><strong aria-hidden="true">2.1.</strong> Installing MO2</a></li><li class="chapter-item expanded "><a href="../../getting-started/addon-installers.html"><strong aria-hidden="true">2.2.</strong> Addon installers</a></li><li class="chapter-item expanded "><a href="../../getting-started/package-naming.html"><strong aria-hidden="true">2.3.</strong> Package Naming for MO2</a></li><li class="chapter-item expanded "><a href="../../getting-started/vs-code-game-files-setup.html"><strong aria-hidden="true">2.4.</strong> Configuring VSCode-like programs to handle game files</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Addons</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../addons/dltx.html"><strong aria-hidden="true">3.1.</strong> DLTX</a></li><li class="chapter-item expanded "><a href="../../addons/dxml.html"><strong aria-hidden="true">3.2.</strong> DXML</a></li><li class="chapter-item expanded "><a href="../../addons/mcm.html"><strong aria-hidden="true">3.3.</strong> MCM</a></li><li class="chapter-item expanded "><a href="../../addons/pdb.html"><strong aria-hidden="true">3.4.</strong> PDB files</a></li><li class="chapter-item expanded "><a href="../../addons/lua-unlocalizer.html"><strong aria-hidden="true">3.5.</strong> Lua Unlocalizer</a></li><li class="chapter-item expanded "><a href="../../addons/useful-addons-scripts-utils.html"><strong aria-hidden="true">3.6.</strong> Useful addons, scripts and utils</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> Configs</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../configs/structure-of-files.html"><strong aria-hidden="true">4.1.</strong> Structure of Files</a></li><li class="chapter-item expanded "><a href="../../configs/condlists.html"><strong aria-hidden="true">4.2.</strong> Condlists</a></li><li class="chapter-item expanded "><a href="../../configs/inventory_icons.html"><strong aria-hidden="true">4.3.</strong> Inventory Icons</a></li><li class="chapter-item expanded "><a href="../../configs/algoritm-of-logic.html"><strong aria-hidden="true">4.4.</strong> Algoritm of Logic</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../../scripting/index.html"><strong aria-hidden="true">5.</strong> Scripting</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../scripting/codebase_introduction.html"><strong aria-hidden="true">5.1.</strong> Introduction to codebase</a></li><li class="chapter-item expanded "><a href="../../scripting/codestyle.html"><strong aria-hidden="true">5.2.</strong> Codestyle</a></li><li class="chapter-item expanded "><a href="../../scripting/wetting_hands.html"><strong aria-hidden="true">5.3.</strong> Wetting our hands</a></li><li class="chapter-item expanded "><a href="../../scripting/server_and_game_objects.html"><strong aria-hidden="true">5.4.</strong> Server and game objects</a></li><li class="chapter-item expanded "><a href="../../scripting/callbacks.html"><strong aria-hidden="true">5.5.</strong> Callbacks</a></li><li class="chapter-item expanded "><a href="../../scripting/time_events.html"><strong aria-hidden="true">5.6.</strong> Time events</a></li><li class="chapter-item expanded "><a href="../../scripting/monkey-patching.html"><strong aria-hidden="true">5.7.</strong> Monkey patching</a></li><li class="chapter-item expanded "><a href="../../scripting/script_animations.html"><strong aria-hidden="true">5.8.</strong> Script Animations</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> Modelling</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../blender/creating-model-in-blender.html"><strong aria-hidden="true">6.1.</strong> Creating model in Blender</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.</strong> Animating</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../blender/creating-hud-animation-in-blender.html"><strong aria-hidden="true">7.1.</strong> Creating an animation</a></li><li class="chapter-item expanded "><a href="../../blender/creating-camera-animations.html"><strong aria-hidden="true">7.2.</strong> Creating animations for the camera</a></li><li class="chapter-item expanded "><a href="../../blender/editing-existing-animations.html"><strong aria-hidden="true">7.3.</strong> Editing existing animations</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../../texturing/index.html"><strong aria-hidden="true">8.</strong> Texturing</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../texturing/сreating-and-preparing-textures.html"><strong aria-hidden="true">8.1.</strong> Creating and preparing textures</a></li><li class="chapter-item expanded "><a href="../../texturing/working-correctly-with-icon-atlases.html"><strong aria-hidden="true">8.2.</strong> Working correctly with icon atlases</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../../mapping/index.html"><strong aria-hidden="true">9.</strong> Mapping</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../blender/creating-a-location-in-blender.html"><strong aria-hidden="true">9.1.</strong> Creating a location in Blender</a></li><li class="chapter-item expanded "><a href="../../mapping/multimaterial-terrain.html"><strong aria-hidden="true">9.2.</strong> Multimaterial Terrain Guide</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../../quests/index.html"><strong aria-hidden="true">10.</strong> Quests</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../quests/introduction.html"><strong aria-hidden="true">10.1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../../quests/npc_creation.html"><strong aria-hidden="true">10.2.</strong> NPC Creation</a></li><li class="chapter-item expanded "><a href="../../quests/task_guide.html"><strong aria-hidden="true">10.3.</strong> Task Creation</a></li><li class="chapter-item expanded "><a href="../../quests/dialogues.html"><strong aria-hidden="true">10.4.</strong> Dialogue Creation</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../../reference/index.html"><strong aria-hidden="true">11.</strong> Reference/General</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../terminology/terminology.html"><strong aria-hidden="true">11.1.</strong> Terminology</a></li><li class="chapter-item expanded "><a href="../../main-folders-and-files/index.html"><strong aria-hidden="true">11.2.</strong> Main Folders And Files</a></li><li class="chapter-item expanded "><a href="../../main-folders-and-files/file-formats/index.html"><strong aria-hidden="true">11.3.</strong> File Formats</a></li><li class="chapter-item expanded "><a href="../../crash-list/crashes-list.html"><strong aria-hidden="true">11.4.</strong> Crash List</a></li></ol></li><li class="chapter-item expanded "><a href="../../reference/index.html"><strong aria-hidden="true">12.</strong> Reference/Configs</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../configs/items/weapons/w_(weapon).ltx.html"><strong aria-hidden="true">12.1.</strong> Weapon Configuration Parameters</a></li><li class="chapter-item expanded "><a href="../../configs/items/weapons/weapon_ammo.ltx.html"><strong aria-hidden="true">12.2.</strong> Ammo Configuration Parameters</a></li><li class="chapter-item expanded "><a href="../../configs/items/weapons/weapon_sounds.ltx.html"><strong aria-hidden="true">12.3.</strong> Weapon Sounds Parameters</a></li><li class="chapter-item expanded "><a href="../../configs/items/outfits/o_(outfit).ltx.html"><strong aria-hidden="true">12.4.</strong> Oufits Configuration Parameters</a></li><li class="chapter-item expanded "><a href="../../configs/creatures/m_(mutant).ltx.html" class="active"><strong aria-hidden="true">12.5.</strong> Mutants Configuration Parameters</a></li></ol></li><li class="chapter-item expanded "><a href="../../reference/index.html"><strong aria-hidden="true">13.</strong> Reference/Shaders</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../shaders/shaders-list/materials-list.html"><strong aria-hidden="true">13.1.</strong> Material Shaders List</a></li><li class="chapter-item expanded "><a href="../../shaders/shaders-list/shaders-list.html"><strong aria-hidden="true">13.2.</strong> Shaders List</a></li><li class="chapter-item expanded "><a href="../../shaders/shaders-list/compiler-shaders-list.html"><strong aria-hidden="true">13.3.</strong> Compiler Shaders List</a></li><li class="chapter-item expanded "><a href="../../shaders/shaders-list/sound-envornment-list.html"><strong aria-hidden="true">13.4.</strong> Sound Envornment List</a></li></ol></li><li class="chapter-item expanded "><a href="../../engine/index.html"><strong aria-hidden="true">14.</strong> Reference/Engine</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../engine/console-commands.html"><strong aria-hidden="true">14.1.</strong> Console commands</a></li><li class="chapter-item expanded "><a href="../../engine/alife.html"><strong aria-hidden="true">14.2.</strong> A-Life (AI)</a></li><li class="chapter-item expanded "><a href="../../engine/engine-classes.html"><strong aria-hidden="true">14.3.</strong> Engine Classes</a></li></ol></li><li class="chapter-item expanded "><a href="../../reference/index.html"><strong aria-hidden="true">15.</strong> Reference/Resources</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../resources/audio.html"><strong aria-hidden="true">15.1.</strong> Audio</a></li><li class="chapter-item expanded "><a href="../../resources/models-objects-locations.html"><strong aria-hidden="true">15.2.</strong> Models</a></li><li class="chapter-item expanded "><a href="../../resources/sdk-resources.html"><strong aria-hidden="true">15.3.</strong> SDK resources</a></li></ol></li><li class="chapter-item expanded "><a href="../../reference/index.html"><strong aria-hidden="true">16.</strong> Reference/Tools</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../modding-tools/modding-tools.html"><strong aria-hidden="true">16.1.</strong> Modding Tools List</a></li><li class="chapter-item expanded "><a href="../../modding-tools/in-game-editors/index.html"><strong aria-hidden="true">16.2.</strong> In-Game Editors</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../modding-tools/in-game-editors/item-spawner.html"><strong aria-hidden="true">16.2.1.</strong> Item Spawner</a></li><li class="chapter-item expanded "><a href="../../modding-tools/in-game-editors/lightning-editor.html"><strong aria-hidden="true">16.2.2.</strong> Lightning Editor</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">16.2.3.</strong> NPC Logic/Execute</div></li><li class="chapter-item expanded "><a href="../../modding-tools/in-game-editors/object-spawner.html"><strong aria-hidden="true">16.2.4.</strong> Object Spawner</a></li><li class="chapter-item expanded "><a href="../../modding-tools/in-game-editors/outfits-weapon-stats-editor.html"><strong aria-hidden="true">16.2.5.</strong> Outfits/Weapons Stats Editor</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">16.2.6.</strong> Pocket Workshop</div></li><li class="chapter-item expanded "><a href="../../modding-tools/in-game-editors/weapon-hud-editor.html"><strong aria-hidden="true">16.2.7.</strong> Weapon HUD Editor</a></li><li class="chapter-item expanded "><a href="../../modding-tools/in-game-editors/weather-editor.html"><strong aria-hidden="true">16.2.8.</strong> Weather Editor</a></li></ol></li><li class="chapter-item expanded "><a href="../../modding-tools/ltx-support.html"><strong aria-hidden="true">16.3.</strong> Ltx Support</a></li><li class="chapter-item expanded "><a href="../../sdk/index.html"><strong aria-hidden="true">16.4.</strong> SDK 0.7</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../sdk/interface.html"><strong aria-hidden="true">16.4.1.</strong> Interface</a></li><li class="chapter-item expanded "><a href="../../sdk/actor-editor.html"><strong aria-hidden="true">16.4.2.</strong> Actor Editor</a></li><li class="chapter-item expanded "><a href="../../sdk/image-editor.html"><strong aria-hidden="true">16.4.3.</strong> Image Editor</a></li><li class="chapter-item expanded "><a href="../../sdk/level-editor.html"><strong aria-hidden="true">16.4.4.</strong> Level Editor</a></li><li class="chapter-item expanded "><a href="../../sdk/shader-editor.html"><strong aria-hidden="true">16.4.5.</strong> Shader Editor</a></li><li class="chapter-item expanded "><a href="../../sdk/sound-editor.html"><strong aria-hidden="true">16.4.6.</strong> Sound Editor</a></li><li class="chapter-item expanded "><a href="../../sdk/postprocess-editor.html"><strong aria-hidden="true">16.4.7.</strong> Postprocess Editor</a></li><li class="chapter-item expanded "><a href="../../sdk/particle-editor.html"><strong aria-hidden="true">16.4.8.</strong> Particle Editor (Not finished)</a></li></ol></li><li class="chapter-item expanded "><a href="../../blender/blender-x-ray-addon-summary.html"><strong aria-hidden="true">16.5.</strong> Blender X-Ray Addon</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../blender/advanced-settings.html"><strong aria-hidden="true">16.5.1.</strong> Advanced settings</a></li><li class="chapter-item expanded "><a href="../../blender/x-ray-addon-panels.html"><strong aria-hidden="true">16.5.2.</strong> Panels</a></li><li class="chapter-item expanded "><a href="../../blender/x-ray-side-panels.html"><strong aria-hidden="true">16.5.3.</strong> Side Panel</a></li></ol></li><li class="chapter-item expanded "><a href="../../modding-tools/stalker-studio.html"><strong aria-hidden="true">16.6.</strong> Stalker Studio</a></li><li class="chapter-item expanded "><a href="../../modding-tools/thm-editor-by-i-love-kfc.html"><strong aria-hidden="true">16.7.</strong> THM Editor</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../modding-tools/thm-editor-by-valerok.html"><strong aria-hidden="true">16.7.1.</strong> Modified THM Editor</a></li></ol></li><li class="chapter-item expanded "><a href="../../modding-tools/bump-generator.html"><strong aria-hidden="true">16.8.</strong> Bump Generator</a></li><li class="chapter-item expanded "><a href="../../modding-tools/savandt.html"><strong aria-hidden="true">16.9.</strong> Sound Attribute Viewer And Tweaker</a></li><li class="chapter-item expanded "><a href="../../modding-tools/upgrade-editor.html"><strong aria-hidden="true">16.10.</strong> Upgrade Editor</a></li><li class="chapter-item expanded "><a href="../../modding-tools/omf-editor-by-valerok.html"><strong aria-hidden="true">16.11.</strong> Modified OMF Editor</a></li><li class="chapter-item expanded "><a href="../../modding-tools/ogf-editor-by-valerok.html"><strong aria-hidden="true">16.12.</strong> Modified OGF Editor</a></li><li class="chapter-item expanded "><a href="../../modding-tools/xray-export-tool.html"><strong aria-hidden="true">16.13.</strong> X-Ray Export Tool</a></li><li class="chapter-item expanded "><a href="../../modding-tools/universal-x64-level-compilers.html"><strong aria-hidden="true">16.14.</strong> Universal x64 level compilers</a></li><li class="chapter-item expanded "><a href="../../modding-tools/xrcompress-by-i-love-kfc.html"><strong aria-hidden="true">16.15.</strong> xrCompress</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Anomaly Modding Book</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Igigog/anomaly-modding-book" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Igigog/anomaly-modding-book/edit/main/src/configs/creatures/m_(mutant).ltx.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="m_mutantltx-config-file"><a class="header" href="#m_mutantltx-config-file">m_<em>Mutant</em>.ltx Config File</a></h1>
+<hr />
+<h2 id="default-parameters-that-any-mutants-have"><a class="header" href="#default-parameters-that-any-mutants-have">Default parameters that any mutants have</a></h2>
+<h3 id="general-parameters"><a class="header" href="#general-parameters">General parameters</a></h3>
+<p>Example value taken from vanilla m_bloodsucker.ltx</p>
+<details>
+    <summary>General parameters</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>GroupControlSection</td><td></td><td>spawn_group</td><td></td></tr>
+<tr><td>SpaceRestrictionSection</td><td></td><td>space_restrictor<br> zone_mosquito_bald<br> zone_witches_galantine<br> zone_burning_fuzz1<br> zone_mincer<br> zone_gravi_zone</td><td></td></tr>
+<tr><td>$spawn</td><td></td><td>&quot;monsters\bloodsuckers\bloodsucker_base&quot;</td><td></td></tr>
+<tr><td>$npc</td><td></td><td>on</td><td></td></tr>
+<tr><td>$prefetch</td><td>Preload order?</td><td>16</td><td></td></tr>
+<tr><td>visual</td><td>Model of a living mutant</td><td>monsters\krovosos\krovosos</td><td></td></tr>
+<tr><td>corpse_visual</td><td>Dead mutant model</td><td>monsters\krovosos\krovosos_dead</td><td></td></tr>
+<tr><td>destroyed_vis_name</td><td>visual, what remains when destroying a monster in an anomaly</td><td></td><td></td></tr>
+<tr><td>cform</td><td>parameter for dynamic objects; necessary for correct creation of the skeleton model</td><td>skeleton</td><td>skeleton</td></tr>
+<tr><td>class</td><td>engine mutant class</td><td>SM_BLOOD</td><td>SM_BLOOD -</td></tr>
+<tr><td>script_binding</td><td></td><td>bind_monster.bind</td><td></td></tr>
+<tr><td>rank</td><td></td><td>16</td><td></td></tr>
+<tr><td>spec_rank</td><td>Monster rank displayed in statistics</td><td>normal</td><td></td></tr>
+<tr><td>community</td><td>What type of monster belongs to</td><td>bloodsucker</td><td>Taken from game_relations.ltx</td></tr>
+<tr><td>species</td><td>biological species</td><td>bloodsucker</td><td></td></tr>
+<tr><td>monster_type</td><td></td><td></td><td></td></tr>
+<tr><td>can_spawn_phantom</td><td>Can spawn phantoms</td><td>true</td><td></td></tr>
+<tr><td>spawn_phantom</td><td></td><td>m_phantom_bloodsucker</td><td></td></tr>
+<tr><td>killer_clsids</td><td>Game classes of objects from which a mutant can die in offline</td><td>Z_MINCER<br> Z_GALANT<br> ZS_BFUZZ<br> ZS_MBALD<br> ZS_GALAN<br> ZS_MINCE</td><td></td></tr>
+<tr><td>material</td><td>Mutant material specified in <a href="../../main-folders-and-files/shaders-list/materials-list.html">Materials</a></td><td>creatures\medium</td><td></td></tr>
+<tr><td>selector_approach</td><td></td><td></td><td></td></tr>
+<tr><td>terrain</td><td></td><td>bloodsucker_terrain</td><td></td></tr>
+<tr><td>step_params</td><td>Step parameters</td><td>m_bloodsucker_step_params</td><td></td></tr>
+<tr><td>LegsCount</td><td>Legs count</td><td>2</td><td></td></tr>
+</tbody></table>
+</details>
+<h3 id="ai"><a class="header" href="#ai">AI</a></h3>
+<details>
+    <summary>AI</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>DayTime_Begin</td><td>Beginning of a mutant's day</td><td>22</td><td>Game Time</td></tr>
+<tr><td>DayTime_End</td><td>End of a mutant's day</td><td>5</td><td>Game Time</td></tr>
+<tr><td>Min_Satiety</td><td>Minimum hunger value</td><td>0.000055</td><td></td></tr>
+<tr><td>Max_Satiety</td><td>Maximum hunger value</td><td>0.9</td><td></td></tr>
+<tr><td>ef_creature_type</td><td>Mutant AI type (<a href="../../main-folders-and-files/file-formats/index.html#efd-evaluation-function-data">Evaluation Function</a>)</td><td>13</td><td>-1 - <abbr title="Unconfirmed">No AI?</abbr><br> 1 - ?<br> 2 - Rat<br> 3 - Zombie<br> 4 - <abbr title="Unconfirmed">Zombified Man?</abbr><br> 5 - Poltergeist<br> 6 - Blind Dog<br> 7 - Flesh<br> 8 - ?<br> 9 - ?<br> 10 - ?<br> 11 - Boar<br> 12 - Controller<br> 13 - Bloodsucker<br> 14 - <abbr title="Unconfirmed">Soldier?</abbr><br> 15 - ?<br> 16 - <abbr title="Unconfirmed">Military Stalker?</abbr><br> 17 - Stalker<br> 18 - Burer<br> 19 - Psevdogiant<br> 20 - Chimera<br> 21 - Fracture</td></tr>
+<tr><td>ef_weapon_type</td><td></td><td>2</td><td></td></tr>
+<tr><td>ef_detector_type</td><td>Type of detector used (<a href="../../main-folders-and-files/file-formats/index.html#efd-evaluation-function-data">Evaluation Function</a>)</td><td>1</td><td>1 - no detector<br> 2 - simple detector<br> 3 - visual detector</td></tr>
+<tr><td>panic_threshold</td><td>The threshold below which there will be panic</td><td>0.01</td><td></td></tr>
+<tr><td>weapon_usage</td><td><abbr title="Unconfirmed">Ability to use weapons(?)</abbr></td><td>0</td><td></td></tr>
+</tbody></table>
+</details>
+<h3 id="bones"><a class="header" href="#bones">Bones</a></h3>
+<details>
+    <summary>Bones</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>bone_head</td><td></td><td>bip01_head</td><td>bone name</td></tr>
+<tr><td>bone_fire</td><td></td><td>bip01_head</td><td>bone name</td></tr>
+<tr><td>bone_eye_left</td><td></td><td>bip01_ponytail1</td><td>bone name</td></tr>
+<tr><td>bone_eye_right</td><td></td><td>bip01_ponytail2</td><td>bone name</td></tr>
+<tr><td>bone_spin</td><td></td><td>bip01_spine1</td><td>bone name</td></tr>
+</tbody></table>
+</details>
+<h3 id="invertory"><a class="header" href="#invertory">Invertory</a></h3>
+<details>
+    <summary>Invertory</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>icon</td><td>Icon in inventory</td><td>ui_npc_monster_krovosos</td><td></td></tr>
+<tr><td>Spawn_Inventory_Item_Section</td><td>What can be found during the search</td><td>mutant_krovosos_jaw</td><td>Taken from the file monster_items.ltx</td></tr>
+<tr><td>Spawn_Inventory_Item_Probability</td><td>The chance of a body part falling out</td><td>0.0</td><td>if you set it to 1.0, it will always fall out. If set to 2.0, two pieces will fall out.</td></tr>
+</tbody></table>
+</details>
+<h3 id="influences"><a class="header" href="#influences">Influences</a></h3>
+<h4 id="fire"><a class="header" href="#fire">Fire</a></h4>
+<details>
+    <summary>Fire</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>fire_max_distance</td><td></td><td>0</td><td></td></tr>
+<tr><td>fire_max_power</td><td></td><td>5</td><td></td></tr>
+<tr><td>fire_linear_factor</td><td></td><td>0</td><td></td></tr>
+<tr><td>fire_quadratic_factor</td><td></td><td>0.025</td><td></td></tr>
+</tbody></table>
+</details>
+<h4 id="psy"><a class="header" href="#psy">Psy</a></h4>
+<details>
+    <summary>Psy</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>psy_max_distance</td><td></td><td>0</td><td></td></tr>
+<tr><td>psy_max_power</td><td></td><td>5</td><td></td></tr>
+<tr><td>psy_linear_factor</td><td></td><td>0.05</td><td></td></tr>
+<tr><td>psy_quadratic_factor</td><td></td><td>0</td><td></td></tr>
+</tbody></table>
+</details>
+<h4 id="radiation"><a class="header" href="#radiation">Radiation</a></h4>
+<details>
+    <summary>Radiation</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>radiation_max_distance</td><td></td><td>0</td><td></td></tr>
+<tr><td>radiation_max_power</td><td></td><td>0.01</td><td></td></tr>
+<tr><td>radiation_linear_factor</td><td></td><td>1</td><td></td></tr>
+<tr><td>radiation_quadratic_factor</td><td></td><td>1</td><td></td></tr>
+<tr><td>radiation_pp_effector_name</td><td></td><td>postprocess_rad</td><td></td></tr>
+<tr><td>radiation_pp_highest_at</td><td></td><td>0.02</td><td></td></tr>
+</tbody></table>
+</details>
+<h3 id="offline-alife"><a class="header" href="#offline-alife">Offline Alife</a></h3>
+<details>
+    <summary>Offline Alife</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>Scheduled</td><td></td><td>on</td><td></td></tr>
+<tr><td>Human</td><td></td><td>off</td><td></td></tr>
+<tr><td>Health</td><td>amount of lives in offline</td><td>700</td><td></td></tr>
+<tr><td>MinSpeed</td><td>minimum speed to move in offline</td><td>2.0</td><td></td></tr>
+<tr><td>MaxSpeed</td><td>maximum speed to move in offline</td><td>4.5</td><td></td></tr>
+<tr><td>going_speed</td><td></td><td>3.0</td><td></td></tr>
+<tr><td>current_level_going_speed</td><td></td><td>3.0</td><td></td></tr>
+<tr><td>search_speed</td><td></td><td></td><td></td></tr>
+<tr><td>smart_terrain_choose_interval</td><td></td><td>00:15:00</td><td></td></tr>
+</tbody></table>
+</details>
+<h3 id="physics"><a class="header" href="#physics">Physics</a></h3>
+<details>
+    <summary>Physics</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>ph_box0_center</td><td></td><td>0.0,  0.9,  0.0</td><td></td></tr>
+<tr><td>ph_box0_size</td><td></td><td>0.35, 0.9,  0.35</td><td></td></tr>
+<tr><td>ph_box1_center</td><td></td><td>0.0,  0.6,  0.0</td><td></td></tr>
+<tr><td>ph_box1_size</td><td></td><td>0.40, 0.6,  0.40</td><td></td></tr>
+<tr><td>ph_foot_size</td><td></td><td>0.20, 0.23, 0.20</td><td></td></tr>
+<tr><td>ph_crash_speed_min</td><td></td><td>100</td><td></td></tr>
+<tr><td>ph_crash_speed_max</td><td></td><td>200</td><td></td></tr>
+<tr><td>ph_collision_damage_factor</td><td></td><td>0.1</td><td></td></tr>
+<tr><td>ph_mass</td><td></td><td>150</td><td></td></tr>
+<tr><td>ph_skeleton_airr_lin_factor</td><td></td><td>2.0</td><td></td></tr>
+<tr><td>ph_skeleton_airr_ang_factor</td><td></td><td>0.0</td><td></td></tr>
+<tr><td>ph_skeleton_hinger_factor1</td><td></td><td>1.0</td><td></td></tr>
+<tr><td>ph_skeleton_ddelay</td><td>Time of change in the value of friction in the joint since the creation of the shell</td><td>15.0</td><td></td></tr>
+<tr><td>ph_skel_fatal_impulse_factor</td><td></td><td>12.0</td><td></td></tr>
+<tr><td>ph_after_death_velocity_factor</td><td></td><td>0.75</td><td></td></tr>
+<tr><td>ph_skel_shot_up_factor</td><td></td><td>0.25</td><td></td></tr>
+</tbody></table>
+</details>
+<h3 id="movement"><a class="header" href="#movement">Movement</a></h3>
+<h4 id="velocities"><a class="header" href="#velocities">Velocities</a></h4>
+<details>
+    <summary>Velocities</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>Velocity_Stand</td><td></td><td></td><td></td></tr>
+<tr><td>Velocity_RunFwdNormal</td><td>running speed</td><td></td><td></td></tr>
+<tr><td>Velocity_RunFwdDamaged</td><td>running speed when wounded</td><td></td><td></td></tr>
+<tr><td>Velocity_WalkFwdNormal</td><td>step velocity</td><td></td><td></td></tr>
+<tr><td>Velocity_WalkFwdDamaged</td><td>step velocity when wounded</td><td></td><td></td></tr>
+<tr><td>Velocity_Drag</td><td>velocity when dragging an object</td><td></td><td></td></tr>
+<tr><td>Velocity_Steal</td><td>sneak velocity</td><td></td><td></td></tr>
+</tbody></table>
+</details>
+<h4 id="accelerations"><a class="header" href="#accelerations">Accelerations</a></h4>
+<details>
+    <summary>Accelerations</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>Accel_Generic</td><td>Total mutant speed</td><td>1.5</td><td></td></tr>
+<tr><td>Accel_Calm</td><td>Mutant acceleration at calm</td><td>2.5</td><td></td></tr>
+<tr><td>Accel_Aggressive</td><td>Mutant acceleration in an aggressive state</td><td>20.0</td><td></td></tr>
+</tbody></table>
+</details>
+<h3 id="attack-parameters"><a class="header" href="#attack-parameters">Attack parameters</a></h3>
+<details>
+    <summary>Attack parameters</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>MinAttackDist</td><td>Minimum attack distance</td><td>2.0</td><td></td></tr>
+<tr><td>MaxAttackDist</td><td>Maximum attack distance</td><td>2.8</td><td></td></tr>
+<tr><td>EffectDistance</td><td></td><td>20.0</td><td></td></tr>
+<tr><td>hit_type</td><td>Type of damage to the target</td><td>wound</td><td></td></tr>
+<tr><td>as_min_dist</td><td></td><td>2.0</td><td></td></tr>
+<tr><td>as_step</td><td></td><td>0.0</td><td></td></tr>
+<tr><td>Run_Attack_Dist</td><td></td><td>3.5, 4.5</td><td></td></tr>
+<tr><td>Run_Attack_Delay</td><td></td><td>1000, 3000</td><td></td></tr>
+<tr><td>attack_params</td><td></td><td>m_bloodsucker_attack_params</td><td></td></tr>
+<tr><td>attack_effector</td><td></td><td>m_bloodsucker_attack_effector</td><td></td></tr>
+<tr><td>Melee_Rotation_Factor</td><td>Angular velocity during melee</td><td>2.0</td><td></td></tr>
+</tbody></table>
+</details>
+<h4 id="attack-on-move"><a class="header" href="#attack-on-move">Attack On Move</a></h4>
+<details>
+    <summary>Attack On Move</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>aom_enabled</td><td>Whether the ability to attack on the move is enabled</td><td>1</td><td></td></tr>
+<tr><td>aom_only_jump</td><td><abbr title="Unconfirmed">Ability to attack only when jumping?</abbr></td><td>1</td><td></td></tr>
+<tr><td>aom_animation_left</td><td><abbr title="Unconfirmed">Attack animations on the move left?</abbr></td><td>stand_run_attack_left_</td><td></td></tr>
+<tr><td>aom_animation_right</td><td><abbr title="Unconfirmed">Attack animations on the move right?</abbr></td><td>stand_run_attack_right_</td><td></td></tr>
+<tr><td>aom_far_radius</td><td></td><td>15</td><td></td></tr>
+<tr><td>aom_max_go_close_time</td><td></td><td>8</td><td></td></tr>
+<tr><td>aom_prepare_time</td><td></td><td>5</td><td></td></tr>
+<tr><td>aom_attack_radius</td><td></td><td>1</td><td></td></tr>
+<tr><td>aom_update_side_period</td><td></td><td>4</td><td></td></tr>
+<tr><td>aom_prediction_factor</td><td></td><td>1.2</td><td></td></tr>
+</tbody></table>
+</details>
+<h3 id="entity-conditions"><a class="header" href="#entity-conditions">Entity Conditions</a></h3>
+<details>
+    <summary>Entity Conditions</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>satiety_v</td><td>Rate of decrease in satiety over time</td><td>0.0001</td><td></td></tr>
+<tr><td>radiation_v</td><td>Radiation reduction rate</td><td>0.00001</td><td></td></tr>
+<tr><td>satiety_power_v</td><td>Increasing stamina with decreasing satiety</td><td>0.005</td><td></td></tr>
+<tr><td>satiety_health_v</td><td>Increasing health with decreasing satiety</td><td>0.001</td><td></td></tr>
+<tr><td>satiety_critical</td><td>The critical satiety value at which health begins to decrease</td><td></td><td></td></tr>
+<tr><td>radiation_health_v</td><td>Reduced health when exposed to radiation</td><td>0.0</td><td></td></tr>
+<tr><td>morale_v</td><td>Rate of Moral Restoration</td><td>0.01</td><td></td></tr>
+<tr><td>health_hit_part</td><td><abbr title="Unconfirmed">the percentage of the hit that goes to take away health?</abbr></td><td>1.0</td><td></td></tr>
+<tr><td>power_hit_part</td><td><abbr title="Unconfirmed">the percentage of the hit that goes to take away power?</abbr></td><td>1.0</td><td></td></tr>
+<tr><td>psy_health_v</td><td>Speed of psy health recovery</td><td>0.1</td><td></td></tr>
+<tr><td>health_restore_v</td><td><abbr title="Unconfirmed">Restoring health over time?</abbr></td><td>0.0001</td><td></td></tr>
+<tr><td>immunities_sect</td><td>Mutant immunities section</td><td>bloodsucker_immunities</td><td></td></tr>
+<tr><td>protections_sect</td><td>Mutant protections section</td><td>bloodsucker_protections</td><td></td></tr>
+<tr><td>bleeding_v</td><td>Blood loss at nominal wound per second</td><td>0.008</td><td></td></tr>
+<tr><td>wound_incarnation_v</td><td><abbr title="Unconfirmed">the steepness of the healing curve (what percentage of the wound remains after healing in a game second)?</abbr></td><td>0.02</td><td></td></tr>
+<tr><td>min_wound_size</td><td>Minimum value at which bleeding will start</td><td>0.0226</td><td></td></tr>
+<tr><td>DamagedThreshold</td><td>The value at which the wound animation starts to play</td><td>0.36</td><td></td></tr>
+</tbody></table>
+</details>
+<h4 id="sleep-settings"><a class="header" href="#sleep-settings">Sleep settings</a></h4>
+<p>coefficients of parameter change rates during sleep</p>
+<details>
+    <summary>Sleep settings</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>sleep_health</td><td><abbr title="Unconfirmed">Restoring health when sleeping?</abbr></td><td>1.0</td><td></td></tr>
+<tr><td>sleep_power</td><td>Recovering strength when sleeping</td><td>1.0</td><td></td></tr>
+<tr><td>sleep_satiety</td><td>Decreased strength when sleeping</td><td>1.0</td><td></td></tr>
+<tr><td>sleep_radiation</td><td>damage from radiation while sleeping in a radioactive zone</td><td>1.0</td><td></td></tr>
+<tr><td>sleep_psy_health</td><td><abbr title="Unconfirmed">Restoring psi health when sleeping?</abbr></td><td>1.0</td><td></td></tr>
+</tbody></table>
+</details>
+<h4 id="eat-settings"><a class="header" href="#eat-settings">Eat settings</a></h4>
+<details>
+    <summary>Eat settings</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>eat_freq</td><td>bite frequency</td><td>5.0</td><td>Specified in seconds</td></tr>
+<tr><td>eat_slice</td><td>increase in satiety at one bite</td><td>0.05</td><td></td></tr>
+<tr><td>eat_slice_weight</td><td>reduction of food from a corpse in one bite</td><td>10.0</td><td></td></tr>
+<tr><td>satiety_threshold</td><td>If the value is lower than specified, the monster becomes hungry</td><td>0.8</td><td></td></tr>
+<tr><td>distance_to_corpse</td><td>Distance to corpse to start playing eating animation</td><td>0.8</td><td></td></tr>
+</tbody></table>
+</details>
+<h4 id="morale-settings"><a class="header" href="#morale-settings">Morale settings</a></h4>
+<details>
+    <summary>Morale settings</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>Morale_Hit_Quant</td><td></td><td>0.1</td><td></td></tr>
+<tr><td>Morale_Attack_Success_Quant</td><td>increase in morale during a successful attack</td><td>0.1</td><td></td></tr>
+<tr><td>Morale_Take_Heart_Speed</td><td></td><td>0.1</td><td></td></tr>
+<tr><td>Morale_Despondent_Speed</td><td></td><td>0.01</td><td></td></tr>
+<tr><td>Morale_Stable_Speed</td><td></td><td>0.01</td><td></td></tr>
+<tr><td>Morale_Despondent_Threashold</td><td></td><td>0.5</td><td></td></tr>
+</tbody></table>
+</details>
+<h3 id="sounds-and-sound-parameters"><a class="header" href="#sounds-and-sound-parameters">Sounds and sound parameters</a></h3>
+<details>
+    <summary>Sounds</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>sound_idle</td><td>Idle sound</td><td>monsters\bloodsucker\idle_</td><td></td></tr>
+<tr><td>sound_eat</td><td>sound of eating</td><td>monsters\bloodsucker\eat_</td><td></td></tr>
+<tr><td>sound_aggressive</td><td>sound of aggression</td><td>monsters\bloodsucker\sucker_breath_mix_</td><td></td></tr>
+<tr><td>sound_attack_hit</td><td>Sound of attack</td><td>monsters\bloodsucker\attack_hit_</td><td></td></tr>
+<tr><td>sound_take_damage</td><td>sound of taking damage</td><td>monsters\bloodsucker\hit_</td><td></td></tr>
+<tr><td>sound_die</td><td>Sound of death</td><td>monsters\bloodsucker\die_</td><td></td></tr>
+<tr><td>sound_panic</td><td>Sound of panic</td><td>monsters\bloodsucker\hit_</td><td></td></tr>
+<tr><td>sound_die_in_anomaly</td><td>Sound when dying in an anomaly</td><td></td><td></td></tr>
+<tr><td>sound_distant_idle</td><td><abbr title="Unconfirmed">The sound of idling in the distance?</abbr></td><td>monsters\bloodsucker\die_</td><td></td></tr>
+</tbody></table>
+</details>
+<h4 id="sounds-parameters"><a class="header" href="#sounds-parameters">Sounds parameters</a></h4>
+<details>
+    <summary>Sounds parameters</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>distant_idle_sound_delay</td><td></td><td>80000</td><td></td></tr>
+<tr><td>distant_idle_sound_range</td><td></td><td>100.0</td><td></td></tr>
+<tr><td>idle_sound_delay</td><td>random delay between sound playback at idle</td><td>95000</td><td>0 to N</td></tr>
+<tr><td>eat_sound_delay</td><td>random delay between playing the sound of eating</td><td>3000</td><td>0 to N</td></tr>
+<tr><td>attack_sound_delay</td><td>random delay between sound playback on attack</td><td>1000</td><td>0 to N</td></tr>
+<tr><td>SoundThreshold</td><td></td><td>0.05</td><td>range [0 - 1]</td></tr>
+<tr><td>max_hear_dist</td><td>Distance at which sounds are heard</td><td>60</td><td></td></tr>
+</tbody></table>
+</details>
+<h3 id="damages"><a class="header" href="#damages">Damages</a></h3>
+<details>
+    <summary>Damages</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>damage</td><td>m_bloodsucker_damage</td><td></td><td></td></tr>
+<tr><td>critical_wound_threshold</td><td>Critical wound threshold</td><td>-1</td><td></td></tr>
+<tr><td>critical_wound_decrease_quant</td><td></td><td>0</td><td></td></tr>
+<tr><td>critical_wound_anim_head</td><td></td><td>critical_hit_torso_0</td><td></td></tr>
+<tr><td>critical_wound_bones_head</td><td></td><td>bloodsucker_critical_wound_bones_head</td><td></td></tr>
+<tr><td>critical_wound_anim_torso</td><td></td><td>critical_hit_torso_0</td><td></td></tr>
+<tr><td>critical_wound_bones_torso</td><td></td><td>bloodsucker_critical_wound_bones_torso</td><td></td></tr>
+<tr><td>critical_wound_anim_legs</td><td></td><td>critical_hit_torso_0</td><td></td></tr>
+<tr><td>critical_wound_bones_legs</td><td></td><td>bloodsucker_critical_wound_bones_legs</td><td></td></tr>
+</tbody></table>
+</details>
+<h3 id="abilitys"><a class="header" href="#abilitys">Abilitys</a></h3>
+<p>Unique abilitys for mutants. Each mutant may have its own individual abilities, or none at all.</p>
+<h3 id="vision"><a class="header" href="#vision">Vision</a></h3>
+<details>
+    <summary>Vision</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>eye_fov</td><td>Field of view</td><td>180</td><td></td></tr>
+<tr><td>eye_range</td><td>Visibility range</td><td>150</td><td></td></tr>
+<tr><td>DynamicObjectsCount</td><td>Determines how many objects the mutant can remember seeing</td><td>32</td><td></td></tr>
+<tr><td>vision_free_section</td><td></td><td>bloodsucker_vision_free</td><td></td></tr>
+<tr><td>vision_danger_section</td><td></td><td>bloodsucker_vision_danger</td><td></td></tr>
+<tr><td>min_view_distance</td><td>Minimum visibility distance</td><td>0.8</td><td>coefficient, which is multiplied by eye_range, depending on the angle</td></tr>
+<tr><td>max_view_distance</td><td>Maximum visibility distance</td><td>1.0</td><td>coefficient, which is multiplied by eye_range, depending on the angle</td></tr>
+<tr><td>visibility_threshold</td><td>value, when the sum is reached, the object is considered visible</td><td>190.0</td><td></td></tr>
+<tr><td>always_visible_distance</td><td></td><td>0.05</td><td></td></tr>
+<tr><td>time_quant</td><td>Used when calculating the visibility of one creature to another (the formula involves time, time quantum, illumination, speed of an object, and distance to it)</td><td>0.0005</td><td></td></tr>
+<tr><td>decrease_value</td><td>the value by which the weight is reduced if the object is caught in the frustum, but is detached for some reason</td><td>0.01</td><td></td></tr>
+<tr><td>velocity_factor</td><td></td><td>0.2</td><td></td></tr>
+<tr><td>luminocity_factor</td><td>light factor (for Actor only)</td><td>0.6</td><td></td></tr>
+<tr><td>transparency_threshold</td><td></td><td>0.1</td><td></td></tr>
+<tr><td>feel_enemy_who_just_hit_max_distance</td><td>the distance at which the monster will sense the shooter in any case</td><td>350</td><td></td></tr>
+</tbody></table>
+</details>
+<h3 id="special-effectors"><a class="header" href="#special-effectors">Special Effectors</a></h3>
+<details>
+    <summary>Special Effectors</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>duality_h</td><td></td><td>0.08</td><td></td></tr>
+<tr><td>duality_v</td><td></td><td>0.06</td><td></td></tr>
+<tr><td>blur</td><td></td><td>0.71</td><td></td></tr>
+<tr><td>gray</td><td></td><td>0.5</td><td></td></tr>
+<tr><td>noise_intensity</td><td></td><td>0.5</td><td></td></tr>
+<tr><td>noise_grain</td><td></td><td>0.3</td><td></td></tr>
+<tr><td>noise_fps</td><td></td><td>30</td><td></td></tr>
+<tr><td>color_base</td><td></td><td>0.255,0.0,0.0</td><td></td></tr>
+<tr><td>color_gray</td><td></td><td>0.333,0.333,0.333</td><td></td></tr>
+<tr><td>color_add</td><td></td><td>0,0,0</td><td></td></tr>
+<tr><td>time</td><td></td><td>0.65</td><td></td></tr>
+<tr><td>time_attack</td><td>fade in</td><td>0.1</td><td></td></tr>
+<tr><td>time_release</td><td>fade out</td><td>0.45</td><td></td></tr>
+<tr><td>ce_time</td><td></td><td>0.6</td><td></td></tr>
+<tr><td>ce_amplitude</td><td></td><td>10</td><td></td></tr>
+<tr><td>ce_period_number</td><td></td><td>1.0</td><td></td></tr>
+<tr><td>ce_power</td><td></td><td>2.0</td><td></td></tr>
+<tr><td>skin_armor</td><td></td><td>0.3</td><td></td></tr>
+<tr><td>hit_fraction_monster</td><td></td><td>0.5</td><td></td></tr>
+</tbody></table>
+</details>
+<h2 id="unique-parameters-of-different-engine-classes"><a class="header" href="#unique-parameters-of-different-engine-classes">Unique parameters of different engine classes</a></h2>
+<hr />
+<h3 id="ai_crow"><a class="header" href="#ai_crow">AI_Crow</a></h3>
+<details>
+    <summary>AI_Crow</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>speed</td><td></td><td>6.0</td><td></td></tr>
+<tr><td>angular_speed</td><td></td><td>0.1</td><td></td></tr>
+<tr><td>goal_change_delta</td><td></td><td>5.0</td><td></td></tr>
+<tr><td>min_height</td><td></td><td>30</td><td></td></tr>
+<tr><td>goal_variability</td><td></td><td>50.0, 10.0, 50.0</td><td></td></tr>
+<tr><td>idle_sound_delta</td><td></td><td>400.f</td><td></td></tr>
+</tbody></table>
+</details>
+<hr />
+<h3 id="sm_blood-bloodsucker"><a class="header" href="#sm_blood-bloodsucker">SM_BLOOD (Bloodsucker)</a></h3>
+<details>
+    <summary>SM_BLOOD</summary>
+<h4 id="sounds"><a class="header" href="#sounds">Sounds</a></h4>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>Sound_Growl</td><td></td><td>monsters\bloodsucker\sucker_growl_</td><td></td></tr>
+<tr><td>Sound_Alien</td><td></td><td>monsters\bloodsucker\sucker_breath_</td><td></td></tr>
+<tr><td>Sound_Invisibility_Change_State</td><td></td><td>monsters\bloodsucker\invisible</td><td></td></tr>
+<tr><td>Sound_Vampire_Grasp</td><td></td><td>monsters\bloodsucker\vampire_grasp</td><td></td></tr>
+<tr><td>Sound_Vampire_Sucking</td><td></td><td>monsters\bloodsucker\vampire_sucking</td><td></td></tr>
+<tr><td>Sound_Vampire_Hit</td><td></td><td>monsters\bloodsucker\vampire_hit</td><td></td></tr>
+<tr><td>Sound_Vampire_StartHunt</td><td></td><td>monsters\bloodsucker\vampire_grasp</td><td></td></tr>
+</tbody></table>
+<h4 id="velocities-1"><a class="header" href="#velocities-1">Velocities</a></h4>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>Velocity_Invisible_Linear</td><td></td><td>5.0</td><td></td></tr>
+<tr><td>Velocity_Invisible_Angular</td><td></td><td>4.62</td><td></td></tr>
+</tbody></table>
+<h4 id="abilitys-1"><a class="header" href="#abilitys-1">Abilitys</a></h4>
+<h5 id="invisible-ability"><a class="header" href="#invisible-ability">Invisible Ability</a></h5>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>Particle_Invisible</td><td></td><td>anomaly2\bloodsucker_shield</td><td></td></tr>
+<tr><td>Particles_Invisible_Tracks</td><td></td><td>monsters\bloodsucker_step</td><td></td></tr>
+<tr><td>Particles_Invisible_Tracks_Freq</td><td></td><td>70</td><td></td></tr>
+<tr><td>Invisibility_BlinkTime</td><td></td><td>300</td><td></td></tr>
+<tr><td>Invisibility_BlinkMicroInterval</td><td></td><td>30</td><td></td></tr>
+<tr><td>Invisibility_EnergySpeed</td><td></td><td>0.05</td><td></td></tr>
+<tr><td>full_visibility_radius</td><td></td><td>5</td><td></td></tr>
+<tr><td>partial_visibility_radius</td><td></td><td>9</td><td></td></tr>
+<tr><td>no_visibility_radius</td><td></td><td>14</td><td></td></tr>
+<tr><td>visibility_state_change_min_delay</td><td></td><td>1000</td><td></td></tr>
+</tbody></table>
+<h4 id="vampire-ability"><a class="header" href="#vampire-ability">Vampire Ability</a></h4>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>Vampire_Delay</td><td></td><td>5000</td><td></td></tr>
+<tr><td>Vampire_Want_Speed</td><td></td><td>0.1</td><td></td></tr>
+<tr><td>Vampire_Wound</td><td></td><td>0.2</td><td></td></tr>
+<tr><td>Vampire_GainHealth</td><td>how many hp to restore?</td><td>0.65</td><td></td></tr>
+<tr><td>Vampire_Sufficient_Hits</td><td></td><td>5</td><td></td></tr>
+<tr><td>Vampire_Distance</td><td></td><td>1</td><td></td></tr>
+<tr><td>vampire_effector</td><td></td><td>m_bloodsucker_vampire_effector</td><td></td></tr>
+</tbody></table>
+<h4 id="predator-ability"><a class="header" href="#predator-ability">Predator Ability</a></h4>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>Predator_Visual</td><td>Visual in invisibility</td><td>monsters\krovosos\krovosos_xray</td><td></td></tr>
+</tbody></table>
+</details>
+<hr />
+<h3 id="sm_boarw-boar"><a class="header" href="#sm_boarw-boar">SM_BOARW (Boar)</a></h3>
+<details>
+    <summary>SM_BOARW</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>actor_restrictor</td><td></td><td>medium_monster</td><td></td></tr>
+</tbody></table>
+<h3 id="abilitys-2"><a class="header" href="#abilitys-2">Abilitys</a></h3>
+<h4 id="squad-seperation-behaviour-ability"><a class="header" href="#squad-seperation-behaviour-ability">Squad seperation behaviour Ability</a></h4>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>separate_factor</td><td>pushing force</td><td>0.8</td><td></td></tr>
+<tr><td>separate_range</td><td>radius in which the pushing acts</td><td>3</td><td></td></tr>
+</tbody></table>
+</details>
+<hr />
+<h3 id="sm_burer-burer"><a class="header" href="#sm_burer-burer">SM_BURER (Burer)</a></h3>
+<details>
+    <summary>SM_BURER</summary>
+<h4 id="sounds-1"><a class="header" href="#sounds-1">Sounds</a></h4>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>sound_tele_hold</td><td></td><td>monsters\burer\burer_tele_hold</td><td></td></tr>
+<tr><td>sound_tele_throw</td><td></td><td>monsters\burer\burer_tele_throw</td><td></td></tr>
+<tr><td>sound_gravi_wave</td><td></td><td></td><td></td></tr>
+<tr><td>sound_tele_attack</td><td></td><td></td><td></td></tr>
+<tr><td>scan_sound</td><td></td><td>monsters\burer\burer_scan_affect_0</td><td></td></tr>
+</tbody></table>
+<h3 id="abilitys-3"><a class="header" href="#abilitys-3">Abilitys</a></h3>
+<h4 id="shield-ability"><a class="header" href="#shield-ability">Shield Ability</a></h4>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>shield_cooldown</td><td></td><td>3000</td><td></td></tr>
+<tr><td>shield_time</td><td></td><td>3000</td><td></td></tr>
+<tr><td>shield_keep_particle</td><td></td><td>artefact\af_thermal_hide</td><td></td></tr>
+<tr><td>shield_keep_particle_period</td><td></td><td>300</td><td></td></tr>
+<tr><td>Particle_Shield</td><td></td><td>artefact\af_thermal_hide</td><td></td></tr>
+</tbody></table>
+<h4 id="anti-aim-ability"><a class="header" href="#anti-aim-ability">Anti-aim Ability</a></h4>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>anti_aim_timeout</td><td></td><td>2</td><td>sec</td></tr>
+<tr><td>anti_aim_effectors</td><td></td><td>effector_monster_hit_1, effector_monster_hit_2, effector_monster_hit_3, effector_monster_hit_4</td><td></td></tr>
+<tr><td>anti_aim_animation</td><td></td><td>stand_stamina_attack_</td><td></td></tr>
+<tr><td>anti_aim_max_angle</td><td></td><td>0.3</td><td></td></tr>
+<tr><td>anti_aim_detection_gain_speed</td><td></td><td>10</td><td></td></tr>
+<tr><td>anti_aim_detection_loose_speed</td><td></td><td>0.1</td><td></td></tr>
+<tr><td>weapon_drop_velocity</td><td></td><td>8</td><td></td></tr>
+<tr><td>weapon_drop_stamina_k</td><td></td><td>0.6</td><td>IF player stamina &lt; stamina_hit*inv_weight(weapon param)*weapon_drop_stamina_k THEN weapon is dropped</td></tr>
+<tr><td>weight_to_stamina_hit</td><td></td><td>0.11</td><td>kg to stamina %</td></tr>
+</tbody></table>
+<h4 id="gravi-ability"><a class="header" href="#gravi-ability">Gravi Ability</a></h4>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>Gravi_Cooldown</td><td></td><td>6840</td><td>milisec</td></tr>
+<tr><td>Gravi_MinDist</td><td></td><td>1</td><td>meter</td></tr>
+<tr><td>Gravi_MaxDist</td><td></td><td>18</td><td>meter</td></tr>
+<tr><td>Gravi_Speed</td><td></td><td>33</td><td>meter/sec</td></tr>
+<tr><td>Gravi_Step</td><td></td><td>2</td><td>meter</td></tr>
+<tr><td>Gravi_Time_To_Hold</td><td></td><td>1940</td><td>milisec</td></tr>
+<tr><td>Gravi_Radius</td><td></td><td>3.0</td><td></td></tr>
+<tr><td>Gravi_Impulse_To_Objects</td><td></td><td>70.0</td><td></td></tr>
+<tr><td>Gravi_Impulse_To_Enemy</td><td></td><td>330.0</td><td></td></tr>
+<tr><td>Gravi_Hit_Power</td><td></td><td>0.61</td><td></td></tr>
+</tbody></table>
+<h4 id="tele-ability"><a class="header" href="#tele-ability">Tele Ability</a></h4>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>Tele_Max_Handled_Objects</td><td></td><td>3</td><td></td></tr>
+<tr><td>Tele_Max_Time</td><td>max time to be in telekinesis</td><td>6200</td><td>s</td></tr>
+<tr><td>Tele_Time_To_Hold</td><td></td><td>340</td><td></td></tr>
+<tr><td>Tele_Object_Min_Mass</td><td></td><td>10</td><td></td></tr>
+<tr><td>Tele_Object_Max_Mass</td><td></td><td>1000.0</td><td></td></tr>
+<tr><td>Tele_Find_Radius</td><td></td><td>25.0</td><td></td></tr>
+<tr><td>Tele_Min_Distance</td><td></td><td>5</td><td></td></tr>
+<tr><td>Tele_Max_Distance</td><td></td><td>60</td><td></td></tr>
+<tr><td>Tele_Raise_Speed</td><td></td><td>7</td><td></td></tr>
+<tr><td>Tele_Fly_Velocity</td><td></td><td>50</td><td></td></tr>
+<tr><td>Tele_Object_Height</td><td></td><td>3</td><td></td></tr>
+</tbody></table>
+<h4 id="scanner-ability"><a class="header" href="#scanner-ability">Scanner Ability</a></h4>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>scan_critical_value</td><td>threshold value</td><td>25.0</td><td></td></tr>
+<tr><td>scan_radius</td><td>scanning radius</td><td>50.0</td><td></td></tr>
+<tr><td>scan_velocity_threshold</td><td>the boundary speed up to which the actor's movement is ignored</td><td>4.0</td><td></td></tr>
+<tr><td>scan_decrease_value</td><td>decrease in the current amount per second</td><td>0.3</td><td></td></tr>
+<tr><td>scan_trace_time_freq</td><td>speed trace frequency</td><td>2</td><td></td></tr>
+<tr><td>scan_effector_section</td><td></td><td>m_burer_scan_effector</td><td></td></tr>
+</tbody></table>
+</details>
+<hr />
+<h3 id="sm_cat_s-cat"><a class="header" href="#sm_cat_s-cat">SM_CAT_S (Cat)</a></h3>
+<details>
+    <summary>SM_CAT_S</summary>
+<h3 id="movement-1"><a class="header" href="#movement-1">Movement</a></h3>
+<h4 id="jump-parameters"><a class="header" href="#jump-parameters">Jump Parameters</a></h4>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>jump_delay</td><td>random delay between jumps</td><td>2500</td><td></td></tr>
+<tr><td>jump_factor</td><td>jump factor</td><td>2.0</td><td></td></tr>
+<tr><td>jump_ground_trace_range</td><td></td><td>1.5</td><td></td></tr>
+<tr><td>jump_hit_trace_range</td><td></td><td>2.0</td><td></td></tr>
+<tr><td>jump_build_line_distance</td><td></td><td>5.0</td><td></td></tr>
+<tr><td>jump_min_distance</td><td>minimum jump distance</td><td>2.0</td><td></td></tr>
+<tr><td>jump_max_distance</td><td>maximum jump distance</td><td>8.0</td><td></td></tr>
+<tr><td>jump_max_angle</td><td>maximum angle between the direction of the monster's body and the victim</td><td>0.33</td><td></td></tr>
+<tr><td>jump_max_height</td><td></td><td>5.0</td><td></td></tr>
+<tr><td>jump_auto_aim_factor</td><td></td><td>0.6</td><td></td></tr>
+</tbody></table>
+</details>
+<hr />
+<h3 id="sm_chims-chimera"><a class="header" href="#sm_chims-chimera">SM_CHIMS (Chimera)</a></h3>
+<details>
+    <summary>SM_CHIMS</summary>
+<p>Attack specific</p>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>prediction_factor</td><td></td><td>0.1</td><td></td></tr>
+<tr><td>attack_radius</td><td>run around radius</td><td>1</td><td></td></tr>
+<tr><td>prepare_jump_timeout</td><td></td><td>0</td><td>Specified in milliseconds</td></tr>
+<tr><td>attack_jump_timeout</td><td></td><td>0</td><td>Specified in milliseconds</td></tr>
+<tr><td>stealth_timeout</td><td></td><td>0</td><td>Specified in milliseconds</td></tr>
+<tr><td>num_attack_jumps</td><td></td><td>1</td><td></td></tr>
+<tr><td>num_prepare_jumps</td><td></td><td>0</td><td></td></tr>
+</tbody></table>
+</details>
+<hr />
+<h3 id="sm_contr-controller"><a class="header" href="#sm_contr-controller">SM_CONTR (Controller)</a></h3>
+<details>
+    <summary>SM_CONTR</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>selector_free_hunting</td><td></td><td></td><td></td></tr>
+<tr><td>selector_cover</td><td></td><td></td><td></td></tr>
+<tr><td>selector_hear_sound</td><td></td><td></td><td></td></tr>
+<tr><td>selector_getaway</td><td></td><td></td><td></td></tr>
+<tr><td>selector_approach</td><td></td><td></td><td></td></tr>
+<tr><td>selector_walk_around</td><td></td><td></td><td></td></tr>
+</tbody></table>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>tube_condition_see_duration</td><td></td><td>10</td><td></td></tr>
+<tr><td>tube_condition_min_delay</td><td></td><td>2000</td><td></td></tr>
+<tr><td>tube_damage</td><td></td><td>1.0</td><td></td></tr>
+<tr><td>tube_condition_min_distance</td><td></td><td>3.5</td><td></td></tr>
+<tr><td>tube_at_once</td><td></td><td>false</td><td></td></tr>
+</tbody></table>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>control_fx_texture</td><td></td><td>act\act_controller_hit</td><td></td></tr>
+<tr><td>control_fx_texture2</td><td></td><td>act\act_controller_hit1</td><td></td></tr>
+</tbody></table>
+<h4 id="abilitys-4"><a class="header" href="#abilitys-4">Abilitys</a></h4>
+<h4 id="controlling-ability"><a class="header" href="#controlling-ability">Controlling Ability</a></h4>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>Max_Controlled_Count</td><td></td><td>10</td><td></td></tr>
+<tr><td>control_effector</td><td></td><td>controller_control_effector</td><td></td></tr>
+<tr><td>Friend_Community_Overrides</td><td></td><td>monolith</td><td></td></tr>
+<tr><td>Control_Hit</td><td></td><td>weapons\generic_weapon_controller</td><td></td></tr>
+</tbody></table>
+<h4 id="anti-aim-ability-1"><a class="header" href="#anti-aim-ability-1">Anti-aim Ability</a></h4>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>anti_aim_timeout</td><td></td><td>4</td><td>sec</td></tr>
+<tr><td>anti_aim_effectors</td><td></td><td>effector_monster_hit_1, effector_monster_hit_2, effector_monster_hit_3, effector_monster_hit_4</td><td></td></tr>
+<tr><td>anti_aim_animation</td><td></td><td>stand_attack_</td><td></td></tr>
+<tr><td>anti_aim_max_angle</td><td></td><td>0.5</td><td></td></tr>
+<tr><td>anti_aim_detection_gain_speed</td><td></td><td>1</td><td></td></tr>
+<tr><td>anti_aim_detection_loose_speed</td><td></td><td>0.1</td><td></td></tr>
+</tbody></table>
+</details>
+<hr />
+<h3 id="sm_dog_s-dog"><a class="header" href="#sm_dog_s-dog">SM_DOG_S (Dog)</a></h3>
+<details>
+    <summary>SM_DOG_S</summary>
+<h4 id="mob-home-parameters"><a class="header" href="#mob-home-parameters">Mob-home parameters</a></h4>
+<p>Parameters of a dog's behavior in the area designated for him home</p>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>anim_factor</td><td></td><td>50</td><td>Specified in percent (from 1 to 100)</td></tr>
+<tr><td>corpse_use_timeout</td><td>timeout on using a corpse</td><td>10</td><td>Specified in seconds</td></tr>
+<tr><td>min_life_time</td><td>minimum waking time</td><td>10</td><td>сек (расчитывается min_life_time + rand(10) * min_life_time)</td></tr>
+<tr><td>min_sleep_time</td><td>minimum sleep time</td><td>5</td><td>сек. (расчитывается min_sleep_time + rand(5) * min_sleep_time)</td></tr>
+<tr><td>drive_out_time</td><td>the time during which the dog will try to chase the enemy away</td><td>5</td><td></td></tr>
+<tr><td>min_move_dist</td><td>the minimum length of the patrol section</td><td>4</td><td>Specified in minutes</td></tr>
+<tr><td>max_move_dist</td><td>maximum length of the patrol section</td><td>6</td><td>Specified in minutes</td></tr>
+</tbody></table>
+</details>
+<hr />
+<h3 id="sm_flesh-flesh"><a class="header" href="#sm_flesh-flesh">SM_FLESH (Flesh)</a></h3>
+<details>
+    <summary>SM_FLESH</summary>
+<h4 id="squad-seperation-behaviour"><a class="header" href="#squad-seperation-behaviour">Squad seperation behaviour</a></h4>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>separate_factor</td><td>pushing force</td><td>0.8</td><td></td></tr>
+<tr><td>separate_range</td><td>radius in which the pushing acts</td><td>3</td><td></td></tr>
+</tbody></table>
+</details>
+<hr />
+<h3 id="sm_izlom-fracture"><a class="header" href="#sm_izlom-fracture">SM_IZLOM (Fracture)</a></h3>
+<hr />
+<h3 id="sm_giant-psevdogaint"><a class="header" href="#sm_giant-psevdogaint">SM_GIANT (Psevdogaint)</a></h3>
+<details>
+    <summary>SM_GIANT</summary>
+<h4 id="step-effector"><a class="header" href="#step-effector">step effector</a></h4>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>step_effector_time</td><td></td><td>0.5</td><td></td></tr>
+<tr><td>step_effector_amplitude</td><td></td><td>1.5</td><td></td></tr>
+<tr><td>step_effector_period_number</td><td></td><td>5.0</td><td></td></tr>
+</tbody></table>
+<h4 id="ai-1"><a class="header" href="#ai-1">AI</a></h4>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>Anomaly_Detect_Radius</td><td></td><td>15.0</td><td></td></tr>
+<tr><td>Anomaly_Detect_Time_Remember</td><td></td><td>10000</td><td></td></tr>
+</tbody></table>
+<h4 id="huge-kick-ability"><a class="header" href="#huge-kick-ability">Huge Kick Ability</a></h4>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>HugeKick_Damage</td><td></td><td>1.4</td><td></td></tr>
+<tr><td>HugeKick_Particles</td><td></td><td>monsters\gigant_wave</td><td></td></tr>
+<tr><td>HugeKick_MinMaxDist</td><td></td><td>1,20</td><td></td></tr>
+<tr><td>HugeKick_MinMaxDelay</td><td></td><td>7000, 12000</td><td></td></tr>
+<tr><td>HugeKick_Time_SlowDown</td><td></td><td>2000</td><td></td></tr>
+</tbody></table>
+</details>
+<hr />
+<h3 id="ai_phant-phantom"><a class="header" href="#ai_phant-phantom">AI_PHANT (Phantom)</a></h3>
+<details>
+    <summary>AI_PHANT</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>speed</td><td></td><td>0.5</td><td></td></tr>
+<tr><td>angular_speed</td><td></td><td>3.5</td><td></td></tr>
+<tr><td>contact_hit</td><td></td><td>0.05</td><td></td></tr>
+</tbody></table>
+<h4 id="sounds-2"><a class="header" href="#sounds-2">Sounds</a></h4>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>sound_birth</td><td></td><td>monsters\poltergeist\attack_hit_0</td><td></td></tr>
+<tr><td>sound_fly</td><td></td><td>monsters\poltergeist\die_0</td><td></td></tr>
+<tr><td>sound_contact</td><td></td><td>monsters\poltergeist\hit_0</td><td></td></tr>
+<tr><td>sound_shoot</td><td></td><td>monsters\biting\def_0</td><td></td></tr>
+</tbody></table>
+<h4 id="particles"><a class="header" href="#particles">Particles</a></h4>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>particles_birth</td><td></td><td>monsters\phantom_birth</td><td></td></tr>
+<tr><td>particles_fly</td><td></td><td>monsters\phantom_fly</td><td></td></tr>
+<tr><td>particles_contact</td><td></td><td>monsters\phantom_death</td><td></td></tr>
+<tr><td>particles_shoot</td><td></td><td>monsters\phantom_death</td><td></td></tr>
+</tbody></table>
+</details>
+<hr />
+<h3 id="sm_poltr-poltergeist"><a class="header" href="#sm_poltr-poltergeist">SM_POLTR (poltergeist)</a></h3>
+<details>
+    <summary>SM_POLTR</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>squad_attack_algorithm</td><td></td><td>1</td><td></td></tr>
+</tbody></table>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>anger_hunger_threshold</td><td></td><td>0.1</td><td></td></tr>
+<tr><td>anger_loud_threshold</td><td></td><td>0.7</td><td></td></tr>
+</tbody></table>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>Invisible_Energy_Restore_Velocity</td><td></td><td>0.1</td><td></td></tr>
+<tr><td>Invisible_Energy_Decline_Velocity</td><td></td><td>0.0</td><td></td></tr>
+<tr><td>Invisible_Energy_Critical_Value</td><td></td><td>0.01</td><td></td></tr>
+<tr><td>Invisible_Energy_Activate_Value</td><td></td><td>0.99</td><td></td></tr>
+<tr><td>Invisible_Energy_Aggressive_Restore_Velocity</td><td></td><td>0.1</td><td></td></tr>
+</tbody></table>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>Particles_Damage</td><td></td><td>monsters\polter_damage</td><td></td></tr>
+<tr><td>Particles_Death</td><td></td><td>monsters\polter_death_00</td><td></td></tr>
+<tr><td>Particles_Idle</td><td></td><td>monsters\polter_idle_00</td><td></td></tr>
+<tr><td>Particles_Hidden</td><td></td><td>monsters\polter_linza_00</td><td></td></tr>
+</tbody></table>
+<p>;-- Delays -------------------
+| Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
+---|---|---|---|
+| Delay_Flame_Min |  | 30000 |  |
+| Delay_Flame_Normal |  | 30001 |  |
+| Delay_Flame_Aggressive |  | 30001 |  |</p>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>Delay_Tele_Min</td><td></td><td>0</td><td></td></tr>
+<tr><td>Delay_Tele_Normal</td><td></td><td>100</td><td></td></tr>
+<tr><td>Delay_Tele_Aggressive</td><td></td><td>10</td><td></td></tr>
+</tbody></table>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>Delay_Scare_Min</td><td></td><td>30000</td><td></td></tr>
+<tr><td>Delay_Scare_Normal</td><td></td><td>30001</td><td></td></tr>
+<tr><td>Delay_Scare_Aggressive</td><td></td><td>30001</td><td></td></tr>
+</tbody></table>
+</details>
+<hr />
+<h3 id="sm_p_dog-pseudodog"><a class="header" href="#sm_p_dog-pseudodog">SM_P_DOG (pseudodog)</a></h3>
+<hr />
+<h3 id="sm_dog_ppsy_dog_s"><a class="header" href="#sm_dog_ppsy_dog_s">SM_DOG_P(psy_dog_s)</a></h3>
+<hr />
+<h3 id="sm_dog_f-psy_dog_phantom_s"><a class="header" href="#sm_dog_f-psy_dog_phantom_s">SM_DOG_F (psy_dog_phantom_s)</a></h3>
+<hr />
+<h3 id="sm_rat-rat"><a class="header" href="#sm_rat-rat">SM_RAT (Rat)</a></h3>
+<hr />
+<h3 id="sm_snork-snork"><a class="header" href="#sm_snork-snork">SM_SNORK (Snork)</a></h3>
+<details>
+    <summary>SM_SNORK</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>jump_delay</td><td></td><td>4000</td><td></td></tr>
+<tr><td>jump_factor</td><td></td><td>2.0</td><td></td></tr>
+<tr><td>jump_ground_trace_range</td><td></td><td>1.5</td><td></td></tr>
+<tr><td>jump_hit_trace_range</td><td></td><td>2.0</td><td></td></tr>
+<tr><td>jump_build_line_distance</td><td></td><td>6.0</td><td></td></tr>
+<tr><td>jump_min_distance</td><td></td><td>3.0</td><td></td></tr>
+<tr><td>jump_max_distance</td><td></td><td>10.0</td><td></td></tr>
+<tr><td>jump_max_angle</td><td></td><td>0.6</td><td></td></tr>
+<tr><td>jump_max_height</td><td></td><td>12</td><td></td></tr>
+<tr><td>jump_auto_aim_factor</td><td></td><td>0</td><td></td></tr>
+</tbody></table>
+<h4 id="sounds-3"><a class="header" href="#sounds-3">Sounds</a></h4>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>sound_landing</td><td>Sound on landing</td><td>monsters\biting\def_</td><td></td></tr>
+</tbody></table>
+</details>
+<hr />
+<h3 id="sm_tush-tushkano"><a class="header" href="#sm_tush-tushkano">SM_TUSH (tushkano)</a></h3>
+<hr />
+<h3 id="sm_zombi-zombie"><a class="header" href="#sm_zombi-zombie">SM_ZOMBI (Zombie)</a></h3>
+<details>
+    <summary>SM_ZOMBI</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>FakeDeathCount</td><td>max count of fake death</td><td>4</td><td></td></tr>
+<tr><td>StartFakeDeathHealthThreshold</td><td>health threshold after which fake death begins</td><td>0.6</td><td></td></tr>
+</tbody></table>
+</details>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../configs/items/outfits/o_(outfit).ltx.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../../reference/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../configs/items/outfits/o_(outfit).ltx.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../../reference/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

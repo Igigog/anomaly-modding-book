@@ -1,0 +1,603 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Advanced settings - Anomaly Modding Book</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../src/custom.css">
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../meta/index.html"><strong aria-hidden="true">1.</strong> Meta</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../meta/contributing/index.html"><strong aria-hidden="true">1.1.</strong> Contributing to this book</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../getting-started/index.html"><strong aria-hidden="true">2.</strong> Mod Organizer</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../getting-started/installing-mo2.html"><strong aria-hidden="true">2.1.</strong> Installing MO2</a></li><li class="chapter-item expanded "><a href="../getting-started/addon-installers.html"><strong aria-hidden="true">2.2.</strong> Addon installers</a></li><li class="chapter-item expanded "><a href="../getting-started/package-naming.html"><strong aria-hidden="true">2.3.</strong> Package Naming for MO2</a></li><li class="chapter-item expanded "><a href="../getting-started/vs-code-game-files-setup.html"><strong aria-hidden="true">2.4.</strong> Configuring VSCode-like programs to handle game files</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Addons</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../addons/dltx.html"><strong aria-hidden="true">3.1.</strong> DLTX</a></li><li class="chapter-item expanded "><a href="../addons/dxml.html"><strong aria-hidden="true">3.2.</strong> DXML</a></li><li class="chapter-item expanded "><a href="../addons/mcm.html"><strong aria-hidden="true">3.3.</strong> MCM</a></li><li class="chapter-item expanded "><a href="../addons/pdb.html"><strong aria-hidden="true">3.4.</strong> PDB files</a></li><li class="chapter-item expanded "><a href="../addons/lua-unlocalizer.html"><strong aria-hidden="true">3.5.</strong> Lua Unlocalizer</a></li><li class="chapter-item expanded "><a href="../addons/useful-addons-scripts-utils.html"><strong aria-hidden="true">3.6.</strong> Useful addons, scripts and utils</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> Configs</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../configs/structure-of-files.html"><strong aria-hidden="true">4.1.</strong> Structure of Files</a></li><li class="chapter-item expanded "><a href="../configs/condlists.html"><strong aria-hidden="true">4.2.</strong> Condlists</a></li><li class="chapter-item expanded "><a href="../configs/inventory_icons.html"><strong aria-hidden="true">4.3.</strong> Inventory Icons</a></li><li class="chapter-item expanded "><a href="../configs/algoritm-of-logic.html"><strong aria-hidden="true">4.4.</strong> Algoritm of Logic</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../scripting/index.html"><strong aria-hidden="true">5.</strong> Scripting</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../scripting/codebase_introduction.html"><strong aria-hidden="true">5.1.</strong> Introduction to codebase</a></li><li class="chapter-item expanded "><a href="../scripting/codestyle.html"><strong aria-hidden="true">5.2.</strong> Codestyle</a></li><li class="chapter-item expanded "><a href="../scripting/wetting_hands.html"><strong aria-hidden="true">5.3.</strong> Wetting our hands</a></li><li class="chapter-item expanded "><a href="../scripting/server_and_game_objects.html"><strong aria-hidden="true">5.4.</strong> Server and game objects</a></li><li class="chapter-item expanded "><a href="../scripting/callbacks.html"><strong aria-hidden="true">5.5.</strong> Callbacks</a></li><li class="chapter-item expanded "><a href="../scripting/time_events.html"><strong aria-hidden="true">5.6.</strong> Time events</a></li><li class="chapter-item expanded "><a href="../scripting/monkey-patching.html"><strong aria-hidden="true">5.7.</strong> Monkey patching</a></li><li class="chapter-item expanded "><a href="../scripting/script_animations.html"><strong aria-hidden="true">5.8.</strong> Script Animations</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> Modelling</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../blender/creating-model-in-blender.html"><strong aria-hidden="true">6.1.</strong> Creating model in Blender</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.</strong> Animating</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../blender/creating-hud-animation-in-blender.html"><strong aria-hidden="true">7.1.</strong> Creating an animation</a></li><li class="chapter-item expanded "><a href="../blender/creating-camera-animations.html"><strong aria-hidden="true">7.2.</strong> Creating animations for the camera</a></li><li class="chapter-item expanded "><a href="../blender/editing-existing-animations.html"><strong aria-hidden="true">7.3.</strong> Editing existing animations</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../texturing/index.html"><strong aria-hidden="true">8.</strong> Texturing</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../texturing/сreating-and-preparing-textures.html"><strong aria-hidden="true">8.1.</strong> Creating and preparing textures</a></li><li class="chapter-item expanded "><a href="../texturing/working-correctly-with-icon-atlases.html"><strong aria-hidden="true">8.2.</strong> Working correctly with icon atlases</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../mapping/index.html"><strong aria-hidden="true">9.</strong> Mapping</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../blender/creating-a-location-in-blender.html"><strong aria-hidden="true">9.1.</strong> Creating a location in Blender</a></li><li class="chapter-item expanded "><a href="../mapping/multimaterial-terrain.html"><strong aria-hidden="true">9.2.</strong> Multimaterial Terrain Guide</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../quests/index.html"><strong aria-hidden="true">10.</strong> Quests</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../quests/introduction.html"><strong aria-hidden="true">10.1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../quests/npc_creation.html"><strong aria-hidden="true">10.2.</strong> NPC Creation</a></li><li class="chapter-item expanded "><a href="../quests/task_guide.html"><strong aria-hidden="true">10.3.</strong> Task Creation</a></li><li class="chapter-item expanded "><a href="../quests/dialogues.html"><strong aria-hidden="true">10.4.</strong> Dialogue Creation</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">11.</strong> Reference/General</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../terminology/terminology.html"><strong aria-hidden="true">11.1.</strong> Terminology</a></li><li class="chapter-item expanded "><a href="../main-folders-and-files/index.html"><strong aria-hidden="true">11.2.</strong> Main Folders And Files</a></li><li class="chapter-item expanded "><a href="../main-folders-and-files/file-formats/index.html"><strong aria-hidden="true">11.3.</strong> File Formats</a></li><li class="chapter-item expanded "><a href="../crash-list/crashes-list.html"><strong aria-hidden="true">11.4.</strong> Crash List</a></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">12.</strong> Reference/Configs</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../configs/items/weapons/w_(weapon).ltx.html"><strong aria-hidden="true">12.1.</strong> Weapon Configuration Parameters</a></li><li class="chapter-item expanded "><a href="../configs/items/weapons/weapon_ammo.ltx.html"><strong aria-hidden="true">12.2.</strong> Ammo Configuration Parameters</a></li><li class="chapter-item expanded "><a href="../configs/items/weapons/weapon_sounds.ltx.html"><strong aria-hidden="true">12.3.</strong> Weapon Sounds Parameters</a></li><li class="chapter-item expanded "><a href="../configs/items/outfits/o_(outfit).ltx.html"><strong aria-hidden="true">12.4.</strong> Oufits Configuration Parameters</a></li><li class="chapter-item expanded "><a href="../configs/creatures/m_(mutant).ltx.html"><strong aria-hidden="true">12.5.</strong> Mutants Configuration Parameters</a></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">13.</strong> Reference/Shaders</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../shaders/shaders-list/materials-list.html"><strong aria-hidden="true">13.1.</strong> Material Shaders List</a></li><li class="chapter-item expanded "><a href="../shaders/shaders-list/shaders-list.html"><strong aria-hidden="true">13.2.</strong> Shaders List</a></li><li class="chapter-item expanded "><a href="../shaders/shaders-list/compiler-shaders-list.html"><strong aria-hidden="true">13.3.</strong> Compiler Shaders List</a></li><li class="chapter-item expanded "><a href="../shaders/shaders-list/sound-envornment-list.html"><strong aria-hidden="true">13.4.</strong> Sound Envornment List</a></li></ol></li><li class="chapter-item expanded "><a href="../engine/index.html"><strong aria-hidden="true">14.</strong> Reference/Engine</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../engine/console-commands.html"><strong aria-hidden="true">14.1.</strong> Console commands</a></li><li class="chapter-item expanded "><a href="../engine/alife.html"><strong aria-hidden="true">14.2.</strong> A-Life (AI)</a></li><li class="chapter-item expanded "><a href="../engine/engine-classes.html"><strong aria-hidden="true">14.3.</strong> Engine Classes</a></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">15.</strong> Reference/Resources</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../resources/audio.html"><strong aria-hidden="true">15.1.</strong> Audio</a></li><li class="chapter-item expanded "><a href="../resources/models-objects-locations.html"><strong aria-hidden="true">15.2.</strong> Models</a></li><li class="chapter-item expanded "><a href="../resources/sdk-resources.html"><strong aria-hidden="true">15.3.</strong> SDK resources</a></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">16.</strong> Reference/Tools</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../modding-tools/modding-tools.html"><strong aria-hidden="true">16.1.</strong> Modding Tools List</a></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/index.html"><strong aria-hidden="true">16.2.</strong> In-Game Editors</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/item-spawner.html"><strong aria-hidden="true">16.2.1.</strong> Item Spawner</a></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/lightning-editor.html"><strong aria-hidden="true">16.2.2.</strong> Lightning Editor</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">16.2.3.</strong> NPC Logic/Execute</div></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/object-spawner.html"><strong aria-hidden="true">16.2.4.</strong> Object Spawner</a></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/outfits-weapon-stats-editor.html"><strong aria-hidden="true">16.2.5.</strong> Outfits/Weapons Stats Editor</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">16.2.6.</strong> Pocket Workshop</div></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/weapon-hud-editor.html"><strong aria-hidden="true">16.2.7.</strong> Weapon HUD Editor</a></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/weather-editor.html"><strong aria-hidden="true">16.2.8.</strong> Weather Editor</a></li></ol></li><li class="chapter-item expanded "><a href="../modding-tools/ltx-support.html"><strong aria-hidden="true">16.3.</strong> Ltx Support</a></li><li class="chapter-item expanded "><a href="../sdk/index.html"><strong aria-hidden="true">16.4.</strong> SDK 0.7</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../sdk/interface.html"><strong aria-hidden="true">16.4.1.</strong> Interface</a></li><li class="chapter-item expanded "><a href="../sdk/actor-editor.html"><strong aria-hidden="true">16.4.2.</strong> Actor Editor</a></li><li class="chapter-item expanded "><a href="../sdk/image-editor.html"><strong aria-hidden="true">16.4.3.</strong> Image Editor</a></li><li class="chapter-item expanded "><a href="../sdk/level-editor.html"><strong aria-hidden="true">16.4.4.</strong> Level Editor</a></li><li class="chapter-item expanded "><a href="../sdk/shader-editor.html"><strong aria-hidden="true">16.4.5.</strong> Shader Editor</a></li><li class="chapter-item expanded "><a href="../sdk/sound-editor.html"><strong aria-hidden="true">16.4.6.</strong> Sound Editor</a></li><li class="chapter-item expanded "><a href="../sdk/postprocess-editor.html"><strong aria-hidden="true">16.4.7.</strong> Postprocess Editor</a></li><li class="chapter-item expanded "><a href="../sdk/particle-editor.html"><strong aria-hidden="true">16.4.8.</strong> Particle Editor (Not finished)</a></li></ol></li><li class="chapter-item expanded "><a href="../blender/blender-x-ray-addon-summary.html"><strong aria-hidden="true">16.5.</strong> Blender X-Ray Addon</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../blender/advanced-settings.html" class="active"><strong aria-hidden="true">16.5.1.</strong> Advanced settings</a></li><li class="chapter-item expanded "><a href="../blender/x-ray-addon-panels.html"><strong aria-hidden="true">16.5.2.</strong> Panels</a></li><li class="chapter-item expanded "><a href="../blender/x-ray-side-panels.html"><strong aria-hidden="true">16.5.3.</strong> Side Panel</a></li></ol></li><li class="chapter-item expanded "><a href="../modding-tools/stalker-studio.html"><strong aria-hidden="true">16.6.</strong> Stalker Studio</a></li><li class="chapter-item expanded "><a href="../modding-tools/thm-editor-by-i-love-kfc.html"><strong aria-hidden="true">16.7.</strong> THM Editor</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../modding-tools/thm-editor-by-valerok.html"><strong aria-hidden="true">16.7.1.</strong> Modified THM Editor</a></li></ol></li><li class="chapter-item expanded "><a href="../modding-tools/bump-generator.html"><strong aria-hidden="true">16.8.</strong> Bump Generator</a></li><li class="chapter-item expanded "><a href="../modding-tools/savandt.html"><strong aria-hidden="true">16.9.</strong> Sound Attribute Viewer And Tweaker</a></li><li class="chapter-item expanded "><a href="../modding-tools/upgrade-editor.html"><strong aria-hidden="true">16.10.</strong> Upgrade Editor</a></li><li class="chapter-item expanded "><a href="../modding-tools/omf-editor-by-valerok.html"><strong aria-hidden="true">16.11.</strong> Modified OMF Editor</a></li><li class="chapter-item expanded "><a href="../modding-tools/ogf-editor-by-valerok.html"><strong aria-hidden="true">16.12.</strong> Modified OGF Editor</a></li><li class="chapter-item expanded "><a href="../modding-tools/xray-export-tool.html"><strong aria-hidden="true">16.13.</strong> X-Ray Export Tool</a></li><li class="chapter-item expanded "><a href="../modding-tools/universal-x64-level-compilers.html"><strong aria-hidden="true">16.14.</strong> Universal x64 level compilers</a></li><li class="chapter-item expanded "><a href="../modding-tools/xrcompress-by-i-love-kfc.html"><strong aria-hidden="true">16.15.</strong> xrCompress</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Anomaly Modding Book</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Igigog/anomaly-modding-book" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Igigog/anomaly-modding-book/edit/main/src/blender/advanced-settings.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="addon-settings-options"><a class="header" href="#addon-settings-options">Addon settings options</a></h1>
+<hr />
+<p>Description of addon settings</p>
+<ul>
+<li><a href="#paths">Paths</a></li>
+<li><a href="#defaults">Defaults</a></li>
+<li><a href="#formats">Formats</a></li>
+<li><a href="#panels">Panels</a></li>
+</ul>
+<hr />
+<h1 id="paths"><a class="header" href="#paths">Paths</a></h1>
+<hr />
+<p>These settings specify paths to external files or directories of X-Ray Engine or X-Ray SDK.It is possible to set paths automatically, based on one parameter. For example, if you specify the gamedata folder in the Gamedata Folder parameter, empty paths (except, fs.ltx File) will be filled in automatically. Automatically filled paths have text (auto) at the end of the name. To change the path manually, you have to click on the button with a wrench (<img src="/src/blender/blender-images/blender-images-icons/wrench.svg" alt="wrench-icon" />). The wrench button will disappear and the folder icon button will be displayed instead. You can then open the file browser using the folder button. In the browser, select the desired folder or file. Or you can change the path in the text box by typing it in from the keyboard. If the path is set manually, its value will not be changed automatically by the addon. To return the automatic path indication, you need to clear the path input field.
+The addon automatically sets these values:</p>
+<table><thead><tr><th>Parameter</th><th>Value</th></tr></thead><tbody>
+<tr><td>fs.ltx File</td><td>-</td></tr>
+<tr><td>Gamedata Folder</td><td>.</td></tr>
+<tr><td>Textures Folder</td><td>.textures\</td></tr>
+<tr><td>GameMtl File</td><td>.gamemtl.xr</td></tr>
+<tr><td>EShader File</td><td>.shaders.xr</td></tr>
+<tr><td>CShader File</td><td>.shaders_xrlc.xr</td></tr>
+<tr><td>Objects Folder</td><td>..rawdata\objects</td></tr>
+</tbody></table>
+<p>&quot;-&quot; - means that automatic path setting does not work for this parameter. The automatic path setting will work if you specify any parameter other than Objects Folder first.</p>
+<hr />
+<ul>
+<li>
+<h2 id="fsltx-file"><a class="header" href="#fsltx-file">fs.ltx File</a></h2>
+</li>
+</ul>
+<p>Path to the fs.ltx file. This file is in the X-Ray SDK and stores directory paths. Addon uses fs.ltx file only to automatically set the following paths: Gamedata Folder, Textures Folder, GameMtl File, EShader File, CShader File, Objects Folder. Only these variables from the file are used: $game_data$, $game_textures$, $objects$. The files gamemtl.xr, shaders.xr, shaders_xrlc.xr are searched in the directory that is specified in $game_data$. If parameters Gamedata Folder, Textures Folder, GameMtl File, EShader File, CShader File, Objects Folder are already configured, it is not necessary to specify fs.ltx File.
+Examples of use: this parameter is needed to set paths correctly automatically if fs.ltx file was edited and X-Ray SDK uses paths that are different from gamedata, gamedata\textures, rawdata\objects.</p>
+<hr />
+<ul>
+<li>
+<h2 id="gamedata-folder"><a class="header" href="#gamedata-folder">Gamedata Folder</a></h2>
+</li>
+</ul>
+<p>The path that must refer to the gamedata folder (or to the folder specified in $game_data$ if fs.ltx has been changed). This path is used only for automatic installation of the following parameters: Textures Folder, GameMtl File, EShader File, CShader File, Objects Folder. The paths are automatically set by adding Gamedata Folder and preset values. The values are set as follows: Textures Folder - textures, GameMtl File - gamemtl.xr, EShader File - shaders.xr, CShader File - shaders_xrlc.xr, Objects Folder - ..rawdata\objects, where .. in the beginning Objects Folder means go one folder back in path. That is, the path to the Objects Folder will look like this: c:\programs\xray_sdk\rawdata\objects, if Gamedata Folder has the following value: c:\programs\xray_sdk\gamedata.</p>
+<hr />
+<ul>
+<li>
+<h2 id="textures-folder"><a class="header" href="#textures-folder">Textures Folder</a></h2>
+</li>
+</ul>
+<p>The path that should refer to $game_textures$. This is usually the gamedata\textures folder which contains the textures. Only the dds format is supported for loading. This path is only used by plugins that import/export formats that support textures (such as <em>.object,</em>.dm, <em>.ogf...). Some plugins do not use this path (for example,</em>.err, *.skls...). When importing some formats, the addon looks for dds textures at this path and loads them into blender.</p>
+<hr />
+<ul>
+<li>
+<h2 id="gamemtl-file"><a class="header" href="#gamemtl-file">GameMtl File</a></h2>
+</li>
+</ul>
+<p>Path to the gamemtl.xr file. Normally stored in gamedata\gamemtl.xr. This file stores surface materials. In the X-Ray Engine a material is a physical property of the surface, and does not affect the visual presentation (not to be confused with blender materials, which affect visual appearance). X-Ray Engine uses shaders to change the appearance of the surface. The material determines the sounds of footsteps, wallmark textures from shots, friction, particle effects when bullets hit, the ability to get cast shadows from dynamic objects... If this path refers to a gamemtl.xr file, then the list of the parameter GameMtl for materials and dice will be filled with the material names from the gamemtl.xr file and from this list you can click on any material name. If this path does not reference the gamemtl.xr file, then the GameMtl list of materials and bones will be empty. Only the names, text descriptions and integer material IDs are read from the gamemtl.xr file.</p>
+<ul>
+<li><a href="../../shaders/shaders-list/materials-list.html">Meterials list</a></li>
+</ul>
+<hr />
+<ul>
+<li>
+<h2 id="eshader-file"><a class="header" href="#eshader-file">EShader File</a></h2>
+</li>
+</ul>
+<p>The path to the shaders.xr file. Usually stored in gamedata\shaders.xr. This file contains descriptions of shader settings. EShader is an engine shader that is responsible for surface appearance. If this path refers to the shaders.xr file, the EShader list in blender material settings will be filled in with shader names from this file and you will be able to specify any engine shader name from this list. If this path doesn't reference the shaders.xr file, the EShader list of materials will be empty. Only shader names are read from the shaders.xr file.</p>
+<ul>
+<li><a href="../../shaders/shaders-list/shaders-list.html">Shaders list</a></li>
+</ul>
+<hr />
+<ul>
+<li>
+<h2 id="cshader-file"><a class="header" href="#cshader-file">CShader File</a></h2>
+</li>
+</ul>
+<p>Path to the shaders_xrlc.xr file. Usually stored in gamedata\shaders_xrlc.xr. This file contains descriptions of the settings that are used by the level geometry compiler (xrLC.exe). CShader - compile shader (compiler shader) specifying properties of the final (game) level geometry to the level compiler. The source geometry, depending on the compiler shader, may have no visible or tangible (for collisions) geometry, have a different way of storing lighting, etc. If this path refers to the shaders_xrlc.xr file, the CShader list in blender materials will fill with shader names from that file and you can specify any compiler shader name from the list. Only shader names are read from shaders_xrlc.xr file.</p>
+<ul>
+<li><a href="../../shaders/shaders-list/compiler-shaders-list.html">Compiler Shaders List</a></li>
+</ul>
+<hr />
+<ul>
+<li>
+<h2 id="objects-folder"><a class="header" href="#objects-folder">Objects Folder</a></h2>
+</li>
+</ul>
+<p>Path to the folder with the original 3D objects and animations. Usually located in the X-Ray SDK in the rawdata\objects folder. From this folder, the addon can only read *.object and *.skls files. Not all plugins use this folder. Only the object plugin for source objects and the .level plugin for the list of scene objects use it. Also this parameter is used by some operators, for example, Skls File Browser (if you run it from the Motion Refs scroll, Load Active Motion Refs mode). This folder contains the source models and animations in formats that store data without loss of information (without compression).</p>
+<hr />
+<h2 id="sources"><a class="header" href="#sources">Sources</a></h2>
+<p><a href="https://github.com/PavelBlend/blender-xray/wiki/Preferences">Source</a></p>
+<h1 id="defaults"><a class="header" href="#defaults">Defaults</a></h1>
+<hr />
+<p>Here you can set default parameters for many operators</p>
+<p><img src="/src/blender/blender-images/panels/Defaults.png" alt="defaults centered" /></p>
+<hr />
+<h2 id="object"><a class="header" href="#object">Object</a></h2>
+<table>
+	<tbody>
+		<tr bgcolor="grey">
+			<td>Operator</td>
+			<td>Function</td>
+			<td>Parameter</td>
+			<td>Description</td>
+		</tr>
+		<tr>
+			<td rowspan="4">Import</td>
+			<td rowspan="2">Format version</td>
+			<td>SoC</td>
+			<td>Sets the .object format import from Shadow of Chernobyl</td>
+		</tr>
+		<tr>
+			<td>CS/CoP</td>
+			<td>Sets the .object format import from Clear Sky and Call of Pripyat (Compatible with Anomaly)</td>
+		</tr>
+		<tr>
+			<td>Import Motions</td>
+			<td>-</td>
+			<td>Import embedded motions as actions</td>
+		</tr>
+		<tr>
+			<td>Split Mesh by Materials</td>
+			<td>-</td>
+			<td>Import each surface (material) as separate set of faces</td>
+		</tr>
+		<tr>
+			<td rowspan="7">Export</td>
+			<td rowspan="2">Format version</td>
+			<td>SoC</td>
+			<td>Sets the .object format export from Shadow of Chernobyl</td>
+		</tr>
+		<tr>
+			<td>CS/CoP</td>
+			<td>Sets the .object format export from Clear Sky and Call of Pripyat (Compatible with Anomaly)</td>
+		</tr>
+		<tr>
+			<td rowspan="2">Smoothing</td>
+			<td>Edges</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Normals</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Export Motions</td>
+			<td>-</td>
+			<td>Export armatures actions as embedded motions</td>
+		</tr>
+		<tr>
+			<td>Texture Names from Image Paths</td>
+			<td>-</td>
+			<td>Generate texture names from image paths (by subtract (gamedata/textures) prefix and (file-extension) suffix)</td>
+		</tr>
+		<tr>
+			<td>Use Export Path</td>
+			<td>-</td>
+			<td>Append the Object.ExportPath to the export directory for each object</td>
+		</tr>
+	</tbody>
+</table>
+<hr />
+<h2 id="anm"><a class="header" href="#anm">Anm</a></h2>
+<table>
+	<tbody>
+		<tr bgcolor="grey">
+			<td>Operator</td>
+			<td>Function</td>
+			<td>Parameter</td>
+			<td>Description</td>
+		</tr>
+		<tr>
+			<td>Import</td>
+			<td>Create Linked Camera</td>
+			<td>-</td>
+			<td>Create animated camera object (linked to "empty"-object)</td>
+		</tr>
+		<tr>
+			<td>Export</td>
+			<td>Format Version</td>
+			<td><br>3</br><br>4</br><br>5</br></td>
+			<td>Version of the exported .anm format</td>
+		</tr>
+	</tbody>
+</table>
+<hr />
+<h2 id="skls"><a class="header" href="#skls">Skls</a></h2>
+<table>
+	<tbody>
+		<tr bgcolor="grey">
+			<td>Operator</td>
+			<td>Function</td>
+			<td>Description</td>
+		</tr>
+		<tr>
+			<td>Import</td>
+			<td>Add Actions to Motion List</td>
+			<td>Adds imported .skls animations to Motion List</td>
+		</tr>
+	</tbody>
+</table>
+<hr />
+<h2 id="bones"><a class="header" href="#bones">Bones</a></h2>
+<table>
+	<tbody>
+		<tr bgcolor="grey">
+			<td>Operator</td>
+			<td>Function</td>
+			<td>Description</td>
+		</tr>
+		<tr>
+			<td rowspan="2">Import</td>
+			<td>Import Bone Parts</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td> Import Bone Properties</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td rowspan="2">Export</td>
+			<td>Export Bone Parts</td>
+			<td></td>
+		<tr>
+			<td>Export Bone Properties</td>
+			<td></td>
+	</tbody>
+</table>
+<hr />
+<h2 id="details"><a class="header" href="#details">Details</a></h2>
+<table>
+	<tbody>
+		<tr bgcolor="grey">
+			<td>Operator</td>
+			<td>Function</td>
+			<td>Parameter</td>
+			<td>Description</td>
+		</tr>
+		<tr>
+			<td rowspan="3">Import</td>
+			<td>Models in Row</td>
+			<td>-</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Load Slots</td>
+			<td>-</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Format Version:</td>
+			<td>
+				<br>Builds 1096-1230</br>
+				<br>Builds 1233-1558</br>
+				<td></td>
+			</td>
+		</tr>
+		<tr>
+			<td rowspan="2">Export</td>
+			<td>Texture Names from Image Paths</td>
+			<td>-</td>
+			<td>Generate texture names from image paths (by subtract (gamedata/textures) prefix and (file-extension) suffix)</td>
+		</tr>
+		<tr>
+			<td>Format Version:</td>
+			<td>
+				<br>Builds 1569 - CoP</br>
+				<br>Builds 1233-1558</br>
+				<br>Builds 1096-1230</br>
+				<td></td>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<hr />
+<h2 id="dm"><a class="header" href="#dm">Dm</a></h2>
+<table>
+	<tbody>
+		<tr bgcolor="grey">
+			<td>Operator</td>
+			<td>Function</td>
+			<td>Description</td>
+		</tr>
+		<tr>
+			<td>Export</td>
+			<td>Texture Names from Image Paths</td>
+			<td>Generate texture names from image paths (by subtract (gamedata/textures) prefix and (file-extension) suffix)</td>
+		</tr>
+	</tbody>
+</table>
+<hr />
+<h2 id="ogf"><a class="header" href="#ogf">Ogf</a></h2>
+<table>
+	<tbody>
+		<tr bgcolor="grey">
+			<td>Operator</td>
+			<td>Function</td>
+			<td>Description</td>
+		</tr>
+		<tr>
+			<td>Import</td>
+			<td>Import Motions</td>
+			<td>Import embedded motions as actions</td>
+		</tr>
+		<tr>
+			<td rowspan="2">Export</td>
+			<td>Texture Names from Image Paths</td>
+			<td>Generate texture names from image paths (by subtract (gamedata/textures) prefix and (file-extension) suffix)</td>
+		</tr>
+		<tr>
+			<td>Export Motions</td>
+			<td>Export armatures actions as embedded motions</td>
+		</tr>
+	</tbody>
+</table>
+<hr />
+<h2 id="omf"><a class="header" href="#omf">Omf</a></h2>
+<table>
+	<tbody>
+		<tr bgcolor="grey">
+			<td>Operator</td>
+			<td>Function</td>
+			<td>Parameter</td>
+			<td>Description</td>
+		</tr>
+		<tr>
+			<td rowspan="3">Import</td>
+			<td>Import Motions</td>
+			<td>-</td>
+			<td>Import embedded motions as actions</td>
+		</tr>
+		<tr>
+			<td>Import Bone Parts</td>
+			<td>-</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Add Actions to Motion List</td>
+			<td>-</td>
+			<td>Adds imported .omf animations to Motion List</td>
+		</tr>
+		<tr>
+			<td rowspan="4">Export</td>
+			<td>Export Motions</td>
+			<td>-</td>
+			<td>Export armatures actions as embedded motions</td>
+		</tr>
+		<tr>
+			<td>Export Bone Parts</td>
+			<td>-</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>High Quality</td>
+			<td>-</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Export Mode:</td>
+			<td>
+				<br>Overwrite</br>
+				<br>Add</br>
+				<br>Replace</br>
+				<td></td>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<hr />
+<h2 id="scene"><a class="header" href="#scene">Scene</a></h2>
+<table>
+	<tbody>
+		<tr bgcolor="grey">
+			<td>Operator</td>
+			<td>Function</td>
+			<td>Parameter</td>
+			<td>Description</td>
+		</tr>
+		<tr>
+			<td rowspan="2">Import</td>
+			<td>Format Version:</td>
+			<td>
+				<br>SoC</br>
+				<br>CS/CoP</br>
+			</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Split Mesh by Materials</td>
+			<td>-</td>
+			<td>Import each surface (material) as separate set of faces</td>
+		</tr>
+	</tbody>
+</table>
+<hr />
+<h2 id="part"><a class="header" href="#part">Part</a></h2>
+<table>
+	<tbody>
+		<tr bgcolor="grey">
+			<td>Operator</td>
+			<td>Function</td>
+			<td>Parameter</td>
+			<td>Description</td>
+		</tr>
+		<tr>
+			<td rowspan="2">Import</td>
+			<td>Format Version:</td>
+			<td>
+				<br>SoC</br>
+				<br>CS/CoP</br>
+			</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Split Mesh by Materials</td>
+			<td>-</td>
+			<td>Import each surface (material) as separate set of faces</td>
+		</tr>
+	</tbody>
+</table>
+<hr />
+<h1 id="formats"><a class="header" href="#formats">Formats</a></h1>
+<hr />
+<p>In this section you can disable or enable import/export formats</p>
+<p><img src="/src/blender/blender-images/panels/Formats.png" alt="formats centered" /></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../blender/blender-x-ray-addon-summary.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../blender/x-ray-addon-panels.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../blender/blender-x-ray-addon-summary.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../blender/x-ray-addon-panels.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

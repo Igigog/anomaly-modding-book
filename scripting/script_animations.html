@@ -1,0 +1,419 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Script Animations - Anomaly Modding Book</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../src/custom.css">
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../meta/index.html"><strong aria-hidden="true">1.</strong> Meta</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../meta/contributing/index.html"><strong aria-hidden="true">1.1.</strong> Contributing to this book</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../getting-started/index.html"><strong aria-hidden="true">2.</strong> Mod Organizer</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../getting-started/installing-mo2.html"><strong aria-hidden="true">2.1.</strong> Installing MO2</a></li><li class="chapter-item expanded "><a href="../getting-started/addon-installers.html"><strong aria-hidden="true">2.2.</strong> Addon installers</a></li><li class="chapter-item expanded "><a href="../getting-started/package-naming.html"><strong aria-hidden="true">2.3.</strong> Package Naming for MO2</a></li><li class="chapter-item expanded "><a href="../getting-started/vs-code-game-files-setup.html"><strong aria-hidden="true">2.4.</strong> Configuring VSCode-like programs to handle game files</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Addons</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../addons/dltx.html"><strong aria-hidden="true">3.1.</strong> DLTX</a></li><li class="chapter-item expanded "><a href="../addons/dxml.html"><strong aria-hidden="true">3.2.</strong> DXML</a></li><li class="chapter-item expanded "><a href="../addons/mcm.html"><strong aria-hidden="true">3.3.</strong> MCM</a></li><li class="chapter-item expanded "><a href="../addons/pdb.html"><strong aria-hidden="true">3.4.</strong> PDB files</a></li><li class="chapter-item expanded "><a href="../addons/lua-unlocalizer.html"><strong aria-hidden="true">3.5.</strong> Lua Unlocalizer</a></li><li class="chapter-item expanded "><a href="../addons/useful-addons-scripts-utils.html"><strong aria-hidden="true">3.6.</strong> Useful addons, scripts and utils</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> Configs</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../configs/structure-of-files.html"><strong aria-hidden="true">4.1.</strong> Structure of Files</a></li><li class="chapter-item expanded "><a href="../configs/condlists.html"><strong aria-hidden="true">4.2.</strong> Condlists</a></li><li class="chapter-item expanded "><a href="../configs/inventory_icons.html"><strong aria-hidden="true">4.3.</strong> Inventory Icons</a></li><li class="chapter-item expanded "><a href="../configs/algoritm-of-logic.html"><strong aria-hidden="true">4.4.</strong> Algoritm of Logic</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../scripting/index.html"><strong aria-hidden="true">5.</strong> Scripting</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../scripting/codebase_introduction.html"><strong aria-hidden="true">5.1.</strong> Introduction to codebase</a></li><li class="chapter-item expanded "><a href="../scripting/codestyle.html"><strong aria-hidden="true">5.2.</strong> Codestyle</a></li><li class="chapter-item expanded "><a href="../scripting/wetting_hands.html"><strong aria-hidden="true">5.3.</strong> Wetting our hands</a></li><li class="chapter-item expanded "><a href="../scripting/server_and_game_objects.html"><strong aria-hidden="true">5.4.</strong> Server and game objects</a></li><li class="chapter-item expanded "><a href="../scripting/callbacks.html"><strong aria-hidden="true">5.5.</strong> Callbacks</a></li><li class="chapter-item expanded "><a href="../scripting/time_events.html"><strong aria-hidden="true">5.6.</strong> Time events</a></li><li class="chapter-item expanded "><a href="../scripting/monkey-patching.html"><strong aria-hidden="true">5.7.</strong> Monkey patching</a></li><li class="chapter-item expanded "><a href="../scripting/script_animations.html" class="active"><strong aria-hidden="true">5.8.</strong> Script Animations</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> Modelling</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../blender/creating-model-in-blender.html"><strong aria-hidden="true">6.1.</strong> Creating model in Blender</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.</strong> Animating</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../blender/creating-hud-animation-in-blender.html"><strong aria-hidden="true">7.1.</strong> Creating an animation</a></li><li class="chapter-item expanded "><a href="../blender/creating-camera-animations.html"><strong aria-hidden="true">7.2.</strong> Creating animations for the camera</a></li><li class="chapter-item expanded "><a href="../blender/editing-existing-animations.html"><strong aria-hidden="true">7.3.</strong> Editing existing animations</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../texturing/index.html"><strong aria-hidden="true">8.</strong> Texturing</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../texturing/сreating-and-preparing-textures.html"><strong aria-hidden="true">8.1.</strong> Creating and preparing textures</a></li><li class="chapter-item expanded "><a href="../texturing/working-correctly-with-icon-atlases.html"><strong aria-hidden="true">8.2.</strong> Working correctly with icon atlases</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../mapping/index.html"><strong aria-hidden="true">9.</strong> Mapping</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../blender/creating-a-location-in-blender.html"><strong aria-hidden="true">9.1.</strong> Creating a location in Blender</a></li><li class="chapter-item expanded "><a href="../mapping/multimaterial-terrain.html"><strong aria-hidden="true">9.2.</strong> Multimaterial Terrain Guide</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../quests/index.html"><strong aria-hidden="true">10.</strong> Quests</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../quests/introduction.html"><strong aria-hidden="true">10.1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../quests/npc_creation.html"><strong aria-hidden="true">10.2.</strong> NPC Creation</a></li><li class="chapter-item expanded "><a href="../quests/task_guide.html"><strong aria-hidden="true">10.3.</strong> Task Creation</a></li><li class="chapter-item expanded "><a href="../quests/dialogues.html"><strong aria-hidden="true">10.4.</strong> Dialogue Creation</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">11.</strong> Reference/General</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../terminology/terminology.html"><strong aria-hidden="true">11.1.</strong> Terminology</a></li><li class="chapter-item expanded "><a href="../main-folders-and-files/index.html"><strong aria-hidden="true">11.2.</strong> Main Folders And Files</a></li><li class="chapter-item expanded "><a href="../main-folders-and-files/file-formats/index.html"><strong aria-hidden="true">11.3.</strong> File Formats</a></li><li class="chapter-item expanded "><a href="../crash-list/crashes-list.html"><strong aria-hidden="true">11.4.</strong> Crash List</a></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">12.</strong> Reference/Configs</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../configs/items/weapons/w_(weapon).ltx.html"><strong aria-hidden="true">12.1.</strong> Weapon Configuration Parameters</a></li><li class="chapter-item expanded "><a href="../configs/items/weapons/weapon_ammo.ltx.html"><strong aria-hidden="true">12.2.</strong> Ammo Configuration Parameters</a></li><li class="chapter-item expanded "><a href="../configs/items/weapons/weapon_sounds.ltx.html"><strong aria-hidden="true">12.3.</strong> Weapon Sounds Parameters</a></li><li class="chapter-item expanded "><a href="../configs/items/outfits/o_(outfit).ltx.html"><strong aria-hidden="true">12.4.</strong> Oufits Configuration Parameters</a></li><li class="chapter-item expanded "><a href="../configs/creatures/m_(mutant).ltx.html"><strong aria-hidden="true">12.5.</strong> Mutants Configuration Parameters</a></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">13.</strong> Reference/Shaders</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../shaders/shaders-list/materials-list.html"><strong aria-hidden="true">13.1.</strong> Material Shaders List</a></li><li class="chapter-item expanded "><a href="../shaders/shaders-list/shaders-list.html"><strong aria-hidden="true">13.2.</strong> Shaders List</a></li><li class="chapter-item expanded "><a href="../shaders/shaders-list/compiler-shaders-list.html"><strong aria-hidden="true">13.3.</strong> Compiler Shaders List</a></li><li class="chapter-item expanded "><a href="../shaders/shaders-list/sound-envornment-list.html"><strong aria-hidden="true">13.4.</strong> Sound Envornment List</a></li></ol></li><li class="chapter-item expanded "><a href="../engine/index.html"><strong aria-hidden="true">14.</strong> Reference/Engine</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../engine/console-commands.html"><strong aria-hidden="true">14.1.</strong> Console commands</a></li><li class="chapter-item expanded "><a href="../engine/alife.html"><strong aria-hidden="true">14.2.</strong> A-Life (AI)</a></li><li class="chapter-item expanded "><a href="../engine/engine-classes.html"><strong aria-hidden="true">14.3.</strong> Engine Classes</a></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">15.</strong> Reference/Resources</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../resources/audio.html"><strong aria-hidden="true">15.1.</strong> Audio</a></li><li class="chapter-item expanded "><a href="../resources/models-objects-locations.html"><strong aria-hidden="true">15.2.</strong> Models</a></li><li class="chapter-item expanded "><a href="../resources/sdk-resources.html"><strong aria-hidden="true">15.3.</strong> SDK resources</a></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">16.</strong> Reference/Tools</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../modding-tools/modding-tools.html"><strong aria-hidden="true">16.1.</strong> Modding Tools List</a></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/index.html"><strong aria-hidden="true">16.2.</strong> In-Game Editors</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/item-spawner.html"><strong aria-hidden="true">16.2.1.</strong> Item Spawner</a></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/lightning-editor.html"><strong aria-hidden="true">16.2.2.</strong> Lightning Editor</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">16.2.3.</strong> NPC Logic/Execute</div></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/object-spawner.html"><strong aria-hidden="true">16.2.4.</strong> Object Spawner</a></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/outfits-weapon-stats-editor.html"><strong aria-hidden="true">16.2.5.</strong> Outfits/Weapons Stats Editor</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">16.2.6.</strong> Pocket Workshop</div></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/weapon-hud-editor.html"><strong aria-hidden="true">16.2.7.</strong> Weapon HUD Editor</a></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/weather-editor.html"><strong aria-hidden="true">16.2.8.</strong> Weather Editor</a></li></ol></li><li class="chapter-item expanded "><a href="../modding-tools/ltx-support.html"><strong aria-hidden="true">16.3.</strong> Ltx Support</a></li><li class="chapter-item expanded "><a href="../sdk/index.html"><strong aria-hidden="true">16.4.</strong> SDK 0.7</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../sdk/interface.html"><strong aria-hidden="true">16.4.1.</strong> Interface</a></li><li class="chapter-item expanded "><a href="../sdk/actor-editor.html"><strong aria-hidden="true">16.4.2.</strong> Actor Editor</a></li><li class="chapter-item expanded "><a href="../sdk/image-editor.html"><strong aria-hidden="true">16.4.3.</strong> Image Editor</a></li><li class="chapter-item expanded "><a href="../sdk/level-editor.html"><strong aria-hidden="true">16.4.4.</strong> Level Editor</a></li><li class="chapter-item expanded "><a href="../sdk/shader-editor.html"><strong aria-hidden="true">16.4.5.</strong> Shader Editor</a></li><li class="chapter-item expanded "><a href="../sdk/sound-editor.html"><strong aria-hidden="true">16.4.6.</strong> Sound Editor</a></li><li class="chapter-item expanded "><a href="../sdk/postprocess-editor.html"><strong aria-hidden="true">16.4.7.</strong> Postprocess Editor</a></li><li class="chapter-item expanded "><a href="../sdk/particle-editor.html"><strong aria-hidden="true">16.4.8.</strong> Particle Editor (Not finished)</a></li></ol></li><li class="chapter-item expanded "><a href="../blender/blender-x-ray-addon-summary.html"><strong aria-hidden="true">16.5.</strong> Blender X-Ray Addon</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../blender/advanced-settings.html"><strong aria-hidden="true">16.5.1.</strong> Advanced settings</a></li><li class="chapter-item expanded "><a href="../blender/x-ray-addon-panels.html"><strong aria-hidden="true">16.5.2.</strong> Panels</a></li><li class="chapter-item expanded "><a href="../blender/x-ray-side-panels.html"><strong aria-hidden="true">16.5.3.</strong> Side Panel</a></li></ol></li><li class="chapter-item expanded "><a href="../modding-tools/stalker-studio.html"><strong aria-hidden="true">16.6.</strong> Stalker Studio</a></li><li class="chapter-item expanded "><a href="../modding-tools/thm-editor-by-i-love-kfc.html"><strong aria-hidden="true">16.7.</strong> THM Editor</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../modding-tools/thm-editor-by-valerok.html"><strong aria-hidden="true">16.7.1.</strong> Modified THM Editor</a></li></ol></li><li class="chapter-item expanded "><a href="../modding-tools/bump-generator.html"><strong aria-hidden="true">16.8.</strong> Bump Generator</a></li><li class="chapter-item expanded "><a href="../modding-tools/savandt.html"><strong aria-hidden="true">16.9.</strong> Sound Attribute Viewer And Tweaker</a></li><li class="chapter-item expanded "><a href="../modding-tools/upgrade-editor.html"><strong aria-hidden="true">16.10.</strong> Upgrade Editor</a></li><li class="chapter-item expanded "><a href="../modding-tools/omf-editor-by-valerok.html"><strong aria-hidden="true">16.11.</strong> Modified OMF Editor</a></li><li class="chapter-item expanded "><a href="../modding-tools/ogf-editor-by-valerok.html"><strong aria-hidden="true">16.12.</strong> Modified OGF Editor</a></li><li class="chapter-item expanded "><a href="../modding-tools/xray-export-tool.html"><strong aria-hidden="true">16.13.</strong> X-Ray Export Tool</a></li><li class="chapter-item expanded "><a href="../modding-tools/universal-x64-level-compilers.html"><strong aria-hidden="true">16.14.</strong> Universal x64 level compilers</a></li><li class="chapter-item expanded "><a href="../modding-tools/xrcompress-by-i-love-kfc.html"><strong aria-hidden="true">16.15.</strong> xrCompress</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Anomaly Modding Book</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Igigog/anomaly-modding-book" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Igigog/anomaly-modding-book/edit/main/src/scripting/script_animations.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="scripted-animations"><a class="header" href="#scripted-animations">Scripted animations</a></h1>
+<hr />
+<h2 id="theory"><a class="header" href="#theory">Theory</a></h2>
+<p>The first thing to know is that animations can be divided into a few categories:</p>
+<h3 id="motions"><a class="header" href="#motions">Motions</a></h3>
+<ul>
+<li>They represent actual hands, NPCs or actor movements</li>
+<li>Stored in .omf files</li>
+<li>Unique to an object</li>
+</ul>
+<p>In this article we’ll focus on hands animations which are, for example, sprinting or weapons reloading. FDDA items animations are also motions. Motions are usually unique to a specific object. For example, AK74 reload animation will only look nice when used with AK74 or any other gun that is set up for this specific motion. That means you can still play it in your script with empty hands, but if you play it while holding a PKM the machine gun won’t play any reload animation at all.</p>
+<p>Why so many details, you may wonder? Point is, a motion can have interesting use cases. For example, you can play a pistol holstering animation to temporarily hide one or both hands. Or you can use it for gestures as well as other unarmed animations, items animations - there's quite enough room for creativity.</p>
+<p>Also, an .omf file itself is not a motion. .omf files usually store multiple motions. If you want to add a new motion, you’ll need to either</p>
+<ol>
+<li>put your motion into an existing .omf file or</li>
+<li>make a new .omf file that will store your motions.</li>
+</ol>
+<h3 id="anm-animations"><a class="header" href="#anm-animations">.anm animations</a></h3>
+<p>In turn, these can be divided into two subcategories:</p>
+<h4 id="camera-animations"><a class="header" href="#camera-animations">Camera animations</a></h4>
+<p>These are much simpler due to their nature. Camera animations represent a screen effect - for example, leaning when an actor equips a helmet or a suit, ‘kickback’ effect when enhanced recoil effects are enabled, camera animations when reloading (mostly used by weapon mods like Boomsticks and Sharpsticks; not to be confused with hands motions) etc.</p>
+<h4 id="universal-animations"><a class="header" href="#universal-animations">‘Universal’ animations</a></h4>
+<p>This is not an official name, of course, it’s just something I came up with to distinguish these from the simple screen effects. They're also called 'Blend animations' in engine. I’d better describe them with an example.</p>
+<p>In Anomaly, there’s a ‘misfire’ animation. Try to shoot a gun without any ammo, and you’ll see slight hands movement. This is ‘misfire.anm’ animation.</p>
+<p>Point is, this is not exactly a screen effect type of .anm file, and yet this is not an .omf-type motion. It can be used with any object the actor is holding, i.e. it’s not tied to a specific gun.</p>
+<p>So technically, these are both .anm files. I just decided there needs to be some sort of distinction. As of now this documentation focuses on playing 'blend' animations.</p>
+<p>.anm are separate files unlike motions from .omf files, and every single .anm file can be just placed into <strong>anims/</strong> folder in gamedata and used directly.</p>
+<h3 id="ppe-effects"><a class="header" href="#ppe-effects">.ppe effects</a></h3>
+<p>These are camera animations with more possibilities: besides camera movements, they can also include, for example, duality effect (when drinking vodka or when there was an explosion next to the actor), grain effect in radiation zones etc. Vanilla night vision is also a .ppe effect.</p>
+<p>.ppe files work similarly to .anm files - they’re separate and go to <strong>anims/</strong> folder as well.</p>
+<hr />
+<h2 id="practice"><a class="header" href="#practice">Practice</a></h2>
+<p>Now let’s have a look at what we need to play animations in scripts.</p>
+<h3 id="motions-1"><a class="header" href="#motions-1">Motions</a></h3>
+<p>To play a motion, we need a few components:</p>
+<ol>
+<li>An <a href="../main-folders-and-files/file-formats/index.html#ltx-files">.ltx</a> file containing the basic parameters of the motion we’re going to use.</li>
+<li>A script function to play it.</li>
+</ol>
+<h4 id="setting-up-motion-parameters"><a class="header" href="#setting-up-motion-parameters">Setting up motion parameters</a></h4>
+<ol>
+<li>Create a config <a href="../main-folders-and-files/file-formats/index.html#ltx-files">.ltx</a> file in <strong>configs/items/items</strong> and give it any name, but make sure it starts with <strong>items_</strong>. Example: <strong>items_my_anims.ltx</strong>.</li>
+<li>Set the parameters. We’ll examine them by looking at this example.</li>
+</ol>
+<pre><code class="language-ini">
+[anim_my_sec]
+
+    hands_position              = 0.033, -0.155, 0.1
+
+    hands_orientation           = 0, 0, 0
+
+    hands_position_16x9         = 0.033, -0.155, 0.1
+
+    hands_orientation_16x9      = 0, 0, 0
+
+    anm_my_anim                 = name_of_motion_that_will_be_played
+
+</code></pre>
+<p><strong>[anim_my_sec]</strong> is an animation section name. It’ll be used in the script.</p>
+<p><strong>hands_position</strong>, <strong>hands_orientation</strong>, <strong>hands_position_16x9</strong> and <strong>hands_orientation_16x9</strong> are hands position/orientation parameters. They work similarly to weapon position parameters.</p>
+<p><strong>anm_my_anim</strong> is a motion name. From what I saw, it should always be started with <strong>anm_</strong> in such a config. Not to be confused with an .omf file name. For example, if your .omf file is called <strong>my_new_file.omf</strong> and it stores a motion called <strong>my_motion_1</strong>, specify <strong>my_motion_1</strong> here.</p>
+<p>To make a test placeholder, you can also open any weapon config file and choose any of the motions specified there (like, <code>anm_ak74_reload</code>, <code>anm_svd_sprint</code> etc.)</p>
+<h4 id="script-function"><a class="header" href="#script-function">Script function</a></h4>
+<p>The function that lets you play a motion is:</p>
+<pre><code class="language-lua">game.play_hud_motion(hands, anim_section_name, motion_name, bMixIn, speed)
+</code></pre>
+<p>Now let’s have a closer look at its arguments.</p>
+<ol>
+<li>(int) <strong>hands</strong>
+<ul>
+<li>Specifies what hands will be used to play an animation. 1 - left hand only, 0 - right hand only, 2 - both hands.</li>
+<li>Note that it's not possible to play a left-handed (like detector draw) animation for the right hand. But you still can play any two-handed animation with only one of the hands.</li>
+</ul>
+</li>
+<li>(string) <strong>anim_section_name</strong>
+<ul>
+<li>This is the name of the animation section specified in the config file.</li>
+<li>In our example this is <strong>[anim_my_sec]</strong>.</li>
+</ul>
+</li>
+<li>(string) <strong>motion_name</strong>
+<ul>
+<li>This is the name of the motion within the specified section in the config file.</li>
+<li>In our example this is <strong>anm_my_anim</strong>.</li>
+</ul>
+</li>
+<li>(bool) <strong>bMixIn</strong>
+<ul>
+<li>This one is a bit unclear - it’s missing from <code>lua_help.script</code>, and I’m not sure if I understood how it works correctly. This is how this argument is named in the engine, probably it has something to do with mixing or transition from one motion to another.</li>
+</ul>
+</li>
+<li>(float) <strong>speed</strong>
+<ul>
+<li>Sets the playback speed of an animation. Example: 0.5, 1.2, 5.5 etc.</li>
+</ul>
+</li>
+</ol>
+<h4 id="supplementary-functions"><a class="header" href="#supplementary-functions">Supplementary functions</a></h4>
+<pre><code class="language-lua">game.hud_motion_allowed()
+</code></pre>
+<p>Checks if a hands motion can be played at the moment. Useful as an additional safety check. Returns True or False.</p>
+<pre><code class="language-lua">game.get_motion_length(anim_section_name, motion_name, speed)
+</code></pre>
+<p>Gets the specified motion length. The parameters are identical to those in <code>play_hud_motion</code>.
+Note that it returns time in milliseconds, so in order to get the actual length you’ll need to divide the result by 1000. Useful to know when the motion is over.</p>
+<pre><code class="language-lua">game.stop_hud_motion()
+</code></pre>
+<p>It will stop any hands motion that is currently playing (since it can’t accept a specific motion as an argument), not only the one you’re playing in your script.
+Example: you have an animation from FDDA that is currently being played. This function is called from your script, intentionally or not. It will stop the current FDDA animation as well, despite the fact that it wasn't called from any of the FDDA scripts.</p>
+<h4 id="things-to-consider"><a class="header" href="#things-to-consider">Things to consider</a></h4>
+<ol>
+<li>It’s safer to always stop the looped animations explicitly. This can be done by:
+<ol>
+<li>playing a non-looped and non-restart animation - the previous one will be stopped.</li>
+<li>calling <code>game.stop_hud_motion()</code>.</li>
+</ol>
+</li>
+<li>Consider adding more protection from breaking something.
+<ol>
+<li>Know when to stop an animation and how not to make it looped when it’s not wanted. Remember to check the necessary conditions to make sure it makes sense to play it at all at the current moment.</li>
+<li>Know the callbacks you’re using to play animations. This may affect the animation behavior. Incorrect callback usage may lead to unwanted results, softlocks or sometimes even crashes.</li>
+<li>Call <code>game.only_allow_movekeys(true)</code> if you don’t want the user to break an animation by pressing any action keys (like item quick use), and then restore the controls with <code>game.only_allow_movekeys(false)</code>.</li>
+<li><code>hide_hud_inventory()</code> and <code>db.actor:activate_slot(0)</code> can be used to close the backpack inventory or force hide an active weapon if needed. Detectors can be manipulated in a similar way with:</li>
+</ol>
+</li>
+</ol>
+<pre><code class="language-lua">    local det = db.actor:active_detector() or nil
+    det:switch_state(2)
+</code></pre>
+<p>and then restored with:</p>
+<pre><code class="language-lua">    det:switch_state(1)
+</code></pre>
+<h3 id="anm-animations-1"><a class="header" href="#anm-animations-1">.anm animations</a></h3>
+<p>It’s simpler to play these. Here we don’t need any configs. The files are played directly. The function is <code>game.play_hud_anm(path, hands, speed, power, looped, restart)</code>.</p>
+<p>In this case I assume the played animation is “misfire.anm” mentioned earlier - I used this function for it in my addon. You can try it with different animations.</p>
+<p>The arguments are:</p>
+<ol>
+<li>(string) <strong>path</strong>
+<ul>
+<li>Path to the .anm file.</li>
+<li>It is predefined that a file is in the <strong>gamedata/anims</strong> folder. That being said, the path should look like this, for example: <code>&quot;camera_effects\\actor_move\\strafe_left.anm&quot;</code>.</li>
+<li>The real path in this case is <code>gamedata/anims/camera_effects/actor_move/strafe_left.anm.</code></li>
+<li>If the file is in the root <strong>anims/</strong> folder, just specify the file name.</li>
+</ul>
+</li>
+<li>(int) <strong>hands</strong>
+<ul>
+<li>Specifies what hands will be used to play an animation. 1 - left hand only, 0 - right hand only, 2 - both hands.</li>
+</ul>
+</li>
+<li>(float) <strong>speed</strong>
+<ul>
+<li>Sets the playback speed of an animation. Example: 0.5, 1.2, 5.5 etc.</li>
+</ul>
+</li>
+<li>(float) <strong>power</strong>
+<ul>
+<li>Sets the ‘amplitude’ of an animation. The more it is, the more noticeable the animation will be. When set too low, it may be too ‘faint’. Example: 0.51, 1.65, 5.1 etc.</li>
+</ul>
+</li>
+<li>(bool) <strong>looped</strong>
+<ul>
+<li>Defines if an animation will loop until stopped by any means. Can be True or False.</li>
+</ul>
+</li>
+<li>(bool) <strong>restart</strong>
+<ul>
+<li>Specified whether or not an animation can be restarted after it was finished, or it should only play once. Can be True or False.</li>
+</ul>
+</li>
+</ol>
+<h4 id="supplementary-functions-1"><a class="header" href="#supplementary-functions-1">Supplementary functions</a></h4>
+<pre><code class="language-lua">game.stop_hud_anm(path, force
+</code></pre>
+<p>Stops a specific .anm from playing. <strong>path</strong> is identical to the one above. <strong>force</strong> is a boolean parameter which makes it possible to force stop it - a bit more ‘harsh’ method.</p>
+<pre><code class="language-lua">game.stop_all_hud_anms(boolean)
+</code></pre>
+<p>Stops all .anm’s that are currently played.</p>
+<pre><code class="language-lua">game.set_hud_anm_time(path, time)
+</code></pre>
+<p>This function alters the playback speed of the specified .anm file. <strong>path</strong> is still the same as it was mentioned earlier, and <strong>time</strong> is actually a speed value (float).</p>
+<p>The name may be a bit confusing, but judjing by the engine code it actually manipulates the .anm speed:</p>
+<pre><code class="language-lua">float speed = (anm-&gt;anm-&gt;anim_param().max_t - anm-&gt;anm-&gt;anim_param().t_current) / time;
+</code></pre>
+<p>And a descriptive example in <code>actor_effects.script</code>:</p>
+<pre><code class="language-lua">game.play_hud_motion(1, mc_anm_sec, &quot;anm_hide_hand&quot;, true, hide_hand_speed)
+new_speed = game.set_hud_anm_time(anm_name, ((mc_anm_time_1 + mc_anm_time_2) / 1000) + anm_additional_length)
+</code></pre>
+<h4 id="things-to-consider-1"><a class="header" href="#things-to-consider-1">Things to consider</a></h4>
+<ol>
+<li>Unlike motions, .anm’s can be stopped directly by calling <code>game.stop_hud_anm</code>. It makes it possible to stop a specific .anm only.</li>
+<li>.anm’s can be ‘layered’ - i.e. it’s possible to play two or more .anm files at the same time. This can provide interesting and good-looking results.</li>
+<li>However, it may be tricky to play a few .anm’s with the same name at the same time because the function relies on the file name (which is already played in this case). If you want to play the same effect but with different parameters, consider making a copy of the .anm you use, give it another name and play them with two functions with different arguments according to the desired result.</li>
+<li>In practice, .anm playing parameters often require fine-tuning by testing it in-game. The same set of parameters for different .anm's may often lead to substantially different results. Achieving a good looking result may require patience.</li>
+<li>Though .anm's usually can't cause a softlock or break something substantially, it's still advised to stick to the safety recommendations described in the 'Motions' section.</li>
+</ol>
+<h3 id="ppe-effects-1"><a class="header" href="#ppe-effects-1">.ppe effects</a></h3>
+<p>These are the functions for them:</p>
+<ol>
+<li><code>level.add_pp_effector(path,id,looped)</code></li>
+<li><code>level.set_pp_effector_factor(id,power)</code></li>
+<li><code>level.remove_pp_effector(id)</code></li>
+</ol>
+<p>The first one is used to start a .ppe effect. Arguments:</p>
+<ol>
+<li>(string) <strong>path</strong>
+<ul>
+<li>It works absolutely the same way the <strong>path</strong> argument from <code>game.play_hud_anm</code> does.</li>
+</ul>
+</li>
+<li>(int) <strong>id</strong>
+<ul>
+<li>An ID of the effect. Can be any number.</li>
+<li>Used for removal of the effect later on.</li>
+</ul>
+</li>
+<li>(bool) <strong>looped</strong>
+<ul>
+<li>Defines if the effect will loop until stopped by any means. Can be True or False.</li>
+</ul>
+</li>
+</ol>
+<p>The second one is used to alter an already existing effect added by <code>add_pp_effector</code>. Arguments:</p>
+<ol>
+<li>(int) <strong>id</strong>
+<ul>
+<li>The ID of the previously created effect.</li>
+</ul>
+</li>
+<li>(float) <strong>power</strong>
+<ul>
+<li>Effect intensity factor from 0 to 1.</li>
+</ul>
+</li>
+</ol>
+<p>The third one stops and removes the added effect. The only argument is <strong>id</strong> - use the same one you specified when adding the effect with <code>add_pp_effector</code>.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../scripting/monkey-patching.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../blender/creating-model-in-blender.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../scripting/monkey-patching.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../blender/creating-model-in-blender.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>
