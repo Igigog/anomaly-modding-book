@@ -44,14 +44,14 @@ Utility for editing .thm files without the need to use the SDK
 | Checkbox | Description |
 ---|---|
 | Generate Mip Maps | Enables MIP-map generation |
-| Has Alpha |  |
+| Has Alpha | Takes into account map alpha channel |
 | Binary Alpha |  |
 | Alpha Border |  |
 | Color Border |  |
 | Fade To Color |  |
 | Fade To Alpha |  |
-| Dither Color |  |
-| Dither Each MIP Level |  |
+| Dither Color | Enables [Dither](https://en.wikipedia.org/wiki/Dither) Coloring |
+| Dither Each MIP Level | Enables [Dither](https://en.wikipedia.org/wiki/Dither) Coloring on each MIP level |
 | Diffuse Detail |  |
 | Implicit Lighted |  |
 | Detail Bump |  |
@@ -64,8 +64,8 @@ Utility for editing .thm files without the need to use the SDK
 | Image | 2D texture |
 | [Cube Map](https://en.wikipedia.org/wiki/Cube_mapping) | Is a method of environment mapping that uses the six faces of a cube as the map shape |
 | Bump Map | [Bump](../main-folders-and-files/file-formats/index.html#bumpdds-1) Map |
-| Normal Map | Normal Map |
-| Terrain | Terrain Map? |
+| Normal Map | [Normal](https://en.wikipedia.org/wiki/Normal_mapping) Map |
+| Terrain | Terrain Map |
 
 ### Texture format
 
@@ -91,8 +91,8 @@ Utility for editing .thm files without the need to use the SDK
 ---|---|
 | Autogen (S.T.A.L.K.E.R. Builds) |  |
 | None | None |
-| Use | Use Bump mapping method |
-| Use Parallax | Use Parallax mapping method |
+| Use | Use [Bump](https://en.wikipedia.org/wiki/Bump_mapping) mapping method |
+| Use Parallax | Use [Parallax](https://en.wikipedia.org/wiki/Parallax_mapping) mapping method |
 
 ### MIP Filter
 
@@ -134,7 +134,7 @@ Utility for editing .thm files without the need to use the SDK
 | Generate thms by .dds |  |
 | Fix invalid chunks in thms |  |
 | Validate thms with dds |  |
-| Convert thms format (SOC/COP) |  |
+| Convert thms format (SOC/COP) | - |
 
 ### Chechboxes
 

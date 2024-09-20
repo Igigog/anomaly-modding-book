@@ -13,4 +13,19 @@ These files store skeleton animations. The format for storing animations in .skl
 - A skl file can store only one animation
 - Each animation has [game parameters](/src/modding-tools/omf-editor-by-valerok.md#animation-options).
 - Skeletal animations do not support Scale keys
-- Animation keys support different types of interpolations: Stepped, Linear, Bezier 1D, Bezier 2D, Hermite, TCB.
+
+### Interpolation types
+
+- [Stepped](https://help.autodesk.com/view/MOBPRO/2024/ENU/?guid=GUID-F263EE8F-70A4-4941-BD31-410C08EC101A) 
+- [Linear](https://en.wikipedia.org/wiki/Linear_interpolation) 
+- [Bezier 1D](https://en.wikipedia.org/wiki/B%C3%A9zier_curve#Linear_B%C3%A9zier_curves)
+- [Bezier 2D](https://en.wikipedia.org/wiki/B%C3%A9zier_curve#Quadratic_B%C3%A9zier_curves) 
+- [Hermite](https://en.wikipedia.org/wiki/Hermite_interpolation)
+- [TCB](https://wiki.synfig.org/TCB)
+
+___
+
+## Programs editing this file
+
+- [Blender (X-Ray Addon)](../../blender/index.html)
+- [SDK 0.7](../../sdk/index.html)

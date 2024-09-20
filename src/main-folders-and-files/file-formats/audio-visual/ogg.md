@@ -4,7 +4,7 @@ ___
 
 ## About
 
-The sound format used by the game engine
+Sound format used by the game engine
 
 ## Technical information
 

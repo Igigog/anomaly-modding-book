@@ -239,9 +239,9 @@ Example value taken from vanilla m_bloodsucker.ltx
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 ---|---|---|---|
 | aom_enabled | Whether the ability to attack on the move is enabled | 1 |  |
-| aom_only_jump | <abbr title="Unconfirmed">Ability to attack only when jumping?</abbr> | 1 |  |
-| aom_animation_left | <abbr title="Unconfirmed">Attack animations on the move left?</abbr> | stand_run_attack_left_ |  |
-| aom_animation_right | <abbr title="Unconfirmed">Attack animations on the move right?</abbr> | stand_run_attack_right_ |  |
+| aom_only_jump | Ability to attack only when jumping | 1 |  |
+| aom_animation_left | Attack animations on the move left? | stand_run_attack_left_ |  |
+| aom_animation_right | Attack animations on the move right? | stand_run_attack_right_ |  |
 | aom_far_radius |  | 15 |  |
 | aom_max_go_close_time |  | 8 |  |
 | aom_prepare_time  |  | 5 |  |
@@ -395,17 +395,17 @@ Unique abilitys for mutants. Each mutant may have its own individual abilities, 
 | eye_fov | Field of view | 180 |  |
 | eye_range | Visibility range | 150 |  |
 | DynamicObjectsCount | Determines how many objects the mutant can remember seeing | 32 |  |
-| vision_free_section |  | bloodsucker_vision_free |  |
-| vision_danger_section |  | bloodsucker_vision_danger |  |
+| vision_free_section | Responsible for vision when the NPC is in a calm state | bloodsucker_vision_free |  |
+| vision_danger_section | Responsible for vision when the NPC is in an alarmed state | bloodsucker_vision_danger |  |
 | min_view_distance | Minimum visibility distance | 0.8 | coefficient, which is multiplied by eye_range, depending on the angle |
 | max_view_distance | Maximum visibility distance | 1.0 | coefficient, which is multiplied by eye_range, depending on the angle |
-| visibility_threshold | value, when the sum is reached, the object is considered visible | 190.0 |  |
-| always_visible_distance |  | 0.05 |  |
+| visibility_threshold | Value, when the sum is reached, the object is considered visible | 190.0 |  |
+| always_visible_distance | Vision factor at which an NPC can see under all conditions, regardless of lighting and other parameters | 0.05 |  |
 | time_quant | Used when calculating the visibility of one creature to another (the formula involves time, time quantum, illumination, speed of an object, and distance to it) | 0.0005 |  |
-| decrease_value | the value by which the weight is reduced if the object is caught in the frustum, but is detached for some reason | 0.01 |  |
-| velocity_factor |  | 0.2 |  |
-| luminocity_factor | light factor (for Actor only) | 0.6 |  |
-| transparency_threshold |  | 0.1 |  |
+| decrease_value | Value by which the weight is reduced if the object is caught in the frustum, but is detached for some reason | 0.01 |  |
+| velocity_factor | The higher the value, the faster we will be detected by NPCs when we move | 0.2 |  |
+| luminocity_factor | light factor | 0.6 |  |
+| transparency_threshold | The higher the value, the less you will be visible behind objects containing “transparent areas” such as bushes, reeds, etc. | 0.1 |  |
 | feel_enemy_who_just_hit_max_distance | the distance at which the monster will sense the shooter in any case | 350 |  |
 
 </details>

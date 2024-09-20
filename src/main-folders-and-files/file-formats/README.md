@@ -57,6 +57,13 @@ ___
 | .vs | Vertex shader |
 | .ps | Pixel shader |
 | .s | Script shader. LUA version of engine blenders |
+
+___
+
+## Postprocess
+
+| Extension | Description |
+---|---|
 | .ppe | Postprocess file format. Color-noise effects of the actor's screen |
 
 ___
@@ -70,6 +77,7 @@ ___
 | .ogf | Compiled objects |
 | .bones | Skeleton bone data files |
 | *bone_parts*.* | Bone part description file for an object/NPC |
+| .group | Object groups |
 
 ___
 
@@ -98,9 +106,9 @@ ___
 | Extension | Description |
 ---|---|
 | [.err](#err) | Contains information about geometry errors during level compilation |
-| [level](#level) | File with general information about the game location (light sources, object names, texture and shader names, sectors and portals). Created by xrLC during compilation. Opened only by the game. |
+| [level](#level) | File with general information about the game location (light sources, object names, texture and shader names, sectors and portals). Created during compilation |
 | .prj | Level precompilation file |
-| .ai | AI location grid. Created by xrAI when compiling. Opened only by the game. |
+| .ai | AI location grid. Created during compilation |
 | [.cform](#cform-collision-form) | Geometry for calculating collisions. Calculated by the level compiler. Contains a solid map structure. All tangible objects with materials live here. Because of this, the game knows with what sound and property objects should react when they are hit by bullets or walked on |
 | [.details](#details) | Detailed objects (grass, cigarette butts, construction debris) on the level. Created through LevelEditor SDK at compile time. |
 | .env_mod | local environment modifiers (environment), set areas on the location with lighting different from the main weather cycle. |
@@ -108,7 +116,7 @@ ___
 | .game | Coordinates of the player's spawn in the multiplayer game. Outdated file. |
 | [.geom](#geom) | Contains vertices (position, normals, texture coordinates, etc.), indices, and information for smooth geometry detail. |
 | .geomx | It contains only geometry. In the renderer it is used in the shadow rendering passes, due to the fact that there is less information - loading data into the buffers - faster. |
-| .gtc | Cross table of correspondence between the location graph and the AI grid. It is created when compiling the map in LE KFK (xrAI). |
+| .gtc | Cross table of correspondence between the location graph and the AI grid. Created during compilation |
 | [.hom](#hom-hierarchical-occlusion-mapping) | Mapping of hierarchical cutoffs |
 | .level | List of SDK scene objects |
 | .lights | Light sources for xrLC |
@@ -119,6 +127,7 @@ ___
 | .snd_static | Static point sources of sound. Sound of flies, etc. |
 | [.som](#som-sound-occluder-mesh) | Geometry for calculating sound propagation. |
 | .wallmarks | Decals. Bloodstains, faction emblems on walls, etc. Used for the compiled level. |
+| .part | Scene objects |
 
 ___
 

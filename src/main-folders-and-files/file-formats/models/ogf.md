@@ -1,4 +1,4 @@
-# .ogf
+# .ogf (Open Graphics Format)
 
 ___
 
@@ -10,7 +10,7 @@ Compiled 3D models for the game
 
 - Storage of meshes without skeleton and with skeleton is supported
 - Only one skeleton
-- Number of bones from 1 and not more than 64 pieces
+- Number of bones from 1 and not more than 64
 - Bones have game parameters and collision shapes
 - Models with skeleton can have animations or references to external *.omf files with animations (Motion References)
 - The number of bones that can influence a vertex can be within these limits: SoC format - 1, 2, CS/CoP - 1, 2, 3, 4 (when exporting the extra ones are discarded and only those weights that have the biggest influence are stored)

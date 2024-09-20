@@ -194,6 +194,8 @@ ___
 - [OMF Editor by Valerok](https://github.com/VaIeroK/Omf-Editor) - Modified tool for working with [.omf](../main-folders-and-files/file-formats/index.html#omf-open-motions-format) format.
   - [More](omf-editor-by-valerok.md)
 
+- OmfSpisok - utility for one-click output .txt list of connected *.omf files from *.ogf file
+
 ___
 
 ## Models

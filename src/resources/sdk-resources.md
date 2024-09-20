@@ -16,7 +16,3 @@ ___
 
 - [gamedata]
 - [rawdata](https://sharedby.blomp.com/eNU2m5)
-
-## Unofficial Anomaly SDK
-
-- [rawdata](https://sharedby.blomp.com/lKroua)

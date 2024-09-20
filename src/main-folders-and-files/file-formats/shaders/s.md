@@ -1,1 +1,6 @@
-# .s (Scrip Shader)
+# .s (Script Shader)
+
+___
+
+## About
+

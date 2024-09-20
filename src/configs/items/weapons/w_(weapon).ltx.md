@@ -36,7 +36,7 @@ ___
 | $prefetch | preload queue | 8 |  |
 | $spawn | the Weapon Directory in the Level Editor | "weapons\ak-74" | "weapons\ *wpn_name*" |
 | scheduled | online/offline switch; Works only for "live" objects with AI | off | on (Yes) - off (No) |
-| cform | parameter for dynamic objects; necessary for correct creation of the skeleton model | skeleton |  |
+| cform | parameter for dynamic objects; necessary for correct creation of the skeleton model | skeleton | skeleton <br>sphear box |
 | parent_section |  | wpn_akm |  |
 | class | engine weapon class | WP_AK74 | WP_BINOC <br>WP_KNIFE <br>WP_BM16 <br>WP_GROZA <br>WP_SVD <br>WP_AK74 <br>WP_LR300 <br>WP_HPSA <br>WP_PM <br>WP_RG6 <br>WP_RPG7 <br>WP_SHOTG <br>WP_ASHTG <br>WP_MAGAZ <br>WP_SVU <br>WP_USP45 <br>WP_VAL <br>WP_VINT <br>WP_WALTH W_STMGUN |
 | animation_slot | animation slot number | 2 | 1 - pistol <br>2 - automatic rifle <br>3 - rifle, shotgun <br>4 - RPG <br>5 - knife <br>7 - bolt, grenade <br>8 - submachine gun with integrated underbarrel grenade launcher <br>9 - Shotgun <br>10 - Drum Gun <br>13 - binoculars |
@@ -179,6 +179,7 @@ ___
 | fire_distance | effective range of the shot after which the bullet disappears | 900 | Specified in meters |
 | bullet_speed | initial bullet speed | 715 | Specified in meters per second |
 | rpm | Shooting speed | 600 | Specifies the number of shots per minute |
+| rpm_anim_fix | New shot animation behavior | true | true (yes) <br>false (no) |
 | rpm_empty_click | Misfire/empty magazine sound frequency | 200 |  |
 | fire_dispersion_base | The dispersion (angle of the bullets) introduced by the weapon; affects accuracy; added to the disp_base in actor.ltx | 0.45 | Specified in degrees |
 | PDM_disp_accel_factor | Multiplier by which fire_dispersion_base is multiplied when the protagonist runs | 2.5 | Specified in numbers |
@@ -593,6 +594,8 @@ You can read about the parameters of the sounds [here](weapon_sounds.ltx.md)
 !!! Different engine classes have different animation parameters for different engine classes. Need to write !!!
 
 ### HUD animations parameters
+
+> animation parameter name = animation name(hands), animation name(weapon), playback speed
 
 <details>
     <summary>Idle animations</summary>

@@ -9,6 +9,9 @@ Contains all the essentials. This contains light sources, object descriptions, n
 ## Technical information
 
 - Format version: 14
+- Stores visual geometry in *.ogf format. Limitations and features are similar to *.ogf files without skeleton.
+- One mesh can store only one material.
+- The format stores visual geometry, collision geometry, sectors, portals, dynamic light sources, glow objects.
 
 ### General structure - file blocks
 
