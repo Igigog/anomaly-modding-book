@@ -6,7 +6,7 @@
 
 by demonized#1084
 
-Lua variables unlocalizer is a part of [modded exes repo, version 2023.03.09+](https://github.com/themrdemonized/STALKER-Anomaly-modded-exes)
+Lua variables unlocalizer is a part of [modded exes repo, version 2023.03.09+](https://github.com/themrdemonized/xray-monolith)
 
 This addons allows to unlocalize variables for lua environment, making them global to the script namespace
 
