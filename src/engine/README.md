@@ -25,7 +25,7 @@ ___
 
 Community fork of the Monolith engine curated by demonized. This engine is encouraged to use by the community and comes with compatibility and stability fixes.
 
-- [Source and download](https://github.com/themrdemonized/STALKER-Anomaly-modded-exes)
+- [Source and download](https://github.com/themrdemonized/xray-monolith)
 
 ### Key Features
 
