@@ -13,11 +13,11 @@ ___
   - [Installing MO2](getting-started/installing-mo2.md)
   - [Addon installers](getting-started/addon-installers.md)
   - [Package Naming for MO2](getting-started/package-naming.md)
-  - [Configuring VSCode-like programs to handle game files](getting-started/vs-code-game-files-setup.md)
+- [Configuring VSCode-like programs to handle game files](getting-started/vs-code-game-files-setup.md)
 
 ___
 
-- [Addons]()
+- [Addons](addons/README.md)
   - [DLTX](addons/dltx.md)
   - [DXML](addons/dxml.md)
   - [MCM](addons/mcm.md)
@@ -27,7 +27,7 @@ ___
 
 ___
 
-- [Configs]()
+- [Configs](configs/README.md)
   - [Structure of Files](configs/structure-of-files.md)
   - [Condlists](configs/condlists.md)
   - [Inventory Icons](configs/inventory_icons.md)
@@ -65,9 +65,9 @@ ___
 
 ___
 
-- [Mapping](mapping/README.md)
+- [Mapping](tutorials/mapping/README.md)
   - [Creating a location in Blender](blender/creating-a-location-in-blender.md)
-  - [Multimaterial Terrain Guide](mapping/multimaterial-terrain.md)
+  - [Multimaterial Terrain Guide](tutorials/mapping/multimaterial-terrain.md)
   
 ___
 
@@ -85,6 +85,8 @@ ___
   - [File Formats](main-folders-and-files/file-formats/README.md)
   - [Crash List](crash-list/crashes-list.md)
 
+___
+
 - [Reference/Configs](reference/README.md)
   - [Weapon World Configuration Parameters](configs/items/weapons/w_(weapon)-world.ltx.md)
   - [Weapon HUD Configuration Parameters](configs/items/weapons/w_(weapon)-hud.md)
@@ -93,21 +95,40 @@ ___
   - [Oufits Configuration Parameters](configs/items/outfits/o_(outfit).ltx.md)
   - [Mutants Configuration Parameters](configs/creatures/m_(mutant).ltx.md)
 
+___
+
 - [Reference/Shaders](reference/README.md)
   - [Material Shaders List](shaders/shaders-list/materials-list.md)
   - [Shaders List](shaders/shaders-list/shaders-list.md)
   - [Compiler Shaders List](shaders/shaders-list/compiler-shaders-list.md)
   - [Sound Envornment List](shaders/shaders-list/sound-envornment-list.md)
 
+___
+
 - [Reference/Engine](engine/README.md)
   - [Console commands](engine/console-commands.md)
   - [A-Life (AI)](engine/alife.md)
   - [Engine Classes](engine/engine-classes.md)
 
+___
+
+- [Reference/AI](ai/README.md)
+  - [Alife]()
+  - [Animpoits]()
+  - [Graphpoint]()
+  - [Waypoint]()
+  - [Smart Cover]()
+  - [Smart Terrain]()
+  - [Space Restrictor]()
+
+___
+
 - [Reference/Resources](reference/README.md)
   - [Audio](resources/audio.md)
   - [Models](resources/models-objects-locations.md)
   - [SDK resources](resources/sdk-resources.md)
+
+___
 
 - [Reference/Tools](reference/README.md)
   - [Modding Tools List](modding-tools/modding-tools.md)
@@ -129,11 +150,11 @@ ___
     - [Shader Editor](sdk/shader-editor.md)
     - [Sound Editor](sdk/sound-editor.md)
     - [Postprocess Editor](sdk/postprocess-editor.md)
-    - [Particle Editor (Not finished)](sdk/particle-editor.md)
+    - [Particle Editor](sdk/particle-editor.md)
   - [Blender X-Ray Addon](blender/blender-x-ray-addon-summary.md)
     - [Advanced settings](blender/advanced-settings.md)
     - [Panels](blender/x-ray-addon-panels.md)
-    - [Side Panel](blender/x-ray-side-panels.md)
+    - [N Panel]()
   - [Stalker Studio](modding-tools/stalker-studio.md)
   - [THM Editor](modding-tools/thm-editor-by-i-love-kfc.md)
     - [Modified THM Editor](modding-tools/thm-editor-by-valerok.md)

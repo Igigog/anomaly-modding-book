@@ -1,8 +1,12 @@
-# Shaders List
+# Shaders
 
 ___
 
 ## About
+
+HLSL
+
+## Shaders List
 
 These sections describe the shader lists used for the game
 
