@@ -1,0 +1,639 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Task Creation - Anomaly Modding Book</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../src/custom.css">
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../meta/index.html"><strong aria-hidden="true">1.</strong> Meta</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../meta/contributing/index.html"><strong aria-hidden="true">1.1.</strong> Contributing to this book</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../getting-started/index.html"><strong aria-hidden="true">2.</strong> Mod Organizer</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../getting-started/installing-mo2.html"><strong aria-hidden="true">2.1.</strong> Installing MO2</a></li><li class="chapter-item expanded "><a href="../getting-started/addon-installers.html"><strong aria-hidden="true">2.2.</strong> Addon installers</a></li><li class="chapter-item expanded "><a href="../getting-started/package-naming.html"><strong aria-hidden="true">2.3.</strong> Package Naming for MO2</a></li><li class="chapter-item expanded "><a href="../getting-started/vs-code-game-files-setup.html"><strong aria-hidden="true">2.4.</strong> Configuring VSCode-like programs to handle game files</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Addons</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../addons/dltx.html"><strong aria-hidden="true">3.1.</strong> DLTX</a></li><li class="chapter-item expanded "><a href="../addons/dxml.html"><strong aria-hidden="true">3.2.</strong> DXML</a></li><li class="chapter-item expanded "><a href="../addons/mcm.html"><strong aria-hidden="true">3.3.</strong> MCM</a></li><li class="chapter-item expanded "><a href="../addons/pdb.html"><strong aria-hidden="true">3.4.</strong> PDB files</a></li><li class="chapter-item expanded "><a href="../addons/lua-unlocalizer.html"><strong aria-hidden="true">3.5.</strong> Lua Unlocalizer</a></li><li class="chapter-item expanded "><a href="../addons/useful-addons-scripts-utils.html"><strong aria-hidden="true">3.6.</strong> Useful addons, scripts and utils</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> Configs</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../configs/structure-of-files.html"><strong aria-hidden="true">4.1.</strong> Structure of Files</a></li><li class="chapter-item expanded "><a href="../configs/condlists.html"><strong aria-hidden="true">4.2.</strong> Condlists</a></li><li class="chapter-item expanded "><a href="../configs/inventory_icons.html"><strong aria-hidden="true">4.3.</strong> Inventory Icons</a></li><li class="chapter-item expanded "><a href="../configs/algoritm-of-logic.html"><strong aria-hidden="true">4.4.</strong> Algoritm of Logic</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../scripting/index.html"><strong aria-hidden="true">5.</strong> Scripting</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../scripting/codebase_introduction.html"><strong aria-hidden="true">5.1.</strong> Introduction to codebase</a></li><li class="chapter-item expanded "><a href="../scripting/codestyle.html"><strong aria-hidden="true">5.2.</strong> Codestyle</a></li><li class="chapter-item expanded "><a href="../scripting/wetting_hands.html"><strong aria-hidden="true">5.3.</strong> Wetting our hands</a></li><li class="chapter-item expanded "><a href="../scripting/server_and_game_objects.html"><strong aria-hidden="true">5.4.</strong> Server and game objects</a></li><li class="chapter-item expanded "><a href="../scripting/callbacks.html"><strong aria-hidden="true">5.5.</strong> Callbacks</a></li><li class="chapter-item expanded "><a href="../scripting/time_events.html"><strong aria-hidden="true">5.6.</strong> Time events</a></li><li class="chapter-item expanded "><a href="../scripting/monkey-patching.html"><strong aria-hidden="true">5.7.</strong> Monkey patching</a></li><li class="chapter-item expanded "><a href="../scripting/script_animations.html"><strong aria-hidden="true">5.8.</strong> Script Animations</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> Modelling</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../blender/creating-model-in-blender.html"><strong aria-hidden="true">6.1.</strong> Creating model in Blender</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.</strong> Animating</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../blender/creating-hud-animation-in-blender.html"><strong aria-hidden="true">7.1.</strong> Creating an animation</a></li><li class="chapter-item expanded "><a href="../blender/creating-camera-animations.html"><strong aria-hidden="true">7.2.</strong> Creating animations for the camera</a></li><li class="chapter-item expanded "><a href="../blender/editing-existing-animations.html"><strong aria-hidden="true">7.3.</strong> Editing existing animations</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../texturing/index.html"><strong aria-hidden="true">8.</strong> Texturing</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../texturing/сreating-and-preparing-textures.html"><strong aria-hidden="true">8.1.</strong> Creating and preparing textures</a></li><li class="chapter-item expanded "><a href="../texturing/working-correctly-with-icon-atlases.html"><strong aria-hidden="true">8.2.</strong> Working correctly with icon atlases</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../mapping/index.html"><strong aria-hidden="true">9.</strong> Mapping</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../blender/creating-a-location-in-blender.html"><strong aria-hidden="true">9.1.</strong> Creating a location in Blender</a></li><li class="chapter-item expanded "><a href="../mapping/multimaterial-terrain.html"><strong aria-hidden="true">9.2.</strong> Multimaterial Terrain Guide</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../quests/index.html"><strong aria-hidden="true">10.</strong> Quests</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../quests/introduction.html"><strong aria-hidden="true">10.1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../quests/npc_creation.html"><strong aria-hidden="true">10.2.</strong> NPC Creation</a></li><li class="chapter-item expanded "><a href="../quests/task_guide.html" class="active"><strong aria-hidden="true">10.3.</strong> Task Creation</a></li><li class="chapter-item expanded "><a href="../quests/dialogues.html"><strong aria-hidden="true">10.4.</strong> Dialogue Creation</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">11.</strong> Reference/General</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../terminology/terminology.html"><strong aria-hidden="true">11.1.</strong> Terminology</a></li><li class="chapter-item expanded "><a href="../main-folders-and-files/index.html"><strong aria-hidden="true">11.2.</strong> Main Folders And Files</a></li><li class="chapter-item expanded "><a href="../main-folders-and-files/file-formats/index.html"><strong aria-hidden="true">11.3.</strong> File Formats</a></li><li class="chapter-item expanded "><a href="../crash-list/crashes-list.html"><strong aria-hidden="true">11.4.</strong> Crash List</a></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">12.</strong> Reference/Configs</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../configs/items/weapons/w_(weapon).ltx.html"><strong aria-hidden="true">12.1.</strong> Weapon Configuration Parameters</a></li><li class="chapter-item expanded "><a href="../configs/items/weapons/weapon_ammo.ltx.html"><strong aria-hidden="true">12.2.</strong> Ammo Configuration Parameters</a></li><li class="chapter-item expanded "><a href="../configs/items/weapons/weapon_sounds.ltx.html"><strong aria-hidden="true">12.3.</strong> Weapon Sounds Parameters</a></li><li class="chapter-item expanded "><a href="../configs/items/outfits/o_(outfit).ltx.html"><strong aria-hidden="true">12.4.</strong> Oufits Configuration Parameters</a></li><li class="chapter-item expanded "><a href="../configs/creatures/m_(mutant).ltx.html"><strong aria-hidden="true">12.5.</strong> Mutants Configuration Parameters</a></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">13.</strong> Reference/Shaders</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../shaders/shaders-list/materials-list.html"><strong aria-hidden="true">13.1.</strong> Material Shaders List</a></li><li class="chapter-item expanded "><a href="../shaders/shaders-list/shaders-list.html"><strong aria-hidden="true">13.2.</strong> Shaders List</a></li><li class="chapter-item expanded "><a href="../shaders/shaders-list/compiler-shaders-list.html"><strong aria-hidden="true">13.3.</strong> Compiler Shaders List</a></li><li class="chapter-item expanded "><a href="../shaders/shaders-list/sound-envornment-list.html"><strong aria-hidden="true">13.4.</strong> Sound Envornment List</a></li></ol></li><li class="chapter-item expanded "><a href="../engine/index.html"><strong aria-hidden="true">14.</strong> Reference/Engine</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../engine/console-commands.html"><strong aria-hidden="true">14.1.</strong> Console commands</a></li><li class="chapter-item expanded "><a href="../engine/alife.html"><strong aria-hidden="true">14.2.</strong> A-Life (AI)</a></li><li class="chapter-item expanded "><a href="../engine/engine-classes.html"><strong aria-hidden="true">14.3.</strong> Engine Classes</a></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">15.</strong> Reference/Resources</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../resources/audio.html"><strong aria-hidden="true">15.1.</strong> Audio</a></li><li class="chapter-item expanded "><a href="../resources/models-objects-locations.html"><strong aria-hidden="true">15.2.</strong> Models</a></li><li class="chapter-item expanded "><a href="../resources/sdk-resources.html"><strong aria-hidden="true">15.3.</strong> SDK resources</a></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">16.</strong> Reference/Tools</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../modding-tools/modding-tools.html"><strong aria-hidden="true">16.1.</strong> Modding Tools List</a></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/index.html"><strong aria-hidden="true">16.2.</strong> In-Game Editors</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/item-spawner.html"><strong aria-hidden="true">16.2.1.</strong> Item Spawner</a></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/lightning-editor.html"><strong aria-hidden="true">16.2.2.</strong> Lightning Editor</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">16.2.3.</strong> NPC Logic/Execute</div></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/object-spawner.html"><strong aria-hidden="true">16.2.4.</strong> Object Spawner</a></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/outfits-weapon-stats-editor.html"><strong aria-hidden="true">16.2.5.</strong> Outfits/Weapons Stats Editor</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">16.2.6.</strong> Pocket Workshop</div></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/weapon-hud-editor.html"><strong aria-hidden="true">16.2.7.</strong> Weapon HUD Editor</a></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/weather-editor.html"><strong aria-hidden="true">16.2.8.</strong> Weather Editor</a></li></ol></li><li class="chapter-item expanded "><a href="../modding-tools/ltx-support.html"><strong aria-hidden="true">16.3.</strong> Ltx Support</a></li><li class="chapter-item expanded "><a href="../sdk/index.html"><strong aria-hidden="true">16.4.</strong> SDK 0.7</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../sdk/interface.html"><strong aria-hidden="true">16.4.1.</strong> Interface</a></li><li class="chapter-item expanded "><a href="../sdk/actor-editor.html"><strong aria-hidden="true">16.4.2.</strong> Actor Editor</a></li><li class="chapter-item expanded "><a href="../sdk/image-editor.html"><strong aria-hidden="true">16.4.3.</strong> Image Editor</a></li><li class="chapter-item expanded "><a href="../sdk/level-editor.html"><strong aria-hidden="true">16.4.4.</strong> Level Editor</a></li><li class="chapter-item expanded "><a href="../sdk/shader-editor.html"><strong aria-hidden="true">16.4.5.</strong> Shader Editor</a></li><li class="chapter-item expanded "><a href="../sdk/sound-editor.html"><strong aria-hidden="true">16.4.6.</strong> Sound Editor</a></li><li class="chapter-item expanded "><a href="../sdk/postprocess-editor.html"><strong aria-hidden="true">16.4.7.</strong> Postprocess Editor</a></li><li class="chapter-item expanded "><a href="../sdk/particle-editor.html"><strong aria-hidden="true">16.4.8.</strong> Particle Editor (Not finished)</a></li></ol></li><li class="chapter-item expanded "><a href="../blender/blender-x-ray-addon-summary.html"><strong aria-hidden="true">16.5.</strong> Blender X-Ray Addon</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../blender/advanced-settings.html"><strong aria-hidden="true">16.5.1.</strong> Advanced settings</a></li><li class="chapter-item expanded "><a href="../blender/x-ray-addon-panels.html"><strong aria-hidden="true">16.5.2.</strong> Panels</a></li><li class="chapter-item expanded "><a href="../blender/x-ray-side-panels.html"><strong aria-hidden="true">16.5.3.</strong> Side Panel</a></li></ol></li><li class="chapter-item expanded "><a href="../modding-tools/stalker-studio.html"><strong aria-hidden="true">16.6.</strong> Stalker Studio</a></li><li class="chapter-item expanded "><a href="../modding-tools/thm-editor-by-i-love-kfc.html"><strong aria-hidden="true">16.7.</strong> THM Editor</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../modding-tools/thm-editor-by-valerok.html"><strong aria-hidden="true">16.7.1.</strong> Modified THM Editor</a></li></ol></li><li class="chapter-item expanded "><a href="../modding-tools/bump-generator.html"><strong aria-hidden="true">16.8.</strong> Bump Generator</a></li><li class="chapter-item expanded "><a href="../modding-tools/savandt.html"><strong aria-hidden="true">16.9.</strong> Sound Attribute Viewer And Tweaker</a></li><li class="chapter-item expanded "><a href="../modding-tools/upgrade-editor.html"><strong aria-hidden="true">16.10.</strong> Upgrade Editor</a></li><li class="chapter-item expanded "><a href="../modding-tools/omf-editor-by-valerok.html"><strong aria-hidden="true">16.11.</strong> Modified OMF Editor</a></li><li class="chapter-item expanded "><a href="../modding-tools/ogf-editor-by-valerok.html"><strong aria-hidden="true">16.12.</strong> Modified OGF Editor</a></li><li class="chapter-item expanded "><a href="../modding-tools/xray-export-tool.html"><strong aria-hidden="true">16.13.</strong> X-Ray Export Tool</a></li><li class="chapter-item expanded "><a href="../modding-tools/universal-x64-level-compilers.html"><strong aria-hidden="true">16.14.</strong> Universal x64 level compilers</a></li><li class="chapter-item expanded "><a href="../modding-tools/xrcompress-by-i-love-kfc.html"><strong aria-hidden="true">16.15.</strong> xrCompress</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Anomaly Modding Book</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Igigog/anomaly-modding-book" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Igigog/anomaly-modding-book/edit/main/src/quests/task_guide.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="task-guide"><a class="header" href="#task-guide">TASK GUIDE</a></h1>
+<p>Written by @nltp_ashes</p>
+<p>Table of content :</p>
+<ul>
+<li><a href="task_guide.html#i-introduction">I. INTRODUCTION</a></li>
+<li><a href="task_guide.html#ii-task-config">II. TASK CONFIG</a></li>
+<li><a href="task_guide.html#ii-task-config">II.A. GENERALITIES</a></li>
+<li><a href="task_guide.html#iib1-task-lifecycle-in-config">II.B.1. TASK LIFECYCLE (IN CONFIG)</a></li>
+<li><a href="task_guide.html#iib2-task-lifecycle-in-script">II.B.2. TASK LIFECYCLE (IN SCRIPT)</a></li>
+<li><a href="task_guide.html#ii-task-config">II. TASK CONFIG</a></li>
+<li><a href="task_guide.html#iii-starting-the-task">III. STARTING THE TASK</a></li>
+<li><a href="task_guide.html#iiia-using-the-games-dynamic-random-tasks">III.A. USING THE GAME'S DYNAMIC RANDOM TASKS</a></li>
+<li><a href="task_guide.html#iiib-using-your-own-functions">III.B. USING YOUR OWN FUNCTIONS</a></li>
+<li><a href="task_guide.html#iv-task-functors">IV. TASK FUNCTORS</a></li>
+<li><a href="task_guide.html#iva-task-title-functor">IV.A. TASK TITLE FUNCTOR</a></li>
+<li><a href="task_guide.html#ivb-task-description-functor">IV.B. TASK DESCRIPTION FUNCTOR</a></li>
+<li><a href="task_guide.html#ivc-task-target-functor">IV.C. TASK TARGET FUNCTOR</a></li>
+<li><a href="task_guide.html#ivd-task-status-functor">IV.D. TASK STATUS FUNCTOR</a></li>
+</ul>
+<hr />
+<h2 id="i-introduction"><a class="header" href="#i-introduction">I. INTRODUCTION</a></h2>
+<p>Before we start, keep in mind tasks often take part at the junction of a lot of the game's systems : dialogs, NPCs, squads, smart terrains and what not. </p>
+<p>This guide aims to address how to work on tasks, and specifically tasks, while sometimes making connections to other things. You'll most likely need to get familiar (either before, or along the way) with those other systems in order to create your task, depending on how complex you want it. </p>
+<p>Make sure to check the <a href="https://igigog.github.io/anomaly-modding-book/index.html">Anomaly Modding Book</a> to see if guides exists for these other aspects not detailed here.</p>
+<p>Without going into details, to create a task, you will at least need to play with the following files.</p>
+<ul>
+<li>
+<p><code>gamedata/configs/misc/task/task_manager.ltx</code>:<br />
+where your task config will be;</p>
+</li>
+<li>
+<p><code>gamedata/configs/text/eng/st_my_task.xml</code>:<br />
+where the translation strings for your task will be;</p>
+</li>
+<li>
+<p><code>gamedata/scripts/my_task.script</code>:<br />
+where your task functors will be.</p>
+</li>
+</ul>
+<p>For more complex tasks, you may also need to create custom squads of NPCs, for which you will need to create the following file.</p>
+<ul>
+<li>
+<p><code>gamedata/configs/misc/squad_descr/squad_descr_my_task.ltx</code>:<br />
+where your custom squads configs will be.</p>
+</li>
+<li>
+<p><code>gamedata/configs/gameplay/dialogs_my_task.xml</code>:<br />
+where your custom dialogs will be.</p>
+</li>
+</ul>
+<p>Note that, to ensure maximum compatibility, it is highly discouraged to edit and redistribute modified vanilla files. Instead, you can use <a href="https://igigog.github.io/anomaly-modding-book/addons/dltx.html">DLTX</a> and <a href="https://igigog.github.io/anomaly-modding-book/addons/dxml.html">DXML</a> to modify those files at runtime, ensuring high compatibility with other addons.</p>
+<hr />
+<h2 id="ii-task-config"><a class="header" href="#ii-task-config">II. TASK CONFIG</a></h2>
+<p>Your task is in reality composed of two things. A config side, and a script side. First, we'll take a look at the config side.</p>
+<h2 id="iia-generalities"><a class="header" href="#iia-generalities">II.A. GENERALITIES</a></h2>
+<p>Here is a complete task config, or section. It contains all the information to allow the game to use your task. Some of these fields are optional, but I highly recommend you use all of them to ensure a good experience for the player.</p>
+<p><strong>File:</strong> <code>gamedata/configs/misc/task/task_manager.ltx</code></p>
+<pre><code class="language-ini">[my_task]
+
+title_functor           = my_task_title_f
+descr_functor           = my_task_descr_f
+target_functor          = my_task_target_f
+status_functor          = my_task_status_f
+
+...
+
+icon                    = ui_inGame2_Skat_1
+storyline               = false
+
+stage_complete          = 1
+...
+</code></pre>
+<ul>
+<li>
+<p><code>title_functor</code><br />
+Name of a function (defined in <code>task_functor</code> namespace). This function will be used to display the name of your task in the PDA. See more in <a href="task_guide.html#iva-task-title-functor">IV.A.</a>.</p>
+</li>
+<li>
+<p><code>descr_functor</code><br />
+Name of a function (defined in <code>task_functor</code> namespace). This function will be used to display a description of the player's current objective in the PDA. See more in <a href="task_guide.html#ivb-task-description-functor">IV.B.</a>.</p>
+</li>
+<li>
+<p><code>target_functor</code><br />
+Name of a function (defined in <code>task_functor</code> namespace). This function will be used to place a marker on the player's objective in the PDA. See more in <a href="task_guide.html#ivc-task-target-functor">IV.C.</a>.</p>
+</li>
+<li>
+<p><code>status_functor</code><br />
+Name of a function (defined in <code>task_functor</code> namespace). This function will manage your task logic as a whole. It will be responsible for spawning objects, checking objective completion, progressing the task, etc. See more in <a href="task_guide.html#ivd-task-status-functor">IV.D.</a>.</p>
+</li>
+<li>
+<p><code>icon</code><br />
+ID of a texture description. This is the icon for the task that will be displayed in the PDA and in the dialogs.</p>
+</li>
+<li>
+<p><code>storyline</code><br />
+Boolean. <code>true</code> if your task is a main mission (golden marker on the PDA) or <code>false</code> if your task is a secondary mission (gray marker on the PDA).</p>
+</li>
+<li>
+<p><code>stage_complete</code><br />
+Number. Stage at which the task is considered completed. A task starts at stage <code>0</code> and can have any number of stages you want.</p>
+</li>
+</ul>
+<hr />
+<h2 id="iib1-task-lifecycle-in-config"><a class="header" href="#iib1-task-lifecycle-in-config">II.B.1. TASK LIFECYCLE (IN CONFIG)</a></h2>
+<p>Worth a special attention are <code>on_init</code>, <code>on_complete</code> and <code>on_fail</code>. Those are three condlists executed at key moments of your task.</p>
+<p>At these events, you might want to give the player a reward, or take an item away from the player, etc. There honestly a lot you can do here, so I'll just breeze over the commonly used things.</p>
+<p><strong>File:</strong> <code>gamedata/configs/misc/task/task_manager.ltx</code></p>
+<pre><code class="language-ini">[my_task]
+...
+on_init                 = %+my_task_is_active%
+on_complete             = %-my_task_is_active +my_task_is_finished =reward_random_money(5000:10000) =reward_stash(true)%
+on_fail                 = %-my_task_is_active%
+</code></pre>
+<ul>
+<li>
+<p><code>on_init</code><br />
+Condlist. List of functions to execute when the player has just taken the task.</p>
+</li>
+<li>
+<p><code>on_complete</code><br />
+Condlist. List of functions to execute when the player has just completed the task.</p>
+</li>
+<li>
+<p><code>on_fail</code><br />
+Condlist. List of functions to execute when the player has just failed the task.</p>
+</li>
+</ul>
+<p>You can replace the content of <code>% ... %</code> by any arrangement of the following :</p>
+<ul>
+<li>
+<p><code>+some_info_portion</code><br />
+This will give an info portion called <code>some_info_portion</code> to the player.<br />
+<strong>You need to replace <code>some_info_portion</code> with the name of an info portion of your liking.</strong></p>
+</li>
+<li>
+<p><code>-some_info_portion</code><br />
+This will remove an info portion called <code>some_info_portion</code> from the player.<br />
+<strong>You need to replace <code>some_info_portion</code> with the name of an info portion of your liking.</strong></p>
+</li>
+<li>
+<p><code>=reward_random_money(min:max)</code><br />
+This will reward the player with a sum of money between <code>min</code> and <code>max</code>.<br />
+<strong>You need to replace <code>min</code> and <code>max</code> with number values.</strong></p>
+</li>
+<li>
+<p><code>=reward_stash(true)</code><br />
+This will reward the player with a stash location.</p>
+</li>
+<li>
+<p><code>=reward_item(sec)</code><br />
+This will reward the player with a specific item that has <code>sec</code> for a section.<br />
+<strong>You need to replace <code>sec</code> with the name of an existing section.</strong></p>
+</li>
+<li>
+<p><code>=reward_random_item(sec_1:sec_2)</code><br />
+This will give the player one item among the list of sections passed (you can list as many sections as you want, separated by a <code>:</code>.<br />
+<strong>You need to replace <code>sec_1</code>, <code>sec_2</code>, etc. with the name of an existing section.</strong></p>
+</li>
+<li>
+<p><code>=remove_item(sec)</code><br />
+This will remove one item that has <code>sec</code> for a section from the player's inventory. No effect if the player does not have the item.<br />
+<strong>You need to replace <code>sec</code> with the name of an existing section.</strong></p>
+</li>
+<li>
+<p><code>=complete_task_inc_goodwill(value:faction)</code><br />
+This will give the player <code>value</code> points of goodwill with <code>faction</code> faction.<br />
+<strong>You need to replace <code>value</code> with a number value and <code>faction</code> with the name of a faction.</strong></p>
+</li>
+<li>
+<p><code>=fail_task_dec_goodwill(value:faction)</code><br />
+This will remove from player <code>value</code> points of goodwill with <code>faction</code> faction.<br />
+<strong>You need to replace <code>value</code> with a number value and <code>faction</code> with the name of a faction.</strong></p>
+</li>
+</ul>
+<p>This list is not exhaustive, and there is plenty more you can do. As you'll soon read in <a href="task_guide.html#iib2-task-lifecycle-in-script">II.B.2.</a>, you can even define your own functions to use in these condlists.</p>
+<hr />
+<h2 id="iib2-task-lifecycle-in-script"><a class="header" href="#iib2-task-lifecycle-in-script">II.B.2. TASK LIFECYCLE (IN SCRIPT)</a></h2>
+<p>The condlists we just had a look at will try to call the functions they contain in the <code>xr_effects</code> namespace. </p>
+<p>Because of how S.T.A.L.K.E.R. scripts are set up, this means you can define your own functions (in your script) to handle those events :</p>
+<p><strong>File:</strong> <code>gamedata/configs/misc/task/task_manager.ltx</code></p>
+<pre><code class="language-ini">[my_task]
+...
+on_init                 = %=my_task_init()%
+on_complete             = %=my_task_complete()%
+on_fail                 = %=my_task_fail()%
+</code></pre>
+<p><strong>File:</strong> <code>gamedata/scripts/my_task.script</code></p>
+<pre><code class="language-lua">function xr_effects.my_task_init(actor, npc, params)
+   give_info(&quot;my_task_is_active&quot;)
+   
+   -- some other code you might want can be added here
+end
+
+function xr_effects.my_task_complete(actor, npc, params)
+   disable_info(&quot;my_task_is_active&quot;)
+   give_info(&quot;my_task_is_finished&quot;)
+   xr_effects.reward_random_money(actor,npc,{&quot;5000&quot;,&quot;10000&quot;})
+   xr_effects.reward_stash(actor,npc,{&quot;true&quot;})
+   
+   -- some other code you might want can be added here
+end
+
+function xr_effects.my_task_fail(actor, npc, params)
+   disable_info(&quot;my_task_is_active&quot;)
+   
+   -- some other code you might want can be added here:
+end
+</code></pre>
+<p>This allows you for a finer control over what happens at the events, though this has the downside of putting config-related stuff in script, which isn't ideal.</p>
+<hr />
+<h2 id="iii-starting-the-task"><a class="header" href="#iii-starting-the-task">III. STARTING THE TASK</a></h2>
+<p>It is important to note that there are multiple ways to make the player start your task.</p>
+<hr />
+<h3 id="iiia-using-the-games-dynamic-random-tasks"><a class="header" href="#iiia-using-the-games-dynamic-random-tasks">III.A. USING THE GAME'S DYNAMIC RANDOM TASKS</a></h3>
+<p>You can utilize the game's dynamic random tasks system. For this, you need to :</p>
+<ul>
+<li>name your task according to the following contract <code>&lt;npc_name&gt;_task_&lt;task_name&gt;</code></li>
+<li>add <code>&lt;actor_dialog&gt;dm_ordered_task_dialog&lt;/actor_dialog&gt;</code> to the task giver's dialogs (if the NPC doesn't already have it)</li>
+<li>add <code>&lt;actor_dialog&gt;dm_ordered_task_completed_dialog&lt;/actor_dialog&gt;</code> to the task giver's dialogs (if the NPC doesn't already have it)</li>
+</ul>
+<p>Once that's done, you will be able to add a few things to your task config to allow you more control.</p>
+<p><strong>File:</strong> <code>gamedata/configs/misc/task/task_manager.ltx</code></p>
+<pre><code class="language-ini">[&lt;npc_name&gt;_task_my_task]
+...
+job_descr               = st_my_task_job_descr
+task_complete_descr     = st_my_task_complete_descr
+repeat_timeout          = 0
+precondition            = {-my_task_is_finished} true, false
+...
+</code></pre>
+<ul>
+<li>
+<p><code>job_descr</code><br />
+ID of a translation string. This translation string will be the task description displayed before taking the task.</p>
+</li>
+<li>
+<p><code>task_complete_descr</code><br />
+ID of a translation string. This translation string will be the text displayed after the player says &quot;The job is done.&quot;.</p>
+</li>
+<li>
+<p><code>repeat_timeout</code><br />
+Number. Time before the player can complete that same task again.</p>
+</li>
+<li>
+<p><code>precondition</code><br />
+Condlist. If the condlist is evaluated as <code>true</code>, the player can take the task, if it is evaluated as <code>false</code>, then the task won't show up.</p>
+</li>
+</ul>
+<p>By default, those tasks are repeatable, but if you check for an info portion in the precondition, and give that info when the player completes the task, you can make sure the task is played only once (useful for storyline tasks).</p>
+<hr />
+<h3 id="iiib-using-your-own-functions"><a class="header" href="#iiib-using-your-own-functions">III.B. USING YOUR OWN FUNCTIONS</a></h3>
+<p>Alternatively to using the dynamic random tasks, you can define your own dialog, that will eventually call a function you defined, which will be responsible for starting the task. This will complexify your code, it'll also increase the amount of code to maintain, but it'll allow you more control over the dialogs leading to taking up a tasks, and how the tasks themselves are started.</p>
+<p>There are many ways to start the task using that technique, but the two important things you should know are :</p>
+<ol>
+<li>To execute a script function in a dialog, you use <code>&lt;action&gt;namespace.function&lt;/action&gt;</code> inside a phrase of a dialog.<br />
+<strong>File:</strong> <code>gamedata/configs/gameplay/my_task_dialogs.xml</code>
+<pre><code class="language-xml">&lt;dialog id=&quot;my_dialog_id&quot;&gt;
+        &lt;phrase_list&gt;
+            &lt;phrase id=&quot;0&quot;&gt; &lt;!-- actor --&gt;
+                &lt;text&gt;st_my_string_id&lt;/text&gt;
+                &lt;action&gt;my_task.start_task&lt;/action&gt;
+            &lt;/phrase&gt;
+        &lt;/phrase_list&gt;
+    &lt;/dialog&gt;
+</code></pre>
+</li>
+<li>You define that function in your script :<br />
+<strong>File:</strong> <code>gamedata/scripts/my_task.script</code>
+<pre><code class="language-lua">function start_task(actor, npc)
+    -- You can check conditions or do anything before giving the task if you want
+    
+    -- Get the server object of the NPC giving the task 
+    -- If you can that function from a dialog, 'npc' will be the person the player is talking to, which can be used as a task giver
+    local task_giver = get_story_se_object(&quot;my_task_giver&quot;)
+
+    -- Start the task called 'my_task' with 'task_giver' as the NPC giving the task
+    task_manager.get_task_manager():give_task(&quot;my_task&quot;, task_giver:id())
+end
+</code></pre>
+</li>
+</ol>
+<hr />
+<h2 id="iv-task-functors"><a class="header" href="#iv-task-functors">IV. TASK FUNCTORS</a></h2>
+<p>On the script side of your task, as previously explained, you will need a few functions to get your task rolling. Those are :</p>
+<ol>
+<li><code>task_functor.my_task_title_f(...)</code></li>
+<li><code>task_functor.my_task_descr_f(...)</code></li>
+<li><code>task_functor.my_task_target_f(...)</code></li>
+<li><code>task_status_functor.my_task_status_f(...)</code></li>
+</ol>
+<p>I recommend you use a table to manage what has been done in your task. You can define this table at the beginning of your <code>my_task.script</code>.</p>
+<p><strong>File:</strong> <code>gamedata/scripts/my_task.script</code></p>
+<pre><code class="language-lua">MY_TASK_CACHE = {}
+</code></pre>
+<p>Note that you'll need to persist this table, otherwise your task will break with loading a save-game :</p>
+<p><strong>File:</strong> <code>gamedata/scripts/my_task.script</code></p>
+<pre><code class="language-lua">
+--- Function used to store information in the save file.
+--- @param m_data table
+--- @return nil
+function save_state(m_data)
+    m_data.my_addon_name_my_task_cache = MY_TASK_CACHE
+end
+
+--- Function used to load information stored in the save file.
+--- @param m_data table
+--- @return nil
+function load_state(m_data)
+    MY_TASK_CACHE = m_data.my_addon_name_my_task_cache or {}
+end
+
+</code></pre>
+<hr />
+<h3 id="iva-task-title-functor"><a class="header" href="#iva-task-title-functor">IV.A. TASK TITLE FUNCTOR</a></h3>
+<p>This function manages the task's title. In the end, this function must return a string, a string that will be displayed in the PDA (among other places) as the task's name. </p>
+<p>While generally, the name of the task itself won't change, having it as a functor allows you to have a dynamic title, in case you'd like to change it in the middle of the task for some reason.</p>
+<p><strong>File:</strong> <code>gamedata/scripts/my_task.script</code></p>
+<pre><code class="language-lua">--- Function used to retrieve the title of the mission (displayed in the PDA).
+--- @param task_id number
+--- @param field string
+--- @param p any
+--- @param tsk CGameTask
+--- @return string
+function task_functor.my_task_title_f(task_id,field,p,tsk)
+    return game.translate_string(&quot;st_my_task_title&quot;)
+end
+</code></pre>
+<p>Alternatively, since the task's title isn't really meant to change, you can hard-code it in the task's config.</p>
+<p><strong>File:</strong> <code>gamedata/configs/misc/task/task_manager.ltx</code></p>
+<pre><code class="language-ini">[my_task]
+...
+title                   = st_my_task_title
+...
+</code></pre>
+<hr />
+<h3 id="ivb-task-description-functor"><a class="header" href="#ivb-task-description-functor">IV.B. TASK DESCRIPTION FUNCTOR</a></h3>
+<p>In the PDA, the task's description will be whatever string is returned by this function.</p>
+<p>A few recommendations :</p>
+<ul>
+<li>write your description in a passive way, and assume doesn't know what it did before and what it needs to do</li>
+<li>always give a bit of context as to what the player has done : <code>You have found and retrieved the documents.</code></li>
+<li>describe what is the new objective the player has to achieve : <code>Return the item to Dushman, in Deadcity.</code></li>
+</ul>
+<p>You can have the description evolve anyway you want, either by checking the task's stage, or by checking info portions, etc.</p>
+<p><strong>File:</strong> <code>gamedata/scripts/my_task.script</code></p>
+<pre><code class="language-lua">--- Function used to retrieve the description of the mission (displayed in the PDA).
+--- @param task_id number
+--- @param field string
+--- @param p any
+--- @param tsk CGameTask
+--- @return string
+function task_functor.my_task_descr_f(task_id,field,p,tsk)
+    if has_alife_info(&quot;the_player_has_done_something_really_bad&quot;) then
+        return game.translate_string(&quot;st_send_player_to_brazil&quot;)
+    end
+
+    if tsk.stage == 0 then
+        return game.translate_string(&quot;st_my_task_stage_0_description&quot;)
+    end
+    
+    if tsk.stage == 1 then
+        return game.translate_string(&quot;st_my_task_stage_1_description&quot;)
+    end
+end
+</code></pre>
+<p>Similarly to the task's title, the description can also be hard-coded in the task's config. Although this isn't recommended, since your task will rarely have only one stage, and each stage should have its own description.</p>
+<p><strong>File:</strong> <code>gamedata/configs/misc/task/task_manager.ltx</code></p>
+<pre><code class="language-ini">[my_task]
+...
+descr                   = st_my_task_description
+...
+</code></pre>
+<hr />
+<h3 id="ivc-task-target-functor"><a class="header" href="#ivc-task-target-functor">IV.C. TASK TARGET FUNCTOR</a></h3>
+<p>This function will be used to place a marker on the player's objective in the PDA. You can code this function as you see fit. </p>
+<p>All you have to keep in mind is, if the function returns nil, no marker will be shown on the PDA, if it returns a number, the game will try to find an object with an ID matching the number, and it'll place a marker on it.</p>
+<p>Unfortunately, this means that you cannot just place markers anywhere, and that markers can exclusively be placed on top of game objects.</p>
+<p><strong>File:</strong> <code>gamedata/scripts/my_task.script</code></p>
+<pre><code class="language-lua">--- Function used to retrieve the target of the mission (marker displayed (or not) in the PDA).
+--- @param task_id number
+--- @param field string
+--- @param p any
+--- @param tsk CGameTask
+--- @return number
+function task_functor.my_task_target_f(task_id,field,p,tsk)
+    if tsk.stage == 0 then
+        -- Stage 0 target : the quest item
+        local quest_item_se = get_story_se_object(&quot;my_task_quest_item&quot;)
+        return quest_item_se and quest_item_se.id
+    end
+    
+    if tsk.stage == 1 then
+        -- Stage 1 target : the NPC that gave the task
+        return tsk.task_giver_id
+    end
+end
+</code></pre>
+<hr />
+<h3 id="ivd-task-status-functor"><a class="header" href="#ivd-task-status-functor">IV.D. TASK STATUS FUNCTOR</a></h3>
+<p>The task status functor is a function that is automatically called every few seconds, by the game's task manager. This is where the heart of your task will be. Spawning objects, check if they still exist, if they have been killed, progressing the task, etc. Everything lies here.</p>
+<p>There isn't really a convention for how to write tasks, but as a personal recommendation, I suggest you write your code using a sort of &quot;return early&quot; pattern. That means you write your code from top and downwards, and return as soon as a condition to progress isn't met.</p>
+<p><strong>File:</strong> <code>gamedata/scripts/my_task.script</code></p>
+<pre><code class="language-lua">--- Function used to manage the mission logic as a whole.
+--- @param tsk CGameTask
+--- @param task_id number
+--- @return string
+function task_status_functor.my_task_status_f(tsk,task_id)
+    if tsk.stage == 0 then
+        -- logic of the first stage
+    end
+    
+    if tsk.stage == 1 then
+        -- logic of the second stage
+    end
+end
+</code></pre>
+<p>There are a few important things you need to manipulate in this function :</p>
+<ol>
+<li>
+<p>The task stage : you can use <code>tsk.stage</code> as both a getter and a setter for the stage :</p>
+<ul>
+<li><code>local stage = tsk.stage</code> to get the current stage;</li>
+<li><code>tsk.stage = 2</code> to set the current stage to stage 2;</li>
+</ul>
+<pre><code class="language-lua">-- We get the current stage of the task
+local stage = tsk.stage
+
+-- If we're in the correct stage, and the player has a certain info portion
+if stage == 0 and has_alife_info(&quot;the_player_has_done_something&quot;) then
+    -- We progress the task to stage 1
+    tsk.stage = 1
+end
+</code></pre>
+</li>
+<li>
+<p>The return value :</p>
+<ul>
+<li>use <code>return</code> (aka <code>return nil</code>) to stop the execution of the function &quot;for now&quot;;</li>
+<li>use <code>return &quot;complete&quot;</code> to force-complete the task;</li>
+<li>use <code>return &quot;fail&quot;</code> to force-fail the task;</li>
+</ul>
+<p>If you use &quot;return&quot; or &quot;return nil&quot; (which is the same), the task manager will not execute the rest of the code for now - but it will have no effect on the status of the task. 
+Remember the task manager calls your status functor every few seconds, so it will quickly call it again.</p>
+<pre><code class="language-lua">-- While the player hasn't done anything, we return (aka we wait)
+if not has_alife_info(&quot;the_player_has_done_something_great&quot;) and not has_alife_info(&quot;the_player_has_done_something_really_bad&quot;) then
+    return
+-- If the player has done something great, the task is complete
+elseif has_alife_info(&quot;the_player_has_done_something_great&quot;) then
+    return &quot;complete&quot;
+-- If the player has done something bad, the task is failed
+elseif has_alife_info(&quot;the_player_has_done_something_really_bad&quot;) then
+    return &quot;fail&quot;
+end
+</code></pre>
+</li>
+</ol>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../quests/npc_creation.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../quests/dialogues.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../quests/npc_creation.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../quests/dialogues.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

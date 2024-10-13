@@ -1,0 +1,319 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Oufits Configuration Parameters - Anomaly Modding Book</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../../favicon.svg">
+        <link rel="shortcut icon" href="../../../favicon.png">
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+        <link rel="stylesheet" href="../../../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../highlight.css">
+        <link rel="stylesheet" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../../src/custom.css">
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../../../index.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../../../meta/index.html"><strong aria-hidden="true">1.</strong> Meta</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../meta/contributing/index.html"><strong aria-hidden="true">1.1.</strong> Contributing to this book</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../../../getting-started/index.html"><strong aria-hidden="true">2.</strong> Mod Organizer</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../getting-started/installing-mo2.html"><strong aria-hidden="true">2.1.</strong> Installing MO2</a></li><li class="chapter-item expanded "><a href="../../../getting-started/addon-installers.html"><strong aria-hidden="true">2.2.</strong> Addon installers</a></li><li class="chapter-item expanded "><a href="../../../getting-started/package-naming.html"><strong aria-hidden="true">2.3.</strong> Package Naming for MO2</a></li><li class="chapter-item expanded "><a href="../../../getting-started/vs-code-game-files-setup.html"><strong aria-hidden="true">2.4.</strong> Configuring VSCode-like programs to handle game files</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Addons</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../addons/dltx.html"><strong aria-hidden="true">3.1.</strong> DLTX</a></li><li class="chapter-item expanded "><a href="../../../addons/dxml.html"><strong aria-hidden="true">3.2.</strong> DXML</a></li><li class="chapter-item expanded "><a href="../../../addons/mcm.html"><strong aria-hidden="true">3.3.</strong> MCM</a></li><li class="chapter-item expanded "><a href="../../../addons/pdb.html"><strong aria-hidden="true">3.4.</strong> PDB files</a></li><li class="chapter-item expanded "><a href="../../../addons/lua-unlocalizer.html"><strong aria-hidden="true">3.5.</strong> Lua Unlocalizer</a></li><li class="chapter-item expanded "><a href="../../../addons/useful-addons-scripts-utils.html"><strong aria-hidden="true">3.6.</strong> Useful addons, scripts and utils</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> Configs</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../configs/structure-of-files.html"><strong aria-hidden="true">4.1.</strong> Structure of Files</a></li><li class="chapter-item expanded "><a href="../../../configs/condlists.html"><strong aria-hidden="true">4.2.</strong> Condlists</a></li><li class="chapter-item expanded "><a href="../../../configs/inventory_icons.html"><strong aria-hidden="true">4.3.</strong> Inventory Icons</a></li><li class="chapter-item expanded "><a href="../../../configs/algoritm-of-logic.html"><strong aria-hidden="true">4.4.</strong> Algoritm of Logic</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../../../scripting/index.html"><strong aria-hidden="true">5.</strong> Scripting</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../scripting/codebase_introduction.html"><strong aria-hidden="true">5.1.</strong> Introduction to codebase</a></li><li class="chapter-item expanded "><a href="../../../scripting/codestyle.html"><strong aria-hidden="true">5.2.</strong> Codestyle</a></li><li class="chapter-item expanded "><a href="../../../scripting/wetting_hands.html"><strong aria-hidden="true">5.3.</strong> Wetting our hands</a></li><li class="chapter-item expanded "><a href="../../../scripting/server_and_game_objects.html"><strong aria-hidden="true">5.4.</strong> Server and game objects</a></li><li class="chapter-item expanded "><a href="../../../scripting/callbacks.html"><strong aria-hidden="true">5.5.</strong> Callbacks</a></li><li class="chapter-item expanded "><a href="../../../scripting/time_events.html"><strong aria-hidden="true">5.6.</strong> Time events</a></li><li class="chapter-item expanded "><a href="../../../scripting/monkey-patching.html"><strong aria-hidden="true">5.7.</strong> Monkey patching</a></li><li class="chapter-item expanded "><a href="../../../scripting/script_animations.html"><strong aria-hidden="true">5.8.</strong> Script Animations</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> Modelling</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../blender/creating-model-in-blender.html"><strong aria-hidden="true">6.1.</strong> Creating model in Blender</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.</strong> Animating</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../blender/creating-hud-animation-in-blender.html"><strong aria-hidden="true">7.1.</strong> Creating an animation</a></li><li class="chapter-item expanded "><a href="../../../blender/creating-camera-animations.html"><strong aria-hidden="true">7.2.</strong> Creating animations for the camera</a></li><li class="chapter-item expanded "><a href="../../../blender/editing-existing-animations.html"><strong aria-hidden="true">7.3.</strong> Editing existing animations</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../../../texturing/index.html"><strong aria-hidden="true">8.</strong> Texturing</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../texturing/сreating-and-preparing-textures.html"><strong aria-hidden="true">8.1.</strong> Creating and preparing textures</a></li><li class="chapter-item expanded "><a href="../../../texturing/working-correctly-with-icon-atlases.html"><strong aria-hidden="true">8.2.</strong> Working correctly with icon atlases</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../../../mapping/index.html"><strong aria-hidden="true">9.</strong> Mapping</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../blender/creating-a-location-in-blender.html"><strong aria-hidden="true">9.1.</strong> Creating a location in Blender</a></li><li class="chapter-item expanded "><a href="../../../mapping/multimaterial-terrain.html"><strong aria-hidden="true">9.2.</strong> Multimaterial Terrain Guide</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../../../quests/index.html"><strong aria-hidden="true">10.</strong> Quests</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../quests/introduction.html"><strong aria-hidden="true">10.1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../../../quests/npc_creation.html"><strong aria-hidden="true">10.2.</strong> NPC Creation</a></li><li class="chapter-item expanded "><a href="../../../quests/task_guide.html"><strong aria-hidden="true">10.3.</strong> Task Creation</a></li><li class="chapter-item expanded "><a href="../../../quests/dialogues.html"><strong aria-hidden="true">10.4.</strong> Dialogue Creation</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../../../reference/index.html"><strong aria-hidden="true">11.</strong> Reference/General</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../terminology/terminology.html"><strong aria-hidden="true">11.1.</strong> Terminology</a></li><li class="chapter-item expanded "><a href="../../../main-folders-and-files/index.html"><strong aria-hidden="true">11.2.</strong> Main Folders And Files</a></li><li class="chapter-item expanded "><a href="../../../main-folders-and-files/file-formats/index.html"><strong aria-hidden="true">11.3.</strong> File Formats</a></li><li class="chapter-item expanded "><a href="../../../crash-list/crashes-list.html"><strong aria-hidden="true">11.4.</strong> Crash List</a></li></ol></li><li class="chapter-item expanded "><a href="../../../reference/index.html"><strong aria-hidden="true">12.</strong> Reference/Configs</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../configs/items/weapons/w_(weapon).ltx.html"><strong aria-hidden="true">12.1.</strong> Weapon Configuration Parameters</a></li><li class="chapter-item expanded "><a href="../../../configs/items/weapons/weapon_ammo.ltx.html"><strong aria-hidden="true">12.2.</strong> Ammo Configuration Parameters</a></li><li class="chapter-item expanded "><a href="../../../configs/items/weapons/weapon_sounds.ltx.html"><strong aria-hidden="true">12.3.</strong> Weapon Sounds Parameters</a></li><li class="chapter-item expanded "><a href="../../../configs/items/outfits/o_(outfit).ltx.html" class="active"><strong aria-hidden="true">12.4.</strong> Oufits Configuration Parameters</a></li><li class="chapter-item expanded "><a href="../../../configs/creatures/m_(mutant).ltx.html"><strong aria-hidden="true">12.5.</strong> Mutants Configuration Parameters</a></li></ol></li><li class="chapter-item expanded "><a href="../../../reference/index.html"><strong aria-hidden="true">13.</strong> Reference/Shaders</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../shaders/shaders-list/materials-list.html"><strong aria-hidden="true">13.1.</strong> Material Shaders List</a></li><li class="chapter-item expanded "><a href="../../../shaders/shaders-list/shaders-list.html"><strong aria-hidden="true">13.2.</strong> Shaders List</a></li><li class="chapter-item expanded "><a href="../../../shaders/shaders-list/compiler-shaders-list.html"><strong aria-hidden="true">13.3.</strong> Compiler Shaders List</a></li><li class="chapter-item expanded "><a href="../../../shaders/shaders-list/sound-envornment-list.html"><strong aria-hidden="true">13.4.</strong> Sound Envornment List</a></li></ol></li><li class="chapter-item expanded "><a href="../../../engine/index.html"><strong aria-hidden="true">14.</strong> Reference/Engine</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../engine/console-commands.html"><strong aria-hidden="true">14.1.</strong> Console commands</a></li><li class="chapter-item expanded "><a href="../../../engine/alife.html"><strong aria-hidden="true">14.2.</strong> A-Life (AI)</a></li><li class="chapter-item expanded "><a href="../../../engine/engine-classes.html"><strong aria-hidden="true">14.3.</strong> Engine Classes</a></li></ol></li><li class="chapter-item expanded "><a href="../../../reference/index.html"><strong aria-hidden="true">15.</strong> Reference/Resources</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../resources/audio.html"><strong aria-hidden="true">15.1.</strong> Audio</a></li><li class="chapter-item expanded "><a href="../../../resources/models-objects-locations.html"><strong aria-hidden="true">15.2.</strong> Models</a></li><li class="chapter-item expanded "><a href="../../../resources/sdk-resources.html"><strong aria-hidden="true">15.3.</strong> SDK resources</a></li></ol></li><li class="chapter-item expanded "><a href="../../../reference/index.html"><strong aria-hidden="true">16.</strong> Reference/Tools</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../modding-tools/modding-tools.html"><strong aria-hidden="true">16.1.</strong> Modding Tools List</a></li><li class="chapter-item expanded "><a href="../../../modding-tools/in-game-editors/index.html"><strong aria-hidden="true">16.2.</strong> In-Game Editors</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../modding-tools/in-game-editors/item-spawner.html"><strong aria-hidden="true">16.2.1.</strong> Item Spawner</a></li><li class="chapter-item expanded "><a href="../../../modding-tools/in-game-editors/lightning-editor.html"><strong aria-hidden="true">16.2.2.</strong> Lightning Editor</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">16.2.3.</strong> NPC Logic/Execute</div></li><li class="chapter-item expanded "><a href="../../../modding-tools/in-game-editors/object-spawner.html"><strong aria-hidden="true">16.2.4.</strong> Object Spawner</a></li><li class="chapter-item expanded "><a href="../../../modding-tools/in-game-editors/outfits-weapon-stats-editor.html"><strong aria-hidden="true">16.2.5.</strong> Outfits/Weapons Stats Editor</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">16.2.6.</strong> Pocket Workshop</div></li><li class="chapter-item expanded "><a href="../../../modding-tools/in-game-editors/weapon-hud-editor.html"><strong aria-hidden="true">16.2.7.</strong> Weapon HUD Editor</a></li><li class="chapter-item expanded "><a href="../../../modding-tools/in-game-editors/weather-editor.html"><strong aria-hidden="true">16.2.8.</strong> Weather Editor</a></li></ol></li><li class="chapter-item expanded "><a href="../../../modding-tools/ltx-support.html"><strong aria-hidden="true">16.3.</strong> Ltx Support</a></li><li class="chapter-item expanded "><a href="../../../sdk/index.html"><strong aria-hidden="true">16.4.</strong> SDK 0.7</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../sdk/interface.html"><strong aria-hidden="true">16.4.1.</strong> Interface</a></li><li class="chapter-item expanded "><a href="../../../sdk/actor-editor.html"><strong aria-hidden="true">16.4.2.</strong> Actor Editor</a></li><li class="chapter-item expanded "><a href="../../../sdk/image-editor.html"><strong aria-hidden="true">16.4.3.</strong> Image Editor</a></li><li class="chapter-item expanded "><a href="../../../sdk/level-editor.html"><strong aria-hidden="true">16.4.4.</strong> Level Editor</a></li><li class="chapter-item expanded "><a href="../../../sdk/shader-editor.html"><strong aria-hidden="true">16.4.5.</strong> Shader Editor</a></li><li class="chapter-item expanded "><a href="../../../sdk/sound-editor.html"><strong aria-hidden="true">16.4.6.</strong> Sound Editor</a></li><li class="chapter-item expanded "><a href="../../../sdk/postprocess-editor.html"><strong aria-hidden="true">16.4.7.</strong> Postprocess Editor</a></li><li class="chapter-item expanded "><a href="../../../sdk/particle-editor.html"><strong aria-hidden="true">16.4.8.</strong> Particle Editor (Not finished)</a></li></ol></li><li class="chapter-item expanded "><a href="../../../blender/blender-x-ray-addon-summary.html"><strong aria-hidden="true">16.5.</strong> Blender X-Ray Addon</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../blender/advanced-settings.html"><strong aria-hidden="true">16.5.1.</strong> Advanced settings</a></li><li class="chapter-item expanded "><a href="../../../blender/x-ray-addon-panels.html"><strong aria-hidden="true">16.5.2.</strong> Panels</a></li><li class="chapter-item expanded "><a href="../../../blender/x-ray-side-panels.html"><strong aria-hidden="true">16.5.3.</strong> Side Panel</a></li></ol></li><li class="chapter-item expanded "><a href="../../../modding-tools/stalker-studio.html"><strong aria-hidden="true">16.6.</strong> Stalker Studio</a></li><li class="chapter-item expanded "><a href="../../../modding-tools/thm-editor-by-i-love-kfc.html"><strong aria-hidden="true">16.7.</strong> THM Editor</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../modding-tools/thm-editor-by-valerok.html"><strong aria-hidden="true">16.7.1.</strong> Modified THM Editor</a></li></ol></li><li class="chapter-item expanded "><a href="../../../modding-tools/bump-generator.html"><strong aria-hidden="true">16.8.</strong> Bump Generator</a></li><li class="chapter-item expanded "><a href="../../../modding-tools/savandt.html"><strong aria-hidden="true">16.9.</strong> Sound Attribute Viewer And Tweaker</a></li><li class="chapter-item expanded "><a href="../../../modding-tools/upgrade-editor.html"><strong aria-hidden="true">16.10.</strong> Upgrade Editor</a></li><li class="chapter-item expanded "><a href="../../../modding-tools/omf-editor-by-valerok.html"><strong aria-hidden="true">16.11.</strong> Modified OMF Editor</a></li><li class="chapter-item expanded "><a href="../../../modding-tools/ogf-editor-by-valerok.html"><strong aria-hidden="true">16.12.</strong> Modified OGF Editor</a></li><li class="chapter-item expanded "><a href="../../../modding-tools/xray-export-tool.html"><strong aria-hidden="true">16.13.</strong> X-Ray Export Tool</a></li><li class="chapter-item expanded "><a href="../../../modding-tools/universal-x64-level-compilers.html"><strong aria-hidden="true">16.14.</strong> Universal x64 level compilers</a></li><li class="chapter-item expanded "><a href="../../../modding-tools/xrcompress-by-i-love-kfc.html"><strong aria-hidden="true">16.15.</strong> xrCompress</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Anomaly Modding Book</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Igigog/anomaly-modding-book" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Igigog/anomaly-modding-book/edit/main/src/configs/items/outfits/o_(outfit).ltx.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="o_outfitltx-config-file"><a class="header" href="#o_outfitltx-config-file">o_<em>Outfit</em>.ltx Config File</a></h1>
+<hr />
+<h2 id="about"><a class="header" href="#about">About</a></h2>
+<p>Configuration parameters for outfits</p>
+<hr />
+<h3 id="general-parameters"><a class="header" href="#general-parameters">General parameters</a></h3>
+<details>
+    <summary>General parameters</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th align="center">Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>GroupControlSection</td><td></td><td align="center">spawn_group</td><td></td></tr>
+<tr><td>$spawn</td><td>the Outfit Directory in the <a href="../../../sdk/level-editor.html">Level Editor</a></td><td align="center">&quot;outfit\cs_light_novice_outfit&quot;</td><td></td></tr>
+<tr><td>cform</td><td>parameter for dynamic objects; necessary for correct creation of the skeleton model</td><td align="center">skeleton</td><td>skeleton</td></tr>
+<tr><td>discovery_dependency</td><td>Outdated parameter used in early SoC builds. Needed for discovery or improvement after working with scientists</td><td align="center"></td><td></td></tr>
+<tr><td>class</td><td>engine outfit class</td><td align="center">EQU_STLK</td><td></td></tr>
+<tr><td>default_to_ruck</td><td>whether the outfit will be moved to the backpack instead of the slot when picked up</td><td align="center">true</td><td>true (Yes) - false (No)</td></tr>
+<tr><td>sprint_allowed</td><td>Determines whether it is possible to run in this outfit</td><td align="center">true</td><td>true (Yes) - false (No)</td></tr>
+<tr><td>kind</td><td>The type of item to group into the appropriate section in the <a href="../../../modding-tools/in-game-editors/item-spawner.html">Item Spawner</a></td><td align="center">o_light<br> o_medium<br> o_sci<br> o_heavy</td><td></td></tr>
+<tr><td>cost</td><td>base price</td><td align="center">32340</td><td></td></tr>
+<tr><td>community</td><td>To which faction the suit belongs</td><td align="center">dolg</td><td>army<br>csky<br>stalker<br>killer<br>dolg<br>bandit<br>freedom<br>monolith<br>isg<br>greh<br>ecolog<br>renegade</td></tr>
+<tr><td>helmet_avaliable</td><td>Is a helmet available for this costume</td><td align="center">true</td><td>true (Yes) - false (No)</td></tr>
+<tr><td>backpack_avaliable</td><td>Is a backpack available for this suit</td><td align="center">true</td><td>true (Yes) - false (No)</td></tr>
+<tr><td>can_trade</td><td></td><td align="center">true</td><td></td></tr>
+</tbody></table>
+</details>
+<h2 id="sound-parameters"><a class="header" href="#sound-parameters">Sound parameters</a></h2>
+<details>
+    <summary>Sound parameters</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>snd_on_take</td><td></td><td>outfit</td><td></td></tr>
+</tbody></table>
+</details>
+<h2 id="outfit-parameters-in-inventory"><a class="header" href="#outfit-parameters-in-inventory">Outfit parameters in inventory</a></h2>
+<details>
+    <summary>Outfit parameters in inventory</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>full_icon_name</td><td>the icon of the protagonist in a full-suit</td><td>npc_icon_svoboda_light_outfit</td><td>Not used (used only in the SoC inventory)</td></tr>
+<tr><td>full_scale_icon</td><td>Coordinates of the protagonist icon in full suit</td><td>10, 11</td><td>Not used (used only in the SoC inventory)</td></tr>
+<tr><td>character_portrait</td><td>Portrait of the NPC or protagonist wearing the outfit</td><td>ui_inGame2_csky_1_2</td><td></td></tr>
+<tr><td>inv_grid_height</td><td>icon height</td><td>3</td><td>number of 50x50 pixels cells</td></tr>
+<tr><td>inv_grid_width</td><td>icon width</td><td>2</td><td>number of 50x50 pixels cells</td></tr>
+<tr><td>inv_grid_x</td><td>the coordinate of the upper left corner of the icon on a 50x50 pixel grid on the X axis</td><td>116</td><td>number of cells indented to the right</td></tr>
+<tr><td>inv_grid_y</td><td>The coordinate of the upper left corner of the icon on a 50x50 pixel grid on the Y axis</td><td>0</td><td>number of cells indenting downward</td></tr>
+<tr><td>inv_name</td><td>The name in the inventory</td><td>csky_light_novice_outfit_name</td><td></td></tr>
+<tr><td>inv_name_short</td><td>short name in the inventory</td><td>csky_light_novice_outfit_name</td><td></td></tr>
+<tr><td>inv_weight</td><td>the inventory weight</td><td>5.48</td><td>The number is given in kilograms</td></tr>
+<tr><td>description</td><td>Description in inventory</td><td>csky_light_novice_outfit_description</td><td></td></tr>
+<tr><td>slot</td><td>Inventory slot number</td><td>6</td><td>0 - knives (may be crashing)<br>1 - pistols (may be crashing)<br>2 - shotguns, machine guns, rifles, grenade launchers (may be crashing)<br>3 - grenades (may be crashing)<br>4 - binoculars (may be crashing)<br>5 - bolts (may be crashing)<br>6 - outfits</td></tr>
+</tbody></table>
+</details>
+<h2 id="visual-parameters"><a class="header" href="#visual-parameters">Visual parameters</a></h2>
+<details>
+    <summary>Visual parameters</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>player_hud_section</td><td>First-person HUD section</td><td>actor_hud_cs1</td><td></td></tr>
+<tr><td>visual</td><td>Oufit visual</td><td>dynamics\outfit\cs_light_outfit</td><td></td></tr>
+<tr><td>actor_visual</td><td>Visual of a character in outfit</td><td>actors\stalker_nebo\stalker_nebo_1</td><td></td></tr>
+<tr><td>npc_visual</td><td>Visual of an NPC in outfit</td><td>actors\stalker_nebo\stalker_nebo_1</td><td></td></tr>
+</tbody></table>
+</details>
+<h3 id="parameters-of-the-upgradesrepairs"><a class="header" href="#parameters-of-the-upgradesrepairs">Parameters of the upgrades/repairs</a></h3>
+<details>
+    <summary>Parameters of the upgrades/repairs</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>upgrades</td><td></td><td>up_gr_firstab_sunrise_3, up_gr_seconab_sunrise_3, up_gr_thirdab_sunrise_3</td><td></td></tr>
+<tr><td>installed_upgrades</td><td>installed upgrades</td><td></td><td></td></tr>
+<tr><td>upgrade_scheme</td><td>upgrade_scheme</td><td>up_scheme_sunrise_1</td><td></td></tr>
+<tr><td>repair_type</td><td>item type for repair tools</td><td>outfit</td><td></td></tr>
+<tr><td>repair_part_bonus</td><td></td><td>0.17</td><td></td></tr>
+<tr><td>upgr_icon_x</td><td>the X coordinate of the upper left corner of the icon in the repair window</td><td>953</td><td>Specified in pixels</td></tr>
+<tr><td>upgr_icon_y</td><td>top-left corner coordinate of the icon in the Y axis repair window</td><td>365</td><td>Specified in pixels</td></tr>
+<tr><td>upgr_icon_width</td><td>Width of the icon in the repair window</td><td>309</td><td>Specified in pixels</td></tr>
+<tr><td>upgr_icon_height</td><td>icon height in the repair window</td><td>142</td><td>Specified in pixels</td></tr>
+</tbody></table>
+</details>
+<h3 id="armor-parameters"><a class="header" href="#armor-parameters">Armor parameters</a></h3>
+<details>
+    <summary>Armor parameters</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>artefact_count</td><td>Number of artifact cells initially available</td><td>1</td><td></td></tr>
+<tr><td>immunities_sect</td><td>Costume Immunities Section</td><td>sect_light_novice_outfit_immunities</td><td></td></tr>
+<tr><td>control_inertion_factor</td><td>inertia in the outfit</td><td>1</td><td></td></tr>
+<tr><td>use1_functor</td><td></td><td>gameplay_disguise.menu_patch</td><td></td></tr>
+<tr><td>use1_action_functor</td><td></td><td>gameplay_disguise.menu_patch_action</td><td></td></tr>
+<tr><td>additional_inventory_weight</td><td>Maximum weight at which the protagonist can walk and additional carrying weight</td><td>5</td><td>Specified in kilograms</td></tr>
+<tr><td>additional_inventory_weight2</td><td>Not Used?</td><td>5</td><td>Specified in kilograms</td></tr>
+</tbody></table>
+</details>
+<h4 id="parameters-that-affect-the-protoganist"><a class="header" href="#parameters-that-affect-the-protoganist">Parameters that affect the protoganist</a></h4>
+<details>
+    <summary>Parameters that affect the protoganist</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>bones_koeff_protection</td><td>Parameter coefficients of the &quot;persistence&quot; of the protagonist's bones in the suit</td><td>actor_armor_cs1</td><td></td></tr>
+<tr><td>hit_fraction_actor</td><td>General protection</td><td>0.75</td><td></td></tr>
+<tr><td>power_loss</td><td>Responsible for fatigue</td><td>0.05</td><td>Specified in percent</td></tr>
+<tr><td>bleeding_restore_speed</td><td>Responsible for stopping bleeding</td><td></td><td>Specified in percent</td></tr>
+<tr><td>health_restore_speed</td><td>Responsible for restoring health</td><td></td><td>Specified in percent</td></tr>
+<tr><td>power_restore_speed</td><td>Responsible for restoring powers</td><td></td><td>Specified in percent</td></tr>
+</tbody></table>
+</details>
+<h4 id="parameters-of-the-wearers-protection-against-various-types-of-impacts-provided-by-the-outfits"><a class="header" href="#parameters-of-the-wearers-protection-against-various-types-of-impacts-provided-by-the-outfits">Parameters of the wearer's protection against various types of impacts provided by the outfits</a></h4>
+<details>
+    <summary>Parameters of the wearer's protection against various types of impacts provided by the outfits</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>burn_protection</td><td>Protection against fire</td><td>0.145</td><td></td></tr>
+<tr><td>shock_protection</td><td>Protection against electric shock</td><td>0.96</td><td></td></tr>
+<tr><td>radiation_protection</td><td>Radiation protection</td><td>0.0025</td><td></td></tr>
+<tr><td>chemical_burn_protection</td><td>Chemicals Protection</td><td>0.037</td><td></td></tr>
+<tr><td>telepatic_protection</td><td>Psi Protection</td><td>0</td><td></td></tr>
+<tr><td>strike_protection</td><td>Strike protection</td><td>0.045</td><td></td></tr>
+<tr><td>explosion_protection</td><td>Explosion/shrapnel protection</td><td>0.24</td><td></td></tr>
+<tr><td>wound_protection</td><td>Protection from Wounds</td><td>0.31</td><td></td></tr>
+<tr><td>fire_wound_protection</td><td>Protection from firearms</td><td>0.25</td><td></td></tr>
+</tbody></table>
+</details>
+<h4 id="immunity-parameters-of-the-outfits-itself"><a class="header" href="#immunity-parameters-of-the-outfits-itself">Immunity parameters of the outfits itself</a></h4>
+<details>
+    <summary>Immunity parameters of the outfits itself</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>burn_immunity</td><td>Immunity to fire exposure</td><td>0.25</td><td></td></tr>
+<tr><td>chemical_burn_immunity</td><td>Immunity to chemical exposure</td><td>0.07</td><td></td></tr>
+<tr><td>explosion_immunity</td><td>Immunity to effects from explosions/shrapnel</td><td>0.2</td><td></td></tr>
+<tr><td>fire_wound_immunity</td><td>Immunity to exposure from firearms</td><td>0.075</td><td></td></tr>
+<tr><td>radiation_immunity</td><td>Immunity to exposure from radiation</td><td>0.0</td><td></td></tr>
+<tr><td>shock_immunity</td><td>Immunity to exposure to electricity</td><td>0.03</td><td></td></tr>
+<tr><td>strike_immunity</td><td>Immunity to impact from strikes</td><td>0.0</td><td></td></tr>
+<tr><td>telepatic_immunity</td><td>Immunity to psi exposure</td><td>0.0</td><td></td></tr>
+<tr><td>wound_immunity</td><td>Immunity to the effects of wounds</td><td>0.122</td><td></td></tr>
+</tbody></table>
+</details>
+<h3 id="ai-parameters"><a class="header" href="#ai-parameters">AI parameters</a></h3>
+<details>
+    <summary>AI parameters</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>ef_equipment_type</td><td>Preference for NPCs</td><td>3</td><td></td></tr>
+</tbody></table>
+</details>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../../configs/items/weapons/weapon_sounds.ltx.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../../../configs/creatures/m_(mutant).ltx.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../../configs/items/weapons/weapon_sounds.ltx.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../../../configs/creatures/m_(mutant).ltx.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

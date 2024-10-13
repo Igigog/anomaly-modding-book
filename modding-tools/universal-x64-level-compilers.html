@@ -1,0 +1,407 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Universal x64 level compilers - Anomaly Modding Book</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../src/custom.css">
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../meta/index.html"><strong aria-hidden="true">1.</strong> Meta</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../meta/contributing/index.html"><strong aria-hidden="true">1.1.</strong> Contributing to this book</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../getting-started/index.html"><strong aria-hidden="true">2.</strong> Mod Organizer</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../getting-started/installing-mo2.html"><strong aria-hidden="true">2.1.</strong> Installing MO2</a></li><li class="chapter-item expanded "><a href="../getting-started/addon-installers.html"><strong aria-hidden="true">2.2.</strong> Addon installers</a></li><li class="chapter-item expanded "><a href="../getting-started/package-naming.html"><strong aria-hidden="true">2.3.</strong> Package Naming for MO2</a></li><li class="chapter-item expanded "><a href="../getting-started/vs-code-game-files-setup.html"><strong aria-hidden="true">2.4.</strong> Configuring VSCode-like programs to handle game files</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Addons</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../addons/dltx.html"><strong aria-hidden="true">3.1.</strong> DLTX</a></li><li class="chapter-item expanded "><a href="../addons/dxml.html"><strong aria-hidden="true">3.2.</strong> DXML</a></li><li class="chapter-item expanded "><a href="../addons/mcm.html"><strong aria-hidden="true">3.3.</strong> MCM</a></li><li class="chapter-item expanded "><a href="../addons/pdb.html"><strong aria-hidden="true">3.4.</strong> PDB files</a></li><li class="chapter-item expanded "><a href="../addons/lua-unlocalizer.html"><strong aria-hidden="true">3.5.</strong> Lua Unlocalizer</a></li><li class="chapter-item expanded "><a href="../addons/useful-addons-scripts-utils.html"><strong aria-hidden="true">3.6.</strong> Useful addons, scripts and utils</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> Configs</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../configs/structure-of-files.html"><strong aria-hidden="true">4.1.</strong> Structure of Files</a></li><li class="chapter-item expanded "><a href="../configs/condlists.html"><strong aria-hidden="true">4.2.</strong> Condlists</a></li><li class="chapter-item expanded "><a href="../configs/inventory_icons.html"><strong aria-hidden="true">4.3.</strong> Inventory Icons</a></li><li class="chapter-item expanded "><a href="../configs/algoritm-of-logic.html"><strong aria-hidden="true">4.4.</strong> Algoritm of Logic</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../scripting/index.html"><strong aria-hidden="true">5.</strong> Scripting</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../scripting/codebase_introduction.html"><strong aria-hidden="true">5.1.</strong> Introduction to codebase</a></li><li class="chapter-item expanded "><a href="../scripting/codestyle.html"><strong aria-hidden="true">5.2.</strong> Codestyle</a></li><li class="chapter-item expanded "><a href="../scripting/wetting_hands.html"><strong aria-hidden="true">5.3.</strong> Wetting our hands</a></li><li class="chapter-item expanded "><a href="../scripting/server_and_game_objects.html"><strong aria-hidden="true">5.4.</strong> Server and game objects</a></li><li class="chapter-item expanded "><a href="../scripting/callbacks.html"><strong aria-hidden="true">5.5.</strong> Callbacks</a></li><li class="chapter-item expanded "><a href="../scripting/time_events.html"><strong aria-hidden="true">5.6.</strong> Time events</a></li><li class="chapter-item expanded "><a href="../scripting/monkey-patching.html"><strong aria-hidden="true">5.7.</strong> Monkey patching</a></li><li class="chapter-item expanded "><a href="../scripting/script_animations.html"><strong aria-hidden="true">5.8.</strong> Script Animations</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> Modelling</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../blender/creating-model-in-blender.html"><strong aria-hidden="true">6.1.</strong> Creating model in Blender</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.</strong> Animating</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../blender/creating-hud-animation-in-blender.html"><strong aria-hidden="true">7.1.</strong> Creating an animation</a></li><li class="chapter-item expanded "><a href="../blender/creating-camera-animations.html"><strong aria-hidden="true">7.2.</strong> Creating animations for the camera</a></li><li class="chapter-item expanded "><a href="../blender/editing-existing-animations.html"><strong aria-hidden="true">7.3.</strong> Editing existing animations</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../texturing/index.html"><strong aria-hidden="true">8.</strong> Texturing</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../texturing/сreating-and-preparing-textures.html"><strong aria-hidden="true">8.1.</strong> Creating and preparing textures</a></li><li class="chapter-item expanded "><a href="../texturing/working-correctly-with-icon-atlases.html"><strong aria-hidden="true">8.2.</strong> Working correctly with icon atlases</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../mapping/index.html"><strong aria-hidden="true">9.</strong> Mapping</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../blender/creating-a-location-in-blender.html"><strong aria-hidden="true">9.1.</strong> Creating a location in Blender</a></li><li class="chapter-item expanded "><a href="../mapping/multimaterial-terrain.html"><strong aria-hidden="true">9.2.</strong> Multimaterial Terrain Guide</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../quests/index.html"><strong aria-hidden="true">10.</strong> Quests</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../quests/introduction.html"><strong aria-hidden="true">10.1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../quests/npc_creation.html"><strong aria-hidden="true">10.2.</strong> NPC Creation</a></li><li class="chapter-item expanded "><a href="../quests/task_guide.html"><strong aria-hidden="true">10.3.</strong> Task Creation</a></li><li class="chapter-item expanded "><a href="../quests/dialogues.html"><strong aria-hidden="true">10.4.</strong> Dialogue Creation</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">11.</strong> Reference/General</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../terminology/terminology.html"><strong aria-hidden="true">11.1.</strong> Terminology</a></li><li class="chapter-item expanded "><a href="../main-folders-and-files/index.html"><strong aria-hidden="true">11.2.</strong> Main Folders And Files</a></li><li class="chapter-item expanded "><a href="../main-folders-and-files/file-formats/index.html"><strong aria-hidden="true">11.3.</strong> File Formats</a></li><li class="chapter-item expanded "><a href="../crash-list/crashes-list.html"><strong aria-hidden="true">11.4.</strong> Crash List</a></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">12.</strong> Reference/Configs</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../configs/items/weapons/w_(weapon).ltx.html"><strong aria-hidden="true">12.1.</strong> Weapon Configuration Parameters</a></li><li class="chapter-item expanded "><a href="../configs/items/weapons/weapon_ammo.ltx.html"><strong aria-hidden="true">12.2.</strong> Ammo Configuration Parameters</a></li><li class="chapter-item expanded "><a href="../configs/items/weapons/weapon_sounds.ltx.html"><strong aria-hidden="true">12.3.</strong> Weapon Sounds Parameters</a></li><li class="chapter-item expanded "><a href="../configs/items/outfits/o_(outfit).ltx.html"><strong aria-hidden="true">12.4.</strong> Oufits Configuration Parameters</a></li><li class="chapter-item expanded "><a href="../configs/creatures/m_(mutant).ltx.html"><strong aria-hidden="true">12.5.</strong> Mutants Configuration Parameters</a></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">13.</strong> Reference/Shaders</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../shaders/shaders-list/materials-list.html"><strong aria-hidden="true">13.1.</strong> Material Shaders List</a></li><li class="chapter-item expanded "><a href="../shaders/shaders-list/shaders-list.html"><strong aria-hidden="true">13.2.</strong> Shaders List</a></li><li class="chapter-item expanded "><a href="../shaders/shaders-list/compiler-shaders-list.html"><strong aria-hidden="true">13.3.</strong> Compiler Shaders List</a></li><li class="chapter-item expanded "><a href="../shaders/shaders-list/sound-envornment-list.html"><strong aria-hidden="true">13.4.</strong> Sound Envornment List</a></li></ol></li><li class="chapter-item expanded "><a href="../engine/index.html"><strong aria-hidden="true">14.</strong> Reference/Engine</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../engine/console-commands.html"><strong aria-hidden="true">14.1.</strong> Console commands</a></li><li class="chapter-item expanded "><a href="../engine/alife.html"><strong aria-hidden="true">14.2.</strong> A-Life (AI)</a></li><li class="chapter-item expanded "><a href="../engine/engine-classes.html"><strong aria-hidden="true">14.3.</strong> Engine Classes</a></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">15.</strong> Reference/Resources</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../resources/audio.html"><strong aria-hidden="true">15.1.</strong> Audio</a></li><li class="chapter-item expanded "><a href="../resources/models-objects-locations.html"><strong aria-hidden="true">15.2.</strong> Models</a></li><li class="chapter-item expanded "><a href="../resources/sdk-resources.html"><strong aria-hidden="true">15.3.</strong> SDK resources</a></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">16.</strong> Reference/Tools</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../modding-tools/modding-tools.html"><strong aria-hidden="true">16.1.</strong> Modding Tools List</a></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/index.html"><strong aria-hidden="true">16.2.</strong> In-Game Editors</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/item-spawner.html"><strong aria-hidden="true">16.2.1.</strong> Item Spawner</a></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/lightning-editor.html"><strong aria-hidden="true">16.2.2.</strong> Lightning Editor</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">16.2.3.</strong> NPC Logic/Execute</div></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/object-spawner.html"><strong aria-hidden="true">16.2.4.</strong> Object Spawner</a></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/outfits-weapon-stats-editor.html"><strong aria-hidden="true">16.2.5.</strong> Outfits/Weapons Stats Editor</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">16.2.6.</strong> Pocket Workshop</div></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/weapon-hud-editor.html"><strong aria-hidden="true">16.2.7.</strong> Weapon HUD Editor</a></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/weather-editor.html"><strong aria-hidden="true">16.2.8.</strong> Weather Editor</a></li></ol></li><li class="chapter-item expanded "><a href="../modding-tools/ltx-support.html"><strong aria-hidden="true">16.3.</strong> Ltx Support</a></li><li class="chapter-item expanded "><a href="../sdk/index.html"><strong aria-hidden="true">16.4.</strong> SDK 0.7</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../sdk/interface.html"><strong aria-hidden="true">16.4.1.</strong> Interface</a></li><li class="chapter-item expanded "><a href="../sdk/actor-editor.html"><strong aria-hidden="true">16.4.2.</strong> Actor Editor</a></li><li class="chapter-item expanded "><a href="../sdk/image-editor.html"><strong aria-hidden="true">16.4.3.</strong> Image Editor</a></li><li class="chapter-item expanded "><a href="../sdk/level-editor.html"><strong aria-hidden="true">16.4.4.</strong> Level Editor</a></li><li class="chapter-item expanded "><a href="../sdk/shader-editor.html"><strong aria-hidden="true">16.4.5.</strong> Shader Editor</a></li><li class="chapter-item expanded "><a href="../sdk/sound-editor.html"><strong aria-hidden="true">16.4.6.</strong> Sound Editor</a></li><li class="chapter-item expanded "><a href="../sdk/postprocess-editor.html"><strong aria-hidden="true">16.4.7.</strong> Postprocess Editor</a></li><li class="chapter-item expanded "><a href="../sdk/particle-editor.html"><strong aria-hidden="true">16.4.8.</strong> Particle Editor (Not finished)</a></li></ol></li><li class="chapter-item expanded "><a href="../blender/blender-x-ray-addon-summary.html"><strong aria-hidden="true">16.5.</strong> Blender X-Ray Addon</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../blender/advanced-settings.html"><strong aria-hidden="true">16.5.1.</strong> Advanced settings</a></li><li class="chapter-item expanded "><a href="../blender/x-ray-addon-panels.html"><strong aria-hidden="true">16.5.2.</strong> Panels</a></li><li class="chapter-item expanded "><a href="../blender/x-ray-side-panels.html"><strong aria-hidden="true">16.5.3.</strong> Side Panel</a></li></ol></li><li class="chapter-item expanded "><a href="../modding-tools/stalker-studio.html"><strong aria-hidden="true">16.6.</strong> Stalker Studio</a></li><li class="chapter-item expanded "><a href="../modding-tools/thm-editor-by-i-love-kfc.html"><strong aria-hidden="true">16.7.</strong> THM Editor</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../modding-tools/thm-editor-by-valerok.html"><strong aria-hidden="true">16.7.1.</strong> Modified THM Editor</a></li></ol></li><li class="chapter-item expanded "><a href="../modding-tools/bump-generator.html"><strong aria-hidden="true">16.8.</strong> Bump Generator</a></li><li class="chapter-item expanded "><a href="../modding-tools/savandt.html"><strong aria-hidden="true">16.9.</strong> Sound Attribute Viewer And Tweaker</a></li><li class="chapter-item expanded "><a href="../modding-tools/upgrade-editor.html"><strong aria-hidden="true">16.10.</strong> Upgrade Editor</a></li><li class="chapter-item expanded "><a href="../modding-tools/omf-editor-by-valerok.html"><strong aria-hidden="true">16.11.</strong> Modified OMF Editor</a></li><li class="chapter-item expanded "><a href="../modding-tools/ogf-editor-by-valerok.html"><strong aria-hidden="true">16.12.</strong> Modified OGF Editor</a></li><li class="chapter-item expanded "><a href="../modding-tools/xray-export-tool.html"><strong aria-hidden="true">16.13.</strong> X-Ray Export Tool</a></li><li class="chapter-item expanded "><a href="../modding-tools/universal-x64-level-compilers.html" class="active"><strong aria-hidden="true">16.14.</strong> Universal x64 level compilers</a></li><li class="chapter-item expanded "><a href="../modding-tools/xrcompress-by-i-love-kfc.html"><strong aria-hidden="true">16.15.</strong> xrCompress</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Anomaly Modding Book</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Igigog/anomaly-modding-book" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Igigog/anomaly-modding-book/edit/main/src/modding-tools/universal-x64-level-compilers.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="universal-x64-level-compilers"><a class="header" href="#universal-x64-level-compilers">Universal x64 level compilers</a></h1>
+<ul>
+<li>Program Developer:
+<ul>
+<li>GCS Game Word</li>
+</ul>
+</li>
+<li>Compiler edits and build:
+<ul>
+<li>SkyLoader</li>
+</ul>
+</li>
+<li>Acknowledgements:
+<ul>
+<li>Abramcumner</li>
+<li>K.D.</li>
+</ul>
+</li>
+<li>The version described in the article: 1.5</li>
+<li><a href="https://ap-pro.ru/forums/topic/3341-universalnye-kompilyatory-urovney-h64">Ap-pro forum topic</a></li>
+</ul>
+<hr />
+<h2 id="about"><a class="header" href="#about">About</a></h2>
+<p>Universal level compiler that supports the compilation format for games of all series and has many keys to compile</p>
+<p><img src="modding-tools-images/universal-x64-level-compilers.png" alt="editor centered" /></p>
+<h2 id="compilation-of-compilers"><a class="header" href="#compilation-of-compilers">Compilation of compilers</a></h2>
+<ul>
+<li>Geometry compiler (SoC, CS, CoP)</li>
+<li>Grass compiler (SoC, CS, CoP)</li>
+<li>AI grid compiler (SoC, CS, CoP)</li>
+<li>Spawn Compiler (SoC, CS, CoP)</li>
+</ul>
+<h2 id="features"><a class="header" href="#features">Features</a></h2>
+<ul>
+<li>Support for x64</li>
+<li>Support for major games in the series (except for spawn formats)</li>
+<li>All compilers united in one application</li>
+<li>Interface completely rewritten in WinForms</li>
+<li>Added compiler menu, where you can choose a project level, set certain settings and run the compilation</li>
+<li>A system for saving and loading settings of recent projects has been added</li>
+<li>The number of threads created is no longer fixed, but depends on the number of processor cores</li>
+<li>Migration to DirectXTex library to replace FreeImage and nvDXT now obsolete</li>
+<li>Removed rendering of RGB and Sun lighting components, leaving only Hemi</li>
+<li>Some phases of compilation and code parsing of third-party libraries were made</li>
+<li>Integrated Discord Rich Presence to be able to monitor the status of compilation on a remote PC</li>
+<li>Added an option to automatically shutdown the PC after compilation</li>
+<li>Implemented a progress bar in the taskbar to display the current compilation status when minimized</li>
+<li>Added keys for the accelerated compilation of levels for testing purposes.</li>
+<li>Added experimental switches to disable some compilation phases and bypass KKS parameters</li>
+<li>Added major changes to past compilers</li>
+<li>Expanded information output on some bugs</li>
+<li>Fixed some crashes of the original compilers</li>
+<li>Possibility to force the use of smoothing groups on a certain geometry even if the <code>-nosmg</code> key is present (To use smoothing groups on a model it is necessary to assign a compile shader with <code>_smg</code> in its name to its materials (e.g. <code>def_vertex\def_vertex_smg</code>). The compile shader itself is enough to declone from the original one and rename it with this postfix)</li>
+<li>Possibility to disable tessellation on certain geometry (for example, on nosun boxes). To do this you need to name a compile shader with <code>_no_tess</code> in its name. Keep in mind that disabling tessellation can cause problems with UV</li>
+<li>Ability to disable shadow baking from certain <a href="../terminology/terminology.html#mu-multiply-usage-objects">MU models</a>. Compile shaders of MU models must have <code>_no_mu_shadow</code> in the name. The difference between this solution and the usual disabling of the <code>Cast Shadow</code> checkbox is that in this case self-darkening of the MU model will be applied and the model will not be highlighted</li>
+</ul>
+<p>It requires Microsoft Visual C++ 2017 Redistributable x64 installed.</p>
+<h2 id="setup"><a class="header" href="#setup">Setup</a></h2>
+<p>The files must be moved to the root folder of the SDK</p>
+<hr />
+<h2 id="functionality"><a class="header" href="#functionality">Functionality</a></h2>
+<h3 id="buttons"><a class="header" href="#buttons">Buttons</a></h3>
+<blockquote>
+<h4 id="file-button"><a class="header" href="#file-button">File Button</a></h4>
+</blockquote>
+<table><thead><tr><th>Button</th><th>Description</th></tr></thead><tbody>
+<tr><td>Recent Projects</td><td>Recent Projects</td></tr>
+<tr><td>Exit</td><td>Exit</td></tr>
+</tbody></table>
+<blockquote>
+<h4 id="Языкlanguage-button"><a class="header" href="#Языкlanguage-button">Язык/Language Button</a></h4>
+</blockquote>
+<table><thead><tr><th>Button</th><th>Description</th></tr></thead><tbody>
+<tr><td>English</td><td>English language</td></tr>
+<tr><td>Русский</td><td>Russian language</td></tr>
+</tbody></table>
+<blockquote>
+<h4 id="help-button"><a class="header" href="#help-button">Help Button</a></h4>
+</blockquote>
+<table><thead><tr><th>Button</th><th>Description</th></tr></thead><tbody>
+<tr><td>Help</td><td>Shows helpful information</td></tr>
+</tbody></table>
+<blockquote>
+<h4 id="about-button"><a class="header" href="#about-button">About Button</a></h4>
+</blockquote>
+<table><thead><tr><th>Button</th><th>Description</th></tr></thead><tbody>
+<tr><td>About</td><td>About the program</td></tr>
+</tbody></table>
+<h3 id="level-name"><a class="header" href="#level-name">Level Name</a></h3>
+<table><thead><tr><th>Button</th><th>Description</th></tr></thead><tbody>
+<tr><td>Select</td><td>Selects the level for compilation</td></tr>
+</tbody></table>
+<h4 id="level-format"><a class="header" href="#level-format">Level Format</a></h4>
+<ul>
+<li>Input Version: (Input version of the level format)</li>
+<li>Output Version: (Output version of the level format)</li>
+</ul>
+<h3 id="threads"><a class="header" href="#threads">Threads</a></h3>
+<table><thead><tr><th>Checkboxes</th><th>Description</th></tr></thead><tbody>
+<tr><td>High Priority</td><td>Enables high priority</td></tr>
+</tbody></table>
+<h3 id="discord-rich-presence"><a class="header" href="#discord-rich-presence">Discord Rich Presence</a></h3>
+<ul>
+<li>Do not use</li>
+<li>Show compilation status only</li>
+<li>Show level name and status</li>
+</ul>
+<h3 id="keys"><a class="header" href="#keys">Keys</a></h3>
+<h4 id="the-following-keys-are-supportedrequired"><a class="header" href="#the-following-keys-are-supportedrequired">The following keys are supported/required</a></h4>
+<table><thead><tr><th>Key</th><th>Description</th></tr></thead><tbody>
+<tr><td>-? or -help</td><td>call help with a list of all startup keys</td></tr>
+<tr><td>-f &lt;NAME&gt;</td><td>level name in <code>gamedata\levels\&lt;NAME&gt;\</code></td></tr>
+<tr><td>-version &lt;NAME&gt;</td><td>output level format (shoc/cs/cop)</td></tr>
+<tr><td>-fsltx &lt;NAME&gt;</td><td>use custom fsgame.ltx</td></tr>
+<tr><td>-log_name &lt;NAME&gt;</td><td>create a log file with custom name</td></tr>
+<tr><td>-discord</td><td>enable discord rich presence with showing project name</td></tr>
+<tr><td>-discord_s</td><td>enable discord rich presence without showing project name</td></tr>
+<tr><td>-tbb</td><td>use TBB multithreading (not recommended)</td></tr>
+<tr><td>-t &lt;NUM&gt;</td><td>number of threads</td></tr>
+</tbody></table>
+<h4 id="geometry-keys"><a class="header" href="#geometry-keys">Geometry Keys</a></h4>
+<table><thead><tr><th>Key</th><th>Description</th></tr></thead><tbody>
+<tr><td>-silent</td><td>Close the program after compilation</td></tr>
+<tr><td>-sleep</td><td>Shutdown the computer after compilation</td></tr>
+<tr><td>-nohemi</td><td>Disable baking lighting</td></tr>
+<tr><td>-static</td><td>Bake static lighting</td></tr>
+<tr><td>-underground</td><td>Bake as underground level</td></tr>
+<tr><td>-cform</td><td>export only collision level</td></tr>
+<tr><td>-nosmg</td><td>Do not use smooth groups</td></tr>
+<tr><td>-notess</td><td>do not tessellate geometry</td></tr>
+<tr><td>-noise</td><td>Do not create geometry of Progressive-type</td></tr>
+<tr><td>-skipinvalid</td><td>Skip invalid faces</td></tr>
+<tr><td>-removeinvalid</td><td>Skip and remove invalid faces</td></tr>
+<tr><td>-skipthm</td><td>Ignore missing thm-s and textures</td></tr>
+</tbody></table>
+<h5 id="additional-keys-for-geometry-compilation"><a class="header" href="#additional-keys-for-geometry-compilation">Additional keys for geometry compilation</a></h5>
+<table><thead><tr><th>Key</th><th>Description</th></tr></thead><tbody>
+<tr><td>-ppm &lt;float&gt;</td><td>Hemi lighmaps quality (<code>by default: use value from SDK</code>)</td></tr>
+<tr><td>-weld_dist &lt;float&gt;</td><td>Weld distance (<code>by default: use value from SDK</code>)</td></tr>
+<tr><td>-hemi_bias &lt;float&gt;</td><td>Position bias for hemi calc (<code>default: 0.1, vanilla: 0.001</code>)</td></tr>
+<tr><td>-high</td><td>Higher priority for the threads</td></tr>
+<tr><td>-silent</td><td>Close the program after compilation</td></tr>
+<tr><td>-sleep</td><td>Turn off computer after compilation</td></tr>
+<tr><td>-static</td><td>Bake rgb+sun components of static lighting (doesn't work with -nohemi)</td></tr>
+<tr><td>-nohemi</td><td>Disable light and hemi calculating</td></tr>
+<tr><td>-noimpl</td><td>Don't bake lighting for terrain</td></tr>
+<tr><td>-underground</td><td>Don't bake directional light for underground levels</td></tr>
+<tr><td>-nomerge</td><td>Don't merge geometry</td></tr>
+<tr><td>-noweld</td><td>Don't weld geometry</td></tr>
+<tr><td>-nopool</td><td>Don't reload pool</td></tr>
+<tr><td>-notess</td><td>Don't tessellate geometry</td></tr>
+<tr><td>-nosmg</td><td>Don't use smooth groups (for cs/cop levels)</td></tr>
+<tr><td>-noise</td><td>Don't create geometry of Progressive-type</td></tr>
+<tr><td>-nocform</td><td>Don't create level.cform</td></tr>
+<tr><td>-nostrip</td><td>Disable geometry striptification</td></tr>
+<tr><td>-dx_opt</td><td>Optimize geometry with D3DX optimizer instead of NvTriStrip</td></tr>
+<tr><td>-cform</td><td>Export level cform only</td></tr>
+<tr><td>-no_mt_cdb_pack</td><td>Disable multithreaded collision packing</td></tr>
+<tr><td>-gi</td><td>Enable <a href="https://en.wikipedia.org/wiki/Radiosity_(computer_graphics)">Radiosity</a> phase</td></tr>
+<tr><td>-skipinvalid</td><td>Skip invalid faces</td></tr>
+<tr><td>-removeinvalid</td><td>Skip and remove invalid faces</td></tr>
+<tr><td>-skipthm</td><td>Skip surfaces and .thm files if they don't exist</td></tr>
+<tr><td>-noresize</td><td>Don't resize bigger textures to 1024x1024</td></tr>
+<tr><td>-no_mt_mu</td><td>Don't run the lighting calculation for Multiple Usage objects in parallel with the main compilation</td></tr>
+<tr><td>-no_rnd_defl</td><td>Disable randomize deflectors</td></tr>
+<tr><td>-tex_rgba</td><td>Don't compress lightmap textures</td></tr>
+<tr><td>-tex_bc7</td><td>Compress lightmap textures with BC7 format (<code>DX11 Only</code>)</td></tr>
+<tr><td>-qual_draft</td><td>set the quality of the scene in Draft (does not affect the exposed shaders)</td></tr>
+<tr><td>-qual_high</td><td>set the quality of the scene to High (does not affect the exposed shaders)</td></tr>
+<tr><td>-saveobj_base</td><td>save level objects as .obj models to temp folder (base UV)</td></tr>
+<tr><td>-saveobj_lmap</td><td>save level objects as .obj models to temp folder (lighmap UV)</td></tr>
+<tr><td>-saveobj_cform</td><td>save level collision as .obj models to temp folder</td></tr>
+<tr><td>-force_default_shader</td><td>forced replacement of &quot;<code>def_vertex</code>&quot; shaders with &quot;<code>default</code>&quot;</td></tr>
+<tr><td>-force_vertex_shader</td><td>forced replacement of &quot;<code>default</code>&quot; shaders with &quot;<code>def_vertex</code>&quot;</td></tr>
+<tr><td>-no_bcform</td><td>Skip building rcast model and creating build.cform (works with -nohemi only)</td></tr>
+<tr><td>-old_merge</td><td>Use old merging algorithm</td></tr>
+<tr><td>-lmap_size &lt;NUM&gt;</td><td>Lightmap size (<code>default: 1024</code>)</td></tr>
+<tr><td>-border &lt;NUM&gt;</td><td>BORDER parameter, experimental key (<code>default: 1</code>)</td></tr>
+<tr><td>-subdiv_size &lt;NUM&gt;</td><td>Box size for subdiving gemetry, experimental key (<code>default: 32</code>)</td></tr>
+<tr><td>-bparams_ext</td><td>Support for advanced level settings exported by Yara SDK</td></tr>
+</tbody></table>
+<h4 id="grass"><a class="header" href="#grass">Grass</a></h4>
+<table><thead><tr><th>Key</th><th>Description</th></tr></thead><tbody>
+<tr><td>-silent</td><td>Close the program after compilation</td></tr>
+<tr><td>-sleep</td><td>Shutdown the computer after compilation</td></tr>
+<tr><td>-nohemi</td><td>Disable baking lighting</td></tr>
+<tr><td>-static</td><td>Bake static lighting</td></tr>
+<tr><td>-skipthm</td><td>Ignore missing thm-s and textures</td></tr>
+<tr><td>-noresize</td><td>Don't resize bigger textures to 1024x1024</td></tr>
+</tbody></table>
+<h4 id="ai-map"><a class="header" href="#ai-map">AI-Map</a></h4>
+<p>Build Ai-Map</p>
+<table><thead><tr><th>Key</th><th>Description</th></tr></thead><tbody>
+<tr><td>-draft</td><td>Do not calculate covers</td></tr>
+<tr><td>-skipthm</td><td>Ignore missing thm-s and textures</td></tr>
+<tr><td>-f &lt;NAME&gt;</td><td>Make AI-map</td></tr>
+<tr><td>-large_aimap</td><td>Build for large AI-map (<code>requires a modified game engine and SDK to work!</code>)</td></tr>
+<tr><td>-force_large_aimap</td><td>Force opening of AI-grid of original format with a large number of AI-nodes (more than 8 million). The key is experimental, correctness of AI-grid is not guaranteed. For correct export you need AI-grid of new format</td></tr>
+</tbody></table>
+<p>Check Ai-Map</p>
+<table><thead><tr><th>Key</th><th>Description</th></tr></thead><tbody>
+<tr><td>-noverbose</td><td>Do not show info about single nodes</td></tr>
+</tbody></table>
+<h4 id="spawn"><a class="header" href="#spawn">Spawn</a></h4>
+<table><thead><tr><th>Key</th><th>Description</th></tr></thead><tbody>
+<tr><td>-no_separator_check</td><td>Disable some conflicts</td></tr>
+<tr><td>-insert_graph</td><td>Enable adding graphs to common spawn when building a SoC Level (Key for SoC only)</td></tr>
+<tr><td>-actor_level &lt;level_name&gt;</td><td>Select a level to spawn an actor. Avoids the routine of manually deleting an actor from each level. Only the actor from the selected level will be spawned, the others will be ignored. If it is not on the level, it will be automatically created in zero coordinates</td></tr>
+<tr><td>-no_levels_section</td><td>Ignore the list of levels from the [levels] section. Allows not to write each level to this section.</td></tr>
+<tr><td>-skip_invalid_class</td><td>Skip the &quot;Can't create entity&quot; crash. All objects with invalid and unknown classes will be ignored and will not be included in the common spawn</td></tr>
+</tbody></table>
+<h5 id="additional-spawns"><a class="header" href="#additional-spawns">Additional spawns</a></h5>
+<table><thead><tr><th>Buttons</th><th>Description</th></tr></thead><tbody>
+<tr><td>Add</td><td>Add spawn file</td></tr>
+<tr><td>Remove</td><td>Remove spawn file</td></tr>
+<tr><td>Clear</td><td>Clear spawn files</td></tr>
+</tbody></table>
+<h5 id="spawn-name"><a class="header" href="#spawn-name">Spawn name</a></h5>
+<table><thead><tr><th>Checkboxes</th><th>Description</th></tr></thead><tbody>
+<tr><td>by default</td><td>Renames the .spawn file by default (name chosen from the folder name)</td></tr>
+</tbody></table>
+<ul>
+<li>Spawn name - Spawn name</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../modding-tools/xray-export-tool.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../modding-tools/xrcompress-by-i-love-kfc.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../modding-tools/xray-export-tool.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../modding-tools/xrcompress-by-i-love-kfc.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

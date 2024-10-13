@@ -1,0 +1,688 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Weapon Configuration Parameters - Anomaly Modding Book</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../../favicon.svg">
+        <link rel="shortcut icon" href="../../../favicon.png">
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+        <link rel="stylesheet" href="../../../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../highlight.css">
+        <link rel="stylesheet" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../../src/custom.css">
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../../../index.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../../../meta/index.html"><strong aria-hidden="true">1.</strong> Meta</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../meta/contributing/index.html"><strong aria-hidden="true">1.1.</strong> Contributing to this book</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../../../getting-started/index.html"><strong aria-hidden="true">2.</strong> Mod Organizer</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../getting-started/installing-mo2.html"><strong aria-hidden="true">2.1.</strong> Installing MO2</a></li><li class="chapter-item expanded "><a href="../../../getting-started/addon-installers.html"><strong aria-hidden="true">2.2.</strong> Addon installers</a></li><li class="chapter-item expanded "><a href="../../../getting-started/package-naming.html"><strong aria-hidden="true">2.3.</strong> Package Naming for MO2</a></li><li class="chapter-item expanded "><a href="../../../getting-started/vs-code-game-files-setup.html"><strong aria-hidden="true">2.4.</strong> Configuring VSCode-like programs to handle game files</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Addons</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../addons/dltx.html"><strong aria-hidden="true">3.1.</strong> DLTX</a></li><li class="chapter-item expanded "><a href="../../../addons/dxml.html"><strong aria-hidden="true">3.2.</strong> DXML</a></li><li class="chapter-item expanded "><a href="../../../addons/mcm.html"><strong aria-hidden="true">3.3.</strong> MCM</a></li><li class="chapter-item expanded "><a href="../../../addons/pdb.html"><strong aria-hidden="true">3.4.</strong> PDB files</a></li><li class="chapter-item expanded "><a href="../../../addons/lua-unlocalizer.html"><strong aria-hidden="true">3.5.</strong> Lua Unlocalizer</a></li><li class="chapter-item expanded "><a href="../../../addons/useful-addons-scripts-utils.html"><strong aria-hidden="true">3.6.</strong> Useful addons, scripts and utils</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> Configs</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../configs/structure-of-files.html"><strong aria-hidden="true">4.1.</strong> Structure of Files</a></li><li class="chapter-item expanded "><a href="../../../configs/condlists.html"><strong aria-hidden="true">4.2.</strong> Condlists</a></li><li class="chapter-item expanded "><a href="../../../configs/inventory_icons.html"><strong aria-hidden="true">4.3.</strong> Inventory Icons</a></li><li class="chapter-item expanded "><a href="../../../configs/algoritm-of-logic.html"><strong aria-hidden="true">4.4.</strong> Algoritm of Logic</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../../../scripting/index.html"><strong aria-hidden="true">5.</strong> Scripting</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../scripting/codebase_introduction.html"><strong aria-hidden="true">5.1.</strong> Introduction to codebase</a></li><li class="chapter-item expanded "><a href="../../../scripting/codestyle.html"><strong aria-hidden="true">5.2.</strong> Codestyle</a></li><li class="chapter-item expanded "><a href="../../../scripting/wetting_hands.html"><strong aria-hidden="true">5.3.</strong> Wetting our hands</a></li><li class="chapter-item expanded "><a href="../../../scripting/server_and_game_objects.html"><strong aria-hidden="true">5.4.</strong> Server and game objects</a></li><li class="chapter-item expanded "><a href="../../../scripting/callbacks.html"><strong aria-hidden="true">5.5.</strong> Callbacks</a></li><li class="chapter-item expanded "><a href="../../../scripting/time_events.html"><strong aria-hidden="true">5.6.</strong> Time events</a></li><li class="chapter-item expanded "><a href="../../../scripting/monkey-patching.html"><strong aria-hidden="true">5.7.</strong> Monkey patching</a></li><li class="chapter-item expanded "><a href="../../../scripting/script_animations.html"><strong aria-hidden="true">5.8.</strong> Script Animations</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> Modelling</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../blender/creating-model-in-blender.html"><strong aria-hidden="true">6.1.</strong> Creating model in Blender</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.</strong> Animating</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../blender/creating-hud-animation-in-blender.html"><strong aria-hidden="true">7.1.</strong> Creating an animation</a></li><li class="chapter-item expanded "><a href="../../../blender/creating-camera-animations.html"><strong aria-hidden="true">7.2.</strong> Creating animations for the camera</a></li><li class="chapter-item expanded "><a href="../../../blender/editing-existing-animations.html"><strong aria-hidden="true">7.3.</strong> Editing existing animations</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../../../texturing/index.html"><strong aria-hidden="true">8.</strong> Texturing</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../texturing/сreating-and-preparing-textures.html"><strong aria-hidden="true">8.1.</strong> Creating and preparing textures</a></li><li class="chapter-item expanded "><a href="../../../texturing/working-correctly-with-icon-atlases.html"><strong aria-hidden="true">8.2.</strong> Working correctly with icon atlases</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../../../mapping/index.html"><strong aria-hidden="true">9.</strong> Mapping</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../blender/creating-a-location-in-blender.html"><strong aria-hidden="true">9.1.</strong> Creating a location in Blender</a></li><li class="chapter-item expanded "><a href="../../../mapping/multimaterial-terrain.html"><strong aria-hidden="true">9.2.</strong> Multimaterial Terrain Guide</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../../../quests/index.html"><strong aria-hidden="true">10.</strong> Quests</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../quests/introduction.html"><strong aria-hidden="true">10.1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../../../quests/npc_creation.html"><strong aria-hidden="true">10.2.</strong> NPC Creation</a></li><li class="chapter-item expanded "><a href="../../../quests/task_guide.html"><strong aria-hidden="true">10.3.</strong> Task Creation</a></li><li class="chapter-item expanded "><a href="../../../quests/dialogues.html"><strong aria-hidden="true">10.4.</strong> Dialogue Creation</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../../../reference/index.html"><strong aria-hidden="true">11.</strong> Reference/General</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../terminology/terminology.html"><strong aria-hidden="true">11.1.</strong> Terminology</a></li><li class="chapter-item expanded "><a href="../../../main-folders-and-files/index.html"><strong aria-hidden="true">11.2.</strong> Main Folders And Files</a></li><li class="chapter-item expanded "><a href="../../../main-folders-and-files/file-formats/index.html"><strong aria-hidden="true">11.3.</strong> File Formats</a></li><li class="chapter-item expanded "><a href="../../../crash-list/crashes-list.html"><strong aria-hidden="true">11.4.</strong> Crash List</a></li></ol></li><li class="chapter-item expanded "><a href="../../../reference/index.html"><strong aria-hidden="true">12.</strong> Reference/Configs</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../configs/items/weapons/w_(weapon).ltx.html" class="active"><strong aria-hidden="true">12.1.</strong> Weapon Configuration Parameters</a></li><li class="chapter-item expanded "><a href="../../../configs/items/weapons/weapon_ammo.ltx.html"><strong aria-hidden="true">12.2.</strong> Ammo Configuration Parameters</a></li><li class="chapter-item expanded "><a href="../../../configs/items/weapons/weapon_sounds.ltx.html"><strong aria-hidden="true">12.3.</strong> Weapon Sounds Parameters</a></li><li class="chapter-item expanded "><a href="../../../configs/items/outfits/o_(outfit).ltx.html"><strong aria-hidden="true">12.4.</strong> Oufits Configuration Parameters</a></li><li class="chapter-item expanded "><a href="../../../configs/creatures/m_(mutant).ltx.html"><strong aria-hidden="true">12.5.</strong> Mutants Configuration Parameters</a></li></ol></li><li class="chapter-item expanded "><a href="../../../reference/index.html"><strong aria-hidden="true">13.</strong> Reference/Shaders</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../shaders/shaders-list/materials-list.html"><strong aria-hidden="true">13.1.</strong> Material Shaders List</a></li><li class="chapter-item expanded "><a href="../../../shaders/shaders-list/shaders-list.html"><strong aria-hidden="true">13.2.</strong> Shaders List</a></li><li class="chapter-item expanded "><a href="../../../shaders/shaders-list/compiler-shaders-list.html"><strong aria-hidden="true">13.3.</strong> Compiler Shaders List</a></li><li class="chapter-item expanded "><a href="../../../shaders/shaders-list/sound-envornment-list.html"><strong aria-hidden="true">13.4.</strong> Sound Envornment List</a></li></ol></li><li class="chapter-item expanded "><a href="../../../engine/index.html"><strong aria-hidden="true">14.</strong> Reference/Engine</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../engine/console-commands.html"><strong aria-hidden="true">14.1.</strong> Console commands</a></li><li class="chapter-item expanded "><a href="../../../engine/alife.html"><strong aria-hidden="true">14.2.</strong> A-Life (AI)</a></li><li class="chapter-item expanded "><a href="../../../engine/engine-classes.html"><strong aria-hidden="true">14.3.</strong> Engine Classes</a></li></ol></li><li class="chapter-item expanded "><a href="../../../reference/index.html"><strong aria-hidden="true">15.</strong> Reference/Resources</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../resources/audio.html"><strong aria-hidden="true">15.1.</strong> Audio</a></li><li class="chapter-item expanded "><a href="../../../resources/models-objects-locations.html"><strong aria-hidden="true">15.2.</strong> Models</a></li><li class="chapter-item expanded "><a href="../../../resources/sdk-resources.html"><strong aria-hidden="true">15.3.</strong> SDK resources</a></li></ol></li><li class="chapter-item expanded "><a href="../../../reference/index.html"><strong aria-hidden="true">16.</strong> Reference/Tools</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../modding-tools/modding-tools.html"><strong aria-hidden="true">16.1.</strong> Modding Tools List</a></li><li class="chapter-item expanded "><a href="../../../modding-tools/in-game-editors/index.html"><strong aria-hidden="true">16.2.</strong> In-Game Editors</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../modding-tools/in-game-editors/item-spawner.html"><strong aria-hidden="true">16.2.1.</strong> Item Spawner</a></li><li class="chapter-item expanded "><a href="../../../modding-tools/in-game-editors/lightning-editor.html"><strong aria-hidden="true">16.2.2.</strong> Lightning Editor</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">16.2.3.</strong> NPC Logic/Execute</div></li><li class="chapter-item expanded "><a href="../../../modding-tools/in-game-editors/object-spawner.html"><strong aria-hidden="true">16.2.4.</strong> Object Spawner</a></li><li class="chapter-item expanded "><a href="../../../modding-tools/in-game-editors/outfits-weapon-stats-editor.html"><strong aria-hidden="true">16.2.5.</strong> Outfits/Weapons Stats Editor</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">16.2.6.</strong> Pocket Workshop</div></li><li class="chapter-item expanded "><a href="../../../modding-tools/in-game-editors/weapon-hud-editor.html"><strong aria-hidden="true">16.2.7.</strong> Weapon HUD Editor</a></li><li class="chapter-item expanded "><a href="../../../modding-tools/in-game-editors/weather-editor.html"><strong aria-hidden="true">16.2.8.</strong> Weather Editor</a></li></ol></li><li class="chapter-item expanded "><a href="../../../modding-tools/ltx-support.html"><strong aria-hidden="true">16.3.</strong> Ltx Support</a></li><li class="chapter-item expanded "><a href="../../../sdk/index.html"><strong aria-hidden="true">16.4.</strong> SDK 0.7</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../sdk/interface.html"><strong aria-hidden="true">16.4.1.</strong> Interface</a></li><li class="chapter-item expanded "><a href="../../../sdk/actor-editor.html"><strong aria-hidden="true">16.4.2.</strong> Actor Editor</a></li><li class="chapter-item expanded "><a href="../../../sdk/image-editor.html"><strong aria-hidden="true">16.4.3.</strong> Image Editor</a></li><li class="chapter-item expanded "><a href="../../../sdk/level-editor.html"><strong aria-hidden="true">16.4.4.</strong> Level Editor</a></li><li class="chapter-item expanded "><a href="../../../sdk/shader-editor.html"><strong aria-hidden="true">16.4.5.</strong> Shader Editor</a></li><li class="chapter-item expanded "><a href="../../../sdk/sound-editor.html"><strong aria-hidden="true">16.4.6.</strong> Sound Editor</a></li><li class="chapter-item expanded "><a href="../../../sdk/postprocess-editor.html"><strong aria-hidden="true">16.4.7.</strong> Postprocess Editor</a></li><li class="chapter-item expanded "><a href="../../../sdk/particle-editor.html"><strong aria-hidden="true">16.4.8.</strong> Particle Editor (Not finished)</a></li></ol></li><li class="chapter-item expanded "><a href="../../../blender/blender-x-ray-addon-summary.html"><strong aria-hidden="true">16.5.</strong> Blender X-Ray Addon</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../blender/advanced-settings.html"><strong aria-hidden="true">16.5.1.</strong> Advanced settings</a></li><li class="chapter-item expanded "><a href="../../../blender/x-ray-addon-panels.html"><strong aria-hidden="true">16.5.2.</strong> Panels</a></li><li class="chapter-item expanded "><a href="../../../blender/x-ray-side-panels.html"><strong aria-hidden="true">16.5.3.</strong> Side Panel</a></li></ol></li><li class="chapter-item expanded "><a href="../../../modding-tools/stalker-studio.html"><strong aria-hidden="true">16.6.</strong> Stalker Studio</a></li><li class="chapter-item expanded "><a href="../../../modding-tools/thm-editor-by-i-love-kfc.html"><strong aria-hidden="true">16.7.</strong> THM Editor</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../modding-tools/thm-editor-by-valerok.html"><strong aria-hidden="true">16.7.1.</strong> Modified THM Editor</a></li></ol></li><li class="chapter-item expanded "><a href="../../../modding-tools/bump-generator.html"><strong aria-hidden="true">16.8.</strong> Bump Generator</a></li><li class="chapter-item expanded "><a href="../../../modding-tools/savandt.html"><strong aria-hidden="true">16.9.</strong> Sound Attribute Viewer And Tweaker</a></li><li class="chapter-item expanded "><a href="../../../modding-tools/upgrade-editor.html"><strong aria-hidden="true">16.10.</strong> Upgrade Editor</a></li><li class="chapter-item expanded "><a href="../../../modding-tools/omf-editor-by-valerok.html"><strong aria-hidden="true">16.11.</strong> Modified OMF Editor</a></li><li class="chapter-item expanded "><a href="../../../modding-tools/ogf-editor-by-valerok.html"><strong aria-hidden="true">16.12.</strong> Modified OGF Editor</a></li><li class="chapter-item expanded "><a href="../../../modding-tools/xray-export-tool.html"><strong aria-hidden="true">16.13.</strong> X-Ray Export Tool</a></li><li class="chapter-item expanded "><a href="../../../modding-tools/universal-x64-level-compilers.html"><strong aria-hidden="true">16.14.</strong> Universal x64 level compilers</a></li><li class="chapter-item expanded "><a href="../../../modding-tools/xrcompress-by-i-love-kfc.html"><strong aria-hidden="true">16.15.</strong> xrCompress</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Anomaly Modding Book</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Igigog/anomaly-modding-book" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Igigog/anomaly-modding-book/edit/main/src/configs/items/weapons/w_(weapon).ltx.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="w_weaponltx-config-file"><a class="header" href="#w_weaponltx-config-file">w_<em>Weapon</em>.ltx Config File</a></h1>
+<hr />
+<h2 id="about"><a class="header" href="#about">About</a></h2>
+<p>Configuration parameters for weapons</p>
+<hr />
+<p>Parameters of the weapon are set for each sample in a separate *.ltx file, and consist of two sections (Each contains its own set of parameters):</p>
+<ul>
+<li>
+<p>[wpn_name] - Main, it sets most of the parameters (for NPC and 3rd-person view).</p>
+</li>
+<li>
+<p>[wpn_name_hud] - Secondary, where you set first-person view parameters only.</p>
+</li>
+</ul>
+<hr />
+<h2 id="parameters-of-the-world-model"><a class="header" href="#parameters-of-the-world-model">Parameters of the world model</a></h2>
+<p>[wpn_name]: Here you can set additional characteristics of weapon from sections for example:</p>
+<ul>
+<li>identity_immunities - a section that contains damage parameters for different game difficulty levels</li>
+<li>weapon_probability</li>
+<li>default_weapon_params</li>
+</ul>
+<h3 id="general-parameters"><a class="header" href="#general-parameters">General parameters</a></h3>
+<details>
+    <summary>General parameters</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>GroupControlSection</td><td></td><td>spawn_group</td><td></td></tr>
+<tr><td>$npc</td><td>use NPC of this weapon</td><td>on</td><td>on (Yes) - off (No)</td></tr>
+<tr><td>$prefetch</td><td>preload queue</td><td>8</td><td></td></tr>
+<tr><td>$spawn</td><td>the Weapon Directory in the Level Editor</td><td>&quot;weapons\ak-74&quot;</td><td>&quot;weapons\ <em>wpn_name</em>&quot;</td></tr>
+<tr><td>scheduled</td><td>online/offline switch; Works only for &quot;live&quot; objects with AI</td><td>off</td><td>on (Yes) - off (No)</td></tr>
+<tr><td>cform</td><td>parameter for dynamic objects; necessary for correct creation of the skeleton model</td><td>skeleton</td><td></td></tr>
+<tr><td>parent_section</td><td></td><td>wpn_akm</td><td></td></tr>
+<tr><td>class</td><td>engine weapon class</td><td>WP_AK74</td><td>WP_BINOC <br>WP_KNIFE <br>WP_BM16 <br>WP_GROZA <br>WP_SVD <br>WP_AK74 <br>WP_LR300 <br>WP_HPSA <br>WP_PM <br>WP_RG6 <br>WP_RPG7 <br>WP_SHOTG <br>WP_ASHTG <br>WP_MAGAZ <br>WP_SVU <br>WP_USP45 <br>WP_VAL <br>WP_VINT <br>WP_WALTH W_STMGUN</td></tr>
+<tr><td>animation_slot</td><td>animation slot number</td><td>2</td><td>1 - pistol <br>2 - automatic rifle <br>3 - rifle, shotgun <br>4 - RPG <br>5 - knife <br>7 - bolt, grenade <br>8 - submachine gun with integrated underbarrel grenade launcher <br>9 - Shotgun <br>10 - Drum Gun <br>13 - binoculars</td></tr>
+<tr><td>hand_dependence</td><td>determines whether the weapon will be taken with one or two hands</td><td>1</td><td>0 - no hands <br>1 - one hand <br>2 - two hands</td></tr>
+<tr><td>single_handed</td><td>held with one hand</td><td>0</td><td>0 - no <br>1 - yes</td></tr>
+<tr><td>default_to_ruck</td><td>whether the weapon will be moved to the backpack instead of the slot when picked up</td><td>false</td><td>true (yes) <br>false (no)</td></tr>
+<tr><td>sprint_allowed</td><td>this line means that you can run with the weapon</td><td>true</td><td>true (Yes) <br>false (No)</td></tr>
+<tr><td>kind</td><td>The type of item to group into the appropriate section in the <a href="../../../modding-tools/in-game-editors/item-spawner.html">Item Spawner</a></td><td>w_rifle</td><td>w_rifle<br> w_misc<br> w_explosive<br> w_melee<br> w_pistol<br> w_smg<br> w_shotgun<br> w_sniper</td></tr>
+<tr><td>cost</td><td>base price</td><td>28780</td><td>Specified in numbers</td></tr>
+<tr><td>hud</td><td>section with parameters for the <a href="../../../terminology/terminology.html#object_hud">hud model of the weapon</a></td><td>wpn_akm_hud</td><td>Specifies the name of the section</td></tr>
+<tr><td>visual</td><td>reference to the <a href="../../../terminology/terminology.html#object_world">world model</a></td><td>dynamics\weapons\wpn_akm\wpn_akm.ogf</td><td>Specifies the path to the file</td></tr>
+</tbody></table>
+</details>
+<h3 id="position-and-orientation-of-weapons"><a class="header" href="#position-and-orientation-of-weapons">Position and Orientation of Weapons</a></h3>
+<details>
+    <summary>Position and Orientation of Weapons</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>position</td><td>position of the weapon in the hands of the NPC and the headspace when viewed from the 3rd person</td><td>-0.026, -0.175, 0.0</td><td>X - (<code>-</code>) left / (<code>+</code>) right<br> Y - (<code>+</code>) up / (<code>-</code>) down<br> Z - (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>orientation</td><td>how the weapon is rotated in the hands of the NPC and headgear, in the 3rd person view</td><td>0, 0, 0</td><td>X - (<code>+</code>) left / (<code>-</code>) right<br> Y - (<code>+</code>) up / (<code>-</code>) down<br> Z - (<code>-</code>) roll to the right / (<code>+</code>) roll to the left</td></tr>
+<tr><td>fire_point</td><td>coordinates of the fire particle from the shot, in the 3rd person view</td><td>0, 0.218, 0.656</td><td>X - (<code>-</code>) left / (<code>+</code>) right<br> Y - (<code>+</code>) up / (<code>-</code>) down<br> Z - (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>fire_point2</td><td>Coordinates of the fire particle from the shot, when viewed from the 3rd person from the holster</td><td>0, 0.161, 0.583</td><td>X - (<code>-</code>) left / (<code>+</code>) right<br> Y - (<code>+</code>) up / (<code>-</code>) down<br> Z - (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>strap_bone0</td><td>the name of the first NPC model bone where the weapon is located when hidden</td><td>bip01_spine2</td><td>Bone Name</td></tr>
+<tr><td>strap_bone1</td><td>The name of the second NPC model bone that holds the weapon when hidden</td><td>bip01_spine1</td><td>Bone Name</td></tr>
+<tr><td>strap_position</td><td>the position of the weapon on the NPC's back, when viewed from the third person</td><td>-0.26, -0.11, 0.25</td><td>X - (<code>-</code>) left / (<code>+</code>) right<br> Y - (<code>+</code>) up / (<code>-</code>) down<br> Z - (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>strap_orientation</td><td>how the weapon is rotated on the NPC's back in 3rd person view</td><td>-15, -9, 110</td><td>X - (<code>+</code>) left / (<code>-</code>) right<br> Y - (<code>+</code>) up / (<code>-</code>) down<br> Z - (<code>-</code>) roll to the right / (<code>+</code>) roll to the left</td></tr>
+</tbody></table>
+</details>
+<h3 id="weapon-parameters-in-inventory"><a class="header" href="#weapon-parameters-in-inventory">Weapon parameters in inventory</a></h3>
+<details>
+    <summary>Weapon parameters in inventory</summary>
+<table><thead><tr><th>Parameter name</th><th>Parameter description</th><th align="center">Example value</th><th>Possible parameter values and their descriptions</th></tr></thead><tbody>
+<tr><td>icons_texture</td><td>texture where the weapon icon will be taken from</td><td align="center">ui\ui_icon_spas</td><td></td></tr>
+<tr><td>inv_grid_height</td><td>icon height</td><td align="center">2</td><td>number of 50x50 pixels cells</td></tr>
+<tr><td>inv_grid_width</td><td>icon width</td><td align="center">5</td><td>number of 50x50 pixels cells</td></tr>
+<tr><td>inv_grid_x</td><td>the coordinate of the upper left corner of the icon on a 50x50 pixel grid on the X axis</td><td align="center">35</td><td>number of cells indented to the right</td></tr>
+<tr><td>inv_grid_y</td><td>The coordinate of the upper left corner of the icon on a 50x50 pixel grid on the Y axis</td><td align="center">0</td><td>number of cells indenting downward</td></tr>
+<tr><td>inv_name</td><td>The name in the inventory</td><td align="center">st_wpn_akm</td><td>Section name, in *.xml files included in the string_table section of <code>gamedata\configs\text\*localization*\st_items_weapons.xml</code></td></tr>
+<tr><td>inv_name_short</td><td>short name in the inventory</td><td align="center">st_wpn_akm</td><td>Section name, in *.xml files included in the string_table section of <code>gamedata\configs\text\*localization*\st_items_weapons.xml</code></td></tr>
+<tr><td>inv_weight</td><td>the inventory weight of the unloaded weapon</td><td align="center">3.3</td><td>The number is given in kilograms</td></tr>
+<tr><td>description</td><td>Description in inventory</td><td align="center">st_wpn_akm_descr</td><td>Section name, in *.xml files included in the string_table section of <code>gamedata\configs\text\*localization*\st_items_weapons.xml</code></td></tr>
+<tr><td>slot</td><td>Inventory slot number</td><td align="center">2</td><td>0 - knives<br>1 - pistols<br>2 - shotguns, machine guns, rifles, grenade launchers<br>3 - grenades (may be crashing)<br>4 - binoculars<br>5 - bolts (may be crashing)<br>6 - outfits (may be crashing)</td></tr>
+</tbody></table>
+</details>
+<h3 id="parameters-for-multiplayer-there-is-no-multiplayer-in-the-game-so-the-parameters-are-useless"><a class="header" href="#parameters-for-multiplayer-there-is-no-multiplayer-in-the-game-so-the-parameters-are-useless">Parameters for multiplayer (there is no multiplayer in the game, so the parameters are useless)</a></h3>
+<details>
+    <summary>Parameters for multiplayer</summary>
+<table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example value</th><th>Parameter Possible Values and their descriptions</th></tr></thead><tbody>
+<tr><td>weapon_class</td><td>is used exclusively for the purchase menu in multiplayer</td><td>shotgun<br> assault_rifle<br> sniper_rifle<br> heavy_weapon</td><td></td></tr>
+<tr><td>startup_ammo</td><td>startup amount of ammo in multiplayer</td><td>The number of rounds of ammunition is indicated</td><td></td></tr>
+<tr><td>kill_msg_x</td><td>the coordinate of the upper left corner of the kill icon on the X axis</td><td></td><td></td></tr>
+<tr><td>kill_msg_y</td><td>top-left corner coordinate of the kill icon on the Y axis</td><td></td><td></td></tr>
+<tr><td>kill_msg_width</td><td>kill icon width</td><td>Specified in pixels</td><td></td></tr>
+<tr><td>kill_msg_height</td><td>kill icon height</td><td>Specified in pixels</td><td></td></tr>
+</tbody></table>
+</details>
+<h3 id="particle-parameters-from-the-shot"><a class="header" href="#particle-parameters-from-the-shot">Particle parameters from the shot</a></h3>
+<details>
+    <summary>Particle parameters from the shot</summary>
+<table><thead><tr><th>Parameter name</th><th>Parameter description</th><th>Example value</th><th>Possible parameter values and their descriptions</th></tr></thead><tbody>
+<tr><td>flame_particles</td><td>gunshot fire particle</td><td>weapons\generic_weapon05</td><td>Specifies the path to the file</td></tr>
+<tr><td>smoke_particles</td><td>shot smoke particle</td><td>weapons\generic_shoot_00</td><td>Specifies the path to the file</td></tr>
+<tr><td>light_disabled</td><td>flash off when shot</td><td>false</td><td>true (Yes) - false (No)</td></tr>
+<tr><td>light_color</td><td>Parameters for changing the color of the shot fire particle</td><td>0.6, 0.5, 0.3</td><td>RGB Color</td></tr>
+<tr><td>light_range</td><td>the radius of the fire partition from the shot</td><td>5</td><td></td></tr>
+<tr><td>light_time</td><td>time of light playback when shot</td><td>0.2</td><td></td></tr>
+<tr><td>light_var_color</td><td>Parameter of variation of the color of the fire particle from the shot</td><td>0.05</td><td>RGB Color</td></tr>
+<tr><td>light_var_range</td><td>varies the radius of the fire particle from the shot</td><td>0.5</td><td>Value 60.0 = 10 seconds</td></tr>
+</tbody></table>
+</details>
+<h3 id="parameters-of-the-upgradesrepairs"><a class="header" href="#parameters-of-the-upgradesrepairs">Parameters of the upgrades/repairs</a></h3>
+<details>
+    <summary>Particle parameters from the shot</summary>
+<table><thead><tr><th>Parameter name</th><th>Parameter description</th><th>Example value</th><th>Possible parameter values and their descriptions</th></tr></thead><tbody>
+<tr><td>upgrades</td><td></td><td>up_gr_firstab_akm, up_gr_seconab_akm, up_gr_thirdab_akm, up_gr_fourtab_akm, up_gr_fifthab_akm, up_gr_fifthcd_akm</td><td></td></tr>
+<tr><td>installed_upgrades</td><td>installed upgrades</td><td></td><td></td></tr>
+<tr><td>upgrade_scheme</td><td>upgrade_scheme</td><td>upgrade_scheme_ak74</td><td></td></tr>
+<tr><td>repair_type</td><td>item type for repair tools</td><td>rifle_7</td><td>pistol<br> shotgun<br> rifle_5<br> rifle_7</td></tr>
+</tbody></table>
+</details>
+<h4 id="icons-of-the-upgrades"><a class="header" href="#icons-of-the-upgrades">Icons of the upgrades</a></h4>
+<details>
+    <summary>Icons of the upgrades</summary>
+<table><thead><tr><th>Parameter name</th><th>Parameter description</th><th>Example value</th><th>Possible parameter values and their descriptions</th></tr></thead><tbody>
+<tr><td>upgr_icon_x</td><td>X coordinate of the upper left corner of the weapon icon in the upgrade window</td><td>300</td><td>Specified in pixels</td></tr>
+<tr><td>upgr_icon_y</td><td>Y coordinate of the upper left corner of the weapon icon in the upgrade window</td><td>0</td><td>Specified in pixels</td></tr>
+<tr><td>upgr_icon_width</td><td>icon width in the upgrade window</td><td>300</td><td>Specified in pixels</td></tr>
+<tr><td>upgr_icon_height</td><td>icon height in the upgrade window</td><td>100</td><td>Specified in pixels</td></tr>
+</tbody></table>
+</details>
+<h3 id="parameters-of-the-weapon-itself"><a class="header" href="#parameters-of-the-weapon-itself">Parameters of the weapon itself</a></h3>
+<details>
+    <summary>Parameters of the weapon itself</summary>
+<table><thead><tr><th>Parameter name</th><th>Parameter description</th><th>Example value</th><th>Possible parameter values and their descriptions</th></tr></thead><tbody>
+<tr><td>fire_modes</td><td>firing modes fire modes</td><td>1, -1</td><td>-1 - automatic<br> 1 - single<br> 2 - two-shot<br> 3 - three-shot</td></tr>
+<tr><td>wallmark_section</td><td>section of wallmarks that appear on the ground/geometry</td><td></td><td>Section name (by default it is in the system.ltx file)</td></tr>
+<tr><td>wm_size</td><td>texture size of the mark left on the ground after the explosion</td><td></td><td>The bigger the number, the bigger the mark</td></tr>
+<tr><td>allow_inertion</td><td>whether inertia is enabled</td><td></td><td>true (Yes) - false (No)</td></tr>
+<tr><td>ph_mass</td><td>the weight of the unloaded weapon for the physical engine</td><td>4</td><td>The number is given in kilograms</td></tr>
+</tbody></table>
+</details>
+<h4 id="shot-parameters"><a class="header" href="#shot-parameters">Shot parameters</a></h4>
+<details>
+    <summary>Shot parameters</summary>
+<table><thead><tr><th>Parameter name</th><th>Parameter description</th><th>Example value</th><th>Possible parameter values and their descriptions</th></tr></thead><tbody>
+<tr><td>hit_impulse</td><td>The force that the flying bullet transmits to the victim affects the ragdoll-body behavior</td><td>34</td><td>The more, the farther the body will fly away</td></tr>
+<tr><td>hit_power</td><td>damage dealt</td><td>0.58, 0.58, 0.58, 0.58</td><td>Specifies a value for the level of difficulty in descending order, i.e. from master to beginner</td></tr>
+<tr><td>hit_type</td><td>Type of damage inflicted; used to calculate damage; armor suits (and others) are set to be immune to each type of damage separately</td><td>fire_wound</td><td>fire_wound - fire damage<br> wound - stabbing<br> wound_2 - cutting<br> explosion - shrapnel damage</td></tr>
+<tr><td>fire_distance</td><td>effective range of the shot after which the bullet disappears</td><td>900</td><td>Specified in meters</td></tr>
+<tr><td>bullet_speed</td><td>initial bullet speed</td><td>715</td><td>Specified in meters per second</td></tr>
+<tr><td>rpm</td><td>Shooting speed</td><td>600</td><td>Specifies the number of shots per minute</td></tr>
+<tr><td>rpm_empty_click</td><td>Misfire/empty magazine sound frequency</td><td>200</td><td></td></tr>
+<tr><td>fire_dispersion_base</td><td>The dispersion (angle of the bullets) introduced by the weapon; affects accuracy; added to the disp_base in actor.ltx</td><td>0.45</td><td>Specified in degrees</td></tr>
+<tr><td>PDM_disp_accel_factor</td><td>Multiplier by which fire_dispersion_base is multiplied when the protagonist runs</td><td>2.5</td><td>Specified in numbers</td></tr>
+<tr><td>PDM_disp_base</td><td>Multiplier by which fire_dispersion_base is multiplied when the protagonist is standing at full height</td><td>1.15</td><td>Specified in numbers</td></tr>
+<tr><td>PDM_disp_crouch</td><td>Multiplier by which fire_dispersion_base is multiplied when the protagonist goes crouched</td><td>1.0</td><td>Specified in numbers</td></tr>
+<tr><td>PDM_disp_crouch_no_acc</td><td>Multiplier by which fire_dispersion_base is multiplied when the protagonist stands still while ducking</td><td>1.0</td><td>Specified in numbers</td></tr>
+<tr><td>PDM_disp_vel_factor</td><td>Multiplier by which fire_dispersion_base is multiplied when the protagonist spins a weapon or runs</td><td>2.5</td><td>Specified in numbers</td></tr>
+</tbody></table>
+</details>
+<h4 id="ammo-parameters"><a class="header" href="#ammo-parameters">Ammo parameters</a></h4>
+<details>
+    <summary>Ammo parameters</summary>
+<table><thead><tr><th>Parameter name</th><th>Parameter description</th><th>Example value</th><th>Possible parameter values and their descriptions</th></tr></thead><tbody>
+<tr><td>ammo_class</td><td>ammo type for this weapon</td><td>ammo_7.62x39_fmj, ammo_7.62x39_fmj_bad, ammo_7.62x39_fmj_verybad, ammo_7.62x39_ap, ammo_7.62x39_ap_bad, ammo_7.62x39_ap_verybad</td><td>The names of the ammunition sections are indicated, separated by commas</td></tr>
+<tr><td>ammo_elapsed</td><td>magazine capacity at the moment of spawning</td><td>30</td><td>indicate the value equal to ammo_mag_size</td></tr>
+<tr><td>ammo_mag_size</td><td>ammunition capacity</td><td>30</td><td>The number of bullets is indicated</td></tr>
+</tbody></table>
+</details>
+<h3 id="particle-shell-parameters"><a class="header" href="#particle-shell-parameters">Particle shell parameters</a></h3>
+<details>
+    <summary>Particle shell parameters</summary>
+<table><thead><tr><th>Parameter name</th><th>Parameter description</th><th>Example value</th><th>Possible parameter values and their descriptions</th></tr></thead><tbody>
+<tr><td>shell_point</td><td>coordinates of the shell partylock, when viewed from the 3rd person</td><td>0, 0.216, 0.174</td><td>x - left/+right, y + up/down, z - forward/+backward</td></tr>
+<tr><td>shell_dir</td><td>how the shell particle is rotated when viewed from the 3rd person</td><td>0, 0, 0.4</td><td>x - left/+right, y + up/down, z - forward/+backward</td></tr>
+<tr><td>shell_particles</td><td>shell particle</td><td>weapons\762x39</td><td>Particles file path relative to particles.xr</td></tr>
+</tbody></table>
+</details>
+<h3 id="aiming-parameters"><a class="header" href="#aiming-parameters">Aiming parameters</a></h3>
+<details>
+    <summary>Aiming parameters</summary>
+<table><thead><tr><th>Parameter name</th><th>Parameter description</th><th>Example value</th><th>Possible parameter values and their descriptions</th></tr></thead><tbody>
+<tr><td>scopes</td><td>Name of the gun sight section</td><td>1p29, kobra, ps01</td><td>Sections to models with these sights are indicated</td></tr>
+<tr><td>scope_status</td><td>Scope status</td><td>0</td><td>0 - not available<br> 1 - built-in<br> 2 - removable</td></tr>
+<tr><td>scope_zoom_factor</td><td>scope magnification</td><td>0</td><td>For the sight specified in the parameter scopes, the value can already be more</td></tr>
+</tbody></table>
+</details>
+<h3 id="parameters-of-the-silencer"><a class="header" href="#parameters-of-the-silencer">Parameters of the silencer</a></h3>
+<details>
+    <summary>Parameters of the silencer</summary>
+<table><thead><tr><th>Parameter name</th><th>Parameter description</th><th>Example value</th><th>Possible parameter values and their descriptions</th></tr></thead><tbody>
+<tr><td>silencer_name</td><td>Name of the silencer section of the gun</td><td>wpn_sil_pbs1</td><td></td></tr>
+<tr><td>silencer_status</td><td>silencer status</td><td>2</td><td>0 - not available<br> 1 - built-in<br> 2 - removable</td></tr>
+<tr><td>silencer_light_color</td><td>Parameters for changing the color of the particle of the smoke from the shot from the weapon with silencer</td><td>0.6, 0.5, 0.3</td><td></td></tr>
+<tr><td>silencer_light_range</td><td>the radius of the particle of the haze when firing</td><td>0.01</td><td></td></tr>
+<tr><td>silencer_light_time</td><td>light time</td><td>0.2</td><td></td></tr>
+<tr><td>silencer_light_var_color</td><td>Parameter for varying the color of the particle of smoke from a shot from a weapon with silencer</td><td>0.05</td><td></td></tr>
+<tr><td>silencer_light_var_range</td><td>variation of the radius of the particle of the smoke from the shot from the weapon with silencer</td><td>0.5</td><td></td></tr>
+<tr><td>silencer_smoke_particles</td><td>particle smoke effect for a shot with silencer</td><td>weapons\generic_shoot_00</td><td>Particles file path relative to particles.xr</td></tr>
+<tr><td>silencer_x</td><td>the coordinates of the silencer icon superimposed on top of the weapon icon on the X coordinate</td><td>235</td><td>Specified in numbers</td></tr>
+<tr><td>silencer_y</td><td>the coordinates of the silencer icon superimposed over the weapon icon in Y coordinate</td><td>10</td><td>Specified in numbers</td></tr>
+</tbody></table>
+</details>
+<h3 id="parameters-of-the-underbarrel-grenade-launcher"><a class="header" href="#parameters-of-the-underbarrel-grenade-launcher">Parameters of the underbarrel grenade launcher</a></h3>
+<details>
+    <summary>Parameters of the underbarrel grenade launcher</summary>
+<table><thead><tr><th>Parameter name</th><th>Parameter description</th><th>Example value</th><th>Possible parameter values and their descriptions</th></tr></thead><tbody>
+<tr><td>grenade_class</td><td>type of underbarrel grenades</td><td>ammo_vog-25, ammo_vog-25_bad, ammo_vog-25_verybad</td><td></td></tr>
+<tr><td>grenade_launcher_name</td><td>name of the section of the underbarrel grenade launcher</td><td>wpn_addon_grenade_launcher</td><td></td></tr>
+<tr><td>grenade_launcher_status</td><td>the status of the underbarrel grenade launcher</td><td>0</td><td>0 - not available<br> 1 - built-in<br> 2 - removable</td></tr>
+<tr><td>launch_speed</td><td>launch speed of the underbarrel grenade launcher</td><td>0</td><td></td></tr>
+<tr><td>grenade_flame_particles</td><td>particle of the fire from the underbarrel grenade launcher</td><td>weapons\generic_weapon01</td><td>Particles file path relative to particles.xr</td></tr>
+<tr><td>grenade_launcher_x</td><td>grenade launcher icon coordinates superimposed over the weapon icon on the X coordinate</td><td>127</td><td>Specified in numbers</td></tr>
+<tr><td>grenade_launcher_y</td><td>grenade_launcher icon coordinates superimposed over the weapon icon on the Y coordinate</td><td>18</td><td>Specified in numbers</td></tr>
+</tbody></table>
+</details>
+<h3 id="aiming-parameters-1"><a class="header" href="#aiming-parameters-1">Aiming parameters</a></h3>
+<details>
+    <summary>Aiming parameters</summary>
+<table><thead><tr><th>Parameter name</th><th>Parameter description</th><th>Example value</th><th>Possible parameter values and their descriptions</th></tr></thead><tbody>
+<tr><td>use_aim_bullet</td><td>whether the first bullet fired after a long period of inactivity will fly exactly into the crosshair</td><td>false</td><td>true (Yes) - false (No)</td></tr>
+<tr><td>time_to_aim</td><td>the time of inactivity after which the use_aim_bullet is triggered</td><td>0.0</td><td></td></tr>
+<tr><td>zoom_dof</td><td></td><td>0.5, 1.0, 180</td><td></td></tr>
+<tr><td>zoom_enabled</td><td>the ability to aim</td><td>true</td><td>true (Yes) - false (No)</td></tr>
+<tr><td>zoom_rotate_time</td><td>the speed at which the weapon goes to the &quot;aiming&quot; state, in seconds</td><td>0.25</td><td>Specified in seconds</td></tr>
+<tr><td>reload_dof</td><td></td><td>0.0, 0.5, 5, 2</td><td></td></tr>
+<tr><td>control_inertion_factor</td><td>Usability; aka inertia; affects how easily the weapon can be controlled with the mouse</td><td>1.0f</td><td></td></tr>
+<tr><td>crosshair_inertion</td><td></td><td>5.8</td><td></td></tr>
+</tbody></table>
+</details>
+<h3 id="misfire-parameters"><a class="header" href="#misfire-parameters">Misfire parameters</a></h3>
+<details>
+    <summary>Misfire parameters</summary>
+<table><thead><tr><th>Parameter name</th><th>Parameter description</th><th>Example value</th><th>Possible parameter values and their descriptions</th></tr></thead><tbody>
+<tr><td>misfire_probability</td><td>misfire_probability</td><td>maximum wear probability</td><td>0.005</td></tr>
+<tr><td>misfire_start_condition</td><td>the wear at which there is a chance of misfire</td><td>0.7</td><td></td></tr>
+<tr><td>misfire_start_prob</td><td>misfire chance of misfire when wear is greater than misfireStartCondition</td><td>0.007</td><td></td></tr>
+<tr><td>misfire_end_condition</td><td>the chance of misfire when worn out is greater than misfireEndCondition</td><td>0.05</td><td></td></tr>
+<tr><td>misfire_end_prob</td><td>wear rate at which the chance of misfire becomes constant</td><td>0.11</td><td></td></tr>
+</tbody></table>
+</details>
+<h3 id="wear-parameters"><a class="header" href="#wear-parameters">Wear parameters</a></h3>
+<details>
+    <summary>Wear parameters</summary>
+<table><thead><tr><th>Parameter name</th><th>Parameter description</th><th>Example value</th><th>Possible parameter values and their descriptions</th></tr></thead><tbody>
+<tr><td>condition_queue_shot_dec</td><td>condition_shot_dec</td><td>0.0008</td><td></td></tr>
+<tr><td>condition_shot_dec</td><td>increase wear on each shot</td><td>0.0008</td><td>0 - no wear<br> 1 - maximum wear</td></tr>
+<tr><td>fire_dispersion_condition_factor</td><td>the effect of wear on the variance of the weapon as a percentage</td><td>0.001</td><td></td></tr>
+</tbody></table>
+</details>
+<h3 id="Сamera-parameters"><a class="header" href="#Сamera-parameters">Сamera parameters</a></h3>
+<details>
+    <summary>Сamera parameters</summary>
+<table><thead><tr><th>Parameter name</th><th>Parameter description</th><th>Example value</th><th>Possible parameter values and their descriptions</th></tr></thead><tbody>
+<tr><td>cam_return</td><td>Whether to return the camera to its original position</td><td>0</td><td></td></tr>
+<tr><td>cam_relax_speed</td><td>camera return speed</td><td>10</td><td></td></tr>
+<tr><td>cam_dispersion</td><td>angle increase with each shot</td><td>0.762</td><td></td></tr>
+<tr><td>cam_dispersion_frac</td><td>barrel will rise by cam_dispersion<em>cam_dispersion_frac +- cam_dispersion</em>(1-cam_dispersion_frac)</td><td>1.0</td><td></td></tr>
+<tr><td>cam_dispersion_inc</td><td>increase cam_dispersion with each shot</td><td>0.0725</td><td></td></tr>
+<tr><td>cam_max_angle</td><td>maximum vertical recoil angle</td><td>50.0</td><td></td></tr>
+<tr><td>cam_max_angle_horz</td><td>maximum horizontal recoil angle</td><td>50.0</td><td></td></tr>
+<tr><td>cam_step_angle_horz</td><td>barrel shift horizontally during firing</td><td>1.38</td><td></td></tr>
+</tbody></table>
+</details>
+<h3 id="parameters-of-the-camera-when-aiming"><a class="header" href="#parameters-of-the-camera-when-aiming">Parameters of the camera when aiming</a></h3>
+<details>
+    <summary>Parameters of the camera when aiming</summary>
+<table><thead><tr><th>Parameter name</th><th>Parameter description</th><th>Example value</th><th>Possible parameter values and their descriptions</th></tr></thead><tbody>
+<tr><td>zoom_cam_relax_speed</td><td>similar to the return speed of the camera in the aiming mode</td><td>10</td><td></td></tr>
+<tr><td>zoom_cam_dispersion</td><td>Similar to cam_dispersion in the aiming mode</td><td>0.732</td><td></td></tr>
+<tr><td>zoom_cam_dispersion_frac</td><td>Similar to cam_dispersion_frac in aiming mode</td><td>0.7</td><td></td></tr>
+<tr><td>zoom_cam_dispersion_inc</td><td>Similar to cam_dispersion_inc in aiming mode</td><td>0.0625</td><td></td></tr>
+<tr><td>zoom_cam_max_angle</td><td>Similar to cam_max_angle in aiming mode</td><td>50.0</td><td></td></tr>
+<tr><td>zoom_cam_max_angle_horz</td><td>Similar to cam_max_angle_horz in aiming mode</td><td>50.0</td><td></td></tr>
+<tr><td>zoom_cam_step_angle_horz</td><td>Similar to cam_step_angle_horz in aiming mode</td><td>1.28</td><td></td></tr>
+</tbody></table>
+</details>
+<h3 id="parameters-for-ai"><a class="header" href="#parameters-for-ai">Parameters for AI</a></h3>
+<details>
+    <summary>Parameters for AI</summary>
+<table><thead><tr><th>Parameter name</th><th>Parameter description</th><th>Example value</th><th>Possible parameter values and their descriptions</th></tr></thead><tbody>
+<tr><td>ef_main_weapon_type</td><td>NPC weapon type</td><td>2</td><td>0 - pistol<br> 1 -shotgun<br> 2 - assault rifle<br> 3 - rifle<br> 4 - grenade launcher<br></td></tr>
+<tr><td>ef_weapon_type</td><td>NPC fire mode</td><td>8</td><td>5 - fire single shots<br> 6 - fire in bursts<br> 7 - aim and fire single shots<br> 8 - aim and fire (sniper)<br> 9 - grenade launcher</td></tr>
+<tr><td>cam_relax_speed_ai</td><td></td><td>360</td><td></td></tr>
+<tr><td>zoom_cam_relax_speed_ai</td><td></td><td>360</td><td></td></tr>
+<tr><td>holder_fov_modifier</td><td>NPC angle of view multiplier (eye_fov) with this weapon</td><td>1.0</td><td>Specified in numbers</td></tr>
+<tr><td>holder_range_modifier</td><td>NPC range multiplier (eye_range) with this weapon</td><td>1.0</td><td>Specified in numbers</td></tr>
+<tr><td>min_radius</td><td></td><td></td><td></td></tr>
+<tr><td>max_radius</td><td></td><td></td><td></td></tr>
+</tbody></table>
+</details>
+<hr />
+<h2 id="weapon-hud-parameters"><a class="header" href="#weapon-hud-parameters">Weapon HUD parameters</a></h2>
+<details>
+    <summary>General weapon HUD parameters</summary>
+<p>[wpn_<em>weapon name</em>_hud]:</p>
+<table><thead><tr><th>Parameter name</th><th>Parameter description</th><th>Example value</th><th>Possible parameter values and their descriptions</th></tr></thead><tbody>
+<tr><td>item_visual</td><td>Weapon <a href="../../../terminology/terminology.html#object_hud">hud model</a></td><td>anomaly_weapons\wpn_akm\wpn_akm_hud.ogf</td><td>File path relative to the gamedata\meshes folder</td></tr>
+<tr><td>attach_place_idx</td><td></td><td>0</td><td></td></tr>
+<tr><td>zoom_hide_crosshair</td><td>whether to remove the crosshair when aiming</td><td>true</td><td>true (Yes) - false (No)</td></tr>
+</tbody></table>
+</details>
+<h3 id="strafeinertion"><a class="header" href="#strafeinertion">Strafe/Inertion</a></h3>
+<details>
+    <summary>Strafe/Inertion</summary>
+<blockquote>
+<p>Strafe works when moving the character (WASD)</p>
+</blockquote>
+<blockquote>
+<p>Inertia works by moving the mouse</p>
+</blockquote>
+<table><thead><tr><th>Parameter name</th><th>Parameter description</th><th>Example value</th><th>Possible parameter values and their descriptions</th></tr></thead><tbody>
+<tr><td>strafe_enabled</td><td>Enabling Strafe</td><td>true</td><td>true (Yes) - false (No)</td></tr>
+<tr><td>strafe_aim_enabled</td><td>Enabling Aim Strafe</td><td>true</td><td>true (Yes) - false (No)</td></tr>
+<tr><td>strafe_hud_offset_rot</td><td>HUD rotation</td><td>1,-0.75,4.5</td><td>X - (<code>+</code>) left / (<code>-</code>) right<br> Y - (<code>+</code>) up / (<code>-</code>) down<br> Z - (<code>-</code>) roll to the right / (<code>+</code>) roll to the left</td></tr>
+<tr><td>strafe_hud_offset_pos</td><td>HUD position</td><td>0,0.002,0</td><td>X - (<code>-</code>) left / (<code>+</code>) right<br> Y - (<code>+</code>) up / (<code>-</code>) down<br> Z - (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>strafe_hud_offset_rot_16x9</td><td>HUD rotation 16x9</td><td>1,-1,5</td><td>X - (<code>+</code>) left / (<code>-</code>) right<br> Y - (<code>+</code>) up / (<code>-</code>) down<br> Z - (<code>-</code>) roll to the right / (<code>+</code>) roll to the left</td></tr>
+<tr><td>strafe_hud_offset_pos_16x9</td><td>HUD position 16x9</td><td>0,0.0023,0</td><td>X - (<code>-</code>) left / (<code>+</code>) right<br> Y - (<code>+</code>) up / (<code>-</code>) down<br> Z - (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>strafe_aim_hud_offset_rot</td><td>HUD rotation while aiming</td><td>0,-0.3,1.25</td><td>X - (<code>+</code>) left / (<code>-</code>) right<br> Y - (<code>+</code>) up / (<code>-</code>) down<br> Z - (<code>-</code>) roll to the right / (<code>+</code>) roll to the left</td></tr>
+<tr><td>strafe_aim_hud_offset_pos</td><td>HUD position while aiming</td><td>0,0.002,0</td><td>X - (<code>-</code>) left / (<code>+</code>) right<br> Y - (<code>+</code>) up / (<code>-</code>) down<br> Z - (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>strafe_aim_hud_offset_rot_16x9</td><td>HUD rotation while aiming 16x9</td><td>0,-0.5,1.75</td><td>X - (<code>+</code>) left / (<code>-</code>) right<br> Y - (<code>+</code>) up / (<code>-</code>) down<br> Z - (<code>-</code>) roll to the right / (<code>+</code>) roll to the left</td></tr>
+<tr><td>strafe_aim_hud_offset_pos_16x9</td><td>HUD position while aiming 16x9</td><td>0,0.0023,0</td><td>X - (<code>-</code>) left / (<code>+</code>) right<br> Y - (<code>+</code>) up / (<code>-</code>) down<br> Z - (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>strafe_transition_time</td><td>time to return to the original weapon position (the longer the time, the slower the return)</td><td>0.75</td><td></td></tr>
+<tr><td>strafe_aim_transition_time</td><td>time to return to the original weapon position (the longer the time, the slower the return)</td><td>0.35</td><td></td></tr>
+<tr><td>strafe_cam_limit_aim_factor</td><td></td><td>0.9</td><td></td></tr>
+<tr><td>strafe_cam_min_angle</td><td></td><td>0</td><td></td></tr>
+<tr><td>inertion_min_angle_aim</td><td></td><td>0</td><td></td></tr>
+<tr><td>inertion_offset_LRUD_aim</td><td>HUD inertion when aim</td><td>0.011, 0.011, 0.01, 0.005</td><td>L - (<code>-</code>) left / (<code>+</code>) right<br> R - (<code>-</code>) right / (<code>+</code>) left<br> U - (<code>-</code>) up / (<code>+</code>) down<br> D - (<code>-</code>) down / (<code>+</code>) up</td></tr>
+</tbody></table>
+</details>
+<h3 id="visual-recoil"><a class="header" href="#visual-recoil">Visual Recoil</a></h3>
+<details>
+    <summary>Visual Recoil</summary>
+<table><thead><tr><th>Parameter name</th><th>Parameter description</th><th>Example value</th><th>Possible parameter values and their descriptions</th></tr></thead><tbody>
+<tr><td>shooting_hud_effect</td><td>Enable Visual Recoil</td><td>true</td><td>true (Yes) - false (No)</td></tr>
+<tr><td>shooting_max_LRUD</td><td>Maximum LRUD position when firing</td><td>0.005,0.005,0.005,0</td><td>L - (<code>-</code>) left / (<code>+</code>) right<br> R - (<code>-</code>) right / (<code>+</code>) left<br> U - (<code>-</code>) up / (<code>+</code>) down<br> D - (<code>-</code>) down / (<code>+</code>) up</td></tr>
+<tr><td>shooting_max_LRUD_aim</td><td>Maximum LRUD position when firing while aim</td><td>0.0025,0.0025,0,0</td><td>L - (<code>-</code>) left / (<code>+</code>) right<br> R - (<code>-</code>) right / (<code>+</code>) left<br> U - (<code>-</code>) up / (<code>+</code>) down<br> D - (<code>-</code>) down / (<code>+</code>) up</td></tr>
+<tr><td>shooting_backward_offset</td><td></td><td>0.02,0.015</td><td></td></tr>
+<tr><td>shooting_ret_speed</td><td>time to return to the original weapon position (the longer the time, the slower the return)</td><td>7.5</td><td></td></tr>
+<tr><td>shooting_ret_aim_speed</td><td>time to return to the original weapon position (the longer the time, the slower the return)</td><td>15</td><td></td></tr>
+<tr><td>shooting_min_LRUD_power</td><td></td><td>0.01</td><td></td></tr>
+</tbody></table>
+</details>
+<h3 id="hud_movement_layers"><a class="header" href="#hud_movement_layers">hud_movement_layers</a></h3>
+<details>
+    <summary>hud_movement_layers</summary>
+<table><thead><tr><th>Parameter name</th><th>Parameter description</th><th>Example value</th><th>Possible parameter values and their descriptions</th></tr></thead><tbody>
+<tr><td>movement_layer_0</td><td>aim_walk</td><td>movement\aim_walk.anm</td><td>path and animation name</td></tr>
+<tr><td>movement_layer_1</td><td>aim_crouch</td><td>movement\aim_walk.anm</td><td>path and animation name</td></tr>
+<tr><td>movement_layer_2</td><td>crouch</td><td>movement\newwalk.anm</td><td>path and animation name</td></tr>
+<tr><td>movement_layer_3</td><td>walk</td><td>movement\newwalk.anm</td><td>path and animation name</td></tr>
+<tr><td>movement_layer_4</td><td>run</td><td>movement\newwalk.anm</td><td>path and animation name</td></tr>
+<tr><td>movement_layer_5</td><td>sprint</td><td>movement\newrunreload.anm</td><td>path and animation name</td></tr>
+</tbody></table>
+</details>
+<h3 id="empty_click_anm"><a class="header" href="#empty_click_anm">empty_click_anm</a></h3>
+<details>
+    <summary>empty_click_anm</summary>
+<table><thead><tr><th>Parameter name</th><th>Parameter description</th><th>Example value</th><th>Possible parameter values and their descriptions</th></tr></thead><tbody>
+<tr><td>empty_click_anm</td><td>Weapon animation when attempting to shoot with an empty magazine (camera animation is used)</td><td>script\misfire.anm</td><td>path and animation name</td></tr>
+<tr><td>empty_click_anm_speed</td><td></td><td>2</td><td></td></tr>
+<tr><td>empty_click_anm_power</td><td></td><td>1</td><td></td></tr>
+</tbody></table>
+</details>
+<h3 id="parameters-of-the-weapon-position"><a class="header" href="#parameters-of-the-weapon-position">Parameters of the weapon position</a></h3>
+<details>
+    <summary>Parameters of the weapon position</summary>
+<table><thead><tr><th>Parameter name</th><th>Parameter description</th><th>Example value</th><th>Possible parameter values and their descriptions</th></tr></thead><tbody>
+<tr><td>item_position</td><td>weapon position in relation to the arms</td><td>0, 0, 0</td><td>X - (<code>-</code>) left / (<code>+</code>) right<br> Y - (<code>+</code>) up / (<code>-</code>) down<br> Z - (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>item_orientation</td><td>weapon orientation in relation to the arms</td><td>0, 0, 0</td><td>X - (<code>+</code>) left / (<code>-</code>) right<br> Y - (<code>+</code>) up / (<code>-</code>) down<br> Z - (<code>-</code>) roll to the right / (<code>+</code>) roll to the left</td></tr>
+</tbody></table>
+</details>
+<h4 id="hud-parameters-with-weapon"><a class="header" href="#hud-parameters-with-weapon">HUD parameters with weapon</a></h4>
+<details>
+    <summary>HUD parameters with weapon</summary>
+<table><thead><tr><th>Parameter name</th><th>Parameter description</th><th>Example value</th><th>Possible parameter values and their descriptions</th></tr></thead><tbody>
+<tr><td>hands_position</td><td>Hands and weapon position</td><td>-0.072, -0.15, 0.1</td><td>X - (<code>-</code>) left / (<code>+</code>) right<br> Y - (<code>+</code>) up / (<code>-</code>) down<br> Z - (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>hands_position_16x9</td><td>Hands and weapon position for 16x9 monitors</td><td>-0.072, -0.15, 0.1</td><td>X - (<code>-</code>) left / (<code>+</code>) right<br> Y - (<code>+</code>) up / (<code>-</code>) down<br> Z - (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>hands_orientation</td><td>direction (orientation) of the hands and arms</td><td>0.55, 2.39, 0.15</td><td>X - (<code>+</code>) left / (<code>-</code>) right<br> Y - (<code>+</code>) up / (<code>-</code>) down<br> Z - (<code>-</code>) roll to the right / (<code>+</code>) roll to the left</td></tr>
+<tr><td>hands_orientation_16x9</td><td>direction (orientation) of arms and weapons for 16x9 monitors</td><td>0.55, 2.39, 0.15</td><td>X - (<code>+</code>) left / (<code>-</code>) right<br> Y - (<code>+</code>) up / (<code>-</code>) down<br> Z - (<code>-</code>) roll to the right / (<code>+</code>) roll to the left</td></tr>
+</tbody></table>
+</details>
+<h3 id="hud-parameters-when-aiming"><a class="header" href="#hud-parameters-when-aiming">HUD parameters when aiming</a></h3>
+<details>
+    <summary>HUD parameters when aiming</summary>
+<table><thead><tr><th>Parameter name</th><th>Parameter description</th><th>Example value</th><th>Possible parameter values and their descriptions</th></tr></thead><tbody>
+<tr><td>aim_hud_offset_pos</td><td>aiming shift</td><td>-0.0818, 0.05494, -0.25</td><td>X - (<code>-</code>) left / (<code>+</code>) right<br> Y - (<code>+</code>) up / (<code>-</code>) down<br> Z - (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>aim_hud_offset_pos_16x9</td><td>aiming hand shift for 16x9 monitors</td><td>-0.0818, 0.05494, -0.25</td><td>X - (<code>-</code>) left / (<code>+</code>) right<br> Y - (<code>+</code>) up / (<code>-</code>) down<br> Z - (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>aim_hud_offset_rot</td><td>orientation of the arms with the weapon when aiming</td><td>0.0407, 0.00886, -0.00495</td><td>X - (<code>+</code>) left / (<code>-</code>) right<br> Y - (<code>+</code>) up / (<code>-</code>) down<br> Z - (<code>-</code>) roll to the right / (<code>+</code>) roll to the left</td></tr>
+<tr><td>aim_hud_offset_rot_16x9</td><td>aiming hand orientation for 16x9 monitors</td><td>0.0407, 0.00886, -0.00495</td><td>X - (<code>+</code>) left / (<code>-</code>) right<br> Y - (<code>+</code>) up / (<code>-</code>) down<br> Z - (<code>-</code>) roll to the right / (<code>+</code>) roll to the left</td></tr>
+</tbody></table>
+</details>
+<h3 id="hud-parameters-when-ugl-is-active"><a class="header" href="#hud-parameters-when-ugl-is-active">HUD parameters when UGL is active</a></h3>
+<details>
+    <summary>HUD parameters when UGL is active</summary>
+<table><thead><tr><th>Parameter name</th><th>Parameter description</th><th>Example value</th><th>Possible parameter values and their descriptions</th></tr></thead><tbody>
+<tr><td>gl_hud_offset_pos</td><td>gun arm displacement when aiming from the holster</td><td>-0.0491, 0.005, -0.155</td><td>X - (<code>-</code>) left / (<code>+</code>) right<br> Y - (<code>+</code>) up / (<code>-</code>) down<br> Z - (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>gl_hud_offset_pos_16x9</td><td>gun hand offset when aiming from the arming cradle for 16x9 monitors</td><td>-0.0491, 0.005, -0.155</td><td>X - (<code>-</code>) left / (<code>+</code>) right<br> Y - (<code>+</code>) up / (<code>-</code>) down<br> Z - (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>gl_hud_offset_rot</td><td>the orientation of the arms with the weapon when aiming from the arming cube</td><td>-0.067, 0.0063, -0.02</td><td>X - (<code>+</code>) left / (<code>-</code>) right<br> Y - (<code>+</code>) up / (<code>-</code>) down<br> Z - (<code>-</code>) roll to the right / (<code>+</code>) roll to the left</td></tr>
+<tr><td>gl_hud_offset_rot_16x9</td><td>orientation of the arms with weapon when aiming from the arming cube for 16x9 monitors</td><td>-0.067, 0.0063, -0.02</td><td>X - (<code>+</code>) left / (<code>-</code>) right<br> Y - (<code>+</code>) up / (<code>-</code>) down<br> Z - (<code>-</code>) roll to the right / (<code>+</code>) roll to the left</td></tr>
+</tbody></table>
+</details>
+<h3 id="hud-parameters-when-weapon-lowered"><a class="header" href="#hud-parameters-when-weapon-lowered">HUD parameters when weapon lowered</a></h3>
+<details>
+    <summary>HUD parameters when weapon lowered</summary>
+<table><thead><tr><th>Parameter name</th><th>Parameter description</th><th>Example value</th><th>Possible parameter values and their descriptions</th></tr></thead><tbody>
+<tr><td>safemode_anm</td><td>Weapon animation when weapon goes to safe mode (camera animation is used)</td><td>script\to_lower.anm</td><td>path and animation name</td></tr>
+<tr><td>safemode_anm_speed</td><td></td><td>1.2</td><td></td></tr>
+<tr><td>safemode_anm_power</td><td></td><td>1</td><td></td></tr>
+<tr><td>safemode_anm2</td><td>Weapon animation when weapon comes out of safe mode (camera animation is used)</td><td>script\from_lower.anm</td><td>path and animation name</td></tr>
+<tr><td>safemode_anm_speed2</td><td></td><td>1.3</td><td></td></tr>
+<tr><td>safemode_anm_power2</td><td></td><td>0.6</td><td></td></tr>
+<tr><td>lowered_hud_offset_pos</td><td>Position of arms and hands when the weapon is lowered</td><td>0, 0, 0</td><td>X - (<code>-</code>) left / (<code>+</code>) right<br> Y - (<code>+</code>) up / (<code>-</code>) down<br> Z - (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>lowered_hud_offset_rot</td><td>Rotation of arms and hands when the weapon is lowered</td><td>0, 0, 0</td><td>X - (<code>+</code>) left / (<code>-</code>) right<br> Y - (<code>+</code>) up / (<code>-</code>) down<br> Z - (<code>-</code>) roll to the right / (<code>+</code>) roll to the left</td></tr>
+<tr><td>lowered_hud_offset_pos_16x9</td><td>Position of arms and hands when the weapon is lowered</td><td>0, 0, 0</td><td>X - (<code>-</code>) left / (<code>+</code>) right<br> Y - (<code>+</code>) up / (<code>-</code>) down<br> Z - (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>lowered_hud_offset_rot_16x9</td><td>Rotation of arms and hands when the weapon is lowered</td><td>0, 0, 0</td><td>X - (<code>+</code>) left / (<code>-</code>) right<br> Y - (<code>+</code>) up / (<code>-</code>) down<br> Z - (<code>-</code>) roll to the right / (<code>+</code>) roll to the left</td></tr>
+</tbody></table>
+</details>
+<h3 id="hud-parameters-when-leaning"><a class="header" href="#hud-parameters-when-leaning">HUD parameters when leaning</a></h3>
+<details>
+    <summary>HUD parameters when leaning</summary>
+<table><thead><tr><th>Parameter name</th><th>Parameter description</th><th>Example value</th><th>Possible parameter values and their descriptions</th></tr></thead><tbody>
+<tr><td>lean_hud_offset_pos</td><td>Weapon and arm positions when the character is leaning</td><td>0, 0, 0</td><td>X - (<code>-</code>) left / (<code>+</code>) right<br> Y - (<code>+</code>) up / (<code>-</code>) down<br> Z - (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>lean_hud_offset_rot</td><td>Weapon and arm rotation when the character is leaning</td><td>0, 0, 0</td><td>X - (<code>+</code>) left / (<code>-</code>) right<br> Y - (<code>+</code>) up / (<code>-</code>) down<br> Z - (<code>-</code>) roll to the right / (<code>+</code>) roll to the left</td></tr>
+<tr><td>lean_hud_offset_pos_16x9</td><td>Weapon and arm positions when the character is leaning</td><td>0, 0, 0</td><td>X - (<code>-</code>) left / (<code>+</code>) right<br> Y - (<code>+</code>) up / (<code>-</code>) down<br> Z - (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>lean_hud_offset_rot_16x9</td><td>Weapon and arm rotation when the character is leaning</td><td>0, 0, 0</td><td>X - (<code>+</code>) left / (<code>-</code>) right<br> Y - (<code>+</code>) up / (<code>-</code>) down<br> Z - (<code>-</code>) roll to the right / (<code>+</code>) roll to the left</td></tr>
+</tbody></table>
+</details>
+<h3 id="parameters-of-sounds"><a class="header" href="#parameters-of-sounds">Parameters of sounds</a></h3>
+<p>You can read about the parameters of the sounds <a href="weapon_sounds.ltx.html">here</a></p>
+<h3 id="hud-parameters-of-the-shells-sprite"><a class="header" href="#hud-parameters-of-the-shells-sprite">HUD parameters of the shells sprite</a></h3>
+<details>
+    <summary>HUD parameters of the shells sprite</summary>
+<table><thead><tr><th>Parameter name</th><th>Parameter description</th><th>Example value</th><th>Possible parameter values and their descriptions</th></tr></thead><tbody>
+<tr><td>shell_bone</td><td>bone which will be considered the origin of coordinates for the shell sprite in 1st person view</td><td>wpn_body</td><td>Bone Name</td></tr>
+<tr><td>shell_dir</td><td>the offset parameter of the shells after departure, in 1st person view</td><td>0, 1, 0</td><td>X - (<code>-</code>) left / (<code>+</code>) right<br> Y - (<code>+</code>) up / (<code>-</code>) down<br> Z - (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>shell_point</td><td>Coordinates of the bullets ejection point in 1st person view</td><td>0, 0.064, 0.19</td><td>X - (<code>-</code>) left / (<code>+</code>) right<br> Y - (<code>+</code>) up / (<code>-</code>) down<br> Z - (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+</tbody></table>
+</details>
+<h3 id="hud-parameters-of-particle-sprite"><a class="header" href="#hud-parameters-of-particle-sprite">HUD parameters of particle sprite</a></h3>
+<details>
+    <summary>HUD parameters of particle sprite</summary>
+<table><thead><tr><th>Parameter name</th><th>Parameter description</th><th>Example value</th><th>Possible parameter values and their descriptions</th></tr></thead><tbody>
+<tr><td>fire_bone</td><td>the name of the fire particle bone of the weapon hud-model</td><td>wpn_body</td><td>Bone Name</td></tr>
+<tr><td>fire_bone2</td><td>UGL fire particle bone</td><td>wpn_body</td><td>Bone Name</td></tr>
+<tr><td>fire_point</td><td>coordinates of the fire particle, when viewed from the 1st person</td><td>0, 0.051841, 0.535482</td><td>X - (<code>-</code>) left / (<code>+</code>) right<br> Y - (<code>+</code>) up / (<code>-</code>) down<br> Z - (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>fire_point2</td><td>Coordinates of the fire particles, when viewed from the 1st person when firing the underbarrel grenade launcher</td><td>0, -0.011, 0.553</td><td>X - (<code>-</code>) left / (<code>+</code>) right<br> Y - (<code>+</code>) up / (<code>-</code>) down<br> Z - (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+</tbody></table>
+</details>
+<h3 id="camera"><a class="header" href="#camera">Camera</a></h3>
+<details>
+    <summary>Camera</summary>
+<table><thead><tr><th>Parameter name</th><th>Parameter description</th><th>Example value</th><th>Possible parameter values and their descriptions</th></tr></thead><tbody>
+<tr><td>freeelook_z_offset_mul</td><td>Сamera displacement along the z-axis when the camera moves freely</td><td>0.4</td><td>Z - (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+</tbody></table>
+</details>
+<h3 id="hud-animations-parameters"><a class="header" href="#hud-animations-parameters">HUD animations parameters</a></h3>
+<details>
+    <summary>Idle animations</summary>
+<table><thead><tr><th>Parameter name</th><th>Parameter description</th><th>Example value</th><th>Possible parameter values and their descriptions</th></tr></thead><tbody>
+<tr><td>anm_idle</td><td>Idle animation</td><td></td><td></td></tr>
+<tr><td>anm_idle_empty</td><td>Idle animation of an empty magazine</td><td></td><td></td></tr>
+<tr><td>anm_idle_aim</td><td>Idle animation in aiming mode</td><td></td><td></td></tr>
+<tr><td>anm_idle_g</td><td>Idle animation of a grenade launcher</td><td></td><td></td></tr>
+<tr><td>anm_idle_g_aim</td><td>grenade launcher targeting animation</td><td></td><td></td></tr>
+<tr><td>anm_idle_w_gl</td><td>Idle animation with grenade launcher attached to the weapon</td><td></td><td></td></tr>
+<tr><td>anm_idle_w_gl_aim</td><td>Idle animation with a grenade launcher attached to the weapon when aiming</td><td></td><td></td></tr>
+</tbody></table>
+</details>
+<details>
+    <summary>Motion animations</summary>
+<table><thead><tr><th>Parameter name</th><th>Parameter description</th><th>Example value</th><th>Possible parameter values and their descriptions</th></tr></thead><tbody>
+<tr><td>anm_idle_aim_moving</td><td>animation in the aiming mode when moving</td><td>Animation Name</td><td></td></tr>
+<tr><td>anm_idle_aim_moving_crouch</td><td>Animation in the aiming mode when moving in a crouch</td><td>Animation Name</td><td></td></tr>
+<tr><td>anm_idle_moving</td><td>motion animation</td><td>Animation Name</td><td></td></tr>
+<tr><td>anm_idle_moving_empty</td><td>motion animation with an empty magazine</td><td>Animation Name</td><td></td></tr>
+<tr><td>anm_idle_moving_crouch_g_aim</td><td>crouch walking animation with a grenade launcher attached to the weapon</td><td>Animation Name</td><td></td></tr>
+<tr><td>anm_idle_moving_crouch_w_gl_aim</td><td>animate walking while crouching with a grenade launcher attached to the weapon while aiming</td><td>Animation Name</td><td></td></tr>
+<tr><td>anm_idle_moving_g</td><td></td><td>Animation Name</td><td></td></tr>
+<tr><td>anm_idle_moving_g_aim</td><td></td><td>Animation Name</td><td></td></tr>
+<tr><td>anm_idle_moving_w_gl</td><td>the walking animation with a grenade launcher attached to the weapon</td><td>Animation Name</td><td></td></tr>
+<tr><td>anm_idle_moving_w_gl_aim</td><td>animate walking with a grenade launcher attached to the weapon while aiming</td><td>Animation Name</td><td></td></tr>
+<tr><td>anm_idle_sprint</td><td>Running animation</td><td>Animation Name</td><td></td></tr>
+<tr><td>anm_idle_sprint_empty</td><td>Running animation with an empty magazine</td><td>Animation Name</td><td></td></tr>
+<tr><td>anm_idle_sprint_g</td><td>Animation Name</td><td></td><td></td></tr>
+<tr><td>anm_idle_sprint_w_gl</td><td>running animation with a grenade launcher attached</td><td>Animation Name</td><td></td></tr>
+<tr><td>anm_hide</td><td>hiding animation</td><td>Animation Name</td><td></td></tr>
+<tr><td>anm_hide_empty</td><td>Hiding animation with an empty magazine</td><td>Animation Name</td><td></td></tr>
+<tr><td>anm_hide_g</td><td></td><td>Animation Name</td><td></td></tr>
+<tr><td>anm_hide_w_gl</td><td>a hiding animation with an attached grenade launcher</td><td>Animation Name</td><td></td></tr>
+<tr><td>anm_show</td><td>show animation</td><td>Animation Name</td><td></td></tr>
+<tr><td>anm_show_empty</td><td>Show animation with an empty magazine</td><td>Animation Name</td><td></td></tr>
+<tr><td>anm_show_g</td><td></td><td>Animation Name</td><td></td></tr>
+<tr><td>anm_show_w_gl</td><td>show animation of pulling out a weapon with a grenade launcher attached</td><td>Animation Name</td><td></td></tr>
+<tr><td>anm_bore</td><td>Boredom animation</td><td>Animation Name</td><td></td></tr>
+</tbody></table>
+</details>
+<details>
+    <summary>Weapon animations</summary>
+<table><thead><tr><th>Parameter name</th><th>Parameter description</th><th>Example value</th><th>Possible parameter values and their descriptions</th></tr></thead><tbody>
+<tr><td>anm_reload</td><td>Reloading (When there is still a bullet in the chamber)</td><td>Animation Name</td><td></td></tr>
+<tr><td>anm_reload_empty</td><td>Reloading</td><td>Animation Name</td><td></td></tr>
+<tr><td>anm_reload_g</td><td>grenade launcher reload</td><td>Animation Name</td><td></td></tr>
+<tr><td>anm_reload_w_gl</td><td>reloading of the weapon with a grenade launcher attached</td><td>Animation Name</td><td></td></tr>
+<tr><td>anm_shots</td><td>Shot animation</td><td>Animation Name</td><td></td></tr>
+<tr><td>anm_shot_l</td><td>Last shot animation</td><td>Animation Name</td><td></td></tr>
+<tr><td>anm_shots_g</td><td>underbarrel grenade launcher shot animation</td><td>Animation Name</td><td></td></tr>
+<tr><td>anm_shots_w_gl</td><td>underbarrel grenade launcher shot animation</td><td>Animation Name</td><td></td></tr>
+<tr><td>anm_switch</td><td>Animation of switching to alternate firing mode</td><td>Animation Name</td><td></td></tr>
+<tr><td>anm_switch_g</td><td>Animation of switching to underbarrel grenade launcher firing mode</td><td>Animation Name</td><td></td></tr>
+</tbody></table>
+</details>
+<h2 id="sources"><a class="header" href="#sources">Sources</a></h2>
+<p><a href="https://modfaq.ru/%D0%9F%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D1%8B_%D0%BE%D1%80%D1%83%D0%B6%D0%B8%D1%8F">Source</a></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../../reference/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../../../configs/items/weapons/weapon_ammo.ltx.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../../reference/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../../../configs/items/weapons/weapon_ammo.ltx.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

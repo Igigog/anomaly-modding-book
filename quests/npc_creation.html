@@ -1,0 +1,514 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>NPC Creation - Anomaly Modding Book</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../src/custom.css">
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../meta/index.html"><strong aria-hidden="true">1.</strong> Meta</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../meta/contributing/index.html"><strong aria-hidden="true">1.1.</strong> Contributing to this book</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../getting-started/index.html"><strong aria-hidden="true">2.</strong> Mod Organizer</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../getting-started/installing-mo2.html"><strong aria-hidden="true">2.1.</strong> Installing MO2</a></li><li class="chapter-item expanded "><a href="../getting-started/addon-installers.html"><strong aria-hidden="true">2.2.</strong> Addon installers</a></li><li class="chapter-item expanded "><a href="../getting-started/package-naming.html"><strong aria-hidden="true">2.3.</strong> Package Naming for MO2</a></li><li class="chapter-item expanded "><a href="../getting-started/vs-code-game-files-setup.html"><strong aria-hidden="true">2.4.</strong> Configuring VSCode-like programs to handle game files</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Addons</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../addons/dltx.html"><strong aria-hidden="true">3.1.</strong> DLTX</a></li><li class="chapter-item expanded "><a href="../addons/dxml.html"><strong aria-hidden="true">3.2.</strong> DXML</a></li><li class="chapter-item expanded "><a href="../addons/mcm.html"><strong aria-hidden="true">3.3.</strong> MCM</a></li><li class="chapter-item expanded "><a href="../addons/pdb.html"><strong aria-hidden="true">3.4.</strong> PDB files</a></li><li class="chapter-item expanded "><a href="../addons/lua-unlocalizer.html"><strong aria-hidden="true">3.5.</strong> Lua Unlocalizer</a></li><li class="chapter-item expanded "><a href="../addons/useful-addons-scripts-utils.html"><strong aria-hidden="true">3.6.</strong> Useful addons, scripts and utils</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> Configs</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../configs/structure-of-files.html"><strong aria-hidden="true">4.1.</strong> Structure of Files</a></li><li class="chapter-item expanded "><a href="../configs/condlists.html"><strong aria-hidden="true">4.2.</strong> Condlists</a></li><li class="chapter-item expanded "><a href="../configs/inventory_icons.html"><strong aria-hidden="true">4.3.</strong> Inventory Icons</a></li><li class="chapter-item expanded "><a href="../configs/algoritm-of-logic.html"><strong aria-hidden="true">4.4.</strong> Algoritm of Logic</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../scripting/index.html"><strong aria-hidden="true">5.</strong> Scripting</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../scripting/codebase_introduction.html"><strong aria-hidden="true">5.1.</strong> Introduction to codebase</a></li><li class="chapter-item expanded "><a href="../scripting/codestyle.html"><strong aria-hidden="true">5.2.</strong> Codestyle</a></li><li class="chapter-item expanded "><a href="../scripting/wetting_hands.html"><strong aria-hidden="true">5.3.</strong> Wetting our hands</a></li><li class="chapter-item expanded "><a href="../scripting/server_and_game_objects.html"><strong aria-hidden="true">5.4.</strong> Server and game objects</a></li><li class="chapter-item expanded "><a href="../scripting/callbacks.html"><strong aria-hidden="true">5.5.</strong> Callbacks</a></li><li class="chapter-item expanded "><a href="../scripting/time_events.html"><strong aria-hidden="true">5.6.</strong> Time events</a></li><li class="chapter-item expanded "><a href="../scripting/monkey-patching.html"><strong aria-hidden="true">5.7.</strong> Monkey patching</a></li><li class="chapter-item expanded "><a href="../scripting/script_animations.html"><strong aria-hidden="true">5.8.</strong> Script Animations</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> Modelling</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../blender/creating-model-in-blender.html"><strong aria-hidden="true">6.1.</strong> Creating model in Blender</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.</strong> Animating</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../blender/creating-hud-animation-in-blender.html"><strong aria-hidden="true">7.1.</strong> Creating an animation</a></li><li class="chapter-item expanded "><a href="../blender/creating-camera-animations.html"><strong aria-hidden="true">7.2.</strong> Creating animations for the camera</a></li><li class="chapter-item expanded "><a href="../blender/editing-existing-animations.html"><strong aria-hidden="true">7.3.</strong> Editing existing animations</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../texturing/index.html"><strong aria-hidden="true">8.</strong> Texturing</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../texturing/сreating-and-preparing-textures.html"><strong aria-hidden="true">8.1.</strong> Creating and preparing textures</a></li><li class="chapter-item expanded "><a href="../texturing/working-correctly-with-icon-atlases.html"><strong aria-hidden="true">8.2.</strong> Working correctly with icon atlases</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../mapping/index.html"><strong aria-hidden="true">9.</strong> Mapping</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../blender/creating-a-location-in-blender.html"><strong aria-hidden="true">9.1.</strong> Creating a location in Blender</a></li><li class="chapter-item expanded "><a href="../mapping/multimaterial-terrain.html"><strong aria-hidden="true">9.2.</strong> Multimaterial Terrain Guide</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../quests/index.html"><strong aria-hidden="true">10.</strong> Quests</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../quests/introduction.html"><strong aria-hidden="true">10.1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../quests/npc_creation.html" class="active"><strong aria-hidden="true">10.2.</strong> NPC Creation</a></li><li class="chapter-item expanded "><a href="../quests/task_guide.html"><strong aria-hidden="true">10.3.</strong> Task Creation</a></li><li class="chapter-item expanded "><a href="../quests/dialogues.html"><strong aria-hidden="true">10.4.</strong> Dialogue Creation</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">11.</strong> Reference/General</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../terminology/terminology.html"><strong aria-hidden="true">11.1.</strong> Terminology</a></li><li class="chapter-item expanded "><a href="../main-folders-and-files/index.html"><strong aria-hidden="true">11.2.</strong> Main Folders And Files</a></li><li class="chapter-item expanded "><a href="../main-folders-and-files/file-formats/index.html"><strong aria-hidden="true">11.3.</strong> File Formats</a></li><li class="chapter-item expanded "><a href="../crash-list/crashes-list.html"><strong aria-hidden="true">11.4.</strong> Crash List</a></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">12.</strong> Reference/Configs</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../configs/items/weapons/w_(weapon).ltx.html"><strong aria-hidden="true">12.1.</strong> Weapon Configuration Parameters</a></li><li class="chapter-item expanded "><a href="../configs/items/weapons/weapon_ammo.ltx.html"><strong aria-hidden="true">12.2.</strong> Ammo Configuration Parameters</a></li><li class="chapter-item expanded "><a href="../configs/items/weapons/weapon_sounds.ltx.html"><strong aria-hidden="true">12.3.</strong> Weapon Sounds Parameters</a></li><li class="chapter-item expanded "><a href="../configs/items/outfits/o_(outfit).ltx.html"><strong aria-hidden="true">12.4.</strong> Oufits Configuration Parameters</a></li><li class="chapter-item expanded "><a href="../configs/creatures/m_(mutant).ltx.html"><strong aria-hidden="true">12.5.</strong> Mutants Configuration Parameters</a></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">13.</strong> Reference/Shaders</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../shaders/shaders-list/materials-list.html"><strong aria-hidden="true">13.1.</strong> Material Shaders List</a></li><li class="chapter-item expanded "><a href="../shaders/shaders-list/shaders-list.html"><strong aria-hidden="true">13.2.</strong> Shaders List</a></li><li class="chapter-item expanded "><a href="../shaders/shaders-list/compiler-shaders-list.html"><strong aria-hidden="true">13.3.</strong> Compiler Shaders List</a></li><li class="chapter-item expanded "><a href="../shaders/shaders-list/sound-envornment-list.html"><strong aria-hidden="true">13.4.</strong> Sound Envornment List</a></li></ol></li><li class="chapter-item expanded "><a href="../engine/index.html"><strong aria-hidden="true">14.</strong> Reference/Engine</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../engine/console-commands.html"><strong aria-hidden="true">14.1.</strong> Console commands</a></li><li class="chapter-item expanded "><a href="../engine/alife.html"><strong aria-hidden="true">14.2.</strong> A-Life (AI)</a></li><li class="chapter-item expanded "><a href="../engine/engine-classes.html"><strong aria-hidden="true">14.3.</strong> Engine Classes</a></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">15.</strong> Reference/Resources</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../resources/audio.html"><strong aria-hidden="true">15.1.</strong> Audio</a></li><li class="chapter-item expanded "><a href="../resources/models-objects-locations.html"><strong aria-hidden="true">15.2.</strong> Models</a></li><li class="chapter-item expanded "><a href="../resources/sdk-resources.html"><strong aria-hidden="true">15.3.</strong> SDK resources</a></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">16.</strong> Reference/Tools</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../modding-tools/modding-tools.html"><strong aria-hidden="true">16.1.</strong> Modding Tools List</a></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/index.html"><strong aria-hidden="true">16.2.</strong> In-Game Editors</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/item-spawner.html"><strong aria-hidden="true">16.2.1.</strong> Item Spawner</a></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/lightning-editor.html"><strong aria-hidden="true">16.2.2.</strong> Lightning Editor</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">16.2.3.</strong> NPC Logic/Execute</div></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/object-spawner.html"><strong aria-hidden="true">16.2.4.</strong> Object Spawner</a></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/outfits-weapon-stats-editor.html"><strong aria-hidden="true">16.2.5.</strong> Outfits/Weapons Stats Editor</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">16.2.6.</strong> Pocket Workshop</div></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/weapon-hud-editor.html"><strong aria-hidden="true">16.2.7.</strong> Weapon HUD Editor</a></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/weather-editor.html"><strong aria-hidden="true">16.2.8.</strong> Weather Editor</a></li></ol></li><li class="chapter-item expanded "><a href="../modding-tools/ltx-support.html"><strong aria-hidden="true">16.3.</strong> Ltx Support</a></li><li class="chapter-item expanded "><a href="../sdk/index.html"><strong aria-hidden="true">16.4.</strong> SDK 0.7</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../sdk/interface.html"><strong aria-hidden="true">16.4.1.</strong> Interface</a></li><li class="chapter-item expanded "><a href="../sdk/actor-editor.html"><strong aria-hidden="true">16.4.2.</strong> Actor Editor</a></li><li class="chapter-item expanded "><a href="../sdk/image-editor.html"><strong aria-hidden="true">16.4.3.</strong> Image Editor</a></li><li class="chapter-item expanded "><a href="../sdk/level-editor.html"><strong aria-hidden="true">16.4.4.</strong> Level Editor</a></li><li class="chapter-item expanded "><a href="../sdk/shader-editor.html"><strong aria-hidden="true">16.4.5.</strong> Shader Editor</a></li><li class="chapter-item expanded "><a href="../sdk/sound-editor.html"><strong aria-hidden="true">16.4.6.</strong> Sound Editor</a></li><li class="chapter-item expanded "><a href="../sdk/postprocess-editor.html"><strong aria-hidden="true">16.4.7.</strong> Postprocess Editor</a></li><li class="chapter-item expanded "><a href="../sdk/particle-editor.html"><strong aria-hidden="true">16.4.8.</strong> Particle Editor (Not finished)</a></li></ol></li><li class="chapter-item expanded "><a href="../blender/blender-x-ray-addon-summary.html"><strong aria-hidden="true">16.5.</strong> Blender X-Ray Addon</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../blender/advanced-settings.html"><strong aria-hidden="true">16.5.1.</strong> Advanced settings</a></li><li class="chapter-item expanded "><a href="../blender/x-ray-addon-panels.html"><strong aria-hidden="true">16.5.2.</strong> Panels</a></li><li class="chapter-item expanded "><a href="../blender/x-ray-side-panels.html"><strong aria-hidden="true">16.5.3.</strong> Side Panel</a></li></ol></li><li class="chapter-item expanded "><a href="../modding-tools/stalker-studio.html"><strong aria-hidden="true">16.6.</strong> Stalker Studio</a></li><li class="chapter-item expanded "><a href="../modding-tools/thm-editor-by-i-love-kfc.html"><strong aria-hidden="true">16.7.</strong> THM Editor</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../modding-tools/thm-editor-by-valerok.html"><strong aria-hidden="true">16.7.1.</strong> Modified THM Editor</a></li></ol></li><li class="chapter-item expanded "><a href="../modding-tools/bump-generator.html"><strong aria-hidden="true">16.8.</strong> Bump Generator</a></li><li class="chapter-item expanded "><a href="../modding-tools/savandt.html"><strong aria-hidden="true">16.9.</strong> Sound Attribute Viewer And Tweaker</a></li><li class="chapter-item expanded "><a href="../modding-tools/upgrade-editor.html"><strong aria-hidden="true">16.10.</strong> Upgrade Editor</a></li><li class="chapter-item expanded "><a href="../modding-tools/omf-editor-by-valerok.html"><strong aria-hidden="true">16.11.</strong> Modified OMF Editor</a></li><li class="chapter-item expanded "><a href="../modding-tools/ogf-editor-by-valerok.html"><strong aria-hidden="true">16.12.</strong> Modified OGF Editor</a></li><li class="chapter-item expanded "><a href="../modding-tools/xray-export-tool.html"><strong aria-hidden="true">16.13.</strong> X-Ray Export Tool</a></li><li class="chapter-item expanded "><a href="../modding-tools/universal-x64-level-compilers.html"><strong aria-hidden="true">16.14.</strong> Universal x64 level compilers</a></li><li class="chapter-item expanded "><a href="../modding-tools/xrcompress-by-i-love-kfc.html"><strong aria-hidden="true">16.15.</strong> xrCompress</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Anomaly Modding Book</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Igigog/anomaly-modding-book" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Igigog/anomaly-modding-book/edit/main/src/quests/npc_creation.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="npc-creation"><a class="header" href="#npc-creation">NPC Creation</a></h1>
+<p>Written by GhenTuong#1278
+Formatted and edited by @nltp_ashes</p>
+<p>Table of content :</p>
+<ul>
+<li><a href="npc_creation.html#chapter-1--configuration">Chapter 1 : Configuration</a></li>
+<li><a href="npc_creation.html#chapter-1a--creating-your-own-mod-files-for-character-creation">Chapter 1.A : Creating your own mod files for character creation</a></li>
+<li><a href="npc_creation.html#chapter-2--npc-section">Chapter 2 : NPC section</a></li>
+<li><a href="npc_creation.html#chapter-3--npc-profile">Chapter 3 : NPC profile</a></li>
+<li><a href="npc_creation.html#chapter-4--squad-and-smart-terrain">Chapter 4 : Squad and smart terrain</a></li>
+<li><a href="npc_creation.html#chapter-5--spawn">Chapter 5 : Spawn</a></li>
+<li><a href="npc_creation.html#chapter-5a--spawn-by-script">Chapter 5.A : Spawn by script</a></li>
+<li><a href="npc_creation.html#chapter-5b--spawn-by-adding-to-simulationltx">Chapter 5.B : Spawn by adding to simulation.ltx</a></li>
+</ul>
+<hr />
+<h2 id="chapter-1--configuration"><a class="header" href="#chapter-1--configuration">Chapter 1 : Configuration</a></h2>
+<p>What is stalker configuration:<br />
+All dynamic objects are configured in <code>_unpacked\configs\system.ltx</code>.<br />
+To not overcrowd the file, different configurations are grouped into multiple files, and they are included in system.ltx.</p>
+<p>What files to pay attention to:</p>
+<ul>
+<li><code>_unpacked\configs\creatures\*</code></li>
+<li><code>_unpacked\configs\gameplay\*</code></li>
+<li><code>_unpacked\configs\misc\squad_descr\*</code></li>
+<li><code>_unpacked\configs\scripts\*</code></li>
+</ul>
+<h2 id="chapter-1a-creating-your-own-mod-files-for-character-creation"><a class="header" href="#chapter-1a-creating-your-own-mod-files-for-character-creation">Chapter 1.A: Creating your own mod files for character creation</a></h2>
+<p>While it's possible to configurate the files already present, for independent addons it's advisable to create your own files.</p>
+<p>One of the methods is by including your files: </p>
+<p>NB: &quot;my_mod_name&quot; will stand for whatever name you choose.
+- for example if you want to call your mod &quot;revolution&quot;, the file names would be:
+- spawn_sections_revolution.ltx
+- character_desc_revolution.xml
+- dialogs_revolution.xml
+- npc_profile_revolution.xml
+- squad_descr_revolution.ltx</p>
+<p><strong>File :</strong> <code>_unpacked\configs\creatures\spawn_section.ltx</code> </p>
+<ul>
+<li>you add:  #include &quot;spawn_sections_my_mod_name.ltx&quot;</li>
+</ul>
+<p><strong>Folder :</strong> <code>_unpacked\configs\creatures\</code></p>
+<ul>
+<li>you add a file called: spawn_sections_my_mod_name.ltx</li>
+</ul>
+<p><strong>File :</strong> <code>_unpacked\configs\system.ltx</code></p>
+<ul>
+<li>you add in the line of [dialogs]: dialogs_my_mod_name</li>
+<li>you add in the line of [profiles]: 
+<ul>
+<li>in the line of &quot;files&quot;: npc_profile_my_mod_name</li>
+<li>in the line of &quot;specific_characters_files&quot;: character_desc_my_mod_name</li>
+</ul>
+</li>
+</ul>
+<p><strong>Folder :</strong> <code>_unpacked\configs\gameplay\</code></p>
+<ul>
+<li>you add the files:
+<ul>
+<li>character_desc_my_mod_name.xml</li>
+<li>dialogs_my_mod_name.xml</li>
+<li>npc_profile_my_mod_name.xml</li>
+</ul>
+</li>
+</ul>
+<p><strong>Folder :</strong> <code>_unpacked\configs\misc\squad_descr</code></p>
+<ul>
+<li>you add a file: squad_descr_my_mod_name.ltx
+(This one you doesn't need an include, squad_descr.ltx does it automatically)</li>
+</ul>
+<p>For your own custom files, you can copy-paste already exisiting ones and rename them. In that case, be careful to delete everything in your copied file from the old file, except the opening and closing node. For exemple, in dialogs file, &lt;game_dialogs&gt; and &lt;/game_dialogs&gt; have to remain, and your code has to be inbetween of these two nodes.</p>
+<hr />
+<h2 id="chapter-2--npc-section"><a class="header" href="#chapter-2--npc-section">Chapter 2 : NPC section</a></h2>
+<p><strong>File :</strong> <code>_unpacked\configs\creatures\spawn_sections_bar.ltx</code></p>
+<pre><code class="language-ini">[bar_visitors_barman_stalker_trader]:stalker_silent
+$spawn                      = &quot;respawn\bar_visitors_barman_stalker_trader&quot;
+character_profile           = bar_visitors_barman_stalker_trader
+story_id                    = bar_visitors_barman_stalker_trader
+</code></pre>
+<p>This is an example of a section.</p>
+<ul>
+<li>
+<p><code>[bar_visitors_barman_stalker_trader]:stalker_silent</code><br />
+Section name is <code>bar_visitors_barman_stalker_trader</code>, and inherits section <code>stalker_silent</code>.<br />
+<code>bar_visitors_barman_stalker_trader</code> has all the lines of <code>stalker_silent</code>.<br />
+It's useful for making multiple sections having similar lines and only have a few different lines to avoid mistakes and tediousness when modifying.</p>
+</li>
+<li>
+<p><code>$spawn</code><br />
+This on is not important, ignore.</p>
+</li>
+<li>
+<p><code>character_profile</code><br />
+You will later create a profile for the character in _unpacked\configs\gameplay.</p>
+</li>
+<li>
+<p><code>story_id</code><br />
+Used for scripting. Instead of searching every object in the game to find this character, you can get him from story objects storage.</p>
+</li>
+</ul>
+<p>Now you make your section. Let's call your new character &quot;han_yue_ling&quot;. We create it right in this file.</p>
+<p><strong>File :</strong> <code>_unpacked\configs\creatures\spawn_sections_bar.ltx</code></p>
+<pre><code class="language-ini">[han_yue_ling]:stalker
+character_profile           = han_yue_ling
+story_id                    = han_yue_ling
+</code></pre>
+<p>I set it up to inherit &quot;stalker&quot; because I don't need the additional configuration in &quot;stalker_silent&quot; (see &quot;stalker_silent&quot; in <code>_unpacked\configs\creatures\spawn_sections_general.ltx</code>).</p>
+<hr />
+<h2 id="chapter-3--npc-profile"><a class="header" href="#chapter-3--npc-profile">Chapter 3 : NPC profile</a></h2>
+<p><strong>File :</strong> <code>_unpacked\configs\gameplay\npc_profile_mlr.xml</code></p>
+<pre><code class="language-xml">&lt;!-- Bar --&gt;
+&lt;character id=&quot;bar_visitors_barman_stalker_trader&quot;&gt;
+	&lt;class&gt;bar_visitors_barman_stalker_trader&lt;/class&gt;
+&lt;/character&gt;
+</code></pre>
+<p>Very simple. Just make your NPC profile in a similar way.</p>
+<p><strong>File :</strong> <code>_unpacked\configs\gameplay\npc_profile_mlr.xml</code></p>
+<pre><code class="language-xml">&lt;character id=&quot;han_yue_ling&quot;&gt;
+	&lt;class&gt;han_yue_ling&lt;/class&gt;
+    &lt;specific_character&gt;han_yue_ling&lt;/specific_character&gt;
+&lt;/character&gt;
+</code></pre>
+<p>Now we create a character description.</p>
+<p><strong>File :</strong> <code>_unpacked\configs\gameplay\character_desc_bar.xml</code></p>
+<pre><code class="language-xml">&lt;!-- Barkeep --&gt;
+&lt;specific_character id=&quot;bar_visitors_barman_stalker_trader&quot; team_default = &quot;1&quot;&gt;
+	&lt;name&gt;bar_barmen_name&lt;/name&gt;
+	&lt;icon&gt;ui_inGame2_barman&lt;/icon&gt;
+	&lt;map_icon x=&quot;1&quot; y=&quot;4&quot;&gt;&lt;/map_icon&gt;
+	&lt;bio&gt;bar_barmen_bio&lt;/bio&gt;
+	&lt;class&gt;bar_visitors_barman_stalker_trader&lt;/class&gt;
+	&lt;community&gt;trader&lt;/community&gt;
+	&lt;terrain_sect&gt;stalker_terrain&lt;/terrain_sect&gt;
+	&lt;money min=&quot;1000000&quot; max=&quot;1000000&quot; infinitive=&quot;1&quot;&gt;&lt;/money&gt;
+	&lt;rank&gt;18490&lt;/rank&gt;
+	&lt;reputation&gt;2408&lt;/reputation&gt;
+	&lt;visual&gt;actors\barman\barman&lt;/visual&gt;
+	&lt;!-- &lt;snd_config&gt;characters_voice\human\stalker_1\&lt;/snd_config&gt; --&gt;
+	&lt;crouch_type&gt;-1&lt;/crouch_type&gt;
+	&lt;supplies&gt;&lt;/supplies&gt;
+	&lt;start_dialog&gt;bar_visitors_barman_stalker_trader_start_dialog&lt;/start_dialog&gt;
+	&lt;actor_dialog&gt;dm_init_batender&lt;/actor_dialog&gt;
+	&lt;!-- LTTZ --&gt;
+	&lt;actor_dialog&gt;barkeep_living_legend&lt;/actor_dialog&gt;
+	&lt;actor_dialog&gt;barkeep_100rads&lt;/actor_dialog&gt;
+	...
+&lt;/specific_character&gt;
+</code></pre>
+<ul>
+<li>
+<p><code>&lt;!-- Barkeep --&gt;</code><br />
+This is how you make comment in xml files. <code>&lt;!-- --&gt;</code>.</p>
+</li>
+<li>
+<p><code>&lt;specific_character id=&quot;bar_visitors_barman_stalker_trader&quot; team_default = &quot;1&quot;&gt;</code><br />
+Character description id.</p>
+</li>
+<li>
+<p><code>&lt;name&gt;bar_barmen_name&lt;/name&gt;</code><br />
+Stalker name. The game will try to map this id with the strings in <code>_unpacked\configs\text\*</code>.</p>
+</li>
+<li>
+<p><code>&lt;icon&gt;ui_inGame2_barman&lt;/icon&gt;</code><br />
+Same as <code>&lt;name&gt;&lt;/name&gt;</code> but in <code>_unpacked\configs\ui\textures_descr\*</code>.</p>
+</li>
+<li>
+<p><code>&lt;bio&gt;bar_barmen_bio&lt;/bio&gt;</code><br />
+Not important. Can just leave it <code>&lt;bio&gt;&lt;/bio&gt;</code>.</p>
+</li>
+<li>
+<p><code>&lt;class&gt;bar_visitors_barman_stalker_trader&lt;/class&gt;</code><br />
+Character profile. Not to confuse with character description.<br />
+Multiple character descriptions can be linked to one character profile.<br />
+When a stalker is spawned, it will randomly pick one of the character descriptions.<br />
+So although they are the same &quot;stalker_level_4&quot; they have different names, icons, models, voices.</p>
+</li>
+<li>
+<p><code>&lt;community&gt;trader&lt;/community&gt;</code><br />
+Faction. dolg,freedom,stalker,army, etc.</p>
+</li>
+<li>
+<p><code>&lt;terrain_sect&gt;stalker_terrain&lt;/terrain_sect&gt;</code><br />
+Not important. Just keep it as is.</p>
+</li>
+<li>
+<p><code>&lt;visual&gt;actors\barman\barman&lt;/visual&gt;</code><br />
+Stalker model.</p>
+</li>
+<li>
+<p><code>&lt;crouch_type&gt;-1&lt;/crouch_type&gt;</code><br />
+No idea. Maybe it's because Barman has unique animations? I don't create this line in my character description.</p>
+</li>
+<li>
+<p><code>&lt;supplies&gt;&lt;/supplies&gt;</code><br />
+Items that are guaranteed to be given to the stalker when he is spawned.</p>
+</li>
+<li>
+<p><code>&lt;start_dialog&gt;bar_visitors_barman_stalker_trader_start_dialog&lt;/start_dialog&gt;</code><br />
+Stalkers will speak this dialog when initiating dialog.</p>
+</li>
+<li>
+<p><code>&lt;actor_dialog&gt;dm_init_batender&lt;/actor_dialog&gt;</code><br />
+One of the dialog options that actor can choose after <code>&lt;start_dialog&gt;&lt;/start_dialog&gt;</code>.</p>
+</li>
+</ul>
+<p>So we make our character description like this. Don't forget to create a name string id, an icon id, making your unique model <code>actors\han_yue_ling.ogf</code>.</p>
+<p><strong>File :</strong> <code>_unpacked\configs\gameplay\character_desc_bar.xml</code></p>
+<pre><code class="language-xml">&lt;specific_character id=&quot;han_yue_ling&quot; team_default = &quot;1&quot;&gt;
+	&lt;name&gt;han_yue_ling_name&lt;/name&gt;
+	&lt;icon&gt;han_yue_ling_icon&lt;/icon&gt;
+	&lt;map_icon x=&quot;1&quot; y=&quot;4&quot;&gt;&lt;/map_icon&gt;
+	&lt;bio&gt;&lt;/bio&gt;
+	&lt;class&gt;han_yue_ling&lt;/class&gt;
+	&lt;community&gt;dolg&lt;/community&gt;
+	&lt;terrain_sect&gt;stalker_terrain&lt;/terrain_sect&gt;
+	&lt;money min=&quot;1000000&quot; max=&quot;1000000&quot; infinitive=&quot;1&quot;&gt;&lt;/money&gt;
+	&lt;rank&gt;18490&lt;/rank&gt;
+	&lt;reputation&gt;2408&lt;/reputation&gt;
+	&lt;visual&gt;actors\han_yue_ling&lt;/visual&gt;
+	&lt;snd_config&gt;characters_voice\human\stalker_1\&lt;/snd_config&gt;
+	&lt;supplies&gt;&lt;/supplies&gt;
+
+	&lt;!-- No dialog. For now. --&gt;
+&lt;/specific_character&gt;
+</code></pre>
+<hr />
+<h2 id="chapter-4--squad-and-smart-terrain"><a class="header" href="#chapter-4--squad-and-smart-terrain">Chapter 4 : Squad and smart terrain</a></h2>
+<p>You don't spawn a stalker object alone. Stalkers and monsters always come with squads. Even when there is only one NPC, you still have to put him in a squad.</p>
+<p>Squad configuration is in <code>_unpacked\configs\misc\squad_descr\*</code>.</p>
+<p><strong>File :</strong> <code>_unpacked\configs\misc\squad_descr\squad_descr_bar.xml</code></p>
+<pre><code class="language-ini">[bar_visitors_barman_stalker_trader_squad]:online_offline_group
+faction                     = stalker
+npc                         = bar_visitors_barman_stalker_trader
+target_smart                = bar_visitors
+spawn_point                 = bar_barman_spawn
+story_id                    = bar_visitors_barman_stalker_trader_squad
+always_arrived              = true
+</code></pre>
+<ul>
+<li>
+<p><code>[bar_visitors_barman_stalker_trader_squad]:online_offline_group</code><br />
+No need to explain again. See Chapter 1.</p>
+</li>
+<li>
+<p><code>faction = stalker</code><br />
+Squad faction.</p>
+</li>
+<li>
+<p><code>npc = bar_visitors_barman_stalker_trader</code><br />
+NPCs that are guaranteed to be spawned in the squad. You put object section here. See Chapter 1.</p>
+</li>
+<li>
+<p><code>target_smart = bar_visitors</code><br />
+The squad will try to reach this smart terrain and will stay here forever. Can use a condlist to change target.</p>
+</li>
+<li>
+<p><code>spawn_point = bar_barman_spawn</code><br />
+Where squad members appear when they are online. I don't find it useful so never use it.</p>
+</li>
+<li>
+<p><code>story_id = bar_visitors_barman_stalker_trader_squad</code><br />
+Squad story id. See Chapter 1.</p>
+</li>
+<li>
+<p><code>always_arrived = true</code><br />
+I don't know, never use it.</p>
+</li>
+</ul>
+<p>So we make our squad:</p>
+<p><strong>File :</strong> <code>_unpacked\configs\misc\squad_descr\squad_descr_bar.xml</code></p>
+<pre><code class="language-ini">[han_yue_ling_squad]:online_offline_group
+faction                     = dolg
+npc                         = han_yue_ling
+target_smart                = bar_dolg_general
+story_id                    = han_yue_ling_squad
+</code></pre>
+<p>You can always find smart terrain name in here. <code>_unpacked\configs\scripts\&lt;level name&gt;\smart\&lt;smart terrain name&gt;</code>. </p>
+<p>Example: <code>_unpacked\configs\scripts\bar\smart\bar_dolg_bunker.ltx</code></p>
+<hr />
+<h2 id="chapter-5--spawn"><a class="header" href="#chapter-5--spawn">Chapter 5 : Spawn</a></h2>
+<p>There are two ways to spawn your NPC : by script, or by adding your NPC to the correct smart terrain in <code>simulation.ltx</code>.</p>
+<h3 id="chapter-5a--spawn-by-script"><a class="header" href="#chapter-5a--spawn-by-script">Chapter 5.A : Spawn by script</a></h3>
+<p>Make a new file in <code>_unpacked\scripts\</code> like this:</p>
+<p><strong>File :</strong> <code>_unpacked\scripts\han_yue_ling.script</code></p>
+<pre><code class="language-lua">-- Bind function actor_on_first_update() to callback &quot;actor_on_first_update&quot;
+function on_game_start()
+	RegisterScriptCallback(&quot;actor_on_first_update&quot;,spawn_han_yue_ling)
+end
+
+function spawn_han_yue_ling()
+	-- Check if having info &quot;han_yue_ling_init&quot;
+	if not has_alife_info(&quot;han_yue_ling_init&quot;) then
+		-- Check if squad does not exist.
+		if not get_story_se_object(&quot;han_yue_ling_squad&quot;) then
+			-- Get smart terrain &quot;bar_dolg_general&quot;
+			local smart = SIMBOARD.smarts_by_names[&quot;bar_dolg_general&quot;]
+			-- Spawn squad &quot;han_yue_ling_squad&quot;
+			local squad = SIMBOARD:create_squad(smart,&quot;han_yue_ling_squad&quot;)
+		end
+		-- Check if squad exist (spawned successfully).
+		if get_story_se_object(&quot;han_yue_ling_squad&quot;) then
+			-- Give info so the game won't spawn another squad every time loading a save file.
+			give_info(&quot;han_yue_ling_init&quot;)
+		end
+	end
+end
+</code></pre>
+<ul>
+<li><code>--[[ some comment ]]</code> or <code>-- some comment</code><br />
+Is how you make comment lines in lua script.</li>
+</ul>
+<p>Start a new game or load your save files and the npc will be spawned and stay around the campfire in duty headquarters yard.</p>
+<p>NB: Potential bug </p>
+<p>If you have multiple spawns of the same NPC, make sure that you gave the squad a story ID - the script checks for this story ID and if it can't find the ID it will spawn endlessly the same NPC.</p>
+<h3 id="chapter-5b--spawn-by-adding-to-simulationltx"><a class="header" href="#chapter-5b--spawn-by-adding-to-simulationltx">Chapter 5.B : Spawn by adding to simulation.ltx</a></h3>
+<p>Locate the file <code>simulation.ltx</code>, in <code>_unpacked\configs\misc\</code>. Inside of that file, you can locate the smart terrain where you want your NPC to spawn, and add your NPC to the list.</p>
+<p><strong>File :</strong> <code>_unpacked\configs\misc\simulation.ltx</code></p>
+<pre><code class="language-ini">...
+[bar_dolg_general]
+bar_dolg_general_petrenko_stalker_squad
+bar_dolg_general_zoneguard_stalker_squad
+duty_sim_squad_advanced                 = 1
+duty_sim_squad_novice                   = 1
+duty_sim_squad_veteran                  = 1
+dolg_medic_squad
+han_yue_ling_squad                      ; add your NPC to the list
+
+...
+</code></pre>
+<p>Note that this method of spawning the NPC will not force the NPC to stay there, and you might need a script, or a logic scheme to force the NPC to stay at that smart terrain.</p>
+<hr />
+<p>I will make more advanced guides if there are enough modders who are interested.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../quests/introduction.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../quests/task_guide.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../quests/introduction.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../quests/task_guide.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>
