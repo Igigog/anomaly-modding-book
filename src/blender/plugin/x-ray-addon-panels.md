@@ -403,7 +403,7 @@ ___
 ![Alt text](blender-images/panels/Mesh.png)
 
 | Button | Desctiption |
----|---|
+|---|---|
 | Visible | ? |
 | Locked | ? |
 | SGMask | ? |
@@ -413,7 +413,7 @@ ___
 ![Alt text](blender-images/panels/Skeleton.png)
 
 | Button | Desctiption | Extra | Extra Desc |
----|---|---|---|
+|---|---|---|---|
 | Display Bone Shapes | Display Bone Shapes | - | - |
 | Display Bone Mass Centers | Display Bone Mass Centers | Cross Size |  |
 | Display Bone Limits | Display Bone Limits | Gizmo Radius |  |
@@ -428,7 +428,7 @@ ___
 ![bone centered](/src/blender/blender-images/panels/Bone.png)
 
 | Button | Description | Note |
----|---|---|
+|---|---|---|
 | Exportable | Will the bone be exported | - |
 | Lenght |  |  |
 | Material | Material | [list of materials](../../shaders/shaders-list/materials-list.md) |
@@ -453,7 +453,7 @@ ___
 ![material centered](/src/blender/blender-images/panels/Meterial.png)
 
 | Button | Note |
----|---|
+|---|---|
 | Shader | [list of shaders](../../shaders/shaders-list/shaders-list.md) |
 | Compile | [list of compile shaders](../../shaders/shaders-list/compiler-shaders-list.md) |
 | Material | [list of materials](../../shaders/shaders-list/materials-list.md) |

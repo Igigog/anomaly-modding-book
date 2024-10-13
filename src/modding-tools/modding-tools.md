@@ -59,7 +59,9 @@ Official SDK with community enhancements:
 - [SDK 0.5 (Clear Sky)](https://sharedby.blomp.com/AWr3Vs)
   - [SDK B.O.R.S.C.H.T for CS by Lightning in a vacuum](https://bitbucket.org/stalker/xray-csky_borscht_sdk/src/master/)
 
-> ̀**These versions (SDK 0.4 and SDK 0.5/0.6) are not compatible with Anomaly!**
+```admonish warning
+These versions (SDK 0.4 and SDK 0.5/0.6) are not compatible with Anomaly!
+```
 
 - [SDK 0.7 (Call of Pripyat)](https://www.moddb.com/games/stalker-call-of-pripyat/downloads/x-ray-16-engine-sdk-v07)
   - [SDK 0.7 (Call of Pripyat)(RePack by DaaGuda V2)](https://mega.nz/folder/zFBiWSAJ#5_MSuGpVPb7QqcPH00nC7w) - Official SDK 0.7 repack with customized components and various fixes ([More About](../sdk/index.html))
@@ -88,16 +90,20 @@ Official SDK with community enhancements:
 - [SDK 0.8 by Red Panda](https://github.com/RedPandaProjects/XRayEngine/releases) - This is a port and a small upgrade of the classic 0.7 editor set. A lot of problems with the classic editor were related to the outdated development environment, which did not allow to upgrade it. Imgui was taken as a UI shell, as the easiest ui allowing to create simple forms with one line of code. All 4 editors were taken over.
   - [HybridXRay](https://github.com/Roman-n/HybridXRay) - Further improvements to the SDK and X-Ray Engine from RedPanda.
 
+- [IX Ray SDK]
+
 - [SDK 2.6 beta (Lost Alpha)](https://www.moddb.com/mods/lost-alpha/downloads/stalker-lostalpha-sdk-v26-beta) - Contains the basic editors and tools that were used to create Lost Alpha
 
 ### SDK tools
 
-> The versions of the SDK tools may differ depending on the version of the SDK itself
+```admonish info
+Versions of the SDK tools may differ depending on the version of the SDK itself
+```
 
 - [Actor Editor](../sdk/actor-editor.md)
 - Dialog Editor
 - [Level Editor](../sdk/level-editor.md)
-- [Particle Editor (Not finished)](../sdk/particle-editor.md)
+- [Particle Editor](../sdk/particle-editor.md)
 - [Postprocess Editor](../sdk/postprocess-editor.md)
 - [ShaderEditor](../sdk/level-editor.md)
 - xrLC_net - Level compiler by machines connected to a local network
@@ -138,6 +144,8 @@ ___
 
 - [Bump Generator by i-love-kfc](https://gitlab.com/i-love-kfc/bump-generator) - A simple bump and bump# texture generator from normal maps with the ability to use gloss maps, also, is capable of generating bump# for ready-made "green" bumps.
   - [More](bump-generator.md)
+
+- [BumpX_GUI](https://github.com/PiratBuildov/BumpX_GUI) - WinForms GUI for BumpX v07
 
 - [THM Editor](https://gitlab.com/i-love-kfc/thm-editor/) - Utility for editing [.thm](../main-folders-and-files/file-formats/index.html#thm) files without the need to use the SDK
   - [More](thm-editor-by-i-love-kfc.md)
@@ -266,12 +274,12 @@ ___
 - [Particle Editor Tools](https://cdn.discordapp.com/attachments/978593574893535274/979057726623735828/Particle_Editor_Tools.rar) - Decompiling/compiling particle.xr file
 
 - [Universal ACDC](https://disk.yandex.ru/d/-GBYa8DxQv8MF) - Perl script, to unpack and pack all.spawn
-- [gamemtl_xr_cdc](https://disk.yandex.ru/d/hR79KfSn3PLtSK)
-- [lanims_xr_cdc](https://disk.yandex.ru/d/qKhybMU-3PLtTj)
-- [shaders_xr_cdc](https://disk.yandex.ru/d/RcMprj9W3PLtdj)
-- [shaders_xrlc_xr_cdc](https://disk.yandex.ru/d/FoQnY1VV3PLteX)
-- [senvironment_xr_cdc](https://disk.yandex.ru/d/jBnrr3Xg3PLtcc)
-- [particles_xr_cdc (Unpacking to binary files only)](https://disk.yandex.ru/d/LCkINfLw3PLtV5)
+- [gamemtl_xr_cdc](https://disk.yandex.ru/d/hR79KfSn3PLtSK) - To decompile [gamemtl.xr](../main-folders-and-files/README.md#files)
+- [lanims_xr_cdc](https://disk.yandex.ru/d/qKhybMU-3PLtTj) - To decompile [lanims.xr](../main-folders-and-files/README.md#files)
+- [shaders_xr_cdc](https://disk.yandex.ru/d/RcMprj9W3PLtdj) - To decompile [shaders.xr](../main-folders-and-files/README.md#files)
+- [shaders_xrlc_xr_cdc](https://disk.yandex.ru/d/FoQnY1VV3PLteX) - To decompile [shaders.xrlc](../main-folders-and-files/README.md#files)
+- [senvironment_xr_cdc](https://disk.yandex.ru/d/jBnrr3Xg3PLtcc) - To decompile [senvironment.xrlc](../main-folders-and-files/README.md#files)
+- [particles_xr_cdc (Unpacking to binary files only)](https://disk.yandex.ru/d/LCkINfLw3PLtV5) - To decompile [particles.xrlc](../main-folders-and-files/README.md#files)
 - [converter-level](https://disk.yandex.ru/d/czZSLCzT3UrDa5)
   - The program requires Old Version Active Perl **(at least version 5 and up to about version 5.24)** to be installed.
   - You also need [stkutils](https://disk.yandex.ru/d/nnjntzYZQv8sD) (put it in the folder with the script or in C:\Perl\lib)

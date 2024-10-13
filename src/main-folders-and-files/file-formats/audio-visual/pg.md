@@ -4,7 +4,7 @@ ___
 
 ## About
 
-Group of .pe particles
+Group of [.pe]() particles
 
 ## Programs editing this file
 

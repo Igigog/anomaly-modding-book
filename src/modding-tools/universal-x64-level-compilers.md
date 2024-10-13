@@ -64,33 +64,33 @@ ___
 > #### File Button
 
 | Button | Description |
----|---|
+|---|---|
 | Recent Projects | Recent Projects |
 | Exit | Exit |
 
 > #### Язык/Language Button
 
 | Button | Description |
----|---|
+|---|---|
 | English | English language |
 | Русский | Russian language|
 
 > #### Help Button
 
 | Button | Description |
----|---|
+|---|---|
 | Help | Shows helpful information |
 
 > #### About Button
 
 | Button | Description |
----|---|
+|---|---|
 | About | About the program |
 
 ### Level Name
 
 | Button | Description |
----|---|
+|---|---|
 | Select | Selects the level for compilation |
 
 #### Level Format
@@ -101,7 +101,7 @@ ___
 ### Threads
 
 | Checkboxes | Description |
----|---|
+|---|---|
 | High Priority | Enables high priority |
 
 ### Discord Rich Presence
@@ -115,7 +115,7 @@ ___
 #### The following keys are supported/required
 
 | Key | Description |
----|---|
+|---|---|
 | -? or -help | call help with a list of all startup keys |
 | -f \<NAME> | level name in `gamedata\levels\<NAME>\` |
 | -version \<NAME> | output level format (shoc/cs/cop) |
@@ -129,7 +129,7 @@ ___
 #### Geometry Keys
 
 | Key | Description |
----|---|
+|---|---|
 | -silent | Close the program after compilation |
 | -sleep | Shutdown the computer after compilation |
 | -nohemi | Disable baking lighting |
@@ -146,7 +146,7 @@ ___
 ##### Additional keys for geometry compilation
 
 | Key | Description |
----|---|
+|---|---|
 | -ppm \<float> | Hemi lighmaps quality (`by default: use value from SDK`) |
 | -weld_dist \<float> | Weld distance (`by default: use value from SDK`) |
 | -hemi_bias \<float> | Position bias for hemi calc (`default: 0.1, vanilla: 0.001`) |
@@ -194,7 +194,7 @@ ___
 #### Grass
 
 | Key | Description |
----|---|
+|---|---|
 | -silent | Close the program after compilation |
 | -sleep | Shutdown the computer after compilation |
 | -nohemi | Disable baking lighting |
@@ -207,7 +207,7 @@ ___
 Build Ai-Map
 
 | Key | Description |
----|---|
+|---|---|
 | -draft | Do not calculate covers |
 | -skipthm | Ignore missing thm-s and textures |
 | -f \<NAME> | Make AI-map |
@@ -217,13 +217,13 @@ Build Ai-Map
 Check Ai-Map
 
 | Key | Description |
----|---|
+|---|---|
 | -noverbose | Do not show info about single nodes |
 
 #### Spawn
 
 | Key | Description |
----|---|
+|---|---|
 | -no_separator_check | Disable some conflicts |
 | -insert_graph | Enable adding graphs to common spawn when building a SoC Level (Key for SoC only) |
 | -actor_level \<level_name> | Select a level to spawn an actor. Avoids the routine of manually deleting an actor from each level. Only the actor from the selected level will be spawned, the others will be ignored. If it is not on the level, it will be automatically created in zero coordinates |
@@ -233,7 +233,7 @@ Check Ai-Map
 ##### Additional spawns
 
 | Buttons | Description |
----|---|
+|---|---|
 | Add | Add spawn file |
 | Remove | Remove spawn file |
 | Clear | Clear spawn files |
@@ -241,7 +241,7 @@ Check Ai-Map
 ##### Spawn name
 
 | Checkboxes | Description |
----|---|
+|---|---|
 | by default | Renames the .spawn file by default (name chosen from the folder name) |
 
 - Spawn name - Spawn name

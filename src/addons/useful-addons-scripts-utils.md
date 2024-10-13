@@ -14,7 +14,7 @@ Allows you to change hud values in weapon hud editor by dragging your mouse
     allowfullscreen>
 </iframe>
 
-### Source
+### DRAGGABLE HUD EDITOR Source
 
 [Addon on Moddb](https://www.moddb.com/mods/stalker-anomaly/addons/draggable-hud-editor)
 
@@ -24,7 +24,7 @@ ___
 
 This repository contains the unpacked gamedata files of the version 1.5.2 of the stand-alone mod S.T.A.L.K.E.R. Anomaly
 
-### Source
+### Anomaly Gamedata Source
 
 [GitHub](https://github.com/Tosox/STALKER-Anomaly-gamedata)
 
@@ -34,7 +34,7 @@ ___
 
 Now you have the ability to customize the speed of the camera flight during free view
 
-### Source
+### DEMORECORD CUSTOMIZATION Source
 
 [Addon on Moddb](https://www.moddb.com/mods/stalker-anomaly/addons/demorecord-customization)
 
@@ -44,7 +44,7 @@ ___
 
 Various autoinject script modules for use by other scripts
 
-### Source
+### Anomaly Dependencies Source
 
 [Source on GitHub](https://github.com/ahuyn/anomaly-dependencies)
 
@@ -54,7 +54,7 @@ ___
 
 Source of not so truthy repo for all uncommon anomaly dependencies
 
-### Source
+### Anomaly Demonized Scripts Source
 
 [Source on GitHub](https://github.com/themrdemonized/anomaly-demonized-scripts)
 
@@ -64,7 +64,7 @@ ___
 
 Various utility scripts of objectionable quality for STALKER: Anomaly
 
-### Sources
+### Anomaly Addon Dependencies Sources
 
 [Source on GitHub](https://github.com/Aoldri/anomaly-addon-deps)
 
@@ -82,7 +82,7 @@ Include:
 
 - [TERRAIN ENUMERATOR](https://github.com/oiltanker/stalker-anomaly-resources/blob/main/terrain_enumerator/terrain_enumerator.script) - enumerates spawnable points and caches them into files
 
-### Sources
+### Stalker Anomaly Resources by Oiltanker Sources
 
 [Source on GitHub](https://github.com/oiltanker/stalker-anomaly-resources)
 
@@ -92,6 +92,6 @@ ___
 
 Mod DB comment monitor for addon authors
 
-### Source
+### Monitor Mod DB Source
 
 [Source on GitHub](https://github.com/Ishmaeel/monitor-moddb)

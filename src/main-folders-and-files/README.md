@@ -4,126 +4,178 @@ ___
 
 ## Root folder
 
-**fsgame.ltx**
+### fsgame.ltx
 
-> Contains paths to folders with the necessary files
+```admonish info
+Contains paths to folders with the necessary files
+```
 
 ___
 
 ## appdata
 
-**logs**
+### logs
 
-> This is where the game logs are created and stored (log of loading objects, textures, etc.)
+```admonish info
+This is where the game logs are created and stored (log of loading objects, textures, etc.)
+```
 
-**savedgames**
+### savedgames
 
-> This is where game saves are created and stored. Inside are files with the extensions .scop and .scoc.
+```admonish info
+This is where game saves are created and stored. Inside are files with the extensions .scop and .scoc.
+```
 
-**screenshoots**
+### screenshoots
 
-> This is where game screenshots are created and stored
+```admonish info
+This is where game screenshots are created and stored
+```
 
-**shaders_cache**
+### shaders_cache
 
-> This is where the game shader cache is created and stored
+```admonish info
+This is where the game shader cache is created and stored
+```
 
-**"username".ltx**
+### "username".ltx
 
-> This file describes the game settings.
+```admonish info
+This file describes the game settings
+```
 
 ___
 
 ## bin
 
-> Contains the .exe files of the game renders, the configuration for OpenAL and .dll libraries
+```admonish info
+Contains the .exe files of the game renders, the configuration for OpenAL and .dll libraries
+```
 
 ___
 
 ## db
 
-> Contains packaged game files. **This folder has a higher priority of files, which means that if there is no file in the gamedata folder, the game will look for it here**
+```admonish info
+Contains packaged game files
+```
+
+```admonish
+This folder has a higher priority of files, which means that if there is no file in the gamedata folder, the game will look for it here
+```
 
 ___
 
 ## gamedata
 
-> Folder with game files
+```admonish info
+Folder with game files
+```
 
 ### <center>Folders</center>
 
-**ai**
+#### ai
 
-> Contains the [.efd](file-formats/index.html#efd-evaluation-function-data) files needed for the AI
+```admonish info
+Contains the [.efd]() files needed for the AI
+```
 
-**anims**
+#### anims
 
-> Contains [.anm](file-formats/index.html#anm-animated-paths), [.anms](file-formats/index.html#anm-animated-paths) files for camera animation and .ppe files for postprocessing
+```admonish info
+Contains [.anm]() files for camera animation and .ppe files for postprocessing
+```
 
-**configs**
+#### configs
 
-> Contains [.ltx](file-formats/index.html#ltx-files) for configuration files and [.xml](file-formats/index.html#xml-files) for text
+```admonish info
+Contains [.ltx]() for configuration files and [.xml]() for text
+```
 
-**levels**
+#### levels
 
-> Contains the [necessary files for the levels](file-formats/index.html#game-level)
+```admonish info
+Contains [necessary files for levels]()
+```
 
-**meshes**
+#### meshes
 
-> Contains .ogf, [.dm](file-formats/index.html#dm-detail-model), [.omf](file-formats/index.html#omf-open-motions-format) file needed for models and skeleton animation
+```admonish info
+Contains [.ogf](), [.dm](), [.omf]() file needed for models and skeleton animation
+```
 
-**scripts**
+#### scripts
 
-> Contains .script files for game scripts
+```admonish info
+Contains [.script]() files for game scripts
+```
 
-**shaders**
+#### shaders
 
-> Contains [various files for shaders](file-formats/index.html#shaders)
+```admonish info
+Contains [various files for shaders]()
+```
 
-**sounds**
+#### sounds
 
-> Contains [.ogg](file-formats/index.html#ogg) files for various music, sounds, ambient, etc.
+```admonish info
+Contains [.ogg]() files for various music, sounds, ambient, etc.
+```
 
-**spawns**
+#### spawns
 
-> Contains a file `all.spawn` - it describes all spawn spots on locations
+```admonish info
+Contains a file `all.spawn` - it store all spawn spots on locations
+```
 
-**textures**
+#### textures
 
-> Contains [.dds](file-formats/index.html#dds-directdraw-surface) textures
+```admonish info
+Contains [.dds]() textures
+```
 
 ### <center>Files</center>
 
-**gamemtl.xr**
+#### gamemtl.xr
 
-> Contains [game materials](../shaders/shaders-list/materials-list.md)
+```admonish info
+Contains [game materials](../shaders/shaders-list/materials-list.md)
+```
 
-**lanims.xr**
+#### lanims.xr
 
-> Contains animations of lights
+```admonish info
+Contains animations of lights
+```
 
-**particles.xr**
+#### particles.xr
 
-> Contains Particles
+```admonish info
+Contains Particles
+```
 
-**senvironment.xr**
+#### senvironment.xr
 
-> Contains settings for [sound environment zones](../sound/sound-environments-list.md)
+```admonish info
+Contains settings for [sound environment zones](../sound/sound-environments-list.md)
+```
 
-**shaders.xr**
+#### shaders.xr
 
-> Database of the [shaders used by the graphics engine](../shaders/shaders-list/shaders-list.md)
+```admonish info
+Database of the [shaders used by the graphics engine](../shaders/shaders-list/shaders-list.md)
+```
 
-**shaders_xrlc.xr**
+#### shaders_xrlc.xr
 
-> Database of [shaders used by the level compiler](../shaders/shaders-list/compiler-shaders-list.md)
-
-**textures.ltx**
-
-> Contains pathes to all textures
+```admonish info
+Database of [shaders used by the level compiler](../shaders/shaders-list/compiler-shaders-list.md)
+```
 
 ___
 
 ## tools
 
-> Contains some resources for modding, like a version icon for addons, a resource converter and .bat files for unpacking .db files
+```admonish info
+Contains some resources for modding, like a version icon for addons, a resource converter and .bat files for unpacking [.db]() files
+```

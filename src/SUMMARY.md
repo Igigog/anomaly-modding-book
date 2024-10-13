@@ -86,7 +86,8 @@ ___
   - [Crash List](crash-list/crashes-list.md)
 
 - [Reference/Configs](reference/README.md)
-  - [Weapon Configuration Parameters](configs/items/weapons/w_(weapon).ltx.md)
+  - [Weapon World Configuration Parameters](configs/items/weapons/w_(weapon)-world.ltx.md)
+  - [Weapon HUD Configuration Parameters](configs/items/weapons/w_(weapon)-hud.md)
   - [Ammo Configuration Parameters](configs/items/weapons/weapon_ammo.ltx.md)
   - [Weapon Sounds Parameters](configs/items/weapons/weapon_sounds.ltx.md)
   - [Oufits Configuration Parameters](configs/items/outfits/o_(outfit).ltx.md)

@@ -1,6 +1,6 @@
 # DXML
 
----
+___
 
 ## Intro
 
@@ -38,11 +38,13 @@ What this does is creating a function on_xml_read that will be auto-called from 
 
 To understand, what can be done with xml_obj and what functions it provides, let's take a look at typical usecases:
 
----
+___
 
 ### Case 1: inserting new XML data
 
-**Examples: insert new dialog into gameplay\dialogs.xml, insert new scope texture into ui\scopes.xml**
+```admonish example
+Insert new dialog into gameplay\dialogs.xml, insert new scope texture into ui\scopes.xml
+```
 
 This is the simplest case of using DXML, where you just want to insert new data, much like `#include` directive in XML files
 
@@ -85,11 +87,13 @@ insertFromXMLString method has these arguments:
 
 The function returns the position of first inserted element in "where"
 
----
+___
 
 ### Case 1.1: inserting new XML data from file
 
-**Examples: insert new dialog into gameplay\dialogs.xml from file plugins\new_dialog.xml**
+```admonish example
+Insert new dialog into gameplay\dialogs.xml from file plugins\new_dialog.xml
+```
 
 This case will insert new data from a xml file `plugins\new_dialog.xml` into `gameplay\dialogs.xml`.
 
@@ -99,7 +103,7 @@ The path argument should be a path to the file WITH EXTENSION (example: `[[plugi
 
 The base folder for xml files to read is gamedata/configs, for example if the path provided is `plugins\new_dialog.xml`, then the file should exist in `gamedata/configs/plugins/new_dialog.xml`.
 
-If the file has failed to read, the game will crash with the error message displaying what happened. 
+If the file has failed to read, the game will crash with the error message displaying what happened.
 
 ```lua
 function on_xml_read()
@@ -116,11 +120,13 @@ function on_xml_read()
 end
 ```
 
----
+___
 
 ## Case 2: inserting new XML data in specified element
 
-**Example: insert new menu item into ui\ui_mm_main.xml**
+```admonish example
+Insert new menu item into ui\ui_mm_main.xml**
+```
 
 In order to correctly insert new main menu item, we need to find the <menu_main> element first.
 
@@ -189,11 +195,13 @@ Full list of available CSS-like selectors are:
 * "~" - find all siblings
 * "[attr1=value1]" - describes attribute `attr1` with value `value1`. To find element that matches multiple attributes you can use `[attr1=value1][attr2=value2]` and so on
 
----
+___
 
 ## Case 3: Change text inside element
 
-**Example: change text of game version in text\eng\\_game_version.xml**
+```admonish example
+Example: change text of game version in text\eng\\_game_version.xml
+```
 
 Getting and setting text is possible if element contains raw text inside, like `<text attr1="value1">My Text</text>`.
 To get text, you can use `getText(element)` function and to set it use `setText(element)`.
@@ -201,30 +209,32 @@ Example below of appending text to existing text in element
 
 ```lua
 function on_xml_read()
-	RegisterScriptCallback("on_xml_read", function(xml_file_name, xml_obj)
-		if xml_file_name == [[text\eng\_game_version.xml]]
-		or xml_file_name == [[text\rus\_game_version.xml]]
-		then
-			-- Find string element with "id=ui_st_game_version" text inside it
-			local res = xml_obj:query("string[id=ui_st_game_version] > text")
-			if res[1] then
-				local el = res[1]
-				local el_text = xml_obj:getText(el)
-				if el_text then
-					-- Set new text
-					xml_obj:setText(el, el_text .. ". Modified exes (DLTX, DXML, Shader Scopes, SSS)")
-				end
-			end
-		end
-	end)
+    RegisterScriptCallback("on_xml_read", function(xml_file_name, xml_obj)
+        if xml_file_name == [[text\eng\_game_version.xml]]
+        or xml_file_name == [[text\rus\_game_version.xml]]
+        then
+            -- Find string element with "id=ui_st_game_version" text inside it
+            local res = xml_obj:query("string[id=ui_st_game_version] > text")
+            if res[1] then
+                local el = res[1]
+                local el_text = xml_obj:getText(el)
+                if el_text then
+                    -- Set new text
+                    xml_obj:setText(el, el_text .. ". Modified exes (DLTX, DXML, Shader Scopes, SSS)")
+                end
+            end
+        end
+    end)
 end
 ```
 
----
+___
 
 ## Case 4: changing attribute of element
 
-**Example: change position of money display in ui\ui_inventory.xml**
+```admonish example
+Change position of money display in ui\ui_inventory.xml**
+```
 
 First, find `<money>` element inside `<player>` element and then change its x, y attributes by using `setElementAttr` function
 
@@ -248,22 +258,22 @@ To remove attributes of element, use `removeElementAttr` function
 
 ```lua
 function on_xml_read()
-	RegisterScriptCallback("on_xml_read", function(xml_file_name, xml_obj)
-		if xml_file_name == [[ui\ui_inventory.xml]]
-		then
-			local res = xml_obj:query("player > money")
-			if res[1] then
-				local el = res[1]
-				xml_obj:setElementAttr(el, {x=20, y=60})
-			end
-		end
-	end)
+    RegisterScriptCallback("on_xml_read", function(xml_file_name, xml_obj)
+        if xml_file_name == [[ui\ui_inventory.xml]]
+        then
+            local res = xml_obj:query("player > money")
+            if res[1] then
+                local el = res[1]
+                xml_obj:setElementAttr(el, {x=20, y=60})
+            end
+        end
+    end)
 end
 ```
 
 Full list of methods is described in dxml_core.script in `COnXmlRead` function
 
----
+___
 
 ## Additional functions
 
@@ -288,6 +298,7 @@ end
 ```
 
 Full list of fields available in "data" table:
+
 * name
 * bio
 * community
@@ -334,6 +345,7 @@ end
 ```
 
 Full list of methods in dialog_list
+
 * find(regex) - find existing dialog by regex, returns last found dialog matching regex and its position in the list
 * has(string) - check if dialog by string exists, returns the position of found dialog in the list
 * add(string, pos) - adds new dialog in specified position (by default adds before break dialog string if it exists)
@@ -342,7 +354,7 @@ Full list of methods in dialog_list
 * remove(string) - removes dialog by the string
 * get_dialogs() - returns the list of all dialogs available
 
----
+___
 
 ## PS
 

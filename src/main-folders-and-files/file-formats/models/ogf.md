@@ -20,3 +20,13 @@ Compiled 3D models for the game
 - Smoothing is stored as vertex normals. Due to this, during export to *.ogf, not only the boundaries of smoothing groups, but also the direction of normals are stored
 - A mesh can have only one UV map
 - Support for storing information about geometry simplification in the form of Slide Window Items
+
+## Programs editing this file
+
+- [Blender (X-Ray Addon)](../../blender/index.html)
+- [Ogf Editor by ValeroK](../../modding-tools/ogf-editor-by-valerok.md)
+- [SDK 0.7](../../sdk/index.html)
+
+## Sources
+
+[Source](https://github.com/PavelBlend/blender-xray/wiki/Formats#ogf)

@@ -2,7 +2,9 @@
 
 ___
 
-> Important note, these articles were written a long time ago (approximately before Shadow of Chernobyl was released) and may not reflect the current state or principles of A-Life in Anomaly. So for example the FSM was only used by mutants in the release version of the game.
+```admonish warning title="Important note"
+These articles were written a long time ago (approximately before Shadow of Chernobyl was released) and may not reflect the current state or principles of A-Life in Anomaly. So for example the FSM was only used by mutants in the release version of the game.
+```
 
 ## About
 
@@ -37,7 +39,7 @@ The FSM structure can be represented as an oriented graph, whose vertices (circl
 #### Example
 
 |||
----|---|
+|---|---|
 | States | 0 – soldier's state under the control of the AI<br> 1 – the soldier says "stop, I'll shoot!"<br> 2 – the soldier says "gone bastard" |
 | Transition conditions | 0-1 – soldier sees actor for the first time<br> 1-0 – soldier finished saying the phrase "stop, I'll shoot!" and sees the actor<br> 1-2 - soldier finished saying the phrase "stop, I'll shoot!" and lost sight of the actor<br> 2-0 - soldier finished saying the phrase "gone bastard". |
 

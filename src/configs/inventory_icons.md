@@ -3,6 +3,7 @@
 Written by @nltp_ashes
 
 Table of content :
+
 - [I. Item config](inventory_icons.md#i-item-config)
 - [I.A. Defining an icon sheet](inventory_icons.md#ia-defining-an-icon-sheet)
 - [I.B Placement on the icon sheet](inventory_icons.md#ib-placement-on-the-icon-sheet)
@@ -28,8 +29,9 @@ ___
 
 First, icons textures are contained in icon sheets : textures containing multiple icons. In your item's config, you must (or not) define the icon sheet to use :
 
-**File :** `gamedata\configs\items\items\items_my_item.ltx` 
-```ini
+**File :** `gamedata\configs\items\items\items_my_item.ltx`
+
+```ini,lang=LTX
 [my_item]
 icons_texture           = ui\icons\my_icon_sheet
 ...
@@ -46,7 +48,8 @@ ___
 Like will be later explained, your icon will be somewhere on this icon sheet. Thus, you need to define the coordinates of the icon on the sheet, and the size of the icon.
 
 **File :** `gamedata\configs\items\my_item.ltx`
-```ini
+
+```ini,lang=LTX
 [my_item]
 ...
 inv_grid_width          = 2    ; how many slots wide it should be
@@ -70,6 +73,7 @@ To create and edit your icon sheet, you'll need a specialized software program. 
 First, you will need to create a DirectDraw Surface (.dds) file at the location you defined in the item's config. Here, following the same example, that will be `gamedata\textures\ui\icons\` with a file called `my_icon_sheet.dds`.
 
 For your icons to look good, and have maximum compatibility, you should :
+
 1. Have the x and y resolution of your texture must be a power of 2 : `128x256` or `256x256`, etc.;
 2. Save the icon sheet, using `ARGB8` (also called `A8R8G8B8`) format;
 3. Make the background of your icon sheet should be transparent.
@@ -77,6 +81,7 @@ For your icons to look good, and have maximum compatibility, you should :
 You can think of your sheet as a grid of "slots". Each slot is 50px by 50px. So if you want your icon to be 1 slot, it should be 50px by 50px, two slots vertically 100px by 50px, etc.
 
 Your icon(s) should :
+
 1. Be at least 1 slot wide and 1 slot tall (otherwise there isn't really an icon you know?);
 2. Be at most 10 slots wide (that's the width of vanilla's inventory).
 
@@ -84,7 +89,7 @@ ___
 
 ### II.B. Setting up icons within the sheet
 
-Let us take the following icon sheet as an example. 
+Let us take the following icon sheet as an example.
 
 **Note :** The [black grid](https://forums.getpaint.net/topic/4175-grid-maker-plugin/) is here to help in the explanation, and is of course to be removed before using the icon sheet in-game !
 
@@ -103,7 +108,8 @@ You can imagine each slot having a coordinate on this grid. Coordinates start a 
 The coordinates for the box of Mon Cheri (the red box in the middle) are for example (4, 2).
 
 **File :** `gamedata\configs\items\my_item.ltx`
-```ini
+
+```ini,lang=LTX
 [my_item]
 ...
 inv_grid_x              = 4    ; where on the grid the icon is on the x axis
@@ -117,7 +123,8 @@ inv_grid_y              = 2    ; where on the grid the icon is on the y axis
 The size of the icon is 2 for the width, and 1 for the height.
 
 **File :** `gamedata\configs\items\my_item.ltx`
-```ini
+
+```ini,lang=LTX
 [my_item]
 ...
 inv_grid_width          = 2    ; how many slots wide it should be

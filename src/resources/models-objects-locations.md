@@ -17,19 +17,3 @@ FIREBREATH Hands Rig
 [GitHub](https://github.com/firebreath1001/Stalker-Hand-Rig)
 
 ![Rig Prev centered](resources-images/FIREBREATH_rig_preview.png)
-
-TheParaziT Hands Rig
-
-[GitHub]()
-
-prew here
-
-### Humans Rig
-
-Cascadeur Scene
-
-Blender Stalker Rig
-
-### Mutants
-
-Blender {Mutant}

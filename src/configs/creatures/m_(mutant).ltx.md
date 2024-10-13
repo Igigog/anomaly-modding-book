@@ -12,7 +12,7 @@ Example value taken from vanilla m_bloodsucker.ltx
     <summary>General parameters</summary>
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | GroupControlSection |  | spawn_group |  |
 | SpaceRestrictionSection |  | space_restrictor<br> zone_mosquito_bald<br> zone_witches_galantine<br> zone_burning_fuzz1<br> zone_mincer<br> zone_gravi_zone |  |
 | $spawn |  | "monsters\bloodsuckers\bloodsucker_base" |  |
@@ -46,7 +46,7 @@ Example value taken from vanilla m_bloodsucker.ltx
     <summary>AI</summary>
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | DayTime_Begin | Beginning of a mutant's day | 22 | Game Time |
 | DayTime_End | End of a mutant's day | 5 | Game Time |
 | Min_Satiety | Minimum hunger value | 0.000055 |  |
@@ -65,7 +65,7 @@ Example value taken from vanilla m_bloodsucker.ltx
     <summary>Bones</summary>
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | bone_head  |  | bip01_head | bone name |
 | bone_fire |  | bip01_head | bone name |
 | bone_eye_left |  | bip01_ponytail1 | bone name |
@@ -80,7 +80,7 @@ Example value taken from vanilla m_bloodsucker.ltx
     <summary>Invertory</summary>
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | icon | Icon in inventory | ui_npc_monster_krovosos |  |
 | Spawn_Inventory_Item_Section | What can be found during the search  | mutant_krovosos_jaw | Taken from the file monster_items.ltx |
 | Spawn_Inventory_Item_Probability | The chance of a body part falling out  | 0.0 | if you set it to 1.0, it will always fall out. If set to 2.0, two pieces will fall out. |
@@ -95,7 +95,7 @@ Example value taken from vanilla m_bloodsucker.ltx
     <summary>Fire</summary>
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | fire_max_distance |  | 0 |  |
 | fire_max_power |  | 5 |  |
 | fire_linear_factor |  | 0 |  |
@@ -109,7 +109,7 @@ Example value taken from vanilla m_bloodsucker.ltx
     <summary>Psy</summary>
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | psy_max_distance |  | 0 |  |
 | psy_max_power |  | 5 |  |
 | psy_linear_factor |  | 0.05 |  |
@@ -123,7 +123,7 @@ Example value taken from vanilla m_bloodsucker.ltx
     <summary>Radiation</summary>
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | radiation_max_distance |  | 0 |  |
 | radiation_max_power |  | 0.01 |  |
 | radiation_linear_factor |  | 1 |  |
@@ -139,7 +139,7 @@ Example value taken from vanilla m_bloodsucker.ltx
     <summary>Offline Alife</summary>
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | Scheduled |  | on |  |
 | Human |  | off |  |
 | Health | amount of lives in offline | 700 |  |
@@ -158,7 +158,7 @@ Example value taken from vanilla m_bloodsucker.ltx
     <summary>Physics</summary>
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | ph_box0_center |  | 0.0,  0.9,  0.0 |  |
 | ph_box0_size |  | 0.35, 0.9,  0.35 |  |
 | ph_box1_center |  | 0.0,  0.6,  0.0 |  |
@@ -186,7 +186,7 @@ Example value taken from vanilla m_bloodsucker.ltx
     <summary>Velocities</summary>
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | Velocity_Stand |  |  |  |
 | Velocity_RunFwdNormal | running speed |  |  |
 | Velocity_RunFwdDamaged | running speed when wounded |  |  |
@@ -203,7 +203,7 @@ Example value taken from vanilla m_bloodsucker.ltx
     <summary>Accelerations</summary>
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | Accel_Generic | Total mutant speed | 1.5 |  |
 | Accel_Calm | Mutant acceleration at calm | 2.5 |  |
 | Accel_Aggressive | Mutant acceleration in an aggressive state | 20.0 |  |
@@ -216,7 +216,7 @@ Example value taken from vanilla m_bloodsucker.ltx
     <summary>Attack parameters</summary>
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | MinAttackDist | Minimum attack distance | 2.0 |  |
 | MaxAttackDist | Maximum attack distance | 2.8 |  |
 | EffectDistance |  | 20.0 |  |
@@ -237,7 +237,7 @@ Example value taken from vanilla m_bloodsucker.ltx
     <summary>Attack On Move</summary>
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | aom_enabled | Whether the ability to attack on the move is enabled | 1 |  |
 | aom_only_jump | Ability to attack only when jumping | 1 |  |
 | aom_animation_left | Attack animations on the move left? | stand_run_attack_left_ |  |
@@ -257,7 +257,7 @@ Example value taken from vanilla m_bloodsucker.ltx
     <summary>Entity Conditions</summary>
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | satiety_v | Rate of decrease in satiety over time | 0.0001 |  |
 | radiation_v | Radiation reduction rate | 0.00001 |  |
 | satiety_power_v | Increasing stamina with decreasing satiety | 0.005 |  |
@@ -286,7 +286,7 @@ coefficients of parameter change rates during sleep
     <summary>Sleep settings</summary>
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | sleep_health | <abbr title="Unconfirmed">Restoring health when sleeping?</abbr> | 1.0 |  |
 | sleep_power | Recovering strength when sleeping | 1.0 |  |
 | sleep_satiety | Decreased strength when sleeping | 1.0 |  |
@@ -301,7 +301,7 @@ coefficients of parameter change rates during sleep
     <summary>Eat settings</summary>
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | eat_freq | bite frequency | 5.0 | Specified in seconds |
 | eat_slice | increase in satiety at one bite | 0.05 |  |
 | eat_slice_weight | reduction of food from a corpse in one bite | 10.0 |  |
@@ -316,7 +316,7 @@ coefficients of parameter change rates during sleep
     <summary>Morale settings</summary>
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | Morale_Hit_Quant |  | 0.1 |  |
 | Morale_Attack_Success_Quant | increase in morale during a successful attack | 0.1 |  |
 | Morale_Take_Heart_Speed |  | 0.1 |  |
@@ -332,7 +332,7 @@ coefficients of parameter change rates during sleep
     <summary>Sounds</summary>
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | sound_idle | Idle sound | monsters\bloodsucker\idle_ |  |
 | sound_eat | sound of eating | monsters\bloodsucker\eat_ |  |
 | sound_aggressive | sound of aggression | monsters\bloodsucker\sucker_breath_mix_ |  |
@@ -351,7 +351,7 @@ coefficients of parameter change rates during sleep
     <summary>Sounds parameters</summary>
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | distant_idle_sound_delay |  | 80000 |  |
 | distant_idle_sound_range |  | 100.0 |  |
 | idle_sound_delay | random delay between sound playback at idle | 95000 | 0 to N |
@@ -368,7 +368,7 @@ coefficients of parameter change rates during sleep
     <summary>Damages</summary>
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | damage | m_bloodsucker_damage |  |  |
 | critical_wound_threshold | Critical wound threshold | -1 |  |
 | critical_wound_decrease_quant |  | 0 |  |
@@ -391,7 +391,7 @@ Unique abilitys for mutants. Each mutant may have its own individual abilities, 
     <summary>Vision</summary>
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | eye_fov | Field of view | 180 |  |
 | eye_range | Visibility range | 150 |  |
 | DynamicObjectsCount | Determines how many objects the mutant can remember seeing | 32 |  |
@@ -416,7 +416,7 @@ Unique abilitys for mutants. Each mutant may have its own individual abilities, 
     <summary>Special Effectors</summary>
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | duality_h |  | 0.08 |  |
 | duality_v |  | 0.06 |  |
 | blur |  | 0.71 |  |
@@ -449,7 +449,7 @@ ___
     <summary>AI_Crow</summary>
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | speed |  | 6.0 |  |
 | angular_speed |  | 0.1 |  |
 | goal_change_delta |  | 5.0 |  |
@@ -469,7 +469,7 @@ ___
 #### Sounds
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | Sound_Growl |  | monsters\bloodsucker\sucker_growl_ |  |
 | Sound_Alien |  | monsters\bloodsucker\sucker_breath_ |  |
 | Sound_Invisibility_Change_State |  | monsters\bloodsucker\invisible |  |
@@ -481,7 +481,7 @@ ___
 #### Velocities
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | Velocity_Invisible_Linear |  | 5.0 |  |
 | Velocity_Invisible_Angular |  | 4.62 |  |
 
@@ -490,7 +490,7 @@ ___
 ##### Invisible Ability
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | Particle_Invisible |  | anomaly2\bloodsucker_shield |  |
 | Particles_Invisible_Tracks |  | monsters\bloodsucker_step |  |
 | Particles_Invisible_Tracks_Freq |  | 70 |  |
@@ -505,7 +505,7 @@ ___
 #### Vampire Ability
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | Vampire_Delay |  | 5000 |  |
 | Vampire_Want_Speed |  | 0.1 |  |
 | Vampire_Wound |  | 0.2 |  |
@@ -517,7 +517,7 @@ ___
 #### Predator Ability
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | Predator_Visual | Visual in invisibility | monsters\krovosos\krovosos_xray |  |
 
 </details>
@@ -530,7 +530,7 @@ ___
     <summary>SM_BOARW</summary>
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | actor_restrictor |  | medium_monster |  |
 
 ### Abilitys
@@ -538,7 +538,7 @@ ___
 #### Squad seperation behaviour Ability
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | separate_factor | pushing force | 0.8 |  |
 | separate_range | radius in which the pushing acts | 3 |  |
 
@@ -554,7 +554,7 @@ ___
 #### Sounds
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | sound_tele_hold |  | monsters\burer\burer_tele_hold |  |
 | sound_tele_throw |  | monsters\burer\burer_tele_throw |  |
 | sound_gravi_wave |  |  |  |
@@ -566,7 +566,7 @@ ___
 #### Shield Ability
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | shield_cooldown |  | 3000 |  |
 | shield_time |  | 3000 |  |
 | shield_keep_particle |  | artefact\af_thermal_hide |  |
@@ -576,7 +576,7 @@ ___
 #### Anti-aim Ability
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | anti_aim_timeout |  | 2 | sec |
 | anti_aim_effectors |  | effector_monster_hit_1, effector_monster_hit_2, effector_monster_hit_3, effector_monster_hit_4 |  |
 | anti_aim_animation |  | stand_stamina_attack_ |  |
@@ -590,7 +590,7 @@ ___
 #### Gravi Ability
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | Gravi_Cooldown |  | 6840 | milisec |
 | Gravi_MinDist |  | 1 | meter |
 | Gravi_MaxDist |  | 18 | meter |
@@ -605,7 +605,7 @@ ___
 #### Tele Ability
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | Tele_Max_Handled_Objects |  | 3 |  |
 | Tele_Max_Time | max time to be in telekinesis | 6200 | s |
 | Tele_Time_To_Hold |  | 340 |  |
@@ -621,7 +621,7 @@ ___
 #### Scanner Ability
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | scan_critical_value | threshold value | 25.0 |  |
 | scan_radius | scanning radius | 50.0 |  |
 | scan_velocity_threshold | the boundary speed up to which the actor's movement is ignored | 4.0 |  |
@@ -643,7 +643,7 @@ ___
 #### Jump Parameters
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | jump_delay | random delay between jumps | 2500 |  |
 | jump_factor | jump factor | 2.0 |  |
 | jump_ground_trace_range |  | 1.5 |  |
@@ -667,7 +667,7 @@ ___
 Attack specific
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | prediction_factor |  | 0.1 |  |
 | attack_radius | run around radius | 1 |  |
 | prepare_jump_timeout |  | 0 | Specified in milliseconds |
@@ -686,7 +686,7 @@ ___
     <summary>SM_CONTR</summary>
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | selector_free_hunting |  |  |  |
 | selector_cover |  |  |  |
 | selector_hear_sound |  |  |  |
@@ -695,7 +695,7 @@ ___
 | selector_walk_around |  |  |  |
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | tube_condition_see_duration |  | 10 |  |
 | tube_condition_min_delay |  | 2000 |  |
 | tube_damage |  | 1.0 |  |
@@ -703,7 +703,7 @@ ___
 | tube_at_once |  | false |  |
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | control_fx_texture |  | act\act_controller_hit |  |
 | control_fx_texture2 |  | act\act_controller_hit1 |  |
 
@@ -712,7 +712,7 @@ ___
 #### Controlling Ability
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | Max_Controlled_Count |  | 10 |  |
 | control_effector |  | controller_control_effector |  |
 | Friend_Community_Overrides |  | monolith |  |
@@ -721,7 +721,7 @@ ___
 #### Anti-aim Ability
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | anti_aim_timeout |  | 4 | sec |
 | anti_aim_effectors |  | effector_monster_hit_1, effector_monster_hit_2, effector_monster_hit_3, effector_monster_hit_4 |  |
 | anti_aim_animation |  | stand_attack_ |  |
@@ -743,7 +743,7 @@ ___
 Parameters of a dog's behavior in the area designated for him home
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | anim_factor |  | 50 | Specified in percent (from 1 to 100) |
 | corpse_use_timeout | timeout on using a corpse | 10 | Specified in seconds |
 | min_life_time | minimum waking time | 10 | сек (расчитывается min_life_time + rand(10) * min_life_time) |
@@ -764,8 +764,8 @@ ___
 #### Squad seperation behaviour
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
-| separate_factor | pushing force | 0.8 |  | 
+|---|---|---|---|
+| separate_factor | pushing force | 0.8 |  |
 | separate_range | radius in which the pushing acts | 3 |  |
 
 </details>
@@ -784,7 +784,7 @@ ___
 #### step effector
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | step_effector_time |  | 0.5 |  |
 | step_effector_amplitude |  | 1.5 |  |
 | step_effector_period_number |  | 5.0 |  |
@@ -792,14 +792,14 @@ ___
 #### AI
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | Anomaly_Detect_Radius |  | 15.0 |  |
 | Anomaly_Detect_Time_Remember |  | 10000 |  |
 
 #### Huge Kick Ability
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | HugeKick_Damage |  | 1.4 |  |
 | HugeKick_Particles |  | monsters\gigant_wave |  |
 | HugeKick_MinMaxDist |  | 1,20 |  |
@@ -816,7 +816,7 @@ ___
     <summary>AI_PHANT</summary>
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | speed |  | 0.5 |  |
 | angular_speed |  | 3.5 |  |
 | contact_hit |  | 0.05 |  |
@@ -824,7 +824,7 @@ ___
 #### Sounds
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | sound_birth |  | monsters\poltergeist\attack_hit_0 |  |
 | sound_fly |  | monsters\poltergeist\die_0 |  |
 | sound_contact |  | monsters\poltergeist\hit_0 |  |
@@ -833,7 +833,7 @@ ___
 #### Particles
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | particles_birth |  | monsters\phantom_birth |  |
 | particles_fly |  | monsters\phantom_fly |  |
 | particles_contact |  | monsters\phantom_death |  |
@@ -849,16 +849,16 @@ ___
     <summary>SM_POLTR</summary>
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | squad_attack_algorithm |  | 1 |  |
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | anger_hunger_threshold |  | 0.1 |  |
 | anger_loud_threshold |  | 0.7 |  |
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | Invisible_Energy_Restore_Velocity |  | 0.1 |  |
 | Invisible_Energy_Decline_Velocity |  | 0.0 |  |
 | Invisible_Energy_Critical_Value |  | 0.01 |  |
@@ -866,27 +866,28 @@ ___
 | Invisible_Energy_Aggressive_Restore_Velocity |  | 0.1 |  |
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | Particles_Damage |  | monsters\polter_damage |  |
 | Particles_Death |  | monsters\polter_death_00 |  |
 | Particles_Idle |  | monsters\polter_idle_00 |  |
 | Particles_Hidden |  | monsters\polter_linza_00 |  |
 
 ;-- Delays -------------------
+
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | Delay_Flame_Min |  | 30000 |  |
 | Delay_Flame_Normal |  | 30001 |  |
 | Delay_Flame_Aggressive |  | 30001 |  |
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | Delay_Tele_Min |  | 0 |  |
 | Delay_Tele_Normal |  | 100 |  |
 | Delay_Tele_Aggressive |  | 10 |  |
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | Delay_Scare_Min |  | 30000 |  |
 | Delay_Scare_Normal |  | 30001 |  |
 | Delay_Scare_Aggressive |  | 30001 |  |
@@ -917,7 +918,7 @@ ___
     <summary>SM_SNORK</summary>
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | jump_delay |  | 4000 |  |
 | jump_factor |  | 2.0 |  |
 | jump_ground_trace_range |  | 1.5 |  |
@@ -932,7 +933,7 @@ ___
 #### Sounds
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | sound_landing | Sound on landing | monsters\biting\def_ |  |
 
 </details>
@@ -949,7 +950,7 @@ ___
     <summary>SM_ZOMBI</summary>
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+|---|---|---|---|
 | FakeDeathCount | max count of fake death | 4 |  |
 | StartFakeDeathHealthThreshold | health threshold after which fake death begins | 0.6 |  |
 

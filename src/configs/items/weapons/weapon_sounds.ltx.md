@@ -5,16 +5,16 @@ ___
 ## Parameter writing formula
 
 | Sound | Name of the sound | Volume | Delay |
----|---|---|---|
+|---|---|---|---|
 | Sound | Name of the sound | Volume (0.0 - 1.0) | Delay in seconds |
 
-## General parameters
+## General Sounds Parameters
 
 <details>
-    <summary>General parameters</summary>
+    <summary>General Sounds Parameters</summary>
 
-| Parameter Name | Parameter Description | Example value |
----|---|---|
+| Parameter Name | Parameter Description | Example Value | Value Data Type | Parameter Possible Values And Their Descriptions |
+|---|---|---|:---:|---|
 | snd_draw | Draw Sound | weapons\bino_draw |
 | snd_holster | Holster Sound | weapons\bino_holster |
 | snd_gyro | sound reduction/increase of zoom | weapons\binoculars_gyro |
@@ -25,13 +25,13 @@ ___
 
 </details>
 
-## Gunshot sounds
+## Shot Sounds Parameters
 
 <details>
-    <summary>Gunshot sounds</summary>
+    <summary>Shot Sounds Parameters</summary>
 
-| Parameter Name | Parameter Description | Example value |
----|---|---|
+| Parameter Name | Parameter Description | Example Value | Value Data Type | Parameter Possible Values And Their Descriptions |
+|---|---|---|:---:|---|
 | snd_shoot | shot sound | weapons\as50\as50_shoot |
 | snd_shoot1 | sound of shot 1 | weapons\as50\as50_shoot |
 | snd_shoot2 | shot sound 2 | weapons\as50\as50_shoot |
@@ -47,20 +47,20 @@ ___
 <details>
     <summary>Sounds for the detector</summary>
 
-| Parameter Name | Parameter Description | Example value |
----|---|---|
+| Parameter Name | Parameter Description | Example Value | Value Data Type | Parameter Possible Values And Their Descriptions |
+|---|---|---|:---:|---|
 | found_snd |  | detectors\DA-2_beep1 |
 | catch_snd |  | detectors\DA-2_beep1 |
 
 </details>
 
-## Sounds for grenades/grenade launchers
+## UGL Sounds Parameters
 
 <details>
-    <summary>Sounds for grenades/grenade launchers</summary>
+    <summary>UGL Sounds Parameters</summary>
 
-| Parameter Name | Parameter Description | Example value |
----|---|---|
+| Parameter Name | Parameter Description | Example Value | Value Data Type | Parameter Possible Values And Their Descriptions |
+|---|---|---|:---:|---|
 | snd_explode | the sound of an explosion | grenade_f1_snd_explode |
 | snd_checkout | the sound of pulling the pin from a grenade | weapons\generic_checkout |
 | snd_open_weapon | | the sound of opening the drum/weapon magazine | weapons\rg6\rg6_reload_start |
@@ -69,13 +69,13 @@ ___
 
 </details>
 
-## Reload sounds
+## Reload Sounds Parameters
 
 <details>
-    <summary>Reload sounds</summary>
+    <summary>Reload Sounds Parameters</summary>
 
-| Parameter Name | Parameter Description | Example value |
----|---|---|
+| Parameter Name | Parameter Description | Example Value | Value Data Type | Parameter Possible Values And Their Descriptions |
+|---|---|---|:---:|---|
 | snd_reload | Sound of not fully reloading | weapons\abakan\abakan_reload |
 | snd_reload_empty | the sound of a full reload | weapons\abakan\abakan_reload_empty |
 | snd_reload_grenade | sound of underbarrel grenade launcher reload | weapons\gp30\gp30_grenload |
@@ -86,13 +86,13 @@ ___
 
 </details>
 
-## Different levels of sound
+## Sound Layers Parameters
 
 <details>
-    <summary>Different levels of sound</summary>
+    <summary>Sound Layers Parameters</summary>
 
-| Parameter Name | Parameter Description | Example value |
----|---|---|
+| Parameter Name | Parameter Description | Example Value | Value Data Type | Parameter Possible Values And Their Descriptions |
+|---|---|---|:---:|---|
 | snd_1_layer |  | weapons\9a91\9a91_shoot |
 | snd_1_layer1 |  | weapons\9a91\9a91_shoot1 |
 | snd_1_layer2 |  | weapons\9a91\9a91_shoot2 |

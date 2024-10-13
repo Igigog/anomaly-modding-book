@@ -40,4 +40,4 @@ ___
 
 ## Sources
 
-[Source](https://github.com/PavelBlend/blender-xray/wiki/Plugin-.object)
+[Source](https://github.com/PavelBlend/blender-xray/wiki/Formats#object)

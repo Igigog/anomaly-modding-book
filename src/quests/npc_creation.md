@@ -1,9 +1,11 @@
 # NPC Creation
 
 Written by GhenTuong#1278
+
 Formatted and edited by @nltp_ashes
 
 Table of content :
+
 - [Chapter 1 : Configuration](npc_creation.md#chapter-1--configuration)
 - [Chapter 1.A : Creating your own mod files for character creation](npc_creation.md#chapter-1a--creating-your-own-mod-files-for-character-creation)
 - [Chapter 2 : NPC section](npc_creation.md#chapter-2--npc-section)
@@ -22,6 +24,7 @@ All dynamic objects are configured in `_unpacked\configs\system.ltx`.
 To not overcrowd the file, different configurations are grouped into multiple files, and they are included in system.ltx.
 
 What files to pay attention to:
+
 - `_unpacked\configs\creatures\*`
 - `_unpacked\configs\gameplay\*`
 - `_unpacked\configs\misc\squad_descr\*`
@@ -31,17 +34,18 @@ What files to pay attention to:
 
 While it's possible to configurate the files already present, for independent addons it's advisable to create your own files.
 
-One of the methods is by including your files: 
+One of the methods is by including your files:
 
 NB: "my_mod_name" will stand for whatever name you choose.
-	- for example if you want to call your mod "revolution", the file names would be:
-		- spawn_sections_revolution.ltx
-		- character_desc_revolution.xml
-		- dialogs_revolution.xml
-		- npc_profile_revolution.xml
-		- squad_descr_revolution.ltx
 
-**File :** `_unpacked\configs\creatures\spawn_section.ltx` 
+- for example if you want to call your mod "revolution", the file names would be:
+  - spawn_sections_revolution.ltx
+  - character_desc_revolution.xml
+  - dialogs_revolution.xml
+  - npc_profile_revolution.xml
+  - squad_descr_revolution.ltx
+
+**File :** `_unpacked\configs\creatures\spawn_section.ltx`
 
 - you add:  #include "spawn_sections_my_mod_name.ltx"
 
@@ -52,16 +56,16 @@ NB: "my_mod_name" will stand for whatever name you choose.
 **File :** `_unpacked\configs\system.ltx`
 
 - you add in the line of [dialogs]: dialogs_my_mod_name
-- you add in the line of [profiles]: 
-	- in the line of "files": npc_profile_my_mod_name
-	- in the line of "specific_characters_files": character_desc_my_mod_name
+- you add in the line of [profiles]:
+  - in the line of "files": npc_profile_my_mod_name
+  - in the line of "specific_characters_files": character_desc_my_mod_name
 
 **Folder :** `_unpacked\configs\gameplay\`
 
 - you add the files:
-	- character_desc_my_mod_name.xml
-	- dialogs_my_mod_name.xml
-	- npc_profile_my_mod_name.xml
+  - character_desc_my_mod_name.xml
+  - dialogs_my_mod_name.xml
+  - npc_profile_my_mod_name.xml
 
 **Folder :** `_unpacked\configs\misc\squad_descr`
 
@@ -70,13 +74,13 @@ NB: "my_mod_name" will stand for whatever name you choose.
 
 For your own custom files, you can copy-paste already exisiting ones and rename them. In that case, be careful to delete everything in your copied file from the old file, except the opening and closing node. For exemple, in dialogs file, <game_dialogs> and </game_dialogs> have to remain, and your code has to be inbetween of these two nodes.
 
-
 ___
 
 ## Chapter 2 : NPC section
 
 **File :** `_unpacked\configs\creatures\spawn_sections_bar.ltx`
-```ini
+
+```ini,lang=LTX
 [bar_visitors_barman_stalker_trader]:stalker_silent
 $spawn                      = "respawn\bar_visitors_barman_stalker_trader"
 character_profile           = bar_visitors_barman_stalker_trader
@@ -102,7 +106,8 @@ This is an example of a section.
 Now you make your section. Let's call your new character "han_yue_ling". We create it right in this file.
 
 **File :** `_unpacked\configs\creatures\spawn_sections_bar.ltx`
-```ini
+
+```ini,lang=LTX
 [han_yue_ling]:stalker
 character_profile           = han_yue_ling
 story_id                    = han_yue_ling
@@ -115,49 +120,52 @@ ___
 ## Chapter 3 : NPC profile
 
 **File :** `_unpacked\configs\gameplay\npc_profile_mlr.xml`
+
 ```xml
 <!-- Bar -->
 <character id="bar_visitors_barman_stalker_trader">
-	<class>bar_visitors_barman_stalker_trader</class>
+  <class>bar_visitors_barman_stalker_trader</class>
 </character>
 ```
 
 Very simple. Just make your NPC profile in a similar way.
 
 **File :** `_unpacked\configs\gameplay\npc_profile_mlr.xml`
+
 ```xml
 <character id="han_yue_ling">
-	<class>han_yue_ling</class>
-    <specific_character>han_yue_ling</specific_character>
+  <class>han_yue_ling</class>
+  <specific_character>han_yue_ling</specific_character>
 </character>
 ```
 
 Now we create a character description.
 
 **File :** `_unpacked\configs\gameplay\character_desc_bar.xml`
+
 ```xml
 <!-- Barkeep -->
 <specific_character id="bar_visitors_barman_stalker_trader" team_default = "1">
-	<name>bar_barmen_name</name>
-	<icon>ui_inGame2_barman</icon>
-	<map_icon x="1" y="4"></map_icon>
-	<bio>bar_barmen_bio</bio>
-	<class>bar_visitors_barman_stalker_trader</class>
-	<community>trader</community>
-	<terrain_sect>stalker_terrain</terrain_sect>
-	<money min="1000000" max="1000000" infinitive="1"></money>
-	<rank>18490</rank>
-	<reputation>2408</reputation>
-	<visual>actors\barman\barman</visual>
-	<!-- <snd_config>characters_voice\human\stalker_1\</snd_config> -->
-	<crouch_type>-1</crouch_type>
-	<supplies></supplies>
-	<start_dialog>bar_visitors_barman_stalker_trader_start_dialog</start_dialog>
-	<actor_dialog>dm_init_batender</actor_dialog>
-	<!-- LTTZ -->
-	<actor_dialog>barkeep_living_legend</actor_dialog>
-	<actor_dialog>barkeep_100rads</actor_dialog>
-	...
+  <name>bar_barmen_name</name>
+  <icon>ui_inGame2_barman</icon>
+  <map_icon x="1" y="4"></map_icon>
+  <bio>bar_barmen_bio</bio>
+  <class>bar_visitors_barman_stalker_trader</class>
+  <community>trader</community>
+  <terrain_sect>stalker_terrain</terrain_sect>
+  <money min="1000000" max="1000000" infinitive="1"></money>
+  <rank>18490</rank>
+  <reputation>2408</reputation>
+  <visual>actors\barman\barman</visual>
+  <!-- <snd_config>characters_voice\human\stalker_1\</snd_config> -->
+  <crouch_type>-1</crouch_type>
+  <supplies></supplies>
+  <start_dialog>bar_visitors_barman_stalker_trader_start_dialog</start_dialog>
+  <actor_dialog>dm_init_batender</actor_dialog>
+  <!-- LTTZ -->
+  <actor_dialog>barkeep_living_legend</actor_dialog>
+  <actor_dialog>barkeep_100rads</actor_dialog>
+...
 </specific_character>
 ```
 
@@ -206,23 +214,24 @@ Now we create a character description.
 So we make our character description like this. Don't forget to create a name string id, an icon id, making your unique model `actors\han_yue_ling.ogf`.
 
 **File :** `_unpacked\configs\gameplay\character_desc_bar.xml`
+
 ```xml
 <specific_character id="han_yue_ling" team_default = "1">
-	<name>han_yue_ling_name</name>
-	<icon>han_yue_ling_icon</icon>
-	<map_icon x="1" y="4"></map_icon>
-	<bio></bio>
-	<class>han_yue_ling</class>
-	<community>dolg</community>
-	<terrain_sect>stalker_terrain</terrain_sect>
-	<money min="1000000" max="1000000" infinitive="1"></money>
-	<rank>18490</rank>
-	<reputation>2408</reputation>
-	<visual>actors\han_yue_ling</visual>
-	<snd_config>characters_voice\human\stalker_1\</snd_config>
-	<supplies></supplies>
+  <name>han_yue_ling_name</name>
+  <icon>han_yue_ling_icon</icon>
+  <map_icon x="1" y="4"></map_icon>
+  <bio></bio>
+  <class>han_yue_ling</class>
+  <community>dolg</community>
+  <terrain_sect>stalker_terrain</terrain_sect>
+  <money min="1000000" max="1000000" infinitive="1"></money>
+  <rank>18490</rank>
+  <reputation>2408</reputation>
+  <visual>actors\han_yue_ling</visual>
+  <snd_config>characters_voice\human\stalker_1\</snd_config>
+  <supplies></supplies>
 
-	<!-- No dialog. For now. -->
+  <!-- No dialog. For now. -->
 </specific_character>
 ```
 
@@ -235,7 +244,8 @@ You don't spawn a stalker object alone. Stalkers and monsters always come with s
 Squad configuration is in `_unpacked\configs\misc\squad_descr\*`.
 
 **File :** `_unpacked\configs\misc\squad_descr\squad_descr_bar.xml`
-```ini
+
+```ini,lang=LTX
 [bar_visitors_barman_stalker_trader_squad]:online_offline_group
 faction                     = stalker
 npc                         = bar_visitors_barman_stalker_trader
@@ -269,7 +279,8 @@ always_arrived              = true
 So we make our squad:
 
 **File :** `_unpacked\configs\misc\squad_descr\squad_descr_bar.xml`
-```ini
+
+```ini,lang=LTX
 [han_yue_ling_squad]:online_offline_group
 faction                     = dolg
 npc                         = han_yue_ling
@@ -292,39 +303,38 @@ There are two ways to spawn your NPC : by script, or by adding your NPC to the c
 Make a new file in `_unpacked\scripts\` like this:
 
 **File :** `_unpacked\scripts\han_yue_ling.script`
+
 ```lua
 -- Bind function actor_on_first_update() to callback "actor_on_first_update"
 function on_game_start()
-	RegisterScriptCallback("actor_on_first_update",spawn_han_yue_ling)
+  RegisterScriptCallback("actor_on_first_update",spawn_han_yue_ling)
 end
 
 function spawn_han_yue_ling()
-	-- Check if having info "han_yue_ling_init"
-	if not has_alife_info("han_yue_ling_init") then
-		-- Check if squad does not exist.
-		if not get_story_se_object("han_yue_ling_squad") then
-			-- Get smart terrain "bar_dolg_general"
-			local smart = SIMBOARD.smarts_by_names["bar_dolg_general"]
-			-- Spawn squad "han_yue_ling_squad"
-			local squad = SIMBOARD:create_squad(smart,"han_yue_ling_squad")
-		end
-		-- Check if squad exist (spawned successfully).
-		if get_story_se_object("han_yue_ling_squad") then
-			-- Give info so the game won't spawn another squad every time loading a save file.
-			give_info("han_yue_ling_init")
-		end
-	end
+  -- Check if having info "han_yue_ling_init"
+  if not has_alife_info("han_yue_ling_init") then
+    -- Check if squad does not exist.
+    if not get_story_se_object("han_yue_ling_squad") then
+      -- Get smart terrain "bar_dolg_general"
+      local smart = SIMBOARD.smarts_by_names["bar_dolg_general"]
+      -- Spawn squad "han_yue_ling_squad"
+      local squad = SIMBOARD:create_squad(smart,"han_yue_ling_squad")
+    end
+    -- Check if squad exist (spawned successfully).
+    if get_story_se_object("han_yue_ling_squad") then
+      -- Give info so the game won't spawn another squad every time loading a save file.
+      give_info("han_yue_ling_init")
+    end
+  end
 end
 ```
 
 - `--[[ some comment ]]` or `-- some comment`  
   Is how you make comment lines in lua script.
 
-
 Start a new game or load your save files and the npc will be spawned and stay around the campfire in duty headquarters yard.
 
-
-NB: Potential bug 
+NB: Potential bug
 
 If you have multiple spawns of the same NPC, make sure that you gave the squad a story ID - the script checks for this story ID and if it can't find the ID it will spawn endlessly the same NPC.
 
@@ -333,7 +343,8 @@ If you have multiple spawns of the same NPC, make sure that you gave the squad a
 Locate the file `simulation.ltx`, in `_unpacked\configs\misc\`. Inside of that file, you can locate the smart terrain where you want your NPC to spawn, and add your NPC to the list.
 
 **File :** `_unpacked\configs\misc\simulation.ltx`
-```ini
+
+```ini,lang=LTX
 ...
 [bar_dolg_general]
 bar_dolg_general_petrenko_stalker_squad

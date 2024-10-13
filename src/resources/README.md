@@ -8,4 +8,4 @@ This section contains resources that may be useful for modding. (source models, 
 
 - [Audio](audio.md)
 - [Models](models-objects-locations.md)
-- [SDK resources](sdk-resources.md)
+- [Gamedata|Rawdata](gamedata-rawdata.md)

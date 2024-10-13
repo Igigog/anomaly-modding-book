@@ -44,12 +44,12 @@ Compile Button
 
 | Button | Description | Note |
 ---|---|---|
-| Build | Creates a .prj precompilation file | - |
-| Make Game | Creates a .game file | - |
-| Make Details | Creates a [.details](../main-folders-and-files/file-formats/index.html#details) file | - |
-| Make HOM | Creates a [.hom](../main-folders-and-files/file-formats/index.html#hom-hierarchical-occlusion-mapping) file |  |
-| Make Sound Occluder | Creates a [.som](../main-folders-and-files/file-formats/index.html#som-sound-occluder-mesh) file |  |
-| Make Ai-Map | Creates a .ai file | - |
+| Build | Creates a [.prj](../main-folders-and-files/file-formats/game-levels/prj.md) precompilation file | - |
+| Make Game | Creates a [.game](../main-folders-and-files/file-formats/game-levels/game.md) file | - |
+| Make Details | Creates a [.details](../main-folders-and-files/file-formats/game-levels/details.md) file | - |
+| Make HOM | Creates a [.hom](../main-folders-and-files/file-formats/game-levels/hom.md) file |  |
+| Make Sound Occluder | Creates a [.som](../main-folders-and-files/file-formats/game-levels/som.md) file |  |
+| Make Ai-Map | Creates a [.ai](../main-folders-and-files/file-formats/game-levels/ai.md) file | - |
 | Import Error List | Import Error List | .err |
 | Export Error List | Export Error List | .err |
 | Clear Error List | Clear Error List | - |

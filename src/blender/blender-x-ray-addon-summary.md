@@ -14,7 +14,7 @@ blender-xray is an addon for the 3D blender package (blender.org) that is design
 This table lists the X-Ray file formats that the addon can import/export.
 
 | Extension | Description | Can Import | Can Export |
----|---|---|---|
+|---|---|---|---|
 | [.object](../main-folders-and-files/file-formats/index.html#object) | Source objects | Yes | Yes |
 | .skl | Skeletal animation | Yes | Yes |
 | .skls | Skeletal animations in a container | Yes | Yes |
@@ -35,7 +35,7 @@ This table lists the X-Ray file formats that the addon can import/export.
 
 ___
 
-# Addon installation and setup
+### Addon installation and setup
 
 ___
 

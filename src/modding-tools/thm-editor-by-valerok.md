@@ -31,7 +31,7 @@ The [THM Editor](thm-editor-by-i-love-kfc.md) from i-love-kfc was taken as the b
 - #### File Button
 
 | Button | Description |
----|---|
+|---|---|
 | Load | Loads the selected .thm |
 | Save | Save .thm |
 | Save As | Save as .thm |
@@ -39,7 +39,7 @@ The [THM Editor](thm-editor-by-i-love-kfc.md) from i-love-kfc was taken as the b
 - #### Tools Button
 
 | Button | Description |
----|---|
+|---|---|
 | Import DDS Params | Adjust .thm to the texture format (texture format can be set incorrectly, so sometimes it is worth adjusting it manually) |
 | Generate THM for texture | When you select a basic texture, the program creates a thm with basic properties for it (if a texture with the prefix _bump is found, the thm will set all the necessary flags for using bumps) |
 

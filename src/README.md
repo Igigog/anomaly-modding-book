@@ -14,4 +14,6 @@ Igigog#6387
 
 ___
 
-> **Please keep in mind that the book is still being written, and the information provided here may not be accurate, or may not be provided at all!**
+```admonish warning
+Please keep in mind that the book is still being written, and the information provided here may not be accurate, or may not be provided at all!
+```

@@ -2,47 +2,47 @@
 
 ___
 
-## General parameters
+## General Ammo Parameters
 
 <details>
-    <summary>General parameters</summary>
+    <summary>General Ammo Parameters</summary>
 
-| Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
-| GroupControlSection |  | spawn_group |  |
-| discovery_dependency |  |  |  |
-| $spawn | the ammo directory in the Level Editor | "weapons\ammo\ammo_11.43x23_hydro" |  |
-| class | engine ammo class | AMMO_S | AMMO_S - S_VOG25 - S_OG7B - S_M209 |
-| cform | parameter for dynamic objects; necessary for correct creation of the skeleton model | skeleton |  |
-| visual | World-model ammo box | dynamics\weapons\wpn_ammo\ammo_1143x23_fmj.ogf | Specifies the path to the file |
-| $prefetch | preload queue | 64 |  |
-| kind | The type of item to group into the appropriate section in the Item Spawner | w_ammo |  |
-| cost | Base price | 910 | Specified in numbers |
-| box_size | number of bullets in a pack | 16 | Specified in numbers |
+| Parameter Name | Parameter Description | Example Value | Value Data Type | Parameter Possible Values And Their Descriptions |
+|---|---|---|:---:|---|
+| GroupControlSection |  | spawn_group |  |  |
+| discovery_dependency |  |  |  |  |
+| $spawn | Ammo directory in Level Editor | "weapons\ammo\ammo_11.43x23_hydro" |  |  |
+| class | Engine ammo class | AMMO_S |  | AMMO_S<br> S_VOG25<br> S_OG7B<br> S_M209 |
+| cform | Skeleton model | skeleton |  |  |
+| visual | Ammo box world model  | dynamics\weapons\wpn_ammo\ammo_1143x23_fmj.ogf | String | Path to file |
+| $prefetch | Preload queue | 64 |  |  |
+| kind | Kind of item to group into the appropriate section in the Item Spawner | w_ammo |  |  |
+| cost | Base price | 910 |  |  |
+| box_size | Number of bullets in ammo box | 16 |  |  |
 
 </details>
 
-### Ammo parameters in the inventory
+### Inventory Ammo Parameters
 
 <details>
-    <summary>Ammo parameters in the inventory</summary>
+    <summary>Inventory Ammo Parameters</summary>
 
-| Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
-| inv_name | The name in the inventory | ammo-11.43x23-fmj |  |
-| inv_name_short | short name in the inventory | ammo-11.43x23-fmj_s |  |
-| inv_weight | inventory weight | .29 | The number is given in kilograms |
-| description | Description in inventory | ammo-11.43x23-fmj_descr |  |
+| Parameter Name | Parameter Description | Example Value | Value Data Type | Parameter Possible Values And Their Descriptions |
+|---|---|---|---|---|
+| inv_name | Inventory name | ammo-11.43x23-fmj |  |  |
+| inv_name_short | Inventory short name | ammo-11.43x23-fmj_s |  |  |
+| inv_weight | Inventory weight | .29 |   | Kilograms |
+| description | Inventory description | ammo-11.43x23-fmj_descr |  |  |
 
 </details>
 
-#### Ammo icon parameters
+#### Ammo Icon Parameters
 
 <details>
-    <summary>Ammo icon parameters</summary>
+    <summary>Ammo Icon Parameters</summary>
 
-| Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+| Parameter Name | Parameter Description | Example Value | Value Data Type | Parameter Possible Values And Their Descriptions |
+|---|---|---|---|---|
 | inv_grid_width | icon width | 2 | number of 50x50 pixels cells |
 | inv_grid_height | icon height | 1 | number of 50x50 pixels cells |
 | inv_grid_x | the coordinate of the upper left corner of the icon on a 50x50 pixel grid on the X axis | 55 | number of cells indented to the right |
@@ -50,18 +50,18 @@ ___
 
 </details>
 
-### Parameters of ammo coefficients
+### Ammo Coefficients Parameters
 
 <details>
-    <summary>Parameters of ammo coefficients</summary>
+    <summary>Ammo Coefficients Parameters</summary>
 
-| Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+| Parameter Name | Parameter Description | Example Value | Value Data Type | Parameter Possible Values And Their Descriptions |
+---|---|---|---|---|
 | k_disp | Coefficient of accuracy of the bullet | 0.66 |  |
 | k_impulse | Pulse coefficient transmitted to the ragdoll-body | 0.55 |  |
 | k_ap |  | 0.1 |  |
 | k_air_resistance | Bullet air resistance coefficient | 0.8 |  |
-| k_hit	 | Bullet kill rate | 1.0 |  |
+| k_hit | Bullet kill rate | 1.0 |  |
 | k_bullet_speed | Bullet velocity coefficient | 1.15 |  |
 | k_cam_dispersion | Camera dispersion coefficient | 1.0 |  |
 | k_pierce | Penetration power of a bullet |  |  |
@@ -74,27 +74,27 @@ ___
 <details>
     <summary>Other parameters</summary>
 
-| Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+| Parameter Name | Parameter Description | Example Value | Value Data Type | Parameter Possible Values And Their Descriptions |
+---|---|---|---|---|
 | tracer_color_ID |  | 2 |  |
 | wm_size | texture size of the mark left on the ground after the explosion | 0.072 | The bigger the number, the bigger the mark |
 | impair | Barrel wear coefficient from the bullet | 1.4 |  |
 | tier |  | 2 |  |
 | buck_shot | Number of components in a bullet, e.g. fractions | 9 |  |
-| tracer | Is the bullet a tracer | off | on (Yes) - off (No) |
-| 4to1_tracer | Will four tracers be combined into one | true | true (yes) - false (no) |
-| explosive | Will there be an explosion when touched | false | true (yes) - false (no) |
+| tracer | Is the bullet a tracer | off | true - 1 - on (Yes)<br> false - 0 - off (No) |
+| 4to1_tracer | Will four tracers be combined into one | true | true - 1 - on (Yes)<br> false - 0 - off (No) |
+| explosive | Will there be an explosion when touched | false | true - 1 - on (Yes)<br> false - 0 - off (No) |
 | disassemble_parts |  | prt_i_ammo,prt_i_ammo |  |
 
 </details>
 
-### Sound parameters
+### Sound Parameters
 
 <details>
-    <summary>Sound parameters</summary>
+    <summary>Sound Parameters</summary>
 
-| Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
----|---|---|---|
+| Parameter Name | Parameter Description | Example Value | Value Data Type | Parameter Possible Values And Their Descriptions |
+---|---|---|---|---|
 | snd_on_take | The sound when taking | ammo |  |
 
 </details>

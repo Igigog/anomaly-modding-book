@@ -11,7 +11,7 @@ Description of addon settings
 
 ___
 
-# Paths
+## Paths
 
 ___
 
@@ -19,7 +19,7 @@ These settings specify paths to external files or directories of X-Ray Engine or
 The addon automatically sets these values:
 
 | Parameter | Value |
----|---|
+|---|---|
 | fs.ltx File | - |
 | Gamedata Folder | . |
 | Textures Folder | .textures\ |

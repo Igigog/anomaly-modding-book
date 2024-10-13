@@ -22,7 +22,7 @@ A simple .bump and .bump# texture generator from normal maps with the ability to
 ## Functionality
 
 | Generate From | Description |
----|---|
+|---|---|
 | From bump (For bump#) | Generates bump# from the bump map |
 | From Normal map | Generates bump from the normal map |
 | Read Specular map | Whether to use the Specular Map |
@@ -31,7 +31,7 @@ A simple .bump and .bump# texture generator from normal maps with the ability to
 Checkboxes
 
 | Checkboxes | Description |
----|---|
+|---|---|
 | SOC Fromat thm | Generates SOC .thm file format |
 
 ___

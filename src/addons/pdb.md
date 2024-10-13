@@ -12,7 +12,7 @@ Program Debug Database (PDB, for short) files are useful in this scenario, becau
 
 When using PDB files, you can expect this kind of logs :
 
-```
+```log
 SymInit: Symbol-SearchPath: '.;I:\ProgramFiles\S.T.A.L.K.E.R. Anomaly 1.5.2 Modded\bin;I:\ProgramFiles\S.T.A.L.K.E.R. Anomaly 1.5.2 Modded\bin;C:\WINDOWS;C:\WINDOWS\system32;', symOptions: 530, UserName: 'ASHES'
 OS-Version: 6.2.9200 () 0x100-0x1
 I:\ProgramFiles\S.T.A.L.K.E.R. Anomaly 1.5.2 Modded\bin\AnomalyDX11AVX.exe:AnomalyDX11AVX.exe (0000000140000000), size: 18108416 (result: 0), SymType: 'PDB', PDB: '.\AnomalyDX11AVX.pdb'
@@ -34,7 +34,7 @@ at address 0x0000000140C0C69E
 
 Instead of this when you do not use PDB files :
 
-```
+```log
 SymInit: Symbol-SearchPath: '.;I:\ProgramFiles\S.T.A.L.K.E.R. Anomaly 1.5.2 Modded\bin;I:\ProgramFiles\S.T.A.L.K.E.R. Anomaly 1.5.2 Modded\bin;C:\WINDOWS;C:\WINDOWS\system32;', symOptions: 530, UserName: 'ASHES'
 OS-Version: 6.2.9200 () 0x100-0x1
 I:\ProgramFiles\S.T.A.L.K.E.R. Anomaly 1.5.2 Modded\bin\AnomalyDX11AVX.exe:AnomalyDX11AVX.exe (0000000140000000), size: 18108416 (result: 0), SymType: 'PDB', PDB: '.\AnomalyDX11AVX.pdb'

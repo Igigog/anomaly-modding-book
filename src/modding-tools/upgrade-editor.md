@@ -8,7 +8,6 @@ ___
 ## About
 
 > This article is under construction
-
 > The editor was created for Gunslinger Mod so some parameters will be incompatible with Anomaly! Also, after exporting, you may need to modify the config!
 
 Visual editor that makes it relatively quick and easy to create weapon upgrade schemes
@@ -30,7 +29,7 @@ Visual editor that makes it relatively quick and easy to create weapon upgrade s
 #### File Button
 
 | Button | Description |
----|---|
+|---|---|
 | New | New Upgrade Tree |
 | Open... | Open Upgrade Tree |
 | Open Recent | Open Recent Upgrade Tree |
@@ -42,7 +41,7 @@ Visual editor that makes it relatively quick and easy to create weapon upgrade s
 #### Edit Button
 
 | Button | Description |
----|---|
+|---|---|
 | New Upgrade... | Creates a new upgrade |
 | Edit Upgrade... | Edits selected upgrade |
 | Delete Upgrade | Deletes selected upgrade |
@@ -50,7 +49,7 @@ Visual editor that makes it relatively quick and easy to create weapon upgrade s
 #### Options Button
 
 | Button | Description |
----|---|
+|---|---|
 | Set preview texture... | The texture of the item to be upgraded is selected |
 | Set upgrade texture... | The texture of the item's upgrades is selected |
 | Assotiate program with .upr | Assotiate program with .upr (Upgrades tree file) |
@@ -62,7 +61,7 @@ Visual editor that makes it relatively quick and easy to create weapon upgrade s
 #### Help Button
 
 | Button | Description |
----|---|
+|---|---|
 | Help... | Shows useful information |
 | About... | About |
 
@@ -77,28 +76,28 @@ ___
 #### Preview parameters
 
 | Parameters | Description |
----|---|
+|---|---|
 | upgr_icon_x | X coordinate of the upper left corner of the weapon icon in the upgrade window |
 | upgr_icon_y | Y coordinate of the upper left corner of the weapon icon in the upgrade window |
 | upgr_icon_width | icon width in the upgrade window |
 | upgr_icon_height | icon height in the upgrade window |
 
 | Button | Description |
----|---|
+|---|---|
 | Apply | Apply |
 | Pick | Allows you to pick an icon in a separate window |
 
 #### Visualization
 
 | Button | Description |
----|---|
+|---|---|
 | Background | On/Off background |
 | Aligment |  |
 
 #### Upgrades control
 
 | Button | Description |
----|---|
+|---|---|
 | New Upgrade | Creates a new upgrade |
 | Edit Selected | Edits selected upgrade |
 | Remove selected | Deletes selected upgrade |
@@ -106,7 +105,7 @@ ___
 ##### Edit Upgrades
 
 | General | Description |
----|---|
+|---|---|
 | Name | Upgrade Name |
 | Property | ? |
 | Inherits | ? |
@@ -115,14 +114,14 @@ ___
 | Setup Influence... | Selecting a parameter that improves the item's parameters |
 
 | Visualization | Description |
----|---|
+|---|---|
 | Point X | ? |
 | Point Y | ? |
 | Scheme X | ? |
 | Scheme Y | ? |
 
 | Advanced configuration | Description |
----|---|
+|---|---|
 | inventory name | ? |
 | inventory description | ? |
 | precondition_functor | ? |
@@ -136,7 +135,7 @@ ___
 ##### Default sizes
 
 | Button | Description |
----|---|
+|---|---|
 | W: | ? |
 | H: | ? |
 | R: | ? |
@@ -145,7 +144,7 @@ ___
 #### Upgared groups
 
 | Button | Description |
----|---|
+|---|---|
 | Rename | Rename Group |
 | Add group | Add Group |
 | Remove group | Remove Group |

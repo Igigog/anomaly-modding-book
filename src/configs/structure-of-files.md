@@ -4,7 +4,9 @@ The files may differ from each other, depending on their purpose, but they all h
 
 ___
 
-> Note this article describes the structure from CoP or SoC and may not apply to Anomaly!
+```admonish warning
+Note this article describes the structure from CoP or SoC and may not apply to Anomaly!
+```
 
 ## Section definition
 
@@ -12,7 +14,7 @@ For starters, any information is stored in "sections". These are a kind of objec
 
 Let's take the `stalker_sim_squad_novice` section of the `squad_desct.ltx` configuration file as an example:
 
-```ini
+```ini,lang=LTX
 [stalker_sim_squad_novice]:online_offline_group
 faction = stalker
 npc_random = sim_default_stalker_0, sim_default_stalker_1, sim_default_stalker_2
@@ -28,7 +30,7 @@ In this case we can notice the following:
 - Declaring the `faction`, `npc_random` and `npc_in_squad` parameters
 - `online_offline_group` inheritance. Like any other inheritance, it inherits the parent's information, which can be overwritten if desired. In this case it inherits from the file `m_online_offline_group.ltx`:
 
-```ini
+```ini,lang=LTX
 [online_offline_group]
 GroupControlSection   = spawn_group
 class         		= ON_OFF_S
@@ -41,7 +43,7 @@ ___
 
 As we discussed above, any section can have parameters. Until now, however, these were just static, simple parameters of the config file. I now propose to parse a slightly more structurally complex parameter from the game logic file:
 
-```ini
+```ini,lang=LTX
 on_info = {-dont_have_info} %+add_info =play_sound(sound_name)% sr_idle@end
 ```
 
@@ -85,7 +87,7 @@ Example entry, in this case we have this condition:
 - Player has an item called `item_name`
 - Checking that it is not day
 
-```ini
+```ini,lang=LTX
 {-info1 +info2 =actor_has_item(item_name) !is_day}
 ```
 
@@ -104,7 +106,7 @@ Example entry, in this case we have this action:
 - Issue `task_name`
 - Retrieve `item_name`
 
-```ini
+```ini,lang=LTX
 %-info1 +info2 =give_task(task_name) =remove_item(item_name)%
 ```
 
@@ -122,7 +124,7 @@ ___
 
 The main feature of Condlist is that you can specify several Condlists in one parameter. For example:
 
-```ini
+```ini,lang=LTX
 [hit]
 on_info = {=hit_by_actor =hitted_on_bone(head_boss:boss_jaw:brow:ear_r:eye_l:eye_r:) -zat_b106_one_shot} %+zat_b106_one_shot +zat_b108_actor_damaged_chimera +zat_b106_ahtung%, {=hit_by_actor !hitted_on_bone(head_boss:boss_jaw:brow:ear_r:eye_l:eye_r:) -zat_b108_actor_damaged_chimera} %+zat_b108_actor_damaged_chimera%
 ```

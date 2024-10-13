@@ -13,7 +13,9 @@ ___
 
 ___
 
-> Warning! This list is only for the vanilla version of the game! If you use engine edits, the crash log may be different!
+```admonish warning
+This list is only for the vanilla version of the game! If you use engine edits, the crash log may be different!
+```
 
 ## <center>Models</center>
 

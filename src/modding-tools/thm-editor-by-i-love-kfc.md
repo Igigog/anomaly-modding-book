@@ -42,7 +42,7 @@ Utility for editing .thm files without the need to use the SDK
 ### Edit flags
 
 | Checkbox | Description |
----|---|
+|---|---|
 | Generate Mip Maps | Enables MIP-map generation |
 | Has Alpha | Takes into account map alpha channel |
 | Binary Alpha |  |
@@ -60,7 +60,7 @@ Utility for editing .thm files without the need to use the SDK
 ### Texture type
 
 | Field | Description |
----|---|
+|---|---|
 | Image | 2D texture |
 | [Cube Map](https://en.wikipedia.org/wiki/Cube_mapping) | Is a method of environment mapping that uses the six faces of a cube as the map shape |
 | Bump Map | [Bump](../main-folders-and-files/file-formats/index.html#bumpdds-1) Map |
@@ -70,7 +70,7 @@ Utility for editing .thm files without the need to use the SDK
 ### Texture format
 
 | Field | Description |
----|---|
+|---|---|
 | [DXT1](https://www.fsdeveloper.com/wiki/index.php?title=DXT_compression_explained#DXT1) | Compression without alpha channel support |
 | [ADXT1](https://www.fsdeveloper.com/wiki/index.php?title=DXT_compression_explained#DXT1_with_alpha) | Compression with alpha channel support |
 | [DXT5](https://www.fsdeveloper.com/wiki/index.php?title=DXT_compression_explained#DXT5) | Compression with alpha channel support |
@@ -88,7 +88,7 @@ Utility for editing .thm files without the need to use the SDK
 ### Bump Mode
 
 | Field | Description |
----|---|
+|---|---|
 | Autogen (S.T.A.L.K.E.R. Builds) |  |
 | None | None |
 | Use | Use [Bump](https://en.wikipedia.org/wiki/Bump_mapping) mapping method |
@@ -99,7 +99,7 @@ Utility for editing .thm files without the need to use the SDK
 > Different algorithms of MIP-map generation
 
 | Field | Description |
----|---|
+|---|---|
 | Box | The simplest MIP-map generation algorithm. However, the box filter has a number of limitations that can be quite noticeable with certain textures. For example, if a texture contains very narrow features (e.g., lines), then aliasing artifacts may be very pronounced |
 | Cubic | Generation with weighted sum of eight pixels. The advantage of the cubic filter over the box is that it can have negative side lobes (weights) which help maintain sharpness while reducing the image. This can help reduce some of the blurring effect of filtering with mipmaps |
 | Point |  |
@@ -121,7 +121,7 @@ Utility for editing .thm files without the need to use the SDK
 > Different shading algorithms
 
 | Field | Description |
----|---|
+|---|---|
 | OrenNayar Blin | Oren-Nayar-Blinn shader is a variant of the Blinn shader. This shader is good for matte surfaces such as fabric, terra cotta, and so on |
 | Blin Phong |  |
 | Phong Metal |  |
@@ -130,7 +130,7 @@ Utility for editing .thm files without the need to use the SDK
 ### Tools
 
 | Button | Description |
----|---|
+|---|---|
 | Generate thms by .dds |  |
 | Fix invalid chunks in thms |  |
 | Validate thms with dds |  |
@@ -159,7 +159,7 @@ Utility for editing .thm files without the need to use the SDK
 > Shading model weight
 
 |||
----|---|
+|---|---|
 | Values | 0 - OrenNayar - Blin<br> 1 - Blin - Phong<br> 2 - Phong - Metal<br> 3 - Metal - OrenNayar |
 
 **Detail Scale**

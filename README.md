@@ -10,7 +10,8 @@ The book is for people who need some help with modding and you can find it in th
 
 Also, hardcore modding dudes are also welcome.
 
-> **Please keep in mind that the book is still being written, and the information provided here may not be accurate, or may not be provided at all!**
+> [!IMPORTANT]  
+> Please keep in mind that the book is still being written, and the information provided here may not be accurate, or may not be provided at all!
 
 ## Found something blank, incomplete, or wrong?
 
@@ -27,3 +28,7 @@ So refer to this [article](src/meta/contributing/README.md) or open an [issue](h
 - [The book itself](https://igigog.github.io/anomaly-modding-book/)
 
 - [mdBook](https://github.com/rust-lang/mdBook) - The platform on which the book was written
+  - [mdbook admonish](https://github.com/tommilligan/mdbook-admonish) - A preprocessor for mdbook to add Material Design admonishments.
+  - [mdbook whichlang](https://github.com/phoenixr-codes/mdbook-whichlang) - Powerful Code Blocks for mdBook
+  - [mdbook theme](https://github.com/zjp-CN/mdbook-theme) - A preprocessor and a backend to config themes for mdbook, especially creating a pagetoc on the right and setting full color themes from the offical ace editor.
+  - [mdbook mermaid](https://github.com/badboy/mdbook-mermaid) - A preprocessor for mdbook to add mermaid support

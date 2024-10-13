@@ -41,7 +41,7 @@ Modified tool for working with [.omf](../../main-folders-and-files/file-formats/
 - #### File Button
 
 | Button | Description |
----|---|
+|---|---|
 | Load | Loads the selected .omf |
 | Save | Save .omf |
 | Save As | Save as .omf or .skls or .skl |
@@ -50,7 +50,7 @@ Modified tool for working with [.omf](../../main-folders-and-files/file-formats/
 - #### Tools Button
 
 | Button | Description |
----|---|
+|---|---|
 | Merge With | Merge the file with another .omf |
 | Add Anims From | Add animations from other .omf (need to know the name of the animation to be added) |
 | Try Repair | Trying to fix an animation file (for example, the animation from Gunslinger Mod) |
@@ -61,7 +61,7 @@ Modified tool for working with [.omf](../../main-folders-and-files/file-formats/
 - #### Help Button
 
 | Button | Description |
----|---|
+|---|---|
 | Open Source Code | It will take you to the source code site |
 
 ### Animation options
@@ -69,7 +69,7 @@ Modified tool for working with [.omf](../../main-folders-and-files/file-formats/
 - #### Animation parameters
 
 | Parameters | Description | Note |
----|---|---|
+|---|---|---|
 | Motion Name | Animation name | - |
 | Speed | Animation speed | - |
 | Power | The power of animation | <abbr title="Unconfirmed">.anm</abbr> only |
@@ -80,7 +80,7 @@ Modified tool for working with [.omf](../../main-folders-and-files/file-formats/
 - #### SDK Flags
 
 | Parameters | Description | Note |
----|---|---|
+|---|---|---|
 | Stop at End | Animation will stop after playback | For HUD and NPC's |
 | No Mix | Does not mix animations | NPC only |
 | Sync Part | Used to synchronize body parts (Bone Parts) in different animations. For example, when walking, the NPC will simultaneously play different animations of legs, body and head | NPC only |
@@ -93,7 +93,7 @@ Modified tool for working with [.omf](../../main-folders-and-files/file-formats/
 - #### Motion Time Format
 
 | Format | Description |
----|---|
+|---|---|
 | Keys | Keys Motion Time Format |
 | Seconds | Seconds Motion Time Format |
 
@@ -102,7 +102,7 @@ Modified tool for working with [.omf](../../main-folders-and-files/file-formats/
 ### Program parameters
 
 | Parameter | Description |
----|---|
+|---|---|
 | Real Time Lenght | Multiplies all visual timers by animation speed |
 | Ask for Overwrite | When merging animations will ask to overwrite each animation |
 

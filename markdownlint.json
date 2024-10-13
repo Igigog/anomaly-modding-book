@@ -3,7 +3,8 @@
       "allowed_elements": [
         "nobr",
         "sup",
-        "br"
+        "br",
+        "details"
       ]
     }
   }
