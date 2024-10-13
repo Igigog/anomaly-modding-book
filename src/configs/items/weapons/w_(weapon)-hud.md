@@ -1,1 +1,0 @@
-# Weapon HUD Configuration Parameters

@@ -1,1 +1,0 @@
-# Modified OGF Editor

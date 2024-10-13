@@ -1,1 +1,0 @@
-# Oufits Configuration Parameters

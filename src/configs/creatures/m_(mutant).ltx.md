@@ -1,1 +1,0 @@
-# Mutants Configuration Parameters

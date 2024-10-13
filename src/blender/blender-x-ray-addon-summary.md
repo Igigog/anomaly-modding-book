@@ -1,1 +1,0 @@
-# Blender X-Ray Addon

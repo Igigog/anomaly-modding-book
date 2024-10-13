@@ -1,1 +1,0 @@
-# Creating model in Blender
