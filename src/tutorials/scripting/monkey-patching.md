@@ -14,11 +14,12 @@ First a caution, it is always better to simply use call backs. There are a signi
 
 In general Anomaly scripts are loaded in alphabetical order. When you monkey patch a script that hasn’t loaded you force it to load. If two monkey patches are applied the script that comes last wins. Starting the name of your script with a z means that it will load after most other scripts. While only sometimes necessary and very rarely problematic, the strong suggestion to do so in an earlier version of this guide has resulted in a convention of starting monkey patch scripts with z or zzz.  
 
-If a function or variable in a script is declared as local other scripts can’t manipulate it. None of the below techniques will work on local functions or variables. 
+If a function or variable in a script is declared as local other scripts can’t manipulate it. None of the below techniques will work on local functions or variables.
 
 ## Patching Variables
 
 The simplest monkey patch only changes variables.  Instant tooltip does this. It uses a callback to watch for the inventory UI being opened and when it is changes the delay for the tool tip:
+
 ```lua
 function on_game_start()
     RegisterScriptCallback("GUI_on_show", delay_change)
@@ -34,7 +35,7 @@ function delay_change(name, path)
 end
 ```
 
-The changes can be far more complex, an example of reaching into a complex nested table is how SidHud adds itself into the game settings UI with its inject_options_UI() function. 
+The changes can be far more complex, an example of reaching into a complex nested table is how SidHud adds itself into the game settings UI with its inject_options_UI() function.
 
 ## Patching existing Callbacks
 
@@ -87,7 +88,7 @@ It is important to understand that no matter what name you give a function it ca
 
 ## Patching xray/luajit “classes”
 
-TL;DR: lua oop doesn’t use classes, but, for reasons, X-Ray’s lua does and we can patch either or both the classes or the instance objects. 
+TL;DR: lua oop doesn’t use classes, but, for reasons, X-Ray’s lua does and we can patch either or both the classes or the instance objects.
 What the : (colon) operator really does.
 The : operator in lua is simply a shortcut. Any function defined with a : can be called without it.
 
@@ -99,6 +100,7 @@ foo.start(foo)
 Those are equivalent.
 
 Similarly a function can be defined without it.
+
 ```lua
 function foo:start()
 …
@@ -111,7 +113,7 @@ end
 
 When calling a function the : acts like . but also passes the table to it’s left as an invisible first parameter to the function on the right.
 
-When defining a function : acts like . but also inserts the variable self at the beginning of the parameter list. This syntax allows lua oop to have a familiar syntax. 
+When defining a function : acts like . but also inserts the variable self at the beginning of the parameter list. This syntax allows lua oop to have a familiar syntax.
 
 ## LUAJit Classes TODO
 

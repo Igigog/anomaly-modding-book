@@ -16,9 +16,9 @@ First, familiarize yourself with the supported texture compression ([.dds](../ma
 
 First we have to create a texture, or we have to download one.
 Next, we need to convert our texture into [.dds](../main-folders-and-files/file-formats/index.html#dds-directdraw-surface) format.
-To do this, you can use any program of yours that can do such a thing. (or you can take a program from [this](../modding-tools/modding-tools.md) list)
+To do this, you can use any program of yours that can do such a thing. (or you can take a program from [this](../../reference/modding-tools/README.md) list)
 
-The most commonly used program for this is Paint.net. We download the texture and save it as [.dds](../main-folders-and-files/file-formats/index.html#dds-directdraw-surface). 
+The most commonly used program for this is Paint.net. We download the texture and save it as [.dds](../main-folders-and-files/file-formats/index.html#dds-directdraw-surface).
 The Save Settings window appears.
 
 ![save-texture](images/save-texture.png)

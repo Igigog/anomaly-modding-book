@@ -47,7 +47,7 @@ You need to install the following extensions:
 
 2. [LTX Support by AziatkaVictor](https://marketplace.visualstudio.com/items?itemName=AziatkaVictor.ltx-support) - adds support for [.ltx](../main-folders-and-files/file-formats/index.html#ltx-files) files
    - extension can be configured, to do this in his settings need to specify the path to the scripts of the game
-   - [More About](../modding-tools/ltx-support.md)
+   - [More About](../../reference/modding-tools/modding-tools-coding/ltx-support.md)
 
 3. Two extensions for Lua. Needed for .script files:
    - [LUA by keyring](https://marketplace.visualstudio.com/items?itemName=keyring.Lua)

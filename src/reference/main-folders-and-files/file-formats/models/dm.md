@@ -20,11 +20,10 @@ It works like this: UV descends down the Y coordinates to the texture
 - Mesh can have only one UV map
 - Number of vertices in mesh must be no more than 65,536
 
-
 ### General structure
 
 | Data |
----|
+|---|
 | [shader name](#shader-name) |
 | [texture name](#texture-name) |
 | [flags](#flags) |
@@ -40,43 +39,43 @@ It works like this: UV descends down the Y coordinates to the texture
 #### Shader name
 
 | Data | Type | Description | Example |
----|---|---|---|
+|---|---|---|---|
 | shader name | s | The line that specifies the name of the shader from the shaders.xr file | effects\lightning0x00 |
 
 #### Texture name
 
 | Data | Type | Description | Example |
----|---|---|---|
+|---|---|---|---|
 | texture name | s | A string that specifies the path and the name of the texture | fx\fx_rainsplash10x00 |
 
 #### Flags
 
 | Data | Type | Description | Example |
----|---|---|---|
+|---|---|---|---|
 | flags | I | These are options. Used in the file level.details | If 0x0, the vegetation swings in the wind (bushes), and if 0x1, it is stationary (leaves) |
 
 #### Minimum size
 
 | Data | Type | Description | Example |
----|---|---|---|
+|---|---|---|---|
 | minimum size | f | The minimum size of the model. These values are used in the level.details files | - |
 
 #### Maximum size
 
 | Data | Type | Description | Example |
----|---|---|---|
+|---|---|---|---|
 | maximum size | f | Maximum model size. These values are used in the level.details files | - |
 
 #### Number of vertices
 
 | Data | Type | Description | Example |
----|---|---|---|
+|---|---|---|---|
 | number of vertices | I | Number of vertices in a mesh | - |
 
 #### Number of indexes
 
 | Data | Type | Description | Example |
----|---|---|---|
+|---|---|---|---|
 | number of indexes | I | Number of indexes by which triangles are built | - |
 
 #### Vertices
@@ -86,7 +85,7 @@ The vertices are stored sequentially.
 The structure of a single vertex:
 
 | Data | Type |
----|---|
+|---|---|
 | 3D coordinate x | f |
 | 3D coordinate y | f |
 | 3D coordinate z | f |
@@ -107,7 +106,7 @@ The indexes are stored sequentially.
 The index structure:
 
 | Data | Type |
----|---|
+|---|---|
 | vertex index | H |
 
 ___

@@ -11,7 +11,7 @@ This section contains a list and description of the shaders that are available i
 ### Shaders for static objects
 
 | Shader name | Description |
----|---|
+|---|---|
 | zfill |  |
 | xwindow | Old unused glass shader |
 | selflight | self-lighting material |
@@ -27,20 +27,20 @@ This section contains a list and description of the shaders that are available i
 ### ufp Shaders
 
 | Shader name | Description |
----|---|
+|---|---|
 | ufp_blend |  |
 
 ### Test Shaders
 
 | Shader name and path | Description |
----|---|
+|---|---|
 | test\aaaaaaaa__ |  |
 | test\aass |  |
 
 ### Sky Shaders
 
 | Shader name and path | Description |
----|---|
+|---|---|
 | sky\background |  |
 | sky\clouds |  |
 | sky\clouds_old |  |
@@ -49,7 +49,7 @@ This section contains a list and description of the shaders that are available i
 ### Particles Shaders
 
 | Shader name and path | Description |
----|---|
+|---|---|
 | particles\add |  |
 | particles\alpha_add |  |
 | particles\blend |  |
@@ -62,7 +62,7 @@ This section contains a list and description of the shaders that are available i
 ### Shaders for dynamic objects
 
 | Shader name and path | Description | Preview |
----|---|---|
+|---|---|
 | models\antigas_glass | CubeMap reflection shader (variant 1) |  |
 | models\artefact | CubeMap reflection shader (variant 2) | ![Alt text](images/shaders-preview/models-artefact.png) |
 | models\artefact2 | CubeMap reflection shader (variant 3) | ![Alt text](images/shaders-preview/models-artefact2.png) |
@@ -100,7 +100,7 @@ This section contains a list and description of the shaders that are available i
 ### Levels Shaders
 
 | Shader name and path | Description |
----|---|
+|---|---|
 | levels\agroprom_asfalt | terrain shader (asphalt) |
 | levels\agroprom_grass | terrain shader (grass) |
 | levels\agroprom_gravel | terrain shader (gravel) |
@@ -184,7 +184,7 @@ This section contains a list and description of the shaders that are available i
 ### HUD Shaders
 
 | Shader name and path | Description |
----|---|
+|---|---|
 | hud\add |  |
 | hud\add-alpha |  |
 | hud\cursor |  |
@@ -198,14 +198,14 @@ This section contains a list and description of the shaders that are available i
 ### Flora Shaders
 
 | Shader name and path | Description |
----|---|
+|---|---|
 | flora\leaf_wave |  |
 | flora\trunk_wave |  |
 
 ### Effects Shaders
 
 | Shader name and path | Description |
----|---|
+|---|---|
 | effects\bullet_tracer |  |
 | effects\flame |  |
 | effects\flare |  |
@@ -236,7 +236,7 @@ This section contains a list and description of the shaders that are available i
 ### SDK Shaders
 
 | Shader name and path | Description |
----|---|
+|---|---|
 | editor\ai_node |  |
 | editor\do_base |  |
 | editor\selection |  |
@@ -246,7 +246,7 @@ This section contains a list and description of the shaders that are available i
 ### Details Shaders
 
 | Shader name and path | Description | Preview |
----|---|---|
+|---|---|---|
 | details\blend |  | ![Alt text](images/shaders-preview/details-blend.png) |
 | details\lod |  | ![Alt text](images/shaders-preview/details-lod.png) |
 | details\set |  | ![Alt text](images/shaders-preview/details-set.png) |
@@ -254,7 +254,7 @@ This section contains a list and description of the shaders that are available i
 ### Def_Shaders
 
 | Shader name and path | Description | Preview |
----|---|---|
+|---|---|---|
 | def_shaders\def_add |  | ![def_add](images/shaders-preview/def_add.png) |
 | def_shaders\def_aref |  | ![def_aref](images/shaders-preview/def_aref.png) |
 | def_shaders\def_aref_v |  | ![def_aref_v](images/shaders-preview/def_aref_v.png) |
@@ -276,6 +276,6 @@ This section contains a list and description of the shaders that are available i
 ### Debug Shaders
 
 | Shader name and path | Description |
----|---|
+|---|---|
 | debug\ai_nodes |  |
 | debug\wireframe |  |

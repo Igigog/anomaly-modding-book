@@ -17,7 +17,7 @@ ___
 File Button
 
 | Button | Description | Note |
----|---|---|
+|---|---|---|
 | Clear | Clear scene | Essentially creates a new scene |
 | Open | Opens .level file | - |
 | Save | Save file | - |
@@ -31,7 +31,7 @@ File Button
 Scene Button
 
 | Button | Description | Note |
----|---|---|
+|---|---|---|
 | Options | Opens level options | - |
 | Validate | Checks the level for errors | - |
 | Summary info | Shows information about objects in the scene | - |
@@ -43,7 +43,7 @@ Scene Button
 Compile Button
 
 | Button | Description | Note |
----|---|---|
+|---|---|---|
 | Build | Creates a [.prj](../main-folders-and-files/file-formats/game-levels/prj.md) precompilation file | - |
 | Make Game | Creates a [.game](../main-folders-and-files/file-formats/game-levels/game.md) file | - |
 | Make Details | Creates a [.details](../main-folders-and-files/file-formats/game-levels/details.md) file | - |
@@ -57,7 +57,7 @@ Compile Button
 Objects Button
 
 | Button | Description | Note |
----|---|---|
+|---|---|---|
 | Library Editor | Opens the Object Library | Scene should be before the opening |
 | Reload Objects | Reload Objects | - |
 | Clear Library | Clear Library | - |
@@ -66,7 +66,7 @@ Objects Button
 Images Button
 
 | Button | Description | Note |
----|---|---|
+|---|---|---|
 | Image Editor | Open Image Editor | - |
 | Reload Textures | Reload Textures | - |
 | Synchronize Textures |  | - |
@@ -77,7 +77,7 @@ Images Button
 Sounds Button
 
 | Button | Description | Note |
----|---|---|
+|---|---|---|
 | Sound Editor | Open Sound Editor | - |
 | Synchronize Sounds |  | - |
 | Refresh Environment Library |  | - |

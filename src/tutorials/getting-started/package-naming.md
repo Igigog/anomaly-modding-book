@@ -83,9 +83,9 @@ However, if you feel this one is too on the nose and are looking for subtler way
 
 As mentioned previously, MO2 tries to be _clever_ when determining the addon name from the installation package. To do this, MO2 treats some characters differently.
 
-- **Alphabetic characters, underscore and space:** These are considered “good” characters for addon naming. 
+- **Alphabetic characters, underscore and space:** These are considered “good” characters for addon naming.
 MO2 will extract all good characters to generate the default name until it finds a junk character. The rest of the file name is ignored.
-- **Numeric characters, dash and other symbols:** These are considered “junk” characters. 
+- **Numeric characters, dash and other symbols:** These are considered “junk” characters.
 MO2 does not think an addon name should include these. Anything after (and including) the first junk character is chopped off and thrown to pigs.
 
 > **Note:** MO2 allows the addon names to _start with_ junk characters, but as soon as a _good_ character is encountered, this exception flies out the window for the rest of the name.
@@ -104,12 +104,12 @@ What if you have a cool nickname such as **Blaze420** and want to flaunt it in y
 
 ![Numeric Mess centered](pn-images/Picture4.png)
 
-> Note that if the file name starts immediately with a number, this trick will not work. 
+> Note that if the file name starts immediately with a number, this trick will not work.
 But good news! If you can manage to sneak the version number in with a cheaty name like **1.0.3_Brooks_Plagiarized_Audio_Patcher.zip**, your anemic MO2 users will now have to edit the name with **every**. **single**. **update**!
 
 ## Pedantic Versioning
 
-You are releasing a new update for your addon with features, bugfixes and localizations? Do not forget to prepend your version number with the letter “**v**” so that everybody understands what follows is THE VERSION NUMBER! 
+You are releasing a new update for your addon with features, bugfixes and localizations? Do not forget to prepend your version number with the letter “**v**” so that everybody understands what follows is THE VERSION NUMBER!
 
 This will instantly make your file names look more enterprisey and sophisticated:
 

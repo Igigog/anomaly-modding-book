@@ -15,7 +15,7 @@ ___
 ## The file consists of the following blocks
 
 |  | Block code |
----|---|
+|---|---|
 | [Map compiler version](#map-compiler-version-the-block-is-the-same-for-all-maps) | 1 |
 | [Vertex description](#vertex-description) | 9 |
 | [Indexes description](#indexes-description) | 10 |
@@ -23,10 +23,10 @@ ___
 
 ___
 
-**Types of variables**
+### Types of variables
 
 | Type code | Value |
----|---|
+|---|---|
 | 1 | DWord(4) + DWord(4) |
 | 4 | Byte(1) + Byte(1) + Byte(1) + Byte(1) |
 | 6 | Word(2)/32768 + Word(2)/32768 |
@@ -35,7 +35,7 @@ ___
 ### Map compiler version (the block is the same for all maps)
 
 |  | Value | Size |
----|---|---|
+|---|---|---|
 | Block code | 1 | Word(2) |
 | Data compression (0 - no, 32768 - yes) | 0 | Word(2) |
 | Block size (bytes) | 4 | DWord(4) |
@@ -44,7 +44,7 @@ ___
 ### Vertex description
 
 |  | Value | Size |
----|---|---|
+|---|---|---|
 | Block code | 9 | Word(2) |
 | Data compression (0 - no, 32768 - yes) | 0 | Word(2) |
 | Block size (bytes) | 4 | DWord(4) |
@@ -54,7 +54,7 @@ ___
 #### Vertex description block
 
 |  | Value | Size |
----|---|---|
+|---|---|---|
 | Beginning of a new block | 0 | DWord(4) |
 | Beginning of the vertex format description | 2 | DWord(4) |
 | Vertex format | - | - |
@@ -63,10 +63,12 @@ ___
 | Number of vertices | - | DWord(4) |
 | Vertexes | - | - |
 
-> A few words about the vertex format. As you already know, there are several vertex description blocks in the file. Not all objects in the game are the same: you have to specify coordinates of lightmaps for brushes, and coordinates of textures for trees can be simplified. Therefore, vertices specified in different blocks may be different. The vertex format is specified using several structures - this is the standard D3D vertex buffer format. That is, the file contains ready assembled vertex buffers for D3D:
+```admonish title="A few words about the vertex format"
+As you already know, there are several vertex description blocks in the file. Not all objects in the game are the same: you have to specify coordinates of lightmaps for brushes, and coordinates of textures for trees can be simplified. Therefore, vertices specified in different blocks may be different. The vertex format is specified using several structures - this is the standard D3D vertex buffer format. That is, the file contains ready assembled vertex buffers for D3D:
+```
 
 |  | Value | Size |
----|---|---|
+|---|---|---|
 | ???(always zero) | 0 | Word(2) |
 | Offset | - | Word(2) |
 | Type of variables | - | Word(2) |
@@ -74,10 +76,10 @@ ___
 
 > At the very beginning of any vertex are the coordinates of its placement, so the vertex format does not include a description of the coordinates. There are only three vertex formats in the 2215 maps:
 
-**Vegetation**
+#### Vegetation
 
 |  | Value | Size |
----|---|---|
+|---|---|---|
 | zero | 0 | Word(2) |
 | Offset | 12 | Word(2) |
 | Type of variables | 4 | Word(2) |
@@ -97,10 +99,10 @@ ___
 
 > Thus, the total length of one vegetation vertex equals 32 bytes.
 
-**Brush**
+#### Brush
 
 |  | Value | Size |
----|---|---|
+|---|---|---|
 | zero | 0 | Word(2) |
 | Offset | 12 | Word(2) |
 | Type of variables | 4 | Word(2) |
@@ -124,10 +126,10 @@ ___
 
 > The total length of one brash vertex is 36 bytes.
 
-**Entity**
+#### Entity
 
 |  | Value | Size |
----|---|---|
+|---|---|---|
 | zero | 0 | Word(2) |
 | Offset | 12 | Word(2) |
 | Type of variables | 4 | Word(2) |
@@ -152,10 +154,10 @@ ___
 > The total length of one vertex of an entity is 36 bytes.
 > Based on this, we get, for example, this view of the vertex:
 
-**Brush**
+#### Brush
 
 |  | Value | Offset | Size |
----|---|---|---|
+|---|---|---|---|
 | Coordinate X | 30.76 | 0 | DWord(4) |
 | Coordinate Z | 0.2 | 4 | DWord(4) |
 | Coordinate Y | 51.4 | 8 | DWord(4) |
@@ -179,7 +181,7 @@ ___
 ### Indexes description
 
 |  | Value | Size |
----|---|---|
+|---|---|---|
 | Block code | 10 | Word(2) |
 | Data compression (0 - no, 32768 - yes) |  | Word(2) |
 | Block size (bytes) | - | DWord(4) |
@@ -189,11 +191,11 @@ ___
 #### Index description block
 
 |  | Value | Size |
----|---|---|
+|---|---|---|
 | Number of indexes in a block | - | DWord(4) |
 | Indexes | - | DWord(4) |
 
-> Index: Word(2) .
+> Index: Word(2)
 > The number of indexes must always be a multiple of three, because triangles are constructed using indexes.
 
 ### Synchronization description
@@ -201,7 +203,7 @@ ___
 > (what they synchronize is still a mystery to scientists)
 
 |  | Value | Size |
----|---|---|
+|---|---|---|
 | Block code | 11 | Word(2) |
 | Data compression (0 - no, 32768 - yes) | 0 | Word(2) |
 | Block size (bytes) | - | DWord(4) |
@@ -211,7 +213,7 @@ ___
 #### Synchronization block
 
 |  | Value | Size |
----|---|---|
+|---|---|---|
 | ??? | 0 | DWord(4) |
 | ??? | 0 | DWord(4) |
 | ??? | 0 | DWord(4) |
@@ -222,7 +224,7 @@ ___
 ##### Synchronization unit
 
 |  | Value | Size |
----|---|---|
+|---|---|---|
 | ??? |  | DWord(4) |
 | ??? |  | Word(2) |
 | ??? |  | Word(2) |

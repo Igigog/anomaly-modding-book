@@ -33,7 +33,7 @@ In this case, because of "cycled" the playback order will be 1234543212345432123
 Speed of texture change is set in numerical format before the enumeration
 
 The number of textures in the list is arbitrary, but the more frames, the greater the load on the engine, respectively.
-The name of the file is set by the name of the assigned texture (without taking the extension into account). If there is a *[.dds](dds.md) file in the folder with the same name as the *.seq file, the engine ignores the original texture, giving priority to the *.seq file. The priority of file search by extension is as follows:
+The name of the file is set by the name of the assigned texture (without taking the extension into account). If there is a *[.dds](dds.md) file in the folder with the same name as the .seq file, the engine ignores the original texture, giving priority to the .seq file. The priority of file search by extension is as follows:
 
 - .ogm
 - .avi

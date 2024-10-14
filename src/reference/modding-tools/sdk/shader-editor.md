@@ -13,7 +13,7 @@ ___
 ## Tools
 
 | Button | Description |
----|---|
+|---|---|
 | File | Save<br> Reload |
 | Create | Create New Shader |
 | Remove | Remove Selected Shaders |
@@ -30,7 +30,7 @@ ___
 **Shader Types**
 
 | Name | Description |
----|---|
+|---|---|
 | \<none> |  |
 | EDITOR: selection | Designed to display object selection in the SDK |
 | EDITOR: wire | Wireframe shader |
@@ -297,7 +297,7 @@ ___
 **Preset**
 
 | Presets | Description |
----|---|
+|---|---|
 | Alley | Alley |
 | Arena | Arena |
 | Auditorium | Auditorium |

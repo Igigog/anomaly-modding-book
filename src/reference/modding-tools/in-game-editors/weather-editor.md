@@ -47,7 +47,7 @@ Weather editor allows you to change weather values in real-time. Minute precisio
 ### Buttons
 
 | Icon | Description |
----|:---:|
+|---|:---:|
 | ![Alt text](images/weather-editor-icons/copy.png) | Copy settings |
 | ![Alt text](images/weather-editor-icons/paste.png) | Paste settings |
 | ![Alt text](images/weather-editor-icons/view-mode.png) | Viewer Mode |
@@ -68,7 +68,7 @@ The settings of the editor and its parameters can be found in the file "`ui_debu
 `Full parameter list`
 
 | Name | Description | Note |
----|---|---|
+|---|---|---|
 | ambient | Ambient | The list is taken from the file "`ambients.ltx`" |
 | ambient_color | Ambient Color |  |
 | clouds_color | Clouds Color |  |

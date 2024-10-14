@@ -15,15 +15,14 @@ XML file will look something like this:
 ```xml
 <?xml version="1.0" encoding="windows-1251"?>
 <string_table>
-	<string id="nice_text_id">
-		<text>Cool text inside text tags</text>
-	</string>
+  <string id="nice_text_id">
+    <text>Cool text inside text tags</text>
+  </string>
 
-    <string id="another_text_id">
-		<text>...</text>
-	</string>
-    
-    ...
+  <string id="another_text_id">
+    <text>...</text>
+  </string>  
+...
 </string_table>
 ```
 

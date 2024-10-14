@@ -8,7 +8,7 @@ ___
 
 So, in short, we don't want our single-threaded XRay Engine to implode...
 
-That's why we have server objects and game objects! A-Life is inherently complex and has up to 65535 objects in the game, each having a ton of computations. We kinda don't want a ton of computations, so we only compute interesting things around player and everything else is simplified. 
+That's why we have server objects and game objects! A-Life is inherently complex and has up to 65535 objects in the game, each having a ton of computations. We kinda don't want a ton of computations, so we only compute interesting things around player and everything else is simplified.
 
 ## Server objects
 

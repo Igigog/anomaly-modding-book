@@ -15,7 +15,7 @@ Detailed objects (grass, cigarette butts, construction debris) on the level
 It consists of three [RIFF](https://en.wikipedia.org/wiki/Resource_Interchange_File_Format) sections (blocks):
 
 | Block ID | Size (bytes) | Description |
----|---|---|
+|---|---|---|
 | 0x0 | 24 | headline |
 | 0x1 | - | object models (in [.dm](dm.md) format) |
 | 0x2 | - | table of 2x2 meter cells, setting the density and species diversity of objects on the map |
@@ -37,7 +37,7 @@ slot in the Level Editor
 #### Block 0x0 (header)
 
 | Type | Description |
----|---|
+|---|---|
 | I | format version |
 | I | number of dm models in the file |
 | i | offset of the table cells along the X axis |
@@ -66,7 +66,7 @@ The mesh index of a detailed object can be in the range [0 ... 62] (63 is no mes
 One slot's data is stored in 16 bytes (128 bits), which store the following:
 
 | Size (in bits) | Description |
----|---|
+|---|---|
 | 12 | Coordinate of the bottom edge of the slot on the Y axis (this value should be multiplied by 0.2 meters) |
 | 8 | Height of the slot (this value should be multiplied by 0.1 meter) |
 | 6 | Identifier of the first mesh of vegetation |

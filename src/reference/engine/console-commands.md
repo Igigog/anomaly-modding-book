@@ -9,7 +9,7 @@ This section describes all console commands.
 ### Game
 
 | Сommand | Command description | Command's argument | Note |
----|---|:---:|---|
+|---|---|:---:|---|
 | help | Outputs a list of console commands | - | - |
 | g_dead_body_collision | Enables collision | full<br> actor_only<br> off | - |
 | g_game_difficulty | Selects the game difficulty | gd_novice<br> gd_stalker<br> gd_veteran<br> gd_master |  |

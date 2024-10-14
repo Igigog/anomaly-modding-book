@@ -15,7 +15,7 @@ Geometry for calculating sound propagation. Used to allow sound to pass through 
 It consists of two blocks:
 
 | Block ID | Size (bytes) | Description |
----|---|---|
+|---|---|---|
 | 0x0 | 4 | header (contains information about the format version) |
 | 0x1 | polygon count * 44 | vertex coordinates and polygon properties |
 
@@ -24,13 +24,13 @@ The structure of the file is similar to .hom
 #### Block 0x0 (header)
 
 | Type | Description |
----|---|
+|---|---|
 | I | format version |
 
 #### Block 0x1 (mesh data)
 
 | Тип | Description | Note | Note 2 |
----|---|---|---|
+|---|---|---|---|
 | fff | 3D coordinates of the first vertex of the triangle | - | - |
 | fff | 3D coordinates of the second vertex of the triangle | - | - |
 | fff | 3D coordinates of the third vertex of the triangle | - | - |

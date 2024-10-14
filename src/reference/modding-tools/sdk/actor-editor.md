@@ -21,7 +21,7 @@ ___
 File Button
 
 | Button | Description | Note |
----|---|---|
+|---|---|---|
 | Clear | Clears scene | - |
 | Load | Loads an object into a new scene | - |
 | Save | Saves object | - |
@@ -39,7 +39,7 @@ ___
 Preview Object Button
 
 | Button | Description | Note |
----|---|---|
+|---|---|---|
 | Custom | After selecting an object in the library it loads the model | It cannot be edited |
 | Clear | Clears the scene of objects that were loaded via Preview Object | - |
 | Preference | Preference | - |
@@ -49,7 +49,7 @@ ___
 Images Button
 
 | Button | Description |
----|---|
+|---|---|
 | Image Editor | Open [Image Editor](image-editor.md) |
 | Synchronize Textures | Synchronizes changes |
 | Check New Textures |  |
@@ -59,7 +59,7 @@ ___
 Sounds Button
 
 | Button | Description |
----|---|
+|---|---|
 | Sound Editor | Open [Sound Editor](sound-editor.md) |
 | Synchronize Sounds | Synchronizes changes |
 
@@ -87,7 +87,7 @@ ___
 Render Style
 
 | Render Style | Description |
----|---|
+|---|---|
 | Editor | Editor Render Style |
 | Engine | Engine (X-Ray 1.6) Render Style |
 | Clip Maker |  |
@@ -106,19 +106,19 @@ Shows parameters of the selected element of the model object
 **For the object**
 
 | Flags | Description |
----|---|
+|---|---|
 | Make Progressive |  |
 | HQ Geometry |  |
 
 | Transform | Description |
----|---|
+|---|---|
 | Position |  |
 | Rotation |  |
 | BBox Min |  |
 | BBox Max |  |
 
 | LOD | Description |
----|---|
+|---|---|
 | Reference | LOD Reference |
 
 **Summary**
@@ -126,13 +126,13 @@ Shows parameters of the selected element of the model object
 Displays information about the object
 
 | Game options | Description |
----|---|
+|---|---|
 | User Data |  |
 
 **For surface**
 
 | Surface | Description |
----|---|
+|---|---|
 | Name | Texture Name |
 | Texture | Path to texture |
 | Shader | Shader |

@@ -11,7 +11,7 @@ This section contains a list and description of the shaders that are available i
 ### Materials of the creatures
 
 | Shader name and path | Description |
----|---|
+|---|---|
 | creatures\actor | person (actor) |
 | creatures\hoof | mutant with hooves |
 | creatures\human | human (NPS) |
@@ -24,7 +24,7 @@ This section contains a list and description of the shaders that are available i
 ### Static object materials
 
 | Shader name and path | Description |
----|---|
+|---|---|
 | default | standard static material |
 | material\asphalt | asphalt |
 | material\bricks | brick wall |
@@ -63,7 +63,7 @@ This section contains a list and description of the shaders that are available i
 ### Dynamic object materials
 
 | Shader name and path | Description |
----|---|
+|---|---|
 | default_object | standard dynamic material |
 | objects\barrel | barrel |
 | objects\bolt |  |

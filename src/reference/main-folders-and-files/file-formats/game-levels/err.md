@@ -11,7 +11,7 @@ Contains information about geometry errors during level compilation with xrLC.ex
 It consists of three blocks:
 
 | Block ID | Size (bytes) | Description |
----|---|---|
+|---|---|---|
 | 0x0 | [number of vertices](#block-0x0-vertices) * 12 + 4 | vertices |
 | 0x1 | [number of edges](#block-0x1-edges) * 24 + 4 | edges |
 | 0x2 | [number of triangles](#block-0x2-triangles) * 36 + 4 | triangles |
@@ -21,7 +21,7 @@ It consists of three blocks:
 All vertices in the file are stored in the following structure:
 
 | Type | Description |
----|---|
+|---|---|
 | f | 3D coordinate X |
 | f | 3D coordinate Y |
 | f | 3D coordinate Z |
@@ -33,7 +33,7 @@ Contains vertices that were glued during compilation.
 Block structure:
 
 | Type | Description |
----|---|
+|---|---|
 | I | number of vertices |
 |  | vertices |
 
@@ -44,14 +44,14 @@ Contains edges that were deleted during compilation.
 Block structure:
 
 | Type | Description |
----|---|
+|---|---|
 | I | number of edges |
 |  | edges |
 
 ##### Structure of a single edge
 
 | Type | Description |
----|---|
+|---|---|
 |  | first vertex |
 |  | second vertex |
 
@@ -62,14 +62,14 @@ Contains broken triangles (the area of which is close to 0.0).
 Block structure:
 
 | Type | Description |
----|---|
+|---|---|
 | I | number of triangles |
 |  | triangles |
 
 ##### Structure of a single triangle
 
 | Type | Description |
----|---|
+|---|---|
 |  | first vertex |
 |  | second vertex |
 |  | third vertex |

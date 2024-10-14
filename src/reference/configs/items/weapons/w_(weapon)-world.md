@@ -32,22 +32,22 @@ ___
 | Parameter Name | Parameter Description | Example Value | Value Data Type | Parameter Possible Values And Their Descriptions |
 |---|---|---|:---:|---|
 | GroupControlSection |  | spawn_group |  |  |
-| $npc | use NPC of this weapon | on | true - 1 - on (Yes)<br> false - 0 - off (No) |  |
+| $npc | use NPC of this weapon | on |  | true - 1 - on (Yes)<br> false - 0 - off (No) |
 | $prefetch | Preload queue | 8 |  |  |
 | $spawn | Weapon Directory in the Level Editor | "weapons\ak-74" | "weapons\ *wpn_name*" |  |
-| scheduled | online/offline switch; Works only for "live" objects with AI | off | true - 1 - on (Yes)<br> false - 0 - off (No) |  |
-| cform | Skeleton model | skeleton | skeleton <br>sphear box |  |
+| scheduled | online/offline switch; Works only for "live" objects with AI | off |  | true - 1 - on (Yes)<br> false - 0 - off (No) |
+| cform | Skeleton model | skeleton |  | skeleton <br>sphear box |
 | parent_section |  | wpn_akm |  |  |
-| class | Engine weapon class | WP_AK74 | WP_BINOC <br>WP_KNIFE <br>WP_BM16 <br>WP_GROZA <br>WP_SVD <br>WP_AK74 <br>WP_LR300 <br>WP_HPSA <br>WP_PM <br>WP_RG6 <br>WP_RPG7 <br>WP_SHOTG <br>WP_ASHTG <br>WP_MAGAZ <br>WP_SVU <br>WP_USP45 <br>WP_VAL <br>WP_VINT <br>WP_WALTH W_STMGUN |  |
-| animation_slot | Animation slot number | 2 | 1 - pistol <br>2 - automatic rifle <br>3 - rifle, shotgun <br>4 - RPG <br>5 - knife <br>7 - bolt, grenade <br>8 - submachine gun with integrated underbarrel grenade launcher <br>9 - Shotgun <br>10 - Drum Gun <br>13 - binoculars |  |
-| hand_dependence | determines whether the weapon will be taken with one or two hands | 1 | 0 - no hands <br>1 - one hand <br>2 - two hands |  |
-| single_handed | held with one hand | 0 | true - 1 - on (Yes)<br> false - 0 - off (No) |  |
-| default_to_ruck | whether the weapon will be moved to the backpack instead of the slot when picked up | false | true - 1 - on (Yes)<br> false - 0 - off (No) |  |
-| sprint_allowed | this line means that you can run with the weapon | true | true - 1 - on (Yes)<br> false - 0 - off (No) |  |
-| kind | The type of item to group into the appropriate section in the [Item Spawner](../../../modding-tools/in-game-editors/item-spawner.md) | w_rifle | w_rifle<br> w_misc<br> w_explosive<br> w_melee<br> w_pistol<br> w_smg<br> w_shotgun<br> w_sniper |  |
-| cost | Base price | 28780 | Specified in numbers |  |
-| hud | Section with parameters for [hud weapon](../../../terminology/terminology.md#object_hud) | wpn_akm_hud | Specifies the name of the section |  |
-| visual | [World model](../../../terminology/terminology.md#object_world) | dynamics\weapons\wpn_akm\wpn_akm.ogf | Specifies the path to the file |  |
+| class | Engine weapon class | WP_AK74 |  | WP_BINOC <br>WP_KNIFE <br>WP_BM16 <br>WP_GROZA <br>WP_SVD <br>WP_AK74 <br>WP_LR300 <br>WP_HPSA <br>WP_PM <br>WP_RG6 <br>WP_RPG7 <br>WP_SHOTG <br>WP_ASHTG <br>WP_MAGAZ <br>WP_SVU <br>WP_USP45 <br>WP_VAL <br>WP_VINT <br>WP_WALTH W_STMGUN |
+| animation_slot | Animation slot number | 2 |  | 1 - pistol <br>2 - automatic rifle <br>3 - rifle, shotgun <br>4 - RPG <br>5 - knife <br>7 - bolt, grenade <br>8 - submachine gun with integrated underbarrel grenade launcher <br>9 - Shotgun <br>10 - Drum Gun <br>13 - binoculars |
+| hand_dependence | determines whether the weapon will be taken with one or two hands | 1 |  | 0 - no hands <br>1 - one hand <br>2 - two hands |
+| single_handed | held with one hand | 0 |  | true - 1 - on (Yes)<br> false - 0 - off (No) |
+| default_to_ruck | whether the weapon will be moved to the backpack instead of the slot when picked up | false |  | true - 1 - on (Yes)<br> false - 0 - off (No) |
+| sprint_allowed | this line means that you can run with the weapon | true |  | true - 1 - on (Yes)<br> false - 0 - off (No) |
+| kind | The type of item to group into the appropriate section in the [Item Spawner](../../../../tutorials/modding-tools/in-game-editors/item-spawner.md) | w_rifle |  | w_rifle<br> w_misc<br> w_explosive<br> w_melee<br> w_pistol<br> w_smg<br> w_shotgun<br> w_sniper |
+| cost | Base price | 28780 |  |  |
+| hud | Section with parameters for [hud weapon](../../../terminology/terminology.md#object_hud) | wpn_akm_hud |  | Section name |
+| visual | [World model](../../../terminology/terminology.md#object_world) | dynamics\weapons\wpn_akm\wpn_akm.ogf |  | Path to file |
 
 </details>
 
@@ -69,10 +69,10 @@ ___
 
 </details>
 
-### Inventory weapon Parameters
+### Inventory Weapon Parameters
 
 <details>
-    <summary>Inventory weapon Parameters</summary>
+    <summary>Inventory Weapon Parameters</summary>
 
 | Parameter Name | Parameter Description | Example Value | Value Data Type | Parameter Possible Values And Their Descriptions |
 |---|---|---|:---:|---|
@@ -86,6 +86,7 @@ ___
 | inv_weight | the inventory weight of the unloaded weapon | 3.3 | The number is given in kilograms |  |
 | description | Description in inventory | st_wpn_akm_descr | Section name, in *.xml files included in the string_table section of `gamedata\configs\text\*localization*\st_items_weapons.xml` |  |
 | slot | Inventory slot number | 2 | 0 - knives<br>1 - pistols<br>2 - shotguns, machine guns, rifles, grenade launchers<br>3 - grenades (may be crashing)<br>4 - binoculars<br>5 - bolts (may be crashing)<br>6 - outfits (may be crashing) |  |
+| highlight_equipped |  |  | true - 1 - on (Yes)<br> false - 0 - off (No) |  |
 
 </details>
 
@@ -179,6 +180,7 @@ ___
 | fire_distance | effective range of the shot after which the bullet disappears | 900 | Specified in meters |  |
 | bullet_speed | initial bullet speed | 715 | Specified in meters per second |  |
 | rpm | Shooting speed | 600 | Specifies the number of shots per minute |  |
+| rpm_mode_2 |  |  |  |  |
 | rpm_anim_fix | New shot animation behavior | true | true - 1 - on (Yes)<br> false - 0 - off (No) |  |
 | rpm_empty_click | Misfire/empty magazine sound frequency | 200 |  |  |
 | fire_dispersion_base | The dispersion (angle of the bullets) introduced by the weapon; affects accuracy; added to the disp_base in actor.ltx | 0.45 | Specified in degrees |  |
@@ -216,16 +218,38 @@ ___
 
 </details>
 
-### Aiming parameters
+### Scope Parameters
 
 <details>
-    <summary>Aiming parameters</summary>
+    <summary>Scope Parameters</summary>
 
 | Parameter Name | Parameter Description | Example Value | Value Data Type | Parameter Possible Values And Their Descriptions |
 |---|---|---|:---:|---|
 | scopes | Name of the gun sight section | 1p29, kobra, ps01 | Sections to models with these sights are indicated |  |
 | scope_status | Scope status | 0 | 0 - not available<br> 1 - built-in<br> 2 - removable |  |
 | scope_zoom_factor | scope magnification | 0 | For the sight specified in the parameter scopes, the value can already be more |  |
+| scope_nightvision |  |  |  |  |
+| scope_dynamic_zoom |  |  |  |  |
+| scope_alive_detector |  |  |  |  |
+| scope_texture |  |  |  |  |
+| scope_texture_alt |  |  |  |  |
+
+</details>
+
+### Overheat
+
+<details>
+    <summary>Aiming parameters</summary>
+
+| Parameter Name | Parameter Description | Example Value | Value Data Type | Parameter Possible Values And Their Descriptions |
+|---|---|---|:---:|---|
+| overheat_time_quant |  |  |  |  |
+| overheat_decr_quant |  |  |  |  |
+| overheat_threshold |  |  |  |  |
+| overheat_particles |  |  |  |  |
+
+| lock_enter |  |  |  |  |
+| lock_exit |  |  |  |  |
 
 </details>
 
@@ -263,6 +287,7 @@ ___
 | grenade_flame_particles | particle of the fire from the underbarrel grenade launcher | weapons\generic_weapon01 | Particles file path relative to particles.xr |  |
 | grenade_launcher_x | grenade launcher icon coordinates superimposed over the weapon icon on the X coordinate | 127 | Specified in numbers |  |
 | grenade_launcher_y | grenade_launcher icon coordinates superimposed over the weapon icon on the Y coordinate | 18 | Specified in numbers |  |
+| gl_zoom_factor |  |  |  |  |
 
 </details>
 

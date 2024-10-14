@@ -288,7 +288,7 @@ target_smart                = bar_dolg_general
 story_id                    = han_yue_ling_squad
 ```
 
-You can always find smart terrain name in here. `_unpacked\configs\scripts\<level name>\smart\<smart terrain name>`. 
+You can always find smart terrain name in here. `_unpacked\configs\scripts\<level name>\smart\<smart terrain name>`.
 
 Example: `_unpacked\configs\scripts\bar\smart\bar_dolg_bunker.ltx`
 

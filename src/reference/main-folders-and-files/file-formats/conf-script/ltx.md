@@ -35,3 +35,4 @@ ___
 
 - Any text editor
   - There are also extensions for VSCode for .ltx ([LTX Support Extension by AziatkaVictor](https://marketplace.visualstudio.com/items?itemName=AziatkaVictor.ltx-support))
+  

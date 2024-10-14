@@ -6,7 +6,7 @@ ____
 
 The first thing to know is that animations can be divided into a few categories:
 
-### Motions
+### Motions Theory
 
 * They represent actual hands, NPCs or actor movements
 * Stored in .omf files
@@ -21,11 +21,11 @@ Also, an .omf file itself is not a motion. .omf files usually store multiple mot
 1. put your motion into an existing .omf file or
 2. make a new .omf file that will store your motions.
 
-### .anm animations
+### .anm animations Theory
 
 In turn, these can be divided into two subcategories:
 
-#### Camera animations
+#### Camera animations Theory
 
 These are much simpler due to their nature. Camera animations represent a screen effect - for example, leaning when an actor equips a helmet or a suit, ‘kickback’ effect when enhanced recoil effects are enabled, camera animations when reloading (mostly used by weapon mods like Boomsticks and Sharpsticks; not to be confused with hands motions) etc.
 
@@ -41,7 +41,7 @@ So technically, these are both .anm files. I just decided there needs to be some
 
 .anm are separate files unlike motions from .omf files, and every single .anm file can be just placed into **anims/** folder in gamedata and used directly.
 
-### .ppe effects
+### .ppe effects Theory
 
 These are camera animations with more possibilities: besides camera movements, they can also include, for example, duality effect (when drinking vodka or when there was an explosion next to the actor), grain effect in radiation zones etc. Vanilla night vision is also a .ppe effect.
 

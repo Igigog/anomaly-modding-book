@@ -22,12 +22,14 @@ ___
 | class | Engine outfit class | EQU_STLK |  |  |
 | default_to_ruck | whether the outfit will be moved to the backpack instead of the slot when picked up | true |  | true - 1 - on (Yes)<br> false - 0 - off (No) |
 | sprint_allowed | It is possible to run in this outfit | true |  | true - 1 - on (Yes)<br> false - 0 - off (No) |
-| kind | Kind of item to group into the appropriate section in the [Item Spawner](../../../modding-tools/in-game-editors/item-spawner.md) | o_light<br> o_medium<br> o_sci<br> o_heavy |  |  |
+| kind | Kind of item to group into the appropriate section in the [Item Spawner](../../../../tutorials/modding-tools/in-game-editors/item-spawner.md) | o_light<br> o_medium<br> o_sci<br> o_heavy |  |  |
 | cost | base price | 32340 |  |  |
 | community | To which faction the outfit belongs | dolg | army<br> csky<br> stalker<br> killer<br> dolg<br> bandit<br> freedom<br> monolith<br> isg<br> greh<br> ecolog<br> renegade |
 | helmet_avaliable | Is a helmet available for this outfit | true |  | true - 1 - on (Yes)<br> false - 0 - off (No) |
 | backpack_avaliable | Is a backpack available for this outfit | true |  | true - 1 - on (Yes)<br> false - 0 - off (No) |
+| artefact_count  |  |  |  |  |
 | can_trade |  | true |  | true - 1 - on (Yes)<br> false - 0 - off (No) |
+| use_condition  |  |  |  |  |
 
 </details>
 

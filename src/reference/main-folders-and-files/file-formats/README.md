@@ -9,7 +9,7 @@ ___
 ## General
 
 | Extension | Description |
----|---|
+|---|---|
 | .log | Event log. It contains records of program start, operation and termination |
 | .pdb |  |
 | .scop | Save file |
@@ -23,7 +23,7 @@ ___
 ## Configuration and script files
 
 | Extension | Description |
----|---|
+|---|---|
 | [.ltx](#ltx-files) | Configuration file, custom ini-like format |
 | .script | Game script |
 | [.xml](#xml-files) | Carry in text format data related to in-game text, UI element placement, and characters and information within the game world |
@@ -35,7 +35,7 @@ ___
 ## Textures
 
 | Extension | Description |
----|---|
+|---|---|
 | [.bump](#bumpdds-1) | Normal map in A(BGR) format |
 | [.bump#](#bumpdds) | File that fixes DXT compression errors in [.bump](#bumpdds) |
 | [.dds](#dds-directdraw-surface) | Graphic file used by DirectX to store textures |
@@ -48,7 +48,7 @@ ___
 ## Shaders
 
 | Extension | Description |
----|---|
+|---|---|
 | .cs | Compute shader |
 | .gs | Geometry shader |
 | .ds | Domain shader |
@@ -63,7 +63,7 @@ ___
 ## Postprocess
 
 | Extension | Description |
----|---|
+|---|---|
 | .ppe | Postprocess file format. Color-noise effects of the actor's screen |
 
 ___
@@ -71,10 +71,10 @@ ___
 ## Models
 
 | Extension | Description |
----|---|
+|---|---|
 | [.dm](#dm-detail-model) |  Effect of a dynamic weather environment (e.g., rain or lightning) |
 | [.object](#object) | These files are intended for the X-Ray SDK to store 3D content in its original, uncompressed, lossless form. They are source files that store information before compilation into other game compressed formats.  |
-| .ogf | Compiled objects |
+| .ogf | Compiled object |
 | .bones | Skeleton bone data files |
 | *bone_parts*.* | Bone part description file for an object/NPC |
 | .group | Object groups |
@@ -84,7 +84,7 @@ ___
 ## Animations
 
 | Extension | Description |
----|---|
+|---|---|
 | [.anm](#anm-animated-paths) | A set of coordinates, which works as an animation of the actor's camera movement. It is also used for anomalies, which need to be given a path. |
 | .skl | Skeletal animation |
 | .skls | Skeletal animations(.skl) in a container |
@@ -95,7 +95,7 @@ ___
 ## Archives and Resource Packages
 
 | Extension | Description |
----|---|
+|---|---|
 | .db | archive of game resources. Used in late builds and the final version of the game, has several options (db."number", db."letter"). |
 | .xr | resource library. Contains resources such as particles, [shaders](../../shaders/shaders-list/shaders-list.md), etc. in a packed format. |
 
@@ -104,7 +104,7 @@ ___
 ## Game level
 
 | Extension | Description |
----|---|
+|---|---|
 | [.err](#err) | Contains information about geometry errors during level compilation |
 | [level](#level) | File with general information about the game location (light sources, object names, texture and shader names, sectors and portals). Created during compilation |
 | .prj | Level precompilation file |
@@ -154,7 +154,7 @@ Let's introduce the notation of data types.
 These notations will be used in other articles.
 
 | Designation | Type | Range | Size (bytes) |
----|---|---|---|
+|---|---|---|---|
 | B | Integer | 0 ... 255 | 1 |
 | H | Integer | 0 ... 65535 | 2 |
 | I | Integer | 0 ... 4294967295 | 4 |
@@ -183,7 +183,7 @@ A block is binary data with a header.
 Block structure
 
 | Data | Type |
----|---|
+|---|---|
 | Identifier | H |
 | Compression | H |
 | Content size (bytes) | I |

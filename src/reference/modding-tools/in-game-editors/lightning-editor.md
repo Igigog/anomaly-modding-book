@@ -26,7 +26,7 @@ The commands and their settings are assigned in the script "`ui_debug_lightning.
 `List of commands` (Full list of commands can be found [here](../../engine/console-commands.md))
 
 | Сommand | Command description |
----|---|
+|---|---|
 | r2_sun_lumscale |  |
 | r2_sun_lumscale_amb |  |
 | r2_sun_lumscale_hemi |  |

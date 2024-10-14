@@ -17,7 +17,7 @@ But the basic buttons and their functionality remain in place
 Hotkeys in the table are standard (they can be set under Preference > Keyboard > Hotkeys)
 
 | Image | Name | Description | Note |
-:---:|---|---|---|
+|:---:|---|---|---|
 | ![undo](sdk-image/sdk-icons/undo.bmp) | Undo | Undo | - |
 | ![redo](sdk-image/sdk-icons/redo.bmp) | Redo | Redo | - |
 | ![select](sdk-image/sdk-icons/select.bmp) | Select | Used to select objects | Before the object can be moved, it must be selected with this button |
@@ -60,17 +60,17 @@ ___
 ### Options Button
 
 | Render | Description |
----|:---:|
+|---|:---:|
 | Quality | Render quality |
-| Fill Mode | Draw or Fill mode<br>Point<br>Wireframe<br>Solid |
-| Shade Mode | Shading mode selection<br>[Flat](https://en.wikipedia.org/wiki/Shading#Flat_shading)<br>[Gouraud](https://en.wikipedia.org/wiki/Gouraud_shading) |
+| Fill Mode | Draw or Fill mode<br> Point<br> Wireframe<br> Solid |
+| Shade Mode | Shading mode selection<br> [Flat](https://en.wikipedia.org/wiki/Shading#Flat_shading)<br> [Gouraud](https://en.wikipedia.org/wiki/Gouraud_shading) |
 | Edged Face | Enables displaying edges at polygons |
 | HW Render | Enables Hardware Rendering |
 | Linear Filter | Enables linear filtering |
 | Textures | Enables texture display |
 
 | Options | Description |
----|---|
+|---|---|
 | Draw Safe React |  |
 | Draw Grid | Draw Grid |
 | Weather |  |

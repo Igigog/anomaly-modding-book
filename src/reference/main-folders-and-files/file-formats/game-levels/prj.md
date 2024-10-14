@@ -4,4 +4,4 @@ ___
 
 ## About
 
-Project for level compiler (precompiled (*.level))
+Project for level compiler (precompiled (.level))

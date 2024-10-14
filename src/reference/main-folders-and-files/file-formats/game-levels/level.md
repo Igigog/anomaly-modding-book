@@ -9,14 +9,14 @@ Contains all the essentials. This contains light sources, object descriptions, n
 ## Technical information
 
 - Format version: 14
-- Stores visual geometry in *.ogf format. Limitations and features are similar to *.ogf files without skeleton.
+- Stores visual geometry in *.ogf format. Limitations and features are similar to .ogf files without skeleton.
 - One mesh can store only one material.
 - The format stores visual geometry, collision geometry, sectors, portals, dynamic light sources, glow objects.
 
 ### General structure - file blocks
 
 |  | Block code |
----|---|
+|---|---|
 | Map compiler version | 1 |
 | Description of portals | 4 |
 | Light sources | 6 |
@@ -28,7 +28,7 @@ Contains all the essentials. This contains light sources, object descriptions, n
 ### Map compiler version (the block is the same for all maps)
 
 |  | Value | Size |
----|---|---|
+|---|---|---|
 | Block code | 1 | Word(2) |
 | Data compression (0 - no, 32768 - yes) | 0 | Word(2) |
 | Block size (bytes) | 4 | DWord(4) |
@@ -37,15 +37,15 @@ Contains all the essentials. This contains light sources, object descriptions, n
 ### Description of portals (the block for all maps is the same and contains no data)
 
 |  | Value | Size |
----|---|---|
+|---|---|---|
 | Block code | 4 | Word(2) |
 | Data compression (0 - no, 32768 - yes) | 0 | Word(2) |
 | Block size (bytes) | 0 | DWord(4) |
 
-### Light sources
+### Light Sources
 
 |  | Value | Size |
----|---|---|
+|---|---|---|
 | Block code | 6 | Word(2) |
 | Data compression (0 - no, 32768 - yes) | 0 | Word(2) |
 | Block size (bytes) | - | DWord(4) |
@@ -54,7 +54,7 @@ Contains all the essentials. This contains light sources, object descriptions, n
 #### Light Source
 
 |  | Offset | Size |
----|---|---|
+|---|---|---|
 | Type of light source (only 1 or 2 were encountered) | 0 | DWord(4) |
 | (only 1 or 3 were encountered) | 4 | DWord(4) |
 | Color Red | 8 | Single(4) |
@@ -86,7 +86,7 @@ Contains all the essentials. This contains light sources, object descriptions, n
 ### Coronas of light sources
 
 |  | Value | Size |
----|---|---|
+|---|---|---|
 | Block code | 7 | Word(2) |
 | Data compression (0 - no, 32768 - yes) | 0 | Word(2) |
 | Block size (bytes) | - | DWord(4) |
@@ -95,7 +95,7 @@ Contains all the essentials. This contains light sources, object descriptions, n
 #### Corona of the light source
 
 |  | Value | Size |
----|---|---|
+|---|---|---|
 | Coordinate X | 0 | Single(4) |
 | Coordinate Z | 4 | Single(4) |
 | Coordinate Y | 8 | Single(4) |
@@ -105,7 +105,7 @@ Contains all the essentials. This contains light sources, object descriptions, n
 ### Textures
 
 |  | Value | Size |
----|---|---|
+|---|---|---|
 | Block code | 2 | Word(2) |
 | Data compression (0 - no, 32768 - yes) | 0 | Word(2) |
 | Block size (bytes) | - | DWord(4) |
@@ -170,12 +170,14 @@ Contains all the essentials. This contains light sources, object descriptions, n
  </tbody>
 </table>
 
-**Note:** the zero texture is specified without the file name and consists only of the symbol #0. So, after the field "number of textures" right after the symbol #0, do not be alarmed :)
+```admonish
+Zero texture is specified without the file name and consists only of the symbol #0. So, after the field "number of textures" right after the symbol #0, do not be alarmed :)
+```
 
 ### Sectors
 
 |  | Value | Size |
----|---|---|
+|---|---|---|
 | Block code | 8 | Word(2) |
 | Data compression (0 - no, 32768 - yes) | 32768 | Word(2) |
 | Block size (bytes) | - | DWord(4) |

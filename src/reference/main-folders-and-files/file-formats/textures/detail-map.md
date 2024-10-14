@@ -10,9 +10,9 @@ Same as a regular [.dds](dds.md) texture, needed as an extra map in a [.thm](thm
 
 The same as the [.dds](dds.md). But overlaid on top of an existing texture, for more detail
 
-> Example:
-
+```admonish example
 ![example centered](images/detail_stucco_det1.png)
+```
 
 ___
 

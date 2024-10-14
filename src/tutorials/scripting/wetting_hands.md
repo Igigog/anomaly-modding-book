@@ -6,7 +6,7 @@ At the end of this guide you'll grow enough to be a modder. Just kidding, lol.
 
 ___
 
-Nothing better for a start than actually starting, don't you think? 
+Nothing better for a start than actually starting, don't you think?
 
 Who
 

@@ -9,7 +9,7 @@ ___
 Allows you to edit texture parameters
 
 | Type | Description |
----|---|
+|---|---|
 | 2D Texture | Just a texture |
 | [Cube Map](https://en.wikipedia.org/wiki/Cube_mapping) | Is a method of environment mapping that uses the six faces of a cube as the map shape |
 | Bump Map | [Bump](../main-folders-and-files/file-formats/index.html#bumpdds-1) |
@@ -21,7 +21,7 @@ Source
 Shows the characteristics of the texture. Width, height and alpha channel.
 
 | Format | Description |
----|---|
+|---|---|
 | [DXT1](https://www.fsdeveloper.com/wiki/index.php?title=DXT_compression_explained#DXT1) | Compression without alpha channel support |
 | [DXT1 Alpha](https://www.fsdeveloper.com/wiki/index.php?title=DXT_compression_explained#DXT1_with_alpha) | Compression with alpha channel support |
 | DXT3 |  |
@@ -34,35 +34,35 @@ Shows the characteristics of the texture. Width, height and alpha channel.
 | [16 bit (alpha:luminance)](https://learn.microsoft.com/en-us/windows/win32/direct3d9/d3dformat) | 16-bit using 8 bits each for alpha and luminance DirectX Format |
 
 | MipMaps | Description |
----|---|
+|---|---|
 | Enabled |  |
 | Filter | Advanced<br> Point<br> Box<br> Triangle<br> Quadratic<br> Cubic<br> Catrom<br> Michell<br> Gaussian<br> Sinc<br> Bessel<br> Hanning<br> Hamming<br> Blackman<br> Kaiser |
 
 | Bump | Description |
----|---|
+|---|---|
 | Mode | None<br> Use<br> Use parallax |
 | Texture | Path to Bump Textures |
 
 | Details | Description |
----|---|
+|---|---|
 | Use As Diffuse |  |
 | Use As Bump (R2) |  |
 | Texture |  |
 | Scale |  |
 
 | Material | Description |
----|:---:|
+|---|:---:|
 | Base | OrenNayar <-> Blin<br> Blin <-> Phong<br> Phong <-> Metal<br> Metal <-> OrenNayar |
 | Weight |  |
 
 | Flags | Description |
----|---|
+|---|---|
 | Dither |  |
 | Dither Each MIP |  |
 | Implicit Lighted |  |
 
 | Fade | Description |
----|---|
+|---|---|
 | Enable Color |  |
 | Enable Alpha |  |
 | Delay 'n' MIP |  |
@@ -71,7 +71,7 @@ Shows the characteristics of the texture. Width, height and alpha channel.
 | Alpha |  |
 
 | Border | Description |
----|---|
+|---|---|
 | Enable Color |  |
 | Enable Alpha |  |
 | Color |  |

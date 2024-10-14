@@ -17,8 +17,18 @@ fwwf
 | item_visual | Weapon [hud model](../../../terminology/terminology.md#object_hud) | anomaly_weapons\wpn_akm\wpn_akm_hud.ogf | File path relative to the gamedata\meshes folder |  |
 | attach_place_idx |  | 0 |  |  |
 | zoom_hide_crosshair | Hide crosshair when aiming | true | true - 1 - on (Yes)<br> false - 0 - off (No) |  |
+| hud_fov_addition_modifier |  |  |  |  |
 
 </details>
+
+## Custom UI
+
+| Parameter name | Parameter description | Example value | Value Data Type | Possible parameter values and their descriptions |
+|---|---|---|:---:|---|
+| custom_ui_func |  |  |  |  |
+| custom_ui_bone |  |  |  |  |
+| custom_ui_pos |  |  |  |  |
+| custom_ui_rot |  |  |  |  |
 
 ## HUD Strafe
 
@@ -217,6 +227,21 @@ Weapon animation settings when attempting to shoot with an empty magazine (camer
 
 </details>
 
+## HUD Alt Rosition\Orientation Parameters
+
+<details>
+    <summary>HUD Alt Rosition\Orientation Parameters</summary>
+
+| Parameter name | Parameter description | Example value | Value Data Type | Possible parameter values and their descriptions |
+|---|---|---|:---:|---|
+| aim_hud_offset_alt_pos |  |  |  |  |
+| aim_hud_offset_alt_rot |  |  |  |  |
+| scope_zoom_factor_alt |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+
+</details>
+
 ## Sound Parameters
 
 You can read about the parameters of the sounds [here](weapon_sounds.ltx.md)
@@ -255,7 +280,15 @@ You can read about the parameters of the sounds [here](weapon_sounds.ltx.md)
 
 | Parameter name | Parameter description | Example value | Value Data Type | Possible parameter values and their descriptions |
 |---|---|---|:---:|---|
-| freeelook_z_offset_mul | Сamera displacement along the z-axis when the camera moves freely | 0.4 | Z - (`-`) forward / (`+`) backward |
+| freeelook_z_offset_mul | Сamera displacement along the z-axis when the camera moves freely | 0.4 | Z - (`-`) forward / (`+`) backward |  |
+| camera_move_epsilon |  |  |  |  |
+| disp_min |  |  |  |  |
+| speed_min |  |  |  |  |
+| zoom_aim_disp_k |  |  |  |  |
+| zoom_aim_speed_k |  |  |  |  |
+| delta_time |  |  |  |  |
+| cam_return_stop |  |  |  |  |
+| zoom_rotate_time_k |  |  |  |  |
 
 </details>
 

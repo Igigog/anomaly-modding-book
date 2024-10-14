@@ -21,7 +21,7 @@ ___
 ![sound editor items centered](sdk-image/sound-editor-toolbar.png)
 
 | Key | Description | Value |
----|---|---|
+|---|---|---|
 | Quality | Quality | Range is 0.00 - 1.00 |
 | Min Dist | indicates the distance in meters from the sound source at which it can still be heard at 100% volume | Range is 0.01 - 1000.00 |
 | Max Dist | Distance in meters from the sound source at which you can no longer hear the sound | Range is 0.10 - 1000.00 |

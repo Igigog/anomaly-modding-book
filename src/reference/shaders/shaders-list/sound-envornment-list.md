@@ -8,16 +8,16 @@ Contains settings for different sound zones
 
 ## List
 
-| Envornment name and path | Preview |
----|---|
-| identity | [identity](sounds/default.flac) |
-| default | [default](sounds/default.flac) |
-| bathroom | [bathroom](sounds/bathroom.flac) |
-| mountains | [mountains](sounds/mountains.flac) |
-| yard | [yard](sounds/yard.flac) |
-| room | [room](sounds/room.flac) |
-| plant | [plant](sounds/plant.flac) |
-| long_corridor | [long_corridor](sounds/long_corridor.flac) |
-| open_space | [open_space](sounds/open_space.flac) |
-| house | [house](sounds/house.flac) |
-| forest | [forest](sounds/forest.flac) |
+| Envornment name | Preview |
+|---|---|
+| identity | <audio controls src="sounds/default.mp3"></audio> |
+| default | <audio controls src="sounds/default.mp3"></audio> |
+| bathroom | <audio controls src="sounds/bathroom.mp3"></audio> |
+| mountains | <audio controls src="sounds/mountains.mp3"></audio> |
+| yard | <audio controls src="sounds/yard.mp3"></audio> |
+| room | <audio controls src="sounds/room.mp3"></audio> |
+| plant | <audio controls src="sounds/plant.mp3"></audio> |
+| long_corridor | <audio controls src="sounds/long_corridor.mp3"></audio> |
+| open_space | <audio controls src="sounds/open_space.mp3"></audio> |
+| house | <audio controls src="sounds/house.mp3"></audio> |
+| forest | <audio controls src="sounds/forest.mp3"></audio> |

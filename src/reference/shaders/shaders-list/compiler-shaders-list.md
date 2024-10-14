@@ -9,7 +9,7 @@ This section contains a list and description of the shaders that are available i
 ## List
 
 | Shader name and path | Description |
----|---|
+|---|---|
 | default | basic lightmap shader |
 | default_smooth |  |
 | def_shaders\def_ghost | lightmap shader without collision |

@@ -13,7 +13,7 @@ Contains a solid map structure. All tangible objects with materials live here. B
 The file consists of one block, which contains the following
 
 |  | Value | Size |
----|---|---|
+|---|---|---|
 | Version | 4 for build 1537 and higher | DWord(4) |
 | Number of vertices | - | DWord(4) |
 | Number of triangles | - | DWord(4) |
@@ -27,7 +27,7 @@ BBox describes the entire map, including absolutely all static objects.
 The BBox diagonal is represented by two vertices that have the same format as the others:
 
 | Coordinates | Offset | Size |
----|---|---|
+|---|---|---|
 | X coordinate | 0 | Single(4) |
 | Z coordinate | 4 | Single(4) |
 | Y coordinate | 8 | Single(4) |
@@ -35,7 +35,7 @@ The BBox diagonal is represented by two vertices that have the same format as th
 ### Triangle
 
 |  | Offset | Size |
----|---|---|
+|---|---|---|
 | First Index | 0 | DWord(4) |
 | Second index | 4 | DWord(4) |
 | Third index | 8 | DWord(4) |

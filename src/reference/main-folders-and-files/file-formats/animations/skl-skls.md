@@ -4,7 +4,7 @@ ___
 
 ## About
 
-These files store skeleton animations. The format for storing animations in .skl/.skls is similar to the format of animations embedded in [.object](#object) files. Animations are stored in uncompressed form. Bone motion data are stored losslessly when exported from a 3D editor. These formats are designed for X-Ray SDK. They are used as source files that are compiled into compressed formats for the game.
+These files store skeleton animations. The format for storing animations in .skl/.skls is similar to the format of animations embedded in .object() files. Animations are stored in uncompressed form. Bone motion data are stored losslessly when exported from a 3D editor. These formats are designed for X-Ray SDK. They are used as source files that are compiled into compressed formats for the game.
 
 ## Technical information
 
@@ -16,10 +16,10 @@ These files store skeleton animations. The format for storing animations in .skl
 
 ### Interpolation types
 
-- [Stepped](https://help.autodesk.com/view/MOBPRO/2024/ENU/?guid=GUID-F263EE8F-70A4-4941-BD31-410C08EC101A) 
-- [Linear](https://en.wikipedia.org/wiki/Linear_interpolation) 
+- [Stepped](https://help.autodesk.com/view/MOBPRO/2024/ENU/?guid=GUID-F263EE8F-70A4-4941-BD31-410C08EC101A)
+- [Linear](https://en.wikipedia.org/wiki/Linear_interpolation)
 - [Bezier 1D](https://en.wikipedia.org/wiki/B%C3%A9zier_curve#Linear_B%C3%A9zier_curves)
-- [Bezier 2D](https://en.wikipedia.org/wiki/B%C3%A9zier_curve#Quadratic_B%C3%A9zier_curves) 
+- [Bezier 2D](https://en.wikipedia.org/wiki/B%C3%A9zier_curve#Quadratic_B%C3%A9zier_curves)
 - [Hermite](https://en.wikipedia.org/wiki/Hermite_interpolation)
 - [TCB](https://wiki.synfig.org/TCB)
 

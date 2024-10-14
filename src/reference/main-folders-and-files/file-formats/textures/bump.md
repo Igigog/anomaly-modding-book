@@ -15,7 +15,7 @@ The bump map is a regular normal map in A(BGR) format (typical for DXT5_nm compr
 - B - Normal Y (DIRECTX format.)
 - A - Normal X
 
-### The engine currently supports the following compressions
+### Supported Compressions
 
 - DXT1
 - DXT5

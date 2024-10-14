@@ -132,7 +132,7 @@ for (i=0, i<partition_count, i++) {
 
 ### Interpolation types
 
-- [Stepped](https://help.autodesk.com/view/MOBPRO/2024/ENU/?guid=GUID-F263EE8F-70A4-4941-BD31-410C08EC101A) 
+- [Stepped](https://help.autodesk.com/view/MOBPRO/2024/ENU/?guid=GUID-F263EE8F-70A4-4941-BD31-410C08EC101A)
 
 ___
 

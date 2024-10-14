@@ -1,8 +1,9 @@
 # TASK GUIDE
- 
+
 Written by @nltp_ashes
 
 Table of content :
+
 - [I. INTRODUCTION](task_guide.md#i-introduction)
 - [II. TASK CONFIG](task_guide.md#ii-task-config)
 - [II.A. GENERALITIES](task_guide.md#ii-task-config)
@@ -22,9 +23,9 @@ Table of content :
 
 ## I. INTRODUCTION
 
-Before we start, keep in mind tasks often take part at the junction of a lot of the game's systems : dialogs, NPCs, squads, smart terrains and what not. 
+Before we start, keep in mind tasks often take part at the junction of a lot of the game's systems : dialogs, NPCs, squads, smart terrains and what not.
 
-This guide aims to address how to work on tasks, and specifically tasks, while sometimes making connections to other things. You'll most likely need to get familiar (either before, or along the way) with those other systems in order to create your task, depending on how complex you want it. 
+This guide aims to address how to work on tasks, and specifically tasks, while sometimes making connections to other things. You'll most likely need to get familiar (either before, or along the way) with those other systems in order to create your task, depending on how complex you want it.
 
 Make sure to check the [Anomaly Modding Book](https://igigog.github.io/anomaly-modding-book/index.html) to see if guides exists for these other aspects not detailed here.
 
@@ -60,6 +61,7 @@ Your task is in reality composed of two things. A config side, and a script side
 Here is a complete task config, or section. It contains all the information to allow the game to use your task. Some of these fields are optional, but I highly recommend you use all of them to ensure a good experience for the player.
 
 **File:** `gamedata/configs/misc/task/task_manager.ltx`
+
 ```ini
 [my_task]
 
@@ -107,6 +109,7 @@ Worth a special attention are `on_init`, `on_complete` and `on_fail`. Those are 
 At these events, you might want to give the player a reward, or take an item away from the player, etc. There honestly a lot you can do here, so I'll just breeze over the commonly used things.
 
 **File:** `gamedata/configs/misc/task/task_manager.ltx`
+
 ```ini
 [my_task]
 ...
@@ -167,11 +170,12 @@ This list is not exhaustive, and there is plenty more you can do. As you'll soon
 
 ## II.B.2. TASK LIFECYCLE (IN SCRIPT)
 
-The condlists we just had a look at will try to call the functions they contain in the `xr_effects` namespace. 
+The condlists we just had a look at will try to call the functions they contain in the `xr_effects` namespace.
 
 Because of how S.T.A.L.K.E.R. scripts are set up, this means you can define your own functions (in your script) to handle those events :
 
 **File:** `gamedata/configs/misc/task/task_manager.ltx`
+
 ```ini
 [my_task]
 ...
@@ -181,6 +185,7 @@ on_fail                 = %=my_task_fail()%
 ```
 
 **File:** `gamedata/scripts/my_task.script`
+
 ```lua
 function xr_effects.my_task_init(actor, npc, params)
    give_info("my_task_is_active")
@@ -217,6 +222,7 @@ It is important to note that there are multiple ways to make the player start yo
 ### III.A. USING THE GAME'S DYNAMIC RANDOM TASKS
 
 You can utilize the game's dynamic random tasks system. For this, you need to :
+
 - name your task according to the following contract `<npc_name>_task_<task_name>`
 - add `<actor_dialog>dm_ordered_task_dialog</actor_dialog>` to the task giver's dialogs (if the NPC doesn't already have it)
 - add `<actor_dialog>dm_ordered_task_completed_dialog</actor_dialog>` to the task giver's dialogs (if the NPC doesn't already have it)
@@ -224,6 +230,7 @@ You can utilize the game's dynamic random tasks system. For this, you need to :
 Once that's done, you will be able to add a few things to your task config to allow you more control.
 
 **File:** `gamedata/configs/misc/task/task_manager.ltx`
+
 ```ini
 [<npc_name>_task_my_task]
 ...
@@ -258,6 +265,7 @@ There are many ways to start the task using that technique, but the two importan
 
 1. To execute a script function in a dialog, you use `<action>namespace.function</action>` inside a phrase of a dialog.  
    **File:** `gamedata/configs/gameplay/my_task_dialogs.xml`
+
     ```xml
     <dialog id="my_dialog_id">
             <phrase_list>
@@ -268,8 +276,10 @@ There are many ways to start the task using that technique, but the two importan
             </phrase_list>
         </dialog>
     ```
+
 2. You define that function in your script :  
     **File:** `gamedata/scripts/my_task.script`
+
     ```lua
     function start_task(actor, npc)
         -- You can check conditions or do anything before giving the task if you want
@@ -279,7 +289,7 @@ There are many ways to start the task using that technique, but the two importan
         local task_giver = get_story_se_object("my_task_giver")
    
         -- Start the task called 'my_task' with 'task_giver' as the NPC giving the task
-	    task_manager.get_task_manager():give_task("my_task", task_giver:id())
+      task_manager.get_task_manager():give_task("my_task", task_giver:id())
     end
     ```
 
@@ -288,6 +298,7 @@ There are many ways to start the task using that technique, but the two importan
 ## IV. TASK FUNCTORS
 
 On the script side of your task, as previously explained, you will need a few functions to get your task rolling. Those are :
+
 1. `task_functor.my_task_title_f(...)`
 2. `task_functor.my_task_descr_f(...)`
 3. `task_functor.my_task_target_f(...)`
@@ -296,6 +307,7 @@ On the script side of your task, as previously explained, you will need a few fu
 I recommend you use a table to manage what has been done in your task. You can define this table at the beginning of your `my_task.script`.
 
 **File:** `gamedata/scripts/my_task.script`
+
 ```lua
 MY_TASK_CACHE = {}
 ```
@@ -303,6 +315,7 @@ MY_TASK_CACHE = {}
 Note that you'll need to persist this table, otherwise your task will break with loading a save-game :
 
 **File:** `gamedata/scripts/my_task.script`
+
 ```lua
 
 --- Function used to store information in the save file.
@@ -325,11 +338,12 @@ end
 
 ### IV.A. TASK TITLE FUNCTOR
 
-This function manages the task's title. In the end, this function must return a string, a string that will be displayed in the PDA (among other places) as the task's name. 
+This function manages the task's title. In the end, this function must return a string, a string that will be displayed in the PDA (among other places) as the task's name.
 
 While generally, the name of the task itself won't change, having it as a functor allows you to have a dynamic title, in case you'd like to change it in the middle of the task for some reason.
 
 **File:** `gamedata/scripts/my_task.script`
+
 ```lua
 --- Function used to retrieve the title of the mission (displayed in the PDA).
 --- @param task_id number
@@ -345,6 +359,7 @@ end
 Alternatively, since the task's title isn't really meant to change, you can hard-code it in the task's config.
 
 **File:** `gamedata/configs/misc/task/task_manager.ltx`
+
 ```ini
 [my_task]
 ...
@@ -359,6 +374,7 @@ title                   = st_my_task_title
 In the PDA, the task's description will be whatever string is returned by this function.
 
 A few recommendations :
+
 - write your description in a passive way, and assume doesn't know what it did before and what it needs to do
 - always give a bit of context as to what the player has done : `You have found and retrieved the documents.`
 - describe what is the new objective the player has to achieve : `Return the item to Dushman, in Deadcity.`
@@ -366,6 +382,7 @@ A few recommendations :
 You can have the description evolve anyway you want, either by checking the task's stage, or by checking info portions, etc.
 
 **File:** `gamedata/scripts/my_task.script`
+
 ```lua
 --- Function used to retrieve the description of the mission (displayed in the PDA).
 --- @param task_id number
@@ -391,6 +408,7 @@ end
 Similarly to the task's title, the description can also be hard-coded in the task's config. Although this isn't recommended, since your task will rarely have only one stage, and each stage should have its own description.
 
 **File:** `gamedata/configs/misc/task/task_manager.ltx`
+
 ```ini
 [my_task]
 ...
@@ -402,13 +420,14 @@ descr                   = st_my_task_description
 
 ### IV.C. TASK TARGET FUNCTOR
 
-This function will be used to place a marker on the player's objective in the PDA. You can code this function as you see fit. 
+This function will be used to place a marker on the player's objective in the PDA. You can code this function as you see fit.
 
 All you have to keep in mind is, if the function returns nil, no marker will be shown on the PDA, if it returns a number, the game will try to find an object with an ID matching the number, and it'll place a marker on it.
 
 Unfortunately, this means that you cannot just place markers anywhere, and that markers can exclusively be placed on top of game objects.
 
 **File:** `gamedata/scripts/my_task.script`
+
 ```lua
 --- Function used to retrieve the target of the mission (marker displayed (or not) in the PDA).
 --- @param task_id number
@@ -439,6 +458,7 @@ The task status functor is a function that is automatically called every few sec
 There isn't really a convention for how to write tasks, but as a personal recommendation, I suggest you write your code using a sort of "return early" pattern. That means you write your code from top and downwards, and return as soon as a condition to progress isn't met.
 
 **File:** `gamedata/scripts/my_task.script`
+
 ```lua
 --- Function used to manage the mission logic as a whole.
 --- @param tsk CGameTask
@@ -460,6 +480,7 @@ There are a few important things you need to manipulate in this function :
 1. The task stage : you can use `tsk.stage` as both a getter and a setter for the stage :
    - `local stage = tsk.stage` to get the current stage;
    - `tsk.stage = 2` to set the current stage to stage 2;
+
     ```lua
     -- We get the current stage of the task
     local stage = tsk.stage
@@ -470,13 +491,15 @@ There are a few important things you need to manipulate in this function :
         tsk.stage = 1
     end
     ```
+
 2. The return value :
     - use `return` (aka `return nil`) to stop the execution of the function "for now";
     - use `return "complete"` to force-complete the task;
     - use `return "fail"` to force-fail the task;
 
-    If you use "return" or "return nil" (which is the same), the task manager will not execute the rest of the code for now - but it will have no effect on the status of the task. 
+    If you use "return" or "return nil" (which is the same), the task manager will not execute the rest of the code for now - but it will have no effect on the status of the task.
     Remember the task manager calls your status functor every few seconds, so it will quickly call it again.
+
     ```lua
     -- While the player hasn't done anything, we return (aka we wait)
     if not has_alife_info("the_player_has_done_something_great") and not has_alife_info("the_player_has_done_something_really_bad") then

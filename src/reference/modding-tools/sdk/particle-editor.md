@@ -9,4 +9,3 @@ ___
 ## Item Properties
 
 > Here the [particle effects]() parameters are specified
-
