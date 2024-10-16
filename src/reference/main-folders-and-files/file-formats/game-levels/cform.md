@@ -6,6 +6,8 @@ ___
 
 Contains a solid map structure. All tangible objects with materials live here. Because of this, the game knows with what sound and property objects should react when they are hit by bullets or walked on
 
+___
+
 ## Technical information
 
 - Format version: 4
@@ -48,6 +50,8 @@ ___
 
 - [Blender (X-Ray Addon)](../../blender/index.html)
 - [SDK 0.7](../../sdk/index.html)
+
+___
 
 ## Sources
 

@@ -5,16 +5,20 @@ multilingual = false
 src = "src"
 title = "Anomaly Modding Book"
 
+[build]
+create-missing = false
+
 [output.html]
 git-repository-url = "https://github.com/Igigog/anomaly-modding-book"
 site-url = "/anomaly-modding-book/"
 edit-url-template = "https://github.com/Igigog/anomaly-modding-book/edit/main/{path}"
-additional-css = ["assets/theme/css/custom.css", "assets/theme/css/mdbook-admonish.css", "assets/theme/css/pagetoc.css", "assets/theme/css/whichlang.css", "devicon.min.css" ]
-additional-js  = ["assets/theme/js/pagetoc.js", "assets/theme/js/mermaid.min.js", "assets/theme/js/mermaid-init.js", "assets/theme/js/whichlang.js" ]
+additional-css = ["theme/css/custom.css", "theme/css/mdbook-admonish.css", "theme/pagetoc.css", "theme/css/whichlang.css", "devicon-base.css" ]
+additional-js  = ["theme/pagetoc.js", "theme/js/mermaid.min.js", "theme/js/mermaid-init.js", "theme/js/whichlang.js" ]
+no-section-label = false
 
 [output.html.fold]
 enable = true
-level = 16
+level = 1
 
 [preprocessor.mermaid]
 command = "mdbook-mermaid"
@@ -24,4 +28,4 @@ command = "mdbook-admonish"
 assets_version = "3.0.2" # do not edit: managed by `mdbook-admonish install`
 
 [preprocessor.theme]
-pagetoc        = true
+pagetoc = true

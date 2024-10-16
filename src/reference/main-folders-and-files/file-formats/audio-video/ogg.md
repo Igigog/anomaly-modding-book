@@ -6,6 +6,8 @@ ___
 
 Sound format used by the game engine
 
+___
+
 ## Technical information
 
 - Supports up to 44.100 Hz

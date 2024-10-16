@@ -6,6 +6,8 @@ ___
 
 These files are intended for the X-Ray SDK to store 3D content in its original, uncompressed, lossless form. They are source files that store information before compilation into other game compressed formats.
 
+___
+
 ## Technical information
 
 ### The format can store the following basic data (the list is not complete)
@@ -37,6 +39,8 @@ ___
 - [X-Ray Export Tool (Object Tool)](../../modding-tools-and-resources/modding-modding-tools/xray-export-tool.md)
 - [Ogf Editor by ValeroK](../../modding-tools/ogf-editor-by-valerok.md) - (Only as a converter!)
 - [SDK 0.7](../../sdk/index.html)
+
+___
 
 ## Sources
 

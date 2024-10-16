@@ -29,7 +29,7 @@ To create a time event, use the `CreateTimeEvent` function. It takes four argume
 
 With all that, you can for example create three time events that will execute three different functions with a 5 seconds gap.
 
-```lua
+```lua,icon=.devicon-lua-plain
 CreateTimeEvent("modding_book_event", "delay_func_a", 5, func_a)
 CreateTimeEvent("modding_book_event", "delay_func_b", 10, func_b)
 CreateTimeEvent("modding_book_event", "delay_func_c", 15, func_c)
@@ -39,7 +39,7 @@ Note that there exist two ways to pass information to a function within a time e
 
 First, you can pass information through the closure. It works, but you should only do it for non-userdata types. Passing userdata (`alife_objects`, `game_objects`, `vectors`, etc) exposes you to pure virtual function calls if the object was destroyed by the engine while the time event was pending.
 
-```lua
+```lua,icon=.devicon-lua-plain
 local my_var = 5
 CreateTimeEvent("modding_book_event", "delay_func", 5, function()
     printf("My var is %s", my_var)
@@ -49,7 +49,7 @@ end)
 
 Another way to do it is to pass arguments through the time event function. You can give an indefinite amount of them. Each argument that you give to `CreateTimeEvent` will be transited to the function you passed.
 
-```lua
+```lua,icon=.devicon-lua-plain
 local my_var_a = 5
 local my_var_b = 10
 CreateTimeEvent("modding_book_event", "delay_func", 5, function(some_var_a, some_var_b)
@@ -60,7 +60,7 @@ end, my_var_a, my_var_b)
 
 If you are having troubles reading the previous bit of code, note that it is equivalent to the following one.
 
-```lua
+```lua,icon=.devicon-lua-plain
 function my_func(some_var_a, some_var_b)
     printf("My var A is %s and B is %s", some_var_a, some_var_b)
     return true
@@ -73,7 +73,7 @@ CreateTimeEvent("modding_book_event", "delay_func", 5, my_func, my_var_a, my_var
 
 A frequent use case of time events is waiting for a `game_object` to come online after an `alife_object` hs been created.
 
-```lua
+```lua,icon=.devicon-lua-plain
 local se_obj = alife_create("my_sec", pos, gvid, lvid)
 CreateTimeEvent("wait_for_spawn", se_obj.id, 0, function(id) -- 0 as a delay means it'll be ran on the next frame
   if level.get_object_by_id(id) then
@@ -98,7 +98,7 @@ It is possible to reset the delay after a time event has been created. For this 
 - `delay`  
   The new time to wait (in seconds) before running the function (starting from the moment `ResetTimeEvent` is called).
 
-```lua
+```lua,icon=.devicon-lua-plain
 CreateTimeEvent("modding_book_event", "delay_func", 10, some_func)
 -- after 5 sec
 ResetTimeEvent("modding_book_event", "delay_func", 10)
@@ -115,6 +115,6 @@ Lastly, it is possible to remove a time event with the help of the `RemoveTimeEv
 - `action_id`  
   A second unique identifier of your choice (similarly to `CreateTimeEvent`).
 
-```lua
+```lua,icon=.devicon-lua-plain
 RemoveTimeEvent("modding_book_event", "delay_func")
 ```

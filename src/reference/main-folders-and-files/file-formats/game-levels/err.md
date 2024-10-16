@@ -6,6 +6,8 @@ ___
 
 Contains information about geometry errors during level compilation with xrLC.exe
 
+___
+
 ## Technical information
 
 It consists of three blocks:
@@ -80,6 +82,8 @@ ___
 
 - [Blender (X-Ray Addon)](../../blender/index.html)
 - [SDK 0.7](../../sdk/index.html)
+
+___
 
 ## Sources
 

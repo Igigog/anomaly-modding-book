@@ -6,6 +6,8 @@ ___
 
 Compiled 3D models for the game
 
+___
+
 ## Technical information
 
 - Storage of meshes without skeleton and with skeleton is supported
@@ -21,11 +23,15 @@ Compiled 3D models for the game
 - A mesh can have only one UV map
 - Support for storing information about geometry simplification in the form of Slide Window Items
 
+___
+
 ## Programs editing this file
 
 - [Blender (X-Ray Addon)](../../blender/index.html)
 - [Ogf Editor by ValeroK](../../modding-tools/ogf-editor-by-valerok.md)
 - [SDK 0.7](../../sdk/index.html)
+
+___
 
 ## Sources
 

@@ -6,6 +6,8 @@ ___
 
 Resource library. Contains resources such as partials, shaders, etc. in packaged format
 
+___
+
 ## Programs editing this file
 
 - [Particle Editor Tools]() -

@@ -15,17 +15,17 @@ This table lists the X-Ray file formats that the addon can import/export.
 
 | Extension | Description | Can Import | Can Export |
 |---|---|---|---|
-| [.object](../main-folders-and-files/file-formats/index.html#object) | Source objects | Yes | Yes |
+| [.object]() | Source objects | Yes | Yes |
 | .skl | Skeletal animation | Yes | Yes |
 | .skls | Skeletal animations in a container | Yes | Yes |
 | .ogf | Compiled objects | Yes | Yes |
-| [.omf](../main-folders-and-files/file-formats/index.html#omf-open-motions-format) | Game skeletal actions | Yes | Yes |
-| [.anm](../main-folders-and-files/file-formats/index.html#anm-animated-paths) | Animated paths | Yes | Yes |
+| [.omf]() | Game skeletal actions | Yes | Yes |
+| [.anm]() | Animated paths | Yes | Yes |
 | .bones | Bones data | Yes | Yes |
-| [.dm](../main-folders-and-files/file-formats/index.html#dm-detail-model) | Detailed effect models | Yes | Yes |
-| [.details](../main-folders-and-files/file-formats/index.html#details) | Level details | Yes | Yes |
+| [.dm]() | Detailed effect models | Yes | Yes |
+| [.details]() | Level details | Yes | Yes |
 | .level | List of scene objects in the SDK | Yes | Yes |
-| [level](../main-folders-and-files/file-formats/index.html#level) | Game levels | Yes | Yes |
+| [level]() | Game levels | Yes | Yes |
 | .part | Scene objects | Yes  | No |
 | .err | Error list | Yes  | No |
 

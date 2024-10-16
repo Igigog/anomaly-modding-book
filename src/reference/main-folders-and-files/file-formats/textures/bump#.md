@@ -6,6 +6,8 @@ ___
 
 Corrects DXT compression errors in [.bump](bump.md)
 
+___
+
 ## Technical information
 
 ### Format

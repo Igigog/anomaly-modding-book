@@ -23,21 +23,21 @@ ___
 
 The commands and their settings are assigned in the script "`ui_debug_lightning.script`"
 
-`List of commands` (Full list of commands can be found [here](../../engine/console-commands.md))
+`List of commands` (Full list of commands can be found [here]())
 
 | Сommand | Command description |
 |---|---|
-| r2_sun_lumscale |  |
-| r2_sun_lumscale_amb |  |
-| r2_sun_lumscale_hemi |  |
+| r2_sun_lumscale | Sunlight intensity control |
+| r2_sun_lumscale_amb | Ambient light intensity control |
+| r2_sun_lumscale_hemi | hemispherical lighting |
 | r2_tonemap_amount |  |
 | r2_tonemap_lowlum |  |
-| r2_tonemap_middlegray |  |
+| r2_tonemap_middlegray | Controls the setting that controls the middle gray value for Tone Mapping technologies |
 | r2_gloss_min |  |
 | r2_gloss_factor |  |
 | r2_ls_bloom_kernel_b |  |
-| r2_ls_bloom_kernel_g |  |
-| r2_ls_bloom_kernel_scale |  |
+| r2_ls_bloom_kernel_g | "Shape" of bloom. High value = more blurry bloom |
+| r2_ls_bloom_kernel_scale | Size of bloom effect |
 | r2_sun_shafts_min |  |
 | r2_sun_shafts_value |  |
 | r__optimize_dynamic_geom |  |

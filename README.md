@@ -31,4 +31,5 @@ So refer to this [article](src/meta/contributing/README.md) or open an [issue](h
   - [mdbook admonish](https://github.com/tommilligan/mdbook-admonish) - A preprocessor for mdbook to add Material Design admonishments.
   - [mdbook whichlang](https://github.com/phoenixr-codes/mdbook-whichlang) - Powerful Code Blocks for mdBook
   - [mdbook theme](https://github.com/zjp-CN/mdbook-theme) - A preprocessor and a backend to config themes for mdbook, especially creating a pagetoc on the right and setting full color themes from the offical ace editor.
+  - [mdBook pagetoc](https://github.com/JorelAli/mdBook-pagetoc)- A page table of contents for mdBook
   - [mdbook mermaid](https://github.com/badboy/mdbook-mermaid) - A preprocessor for mdbook to add mermaid support

@@ -6,6 +6,8 @@ ___
 
 A set of coordinates, which works as an animation of the actor's camera movement. It is also used for anomalies, which need to be given a path.
 
+___
+
 ## Technical information
 
 - Order of rotation: YXZ
@@ -25,6 +27,8 @@ ___
 
 - [Blender (X-Ray Addon)](../../blender/index.html)
 - [SDK 0.7](../../sdk/index.html)
+
+___
 
 ## Sources
 

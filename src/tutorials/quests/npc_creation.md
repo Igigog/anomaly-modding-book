@@ -80,7 +80,7 @@ ___
 
 **File :** `_unpacked\configs\creatures\spawn_sections_bar.ltx`
 
-```ini,lang=LTX
+```ini,lang=LTX,filepath="_unpacked\configs\creatures\spawn_sections_bar.ltx"
 [bar_visitors_barman_stalker_trader]:stalker_silent
 $spawn                      = "respawn\bar_visitors_barman_stalker_trader"
 character_profile           = bar_visitors_barman_stalker_trader
@@ -98,7 +98,7 @@ This is an example of a section.
   This on is not important, ignore.
 
 - `character_profile`  
-  You will later create a profile for the character in _unpacked\configs\gameplay\.
+  You will later create a profile for the character in _unpacked\configs\gameplay\ .
 
 - `story_id`  
   Used for scripting. Instead of searching every object in the game to find this character, you can get him from story objects storage.
@@ -107,7 +107,7 @@ Now you make your section. Let's call your new character "han_yue_ling". We crea
 
 **File :** `_unpacked\configs\creatures\spawn_sections_bar.ltx`
 
-```ini,lang=LTX
+```ini,lang=LTX,filepath="_unpacked\configs\creatures\spawn_sections_bar.ltx"
 [han_yue_ling]:stalker
 character_profile           = han_yue_ling
 story_id                    = han_yue_ling
@@ -121,7 +121,7 @@ ___
 
 **File :** `_unpacked\configs\gameplay\npc_profile_mlr.xml`
 
-```xml
+```xml,icon=.devicon-xml-plain,filepath="_unpacked\configs\gameplay\npc_profile_mlr.xml"
 <!-- Bar -->
 <character id="bar_visitors_barman_stalker_trader">
   <class>bar_visitors_barman_stalker_trader</class>
@@ -132,7 +132,7 @@ Very simple. Just make your NPC profile in a similar way.
 
 **File :** `_unpacked\configs\gameplay\npc_profile_mlr.xml`
 
-```xml
+```xml,icon=.devicon-xml-plain,filepath="_unpacked\configs\gameplay\npc_profile_mlr.xml"
 <character id="han_yue_ling">
   <class>han_yue_ling</class>
   <specific_character>han_yue_ling</specific_character>
@@ -143,7 +143,7 @@ Now we create a character description.
 
 **File :** `_unpacked\configs\gameplay\character_desc_bar.xml`
 
-```xml
+```xml,icon=.devicon-xml-plain,filepath="_unpacked\configs\gameplay\character_desc_bar.xml"
 <!-- Barkeep -->
 <specific_character id="bar_visitors_barman_stalker_trader" team_default = "1">
   <name>bar_barmen_name</name>
@@ -165,7 +165,7 @@ Now we create a character description.
   <!-- LTTZ -->
   <actor_dialog>barkeep_living_legend</actor_dialog>
   <actor_dialog>barkeep_100rads</actor_dialog>
-...
+  ...
 </specific_character>
 ```
 
@@ -215,7 +215,7 @@ So we make our character description like this. Don't forget to create a name st
 
 **File :** `_unpacked\configs\gameplay\character_desc_bar.xml`
 
-```xml
+```xml,icon=.devicon-xml-plain,filepath="_unpacked\configs\gameplay\character_desc_bar.xml"
 <specific_character id="han_yue_ling" team_default = "1">
   <name>han_yue_ling_name</name>
   <icon>han_yue_ling_icon</icon>
@@ -245,7 +245,7 @@ Squad configuration is in `_unpacked\configs\misc\squad_descr\*`.
 
 **File :** `_unpacked\configs\misc\squad_descr\squad_descr_bar.xml`
 
-```ini,lang=LTX
+```ini,lang=LTX,filepath="_unpacked\configs\misc\squad_descr\squad_descr_bar.xml"
 [bar_visitors_barman_stalker_trader_squad]:online_offline_group
 faction                     = stalker
 npc                         = bar_visitors_barman_stalker_trader
@@ -280,7 +280,7 @@ So we make our squad:
 
 **File :** `_unpacked\configs\misc\squad_descr\squad_descr_bar.xml`
 
-```ini,lang=LTX
+```ini,lang=LTX,filepath="_unpacked\configs\misc\squad_descr\squad_descr_bar.xml"
 [han_yue_ling_squad]:online_offline_group
 faction                     = dolg
 npc                         = han_yue_ling
@@ -304,7 +304,7 @@ Make a new file in `_unpacked\scripts\` like this:
 
 **File :** `_unpacked\scripts\han_yue_ling.script`
 
-```lua
+```lua,icon=.devicon-lua-plain,filepath="_unpacked\scripts\han_yue_ling.script"
 -- Bind function actor_on_first_update() to callback "actor_on_first_update"
 function on_game_start()
   RegisterScriptCallback("actor_on_first_update",spawn_han_yue_ling)
@@ -344,7 +344,7 @@ Locate the file `simulation.ltx`, in `_unpacked\configs\misc\`. Inside of that f
 
 **File :** `_unpacked\configs\misc\simulation.ltx`
 
-```ini,lang=LTX
+```ini,lang=LTX,filepath="_unpacked\configs\misc\simulation.ltx"
 ...
 [bar_dolg_general]
 bar_dolg_general_petrenko_stalker_squad
@@ -354,7 +354,6 @@ duty_sim_squad_novice                   = 1
 duty_sim_squad_veteran                  = 1
 dolg_medic_squad
 han_yue_ling_squad                      ; add your NPC to the list
-
 ...
 ```
 

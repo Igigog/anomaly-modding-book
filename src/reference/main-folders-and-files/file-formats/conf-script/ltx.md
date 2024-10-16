@@ -1,4 +1,4 @@
-# LTX files
+# .ltx
 
 ___
 
@@ -6,9 +6,8 @@ ___
 
 LTX files are basically ini files with some custom additions. They are located all over the `gamedata/configs` and are used for, well, configs.
 
-Here's how ltx config might look like:
-
-```ini
+~~~admonish example title='Here it is how ltx config might look like:'
+```ini,lang=LTX
 #include "tables/gun_*.ltx"
 
 [some_nice_gun]
@@ -19,6 +18,7 @@ fancy_feature       = {=is_night()} true, false
 [some_other_gun]
 ...
 ```
+~~~
 
 From this example we can see some fancy ltx features:
 

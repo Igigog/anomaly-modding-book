@@ -49,7 +49,7 @@ In this example we will use a preexisting dialogs file, although it's strongly r
 
 The basic structure of a dialogue tree is the following:
 
-```xml,filepath="_unpacked\configs\gameplay\dialogs_bar.xml"
+```xml,icon=.devicon-xml-plain,filepath="_unpacked\configs\gameplay\dialogs_bar.xml"
 <dialog id="my_custom_dialogue_1">
   <phrase_list>
     <phrase id="0">
@@ -97,7 +97,7 @@ In order to do that, add in your
 
 **File :** `_configs\gameplay\text\eng\st_dialogs_*.xml`
 
-```xml
+```xml,icon=.devicon-xml-plain,filepath="_configs\gameplay\text\eng\st_dialogs_*.xml"
 <string id="my_custom_dialogue_1_0">
   <text>Hy barkeep, I made my own dialogue.</text>
 </string>
@@ -114,14 +114,14 @@ Now, if you load your mod, you whould see an dialogue option for the barkeep in 
   
 Now we will add multiple choice answers for the player:
   
-```xml
+```xml,icon=.devicon-xml-plain
 <dialog id="my_custom_dialogue_1">
   <phrase_list>
     <phrase id="0">
       <text>my_custom_dialogue_1_0</text>
       <next>1</next>
   </phrase>
-        
+
     <phrase id="1">
       <text>my_custom_dialogue_1_1</text>
       <next>2</next>
@@ -209,7 +209,7 @@ Create the file "my_script_for_mod.script"
 
 First we create the precondition:
 
-```ini  
+```lua,icon=.devicon-lua-plain,filepath="_gamedata\scripts\my_script_for_mod.script"
 function my_condition()
   if db.actor:object("conserva") then
     return true
@@ -224,7 +224,7 @@ We can see that the script works as follows: it returns "false" by default, exce
 
 Now we create the transfer  
 
-```ini  
+```lua,icon=.devicon-lua-plain
 function my_action(first_speaker, second_speaker)
   dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "conserva")
   dialogs.relocate_money_to_actor(first_speaker, second_speaker, 7500)
@@ -255,7 +255,7 @@ Now this dialogue will only be shown until the player resolves the quest.
 
 In order to affect the dialogue tree, and not specific branches, the conditions, has_info, dont_has_info have to be before before <phrase_list>.
 
-```xml
+```xml,icon=.devicon-xml-plain
 <dialog id="my_custom_dialogue_1">
   <precondition>my_script_for_mod.my_condition</precondition>
   <has_info>my_tuna_mission_given</has_info>
@@ -287,7 +287,7 @@ But this time, precondition will be used to show the dialogue option / branch on
   
 In this example, the text is written directly inside the tree to ease the comprehension.
   
-```xml
+```xml,icon=.devicon-xml-plain
 <dialog id="my_custom_dialogue_1">
   <has_info>my_tuna_mission_given</has_info>
   <dont_has_info>my_tuna_mission_done</dont_has_info>

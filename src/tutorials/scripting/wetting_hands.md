@@ -28,7 +28,7 @@ Let's start by showing the player some nice message. Function `news_manager.send
 
 *my_ingenuous_script.script*
 
-```lua
+```lua,icon=.devicon-lua-plain
 function on_game_start()
     RegisterScriptCallback("actor_on_first_update", actor_on_first_update)
 end
@@ -52,7 +52,7 @@ Just showing stuff is no fun, we need Game Mechanics, of course. Lets give playe
 
 *my_ingenuous_script.script*
 
-```lua
+```lua,icon=.devicon-lua-plain
 function on_game_start()
     RegisterScriptCallback("on_key_press", on_key_press)
 end

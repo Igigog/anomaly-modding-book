@@ -6,6 +6,8 @@ ___
 
 These files store skeleton animations. The format for storing animations in .skl/.skls is similar to the format of animations embedded in .object() files. Animations are stored in uncompressed form. Bone motion data are stored losslessly when exported from a 3D editor. These formats are designed for X-Ray SDK. They are used as source files that are compiled into compressed formats for the game.
 
+___
+
 ## Technical information
 
 - Animations are stored as 3 animation curves for position and 3 curves for rotation in [Euler angles](https://en.wikipedia.org/wiki/Euler_angles) with ZXY axis order.
@@ -29,6 +31,8 @@ ___
 
 - [Blender (X-Ray Addon)](../../blender/index.html)
 - [SDK 0.7](../../sdk/index.html)
+
+___
 
 ## Sources
 

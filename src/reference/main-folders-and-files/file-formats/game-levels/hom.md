@@ -6,6 +6,8 @@ ___
 
 HOM is a geometry cutter, which is a mesh and is needed to increase performance. This file is created during level compilation.
 
+___
+
 ## Technical information
 
 ### Blocks
@@ -50,6 +52,8 @@ ___
 
 - [Blender (X-Ray Addon)](../../blender/index.html)
 - [SDK 0.7](../../sdk/index.html)
+
+___
 
 ## Sources
 

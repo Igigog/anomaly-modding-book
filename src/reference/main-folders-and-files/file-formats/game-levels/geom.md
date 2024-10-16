@@ -229,6 +229,8 @@ As you already know, there are several vertex description blocks in the file. No
 | ??? |  | Word(2) |
 | ??? |  | Word(2) |
 
+___
+
 ## Sources
 
 [Source](http://stalkerin.gameru.net/wiki/index.php?title=Level.geom)

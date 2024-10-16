@@ -8,7 +8,7 @@ A quest is defined by adding a section inside \configs\misc\task\task_manager.lt
 
 *task_manager.ltx*
 
-```ini
+```ini,lang=LTX
 [mytask]
 status_functor = mytask_status_f
 target_functor = mytask_target_f
@@ -23,7 +23,7 @@ To avoid bloating those two scripts you can define those functions in a separate
 
 *mytask.script*
 
-```lua
+```lua,icon=.devicon-lua-plain
 function task_status_functor.mytask_status_f(tsk,task_id)
 	-- your code
 	-- return "fail" or "complete" to fail/complete the task
@@ -51,7 +51,7 @@ Title and description can be defined in two ways:
 static (not really, it's actually a condlist which is a can of worms, so for now pretend it's a static value)
 *task_manager.ltx*
 
-```ini
+```ini,lang=LTX
 [mytask]
 status_functor = mytask_status_f
 target_functor = mytask_target_f
@@ -65,7 +65,7 @@ With st_mytask_descr and st_mytask_title defined inside a xml file in configs/te
 With functors
 *task_manager.ltx*
 
-```ini
+```ini,lang=LTX
 [mytask]
 status_functor = mytask_status_f
 target_functor = mytask_target_f
@@ -77,7 +77,8 @@ descr_functor = mytask_descr_f
 Title and task functors must belong to task_functor namespace so you need to add.
 
 *mytask.script*
-```lua
+
+```lua,icon=.devicon-lua-plain
 function task_functor.mytask_title_f(task_id,field,p,tsk)
     -- title of the task will be the text returned
     -- you will have to define your strings in an xml and "translate" the string id 
@@ -102,7 +103,7 @@ Edit the status and target functor to spawn a soldier squad at the fallen bridge
 
 *mytask.script*
 
-```lua
+```lua,icon=.devicon-lua-plain
 local squad_id
 function task_status_functor.mytask_status_f(tsk,task_id)
     -- if it's stage 1, then we're done
@@ -162,7 +163,7 @@ To add the task to the pool available at fanatic (he already has the task manage
 
 *task_manager.ltx*
 
-```ini
+```ini,lang=LTX
 [esc_2_12_stalker_fanat_task_mytask]
 status_functor = mytask_status_f
 target_functor = mytask_target_f
@@ -186,13 +187,13 @@ Also now that the task is handled by the task manager, inside functors you can a
 
 *mytask.script*
 
-```lua
+```lua,icon=.devicon-lua-plain
 function task_functor.mytask_target_f(task_id,field,p,tsk)
-	if tsk.stage == 0 then
-		return squad_id
-	elseif tsk.stage == 1 then
-		return tsk.task_giver_id
-	end
+    if tsk.stage == 0 then
+        return squad_id
+    elseif tsk.stage == 1 then
+        return tsk.task_giver_id
+    end
 end
 ```
 
@@ -220,13 +221,13 @@ ___
 
 on complete is a condlist, which is basically a "dynamic" config line but with tons of gotchas, so when in doubt just copypaste from exisitng ones and edit values accordingly
 
-```ini
+```ini,lang=LTX
 on_complete = %=reward_random_money(5000:10000) =reward_stash(true) =complete_task_inc_goodwill(50:stalker)%
 ```
 
 actually means that when the condlist is parsed (in this case when task is completed) it will execute the functions:
 
-```lua
+```lua,icon=.devicon-lua-plain
 -- give player from 5000 to 10000 cash (modified by economy settings)
 xr_effects.reward_random_money(nil, nil, {"5000","10000"})
 

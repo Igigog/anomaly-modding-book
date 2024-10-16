@@ -14,7 +14,7 @@ ___
 | .pdb |  |
 | .scop | Save file |
 | .scoc | Save file |
-| .xrdemo | Recording camera flyover (demo). Created in the game with a [console command](../../engine/console-commands.md). |
+| .xrdemo | Recording camera flyover (demo). Created in the game with a [console command](../../engine/console-commands/console-commands.md). |
 | .ogm | The video format used by the game engine. |
 | [.ogg](#ogg) | The sound format used by the game engine. |
 

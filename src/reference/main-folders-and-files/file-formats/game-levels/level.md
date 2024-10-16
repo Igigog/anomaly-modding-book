@@ -6,6 +6,8 @@ ___
 
 Contains all the essentials. This contains light sources, object descriptions, names of their corresponding textures and shaders, portals, and sectors.
 
+___
+
 ## Technical information
 
 - Format version: 14
@@ -190,6 +192,8 @@ ___
 
 - [Blender (X-Ray Addon)](../../blender/index.html)
 - [SDK 0.7](../../sdk/index.html)
+
+___
 
 ## Sources
 

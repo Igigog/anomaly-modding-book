@@ -6,6 +6,8 @@ ___
 
 Effect of a dynamic weather environment (e.g., rain or lightning)
 
+___
+
 ## Technical information
 
 It works like this: UV descends down the Y coordinates to the texture
@@ -116,6 +118,8 @@ ___
 - [Blender (X-Ray Addon)](../../blender/index.html)
 - [X-Ray Export Tool (Object Tool)](../../modding-tools-and-resources/modding-modding-tools/xray-export-tool.md)
 - [SDK 0.7](../../sdk/index.html)
+
+___
 
 ## Sources
 

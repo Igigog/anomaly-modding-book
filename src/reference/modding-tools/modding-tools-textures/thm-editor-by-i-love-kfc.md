@@ -63,8 +63,8 @@ Utility for editing .thm files without the need to use the SDK
 |---|---|
 | Image | 2D texture |
 | [Cube Map](https://en.wikipedia.org/wiki/Cube_mapping) | Is a method of environment mapping that uses the six faces of a cube as the map shape |
-| Bump Map | [Bump](../main-folders-and-files/file-formats/index.html#bumpdds-1) Map |
-| Normal Map | [Normal](https://en.wikipedia.org/wiki/Normal_mapping) Map |
+| Bump Map | [Bump]() Map |
+| [Normal Map](https://en.wikipedia.org/wiki/Normal_mapping) | Normal Map |
 | Terrain | Terrain Map |
 
 ### Texture format
@@ -74,13 +74,13 @@ Utility for editing .thm files without the need to use the SDK
 | [DXT1](https://www.fsdeveloper.com/wiki/index.php?title=DXT_compression_explained#DXT1) | Compression without alpha channel support |
 | [ADXT1](https://www.fsdeveloper.com/wiki/index.php?title=DXT_compression_explained#DXT1_with_alpha) | Compression with alpha channel support |
 | [DXT5](https://www.fsdeveloper.com/wiki/index.php?title=DXT_compression_explained#DXT5) | Compression with alpha channel support |
-| 4444 | RGBA4444? |
-| 1555 | RGBA1555? |
-| 565 | Uncompressed RGB565 or RGB16? |
+| [4444](https://docs.unity3d.com/ScriptReference/TextureFormat.RGBA4444.html) | aka RGBA4444<br> Color and alpha texture format, 4 bit per channel |
+| 1555 | aka RGBA1555<br>A pixel occupies 16 bits (2 bytes) and contains color and transparency information in the following format:<br> 5 bits for the red channel (R)<br> 5 bits for the green channel (G)<br> 5 bits for the blue channel (B)<br> 1 bit for the alpha channel (A) |
+| 565 | aka RGB565<br> Each pixel occupies 16 bits (or 2 bytes) and contains color information in the following distribution:<br> 5 bits for the red channel (R)<br> 6 bits for the green channel (G)<br> 5 bits for the blue channel (B) |
 | RGB | Compression without alpha channel support |
 | RGBA | Compression with alpha channel support |
-| NVHS | NVidia Texture Format (GEForce 3) |
-| NVHU | NVidia Texture Format? |
+| NVHS | NVIDIA High Compression (NVidia Texture Format (GEForce 3)) |
+| NVHU | NVIDIA High-Quality Texture Compression (NVidia Texture Format )|
 | [A8](https://learn.microsoft.com/en-us/windows/win32/direct3d9/d3dformat) | 8-bit alpha only DirectX Format |
 | [L8](https://learn.microsoft.com/en-us/windows/win32/direct3d9/d3dformat) | 8-bit luminance only DirectX Format |
 | [A8L8](https://learn.microsoft.com/en-us/windows/win32/direct3d9/d3dformat) | 16-bit using 8 bits each for alpha and luminance DirectX Format |
@@ -96,36 +96,40 @@ Utility for editing .thm files without the need to use the SDK
 
 ### MIP Filter
 
-> Different algorithms of MIP-map generation
+```admonish tip
+Different algorithms of MIP-map filtering
+```
 
-| Field | Description |
-|---|---|
-| Box | The simplest MIP-map generation algorithm. However, the box filter has a number of limitations that can be quite noticeable with certain textures. For example, if a texture contains very narrow features (e.g., lines), then aliasing artifacts may be very pronounced |
-| Cubic | Generation with weighted sum of eight pixels. The advantage of the cubic filter over the box is that it can have negative side lobes (weights) which help maintain sharpness while reducing the image. This can help reduce some of the blurring effect of filtering with mipmaps |
-| Point |  |
-| Triangle |  |
-| Quadratic |  |
-| Advanced |  |
-| Catrom |  |
-| Mitchell |  |
-| Gaussian |  |
-| Sinc |  |
-| Bessel |  |
-| Hanning |  |
-| Hamming |  |
-| Blackman |  |
-| Kaiser | Increase readability of textures by increasing sharpness and contrast |
+| Field | Description | Preview |
+|---|---|---|
+| Box | Simplest MIP-map generation algorithm.<br> However, the box filter has a number of limitations that can be quite noticeable with certain textures. For example, if a texture contains very narrow features (e.g., lines), then aliasing artifacts may be very pronounced |  |
+| Cubic | Generation with weighted sum of eight pixels.<br> The advantage of the cubic filter over the box is that it can have negative side lobes (weights) which help maintain sharpness while reducing the image. This can help reduce some of the blurring effect of filtering with mipmaps |  |
+| Point | (aka Nearest-neighbor interpolation)<br> Uses only one pixel from the mipmap<br> This is a simple and fast texture filtering method that works well in some cases, but can create visual artifacts and reduce image quality in more complex scenes. |  |
+| Triangle |  |  |
+| Quadratic | This method offers a balance between quality and performance<br> It uses an interpolation method that is based on quadratic equations. Instead of just selecting one pixel (as in Point), this method considers three pixels - one from the selected mipmap level and the two closest to it - to greatly improve the smoothness of the transition of color values. |  |
+| Advanced |  |  |
+| Catrom |  |  |
+| Mitchell |  |  |
+| Gaussian |  |  |
+| Sinc |  |  |
+| Bessel |  |  |
+| Hanning |  |  |
+| Hamming |  |  |
+| Blackman |  |  |
+| Kaiser | Increase readability of textures by increasing sharpness and contrast |  |
 
 ### Material
 
-> Different shading algorithms
+```admonish tip
+Different shading algorithms
+```
 
 | Field | Description |
 |---|---|
-| OrenNayar Blin | Oren-Nayar-Blinn shader is a variant of the Blinn shader. This shader is good for matte surfaces such as fabric, terra cotta, and so on |
-| Blin Phong |  |
-| Phong Metal |  |
-| Metal OrenNayar |  |
+| OrenNayar Blin | `Oren-Nayar shading` is a lighting model used in computer graphics to render matte (rough) surfaces with respect to their microgeometry.<br> `Blin shading` uses a combination of diffuse and specular light reflection to achieve a more realistic image of shiny objects. |
+| Blin Phong | `Blin shading` uses a combination of diffuse and specular light reflection to achieve a more realistic image of shiny objects.<br> `Phong shading` model can achieve good visual results, making objects appear more three-dimensional and realistic, but at the same time it cannot always accurately reproduce lighting effects on more complex or uneven surfaces. |
+| Phong Metal | `Phong shading` model can achieve good visual results, making objects appear more three-dimensional and realistic, but at the same time it cannot always accurately reproduce lighting effects on more complex or uneven surfaces.<br> `Metal shading` is focuses on the realization of materials imitating metallic surfaces. |
+| Metal OrenNayar | `Metal shading` is focuses on the realization of materials imitating metallic surfaces.<br> `Oren-Nayar shading` is a lighting model used in computer graphics to render matte (rough) surfaces with respect to their microgeometry. |
 
 ### Tools
 
@@ -133,66 +137,54 @@ Utility for editing .thm files without the need to use the SDK
 |---|---|
 | Generate thms by .dds |  |
 | Fix invalid chunks in thms |  |
-| Validate thms with dds |  |
+| Validate thms with .dds |  |
 | Convert thms format (SOC/COP) | - |
 
 ### Chechboxes
 
-**SOC format**
+- [ ] SOC format - SoC format of .thm
 
-> SoC format of .thm
+Border Color
 
-**Border Color**
 
-> ?
 
-**Fade Color**
+Fade Color
 
-> ?
 
-**Fade Amout**
 
-> ?
+Fade Amout
 
-**Material Weight**
 
-> Shading model weight
 
-|||
-|---|---|
-| Values | 0 - OrenNayar - Blin<br> 1 - Blin - Phong<br> 2 - Phong - Metal<br> 3 - Metal - OrenNayar |
+Material Weight
 
-**Detail Scale**
+Shading model weight (0.0 - 1.0)
 
-> [Detail Map](../main-folders-and-files/file-formats/index.html#detail_map_name_with-bump-or-bumpdds) Scale
+Detail Scale
 
-**Texture Width**
+[Detail Map](../main-folders-and-files/file-formats/index.html#detail_map_name_with-bump-or-bumpdds) Scale
 
-> Texture Width
+Texture Width
+Texture Height
 
-**Texture Height**
+Fade Delay
 
-> Texture Height
 
-**Fade Delay**
+Bump Height
 
-> ?
+[Bump Map](../main-folders-and-files/file-formats/index.html#bumpdds-1) Height
 
-**Bump Height**
+Detail name
 
-> [Bump Map](../main-folders-and-files/file-formats/index.html#bumpdds-1) Height
+Path to [Detail Map](../main-folders-and-files/file-formats/index.html#detail_map_name_with-bump-or-bumpdds)
 
-**Detail name**
+Bump name
 
-> Path to [Detail Map](../main-folders-and-files/file-formats/index.html#detail_map_name_with-bump-or-bumpdds)
+Path to [Bump Map](../main-folders-and-files/file-formats/index.html#bumpdds-1)
 
-**Bump name**
+Normal Map name
 
-> Path to [Bump Map](../main-folders-and-files/file-formats/index.html#bumpdds-1)
-
-**Normal Map name**
-
-> Path to Normal Map
+Path to Normal Map
 
 ___
 

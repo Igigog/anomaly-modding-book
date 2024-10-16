@@ -65,7 +65,7 @@ To play a motion, we need a few components:
 1. Create a config [.ltx](../main-folders-and-files/file-formats/index.html#ltx-files) file in **configs/items/items** and give it any name, but make sure it starts with **items_**. Example: **items_my_anims.ltx**.
 2. Set the parameters. We’ll examine them by looking at this example.
 
-```ini
+```ini,lang=LTX
 
 [anim_my_sec]
 
@@ -93,7 +93,7 @@ To make a test placeholder, you can also open any weapon config file and choose 
 
 The function that lets you play a motion is:
 
-```lua
+```lua,icon=.devicon-lua-plain
 game.play_hud_motion(hands, anim_section_name, motion_name, bMixIn, speed)
 ```
 
@@ -115,20 +115,20 @@ Now let’s have a closer look at its arguments.
 
 #### Supplementary functions
 
-```lua
+```lua,icon=.devicon-lua-plain
 game.hud_motion_allowed()
 ```
 
 Checks if a hands motion can be played at the moment. Useful as an additional safety check. Returns True or False.
 
-```lua
+```lua,icon=.devicon-lua-plain
 game.get_motion_length(anim_section_name, motion_name, speed)
 ```
 
 Gets the specified motion length. The parameters are identical to those in `play_hud_motion`.
 Note that it returns time in milliseconds, so in order to get the actual length you’ll need to divide the result by 1000. Useful to know when the motion is over.
 
-```lua
+```lua,icon=.devicon-lua-plain
 game.stop_hud_motion()
 ```
 
@@ -146,14 +146,14 @@ Example: you have an animation from FDDA that is currently being played. This fu
     3. Call `game.only_allow_movekeys(true)` if you don’t want the user to break an animation by pressing any action keys (like item quick use), and then restore the controls with `game.only_allow_movekeys(false)`.
     4. `hide_hud_inventory()` and `db.actor:activate_slot(0)` can be used to close the backpack inventory or force hide an active weapon if needed. Detectors can be manipulated in a similar way with:
 
-```lua
+```lua,icon=.devicon-lua-plain
     local det = db.actor:active_detector() or nil
     det:switch_state(2)
 ```
 
 and then restored with:
 
-```lua
+```lua,icon=.devicon-lua-plain
     det:switch_state(1)
 ```
 
@@ -183,19 +183,19 @@ The arguments are:
 
 #### Supplementary functions
 
-```lua
+```lua,icon=.devicon-lua-plain
 game.stop_hud_anm(path, force
 ```
 
 Stops a specific .anm from playing. **path** is identical to the one above. **force** is a boolean parameter which makes it possible to force stop it - a bit more ‘harsh’ method.
 
-```lua
+```lua,icon=.devicon-lua-plain
 game.stop_all_hud_anms(boolean)
 ```
 
 Stops all .anm’s that are currently played.
 
-```lua
+```lua,icon=.devicon-lua-plain
 game.set_hud_anm_time(path, time)
 ```
 
@@ -203,13 +203,13 @@ This function alters the playback speed of the specified .anm file. **path** is 
 
 The name may be a bit confusing, but judjing by the engine code it actually manipulates the .anm speed:
 
-```lua
+```lua,icon=.devicon-lua-plain
 float speed = (anm->anm->anim_param().max_t - anm->anm->anim_param().t_current) / time;
 ```
 
 And a descriptive example in `actor_effects.script`:
 
-```lua
+```lua,icon=.devicon-lua-plain
 game.play_hud_motion(1, mc_anm_sec, "anm_hide_hand", true, hide_hand_speed)
 new_speed = game.set_hud_anm_time(anm_name, ((mc_anm_time_1 + mc_anm_time_2) / 1000) + anm_additional_length)
 ```

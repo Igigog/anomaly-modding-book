@@ -71,7 +71,7 @@ animation parameter name = animation name(hands), animation name(weapon), playba
 | anm_bore_2 | WP_BM16 |  |  |  |  |
 | anm_bore | Boredom animation |  |  |  |  |
 | anm_bore_empty |  |  |  |  |  |
-| anm_bore_g |  |  |  |  |
+| anm_bore_g |  |  |  |  |  |
 | anm_bore_empty_g |  |  |  |  |  |
 | anm_bore_w_gl |  |  |  |  |  |
 | anm_bore_empty_w_gl |  |  |  |  |  |
@@ -129,21 +129,6 @@ animation parameter name = animation name(hands), animation name(weapon), playba
 | anm_switch_g_empty |  |  |  |  |  |
 
 </details>
-
-## Knife
-
-| Parameter Name | Engine Class | Parameter Description | Example Value | Value Data Type | Parameter Possible Values And Their Descriptions |
-|---|---|---|---|:---:|---|
-
-
-
-
-
-
-
-
-
-
 
 anm_throw_begin
 

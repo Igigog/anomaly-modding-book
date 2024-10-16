@@ -6,8 +6,7 @@ ___
 
 Text file that is used to create a simple animation texture, by recording a sequence of "frames" and a playback speed.
 
-## Example
-
+~~~admonish example
 ```example
 15
 ui\ui_ani_cursor_01
@@ -28,17 +27,18 @@ ui\ui_ani_cursor_03
 ui\ui_ani_cursor_04
 ui\ui_ani_cursor_05
 ```
-
 In this case, because of "cycled" the playback order will be 1234543212345432123454321
+
 Speed of texture change is set in numerical format before the enumeration
+~~~
 
 The number of textures in the list is arbitrary, but the more frames, the greater the load on the engine, respectively.
-The name of the file is set by the name of the assigned texture (without taking the extension into account). If there is a *[.dds](dds.md) file in the folder with the same name as the .seq file, the engine ignores the original texture, giving priority to the .seq file. The priority of file search by extension is as follows:
+The name of the file is set by the name of the assigned texture (without taking the extension into account). If there is a *[.dds]() file in the folder with the same name as the .seq file, the engine ignores the original texture, giving priority to the .seq file. The priority of file search by extension is as follows:
 
 - .ogm
 - .avi
 - .seq
-- [.dds](dds.md)
+- [.dds]()
 
 ## Parameters
 
@@ -51,6 +51,8 @@ ___
 ## Programs editing this file
 
 - Any text editor
+
+___
 
 ## Sources
 

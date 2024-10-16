@@ -1,3 +1,5 @@
 .*
 book
 mdbook.exe
+book.code-workspace
+markdownlint.json

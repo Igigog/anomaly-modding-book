@@ -24,7 +24,7 @@ There are three functions that exists allowing you to manipulate callbacks :
 
 You must register your functions to callbacks in `on_game_start`. This function will be called automatically by the game (if it exists in your script) after all scripts are loaded. This is because callbacks need to be created before you can register functions to them. The problem is that, when scripts are still loading, it is possible that not all the dynamic callbacks have been created yet.
 
-```lua
+```lua,icon=.devicon-lua-plain
 function on_game_start()
     RegisterScriptCallback("actor_on_update", my_func)
 end
@@ -42,7 +42,7 @@ To do that, use the `AddScriptCallback(string)` function (exclusive to Anomaly 1
 
 **Important :** Callback names have a risk of collision, so it is **highly** recommended you prefix/suffix your callbacks with a unique identifier (like a codename for your addon, or even your nickname - anything that can guarantee no-one else will name their callback the same).
 
-```lua
+```lua,icon=.devicon-lua-plain
 AddScriptCallback("modding_book_something_happened")
 ```
 
@@ -52,7 +52,7 @@ In the following example, we will create a callback that fires when the key **F*
 
 **File :** `gamedata\scripts\script_a.script`
 
-```lua
+```lua,icon=.devicon-lua-plain,filepath="gamedata\scripts\script_a.script"
 -- A counter of how many times the player has paid respects
 local respects_counter = 0
 
@@ -78,7 +78,7 @@ end
 
 **File :** `gamedata\scripts\script_b.script`
 
-```lua
+```lua,icon=.devicon-lua-plain,filepath="gamedata\scripts\script_b.script"
 -- Register callbacks
 function on_game_start()
     RegisterScriptCallback("modding_book_on_pay_respects", is_paying_respects)

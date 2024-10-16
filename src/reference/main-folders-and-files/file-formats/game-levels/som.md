@@ -6,6 +6,8 @@ ___
 
 Geometry for calculating sound propagation. Used to allow sound to pass through walls, ceilings, floors, etc. with varying strength.
 
+___
+
 ## Technical information
 
 - Format version: 0
@@ -47,6 +49,8 @@ ___
 
 - [Blender (X-Ray Addon)](../../blender/index.html)
 - [SDK 0.7](../../sdk/index.html)
+
+___
 
 ## Sources
 

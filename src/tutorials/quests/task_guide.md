@@ -62,7 +62,7 @@ Here is a complete task config, or section. It contains all the information to a
 
 **File:** `gamedata/configs/misc/task/task_manager.ltx`
 
-```ini
+```ini,lang="LTX",filepath="gamedata/configs/misc/task/task_manager.ltx"
 [my_task]
 
 title_functor           = my_task_title_f
@@ -110,7 +110,7 @@ At these events, you might want to give the player a reward, or take an item awa
 
 **File:** `gamedata/configs/misc/task/task_manager.ltx`
 
-```ini
+```ini,lang="LTX",filepath="gamedata/configs/misc/task/task_manager.ltx"
 [my_task]
 ...
 on_init                 = %+my_task_is_active%
@@ -176,7 +176,7 @@ Because of how S.T.A.L.K.E.R. scripts are set up, this means you can define your
 
 **File:** `gamedata/configs/misc/task/task_manager.ltx`
 
-```ini
+```ini,lang="LTX",filepath="gamedata/configs/misc/task/task_manager.ltx"
 [my_task]
 ...
 on_init                 = %=my_task_init()%
@@ -186,7 +186,7 @@ on_fail                 = %=my_task_fail()%
 
 **File:** `gamedata/scripts/my_task.script`
 
-```lua
+```lua,,icon=.devicon-lua-plain,filepath="gamedata/scripts/my_task.script"
 function xr_effects.my_task_init(actor, npc, params)
    give_info("my_task_is_active")
    
@@ -231,7 +231,7 @@ Once that's done, you will be able to add a few things to your task config to al
 
 **File:** `gamedata/configs/misc/task/task_manager.ltx`
 
-```ini
+```ini,lang=LTX,filepath="gamedata/configs/misc/task/task_manager.ltx"
 [<npc_name>_task_my_task]
 ...
 job_descr               = st_my_task_job_descr
@@ -266,7 +266,7 @@ There are many ways to start the task using that technique, but the two importan
 1. To execute a script function in a dialog, you use `<action>namespace.function</action>` inside a phrase of a dialog.  
    **File:** `gamedata/configs/gameplay/my_task_dialogs.xml`
 
-    ```xml
+    ```xml,icon=.devicon-xml-plain,filepath="gamedata/configs/gameplay/my_task_dialogs.xml"
     <dialog id="my_dialog_id">
             <phrase_list>
                 <phrase id="0"> <!-- actor -->
@@ -280,7 +280,7 @@ There are many ways to start the task using that technique, but the two importan
 2. You define that function in your script :  
     **File:** `gamedata/scripts/my_task.script`
 
-    ```lua
+    ```lua,icon=.devicon-lua-plain,filepath="gamedata/scripts/my_task.script"
     function start_task(actor, npc)
         -- You can check conditions or do anything before giving the task if you want
         
@@ -308,7 +308,7 @@ I recommend you use a table to manage what has been done in your task. You can d
 
 **File:** `gamedata/scripts/my_task.script`
 
-```lua
+```lua,icon=.devicon-lua-plain,filepath="gamedata/scripts/my_task.script"
 MY_TASK_CACHE = {}
 ```
 
@@ -316,8 +316,7 @@ Note that you'll need to persist this table, otherwise your task will break with
 
 **File:** `gamedata/scripts/my_task.script`
 
-```lua
-
+```lua,icon=.devicon-lua-plain,filepath="gamedata/scripts/my_task.script"
 --- Function used to store information in the save file.
 --- @param m_data table
 --- @return nil
@@ -331,7 +330,6 @@ end
 function load_state(m_data)
     MY_TASK_CACHE = m_data.my_addon_name_my_task_cache or {}
 end
-
 ```
 
 ---
@@ -344,7 +342,7 @@ While generally, the name of the task itself won't change, having it as a functo
 
 **File:** `gamedata/scripts/my_task.script`
 
-```lua
+```lua,icon=.devicon-lua-plain,filepath="gamedata/scripts/my_task.script"
 --- Function used to retrieve the title of the mission (displayed in the PDA).
 --- @param task_id number
 --- @param field string
@@ -360,7 +358,7 @@ Alternatively, since the task's title isn't really meant to change, you can hard
 
 **File:** `gamedata/configs/misc/task/task_manager.ltx`
 
-```ini
+```ini,lang=LTX,filepath="gamedata/configs/misc/task/task_manager.ltx"
 [my_task]
 ...
 title                   = st_my_task_title
@@ -383,7 +381,7 @@ You can have the description evolve anyway you want, either by checking the task
 
 **File:** `gamedata/scripts/my_task.script`
 
-```lua
+```lua,icon=.devicon-lua-plain,filepath="gamedata/scripts/my_task.script"
 --- Function used to retrieve the description of the mission (displayed in the PDA).
 --- @param task_id number
 --- @param field string
@@ -409,7 +407,7 @@ Similarly to the task's title, the description can also be hard-coded in the tas
 
 **File:** `gamedata/configs/misc/task/task_manager.ltx`
 
-```ini
+```ini,lang=LTX,filepath="gamedata/configs/misc/task/task_manager.ltx"
 [my_task]
 ...
 descr                   = st_my_task_description
@@ -428,7 +426,7 @@ Unfortunately, this means that you cannot just place markers anywhere, and that 
 
 **File:** `gamedata/scripts/my_task.script`
 
-```lua
+```lua,icon=.devicon-lua-plain,filepath="gamedata/scripts/my_task.script"
 --- Function used to retrieve the target of the mission (marker displayed (or not) in the PDA).
 --- @param task_id number
 --- @param field string
@@ -459,7 +457,7 @@ There isn't really a convention for how to write tasks, but as a personal recomm
 
 **File:** `gamedata/scripts/my_task.script`
 
-```lua
+```lua,icon=.devicon-lua-plain,filepath="gamedata/scripts/my_task.script"
 --- Function used to manage the mission logic as a whole.
 --- @param tsk CGameTask
 --- @param task_id number
@@ -481,7 +479,7 @@ There are a few important things you need to manipulate in this function :
    - `local stage = tsk.stage` to get the current stage;
    - `tsk.stage = 2` to set the current stage to stage 2;
 
-    ```lua
+    ```lua,icon=.devicon-lua-plain
     -- We get the current stage of the task
     local stage = tsk.stage
     
@@ -500,7 +498,7 @@ There are a few important things you need to manipulate in this function :
     If you use "return" or "return nil" (which is the same), the task manager will not execute the rest of the code for now - but it will have no effect on the status of the task.
     Remember the task manager calls your status functor every few seconds, so it will quickly call it again.
 
-    ```lua
+    ```lua,icon=.devicon-lua-plain
     -- While the player hasn't done anything, we return (aka we wait)
     if not has_alife_info("the_player_has_done_something_great") and not has_alife_info("the_player_has_done_something_really_bad") then
         return

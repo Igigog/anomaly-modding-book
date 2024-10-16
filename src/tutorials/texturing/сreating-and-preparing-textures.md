@@ -28,4 +28,3 @@ We have to choose the texture compression that suits us.
 ![select-compressions](images/compressions.png)
 
 Save our texture.
-All of this may come in handy, for example for [creating a model](../blender/creating-model-in-blender.md).
