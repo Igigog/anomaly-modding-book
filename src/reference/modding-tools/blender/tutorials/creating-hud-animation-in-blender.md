@@ -1,5 +1,12 @@
 # Creating an animation in Blender for a HUD object
 
+___
+
+## Need to know
+
+- How working in Blender and creating animations
+- 
+
 ## Related Videos
 
 ___

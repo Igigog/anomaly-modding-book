@@ -1,9 +1,9 @@
 # R2 Render Console Commands
 
-> DirectX 9.0c - (Shader Model 3.0) 
+> DirectX 9.0c - (Shader Model 3.0)
 
 | Сommand | Command description | Command's argument | Note |
----|---|:---:|---|
+|---|---|:---:|---|
 | r2_aa | "Pseudo-smoothing" on dynamic lighting | 'on/off' or '1/0' | - |
 | r2_aa_break | Distance at which the "Pseudo-smoothing" effect works | 0.000000e+00, 0.000000e+00, 0.000000e+00 - 1.000000e+00, 1.000000e+00, 1.000000e+00 | - |
 | r2_aa_kernel | The basic value of the "Pseudo-smoothing" effect | 0.300 - 0.700 | - |
@@ -101,6 +101,10 @@
 | r2_zfill_depth |  | 0.001 - 0.500 | - |
 | r2em |  | 0.000 - 4.000 | - |
 
+## R2 Debug
+
+| Сommand | Command description | Command's argument | Note |
+|---|---|:---:|---|
 | r2_use_nvdbt |  | - | Debug only |
 | r2_mt |  | - | Debug only |
 | r2_dhemi_count |  | 4 - 25 | Debug only |

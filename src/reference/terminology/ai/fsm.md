@@ -10,7 +10,9 @@ The FSM is based on the principle that at any given moment the NPC is in some we
 
 An NPC can go from one state to another after meeting some transition condition. When specifying a transition condition from state A to state B, we actually define under what conditions the transition from one state to another will be performed. At that, transition from B to A requires defining its own transition condition. If the transition condition between any two states is not set, the transition is considered impossible.
 
+```admonish example
 The FSM structure can be represented as an oriented graph, whose vertices (circles) are states, and edges (arrows) are transition conditions.
+```
 
 ```mermaid
 flowchart LR

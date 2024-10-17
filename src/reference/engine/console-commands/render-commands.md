@@ -1,7 +1,7 @@
 # General Render Console Commands
 
 | Сommand | Command description | Command's argument | Note |
----|---|:---:|---|
+|---|---|:---:|---|
 | renderer | Render type (old) |  | - |
 | rs_vis_distance | Visibility range | 0.400 - 1.500 | - |
 | r__actor_shadow | Player shadow | 'on/off' or '1/0' | - |
@@ -40,15 +40,19 @@
 | vid_mode | Screen resolution | 800x600<br> 1024x768<br> 1280x720<br> 1280x1024<br> 1366x768<br> 1600x900<br> 1680x1050<br> 1920x1080 |
 | vid_restart | Reboot the video engine | - |
 
-
 ## Brightness-Contrast-Gamma
 
 | Сommand | Command description | Command's argument | Note |
----|---|:---:|---|
+|---|---|:---:|---|
 | rs_c_brightness | Brightness | 0.500 - 1.500 | - |
 | rs_c_contrast | Contrast | 0.500 - 1.500 | - |
 | rs_c_gamma | Gamma | 0.500 - 1.500 | Not working |
 
+## General Render Debug
+
+| Сommand | Command description | Command's argument | Note |
+|---|---|:---:|---|
+| vid_bpp |  |  |  |
 | build_ssa |  | - | Debug only |
 | r__lsleep_frames |  | 4.0 - 30.0 | Debug only |
 | r__ssa_glod_start |  | 128 - 512 | Debug only |
@@ -61,5 +65,3 @@
 | r__d_tree_w_rot |  | 0.01 - 0.5 | Debug only |
 | r__d_tree_w_speed |  | 1.0 - 10.0 | Debug only |
 | r__d_tree_wave |  |  | Debug only |
-
-| vid_bpp |  |  |  |

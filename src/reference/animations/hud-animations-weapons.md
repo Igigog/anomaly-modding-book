@@ -20,7 +20,7 @@ animation parameter name = animation name(hands), animation name(weapon), playba
 | anm_idle_aim_2 | WP_BM16 |  |  |  |  |
 | anm_idle_aim |  | Aiming idle animation |  |  |  |
 | anm_idle_aim_empty |  | Aiming empty magazine idle animation |  |  |  |
-| anm_idle_g_aim | grenade launcher targeting animation |  |  |  |  |
+| anm_idle_g_aim |  |  |  |  |  |
 | anm_idle_empty_g_aim |  |  |  |  |  |
 | anm_idle_w_gl_aim |  |  |  |  |  |
 | anm_idle_empty_w_gl_aim |  |  |  |  |  |
@@ -35,7 +35,7 @@ animation parameter name = animation name(hands), animation name(weapon), playba
 | anm_show_0 | WP_BM16 |  |  |  |  |
 | anm_show_1 | WP_BM16 |  |  |  |  |
 | anm_show_2 | WP_BM16 |  |  |  |  |
-| anm_show | Show animation |  |  | Animation name |  |
+| anm_show |  | Show animation |  |  |  |
 | anm_show_empty |  |  |  |  |  |
 | anm_show_g |  |  |  |  |  |
 | anm_show_empty_g |  |  |  |  |  |

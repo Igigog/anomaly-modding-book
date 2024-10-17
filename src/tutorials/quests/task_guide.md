@@ -186,7 +186,7 @@ on_fail                 = %=my_task_fail()%
 
 **File:** `gamedata/scripts/my_task.script`
 
-```lua,,icon=.devicon-lua-plain,filepath="gamedata/scripts/my_task.script"
+```lua,icon=.devicon-lua-plain,filepath="gamedata/scripts/my_task.script"
 function xr_effects.my_task_init(actor, npc, params)
    give_info("my_task_is_active")
    

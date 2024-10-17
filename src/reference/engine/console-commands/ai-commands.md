@@ -1,4 +1,4 @@
-# AI
+# AI Console Commands
 
 | Сommand | Command description | Command's argument | Note |
 |---|---|:---:|---|
@@ -36,6 +36,7 @@
 | ai_use_smart_covers |  |  | - |
 | ai_use_smart_covers_animation_slots |  |  | - |
 | ai_smart_factor |  | 0.0 - 1000000.0 | - |
+| al_switch_distance | Sets the distance of A-life switch to online.  |  |  |
 | ai_dbg_lua |  |  | - |
 | ai_debug |  |  | - |
 | ai_dbg_brain |  |  | - |
@@ -64,6 +65,8 @@
 | ai_draw_visibility_rays |  |  | - |
 | ai_animation_stats |  |  | - |
 | ai_debug_doors |  |  | - |
+| ai_smart_factor | Sets how much stalkers want to take cover. |  |  |
 | ai_smart_cover_animation_speed_factor |  |  | - |
 | air_resistance_epsilon |  |  | - |
 | ai_dbg_sight |  |  | - |
+| ai_ignore_actor | All the AI in the game doesn't notice the actor |  | - |

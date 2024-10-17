@@ -234,7 +234,7 @@ ___
     - [Actor Editor](reference/modding-tools/sdk/actor-editor.md)
     - [Image Editor](reference/modding-tools/sdk/image-editor.md)
     - [Level Editor](reference/modding-tools/sdk/level-editor.md)
-    - [Shader Editor](reference/modding-tools/sdk/shader-editor.md)
+    - [Shader Editor](reference/modding-tools/sdk/shader-editor/shader-editor.md)
     - [Sound Editor](reference/modding-tools/sdk/sound-editor.md)
     - [Postprocess Editor](reference/modding-tools/sdk/postprocess-editor.md)
     - [Particle Editor](reference/modding-tools/sdk/particle-editor.md)
