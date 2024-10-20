@@ -4,6 +4,20 @@ ___
 
 ## About
 
+### General
+
+| Parameter | Parameter Description |
+|---|---|
+| Priority |  |
+| Strict sorting |  |
+
+### Base Texture
+
+| Parameter | Parameter Description | Extra Paramaters |
+|---|---|---|
+| Name |  |  |
+| Tessellation |  |  |
+
 TESS_PN+HM, вероятно, относится к технике тесселяции, которая включает как "Point Normals" (векторные нормали), так и "Height Map" (высотные карты).
 
 В этом контексте:

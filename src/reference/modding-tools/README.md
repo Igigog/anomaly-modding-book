@@ -299,6 +299,10 @@ ___
 - [xrCompress by i-love-kfc](https://ap-pro.ru/forums/topic/3500-obnovlyonnyy-xrcompress/) - .db/.xdb archiver
   - [More](modding-tools-compressors/xrcompress-by-i-love-kfc.md)
 
+- Total Commander
+  - [wcx_stalker_db_003_x32_x64]() - archiver plugin
+  - [wfx_stalker_db_004_x32_x64]() - file system plugin. Allows you to view .db archives as a virtual directory with folder structure preserved
+
 ___
 
 ## Mod Creating
