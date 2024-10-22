@@ -97,6 +97,8 @@ h6:target::before {
 .content {
     overflow-y: auto;
     padding: 0 10px;
+    display: flex;
+    flex-direction: row-reverse;
 }
 .content main {
     margin-inline-start: auto;
