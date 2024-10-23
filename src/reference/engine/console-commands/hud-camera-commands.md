@@ -10,9 +10,9 @@
 
 | Сommand | Command description | Command's argument |
 |---|---|:---:|
-| ik_cam_shift |  |  | Debug only |
-| ik_cam_shift_tolerance  |  |  | Debug only |
-| ik_cam_shift_speed |  |  | Debug only |
-| dbg_draw_camera_collision |  |  | Debug only |
-| camera_collision_character_shift_z |  |  | Debug only |
-| camera_collision_character_skin_depth |  |  | Debug only |
+| ik_cam_shift |  |  |  |
+| ik_cam_shift_tolerance  |  |  |  |
+| ik_cam_shift_speed |  |  |  |
+| dbg_draw_camera_collision |  |  |  |
+| camera_collision_character_shift_z |  |  |  |
+| camera_collision_character_skin_depth |  |  |  |

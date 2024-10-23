@@ -13,4 +13,4 @@
 
 | Сommand | Command description | Command's argument | Note |
 |---|---|:---:|---|
-| show_wnd_rect_all | Displaying the borders of ui elements. |  | Debug only |
+| show_wnd_rect_all | Toggle borders of ui elements. |  |  |

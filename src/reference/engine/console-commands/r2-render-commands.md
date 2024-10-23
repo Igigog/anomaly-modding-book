@@ -105,12 +105,12 @@
 
 | Сommand | Command description | Command's argument | Note |
 |---|---|:---:|---|
-| r2_use_nvdbt |  | - | Debug only |
-| r2_mt |  | - | Debug only |
-| r2_dhemi_count |  | 4 - 25 | Debug only |
-| r2_dhemi_sky_scale |  | 0.0 - 100.0 | Debug only |
-| r2_dhemi_light_scale |  | 0.0 - 100.0 | Debug only |
-| r2_dhemi_light_flow |  | 0.0 - 1.0 | Debug only |
-| r2_dhemi_smooth |  | 0.0 - 10.0 | Debug only |
-| rs_hom_depth_draw |  | 'on/off' or '1/0' | Debug only |
-| r2_shadow_cascede_zcul |  | 'on/off' or '1/0' | Debug only |
+| r2_use_nvdbt |  | - |  |
+| r2_mt |  | - |  |
+| r2_dhemi_count |  | 4 - 25 |  |
+| r2_dhemi_sky_scale |  | 0.0 - 100.0 |  |
+| r2_dhemi_light_scale |  | 0.0 - 100.0 |  |
+| r2_dhemi_light_flow |  | 0.0 - 1.0 |  |
+| r2_dhemi_smooth |  | 0.0 - 10.0 |  |
+| rs_hom_depth_draw |  | 'on/off' or '1/0' |  |
+| r2_shadow_cascede_zcul |  | 'on/off' or '1/0' |  |

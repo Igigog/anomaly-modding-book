@@ -19,19 +19,25 @@ To add new icons, use Paint.net. We make a new layer, paste on it the picture we
 ![Photoshop grid centered](images/photoshop-grid.png)
 ![Alt text centered](images/preferences.png)
 
-> IMPORTANT!!! DO NOT USE THE RIGHTMOST AND BOTTOMMOST CELLS, THEY ARE NOT WHOLE AND ARE SMALLER THAN THE REST BY A FEW PIXELS.
+```admonish warning title="Important!"
+DO NOT USE THE RIGHTMOST AND BOTTOMMOST CELLS, THEY ARE NOT WHOLE AND ARE SMALLER THAN THE REST BY A FEW PIXELS.
+```
 
 We select with shift color+alpha, and, if necessary, adjust the icon within a cell, save it.
 To copy icons from one atlas to another, select the icon on one, copy and paste on the other - it's best to do it with the color and alpha selected, so you don't have to transfer separately.
 Next, we go to "layers" and unlock the layer - this opens us information in the properties about the selected element and its position. This is where we will find out the coordinates, for 50x50 we have to use a calculator, and for 100x100 we just cut off two zeros each.
 
-> UPD: in CS5/CS6 you can get coordinates on F8 (in the new versions have simplified access and it is on the properties fold).
+```admonish warning
+In CS5/CS6 you can get coordinates on F8 (in the new versions have simplified access and it is on the properties fold).
+```
 
 ![Properties centered](images/properties.png)
 
 Here is the position of the X - 950, divide by 50 and we get 19 - this is the number written in inv_grid_x. Similar story with the player. W - Width 50, divide by 50, we get inv_grid_width equal to one. It's the same with height.
 
-> AFTER UNLOCKING THE LAYER, DON'T SAVE THE ATLAS, JUST CLOSE IT!
+```admonish warning title="Important!"
+AFTER UNLOCKING THE LAYER, DON'T SAVE THE ATLAS, JUST CLOSE IT!
+```
 
 Open the atlas in Paint.net or in Photoshop (you need the .dds plugin).
 

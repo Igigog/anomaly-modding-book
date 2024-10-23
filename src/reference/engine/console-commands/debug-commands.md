@@ -12,56 +12,61 @@
 | hud_info |  | - | - |
 | render_memory_stats | Output information about memory usage | - | - |
 | stat_memory |  | - | - |
-| stat_models |  | - | Debug only |
-| stat_memory_checkpoint |  | - | Debug only |
-| lua_gcstep |  | - | Debug only |
-| show_smart_cast_stats |  |  | Debug only |
-| clear_smart_cast_stats |  |  | Debug only |
-| dbg_draw_actor_alive |  |  | Debug only |
-| dbg_draw_actor_dead |  |  | Debug only |
-| dbg_draw_customzone |  |  | Debug only |
-| dbg_draw_teamzone |  |  | Debug only |
-| dbg_draw_invitem |  |  | Debug only |
-| dbg_draw_actor_phys |  |  | Debug only |
-| dbg_draw_customdetector |  |  | Debug only |
-| dbg_destroy |  |  | Debug only |
-| dbg_draw_autopickupbox |  |  | Debug only |
-| dbg_draw_rp |  |  | Debug only |
-| dbg_draw_climbable |  |  | Debug only |
-| debug_character_material_load  |  |  | Debug only |
-| dbg_draw_doors |  |  | Debug only |
-| dbg_draw_ragdoll_spawn |  |  | Debug only |
-| debug_step_info |  |  | Debug only |
-| debug_step_info_load |  |  | Debug only |
-| dbg_track_obj_blends_bp_0 |  |  | Debug only |
-| dbg_track_obj_blends_bp_1 |  |  | Debug only |
-| dbg_track_obj_blends_bp_2 |  |  | Debug only |
-| dbg_track_obj_blends_bp_3 |  |  | Debug only |
-| dbg_track_obj_blends_motion_name  |  |  | Debug only |
-| dbg_track_obj_blends_time |  |  | Debug only |
-| dbg_track_obj_blends_ammount |  |  | Debug only |
-| dbg_track_obj_blends_mix_params |  |  | Debug only |
-| dbg_track_obj_blends_flags |  |  | Debug only |
-| dbg_track_obj_blends_state |  |  | Debug only |
-| dbg_track_obj_blends_dump |  |  | Debug only |
-| dbg_var |  |  | Debug only |
-| dbg_text_height_scale |  |  | Debug only |
-| string_table_error_msg |  |  | Debug only |
+
+## Debug Console Commands (Debug Build)
+
+| Сommand | Command description | Command's argument | Note |
+|---|---|:---:|---|
+| stat_models |  | - |  |
+| stat_memory_checkpoint |  | - |  |
+| lua_gcstep |  | - |  |
+| show_smart_cast_stats |  |  |  |
+| clear_smart_cast_stats |  |  |  |
+| dbg_draw_actor_alive |  |  |  |
+| dbg_draw_actor_dead |  |  |  |
+| dbg_draw_customzone |  |  |  |
+| dbg_draw_teamzone |  |  |  |
+| dbg_draw_invitem |  |  |  |
+| dbg_draw_actor_phys |  |  |  |
+| dbg_draw_customdetector |  |  |  |
+| dbg_destroy |  |  |  |
+| dbg_draw_autopickupbox |  |  |  |
+| dbg_draw_rp |  |  |  |
+| dbg_draw_climbable |  |  |  |
+| debug_character_material_load  |  |  |  |
+| dbg_draw_doors |  |  |  |
+| dbg_draw_ragdoll_spawn |  |  |  |
+| debug_step_info |  |  |  |
+| debug_step_info_load |  |  |  |
+| dbg_track_obj_blends_bp_0 |  |  |  |
+| dbg_track_obj_blends_bp_1 |  |  |  |
+| dbg_track_obj_blends_bp_2 |  |  |  |
+| dbg_track_obj_blends_bp_3 |  |  |  |
+| dbg_track_obj_blends_motion_name  |  |  |  |
+| dbg_track_obj_blends_time |  |  |  |
+| dbg_track_obj_blends_ammount |  |  |  |
+| dbg_track_obj_blends_mix_params |  |  |  |
+| dbg_track_obj_blends_flags |  |  |  |
+| dbg_track_obj_blends_state |  |  |  |
+| dbg_track_obj_blends_dump |  |  |  |
+| dbg_var |  |  |  |
+| dbg_text_height_scale |  |  |  |
+| string_table_error_msg |  |  |  |
 | dump_resources |  |  | - |
-| dump_infos |  |  | Debug only |
-| dump_tasks |  |  | Debug only |
-| dump_map |  |  | Debug only |
-| dump_creatures |  |  | Debug only |
-| start_time_single |  |  | Debug only |
-| time_factor_single |  |  | Debug only |
-| psp_cam_offset |  |  | Debug only |
-| crash |  |  | Debug only |
-| dump_all_objects |  |  | Debug only |
-| dbg_show_ani_info |  |  | Debug only |
-| inv_upgrades_hierarchy |  |  | Debug only |
-| inv_upgrades_cur_item |  |  | Debug only |
-| inv_upgrades_log |  |  | Debug only |
-| inv_drop_all_items |  |  | Debug only |
-| dbg_bones_snd_player |  |  | Debug only |
-| g_bullet_time_factor |  |  | Debug only |
-| g_streff |  |  | Debug only |
+| dump_infos |  |  |  |
+| dump_tasks |  |  |  |
+| dump_map |  |  |  |
+| dump_creatures |  |  |  |
+| start_time_single |  |  |  |
+| time_factor_single |  |  |  |
+| psp_cam_offset |  |  |  |
+| crash |  |  |  |
+| dump_all_objects |  |  |  |
+| dbg_show_ani_info |  |  |  |
+| inv_upgrades_hierarchy |  |  |  |
+| inv_upgrades_cur_item |  |  |  |
+| inv_upgrades_log |  |  |  |
+| inv_drop_all_items |  |  |  |
+| dbg_bones_snd_player |  |  |  |
+| g_bullet_time_factor |  |  |  |
+| g_streff |  |  |  |

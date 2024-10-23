@@ -20,4 +20,4 @@
 
 | Сommand | Command description | Command's argument | Note |
 |---|---|:---:|---|
-| r3_fog_reload |  | - | Debug only |
+| r3_fog_reload |  | - |  |

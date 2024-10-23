@@ -53,15 +53,15 @@
 | Сommand | Command description | Command's argument | Note |
 |---|---|:---:|---|
 | vid_bpp |  |  |  |
-| build_ssa |  | - | Debug only |
-| r__lsleep_frames |  | 4.0 - 30.0 | Debug only |
-| r__ssa_glod_start |  | 128 - 512 | Debug only |
-| r__ssa_glod_end |  | 16 - 96 | Debug only |
-| r__wallmark_shift_pp |  | 0.0 - 1.0 | Debug only |
-| r__wallmark_shift_v |  | 0.0 - 1.0 | Debug only |
-| r__detail_l_ambient |  | 0.5 - 0.95 | Debug only |
-| r__detail_l_aniso |  | 0.1 - 0.5 | Debug only |
-| r__d_tree_w_amp |  | 0.001 - 1.0 | Debug only |
-| r__d_tree_w_rot |  | 0.01 - 0.5 | Debug only |
-| r__d_tree_w_speed |  | 1.0 - 10.0 | Debug only |
-| r__d_tree_wave |  |  | Debug only |
+| build_ssa |  | - |  |
+| r__lsleep_frames |  | 4.0 - 30.0 |  |
+| r__ssa_glod_start |  | 128 - 512 |  |
+| r__ssa_glod_end |  | 16 - 96 |  |
+| r__wallmark_shift_pp |  | 0.0 - 1.0 |  |
+| r__wallmark_shift_v |  | 0.0 - 1.0 |  |
+| r__detail_l_ambient |  | 0.5 - 0.95 |  |
+| r__detail_l_aniso |  | 0.1 - 0.5 |  |
+| r__d_tree_w_amp |  | 0.001 - 1.0 |  |
+| r__d_tree_w_rot |  | 0.01 - 0.5 |  |
+| r__d_tree_w_speed |  | 1.0 - 10.0 |  |
+| r__d_tree_wave |  |  |  |
