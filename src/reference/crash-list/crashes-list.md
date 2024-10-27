@@ -28,7 +28,7 @@ This list is only for the vanilla version of the game! If you use engine edits, 
 [error]File          : ..\xrRender\ModelPool.cpp
 [error]Line          : 120
 [error]Description   : fatal error
-[error]Arguments     : Can't find model file "path and file name".
+[error]Arguments     : Can't find model file ["path and file name"]
 ```
 
 - Clarification: No 3D .ogf model was found
@@ -36,6 +36,44 @@ This list is only for the vanilla version of the game! If you use engine edits, 
 - Error fixing:
   - Check that the model exists
   - Check that the paths to it are correct
+
+</details>
+
+<details>
+    <summary>Line 136</summary>
+
+```ini
+[error]Expression    : 0
+[error]Function      : attachable_hud_item::set_bone_visible
+[error]File          : player_hud.cpp
+[error]Line          : 136
+[error]Description   : model ["path and file name"] has no bone ["bone name"]
+
+```
+
+- Clarification:
+
+- Error fixing:
+
+</details>
+
+___
+
+## <center>Textures</center>
+
+<details>
+    <summary>Line 535</summary>
+
+```ini
+[error]Expression    : D3DX11CreateTextureFromMemory ( HW.pDevice,S->pointer(),S->length(), &LoadInfo, 0, &pTexture2D, 0 )
+[error]Function      : CRender::texture_load
+[error]File          : ..\xrRenderDX10\dx10Texture.cpp
+[error]Line          : 535
+```
+
+- Clarification:
+
+- Error fixing:
 
 </details>
 
@@ -52,13 +90,31 @@ ___
 [error]File          : ..\xrRender\SkeletonAnimated.cpp
 [error]Line          : 406
 [error]Description   : fatal error
-[error]Arguments     : ! MODEL: missing bone/wrong armature?: "path and file name".
+[error]Arguments     : ! MODEL: missing bone/wrong armature?: ["path and file name"]
 ```
 
 - Clarification: Probably in the animation that is based on this skeleton there was no animation channel for a newly added or removed bone in the skeleton
 
 - Error fixing:
   - Check the skeleton for bones that have been removed or added
+
+</details>
+
+<details>
+    <summary>Line 459</summary>
+
+```ini
+[error]Expression    : M2.valid()
+[error]Function      : attachable_hud_item::anim_play
+[error]File          : player_hud.cpp
+[error]Line          : 459
+[error]Description   : model has no motion [idle]
+[error]Arguments     : ["path and file name"]
+```
+
+- Clarification: No idle animation was found
+
+- Error fixing:
 
 </details>
 
@@ -71,7 +127,7 @@ ___
 [error]File          : ..\xrRender\SkeletonAnimated.cpp
 [error]Line          : 784
 [error]Description   : fatal error
-[error]Arguments     : Can't find motion file "path and file name".
+[error]Arguments     : Can't find motion file ["path and file name"]
 ```
 
 - Clarification: No .omf animation was found
@@ -95,7 +151,7 @@ section '(null)'
 model 'path to model'
 ```
 
-- Clarification: 
+- Clarification:
 
 - Error fixing:
 
@@ -114,7 +170,7 @@ ___
 [error]File          : ObjectAnimator.cpp
 [error]Line          : 47
 [error]Description   : fatal error
-[error]Arguments     : Can't find motion file "path and file name".
+[error]Arguments     : Can't find motion file ["path and file name"]
 ```
 
 - Clarification: No .anm file was found
@@ -127,7 +183,7 @@ ___
 
 ___
 
-## <center>[A-Life](../ai/index.html)</center>
+## <center>[AI](../ai/index.html)</center>
 
 <details>
     <summary>Line 49</summary>
@@ -182,6 +238,23 @@ ___
 
 </details>
 
+<details>
+    <summary>Line 116</summary>
+
+```ini
+[error]Expression    : cross_table().header().level_guid() == level_graph().header().guid()
+[error]Function      : CAI_Space::load
+[error]File          : ai_space.cpp
+[error]Line          : 116
+[error]Description   : cross_table doesn't correspond to the AI-map
+```
+
+- Clarification:
+
+- Error fixing:
+
+</details>
+
 ___
 
 ## <center>Spawn</center>
@@ -195,7 +268,7 @@ ___
 [error]File          : alife_spawn_registry.cpp
 [error]Line          : 86
 [error]Description   : Can't find spawn file:
-[error]Arguments     : "file name"
+[error]Arguments     : ["file name"]
 ```
 
 - Clarification: No .spawn file was found
@@ -268,7 +341,7 @@ ___
 [error]Function      : CGameFont::Initialize
 [error]File          : GameFont.cpp
 [error]Line          : 96
-[error]Description   : "path and ui_font_hud_01.ini"
+[error]Description   : ["path and ui_font_hud_01.ini"]
 ```
 
 - Clarification: No ui_font_hud_01.ini file was found
@@ -299,11 +372,23 @@ ___
 
 </details>
 
-After -_g key
+___
 
-[error]Expression    : <no expression>
-[error]Function      : CScriptEngine::lua_pcall_failed
-[error]File          : ..\xrServerEntities\script_engine.cpp
-[error]Line          : 204
-[error]Description   : fatal error
-[error]Arguments     : LUA error: ...y-1.5.2/bin/..\gamedata\scripts\class_registrator.script:9: attempt to call global 'editor' (a nil value)
+## <center>[XML]()</center>
+
+<details>
+    <summary>Line 137</summary>
+
+```ini
+[error]Expression    : false
+[error]Function      : CXml::Load
+[error]File          : xrXMLParser.cpp
+[error]Line          : 137
+[error]Description   : XML file:text\rus\st_items_weapons.xml value: errDescr:Error reading end tag.
+```
+
+- Clarification:
+
+- Error fixing:
+
+</details>

@@ -7,7 +7,7 @@
 - Acknowledgements:
   - Abramcumner
   - K.D.
-- The version described in the article: 1.5
+- The version described in the article: 1.6 beta
 - [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3341-universalnye-kompilyatory-urovney-h64)
 
 ___
@@ -48,6 +48,7 @@ Universal level compiler that supports the compilation format for games of all s
 - Possibility to force the use of smoothing groups on a certain geometry even if the `-nosmg` key is present (To use smoothing groups on a model it is necessary to assign a compile shader with `_smg` in its name to its materials (e.g. `def_vertex\def_vertex_smg`). The compile shader itself is enough to declone from the original one and rename it with this postfix)
 - Possibility to disable tessellation on certain geometry (for example, on nosun boxes). To do this you need to name a compile shader with `_no_tess` in its name. Keep in mind that disabling tessellation can cause problems with UV
 - Ability to disable shadow baking from certain [MU models](../../terminology/terminology.md#mu-multiply-usage-objects). Compile shaders of MU models must have `_no_mu_shadow` in the name. The difference between this solution and the usual disabling of the `Cast Shadow` checkbox is that in this case self-darkening of the MU model will be applied and the model will not be highlighted
+- Added support for Interl Embree and Nvidia CUDA
 
 It requires Microsoft Visual C++ 2017 Redistributable x64 installed.
 
@@ -103,6 +104,13 @@ ___
 | Checkboxes | Description |
 |---|---|
 | High Priority | Enables high priority |
+
+### Accelerated computing
+
+| Checkboxes | Description |
+|---|---|
+| [Intel Embree](https://www.embree.org/) | Intel® Embree is a high-performance ray tracing library developed at Intel which supports x86 CPUs under Linux, macOS, and Windows; ARM CPUs on macOS; as well as Intel® Arc™ GPUs under Linux and Windows. Embree targets graphics application developers to improve the performance of photo-realistic rendering applications and is optimized towards production rendering. |
+| [NVidia CUDA](https://developer.nvidia.com/cuda-toolkit) | The NVIDIA® CUDA® Toolkit provides a development environment for creating high-performance, GPU-accelerated applications. |
 
 ### Discord Rich Presence
 

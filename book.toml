@@ -15,6 +15,7 @@ edit-url-template = "https://github.com/Igigog/anomaly-modding-book/edit/main/{p
 additional-css = ["theme/css/custom.css", "theme/css/mdbook-admonish.css", "theme/pagetoc.css", "theme/css/whichlang.css", "devicon-base.css" ]
 additional-js  = ["theme/pagetoc.js", "theme/js/mermaid.min.js", "theme/js/mermaid-init.js", "theme/js/whichlang.js" ]
 no-section-label = false
+input-404 = "404.md"
 
 [output.html.fold]
 enable = true
@@ -28,4 +29,7 @@ command = "mdbook-admonish"
 assets_version = "3.0.2" # do not edit: managed by `mdbook-admonish install`
 
 [preprocessor.theme]
-pagetoc = true
+pagetoc = false
+pagetoc-width = "300px"
+content-max-width = "70%"
+sidebar-width = "300px"

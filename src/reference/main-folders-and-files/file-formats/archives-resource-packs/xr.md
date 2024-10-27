@@ -10,6 +10,8 @@ ___
 
 ## Programs editing this file
 
+- [SDK shader editor]() - 
+- [SDK particle editor]() - 
 - [Particle Editor Tools]() -
 - [gamemtl_xr_cdc]() - 
 - [lanims_xr_cdc]() -
