@@ -67,7 +67,7 @@ This section contains a list and description of the shaders that are available i
 | models\artefact | CubeMap reflection shader  | Name = sky\sky_18_cube<br> Alpha-Blend = 0 | ![Alt text](images/shaders-preview/models-artefact.png) |
 | models\artefact2 | CubeMap reflection shader | Name = sky\sky_20_cube<br> Alpha-Blend = 0 | ![Alt text](images/shaders-preview/models-artefact2.png) |
 | models\artifact-anim-env | CubeMap reflection shader | Name = sky\sky_11_cube<br> Alpha-Blend = 0 |  |
-| models\glass_stalker_refl |  | Name = sky\sky_17_cube<br> Alpha-Blend = 0 |  |
+| models\glass_stalker_refl | CubeMap reflection shader | Name = sky\sky_17_cube<br> Alpha-Blend = 0 |  |
 | models\lfo_black_lens_weapons |  |  |  |
 | models\lfo_black_soft_lens_weapons |  |  |  |
 | models\lfo_glass_lens_weapons |  |  |  |
