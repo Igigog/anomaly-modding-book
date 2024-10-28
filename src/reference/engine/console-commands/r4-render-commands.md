@@ -1,6 +1,8 @@
 # R4 Render Console Commands
 
-> DirectX 11 - (Shader Model 5.0)
+```admonish
+DirectX 11 - (Shader Model 5.0)
+```
 
 | Сommand | Command description | Command's argument |
 |---|---|:---:|

@@ -274,6 +274,7 @@ ___
 - [Particle Editor Tools](https://cdn.discordapp.com/attachments/978593574893535274/979057726623735828/Particle_Editor_Tools.rar) - Decompiling/compiling particle.xr file
 
 - [Universal ACDC](https://disk.yandex.ru/d/-GBYa8DxQv8MF) - Perl script, to unpack and pack all.spawn
+  - [Universal ACDC by PSIget](https://github.com/PSIget/Universal-ACDC) - A modyfied ACDC version
 - [gamemtl_xr_cdc](https://disk.yandex.ru/d/hR79KfSn3PLtSK) - To decompile [gamemtl.xr](../main-folders-and-files/README.md#files)
 - [lanims_xr_cdc](https://disk.yandex.ru/d/qKhybMU-3PLtTj) - To decompile [lanims.xr](../main-folders-and-files/README.md#files)
 - [shaders_xr_cdc](https://disk.yandex.ru/d/RcMprj9W3PLtdj) - To decompile [shaders.xr](../main-folders-and-files/README.md#files)

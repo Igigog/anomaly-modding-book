@@ -4,7 +4,7 @@ ___
 
 | Сommand | Command description | Command's argument |
 |---|---|:---:|
-| g_dead_body_collision | Enables collision | full<br> actor_only<br> off |
+| g_dead_body_collision | Enables dead body collision | full<br> actor_only<br> off |
 | ph_gravity | Gravity | 0.000 - 1000.000 |
 | ph_frequency | The more, the better the collision calculations | 50.0000 - 200.0000 |
 | ph_iterations | Number of iterations to calculate the dynamics | 15 - 50 |

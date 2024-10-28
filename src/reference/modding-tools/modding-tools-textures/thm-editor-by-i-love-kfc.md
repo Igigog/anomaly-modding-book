@@ -41,21 +41,21 @@ Utility for editing .thm files without the need to use the SDK
 
 ### Edit flags
 
-| Checkbox | Description |
-|---|---|
-| Generate Mip Maps | Enables MIP-map generation |
-| Has Alpha | Takes into account map alpha channel |
-| Binary Alpha |  |
-| Alpha Border |  |
-| Color Border |  |
-| Fade To Color |  |
-| Fade To Alpha |  |
-| Dither Color | Enables [Dither](https://en.wikipedia.org/wiki/Dither) Coloring |
-| Dither Each MIP Level | Enables [Dither](https://en.wikipedia.org/wiki/Dither) Coloring on each MIP level |
-| Diffuse Detail |  |
-| Implicit Lighted |  |
-| Detail Bump |  |
-| Grey Scale (S.T.A.L.K.E.R. builds) |  |
+| Checkbox | Description | Extra |
+|---|---|---|
+| Generate Mip Maps | Enables MIP-map generation |  |
+| Has Alpha | Takes into account map alpha channel |  |
+| Binary Alpha |  |  |
+| Alpha Border |  |  |
+| Color Border | In this mode, a color arbitrarily specified by the user is used for the area outside the texture coordinate range | Decimal Color? |
+| Fade To Color | Fade to choosed color | Decimal Color? |
+| Fade To Alpha |  |  |
+| Dither Color | Enables [Dither](https://en.wikipedia.org/wiki/Dither) Coloring |  |
+| Dither Each MIP Level | Enables [Dither](https://en.wikipedia.org/wiki/Dither) Coloring on each MIP level |  |
+| Diffuse Detail |  |  |
+| Implicit Lighted |  |  |
+| Detail Bump |  |  |
+| Grey Scale (S.T.A.L.K.E.R. builds) |  |  |
 
 ### Texture type
 

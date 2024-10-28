@@ -32,13 +32,13 @@
 | r__use_precompiled_shaders |  | 'on/off' or '1/0' | - |
 | r__wallmark_ttl | Wallmark Lifetime | 1.000 - 600.000 | - |
 | r_screenshot_mode | Screenshot in the selected format | jpg<br> png<br> tga | - |
-| _preset | Selecting a set of quality settings | Minimum<br> Low<br> Default<br> High/Extreme |
-| rs_screenmode | Resolution selection mode | Windowed<br> Fullscreen<br> Borderless<br> Windowed |
-| rs_v_sync | Vertical Sync | 'on/off' or '1/0' |
-| rs_refresh_60hz | Screen refresh rate 60 Hz | 'on/off' or '1/0' |
-| r_restore_quad_ib_data |  |  |
-| vid_mode | Screen resolution | 800x600<br> 1024x768<br> 1280x720<br> 1280x1024<br> 1366x768<br> 1600x900<br> 1680x1050<br> 1920x1080 |
-| vid_restart | Reboot the video engine | - |
+| _preset | Selecting a set of quality settings | Minimum<br> Low<br> Default<br> High/Extreme |  |
+| rs_screenmode | Resolution selection mode | Windowed<br> Fullscreen<br> Borderless<br> Windowed |  |
+| rs_v_sync | Vertical Sync | 'on/off' or '1/0' |  |
+| rs_refresh_60hz | Screen refresh rate 60 Hz | 'on/off' or '1/0' |  |
+| r_restore_quad_ib_data |  |  |  |
+| vid_mode | Screen resolution | 800x600<br> 1024x768<br> 1280x720<br> 1280x1024<br> 1366x768<br> 1600x900<br> 1680x1050<br> 1920x1080 |  |
+| vid_restart | Reboot the video engine | - |  |
 
 ## Brightness-Contrast-Gamma
 

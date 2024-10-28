@@ -1,6 +1,8 @@
 # R1 Render Console Commands
 
-> DirectX 9.0 (Shader Model 2.0)
+```admonish
+DirectX 9.0 (Shader Model 2.0)
+```
 
 | Сommand | Command description | Command's argument | Note |
 |---|---|:---:|---|

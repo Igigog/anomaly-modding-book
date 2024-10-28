@@ -1,3 +1,5 @@
+[![Discord](https://img.shields.io/discord/1005783763877363722?label=Discord&logo=Discord)](https://discord.gg/8Pu2ekQYg3)
+
 # Anomaly modding book
 
 Introductory book for Stalker Anomaly modding
@@ -18,8 +20,6 @@ You can contribute to the development of this book, which will be used as a base
 So refer to this [article](src/meta/contributing/README.md) or open an [issue](https://github.com/Igigog/anomaly-modding-book/issues) and welcome!
 
 ## Links
-
-- [![Discord](https://img.shields.io/discord/1005783763877363722?label=Discord&logo=Discord)](https://discord.gg/8Pu2ekQYg3) - The Book Discord. Come check us out!
 
 - [Igigog](https://github.com/Igigog) - Book Creator
 
