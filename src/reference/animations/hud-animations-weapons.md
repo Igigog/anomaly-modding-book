@@ -1,4 +1,4 @@
-# Weapons HUD Animations
+# Weapon HUD Animations
 
 ```admonish tip title="Formula"
 animation parameter name = animation name(hands), animation name(weapon), playback speed
@@ -129,13 +129,3 @@ animation parameter name = animation name(hands), animation name(weapon), playba
 | anm_switch_g_empty |  |  |  |  |  |
 
 </details>
-
-anm_throw_begin
-
-anm_throw_idle
-
-
-
-
-
-
