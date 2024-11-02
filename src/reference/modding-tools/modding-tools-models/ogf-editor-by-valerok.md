@@ -10,7 +10,7 @@ ___
 
 ## About
 
-Tool for working with .ogf and [.dm](../../main-folders-and-files/file-formats/index.html#dm-detail-model) format
+Tool for working with [.ogf](../../main-folders-and-files/file-formats/models/ogf.md) and [.dm](../../main-folders-and-files/file-formats/models/dm.md) format
 
 ![ogf-editor centered](images/ogf-editor-by-valerok.png)
 
@@ -20,7 +20,7 @@ Tool for working with .ogf and [.dm](../../main-folders-and-files/file-formats/i
 - Ability to work with meshes in .ogf
 - Viewport
 - Integration with OGF Viewer and [OMF Editor](../omf-editor-by-valerok.md)
-- Saving .ogf in .object, .skl, .skls, .bones formats ([list of formats here](../../main-folders-and-files/file-formats/index.html))
+- Saving .ogf in [.object](../../main-folders-and-files/file-formats/models/object.md), [.skl](../../main-folders-and-files/file-formats/animations/skl-skls.md), [.skls](../../main-folders-and-files/file-formats/animations/skl-skls.md), [.bones](../../main-folders-and-files/file-formats/models/bones.md) formats
 - Hotkeys
 - Fix Gunslinger models (models are fixed automatically when you save them)
 

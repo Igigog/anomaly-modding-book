@@ -10,13 +10,13 @@ ___
 
 | Extension | Description |
 |---|---|
-| .log | Event log. It contains records of program start, operation and termination |
-| .pdb |  |
-| .scop | Save file |
-| .scoc | Save file |
-| .xrdemo | Recording camera flyover (demo). Created in the game with a [console command](../../engine/console-commands/console-commands.md). |
-| .ogm | The video format used by the game engine. |
-| [.ogg](#ogg) | The sound format used by the game engine. |
+| [.log](general/log.md) | Event log. It contains records of program start, operation and termination |
+| [.pdb](general/pdb.md) |  |
+| [.scop](general/scop.md) | Save file |
+| [.scoc](general/scoc.md) | Save file |
+| [.xrdemo](general/xrdemo.md) | Recording camera flyover (demo). Created in the game with a [console command](../../engine/console-commands/console-commands.md). |
+| [.ogm](audio-video/ogm.md) | The video format used by the game engine. |
+| [.ogg](audio-video/ogg.md) | The sound format used by the game engine. |
 
 ___
 
@@ -24,11 +24,11 @@ ___
 
 | Extension | Description |
 |---|---|
-| [.ltx](#ltx-files) | Configuration file, custom ini-like format |
-| .script | Game script |
-| [.xml](#xml-files) | Carry in text format data related to in-game text, UI element placement, and characters and information within the game world |
-| [.seq](#seq-sequence) | Text file containing a description of the frame sequence in the 2D animation |
-| [.efd](#efd-evaluation-function-data) | Table of AI heuristic parameters, contains constants for fine-tuning A-Life. They are used as input parameters in scripts. |
+| [.ltx](conf-script/ltx.md) | Configuration file, custom ini-like format |
+| [.script](conf-script/script.md) | Game script |
+| [.xml](conf-script/xml.md) | Carry in text format data related to in-game text, UI element placement, and characters and information within the game world |
+| [.seq](textures/seq.md) | Text file containing a description of the frame sequence in the 2D animation |
+| [.efd](ai/efd.md) | Table of AI heuristic parameters, contains constants for fine-tuning A-Life. They are used as input parameters in scripts. |
 
 ___
 
@@ -36,12 +36,12 @@ ___
 
 | Extension | Description |
 |---|---|
-| [.bump](#bumpdds-1) | Normal map in A(BGR) format |
-| [.bump#](#bumpdds) | File that fixes DXT compression errors in [.bump](#bumpdds) |
-| [.dds](#dds-directdraw-surface) | Graphic file used by DirectX to store textures |
-| [detail_map.dds](#detail_map_name_with-bump-or-bumpdds) | Same as a regular .dds texture, needed as an extra map in a .thm |
-| .tga | A bitmap graphics format with support for color depth of 1-32 bits per pixel, alpha channels, and RLE compression. Used as a source format. |
-| [.thm](#thm) | They are used to set the parameters of textures - bump, detail, and more. |
+| [.bump](textures/bump.md) | Normal map in A(BGR) format |
+| [.bump#](textures/bump#.md) | File that fixes DXT compression errors in [.bump](textures/bump.md) |
+| [.dds](textures/dds.md) | Graphic file used by DirectX to store textures |
+| [detail_map.dds](textures/detail-map.md) | Same as a regular [.dds](textures/dds.md) texture, needed as an extra map in a [.thm](textures/thm.md) |
+| [.tga](textures/thm.md) | A bitmap graphics format with support for color depth of 1-32 bits per pixel, alpha channels, and RLE compression. Used as a source format. |
+| [.thm](textures/thm.md) | They are used to set the parameters of textures - bump, detail, and more. |
 
 ___
 
@@ -49,14 +49,14 @@ ___
 
 | Extension | Description |
 |---|---|
-| .cs | Compute shader |
-| .gs | Geometry shader |
-| .ds | Domain shader |
-| .h | Header file |
-| .hs | Hull shader |
-| .vs | Vertex shader |
-| .ps | Pixel shader |
-| .s | Script shader. LUA version of engine blenders |
+| [.cs](shaders/cs.md) | Compute shader |
+| [.gs](shaders/gs.md) | Geometry shader |
+| [.ds](shaders/ds.md) | Domain shader |
+| [.h](engine/h.md) | Header file |
+| [.hs](shaders/hs.md) | Hull shader |
+| [.vs](shaders/vs.md) | Vertex shader |
+| [.ps](shaders/ps.md) | Pixel shader |
+| [.s](shaders/s.md) | Script shader. LUA version of engine blenders |
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 | Extension | Description |
 |---|---|
-| .ppe | Postprocess file format. Color-noise effects of the actor's screen |
+| [.ppe](postprocceses/ppe.md) | Postprocess file format. Color-noise effects of the actor's screen |
 
 ___
 
@@ -72,12 +72,13 @@ ___
 
 | Extension | Description |
 |---|---|
-| [.dm](#dm-detail-model) |  Effect of a dynamic weather environment (e.g., rain or lightning) |
-| [.object](#object) | These files are intended for the X-Ray SDK to store 3D content in its original, uncompressed, lossless form. They are source files that store information before compilation into other game compressed formats.  |
-| .ogf | Compiled object |
-| .bones | Skeleton bone data files |
-| *bone_parts*.* | Bone part description file for an object/NPC |
-| .group | Object groups |
+| [.dm](models/dm.md) |  Effect of a dynamic weather environment (e.g., rain or lightning) |
+| [.dti](models/dti.md) |  |
+| [.object](models/object.md) | These files are intended for the X-Ray SDK to store 3D content in its original, uncompressed, lossless form. They are source files that store information before compilation into other game compressed formats.  |
+| [.ogf](models/ogf.md) | Compiled object |
+| [.bones](models/bones.md) | Skeleton bone data files |
+| [*bone_parts*.*](models/bone-parts.md) | Bone part description file for an object/NPC |
+| [.group](models/group.md) | Object groups |
 
 ___
 
@@ -85,10 +86,10 @@ ___
 
 | Extension | Description |
 |---|---|
-| [.anm](#anm-animated-paths) | A set of coordinates, which works as an animation of the actor's camera movement. It is also used for anomalies, which need to be given a path. |
-| .skl | Skeletal animation |
-| .skls | Skeletal animations(.skl) in a container |
-| [.omf](#omf-open-motions-format) | A specialized S.T.A.L.K.E.R. game format containing animations. This is a separate dedicated file used in conjunction with .ogf models. Was created in order to optimize process when some different models use the same list of animations. |
+| [.anm](animations/anm.md) | A set of coordinates, which works as an animation of the actor's camera movement. It is also used for anomalies, which need to be given a path. |
+| [.skl](animations/skl-skls.md) | Skeletal animation |
+| [.skls](animations/skl-skls.md) | Skeletal animations(.skl) in a container |
+| [.omf](animations/omf.md) | A specialized S.T.A.L.K.E.R. game format containing animations. This is a separate dedicated file used in conjunction with [.ogf](models/ogf.md) models. Was created in order to optimize process when some different models use the same list of animations. |
 
 ___
 
@@ -96,8 +97,8 @@ ___
 
 | Extension | Description |
 |---|---|
-| .db | archive of game resources. Used in late builds and the final version of the game, has several options (db."number", db."letter"). |
-| .xr | resource library. Contains resources such as particles, [shaders](../../shaders/shaders-list/shaders-list.md), etc. in a packed format. |
+| [.db](archives-resource-packs/db.md) | archive of game resources. Used in late builds and the final version of the game, has several options (db."number", db."letter"). |
+| [.xr](archives-resource-packs/xr.md) | resource library. Contains resources such as particles, [shaders](../../shaders/shaders-list/shaders-list.md), etc. in a packed format. |
 
 ___
 
@@ -105,29 +106,29 @@ ___
 
 | Extension | Description |
 |---|---|
-| [.err](#err) | Contains information about geometry errors during level compilation |
-| [level](#level) | File with general information about the game location (light sources, object names, texture and shader names, sectors and portals). Created during compilation |
-| .prj | Level precompilation file |
-| .ai | AI location grid. Created during compilation |
-| [.cform](#cform-collision-form) | Geometry for calculating collisions. Calculated by the level compiler. Contains a solid map structure. All tangible objects with materials live here. Because of this, the game knows with what sound and property objects should react when they are hit by bullets or walked on |
-| [.details](#details) | Detailed objects (grass, cigarette butts, construction debris) on the level. Created through LevelEditor SDK at compile time. |
-| .env_mod | local environment modifiers (environment), set areas on the location with lighting different from the main weather cycle. |
-| .fog_vol | Volumetric fog |
-| .game | Coordinates of the player's spawn in the multiplayer game. Outdated file. |
-| [.geom](#geom) | Contains vertices (position, normals, texture coordinates, etc.), indices, and information for smooth geometry detail. |
-| .geomx | It contains only geometry. In the renderer it is used in the shadow rendering passes, due to the fact that there is less information - loading data into the buffers - faster. |
-| .gtc | Cross table of correspondence between the location graph and the AI grid. Created during compilation |
-| [.hom](#hom-hierarchical-occlusion-mapping) | Mapping of hierarchical cutoffs |
-| .level | List of SDK scene objects |
-| .lights | Light sources for xrLC |
-| .ps_static | Particle systems. Flies, steam from pipes, etc. |
-| .graph | Global graph of AI navigation. Used, among other things, for moving AI objects outside the active level. |
-| .spawn | A file storing spawn data. |
-| .snd_env | Volumetric sound sources. |
-| .snd_static | Static point sources of sound. Sound of flies, etc. |
-| [.som](#som-sound-occluder-mesh) | Geometry for calculating sound propagation. |
-| .wallmarks | Decals. Bloodstains, faction emblems on walls, etc. Used for the compiled level. |
-| .part | Scene objects |
+| [.err](game-levels/err.md) | Contains information about geometry errors during level compilation |
+| [level](game-levels/level.md) | File with general information about the game location (light sources, object names, texture and shader names, sectors and portals). Created during compilation |
+| [.prj](game-levels/prj.md) | Level precompilation file |
+| [.ai](game-levels/ai.md) | AI location grid. Created during compilation |
+| [.cform](game-levels/cform.md) | Geometry for calculating collisions. Calculated by the level compiler. Contains a solid map structure. All tangible objects with materials live here. Because of this, the game knows with what sound and property objects should react when they are hit by bullets or walked on |
+| [.details](game-levels/details.md) | Detailed objects (grass, cigarette butts, construction debris) on the level. Created through LevelEditor SDK at compile time. |
+| [.env_mod](game-levels/env_mod.md) | local environment modifiers (environment), set areas on the location with lighting different from the main weather cycle. |
+| [.fog_vol](game-levels/fog_vol.md) | Volumetric fog |
+| [.game](game-levels/game.md) | Coordinates of the player's spawn in the multiplayer game. Outdated file. |
+| [.geom](game-levels/geom.md) | Contains vertices (position, normals, texture coordinates, etc.), indices, and information for smooth geometry detail. |
+| [.geomx](game-levels/geomx.md) | It contains only geometry. In the renderer it is used in the shadow rendering passes, due to the fact that there is less information - loading data into the buffers - faster. |
+| [.gtc](game-levels/gtc.md) | Cross table of correspondence between the location graph and the AI grid. Created during compilation |
+| [.hom](game-levels/hom.md) | Mapping of hierarchical cutoffs |
+| [.level](game-levels/dot-level.md) | List of SDK scene objects |
+| [.lights](game-levels/lights.md) | Light sources for xrLC |
+| [.ps_static](game-levels/ps_static.md) | Particle systems. Flies, steam from pipes, etc. |
+| [.graph](game-levels/graph.md) | Global graph of AI navigation. Used, among other things, for moving AI objects outside the active level. |
+| [.spawn](game-levels/spawn.md) | A file storing spawn data. |
+| [.snd_env](game-levels/snd_env.md) | Volumetric sound sources. |
+| [.snd_static](game-levels/snd_static.md) | Static point sources of sound. Sound of flies, etc. |
+| [.som](game-levels/som.md) | Geometry for calculating sound propagation. |
+| [.wallmarks](game-levels/wallmarks.md) | Decals. Bloodstains, faction emblems on walls, etc. Used for the compiled level. |
+| [.part](game-levels/part.md) | Scene objects |
 
 ___
 

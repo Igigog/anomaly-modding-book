@@ -23,7 +23,7 @@ ___
 
 The commands and their settings are assigned in the script "`ui_debug_lightning.script`"
 
-`List of commands` (Full list of commands can be found [here]())
+`List of commands`
 
 | Сommand | Command description |
 |---|---|

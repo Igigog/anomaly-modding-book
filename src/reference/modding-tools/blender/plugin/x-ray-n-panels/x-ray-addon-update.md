@@ -1,4 +1,4 @@
-## Update
+# Update
 
 ![Alt text centered](blender-images/panels/side-panel-update.png)
 

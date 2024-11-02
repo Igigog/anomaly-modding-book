@@ -1,4 +1,4 @@
-## Props Tools
+# Props Tools
 
 ![Alt text centered](blender-images/panels/side-panel-props-tools.png)
 

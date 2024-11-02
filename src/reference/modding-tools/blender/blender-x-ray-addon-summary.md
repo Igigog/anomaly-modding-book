@@ -15,19 +15,19 @@ This table lists the X-Ray file formats that the addon can import/export.
 
 | Extension | Description | Can Import | Can Export |
 |---|---|---|---|
-| [.object]() | Source objects | Yes | Yes |
-| .skl | Skeletal animation | Yes | Yes |
-| .skls | Skeletal animations in a container | Yes | Yes |
-| .ogf | Compiled objects | Yes | Yes |
-| [.omf]() | Game skeletal actions | Yes | Yes |
-| [.anm]() | Animated paths | Yes | Yes |
-| .bones | Bones data | Yes | Yes |
-| [.dm]() | Detailed effect models | Yes | Yes |
-| [.details]() | Level details | Yes | Yes |
-| .level | List of scene objects in the SDK | Yes | Yes |
-| [level]() | Game levels | Yes | Yes |
-| .part | Scene objects | Yes  | No |
-| .err | Error list | Yes  | No |
+| [.object](../../main-folders-and-files/file-formats/models/object.md) | Source objects | Yes | Yes |
+| [.skl](../../main-folders-and-files/file-formats/animations/skl-skls.md) | Skeletal animation | Yes | Yes |
+| [.skls](../../main-folders-and-files/file-formats/animations/skl-skls.md) | Skeletal animations in a container | Yes | Yes |
+| [.ogf](../../main-folders-and-files/file-formats/models/ogf.md) | Compiled objects | Yes | Yes |
+| [.omf](../../main-folders-and-files/file-formats/animations/omf.md) | Game skeletal actions | Yes | Yes |
+| [.anm](../../main-folders-and-files/file-formats/animations/anm.md) | Animated paths | Yes | Yes |
+| [.bones](../../main-folders-and-files/file-formats/models/bones.md) | Bones data | Yes | Yes |
+| [.dm](../../main-folders-and-files/file-formats/models/dm.md) | Detailed effect models | Yes | Yes |
+| [.details](../../main-folders-and-files/file-formats/game-levels/details.md) | Level details | Yes | Yes |
+| [.level](../../main-folders-and-files/file-formats/game-levels/dot-level.md) | List of scene objects in the SDK | Yes | Yes |
+| [level](../../main-folders-and-files/file-formats/game-levels/level.md) | Game levels | Yes | Yes |
+| [.part](../../main-folders-and-files/file-formats/game-levels/part.md) | Scene objects | Yes  | No |
+| [.err](../../main-folders-and-files/file-formats/game-levels/err.md) | Error list | Yes  | No |
 
 ## [Compatibility](https://github.com/PavelBlend/blender-xray/wiki#supported-blender-versions)
 

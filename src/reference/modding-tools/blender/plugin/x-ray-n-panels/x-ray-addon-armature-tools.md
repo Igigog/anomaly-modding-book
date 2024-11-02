@@ -1,4 +1,4 @@
-## Armature Tools
+# Armature Tools
 
 ![Alt text centered](blender-images/panels/side-panel-armature-tools.png)
 

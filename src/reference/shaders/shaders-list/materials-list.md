@@ -14,12 +14,12 @@ This section contains a list and description of the shaders that are available i
 |---|---|
 | creatures\actor | person (actor) |
 | creatures\hoof | mutant with hooves |
-| creatures\human | human (NPS) |
+| creatures\human | human (NPC) |
 | creatures\human_head | human |
 | creatures\large | big mutant |
 | creatures\medium | medium mutant |
 | creatures\phantom | phantom |
-| creatures\small | little mutant |
+| creatures\small | small mutant |
 
 ### Static object materials
 

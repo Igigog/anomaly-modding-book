@@ -12,6 +12,6 @@ Example:
 
 ![example centered](images/hud_object.png)
 
-Distinguishing features:
+### Distinguishing features
 
 - Does not have a bone collision

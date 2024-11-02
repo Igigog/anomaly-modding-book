@@ -4,7 +4,7 @@ ___
 
 ## About
 
-A specialized S.T.A.L.K.E.R. game format containing animations. This is a separate dedicated file used in conjunction with .ogf models. Was created in order to optimize process when some different models use the same list of animations.
+A specialized S.T.A.L.K.E.R. game format containing animations. This is a separate dedicated file used in conjunction with [.ogf](../models/ogf.md) models. Was created in order to optimize process when some different models use the same list of animations.
 
 ___
 

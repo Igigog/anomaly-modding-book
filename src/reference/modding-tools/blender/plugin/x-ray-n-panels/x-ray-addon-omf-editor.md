@@ -1,4 +1,4 @@
-## OMF Editor
+# OMF Editor
 
 ![Alt text centered](blender-images/panels/side-panel-omf-editor.png)
 

@@ -4,6 +4,7 @@ ___
 
 ## Need to know
 
+- How working in Blender
 - Familiarize yourself with the formats for levels (.lights, level, .ai, .cform, .details, .env_mod, .fog_vol, .game, .geom, .geomx, [.hom](../main-folders-and-files/file-formats/index.html#hom-hierarchical-occlusion-mapping), .ltx, .ps_static, .spawn, .wallmarks, .som ([List here](../main-folders-and-files/file-formats/index.html)))
 
 ## Beginning

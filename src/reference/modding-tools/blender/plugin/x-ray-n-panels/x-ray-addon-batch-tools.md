@@ -1,4 +1,4 @@
-## Batch Tools
+# Batch Tools
 
 ![Alt text centered](blender-images/panels/side-panel-batch-tools.png)
 

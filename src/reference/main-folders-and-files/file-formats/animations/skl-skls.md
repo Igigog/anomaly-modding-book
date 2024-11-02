@@ -11,8 +11,8 @@ ___
 ## Technical information
 
 - Animations are stored as 3 animation curves for position and 3 curves for rotation in [Euler angles](https://en.wikipedia.org/wiki/Euler_angles) with ZXY axis order.
-- A skls file can store one or more animations
-- A skl file can store only one animation
+- A .skls file can store one or more animations
+- A .skl file can store only one animation
 - Each animation has [game parameters](/src/modding-tools/omf-editor-by-valerok.md#animation-options).
 - Skeletal animations do not support Scale keys
 

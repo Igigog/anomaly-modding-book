@@ -35,15 +35,15 @@ Tool for fast editing and exporting raw stalker formats
 
 | Supported formats |
 |---|
-| .object |
-| .ogf |
-| .omf |
-| .skl |
-| .skls |
-| .bones |
-| .dm |
+| [.object](../../main-folders-and-files/file-formats/models/object.md) |
+| [.ogf](../../main-folders-and-files/file-formats/models/ogf.md) |
+| [.omf](../../main-folders-and-files/file-formats/animations/omf.md) |
+| [.skl](../../main-folders-and-files/file-formats/animations/skl-skls.md) |
+| [.skls](../../main-folders-and-files/file-formats/animations/skl-skls.md) |
+| [.bones](../../main-folders-and-files/file-formats/models/bones.md) |
+| [.dm](../../main-folders-and-files/file-formats/models/dm.md) |
 | .obj (wavefront) |
-| .ltx (bone parts) |
+| [.ltx (bone parts)](../../main-folders-and-files/file-formats/models/bone-parts.md) |
 
 ## Functionality
 

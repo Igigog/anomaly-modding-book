@@ -10,7 +10,7 @@ Example:
 
 ![example centered](images/world_model.png)
 
-Distinguishing features:
+### Distinguishing features
 
 - Has a bone collision
-- Dynamic object
+- [Dynamic object]

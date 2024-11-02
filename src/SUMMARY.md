@@ -50,16 +50,16 @@ ___
 
 ___
 
-- [Modelling]()
-  - [Creating a static model in Blender]()
-  - [Creating a dynamic model in Blender]()
+- [Modelling](tutorials/models/README.md)
+  - [Creating a static model in Blender](tutorials/models/creating-static-model.md)
+  - [Creating a dynamic model in Blender](tutorials/models/creating-dynamic-model.md)
 
 ___
 
-- [Animating]()
-  - [Creating an animation]()
-  - [Creating animations for the camera]()
-  - [Editing existing animations]()
+- [Animating](tutorials/animations/README.md)
+  - [Creating HUD animation](tutorials/animations/creating-hud-animation-in-blender.md)
+  - [Creating animations for the camera](tutorials/animations/creating-camera-animations.md)
+  - [Editing existing animations](tutorials/animations/editing-existing-animations.md)
 
 ___
 
@@ -226,7 +226,7 @@ ___
   - [Material Shaders List](reference/shaders/shaders-list/materials-list.md)
   - [Shaders List](reference/shaders/shaders-list/shaders-list.md)
   - [Compiler Shaders List](reference/shaders/shaders-list/compiler-shaders-list.md)
-  - [Sound Envornment List](reference/shaders/shaders-list/compiler-shaders-list.md)
+  - [Sound Envornment List](reference/shaders/shaders-list/sound-envornment-list.md)
 
 ___
 

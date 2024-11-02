@@ -10,22 +10,22 @@ ___
 
 ## About
 
-Modified tool for working with [.omf](../../main-folders-and-files/file-formats/index.html#omf-open-motions-format) format.
+Modified tool for working with [.omf](../../main-folders-and-files/file-formats/animations/omf.md) format.
 
 ![editor centered](images/omf-editor-by-valerok.png)
 
 ## Features
 
-- Multiple .omf files
+- Multiple [.omf](../../main-folders-and-files/file-formats/animations/omf.md) files
 - Clone, delete, save selected animations
 - Working with motion marks
 - Working with flags
-- Ability to save in .skls, .skl
+- Ability to save in [.skls](../../main-folders-and-files/file-formats/animations/skl-skls.md), [.skl](../../main-folders-and-files/file-formats/animations/skl-skls.md)
 - Fix Gunslinger mod animations
-- Displaying of bone parts animation, possibility to convert into ltx format for import into SDK
+- Displaying of bone parts animation, possibility to convert into [.ltx](../../main-folders-and-files/file-formats/conf-script/ltx.md) format for import into SDK
 - A lot of bug fixes and crashes from the original version.
 - Changing of name of bones
-- Viewing [Bone Parts](../../main-folders-and-files/file-formats/README.md#models)
+- Viewing [Bone Parts](../../main-folders-and-files/file-formats/models/bone-parts.md)
 
 ## Functionality
 
@@ -56,7 +56,7 @@ Modified tool for working with [.omf](../../main-folders-and-files/file-formats/
 | Try Repair | Trying to fix an animation file (for example, the animation from Gunslinger Mod) |
 | Swap Anim Marks | Open the .omf file, make it the main file and transfer all the motion marks from the old file to the new one in the animation with the same names |
 | Rename Bones | Allows you to change the name of the bones |
-| Show Bone Parts | Ability to view [Bone Parts](../../main-folders-and-files/file-formats/README.md#models) |
+| Show Bone Parts | Ability to view Bone Parts |
 
 - #### Help Button
 
