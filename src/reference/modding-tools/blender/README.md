@@ -2,4 +2,5 @@
 
 ___
 
-These articles will talk about setting up Blender, creating models, etc.
+- [Blender X-Ray Addon Summary]()
+- []

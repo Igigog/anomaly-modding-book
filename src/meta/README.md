@@ -21,6 +21,7 @@ During the development of this book, information was taken from many sites and f
 - [xrWiki](https://xray-engine.org/index.php)
 - ["Союз Модмейкеров" Discord Server](https://discord.gg/WSaEzuu6Qs)
 - [xray-engine.org](https://xray-engine.org/index.php?title=%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0)
+- [Blender X-Ray Addon Wiki](https://github.com/PavelBlend/blender-xray/wiki)
 
 ___
 

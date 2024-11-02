@@ -139,7 +139,7 @@ Contains [.dds]() textures
 #### gamemtl.xr
 
 ```admonish info
-Contains [game materials](../shaders/shaders-list/materials-list.md)
+Contains [game materials](../materials/materials-list.md)
 ```
 
 #### lanims.xr

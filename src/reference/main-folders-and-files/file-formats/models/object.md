@@ -12,10 +12,10 @@ ___
 
 ### The format can store the following basic data (the list is not complete)
 
-- meshes
-- materials
-- bones
-- skeleton animations
+- Meshes
+- Materials
+- Bones
+- Skeleton animations
 
 ### Possibilities and limitations of the .object format
 
@@ -28,7 +28,7 @@ One *.object file can store:
 - skeleton animations may not be present, or one or more animations may be stored
 - skeleton animations do not support Scale keys
 - each mesh can have one or more materials
-- each mesh must have one UV scan
+- each mesh must have one UV map
 - each material can store only one texture
 
 ___

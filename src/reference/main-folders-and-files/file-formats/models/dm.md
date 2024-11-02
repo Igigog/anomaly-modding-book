@@ -17,8 +17,8 @@ It works like this: UV descends down the Y coordinates to the texture
 ### Format limitations
 
 - Must have one material
-- Does not support antialiasing
-- Format stores only one mesh
+- Does not support smoothing
+- Stores only one mesh
 - Mesh can have only one UV map
 - Number of vertices in mesh must be no more than 65,536
 

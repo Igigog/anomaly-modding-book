@@ -27,6 +27,7 @@ This table lists the X-Ray file formats that the addon can import/export.
 | [.level](../../main-folders-and-files/file-formats/game-levels/dot-level.md) | List of scene objects in the SDK | Yes | Yes |
 | [level](../../main-folders-and-files/file-formats/game-levels/level.md) | Game levels | Yes | Yes |
 | [.part](../../main-folders-and-files/file-formats/game-levels/part.md) | Scene objects | Yes  | No |
+| [.group](../../main-folders-and-files/file-formats/models/group.md) | Object group | Yes | Yes |
 | [.err](../../main-folders-and-files/file-formats/game-levels/err.md) | Error list | Yes  | No |
 
 ## [Compatibility](https://github.com/PavelBlend/blender-xray/wiki#supported-blender-versions)
