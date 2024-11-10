@@ -14,7 +14,7 @@ ___
 | [.pdb](general/pdb.md) |  |
 | [.scop](general/scop.md) | Save file |
 | [.scoc](general/scoc.md) | Save file |
-| [.xrdemo](general/xrdemo.md) | Recording camera flyover (demo). Created in the game with a [console command](../../engine/console-commands/console-commands.md). |
+| [.xrdemo](general/xrdemo.md) | Recording camera flyover (demo). Created in the game with a [console command](../../engine/console-commands/general-game-console-commands.md). |
 | [.ogm](audio-video/ogm.md) | The video format used by the game engine. |
 | [.ogg](audio-video/ogg.md) | The sound format used by the game engine. |
 
@@ -116,7 +116,7 @@ ___
 | [.fog_vol](game-levels/fog_vol.md) | Volumetric fog |
 | [.game](game-levels/game.md) | Coordinates of the player's spawn in the multiplayer game. Outdated file. |
 | [.geom](game-levels/geom.md) | Contains vertices (position, normals, texture coordinates, etc.), indices, and information for smooth geometry detail. |
-| [.geomx](game-levels/geomx.md) | It contains only geometry. In the renderer it is used in the shadow rendering passes, due to the fact that there is less information - loading data into the buffers - faster. |
+| .geomx | It contains only geometry. In the renderer it is used in the shadow rendering passes, due to the fact that there is less information - loading data into the buffers - faster. |
 | [.gtc](game-levels/gtc.md) | Cross table of correspondence between the location graph and the AI grid. Created during compilation |
 | [.hom](game-levels/hom.md) | Mapping of hierarchical cutoffs |
 | [.level](game-levels/dot-level.md) | List of SDK scene objects |

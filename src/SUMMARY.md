@@ -57,6 +57,7 @@ ___
 ___
 
 - [Animating](tutorials/animations/README.md)
+  - [Creating Camera Flyover in Game](tutorials/animations/creating-flyover-camera-animations-in-game.md)
   - [Creating HUD animation](tutorials/animations/creating-hud-animation-in-blender.md)
   - [Creating animations for the camera](tutorials/animations/creating-camera-animations.md)
   - [Editing existing animations](tutorials/animations/editing-existing-animations.md)
@@ -98,7 +99,9 @@ ___
           - [Gulag](reference/terminology/ai/gulag.md)
         - [Animpoits](reference/terminology/ai/animpoint.md)
         - [Graphpoint](reference/terminology/ai/graphpoint.md)
+          - [gvid](reference/terminology/ai/gvid.md)
         - [Waypoint](reference/terminology/ai/waypoint.md)
+        - [lvid](reference/terminology/ai/lvid.md)
     - [Animations](reference/terminology/animations/README.md)
       - [*object*_hud animations](reference/terminology/animations/object-hud-animations.md)
     - [Coding](reference/terminology/coding/README.md)
@@ -156,7 +159,6 @@ ___
       - [.fog_vol](reference/main-folders-and-files/file-formats/game-levels/fog_vol.md)
       - [.game](reference/main-folders-and-files/file-formats/game-levels/game.md)
       - [.geom](reference/main-folders-and-files/file-formats/game-levels/geom.md)
-      - [.geomx](reference/main-folders-and-files/file-formats/game-levels/geomx.md)
       - [.graph](reference/main-folders-and-files/file-formats/game-levels/graph.md)
       - [.gtc](reference/main-folders-and-files/file-formats/game-levels/gtc.md)
       - [.hom](reference/main-folders-and-files/file-formats/game-levels/hom.md)
@@ -229,7 +231,7 @@ ___
 ___
 
 - [Materials](reference/materials/README.md)
-  - [Material Shaders List](reference/materials/materials-list.md)
+  - [Materials List](reference/materials/materials-list.md)
 
 ___
 
@@ -240,7 +242,7 @@ ___
 
 - [Engine](reference/engine/README.md)
   - [Engine Classes](reference/engine/engine-classes.md)
-  - [Console Commands](reference/engine/console-commands/console-commands.md)
+  - [Console Commands](reference/engine/console-commands/general-game-console-commands.md)
     - [Control Console Commands](reference/engine/console-commands/control-commands.md)
     - [Demo Record Console Commands](reference/engine/console-commands/demo-record-commands.md)
     - [Animations Console Commands](reference/engine/console-commands/animation-commands.md)
@@ -262,10 +264,8 @@ ___
   - [In-Game Editors](reference/modding-tools/in-game-editors/README.md)
     - [Item Spawner](reference/modding-tools/in-game-editors/item-spawner.md)
     - [Lightning Editor](reference/modding-tools/in-game-editors/lightning-editor.md)
-    - [NPC Logic/Execute](reference/modding-tools/in-game-editors/npc-logic-execute.md)
     - [Object Spawner](reference/modding-tools/in-game-editors/object-spawner.md)
     - [Outfits/Weapons Stats Editor](reference/modding-tools/in-game-editors/outfits-weapon-stats-editor.md)
-    - [Pocket Workshop](reference/modding-tools/in-game-editors/pocket-workshop.md)
     - [Weapon HUD Editor](reference/modding-tools/in-game-editors/weapon-hud-editor.md)
     - [Weather Editor](reference/modding-tools/in-game-editors/weather-editor.md)
   - [Ltx Support](reference/modding-tools/modding-tools-coding/ltx-support.md)

@@ -33,12 +33,12 @@ Speed of texture change is set in numerical format before the enumeration
 ~~~
 
 The number of textures in the list is arbitrary, but the more frames, the greater the load on the engine, respectively.
-The name of the file is set by the name of the assigned texture (without taking the extension into account). If there is a *[.dds]() file in the folder with the same name as the .seq file, the engine ignores the original texture, giving priority to the .seq file. The priority of file search by extension is as follows:
+The name of the file is set by the name of the assigned texture (without taking the extension into account). If there is a [.dds](dds.md) file in the folder with the same name as the .seq file, the engine ignores the original texture, giving priority to the .seq file. The priority of file search by extension is as follows:
 
-- .ogm
+- [.ogm](../audio-video/ogm.md)
 - .avi
-- .seq
-- [.dds]()
+- [.seq](seq.md)
+- [.dds](dds.md)
 
 ## Parameters
 

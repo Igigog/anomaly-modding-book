@@ -15,10 +15,21 @@ ___
 - RGB - Diffuse colour
 - A - Alpha (Used for translucent/transparent shaders like glass/grass)
 
-### The engine currently supports the following compressions
+### Supported texture formats
 
 - DXT1
+- ADXT1
 - DXT5
+- 4444 (RGBA4444)
+- 1555 (RGBA1555)
+- 565 (RGB565)
+- RGB
+- RGBA
+- NVHS
+- NVHU
+- A8
+- L8
+- A8L8
 
 ___
 

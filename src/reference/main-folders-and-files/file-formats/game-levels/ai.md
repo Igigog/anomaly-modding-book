@@ -4,6 +4,8 @@ ___
 
 ## About
 
-AI location grid
+AI location grid.
 
 ![alt text centered](images/ai-map.png)
+
+Store [lvid](../../../terminology/ai/lvid.md)'s

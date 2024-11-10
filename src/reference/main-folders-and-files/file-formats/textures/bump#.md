@@ -4,7 +4,7 @@ ___
 
 ## About
 
-Corrects DXT compression errors in [.bump](bump.md)
+Corrects DXT compression errors in [bump.dds](bump.md)
 
 ___
 
@@ -12,13 +12,24 @@ ___
 
 ### Format
 
-- RGB - Error correction for normal map (bump.dds) - Not necessary if you're using good quality normal map. It's generated with SDK
+- RGB - Error correction for normal map [bump.dds](bump.md) - Not necessary if you're using good quality normal map. It's generated with SDK
 - A - height map; used for parallax, if the use of it was turned on when setting up the texture
 
-### Supported Compressions
+### Supported texture formats
 
 - DXT1
+- ADXT1
 - DXT5
+- 4444 (RGBA4444)
+- 1555 (RGBA1555)
+- 565 (RGB565)
+- RGB
+- RGBA
+- NVHS
+- NVHU
+- A8
+- L8
+- A8L8
 
 ___
 

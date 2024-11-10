@@ -1,4 +1,4 @@
-# Game Console Commands
+# General Game Console Commands
 
 | Сommand | Command description | Command's argument | Note |
 |---|---|:---:|---|
@@ -11,6 +11,7 @@
 | g_always_active | The game will continue to work if the focus is not on it | 'on/off' or '1/0' | - |
 | keypress_on_start | Whether to wait after loading a level to press the key to go into the game | 'on/off' or '1/0' | - |
 | load | Load specified save | save_name | - |
+| save | Save | save_name | - |
 | load_last_save | Load last save | - | - |
 | main_menu | Exit to the main menu | - | - |
 | quit | Exit to the desktop | - | - |
@@ -19,4 +20,5 @@
 | time_factor | Ability to change the game time | 0.001 - 1000.0 | - |
 | flush | Flush log | - | - |
 | clear_log |  | - | - |
-| cfg_load |  | - | - |
+| cfg_load | Load confing file | - | - |
+| cfg_save | Save confing file | - | - |
