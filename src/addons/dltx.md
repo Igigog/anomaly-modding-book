@@ -280,7 +280,6 @@ You use :
 
 Please note :
 - do not list again the elements already present in this list;
-- this only exists in the Anomaly 1.5.2 version of the Modded Exes.
 
 ___
 
