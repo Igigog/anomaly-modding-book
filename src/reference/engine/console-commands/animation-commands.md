@@ -1,5 +1,7 @@
 # Animations Console Commands
 
+___
+
 ## Animations Debug
 
 | Сommand | Command description | Command's argument | Note |

@@ -10,4 +10,4 @@ ___
 
 ## Programs editing this file
 
-- [SDK Particle Editor]
+- [SDK Particle Editor](../../../modding-tools/sdk/particle-editor.md)

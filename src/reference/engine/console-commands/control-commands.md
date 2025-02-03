@@ -1,5 +1,7 @@
 # Control Console Commands
 
+___
+
 | Сommand | Command description | Command's argument | Note |
 |---|---|:---:|---|
 | bind | Assign a command to the button | Action, key prefixed with k (kLeft, etc.) | - |

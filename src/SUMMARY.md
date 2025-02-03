@@ -2,12 +2,12 @@
 
 [Introduction](README.md)
 
-___
+---
 
 - [Meta](meta/README.md)
   - [Contributing to this book](meta/contributing/README.md)
 
-___
+---
 
 # Tutorials
 
@@ -17,8 +17,9 @@ ___
     - [Addon installers](tutorials/getting-started/addon-installers.md)
     - [Package Naming for MO2](tutorials/getting-started/package-naming.md)
   - [Configuring VSCode-like programs to handle game files](tutorials/getting-started/vs-code-game-files-setup.md)
+  - [Files Extraction](tutorials/getting-started/extract-files.md)
 
-___
+---
 
 - [Addons](tutorials/addons/README.md)
   - [DLTX](tutorials/addons/dltx.md)
@@ -28,7 +29,7 @@ ___
   - [Lua Unlocalizer](tutorials/addons/lua-unlocalizer.md)
   - [Useful addons, scripts and utils](tutorials/addons/useful-addons-scripts-utils.md)
 
-___
+---
 
 - [Configs](tutorials/configs/README.md)
   - [Structure of Files](tutorials/configs/structure-of-files.md)
@@ -36,7 +37,7 @@ ___
   - [Inventory Icons](tutorials/configs/inventory_icons.md)
   - [Algoritm of Logic](tutorials/configs/algoritm-of-logic.md)
 
-___
+---
 
 - [Scripting](tutorials/scripting/README.md)
   - [Introduction to codebase](tutorials/scripting/codebase_introduction.md)
@@ -48,13 +49,13 @@ ___
   - [Monkey patching](tutorials/scripting/monkey-patching.md)
   - [Script Animations](tutorials/scripting/script_animations.md)
 
-___
+---
 
 - [Modelling](tutorials/models/README.md)
   - [Creating a static model in Blender](tutorials/models/creating-static-model.md)
   - [Creating a dynamic model in Blender](tutorials/models/creating-dynamic-model.md)
 
-___
+---
 
 - [Animating](tutorials/animations/README.md)
   - [Creating Camera Flyover in Game](tutorials/animations/creating-flyover-camera-animations-in-game.md)
@@ -62,18 +63,18 @@ ___
   - [Creating animations for the camera](tutorials/animations/creating-camera-animations.md)
   - [Editing existing animations](tutorials/animations/editing-existing-animations.md)
 
-___
+---
 
 - [Texturing](tutorials/texturing/README.md)
   - [Creating and preparing textures](tutorials/texturing/сreating-and-preparing-textures.md)
   - [Working correctly with icon atlases](tutorials/texturing/working-correctly-with-icon-atlases.md)
 
-___
+---
 
 - [Mapping](tutorials/mapping/README.md)
   - [Multimaterial Terrain Guide](tutorials/mapping/multimaterial-terrain.md)
   
-___
+---
 
 - [Quests](tutorials/quests/README.md)
   - [Introduction](tutorials/quests/introduction.md)
@@ -81,7 +82,7 @@ ___
   - [Task Creation](tutorials/quests/task_guide.md)
   - [Dialogue Creation](tutorials/quests/dialogues.md)
 
-___
+---
 
 # References
 
@@ -134,22 +135,24 @@ ___
       - [HLSL](reference/terminology/shaders/hlsl.md)
   - [Main Folders And Files](reference/main-folders-and-files/README.md)
   - [File Formats](reference/main-folders-and-files/file-formats/README.md)
-    - [AI]()
+    - [AI](reference/main-folders-and-files/file-formats/ai/README.md)
       - [.efd](reference/main-folders-and-files/file-formats/ai/efd.md)
-    - [Animations]()
+      - [.dat](reference/main-folders-and-files/file-formats/ai/dat.md)
+    - [Animations](reference/main-folders-and-files/file-formats/animations/README.md)
       - [.anm](reference/main-folders-and-files/file-formats/animations/anm.md)
       - [.omf](reference/main-folders-and-files/file-formats/animations/omf.md)
       - [.skl - .skls](reference/main-folders-and-files/file-formats/animations/skl-skls.md)
-    - [Achives - Resources Packs]()
+    - [Achives | Resources Packs](reference/main-folders-and-files/file-formats/archives-resource-packs/README.md)
       - [.db](reference/main-folders-and-files/file-formats/archives-resource-packs/db.md)
       - [.xr](reference/main-folders-and-files/file-formats/archives-resource-packs/xr.md)
-    - [Audio - Video]()
+    - [Audio | Video](reference/main-folders-and-files/file-formats/audio-video/README.md)
       - [.ogg](reference/main-folders-and-files/file-formats/audio-video/ogg.md)
       - [.ogm](reference/main-folders-and-files/file-formats/audio-video/ogm.md)
-    - [Configs]()
+    - [Configs](reference/main-folders-and-files/file-formats/conf-script/README.md)
       - [.ltx](reference/main-folders-and-files/file-formats/conf-script/ltx.md)
+      - [.script](reference/main-folders-and-files/file-formats/conf-script/script.md)
       - [.xml](reference/main-folders-and-files/file-formats/conf-script/xml.md)
-    - [Game Levels]()
+    - [Game Levels](reference/main-folders-and-files/file-formats/game-levels/README.md)
       - [.ai](reference/main-folders-and-files/file-formats/game-levels/ai.md)
       - [.cform](reference/main-folders-and-files/file-formats/game-levels/cform.md)
       - [.details](reference/main-folders-and-files/file-formats/game-levels/details.md)
@@ -172,13 +175,13 @@ ___
       - [.som](reference/main-folders-and-files/file-formats/game-levels/som.md)
       - [.spawn](reference/main-folders-and-files/file-formats/game-levels/spawn.md)
       - [.wallmarks](reference/main-folders-and-files/file-formats/game-levels/wallmarks.md)
-    - [General]()
+    - [General](reference/main-folders-and-files/file-formats/general/README.md)
       - [.log](reference/main-folders-and-files/file-formats/general/log.md)
       - [.pdb](reference/main-folders-and-files/file-formats/general/pdb.md)
       - [.scoc](reference/main-folders-and-files/file-formats/general/scoc.md)
       - [.scop](reference/main-folders-and-files/file-formats/general/scop.md)
       - [.xrdemo](reference/main-folders-and-files/file-formats/general/xrdemo.md)
-    - [Models]()
+    - [Models](reference/main-folders-and-files/file-formats/models/README.md)
       - [*bone-parts*.ltx](reference/main-folders-and-files/file-formats/models/bone-parts.md)
       - [.bones](reference/main-folders-and-files/file-formats/models/bones.md)
       - [.dm](reference/main-folders-and-files/file-formats/models/dm.md)
@@ -186,12 +189,12 @@ ___
       - [.object](reference/main-folders-and-files/file-formats/models/object.md)
       - [.ogf](reference/main-folders-and-files/file-formats/models/ogf.md)
       - [.dti](reference/main-folders-and-files/file-formats/models/dti.md)
-    - [Particles]()
+    - [Particles](reference/main-folders-and-files/file-formats/particles/README.md)
       - [.pe](reference/main-folders-and-files/file-formats/particles/pe.md)
       - [.pg](reference/main-folders-and-files/file-formats/particles/pg.md)
-    - [Postproccesing]()
+    - [Postproccesing](reference/main-folders-and-files/file-formats/postprocceses/README.md)
       - [.ppe](reference/main-folders-and-files/file-formats/postprocceses/ppe.md)
-    - [Shaders]()
+    - [Shaders](reference/main-folders-and-files/file-formats/shaders/README.md)
       - [.cs](reference/main-folders-and-files/file-formats/shaders/cs.md)
       - [.ds](reference/main-folders-and-files/file-formats/shaders/ds.md)
       - [.gs](reference/main-folders-and-files/file-formats/shaders/gs.md)
@@ -200,16 +203,17 @@ ___
       - [.ps](reference/main-folders-and-files/file-formats/shaders/ps.md)
       - [.s](reference/main-folders-and-files/file-formats/shaders/s.md)
       - [.vs](reference/main-folders-and-files/file-formats/shaders/vs.md)
-    - [Textures]()
+    - [Textures](reference/main-folders-and-files/file-formats/textures/README.md)
       - [_bump.dds](reference/main-folders-and-files/file-formats/textures/bump.md)
       - [_bump#.dds](reference/main-folders-and-files/file-formats/textures/bump#.md)
       - [.dds](reference/main-folders-and-files/file-formats/textures/dds.md)
       - [_detail_map.dds](reference/main-folders-and-files/file-formats/textures/detail-map.md)
       - [.seq](reference/main-folders-and-files/file-formats/textures/seq.md)
+      - [_terrain_map.dds](reference/main-folders-and-files/file-formats/textures/terrain-map.md)
       - [.tga](reference/main-folders-and-files/file-formats/textures/tga.md)
       - [.thm](reference/main-folders-and-files/file-formats/textures/thm.md)
 
-___
+---
 
 - [Configs](reference/configs/README.md)
   - [Weapons Parameters]()
@@ -222,23 +226,23 @@ ___
   - [Mutants Configuration Parameters](reference/configs/creatures/m_(mutant).ltx.md)
   - [Stalkers Configuration Parameters]()
 
-___
+---
 
 - [Shaders](reference/shaders/README.md)
   - [Shaders List](reference/shaders/shaders-list/shaders-list.md)
   - [Compiler Shaders List](reference/shaders/shaders-list/compiler-shaders-list.md)
 
-___
+---
 
 - [Materials](reference/materials/README.md)
   - [Materials List](reference/materials/materials-list.md)
 
-___
+---
 
 - [Audio](reference/audio/README.md)
   - [Sound Envornment List](reference/audio/sound-envornment-list.md)
 
-___
+---
 
 - [Engine](reference/engine/README.md)
   - [Engine Classes](reference/engine/engine-classes.md)
@@ -258,7 +262,7 @@ ___
       - [R4 Render Console Commands](reference/engine/console-commands/r4-render-commands.md)
     - [UI Console Commands](reference/engine/console-commands/ui-commands.md)
 
-___
+---
 
 - [Modding Tools List](reference/modding-tools/README.md)
   - [In-Game Editors](reference/modding-tools/in-game-editors/README.md)
@@ -294,7 +298,7 @@ ___
   - [Universal x64 level compilers](reference/modding-tools/modding-tools-compilers/universal-x64-level-compilers.md)
   - [xrCompress](reference/modding-tools/modding-tools-compressors/xrcompress-by-i-love-kfc.md)
 
-___
+---
 
 # Resources
 

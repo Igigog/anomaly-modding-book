@@ -1,14 +1,16 @@
 # Sound Console Commands
 
+___
+
 ## General settings
 
-| Сommand | Command description | Command's argument |
-|---|---|:---:|
-| snd_restart | Restart the sound engine | — |
-| snd_cache_size | Cache size | 8 - 256 |
-| snd_acceleration | APU resource utilization | 'on/off' or '1/0' |
-| snd_targets | Maximum number of channels | 32 - 1024 |
-| snd_device |  | OpenAL Soft |
+| Сommand | Command description | Command's argument | Note |
+|---|---|:---:|---|
+| snd_restart | Restart the sound engine | — | - |
+| snd_cache_size | Cache size | 8 - 256 | - |
+| snd_acceleration | APU resource utilization | 'on/off' or '1/0' | - |
+| snd_targets | Maximum number of channels | 32 - 1024 | - |
+| snd_device |  | OpenAL Soft | - |
 
 ## Music
 
@@ -20,6 +22,6 @@
 
 ## Effects
 
-| Сommand | Command description | Command's argument |
-|---|---|:---:|
-| snd_efx | EAX sound effects | 'on/off' or '1/0' |
+| Сommand | Command description | Command's argument | Note |
+|---|---|:---:|---|
+| snd_efx | EAX sound effects | 'on/off' or '1/0' | - |

@@ -4,54 +4,38 @@ ___
 
 ## About
 
-Эта страница описывает сглаживание для меш-объектов в движке X-Ray.
+This page describes smoothing for mesh objects in the X-Ray engine
 
-### Типы сглаживания
+### Smoothing types
 
-В движке X-Ray есть три типа сглаживания:
+There are three types of smoothing in the X-Ray engine:
 
-- Сглаживание, реализованное на уровне треугольников (Smooth Groups). Аналог групп сглаживания в 3DS Max.
-- Сглаживание, реализованное на уровне рёбер (Sharp Edges/Smooth Edges). Аналог острых/мягких рёбер в Blender и Maya.
-- Сглаживание, реализованное за счёт нормалей вершин (Vertex Normals). Аналог Split Normals в Blender.
+- Smoothing implemented at the triangle level (Smooth Groups). Analog of smoothing groups in 3DS Max
+- Smoothing implemented at the edge level (Sharp Edges/Smooth Edges). Analog of Sharp Edges/Smooth Edges in Blender and Maya
+- Smoothing realized at the expense of vertex normals (Vertex Normals). Analog of Split Normals in Blender
 
-### Форматы сглаживания
+### Smoothing formats
 
-В движке X-Ray есть четыре формата сглаживания:
+There are four smoothing formats in the X-Ray engine:
 
-- Max-формат для *.object файлов для X-Ray SDK 0.4. Имеет тип Smooth Groups и реализован в виде 32-битной маски. Каждый бит указывает одну группу сглаживания. Каждая группа сглаживания может занимать только один бит маски, из-за чего максимальное количество групп равно 32. Нет возможности задать не замкнутые границы сглаживания. Подробнее: Параметр Smoothing Groups Mask, Не поддерживается Max-формат сглаживания.
+- Max format for [*.object](../main-folders-and-files/file-formats/models/object.md) files for X-Ray SDK 0.4. It is of type Smooth Groups and is implemented as a 32-bit mask. Each bit indicates one smoothing group. Each smoothing group can occupy only one bit of the mask, which makes the maximum number of groups 32. No possibility to set non-closed smoothing boundaries. Подробнее: Параметр Smoothing Groups Mask, Не поддерживается Max-формат сглаживания.
 
-- Maya-формат для *.object файлов для X-Ray SDK 0.4. Имеет тип Smooth Groups и реализован в виде 32-битных индексов групп. Каждая группа имеет уникальный номер. Количество групп не ограничено. Так же, как и Max формат, не имеет возможности сохранить не замкнутые границы сглаживания. Если при экспорте в *.object меш-объект будет иметь не замкнутые контуры сглаживания, то аддон выдаст предупреждение Maya-SG incompatible и не сохранит сглаживание для незамкнутых контуров. Это означает, что не сглаженное ребро в blender после экспорта станет сглаженным.
+- Maya format for [*.object](../main-folders-and-files/file-formats/models/object.md) files for X-Ray SDK 0.4. It is of type Smooth Groups and is implemented as 32-bit group indexes. КEach group has a unique number. The number of groups is unlimited. Neither does the Max format have the ability to save non-closed antialiasing boundaries.
 
-- Clear Sky/Call of Pripyat формат для X-Ray SDK 0.5, 0.6, 0.7. Имеет тип Sharp Edges. Границы сглаживания указываются с помощью рёбер. Возможно указать не замкнутые границы сглаживания, в отличие от Max/Maya сглаживания, которое имеет замкнутые контуры.
+- Clear Sky/Call of Pripyat format for X-Ray SDK 0.5, 0.6, 0.7. Has a Sharp Edges type. Smoothing boundaries are specified using edges. It is possible to specify non-closed smoothing boundaries, unlike Max/Maya smoothing which has closed boundaries.
 
-- Внутриигровой формат сглаживания для *.ogf и игровых скомпилированных уровней. Имеет тип Vertex Normals. При создании *.ogf или игровых уровней, вершины сохраняются так, чтобы каждая вершина имела только одну нормаль. Границы сглаживания указываются с помощью направления нормалей. Если нормали вершин ребра направлены в одну сторону, то граница между полигонами ребра будет сглажена. Этот формат позволяет сохранять не только границы сглаживания, но и направление нормалей, что даёт больший контроль над сглаживанием.
+- In-game smoothing format for [*.ogf](../main-folders-and-files/file-formats/models/ogf.md) and in-game compiled levels. Has the type Vertex Normals. When creating [*.ogf](../main-folders-and-files/file-formats/models/ogf.md) or game levels, vertices are saved so that each vertex has only one normal. Smoothing boundaries are specified using the direction of normals. If the normals of the vertices of an edge are directed in one direction, the boundary between the polygons of the edge will be smoothed out. This format allows you to save not only the smoothing boundaries but also the direction of normals, which gives you more control over smoothing.
 
-### Неофициальные форматы сглаживания
+### Unofficial smoothing formats
 
-В аддоне есть возможность сохранить Vertex Normals в формат *.object. Официальный X-Ray SDK не поддерживает хранение такого сглаживания в *.object. Чтобы сохранить это сглаживание при экспорте *.object в *.ogf, нужно использовать неофициальные программы (например, Object Editor).
+The addon has an option to save Vertex Normals to [*.object](../main-folders-and-files/file-formats/models/object.md) format. The official X-Ray SDK does not support storing such smoothing in [*.object](../main-folders-and-files/file-formats/models/object.md). To keep this smoothing when exporting [*.object](../main-folders-and-files/file-formats/models/object.md) to [*.ogf](../main-folders-and-files/file-formats/models/ogf.md) you need to use unofficial programs (e.g. [Object Editor]).
 
-Форматы файлов
-Форматы файлов поддерживают такие форматы сглаживания:
+### File formats
 
-*.object - 1, 2, 3 и неофициальный Vertex Normals.
-*.ogf - 4.
-level/level.geom - 4.
-*.dm - не поддерживает сглаживание.
-*.details - не поддерживает сглаживание.
+File formats support these smoothing formats:
 
-Сглаживание в Blender
-Blender имеет такие возможности для настройки сглаживания:
-
-Smooth Edges/Sharp Edges - если ребро помечено с помощью Edge > Mark Sharp, то оно станет острым (Sharp Edge). Если не помечено, то будет сглаженным (Smooth Edge).
-
-Smooth Faces/Flat Faces - если полигон помечен с помощью Face > Shade Flat, то он станет плоским. Если помечен с помощью Face > Shade Smooth, то будет сглаженным.
-
-Split Normals - позволяет указать направление нормалей для сглаживания. Включить отображение нормалей можно здесь: 01
-
-Smooth Angle - позволяет автоматически рассчитать сглаживание для рёбер (Sharp Edges), по углу между полигонами. Угол задаётся здесь: 02
-
-Использование сглаживания
-В некоторых случаях при экспорте аддон не учитывает некоторые типы сглаживания, настроенные в blender. Подробнее:
-
-Параметр экспорта Smoothing
-Параметр Use Object Split Normals в настройках
+- [*.object](../main-folders-and-files/file-formats/models/object.md) - 1, 2, 3 and unofficial Vertex Normals
+- [*.ogf](../main-folders-and-files/file-formats/models/ogf.md) - 4
+- [level](../main-folders-and-files/file-formats/game-levels/level.md)/level[.geom](../main-folders-and-files/file-formats/game-levels/geom.md) - 4
+- [*.dm](../main-folders-and-files/file-formats/models/dm.md) - does not support smoothing
+- [*.details](../main-folders-and-files/file-formats/game-levels/details.md) - does not support smoothing

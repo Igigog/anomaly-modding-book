@@ -7,7 +7,9 @@ Here will talk about setting up VSCode similar programs to work with game files.
 - This article is based on [Liner's article](https://ap-pro.ru/forums/topic/3406-nastroyka-skriptov-stalkera-kak-proekt-v-visual-studio-code/) on setting up scripts as projects in VSCode
 - In this article the setup will be done in VSCodium.
 
-> Attention! Not all files can be configured because there are no extensions for their viewing, reading (for example preview .dds textures and others). Some files can only be opened with third-party applications!
+```admonish warning
+Not all files can be configured because there are no extensions for their viewing, reading (for example preview .dds textures and others). Some files can only be opened with third-party applications!
+```
 
 ___
 

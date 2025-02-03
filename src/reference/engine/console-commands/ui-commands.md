@@ -1,5 +1,7 @@
 # UI Console Commands
 
+___
+
 | Сommand | Command description | Command's argument | Note |
 |---|---|:---:|---|
 | cl_dynamiccrosshair | Dynamic Sight | 'on/off' or '1/0' | Not working because of the dot sight |
@@ -13,4 +15,4 @@
 
 | Сommand | Command description | Command's argument | Note |
 |---|---|:---:|---|
-| show_wnd_rect_all | Toggle borders of ui elements. |  |  |
+| show_wnd_rect_all | Toggle borders of ui elements |  | - |

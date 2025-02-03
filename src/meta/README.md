@@ -29,4 +29,4 @@ Also thanks for the advice of individuals:
 
 - Xottab_DUTY#7637 ([OpenXRay](https://github.com/OpenXRay/xray-16))
 - Daniel(SergeantRogers)#6813 - for providing crash logs
-- VANDELEY - for the clarification on use_aim_bullet [(Video (RU Lang)](https://youtu.be/BXwDmC8Ieck?si=i2AmZQYZtCr-y2bk)
+- VANDELEY - for the clarification on `use_aim_bullet` [(Video (RU Lang)](https://youtu.be/BXwDmC8Ieck?si=i2AmZQYZtCr-y2bk)

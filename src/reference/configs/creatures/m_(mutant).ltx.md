@@ -17,7 +17,7 @@ Example value taken from vanilla m_bloodsucker.ltx
 | SpaceRestrictionSection |  | space_restrictor<br> zone_mosquito_bald<br> zone_witches_galantine<br> zone_burning_fuzz1<br> zone_mincer<br> zone_gravi_zone |  |
 | $spawn |  | "monsters\bloodsuckers\bloodsucker_base" |  |
 | $npc |  | on |  |
-| $prefetch | Preload order? | 16 |  |
+| $prefetch | Preload order | 16 |  |
 | visual | Model of a living mutant | monsters\krovosos\krovosos |  |
 | corpse_visual | Dead mutant model | monsters\krovosos\krovosos_dead |  |
 | destroyed_vis_name | visual, what remains when destroying a monster in an anomaly |  |  |
@@ -584,7 +584,7 @@ ___
 | anti_aim_detection_gain_speed |  | 10 |  |
 | anti_aim_detection_loose_speed |  | 0.1 |  |
 | weapon_drop_velocity |  | 8 |  |
-| weapon_drop_stamina_k |  | 0.6 | IF player stamina < stamina_hit*inv_weight(weapon param)*weapon_drop_stamina_k THEN weapon is dropped |
+| weapon_drop_stamina_k |  | 0.6 | IF player stamina < stamina_hit * inv_weight(weapon param) * weapon_drop_stamina_k THEN weapon is dropped |
 | weight_to_stamina_hit |  | 0.11 | kg to stamina % |
 
 #### Gravi Ability

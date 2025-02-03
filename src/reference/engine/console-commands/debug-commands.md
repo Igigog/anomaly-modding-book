@@ -1,5 +1,7 @@
 # Debug Console Commands
 
+___
+
 | Сommand | Command description | Command's argument | Note |
 |---|---|:---:|---|
 | g_god | Enables God Mode | 'on/off' or '1/0' | - |

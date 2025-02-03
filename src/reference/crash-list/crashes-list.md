@@ -4,12 +4,12 @@ ___
 
 ## Error description
 
-- Expression - Expression in the engine code, which gives an error
-- Function - Name of the function where the error occurred
-- File - File where the error occurred
-- Line - Line in File where the error occurred
-- Description - Possible problem description
-- Arguments - Argument causing the error
+- `Expression` - Expression in the engine code, which gives an error
+- `Function` - Name of the function where the error occurred
+- `File` - File where the error occurred
+- `Line` - Line in File where the error occurred
+- `Description` - Possible problem description
+- `Arguments` - Argument causing the error
 
 ___
 
@@ -31,7 +31,7 @@ This list is only for the vanilla version of the game! If you use engine edits, 
 [error]Arguments     : Can't find model file ["path and file name"]
 ```
 
-- Clarification: No 3D .ogf model was found
+- Clarification: No [.ogf](../main-folders-and-files/file-formats/models/ogf.md) model was found
 
 - Error fixing:
   - Check that the model exists
@@ -130,7 +130,7 @@ ___
 [error]Arguments     : Can't find motion file ["path and file name"]
 ```
 
-- Clarification: No .omf animation was found
+- Clarification: No [.omf](../main-folders-and-files/file-formats/animations/omf.md) animation was found
 
 - Error fixing:
   - Check that the animation exists
@@ -173,10 +173,10 @@ ___
 [error]Arguments     : Can't find motion file ["path and file name"]
 ```
 
-- Clarification: No .anm file was found
+- Clarification: No [.anm](../main-folders-and-files/file-formats/animations/anm.md) file was found
 
 - Error fixing:
-  - Check that the .anm file exists
+  - Check that the animation exists
   - Check that the paths to it are correct
 
 </details>
@@ -214,10 +214,10 @@ ___
 [error]Description   : assertion failed
 ```
 
-- Clarification: Not supported version of the Evaluation Function Contructor
+- Clarification: Not supported version of the [Evaluation Function Contructor](../modding-tools/modding-tools-ai/evaluation-function-constructor.md)
 
 - Error fixing:
-  - The .efd file must be generated with a supported version of the Evaluation Function Contructor (?)
+  - The .efd file must be generated with a supported version of the Evaluation Function Contructor
 
 </details>
 
@@ -271,7 +271,7 @@ ___
 [error]Arguments     : ["file name"]
 ```
 
-- Clarification: No .spawn file was found
+- Clarification: No [.spawn](../main-folders-and-files/file-formats/game-levels/spawn.md) file was found
 
 - Error fixing:
   - Check that the .spawn file exists
@@ -289,7 +289,7 @@ ___
 [error]Description   : Cannot find chunk SPAWN_CHUNK_DATA!
 ```
 
-- Clarification: No chunk `SPAWN_CHUNK_DATA` was found in .spawn file
+- Clarification: No chunk `SPAWN_CHUNK_DATA` was found in .[spawn](../main-folders-and-files/file-formats/game-levels/spawn.md) file
 
 - Error fixing:
 

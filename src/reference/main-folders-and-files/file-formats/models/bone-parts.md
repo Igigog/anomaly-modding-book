@@ -1,4 +1,4 @@
-# .bone-parts
+# bone-parts.ltx
 
 ___
 

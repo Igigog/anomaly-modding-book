@@ -8,20 +8,7 @@ This section contains a list and description of the shaders that are available i
 
 ## List
 
-### Materials of the creatures
-
-| Shader name and path | Description |
-|---|---|
-| creatures\actor | person (actor) |
-| creatures\hoof | mutant with hooves |
-| creatures\human | human (NPC) |
-| creatures\human_head | human |
-| creatures\large | big mutant |
-| creatures\medium | medium mutant |
-| creatures\phantom | phantom |
-| creatures\small | small mutant |
-
-### Static object materials
+### [Static object](../terminology/models/static-object.md) materials
 
 | Shader name and path | Description |
 |---|---|
@@ -60,7 +47,7 @@ This section contains a list and description of the shaders that are available i
 | material\wood | wooden surface, floor wooden steps |
 | material\wooden_board | wooden board, wooden wagon, box |
 
-### Dynamic object materials
+### [Dynamic object](../terminology/models/static-object.md) materials
 
 | Shader name and path | Description |
 |---|---|
@@ -87,3 +74,16 @@ This section contains a list and description of the shaders that are available i
 | objects\small_metal_trash | small metal trash (tubes, pieces, nuts, bolts) |
 | objects\small_weapon | small weapon (pistol) |
 | objects\tin_can | tin can |
+
+#### Creatures materials
+
+| Shader name and path | Description |
+|---|---|
+| creatures\actor | person (actor) |
+| creatures\hoof | mutant with hooves |
+| creatures\human | human (NPC) |
+| creatures\human_head | human |
+| creatures\large | big mutant |
+| creatures\medium | medium mutant |
+| creatures\phantom | phantom |
+| creatures\small | small mutant |

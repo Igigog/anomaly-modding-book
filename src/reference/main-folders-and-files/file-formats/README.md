@@ -28,7 +28,15 @@ ___
 | [.script](conf-script/script.md) | Game script |
 | [.xml](conf-script/xml.md) | Carry in text format data related to in-game text, UI element placement, and characters and information within the game world |
 | [.seq](textures/seq.md) | Text file containing a description of the frame sequence in the 2D animation |
-| [.efd](ai/efd.md) | Table of AI heuristic parameters, contains constants for fine-tuning A-Life. They are used as input parameters in scripts. |
+
+___
+
+## AI
+
+| Extension | Description |
+|---|---|
+| [.efd](ai/efd.md) | Table of AI heuristic parameters, contains constants for fine-tuning A-Life. They are used as input parameters in scripts |
+| [.dat](ai/dat.md) |  |
 
 ___
 

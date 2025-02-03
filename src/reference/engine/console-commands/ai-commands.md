@@ -1,5 +1,7 @@
 # AI Console Commands
 
+___
+
 | Сommand | Command description | Command's argument | Note |
 |---|---|:---:|---|
 | ai_aim_max_angle | The maximum angle at which the angular velocity of the character when aiming is calculated by the formula | 0.000 - 31.416 | - |

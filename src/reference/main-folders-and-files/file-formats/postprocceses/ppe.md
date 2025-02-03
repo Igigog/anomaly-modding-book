@@ -10,4 +10,4 @@ ___
 
 ## Programs editing this file
 
-- [SDK Postprocess Editor](../../../sdk/postprocess-editor.md)
+- [SDK Postprocess Editor](../../../modding-tools/sdk/postprocess-editor.md)

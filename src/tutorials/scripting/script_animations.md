@@ -9,7 +9,7 @@ The first thing to know is that animations can be divided into a few categories:
 ### Motions Theory
 
 * They represent actual hands, NPCs or actor movements
-* Stored in .omf files
+* Stored in [.omf](../../reference/main-folders-and-files/file-formats/animations/omf.md) files
 * Unique to an object
 
 In this article we’ll focus on hands animations which are, for example, sprinting or weapons reloading. FDDA items animations are also motions. Motions are usually unique to a specific object. For example, AK74 reload animation will only look nice when used with AK74 or any other gun that is set up for this specific motion. That means you can still play it in your script with empty hands, but if you play it while holding a PKM the machine gun won’t play any reload animation at all.
@@ -35,7 +35,7 @@ This is not an official name, of course, it’s just something I came up with to
 
 In Anomaly, there’s a ‘misfire’ animation. Try to shoot a gun without any ammo, and you’ll see slight hands movement. This is ‘misfire.anm’ animation.
 
-Point is, this is not exactly a screen effect type of .anm file, and yet this is not an .omf-type motion. It can be used with any object the actor is holding, i.e. it’s not tied to a specific gun.
+Point is, this is not exactly a screen effect type of [.anm](../../reference/main-folders-and-files/file-formats/animations/anm.md) file, and yet this is not an .omf-type motion. It can be used with any object the actor is holding, i.e. it’s not tied to a specific gun.
 
 So technically, these are both .anm files. I just decided there needs to be some sort of distinction. As of now this documentation focuses on playing 'blend' animations.
 
@@ -43,7 +43,7 @@ So technically, these are both .anm files. I just decided there needs to be some
 
 ### .ppe effects Theory
 
-These are camera animations with more possibilities: besides camera movements, they can also include, for example, duality effect (when drinking vodka or when there was an explosion next to the actor), grain effect in radiation zones etc. Vanilla night vision is also a .ppe effect.
+These are camera animations with more possibilities: besides camera movements, they can also include, for example, duality effect (when drinking vodka or when there was an explosion next to the actor), grain effect in radiation zones etc. Vanilla night vision is also a [.ppe](../../reference/main-folders-and-files/file-formats/postprocceses/ppe.md) effect.
 
 .ppe files work similarly to .anm files - they’re separate and go to **anims/** folder as well.
 

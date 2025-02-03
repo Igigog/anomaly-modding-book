@@ -7,8 +7,9 @@ ___
 
 ## About
 
-> This article is under construction
-> The editor was created for Gunslinger Mod so some parameters will be incompatible with Anomaly! Also, after exporting, you may need to modify the config!
+```admonish warning
+The editor was created for Gunslinger Mod so some parameters will be incompatible with Anomaly! Also, after exporting, you may need to modify the config!
+```
 
 Visual editor that makes it relatively quick and easy to create weapon upgrade schemes
 

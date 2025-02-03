@@ -1,5 +1,7 @@
 # General Game Console Commands
 
+___
+
 | Сommand | Command description | Command's argument | Note |
 |---|---|:---:|---|
 | help | Outputs a list of console commands | - | - |
