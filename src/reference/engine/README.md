@@ -23,12 +23,12 @@ ___
 
 Community fork of the Monolith engine curated by demonized. This engine is encouraged to use by the community and comes with compatibility and stability fixes.
 
-- [Source and download](https://github.com/themrdemonized/STALKER-Anomaly-modded-exes)
+- [Source and download](https://github.com/themrdemonized/xray-monolith)
 
 ### Key Features
 
-- [DLTX](../addons/dltx.md) by MerelyMezz with edits and bugfixes by demonized
-- [DXML](../addons/dxml.md) by demonized
+- [DLTX](../../tutorials/addons/dltx.md) by MerelyMezz with edits and bugfixes by demonized
+- [DXML](../../tutorials/addons/dxml.md) by demonized
 - BaS engine edits by Mortan
 - Additional edits and bugfixes by demonized
 - Shader Scopes by CrookR and enhanced by Edzan

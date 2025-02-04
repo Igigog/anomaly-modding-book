@@ -6,7 +6,7 @@ ___
 
 DXML by demonized#1084
 
-DXML is a part of [modded exes repo](https://github.com/themrdemonized/STALKER-Anomaly-modded-exes)
+DXML is a part of [modded exes repo](https://github.com/themrdemonized/xray-monolith)
 
 DXML allows to manipulate XML files before they loaded into the engine or scripts by utilizing Lua
 The engine sends XML string to Lua where it is transformed into DOM-like object (from now on lets call it xml_obj) that can be manipulated by Lua methods and then it is converted back to XML string and sent back to engine

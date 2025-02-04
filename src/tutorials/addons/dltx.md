@@ -16,7 +16,7 @@ ___
 
 DLTX is built-in the Anomaly Modded Exes.
 
-- Download the file `STALKER-Anomaly-modded-exes.zip` from [this repository](https://github.com/themrdemonized/STALKER-Anomaly-modded-exes);
+- Download the file `STALKER-Anomaly-modded-exes.zip` from [this repository](https://github.com/themrdemonized/xray-monolith);
 - Back up the contents of your "bin" folder;
 - Unpack the contents of the archive on top of your game's root folder.
 
@@ -148,9 +148,6 @@ You use :
 
 ```ini,lang=LTX
 !![some_section]
-!price
-!weight
-!friends
 ```
 
 ___
@@ -290,7 +287,6 @@ You use :
 Please note :
 
 - do not list again the elements already present in this list;
-- this only exists in the Anomaly 1.5.2 version of the Modded Exes.
 
 ___
 
@@ -323,7 +319,7 @@ ___
 
 ## Sources
 
-[Modded Exes (contains DLTX)](https://github.com/themrdemonized/STALKER-Anomaly-modded-exes)
+[Modded Exes (contains DLTX)](https://github.com/themrdemonized/xray-monolith)
 
 [Legacy page for DLTX on Moddb](https://www.moddb.com/mods/stalker-anomaly/addons/dltx-differential-ltx-loading)
 

@@ -6,22 +6,21 @@ Written by ComradeCatilina
 
 The files you need are:
 
-  **File :** `_unpacked\configs\gameplay\character_desc_*.xml`
-  
-  In this file you have to add your dialogue to the concerned NPC. This is done by adding the line: <actor_dialog>XXX</actor_dialog>
-  
-  **File :** `_unpacked\configs\gameplay\dialogs_*.xml`
-  
-  In this file you construct the dialogue tree.
+**File :** `_unpacked\configs\gameplay\character_desc_*.xml`
 
-  **File :** `_unpacked\configs\gameplay\text\eng\st_dialogs_*.xml`
-  
-  In this file you write the text of your dialogue.
+In this file you have to add your dialogue to the concerned NPC. This is done by adding the line: <actor_dialog>XXX</actor_dialog>
 
-  NB: If you're doing a custom NPC, it's advisable to not use preexisting files but to add your own. You can check under "NPC creation" how to include your own files.
-      IF you're adding dialogue to a preexisting NPC, you will have to add your <actor_dialog>XXX</actor_dialog> in his file, but you can use a 'custom dialogs_*.xml' file for the dialogue tree.
-  
-  **File :** `_unpacked\configs\gameplay\text\eng\st_dialogs_*.xml` doesn't need to be included.
+**File :** `_unpacked\configs\gameplay\dialogs_*.xml`
+
+In this file you construct the dialogue tree.
+
+**File :** `_unpacked\configs\gameplay\text\eng\st_dialogs_*.xml`
+
+In this file you write the text of your dialogue.
+
+> NB:If you're doing a custom NPC, it's advisable to not use preexisting files but to add your own. You can check under "NPC creation" how to include your own files. If you're adding dialogue to a preexisting NPC, you will have to add your `<actor_dialog>XXX</actor_dialog>` in his file, but you can use a 'custom dialogs_*.xml' file for the dialogue tree.
+
+**File :** `_unpacked\configs\gameplay\text\eng\st_dialogs_*.xml` doesn't need to be included.
 
 ## Chapter 2 : Basic dialogue tree
 
@@ -65,29 +64,25 @@ The basic structure of a dialogue tree is the following:
 
 - `<dialog id="my_custom_dialogue_1">`
 
-This is the link between <actor_dialog>my_custom_dialogue_1</actor_dialog> and the dialogue tree.
+ This is the link between `<actor_dialog>my_custom_dialogue_1</actor_dialog>` and the dialogue tree.
 
 - `<phrase_list>`
 
-Your whole dialogue tree has to be inbetween these nodes.
+ Your whole dialogue tree has to be inbetween these nodes.
 
 - `<phrase id="0">`
 
-This is one branch of the tree. Note that 0 is the first line of the actor and 1 is the NPC's answer.
-
-The exception is <start_dialog> - the dialogue shown if you talk to the NPC the first time. In this case 0 is the NPC and 1 is the actor.
+  This is one branch of the tree. Note that 0 is the first line of the actor and 1 is the NPC's answer. The exception is `<start_dialog>` - the dialogue shown if you talk to the NPC the first time. In this case 0 is the NPC and 1 is the actor.
 
 - `<text>my_custom_dialogue_1_0</text>`
 
-my_custom_dialogue_1_0 is the text string which will get translated by the game.
+  my_custom_dialogue_1_0 is the text string which will get translated by the game.
 
 - `<next>1</next>`
 
-This handles which dialogue branch will be shown next.
+  This handles which dialogue branch will be shown next.
 
-NB: notice that every node starts with \<XXX> and is closed with a "/" : </XXX>
-
-This is essential - take care to always close your nodes or the game will crash on boot.
+> NB:Notice that every node starts with `<XXX>` and is closed with a "/" : `</XXX>`. This is essential - take care to always close your nodes or the game will crash on boot.
 
 ### Step 3
 
@@ -104,8 +99,7 @@ In order to do that, add in your
 
 <string id="my_custom_dialogue_1_1">
   <text>Very impressive.</text>
-</string>  
-  
+</string>
 ```
 
 Now, if you load your mod, you whould see an dialogue option for the barkeep in Rostok "Hy barkeep, I made my own dialogue." and he will answer "Very impressive."
@@ -153,7 +147,7 @@ Now after the first exchange, the player will have two options to answer: either
 
 If the player chooses option 2, the NPC will answer with branch 4, and if the player chooses option 3, the NPC will answer with branch 5.
   
-Note that if the dialogue is over, there is no \<next> in the branch. The player will again see the starting dialogue options.
+Note that if the dialogue is over, there is no `<next>` in the branch. The player will again see the starting dialogue options.
   
 ## Chapter 4 : The four horsemen of dialogue and the executor
   
@@ -161,15 +155,15 @@ The four major tools to handle a dialogue tree are the following:
 
 - `<has_info>XXX</has_info>`
   
-Dialogue tree or dialogue branch will only show if the actor has the XXX info.
+  Dialogue tree or dialogue branch will only show if the actor has the XXX info.
   
 - `<dont_has_info>XXX</dont_has_info>`
   
-Dialogue tree or dialogue branch will only show if the actor doesn't have the XXX info.
+  Dialogue tree or dialogue branch will only show if the actor doesn't have the XXX info.
   
 - `<give_info>XXX</give_info>`
   
-Gives the actor the XXX info during a dialogue.
+  Gives the actor the XXX info during a dialogue.
 
 Alternatives are:
 
@@ -239,21 +233,11 @@ Now that we added these two tools we can write the dialogue:
   
 We will use the dialogue tree in Chapter 2 as an example.
   
-In this example, you want the dialogue tree to be available to the player only if he has a tuna can in his inventory.
-  
-But, you also want to show the dialogue tree only if the player accepted a mission beforehand (imagine another dialogue tree before this one in which the dialogue branch gave the mission and the info):
-  
-- this is done by adding <has_info>my_tuna_mission_given</has_info>
-  
-Now this option will only show if the player also has the info "my_tuna_mission_given".
-  
-But you also want to show the dialogue only once to the player, or else he will repeatatly be able to exchange tuna for money.
-  
-- this is done by adding <dont_has_info>my_tuna_mission_done</dont_has_info> and later in the dialogue <give_info>my_tuna_mission_done</give_info>
-  
-Now this dialogue will only be shown until the player resolves the quest.
+In this example, you want the dialogue tree to be available to the player only if he has a tuna can in his inventory. But, you also want to show the dialogue tree only if the player accepted a mission beforehand (imagine another dialogue tree before this one in which the dialogue branch gave the mission and the info). This is done by adding `<has_info>my_tuna_mission_given</has_info>`. Now this option will only show if the player also has the info `my_tuna_mission_given`.
 
-In order to affect the dialogue tree, and not specific branches, the conditions, has_info, dont_has_info have to be before before <phrase_list>.
+But you also want to show the dialogue only once to the player, or else he will repeatatly be able to exchange tuna for money. This is done by adding `<dont_has_info>my_tuna_mission_done</dont_has_info>` and later in the dialogue `<give_info>my_tuna_mission_done</give_info>`. Now this dialogue will only be shown until the player resolves the quest.
+
+In order to affect the dialogue tree, and not specific branches, the conditions, `has_info`, `dont_has_info` have to be before `<phrase_list>`.
 
 ```xml,icon=.devicon-xml-plain
 <dialog id="my_custom_dialogue_1">
@@ -281,7 +265,7 @@ In order to affect the dialogue tree, and not specific branches, the conditions,
   
 In the precedent example we saw how to hide the dialogue option until the conditions are met. Now we will do the same, but with a dialogue branch.
   
-Again, we want this dialogue tree to be open only after the quest has been given and only until the quest has been resolved. This means we keep has_info and dont_has_info.
+Again, we want this dialogue tree to be open only after the quest has been given and only until the quest has been resolved. This means we keep `has_info` and `dont_has_info`.
   
 But this time, precondition will be used to show the dialogue option / branch only if the player has the tuna in his inventory.
   
@@ -331,8 +315,8 @@ Now every instrument is playing together. After initiating the dialogue by sayin
 
 Now the player has two options: branch 2 which will only show if he has a tuna can in his inventory and branch 3 which will always show.
   
-If the player uses branch 2 - it will lead to branch 4 which triggers the tuna - money exchange and gives the info which will prevent the code to show the dialogue again (as we added <dont_has_info>my_tuna_mission_done</dont_has_info>)
+If the player uses branch 2 - it will lead to branch 4 which triggers the tuna - money exchange and gives the info which will prevent the code to show the dialogue again (as we added `<dont_has_info>my_tuna_mission_done</dont_has_info>`)
   
-Of course you can use has_info and dont_has_info also in the different dialogue branches in order to make the dialogue tree more complex.
-  
-NB: I never tried it, but I believe you cannot use precondition, has_info and dont_has_info to curtail the NPC replies. The NPC should always have only one \<next>.
+Of course you can use `has_info` and `dont_has_info` also in the different dialogue branches in order to make the dialogue tree more complex.
+
+> NB:I never tried it, but I believe you cannot use precondition, `has_info` and `dont_has_info` to curtail the NPC replies. The NPC should always have only one `<next>`.
