@@ -10,3 +10,5 @@ jobs:
     - uses: byrnereese/github-action-mkdocs-link-check@1.0
       with:
         folder-path: 'src/'
+        local-only: true
+        verbose-mode: 'yes'
