@@ -12,3 +12,4 @@ jobs:
         use-quiet-mode: 'yes'
         use-verbose-mode: 'yes'
         file-extension: '.md .README'
+        folder-path: 'src/'
