@@ -1,0 +1,9 @@
+main>p>img[alt~="centered"] {
+    display: block;
+    margin: auto;
+}
+
+html.rust img[alt~="svg-icon"],
+html.light img[alt~="svg-icon"] {
+    filter: brightness(0) saturate(100%);
+}
