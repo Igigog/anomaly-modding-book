@@ -2,7 +2,9 @@ name: Markdown lint
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
+      - book-rewrite
   pull_request:
     types: [assigned, opened, synchronize, reopened]
 
