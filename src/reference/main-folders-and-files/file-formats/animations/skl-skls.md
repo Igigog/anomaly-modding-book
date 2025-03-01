@@ -4,7 +4,7 @@ ___
 
 ## About
 
-These files store skeleton animations. The format for storing animations in .skl/.skls is similar to the format of animations embedded in [.object](../models/object.md) files. Animations are stored in uncompressed form. Bone motion data are stored losslessly when exported from a 3D editor. These formats are designed for X-Ray SDK. They are used as source files that are compiled into compressed formats for the game.
+These files store skeleton animations. The format for storing animations in .skl/.skls is similar to the format of animations embedded in [.object](../models/object.md) files. Animations are stored in uncompressed form. Bone motion data are stored lossless when exported from a 3D editor. These formats are designed for X-Ray SDK. They are used as source files that are compiled into compressed formats for the game.
 
 ___
 

@@ -74,10 +74,10 @@ Example value taken from vanilla m_bloodsucker.ltx
 
 </details>
 
-### Invertory
+### Inventory
 
 <details>
-    <summary>Invertory</summary>
+    <summary>Inventory</summary>
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 |---|---|---|---|
@@ -535,7 +535,7 @@ ___
 
 ### Abilitys
 
-#### Squad seperation behaviour Ability
+#### Squad separation behavior Ability
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 |---|---|---|---|
@@ -761,7 +761,7 @@ ___
 <details>
     <summary>SM_FLESH</summary>
 
-#### Squad seperation behaviour
+#### Squad separation behavior
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 |---|---|---|---|

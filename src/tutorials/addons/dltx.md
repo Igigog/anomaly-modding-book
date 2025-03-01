@@ -20,7 +20,7 @@ DLTX is built-in the Anomaly Modded Exes.
 - Back up the contents of your "bin" folder;
 - Unpack the contents of the archive on top of your game's root folder.
 
-![Image explananing the installation process of the Modded Exes](images/img_dltx_install.png)
+![Image explaining the installation process of the Modded Exes](images/img_dltx_install.png)
 
 ___
 

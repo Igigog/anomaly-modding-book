@@ -32,11 +32,11 @@ animation parameter name = animation name(hands), animation name(weapon), playba
 
 | Parameter Name | Engine Class | Parameter Description | Example Value | Value Data Type | Parameter Possible Values And Their Descriptions |
 |---|---|---|---|:---:|---|
-| anm_show_0 | WP_BM16 |  |  |  |  |
-| anm_show_1 | WP_BM16 |  |  |  |  |
-| anm_show_2 | WP_BM16 |  |  |  |  |
+| anm_show_0 | WP_BM16 | Show animation with 0 bullet |  |  |  |
+| anm_show_1 | WP_BM16 | Show animation with 1 bullet |  |  |  |
+| anm_show_2 | WP_BM16 | Show animation with 2 bullet |  |  |  |
 | anm_show |  | Show animation |  |  |  |
-| anm_show_empty |  |  |  |  |  |
+| anm_show_empty |  | Show animation with 0 bullet |  |  |  |
 | anm_show_g |  |  |  |  |  |
 | anm_show_empty_g |  |  |  |  |  |
 | anm_show_w_gl |  |  |  |  |  |

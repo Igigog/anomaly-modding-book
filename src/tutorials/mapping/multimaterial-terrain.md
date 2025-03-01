@@ -14,8 +14,8 @@ So first, let's try to understand how the rendering system works in general
 
 A terrain is a regular 3d model consisting of many polygons. They can have different materials that will determine the type of their surface: grass, earth, asphalt, etc. In the X-Ray engine, a material has two important parameters that determine its type:
 
-- Game Mlt - actually the material itself, which determines the sounds of footsteps on the given surface, bullet hits, etc.
-- Shader – determines the appearance of this material
+- `Game Mlt` - actually the material itself, which determines the sounds of footsteps on the given surface, bullet hits, etc.
+- `Shader` – determines the appearance of this material
 
 ![Alt text](images/surface.png)
 > Terrane settings in SDK Actor Editor
@@ -106,7 +106,7 @@ First of all, let's take the most common terrain again with 4 materials, which a
 
 - green - grass
 - red - earth
-- blue - asfalt
+- blue - asphalt
 - alpha - sand
 
 In such a situation, all channels of the mask are occupied, there is nowhere to go. And we want to make a gravel section on the terrane. What can we do? We have already found out that even if all the mask channels are occupied, we can reuse any of them with another material. But how do we use them when our source materials are already combined in all combinations and we don't want to disrupt them? In other words, what if, in Scheme 2, the red and blue squares do overlap with each other and their shaders are fully tuned to each other?

@@ -15,5 +15,5 @@ ___
 1. Import a hand hud model
 2. Import a model of a weapon or something else
 3. Import the hand and object animations you want to edit
-   1. (Optional) Attach the main hud object bone to the hands lead_gun bone (Using Copy Transform Modifyer)
+   1. (Optional) Attach the main hud object bone to the hands lead_gun bone (Using Copy Transform Modifier)
 4. Edit

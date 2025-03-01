@@ -4,50 +4,50 @@ ___
 
 ## About
 
-Эта страница описывает настройки аддона в категории Keymap. В этой категории можно изменить, удалить, добавить горячие клавиши для операторов импорта/экспорта.
+This page describes the addon settings in the Keymap category. In this category you can change, delete, add hotkeys for import/export operators.
 
 ___
 
-### Сочетания клавиш
+### Keyboard shortcuts
 
-По-умолчанию все экспортёры имеют клавишу Alt. Стандартные значения клавиш:
+By default, all exporters have the Alt modifier. Default key settings:
 
-| Формат | Импорт | Экспорт |
+| Format | Import | Export |
 |---|---|---|
-| *.object | F5 | Alt + F5 |
-| *.skl | F6 |  |
-| *.skls | F6 | Alt + F6 |
-| *.ogf | F7 | Alt + F7 |
-| *.omf | F8 | Alt + F8 |
-| *.anm | Ctrl + F5 | Ctrl + Alt + F5 |
-| *.bones | Ctrl + F6 | Ctrl + Alt + F6 |
-| *.dm | Ctrl + F7 | Ctrl + Alt + F7 |
-| *.details | Ctrl + F8 | Ctrl + Alt + F8 |
-| *.level | Shift + Ctrl + F5 | Shift + Ctrl + Alt + F5 |
-| level | Shift + Ctrl + F6 | Shift + Ctrl + Alt + F6 |
-| *.part | Shift + Ctrl + F7 | Shift + Ctrl + Alt + F7 |
-| *.group | Shift + Ctrl + F8 | Shift + Ctrl + Alt + F8 |
-| *.err |  |  |
+| [*.object](../../../../main-folders-and-files/file-formats/models/object.md) | F5 | Alt + F5 |
+| [*.skl](../../../../main-folders-and-files/file-formats/animations/skl-skls.md) | F6 |  |
+| [*.skls](../../../../main-folders-and-files/file-formats/animations/skl-skls.md) | F6 | Alt + F6 |
+| [*.ogf](../../../../main-folders-and-files/file-formats/models/ogf.md) | F7 | Alt + F7 |
+| [*.omf](../../../../main-folders-and-files/file-formats/animations/omf.md) | F8 | Alt + F8 |
+| [*.anm](../../../../main-folders-and-files/file-formats/animations/anm.md) | Ctrl + F5 | Ctrl + Alt + F5 |
+| [*.bones](../../../../main-folders-and-files/file-formats/models/bones.md) | Ctrl + F6 | Ctrl + Alt + F6 |
+| [*.dm](../../../../main-folders-and-files/file-formats/models/dm.md) | Ctrl + F7 | Ctrl + Alt + F7 |
+| [*.details](../../../../main-folders-and-files/file-formats/game-levels/details.md) | Ctrl + F8 | Ctrl + Alt + F8 |
+| [*.level](../../../../main-folders-and-files/file-formats/game-levels/dot-level.md) | Shift + Ctrl + F5 | Shift + Ctrl + Alt + F5 |
+| [level](../../../../main-folders-and-files/file-formats/game-levels/level.md) | Shift + Ctrl + F6 | Shift + Ctrl + Alt + F6 |
+| [*.part](../../../../main-folders-and-files/file-formats/game-levels/part.md) | Shift + Ctrl + F7 | Shift + Ctrl + Alt + F7 |
+| [*.group](../../../../main-folders-and-files/file-formats/models/group.md) | Shift + Ctrl + F8 | Shift + Ctrl + Alt + F8 |
+| [*.err](../../../../main-folders-and-files/file-formats/game-levels/err.md) |  |  |
 
-### Включение/Отключение
+### Enable/Disable
 
-Сочетание клавиш можно включить/отключить с помощью галочки слева.
+The key combination can be enabled/disabled with the check mark on the left.
 
-### Удаление
+### Deletion
 
-Сочетание клавиш можно удалить с помощью кнопки с крестиком справа.
+The key combination can be deleted using the cross button on the right.
 
-### Добавление
+### Adding
 
-Если сочетание клавиш было удалено, то справа появится кнопка Add, с помощью которой можно добавить сочетание клавиш.
+If a keyboard shortcut has been deleted, an Add button will appear on the right side of the screen, which can be used to add the shortcut.
 
-### Изменение
+### Modification
 
-Сочетание клавиш изменяется стандартным способом (нажать на кнопку с хоткеем и ввести сочетание клавиш).
+The keyboard shortcut is changed in the standard way (click on the hotkey button and enter the keyboard shortcut).
 
-### Дубликаты
+### Duplicates
 
-Если на два и более оператора импорта/экспорта назначено одно и тоже сочетание клавиш, то при нажатии этих клавиш появится меню, в котором можно будет выбрать нужный оператор. Если на сочетание клавиш назначен один оператор, то этот оператор сразу запустится.
+If two or more import/export operators have the same keyboard shortcut assigned to them, pressing these keys will display a menu where you can select the desired operator. If a single operator is assigned to a key combination, that operator will start immediately.
 
 ___
 

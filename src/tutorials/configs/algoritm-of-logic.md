@@ -1,4 +1,4 @@
-# Algoritm of Logic
+# Algorithm of Logic
 
 "Executable" files, game logic files, unlike config files, have an algorithm that, if I'm not mistaken, is based on scripts. The peculiarity of such files is that they have a "Current Section", which defines reactions to interactions with it. Let's look at an example:
 

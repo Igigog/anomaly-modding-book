@@ -74,7 +74,7 @@ ___
 | Parameter name | Parameter description | Example value | Value Data Type | Possible parameter values and their descriptions |
 |---|---|---|:---:|---|
 | player_hud_section | First-person HUD section | actor_hud_cs1 |  |  |
-| visual | Oufit visual | dynamics\outfit\cs_light_outfit |  |  |
+| visual | Outfit visual | dynamics\outfit\cs_light_outfit |  |  |
 | actor_visual | Visual of a character in outfit | actors\stalker_nebo\stalker_nebo_1 |  |  |
 | npc_visual | Visual of an NPC in outfit | actors\stalker_nebo\stalker_nebo_1 |  |  |
 
@@ -116,10 +116,10 @@ ___
 
 </details>
 
-### Parameters that affect the protoganist
+### Parameters that affect the protagonist
 
 <details>
-    <summary>Parameters that affect the protoganist</summary>
+    <summary>Parameters that affect the protagonist</summary>
 
 | Parameter name | Parameter description | Example value | Value Data Type | Possible parameter values and their descriptions |
 |---|---|---|:---:|---|

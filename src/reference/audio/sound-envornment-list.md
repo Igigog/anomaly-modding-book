@@ -1,4 +1,4 @@
-# Sound Environmet List (senvironment.xr)
+# Sound Environment List (senvironment.xr)
 
 ___
 
@@ -8,7 +8,7 @@ Contains settings for different sound zones
 
 ## List
 
-| Envornment name | Preview |
+| Environment name | Preview |
 |---|---|
 | identity | <audio controls src="sounds/default.mp3"></audio> |
 | default | <audio controls src="sounds/default.mp3"></audio> |

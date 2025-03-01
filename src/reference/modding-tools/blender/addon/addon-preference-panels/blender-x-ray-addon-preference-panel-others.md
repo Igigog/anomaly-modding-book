@@ -6,33 +6,41 @@ ___
 
 ## About
 
-Эта страница описывает настройки аддона в категории Others. В этой категории находятся разные настройки, которые не подходят ни под одну общую категорию.
+This page describes the addon settings in the Others category. This category contains different settings that do not fit into any general category.
+
+___
 
 ### Custom Owner Name
 
-Этот параметр указывает произвольное имя автора. Имя автора записывается в файлы при экспорте. Если это значение не пустое, то оно будет использовано во время экспорта в *.object, *.ogf, *.part. Если пустое, то имя автора будет содержать имя компьютера и имя пользователя (например, \\DESKTOP-PC\Admin).
+This parameter specifies an arbitrary author name. The author name is written to the files during export. If this value is not empty, it will be used during export to `*.object`, `*.ogf`, `*.part`. If empty, the author name will contain the computer name and user name (e.g. `\\DESKTOP-PC\Admin`).
 
 ### Compact Import/Export Menus
 
-Если данный параметр включён, то в меню импорта/экспорта операторы будут находится в компактном виде и будут сгруппированы в одном подменю X-Ray. Операторы будут иметь примерно такой путь: File > Import > X-Ray > Source Object (*.object). Если выключен, то операторы будут добавляться в меню Import/Export, как стандартные операторы (без подменю). И путь к ним будет примерно таким: File > Import > X-Ray object (*.object). Если включить компактный режим меню, то можно уменьшить загромождение меню импорта/экспорта и облегчить поиск X-Ray операторов.
+If this option is enabled, in the import/export menu the operators will be in a compact form and will be grouped in one `X-Ray` submenu. Operators will have the following path: `File` > `Import` > `X-Ray` > `Source Object (*.object)`. If off, the operators will be added to `Import/Export` menu as standard operators (without submenu). And the path to them will be like this: `File` > `Import` > `X-Ray object (*.object)`. If you switch on the compact menu mode, you can reduce the import/export menu clutter and make it easier to find `X-Ray` operators.
 
 ### Check for Updates after Starting Blender
 
-При старте блендера, проверять наличие новой версии аддона. Подробнее об обновлении: Обновление аддона.
+When starting blender, check for a new version of the addon. More information about the update: Addon update.
 
 ### Print Batch Import/Export Status to the Console
 
-Если включён, то во время импорта/экспорта в консоль будут печататься пути к импортируемым/экспортируемым файлам, что позволит следить за статусом импорта/экспорта, когда он занимает много времени.
+If enabled, paths to imported/exported files will be printed to the console during import/export, which will allow you to monitor the status of import/export when it takes a long time.
 
 ### Use *.object Split Normals
 
-Если этот параметр активирован, то при импорте/экспорте файлов *.object будут читаться/записываться split-нормали сглаживания. Эта возможность отсутствует в официальном X-Ray SDK. Для поддержки split-нормалей нужно использовать правленые версии X-Ray SDK или другие программы от мододелов. При экспорте стандартные группы сглаживания тоже сохраняются, что позволяет полученные *.object файлы использовать в любой версии X-Ray SDK, даже если она не поддерживает split-нормалей. Если параметр деактивирован, то split-нормали не будут импортироваться/экспортироваться в/из *.object и полученные файлы будут соответствовать официальной версии X-Ray SDK. Этот параметр находится в настройках аддона, а не в параметрах операторов импорта/экспорта, так как эта настройка не является настройкой импорта/экспорта, а является настройкой формата. Этот параметр расширяет формат *.object. Подробнее о сглаживании: Smoothing
+If this option is activated, then when importing/exporting `*.object` files `split`-normals of smoothing will be read/written. This feature is not available in the official `X-Ray SDK`. To support `split`-normals you need to use corrected versions of `X-Ray SDK` or other modding software. When exporting, the standard smoothing groups are also preserved, which allows the resulting `*.object` files to be used in any version of `X-Ray SDK`, even if it does not support `split`-normals. If the parameter is deactivated, `split`-normals will not be imported/exported to/from `*.object` and the resulting files will correspond to the official version of `X-Ray SDK`. This setting is in the addon settings, not in the import/export operator settings, as this setting is not an import/export setting, but a format setting. This setting extends the `*.object` format. More about Smoothing: Smoothing
 
 ### Bone Shape Colors
 
-Параметры из этого блока указывают цвета шейпов и центров масс костей в окне 3D Viewport. Чтобы шейпы и центры масс отображались, нужно включить параметры Display Bone Shapes и Display Bone Mass Centers у арматуры.
+The parameters in this block specify the color of bone shapes and bone mass centres in the `3D Viewport` window. For shapes and mass centres to be displayed, you must enable the Display Bone Shapes and Display Bone Mass Centers parameters for the armature.
 
-Active Shape - цвет шейпа активной кости в Pose Mode.
-Selected Shape - цвет шейпов выделенных костей в Pose Mode.
-Unselected Shape - цвет шейпов не выделенных костей в Pose Mode.
-Shape in Object Mode - цвет шейпов всех костей в Object Mode.
+- `Active Shape` - color of active bone shape in Pose Mode.
+- `Selected Shape` - shape color of selected bones in Pose Mode.
+- `Unselected Shape` - shape color of unselected bones in Pose Mode.
+- `Shape in Object Mode` - shape color of all bones in Object Mode.
+
+___
+
+## Sources
+
+[Source](https://github.com/PavelBlend/blender-xray/wiki/Preferences-Others)

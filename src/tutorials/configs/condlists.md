@@ -3,7 +3,7 @@
 ___
 
 Courtesy of tdef#6225
-Transfered to modding book by demonized#1084
+Transferred to modding book by demonized#1084
 
 Condition list or condlist is one way to write dynamic configuration files and have this structure:
 
@@ -165,7 +165,7 @@ precondition = false
 
 Then npc will never give this quest
 
-True and false dont have any special meaning in the condlist on their own, in this case they matter only because the code that parses the condlist spelled out by the precondition line does different things
+True and false don't have any special meaning in the condlist on their own, in this case they matter only because the code that parses the condlist spelled out by the precondition line does different things
 depending on the pick_section_from_condlist return value
 
 If we change on_complete to
@@ -207,7 +207,7 @@ Now Hip will seek shelter from rain only if we are enemy to Freedom, women be li
 
 If you want to make custom conditions either create new functions inside xr_conditions or make your own script file defining functions inside xr_conditions scope
 
-### my_conditons.script
+### my_conditions.script
 
 ```lua,icon=.devicon-lua-plain
 function xr_conditions.has_more_money_than(a,b,c)

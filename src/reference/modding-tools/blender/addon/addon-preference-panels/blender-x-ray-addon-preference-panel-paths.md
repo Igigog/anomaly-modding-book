@@ -4,22 +4,20 @@ ___
 
 ## About
 
-Данная категория настроек содержит пути к файлам и папкам из игры/X-Ray SDK.
+This settings category contains paths to files and folders from the game/X-Ray SDK.
 
 ___
 
 ## Mode
 
-| Режим путей | Description |
-|---|---|
-| Base | базовый режим, который позволяет указать файлы и папки из одной игры/мода/X-Ray SDK |
-| Advanced | расширенный режим, который позволяет указать файлы и папки из нескольких игр/модов/X-Ray SDK |
+- `Base` - Basic mode that allows you to specify files and folders from the same game/mod/X-Ray SDK
+- `Advanced` - Advanced mode that allows you to specify files and folders from multiple games/mods/X-Ray SDKs
 
 ### Base
 
-Данные настройки указывают пути ко внешним файлам или директориям игры или X-Ray SDK. Есть возможность установить пути автоматически, на основе одного параметра. К примеру, если указать папку gamedata в параметре Gamedata Folder, то пустые пути (кроме, FS Ltx File) будут заполнены автоматически. Автоматически заполненные пути имеют кнопку с иконкой гаечного ключа справа. Чтобы изменить путь вручную, нужно нажать на эту кнопку. Кнопка с ключом исчезнет и вместо неё будет отображаться кнопка с иконкой папки. После этого можно открыть файловый браузер с помощью кнопки с изображённой папкой и в браузере выбрать нужную папку или файл. Либо можно изменить путь в текстовом поле, напечатав его с клавиатуры. Если путь задан вручную, то его значение не будет изменяться аддоном автоматически. Для того, чтобы вернуть автоматическое указание пути, нужно очистить поле ввода пути. Автоматически аддон устанавливает такие значения:
+These settings specify paths to external files or directories of the game or  `X-Ray SDK`. It is possible to set paths automatically based on a single parameter. For example, if you specify  `gamedata` folder in `Gamedata Folder` parameter then empty paths (except `FS Ltx File`) will be filled automatically. Automatically filled paths have a button with a spanner icon on the right. To change the path manually, you must click this button. The spanner button will disappear and the button with the folder icon will be displayed instead. You can then open the file browser using the button with the folder icon and select the desired folder or file in the browser. Or you can change the path in the text field by typing it from the keyboard. If the path is set manually, its value will not be changed automatically by the addon. In order to return the automatic indication of the path you need to clear the path input field. Automatically addon sets such values:
 
-| Параметр | Description |
+| Parameter | Description |
 |---|---|
 | FS Ltx File | - |
 | Gamedata Folder | . |
@@ -33,64 +31,64 @@ ___
 
 #### FS Ltx File
 
-Путь к fs.ltx файлу. Так же можно указать fsgame.ltx файл. Данный файл находится в X-Ray SDK и хранит пути к директориям. Аддон использует fs.ltx файл только для того, чтобы автоматически установить все остальные пути. Используются только эти переменные из файла: $fs_root$/$sdk_root$, $game_data$, $game_textures$, $game_meshes$, $game_levels$, $objects$. Поиск файлов gamemtl.xr, shaders.xr, shaders_xrlc.xr производится в директории, которая указана в $game_data$. Если пути уже настроены, то указывать FS Ltx File не обязательно. Данный параметр нужен для корректной автоматической установки путей, если fs.ltx файл был отредактирован и X-Ray SDK использует пути, которые отличаются от gamedata, gamedata\textures, gamedata\meshes, gamedata\levels, rawdata\objects.
+Path to `fs.ltx` file. You can also specify `fsgame.ltx` file. This file is located in `X-Ray SDK` and stores paths to directories. The addon uses the `fs.ltx` file only to automatically set all other paths. Only these variables from the file are used: `$fs_root$`/`$sdk_root$`, `$game_data$`, `$game_textures$`, `$game_meshes$`, `$game_levels$`, `$objects$`. The `gamemtl.xr,` `shaders.xr`, `shaders_xrlc.xr` files are searched for in the directory that is specified in `$game_data$`. If the paths are already configured, it is not necessary to specify `FS Ltx File`. This parameter is necessary for correct automatic paths setting, if `fs.ltx` file was edited and `X-Ray SDK` uses paths that differ from `gamedata`, `gamedata\textures`, `gamedata\meshes`, `gamedata\levels`, `rawdata\objects`.
 
 #### Gamedata Folder
 
-Путь, который должен ссылаться на gamedata папку (или на папку, которая указана в $game_data$, если fs.ltx был изменён). Данный путь используется только для автоматической установки параметров, которые расположены ниже. Пути автоматически устанавливаются, путём прибавления Gamedata Folder и заранее установленных значений. Значения устанавливаются следующим образом: Textures Folder - textures, Meshes Folder - meshes, Levels Folder - levels, Game Materials File - gamemtl.xr, Engine Shaders File - shaders.xr, Compile Shaders File - shaders_xrlc.xr, Objects Folder - ..rawdata\objects, где .. вначале Objects Folder означают перейти в пути на одну папку назад. То есть путь к Objects Folder будет выглядеть так: c:\programs\xray_sdk\rawdata\objects\, если Gamedata Folder имеет следующее значение: c:\programs\xray_sdk\gamedata\.
+Path, which must refer to the `gamedata` folder (or to the folder that is specified in `$game_data$` if `fs.ltx` has been modified). This path is only used to automatically set the parameters below. The paths are automatically set by adding `Gamedata Folder` and pre-set values. The values are set as follows: `Textures Folder` - `textures`, `Meshes Folder` - `meshes`, `Levels Folder` - `levels`, `Game Materials File` - `gamemtl.xr`, `Engine Shaders File` - `shaders.xr`, `Compile Shaders File` - `shaders_xrlc.xr`, `Objects Folder` - `..rawdata\objects`, where `..` at the beginning of `Objects Folder` means to go one folder back in the path. That is, the path to `Objects Folder` will look like this: `c:\programs\xray_sdk\rawdata\objects\`, if `Gamedata Folder` has the following value: `c:\programs\xray_sdk\gamedata\`.
 
 #### Textures Folder
 
-Путь, который должен ссылаться на $game_textures$. Обычно это папка gamedata\textures, которая содержит текстуры. Поддерживается загрузка только *.dds формата. Данный путь используется только теми операторами, которые импортируют/экспортируют форматы, поддерживающие использование текстур. При импорте, аддон ищет .dds текстуры по этому пути и загружает их в blender.
+The path that should refer to `$game_textures$`. Usually this is the `gamedata\textures` folder, which contains textures. Only `*.dds` format is supported for loading. This path is only used by operators that import/export formats that support the use of textures. When importing, the addon searches for `*.dds` textures in this path and loads them into `Blender`.
 
 #### Meshes Folder
 
-Путь к папке с игровыми 3D объектами и анимациями. Обычно находится в X-Ray SDK в папке gamedata\meshes. Используется для вычисления Export Path у импортированных *.ogf` файлов.
+Path to the folder with 3D game objects and animations. Usually found in `X-Ray SDK` in `gamedata\meshes` folder. It is used to calculate Export Path for imported `*.ogf` files.
 
 #### Levels Folder
 
-Путь к папке с игровыми уровнями. Обычно находится в X-Ray SDK в папке gamedata\levels. Используется при экспорте игровых уровней для вычисления относительных путей к *.dds текстурам, если они находятся в папке с уровнем в gamedata\levels, а не gamedata\textures. Обычно карты освещения хранятся в папке с уровнем.
+Path to the folder with game levels. Usually located in `X-Ray SDK` in `gamedata\levels` folder. Used when exporting game levels to calculate relative paths to `*.dds` textures, if they are located in the folder with level in `gamedata\levels`, not `gamedata\textures`. Usually lighting maps are stored in the level folder.
 
 #### Objects Folder
 
-Путь к папке с исходными 3D объектами и анимациями. Обычно находится в X-Ray SDK в папке rawdata\objects. Из этой папки аддон может считывать только *.object и .skls файлы. Данную папку используют .object, .level, .part, .group импортёры/экспортёры. Так же этот параметр используют некоторые операторы, например, Motions Browser (если его запускать из Motion Refs свитка, режим Load Active Motion Refs).
+Path to the folder with the source 3D objects and animations. Usually located in `X-Ray SDK` in the folder `rawdata\objects`. From this folder addon can read only `*.object` and `*.skls` files. This folder is used by `*.object`, `*.level`, `*.part`, `*.group` importers/exporters. Also this parameter is used by some operators, for example, `Motions Browser` (if you run it from `Motion Refs` scroll, `Load Active Motion Refs mode`).
 
 #### Engine Shader File
 
-Путь к shaders.xr файлу. Обычно хранится в gamedata\shaders.xr. Данный файл содержит описания настроек шейдеров. Отвечает за внешний вид поверхности в X-Ray SDK и игре. Если данный путь ссылается на shaders.xr файл, то список Shader в параметрах материалов будет заполнен именами шейдеров из данного файла и можно будет указать любое имя движкового шейдера из этого списка. Если данный путь не ссылается на shaders.xr файл, то список Shader у материалов будет пустым. Из shaders.xr файла считываются только имена шейдеров.
+Path to `shaders.xr` file. Usually stored in `gamedata\shaders.xr`. This file contains descriptions of shader settings. Responsible for surface appearance in `X-Ray SDK` and game. If this path refers to the `shaders.xr` file, then the `Shader` list in the material options will be filled with shader names from this file and you can specify any engine shader name from this list. If this path does not refer to the `shaders.xr` file, then the Shader list in the materials will be empty. Only shader names are read from the `shaders.xr` file.
 
 #### Compile Shader File
 
-Путь к shaders_xrlc.xr файлу. Обычно хранится в gamedata\shaders_xrlc.xr. Данный файл содержит описания настроек, которые использует компилятор геометрии уровней (xrLC.exe). Указывает компилятору свойства конечной игровой геометрии уровня. Исходная геометрия, в зависимости от компиляторного шейдера, может не иметь видимой или осязаемой для столкновений геометрии, иметь различный способ хранения освещения и т. д. Если данный путь ссылается на shaders_xrlc.xr файл, то список Compile у материалов заполнится именами шейдеров из этого файла и можно будет указать из списка любое имя компиляторного шейдера. Из shaders_xrlc.xr файла считываются только имена шейдеров.
+Path to `shaders_xrlc.xr` file. Usually stored in `gamedata\shaders_xrlc.xr`. This file contains descriptions of settings used by the level geometry compiler (`xrLC.exe`). It specifies to the compiler the properties of the final game level geometry. The source geometry, depending on the compiler shader, may have no visible or collision tangible geometry, have a different way of storing lighting, etc. If this path references the `shaders_xrlc.xr` file, the Compile list at materials will be populated with shader names from that file and you can specify any compiler shader name from the list. Only shader names are read from the `shaders_xrlc.xr` file.
 
 #### Game Materials File
 
-Путь к gamemtl.xr файлу. Обычно хранится в gamedata\gamemtl.xr. Данный файл хранит материалы поверхностей. В X-Ray Engine материалом является физическое свойство поверхности для коллизии, и не влияет на визуальное представление (не путать с материалам в blender, которые влияют на внешний вид). Для изменения внешнего вида поверхности в X-Ray Engine используются шейдеры. От материала зависят звуки шагов, wallmark-текстуры от выстрелов, трение, эффекты частиц при попадании пуль, способность получать отбрасываемые тени от динамических объектов и т. д. Если данный путь ссылается на gamemtl.xr файл, то список параметра GameMtl у материалов и костей заполнится именами материалов из gamemtl.xr файла и из этого списка можно будет указать любое имя материала. Если этот путь не ссылается на gamemtl.xr файл, то список GameMtl у материалов и костей будет пустым. Из gamemtl.xr файла считываются только имена, текстовые описания и целочисленные идентификаторы материалов.
+Path to `gamemtl.xr` file. Usually stored in `gamedata\gamemtl.xr`. This file stores surface materials. In `X-Ray Engine`, a material is a physical property of the surface for collision, and does not affect the visual representation (not to be confused with materials in `Blender`, which affect the appearance). The `X-Ray Engine` uses shaders to change the appearance of the surface. The material affects the sounds of footsteps, wallmark textures from gunshots, friction, particle effects when bullets hit, the ability to get cast shadows from dynamic objects, etc. If this path refers to `gamemtl.xr` file, then the list of `GameMtl` parameter for materials and bones will be filled with material names from `gamemtl.xr` file and any material name can be specified from this list. If this path does not reference the `gamemtl.xr` file, then the `GameMtl` list of materials and dice will be empty. Only names, text descriptions and integer identifiers of materials are read from the `gamemtl.xr` file.
 
 ___
 
 ### Advanced
 
-Данные параметры позволяют указать по два пути для каждого параметра. Первый путь - путь к папке или файлу платформы, например, ТЧ, ЧН, ЗП. Второй путь указывает папки и файлы для мода. Например, если нужно настроить аддон для импорта файлов из Arsenal Mod для ТЧ, то в качестве платформы нужно указать пути от распакованных архивов ТЧ, а в качестве мода указать пути к gamedata папке Arsenal Mod. Это позволит искать текстуры сразу из двух папок ТЧ и Arsenal Mod. Пути от мода имеют более высокий приоритет, как в игре.
+These parameters allow you to specify two paths for each parameter. The first path is the path to the folder or file of the platform, for example, `SoC`, `CS`, `CoP`. The second path specifies folders and files for the mod. For example, if you need to configure the addon to import files from `Arsenal Mod` for `SoC`, then as a platform should specify the paths from the unpacked archives `SoC`, and as a mod to specify the paths to the `gamedata` folder `Arsenal Mod`. This will allow you to search for textures from two folders at once `SoC` and `Arsenal Mod`. Paths from the mod have a higher priority, as in the game.
 
 #### Used Config
 
-Используемый конфиг путей. Список конфигов, которые можно выбрать, находится ниже в разделе Paths Configs.
+The paths config to use. The list of configs that can be selected can be found below under `Paths Configs`.
 
 #### Paths Configs
 
-Список конфигов путей. Каждый конфиг имеет параметры внизу, под меткой Active Paths Config. Чтобы изменить эти параметры, нужно выделить нужный конфиг в списке. Доступны два параметра.
+A list of path configs. Each config has parameters at the bottom, under the `Active Paths Config` label. To change these parameters, you must highlight the desired config in the list. Two parameters are available.
 
-Platform - пресет, который указывает пути к файлам и папкам платформы.
-Mod - пресет, который указывает пути к файлам и папкам мода.
+- `Platform` - Preset that specifies the paths to the platform files and folders.
+- `Mod` - preset that specifies the paths to the mod's files and folders.
 
 #### Paths Presets
 
-Список пресетов путей. Элементы из этого списка можно выбрать в параметрах Platform и Mod из раздела Paths Configs. Настройки идентичны настройкам из режима Base. Так же есть дополнительный параметр Format Version.
+A list of path presets. The items in this list can be selected from the `Platform` and `Mod` settings in the `Paths Configs` section. The settings are identical to those in Base mode. There is also an additional `Format Version` parameter.
 
 #### Format Version
 
-Указывает версию платформы ТЧ или ЧН/ЗП. Этот параметр указывает значение по-умолчанию для параметра Format Version операторов импорта/экспорта.
+Specifies the version of the `SoC` or `CS/CoP` platform. This parameter specifies the default value for the `Format Version` parameter of the import/export operators.
 
 ___
 

@@ -223,15 +223,15 @@ Weapon animation settings when attempting to shoot with an empty magazine (camer
 
 </details>
 
-## HUD Alt Rosition\Orientation Parameters
+## HUD Alt Position\Orientation Parameters
 
 <details>
-    <summary>HUD Alt Rosition\Orientation Parameters</summary>
+    <summary>HUD Alt Position\Orientation Parameters</summary>
 
 | Parameter name | Parameter description | Example value | Value Data Type | Possible parameter values and their descriptions |
 |---|---|---|:---:|---|
-| aim_hud_offset_alt_pos |  |  |  |  |
-| aim_hud_offset_alt_rot |  |  |  |  |
+| aim_hud_offset_alt_pos | Alternative aim offset position | 0, 0, 0 |  | X - (`+`) left / (`-`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) roll to the right / (`+`) roll to the left |
+| aim_hud_offset_alt_rot | Alternative aim offset rotation | 0, 0, 0 |  | X - (`+`) left / (`-`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) roll to the right / (`+`) roll to the left |
 | scope_zoom_factor_alt |  |  |  |  |
 
 </details>
@@ -274,7 +274,7 @@ You can read about the parameters of the sounds [here](weapon_sounds.ltx.md)
 
 | Parameter name | Parameter description | Example value | Value Data Type | Possible parameter values and their descriptions |
 |---|---|---|:---:|---|
-| freeelook_z_offset_mul | Сamera displacement along the z-axis when the camera moves freely | 0.4 |  | Z - (`-`) forward / (`+`) backward |
+| freeelook_z_offset_mul | Camera displacement along the z-axis when the camera moves freely | 0.4 |  | Z - (`-`) forward / (`+`) backward |
 | camera_move_epsilon |  |  |  |  |
 | disp_min |  |  |  |  |
 | speed_min |  |  |  |  |

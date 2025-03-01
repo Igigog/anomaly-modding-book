@@ -97,7 +97,7 @@ It is written in `%%` brackets and can hold such things as:
 
 - Adding infoportion `+info_name`
 - Removing infoportion `-info_name`
-- Function call from `xr_effects.sctript`, unlike condition, can only be called with `=`
+- Function call from `xr_effects.script`, unlike condition, can only be called with `=`
 
 Example entry, in this case we have this action:
 

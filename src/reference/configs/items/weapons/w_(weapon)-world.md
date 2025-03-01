@@ -81,10 +81,10 @@ ___
 | inv_grid_width | icon width | 5 | number of 50x50 pixels cells |  |
 | inv_grid_x | the coordinate of the upper left corner of the icon on a 50x50 pixel grid on the X axis | 35 | number of cells indented to the right |  |
 | inv_grid_y | The coordinate of the upper left corner of the icon on a 50x50 pixel grid on the Y axis | 0 | number of cells indenting downward |  |
-| inv_name | The name in the inventory | st_wpn_akm | Section name, in *.xml files included in the string_table section of `gamedata\configs\text\*localization*\st_items_weapons.xml` |  |
-| inv_name_short | short name in the inventory | st_wpn_akm | Section name, in *.xml files included in the string_table section of `gamedata\configs\text\*localization*\st_items_weapons.xml` |  |
+| inv_name | The name in the inventory | st_wpn_akm | Section name, in [*.xml](../../../main-folders-and-files/file-formats/conf-script/xml.md) files included in the string_table section of `gamedata\configs\text\*localization*\st_items_weapons.xml` |  |
+| inv_name_short | short name in the inventory | st_wpn_akm | Section name, in [*.xml](../../../main-folders-and-files/file-formats/conf-script/xml.md) files included in the string_table section of `gamedata\configs\text\*localization*\st_items_weapons.xml` |  |
 | inv_weight | the inventory weight of the unloaded weapon | 3.3 | The number is given in kilograms |  |
-| description | Description in inventory | st_wpn_akm_descr | Section name, in *.xml files included in the string_table section of `gamedata\configs\text\*localization*\st_items_weapons.xml` |  |
+| description | Description in inventory | st_wpn_akm_descr | Section name, in [*.xml](../../../main-folders-and-files/file-formats/conf-script/xml.md) files included in the string_table section of `gamedata\configs\text\*localization*\st_items_weapons.xml` | no_description |
 | slot | Inventory slot number | 2 | 0 - knives<br>1 - pistols<br>2 - shotguns, machine guns, rifles, grenade launchers<br>3 - grenades (may be crashing)<br>4 - binoculars<br>5 - bolts (may be crashing)<br>6 - outfits (may be crashing) |  |
 | highlight_equipped |  |  | true - 1 - on (Yes)<br> false - 0 - off (No) |  |
 

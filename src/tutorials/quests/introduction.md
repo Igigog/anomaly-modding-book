@@ -93,7 +93,7 @@ end
 
 After doing either task should show the title and description you set.
 
-Now you need to decide a rough outline of the task, dividing them by stage makes organizing code easier, but nothing prevents you to hangle all the logic in a single stage, however stage matters if you want the task to be part of the random tasks given by npc that will be explained later.
+Now you need to decide a rough outline of the task, dividing them by stage makes organizing code easier, but nothing prevents you to handle all the logic in a single stage, however stage matters if you want the task to be part of the random tasks given by npc that will be explained later.
 
 0. Stage 0: kill the soldiers
 
@@ -219,7 +219,7 @@ on_complete = %=reward_random_money(5000:10000) =reward_stash(true) =complete_ta
 
 ___
 
-on complete is a condlist, which is basically a "dynamic" config line but with tons of gotchas, so when in doubt just copypaste from exisitng ones and edit values accordingly
+on complete is a condlist, which is basically a "dynamic" config line but with tons of gotchas, so when in doubt just copypaste from existing ones and edit values accordingly
 
 ```ini,lang=LTX
 on_complete = %=reward_random_money(5000:10000) =reward_stash(true) =complete_task_inc_goodwill(50:stalker)%

@@ -11,7 +11,7 @@ DXML is a part of [modded exes repo](https://github.com/themrdemonized/xray-mono
 DXML allows to manipulate XML files before they loaded into the engine or scripts by utilizing Lua
 The engine sends XML string to Lua where it is transformed into DOM-like object (from now on lets call it xml_obj) that can be manipulated by Lua methods and then it is converted back to XML string and sent back to engine
 
-To use it in your mods, you have to create a new script file that is called `modxml_<yourname>.script`. The yourname can be any string, it doesnt matter. The "modxml_" part must be in the filename.
+To use it in your mods, you have to create a new script file that is called `modxml_<yourname>.script`. The yourname can be any string, it doesn't matter. The "modxml_" part must be in the filename.
 
 Then, in this file, type:
 
@@ -324,7 +324,7 @@ Full list of fields available in "data" table:
 
 ### on_specific_character_dialog_list
 
-`on_specific_character_dialog_list` callback provides possibility to change available dialogs for NPCs. The callback sends character id and dialog list class object, that can be used to manupulate available dialogs. An example on how to use it:
+`on_specific_character_dialog_list` callback provides possibility to change available dialogs for NPCs. The callback sends character id and dialog list class object, that can be used to manipulate available dialogs. An example on how to use it:
 
 ```lua,icon=.devicon-lua-plain
 function on_game_start()

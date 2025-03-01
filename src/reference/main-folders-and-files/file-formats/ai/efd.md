@@ -58,7 +58,7 @@ ___
 
 ## Programs editing this file
 
-- Evaluation Function Consctructor
+- Evaluation Function Constructor
 
 ___
 

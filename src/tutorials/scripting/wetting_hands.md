@@ -42,7 +42,7 @@ By loading your favorite saved game you will now be shown the state of affairs i
 
 Let's see how it works:
 
-1. Function `on_game_start` is always called after loading all the scripts in `scripts` folder. That happens really early in the loading screen, and the game is not initialised at this point, so we need another time to show the message.
+1. Function `on_game_start` is always called after loading all the scripts in `scripts` folder. That happens really early in the loading screen, and the game is not initialized at this point, so we need another time to show the message.
 1. Callback `actor_on_first_update` is fired exactly once after the game is loaded. This is the point in time where the game shows you the "Press any key to continue" in the loading screen, but game session already started, so it's fine.
 1. Now we actually send the message in function `actor_on_first_update`. `db.actor` is player, `30000` is for how long the message will be shows, everything else is irrelevant.
 
