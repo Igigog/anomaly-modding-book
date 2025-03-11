@@ -30,8 +30,12 @@ ___
 - [Configs]()
   - [Structure of Files](configs/structure-of-files.md)
   - [Condlists](configs/condlists.md)
+  - [Sections](configs/sections.md)
   - [Inventory Icons](configs/inventory_icons.md)
   - [Algoritm of Logic](configs/algoritm-of-logic.md)
+  - [Items]
+    - [Trade](configs/items/trade/trade_generic.ltx.md)
+      - [Preset](configs/items/trade/preset/trade_presets.ltx.md)
 
 ___
 
