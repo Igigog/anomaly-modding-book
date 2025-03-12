@@ -257,7 +257,7 @@ ___
 ## BNF Syntax Specification
 Courtesy of Lander
 
-```
+```bnf
                   ;; A Condlist is either a Statement, or a comma-separated list of Statements.
                   ;- Statements are evaluated left-to-right,
                   ;  and the first whose Condition returns true will apply its Effect
@@ -279,14 +279,13 @@ Courtesy of Lander
       <opt-value> ::= <value> | ""
 
                   ;; A Condition is a list of Actions surrounded by curly braces.
-                  ;- It evaluates its actions to produce a boolean,
-                  ;  combining them via logical AND.
+                  ;- Actions are evaluated left-to-right and combined via logical AND to produce a boolean.
                   ;- Call / Not-Call actions within a Condition namespace via xr_conditions.
                   ;  (i.e. =func(1, 2, 3) will call xr_conditions.func(obj1, obj2, {1, 2, 3}))
       <condition> ::= "{" <actions> "}"
 
                   ;; An Effect is a list of Actions surrounded by percent signs.
-                  ;- It applies side-effects to the game state.
+                  ;- Actions are evaluated left-to-right, and their return values are ignored.
                   ;- Call / Not-Call actions within an Effect namespace via xr_effects.
                   ;  (i.e. =func(1, 2, 3) will call xr_effects.func(obj1, obj2, {1, 2, 3}))
          <effect> ::= "%" <actions> "%"
@@ -297,8 +296,8 @@ Courtesy of Lander
                   ;; Lists of Actions are separated with spaces.
         <actions> ::= <action> | <actions> " " <action>
 
-                  ;; An Action is either a Has, Not-Has, Call, or Not-Call.
-         <action> ::= <has> | <not-has> | <call> | <not-call>
+                  ;; An Action is either a Has, Not-Has, Randomize, Call, or Not-Call.
+         <action> ::= <has> | <not-has> | <randomize> | <call> | <not-call>
 
                   ;; A Has action is a plus sign followed by an Info.
                   ;- If used inside a Condition, it tests for the presence
@@ -315,6 +314,10 @@ Courtesy of Lander
                   ;; An Info is simply a string, and represents a key saved on an actor.
            <info> ::= <string>
 
+                  ;; A Randomize is a tilde followed by a number.
+                  ;  It is equivalent to a Call action whose function returns 'math.random(1,100) > number'.
+      <randomize> ::= "~" <number>
+
                   ;; A Call action is made up of an equals symbol followed by a
                   ;; function name and braced parameter list.
                   ;- It evaluates the given function, with different semantics depending
@@ -330,11 +333,12 @@ Courtesy of Lander
                   ;  but applies a logical NOT to its return value.
        <not-call> ::= "!" <function-name> "(" <function-params> ")"
 
-                  ;; Function parameters may be empty, singular, or separated by commas.
-<function-params> ::= "" | <function-param> | <function-params> "," <function-param>
+                  ;; Function parameters may be empty, singular, or separated by colons.
+<function-params> ::= "" | <function-param> | <function-params> ":" <function-param>
 
                   ;; A function parameter is simply a string,
                   ;; and will be passed as such during runtime.
                   ;- As a result, functions must convert boolean and numeric values manually.
  <function-param> ::= <string>
+
 ```
