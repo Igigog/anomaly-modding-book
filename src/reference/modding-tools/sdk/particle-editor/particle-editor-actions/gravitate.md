@@ -1,4 +1,4 @@
-### Gravitate
+# Gravitate
 
 ## About
 

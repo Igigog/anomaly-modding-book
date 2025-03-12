@@ -12,12 +12,12 @@ ___
 
 ### Format
 
-- R - Glossiness (Glossiness, aka inverted roughness. It works best in stalker, and allows for using better BRDF)
+- R - Glossiness (Glossiness, aka inverted roughness. It works best in stalker, and allows for using better [BRDF](https://en.wikipedia.org/wiki/Bidirectional_reflectance_distribution_function))
 - G - Normal Z (Unused in Anomaly 1.6.0)
-- B - Normal Y (DIRECTX format.)
+- B - Normal Y (DirectX format)
 - A - Normal X
 
-### Supported texture formats
+### Supported texture compression formats
 
 - DXT1
 - ADXT1
@@ -39,3 +39,9 @@ ___
 
 - [Bump Generator](../../modding-tools/bump-generator.md)
 - [SDK 0.7](../../sdk/index.html)
+
+___
+
+## Programs editing this file
+
+- Any program that works with [.dds](dds.md) files (Example: Paint.net or GIMP)

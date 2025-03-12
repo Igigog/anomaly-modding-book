@@ -32,7 +32,7 @@ This table lists the X-Ray file formats that the addon can import/export.
 
 ## [Compatibility](https://github.com/PavelBlend/blender-xray/wiki#supported-blender-versions)
 
-2.77 - 3.6
+2.77 - 4.3
 
 ___
 

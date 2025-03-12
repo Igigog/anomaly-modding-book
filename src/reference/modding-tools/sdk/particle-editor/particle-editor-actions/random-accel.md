@@ -1,4 +1,4 @@
-### Random Accel
+# Random Accel
 
 ## About
 

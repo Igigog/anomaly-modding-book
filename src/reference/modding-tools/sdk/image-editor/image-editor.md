@@ -24,7 +24,7 @@ Shows the characteristics of the texture. Width, height and alpha channel.
 |---|---|
 | [DXT1](https://www.fsdeveloper.com/wiki/index.php?title=DXT_compression_explained#DXT1) | Compression without alpha channel support |
 | [DXT1 Alpha](https://www.fsdeveloper.com/wiki/index.php?title=DXT_compression_explained#DXT1_with_alpha) | Compression with alpha channel support |
-| DXT3 |  |
+| [DXT3](https://www.fsdeveloper.com/wiki/index.php?title=DXT_compression_explained#DXT3) |  |
 | [DXT5](https://www.fsdeveloper.com/wiki/index.php?title=DXT_compression_explained#DXT5) | Compression with alpha channel support |
 | 16 bit (1:5:5:5) |  |
 | 16 bit (5:6:5) |  |

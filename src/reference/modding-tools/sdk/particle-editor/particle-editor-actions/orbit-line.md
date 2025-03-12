@@ -1,8 +1,8 @@
-### Match Velocity
+# Orbit Line
 
 ## About
 
-Modify each particles velocity to be similar to that
+Accelerate toward the closest point on the given
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -20,8 +20,16 @@ Modify each particles velocity to be similar to that
   </tr></thead>
 <tbody>
   <tr>
-    <td class="tg-v0mg" rowspan="5">Match Velocity</td>
+    <td class="tg-v0mg" rowspan="9">Orbit Line</td>
     <td class="tg-v0mg">Name</td>
+    <td class="tg-v0mg"></td>
+  </tr>
+  <tr>
+    <td class="tg-v0mg">Position</td>
+    <td class="tg-v0mg"></td>
+  </tr>
+  <tr>
+    <td class="tg-v0mg">Axis</td>
     <td class="tg-v0mg"></td>
   </tr>
   <tr>
@@ -37,11 +45,14 @@ Modify each particles velocity to be similar to that
     <td class="tg-v0mg"></td>
   </tr>
   <tr>
+    <td class="tg-v0mg">Allow Rotate</td>
+    <td class="tg-v0mg"></td>
+  </tr>
+  <tr>
     <td class="tg-v0mg">Draw</td>
     <td class="tg-v0mg"></td>
   </tr>
   <tr>
-    <td class="tg-v0mg"></td>
     <td class="tg-v0mg">Enabled</td>
     <td class="tg-v0mg"></td>
   </tr>

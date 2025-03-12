@@ -25,13 +25,13 @@ File Button
 | Clear | Clears scene | - |
 | Load | Loads an object into a new scene | - |
 | Save | Saves object | - |
-| Save As | Saves the object as | .object<br> .lwo</br> |
+| Save As | Saves the object as | [.object](../../main-folders-and-files/file-formats/models/object.md)<br> .lwo</br> |
 | Make Trumbnail | Creates trumbnail | Creates a thumbnail from the camera view |
 | Open Recent | Opens recent | - |
 | Import | Imports the model into the scene | - |
 | Optimize Motions |  |  |
 | Batch Convert |  |  |
-| Export | Exports the model to formats  | .ogf<br> [.omf](../main-folders-and-files/file-formats/index.html#omf-open-motions-format)<br> [.obj](../main-folders-and-files/file-formats/index.html#object)<br> [.dm](../main-folders-and-files/file-formats/index.html#dm-detail-model)<br>C++ |
+| Export | Exports the model to formats  | [.ogf](../../main-folders-and-files/file-formats/models/ogf.md)<br> [.omf](../main-folders-and-files/file-formats/index.html#omf-open-motions-format)<br> [.obj](../main-folders-and-files/file-formats/index.html#object)<br> [.dm](../main-folders-and-files/file-formats/index.html#dm-detail-model)<br>C++ |
 | Quit | Exiting the program | - |
 
 ___

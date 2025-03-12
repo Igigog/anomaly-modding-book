@@ -3,8 +3,8 @@
 - Program Developers:
   - Mortany (Original Author)
   - ValeroK
-- The version described in the article: [3.8](https://github.com/VaIeroK/OGF-tool/releases/tag/3.8)
-- [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3549-ogfdm-editor-v24)
+- The version described in the article: [4.1](https://github.com/VaIeroK/OGF-tool/releases/tag/4.1)
+- [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3549-ogfdmdetailsobj-editor-v41/)
 
 ___
 

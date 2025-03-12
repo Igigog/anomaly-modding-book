@@ -1,6 +1,8 @@
-### Explosion
+# Jet
 
-> An Explosion
+## About
+
+Accelerate particles that are near the center of the jet
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -15,47 +17,63 @@
     <th class="tg-v0mg">Key</th>
     <th class="tg-v0mg">Value</th>
     <th class="tg-v0mg">Value Description</th>
+    <th class="tg-v0mg">Parameter</th>
+    <th class="tg-v0mg">Parameter Description</th>
   </tr></thead>
 <tbody>
   <tr>
-    <td class="tg-v0mg" rowspan="10">Explosion</td>
+    <td class="tg-v0mg" rowspan="9">Jet</td>
     <td class="tg-v0mg">Name</td>
+    <td class="tg-v0mg"></td>
+    <td class="tg-v0mg">-</td>
+    <td class="tg-v0mg">-</td>
+  </tr>
+  <tr>
+    <td class="tg-v0mg">Accelerate</td>
+    <td class="tg-v0mg"></td>
+    <td class="tg-v0mg">Center</td>
     <td class="tg-v0mg"></td>
   </tr>
   <tr>
     <td class="tg-v0mg">Center</td>
     <td class="tg-v0mg"></td>
-  </tr>
-  <tr>
-    <td class="tg-v0mg">Velocity</td>
-    <td class="tg-v0mg"></td>
+    <td class="tg-v0mg">-</td>
+    <td class="tg-v0mg">-</td>
   </tr>
   <tr>
     <td class="tg-v0mg">Magnitude</td>
     <td class="tg-v0mg"></td>
-  </tr>
-  <tr>
-    <td class="tg-v0mg">Standart Dev</td>
-    <td class="tg-v0mg"></td>
+    <td class="tg-v0mg">-</td>
+    <td class="tg-v0mg">-</td>
   </tr>
   <tr>
     <td class="tg-v0mg">Epsilon</td>
     <td class="tg-v0mg"></td>
+    <td class="tg-v0mg">-</td>
+    <td class="tg-v0mg">-</td>
   </tr>
   <tr>
-    <td class="tg-v0mg">Age</td>
+    <td class="tg-v0mg">Max Radius</td>
     <td class="tg-v0mg"></td>
+    <td class="tg-v0mg">-</td>
+    <td class="tg-v0mg">-</td>
   </tr>
   <tr>
     <td class="tg-v0mg">Allow Rotate</td>
     <td class="tg-v0mg"></td>
+    <td class="tg-v0mg">-</td>
+    <td class="tg-v0mg">-</td>
   </tr>
   <tr>
     <td class="tg-v0mg">Draw</td>
     <td class="tg-v0mg"></td>
+    <td class="tg-v0mg">-</td>
+    <td class="tg-v0mg">-</td>
   </tr>
   <tr>
     <td class="tg-v0mg">Enabled</td>
     <td class="tg-v0mg"></td>
+    <td class="tg-v0mg">-</td>
+    <td class="tg-v0mg">-</td>
   </tr>
 </tbody></table>

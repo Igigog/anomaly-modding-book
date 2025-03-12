@@ -1,8 +1,8 @@
-### Move
+# Gravity
 
 ## About
 
-Move particles positions based on velocities
+Accelerate particles in the given direction
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -20,8 +20,16 @@ Move particles positions based on velocities
   </tr></thead>
 <tbody>
   <tr>
-    <td class="tg-v0mg" rowspan="3">Move</td>
+    <td class="tg-v0mg" rowspan="5">Gravity</td>
     <td class="tg-v0mg">Name</td>
+    <td class="tg-v0mg"></td>
+  </tr>
+  <tr>
+    <td class="tg-v0mg">Direction</td>
+    <td class="tg-v0mg"></td>
+  </tr>
+  <tr>
+    <td class="tg-v0mg">Allow Rotate</td>
     <td class="tg-v0mg"></td>
   </tr>
   <tr>

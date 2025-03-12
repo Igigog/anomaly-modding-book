@@ -1,8 +1,8 @@
-### Orbit Line
+# Move
 
 ## About
 
-Accelerate toward the closest point on the given
+Move particles positions based on velocities
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -20,32 +20,8 @@ Accelerate toward the closest point on the given
   </tr></thead>
 <tbody>
   <tr>
-    <td class="tg-v0mg" rowspan="9">Orbit Line</td>
+    <td class="tg-v0mg" rowspan="3">Move</td>
     <td class="tg-v0mg">Name</td>
-    <td class="tg-v0mg"></td>
-  </tr>
-  <tr>
-    <td class="tg-v0mg">Position</td>
-    <td class="tg-v0mg"></td>
-  </tr>
-  <tr>
-    <td class="tg-v0mg">Axis</td>
-    <td class="tg-v0mg"></td>
-  </tr>
-  <tr>
-    <td class="tg-v0mg">Magnitude</td>
-    <td class="tg-v0mg"></td>
-  </tr>
-  <tr>
-    <td class="tg-v0mg">Epsilon</td>
-    <td class="tg-v0mg"></td>
-  </tr>
-  <tr>
-    <td class="tg-v0mg">Max Radius</td>
-    <td class="tg-v0mg"></td>
-  </tr>
-  <tr>
-    <td class="tg-v0mg">Allow Rotate</td>
     <td class="tg-v0mg"></td>
   </tr>
   <tr>

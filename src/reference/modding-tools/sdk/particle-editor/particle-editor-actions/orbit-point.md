@@ -1,8 +1,8 @@
-### Kill Old
+# Orbit Point
 
 ## About
 
-Remove old particles
+Accelerate toward the given center point
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -20,16 +20,28 @@ Remove old particles
   </tr></thead>
 <tbody>
   <tr>
-    <td class="tg-v0mg" rowspan="5">Kill Old</td>
+    <td class="tg-v0mg" rowspan="8">Orbit Point</td>
     <td class="tg-v0mg">Name</td>
     <td class="tg-v0mg"></td>
   </tr>
   <tr>
-    <td class="tg-v0mg">Age Limit</td>
+    <td class="tg-v0mg">Center</td>
     <td class="tg-v0mg"></td>
   </tr>
   <tr>
-    <td class="tg-v0mg">Kill Less Than</td>
+    <td class="tg-v0mg">Magnitude</td>
+    <td class="tg-v0mg"></td>
+  </tr>
+  <tr>
+    <td class="tg-v0mg">Epsilon</td>
+    <td class="tg-v0mg"></td>
+  </tr>
+  <tr>
+    <td class="tg-v0mg">Max Radius</td>
+    <td class="tg-v0mg"></td>
+  </tr>
+  <tr>
+    <td class="tg-v0mg">Allow Rotate</td>
     <td class="tg-v0mg"></td>
   </tr>
   <tr>

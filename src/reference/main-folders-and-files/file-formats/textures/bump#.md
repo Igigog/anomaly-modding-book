@@ -13,9 +13,9 @@ ___
 ### Format
 
 - RGB - Error correction for normal map [bump.dds](bump.md) - Not necessary if you're using good quality normal map. It's generated with SDK
-- A - height map; used for parallax, if the use of it was turned on when setting up the texture
+- A - Height map (Used for parallax normal mapping)
 
-### Supported texture formats
+### Supported texture compression formats
 
 - DXT1
 - ADXT1
@@ -37,3 +37,9 @@ ___
 
 - [Bump Generator](../../modding-tools/bump-generator.md)
 - [SDK 0.7](../../sdk/index.html)
+
+___
+
+## Programs editing this file
+
+- Any program that works with [.dds](dds.md) files (Example: Paint.net or GIMP)

@@ -15,7 +15,7 @@ ___
 - RGB - Diffuse colour
 - A - Alpha (Used for translucent/transparent shaders like glass/grass)
 
-### Supported texture formats
+### Supported texture compression formats
 
 - DXT1
 - ADXT1

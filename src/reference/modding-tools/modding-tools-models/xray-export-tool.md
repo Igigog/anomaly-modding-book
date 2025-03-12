@@ -3,8 +3,8 @@
 - Program Developers:
   - RedPandaProject (BearIvan and other) (Original Authors)
   - ValeroK
-- The version described in the article: [4.35](https://github.com/VaIeroK/XrayExportTool/releases/tag/4.35)
-- [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3577-object-editor-v435)
+- The version described in the article: [4.35](https://github.com/VaIeroK/XrayExportTool/releases/tag/4.4)
+- [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3577-object-editor-v44/)
 
 ___
 
@@ -16,7 +16,7 @@ Tool for fast editing and exporting raw stalker formats
 
 ## Features
 
-- Uncompressed ogf export (HQ Geometry+)
+- Uncompressed .ogf export (HQ Geometry+)
 - Removed the limit on the maximum number of vertexes in 65535
 - HQ Geometry with patches, exports better than SDK
 - Save and load .bones settings
@@ -42,7 +42,7 @@ Tool for fast editing and exporting raw stalker formats
 | [.skls](../../main-folders-and-files/file-formats/animations/skl-skls.md) |
 | [.bones](../../main-folders-and-files/file-formats/models/bones.md) |
 | [.dm](../../main-folders-and-files/file-formats/models/dm.md) |
-| .obj (wavefront) |
+| [.obj (wavefront)](https://en.wikipedia.org/wiki/Wavefront_.obj_file) |
 | [.ltx (bone parts)](../../main-folders-and-files/file-formats/models/bone-parts.md) |
 
 ## Functionality

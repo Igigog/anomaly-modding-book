@@ -20,7 +20,7 @@ If this option is enabled, in the import/export menu the operators will be in a 
 
 ### Check for Updates after Starting Blender
 
-When starting blender, check for a new version of the addon. More information about the update: Addon update.
+When starting blender, check for a new version of the addon.
 
 ### Print Batch Import/Export Status to the Console
 

@@ -20,4 +20,4 @@ ___
 
 ## Programs editing this file
 
-- Any program that works with .dds files (Example: Paint.net or GIMP)
+- Any program that works with [.dds](dds.md) files (Example: Paint.net or GIMP)

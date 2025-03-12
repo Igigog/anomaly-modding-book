@@ -2,14 +2,13 @@
 
 - Program Developer:
   - i-love-kfc
-- The version described in the article: [1.4](https://gitlab.com/i-love-kfc/thm-editor/-/releases/1.4)
-- [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3543-thm-editor)
+- The version described in the article: [1.5](https://gitlab.com/i-love-kfc/thm-editor/-/releases/1.5)
 
 ___
 
 ## About
 
-Utility for editing .thm files without the need to use the SDK
+Utility for editing [.thm](../../main-folders-and-files/file-formats/textures/thm.md) files without the need to use the SDK
 
 ![thm-editor centered](images/thm-editor-by-i-love-kfc.png)
 
@@ -23,21 +22,10 @@ Utility for editing .thm files without the need to use the SDK
 
 ### Buttons
 
-**Open thm**
-
-> Opens a .thm file
-
-**Save**
-
-> Save file
-
-**Save As**
-
-> Save as
-
-**Import DDS**
-
-> Imports .dds texture
+- Open thm - Opens a .thm file
+- Save - Save file
+- Save As - Save as
+- Import DDS - Imports .dds texture
 
 ### Edit flags
 
@@ -67,20 +55,20 @@ Utility for editing .thm files without the need to use the SDK
 | [Normal Map](https://en.wikipedia.org/wiki/Normal_mapping) | Normal Map |
 | Terrain | Terrain Map |
 
-### Texture format
+### Texture compression formats
 
 | Field | Description |
 |---|---|
 | [DXT1](https://www.fsdeveloper.com/wiki/index.php?title=DXT_compression_explained#DXT1) | Compression without alpha channel support |
 | [ADXT1](https://www.fsdeveloper.com/wiki/index.php?title=DXT_compression_explained#DXT1_with_alpha) | Compression with alpha channel support |
 | [DXT5](https://www.fsdeveloper.com/wiki/index.php?title=DXT_compression_explained#DXT5) | Compression with alpha channel support |
-| [4444](https://docs.unity3d.com/ScriptReference/TextureFormat.RGBA4444.html) | aka RGBA4444<br> Color and alpha texture format, 4 bit per channel |
-| 1555 | aka RGBA1555<br>A pixel occupies 16 bits (2 bytes) and contains color and transparency information in the following format:<br> 5 bits for the red channel (R)<br> 5 bits for the green channel (G)<br> 5 bits for the blue channel (B)<br> 1 bit for the alpha channel (A) |
-| 565 | aka RGB565<br> Each pixel occupies 16 bits (or 2 bytes) and contains color information in the following distribution:<br> 5 bits for the red channel (R)<br> 6 bits for the green channel (G)<br> 5 bits for the blue channel (B) |
+| [4444](https://docs.unity3d.com/ScriptReference/TextureFormat.RGBA4444.html) | aka `D3DFMT_A4R4G4B4`<br> Color and alpha texture format, 4 bit per channel |
+| 1555 | aka `D3DFMT_A1R5G5B5`<br>A pixel occupies 16 bits (2 bytes) and contains color and transparency information in the following format:<br> 5 bits for the red channel (R)<br> 5 bits for the green channel (G)<br> 5 bits for the blue channel (B)<br> 1 bit for the alpha channel (A) |
+| 565 | aka `D3DFMT_R5G6B5`<br> Each pixel occupies 16 bits (or 2 bytes) and contains color information in the following distribution:<br> 5 bits for the red channel (R)<br> 6 bits for the green channel (G)<br> 5 bits for the blue channel (B) |
 | RGB | Compression without alpha channel support |
 | RGBA | Compression with alpha channel support |
 | NVHS | NVIDIA High Compression (NVidia Texture Format (GEForce 3)) |
-| NVHU | NVIDIA High-Quality Texture Compression (NVidia Texture Format )|
+| NVHU | NVIDIA High-Quality Texture Compression (NVidia Texture Format)|
 | [A8](https://learn.microsoft.com/en-us/windows/win32/direct3d9/d3dformat) | 8-bit alpha only DirectX Format |
 | [L8](https://learn.microsoft.com/en-us/windows/win32/direct3d9/d3dformat) | 8-bit luminance only DirectX Format |
 | [A8L8](https://learn.microsoft.com/en-us/windows/win32/direct3d9/d3dformat) | 16-bit using 8 bits each for alpha and luminance DirectX Format |
@@ -144,50 +132,25 @@ Different shading algorithms
 
 - [ ] SOC format - SoC format of .thm
 
-Border Color
+### Fields
 
-
-
-Fade Color
-
-
-
-Fade Amout
-
-
-
-Material Weight
-
-Shading model weight (0.0 - 1.0)
-
-Detail Scale
-
-[Detail Map](../main-folders-and-files/file-formats/index.html#detail_map_name_with-bump-or-bumpdds) Scale
-
-Texture Width
-Texture Height
-
-Fade Delay
-
-
-Bump Height
-
-[Bump Map](../main-folders-and-files/file-formats/index.html#bumpdds-1) Height
-
-Detail name
-
-Path to [Detail Map](../main-folders-and-files/file-formats/index.html#detail_map_name_with-bump-or-bumpdds)
-
-Bump name
-
-Path to [Bump Map](../main-folders-and-files/file-formats/index.html#bumpdds-1)
-
-Normal Map name
-
-Path to Normal Map
+| Field | Description |
+|---|---|
+| Border Color |  |
+| Fade Color |  |
+| Fade Amout |  |
+| Material Weight | Shading model weight (0.0 - 1.0) |
+| Detail Scale | [Detail Map](../main-folders-and-files/file-formats/index.html#detail_map_name_with-bump-or-bumpdds) Scale |
+| Texture Width | Texture Width |
+| Texture Height | Texture Height |
+| Fade Delay |  |
+| Bump Height | [Bump Map](../main-folders-and-files/file-formats/index.html#bumpdds-1) Height |
+| Detail name | Path to [Detail Map](../main-folders-and-files/file-formats/index.html#detail_map_name_with-bump-or-bumpdds) |
+| Bump name | Path to [Bump Map](../main-folders-and-files/file-formats/index.html#bumpdds-1) |
+| Normal Map name | Path to Normal Map |
 
 ___
 
 ## Sources
 
-[Source Code](https://gitlab.com/i-love-kfc/thm-editor/)
+[Source Code of Original THM Editor by i-love-kfc](https://gitlab.com/i-love-kfc/thm-editor/)

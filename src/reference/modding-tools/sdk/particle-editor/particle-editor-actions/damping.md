@@ -1,6 +1,6 @@
 # Damping
 
-## About 
+## About
 
 Simulate air by slowing down particle velocities
 

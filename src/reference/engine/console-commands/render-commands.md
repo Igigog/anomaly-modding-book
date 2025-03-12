@@ -30,7 +30,7 @@ ___
 | r__saturation | Color saturation | 0.0 - 2.0 | - |
 | r__supersample | Supersampling (DX8) | 1 - 8 | - |
 | r__tf_aniso | Anisotropic filtering | 0<br> 4<br> 8<br> 16 | - |
-| r__tf_mipbias | bias for initial texture mip level | -3.0 - 3.0 | - |
+| r__tf_mipbias | Bias for initial texture mip level | -3.0 - 3.0 | - |
 | r__use_precompiled_shaders |  | 'on/off' or '1/0' | - |
 | r__wallmark_ttl | Wallmark Lifetime | 1.000 - 600.000 | - |
 | r_screenshot_mode | Screenshot in the selected format | jpg<br> png<br> tga | - |

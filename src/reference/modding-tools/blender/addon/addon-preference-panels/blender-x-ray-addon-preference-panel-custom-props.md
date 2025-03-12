@@ -2,6 +2,12 @@
 
 ___
 
+## About
+
+This category contains parameters that specify names for custom properties that are used by operators from the Custom Properties pane.
+
+___
+
 ## Object
 
 | Name | Description |

@@ -16,7 +16,7 @@ Modified tool for working with [.omf](../../main-folders-and-files/file-formats/
 
 ## Features
 
-- Multiple [.omf](../../main-folders-and-files/file-formats/animations/omf.md) files
+- Merge multiple [.omf](../../main-folders-and-files/file-formats/animations/omf.md) files
 - Clone, delete, save selected animations
 - Working with motion marks
 - Working with flags
@@ -25,16 +25,16 @@ Modified tool for working with [.omf](../../main-folders-and-files/file-formats/
 - Displaying of bone parts animation, possibility to convert into [.ltx](../../main-folders-and-files/file-formats/conf-script/ltx.md) format for import into SDK
 - A lot of bug fixes and crashes from the original version.
 - Changing of name of bones
-- Viewing [Bone Parts](../../main-folders-and-files/file-formats/models/bone-parts.md)
+- Viewing Bone Parts
 
 ## Functionality
 
 ### Hotkeys
 
 - F4 - Open file
-- F5 and Ctrl+S - Save file
+- F5 or Ctrl+S - Save file
 - F6 - Save as
-- Delete - deletes selected animations
+- Delete - Deletes selected animations
 
 ### Buttons
 

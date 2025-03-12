@@ -1,8 +1,8 @@
-### Gravity
+# Kill Old
 
 ## About
 
-Accelerate particles in the given direction
+Remove old particles
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -20,16 +20,16 @@ Accelerate particles in the given direction
   </tr></thead>
 <tbody>
   <tr>
-    <td class="tg-v0mg" rowspan="5">Gravity</td>
+    <td class="tg-v0mg" rowspan="5">Kill Old</td>
     <td class="tg-v0mg">Name</td>
     <td class="tg-v0mg"></td>
   </tr>
   <tr>
-    <td class="tg-v0mg">Direction</td>
+    <td class="tg-v0mg">Age Limit</td>
     <td class="tg-v0mg"></td>
   </tr>
   <tr>
-    <td class="tg-v0mg">Allow Rotate</td>
+    <td class="tg-v0mg">Kill Less Than</td>
     <td class="tg-v0mg"></td>
   </tr>
   <tr>
