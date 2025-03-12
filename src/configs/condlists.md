@@ -254,8 +254,8 @@ and when Hip goes to sleep you'll get a tuna can
 
 ___
 
-## Condlists in BNF
-Courtesy of shifty5943
+## BNF Syntax Specification
+Courtesy of Lander
 
 ```
                   ;; A Condlist is either a Statement, or a comma-separated list of Statements.
