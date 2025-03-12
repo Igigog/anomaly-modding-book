@@ -86,12 +86,11 @@ ___
   - [Crash List](crash-list/crashes-list.md)
 
 - [Reference/Configs](reference/README.md)
-  - [Items]()
-    - [Oufits](configs/items/outfits/o_(outfit).ltx.md)
-    - [Weapon](configs/items/weapons/w_(weapon).ltx.md)
-      - [Weapon Sounds](configs/items/weapons/weapon_sounds.ltx.md)
-      - [Ammo](configs/items/weapons/weapon_ammo.ltx.md)
-    - [Trade](configs/items/trade/trade.ltx.md)
+  - [Outfits](configs/items/outfits/o_(outfit).ltx.md)
+  - [Weapons](configs/items/weapons/w_(weapon).ltx.md)
+    - [Weapon Sounds](configs/items/weapons/weapon_sounds.ltx.md)
+    - [Ammo](configs/items/weapons/weapon_ammo.ltx.md)
+  - [Trade](configs/items/trade/trade.ltx.md)
   - [Creatures](configs/creatures/m_(mutant).ltx.md)
 
 - [Reference/Shaders](reference/README.md)
