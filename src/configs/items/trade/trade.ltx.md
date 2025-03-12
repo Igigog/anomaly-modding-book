@@ -41,7 +41,7 @@ toolkit_r5 = 3, 1
 ### 1. buy_condition
 Defines list of items trader won't buy or price modifier of those he buys
 
-Accept a [condlist](../../../configs/condlists.md) of [sections](../../../configs/sections.md) of items. Those items should follow one these rules:
+Accept a [condlist](../../../configs/condlists.md) of [sections](../../../configs/structure-of-files.md) of items. Those items should follow one these rules:
 1. `jgut = 0.1` means trader will buy `jgut` item for 10% of it's price. Related [script](https://github.com/Tosox/STALKER-Anomaly-gamedata/blob/v1.5.2/gamedata/scripts/utils_item.script#L983)
 2. `toolkit_r5` means trader won't buy that item at all
 
@@ -66,7 +66,7 @@ Same as [1. buy_condition](#1-buy_condition) but for selling items to actor
 ### 3. buy_supplies
 Defines what items trader have in stock
 
-Accept a [section](../../../configs/sections.md) of items. 
+Accept a [section](../../../configs/structure-of-files.md) of items. 
 Those items follow simple rule:
 ```ini
 [supplies_1]
