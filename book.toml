@@ -12,8 +12,8 @@ create-missing = false
 git-repository-url = "https://github.com/Igigog/anomaly-modding-book"
 site-url = "/anomaly-modding-book/"
 edit-url-template = "https://github.com/Igigog/anomaly-modding-book/edit/main/{path}"
-additional-css = ["theme/css/custom.css", "theme/css/mdbook-admonish.css", "theme/pagetoc.css", "theme/css/whichlang.css", "devicon-base.css" ]
-additional-js  = ["theme/pagetoc.js", "theme/js/mermaid.min.js", "theme/js/mermaid-init.js", "theme/js/whichlang.js" ]
+additional-css = ["theme/css/custom.css", "theme/css/mdbook-admonish.css", "theme/css/whichlang.css", "devicon-base.css" ]
+additional-js  = ["theme/js/mermaid.min.js", "theme/js/mermaid-init.js", "theme/js/whichlang.js" ]
 no-section-label = false
 input-404 = "meta/404.md"
 
@@ -26,10 +26,8 @@ command = "mdbook-mermaid"
 
 [preprocessor.admonish]
 command = "mdbook-admonish"
-assets_version = "3.0.2" # do not edit: managed by `mdbook-admonish install`
+assets_version = "3.0.3" # do not edit: managed by `mdbook-admonish install`
 
-[preprocessor.theme]
-pagetoc = false
-pagetoc-width = "300px"
-content-max-width = "70%"
-sidebar-width = "300px"
+[preprocessor.github-authors]
+command = "mdbook-github-authors"
+

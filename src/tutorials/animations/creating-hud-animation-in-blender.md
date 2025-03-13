@@ -26,7 +26,7 @@ ___
 2. Choose hand rig
 3. Choose weapon or object
 4. Add a Copy Transform modifier to the main bone of your chosen weapon or object
-4.1. Select lead_gun as the target
+    4.1. Select lead_gun as the target
 5. Animate
 
 ___

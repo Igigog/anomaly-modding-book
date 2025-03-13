@@ -2,6 +2,12 @@
 
 ___
 
-![Alt text centered](blender-images/panels/side-panel-transforms.png)
+![Alt text centered](images/n-panel-transforms.png)
 
 Allows editing the position and orientation of the model
+
+___
+
+## Sources
+
+[Source](https://github.com/PavelBlend/blender-xray/wiki/Panel-Transforms)

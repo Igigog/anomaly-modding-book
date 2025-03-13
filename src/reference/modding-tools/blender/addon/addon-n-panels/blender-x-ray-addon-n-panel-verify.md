@@ -2,6 +2,12 @@
 
 ___
 
-![Alt text centered](blender-images/panels/side-panel-verify.png)
+![Alt text centered](images/n-panel-verify.png)
 
 Various verifications critical for X-Ray
+
+___
+
+## Sources
+
+[Source](https://github.com/PavelBlend/blender-xray/wiki/Panel-Verify)

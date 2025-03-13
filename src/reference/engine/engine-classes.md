@@ -60,26 +60,26 @@ This article is under construction
   - CPda
   - CF1
   - CRGD5
-  - CWeaponAK74
-  - CWeaponAutomaticShotgun
-  - CWeaponBinoculars
-  - CWeaponBM16
-  - CWeaponFN2000
-  - CWeaponFORT
-  - CWeaponGroza
-  - CWeaponHPSA
-  - CWeaponKnife
-  - CWeaponLR300
-  - CWeaponPM
-  - CWeaponRG6
-  - CWeaponRPG7
-  - CWeaponShotgun
-  - CWeaponSVD
-  - CWeaponSVU
-  - CWeaponUSP45
-  - CWeaponVal
-  - CWeaponVintorez
-  - CWeaponWalther
+  - [CWeaponAK74](api/weapons/CWeaponAK74.md)
+  - [CWeaponAutomaticShotgun](api/weapons/CWeaponAutomaticShotgun.md)
+  - [CWeaponBinoculars](api/weapons/CWeaponBinoculars.md)
+  - [CWeaponBM16](api/weapons/CWeaponBM16.md)
+  - [CWeaponFN2000](api/weapons/CWeaponFN2000.md)
+  - [CWeaponFORT](api/weapons/CWeaponFORT.md)
+  - [CWeaponGroza](api/weapons/CWeaponGroza.md)
+  - [CWeaponHPSA](api/weapons/CWeaponHPSA.md)
+  - [CWeaponKnife](api/weapons/CWeaponKnife.md)
+  - [CWeaponLR300](api/weapons/CWeaponLR300.md)
+  - [CWeaponPM](api/weapons/CWeaponPM.md)
+  - [CWeaponRG6](api/weapons/CWeaponRG6.md)
+  - [CWeaponRPG7](api/weapons/CWeaponRPG7.md)
+  - [CWeaponShotgun](api/weapons/CWeaponShotgun.md)
+  - [CWeaponSVD](api/weapons/CWeaponSVD.md)
+  - [CWeaponSVU](api/weapons/CWeaponSVU.md)
+  - [CWeaponUSP45](api/weapons/CWeaponUSP45.md)
+  - [CWeaponVal](api/weapons/CWeaponVal.md)
+  - [CWeaponVintorez](api/weapons/CWeaponVintorez.md)
+  - [CWeaponWalther](api/weapons/CWeaponWalther.md)
   - CMincer
   - CMosquitoBald
   - CHairsZone

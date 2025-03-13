@@ -177,8 +177,10 @@ void CWeaponAK74::script_register	(lua_State *L)
 }
 ```
 
+___
+
 ## Sources
 
-[Header file](https://bitbucket.org/anomalymod/xray-monolith/src/028ccf5f5189b393396480076b11e40852ba3ecd/src/xrGame/WeaponAK74.h)
+[Header file](https://bitbucket.org/anomalymod/xray-monolith/src/master/src/xrGame/WeaponAK74.h)
 
-[Realization file](https://bitbucket.org/anomalymod/xray-monolith/src/028ccf5f5189b393396480076b11e40852ba3ecd/src/xrGame/WeaponAK74.cpp)
+[Realization file](https://bitbucket.org/anomalymod/xray-monolith/src/master/src/xrGame/WeaponAK74.cpp)

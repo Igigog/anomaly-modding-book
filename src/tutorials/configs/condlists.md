@@ -252,3 +252,94 @@ on_info2 = {=is_night} walker@sleeper_1 %=give_tuna_to_actor%
 ```
 
 And when Hip goes to sleep you'll get a tuna can
+
+___
+
+## BNF Syntax Specification
+
+Courtesy of Lander
+
+```bnf
+                  ;; A Condlist is either a Statement, or a comma-separated list of Statements.
+                  ;- Statements are evaluated left-to-right,
+                  ;  and the first whose Condition returns true will apply its Effect
+                  ;  and return its Value as output.
+                  ;- This corresponds to the text you type into an LTX value.
+                  ;- ex. Everything to the right of '=' here is a <condlist>:
+                  ;      my_condlist = {-A -B} X, {-A +B} Y, Z
+       <condlist> ::= <statement> | <condlist> "," <statement>
+
+                  ;; A Statement is a space-separated series of Condition, Effect, and Value.
+                  ;- Each of these is optional. As such, an empty condlist is considered valid.
+                  ;- If a Statement's Condition evaluates to true, its Effect is applied,
+                  ;  and its Value is returned as output.
+      <statement> ::= <opt-condition> " " <opt-effect> " " <opt-value>
+
+                  ;; Optional elements may be omitted.
+  <opt-condition> ::= <condition> | ""
+     <opt-effect> ::= <effect> | ""
+      <opt-value> ::= <value> | ""
+
+                  ;; A Condition is a list of Actions surrounded by curly braces.
+                  ;- Actions are evaluated left-to-right and combined via logical AND to produce a boolean.
+                  ;- Call / Not-Call actions within a Condition namespace via xr_conditions.
+                  ;  (i.e. =func(1, 2, 3) will call xr_conditions.func(obj1, obj2, {1, 2, 3}))
+      <condition> ::= "{" <actions> "}"
+
+                  ;; An Effect is a list of Actions surrounded by percent signs.
+                  ;- Actions are evaluated left-to-right, and their return values are ignored.
+                  ;- Call / Not-Call actions within an Effect namespace via xr_effects.
+                  ;  (i.e. =func(1, 2, 3) will call xr_effects.func(obj1, obj2, {1, 2, 3}))
+         <effect> ::= "%" <actions> "%"
+
+                  ;; A Value is simply a string, and represents the condlist's output.
+          <value> ::= <string>
+
+                  ;; Lists of Actions are separated with spaces.
+        <actions> ::= <action> | <actions> " " <action>
+
+                  ;; An Action is either a Has, Not-Has, Randomize, Call, or Not-Call.
+         <action> ::= <has> | <not-has> | <randomize> | <call> | <not-call>
+
+                  ;; A Has action is a plus sign followed by an Info.
+                  ;- If used inside a Condition, it tests for the presence
+                  ;  of the given Info on the player actor.
+                  ;- If used inside an Effect, it adds the given Info to the player actor.
+            <has> ::= "+" <info>
+
+                  ;; A Not-Has action is a minus sign followed by an Info.
+                  ;- If used inside a Condition, it tests for the absence
+                  ;  of the given Info on the player actor.
+                  ;- If used inside an Effect, it removes the given Info from the player actor.
+        <not-has> ::= "-" <info>
+
+                  ;; An Info is simply a string, and represents a key saved on an actor.
+           <info> ::= <string>
+
+                  ;; A Randomize is a tilde followed by a number.
+                  ;  It is equivalent to a Call action whose function returns 'math.random(1,100) > number'.
+      <randomize> ::= "~" <number>
+
+                  ;; A Call action is made up of an equals symbol followed by a
+                  ;; function name and braced parameter list.
+                  ;- It evaluates the given function, with different semantics depending
+                  ;  on the enclosing element.
+                  ;- If used inside a Condition, it expects the function to return a boolean.
+                  ;- If used inside an Effect, it ignores return value,
+                  ;  and expects the function to apply some side-effect to the game state.
+           <call> ::= "=" <function-name> "(" <function-params> ")"
+
+                  ;; A Not-Call action is made up of an exclamation mark followed by a
+                  ;; function name and braced parameter list.
+                  ;  It behaves the same as a Call action,
+                  ;  but applies a logical NOT to its return value.
+       <not-call> ::= "!" <function-name> "(" <function-params> ")"
+
+                  ;; Function parameters may be empty, singular, or separated by colons.
+<function-params> ::= "" | <function-param> | <function-params> ":" <function-param>
+
+                  ;; A function parameter is simply a string,
+                  ;; and will be passed as such during runtime.
+                  ;- As a result, functions must convert boolean and numeric values manually.
+ <function-param> ::= <string>
+```

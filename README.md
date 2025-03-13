@@ -28,6 +28,5 @@ So refer to this [article](src/meta/contributing/README.md) or open an [issue](h
 - [mdBook](https://github.com/rust-lang/mdBook) - The platform on which the book was written
   - [mdbook admonish](https://github.com/tommilligan/mdbook-admonish) - A preprocessor for mdbook to add Material Design admonishments.
   - [mdbook whichlang](https://github.com/phoenixr-codes/mdbook-whichlang) - Powerful Code Blocks for mdBook
-  - [mdbook theme](https://github.com/zjp-CN/mdbook-theme) - A preprocessor and a backend to config themes for mdbook, especially creating a pagetoc on the right and setting full color themes from the offical ace editor.
-  - [mdBook pagetoc](https://github.com/JorelAli/mdBook-pagetoc)- A page table of contents for mdBook
   - [mdbook mermaid](https://github.com/badboy/mdbook-mermaid) - A preprocessor for mdbook to add mermaid support
+  - [mdbook-github-authors](https://github.com/VectorInstitute/mdbook-github-authors) - A preprocessor for mdbook that creates chapter-level contributor sections featuring authors' GitHub profiles

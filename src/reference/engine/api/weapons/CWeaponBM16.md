@@ -314,6 +314,8 @@ void CWeaponBM16::PlayAnimIdle()
 }
 ```
 
+___
+
 ## Sources
 
 [Header file](https://bitbucket.org/anomalymod/xray-monolith/src/028ccf5f5189b393396480076b11e40852ba3ecd/src/xrGame/weaponBM16.h?at=master#weaponBM16.h)

@@ -14,4 +14,10 @@ ___
 
 ## Operators
 
-- Resize Bones
+- [Resize Bones](../addon-operators/blender-x-ray-addon-operator-resize-bones.md)
+
+___
+
+## Sources
+
+[Source](https://github.com/PavelBlend/blender-xray/wiki/Panel-Armature-Tools)

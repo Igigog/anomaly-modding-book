@@ -10,9 +10,9 @@ This section contains a list and description of the shaders that are available i
 
 | Shader name and path | Description | Shader Properties |
 |---|---|---|
-| default | basic lightmap shader | Translucency = 0.00<br> Ambient = 0.00<br> LM Density = 1.00<br> Collision = 1<br> Rendering = 1<br> OptimizeUV = 1<br> Vertex light = 0<br> Cast shadow = 1 |
+| default | Basic lightmap shader | Translucency = 0.00<br> Ambient = 0.00<br> LM Density = 1.00<br> Collision = 1<br> Rendering = 1<br> OptimizeUV = 1<br> Vertex light = 0<br> Cast shadow = 1 |
 | default_smooth |  | Translucency = 0.00<br> Ambient = 0.00<br> LM Density = 1.00<br> Collision = 1<br> Rendering = 1<br> OptimizeUV = 1<br> Vertex light = 0<br> Cast shadow = 1 |
-| def_shaders\def_ghost | lightmap shader without collision | Translucency = 0.50<br> Ambient = 0.00<br> LM Density = 1.00<br> Collision = 0<br> Rendering = 1<br> OptimizeUV = 1<br> Vertex light = 0<br> Cast shadow = 1 |
+| def_shaders\def_ghost | Lightmap shader without collision | Translucency = 0.50<br> Ambient = 0.00<br> LM Density = 1.00<br> Collision = 0<br> Rendering = 1<br> OptimizeUV = 1<br> Vertex light = 0<br> Cast shadow = 1 |
 | def_shaders\def_ghost_vertex | [geometry shader](https://en.wikipedia.org/wiki/Shader#Geometry_shaders) without collision | Translucency = 0.50<br> Ambient = 0.00<br> LM Density = 1.00<br> Collision = 0<br> Rendering = 1<br> OptimizeUV = 1<br> Vertex light = 1<br> Cast shadow = 1 |
 | def_shaders\def_kolizion | [geometry shader](https://en.wikipedia.org/wiki/Shader#Geometry_shaders) with collision | Translucency = 0.01<br> Ambient = 0.00<br> LM Density = 0.01<br> Collision = 1<br> Rendering = 0<br> OptimizeUV = 0<br> Vertex light = 1<br> Cast shadow = 0 |
 | def_shaders\def_kolizion_lm |  | Translucency = 0.01<br> Ambient = 0.00<br> LM Density = 0.01<br> Collision = 1<br> Rendering = 0<br> OptimizeUV = 0<br> Vertex light = 0<br> Cast shadow = 0 |

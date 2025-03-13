@@ -2,9 +2,11 @@
 
 ___
 
+![alt text](images/operator-resize-bones.png)
+
 ## About
 
-Изменяет размер костей у выбранных арматур.
+Changes the bone size of selected armatures
 
 ___
 
@@ -12,27 +14,27 @@ ___
 
 ### Mode
 
-Режим изменения размеров костей.
+Bone resizing mode
 
-Adaptive - размер для каждой кости вычисляется индивидуально и зависит от расстояния до ближайшей кости. Чем ближе к кости расположена ближайшая кость, тем меньше размер кости. Например, кости пальцев рук будут меньше, чем кости ног, так как кости пальцев расположены близко друг к другу.
+Adaptive - the size for each bone is calculated individually and depends on the distance to the nearest bone. The closer the nearest bone is to the bone, the smaller the size of the bone. For example, finger bones will be smaller than leg bones because the finger bones are close to each other
 
-Constant - размер кости одинаков для всех костей и указывается с помощью параметра Bone Size.
+Constant - the bone size is the same for all bones and is specified using the Bone Size parameter
 
 ### Bone Size
 
-Указывает размер костей в режиме Constant.
+Specifies the size of bones in Constant mode
 
 ### Custom Shape
 
-Если этот параметр включён, то у костей будет установлен шейп в виде пустышки с типом Sphere.
+If this option is enabled, the bones will have a shape set as a empty with the Sphere type
 
 ### Change
 
-Этот параметр указывает, какие кости изменять. Доступен только в режиме Pose Mode.
+This parameter specifies which bones to modify. It is only available in Pose Mode
 
-Selected Bones - изменять выбранные кости.
+Selected Bones - modify the selected bones
 
-All Bones - изменять все кости.
+All Bones - modify all bones
 
 ___
 

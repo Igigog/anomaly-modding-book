@@ -54,8 +54,10 @@ CWeaponHPSA::~CWeaponHPSA()
 }
 ```
 
+___
+
 ## Sources
 
-[Header file](https://bitbucket.org/anomalymod/xray-monolith/src/028ccf5f5189b393396480076b11e40852ba3ecd/src/xrGame/WeaponHPSA.h)
+[Header file](https://bitbucket.org/anomalymod/xray-monolith/src/master/src/xrGame/WeaponHPSA.h)
 
-[Realization file](https://bitbucket.org/anomalymod/xray-monolith/src/028ccf5f5189b393396480076b11e40852ba3ecd/src/xrGame/WeaponHPSA.cpp)
+[Realization file](https://bitbucket.org/anomalymod/xray-monolith/src/master/src/xrGame/WeaponHPSA.cpp)

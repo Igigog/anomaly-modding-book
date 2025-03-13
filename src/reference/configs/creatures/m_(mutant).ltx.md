@@ -66,11 +66,11 @@ Example value taken from vanilla m_bloodsucker.ltx
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 |---|---|---|---|
-| bone_head  |  | bip01_head | bone name |
-| bone_fire |  | bip01_head | bone name |
-| bone_eye_left |  | bip01_ponytail1 | bone name |
-| bone_eye_right |  | bip01_ponytail2 | bone name |
-| bone_spin |  | bip01_spine1 | bone name |
+| bone_head  |  | bip01_head | Bone name |
+| bone_fire |  | bip01_head | Bone name |
+| bone_eye_left |  | bip01_ponytail1 | Bone name |
+| bone_eye_right |  | bip01_ponytail2 | Bone name |
+| bone_spin |  | bip01_spine1 | Bone name |
 
 </details>
 
@@ -81,9 +81,9 @@ Example value taken from vanilla m_bloodsucker.ltx
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 |---|---|---|---|
-| icon | Icon in inventory | ui_npc_monster_krovosos |  |
+| icon | Inventory icon | ui_npc_monster_krovosos |  |
 | Spawn_Inventory_Item_Section | What can be found during the search  | mutant_krovosos_jaw | Taken from the file monster_items.ltx |
-| Spawn_Inventory_Item_Probability | The chance of a body part falling out  | 0.0 | if you set it to 1.0, it will always fall out. If set to 2.0, two pieces will fall out. |
+| Spawn_Inventory_Item_Probability | The chance of a body part falling out  | 0.0 | if you set it to 1.0, it will always fall out. If set to 2.0, two pieces will fall out |
 
 </details>
 
@@ -142,9 +142,9 @@ Example value taken from vanilla m_bloodsucker.ltx
 |---|---|---|---|
 | Scheduled |  | on |  |
 | Human |  | off |  |
-| Health | amount of lives in offline | 700 |  |
-| MinSpeed | minimum speed to move in offline | 2.0 |  |
-| MaxSpeed | maximum speed to move in offline | 4.5 |  |
+| Health | Amount of lives in offline | 700 |  |
+| MinSpeed | Minimum speed to move in offline | 2.0 |  |
+| MaxSpeed | Maximum speed to move in offline | 4.5 |  |
 | going_speed |  | 3.0 |  |
 | current_level_going_speed |  | 3.0 |  |
 | search_speed |  |  |  |
@@ -188,12 +188,12 @@ Example value taken from vanilla m_bloodsucker.ltx
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 |---|---|---|---|
 | Velocity_Stand |  |  |  |
-| Velocity_RunFwdNormal | running speed |  |  |
-| Velocity_RunFwdDamaged | running speed when wounded |  |  |
-| Velocity_WalkFwdNormal | step velocity |  |  |
-| Velocity_WalkFwdDamaged | step velocity when wounded |  |  |
-| Velocity_Drag | velocity when dragging an object |  |  |
-| Velocity_Steal | sneak velocity |  |  |
+| Velocity_RunFwdNormal | Running speed |  |  |
+| Velocity_RunFwdDamaged | Running speed when wounded |  |  |
+| Velocity_WalkFwdNormal | Walking velocity |  |  |
+| Velocity_WalkFwdDamaged | Walking velocity when wounded |  |  |
+| Velocity_Drag | Velocity when dragging an object |  |  |
+| Velocity_Steal | Sneak velocity |  |  |
 
 </details>
 

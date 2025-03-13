@@ -2,6 +2,12 @@
 
 ___
 
-![Alt text centered](blender-images/panels/side-panel-update.png)
+![Alt text centered](images/n-panel-update.png)
 
 Allows to check for addon updates
+
+___
+
+## Sources
+
+[Source](https://github.com/PavelBlend/blender-xray/wiki/Panel-Update)

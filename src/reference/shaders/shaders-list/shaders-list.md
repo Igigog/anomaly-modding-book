@@ -14,14 +14,14 @@ This section contains a list and description of the shaders that are available i
 |---|---|---|---|
 | zfill | basic (simple) |  |  |
 | xwindow | LEVEL: diffuse*base | Old unused glass shader |  |
-| selflight | LEVEL: diffuse*base | self-lighting material |  |
+| selflight | LEVEL: diffuse*base | Self-lighting material |  |
 | glass | basic (simple) |  |  |
 | friendly_indicator | basic (simple) |  |  |
 | font | basic (simple) |  |  |
 | default_pn_hm | LEVEL: lmap*base (default) |  |  |
 | default_pn | LEVEL: lmap*base (default) |  |  |
 | default_hm | LEVEL: lmap*base (default) |  |  |
-| default | LEVEL: lmap*base (default) | basic lightmap shader |  |
+| default | LEVEL: lmap*base (default) | Basic lightmap shader |  |
 | clouds | basic (simple) |  |  |
 
 ### ufp Shaders
@@ -88,7 +88,7 @@ This section contains a list and description of the shaders that are available i
 | models\water |  |  |  |
 | models\water_ryaska |  |  |  |
 | models\weapons | CubeMap reflection shader (variant 4) |  | ![Alt text](images/shaders-preview/models-weapons.png) |
-| models\window | semi-transparent shader with CubeMap reflection |  | ![Alt text](images/shaders-preview/models-window.png) |
+| models\window | Semi-transparent shader with CubeMap reflection |  | ![Alt text](images/shaders-preview/models-window.png) |
 | models\xanomaly |  |  | ![Alt text](images/shaders-preview/models-xanomaly.png) |
 | models\xdistor |  |  | ![Alt text](images/shaders-preview/models-xdistor.png) |
 | models\xdistorcolor |  |  | ![Alt text](images/shaders-preview/models-xdistorcolor.png) |

@@ -1220,8 +1220,10 @@ void CWeaponKnife::best_victim_selector::operator()(
 }
 ```
 
+___
+
 ## Sources
 
-[Header file](https://bitbucket.org/anomalymod/xray-monolith/src/028ccf5f5189b393396480076b11e40852ba3ecd/src/xrGame/WeaponKnife.h)
+[Header file](https://bitbucket.org/anomalymod/xray-monolith/src/master/src/xrGame/WeaponKnife.h)
 
-[Realization file](https://bitbucket.org/anomalymod/xray-monolith/src/028ccf5f5189b393396480076b11e40852ba3ecd/src/xrGame/WeaponKnife.cpp)
+[Realization file](https://bitbucket.org/anomalymod/xray-monolith/src/master/src/xrGame/WeaponKnife.cpp)
