@@ -4,7 +4,7 @@ ___
 
 - Creatures
   - [Mutants](creatures/m_(mutant).ltx.md)
-  - [Stalkers]
+  - [Stalkers](creatures/m_stalker.ltx.md)
 
 - Outfits
   - [Outfits](items/outfits/o_(outfit).ltx.md)

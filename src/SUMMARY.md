@@ -48,6 +48,7 @@
   - [Time events](tutorials/scripting/time_events.md)
   - [Monkey patching](tutorials/scripting/monkey-patching.md)
   - [Script Animations](tutorials/scripting/script_animations.md)
+  - [Script Attachments](tutorials/scripting/script_attachments.md)
 
 ---
 
