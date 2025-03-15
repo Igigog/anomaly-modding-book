@@ -2,96 +2,112 @@
 
 ___
 
+![alt text](images/panel-action.png)
+
 ## About
 
-На этой странице описана панель X-Ray Engine: Action. Эта панель хранит параметры анимаций для скелета (skl, skls, omf, object, ogf) или анимаций путей (anm).
+This page describes the X-Ray Engine: Action panel. This panel stores animation parameters for skeleton animations (*.skl, *.skls, *.omf, *.object, *.ogf) or path animations ([*.anm](../../../../main-folders-and-files/file-formats/animations/anm.md))
 
-Расположение
-Окно Dope Sheet (в blender версий 2.77 и 2.78 в окне Graph Editor), в N-панели, вкладка X-Ray.
+### Location
 
-Контекст
-Количество параметров зависит от типа объекта.
+Dope Sheet window > (in blender versions 2.77 and 2.78 in the Graph Editor window) > N-panel > X-Ray tab
 
-Если тип объекта Armature, то будут доступны все параметры, кроме режима запекания Bake Mode (Auto, On, Off) и будут доступны все операторы.
+### Context
 
-Если объект не является Armature, то будут доступны параметры FPS, Bake Mode (Auto, On, Off), Use Custom Thresholds, Location Threshold, Rotation Threshold, но не будут доступны операторы.
+The number of parameters depends on the type of object
 
-Параметры
+If the object type is Armature, all parameters except Bake Mode (Auto, On, Off) will be available and all operators will be available
 
-X-Ray Параметры
-Параметры, которые читаются или записываются в файлы во время импорта/экспорта.
+If the object is not Armature, FPS, Bake Mode (Auto, On, Off), Use Custom Thresholds, Location Threshold, Rotation Threshold, but no operators will be available
 
-FPS
-Частота кадров анимации. Обычно равна 30.
+### Parameters
 
-Speed
-Скорость воспроизведения анимации. Анимацию можно ускорить или замедлить.
+#### X-Ray Parameters
 
-Accrue
-Нарастание. TODO.
+Parameters that are read or written to files during import/export
 
-Falloff
-Спад. TODO. Значение должно быть меньше, чем Accrue. Если это не так, то движок вычислит своё значение для Falloff, которое будет меньше Accrue на минимальную величину.
+##### FPS
 
-Type FX
-TODO.
+Frame rate of the animation. Usually equal to 30
 
-Bone Part
-TODO.
+##### Speed
 
-Start Bone
-TODO.
+Animation playback speed. You can speed up or slow down the animation
 
-Power
-TODO.
+##### Accrue
 
-Stop
-Флаг Stop at end, который останавливает анимацию после проигрывания. Если выключен, то анимация циклически воспроизводится.
+Blend-In
 
-No Mix
-TODO.
+##### Falloff
 
-Sync
-Флаг Sync part. TODO.
+Blend-out. The value must be less than Accrue. If it is not, the engine will calculate its own value for Falloff, which will be less than Accrue by a minimum amount
 
-Foot Steps
-TODO. Этот флаг используется только в ЧН/ЗП.
+##### Type FX
 
-Move XForm
-TODO. Этот флаг используется только в ЧН/ЗП.
+2131
 
-Idle
-TODO. Этот флаг используется только в ЧН/ЗП.
+##### Bone Part
 
-Weapon Bone
-TODO. Этот флаг используется только в ЧН/ЗП.
+##### Start Bone
 
-Параметры аддона
-Параметры, которые используются аддоном внутри блендера, или во время импорта/экспорта, но не читаются и не сохраняются в файлы.
+##### Power
 
-Bake Mode (Auto, On, Off)
-Режим запекания анимации во время экспорта. Подробнее о запекании см.: TODO.
+##### Stop
 
-Auto - Автоматический режим. Аддон сам вычислит, делать ли запекание или нет. Если объект или кости с анимацией имеют констрейнты, то запекание будет использовано, а если констрейнтов нет, то не будет использовано.
-On - Включить запекание.
-Off - Выключить запекание.
+Stop at end flag that stops the animation after playing. If off, the animation is played cyclically.
 
-Use Custom Thresholds
-Использовать произвольные значения порога для позиции и вращения во время фильтрации ключей анимации, вместо стандартного значения 0.00001. Произвольные значения указываются с помощью параметров Location Threshold, Rotation Threshold.
+##### No Mix
 
-Location Threshold
-Пороговое значение для позиции.
+##### Sync
 
-Rotation Threshold
-Пороговое значение для вращения.
+##### Foot Steps
 
-Операторы
+##### Move XForm
 
-Copy
-Копирует параметры анимации в буфер обмена. Параметры сохраняются в текстовом виде, которые можно сохранить в любой текстовый файл.
+##### Idle
 
-Paste
-Вставляет параметры анимации из буфера обмена, которые были скопированы с помощью Copy или из текстового файла. Можно вставлять скопированные параметры из любого другого открытого blend файла.
+##### Weapon Bone
 
-Export .skl
-Экспортирует один текущий Action (который выбран в Dope Sheet) в формат *.skl.
+#### Параметры аддона
+
+Parameters that are used by the addon inside blender, or during import/export, but are not read or saved to files.
+
+##### Bake Mode (Auto, On, Off)
+
+Animation bake mode during exporting
+
+- Auto - Automatic mode. The addon itself will calculate whether to bake or not. If the object or bones with animation have constreints, baking will be used, and if there are no constreints, it will not be used
+- On - Enable baking
+- Off - Disable baking
+
+##### Use Custom Thresholds
+
+Use arbitrary threshold values for position and rotation during animation key filtering, instead of the default value of 0.00001. Arbitrary values are specified using the Location Threshold, Rotation Threshold parameters
+
+##### Location Threshold
+
+Threshold for the position
+
+##### Rotation Threshold
+
+Threshold for rotation
+
+### Operators
+
+#### Copy
+
+Copies animation parameters to the clipboard. The parameters are saved in text form, which can be saved to any text file
+
+#### Paste
+
+Inserts animation parameters from the clipboard that were copied with Copy or from a text file. You can paste copied parameters from any other open blend file
+
+#### Export .skl
+
+Exports one current Action (which is selected in Dope Sheet) to *.skl format.
+
+___
+
+## Sources
+
+[Source](https://github.com/PavelBlend/blender-xray/wiki/Panel-XRay-Engine-Action)

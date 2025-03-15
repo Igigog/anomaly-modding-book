@@ -2,11 +2,11 @@
 
 ___
 
-![Alt text centered](images/)
+![Alt text centered](images/n-panel-omf-editor.png)
 
 ## About
 
-This panel contains tools for editing *.omf files
+This panel contains tools for editing [*.omf](../../../../main-folders-and-files/file-formats/animations/omf.md) files
 
 ## Operators
 

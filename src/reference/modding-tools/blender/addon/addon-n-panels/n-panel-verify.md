@@ -4,7 +4,7 @@ ___
 
 ![Alt text centered](images/n-panel-verify.png)
 
-Various verifications critical for X-Ray
+This panel stores operators to check objects for errors
 
 ## Operators
 

@@ -4,59 +4,82 @@ ___
 
 ## About
 
-Эта панель хранит параметры материалов (Surface в X-Ray SDK).
+This panel stores material parameters (Surface in X-Ray SDK)
 
-Расположение
-Окно Properties, вкладка Material у меш-объекта.
+## Location
 
-Общие параметры
+Properties window, Material tab of the mesh object
 
-Surface Presets
-Пресеты материалов. В пресет сохраняются параметры Shader, Compile, Material, Two Sided. Пресеты работают так же, как и стандартные пресеты.
+## General parameters
 
-Shader
-Движковый шейдер. Если в настройках аддона указан файл shader.xr в параметре Engine Shaders File, то в меню выбора шейдера (расположено в той же строке и имеет иконку стрелки вниз) можно будет указать любой шейдер из файла. Так же есть возможность указать произвольное значение, напечатав его в поле ввода. Если тип объекта установлен на Dynamic или Progressive Dynamic, то при создании материала значение шейдера будет models\model. Для всех остальных типов значение по-умолчанию будет default.
+### Surface Presets
 
-Compile
-Шейдер компилятора. Меню выбора компиляторного шейдера работает аналогично движковому шейдеру, но указывается файл shader_xrlc.xr в параметре Compile Shaders File.
+Material presets. Shader, Compile, Material, Two Sided parameters are stored in presets. Presets work in the same way as standard presets
 
-Material
-Игровой материал. Меню выбора игрового материала работает аналогично движковому шейдеру, но указывается файл gamemtl.xr в параметре Game Materials File. Если навести курсор мыши на материал из списка, то во всплывающей подсказке будет отображаться описание материала, которое задано в gamemtl.xr файле:
+### Shader
+
+Engine Shader. If in the addon settings is specified shader.xr file in the Engine Shaders File parameter, then in the shader selection menu (located in the same line and has a down arrow icon) you can specify any shader from the file. It is also possible to specify an arbitrary value by typing it in the input field. If the object type is set to Dynamic or Progressive Dynamic, then when creating a material the shader value will be models\model. For all other types, the default value will be default
+
+### Compile
+
+Compiler Shader. The compiler shader selection menu works similarly to the engine shader, but the shader_xrlc.xr file is specified in the Compile Shaders File parameter
+
+### Material
+
+Game Material. The game material selection menu works similarly to the engine shader, but the gamemtl.xr file is specified in the Game Materials File parameter. If you move the mouse cursor over a material from the list, a tooltip will display a description of the material, which is specified in the gamemtl.xr file:
 
 01
 
-Two Sided
-Двусторонняя поверхность. Если у материала включён этот параметр, то при экспорте в *.ogf будет сохранено в два раза больше полигонов, которые используют данный материал, так как полигоны будут сохранены для двух сторон. При экспорте в *.object количество полигонов не изменится, так как X-Ray SDK сам удваивает количество полигонов при экспорте в *.ogf.
+### Two Sided
 
-Параметры игровых уровней
-Параметры, которые используются только для визуалов в игровых уровнях level формата.
+Double-sided surface. If this parameter is enabled for a material, then when exporting to *.ogf, twice as many polygons that use this material will be saved, because the polygons will be saved for both sides. When exporting to *.object the number of polygons will not change, because X-Ray SDK itself doubles the number of polygons when exporting to *.ogf.
 
-Texture UV
-UV-карта, которая используется для основной текстуры.
+## Game Level Parameters
 
-Light Map UV
-UV-карта, которая используется для карты освещения.
+Parameters that are used only for visuals in game levels of level format
 
-Light Map 1
-Изображение, которое используется для первой карты освещения.
+### Texture UV
 
-Light Map 2
-Изображение, которое используется для второй карты освещения.
+UV map that is used for the main texture
 
-Light
-Слой вершинных цветов, который используется для статичного освещения.
+### Light Map UV
 
-Sun
-Слой вершинных цветов, который используется для теней от солнца.
+UV map which is used for the lighting map
 
-Hemi
-Слой вершинных цветов, который используется для hemi освещения.
+### Light Map 1
 
-Параметры геометрии коллизии
-Параметры, которые используется только для геометрии коллизии уровня, которая хранится в level.cform файле.
+Image that is used for the first lighting map
 
-Suppress Shadows
-Отключить тени.
+### Light Map 2
 
-Suppress Wallmarks
-Отключить следы от пуль и другие волмарки.
+Image that is used for the second lighting map
+
+### Light
+
+A vertex color layer that is used for static lighting
+
+### Sun
+
+A layer of vertex colors that is used for sun shadows
+
+### Hemi
+
+A layer of vertex colors that is used for hemi lighting
+
+## Collision geometry parameters
+
+Parameters that are only used for the level collision geometry, which is stored in the level.cform file
+
+### Suppress Shadows
+
+Disable shadows
+
+### Suppress Wallmarks
+
+Disable bullet marks and other wallmarks
+
+___
+
+## Sources
+
+[Source](https://github.com/PavelBlend/blender-xray/wiki/Panel-XRay-Engine-Action)

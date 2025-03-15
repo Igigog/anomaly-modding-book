@@ -2,5 +2,24 @@
 
 ___
 
+![alt text](images/operator-change-object-type.png)
+
 ## About
 
+Changes the type of the object. The type is set in the Type parameter from the X-Ray Engine: Object panel
+
+### Mode
+
+- `Active Object` - Active object
+- `Selected Objects` - Selected objects
+- `All Objects` - All objects from blend-file
+
+### Type
+
+Value for the Type parameter from the X-Ray Engine panel: Object
+
+___
+
+## Sources
+
+[Source](https://github.com/PavelBlend/blender-xray/wiki/Panel-Props-Tools#change-object-type)

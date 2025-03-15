@@ -59,7 +59,7 @@ This article is under construction
   - CInventoryBox
   - CPda
   - CF1
-  - CRGD5
+  - [CRGD5](api/weapons/CRGD5.md)
   - [CWeaponAK74](api/weapons/CWeaponAK74.md)
   - [CWeaponAutomaticShotgun](api/weapons/CWeaponAutomaticShotgun.md)
   - [CWeaponBinoculars](api/weapons/CWeaponBinoculars.md)
