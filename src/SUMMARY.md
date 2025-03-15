@@ -44,6 +44,7 @@ ___
   - [Time events](scripting/time_events.md)
   - [Monkey patching](scripting/monkey-patching.md)
   - [Script Animations](scripting/script_animations.md)
+  - [Script Attachments](scripting/script_attachments.md)
 
 ___
 
