@@ -2,14 +2,14 @@
 
 ___
 
-**This specific guide will teach you how to make custom maps for Anomaly or for Call of Pripyat and its mods. Do note that this is a very difficult process as the original SDKs and even forks of them are quite uncomfortable to use.**
+**This specific guide will teach you how to make custom maps or edit existing maps in Anomaly. Do note that this is a very difficult process as the original SDKs and even forks of them are quite uncomfortable to use.**
 
 **They say curiosity killed the cat, so if you're really curious, this guide is for you:**
 
 ___
 
-Now, you'll have to get the SDK editors and set them up. I'll explain that right now.
-Firstly, there are three leaked SDKs and the official SDK which was released by GSC Game World back in 2010.
+Before we get into using the SDK editors, firstly, I'll explain the different SDK versions there are for stalker.
+There are three leaked SDKs which gave you the ability to create full singleplayer maps instead of only being limited to MP maps that the official releases had, and the final official SDK which was released by GSC Game World back in 2010, but this time, with the ability to create singleplayer maps.
 
 Those are:
 * X-Ray SDK 0.4 for Shadow of Chernobyl
@@ -24,13 +24,13 @@ These SDKs are really a pain to use and aren't very bug-free, nor stable, this i
 
 That doesn't mean X-Ray SDK 0.5/0.6 and X-Ray SDK 0.4 have no forks, they do, but they're not as advanced as the forks based on X-Ray SDK 0.7.
 
-**Since most of you are going to be future mappers making new levels for Anomaly or for Call of Pripyat and its mods.**
+**In this page, I'll be specifically guiding you about the X-Ray SDK 0.7 and I'll be using its fork called IX-Ray SDK, which is not fully finished, but good enough for creating new levels and has LOTS of Quality of Life features, and I highly recommend you to use it as well.**
 
-**In this guide, I'll be specifically guiding you about the X-Ray SDK 0.7 and I'll be using its fork called IX-Ray SDK, which is not fully finished, but good enough for creating new levels and has LOTS of Quality of Life features, and I highly recommend you to use it as well, even though it's optional.**
+**It is optional, but I'm using forks for a very good reason, the vanilla SDK is very unstable and it cannot open nor modify very detailed levels.**
 
-It is based on the [IX-Ray Engine 1.6](https://github.com/ixray-team/ixray-1.6-stcop) platform, a fork of the X-Ray Engine 1.6.02, which is used in Call of Pripyat.
+The IX-Ray SDK is based on the [IX-Ray Engine 1.6](https://github.com/ixray-team/ixray-1.6-stcop) platform, a fork of the X-Ray Engine 1.6.02, which is used in Call of Pripyat.
 
-After explaining the existing SDK versions and the diffences between them, it's now the time to install and use the X-Ray SDK 0.7! 
+After explaining the existing SDK versions and the diffences between them, it's now the time to install the X-Ray SDK 0.7! 
 
 I'll cover the installation guide for the vanilla SDK 0.7 and the fork of it which I'll be using.
 
@@ -42,11 +42,11 @@ Once you have downloaded the file, install the X-Ray SDK 0.7!
 
 If you have installed it, you can skip the guide below if you are a masochist and wish to use the vanilla X-Ray SDK 0.7!
 
-[Skip to the guide about the SDK editors](README.md#guide-about-the-sdk-editors)
+[Skip to the guide about the SDK editors](index.md#sdk-folders-explained)
 
 ## Installation guide for the IX-Ray SDK
 
-For this, you'll need the original X-Ray SDK 0.7 and the full Call of Pripyat game data in order to utilize all of the SDK's features.
+For this, you'll need the original X-Ray SDK 0.7 and the full Call of Pripyat game data in order to utilize all of the SDK's features. It's not needed to have Call of Pripyat to use this SDK fork, you'll just not be able to use all of its features.
 
 [Here's the download link of the recent official build released by the developers of this X-Ray fork!](https://drive.google.com/file/d/13kvLVdkPlVTF7T_4b_ipb-0OfRrF3Eqy/view)
 
@@ -60,7 +60,7 @@ Now, you'll have to drag all of the files inside into your root SDK folder, name
 
 To utilize all of the SDK's features, you'll need a fully unpacked Call of Pripyat game data and put it inside the SDK's **gamedata** folder. If you are doing this optional step as well, **DO NOT replace any files if asked!!!**
 
-## Guide about the SDK editors
+## SDK folders explained
 
 If you have installed the SDK sucessfully, regardless of which fork you installed, it should look like this from inside the SDK folder.
 
@@ -86,18 +86,6 @@ This is how it looks like inside the SDK editors folder.
 * **shortcuts** is where your SDK preferences are stored that.
 * **rawdata** is where all of the SDK's content, textures, objects, level sources, and other stuff are stored at.
 
-## Launching the Level Editor
-
 There are also a lot of .bat files inside, which may look confusing, but these are shortcuts used to launch one of the SDK editors.
 
-**Since we want to learn about mapping, we'll obviously run the .bat file that's gonna launch the Level Editor.**
-
-It should look like this when the SDK has launched!
-
-![The Level Editor](images/level-editor-ix-ray.png)
-
-**It looks very scary at first, but that's normal, you can drag these windows around to your liking!**
-
-![The Level Editor part 2](images/level-editor-ix-ray-2.png)
-
-Since I don't want to make this specific page super long, I'll specifically explain all of the SDK's windows on what are they used for and what do they do [here](../mapping/level-editor-tutorial.md)
+Since I don't want to make this specific page super long, I'll specifically explain on how to use the Level Editor [here.](../mapping/level-editor-tutorial.md)
