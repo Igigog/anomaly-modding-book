@@ -76,6 +76,8 @@ Welp, let's get started. I hope you already have a GitHub account.
 3. Run `run.bat`. In case it doesn't open by itself, open [localhost:3000](localhost:3000) in your browser.
 4. Done. You're awesome.
 
+__WARNING__: If you create a new article, you need to add it to `src/SUMMARY.md` for it to be shown.
+
 #### Uploading your changes
 
 1. Set your git up. Here's a great [guide](https://docs.github.com/en/get-started/quickstart/set-up-git)
