@@ -32,7 +32,7 @@ The IX-Ray SDK is based on the [IX-Ray Engine 1.6](https://github.com/ixray-team
 
 After explaining the existing SDK versions and the diffences between them, it's now the time to install the X-Ray SDK 0.7! 
 
-I'll cover the installation guide for the vanilla SDK 0.7 and the fork of it which I'll be using.
+I'll cover the installation guide for the vanilla SDK 0.7 and the fork of it which I'll be using entirely in the mapping guides.
 
 ## Installation guide for the original X-Ray SDK 0.7 without any of its forks
 
