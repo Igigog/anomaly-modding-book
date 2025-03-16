@@ -8,7 +8,7 @@ ___
 
 ## About
 
-Utility for editing [.thm](../../main-folders-and-files/file-formats/textures/thm.md) files without the need to use the SDK
+Utility for editing [*.thm](../../main-folders-and-files/file-formats/textures/thm.md) files without the need to use the SDK
 
 ![thm-editor centered](images/thm-editor-by-i-love-kfc.png)
 
@@ -51,7 +51,7 @@ Utility for editing [.thm](../../main-folders-and-files/file-formats/textures/th
 |---|---|
 | Image | 2D texture |
 | [Cube Map](https://en.wikipedia.org/wiki/Cube_mapping) | Is a method of environment mapping that uses the six faces of a cube as the map shape |
-| Bump Map | [Bump]() Map |
+| Bump Map | [Bump](https://en.wikipedia.org/wiki/Bump_mapping) Map |
 | [Normal Map](https://en.wikipedia.org/wiki/Normal_mapping) | Normal Map |
 | Terrain | Terrain Map |
 
@@ -140,13 +140,13 @@ Different shading algorithms
 | Fade Color |  |
 | Fade Amout |  |
 | Material Weight | Shading model weight (0.0 - 1.0) |
-| Detail Scale | [Detail Map](../main-folders-and-files/file-formats/index.html#detail_map_name_with-bump-or-bumpdds) Scale |
+| Detail Scale | [Detail Map](../../main-folders-and-files/file-formats/textures/detail-map.md) Scale |
 | Texture Width | Texture Width |
 | Texture Height | Texture Height |
 | Fade Delay |  |
-| Bump Height | [Bump Map](../main-folders-and-files/file-formats/index.html#bumpdds-1) Height |
-| Detail name | Path to [Detail Map](../main-folders-and-files/file-formats/index.html#detail_map_name_with-bump-or-bumpdds) |
-| Bump name | Path to [Bump Map](../main-folders-and-files/file-formats/index.html#bumpdds-1) |
+| Bump Height | [Bump Map](../../main-folders-and-files/file-formats/textures/bump.md) Height |
+| Detail name | Path to [Detail Map](../../main-folders-and-files/file-formats/textures/detail-map.md) |
+| Bump name | Path to [Bump Map](../../main-folders-and-files/file-formats/textures/bump.md) |
 | Normal Map name | Path to Normal Map |
 
 ___

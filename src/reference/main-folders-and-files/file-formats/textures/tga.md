@@ -1,4 +1,4 @@
-# .tga (TrueVision Targa)
+# *.tga (TrueVision Targa)
 
 ___
 
@@ -10,4 +10,4 @@ ___
 
 ## Programs editing this file
 
-- Any program that works with .dds files (Example: Paint.net or GIMP)
+- Any program that works with *.dds files (Example: Paint.net or GIMP)

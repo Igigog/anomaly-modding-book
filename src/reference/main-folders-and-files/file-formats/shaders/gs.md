@@ -1,4 +1,4 @@
-# .gs (Geometry Shader)
+# *.gs (Geometry Shader)
 
 ___
 

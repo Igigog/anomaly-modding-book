@@ -13,4 +13,4 @@ Example:
 ### Distinguishing features
 
 - Has a bone collision
-- [Dynamic object]
+- [Dynamic object](dynamic-object.md)

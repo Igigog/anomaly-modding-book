@@ -2,7 +2,7 @@
 
 ___
 
-- [.anm](anm.md)
-- [.omf](omf.md)
-- [.skl](skl-skls.md)
-- [.skls](skl-skls.md)
+- [*.anm](anm.md)
+- [*.omf](omf.md)
+- [*.skl](skl-skls.md)
+- [*.skls](skl-skls.md)

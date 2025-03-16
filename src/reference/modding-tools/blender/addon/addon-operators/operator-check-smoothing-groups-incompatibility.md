@@ -2,7 +2,7 @@
 
 ___
 
-![![alt text](image.png)](images/operator-check-smooth-groups-incompatibility.png)
+![alt text](images/operator-check-smooth-groups-incompatibility.png)
 
 ## About
 

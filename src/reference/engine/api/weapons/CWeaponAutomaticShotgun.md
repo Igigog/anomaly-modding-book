@@ -4,7 +4,9 @@ ___
 
 ## About
 
+Automatic Shotgun Engine Class
 
+Exported LUA class WP_ASHTG
 
 ## Code
 
@@ -18,40 +20,40 @@ ___
 
 class CWeaponAutomaticShotgun : public CWeaponMagazined
 {
-	typedef CWeaponMagazined inherited;
+    typedef CWeaponMagazined inherited;
 public:
-	CWeaponAutomaticShotgun();
-	virtual ~CWeaponAutomaticShotgun();
+    CWeaponAutomaticShotgun();
+    virtual ~CWeaponAutomaticShotgun();
 
-	virtual void Load(LPCSTR section);
+    virtual void Load(LPCSTR section);
 
-	virtual void net_Export(NET_Packet& P);
-	virtual void net_Import(NET_Packet& P);
+    virtual void net_Export(NET_Packet& P);
+    virtual void net_Import(NET_Packet& P);
 
-	virtual void Reload();
-	void switch2_StartReload();
-	void switch2_AddCartgidge();
-	void switch2_EndReload();
+    virtual void Reload();
+    void switch2_StartReload();
+    void switch2_AddCartgidge();
+    void switch2_EndReload();
 
-	virtual void PlayAnimOpenWeapon();
-	virtual void PlayAnimAddOneCartridgeWeapon();
-	void PlayAnimCloseWeapon();
+    virtual void PlayAnimOpenWeapon();
+    virtual void PlayAnimAddOneCartridgeWeapon();
+    void PlayAnimCloseWeapon();
 
-	virtual bool Action(u16 cmd, u32 flags);
-	//virtual	int		GetCurrentFireMode	() { return m_aFireModes[m_iCurFireMode]; }; //AVO: this is already implemented in paremnt class (CWeaponMagazined)
+    virtual bool Action(u16 cmd, u32 flags);
+    //virtual int GetCurrentFireMode () { return m_aFireModes[m_iCurFireMode]; }; //AVO: this is already implemented in paremnt class (CWeaponMagazined)
 
 protected:
-	virtual void OnAnimationEnd(u32 state);
-	void TriStateReload();
-	virtual void OnStateSwitch(u32 S, u32 oldState);
+    virtual void OnAnimationEnd(u32 state);
+    void TriStateReload();
+    virtual void OnStateSwitch(u32 S, u32 oldState);
 
-	bool HaveCartridgeInInventory(u8 cnt);
-	bool BeginReloadWasEmpty;
-	virtual u8 AddCartridge(u8 cnt);
+    bool HaveCartridgeInInventory(u8 cnt);
+    bool BeginReloadWasEmpty;
+    virtual u8 AddCartridge(u8 cnt);
 
-	ESoundTypes m_eSoundOpen;
-	ESoundTypes m_eSoundAddCartridge;
-	ESoundTypes m_eSoundClose;
+    ESoundTypes m_eSoundOpen;
+    ESoundTypes m_eSoundAddCartridge;
+    ESoundTypes m_eSoundClose;
 
 DECLARE_SCRIPT_REGISTER_FUNCTION
 };
@@ -72,8 +74,8 @@ DECLARE_SCRIPT_REGISTER_FUNCTION
 
 CWeaponAutomaticShotgun::CWeaponAutomaticShotgun()
 {
-	m_eSoundClose = ESoundTypes(SOUND_TYPE_WEAPON_SHOOTING);
-	m_eSoundAddCartridge = ESoundTypes(SOUND_TYPE_WEAPON_SHOOTING);
+    m_eSoundClose = ESoundTypes(SOUND_TYPE_WEAPON_SHOOTING);
+    m_eSoundAddCartridge = ESoundTypes(SOUND_TYPE_WEAPON_SHOOTING);
 }
 
 CWeaponAutomaticShotgun::~CWeaponAutomaticShotgun()
@@ -82,126 +84,126 @@ CWeaponAutomaticShotgun::~CWeaponAutomaticShotgun()
 
 void CWeaponAutomaticShotgun::Load(LPCSTR section)
 {
-	inherited::Load(section);
+    inherited::Load(section);
 
-	if (pSettings->line_exist(section, "tri_state_reload"))
-	{
-		m_bTriStateReload = !!pSettings->r_bool(section, "tri_state_reload");
-	};
-	if (m_bTriStateReload)
-	{
-		m_sounds.LoadSound(section, "snd_open_weapon", "sndOpen", false, m_eSoundOpen);
+    if (pSettings->line_exist(section, "tri_state_reload"))
+    {
+       m_bTriStateReload = !!pSettings->r_bool(section, "tri_state_reload");
+    };
+    if (m_bTriStateReload)
+    {
+       m_sounds.LoadSound(section, "snd_open_weapon", "sndOpen", false, m_eSoundOpen);
 
-		m_sounds.LoadSound(section, "snd_add_cartridge", "sndAddCartridge", false, m_eSoundAddCartridge);
+       m_sounds.LoadSound(section, "snd_add_cartridge", "sndAddCartridge", false, m_eSoundAddCartridge);
 
-		m_sounds.LoadSound(section, "snd_close_weapon", "sndClose", false, m_eSoundClose);
+       m_sounds.LoadSound(section, "snd_close_weapon", "sndClose", false, m_eSoundClose);
 
-		m_sounds.LoadSound(section, "snd_close_weapon_empty", "sndCloseEmpty", false, m_eSoundClose);
-	};
+       m_sounds.LoadSound(section, "snd_close_weapon_empty", "sndCloseEmpty", false, m_eSoundClose);
+    };
 }
 
 bool CWeaponAutomaticShotgun::Action(u16 cmd, u32 flags)
 {
-	if (cmd == kWPN_FIRE && flags & CMD_START)
-	{
-		if (fShotTimeCounter > 0.f)
-			return true;
-	}
-	if (inherited::Action(cmd, flags)) return true;
+    if (cmd == kWPN_FIRE && flags & CMD_START)
+    {
+        if (fShotTimeCounter > 0.f)
+            return true;
+    }
+    if (inherited::Action(cmd, flags)) return true;
 
-	if (m_bTriStateReload && GetState() == eReload &&
-		cmd == kWPN_FIRE && flags & CMD_START &&
-		m_sub_state == eSubstateReloadInProcess) //остановить перезагрузку
-	{
-		AddCartridge(1);
-		m_sub_state = eSubstateReloadEnd;
-		return true;
-	}
-	return false;
+    if (m_bTriStateReload && GetState() == eReload &&
+        cmd == kWPN_FIRE && flags & CMD_START &&
+        m_sub_state == eSubstateReloadInProcess) //остановить перезагрузку
+    {
+        AddCartridge(1);
+        m_sub_state = eSubstateReloadEnd;
+        return true;
+    }
+    return false;
 }
 
 void CWeaponAutomaticShotgun::OnAnimationEnd(u32 state)
 {
-	if (!m_bTriStateReload || state != eReload)
-		return inherited::OnAnimationEnd(state);
+    if (!m_bTriStateReload || state != eReload)
+        return inherited::OnAnimationEnd(state);
 
-	switch (m_sub_state)
-	{
-	case eSubstateReloadBegin:
-		{
-			m_sub_state = eSubstateReloadInProcess;
-			SwitchState(eReload);
-		}
-		break;
+    switch (m_sub_state)
+    {
+    case eSubstateReloadBegin:
+        {
+            m_sub_state = eSubstateReloadInProcess;
+            SwitchState(eReload);
+        }
+        break;
 
-	case eSubstateReloadInProcess:
-		{
-			if (0 != AddCartridge(1))
-			{
-				m_sub_state = eSubstateReloadEnd;
-			}
-			SwitchState(eReload);
-		}
-		break;
+    case eSubstateReloadInProcess:
+        {
+            if (0 != AddCartridge(1))
+            {
+                m_sub_state = eSubstateReloadEnd;
+            }
+            SwitchState(eReload);
+        }
+        break;
 
-	case eSubstateReloadEnd:
-		{
-			m_sub_state = eSubstateReloadBegin;
-			SwitchState(eIdle);
-		}
-		break;
-	};
+    case eSubstateReloadEnd:
+        {
+            m_sub_state = eSubstateReloadBegin;
+            SwitchState(eIdle);
+        }
+        break;
+    };
 }
 
 void CWeaponAutomaticShotgun::Reload()
 {
-	if (m_bTriStateReload)
-	{
-		TriStateReload();
-	}
-	else
-		inherited::Reload();
+    if (m_bTriStateReload)
+    {
+        TriStateReload();
+    }
+    else
+        inherited::Reload();
 }
 
 void CWeaponAutomaticShotgun::TriStateReload()
 {
-	if (m_magazine.size() == (u32)iMagazineSize || !HaveCartridgeInInventory(1))return;
-	CWeapon::Reload();
-	m_sub_state = eSubstateReloadBegin;
-	SwitchState(eReload);
+    if (m_magazine.size() == (u32)iMagazineSize || !HaveCartridgeInInventory(1))return;
+    CWeapon::Reload();
+    m_sub_state = eSubstateReloadBegin;
+    SwitchState(eReload);
 }
 
 void CWeaponAutomaticShotgun::OnStateSwitch(u32 S, u32 oldState)
 {
-	if (!m_bTriStateReload || S != eReload)
-	{
-		inherited::OnStateSwitch(S, oldState);
-		return;
-	}
+    if (!m_bTriStateReload || S != eReload)
+    {
+        inherited::OnStateSwitch(S, oldState);
+        return;
+    }
 
-	CWeapon::OnStateSwitch(S, oldState);
+    CWeapon::OnStateSwitch(S, oldState);
 
-	if (m_magazine.size() == (u32)iMagazineSize || !HaveCartridgeInInventory(1))
-	{
-		switch2_EndReload();
-		m_sub_state = eSubstateReloadEnd;
-		return;
-	};
+    if (m_magazine.size() == (u32)iMagazineSize || !HaveCartridgeInInventory(1))
+    {
+        switch2_EndReload();
+        m_sub_state = eSubstateReloadEnd;
+        return;
+    };
 
-	switch (m_sub_state)
-	{
-	case eSubstateReloadBegin:
-		if (HaveCartridgeInInventory(1))
-			switch2_StartReload();
-		break;
-	case eSubstateReloadInProcess:
-		if (HaveCartridgeInInventory(1))
-			switch2_AddCartgidge();
-		break;
-	case eSubstateReloadEnd:
-		switch2_EndReload();
-		break;
-	};
+    switch (m_sub_state)
+    {
+    case eSubstateReloadBegin:
+        if (HaveCartridgeInInventory(1))
+            switch2_StartReload();
+        break;
+    case eSubstateReloadInProcess:
+        if (HaveCartridgeInInventory(1))
+            switch2_AddCartgidge();
+        break;
+    case eSubstateReloadEnd:
+        switch2_EndReload();
+        break;
+    };
 }
 
 void CWeaponAutomaticShotgun::switch2_StartReload()

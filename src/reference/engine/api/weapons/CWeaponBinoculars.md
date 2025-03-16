@@ -4,7 +4,9 @@ ___
 
 ## About
 
+Binoculars Engine Class
 
+Exported LUA class WP_BINOC
 
 ## Code
 

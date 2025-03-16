@@ -4,8 +4,6 @@ ___
 
 ## General information
 
-
-
 ![pw-m centered](images/pocket-workshop-main.png)
 
 ___

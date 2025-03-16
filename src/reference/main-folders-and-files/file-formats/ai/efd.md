@@ -1,4 +1,4 @@
-# .efd (Evaluation Function Data)
+# *.efd (Evaluation Function Data)
 
 ___
 

@@ -12,7 +12,7 @@ ___
 
 ## Operators
 
-- [Add X-Ray Camera](../addon-operators/blender-x-ray-addon-operator-add-x-ray-camera.md)
+- [Add X-Ray Camera](../addon-operators/operator-add-x-ray-camera.md)
 
 ___
 

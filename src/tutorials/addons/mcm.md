@@ -72,9 +72,9 @@ Inspired by MCM mod for the Bethesda games, this provides similar functionality 
 
 ## <a name="adding_mcm_functionality"></a> Adding MCM Functionality
 
-In order to add MCM functionality to your mod, you'll need to create a script in `gamedata/scripts` ending in `mcm.script`. You can use a `_` to separate this suffix from the name of the script but this is not necessary. For example, both `mod_name_mcm.script` and `modnamemcm.script` will work. 
+In order to add MCM functionality to your mod, you'll need to create a script in `gamedata/scripts` ending in `mcm.script`. You can use a `_` to separate this suffix from the name of the script but this is not necessary. For example, both `mod_name_mcm.script` and `modnamemcm.script` will work.
 
-Within these scripts, MCM will execute the function `on_mcm_load()`. This function must define an options tree, where you'll set up the options for your mod - details on how to do so are in the sections below. The function `on_mcm_load()` must return this valid options tree to work. 
+Within these scripts, MCM will execute the function `on_mcm_load()`. This function must define an options tree, where you'll set up the options for your mod - details on how to do so are in the sections below. The function `on_mcm_load()` must return this valid options tree to work.
 
 In addition to returning a valid options tree `op`, you may return a string to name a collection. This string can be anything, and is used to create a category for one or more options trees. Options that are grouped together will be presented together under a common heading, and clicking "Apply to All" in the MCM will apply to all options trees grouped under the same collection.
 
@@ -186,6 +186,7 @@ axr_main.config:r_value("mcm", path, type, default) --see _g for how r_value fun
 ```
 
 ### <a name="per-save-mcm-options"></a>Per-save MCM settings
+
 *This uses [dph-hcl's orginal script](https://www.moddb.com/mods/stalker-anomaly/addons/151-mcm-13-mcm-savefile-storage). Refer to their mod and script for more.*
 
 > dph-hcl's original function has been aliased here as `ui_mcm.store_in_save(path)`. This function can be called safely as MCM will simply print an error if dph-hcl's script is missing.
@@ -305,9 +306,9 @@ These parameters must be declared when certain other parameters are declared.
 | `link` | `image` / `slide` | String | Path and filename (including extension) of the texture that you want to show in the image or slide image area. The assumed root folder is `gamedata\textures` |
 | `text` | `slide` / `title` / `desc` | String | String ID of the text to be shown |
 
-<sup>1</sup>: cmd options don't get cached in `axr_options.ltx`, instead they get stored in `appdata/user.ltx`. The [def] parameter is not needed here since the engine applies default values to commands if they don't exist in `user.ltx`.
+<sup>1</sup>: cmd options don't get cached in `axr_options.ltx`, instead they get stored in `appdata/user.ltx`. The \[def] parameter is not needed here since the engine applies default values to commands if they don't exist in `user.ltx`.
 
-<sup>2</sup>: Pair-values for `radio_h` or `radio_v` are provided in the following format: `{ value, value string ID }` 
+<sup>2</sup>: Pair-values for `radio_h` or `radio_v` are provided in the following format: `{ value, value string ID }`
 
 Example:
 
@@ -315,6 +316,7 @@ Example:
 -- for some group called groupID
 { id = "somelist", type = "radio_h", val = 2, content = { {0, "somelist_off"}, {1, "somelist_half"}, {2, "somelist_full"} }, def = 0 }
 ```
+
  In this example, you would need to provide three translation strings:
 
 - `ui_mcm_lst_somelist_off`
@@ -324,6 +326,7 @@ Example:
 Because all lists and radio button elements share the same prefix, `ui_mcm_lst`, it is important that the value string ID is something unique.
 
 ### <a name="optional-parameters"></a>Optional parameters
+
 These parameters are entirely optional, and can be used for further customization.
 
 | Parameter | Dependent parameter | Type | Description |
@@ -351,7 +354,7 @@ These parameters are entirely optional, and can be used for further customizatio
 
 ### <a name="keybind-information"></a>Additional key_bind information
 
-Keybinds are gathered into two meta lists for users' convenience, which show at the very top of MCM as a list of every keybind that MCM provides. This means it is very important that your translation strings clearly identify what the key does, and which addon the keybind comes from. 
+Keybinds are gathered into two meta lists for users' convenience, which show at the very top of MCM as a list of every keybind that MCM provides. This means it is very important that your translation strings clearly identify what the key does, and which addon the keybind comes from.
 
 The value stored by the key bind is the DIK_keys value of the key. The same number will be given to key-related callbacks.
 
@@ -392,7 +395,7 @@ If `multi_tap` is `false`, the timer is reset when true is returned, preventing 
 - `id`: a unique identifer for your event
 - `key`: the key passed into the `on_key_hold` callback
 - `repeat`: Optional, takes a number representing time in seconds. If the key continues to be held down, the function will return `true` again after `repeat` seconds, on a cycle.
-   
+
 When called from the `on_key_hold` callback, it will return true after the key has been held down for `Y` ms (determined by applying a user-defined multiplier to `X` above) and then again every `repeat` seconds if `repeat` is provided. The sequence resets when key is released.
 
 `ui_mcm.simple_press(id, key, functor)`

@@ -4,7 +4,7 @@ ___
 
 ## About
 
-Deletes constraints created with the [Convert Limits to Constraints](blender-x-ray-addon-operator-convert-limits-to-constraints.md) operator. To delete a Constraint, the name of the Constraint must remain unchanged and be `!-XRAY-JOINT-LIMITS`
+Deletes constraints created with the [Convert Limits to Constraints](operator-convert-limits-to-constraints.md) operator. To delete a Constraint, the name of the Constraint must remain unchanged and be `!-XRAY-JOINT-LIMITS`
 
 ### Mode Parameter
 

@@ -6,8 +6,6 @@ ___
 
 FN 2000 Engine Class
 
-Exported LUA class
-
 ## Code
 
 ### Header
@@ -24,10 +22,10 @@ Exported LUA class
 class CWeaponFN2000 : public CWeaponMagazined
 {
 private:
-	typedef CWeaponMagazined inherited;
+    typedef CWeaponMagazined inherited;
 public:
-	CWeaponFN2000();
-	virtual ~CWeaponFN2000();
+    CWeaponFN2000();
+    virtual ~CWeaponFN2000();
 DECLARE_SCRIPT_REGISTER_FUNCTION
 };
 
@@ -57,11 +55,11 @@ using namespace luabind;
 #pragma optimize("s",on)
 void CWeaponFN2000::script_register(lua_State* L)
 {
-	module(L)
-	[
-		class_<CWeaponFN2000, CGameObject>("CWeaponFN2000")
-		.def(constructor<>())
-	];
+    module(L)
+    [
+        class_<CWeaponFN2000, CGameObject>("CWeaponFN2000")
+        .def(constructor<>())
+    ];
 }
 ```
 

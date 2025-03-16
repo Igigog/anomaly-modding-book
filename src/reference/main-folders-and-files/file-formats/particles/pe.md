@@ -1,4 +1,4 @@
-# .pe (Particle Effect)
+# *.pe (Particle Effect)
 
 ___
 
@@ -10,4 +10,4 @@ ___
 
 ## Programs editing this file
 
-- [SDK Particle Editor](../../../modding-tools/sdk/particle-editor.md)
+- [SDK Particle Editor](../../../modding-tools/sdk/particle-editor/particle-editor.md)

@@ -1,6 +1,5 @@
-# .scop
+# *.scop
 
 ___
 
 ## About
-

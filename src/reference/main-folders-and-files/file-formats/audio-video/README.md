@@ -2,5 +2,5 @@
 
 ___
 
-- [.ogg](ogg.md)
-- [.ogm](ogm.md)
+- [*.ogg](ogg.md)
+- [*.ogm](ogm.md)

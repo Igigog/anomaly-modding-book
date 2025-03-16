@@ -16,13 +16,13 @@ ___
 | Parameter name | Parameter description | Example value | Value Data Type | Possible parameter values and their descriptions |
 |---|---|---|:---:|---|
 | GroupControlSection |  | spawn_group |  |  |
-| $spawn | Outfit Directory in the [Level Editor](../../../sdk/level-editor.md) | "outfit\cs_light_novice_outfit" |  |  |
+| $spawn | Outfit Directory in the [Level Editor](../../../modding-tools/sdk/level-editor/level-editor.md) | "outfit\cs_light_novice_outfit" |  |  |
 | cform | Skeleton model | skeleton |  | parameter for dynamic objects; necessary for correct creation of the skeleton model |
 | discovery_dependency | Outdated parameter used in early SoC builds. Needed for discovery or improvement after working with scientists |  |  |  |
 | class | Engine outfit class | EQU_STLK |  |  |
 | default_to_ruck | whether the outfit will be moved to the backpack instead of the slot when picked up | true |  | true - 1 - on (Yes)<br> false - 0 - off (No) |
 | sprint_allowed | It is possible to run in this outfit | true |  | true - 1 - on (Yes)<br> false - 0 - off (No) |
-| kind | Kind of item to group into the appropriate section in the [Item Spawner](../../../../tutorials/modding-tools/in-game-editors/item-spawner.md) | o_light<br> o_medium<br> o_sci<br> o_heavy |  |  |
+| kind | Kind of item to group into the appropriate section in the [Item Spawner](../../../modding-tools/in-game-editors/item-spawner.md) | o_light<br> o_medium<br> o_sci<br> o_heavy |  |  |
 | cost | base price | 32340 |  |  |
 | community | To which faction the outfit belongs | dolg | army<br> csky<br> stalker<br> killer<br> dolg<br> bandit<br> freedom<br> monolith<br> isg<br> greh<br> ecolog<br> renegade |  |
 | helmet_avaliable | Is a helmet available for this outfit | true |  | true - 1 - on (Yes)<br> false - 0 - off (No) |

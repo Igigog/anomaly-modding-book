@@ -1,4 +1,4 @@
-# .snd_static
+# *.snd_static
 
 ___
 

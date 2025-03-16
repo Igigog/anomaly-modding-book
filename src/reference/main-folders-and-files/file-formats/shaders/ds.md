@@ -1,4 +1,4 @@
-# .ds (Domain Shader)
+# *.ds (Domain Shader)
 
 ___
 

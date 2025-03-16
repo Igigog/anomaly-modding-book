@@ -2,7 +2,7 @@
 
 ___
 
-![image-editor centered](sdk-image/image-editor.png)
+![image-editor centered](../sdk-image/image-editor.png)
 
 ## About
 
@@ -12,7 +12,7 @@ Allows you to edit texture parameters
 |---|---|
 | 2D Texture | Just a texture |
 | [Cube Map](https://en.wikipedia.org/wiki/Cube_mapping) | Is a method of environment mapping that uses the six faces of a cube as the map shape |
-| Bump Map | [Bump](../main-folders-and-files/file-formats/index.html#bumpdds-1) |
+| Bump Map | [Bump](https://en.wikipedia.org/wiki/Bump_mapping) |
 | Normal Map | Normal Map |
 | Terrain |  |
 

@@ -2,5 +2,4 @@
 
 ___
 
-- [Blender X-Ray Addon Summary]()
-- []
+- [Blender X-Ray Addon Summary](blender-x-ray-addon-summary.md)

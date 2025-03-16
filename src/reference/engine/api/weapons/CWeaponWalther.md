@@ -4,7 +4,9 @@ ___
 
 ## About
 
+Walther Engine Class
 
+Exported LUA class WP_WALTH
 
 ## Code
 

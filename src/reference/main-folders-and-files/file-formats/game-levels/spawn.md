@@ -1,4 +1,4 @@
-# .spawn
+# *.spawn
 
 ___
 

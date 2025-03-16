@@ -4,7 +4,9 @@ ___
 
 ## About
 
+Vintorez Engine Class
 
+Exported LUA class WP_VINT
 
 ## Code
 

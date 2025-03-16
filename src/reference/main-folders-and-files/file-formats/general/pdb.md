@@ -4,4 +4,4 @@ ___
 
 ## About
 
-[More Here](../../../addons/pdb.md)
+[More Here](../../../../tutorials/addons/pdb.md)

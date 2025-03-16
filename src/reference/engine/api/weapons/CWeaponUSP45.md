@@ -4,7 +4,9 @@ ___
 
 ## About
 
+USP45 Engine Class
 
+Exported LUA class WP_USP45
 
 ## Code
 

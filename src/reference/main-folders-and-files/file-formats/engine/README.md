@@ -2,5 +2,5 @@
 
 ___
 
-- [.h](h.md)
-- [.cpp](cpp.md)
+- [*.h](h.md)
+- [*.cpp](cpp.md)

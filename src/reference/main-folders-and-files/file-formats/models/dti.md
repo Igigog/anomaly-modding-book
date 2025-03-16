@@ -1,7 +1,5 @@
-# .dti (Detail Indices)
+# *.dti (Detail Indices)
 
 ___
 
 ## About
-
-

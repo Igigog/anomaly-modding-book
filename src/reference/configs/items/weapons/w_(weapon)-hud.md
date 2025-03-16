@@ -6,11 +6,11 @@
 <details>
     <summary>General Weapon HUD Parameters</summary>
 
-[wpn_*weapon name*_hud]:
+\[wpn_*weapon name*_hud]:
 
 | Parameter name | Parameter description | Example value | Value Data Type | Possible parameter values and their descriptions |
 |---|---|---|:---:|---|
-| item_visual | Weapon [hud model](../../../terminology/terminology.md#object_hud) | anomaly_weapons\wpn_akm\wpn_akm_hud.ogf |  | File path relative to the gamedata\meshes folder |
+| item_visual | Weapon [hud model](../../../../reference/terminology/models/object-hud.md) | anomaly_weapons\wpn_akm\wpn_akm_hud.ogf |  | File path relative to the gamedata\meshes folder |
 | attach_place_idx |  | 0 |  |  |
 | zoom_hide_crosshair | Hide crosshair when aiming | true |  | true - 1 - on (Yes)<br> false - 0 - off (No) |
 | hud_fov_addition_modifier |  |  |  |  |

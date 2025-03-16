@@ -10,19 +10,19 @@ ___
 
 ## About
 
-Modified tool for working with [.omf](../../main-folders-and-files/file-formats/animations/omf.md) format.
+Modified tool for working with [*.omf](../../main-folders-and-files/file-formats/animations/omf.md) format.
 
 ![editor centered](images/omf-editor-by-valerok.png)
 
 ## Features
 
-- Merge multiple [.omf](../../main-folders-and-files/file-formats/animations/omf.md) files
+- Merge multiple [*.omf](../../main-folders-and-files/file-formats/animations/omf.md) files
 - Clone, delete, save selected animations
 - Working with motion marks
 - Working with flags
-- Ability to save in [.skls](../../main-folders-and-files/file-formats/animations/skl-skls.md), [.skl](../../main-folders-and-files/file-formats/animations/skl-skls.md)
+- Ability to save in [*.skls](../../main-folders-and-files/file-formats/animations/skl-skls.md), [*.skl](../../main-folders-and-files/file-formats/animations/skl-skls.md)
 - Fix Gunslinger mod animations
-- Displaying of bone parts animation, possibility to convert into [.ltx](../../main-folders-and-files/file-formats/conf-script/ltx.md) format for import into SDK
+- Displaying of bone parts animation, possibility to convert into [*.ltx](../../main-folders-and-files/file-formats/conf-script/ltx.md) format for import into SDK
 - A lot of bug fixes and crashes from the original version.
 - Changing of name of bones
 - Viewing Bone Parts
@@ -42,19 +42,19 @@ Modified tool for working with [.omf](../../main-folders-and-files/file-formats/
 
 | Button | Description |
 |---|---|
-| Load | Loads the selected .omf |
-| Save | Save .omf |
-| Save As | Save as .omf or .skls or .skl |
+| Load | Loads the selected *.omf |
+| Save | Save *.omf |
+| Save As | Save as *.omf or \*.skls or \*.skl |
 | Exit | Exits the program |
 
 - #### Tools Button
 
 | Button | Description |
 |---|---|
-| Merge With | Merge the file with another .omf |
-| Add Anims From | Add animations from other .omf (need to know the name of the animation to be added) |
+| Merge With | Merge the file with another *.omf |
+| Add Anims From | Add animations from other *.omf (need to know the name of the animation to be added) |
 | Try Repair | Trying to fix an animation file (for example, the animation from Gunslinger Mod) |
-| Swap Anim Marks | Open the .omf file, make it the main file and transfer all the motion marks from the old file to the new one in the animation with the same names |
+| Swap Anim Marks | Open the *.omf file, make it the main file and transfer all the motion marks from the old file to the new one in the animation with the same names |
 | Rename Bones | Allows you to change the name of the bones |
 | Show Bone Parts | Ability to view Bone Parts |
 
@@ -72,7 +72,7 @@ Modified tool for working with [.omf](../../main-folders-and-files/file-formats/
 |---|---|---|
 | Motion Name | Animation name | - |
 | Speed | Animation speed | - |
-| Power | The power of animation | <abbr title="Unconfirmed">.anm</abbr> only |
+| Power | The power of animation | <abbr title="Unconfirmed">*.anm</abbr> only |
 | Accrue | Blend In | - |
 | Falloff | Blend Out | - |
 | Length | Animation length | - |

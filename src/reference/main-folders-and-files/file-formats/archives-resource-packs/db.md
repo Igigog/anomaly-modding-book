@@ -1,4 +1,4 @@
-# .db (DataBase)
+# *.db (DataBase)
 
 ___
 

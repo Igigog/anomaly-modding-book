@@ -4,7 +4,7 @@ ___
 
 ## About
 
-One of the methods of dynamic level of detail. Only for dynamic objects.
+One of the methods of dynamic level of detail. Only for [dynamic objects](dynamic-object.md).
 
 ___
 

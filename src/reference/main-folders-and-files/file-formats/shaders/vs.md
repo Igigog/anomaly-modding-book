@@ -1,4 +1,4 @@
-# .vs (Vertex Shader)
+# *.vs (Vertex Shader)
 
 ___
 

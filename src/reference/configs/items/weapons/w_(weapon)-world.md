@@ -8,17 +8,17 @@ Configuration parameters for weapons
 
 ___
 
-Parameters of the weapon are set for each sample in a separate *.ltx file, and consist of two sections (Each contains its own set of parameters):
+Parameters of the weapon are set for each sample in a separate [*.ltx](../../../main-folders-and-files/file-formats/conf-script/ltx.md) file, and consist of two sections (Each contains its own set of parameters):
 
-- [wpn_name] - Main, it sets most of the parameters (for NPC and 3rd-person view).
+- \[wpn_name] - Main, it sets most of the parameters (for NPC and 3rd-person view).
 
-- [wpn_name_hud] - Secondary, where you set first-person view parameters only.
+- \[wpn_name_hud] - Secondary, where you set first-person view parameters only.
 
 ___
 
 ## World Model Parameters
 
-[wpn_name]: Here you can set additional characteristics of weapon from sections for example:
+\[wpn_name]: Here you can set additional characteristics of weapon from sections for example:
 
 - identity_immunities - a section that contains damage parameters for different game difficulty levels
 - weapon_probability
@@ -44,10 +44,10 @@ ___
 | single_handed | held with one hand | 0 |  | true - 1 - on (Yes)<br> false - 0 - off (No) |
 | default_to_ruck | whether the weapon will be moved to the backpack instead of the slot when picked up | false |  | true - 1 - on (Yes)<br> false - 0 - off (No) |
 | sprint_allowed | this line means that you can run with the weapon | true |  | true - 1 - on (Yes)<br> false - 0 - off (No) |
-| kind | The type of item to group into the appropriate section in the [Item Spawner](../../../../tutorials/modding-tools/in-game-editors/item-spawner.md) | w_rifle |  | w_rifle<br> w_misc<br> w_explosive<br> w_melee<br> w_pistol<br> w_smg<br> w_shotgun<br> w_sniper |
+| kind | The type of item to group into the appropriate section in the [Item Spawner](../../../modding-tools/in-game-editors/item-spawner.md) | w_rifle |  | w_rifle<br> w_misc<br> w_explosive<br> w_melee<br> w_pistol<br> w_smg<br> w_shotgun<br> w_sniper |
 | cost | Base price | 28780 |  |  |
-| hud | Section with parameters for [hud weapon](../../../terminology/terminology.md#object_hud) | wpn_akm_hud |  | Section name |
-| visual | [World model](../../../terminology/terminology.md#object_world) | dynamics\weapons\wpn_akm\wpn_akm.ogf |  | Path to file |
+| hud | Section with parameters for [hud weapon](../../../terminology/models/object-hud.md) | wpn_akm_hud |  | Section name |
+| visual | [World model](../../../terminology/models/object-world.md) | dynamics\weapons\wpn_akm\wpn_akm.ogf |  | Path to file |
 
 </details>
 
@@ -97,9 +97,9 @@ ___
 
 | Parameter Name | Parameter Description | Example Value | Value Data Type | Parameter Possible Values And Their Descriptions |
 |---|---|---|:---:|---|
-| weapon_class | is used exclusively for the purchase menu in multiplayer | shotgun<br> assault_rifle<br> sniper_rifle<br> heavy_weapon |  |
-| startup_ammo | startup amount of ammo in multiplayer | The number of rounds of ammunition is indicated |  |
-| kill_msg_x | the coordinate of the upper left corner of the kill icon on the X axis |  |  |
+| weapon_class | is used exclusively for the purchase menu in multiplayer | shotgun<br> assault_rifle<br> sniper_rifle<br> heavy_weapon |  |  |
+| startup_ammo | startup amount of ammo in multiplayer | The number of rounds of ammunition is indicated |  |  |
+| kill_msg_x | the coordinate of the upper left corner of the kill icon on the X axis |  |  |  |
 | kill_msg_y | top-left corner coordinate of the kill icon on the Y axis |  |  |  |
 | kill_msg_width | kill icon width | Specified in pixels |  |  |
 | kill_msg_height | kill icon height | Specified in pixels |  |  |

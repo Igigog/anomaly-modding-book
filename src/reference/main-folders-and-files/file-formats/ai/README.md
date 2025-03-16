@@ -2,5 +2,5 @@
 
 ___
 
-- [.dat](dat.md)
-- [.efd](efd.md)
+- [*.dat](dat.md)
+- [*.efd](efd.md)

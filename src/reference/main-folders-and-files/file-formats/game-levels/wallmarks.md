@@ -1,6 +1,5 @@
-# .wallmarks
+# *.wallmarks
 
 ___
 
 ## About
-

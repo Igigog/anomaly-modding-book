@@ -1,19 +1,19 @@
-# .skl/.skls
+# *.skl | \*.skls
 
 ___
 
 ## About
 
-These files store skeleton animations. The format for storing animations in .skl/.skls is similar to the format of animations embedded in [.object](../models/object.md) files. Animations are stored in uncompressed form. Bone motion data are stored lossless when exported from a 3D editor. These formats are designed for X-Ray SDK. They are used as source files that are compiled into compressed formats for the game.
+These files store skeleton animations. The format for storing animations in *.skl/\*.skls is similar to the format of animations embedded in [*.object](../models/object.md) files. Animations are stored in uncompressed form. Bone motion data are stored lossless when exported from a 3D editor. These formats are designed for X-Ray SDK. They are used as source files that are compiled into compressed formats for the game.
 
 ___
 
 ## Technical information
 
-- Animations are stored as 3 animation curves for position and 3 curves for rotation in [Euler angles](https://en.wikipedia.org/wiki/Euler_angles) with ZXY axis order.
-- A .skls file can store one or more animations
-- A .skl file can store only one animation
-- Each animation has [game parameters](/src/modding-tools/omf-editor-by-valerok.md#animation-options).
+- Animations are stored as 3 animation curves for position and 3 curves for rotation in [Euler angles](https://en.wikipedia.org/wiki/Euler_angles) with ZXY axis order
+- A *.skls file can store one or more animations
+- A *.skl file can store only one animation
+- Each animation has [game parameters](../../../modding-tools/modding-tools-animations/omf-editor-by-valerok.md#animation-parameters).
 - Skeletal animations do not support Scale keys
 
 ### Interpolation types
@@ -29,8 +29,8 @@ ___
 
 ## Programs editing this file
 
-- [Blender (X-Ray Addon)](../../blender/index.html)
-- [SDK 0.7](../../sdk/index.html)
+- [Blender (X-Ray Addon)](../../../modding-tools/blender/blender-x-ray-addon-summary.md)
+- [SDK 0.7](../../../modding-tools/sdk/README.md)
 
 ___
 

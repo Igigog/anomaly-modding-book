@@ -1,4 +1,4 @@
-# .ps (Pixel Shader)
+# *.ps (Pixel Shader)
 
 ___
 

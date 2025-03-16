@@ -4,7 +4,9 @@ ___
 
 ## About
 
+LR300 Engine Class
 
+Exported LUA class WP_LR300
 
 ## Code
 

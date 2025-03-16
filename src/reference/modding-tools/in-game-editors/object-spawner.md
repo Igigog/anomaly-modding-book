@@ -18,7 +18,7 @@ ___
 
 ## Technical part
 
-Sections appear in the list because of the specified `engine class` in their [.ltx](../../main-folders-and-files/file-formats/conf-script/ltx.md) file. The spawner script can be found in the file "`ui_debug_main.script`"
+Sections appear in the list because of the specified `engine class` in their [*.ltx](../../main-folders-and-files/file-formats/conf-script/ltx.md) file. The spawner script can be found in the file "`ui_debug_main.script`"
 
 `Full list`
 

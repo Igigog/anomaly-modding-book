@@ -15,20 +15,20 @@ This table lists the X-Ray file formats that the addon can import/export.
 
 | Extension | Description | Can Import | Can Export |
 |---|---|---|---|
-| [.object](../../main-folders-and-files/file-formats/models/object.md) | Source objects | Yes | Yes |
-| [.skl](../../main-folders-and-files/file-formats/animations/skl-skls.md) | Skeletal animation | Yes | Yes |
-| [.skls](../../main-folders-and-files/file-formats/animations/skl-skls.md) | Skeletal animations in a container | Yes | Yes |
-| [.ogf](../../main-folders-and-files/file-formats/models/ogf.md) | Compiled objects | Yes | Yes |
-| [.omf](../../main-folders-and-files/file-formats/animations/omf.md) | Game skeletal actions | Yes | Yes |
-| [.anm](../../main-folders-and-files/file-formats/animations/anm.md) | Animated paths | Yes | Yes |
-| [.bones](../../main-folders-and-files/file-formats/models/bones.md) | Bones data | Yes | Yes |
-| [.dm](../../main-folders-and-files/file-formats/models/dm.md) | Detailed effect models | Yes | Yes |
-| [.details](../../main-folders-and-files/file-formats/game-levels/details.md) | Level details | Yes | Yes |
-| [.level](../../main-folders-and-files/file-formats/game-levels/dot-level.md) | List of scene objects in the SDK | Yes | Yes |
+| [*.object](../../main-folders-and-files/file-formats/models/object.md) | Source objects | Yes | Yes |
+| [*.skl](../../main-folders-and-files/file-formats/animations/skl-skls.md) | Skeletal animation | Yes | Yes |
+| [*.skls](../../main-folders-and-files/file-formats/animations/skl-skls.md) | Skeletal animations in a container | Yes | Yes |
+| [*.ogf](../../main-folders-and-files/file-formats/models/ogf.md) | Compiled objects | Yes | Yes |
+| [*.omf](../../main-folders-and-files/file-formats/animations/omf.md) | Game skeletal actions | Yes | Yes |
+| [*.anm](../../main-folders-and-files/file-formats/animations/anm.md) | Animated paths | Yes | Yes |
+| [*.bones](../../main-folders-and-files/file-formats/models/bones.md) | Bones data | Yes | Yes |
+| [*.dm](../../main-folders-and-files/file-formats/models/dm.md) | Detailed effect models | Yes | Yes |
+| [*.details](../../main-folders-and-files/file-formats/game-levels/details.md) | Level details | Yes | Yes |
+| [*.level](../../main-folders-and-files/file-formats/game-levels/dot-level.md) | List of scene objects in the SDK | Yes | Yes |
 | [level](../../main-folders-and-files/file-formats/game-levels/level.md) | Game levels | Yes | Yes |
-| [.part](../../main-folders-and-files/file-formats/game-levels/part.md) | Scene objects | Yes  | No |
-| [.group](../../main-folders-and-files/file-formats/models/group.md) | Object group | Yes | Yes |
-| [.err](../../main-folders-and-files/file-formats/game-levels/err.md) | Error list | Yes  | No |
+| [*.part](../../main-folders-and-files/file-formats/game-levels/part.md) | Scene objects | Yes  | No |
+| [*.group](../../main-folders-and-files/file-formats/models/group.md) | Object group | Yes | Yes |
+| [*.err](../../main-folders-and-files/file-formats/game-levels/err.md) | Error list | Yes  | No |
 
 ## [Compatibility](https://github.com/PavelBlend/blender-xray/wiki#supported-blender-versions)
 
@@ -79,7 +79,7 @@ These settings specify paths to external files or directories of X-Ray Engine or
 Example Path Settings:
 ![Setup-P3 centered](images/5.png)
 
-- [About the required paths can be found here](../blender/addon-settings-options/pathes.md)
+- [About the required paths can be found here](addon/addon-preference-panels/preference-panel-paths.md)
 
 - [Advanced Settings](addon-settings-options/index.html)
 

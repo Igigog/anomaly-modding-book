@@ -10,17 +10,17 @@ ___
 
 ## About
 
-Tool for working with [.ogf](../../main-folders-and-files/file-formats/models/ogf.md) and [.dm](../../main-folders-and-files/file-formats/models/dm.md) format
+Tool for working with [*.ogf](../../main-folders-and-files/file-formats/models/ogf.md) and [*.dm](../../main-folders-and-files/file-formats/models/dm.md) format
 
 ![ogf-editor centered](images/ogf-editor-by-valerok.png)
 
 ## Features
 
-- Ability to work with all .ogf parameters
-- Ability to work with meshes in .ogf
+- Ability to work with all *.ogf parameters
+- Ability to work with meshes in *.ogf
 - Viewport
-- Integration with OGF Viewer and [OMF Editor](../omf-editor-by-valerok.md)
-- Saving .ogf in [.object](../../main-folders-and-files/file-formats/models/object.md), [.skl](../../main-folders-and-files/file-formats/animations/skl-skls.md), [.skls](../../main-folders-and-files/file-formats/animations/skl-skls.md), [.bones](../../main-folders-and-files/file-formats/models/bones.md) formats
+- Integration with OGF Viewer and [OMF Editor](../modding-tools-animations/omf-editor-by-valerok.md)
+- Saving *.ogf in [*.object](../../main-folders-and-files/file-formats/models/object.md), [*.skl](../../main-folders-and-files/file-formats/animations/skl-skls.md), [*.skls](../../main-folders-and-files/file-formats/animations/skl-skls.md), [*.bones](../../main-folders-and-files/file-formats/models/bones.md) formats
 - Hotkeys
 - Fix Gunslinger models (models are fixed automatically when you save them)
 
@@ -39,10 +39,10 @@ Tool for working with [.ogf](../../main-folders-and-files/file-formats/models/og
 
 | Button | Description |
 |---|---|
-| Load | Loads the selected .ogf |
-| Save | Save .ogf |
-| Save As | Save as .ogf |
-| Export | Export as<br> .object<br> .bones<br> .obj<br> .omf<br> .skl<br> .skls<br> |
+| Load | Loads the selected *.ogf |
+| Save | Save *.ogf |
+| Save As | Save as *.ogf |
+| Export | Export as<br> *.object<br> \*.bones<br> \*.obj<br> \*.omf<br> \*.skl<br> \*.skls<br> |
 | Reload | Reloads the program |
 | Exit | Exits the program |
 
@@ -117,7 +117,7 @@ Changes the format of motion references for the model
 
 Section with texture and shader path editing. Also here can delete or move meshes of the model (If there is only one mesh, you cannot delete it)
 
-##### Mesh: [Mesh number]
+##### Mesh: \[Mesh number]
 
 | Field | Description |
 |---|---|
@@ -141,7 +141,7 @@ If you right-click on this field, then the context menu will pop up where you ca
 | Button | Description |
 |---|---|
 | Edit | Opens the OMF Editor (first, you need to specify the path to it in the settings) |
-| Load | Loads selected .omf files as an embedded movement |
+| Load | Loads selected *.omf files as an embedded movement |
 | Delete | Deletes all downloaded animations |
 
 - #### Bone Names
@@ -152,7 +152,7 @@ Displays a list of bones and their number
 
 Editing the bone parameter
 
-##### Bone id: [Bone number]
+##### Bone id: \[Bone number]
 
 | Field | Description |
 |---|---|

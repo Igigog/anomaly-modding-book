@@ -2,8 +2,8 @@
 
 ___
 
-- [.log](log.md)
-- [.pdb](pdb.md)
-- [.scoc](scoc.md)
-- [.scop](scop.md)
-- [.xrdemo](xrdemo.md)
+- [*.log](log.md)
+- [*.pdb](pdb.md)
+- [*.scoc](scoc.md)
+- [*.scop](scop.md)
+- [*.xrdemo](xrdemo.md)

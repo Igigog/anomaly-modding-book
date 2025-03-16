@@ -4,7 +4,7 @@ ___
 
 ## About
 
-Unlinks active armature bones that were linked using the [Link Bones](blender-x-ray-addon-operator-link-bones.md) operator. For the bones to be linked, the names of the constraints must be `!-xray-link`
+Unlinks active armature bones that were linked using the [Link Bones](operator-link-bones.md) operator. For the bones to be linked, the names of the constraints must be `!-xray-link`
 
 ___
 

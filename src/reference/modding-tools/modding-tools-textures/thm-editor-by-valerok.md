@@ -10,7 +10,7 @@ ___
 
 ## About
 
-The [THM Editor](modding-tools-textures/thm-editor-by-i-love-kfc.md) from i-love-kfc was taken as the basis, finalized and fixed. Allows you to work with [.thm](../../main-folders-and-files/file-formats/textures/thm.md) files.
+The [THM Editor](thm-editor-by-i-love-kfc.md) from i-love-kfc was taken as the basis, finalized and fixed. Allows you to work with [.thm](../../main-folders-and-files/file-formats/textures/thm.md) files.
 
 ![thm-editor-by-valerok centered](images/thm-editor-by-valerok.png)
 
@@ -67,7 +67,7 @@ The [THM Editor](modding-tools-textures/thm-editor-by-i-love-kfc.md) from i-love
 |---|---|
 | Image | [2D texture](https://learn.microsoft.com/en-us/windows/win32/direct3d10/d3d10-graphics-programming-guide-resources-types#2d-texture-and-2d-texture-array) |
 | [Cube Map](https://en.wikipedia.org/wiki/Cube_mapping) | Is a method of environment mapping that uses the six faces of a cube as the map shape |
-| Bump Map | [Bump]() Map |
+| Bump Map | [Bump](https://en.wikipedia.org/wiki/Bump_mapping) Map |
 | [Normal Map](https://en.wikipedia.org/wiki/Normal_mapping) | Normal Map |
 | Terrain | Terrain Map |
 

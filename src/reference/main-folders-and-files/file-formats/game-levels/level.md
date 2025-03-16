@@ -11,7 +11,7 @@ ___
 ## Technical information
 
 - Format version: 14
-- Stores visual geometry in *.ogf format. Limitations and features are similar to .ogf files without skeleton.
+- Stores visual geometry in *.ogf format. Limitations and features are similar to \*.ogf files without skeleton.
 - One mesh can store only one material.
 - The format stores visual geometry, collision geometry, sectors, portals, dynamic light sources, glow objects.
 
@@ -190,8 +190,8 @@ ___
 
 ## Programs editing this file
 
-- [Blender (X-Ray Addon)](../../blender/index.html)
-- [SDK 0.7](../../sdk/index.html)
+- [Blender (X-Ray Addon)](../../../modding-tools/blender/blender-x-ray-addon-summary.md)
+- [SDK 0.7](../../../modding-tools/sdk/README.md)
 
 ___
 

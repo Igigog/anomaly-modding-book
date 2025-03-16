@@ -335,7 +335,6 @@ for i=0,20 do
 end
 ```
 
-
 ### Script Bone Callback
 
 The second type of bone callbacks uses a lua function to modify the final position of a bone.  

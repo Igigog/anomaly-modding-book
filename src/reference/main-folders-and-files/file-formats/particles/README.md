@@ -2,5 +2,5 @@
 
 ___
 
-- [.pe](pe.md)
-- [.pg](pg.md)
+- [*.pe](pe.md)
+- [*.pg](pg.md)

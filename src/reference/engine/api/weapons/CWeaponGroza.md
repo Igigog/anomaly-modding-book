@@ -4,7 +4,9 @@ ___
 
 ## About
 
-121
+Groza Engine Class
+
+Exported LUA class WP_GROZA
 
 ## Code
 

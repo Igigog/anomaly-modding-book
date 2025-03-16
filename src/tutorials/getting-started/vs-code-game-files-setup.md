@@ -45,9 +45,9 @@ ___
 
 You need to install the following extensions:
 
-1. [audio-preview by sukumo28](https://marketplace.visualstudio.com/items?itemName=sukumo28.wav-preview) - provides more detailed data about the sound files. Needed for [.ogg](../main-folders-and-files/file-formats/index.html#ogg) files
+1. [audio-preview by sukumo28](https://marketplace.visualstudio.com/items?itemName=sukumo28.wav-preview) - provides more detailed data about the sound files. Needed for [*.ogg](../../reference/main-folders-and-files/file-formats/audio-video/ogg.md) files
 
-2. [LTX Support by AziatkaVictor](https://marketplace.visualstudio.com/items?itemName=AziatkaVictor.ltx-support) - adds support for [.ltx](../main-folders-and-files/file-formats/index.html#ltx-files) files
+2. [LTX Support by AziatkaVictor](https://marketplace.visualstudio.com/items?itemName=AziatkaVictor.ltx-support) - adds support for [*.ltx](../../reference/main-folders-and-files/file-formats/conf-script/ltx.md) files
    - extension can be configured, to do this in his settings need to specify the path to the scripts of the game
    - [More About](../../reference/modding-tools/modding-tools-coding/ltx-support.md)
 
@@ -57,7 +57,7 @@ You need to install the following extensions:
 
    - You need a fully unpacked scripts folder to work. You also need to create a workspace for your project. Some files will always give error warnings (e.g. `lua_help` - This can be deleted or added to exceptions in the extension from yinfei)
 
-4. [Open in External App by YuTengjing](https://marketplace.visualstudio.com/items?itemName=YuTengjing.open-in-external-app) - ability to open the file in other applications. Needed for .ogf, [.object](../main-folders-and-files/file-formats/index.html#object), [.dm](../main-folders-and-files/file-formats/index.html#dm-detail-model), [.omf](../main-folders-and-files/file-formats/index.html#omf-open-motions-format), [.dds](../main-folders-and-files/file-formats/index.html#dds-directdraw-surface), [.thm](../main-folders-and-files/file-formats/index.html#thm), .ogm files
+4. [Open in External App by YuTengjing](https://marketplace.visualstudio.com/items?itemName=YuTengjing.open-in-external-app) - ability to open the file in other applications. Needed for [*.ogf](../../reference/main-folders-and-files/file-formats/models/ogf.md), [*.object](../../reference/main-folders-and-files/file-formats/models/object.md), [.dm](../../reference/main-folders-and-files/file-formats/models/dm.md), [*.omf](../../reference/main-folders-and-files/file-formats/animations/omf.md), [*.dds](../../reference/main-folders-and-files/file-formats/textures/dds.md), [.thm](../../reference/main-folders-and-files/file-formats/textures/thm.md), [*.ogm](../../reference/main-folders-and-files/file-formats/audio-video/ogm.md) files
    - The extension can be configured by writing in `settings.json` in the `"openInExternalApp.openMapper": [` needed programs. Example:
 
    ```json

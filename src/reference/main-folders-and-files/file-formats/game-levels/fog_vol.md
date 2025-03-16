@@ -1,4 +1,4 @@
-# .fog_vol
+# *.fog_vol
 
 ___
 

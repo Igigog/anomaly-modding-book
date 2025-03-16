@@ -36,12 +36,12 @@ Texture:
 
 In STALKER only the following texture maps are used:
 
-- Color Map ([.dds](../../reference/main-folders-and-files/file-formats/textures/dds.md))
-- Normal Maps (For Stalker they are used as [.bump](../../reference/main-folders-and-files/file-formats/textures/bump.md) and [.bump#](../../reference/main-folders-and-files/file-formats/textures/bump#.md)) (The [Blender X-Ray](../../reference/modding-tools/blender/blender-x-ray-addon-summary.md) addon does not support the [.bump](../../reference/main-folders-and-files/file-formats/textures/bump.md) format at this time
+- Color Map ([*.dds](../../reference/main-folders-and-files/file-formats/textures/dds.md))
+- Normal Maps (For Stalker they are used as [_bump.dds](../../reference/main-folders-and-files/file-formats/textures/bump.md) and [_bump#.dds](../../reference/main-folders-and-files/file-formats/textures/bump#.md)) (The [Blender X-Ray](../../reference/modding-tools/blender/blender-x-ray-addon-summary.md) addon does not support the [_bump.dds](../../reference/main-folders-and-files/file-formats/textures/bump.md) format at this time
 
 So extra texture maps will have to be removed.
 
-Here you need to add your created texture in [.dds](../../reference/main-folders-and-files/file-formats/textures/dds.md) format
+Here you need to add your created texture in [*.dds](../../reference/main-folders-and-files/file-formats/textures/dds.md) format
 
 As a result, in the Shader Editor (![svg-icon shader-editor](../../reference/modding-tools/blender/images/blender-images-icons/shader-editor.svg)) our textures should look something like this:
 
@@ -120,5 +120,5 @@ ___
 To check the model you can go the following ways:
 
 - Load the model into the SDK and check
-- Export the model in [.ogf](../../reference/main-folders-and-files/file-formats/models/ogf.md) format and add it directly to the game
-- [Check the model and parameters through third-party programs](../modding-tools/modding-tools.md)
+- Export the model in [*.ogf](../../reference/main-folders-and-files/file-formats/models/ogf.md) format and add it directly to the game
+- [Check the model and parameters through third-party programs](../../reference/modding-tools/README.md)

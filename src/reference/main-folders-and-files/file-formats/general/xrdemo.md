@@ -1,4 +1,4 @@
-# .xrdemo
+# *.xrdemo
 
 ___
 

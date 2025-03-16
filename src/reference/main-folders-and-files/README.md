@@ -49,7 +49,7 @@ ___
 ## bin
 
 ```admonish info
-Contains the .exe files of the game renders, the configuration for OpenAL and .dll libraries
+Contains the *.exe files of the game renders, the configuration for OpenAL and *.dll libraries
 ```
 
 ___
@@ -77,49 +77,49 @@ Folder with game files
 #### ai
 
 ```admonish info
-Contains the [.efd]() files needed for the AI
+Contains the [*.efd](file-formats/ai/efd.md) files needed for the AI
 ```
 
 #### anims
 
 ```admonish info
-Contains [.anm]() files for camera animation and .ppe files for postprocessing
+Contains [*.anm](file-formats/animations/anm.md) files for camera animation and [*.ppe](file-formats/particles/pe.md) files for postprocessing
 ```
 
 #### configs
 
 ```admonish info
-Contains [.ltx]() for configuration files and [.xml]() for text
+Contains [*.ltx](file-formats/conf-script/ltx.md) for configuration files and [*.xml](file-formats/conf-script/xml.md) for text
 ```
 
 #### levels
 
 ```admonish info
-Contains [necessary files for levels]()
+Contains necessary files for levels
 ```
 
 #### meshes
 
 ```admonish info
-Contains [.ogf](), [.dm](), [.omf]() file needed for models and skeleton animation
+Contains [*.ogf](file-formats/models/ogf.md), [*.dm](file-formats/models/dm.md), [*.omf](file-formats/animations/omf.md) file needed for models and skeleton animation
 ```
 
 #### scripts
 
 ```admonish info
-Contains [.script]() files for game scripts
+Contains [*.script](file-formats/conf-script/script.md) files for game scripts
 ```
 
 #### shaders
 
 ```admonish info
-Contains [various files for shaders]()
+Contains various files for shaders
 ```
 
 #### sounds
 
 ```admonish info
-Contains [.ogg]() files for various music, sounds, ambient, etc.
+Contains [*.ogg](file-formats/audio-video/ogg.md) files for various music, sounds, ambient, etc.
 ```
 
 #### spawns
@@ -131,7 +131,7 @@ Contains a file `all.spawn` - it store all spawn spots on locations
 #### textures
 
 ```admonish info
-Contains [.dds]() textures
+Contains [*.dds](file-formats/textures/dds.md) textures
 ```
 
 ### <center>Files</center>
@@ -177,5 +177,5 @@ ___
 ## tools
 
 ```admonish info
-Contains some resources for modding, like a version icon for addons, a resource converter and .bat files for unpacking [.db]() files
+Contains some resources for modding, like a version icon for addons, a resource converter and .bat files for unpacking [*.db](file-formats/archives-resource-packs/db.md) files
 ```

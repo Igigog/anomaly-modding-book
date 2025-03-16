@@ -4,7 +4,9 @@ ___
 
 ## About
 
+As Val Engine Class
 
+Exported LUA class WP_VAL
 
 ## Code
 

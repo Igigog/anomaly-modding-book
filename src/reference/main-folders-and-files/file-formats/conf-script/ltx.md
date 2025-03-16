@@ -1,10 +1,10 @@
-# .ltx
+# *.ltx
 
 ___
 
 ## About
 
-LTX files are basically [.ini](https://en.wikipedia.org/wiki/INI_file) files with some custom additions. They are located all over the `gamedata/configs` and are used for, well, configs.
+LTX files are basically [*.ini](https://en.wikipedia.org/wiki/INI_file) files with some custom additions. They are located all over the `gamedata/configs` and are used for, well, configs.
 
 ~~~admonish example title='Here it is how ltx config might look like:'
 ```ini,lang=LTX
@@ -20,7 +20,7 @@ fancy_feature       = {=is_night()} true, false
 ```
 ~~~
 
-## .ltx features
+## *.ltx features
 
 1. `#include` preprocessor command. This command basically merges the file into this config. Many of the configs are included into `system.ltx` this way, so you can access almost all sections through `ini_sys` handler.
 2. Wildcard imports - `*` in include statement corresponds to any text, so the given include will include both `gun_ak.ltx` and `gun_m4.ltx`. This feature was developed for Anomaly, so you may not find it in other mods.
@@ -34,5 +34,5 @@ ___
 ## Programs editing this file
 
 - Any text editor
-  - There are also extensions for VSCode for .ltx ([LTX Support Extension by AziatkaVictor](https://marketplace.visualstudio.com/items?itemName=AziatkaVictor.ltx-support))
+  - There are also extensions for VSCode for *.ltx ([LTX Support Extension by AziatkaVictor](https://marketplace.visualstudio.com/items?itemName=AziatkaVictor.ltx-support))
   

@@ -4,7 +4,9 @@ ___
 
 ## About
 
+PM Engine Class
 
+Exported LUA class WP_PM
 
 ## Code
 
@@ -22,11 +24,11 @@ ___
 class CWeaponPM : public CWeaponPistol
 {
 private:
-	typedef CWeaponPistol inherited;
+    typedef CWeaponPistol inherited;
 protected:
 public:
-	CWeaponPM();
-	virtual ~CWeaponPM();
+    CWeaponPM();
+    virtual ~CWeaponPM();
 
 DECLARE_SCRIPT_REGISTER_FUNCTION
 };
@@ -57,11 +59,11 @@ using namespace luabind;
 #pragma optimize("s",on)
 void CWeaponPM::script_register(lua_State* L)
 {
-	module(L)
-	[
-		class_<CWeaponPM, CGameObject>("CWeaponPM")
-		.def(constructor<>())
-	];
+    module(L)
+    [
+        class_<CWeaponPM, CGameObject>("CWeaponPM")
+        .def(constructor<>())
+    ];
 }
 ```
 

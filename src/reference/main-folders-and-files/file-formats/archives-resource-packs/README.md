@@ -2,5 +2,5 @@
 
 ___
 
-- [.db](db.md)
-- [.xr](xr.md)
+- [*.db](db.md)
+- [*.xr](xr.md)

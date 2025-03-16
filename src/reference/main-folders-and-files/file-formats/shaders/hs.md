@@ -1,4 +1,4 @@
-# .hs (Hull Shader)
+# *.hs (Hull Shader)
 
 ___
 

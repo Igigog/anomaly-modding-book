@@ -1,10 +1,10 @@
-# .omf (Open Motions Format)
+# *.omf (Open Motions Format)
 
 ___
 
 ## About
 
-A specialized S.T.A.L.K.E.R. game format containing animations. This is a separate dedicated file used in conjunction with [.ogf](../models/ogf.md) models. Was created in order to optimize process when some different models use the same list of animations.
+A specialized S.T.A.L.K.E.R. game format containing animations. This is a separate dedicated file used in conjunction with [*.ogf](../models/ogf.md) models. Was created in order to optimize process when some different models use the same list of animations.
 
 ___
 
@@ -140,8 +140,8 @@ ___
 
 ## Programs editing this file
 
-- [Blender (X-Ray Addon)](../../blender/index.html)
-- [OMF Editor by ValeroK](../../modding-tools/omf-editor-by-valerok.md)
+- [Blender (X-Ray Addon)](../../../modding-tools/blender/blender-x-ray-addon-summary.md)
+- [OMF Editor by ValeroK](../../../modding-tools/modding-tools-animations/omf-editor-by-valerok.md)
 
 ___
 

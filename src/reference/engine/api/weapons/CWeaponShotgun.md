@@ -4,7 +4,9 @@ ___
 
 ## About
 
+Shotgun Engine Class
 
+Exported LUA class WP_SHOTG
 
 ## Code
 

@@ -1,6 +1,5 @@
-# .geomx
+# *.geomx
 
 ___
 
 ## About
-

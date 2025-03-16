@@ -2,6 +2,6 @@
 
 ___
 
-- [.ltx](ltx.md)
-- [.script](script.md)
-- [.xml](xml.md)
+- [*.ltx](ltx.md)
+- [*.script](script.md)
+- [*.xml](xml.md)

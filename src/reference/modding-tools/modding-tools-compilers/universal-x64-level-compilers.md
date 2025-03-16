@@ -47,7 +47,7 @@ Universal level compiler that supports the compilation format for games of all s
 - Fixed some crashes of the original compilers
 - Possibility to force the use of smoothing groups on a certain geometry even if the `-nosmg` key is present (To use smoothing groups on a model it is necessary to assign a compile shader with `_smg` in its name to its materials (e.g. `def_vertex\def_vertex_smg`). The compile shader itself is enough to declone from the original one and rename it with this postfix)
 - Possibility to disable tessellation on certain geometry (for example, on nosun boxes). To do this you need to name a compile shader with `_no_tess` in its name. Keep in mind that disabling tessellation can cause problems with UV
-- Ability to disable shadow baking from certain [MU models](../../terminology/terminology.md#mu-multiply-usage-objects). Compile shaders of MU models must have `_no_mu_shadow` in the name. The difference between this solution and the usual disabling of the `Cast Shadow` checkbox is that in this case self-darkening of the MU model will be applied and the model will not be highlighted
+- Ability to disable shadow baking from certain [MU models](../../terminology/models/multiply-usage.md). Compile shaders of MU models must have `_no_mu_shadow` in the name. The difference between this solution and the usual disabling of the `Cast Shadow` checkbox is that in this case self-darkening of the MU model will be applied and the model will not be highlighted
 - Added support for Interl Embree and Nvidia CUDA
 
 It requires Microsoft Visual C++ 2017 Redistributable x64 installed.
@@ -235,7 +235,7 @@ Check Ai-Map
 | -no_separator_check | Disable some conflicts |
 | -insert_graph | Enable adding graphs to common spawn when building a SoC Level (Key for SoC only) |
 | -actor_level \<level_name> | Select a level to spawn an actor. Avoids the routine of manually deleting an actor from each level. Only the actor from the selected level will be spawned, the others will be ignored. If it is not on the level, it will be automatically created in zero coordinates |
-| -no_levels_section | Ignore the list of levels from the [levels] section. Allows not to write each level to this section. |
+| -no_levels_section | Ignore the list of levels from the \[levels] section. Allows not to write each level to this section. |
 | -skip_invalid_class | Skip the "Can't create entity" crash. All objects with invalid and unknown classes will be ignored and will not be included in the common spawn |
 
 ##### Additional spawns

@@ -1,4 +1,4 @@
-# .graph
+# *.graph
 
 ___
 

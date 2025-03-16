@@ -4,13 +4,13 @@ ___
 
 ## About
 
-Same as a regular [.dds](dds.md) texture, needed as an extra map in a [.thm](thm.md)
+Same as a regular [*.dds](dds.md) texture, needed as an extra map in a [*.thm](thm.md)
 
 ___
 
 ## Technical information
 
-The same as the [.dds](dds.md). But overlaid on top of an existing texture, for more detail
+The same as the [*.dds](dds.md). But overlaid on top of an existing texture, for more detail
 
 ```admonish example
 ![example centered](images/detail_stucco_det1.png)
@@ -20,4 +20,4 @@ ___
 
 ## Programs editing this file
 
-- Any program that works with [.dds](dds.md) files (Example: Paint.net or GIMP)
+- Any program that works with [*.dds](dds.md) files (Example: Paint.net or GIMP)

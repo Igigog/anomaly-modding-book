@@ -31,7 +31,7 @@ This list is only for the vanilla version of the game! If you use engine edits, 
 [error]Arguments     : Can't find model file ["path and file name"]
 ```
 
-- Clarification: No [.ogf](../main-folders-and-files/file-formats/models/ogf.md) model was found
+- Clarification: No [*.ogf](../main-folders-and-files/file-formats/models/ogf.md) model was found
 
 - Error fixing:
   - Check that the model exists
@@ -79,7 +79,7 @@ ___
 
 ___
 
-## <center>[Animations](../main-folders-and-files/file-formats/omf.md)</center>
+## <center>[Animations](../main-folders-and-files/file-formats/animations/omf.md)</center>
 
 <details>
     <summary>Line 406</summary>
@@ -130,7 +130,7 @@ ___
 [error]Arguments     : Can't find motion file ["path and file name"]
 ```
 
-- Clarification: No [.omf](../main-folders-and-files/file-formats/animations/omf.md) animation was found
+- Clarification: No [*.omf](../main-folders-and-files/file-formats/animations/omf.md) animation was found
 
 - Error fixing:
   - Check that the animation exists
@@ -159,7 +159,7 @@ model 'path to model'
 
 ___
 
-## <center>[Animated Paths](../main-folders-and-files/file-formats/anm.md)</center>
+## <center>[Animated Paths](../main-folders-and-files/file-formats/animations/anm.md)</center>
 
 <details>
     <summary>Line 47</summary>
@@ -183,7 +183,7 @@ ___
 
 ___
 
-## <center>[AI](../ai/index.html)</center>
+## <center>AI</center>
 
 <details>
     <summary>Line 49</summary>
@@ -196,10 +196,10 @@ ___
 [error]Description   : assertion failed
 ```
 
-- Clarification: No [.efd](../main-folders-and-files/file-formats/efd.md) file was found
+- Clarification: No [*.efd](../main-folders-and-files/file-formats/ai/efd.md) file was found
 
 - Error fixing:
-  - Check that the .efd file exists
+  - Check that the [*.efd](../main-folders-and-files/file-formats/ai/efd.md) file exists
 
 </details>
 
@@ -217,7 +217,7 @@ ___
 - Clarification: Not supported version of the [Evaluation Function Contructor](../modding-tools/modding-tools-ai/evaluation-function-constructor.md)
 
 - Error fixing:
-  - The .efd file must be generated with a supported version of the Evaluation Function Contructor
+  - The [*.efd](../main-folders-and-files/file-formats/ai/efd.md) file must be generated with a supported version of the Evaluation Function Contructor
 
 </details>
 
@@ -271,10 +271,10 @@ ___
 [error]Arguments     : ["file name"]
 ```
 
-- Clarification: No [.spawn](../main-folders-and-files/file-formats/game-levels/spawn.md) file was found
+- Clarification: No [*.spawn](../main-folders-and-files/file-formats/game-levels/spawn.md) file was found
 
 - Error fixing:
-  - Check that the .spawn file exists
+  - Check that the [*.spawn](../main-folders-and-files/file-formats/game-levels/spawn.md) file exists
 
 </details>
 
@@ -289,7 +289,7 @@ ___
 [error]Description   : Cannot find chunk SPAWN_CHUNK_DATA!
 ```
 
-- Clarification: No chunk `SPAWN_CHUNK_DATA` was found in .[spawn](../main-folders-and-files/file-formats/game-levels/spawn.md) file
+- Clarification: No chunk `SPAWN_CHUNK_DATA` was found in [*.spawn](../main-folders-and-files/file-formats/game-levels/spawn.md) file
 
 - Error fixing:
 
@@ -331,7 +331,7 @@ ___
 
 ___
 
-## <center>[LTX](../configs/.ltx.md)</center>
+## <center>LTX</center>
 
 <details>
     <summary>Line 96</summary>
@@ -352,7 +352,7 @@ ___
 
 ___
 
-## <center>[LUA](../scripting/index.html)</center>
+## <center>LUA</center>
 
 <details>
     <summary>Line 204</summary>
@@ -374,7 +374,7 @@ ___
 
 ___
 
-## <center>[XML]()</center>
+## <center>XML</center>
 
 <details>
     <summary>Line 137</summary>

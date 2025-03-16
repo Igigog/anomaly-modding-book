@@ -4,7 +4,9 @@ ___
 
 ## About
 
+RPG7 Engine Class
 
+Exported LUA class WP_RPG7
 
 ## Code
 

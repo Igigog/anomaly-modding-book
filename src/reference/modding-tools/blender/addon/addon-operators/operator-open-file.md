@@ -4,7 +4,7 @@ ___
 
 ## About
 
-Specifies the file with animations. After launching, a file browser will open, where you need to select the file and click Open File at the bottom. If Format is set to Skls, the file browser will display only *.skls files, and if Omf is set to Omf, it will display only *.omf files.
+Specifies the file with animations. After launching, a file browser will open, where you need to select the file and click Open File at the bottom. If Format is set to Skls, the file browser will display only *.skls files, and if Omf is set to Omf, it will display only \*.omf files.
 
 ___
 

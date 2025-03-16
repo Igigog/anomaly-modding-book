@@ -1,4 +1,4 @@
-# .env_mod
+# *.env_mod
 
 ___
 

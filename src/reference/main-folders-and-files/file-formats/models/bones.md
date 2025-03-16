@@ -1,10 +1,10 @@
-# .bones
+# *.bones
 
 ___
 
 ## About
 
-Stores the settings of bones. Used in the X-Ray SDK and is the source format used to facilitate setting up skeletons in [.object](../models/object.md) files. The format has these features and limitations:
+Stores the settings of bones. Used in the X-Ray SDK and is the source format used to facilitate setting up skeletons in [*.object](../models/object.md) files. The format has these features and limitations:
 
 - Saving bone shape information is supported
 - Bone Parts saving is supported
@@ -14,10 +14,10 @@ ___
 
 ## Programs editing this file
 
-- [Blender (X-Ray Addon)](../../blender/index.html)
-- [X-Ray Export Tool (Object Tool)](../../modding-tools-and-resources/modding-modding-tools/xray-export-tool.md)
-- [Ogf Editor by ValeroK](../../modding-tools/ogf-editor-by-valerok.md) - (Only Export)
-- [SDK Actor Editor](../../sdk/index.html)
+- [Blender (X-Ray Addon)](../../../modding-tools/blender/blender-x-ray-addon-summary.md)
+- [X-Ray Export Tool (Object Tool)](../../../modding-tools/modding-tools-models/xray-export-tool.md)
+- [Ogf Editor by ValeroK](../../../modding-tools/modding-tools-models/ogf-editor-by-valerok.md) - (Only Export)
+- [SDK Actor Editor](../../../modding-tools/sdk/actor-editor/actor-editor.md)
 
 ___
 

@@ -1,4 +1,4 @@
-# [.dds (DirectDraw Surface)](https://en.wikipedia.org/wiki/DirectDraw_Surface)
+# [*.dds (DirectDraw Surface)](https://en.wikipedia.org/wiki/DirectDraw_Surface)
 
 ___
 
@@ -35,4 +35,4 @@ ___
 
 ## Programs editing this file
 
-- Any program that works with .dds files (Example: Paint.net or GIMP)
+- Any program that works with *.dds files (Example: Paint.net or GIMP)

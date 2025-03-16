@@ -1,4 +1,4 @@
-# .ogm (Ogg Media)
+# *.ogm (Ogg Media)
 
 ___
 

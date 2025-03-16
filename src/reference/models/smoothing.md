@@ -36,6 +36,6 @@ File formats support these smoothing formats:
 
 - [*.object](../main-folders-and-files/file-formats/models/object.md) - 1, 2, 3 and unofficial Vertex Normals
 - [*.ogf](../main-folders-and-files/file-formats/models/ogf.md) - 4
-- [level](../main-folders-and-files/file-formats/game-levels/level.md)/level[.geom](../main-folders-and-files/file-formats/game-levels/geom.md) - 4
+- [level](../main-folders-and-files/file-formats/game-levels/level.md)/level[*.geom](../main-folders-and-files/file-formats/game-levels/geom.md) - 4
 - [*.dm](../main-folders-and-files/file-formats/models/dm.md) - does not support smoothing
 - [*.details](../main-folders-and-files/file-formats/game-levels/details.md) - does not support smoothing

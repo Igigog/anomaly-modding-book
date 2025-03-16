@@ -1,6 +1,5 @@
-# .h (Header)
+# *.h (Header)
 
 ___
 
 ## About
-

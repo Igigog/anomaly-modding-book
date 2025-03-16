@@ -4,7 +4,9 @@ ___
 
 ## About
 
+RG6 Engine Class
 
+Exported LUA class WP_RG6
 
 ## Code
 

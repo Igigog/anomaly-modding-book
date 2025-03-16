@@ -4,7 +4,7 @@ ___
 
 ## About
 
-Similar to the [Convert IK Limits to X-Ray Limits](blender-x-ray-addon-operator-convert-ik-limits-to-x-ray-limits.md) operator, but converts `X-Ray` limits to `IK` limits.
+Similar to the [Convert IK Limits to X-Ray Limits](operator-convert-ik-limits-to-x-ray-limits.md) operator, but converts `X-Ray` limits to `IK` limits.
 
 ___
 

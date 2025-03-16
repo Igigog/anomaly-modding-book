@@ -9,19 +9,19 @@ The first thing to know is that animations can be divided into a few categories:
 ### Motions Theory
 
 * They represent actual hands, NPCs or actor movements
-* Stored in [.omf](../../reference/main-folders-and-files/file-formats/animations/omf.md) files
+* Stored in [*.omf](../../reference/main-folders-and-files/file-formats/animations/omf.md) files
 * Unique to an object
 
 In this article we’ll focus on hands animations which are, for example, sprinting or weapons reloading. FDDA items animations are also motions. Motions are usually unique to a specific object. For example, AK74 reload animation will only look nice when used with AK74 or any other gun that is set up for this specific motion. That means you can still play it in your script with empty hands, but if you play it while holding a PKM the machine gun won’t play any reload animation at all.
 
 Why so many details, you may wonder? Point is, a motion can have interesting use cases. For example, you can play a pistol holstering animation to temporarily hide one or both hands. Or you can use it for gestures as well as other unarmed animations, items animations - there's quite enough room for creativity.
 
-Also, an .omf file itself is not a motion. .omf files usually store multiple motions. If you want to add a new motion, you’ll need to either
+Also, an *.omf file itself is not a motion. \*.omf files usually store multiple motions. If you want to add a new motion, you’ll need to either
 
-1. put your motion into an existing .omf file or
-2. make a new .omf file that will store your motions.
+1. put your motion into an existing *.omf file or
+2. make a new *.omf file that will store your motions.
 
-### .anm animations Theory
+### *.anm animations Theory
 
 In turn, these can be divided into two subcategories:
 
@@ -35,13 +35,13 @@ This is not an official name, of course, it’s just something I came up with to
 
 In Anomaly, there’s a ‘misfire’ animation. Try to shoot a gun without any ammo, and you’ll see slight hands movement. This is ‘misfire.anm’ animation.
 
-Point is, this is not exactly a screen effect type of [.anm](../../reference/main-folders-and-files/file-formats/animations/anm.md) file, and yet this is not an .omf-type motion. It can be used with any object the actor is holding, i.e. it’s not tied to a specific gun.
+Point is, this is not exactly a screen effect type of [*.anm](../../reference/main-folders-and-files/file-formats/animations/anm.md) file, and yet this is not an *.omf-type motion. It can be used with any object the actor is holding, i.e. it’s not tied to a specific gun.
 
 So technically, these are both .anm files. I just decided there needs to be some sort of distinction. As of now this documentation focuses on playing 'blend' animations.
 
-.anm are separate files unlike motions from .omf files, and every single .anm file can be just placed into **anims/** folder in gamedata and used directly.
+.anm are separate files unlike motions from *.omf files, and every single .anm file can be just placed into **anims/** folder in gamedata and used directly.
 
-### .ppe effects Theory
+### *.ppe effects Theory
 
 These are camera animations with more possibilities: besides camera movements, they can also include, for example, duality effect (when drinking vodka or when there was an explosion next to the actor), grain effect in radiation zones etc. Vanilla night vision is also a [.ppe](../../reference/main-folders-and-files/file-formats/postprocceses/ppe.md) effect.
 
@@ -57,12 +57,12 @@ Now let’s have a look at what we need to play animations in scripts.
 
 To play a motion, we need a few components:
 
-1. An [.ltx](../main-folders-and-files/file-formats/index.html#ltx-files) file containing the basic parameters of the motion we’re going to use.
+1. An [*.ltx](../../reference/main-folders-and-files/file-formats/conf-script/ltx.md) file containing the basic parameters of the motion we’re going to use.
 2. A script function to play it.
 
 #### Setting up motion parameters
 
-1. Create a config [.ltx](../main-folders-and-files/file-formats/index.html#ltx-files) file in **configs/items/items** and give it any name, but make sure it starts with **items_**. Example: **items_my_anims.ltx**.
+1. Create a config [*.ltx](../../reference/main-folders-and-files/file-formats/conf-script/ltx.md) file in **configs/items/items** and give it any name, but make sure it starts with **items_**. Example: **items_my_anims.ltx**.
 2. Set the parameters. We’ll examine them by looking at this example.
 
 ```ini,lang=LTX
@@ -81,11 +81,11 @@ To play a motion, we need a few components:
 
 ```
 
-**[anim_my_sec]** is an animation section name. It’ll be used in the script.
+**\[anim_my_sec]** is an animation section name. It’ll be used in the script.
 
 **hands_position**, **hands_orientation**, **hands_position_16x9** and **hands_orientation_16x9** are hands position/orientation parameters. They work similarly to weapon position parameters.
 
-**anm_my_anim** is a motion name. From what I saw, it should always be started with **anm_** in such a config. Not to be confused with an .omf file name. For example, if your .omf file is called **my_new_file.omf** and it stores a motion called **my_motion_1**, specify **my_motion_1** here.
+**anm_my_anim** is a motion name. From what I saw, it should always be started with **anm_** in such a config. Not to be confused with an *.omf file name. For example, if your \*.omf file is called **my_new_file.omf** and it stores a motion called **my_motion_1**, specify **my_motion_1** here.
 
 To make a test placeholder, you can also open any weapon config file and choose any of the motions specified there (like, `anm_ak74_reload`, `anm_svd_sprint` etc.)
 
@@ -104,7 +104,7 @@ Now let’s have a closer look at its arguments.
     * Note that it's not possible to play a left-handed (like detector draw) animation for the right hand. But you still can play any two-handed animation with only one of the hands.
 2. (string) **anim_section_name**
     * This is the name of the animation section specified in the config file.
-    * In our example this is **[anim_my_sec]**.
+    * In our example this is **\[anim_my_sec]**.
 3. (string) **motion_name**
     * This is the name of the motion within the specified section in the config file.
     * In our example this is **anm_my_anim**.
@@ -222,7 +222,7 @@ new_speed = game.set_hud_anm_time(anm_name, ((mc_anm_time_1 + mc_anm_time_2) / 1
 4. In practice, .anm playing parameters often require fine-tuning by testing it in-game. The same set of parameters for different .anm's may often lead to substantially different results. Achieving a good looking result may require patience.
 5. Though .anm's usually can't cause a softlock or break something substantially, it's still advised to stick to the safety recommendations described in the 'Motions' section.
 
-### .ppe effects
+### *.ppe effects
 
 These are the functions for them:
 

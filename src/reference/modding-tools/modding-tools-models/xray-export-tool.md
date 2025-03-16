@@ -16,11 +16,11 @@ Tool for fast editing and exporting raw stalker formats
 
 ## Features
 
-- Uncompressed .ogf export (HQ Geometry+)
+- Uncompressed *.ogf export (HQ Geometry+)
 - Removed the limit on the maximum number of vertexes in 65535
 - HQ Geometry with patches, exports better than SDK
 - Save and load .bones settings
-- Load, save, delete .skls animations
+- Load, save, delete *.skls animations
 - Export animations in 8 bit, 16 bit and uncompressed
 - Optimization of meshes with the same textures and shaders is disabled by default (they will not merge into one when exported so you can edit them in the OGF Editor)
 - Tuning and collision generation
@@ -35,15 +35,15 @@ Tool for fast editing and exporting raw stalker formats
 
 | Supported formats |
 |---|
-| [.object](../../main-folders-and-files/file-formats/models/object.md) |
-| [.ogf](../../main-folders-and-files/file-formats/models/ogf.md) |
-| [.omf](../../main-folders-and-files/file-formats/animations/omf.md) |
-| [.skl](../../main-folders-and-files/file-formats/animations/skl-skls.md) |
-| [.skls](../../main-folders-and-files/file-formats/animations/skl-skls.md) |
-| [.bones](../../main-folders-and-files/file-formats/models/bones.md) |
-| [.dm](../../main-folders-and-files/file-formats/models/dm.md) |
-| [.obj (wavefront)](https://en.wikipedia.org/wiki/Wavefront_.obj_file) |
-| [.ltx (bone parts)](../../main-folders-and-files/file-formats/models/bone-parts.md) |
+| [*.object](../../main-folders-and-files/file-formats/models/object.md) |
+| [*.ogf](../../main-folders-and-files/file-formats/models/ogf.md) |
+| [*.omf](../../main-folders-and-files/file-formats/animations/omf.md) |
+| [*.skl](../../main-folders-and-files/file-formats/animations/skl-skls.md) |
+| [*.skls](../../main-folders-and-files/file-formats/animations/skl-skls.md) |
+| [*.bones](../../main-folders-and-files/file-formats/models/bones.md) |
+| [*.dm](../../main-folders-and-files/file-formats/models/dm.md) |
+| [*.obj (wavefront)](https://en.wikipedia.org/wiki/Wavefront_.obj_file) |
+| [*.ltx (bone parts)](../../main-folders-and-files/file-formats/models/bone-parts.md) |
 
 ## Functionality
 
@@ -51,7 +51,7 @@ Tool for fast editing and exporting raw stalker formats
 
 - F3 - Export
 - F4 - Load
-- F5, Ctrl+S - Quick Save .object
+- F5 or Ctrl+S - Quick Save *.object
 - F6 - Save
 - Ctrl+Del - Closing the current process
 
@@ -61,10 +61,10 @@ Tool for fast editing and exporting raw stalker formats
 
 | Button | Description |
 |---|---|
-| Load | Imports the selected .object, .skl/.skls, .bones, Bone Parts, Motions Refs, User Data |
+| Load | Imports the selected *.object, \*.skl, \*.skls, \*.bones, Bone Parts, Motions Refs, User Data |
 | Save | Save file |
-| Save As | Saves the file as a .object, .skl, .skls, .bones, Bone Parts file |
-| Export | Exports the file as an .ogf, .omf, .object, .dm, C++ (All info/ Vertex/ Faces/ Vertex Normals/ Normals), Motions Refs, User Data |
+| Save As | Saves the file as a *.object, \*.skl, \*.skls, \*.bones, Bone Parts file |
+| Export | Exports the file as an *.ogf, \*.omf, \*.object, \*.dm, C++ (All info/ Vertex/ Faces/ Vertex Normals/ Normals), Motions Refs, User Data |
 | Delete | Deletes skls/ Bone parts to default |
 | Batch Convert | From ltx/ From File Dialog (To OGF/ To OMF)/ From Folder Dialog (To OGF/ To OMF) |
 | Exit | Exit program |
@@ -177,7 +177,7 @@ Texture Name
 
 | Checkboxes | Description |
 |---|---|
-| 2 Sided | After exporting the .ogf the model will be rendered from the outside and inside. Increases the number of polygons in the model by a factor of 2. |
+| 2 Sided | After exporting the *.ogf the model will be rendered from the outside and inside. Increases the number of polygons in the model by a factor of 2. |
 
 - #### Bones
 

@@ -77,7 +77,7 @@ ___
 | Parameter Name | Parameter Description | Example Value | Value Data Type | Parameter Possible Values And Their Descriptions |
 |---|---|---|---|---|
 | tracer_color_ID |  | 2 |  |  |
-| wm_size | texture size of the mark left on the ground after the explosion | 0.072 | The bigger the number, the bigger the mark |
+| wm_size | texture size of the mark left on the ground after the explosion | 0.072 | The bigger the number, the bigger the mark |  |
 | impair | Barrel wear coefficient from the bullet | 1.4 |  |  |
 | tier |  | 2 |  |  |
 | buck_shot | Number of components in a bullet, e.g. fractions | 9 |  |  |

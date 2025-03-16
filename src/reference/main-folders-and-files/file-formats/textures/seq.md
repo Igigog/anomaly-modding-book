@@ -1,4 +1,4 @@
-# .seq (Sequence)
+# *.seq (Sequence)
 
 ___
 
@@ -35,15 +35,15 @@ Speed of texture change is set in numerical format before the enumeration
 The number of textures in the list is arbitrary, but the more frames, the greater the load on the engine, respectively.
 The name of the file is set by the name of the assigned texture (without taking the extension into account). If there is a [.dds](dds.md) file in the folder with the same name as the .seq file, the engine ignores the original texture, giving priority to the .seq file. The priority of file search by extension is as follows:
 
-- [.ogm](../audio-video/ogm.md)
+- [*.ogm](../audio-video/ogm.md)
 - .avi
-- [.seq](seq.md)
-- [.dds](dds.md)
+- [*.seq](seq.md)
+- [*.dds](dds.md)
 
 ## Parameters
 
 - The "cycled" parameter is optional if you want to loop from the first texture to the last texture and from the last texture to the first texture.
-If you don't write it, it will play in a normal circular loop.
+If you don't write it, it will play in a normal circular loop
 - Playback speed (frames per second) (written before the list of textures)
 
 ___

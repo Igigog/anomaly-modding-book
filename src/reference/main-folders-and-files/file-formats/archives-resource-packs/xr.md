@@ -1,4 +1,4 @@
-# .xr
+# *.xr
 
 ___
 
@@ -10,12 +10,5 @@ ___
 
 ## Programs editing this file
 
-- [SDK shader editor]() - 
-- [SDK particle editor]() - 
-- [Particle Editor Tools]() -
-- [gamemtl_xr_cdc]() - 
-- [lanims_xr_cdc]() -
-- [shaders_xr_cdc]() -
-- [shaders_xrlc_xr_cdc]() -
-- [senvironment_xr_cdc]() -
-- [particles_xr_cdc (Unpacking to binary files only)]() -
+- [SDK Shader Editor](../../../modding-tools/sdk/shader-editor/shader-editor.md)
+- [SDK Particle Editor](../../../modding-tools/sdk/particle-editor/particle-editor.md)

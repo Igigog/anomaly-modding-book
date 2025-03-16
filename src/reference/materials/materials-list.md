@@ -51,39 +51,39 @@ This section contains a list and description of the shaders that are available i
 
 | Shader name and path | Description |
 |---|---|
-| default_object | standard dynamic material |
-| objects\barrel | barrel |
-| objects\bolt |  |
-| objects\bottle | bottle |
-| objects\bullet | bullet, grenade fragment |
-| objects\car_cabine | car body |
-| objects\car_wheel | car wheels |
-| objects\clothes | rag, clothes |
-| objects\concrete_box | concrete block |
-| objects\dead_body | dead human body |
-| objects\fuel_can | gasoline canister |
-| objects\glass | broken glass |
-| objects\knife | knife |
-| objects\large_furnitura | large furniture (chairs, tables, cabinets) |
-| objects\large_metal_trash | large pieces of junk metal (fittings, pieces of iron) |
-| objects\large_weapon | heavy weapons (assault rifle, grenade launcher, rifle) |
-| objects\metal_box | metal box |
-| objects\monster_body | dead mutant body |
-| objects\shell |  |
-| objects\small_box | small box (ammo, PDA, first aid kit) |
-| objects\small_metal_trash | small metal trash (tubes, pieces, nuts, bolts) |
-| objects\small_weapon | small weapon (pistol) |
-| objects\tin_can | tin can |
+| default_object | Standard dynamic material |
+| objects\barrel | Barrel |
+| objects\bolt | Bolt |
+| objects\bottle | Bottle |
+| objects\bullet | Bullet, grenade fragment |
+| objects\car_cabine | Car body |
+| objects\car_wheel | Car wheels |
+| objects\clothes | Rag, clothes |
+| objects\concrete_box | Concrete block |
+| objects\dead_body | Dead human body |
+| objects\fuel_can | Gasoline canister |
+| objects\glass | Broken glass |
+| objects\knife | Knife |
+| objects\large_furnitura | Large furniture (chairs, tables, cabinets) |
+| objects\large_metal_trash | Large pieces of junk metal (fittings, pieces of iron) |
+| objects\large_weapon | Heavy weapons (assault rifle, grenade launcher, rifle) |
+| objects\metal_box | Metal box |
+| objects\monster_body | Dead mutant body |
+| objects\shell | Shell |
+| objects\small_box | Small box (ammo, PDA, first aid kit) |
+| objects\small_metal_trash | Small metal trash (tubes, pieces, nuts, bolts) |
+| objects\small_weapon | Small weapon (pistol) |
+| objects\tin_can | Tin can |
 
 #### Creatures materials
 
 | Shader name and path | Description |
 |---|---|
-| creatures\actor | person (actor) |
-| creatures\hoof | mutant with hooves |
-| creatures\human | human (NPC) |
-| creatures\human_head | human |
-| creatures\large | big mutant |
-| creatures\medium | medium mutant |
-| creatures\phantom | phantom |
-| creatures\small | small mutant |
+| creatures\actor | Person (actor) |
+| creatures\hoof | Mutant with hooves |
+| creatures\human | Human (NPC) |
+| creatures\human_head | Human head |
+| creatures\large | Big mutant |
+| creatures\medium | Medium mutant |
+| creatures\phantom | Phantom |
+| creatures\small | Small mutant |

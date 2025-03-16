@@ -10,7 +10,7 @@ ___
 
 ### Toolbar
 
-![toolbar centered](sdk-image/toolbar-level-editor.png)
+![toolbar centered](../sdk-image/toolbar-level-editor.png)
 
 #### Scene
 
@@ -37,21 +37,21 @@ Scene Button
 | Summary info | Shows information about objects in the scene | - |
 | Highlight Texture... | Highlights the selected texture | - |
 | Clear Debug Draw |  |  |
-| Export entire Scene as Obj |  | .object<br> .lwo<br> .txt<br> .xr<br> .wav<br> .obj<br> .ltx<br> .cpp |
-| Export Selection as Obj |  | .object<br> .lwo<br> .txt<br> .xr<br> .wav<br> .obj<br> .ltx<br> .cpp |
+| Export entire Scene as Obj |  | *.object<br> *.lwo<br> *.txt<br> *.xr<br> *.wav<br> *.obj<br> *.ltx<br> *.cpp |
+| Export Selection as Obj |  | *.object<br> *.lwo<br> *.txt<br> *.xr<br> *.wav<br> *.obj<br> *.ltx<br> *.cpp |
 
 Compile Button
 
 | Button | Description | Note |
 |---|---|---|
-| Build | Creates a [.prj](../main-folders-and-files/file-formats/game-levels/prj.md) precompilation file | - |
-| Make Game | Creates a [.game](../main-folders-and-files/file-formats/game-levels/game.md) file | - |
-| Make Details | Creates a [.details](../main-folders-and-files/file-formats/game-levels/details.md) file | - |
-| Make HOM | Creates a [.hom](../main-folders-and-files/file-formats/game-levels/hom.md) file |  |
-| Make Sound Occluder | Creates a [.som](../main-folders-and-files/file-formats/game-levels/som.md) file |  |
-| Make Ai-Map | Creates a [.ai](../main-folders-and-files/file-formats/game-levels/ai.md) file | - |
-| Import Error List | Import Error List | .err |
-| Export Error List | Export Error List | .err |
+| Build | Creates a [*.prj](../../../main-folders-and-files/file-formats/game-levels/prj.md) precompilation file | - |
+| Make Game | Creates a [*.game](../../../main-folders-and-files/file-formats/game-levels/game.md) file | - |
+| Make Details | Creates a [*.details](../../../main-folders-and-files/file-formats/game-levels/details.md) file | - |
+| Make HOM | Creates a [*.hom](../../../main-folders-and-files/file-formats/game-levels/hom.md) file |  |
+| Make Sound Occluder | Creates a [*.som](../../../main-folders-and-files/file-formats/game-levels/som.md) file |  |
+| Make Ai-Map | Creates a [*.ai](../../../main-folders-and-files/file-formats/game-levels/ai.md) file | - |
+| Import Error List | Import Error List | *.err |
+| Export Error List | Export Error List | *.err |
 | Clear Error List | Clear Error List | - |
 
 Objects Button
@@ -103,7 +103,7 @@ Various object editing tools
 
 Object type selection list
 
->Eye (![eye](sdk-image/sdk-icons/eye.bmp)) - shows these objects in the viewport
+>Eye (![eye](../sdk-image/sdk-icons/eye.bmp)) - shows these objects in the viewport
 
 #### Snap List
 

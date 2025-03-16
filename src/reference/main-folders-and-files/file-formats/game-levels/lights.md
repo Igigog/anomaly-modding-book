@@ -1,6 +1,5 @@
-# .lights
+# *.lights
 
 ___
 
 ## About
-

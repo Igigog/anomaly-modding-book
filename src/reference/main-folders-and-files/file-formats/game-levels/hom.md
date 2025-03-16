@@ -1,4 +1,4 @@
-# .hom (Hierarchical Occlusion Mapping)
+# *.hom (Hierarchical Occlusion Mapping)
 
 ___
 
@@ -50,8 +50,8 @@ ___
 
 ## Programs editing this file
 
-- [Blender (X-Ray Addon)](../../blender/index.html)
-- [SDK 0.7](../../sdk/index.html)
+- [Blender (X-Ray Addon)](../../../modding-tools/blender/blender-x-ray-addon-summary.md)
+- [SDK 0.7](../../../modding-tools/sdk/README.md)
 
 ___
 

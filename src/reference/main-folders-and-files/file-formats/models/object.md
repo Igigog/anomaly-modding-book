@@ -1,4 +1,4 @@
-# .object
+# *.object
 
 ___
 
@@ -17,7 +17,7 @@ ___
 - Bones
 - Skeleton animations
 
-### Possibilities and limitations of the .object format
+### Possibilities and limitations of the *.object format
 
 One *.object file can store:
 
@@ -35,10 +35,10 @@ ___
 
 ## Programs editing this file
 
-- [Blender (X-Ray Addon)](../../blender/index.html)
-- [X-Ray Export Tool (Object Tool)](../../modding-tools-and-resources/modding-modding-tools/xray-export-tool.md)
-- [Ogf Editor by ValeroK](../../modding-tools/ogf-editor-by-valerok.md) - (Only as a converter!)
-- [SDK 0.7](../../sdk/index.html)
+- [Blender (X-Ray Addon)](../../../modding-tools/blender/blender-x-ray-addon-summary.md)
+- [X-Ray Export Tool (Object Tool)](../../../modding-tools/modding-tools-models/xray-export-tool.md)
+- [Ogf Editor by ValeroK](../../../modding-tools/modding-tools-models/ogf-editor-by-valerok.md) - (Only as a converter!)
+- [SDK 0.7](../../../modding-tools/sdk/README.md)
 
 ___
 

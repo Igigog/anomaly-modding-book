@@ -9,7 +9,7 @@ ___
 
 ## About
 
-A simple [.bump](../../main-folders-and-files/file-formats/textures/bump.md) and [.bump#](../../main-folders-and-files/file-formats/textures/bump#.md) texture generator from normal maps with the ability to use specular maps, also, is capable of generating .bump# for ready-made "green" .bumps.
+A simple [_bump.dds](../../main-folders-and-files/file-formats/textures/bump.md) and [_bump#.dds](../../main-folders-and-files/file-formats/textures/bump#.md) texture generator from normal maps with the ability to use specular maps, also, is capable of generating .bump# for ready-made "green" .bumps.
 
 ![bump-generator centered](images/bump-generator.png)
 

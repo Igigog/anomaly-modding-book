@@ -4,7 +4,7 @@ ___
 
 ## About
 
-For bones with `Joint`, `Wheel`, `Slider` types it creates `Limit Rotations` constraints with the name `!-XRAY-JOINT-LIMITS`, the limits of which coincide with `X-Ray` limits of bones. No Constraints are created for bones with types `None`, `Rigid`, `Cloth`, `Custom`. This operator takes into account the [Use Limits](../addon-panels/blender-x-ray-addon-panel-armature.md) parameter of the armature.
+For bones with `Joint`, `Wheel`, `Slider` types it creates `Limit Rotations` constraints with the name `!-XRAY-JOINT-LIMITS`, the limits of which coincide with `X-Ray` limits of bones. No Constraints are created for bones with types `None`, `Rigid`, `Cloth`, `Custom`. This operator takes into account the [Use Limits](../addon-panels/panel-armature.md) parameter of the armature.
 
 ### Mode Parameter
 

@@ -4,7 +4,9 @@ ___
 
 ## About
 
-121
+HPSA (Browning High Power) Engine Class
+
+Exported LUA class WP_HPSA
 
 ## Code
 

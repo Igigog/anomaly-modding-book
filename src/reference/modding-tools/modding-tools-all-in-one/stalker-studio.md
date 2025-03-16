@@ -9,11 +9,8 @@
 
 ___
 
-> Program description in progress. Published for the purpose of program population
-
 ## About
 
 ![stalker-studio](images/stalker_studio_0_7.png)
 
 ## Features
-

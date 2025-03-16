@@ -2,4 +2,4 @@
 
 ___
 
-- [.ppe](ppe.md)
+- [*.ppe](ppe.md)

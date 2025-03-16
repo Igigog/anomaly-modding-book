@@ -4,7 +4,9 @@ ___
 
 ## About
 
+SVD Engine Class
 
+Exported LUA class WP_SVD
 
 ## Code
 

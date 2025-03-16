@@ -34,8 +34,8 @@ ___
 Software to unpack gamedata
 
 - [Universal Extractor 2.0](https://disk.yandex.ru/d/GbgDm-JT2JtfNQ) - Unzips the gamedata from the original trilogy
-- db_unpacker.bat (tools/) - Anomaly's internal gamedata extractor, which extracts the scripts and configs files from the .db
-- db_unpacker_all.bat (tools/) - An internal gamedata extractor from Anomaly, which extracts all files from .db
+- db_unpacker.bat (tools/) - Anomaly's internal gamedata extractor, which extracts the scripts and configs files from the *.db
+- db_unpacker_all.bat (tools/) - An internal gamedata extractor from Anomaly, which extracts all files from *.db
 
 ___
 
@@ -64,7 +64,7 @@ These versions (SDK 0.4 and SDK 0.5/0.6) are not compatible with Anomaly!
 ```
 
 - [SDK 0.7 (Call of Pripyat)](https://www.moddb.com/games/stalker-call-of-pripyat/downloads/x-ray-16-engine-sdk-v07)
-  - [SDK 0.7 (Call of Pripyat)(RePack by DaaGuda V2)](https://mega.nz/folder/zFBiWSAJ#5_MSuGpVPb7QqcPH00nC7w) - Official SDK 0.7 repack with customized components and various fixes ([More About](../sdk/index.html))
+  - [SDK 0.7 (Call of Pripyat)(RePack by DaaGuda V2)](https://mega.nz/folder/zFBiWSAJ#5_MSuGpVPb7QqcPH00nC7w) - Official SDK 0.7 repack with customized components and various fixes
 
     - SDK 0.7 Easy:
       - The easiest version, but gamedata and rawdata are excluded from its composition, there are no add-ons.
@@ -90,7 +90,7 @@ These versions (SDK 0.4 and SDK 0.5/0.6) are not compatible with Anomaly!
 - [SDK 0.8 by Red Panda](https://github.com/RedPandaProjects/XRayEngine/releases) - This is a port and a small upgrade of the classic 0.7 editor set. A lot of problems with the classic editor were related to the outdated development environment, which did not allow to upgrade it. Imgui was taken as a UI shell, as the easiest ui allowing to create simple forms with one line of code. All 4 editors were taken over.
   - [HybridXRay](https://github.com/Roman-n/HybridXRay) - Further improvements to the SDK and X-Ray Engine from RedPanda.
 
-- [IX Ray SDK]
+- [IX Ray SDK](https://github.com/ixray-team/ixray-1.6-stcop) - IX-Ray is fork of X-Ray 1.6 engine that aims to improve gaming experience and simplify development of modifications
 
 - [SDK 2.6 beta (Lost Alpha)](https://www.moddb.com/mods/lost-alpha/downloads/stalker-lostalpha-sdk-v26-beta) - Contains the basic editors and tools that were used to create Lost Alpha
 
@@ -100,12 +100,12 @@ These versions (SDK 0.4 and SDK 0.5/0.6) are not compatible with Anomaly!
 Versions of the SDK tools may differ depending on the version of the SDK itself
 ```
 
-- [Actor Editor](../sdk/actor-editor.md)
+- [Actor Editor](sdk/actor-editor/actor-editor.md)
 - Dialog Editor
-- [Level Editor](../sdk/level-editor.md)
-- [Particle Editor](../sdk/particle-editor.md)
-- [Postprocess Editor](../sdk/postprocess-editor.md)
-- [ShaderEditor](../sdk/level-editor.md)
+- [Level Editor](sdk/level-editor/level-editor.md)
+- [Particle Editor](sdk/particle-editor/particle-editor.md)
+- [Postprocess Editor](sdk/postprocess-editor/postprocess-editor.md)
+- [ShaderEditor](sdk/shader-editor/shader-editor.md)
 - xrLC_net - Level compiler by machines connected to a local network
 
 ___
@@ -123,7 +123,7 @@ ___
 
 3D Packages that have compatibility/addons to work with X-Ray:
 
-- [Blender (With X-Ray Addon)](../../blender/index.html)
+- [Blender (With X-Ray Addon)](blender/blender-x-ray-addon-summary.md)
 
 - 3Ds Max with scripts
   - [Den Stash's Scripts](https://github.com/X-Ray-Engine-STALKER/xray_3ds_max_tools)
@@ -147,17 +147,17 @@ ___
 
 - [BumpX_GUI](https://github.com/PiratBuildov/BumpX_GUI) - WinForms GUI for BumpX v07
 
-- [THM Editor](https://gitlab.com/i-love-kfc/thm-editor/) - Utility for editing [.thm](../main-folders-and-files/file-formats/index.html#thm) files without the need to use the SDK
+- [THM Editor](https://gitlab.com/i-love-kfc/thm-editor/) - Utility for editing [*.thm](../main-folders-and-files/file-formats/textures/thm.md) files without the need to use the SDK
   - [More](modding-tools-textures/thm-editor-by-i-love-kfc.md)
 
 - [THM Editor by Valerok](https://github.com/VaIeroK/THM-Editor) - ValeroK's version of the original THM Editor
   - [More](modding-tools-textures/thm-editor-by-valerok.md)
 
-- [ThmValidator](https://sharedby.blomp.com/tnT8vj) - Allows you to check the [.thm](../main-folders-and-files/file-formats/index.html#thm) files in the selected directory and automatically fix the most common bugs that occur during manual editing.
+- [ThmValidator](https://sharedby.blomp.com/tnT8vj) - Allows you to check the [*.thm](../main-folders-and-files/file-formats/textures/thm.md) files in the selected directory and automatically fix the most common bugs that occur during manual editing.
 
 - [xrAutoUI](https://cdn.discordapp.com/attachments/978593574893535274/1083798175896326206/xrAutoUI.exe) - Auto-transfer UI from 4:3 to 16:9
 
-- Any program capable of creating textures or opening [.dds](../main-folders-and-files/file-formats/index.html#dds-directdraw-surface) files (e.g. [Paint.net](https://www.getpaint.net/))
+- Any program capable of creating textures or opening [*.dds](../main-folders-and-files/file-formats/textures/dds.md) files (e.g. [Paint.net](https://www.getpaint.net/))
 
 ___
 
@@ -173,7 +173,7 @@ ___
 
 ## Parameters | LTX
 
-- [STLKObjectMan](https://drive.google.com/file/d/1OM2gZtj_Ubg7H03iI-Z_z3EAkwn1_S2R/view) - Universal parameters editor. Modifies \*[.ltx](../main-folders-and-files/file-formats/index.html#ltx-files) and \*[.xml](../main-folders-and-files/file-formats/index.html#xml-files) files. **not compatible with Anomaly due to modified config files**
+- [STLKObjectMan](https://drive.google.com/file/d/1OM2gZtj_Ubg7H03iI-Z_z3EAkwn1_S2R/view) - Universal parameters editor. Modifies [*.ltx](../main-folders-and-files/file-formats/conf-script/ltx.md) and [*.xml](../main-folders-and-files/file-formats/conf-script/xml.md) files. **not compatible with Anomaly due to modified config files**
 
 - [StalkerElementFinder](https://disk.yandex.ru/d/Rv-Mt1IAXyTihA%D0%B0) - A program for finding elements and resources
 
@@ -190,32 +190,32 @@ ___
 
 - [OGG Editor](https://disk.yandex.ru/d/Dcyo0Nt3A3b5g) - This utility is designed to quickly view and edit audio comments
 
-- [StkOggCommentViewer](https://cdn.discordapp.com/attachments/978593574893535274/979058737270644776/StkOggCommentViewer.exe) - Allows viewing comments in an [.ogg](../main-folders-and-files/file-formats/index.html#ogg) file
+- [StkOggCommentViewer](https://cdn.discordapp.com/attachments/978593574893535274/979058737270644776/StkOggCommentViewer.exe) - Allows viewing comments in an [*.ogg](../main-folders-and-files/file-formats/audio-video/ogg.md) file
 
-- [OggCommentDecompiler](https://ap-pro.ru/applications/core/interface/file/attachment.php?id=22581) - Saves comments in a [.ltx](../main-folders-and-files/file-formats/index.html#ltx-files) file, whose name and path are equivalent to the sound file
+- [OggCommentDecompiler](https://ap-pro.ru/applications/core/interface/file/attachment.php?id=22581) - Saves comments in a [*.ltx](../main-folders-and-files/file-formats/conf-script/ltx.md) file, whose name and path are equivalent to the sound file
 
 ___
 
 ## Animations
 
-- [OMF Editor](https://github.com/mortany/omf_editor) - Tool for working with [.omf](../main-folders-and-files/file-formats/index.html#omf-open-motions-format) format.
-- [OMF Editor by Valerok](https://github.com/VaIeroK/Omf-Editor) - Modified tool for working with [.omf](../main-folders-and-files/file-formats/index.html#omf-open-motions-format) format.
+- [OMF Editor](https://github.com/mortany/omf_editor) - Tool for working with [*.omf](../main-folders-and-files/file-formats/animations/omf.md) format.
+- [OMF Editor by Valerok](https://github.com/VaIeroK/Omf-Editor) - Modified tool for working with [*.omf](../main-folders-and-files/file-formats/animations/omf.md) format.
   - [More](modding-tools-animations/omf-editor-by-valerok.md)
 
-- OmfSpisok - utility for one-click output .txt list of connected .omf files from .ogf file
+- OmfSpisok - utility for one-click output .txt list of connected *.omf files from \*.ogf file
 
 ___
 
 ## Models
 
-- [OGF Editor](https://github.com/mortany/OGF-tool) - Tool for working with .ogf format
-- [OGF Editor by Valerok](https://github.com/VaIeroK/OGF-tool) - Tool for working with .ogf and [.dm](../main-folders-and-files/file-formats/index.html#dm-detail-model) format
+- [OGF Editor](https://github.com/mortany/OGF-tool) - Tool for working with [*.ogf](../main-folders-and-files/file-formats/models/ogf.md) format
+- [OGF Editor by Valerok](https://github.com/VaIeroK/OGF-tool) - Tool for working with *.ogf and [*.dm](../main-folders-and-files/file-formats/models/dm.md) format
   - [More](modding-tools-models/ogf-editor-by-valerok.md)
 
 - [MeshToolz](https://github.com/gunslingermod/MeshToolz) - Swiss knife for low-level editing of OGF models. Want to copy a piece of one model to another? Easy. Change texture paths and bindings? No problem. Move and scale an item by snapping it to another bone? No problem. Can work both interactively and in script processing mode.
   - [Scripts For MeshToolz](https://github.com/gunslingermod/additional_scopes)
 
-- [OGFViewer](https://github.com/mrnotbadguy/OGFViewer) - legacy model viewer for .ogf format.
+- [OGFViewer](https://github.com/mrnotbadguy/OGFViewer) - legacy model viewer for *.ogf format.
 
 - [ObjectParamsCopier](https://github.com/gunslingermod/compiled_toolz) -  Allows you to quickly copy surface settings with the same name from one object file to another
 
@@ -223,7 +223,7 @@ ___
 
 - [StalkerWeaponToolKit](https://disk.yandex.ru/d/x3771W3btrwtFw) - Tool for working with weapons
 
-- [StalkerObjectVisual](https://disk.yandex.ru/d/ydy1eMOagGf80Q) - Viewer for .ogf models
+- [StalkerObjectVisual](https://disk.yandex.ru/d/ydy1eMOagGf80Q) - Viewer for *.ogf models
 
 ___
 
@@ -236,7 +236,7 @@ ___
 
 ## Postprocess
 
-- [ppeEditor](http://www.big-games.do.am/load/mod/tools/s_t_a_l_k_e_r_ppe_editor_1_2_0/7-1-0-34) - Software for creating and editing files of the postprocessing .ppe files
+- [ppeEditor](http://www.big-games.do.am/load/mod/tools/s_t_a_l_k_e_r_ppe_editor_1_2_0/7-1-0-34) - Software for creating and editing files of the postprocessing *.ppe files
 
 ___
 
@@ -260,7 +260,7 @@ ___
 
 ## Spawn
 
-- [XrSpawner](http://sdk.stalker-game.com/ru/images/0/06/XrSpawner_v0.13.1Beta.rar) - A program that allows you to edit the .spawn file of the game containing the initial location and some properties of all dynamic objects
+- [XrSpawner](http://sdk.stalker-game.com/ru/images/0/06/XrSpawner_v0.13.1Beta.rar) - A program that allows you to edit the *.spawn file of the game containing the initial location and some properties of all dynamic objects
 
 ___
 
@@ -299,10 +299,6 @@ ___
 - [DB_Compressor by d_μaμ](https://cdn.discordapp.com/attachments/616764067670917131/846799604438532107/DB_Compressor.rar)
 - [xrCompress by i-love-kfc](https://ap-pro.ru/forums/topic/3500-obnovlyonnyy-xrcompress/) - .db/.xdb archiver
   - [More](modding-tools-compressors/xrcompress-by-i-love-kfc.md)
-
-- Total Commander
-  - [wcx_stalker_db_003_x32_x64]() - archiver plugin
-  - [wfx_stalker_db_004_x32_x64]() - file system plugin. Allows you to view .db archives as a virtual directory with folder structure preserved
 
 ___
 

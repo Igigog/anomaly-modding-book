@@ -6,7 +6,7 @@ ___
 
 ## About
 
-This page describes the X-Ray Engine: Action panel. This panel stores animation parameters for skeleton animations (*.skl, *.skls, *.omf, *.object, *.ogf) or path animations ([*.anm](../../../../main-folders-and-files/file-formats/animations/anm.md))
+This page describes the X-Ray Engine: Action panel. This panel stores animation parameters for skeleton animations ([*.skl](../../../../main-folders-and-files/file-formats/animations/skl-skls.md), [*.skls](../../../../main-folders-and-files/file-formats/animations/skl-skls.md), [*.omf](../../../../main-folders-and-files/file-formats/animations/omf.md), [*.object](../../../../main-folders-and-files/file-formats/models/object.md), [*.ogf](../../../../main-folders-and-files/file-formats/models/ogf.md)) or path animations ([*.anm](../../../../main-folders-and-files/file-formats/animations/anm.md))
 
 ### Location
 

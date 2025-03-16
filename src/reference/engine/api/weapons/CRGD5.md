@@ -4,7 +4,9 @@ ___
 
 ## About
 
+RGD5 Engine Class
 
+Exported LUA class G_RGD5_S
 
 ## Code
 
@@ -17,12 +19,12 @@ ___
 #include "script_export_space.h"
 
 class CRGD5 :
-	public CGrenade
+    public CGrenade
 {
-	typedef CGrenade inherited;
+    typedef CGrenade inherited;
 public:
-	CRGD5(void);
-	virtual ~CRGD5(void);
+    CRGD5(void);
+    virtual ~CRGD5(void);
 
 DECLARE_SCRIPT_REGISTER_FUNCTION
 };
@@ -51,11 +53,11 @@ using namespace luabind;
 #pragma optimize("s",on)
 void CRGD5::script_register(lua_State* L)
 {
-	module(L)
-	[
-		class_<CRGD5, CGameObject>("CRGD5")
-		.def(constructor<>())
-	];
+    module(L)
+    [
+        class_<CRGD5, CGameObject>("CRGD5")
+        .def(constructor<>())
+    ];
 }
 ```
 
