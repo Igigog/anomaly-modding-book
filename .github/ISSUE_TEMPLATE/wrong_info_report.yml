@@ -1,0 +1,15 @@
+
+name: Wrong Information
+description: Create a report to help improve the project
+labels: [Wrong Information]
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: >
+        Provide Wrong Information
+    validations:
+      required: true
+
