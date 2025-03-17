@@ -6,6 +6,8 @@
 
 - [Meta](meta/README.md)
   - [Contributing to this book](meta/contributing/README.md)
+  - [Acknowledgements](meta/acknowledgements.md)
+  - [Links](meta/links.md)
 
 ---
 
@@ -108,7 +110,7 @@
       - [*object*_hud animations](reference/terminology/animations/object-hud-animations.md)
     - [Coding](reference/terminology/coding/README.md)
       - [C++](reference/terminology/coding/c++.md)
-      - [C#](reference/terminology/coding/c#.md)
+      - [C#](reference/terminology/coding/c_hash.md)
       - [HLSL](reference/terminology/shaders/hlsl.md)
       - [LUA](reference/terminology/coding/lua.md)
         - [LUABind](reference/terminology/coding/luabind.md)
@@ -123,6 +125,7 @@
       - [Per Pixel Lighting](reference/terminology/lightning/per-pixel-lighting.md)
     - [Models](reference/terminology/models/README.md)
       - [Static Object](reference/terminology/models/static-object.md)
+      - [Glow Object](reference/terminology/models/glow-object.md)
       - [Dynamic Object](reference/terminology/models/dynamic-object.md)
       - [Multiply Usage Object](reference/terminology/models/multiply-usage.md)
       - [*object*_hud](reference/terminology/models/object-hud.md)
@@ -206,7 +209,7 @@
       - [*.vs](reference/main-folders-and-files/file-formats/shaders/vs.md)
     - [Textures](reference/main-folders-and-files/file-formats/textures/README.md)
       - [*_bump.dds](reference/main-folders-and-files/file-formats/textures/bump.md)
-      - [*_bump#.dds](reference/main-folders-and-files/file-formats/textures/bump#.md)
+      - [*_bump#.dds](reference/main-folders-and-files/file-formats/textures/bump_hash.md)
       - [*.dds](reference/main-folders-and-files/file-formats/textures/dds.md)
       - [*_detail_map.dds](reference/main-folders-and-files/file-formats/textures/detail-map.md)
       - [*.seq](reference/main-folders-and-files/file-formats/textures/seq.md)

@@ -2,36 +2,80 @@
 
 ___
 
+![alt text](images/panel-armature.png)
+
 ## About
 
-На этой странице описана панель X-Ray Engine: Armature, которая хранит параметры арматуры. Все параметры из этой панели используются только внутри блендера и не читаются/записываются из/в файлы при импорте/экспорте.
+This page describes the X-Ray Engine: Armature panel, which stores armature parameters. All parameters from this panel are used only inside the blender and are not read/written from/to files during import/export
 
-Расположение
-Окно Properties > вкладка Data у арматуры.
+## Location
 
-Параметры
+`Properties` window > `Data` tab of the armature
 
-Display Bone Shapes
-Отображать шейпы костей текущей арматуры во вьюпорте.
+## Parameters
 
-Display Bone Mass Centers
-Отображать центры масс костей во вьюпорте.
+### Display Bone Shapes
 
-Cross Size
-Размер перекрестий для отображения центров масс во вьюпорте.
+Display bone shapes of the current armature in viewport
 
-Display Bone Limits
-Отображать лимиты костей. Лимиты имеют кости с типами Joint, Slider, Wheel. Для всех этих типов Gizmo лимитов разные. Цвета лимитов для разных осей отличаются: красный - ось X, зелёный - ось Y, синий - ось Z. Границы минимальных лимитов имеют более тёмный цвет, чем границы максимальных (для максимального лимита по оси X цвет дуги красный, а для минимального - тёмно-красный и т. д.). Для Joint отображаются лимиты вращения для всех осей в виде дуг. Для Slider отображаются два лимита: лимит вращения по оси Z (дуга) и лимит перемещения по оси Z (линия). Для Wheel костей отображается один лимит вращения по оси X в виде дуги. На каждой дуге лимита вращения отображаются точки, которые указывают текущее вращение.
+### Display Bone Mass Centers
 
-Gizmo Radius
-Радиус Gizmo для лимитов костей.
+Display the centers of mass of bones in viewport
 
-Limit X, Limit Y, Limit Z
-Отображать лимиты по осям X, Y, Z. Если параметр Limit X/Limit Y/Limit Z отключен, то лимиты по оси X/Y/Z не будут отображаться во вьюпорте.
+### Cross Size
 
-Use Limits
-Этот параметр указывает, какие значения лимитов костей использовать.
+Size of crosshairs for displaying centers of masses in viewport
 
-X-Ray - значения лимитов будут взяты из панели X-Ray Engine: Bone. Для Joint костей будут использованы параметры Limit X: Min, Limit X: Max, Limit Y: Min, Limit Y: Max, Limit Z: Min, Limit Z: Max. Для костей Wheel будут параметры Steer: Min, Steer: Max. Для Slider - Slide Z: Min, Slide Z: Max, Rotate Z: Min, Rotate Z: Max.
+### Display Bone Limits
 
-IK - значения лимитов будут взяты из стандартной панели Properties > Bone > Inverse Kinematics, которая доступна в Pose Mode. Будут использованы параметры Limit X: Min, Limit X: Max, Limit Y: Min, Limit Y: Max, Limit Z: Min, Limit Z: Max. Используется для устаревших blend-файлов, которые сохранены с использованием версии аддона ранее v0.7.0.
+Display bone limits.
+
+Limits have bones with Joint, Slider, and Wheel types.
+
+Для всех этих типов Gizmo лимитов разные.
+Colors of limits are different for different axes:
+
+- Red - X-axis
+- Green - Y-axis
+- Blue - Z axis
+
+The boundaries of the minimum limits have a darker color than the boundaries of the maximum limits (for the maximum limit on the X-axis the arc color is red, and for the minimum limit the arc color is dark red, etc.)
+
+For Joint bones, the rotation limits for all axes are displayed as arcs.
+
+For Slider bones, two limits are displayed:
+
+- Z-axis rotation limit - arc
+- Z-axis displacement limit - line
+
+For Wheel bones, one X-axis rotation limit is displayed as an arc.
+
+Dots are displayed on each arc of the rotation limit to indicate the current rotation.
+
+### Gizmo Radius
+
+Gizmo radius for bone limits
+
+### Limit X, Limit Y, Limit Z
+
+Display limits for X, Y, Z axes.
+If Limit X/Limit Y/Limit Z is disabled, the X/Y/Z axis limits will not be displayed in the viewport.
+
+### Use Limits
+
+This parameter specifies which bone limit values to use
+
+- X-Ray - Limit values will be taken from the X-Ray Engine: Bone panel.
+  - For Joint bones will be used parameters Limit X: Min, Limit X: Max, Limit Y: Min, Limit Y: Max, Limit Z: Min, Limit Z: Max.
+
+  - For Wheel bones will be used parameters Steer: Min, Steer: Max.
+
+  - For Slider bones will be used parameters - Slide Z: Min, Slide Z: Max, Rotate Z: Min, Rotate Z: Max.
+
+- IK - The limit values will be taken from the standard Properties > Bone > Inverse Kinematics panel, which is available in Pose Mode. Parameters will be used Limit X: Min, Limit X: Max, Limit Y: Min, Limit Y: Max, Limit Z: Min, Limit Z: Max. Used for outdated blend files that are saved using an addon version earlier than v0.7.0.
+
+___
+
+## Sources
+
+[Source](https://github.com/PavelBlend/blender-xray/wiki/Panel-XRay-Engine-Armature)

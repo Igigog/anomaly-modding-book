@@ -10,7 +10,7 @@ This page describes the X-Ray Engine: Action panel. This panel stores animation 
 
 ### Location
 
-Dope Sheet window > (in blender versions 2.77 and 2.78 in the Graph Editor window) > N-panel > X-Ray tab
+`Dope Sheet` window > (in blender versions 2.77 and 2.78 in the Graph Editor window) > `N-panel` > `X-Ray` tab
 
 ### Context
 
@@ -44,31 +44,49 @@ Blend-out. The value must be less than Accrue. If it is not, the engine will cal
 
 ##### Type FX
 
-2131
+TODO
 
 ##### Bone Part
 
+TODO
+
 ##### Start Bone
+
+TODO
 
 ##### Power
 
+TODO
+
 ##### Stop
 
-Stop at end flag that stops the animation after playing. If off, the animation is played cyclically.
+Stop at end flag that stops the animation after playing. If off, the animation is played cyclically
 
 ##### No Mix
 
+Animations will not be mixed
+
 ##### Sync
+
+This flag is used to indicate that this animation will synchronize with another animation depending on the Bone Part
 
 ##### Foot Steps
 
+TODO
+
 ##### Move XForm
+
+TODO
 
 ##### Idle
 
+TODO
+
 ##### Weapon Bone
 
-#### Параметры аддона
+TODO
+
+#### Addon Parameters
 
 Parameters that are used by the addon inside blender, or during import/export, but are not read or saved to files.
 
@@ -102,7 +120,7 @@ Copies animation parameters to the clipboard. The parameters are saved in text f
 
 Inserts animation parameters from the clipboard that were copied with Copy or from a text file. You can paste copied parameters from any other open blend file
 
-#### Export .skl
+#### Export *.skl
 
 Exports one current Action (which is selected in Dope Sheet) to *.skl format.
 

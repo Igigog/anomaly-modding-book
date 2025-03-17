@@ -116,5 +116,4 @@ If you will be using VSCodium or VSCode, it is recommended to install markdown e
 
 For example such as:
 
-- [Markdown Link Updater](https://open-vsx.org/extension/mathiassoeholm/markdown-link-updater) - Updates Markdown links automatically, when files in the workspace are moved or renamed.
 - [markdownlint](https://open-vsx.org/extension/DavidAnson/vscode-markdownlint) - This is a rule library for encouraging standards and consistency for Markdown files.

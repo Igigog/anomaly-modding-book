@@ -82,4 +82,4 @@ ___
 
 ## Sources
 
-[Source](https://github.com/PavelBlend/blender-xray/wiki/Panel-XRay-Engine-Action)
+[Source](https://github.com/PavelBlend/blender-xray/wiki/Panel-XRay-Engine-Material)
