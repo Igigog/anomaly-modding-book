@@ -1,5 +1,7 @@
 # Working correctly with icon atlases
 
+___
+
 > Greetings, this is comrade [Hrusteckiy](#hrust-contacts) - UI-programmer, whose work can be seen in the New Project, Last Fallout Overhaul, Oblivion, Hike, and many others, also made 100x100 icons for the original game. Noticed that many modders suffer from improper saving textures and work with them. This guide will make their life easier and teach them to do without mistakes (by the way, came to this myself through their own messes).
 
 ___

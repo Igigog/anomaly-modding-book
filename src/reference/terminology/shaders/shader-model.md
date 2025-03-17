@@ -1,6 +1,0 @@
-# Shader Model
-
-___
-
-## About
-

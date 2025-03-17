@@ -1,5 +1,0 @@
-# *.wallmarks
-
-___
-
-## About

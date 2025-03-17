@@ -1,5 +1,0 @@
-# Glow Object
-
-___
-
-## About

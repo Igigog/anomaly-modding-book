@@ -1,9 +1,11 @@
 # xrCompress
 
+___
+
 - Program Developers:
   - OGSR (Original Authors)
   - i-love-kfc
-- The version described in the article: [0.1](https://disk.yandex.ru/d/CwLjWTuxPmSAHg)
+- Described Version: [0.1](https://disk.yandex.ru/d/CwLjWTuxPmSAHg)
 - [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3500-obnovlyonnyy-xrcompress)
 
 ___

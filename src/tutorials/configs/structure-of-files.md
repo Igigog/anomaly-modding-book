@@ -1,5 +1,7 @@
 # Structure of Files
 
+___
+
 The files may differ from each other, depending on their purpose, but they all have properties in common.
 
 ___

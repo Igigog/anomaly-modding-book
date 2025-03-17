@@ -1,8 +1,10 @@
 # THM Editor
 
+___
+
 - Program Developer:
   - i-love-kfc
-- The version described in the article: [1.5](https://gitlab.com/i-love-kfc/thm-editor/-/releases/1.5)
+- Described Version: [1.5](https://gitlab.com/i-love-kfc/thm-editor/-/releases/1.5)
 
 ___
 

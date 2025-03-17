@@ -1,9 +1,11 @@
 # Modified Omf Editor by ValeroK
 
+___
+
 - Program Developers:
   - Mortany (Original Author)
   - ValeroK
-- The version described in the article: [1.2](https://github.com/VaIeroK/Omf-Editor/releases/tag/1.2)
+- Described Version: [1.2](https://github.com/VaIeroK/Omf-Editor/releases/tag/1.2)
 - [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3550-omf-editor-v12)
 
 ___

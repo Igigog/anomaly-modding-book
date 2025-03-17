@@ -1,6 +1,0 @@
-# Smart Cover
-
-___
-
-## About
-

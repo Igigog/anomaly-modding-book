@@ -1,8 +1,10 @@
 # Sound Attribute Viewer And Tweaker
 
+___
+
 - Program Developer:
   - NatVac
-- The version described in the article: 1.1.7
+- Described Version: 1.1.7
 - [Official Site](https://www.metacognix.com/files/stlkrsoc/)
 
 ___

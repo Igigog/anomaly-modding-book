@@ -1,5 +1,7 @@
 # Weapon HUD Animations
 
+___
+
 ```admonish tip title="Formula"
 animation parameter name = animation name(hands), animation name(weapon), playback speed
 ```

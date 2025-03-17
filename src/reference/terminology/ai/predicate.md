@@ -1,6 +1,0 @@
-# Predicate
-
-___
-
-## About
-

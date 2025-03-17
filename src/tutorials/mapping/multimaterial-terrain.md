@@ -1,5 +1,7 @@
 # Multimaterial Terrain Guide
 
+___
+
 > Written by the New Project mod team
 
 - [VK](https://vk.com/stalker_new_project)

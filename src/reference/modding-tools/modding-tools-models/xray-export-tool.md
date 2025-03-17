@@ -1,9 +1,11 @@
 # Object Tool (or XRay Export Tool)
 
+___
+
 - Program Developers:
   - RedPandaProject (BearIvan and other) (Original Authors)
   - ValeroK
-- The version described in the article: [4.35](https://github.com/VaIeroK/XrayExportTool/releases/tag/4.4)
+- Described Version: [4.35](https://github.com/VaIeroK/XrayExportTool/releases/tag/4.4)
 - [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3577-object-editor-v44/)
 
 ___

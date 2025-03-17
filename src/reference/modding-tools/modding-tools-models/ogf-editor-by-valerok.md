@@ -1,9 +1,11 @@
 # Modified OGF Editor by ValeroK
 
+___
+
 - Program Developers:
   - Mortany (Original Author)
   - ValeroK
-- The version described in the article: [4.1](https://github.com/VaIeroK/OGF-tool/releases/tag/4.1)
+- Described Version: [4.1](https://github.com/VaIeroK/OGF-tool/releases/tag/4.1)
 - [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3549-ogfdmdetailsobj-editor-v41/)
 
 ___

@@ -1,4 +1,10 @@
-# Animation Tutorials
+# 3D Animation Tutorials
+
+___
+
+## About
+
+Tutorials related to 3D animation
 
 - [Creating Camera Animations](creating-camera-animations.md)
 - [Creating Flyover Camera Animations in Game](creating-flyover-camera-animations-in-game.md)

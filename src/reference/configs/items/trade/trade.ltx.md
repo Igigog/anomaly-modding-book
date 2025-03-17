@@ -1,5 +1,7 @@
 # Trader profile
 
+___
+
 _by [SaloEater](https://github.com/SaloEater)_
 ___
 
