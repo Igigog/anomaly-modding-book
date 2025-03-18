@@ -4,19 +4,46 @@ ___
 
 ## About
 
-## Engine
+Anomaly Modding Book was decided that you will use these tools for modding and to avoid problems when modding the game so all the articles in this book are written under this standard.
 
-Anomaly Modded Exes
+### Engine
+
+### Anomaly Modded Exes
+
+Community-supported engine. All articles written about the engine will have the use of this engine.
+
+- [Engine Overview](../engine/README.md)
 
 ### SDK
 
-- IX-Ray SDK
+#### IX-Ray SDK
+
+IX-Ray is currently the most advanced project with engine and SDK support. So all the SDK articles described in this book imply the use of the IX-Ray SDK.
+
+- [SDK Overview](../modding-tools/sdk/README.md)
+
+### Code Editor
+
+You can use any one that supports LUA and XML files.
 
 ### Tools
 
-- Object Editor
-- OGF Editor
-- OMG Editor
-- THM Editor
+In some cases, it will be easier and faster to use a specific tool to solve problems. The following are examples
+
+#### Object Editor
+
+- [Object Editor Documentation](../modding-tools/models/xray-export-tool.md)
+
+#### OGF Editor
+
+- [OGF Editor Documentation](../modding-tools/models/ogf-editor-by-valerok.md)
+
+#### OMG Editor
+
+- [OMF Editor Documentation](../modding-tools/animations/omf-editor-by-valerok.md)
+
+#### THM Editor
+
+- [THM Editor Documentation](../modding-tools/textures/thm-editor-by-i-love-kfc.md)
 
 ### Resources

@@ -9,7 +9,7 @@ ___
 
 ## Beginning
 
-Choose and download the SDK (A list of SDKs can be found [here](../../reference/modding-tools/README.md))
+Choose and download the SDK (A list of SDKs can be found [here](../../modding-tools/README.md))
 
 At the moment in the addon for Blender it is not possible to create a full-fledged location (no compiler, creating ai-nodes, etc.), so you need to use it with the SDK.
 

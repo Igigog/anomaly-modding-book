@@ -17,7 +17,7 @@ Also, hardcore modding dudes are also welcome.
 
 The help of the community is always welcome.
 You can contribute to the development of this book, which will be used as a base in modding.
-So refer to this [article](src/meta/contributing/README.md) or open an [issue](https://github.com/Igigog/anomaly-modding-book/issues) and welcome!
+So refer to this [article](src/meta/README.md) or open an [issue](https://github.com/Igigog/anomaly-modding-book/issues) and welcome!
 
 ## Links
 

@@ -121,4 +121,4 @@ To check the model you can go the following ways:
 
 - Load the model into the SDK and check
 - Export the model in [*.ogf](../../reference/file-formats/models/ogf.md) format and add it directly to the game
-- [Check the model and parameters through third-party programs](../../reference/modding-tools/README.md)
+- [Check the model and parameters through third-party programs](../../modding-tools/README.md)

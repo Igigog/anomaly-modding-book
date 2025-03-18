@@ -30,7 +30,7 @@ ___
 ## Programs editing this file
 
 - [Blender (X-Ray Addon)](../../modding-tools/blender/blender-x-ray-addon-summary.md)
-- [SDK 0.7](../../modding-tools/sdk/README.md)
+- [SDK 0.7](../../../modding-tools/sdk/README.md)
 
 ___
 

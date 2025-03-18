@@ -44,12 +44,12 @@ Compile Button
 
 | Button | Description | Note |
 |---|---|---|
-| Build | Creates a [*.prj](../../../file-formats/game-levels/prj.md) precompilation file | - |
-| Make Game | Creates a [*.game](../../../file-formats/game-levels/game.md) file | - |
-| Make Details | Creates a [*.details](../../../file-formats/game-levels/details.md) file | - |
-| Make HOM | Creates a [*.hom](../../../file-formats/game-levels/hom.md) file |  |
-| Make Sound Occluder | Creates a [*.som](../../../file-formats/game-levels/som.md) file |  |
-| Make Ai-Map | Creates a [*.ai](../../../file-formats/game-levels/ai.md) file | - |
+| Build | Creates a [*.prj](../../../reference/file-formats/game-levels/prj.md) precompilation file | - |
+| Make Game | Creates a [*.game](../../../reference/file-formats/game-levels/game.md) file | - |
+| Make Details | Creates a [*.details](../../../reference/file-formats/game-levels/details.md) file | - |
+| Make HOM | Creates a [*.hom](../../../reference/file-formats/game-levels/hom.md) file |  |
+| Make Sound Occluder | Creates a [*.som](../../../reference/file-formats/game-levels/som.md) file |  |
+| Make Ai-Map | Creates a [*.ai](../../../reference/file-formats/game-levels/ai.md) file | - |
 | Import Error List | Import Error List | *.err |
 | Export Error List | Export Error List | *.err |
 | Clear Error List | Clear Error List | - |

@@ -8,7 +8,7 @@
 [error]Description   : assertion failed
 ```
 
-- Clarification: Not supported version of the [Evaluation Function Contructor](../modding-tools/modding-tools-ai/evaluation-function-constructor.md)
+- Clarification: Not supported version of the [Evaluation Function Contructor](../../modding-tools/ai/evaluation-function-constructor.md)
 
 - Error fixing:
   - The [*.efd](../file-formats/ai/efd.md) file must be generated with a supported version of the Evaluation Function Contructor

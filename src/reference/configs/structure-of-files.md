@@ -30,7 +30,7 @@ The section name should be unique for whole project.
 
 Depending on the context, values would have different requirements:
 
-[condlists](condlists.md)
+[condlists](./condlists.md)
 
 ```ini,lang=LTX
 my_condlist_key = {-A -B} X, {-A +B} Y, Z
