@@ -96,19 +96,6 @@
 
 ---
 
-- [Scripting](tutorials/scripting/README.md)
-  - [Introduction to codebase](tutorials/scripting/codebase_introduction.md)
-  - [Codestyle](tutorials/scripting/codestyle.md)
-  - [Wetting our hands](tutorials/scripting/wetting_hands.md)
-  - [Server and game objects](tutorials/scripting/server_and_game_objects.md)
-  - [Callbacks](tutorials/scripting/callbacks.md)
-  - [Time events](tutorials/scripting/time_events.md)
-  - [Monkey patching](tutorials/scripting/monkey-patching.md)
-  - [Script Animations](tutorials/scripting/script_animations.md)
-  - [Script Attachments](tutorials/scripting/script_attachments.md)
-
----
-
 - [Modelling](tutorials/models/README.md)
   - [Creating static model in Blender](tutorials/models/creating-static-model.md)
   - [Creating dynamic model in Blender](tutorials/models/creating-dynamic-model.md)
@@ -269,15 +256,9 @@
 
 ---
 
-- [Scripting](script/README.md)
-  - [Callbacks List](script/callbacks-list.md)
-  - [Class Registrator](script/class-registrator.md)
-
----
-
 - [Shaders](reference/shaders/README.md)
   - [Shaders List](reference/shaders/shaders-list/shaders-list.md)
-    - [Shader Types](reference/shaders/shaders-list/shader-types/)
+    - [Shader Types]()
       - [Basic (Simple)](reference/shaders/shaders-list/shader-types/basic-simple.md)
       - [Editor Selection](reference/shaders/shaders-list/shader-types/editor-selection.md)
       - [Editor Wire](reference/shaders/shaders-list/shader-types/editor-wire.md)
@@ -358,7 +339,18 @@
 
 # Script
 
-- []
+- [Scripting](tutorials/scripting/README.md)
+  - [Introduction to codebase](tutorials/scripting/codebase_introduction.md)
+  - [Codestyle](tutorials/scripting/codestyle.md)
+  - [Wetting our hands](tutorials/scripting/wetting_hands.md)
+  - [Server and game objects](tutorials/scripting/server_and_game_objects.md)
+  - [Callbacks](tutorials/scripting/callbacks.md)
+  - [Time events](tutorials/scripting/time_events.md)
+  - [Monkey patching](tutorials/scripting/monkey-patching.md)
+  - [Script Animations](tutorials/scripting/script_animations.md)
+  - [Script Attachments](tutorials/scripting/script_attachments.md)
+  - [Callbacks List](script/callbacks-list.md)
+  - [Class Registrator](script/class-registrator.md)
 
 ---
 

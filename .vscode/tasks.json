@@ -15,6 +15,44 @@
                 "reveal": "always",
                 "panel": "new"
             }
+        },
+        {  // Not Working Will Fix Later. Need to Install Cargo and Book Dependecies in "lib" folder
+            "label": "Install Cargo",
+            "type": "shell",
+            "command": "powershell",
+            "args": [
+                "-Command",
+                "New-Item -ItemType Directory -Force -Path lib | Out-Null; Invoke-WebRequest -Uri https://win.rustup.rs/x86_64 -OutFile rustup-init.exe; .\\rustup-init.exe -y --default-toolchain stable --profile minimal; Move-Item -Path $env:USERPROFILE\\.cargo -Destination lib\\cargo"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "Install Dependencies",
+            "type": "shell",
+            "command": "powershell",
+            "args": [
+                "-NoProfile",
+                "-ExecutionPolicy",
+                "Bypass",
+                "-Command",
+                "Invoke-WebRequest -Uri 'https://github.com/phoenixr-codes/mdbook-whichlang/releases/latest/download/whichlang.js' -OutFile 'lib/whichlang.js'; "
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            }
         }
     ]
 }
