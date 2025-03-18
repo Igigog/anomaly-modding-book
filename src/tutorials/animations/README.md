@@ -6,7 +6,7 @@ ___
 
 Tutorials related to 3D animation
 
-- [Creating Camera Animations](creating-camera-animations.md)
-- [Creating Flyover Camera Animations in Game](creating-flyover-camera-animations-in-game.md)
-- [Creating HUD Animation in Blender](creating-hud-animation-in-blender.md)
-- [Editing Existing Animations](editing-existing-animations.md)
+- [Creating camera animations in Blender](creating-camera-animations.md)
+- [Creating camera flyover in game](creating-flyover-camera-animations-in-game.md)
+- [Creating HUD animation in Blender](creating-hud-animation-in-blender.md)
+- [Editing existing animations in Blender](editing-existing-animations.md)

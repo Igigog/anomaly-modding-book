@@ -6,7 +6,7 @@ ___
 
 The X-Ray "Monolith" Engine is an Anomaly mod open for use and modification. It is based on X-Ray 1.6 Engine (CoP), Open X-Ray Call of Chernobyl Edition and some modifications.
 
-- [Source](https://bitbucket.org/anomalymod/xray-monolith/)
+- [Source Code](https://bitbucket.org/anomalymod/xray-monolith/)
 
 ### Some Main Features
 
@@ -16,6 +16,10 @@ The X-Ray "Monolith" Engine is an Anomaly mod open for use and modification. It 
 - Multi threaded sound prefetching
 - Discord integration
 - Animation Blending/Movement layers
+
+## Technical Info
+
+- [Coordinate System](xray-coordinate-system.md)
 
 ___
 

@@ -8,7 +8,7 @@ Configuration parameters for weapons
 
 ___
 
-Parameters of the weapon are set for each sample in a separate [*.ltx](../../../main-folders-and-files/file-formats/conf-script/ltx.md) file, and consist of two sections (Each contains its own set of parameters):
+Parameters of the weapon are set for each sample in a separate [*.ltx](../../../file-formats/conf-script/ltx.md) file, and consist of two sections (Each contains its own set of parameters):
 
 - \[wpn_name] - Main, it sets most of the parameters (for NPC and 3rd-person view).
 
@@ -46,8 +46,8 @@ ___
 | sprint_allowed | this line means that you can run with the weapon | true |  | true - 1 - on (Yes)<br> false - 0 - off (No) |
 | kind | The type of item to group into the appropriate section in the [Item Spawner](../../../modding-tools/in-game-editors/item-spawner.md) | w_rifle |  | w_rifle<br> w_misc<br> w_explosive<br> w_melee<br> w_pistol<br> w_smg<br> w_shotgun<br> w_sniper |
 | cost | Base price | 28780 |  |  |
-| hud | Section with parameters for [hud weapon](../../../terminology/models/object-hud.md) | wpn_akm_hud |  | Section name |
-| visual | [World model](../../../terminology/models/object-world.md) | dynamics\weapons\wpn_akm\wpn_akm.ogf |  | Path to file |
+| hud | Section with parameters for [hud weapon](../../../../glossary/models/object-hud.md) | wpn_akm_hud |  | Section name |
+| visual | [World model](../../../../glossary/models/object-world.md) | dynamics\weapons\wpn_akm\wpn_akm.ogf |  | Path to file |
 
 </details>
 
@@ -81,10 +81,10 @@ ___
 | inv_grid_width | icon width | 5 | number of 50x50 pixels cells |  |
 | inv_grid_x | the coordinate of the upper left corner of the icon on a 50x50 pixel grid on the X axis | 35 | number of cells indented to the right |  |
 | inv_grid_y | The coordinate of the upper left corner of the icon on a 50x50 pixel grid on the Y axis | 0 | number of cells indenting downward |  |
-| inv_name | The name in the inventory | st_wpn_akm | Section name, in [*.xml](../../../main-folders-and-files/file-formats/conf-script/xml.md) files included in the string_table section of `gamedata\configs\text\*localization*\st_items_weapons.xml` |  |
-| inv_name_short | short name in the inventory | st_wpn_akm | Section name, in [*.xml](../../../main-folders-and-files/file-formats/conf-script/xml.md) files included in the string_table section of `gamedata\configs\text\*localization*\st_items_weapons.xml` |  |
+| inv_name | The name in the inventory | st_wpn_akm | Section name, in [*.xml](../../../file-formats/conf-script/xml.md) files included in the string_table section of `gamedata\configs\text\*localization*\st_items_weapons.xml` |  |
+| inv_name_short | short name in the inventory | st_wpn_akm | Section name, in [*.xml](../../../file-formats/conf-script/xml.md) files included in the string_table section of `gamedata\configs\text\*localization*\st_items_weapons.xml` |  |
 | inv_weight | the inventory weight of the unloaded weapon | 3.3 | The number is given in kilograms |  |
-| description | Description in inventory | st_wpn_akm_descr | Section name, in [*.xml](../../../main-folders-and-files/file-formats/conf-script/xml.md) files included in the string_table section of `gamedata\configs\text\*localization*\st_items_weapons.xml` | no_description |
+| description | Description in inventory | st_wpn_akm_descr | Section name, in [*.xml](../../../file-formats/conf-script/xml.md) files included in the string_table section of `gamedata\configs\text\*localization*\st_items_weapons.xml` | no_description |
 | slot | Inventory slot number | 2 | 0 - knives<br>1 - pistols<br>2 - shotguns, machine guns, rifles, grenade launchers<br>3 - grenades (may be crashing)<br>4 - binoculars<br>5 - bolts (may be crashing)<br>6 - outfits (may be crashing) |  |
 | highlight_equipped |  |  | true - 1 - on (Yes)<br> false - 0 - off (No) |  |
 

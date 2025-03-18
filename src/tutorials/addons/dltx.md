@@ -8,7 +8,7 @@ ___
 
 ## 1. About
 
-Modding STALKER has this annoying tendency to result in conflicts when two different mods overwrite the same [*.ltx](../../reference/main-folders-and-files/file-formats/conf-script/ltx.md) file, but not the same variables and sections within that file.
+Modding STALKER has this annoying tendency to result in conflicts when two different mods overwrite the same [*.ltx](../../reference/file-formats/conf-script/ltx.md) file, but not the same variables and sections within that file.
 
 DLTX aims to mitigate this by allowing a mod author to only override the values that they actually wish to change in a separate file, which should greatly reduce the amount of needless mod conflicts and the need to manually merge mods.
 
@@ -42,13 +42,13 @@ In order to make a differential change to the LTX records, you have to follow th
 
 Execute the following command :
 
-<text style="color: red">LTXDiff findroot "</text><text style="color: green">[Base Folder]</text><text style="color: red">" "</text><text style="color: green">[Mod Folder]</text><text style="color: red">" "</text><text style="color: green">[Relative Path to File]</text><text style="color: red">"</text>
+<text style="color: red">LTXDiff findroot "</text><text style="color: green">\[Base Folder]</text><text style="color: red">" "</text><text style="color: green">\[Mod Folder]</text><text style="color: red">" "</text><text style="color: green">\[Relative Path to File]</text><text style="color: red">"</text>
 
 Where :
 
-- <text style="color: green">[Base Folder]</text> : A path to the unpacked vanilla files of the game;
-- <text style="color: green">[Mod Folder]</text> : A path to your mod's folder;
-- <text style="color: green">[Relative Path to File]</text> : A path relative to `gamedata/` to the file you wish to find the root of.
+- <text style="color: green">\[Base Folder]</text> : A path to the unpacked vanilla files of the game;
+- <text style="color: green">\[Mod Folder]</text> : A path to your mod's folder;
+- <text style="color: green">\[Relative Path to File]</text> : A path relative to `gamedata/` to the file you wish to find the root of.
 
 For example :
 
@@ -58,12 +58,12 @@ For example :
 
 Once you have found the root file, create a new file in the same directory with the name :
 
-<text style="color: red">mod_</text><text style="color: green">[Root File Name]</text><text style="color: red">_</text><text style="color: green">[Mod Suffix]</text><text style="color: red">.ltx</text>
+<text style="color: red">mod_</text><text style="color: green">\[Root File Name]</text><text style="color: red">_</text><text style="color: green">\[Mod Suffix]</text><text style="color: red">.ltx</text>
 
 Where :
 
-- <text style="color: green">[Root File Name]</text> : The name of the root file you identified via [Step 1](#step-1--find-the-root-file);
-- <text style="color: green">[Mod Suffix]</text> : A unique name (as to not conflict with other addons) of your liking;
+- <text style="color: green">\[Root File Name]</text> : The name of the root file you identified via [Step 1](#step-1--find-the-root-file);
+- <text style="color: green">\[Mod Suffix]</text> : A unique name (as to not conflict with other addons) of your liking;
 
 For example :
 
@@ -83,13 +83,13 @@ If you're lucky, the [DLTXify by right click](https://www.moddb.com/mods/stalker
 
 Execute the following command :
 
-<text style="color: red">LTXDiff dltxify "</text><text style="color: green">[Base Folder]</text><text style="color: red">" "</text><text style="color: green">[Mod Folder]</text><text style="color: red">" "</text><text style="color: green">[Mod Suffix]</text><text style="color: red">"</text>
+<text style="color: red">LTXDiff dltxify "</text><text style="color: green">\[Base Folder]</text><text style="color: red">" "</text><text style="color: green">\[Mod Folder]</text><text style="color: red">" "</text><text style="color: green">\[Mod Suffix]</text><text style="color: red">"</text>
 
 Where :
 
-- <text style="color: green">[Base Folder]</text> : A path to the unpacked vanilla files of the game;
-- <text style="color: green">[Mod Folder]</text> : A path to your mod's folder;
-- <text style="color: green">[Mod Suffix]</text> : The unique name you want to be used for your addon's file.
+- <text style="color: green">\[Base Folder]</text> : A path to the unpacked vanilla files of the game;
+- <text style="color: green">\[Mod Folder]</text> : A path to your mod's folder;
+- <text style="color: green">\[Mod Suffix]</text> : The unique name you want to be used for your addon's file.
 
 ___
 

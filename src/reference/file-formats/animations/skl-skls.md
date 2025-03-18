@@ -13,7 +13,7 @@ ___
 - Animations are stored as 3 animation curves for position and 3 curves for rotation in [Euler angles](https://en.wikipedia.org/wiki/Euler_angles) with ZXY axis order
 - A *.skls file can store one or more animations
 - A *.skl file can store only one animation
-- Each animation has [game parameters](../../../modding-tools/modding-tools-animations/omf-editor-by-valerok.md#animation-parameters).
+- Each animation has [game parameters](../../modding-tools/modding-tools-animations/omf-editor-by-valerok.md#animation-parameters).
 - Skeletal animations do not support Scale keys
 
 ### Interpolation types
@@ -29,8 +29,8 @@ ___
 
 ## Programs editing this file
 
-- [Blender (X-Ray Addon)](../../../modding-tools/blender/blender-x-ray-addon-summary.md)
-- [SDK 0.7](../../../modding-tools/sdk/README.md)
+- [Blender (X-Ray Addon)](../../modding-tools/blender/blender-x-ray-addon-summary.md)
+- [SDK 0.7](../../modding-tools/sdk/README.md)
 
 ___
 

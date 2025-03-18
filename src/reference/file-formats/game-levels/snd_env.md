@@ -4,4 +4,4 @@ ___
 
 ## About
 
-[Sound environment zones](../../../audio/sound-envornment-list.md)
+[Sound environment zones](../../audio/sound-envornment-list.md)

@@ -1,7 +1,7 @@
 
-name: Wrong Information
-description: Create a report to help improve the project
-labels: [Wrong Information]
+name: Book Wrong Information
+description: Report Wrong Information
+labels: [Book Wrong Information]
 
 body:
   - type: textarea

@@ -57,8 +57,8 @@ NB: "my_mod_name" will stand for whatever name you choose.
 
 **File :** `_unpacked\configs\system.ltx`
 
-- you add in the line of [dialogs]: dialogs_my_mod_name
-- you add in the line of [profiles]:
+- you add in the line of \[dialogs]: dialogs_my_mod_name
+- you add in the line of \[profiles]:
   - in the line of "files": npc_profile_my_mod_name
   - in the line of "specific_characters_files": character_desc_my_mod_name
 

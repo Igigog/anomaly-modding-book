@@ -5,8 +5,8 @@ ___
 ## Need to know
 
 - How working in Blender and creating models
-- Familiarize yourself with the limitations and capabilities of the format [.object](../../reference/main-folders-and-files/file-formats/models/object.md) (because you may export to it more often than to [.ogf](../../reference/main-folders-and-files/file-formats/models/ogf.md)) to avoid errors
-- Familiarize yourself with [Static Object](../../reference/terminology/models/static-object.md) model type
+- Familiarize yourself with the limitations and capabilities of the format [.object](../../reference/file-formats/models/object.md) (because you may export to it more often than to [.ogf](../../reference/file-formats/models/ogf.md)) to avoid errors
+- Familiarize yourself with [Static Object](../../glossary/models/static-object.md) model type
 
 ___
 
@@ -36,14 +36,14 @@ Texture:
 
 In STALKER only the following texture maps are used:
 
-- Color Map ([*.dds](../../reference/main-folders-and-files/file-formats/textures/dds.md))
-- Normal Maps (For Stalker they are used as [_bump.dds](../../reference/main-folders-and-files/file-formats/textures/bump.md) and [_bump#.dds](../../reference/main-folders-and-files/file-formats/textures/bump#.md)) (The [Blender X-Ray](../../reference/modding-tools/blender/blender-x-ray-addon-summary.md) addon does not support the [_bump.dds](../../reference/main-folders-and-files/file-formats/textures/bump.md) format at this time
+- Color Map ([*.dds](../../reference/file-formats/textures/dds.md))
+- Normal Maps (For Stalker they are used as [_bump.dds](../../reference/file-formats/textures/bump.md) and [_bump#.dds](../../reference/file-formats/textures/bump_hash.md)) (The [Blender X-Ray](../../reference/modding-tools/blender/blender-x-ray-addon-summary.md) addon does not support the [_bump.dds](../../reference/file-formats/textures/bump.md) format at this time
 
 So extra texture maps will have to be removed.
 
-Here you need to add your created texture in [*.dds](../../reference/main-folders-and-files/file-formats/textures/dds.md) format
+Here you need to add your created texture in [*.dds](../../reference/file-formats/textures/dds.md) format
 
-As a result, in the Shader Editor (![svg-icon shader-editor](../../reference/modding-tools/blender/images/blender-images-icons/shader-editor.svg)) our textures should look something like this:
+As a result, in the Shader Editor (![svg-icon shader-editor](../../reference/modding-tools/blender/icons/shader-editor.svg)) our textures should look something like this:
 
 ![model-example-texture-shading](images/model-example-texture-shading.png)
 
@@ -64,7 +64,7 @@ Then apply the coordinates with Ctrl + A > All Transform. This will allow us (if
 Next, we need to adjust our model to normal size (so that in the game it will not be big or small).
 If you have already set up the addon to use and set up the necessary paths to your folders, you need to import into the scene model of some person from the game.
 
-In the N-panel there should be a tab "X-Ray" in it unfolds the list "Viewer" and we click "Open Folder" (![svg-icon folder-icon](../../reference/modding-tools/blender/images/blender-images-icons/folder.svg)).
+In the N-panel there should be a tab "X-Ray" in it unfolds the list "Viewer" and we click "Open Folder" (![svg-icon folder-icon](../../reference/modding-tools/blender/icons/folder.svg)).
 
 ![viewer-n-panel centered]()
 
@@ -85,7 +85,7 @@ After fitting, apply transformations to our object.
 
 ![viewer-adjust]()
 
-In the "Viewer" list, we can click on "Close Folder (![svg-icon close-folder](../../reference/modding-tools/blender/images/blender-images-icons/close-folder.svg))" to close the list of models and the model imported to us in the scene, too.
+In the "Viewer" list, we can click on "Close Folder (![svg-icon close-folder](../../reference/modding-tools/blender/icons/close-folder.svg))" to close the list of models and the model imported to us in the scene, too.
 
 ![close-viewer-folder centered]()
 
@@ -93,7 +93,7 @@ ___
 
 ### Material
 
-Select our object and go to the "Material Properties" (![svg-icon material-properties-logo](../../reference/modding-tools/blender/images/blender-images-icons/material-properties-logo.svg)) tab.
+Select our object and go to the "Material Properties" (![svg-icon material-properties-logo](../../reference/modding-tools/blender/icons/material-properties-logo.svg)) tab.
 
 ![material-properties centered]()
 
@@ -120,5 +120,5 @@ ___
 To check the model you can go the following ways:
 
 - Load the model into the SDK and check
-- Export the model in [*.ogf](../../reference/main-folders-and-files/file-formats/models/ogf.md) format and add it directly to the game
+- Export the model in [*.ogf](../../reference/file-formats/models/ogf.md) format and add it directly to the game
 - [Check the model and parameters through third-party programs](../../reference/modding-tools/README.md)

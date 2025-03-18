@@ -2,11 +2,11 @@
 
 ___
 
-Needed to create postprocess files ([.ppe](../../../main-folders-and-files/file-formats/postprocceses/ppe.md))
+Needed to create postprocess files ([.ppe](../../../file-formats/postprocceses/ppe.md))
 
 ___
 
-![Alt text centered](../sdk-image/ppe-editor.png)
+![Alt text centered](./images/ppe-editor.png)
 
 ___
 
@@ -16,9 +16,9 @@ ___
 
 | Button | Description | HotKey |
 |:---:|---|---|
-| ![ppe-new](../sdk-image/sdk-icons/ppe-new.bmp) | New ppe file | Ctrl+N |
-| ![ppe-open](../sdk-image/sdk-icons/ppe-open.bmp) | Load ppe file | Ctrl+O |
-| ![ppe-save](../sdk-image/sdk-icons/ppe-save.bmp) | Save ppe file | Ctrl+S |
+| ![ppe-new](../icons/ppe-new.bmp) | New ppe file | Ctrl+N |
+| ![ppe-open](../icons/ppe-open.bmp) | Load ppe file | Ctrl+O |
+| ![ppe-save](../icons/ppe-save.bmp) | Save ppe file | Ctrl+S |
 
 ### Add Color
 
@@ -27,7 +27,7 @@ ___
 | Unit | Description | Buttons |
 |---|---|---|
 | Point List | Places points on the timeline | `+` - Adds a point<br> `-` - Removes a point<br> `Clear` - Clears the list of points<br> `CopyForm` - Copies points from another selected tab |
-| Color | Edits the color of a selected point | `Key Time(sec)` - the time of the point on the timeline<br> `R` - Red<br> `G` - Green<br> `B` - Blue<br> ![Alt text](../sdk-image/sdk-icons/ppe-palette.png) - Palette |
+| Color | Edits the color of a selected point | `Key Time(sec)` - the time of the point on the timeline<br> `R` - Red<br> `G` - Green<br> `B` - Blue<br> ![Alt text](../icons/ppe-palette.png) - Palette |
 
 ### Base Color
 
@@ -36,7 +36,7 @@ ___
 | Unit | Description | Buttons |
 |---|---|---|
 | Point List | Places points on the timeline | `+` - Adds a point<br> `-` - Removes a point<br> `Clear` - Clears the list of points<br> `CopyForm` - Copies points from another selected tab |
-| Color | Edits the color of a selected point | `Key Time(sec)` - the time of the point on the timeline<br> `R` - Red<br> `G` - Green<br> `B` - Blue<br> ![Alt text](../sdk-image/sdk-icons/ppe-palette.png) - Palette |
+| Color | Edits the color of a selected point | `Key Time(sec)` - the time of the point on the timeline<br> `R` - Red<br> `G` - Green<br> `B` - Blue<br> ![Alt text](../icons/ppe-palette.png) - Palette |
 
 ### Grey Color
 
@@ -45,7 +45,7 @@ ___
 | Unit | Description | Buttons |
 |---|---|---|
 | Point List | Places points on the timeline | `+` - Adds a point<br> `-` - Removes a point<br> `Clear` - Clears the list of points<br> `CopyForm` - Copies points from another selected tab |
-| Color | Edits the color of a selected point | `Key Time(sec)` - the time of the point on the timeline<br> `R` - Red<br> `G` - Green<br> `B` - Blue<br> `Inensity` - Gray intensity parameter<br> ![Alt text](../sdk-image/sdk-icons/ppe-palette.png) - Palette |
+| Color | Edits the color of a selected point | `Key Time(sec)` - the time of the point on the timeline<br> `R` - Red<br> `G` - Green<br> `B` - Blue<br> `Inensity` - Gray intensity parameter<br> ![Alt text](../icons/ppe-palette.png) - Palette |
 
 ### Duality
 
@@ -72,7 +72,7 @@ ___
 | Unit | Description | Buttons |
 |---|---|---|
 | Point List | Places points on the timeline | `+` - Adds a point<br> `-` - Removes a point<br> `Clear` - Clears the list of points<br> `CopyForm` - Copies points from another selected tab |
-| Color | Edits the color of a selected point | `Key Time(sec)` - the time of the point on the timeline<br> `R` - Red<br> `G` - Green<br> `B` - Blue<br> `Inensity` - Intensity<br> ![Alt text](../sdk-image/sdk-icons/ppe-palette.png) - Palette |
+| Color | Edits the color of a selected point | `Key Time(sec)` - the time of the point on the timeline<br> `R` - Red<br> `G` - Green<br> `B` - Blue<br> `Inensity` - Intensity<br> ![Alt text](../icons/ppe-palette.png) - Palette |
 
 ### Color Mapper
 

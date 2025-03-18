@@ -12,10 +12,6 @@ ___
 
 The same as the [*.dds](dds.md). But overlaid on top of an existing texture, for more detail
 
-```admonish example
-![example centered](images/detail_stucco_det1.png)
-```
-
 ___
 
 ## Programs editing this file

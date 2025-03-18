@@ -21,7 +21,7 @@ Table of content :
 - [IV.C. TASK TARGET FUNCTOR](task_guide.md#ivc-task-target-functor)
 - [IV.D. TASK STATUS FUNCTOR](task_guide.md#ivd-task-status-functor)
 
----
+___
 
 ## I. INTRODUCTION
 
@@ -52,7 +52,7 @@ For more complex tasks, you may also need to create custom squads of NPCs, for w
 
 Note that, to ensure maximum compatibility, it is highly discouraged to edit and redistribute modified vanilla files. Instead, you can use [DLTX](https://igigog.github.io/anomaly-modding-book/addons/dltx.html) and [DXML](https://igigog.github.io/anomaly-modding-book/addons/dxml.html) to modify those files at runtime, ensuring high compatibility with other addons.
 
----
+___
 
 ## II. TASK CONFIG
 
@@ -102,7 +102,7 @@ stage_complete          = 1
 - `stage_complete`  
   Number. Stage at which the task is considered completed. A task starts at stage `0` and can have any number of stages you want.
 
----
+___
 
 ## II.B.1. TASK LIFECYCLE (IN CONFIG)
 
@@ -168,7 +168,7 @@ You can replace the content of `% ... %` by any arrangement of the following :
 
 This list is not exhaustive, and there is plenty more you can do. As you'll soon read in [II.B.2.](task_guide.md#iib2-task-lifecycle-in-script), you can even define your own functions to use in these condlists.
 
----
+___
 
 ## II.B.2. TASK LIFECYCLE (IN SCRIPT)
 
@@ -213,13 +213,13 @@ end
 
 This allows you for a finer control over what happens at the events, though this has the downside of putting config-related stuff in script, which isn't ideal.
 
----
+___
 
 ## III. STARTING THE TASK
 
 It is important to note that there are multiple ways to make the player start your task.
 
----
+___
 
 ### III.A. USING THE GAME'S DYNAMIC RANDOM TASKS
 
@@ -257,7 +257,7 @@ precondition            = {-my_task_is_finished} true, false
 
 By default, those tasks are repeatable, but if you check for an info portion in the precondition, and give that info when the player completes the task, you can make sure the task is played only once (useful for storyline tasks).
 
----
+___
 
 ### III.B. USING YOUR OWN FUNCTIONS
 
@@ -295,7 +295,7 @@ There are many ways to start the task using that technique, but the two importan
     end
     ```
 
----
+___
 
 ## IV. TASK FUNCTORS
 
@@ -334,7 +334,7 @@ function load_state(m_data)
 end
 ```
 
----
+___
 
 ### IV.A. TASK TITLE FUNCTOR
 
@@ -367,7 +367,7 @@ title                   = st_my_task_title
 ...
 ```
 
----
+___
 
 ### IV.B. TASK DESCRIPTION FUNCTOR
 
@@ -416,7 +416,7 @@ descr                   = st_my_task_description
 ...
 ```
 
----
+___
 
 ### IV.C. TASK TARGET FUNCTOR
 
@@ -449,7 +449,7 @@ function task_functor.my_task_target_f(task_id,field,p,tsk)
 end
 ```
 
----
+___
 
 ### IV.D. TASK STATUS FUNCTOR
 

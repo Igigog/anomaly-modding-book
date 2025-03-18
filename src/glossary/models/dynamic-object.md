@@ -8,7 +8,7 @@ Any movable object (which can be displaced from its place regardless of the scri
 
 Example:
 
-![example centered](../../../glossary/images/dynamic_object.png)
+![example centered](images/dynamic_object.png)
 
 ### Distinguishing features
 

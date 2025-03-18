@@ -1,12 +1,12 @@
-# Editing existing animations
+# Editing existing animations in Blender
 
 ___
 
 ## Need to know
 
 - How working in Blender and creating animations
-- Skeleton animations ([*.skl](../../reference/main-folders-and-files/file-formats/animations/skl-skls.md), [*.skls](../../reference/main-folders-and-files/file-formats/animations/skl-skls.md), [*.omf](../../reference/main-folders-and-files/file-formats/animations/omf.md))
-- Camera animations ([*.anm](../../reference/main-folders-and-files/file-formats/animations/anm.md))
+- Skeleton animations ([*.skl](../../reference/file-formats/animations/skl-skls.md), [*.skls](../../reference/file-formats/animations/skl-skls.md), [*.omf](../../reference/file-formats/animations/omf.md))
+- Camera animations ([*.anm](../../reference/file-formats/animations/anm.md))
 
 ___
 

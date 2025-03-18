@@ -14,4 +14,4 @@ ___
 
 ## Sources
 
-[Source](https://www.lua.org/about.html)
+[Lua Official Site](https://www.lua.org/about.html)

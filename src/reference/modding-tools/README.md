@@ -147,17 +147,17 @@ ___
 
 - [BumpX_GUI](https://github.com/PiratBuildov/BumpX_GUI) - WinForms GUI for BumpX v07
 
-- [THM Editor](https://gitlab.com/i-love-kfc/thm-editor/) - Utility for editing [*.thm](../main-folders-and-files/file-formats/textures/thm.md) files without the need to use the SDK
+- [THM Editor](https://gitlab.com/i-love-kfc/thm-editor/) - Utility for editing [*.thm](../file-formats/textures/thm.md) files without the need to use the SDK
   - [More](modding-tools-textures/thm-editor-by-i-love-kfc.md)
 
 - [THM Editor by Valerok](https://github.com/VaIeroK/THM-Editor) - ValeroK's version of the original THM Editor
   - [More](modding-tools-textures/thm-editor-by-valerok.md)
 
-- [ThmValidator](https://sharedby.blomp.com/tnT8vj) - Allows you to check the [*.thm](../main-folders-and-files/file-formats/textures/thm.md) files in the selected directory and automatically fix the most common bugs that occur during manual editing.
+- [ThmValidator](https://sharedby.blomp.com/tnT8vj) - Allows you to check the [*.thm](../file-formats/textures/thm.md) files in the selected directory and automatically fix the most common bugs that occur during manual editing.
 
 - [xrAutoUI](https://cdn.discordapp.com/attachments/978593574893535274/1083798175896326206/xrAutoUI.exe) - Auto-transfer UI from 4:3 to 16:9
 
-- Any program capable of creating textures or opening [*.dds](../main-folders-and-files/file-formats/textures/dds.md) files (e.g. [Paint.net](https://www.getpaint.net/))
+- Any program capable of creating textures or opening [*.dds](../file-formats/textures/dds.md) files (e.g. [Paint.net](https://www.getpaint.net/))
 
 ___
 
@@ -173,7 +173,7 @@ ___
 
 ## Parameters | LTX
 
-- [STLKObjectMan](https://drive.google.com/file/d/1OM2gZtj_Ubg7H03iI-Z_z3EAkwn1_S2R/view) - Universal parameters editor. Modifies [*.ltx](../main-folders-and-files/file-formats/conf-script/ltx.md) and [*.xml](../main-folders-and-files/file-formats/conf-script/xml.md) files. **not compatible with Anomaly due to modified config files**
+- [STLKObjectMan](https://drive.google.com/file/d/1OM2gZtj_Ubg7H03iI-Z_z3EAkwn1_S2R/view) - Universal parameters editor. Modifies [*.ltx](../file-formats/conf-script/ltx.md) and [*.xml](../file-formats/conf-script/xml.md) files. **not compatible with Anomaly due to modified config files**
 
 - [StalkerElementFinder](https://disk.yandex.ru/d/Rv-Mt1IAXyTihA%D0%B0) - A program for finding elements and resources
 
@@ -190,16 +190,16 @@ ___
 
 - [OGG Editor](https://disk.yandex.ru/d/Dcyo0Nt3A3b5g) - This utility is designed to quickly view and edit audio comments
 
-- [StkOggCommentViewer](https://cdn.discordapp.com/attachments/978593574893535274/979058737270644776/StkOggCommentViewer.exe) - Allows viewing comments in an [*.ogg](../main-folders-and-files/file-formats/audio-video/ogg.md) file
+- [StkOggCommentViewer](https://cdn.discordapp.com/attachments/978593574893535274/979058737270644776/StkOggCommentViewer.exe) - Allows viewing comments in an [*.ogg](../file-formats/audio-video/ogg.md) file
 
-- [OggCommentDecompiler](https://ap-pro.ru/applications/core/interface/file/attachment.php?id=22581) - Saves comments in a [*.ltx](../main-folders-and-files/file-formats/conf-script/ltx.md) file, whose name and path are equivalent to the sound file
+- [OggCommentDecompiler](https://ap-pro.ru/applications/core/interface/file/attachment.php?id=22581) - Saves comments in a [*.ltx](../file-formats/conf-script/ltx.md) file, whose name and path are equivalent to the sound file
 
 ___
 
 ## Animations
 
-- [OMF Editor](https://github.com/mortany/omf_editor) - Tool for working with [*.omf](../main-folders-and-files/file-formats/animations/omf.md) format.
-- [OMF Editor by Valerok](https://github.com/VaIeroK/Omf-Editor) - Modified tool for working with [*.omf](../main-folders-and-files/file-formats/animations/omf.md) format.
+- [OMF Editor](https://github.com/mortany/omf_editor) - Tool for working with [*.omf](../file-formats/animations/omf.md) format.
+- [OMF Editor by Valerok](https://github.com/VaIeroK/Omf-Editor) - Modified tool for working with [*.omf](../file-formats/animations/omf.md) format.
   - [More](modding-tools-animations/omf-editor-by-valerok.md)
 
 - OmfSpisok - utility for one-click output .txt list of connected *.omf files from \*.ogf file
@@ -208,8 +208,8 @@ ___
 
 ## Models
 
-- [OGF Editor](https://github.com/mortany/OGF-tool) - Tool for working with [*.ogf](../main-folders-and-files/file-formats/models/ogf.md) format
-- [OGF Editor by Valerok](https://github.com/VaIeroK/OGF-tool) - Tool for working with *.ogf and [*.dm](../main-folders-and-files/file-formats/models/dm.md) format
+- [OGF Editor](https://github.com/mortany/OGF-tool) - Tool for working with [*.ogf](../file-formats/models/ogf.md) format
+- [OGF Editor by Valerok](https://github.com/VaIeroK/OGF-tool) - Tool for working with *.ogf and [*.dm](../file-formats/models/dm.md) format
   - [More](modding-tools-models/ogf-editor-by-valerok.md)
 
 - [MeshToolz](https://github.com/gunslingermod/MeshToolz) - Swiss knife for low-level editing of OGF models. Want to copy a piece of one model to another? Easy. Change texture paths and bindings? No problem. Move and scale an item by snapping it to another bone? No problem. Can work both interactively and in script processing mode.

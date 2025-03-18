@@ -2,4 +2,4 @@
 
 ___
 
-Part of [.ai](../../reference/main-folders-and-files/file-formats/game-levels/ai.md). Ai grid node
+Part of [.ai](../../reference/file-formats/game-levels/ai.md). Ai grid node

@@ -48,16 +48,16 @@ Weather editor allows you to change weather values in real-time. Minute precisio
 
 | Icon | Description |
 |---|:---:|
-| ![Alt text](images/weather-editor-icons/copy.png) | Copy settings |
-| ![Alt text](images/weather-editor-icons/paste.png) | Paste settings |
-| ![Alt text](images/weather-editor-icons/view-mode.png) | Viewer Mode |
-| ![Alt text](images/weather-editor-icons/pause.png) | Pause in Viewer Mode |
-| ![Alt text](images/weather-editor-icons/resume.png) | Autoplay in Viewer Mode |
-| ![Alt text](images/weather-editor-icons/save.png) | Save to new file if you indicated the name in box below, otherwise save to current file. Name of custom files must start with "`w_`". |
-| ![Alt text](images/weather-editor-icons/clear-cache-values.png) | Clear cached values |
-| ![Alt text](images/weather-editor-icons/resume.png) | Resume weather, and exit |
-| ![Alt text](images/weather-editor-icons/exit.png) | Exit (weather will still paused in engine) |
-| ![Alt text](images/weather-editor-icons/about.png) | About |
+| ![Alt text](icons/copy.png) | Copy settings |
+| ![Alt text](icons/paste.png) | Paste settings |
+| ![Alt text](icons/view-mode.png) | Viewer Mode |
+| ![Alt text](icons/pause.png) | Pause in Viewer Mode |
+| ![Alt text](icons/resume.png) | Autoplay in Viewer Mode |
+| ![Alt text](icons/save.png) | Save to new file if you indicated the name in box below, otherwise save to current file. Name of custom files must start with "`w_`". |
+| ![Alt text](icons/clear-cache-values.png) | Clear cached values |
+| ![Alt text](icons/resume.png) | Resume weather, and exit |
+| ![Alt text](icons/exit.png) | Exit (weather will still paused in engine) |
+| ![Alt text](icons/about.png) | About |
 
 ___
 

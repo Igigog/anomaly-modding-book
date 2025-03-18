@@ -35,10 +35,10 @@ ___
 
 ## Programs editing this file
 
-- [Blender (X-Ray Addon)](../../../modding-tools/blender/blender-x-ray-addon-summary.md)
-- [X-Ray Export Tool (Object Tool)](../../../modding-tools/modding-tools-models/xray-export-tool.md)
-- [Ogf Editor by ValeroK](../../../modding-tools/modding-tools-models/ogf-editor-by-valerok.md) - (Only as a converter!)
-- [SDK 0.7](../../../modding-tools/sdk/README.md)
+- [Blender (X-Ray Addon)](../../modding-tools/blender/blender-x-ray-addon-summary.md)
+- [X-Ray Export Tool (Object Tool)](../../modding-tools/modding-tools-models/xray-export-tool.md)
+- [Ogf Editor by ValeroK](../../modding-tools/modding-tools-models/ogf-editor-by-valerok.md) - (Only as a converter!)
+- [SDK 0.7](../../modding-tools/sdk/README.md)
 
 ___
 

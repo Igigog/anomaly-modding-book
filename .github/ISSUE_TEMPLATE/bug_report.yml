@@ -1,0 +1,15 @@
+
+name: Book Bug Report
+description: Report Bug
+labels: [Book Bug]
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: >
+        Provide Bug
+    validations:
+      required: true
+

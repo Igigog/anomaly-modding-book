@@ -1,10 +1,10 @@
-# Creating Camera Flyover in Game
+# Creating camera flyover in game
 
 ___
 
 ## Need to know
 
-- What is [.xrdemo](../../reference/main-folders-and-files/file-formats/general/xrdemo.md)
+- What is [.xrdemo](../../reference/file-formats/general/xrdemo.md)
 
 ___
 

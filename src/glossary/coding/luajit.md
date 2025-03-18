@@ -4,7 +4,7 @@ ___
 
 ## About
 
-LuaJIT is a Just-In-Time Compiler (JIT) for the Lua programming language.
+LuaJIT is a [Just-In-Time Compiler](https://en.wikipedia.org/wiki/Just-in-time_compilation) (JIT) for the Lua programming language.
 
 Anomaly uses LuaJIT 2.0.4
 
@@ -12,4 +12,4 @@ ___
 
 ## Sources
 
-[Source](https://luajit.org/luajit.html)
+[LuaJIT Official Site](https://luajit.org/luajit.html)

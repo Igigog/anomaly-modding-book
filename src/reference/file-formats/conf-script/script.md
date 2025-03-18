@@ -4,7 +4,7 @@ ___
 
 ## About
 
-Contain some game functions, command sequences, written in [Lua](../../../terminology/coding/lua.md) scripting language.
+Contain some game functions, command sequences, written in [Lua](../../../glossary/coding/lua.md) scripting language.
 
 ~~~admonish example title='Script file might look like:'
 ```lua,filepath="...\scripts\actor_status_thirst.script"

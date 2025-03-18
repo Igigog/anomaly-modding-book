@@ -2,23 +2,23 @@
 
 ___
 
-A sound editor is needed to edit sound files in [.wav](https://en.wikipedia.org/wiki/WAV) format and convert to [.ogg](../../../main-folders-and-files/file-formats/audio-video/ogg.md)
+A sound editor is needed to edit sound files in [.wav](https://en.wikipedia.org/wiki/WAV) format and convert to [.ogg](../../../file-formats/audio-video/ogg.md)
 
 ___
 
 ## Interface
 
-![sound editor centered](../sdk-image/sound-editor.png)
+![sound editor centered](./images/sound-editor.png)
 
 ### Items
 
 > Contains track list
 
-![sound editor items centered](../sdk-image/sound-editor-items.png)
+![sound editor items centered](./images/sound-editor-items.png)
 
 ### Toolbar
 
-![sound editor items centered](../sdk-image/sound-editor-toolbar.png)
+![sound editor items centered](./images/sound-editor-toolbar.png)
 
 | Key | Description | Value |
 |---|---|---|

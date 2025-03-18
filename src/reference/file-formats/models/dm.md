@@ -12,7 +12,7 @@ ___
 
 It works like this: UV descends down the Y coordinates to the texture
 
-![example](../images/dm.gif)
+![example](./images/dm.gif)
 
 ### Format limitations
 
@@ -115,9 +115,9 @@ ___
 
 ## Programs editing this file
 
-- [Blender (X-Ray Addon)](../../../modding-tools/blender/blender-x-ray-addon-summary.md)
-- [X-Ray Export Tool (Object Tool)](../../../modding-tools/modding-tools-models/xray-export-tool.md)
-- [SDK 0.7](../../../modding-tools/sdk/README.md)
+- [Blender (X-Ray Addon)](../../modding-tools/blender/blender-x-ray-addon-summary.md)
+- [X-Ray Export Tool (Object Tool)](../../modding-tools/modding-tools-models/xray-export-tool.md)
+- [SDK 0.7](../../modding-tools/sdk/README.md)
 
 ___
 

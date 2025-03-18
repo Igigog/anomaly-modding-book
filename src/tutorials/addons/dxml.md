@@ -193,7 +193,7 @@ Full list of available CSS-like selectors are:
 * ">" - find direct children
 * "+" - find first sibling of element
 * "~" - find all siblings
-* "[attr1=value1]" - describes attribute `attr1` with value `value1`. To find element that matches multiple attributes you can use `[attr1=value1][attr2=value2]` and so on
+* "\[attr1=value1]" - describes attribute `attr1` with value `value1`. To find element that matches multiple attributes you can use `[attr1=value1][attr2=value2]` and so on
 
 ___
 
