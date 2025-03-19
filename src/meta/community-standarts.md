@@ -26,6 +26,11 @@ IX-Ray is currently the most advanced project with engine and SDK support. So al
 
 You can use any one that supports LUA and XML files.
 
+Also, you may need these extensions:
+
+- [ltx suport](../modding-tools/coding/ltx-support.md)
+- [Encodex](https://github.com/Tosox/Encodex)
+
 ### Tools
 
 In some cases, it will be easier and faster to use a specific tool to solve problems. The following are examples

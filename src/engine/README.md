@@ -19,7 +19,7 @@ The X-Ray "Monolith" Engine is an Anomaly mod open for use and modification. It 
 
 ## Technical Info
 
-- [Coordinate System](../reference/engine/xray-coordinate-system.md)
+- [Coordinate System](xray-coordinate-system.md)
 
 ___
 

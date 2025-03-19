@@ -7,4 +7,4 @@ ___
 - [Sound Engine (OpenAL)](openal-sound-engine.md)
 - Render Engine
 - Script Engine
-- [AI Engine (Alife)](../../../glossary/ai/alife-ai-engine.md)
+- [AI Engine (Alife)](../ai/alife-ai-engine.md)

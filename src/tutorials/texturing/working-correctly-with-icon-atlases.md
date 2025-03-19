@@ -54,8 +54,8 @@ ___
 
 ### To save in Paint.net
 
-![Alt text centered](images/image%20(7).png)
-![Alt text centered](images/image%20(8).png)
+![Alt text centered](images/image_(7).png)
+![Alt text centered](images/image_(8).png)
 
 ___
 

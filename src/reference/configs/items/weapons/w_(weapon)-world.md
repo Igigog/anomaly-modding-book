@@ -44,7 +44,7 @@ ___
 | single_handed | held with one hand | 0 |  | true - 1 - on (Yes)<br> false - 0 - off (No) |
 | default_to_ruck | whether the weapon will be moved to the backpack instead of the slot when picked up | false |  | true - 1 - on (Yes)<br> false - 0 - off (No) |
 | sprint_allowed | this line means that you can run with the weapon | true |  | true - 1 - on (Yes)<br> false - 0 - off (No) |
-| kind | The type of item to group into the appropriate section in the [Item Spawner](../../../modding-tools/in-game-editors/item-spawner.md) | w_rifle |  | w_rifle<br> w_misc<br> w_explosive<br> w_melee<br> w_pistol<br> w_smg<br> w_shotgun<br> w_sniper |
+| kind | The type of item to group into the appropriate section in the [Item Spawner](../../../../modding-tools/in-game-editors/item-spawner.md) | w_rifle |  | w_rifle<br> w_misc<br> w_explosive<br> w_melee<br> w_pistol<br> w_smg<br> w_shotgun<br> w_sniper |
 | cost | Base price | 28780 |  |  |
 | hud | Section with parameters for [hud weapon](../../../../glossary/models/object-hud.md) | wpn_akm_hud |  | Section name |
 | visual | [World model](../../../../glossary/models/object-world.md) | dynamics\weapons\wpn_akm\wpn_akm.ogf |  | Path to file |

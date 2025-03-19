@@ -32,7 +32,7 @@ Game Material. The game material selection menu works similarly to the engine sh
 
 ### Two Sided
 
-Double-sided surface. If this parameter is enabled for a material, then when exporting to *.ogf, twice as many polygons that use this material will be saved, because the polygons will be saved for both sides. When exporting to *.object the number of polygons will not change, because X-Ray SDK itself doubles the number of polygons when exporting to *.ogf.
+Double-sided surface. If this parameter is enabled for a material, then when exporting to *.ogf, twice as many polygons that use this material will be saved, because the polygons will be saved for both sides. When exporting to \*.object the number of polygons will not change, because X-Ray SDK itself doubles the number of polygons when exporting to \*.ogf.
 
 ## Game Level Parameters
 

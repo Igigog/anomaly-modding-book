@@ -31,6 +31,7 @@
       - [Smart Terrain](glossary/ai/smart-terrain.md)
         - [Gulag](glossary/ai/gulag.md)
       - [Space Restrictor](glossary/ai/space-restrictor.md)
+      - [Smart Cover](glossary/ai/smart-cover.md)
       - [Waypoint](glossary/ai/waypoint.md)
       - [lvid](glossary/ai/lvid.md)
   - [Animations](glossary/animations/README.md)
@@ -172,6 +173,7 @@
   - [Audio | Video](reference/file-formats/audio-video/README.md)
     - [*.ogg](reference/file-formats/audio-video/ogg.md)
     - [*.ogm](reference/file-formats/audio-video/ogm.md)
+    - [*.wav](reference/file-formats/audio-video/wav.md)
   - [Configs](reference/file-formats/conf-script/README.md)
     - [*.ltx](reference/file-formats/conf-script/ltx.md)
     - [*.script](reference/file-formats/conf-script/script.md)
@@ -186,6 +188,7 @@
     - [*.fog_vol](reference/file-formats/game-levels/fog_vol.md)
     - [*.game](reference/file-formats/game-levels/game.md)
     - [*.geom](reference/file-formats/game-levels/geom.md)
+    - [*.geomx](reference/file-formats/game-levels/geomx.md)
     - [*.graph](reference/file-formats/game-levels/graph.md)
     - [*.gtc](reference/file-formats/game-levels/gtc.md)
     - [*.hom](reference/file-formats/game-levels/hom.md)
@@ -420,7 +423,7 @@
 
 ---
 
-- [Blender X-Ray Addon](modding-tools/blender/README.md)
+- [Blender X-Ray Addon](modding-tools/blender/blender-x-ray-addon-summary.md)
   - [Preference Panel](modding-tools/blender/addon-preference-panels/README.md)
     - [Paths](modding-tools/blender/addon-preference-panels/preference-panel-paths.md)
     - [Defaults](modding-tools/blender/addon-preference-panels/preference-panel-defaults.md)
@@ -474,6 +477,7 @@
     - [Copy X-Ray Transforms](modding-tools/blender/addon-operators/operator-copy-x-ray-transforms.md)
     - [Create Connected Bones](modding-tools/blender/addon-operators/operator-create-connected-bones.md)
     - [Create IK](modding-tools/blender/addon-operators/operator-create-ik.md)
+    - [Create Level Shader Nodes](modding-tools/blender/addon-operators/operator-create-level-shader-nodes.md)
     - [Create X-Ray Material](modding-tools/blender/addon-operators/operator-create-x-ray-material.md)
     - [Link Bones](modding-tools/blender/addon-operators/operator-link-bones.md)
     - [Merge OMF](modding-tools/blender/addon-operators/operator-merge-omf.md)
@@ -492,6 +496,10 @@
     - [Update Blender Transforms](modding-tools/blender/addon-operators/operator-update-blender-transforms.md)
     - [Update X-Ray Transforms](modding-tools/blender/addon-operators/operator-update-x-ray-transforms.md)
     - [Verify UV](modding-tools/blender/addon-operators/operator-verify-uv.md)
+
+---
+
+- [Evaluation Function Constructor](modding-tools/ai/evaluation-function-constructor.md)
 
 ---
 

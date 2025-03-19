@@ -14,7 +14,7 @@ This page describes the X-Ray Engine: Bone panel. Some parameters from this pane
 
 ### Exportable
 
-If on, the bone will be exportable and will be saved when exporting to [*.object](../../../../file-formats/models/object.md) and [*.ogf](../../../../file-formats/models/ogf.md). If off, it will not be used during export. Usually this parameter should be turned off for additional rig bones, for example, for bones of inverse kinematics. This parameter should be turned on for deforming bones or for bones that must be in the skeleton.
+If on, the bone will be exportable and will be saved when exporting to [*.object](../../../reference/file-formats/models/object.md) and [*.ogf](../../../reference/file-formats/models/ogf.md). If off, it will not be used during export. Usually this parameter should be turned off for additional rig bones, for example, for bones of inverse kinematics. This parameter should be turned on for deforming bones or for bones that must be in the skeleton.
 
 ### Material
 

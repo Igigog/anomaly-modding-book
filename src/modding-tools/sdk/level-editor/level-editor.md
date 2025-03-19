@@ -37,8 +37,8 @@ Scene Button
 | Summary info | Shows information about objects in the scene | - |
 | Highlight Texture... | Highlights the selected texture | - |
 | Clear Debug Draw |  |  |
-| Export entire Scene as Obj |  | *.object<br> *.lwo<br> *.txt<br> *.xr<br> *.wav<br> *.obj<br> *.ltx<br> *.cpp |
-| Export Selection as Obj |  | *.object<br> *.lwo<br> *.txt<br> *.xr<br> *.wav<br> *.obj<br> *.ltx<br> *.cpp |
+| Export entire Scene as Obj |  | *.object<br> /*.lwo<br> *.txt<br> /*.xr<br> *.wav<br> /*.obj<br> *.ltx<br> /*.cpp |
+| Export Selection as Obj |  | *.object<br> /*.lwo<br> *.txt<br> /*.xr<br> *.wav<br> /*.obj<br> *.ltx<br> /*.cpp |
 
 Compile Button
 

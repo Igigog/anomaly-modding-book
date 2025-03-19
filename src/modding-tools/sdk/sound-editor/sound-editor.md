@@ -2,7 +2,7 @@
 
 ___
 
-A sound editor is needed to edit sound files in [.wav](https://en.wikipedia.org/wiki/WAV) format and convert to [.ogg](../../../file-formats/audio-video/ogg.md)
+A sound editor is needed to edit sound files in [.wav](https://en.wikipedia.org/wiki/WAV) format and convert to [.ogg](../../../reference/file-formats/audio-video/ogg.md)
 
 ___
 

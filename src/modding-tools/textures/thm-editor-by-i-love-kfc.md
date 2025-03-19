@@ -10,7 +10,7 @@ ___
 
 ## About
 
-Utility for editing [*.thm](../../file-formats/textures/thm.md) files without the need to use the SDK
+Utility for editing [*.thm](../../reference/file-formats/textures/thm.md) files without the need to use the SDK
 
 ![thm-editor centered](images/thm-editor-by-i-love-kfc.png)
 
@@ -142,13 +142,13 @@ Different shading algorithms
 | Fade Color |  |
 | Fade Amout |  |
 | Material Weight | Shading model weight (0.0 - 1.0) |
-| Detail Scale | [Detail Map](../../file-formats/textures/detail-map.md) Scale |
+| Detail Scale | [Detail Map](../../reference/file-formats/textures/detail-map.md) Scale |
 | Texture Width | Texture Width |
 | Texture Height | Texture Height |
 | Fade Delay |  |
-| Bump Height | [Bump Map](../../file-formats/textures/bump.md) Height |
-| Detail name | Path to [Detail Map](../../file-formats/textures/detail-map.md) |
-| Bump name | Path to [Bump Map](../../file-formats/textures/bump.md) |
+| Bump Height | [Bump Map](../../reference/file-formats/textures/bump.md) Height |
+| Detail name | Path to [Detail Map](../../reference/file-formats/textures/detail-map.md) |
+| Bump name | Path to [Bump Map](../../reference/file-formats/textures/bump.md) |
 | Normal Map name | Path to Normal Map |
 
 ___

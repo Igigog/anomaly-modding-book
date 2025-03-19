@@ -6,7 +6,7 @@ ___
 
 ## About
 
-This panel contains tools for editing [*.omf](../../../../file-formats/animations/omf.md) files
+This panel contains tools for editing [*.omf](../../../reference/file-formats/animations/omf.md) files
 
 ## Operators
 

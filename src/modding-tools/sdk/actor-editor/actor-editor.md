@@ -25,13 +25,13 @@ File Button
 | Clear | Clears scene | - |
 | Load | Loads an object into a new scene | - |
 | Save | Saves object | - |
-| Save As | Saves the object as | [.object](../../../file-formats/models/object.md)<br> .lwo</br> |
+| Save As | Saves the object as | [.object](../../../reference/file-formats/models/object.md)<br> .lwo</br> |
 | Make Trumbnail | Creates trumbnail | Creates a thumbnail from the camera view |
 | Open Recent | Opens recent | - |
 | Import | Imports the model into the scene | - |
 | Optimize Motions |  |  |
 | Batch Convert |  |  |
-| Export | Exports the model to formats  | [.ogf](../../../file-formats/models/ogf.md)<br> [.omf](../../../file-formats/animations/omf.md)<br> [.obj](../../../file-formats/models/object.md)<br> [.dm](../../../file-formats/models/dm.md)<br>C++ |
+| Export | Exports the model to formats  | [.ogf](../../../reference/file-formats/models/ogf.md)<br> [.omf](../../../reference/file-formats/animations/omf.md)<br> [.obj](../../../reference/file-formats/models/object.md)<br> [.dm](../../../reference/file-formats/models/dm.md)<br>C++ |
 | Quit | Exiting the program | - |
 
 ___
@@ -77,9 +77,9 @@ ___
 
 Bone Parts Button
 
-Shows the [Bone Parts](../../../file-formats/models/bone-parts.md) of the object's skeleton
+Shows the [Bone Parts](../../../reference/file-formats/models/bone-parts.md) of the object's skeleton
 
-![bone-parts centered](./images/actor-editor-bone-parts.png)
+![bone-parts centered](images/actor-editor-bone-parts.png)
 
 Example Bone Parts of `stalker_animation.object`
 ___

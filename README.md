@@ -30,3 +30,4 @@ So refer to this [article](src/meta/README.md) or open an [issue](https://github
   - [mdbook whichlang](https://github.com/phoenixr-codes/mdbook-whichlang) - Powerful Code Blocks for mdBook
   - [mdbook mermaid](https://github.com/badboy/mdbook-mermaid) - A preprocessor for mdbook to add mermaid support
   - [mdbook-github-authors](https://github.com/VectorInstitute/mdbook-github-authors) - A preprocessor for mdbook that creates chapter-level contributor sections featuring authors' GitHub profiles
+  - [mdbook-linkcheck](https://github.com/Michael-F-Bryan/mdbook-linkcheck) - A backend for `mdbook` which will check your links for you

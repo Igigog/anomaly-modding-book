@@ -6,7 +6,7 @@ ___
 
 You can easily suggest edits by clicking on the button at the top right
 
-![suggest an edit centered](./contributing/images/suggest-an-edit.png)
+![suggest an edit centered](images/suggest-an-edit.png)
 
 ___
 
@@ -42,11 +42,11 @@ Welp, let's get started. I hope you already have a GitHub account.
 1. Go to the [main repo](https://github.com/Igigog/anomaly-modding-book)
 2. Press the fork button
 
-    ![centered](./contributing/images/3.PNG)
+    ![centered](images/3.PNG)
 
 3. Create the fork
 
-    ![centered](./contributing/images/4.PNG)
+    ![centered](images/4.PNG)
 
 4. You're awesome
 
@@ -54,12 +54,12 @@ Welp, let's get started. I hope you already have a GitHub account.
 
 1. Open the folder you want to download into in VSCodium. In my case, it will be Desktop.
 
-    ![centered](./contributing/images/5.PNG)
+    ![centered](images/5.PNG)
 
 2. Open Poweshell Terminal session
 3. Copy the link to your repo.
 
-    ![centered](./contributing/images/6.PNG)
+    ![centered](images/6.PNG)
 
 4. Run the following command in your Powershell Terminal with your link instead of LINK.
 
@@ -86,21 +86,21 @@ If you create a new article, you need to add it to `src/SUMMARY.md` for it to be
 
 2. Add your changes using VSCodium git tab. Open git tab, hover over "Changes" line and press "+".
 
-    ![centered](./contributing/images/7.PNG)
+    ![centered](images/7.PNG)
 
 3. Add a nice message and press "✔" to commit your changes
 
-    ![centered](./contributing/images/8.PNG)
+    ![centered](images/8.PNG)
 
 4. You should now be able to publish your changes
 
-    ![centered](./contributing/images/9.PNG)
+    ![centered](images/9.PNG)
 
 ## Creating Pull Request
 
 1. In main book repository, open "Pull Requests" tab and press "New pull request"
 
-    ![centered](./contributing/images/10.PNG)
+    ![centered](images/10.PNG)
 
 2. Press "compare across forks". Choose your repository and press "Create pull request".
 

@@ -4,7 +4,7 @@ ___
 
 ## About
 
-Copies transformations for the weapon at rest and for aiming to the clipboard. The values are calculated for the active object based on the Position and Orientation parameters of this panel. Transformations are written to the clipboard in text form. The text has the syntax of [*.ltx](../../../../file-formats/conf-script/ltx.md) configs (similar to [*.ini](https://en.wikipedia.org/wiki/INI_file)). First, the transformations for the hud model are written in the format of transformations for the resting state in the form of position and orientation parameters. Then the same transformations are written, but in the format of transformations for aiming in the form of parameters zoom_offset, zoom_rotate_x, zoom_rotate_y. These parameters should be written to the [*.ltx](../../../../file-formats/conf-script/ltx.md)-config of the weapon.
+Copies transformations for the weapon at rest and for aiming to the clipboard. The values are calculated for the active object based on the Position and Orientation parameters of this panel. Transformations are written to the clipboard in text form. The text has the syntax of [*.ltx](../../../reference/file-formats/conf-script/ltx.md) configs (similar to [*.ini](https://en.wikipedia.org/wiki/INI_file)). First, the transformations for the hud model are written in the format of transformations for the resting state in the form of position and orientation parameters. Then the same transformations are written, but in the format of transformations for aiming in the form of parameters zoom_offset, zoom_rotate_x, zoom_rotate_y. These parameters should be written to the [*.ltx](../../../reference/file-formats/conf-script/ltx.md)-config of the weapon.
 
 ___
 

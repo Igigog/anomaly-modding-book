@@ -4,12 +4,12 @@ ___
 
 ## In-game editors
 
-- [Item Spawner](../reference/modding-tools/in-game-editors/item-spawner.md) - Spawn menu for items (Weapons, Outfits, etc)
-- [Object Spawner](../reference/modding-tools/in-game-editors/object-spawner.md) - Spawn menu for objects (NPCs, Squads, Anomalys, etc)
-- [Weather Editor](../reference/modding-tools/in-game-editors/weather-editor.md) - Editor for setting, saving weather
-- [Lighting Editor](../reference/modding-tools/in-game-editors/lightning-editor.md) - Weather Lighting Editor
-- [Weapon HUD Editor](../reference/modding-tools/in-game-editors/weapon-hud-editor.md) - Allows you to customize the HUD of the weapon (position, location of the shot, etc.)
-- [Outfits/Weapon Stats Editor](../reference/modding-tools/in-game-editors/outfits-weapon-stats-editor.md) - Allows you to customize the configuration of the outfits or weapons
+- [Item Spawner](in-game-editors/item-spawner.md) - Spawn menu for items (Weapons, Outfits, etc)
+- [Object Spawner](in-game-editors/object-spawner.md) - Spawn menu for objects (NPCs, Squads, Anomalys, etc)
+- [Weather Editor](in-game-editors/weather-editor.md) - Editor for setting, saving weather
+- [Lighting Editor](in-game-editors/lightning-editor.md) - Weather Lighting Editor
+- [Weapon HUD Editor](in-game-editors/weapon-hud-editor.md) - Allows you to customize the HUD of the weapon (position, location of the shot, etc.)
+- [Outfits/Weapon Stats Editor](in-game-editors/outfits-weapon-stats-editor.md) - Allows you to customize the configuration of the outfits or weapons
 - Pocket Workshop - Not an editor, but allows you to check the scheme of improvements.
 - NPC Logic/Execute - Allows you to edit NPC logic
 
@@ -25,7 +25,7 @@ ___
 
 - [AXRToolset](https://github.com/revolucas/AXRToolset) - AXRToolset is an AutoHotkey & Lua-based scripting engine that utilizes a Graphical User Interface to display scripted plugins that do various automated tasks. Although the current plugins are designed to aid in the development of S.T.A.L.K.E.R.: Call of Chernobyl, the engine itself can be used to create macros, scripts and other utilities for any application or purpose.
 
-- [Stalker Studio V.0.7 Beta](../reference/modding-tools/modding-tools-all-in-one/stalker-studio.md) - Different tools in one place
+- [Stalker Studio V.0.7 Beta](all-in-one/stalker-studio.md) - Different tools in one place
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 - converter.exe (tools/) - Converts files from one format to another.
 - [X-Ray Export Tool](https://github.com/VaIeroK/XrayExportTool) - Tool for fast editing and exporting raw stalker formats
-  - [More](../reference/modding-tools/modding-tools-models/xray-export-tool.md)
+  - [More](models/xray-export-tool.md)
 
 ___
 
@@ -100,12 +100,12 @@ These versions (SDK 0.4 and SDK 0.5/0.6) are not compatible with Anomaly!
 Versions of the SDK tools may differ depending on the version of the SDK itself
 ```
 
-- [Actor Editor](../reference/modding-tools/sdk/actor-editor/actor-editor.md)
+- [Actor Editor](sdk/actor-editor/actor-editor.md)
 - Dialog Editor
-- [Level Editor](../reference/modding-tools/sdk/level-editor/level-editor.md)
-- [Particle Editor](../reference/modding-tools/sdk/particle-editor/particle-editor.md)
-- [Postprocess Editor](../reference/modding-tools/sdk/postprocess-editor/postprocess-editor.md)
-- [ShaderEditor](../reference/modding-tools/sdk/shader-editor/shader-editor.md)
+- [Level Editor](sdk/level-editor/level-editor.md)
+- [Particle Editor](sdk/particle-editor/particle-editor.md)
+- [Postprocess Editor](sdk/postprocess-editor/postprocess-editor.md)
+- [ShaderEditor](sdk/shader-editor/shader-editor.md)
 - xrLC_net - Level compiler by machines connected to a local network
 
 ___
@@ -123,7 +123,7 @@ ___
 
 3D Packages that have compatibility/addons to work with X-Ray:
 
-- [Blender (With X-Ray Addon)](../reference/modding-tools/blender/blender-x-ray-addon-summary.md)
+- [Blender (With X-Ray Addon)](blender/blender-x-ray-addon-summary.md)
 
 - 3Ds Max with scripts
   - [Den Stash's Scripts](https://github.com/X-Ray-Engine-STALKER/xray_3ds_max_tools)
@@ -143,15 +143,15 @@ ___
   - [Source Code](https://github.com/gunslingermod/BumpGenerator)
 
 - [Bump Generator by i-love-kfc](https://gitlab.com/i-love-kfc/bump-generator) - A simple bump and bump# texture generator from normal maps with the ability to use gloss maps, also, is capable of generating bump# for ready-made "green" bumps.
-  - [More](../reference/modding-tools/modding-tools-textures/bump-generator.md)
+  - [More](textures/bump-generator.md)
 
 - [BumpX_GUI](https://github.com/PiratBuildov/BumpX_GUI) - WinForms GUI for BumpX v07
 
 - [THM Editor](https://gitlab.com/i-love-kfc/thm-editor/) - Utility for editing [*.thm](../reference/file-formats/textures/thm.md) files without the need to use the SDK
-  - [More](../reference/modding-tools/modding-tools-textures/thm-editor-by-i-love-kfc.md)
+  - [More](textures/thm-editor-by-i-love-kfc.md)
 
 - [THM Editor by Valerok](https://github.com/VaIeroK/THM-Editor) - ValeroK's version of the original THM Editor
-  - [More](../reference/modding-tools/modding-tools-textures/thm-editor-by-valerok.md)
+  - [More](textures/thm-editor-by-valerok.md)
 
 - [ThmValidator](https://sharedby.blomp.com/tnT8vj) - Allows you to check the [*.thm](../reference/file-formats/textures/thm.md) files in the selected directory and automatically fix the most common bugs that occur during manual editing.
 
@@ -186,7 +186,7 @@ ___
 - [Audacity](https://www.audacityteam.org/)
 
 - [Sound Attribute Viewer And Tweaker](https://www.metacognix.com/files/stlkrsoc/index.html#:~:text=Sound%20Attribute%20Viewer%20and%20Tweaker,of%20NPCs%20to%20the%20sounds.) - Simple program that can reduce the work needed to view and/or edit STALKER sound file attributes used by all three STALKER games to determine initial volume, volume drop-off, and sensitivity of NPCs to the sounds
-  - [More](../reference/modding-tools/modding-tools-audio/savandt.md)
+  - [More](audio/savandt.md)
 
 - [OGG Editor](https://disk.yandex.ru/d/Dcyo0Nt3A3b5g) - This utility is designed to quickly view and edit audio comments
 
@@ -200,7 +200,7 @@ ___
 
 - [OMF Editor](https://github.com/mortany/omf_editor) - Tool for working with [*.omf](../reference/file-formats/animations/omf.md) format.
 - [OMF Editor by Valerok](https://github.com/VaIeroK/Omf-Editor) - Modified tool for working with [*.omf](../reference/file-formats/animations/omf.md) format.
-  - [More](../reference/modding-tools/modding-tools-animations/omf-editor-by-valerok.md)
+  - [More](animations/omf-editor-by-valerok.md)
 
 - OmfSpisok - utility for one-click output .txt list of connected *.omf files from \*.ogf file
 
@@ -210,7 +210,7 @@ ___
 
 - [OGF Editor](https://github.com/mortany/OGF-tool) - Tool for working with [*.ogf](../reference/file-formats/models/ogf.md) format
 - [OGF Editor by Valerok](https://github.com/VaIeroK/OGF-tool) - Tool for working with *.ogf and [*.dm](../reference/file-formats/models/dm.md) format
-  - [More](../reference/modding-tools/modding-tools-models/ogf-editor-by-valerok.md)
+  - [More](models/ogf-editor-by-valerok.md)
 
 - [MeshToolz](https://github.com/gunslingermod/MeshToolz) - Swiss knife for low-level editing of OGF models. Want to copy a piece of one model to another? Easy. Change texture paths and bindings? No problem. Move and scale an item by snapping it to another bone? No problem. Can work both interactively and in script processing mode.
   - [Scripts For MeshToolz](https://github.com/gunslingermod/additional_scopes)
@@ -230,7 +230,7 @@ ___
 ## Upgrades
 
 - [Upgrades Editor](https://github.com/gunslingermod/compiled_toolz) - A visual editor that makes it relatively quick and easy to create weapon upgrade schemes
-  - [More](../reference/modding-tools/modding-tools-weapons/upgrade-editor.md)
+  - [More](weapons/upgrade-editor.md)
 
 ___
 
@@ -290,7 +290,7 @@ ___
 ## Level Compilers
 
 - [Universal x64 level compilers](https://drive.google.com/file/d/1_sllfHcPL0pwsStf2x4lpPusbb6EZK8_/view) - Universal level compiler that supports the compilation format for games of all series and has many keys to compile
-  - [More](../reference/modding-tools/modding-tools-compilers/universal-x64-level-compilers.md)
+  - [More](compilers/universal-x64-level-compilers.md)
 
 ___
 
@@ -298,7 +298,7 @@ ___
 
 - [DB_Compressor by d_μaμ](https://cdn.discordapp.com/attachments/616764067670917131/846799604438532107/DB_Compressor.rar)
 - [xrCompress by i-love-kfc](https://ap-pro.ru/forums/topic/3500-obnovlyonnyy-xrcompress/) - .db/.xdb archiver
-  - [More](../reference/modding-tools/modding-tools-compressors/xrcompress-by-i-love-kfc.md)
+  - [More](compressors/xrcompress-by-i-love-kfc.md)
 
 ___
 

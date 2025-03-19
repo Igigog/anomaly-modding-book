@@ -140,8 +140,8 @@ ___
 
 ## Programs editing this file
 
-- [Blender (X-Ray Addon)](../../modding-tools/blender/blender-x-ray-addon-summary.md)
-- [OMF Editor by ValeroK](../../modding-tools/modding-tools-animations/omf-editor-by-valerok.md)
+- [Blender (X-Ray Addon)](../../../modding-tools/blender/blender-x-ray-addon-summary.md)
+- [OMF Editor by ValeroK](../../../modding-tools/animations/omf-editor-by-valerok.md)
 
 ___
 

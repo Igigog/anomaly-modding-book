@@ -37,15 +37,15 @@ Tool for fast editing and exporting raw stalker formats
 
 | Supported formats |
 |---|
-| [*.object](../../file-formats/models/object.md) |
-| [*.ogf](../../file-formats/models/ogf.md) |
-| [*.omf](../../file-formats/animations/omf.md) |
-| [*.skl](../../file-formats/animations/skl-skls.md) |
-| [*.skls](../../file-formats/animations/skl-skls.md) |
-| [*.bones](../../file-formats/models/bones.md) |
-| [*.dm](../../file-formats/models/dm.md) |
+| [*.object](../../reference/file-formats/models/object.md) |
+| [*.ogf](../../reference/file-formats/models/ogf.md) |
+| [*.omf](../../reference/file-formats/animations/omf.md) |
+| [*.skl](../../reference/file-formats/animations/skl-skls.md) |
+| [*.skls](../../reference/file-formats/animations/skl-skls.md) |
+| [*.bones](../../reference/file-formats/models/bones.md) |
+| [*.dm](../../reference/file-formats/models/dm.md) |
 | [*.obj (wavefront)](https://en.wikipedia.org/wiki/Wavefront_.obj_file) |
-| [*.ltx (bone parts)](../../file-formats/models/bone-parts.md) |
+| [*.ltx (bone parts)](../../reference/file-formats/models/bone-parts.md) |
 
 ## Functionality
 

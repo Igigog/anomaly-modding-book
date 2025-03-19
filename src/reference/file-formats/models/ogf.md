@@ -27,8 +27,8 @@ ___
 
 ## Programs editing this file
 
-- [Blender (X-Ray Addon)](../../modding-tools/blender/blender-x-ray-addon-summary.md)
-- [Ogf Editor by ValeroK](../../modding-tools/modding-tools-models/ogf-editor-by-valerok.md)
+- [Blender (X-Ray Addon)](../../../modding-tools/blender/blender-x-ray-addon-summary.md)
+- [Ogf Editor by ValeroK](../../../modding-tools/models/ogf-editor-by-valerok.md)
 - [SDK 0.7](../../../modding-tools/sdk/README.md)
 
 ___

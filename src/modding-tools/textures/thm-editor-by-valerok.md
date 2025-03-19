@@ -12,7 +12,7 @@ ___
 
 ## About
 
-The [THM Editor](thm-editor-by-i-love-kfc.md) from i-love-kfc was taken as the basis, finalized and fixed. Allows you to work with [.thm](../../file-formats/textures/thm.md) files.
+The [THM Editor](thm-editor-by-i-love-kfc.md) from i-love-kfc was taken as the basis, finalized and fixed. Allows you to work with [.thm](../../reference/file-formats/textures/thm.md) files.
 
 ![thm-editor-by-valerok centered](images/thm-editor-by-valerok.png)
 
@@ -59,9 +59,9 @@ The [THM Editor](thm-editor-by-i-love-kfc.md) from i-love-kfc was taken as the b
 | Fade To Alpha | Fade to alpha |  |
 | Dither Color | Enables [Dither](https://en.wikipedia.org/wiki/Dither) Coloring |  |
 | Dither Each MIP Level | Enables [Dither](https://en.wikipedia.org/wiki/Dither) Coloring on each MIP level |  |
-| Diffuse Detail | [Detail Map](../../file-formats/textures/detail-map.md) texture will be used |  |
+| Diffuse Detail | [Detail Map](../../reference/file-formats/textures/detail-map.md) texture will be used |  |
 | Implicit Lighted |  |  |
-| Detail Bump | [Detail Map](../../file-formats/textures/detail-map.md) will use its own [Bump Map](../../file-formats/textures/bump.md) |  |
+| Detail Bump | [Detail Map](../../reference/file-formats/textures/detail-map.md) will use its own [Bump Map](../../reference/file-formats/textures/bump.md) |  |
 
 ### Texture type
 
@@ -149,13 +149,13 @@ Different shading algorithms
 | Fade Color |  |
 | Fade Amout |  |
 | Material Weight | Shading model weight (0.0 - 1.0) |
-| Detail Scale | [Detail Map](../../file-formats/textures/detail-map.md) Scale |
+| Detail Scale | [Detail Map](../../reference/file-formats/textures/detail-map.md) Scale |
 | Texture Width | Texture Width |
 | Texture Height | Texture Height |
 | Fade Delay |  |
-| Bump Height | [Bump Map](../../file-formats/textures/bump.md) Height |
-| Detail name | Path to [Detail Map](../../file-formats/textures/detail-map.md) |
-| Bump name | Path to [Bump Map](../../file-formats/textures/bump.md) |
+| Bump Height | [Bump Map](../../reference/file-formats/textures/bump.md) Height |
+| Detail name | Path to [Detail Map](../../reference/file-formats/textures/detail-map.md) |
+| Bump name | Path to [Bump Map](../../reference/file-formats/textures/bump.md) |
 | Normal Map name | Path to Normal Map |
 
 ___

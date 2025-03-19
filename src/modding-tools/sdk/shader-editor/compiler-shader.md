@@ -4,7 +4,7 @@ ___
 
 ## About
 
-[Compiler Shader List Here](../../../shaders/shaders-list/compiler-shaders-list.md)
+[Compiler Shader List Here](../../../reference/shaders/shaders-list/compiler-shaders-list.md)
 
 ![se-cs centered]()
 
@@ -24,5 +24,5 @@ ___
 | Collision | Enable Collision for object with this shader |
 | Rendering | An object with this shader will not render in the game world |
 | OptimizeUV | ? |
-| Vertex Light | Will use [Vertex Lighting](../../../../glossary/lightning/vertex-light.md) instead on [Per-Pixel Lightning](../../../../glossary/lightning/per-pixel-lighting.md) |
+| Vertex Light | Will use [Vertex Lighting](../../../glossary/lightning/vertex-light.md) instead on [Per-Pixel Lightning](../../../glossary/lightning/per-pixel-lighting.md) |
 | Cast Shadow | Enable shadow casting |
