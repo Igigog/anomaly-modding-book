@@ -1,79 +1,123 @@
 # Jet
 
+___
+
 ## About
 
 Accelerate particles that are near the center of the jet
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-v0mg{border-color:#ffffff;text-align:center;vertical-align:middle}
-</style>
-<table class="tg"><thead>
+<table><thead>
   <tr>
-    <th class="tg-v0mg">Key</th>
-    <th class="tg-v0mg">Value</th>
-    <th class="tg-v0mg">Value Description</th>
-    <th class="tg-v0mg">Parameter</th>
-    <th class="tg-v0mg">Parameter Description</th>
+    <th>Key</th>
+    <th>Value</th>
+    <th>Value Description</th>
+    <th>Parameters</th>
+    <th>Parameters Description</th>
   </tr></thead>
 <tbody>
   <tr>
-    <td class="tg-v0mg" rowspan="9">Jet</td>
-    <td class="tg-v0mg">Name</td>
-    <td class="tg-v0mg"></td>
-    <td class="tg-v0mg">-</td>
-    <td class="tg-v0mg">-</td>
+    <td rowspan="19">Jet</td>
+    <td>Name</td>
+    <td></td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
-    <td class="tg-v0mg">Accelerate</td>
-    <td class="tg-v0mg"></td>
-    <td class="tg-v0mg">Center</td>
-    <td class="tg-v0mg"></td>
+    <td rowspan="11">Accelerate</td>
+    <td></td>
+    <td>Point</td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-v0mg">Center</td>
-    <td class="tg-v0mg"></td>
-    <td class="tg-v0mg">-</td>
-    <td class="tg-v0mg">-</td>
+    <td></td>
+    <td>Line</td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-v0mg">Magnitude</td>
-    <td class="tg-v0mg"></td>
-    <td class="tg-v0mg">-</td>
-    <td class="tg-v0mg">-</td>
+    <td></td>
+    <td>Triangle</td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-v0mg">Epsilon</td>
-    <td class="tg-v0mg"></td>
-    <td class="tg-v0mg">-</td>
-    <td class="tg-v0mg">-</td>
+    <td></td>
+    <td>Plane</td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-v0mg">Max Radius</td>
-    <td class="tg-v0mg"></td>
-    <td class="tg-v0mg">-</td>
-    <td class="tg-v0mg">-</td>
+    <td></td>
+    <td>Box</td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-v0mg">Allow Rotate</td>
-    <td class="tg-v0mg"></td>
-    <td class="tg-v0mg">-</td>
-    <td class="tg-v0mg">-</td>
+    <td></td>
+    <td>Sphere</td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-v0mg">Draw</td>
-    <td class="tg-v0mg"></td>
-    <td class="tg-v0mg">-</td>
-    <td class="tg-v0mg">-</td>
+    <td></td>
+    <td>Cylinder</td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-v0mg">Enabled</td>
-    <td class="tg-v0mg"></td>
-    <td class="tg-v0mg">-</td>
-    <td class="tg-v0mg">-</td>
+    <td></td>
+    <td>Cone</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Blob</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Disc</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Rectangle</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Center</td>
+    <td></td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Magnitude</td>
+    <td></td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Epsilon</td>
+    <td></td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Max Radius</td>
+    <td></td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Allow Rotate</td>
+    <td></td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Draw</td>
+    <td></td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Enabled</td>
+    <td></td>
+    <td>-</td>
+    <td>-</td>
   </tr>
 </tbody></table>

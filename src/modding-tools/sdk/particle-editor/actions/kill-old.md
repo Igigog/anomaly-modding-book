@@ -1,44 +1,40 @@
 # Kill Old
 
+___
+
 ## About
 
 Remove old particles
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-v0mg{border-color:#ffffff;text-align:center;vertical-align:middle}
-</style>
-<table class="tg"><thead>
+![alt text](media/source-kill.gif)
+
+<table><thead>
   <tr>
-    <th class="tg-v0mg">Key</th>
-    <th class="tg-v0mg">Value</th>
-    <th class="tg-v0mg">Value Description</th>
+    <th>Key</th>
+    <th>Value</th>
+    <th>Value Description</th>
   </tr></thead>
 <tbody>
   <tr>
-    <td class="tg-v0mg" rowspan="5">Kill Old</td>
-    <td class="tg-v0mg">Name</td>
-    <td class="tg-v0mg"></td>
+    <td rowspan="5">KillOld</td>
+    <td>Name</td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-v0mg">Age Limit</td>
-    <td class="tg-v0mg"></td>
+    <td>Age Limit</td>
+    <td>Age Limit</td>
   </tr>
   <tr>
-    <td class="tg-v0mg">Kill Less Than</td>
-    <td class="tg-v0mg"></td>
+    <td>Kill Less Than</td>
+    <td>Убивает частицы с "Возрастом" ниже чем указано в Age Limit</td>
   </tr>
   <tr>
-    <td class="tg-v0mg">Draw</td>
-    <td class="tg-v0mg"></td>
+    <td>Draw</td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-v0mg">Enabled</td>
-    <td class="tg-v0mg"></td>
+    <td>Enabled</td>
+    <td></td>
   </tr>
 </tbody>
 </table>
