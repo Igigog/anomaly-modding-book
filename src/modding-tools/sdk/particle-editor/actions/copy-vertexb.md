@@ -16,7 +16,7 @@ Set the secondary position from current position
   <tr>
     <td rowspan="4">Copy VertexB</td>
     <td>Name</td>
-    <td></td>
+    <td>Action Name</td>
   </tr>
   <tr>
     <td>Copy Position</td>
@@ -28,7 +28,7 @@ Set the secondary position from current position
   </tr>
   <tr>
     <td>Enabled</td>
-    <td></td>
+    <td>Enabling or disabling Action</td>
   </tr>
 </tbody>
 </table>

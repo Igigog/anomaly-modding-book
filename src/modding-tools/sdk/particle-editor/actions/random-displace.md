@@ -16,19 +16,19 @@ Immediately replace position with a position from the
   <tr>
     <td rowspan="6">MatchVelocity</td>
     <td>Name</td>
-    <td></td>
+    <td>Action Name</td>
   </tr>
   <tr>
     <td>Magnitude</td>
-    <td></td>
+    <td>Magnitude of impact of action</td>
   </tr>
   <tr>
     <td>Epsilon</td>
-    <td></td>
+    <td>A small numerical constant used to avoid numerical stability problems</td>
   </tr>
   <tr>
     <td>Max Radius</td>
-    <td></td>
+    <td>Maximum radius within which particles will be affected. Particles outside this radius will not be affected</td>
   </tr>
   <tr>
     <td>Draw</td>
@@ -36,7 +36,7 @@ Immediately replace position with a position from the
   </tr>
   <tr>
     <td>Enabled</td>
-    <td></td>
+    <td>Enabling or disabling Action</td>
   </tr>
 </tbody>
 </table>

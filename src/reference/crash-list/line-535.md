@@ -1,5 +1,7 @@
 # Line 535
 
+___
+
 ```ini
 [error]Expression    : D3DX11CreateTextureFromMemory ( HW.pDevice,S->pointer(),S->length(), &LoadInfo, 0, &pTexture2D, 0 )
 [error]Function      : CRender::texture_load

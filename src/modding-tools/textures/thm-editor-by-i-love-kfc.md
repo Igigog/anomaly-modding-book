@@ -2,9 +2,12 @@
 
 ___
 
-- Program Developer:
-  - i-love-kfc
-- Described Version: [1.5](https://gitlab.com/i-love-kfc/thm-editor/-/releases/1.5)
+## Info
+
+|  |  |
+|---|---|
+| Program Developer | i-love-kfc |
+| Described Version | [1.5](https://gitlab.com/i-love-kfc/thm-editor/-/releases/1.5 |
 
 ___
 

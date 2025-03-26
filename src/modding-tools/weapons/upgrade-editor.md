@@ -2,8 +2,11 @@
 
 ___
 
-- Program Developers:
-  - Sin!, Gunslinger Mod Team
+## Info
+
+|  |  |
+|---|---|
+| Program Developer | Sin!<br>Gunslinger Mod Team |
 
 ___
 

@@ -6,7 +6,7 @@
 
 # Meta
 
-- [Contributing to this book](meta/README.md)
+- [Contributing to this book](meta/contributing.md)
   - [Book Structure Overview](meta/book-overview.md)
   - [Style Sheet](meta/style-sheet.md)
 - [Acknowledgements](meta/acknowledgements.md)
@@ -19,34 +19,22 @@
 - [Glossary](glossary/glossary.md)
   - [AI](glossary/ai/README.md)
     - [Alife](glossary/ai/alife-ai-engine.md)
-      - [AI Offline](glossary/ai/ai-offline.md)
-      - [AI Online](glossary/ai/ai-online.md)
-      - [Animpoits](glossary/ai/animpoint.md)
-      - [FSM](glossary/ai/fsm.md)
-      - [GOAP](glossary/ai/goap.md)
-      - [MG](glossary/ai/mg.md)
-      - [Predicate](glossary/ai/predicate.md)
-      - [Graphpoint](glossary/ai/graphpoint.md)
-        - [gvid](glossary/ai/gvid.md)
-      - [Smart Terrain](glossary/ai/smart-terrain.md)
-        - [Gulag](glossary/ai/gulag.md)
-      - [Space Restrictor](glossary/ai/space-restrictor.md)
-      - [Smart Cover](glossary/ai/smart-cover.md)
-      - [Waypoint](glossary/ai/waypoint.md)
-      - [lvid](glossary/ai/lvid.md)
+    - [AI Offline](glossary/ai/ai-offline.md)
+    - [AI Online](glossary/ai/ai-online.md)
+    - [Animpoits](glossary/ai/animpoint.md)
+    - [FSM](glossary/ai/fsm.md)
+    - [GOAP](glossary/ai/goap.md)
+    - [MG](glossary/ai/mg.md)
+    - [Graphpoint](glossary/ai/graphpoint.md)
+      - [gvid](glossary/ai/gvid.md)
+    - [Smart Terrain](glossary/ai/smart-terrain.md)
+      - [Gulag](glossary/ai/gulag.md)
+    - [Space Restrictor](glossary/ai/space-restrictor.md)
+    - [Smart Cover](glossary/ai/smart-cover.md)
+    - [Waypoint](glossary/ai/waypoint.md)
+    - [lvid](glossary/ai/lvid.md)
   - [Animations](glossary/animations/README.md)
     - [*object*_hud animations](glossary/animations/object-hud-animations.md)
-  - [Coding](glossary/coding/README.md)
-    - [C++](glossary/coding/c++.md)
-    - [C#](glossary/coding/c_hash.md)
-    - [HLSL](glossary/coding/hlsl.md)
-    - [LUA](glossary/coding/lua.md)
-      - [LUABind](glossary/coding/luabind.md)
-      - [LUAJIT](glossary/coding/luajit.md)
-  - [Engine](glossary/engine/README.md)
-    - [ODE](glossary/engine/ode-physic-engine.md)
-    - [OpenAL](glossary/engine/openal-sound-engine.md)
-    - [AI](glossary/ai/README.md)
   - [Lighting](glossary/lightning/README.md)
     - [HEMI](glossary/lightning/hemi.md)
     - [Vertex Lighting](glossary/lightning/vertex-light.md)
@@ -63,7 +51,6 @@
     - [HOM](glossary/optimization/hom.md)
     - [Portal](glossary/optimization/portal.md)
     - [Sector](glossary/optimization/sector.md)
-  - [Shaders](glossary/shaders/README.md)
 
 ---
 
@@ -77,8 +64,6 @@
   - [Configuring VSCode-like programs to handle game files](tutorials/getting-started/vs-code-game-files-setup.md)
   - [Files Extraction](tutorials/getting-started/extract-files.md)
 
----
-
 - [Addons](tutorials/addons/README.md)
   - [DLTX](tutorials/addons/dltx.md)
   - [DXML](tutorials/addons/dxml.md)
@@ -87,21 +72,15 @@
   - [Lua Unlocalizer](tutorials/addons/lua-unlocalizer.md)
   - [Useful addons, scripts and utils](tutorials/addons/useful-addons-scripts-utils.md)
 
----
-
 - [Configs](tutorials/configs/README.md)
   - [Structure of Files](reference/configs/structure-of-files.md)
   - [Condlists](reference/configs/condlists.md)
   - [Inventory Icons](tutorials/configs/inventory_icons.md)
   - [Algoritm of Logic](reference/configs/algoritm-of-logic.md)
 
----
-
 - [Modelling](tutorials/models/README.md)
   - [Creating static model in Blender](tutorials/models/creating-static-model.md)
   - [Creating dynamic model in Blender](tutorials/models/creating-dynamic-model.md)
-
----
 
 - [Animating](tutorials/animations/README.md)
   - [Creating camera flyover in game](tutorials/animations/creating-flyover-camera-animations-in-game.md)
@@ -109,18 +88,12 @@
   - [Creating camera animations in Blender](tutorials/animations/creating-camera-animations.md)
   - [Editing existing animations in Blender](tutorials/animations/editing-existing-animations.md)
 
----
-
 - [Texturing](tutorials/texturing/README.md)
   - [Creating and preparing textures](tutorials/texturing/сreating-and-preparing-textures.md)
   - [Working correctly with icon atlases](tutorials/texturing/working-correctly-with-icon-atlases.md)
 
----
-
 - [Mapping](tutorials/mapping/README.md)
   - [Multimaterial Terrain Guide](reference/mapping/multimaterial-terrain.md)
-  
----
 
 - [Quests](tutorials/quests/README.md)
   - [Introduction](tutorials/quests/introduction.md)
@@ -153,11 +126,7 @@
   - [Line 784](reference/crash-list/line-784.md)
   - [Line 857](reference/crash-list/line-857.md)
 
----
-
 - [Main Folders And Files](reference/main-folders-and-files/README.md)
-
----
 
 - [File Formats](reference/file-formats/README.md)
   - [AI](reference/file-formats/ai/README.md)
@@ -173,7 +142,6 @@
   - [Audio | Video](reference/file-formats/audio-video/README.md)
     - [*.ogg](reference/file-formats/audio-video/ogg.md)
     - [*.ogm](reference/file-formats/audio-video/ogm.md)
-    - [*.wav](reference/file-formats/audio-video/wav.md)
   - [Configs](reference/file-formats/conf-script/README.md)
     - [*.ltx](reference/file-formats/conf-script/ltx.md)
     - [*.script](reference/file-formats/conf-script/script.md)
@@ -225,7 +193,6 @@
     - [*.cs](reference/file-formats/shaders/cs.md)
     - [*.ds](reference/file-formats/shaders/ds.md)
     - [*.gs](reference/file-formats/shaders/gs.md)
-    - [*.h](reference/file-formats/engine/h.md)
     - [*.hs](reference/file-formats/shaders/hs.md)
     - [*.ps](reference/file-formats/shaders/ps.md)
     - [*.s](reference/file-formats/shaders/s.md)
@@ -237,10 +204,7 @@
     - [_detail_map.dds](reference/file-formats/textures/detail-map.md)
     - [*.seq](reference/file-formats/textures/seq.md)
     - [_terrain_map.dds](reference/file-formats/textures/terrain-map.md)
-    - [*.tga](reference/file-formats/textures/tga.md)
     - [*.thm](reference/file-formats/textures/thm.md)
-
----
 
 - [Configs](reference/configs/README.md)
   - [Items](reference/configs/items/README.md)
@@ -256,8 +220,6 @@
   - [Creatures](reference/configs/creatures/README.md)
     - [Mutants](reference/configs/creatures/m_(mutant).ltx.md)
     - [Stalkers](reference/configs/creatures/m_stalker.ltx.md)
-
----
 
 - [Shaders](reference/shaders/README.md)
   - [Shaders List](reference/shaders/shaders-list/shaders-list.md)
@@ -285,12 +247,8 @@
       - [Particles](reference/shaders/shaders-list/shader-types/particles.md)
   - [Compiler Shaders List](reference/shaders/shaders-list/compiler-shaders-list.md)
 
----
-
 - [Materials](reference/materials/README.md)
   - [Materials List](reference/materials/materials-list.md)
-
----
 
 - [Audio](reference/audio/README.md)
   - [Sound Envornment List](reference/audio/sound-envornment-list.md)
@@ -302,28 +260,6 @@
 - [Engine](engine/README.md)
   - [X-Ray Coordinate System](engine/xray-coordinate-system.md)
   - [Engine Classes](engine/engine-classes.md)
-    - [CRGD5](engine/api/weapons/CRGD5.md)
-    - [CWeaponAK74](engine/api/weapons/CWeaponAK74.md)
-    - [CWeaponAutomaticShotgun](engine/api/weapons/CWeaponAutomaticShotgun.md)
-    - [CWeaponBinoculars](engine/api/weapons/CWeaponBinoculars.md)
-    - [CWeaponBM16](engine/api/weapons/CWeaponBM16.md)
-    - [CWeaponFN2000](engine/api/weapons/CWeaponFN2000.md)
-    - [CWeaponFORT](engine/api/weapons/CWeaponFORT.md)
-    - [CWeaponGroza](engine/api/weapons/CWeaponGroza.md)
-    - [CWeaponHPSA](engine/api/weapons/CWeaponHPSA.md)
-    - [CWeaponKnife](engine/api/weapons/CWeaponKnife.md)
-    - [CWeaponLR300](engine/api/weapons/CWeaponLR300.md)
-    - [CWeaponPM](engine/api/weapons/CWeaponPM.md)
-    - [CWeaponRevolver](engine/api/weapons/CWeaponRevolver.md)
-    - [CWeaponRG6](engine/api/weapons/CWeaponRG6.md)
-    - [CWeaponRPG7](engine/api/weapons/CWeaponRPG7.md)
-    - [CWeaponShotgun](engine/api/weapons/CWeaponShotgun.md)
-    - [CWeaponSVD](engine/api/weapons/CWeaponSVD.md)
-    - [CWeaponSVU](engine/api/weapons/CWeaponSVU.md)
-    - [CWeaponUSP45](engine/api/weapons/CWeaponUSP45.md)
-    - [CWeaponVal](engine/api/weapons/CWeaponVal.md)
-    - [CWeaponVintorez](engine/api/weapons/CWeaponVintorez.md)
-    - [CWeaponWalther](engine/api/weapons/CWeaponWalther.md)
   - [Console Commands](reference/console-commands/general-game-console-commands.md)
     - [Control](reference/console-commands/control-commands.md)
     - [Demo Record](reference/console-commands/demo-record-commands.md)
@@ -339,6 +275,8 @@
       - [R3 Render](reference/console-commands/r3-render-commands.md)
       - [R4 Render](reference/console-commands/r4-render-commands.md)
     - [UI](reference/console-commands/ui-commands.md)
+
+---
 
 # Script
 
@@ -361,8 +299,6 @@
 
 - [Modding Tools List](modding-tools/README.md)
 
----
-
 - [In-Game Editors](modding-tools/in-game-editors/README.md)
   - [Item Spawner](modding-tools/in-game-editors/item-spawner.md)
   - [Lightning Editor](modding-tools/in-game-editors/lightning-editor.md)
@@ -371,11 +307,7 @@
   - [Weapon HUD Editor](modding-tools/in-game-editors/weapon-hud-editor.md)
   - [Weather Editor](modding-tools/in-game-editors/weather-editor.md)
 
----
-
 - [Ltx Support](modding-tools/coding/ltx-support.md)
-
----
 
 - [SDK 0.7](modding-tools/sdk/README.md)
   - [Interface](modding-tools/sdk/interface.md)
@@ -420,8 +352,6 @@
     - [Target Velocity](modding-tools/sdk/particle-editor/actions/target-velocity.md)
     - [Turbulence](modding-tools/sdk/particle-editor/actions/turbulence.md)
     - [Vortex](modding-tools/sdk/particle-editor/actions/vortex.md)
-
----
 
 - [Blender X-Ray Addon](modding-tools/blender/blender-x-ray-addon-summary.md)
   - [Preference Panel](modding-tools/blender/addon-preference-panels/README.md)
@@ -497,48 +427,28 @@
     - [Update X-Ray Transforms](modding-tools/blender/addon-operators/operator-update-x-ray-transforms.md)
     - [Verify UV](modding-tools/blender/addon-operators/operator-verify-uv.md)
 
----
-
 - [Evaluation Function Constructor](modding-tools/ai/evaluation-function-constructor.md)
 
----
-
 - [Stalker Studio](modding-tools/all-in-one/stalker-studio.md)
-
----
 
 - [THM Editor](modding-tools/textures/thm-editor-by-i-love-kfc.md)
   - [Modified THM Editor](modding-tools/textures/thm-editor-by-valerok.md)
 
----
-
 - [Bump Generator](modding-tools/textures/bump-generator.md)
 
----
+- [Sound Attribute Viewer And Tweaker](modding-tools/audio-video/savandt.md)
 
-- [Sound Attribute Viewer And Tweaker](modding-tools/audio/savandt.md)
-
----
+- [ffmpeg2theora](modding-tools/audio-video/ffmpeg2theora.md)
 
 - [Upgrade Editor](modding-tools/weapons/upgrade-editor.md)
 
----
-
 - [Modified OMF Editor](modding-tools/animations/omf-editor-by-valerok.md)
-
----
 
 - [Modified OGF Editor](modding-tools/models/ogf-editor-by-valerok.md)
 
----
-
 - [X-Ray Export Tool](modding-tools/models/xray-export-tool.md)
 
----
-
 - [Universal x64 level compilers](modding-tools/compilers/universal-x64-level-compilers.md)
-
----
 
 - [xrCompress](modding-tools/compressors/xrcompress-by-i-love-kfc.md)
 

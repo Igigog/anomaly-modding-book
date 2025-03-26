@@ -18,7 +18,7 @@ Remove old particles
   <tr>
     <td rowspan="5">KillOld</td>
     <td>Name</td>
-    <td></td>
+    <td>Action Name</td>
   </tr>
   <tr>
     <td>Age Limit</td>
@@ -26,7 +26,7 @@ Remove old particles
   </tr>
   <tr>
     <td>Kill Less Than</td>
-    <td>Убивает частицы с "Возрастом" ниже чем указано в Age Limit</td>
+    <td>Kills particles with an age lower than in the Age Limit</td>
   </tr>
   <tr>
     <td>Draw</td>
@@ -34,7 +34,7 @@ Remove old particles
   </tr>
   <tr>
     <td>Enabled</td>
-    <td></td>
+    <td>Enabling or disabling Action</td>
   </tr>
 </tbody>
 </table>

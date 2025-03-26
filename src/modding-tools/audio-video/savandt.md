@@ -2,10 +2,13 @@
 
 ___
 
-- Program Developer:
-  - NatVac
-- Described Version: 1.1.7
-- [Official Site](https://www.metacognix.com/files/stlkrsoc/)
+## Info
+
+|  |  |
+|---|---|
+| Program Developer | NatVac |
+| Described Version | 1.1.7 |
+|  | [Official Site](https://www.metacognix.com/files/stlkrsoc/) |
 
 ___
 

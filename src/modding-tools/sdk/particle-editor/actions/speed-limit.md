@@ -16,7 +16,7 @@ Clamp each particles speed to the given min and max
   <tr>
     <td rowspan="5">SpeedLimit</td>
     <td>Name</td>
-    <td></td>
+    <td>Action Name</td>
   </tr>
   <tr>
     <td>Min Speed</td>
@@ -32,7 +32,7 @@ Clamp each particles speed to the given min and max
   </tr>
   <tr>
     <td>Enabled</td>
-    <td></td>
+    <td>Enabling or disabling Action</td>
   </tr>
 </tbody>
 </table>

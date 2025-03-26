@@ -2,11 +2,13 @@
 
 ___
 
-- Program Developers:
-  - Mortany (Original Author)
-  - ValeroK
-- Described Version: [4.1](https://github.com/VaIeroK/OGF-tool/releases/tag/4.1)
-- [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3549-ogfdmdetailsobj-editor-v41/)
+## Info
+
+|  |  |
+|---|---|
+| Program Developer | Mortany (Original Author)<br>ValeroK |
+| Described Version | [4.1](https://github.com/VaIeroK/OGF-tool/releases/tag/4.1) |
+|  | [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3549-ogfdmdetailsobj-editor-v41/) |
 
 ___
 

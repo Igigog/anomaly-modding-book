@@ -13,6 +13,7 @@ Anomaly Modding Book was decided that you will use these tools for modding and t
 Community-supported engine. All articles written about the engine will have the use of this engine.
 
 - [Engine Overview](../engine/README.md)
+- [GitHub Source](https://github.com/themrdemonized/xray-monolith)
 
 ### SDK
 
@@ -28,8 +29,8 @@ You can use any one that supports LUA and XML files.
 
 Also, you may need these extensions:
 
-- [ltx suport](../modding-tools/coding/ltx-support.md)
-- [Encodex](https://github.com/Tosox/Encodex)
+- [ltx suport Overview](../modding-tools/coding/ltx-support.md)
+- [Encodex GitHub Source](https://github.com/Tosox/Encodex)
 
 ### Tools
 

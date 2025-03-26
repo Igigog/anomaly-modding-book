@@ -1,5 +1,7 @@
 # Line 60 <font style="color: red">This is a theoretical crash (needs checking!)</font>
 
+___
+
 ```ini
 [error]Expression    : false
 [error]Function      : CPatternFunction::vfLoadEF
@@ -8,7 +10,7 @@
 [error]Description   : assertion failed
 ```
 
-- Clarification: Not supported version of the [Evaluation Function Contructor](../../modding-tools/ai/evaluation-function-constructor.md)
+- Clarification: Not supported [*.efd](../file-formats/ai/efd.md) file version
 
 - Error fixing:
-  - The [*.efd](../file-formats/ai/efd.md) file must be generated with a supported version of the Evaluation Function Contructor
+  - The *.efd file must be generated with a supported version of the Evaluation Function Contructor

@@ -2,6 +2,12 @@
 
 ___
 
+[blocks-alert]
+icon: "fa-info-circle"
+content: "A simple alert"
+[/blocks-alert]
+
+
 ## Root Folders
 
 - .github - For GitHub.

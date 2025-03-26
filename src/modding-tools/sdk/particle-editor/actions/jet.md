@@ -4,7 +4,9 @@ ___
 
 ## About
 
-Accelerate particles that are near the center of the jet
+![alt text](media/jet.gif)
+
+Simulates a jet that accelerates particles in a certain direction
 
 <table><thead>
   <tr>
@@ -18,87 +20,77 @@ Accelerate particles that are near the center of the jet
   <tr>
     <td rowspan="19">Jet</td>
     <td>Name</td>
-    <td></td>
+    <td>Action Name</td>
     <td>-</td>
     <td>-</td>
   </tr>
   <tr>
     <td rowspan="11">Accelerate</td>
-    <td></td>
+    <td rowspan="11">Domen Type</td>
     <td>Point</td>
-    <td></td>
+    <td>Single point</td>
   </tr>
   <tr>
-    <td></td>
     <td>Line</td>
-    <td></td>
+    <td>Line segment</td>
   </tr>
   <tr>
-    <td></td>
     <td>Triangle</td>
-    <td></td>
+    <td>Triangle</td>
   </tr>
   <tr>
-    <td></td>
     <td>Plane</td>
-    <td></td>
+    <td>Arbitrarily-oriented plane</td>
   </tr>
   <tr>
-    <td></td>
     <td>Box</td>
-    <td></td>
+    <td>Axis-aligned box</td>
   </tr>
   <tr>
-    <td></td>
     <td>Sphere</td>
-    <td></td>
+    <td>Sphere</td>
   </tr>
   <tr>
-    <td></td>
     <td>Cylinder</td>
-    <td></td>
+    <td>Cylinder</td>
   </tr>
   <tr>
-    <td></td>
     <td>Cone</td>
-    <td></td>
+    <td>Cone</td>
   </tr>
   <tr>
-    <td></td>
     <td>Blob</td>
-    <td></td>
+    <td>Gaussian blob</td>
   </tr>
   <tr>
-    <td></td>
     <td>Disc</td>
-    <td></td>
+    <td>Arbitrarily-oriented disc</td>
   </tr>
   <tr>
-    <td></td>
     <td>Rectangle</td>
-    <td></td>
+    <td>Rhombus-shaped planar region</td>
   </tr>
   <tr>
     <td>Center</td>
-    <td></td>
+    <td>Action center</td>
     <td>-</td>
     <td>-</td>
   </tr>
   <tr>
     <td>Magnitude</td>
-    <td></td>
+    <td>Magnitude of impact of action</td>
     <td>-</td>
     <td>-</td>
   </tr>
   <tr>
     <td>Epsilon</td>
-    <td></td>
+    <td>A small numerical constant used to avoid numerical stability problems</td>
     <td>-</td>
     <td>-</td>
   </tr>
   <tr>
     <td>Max Radius</td>
-    <td></td>
+    <td>Maximum radius within which particles will be affected. Particles outside this radius will not be affected</td>
     <td>-</td>
     <td>-</td>
   </tr>
@@ -116,7 +108,7 @@ Accelerate particles that are near the center of the jet
   </tr>
   <tr>
     <td>Enabled</td>
-    <td></td>
+    <td>Enabling or disabling Action</td>
     <td>-</td>
     <td>-</td>
   </tr>

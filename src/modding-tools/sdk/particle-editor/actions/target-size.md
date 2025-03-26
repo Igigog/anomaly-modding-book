@@ -16,15 +16,15 @@ Change sizes of all particles toward the specified size
   <tr>
     <td rowspan="5">TargetSize</td>
     <td>Name</td>
-    <td></td>
+    <td>Action Name</td>
   </tr>
   <tr>
     <td>Size</td>
-    <td></td>
+    <td>Target Size</td>
   </tr>
   <tr>
     <td>Scale</td>
-    <td></td>
+    <td>A coefficient that determines how fast the particles will change their size per frame. A value of 1.0 means that the particles will instantly reach the target size, while values less than 1.0 will change size smoothly</td>
   </tr>
   <tr>
     <td>Draw</td>
@@ -32,7 +32,7 @@ Change sizes of all particles toward the specified size
   </tr>
   <tr>
     <td>Enabled</td>
-    <td></td>
+    <td>Enabling or disabling Action</td>
   </tr>
 </tbody>
 </table>

@@ -18,7 +18,7 @@ Move particles positions based on velocities
   <tr>
     <td rowspan="3">Move</td>
     <td>Name</td>
-    <td></td>
+    <td>Action Name</td>
   </tr>
   <tr>
     <td>Draw</td>
@@ -26,7 +26,7 @@ Move particles positions based on velocities
   </tr>
   <tr>
     <td>Enabled</td>
-    <td></td>
+    <td>Enabling or disabling Action</td>
   </tr>
 </tbody>
 </table>

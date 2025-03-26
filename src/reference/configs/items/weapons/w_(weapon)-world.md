@@ -40,7 +40,7 @@ ___
 | parent_section |  | wpn_akm |  |  |
 | class | Engine weapon class | WP_AK74 |  | WP_BINOC <br>WP_KNIFE <br>WP_BM16 <br>WP_GROZA <br>WP_SVD <br>WP_AK74 <br>WP_LR300 <br>WP_HPSA <br>WP_PM <br>WP_RG6 <br>WP_RPG7 <br>WP_SHOTG <br>WP_ASHTG <br>WP_MAGAZ <br>WP_SVU <br>WP_USP45 <br>WP_VAL <br>WP_VINT <br>WP_WALTH W_STMGUN |
 | animation_slot | Animation slot number | 2 |  | 1 - pistol <br>2 - automatic rifle <br>3 - rifle, shotgun <br>4 - RPG <br>5 - knife <br>7 - bolt, grenade <br>8 - submachine gun with integrated underbarrel grenade launcher <br>9 - Shotgun <br>10 - Drum Gun <br>13 - binoculars |
-| hand_dependence | determines whether the weapon will be taken with one or two hands | 1 |  | 0 - no hands <br>1 - one hand <br>2 - two hands |
+| hand_dependence |  | 1 |  | 0 - no hands <br>1 - one hand <br>2 - two hands |
 | single_handed | held with one hand | 0 |  | true - 1 - on (Yes)<br> false - 0 - off (No) |
 | default_to_ruck | whether the weapon will be moved to the backpack instead of the slot when picked up | false |  | true - 1 - on (Yes)<br> false - 0 - off (No) |
 | sprint_allowed | this line means that you can run with the weapon | true |  | true - 1 - on (Yes)<br> false - 0 - off (No) |
@@ -172,23 +172,23 @@ ___
 <details>
     <summary>Shot parameters</summary>
 
-| Parameter Name | Parameter Description | Example Value | Value Data Type | Parameter Possible Values And Their Descriptions |
-|---|---|---|:---:|---|
-| hit_impulse | The force that the flying bullet transmits to the victim affects the ragdoll-body behavior | 34 | The more, the farther the body will fly away |  |
-| hit_power | damage dealt | 0.58, 0.58, 0.58, 0.58 | Specifies a value for the level of difficulty in descending order, i.e. from master to beginner |  |
-| hit_type | Type of damage inflicted; used to calculate damage; armor suits (and others) are set to be immune to each type of damage separately | fire_wound | fire_wound - fire damage<br> wound - stabbing<br> wound_2 - cutting<br> explosion - shrapnel damage |  |
-| fire_distance | effective range of the shot after which the bullet disappears | 900 | Specified in meters |  |
-| bullet_speed | initial bullet speed | 715 | Specified in meters per second |  |
-| rpm | Shooting speed | 600 | Specifies the number of shots per minute |  |
-| rpm_mode_2 |  |  |  |  |
-| rpm_anim_fix | New shot animation behavior | true | true - 1 - on (Yes)<br> false - 0 - off (No) |  |
-| rpm_empty_click | Misfire/empty magazine sound frequency | 200 |  |  |
-| fire_dispersion_base | The dispersion (angle of the bullets) introduced by the weapon; affects accuracy; added to the disp_base in actor.ltx | 0.45 | Specified in degrees |  |
-| PDM_disp_accel_factor | Multiplier by which fire_dispersion_base is multiplied when the protagonist runs | 2.5 | Specified in numbers |  |
-| PDM_disp_base | Multiplier by which fire_dispersion_base is multiplied when the protagonist is standing at full height | 1.15 | Specified in numbers |  |
-| PDM_disp_crouch | Multiplier by which fire_dispersion_base is multiplied when the protagonist goes crouched | 1.0 | Specified in numbers |  |
-| PDM_disp_crouch_no_acc | Multiplier by which fire_dispersion_base is multiplied when the protagonist stands still while ducking | 1.0 | Specified in numbers |  |
-| PDM_disp_vel_factor | Multiplier by which fire_dispersion_base is multiplied when the protagonist spins a weapon or runs | 2.5 | Specified in numbers |  |
+| Parameter Name | Parameter Description | Example Value | Parameter Possible Values And Their Descriptions |
+|---|---|---|---|
+| hit_impulse | The force that the flying bullet transmits to the victim affects the ragdoll-body behavior | 34 | The more, the farther the body will fly away |
+| hit_power | damage dealt | 0.58, 0.58, 0.58, 0.58 | Specifies a value for the level of difficulty in descending order, i.e. from master to beginner |
+| hit_type | Type of damage inflicted; used to calculate damage; armor suits (and others) are set to be immune to each type of damage separately | fire_wound | burn<br> light_burn<br> shock<br> strike<br> wound - stabbing<br> radiation<br> telepatic<br> fire_wound - fire damage<br> chemical_burn<br> explosion - shrapnel damage<br> wound_2 - cutting<br> |
+| fire_distance | effective range of the shot after which the bullet disappears | 900 | Specified in meters |
+| bullet_speed | initial bullet speed | 715 | Specified in meters per second |
+| rpm | Shooting speed | 600 | Specifies the number of shots per minute |
+| rpm_mode_2 |  |  |  |
+| rpm_anim_fix | New shot animation behavior | true | true - 1 - on (Yes)<br> false - 0 - off (No) |
+| rpm_empty_click | Misfire/empty magazine sound frequency | 200 |  |
+| fire_dispersion_base | The dispersion (angle of the bullets) introduced by the weapon; affects accuracy; added to the disp_base in actor.ltx | 0.45 | Specified in degrees |
+| PDM_disp_accel_factor | Multiplier by which fire_dispersion_base is multiplied when the protagonist runs | 2.5 | Specified in numbers |
+| PDM_disp_base | Multiplier by which fire_dispersion_base is multiplied when the protagonist is standing at full height | 1.15 | Specified in numbers |
+| PDM_disp_crouch | Multiplier by which fire_dispersion_base is multiplied when the protagonist goes crouched | 1.0 | Specified in numbers |
+| PDM_disp_crouch_no_acc | Multiplier by which fire_dispersion_base is multiplied when the protagonist stands still while ducking | 1.0 | Specified in numbers |
+| PDM_disp_vel_factor | Multiplier by which fire_dispersion_base is multiplied when the protagonist spins a weapon or runs | 2.5 | Specified in numbers |
 
 </details>
 

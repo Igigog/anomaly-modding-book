@@ -18,19 +18,19 @@ Simulate air by slowing down particle velocities
   <tr>
     <td rowspan="6">Damping</td>
     <td>Name</td>
-    <td></td>
+    <td>Action Name</td>
   </tr>
   <tr>
     <td>Damping</td>
-    <td>Целевая скорость частицы</td>
+    <td>Damping constant applied to velocity</td>
   </tr>
   <tr>
     <td>V Low</td>
-    <td>Минимальное значение скорости, при котором эффект замедления начинает действовать</td>
+    <td>Minimum speed at which the deceleration effect starts to take effect</td>
   </tr>
   <tr>
     <td>V High</td>
-    <td>Максимальное значение скорости, при котором эффект замедления достигает своего максимального воздействия</td>
+    <td>Maximum speed at which the deceleration effect reaches its maximum effect</td>
   </tr>
   <tr>
     <td>Draw</td>
@@ -38,7 +38,7 @@ Simulate air by slowing down particle velocities
   </tr>
   <tr>
     <td>Enabled</td>
-    <td></td>
+    <td>Enabling or disabling Action</td>
   </tr>
 </tbody>
 </table>

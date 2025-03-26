@@ -16,7 +16,7 @@ Over time restore particles to their secondary positions
   <tr>
     <td rowspan="4">Restore</td>
     <td>Name</td>
-    <td></td>
+    <td>Action Name</td>
   </tr>
   <tr>
     <td>Time</td>
@@ -28,7 +28,7 @@ Over time restore particles to their secondary positions
   </tr>
   <tr>
     <td>Enabled</td>
-    <td></td>
+    <td>Enabling or disabling Action</td>
   </tr>
 </tbody>
 </table>

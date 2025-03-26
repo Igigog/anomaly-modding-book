@@ -18,55 +18,55 @@ Accelerate particles in random directions
   <tr>
     <td rowspan="14">RandomAccel</td>
     <td>Name</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Action Name</td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
     <td rowspan="11">Accelerate</td>
     <td rowspan="11"></td>
     <td>Point</td>
-    <td></td>
+    <td>Single point</td>
   </tr>
   <tr>
     <td>Line</td>
-    <td></td>
+    <td>Line segment</td>
   </tr>
   <tr>
     <td>Triangle</td>
-    <td></td>
+    <td>Triangle</td>
   </tr>
   <tr>
     <td>Plane</td>
-    <td></td>
+    <td>Arbitrarily-oriented plane</td>
   </tr>
   <tr>
     <td>Box</td>
-    <td></td>
+    <td>Axis-aligned box</td>
   </tr>
   <tr>
     <td>Sphere</td>
-    <td></td>
+    <td>Sphere</td>
   </tr>
   <tr>
     <td>Cylinder</td>
-    <td></td>
+    <td>Cylinder</td>
   </tr>
   <tr>
     <td>Cone</td>
-    <td></td>
+    <td>Cone</td>
   </tr>
   <tr>
     <td>Blob</td>
-    <td></td>
+    <td>Gaussian blob</td>
   </tr>
   <tr>
     <td>Disc</td>
-    <td></td>
+    <td>Arbitrarily-oriented disc</td>
   </tr>
   <tr>
     <td>Rectangle</td>
-    <td></td>
+    <td>Rhombus-shaped planar region</td>
   </tr>
   <tr>
     <td>Allow Rotate</td>
@@ -83,8 +83,7 @@ Accelerate particles in random directions
   <tr>
     <td></td>
     <td>Enabled</td>
-    <td></td>
-    <td></td>
+    <td>Enabling or disabling Action</td>
     <td></td>
   </tr>
 </tbody></table>

@@ -16,15 +16,15 @@ Change rotate of all particles toward the specified rotation
   <tr>
     <td rowspan="5">TargetRotate</td>
     <td>Name</td>
-    <td></td>
+    <td>Action Name</td>
   </tr>
   <tr>
     <td>Rotation</td>
-    <td></td>
+    <td>Target Rotation</td>
   </tr>
   <tr>
     <td>Scale</td>
-    <td></td>
+    <td>A coefficient that determines how fast the particles will change their rotation per frame. A value of 1.0 means that the particles will instantly reach the target rotation, while values less than 1.0 will change rotation smoothly</td>
   </tr>
   <tr>
     <td>Draw</td>
@@ -32,7 +32,7 @@ Change rotate of all particles toward the specified rotation
   </tr>
   <tr>
     <td>Enabled</td>
-    <td></td>
+    <td>Enabling or disabling Action</td>
   </tr>
 </tbody>
 </table>

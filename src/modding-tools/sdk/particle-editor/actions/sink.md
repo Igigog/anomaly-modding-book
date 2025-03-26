@@ -4,6 +4,8 @@ ___
 
 ## About
 
+![alt text](media/sink.gif)
+
 Kill particles with positions on wrong side of the specified
 
 <table><thead>
@@ -16,15 +18,15 @@ Kill particles with positions on wrong side of the specified
   <tr>
     <td rowspan="6">Sink</td>
     <td>Name</td>
-    <td></td>
+    <td>Action Name</td>
   </tr>
   <tr>
     <td>Kill Inside</td>
-    <td></td>
+    <td>Determining whether to remove particles within the domain</td>
   </tr>
   <tr>
     <td>Domain</td>
-    <td></td>
+    <td>Domain Type</td>
   </tr>
   <tr>
     <td>Allow Rotate</td>
@@ -36,7 +38,7 @@ Kill particles with positions on wrong side of the specified
   </tr>
   <tr>
     <td>Enabled</td>
-    <td></td>
+    <td>Enabling or disabling Action</td>
   </tr>
 </tbody>
 </table>

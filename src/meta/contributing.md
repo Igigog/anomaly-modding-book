@@ -69,10 +69,44 @@ Welp, let's get started. I hope you already have a GitHub account.
 
 5. You're awesome.
 
+#### Dependencies
+
+To run the local version you need to install dependencies. This can be done in different ways
+
+1. `CRTL+Shift+B` -> `Intall Rust`(Choose `Windows` or `Unix`) - To install Rust
+2. `CRTL+Shift+B` -> `Intall Dependencies` - Various necessary dependencies
+
+Or
+
+1. Download and install [Rust](https://www.rust-lang.org/tools/install)
+2. Install the following dependencies:
+
+- Preprocessor for mdbook to add Material Design admonishments
+
+    ```text
+    cargo install mdbook-admonish
+    ```
+
+- Preprocessor for mdbook to add mermaid support
+
+    ```text
+    cargo install mdbook-mermaid
+    ```
+
+- (Optional) Backend for mdbook which will check your links for you
+
+    ```text
+    cargo install mdbook-linkcheck
+    ```
+
 #### Running local copy
 
+1. `CRTL+Shift+B` -> `Run Local mdbook Server`
+
+Or
+
 1. Download latest mdbook from [Github Releases](https://github.com/rust-lang/mdBook/releases).
-2. Drop `mdbook.exe` in the root folder of your copy.
+2. Drop `mdbook.exe` in the `dist` folder of your copy.
 3. Run `run.bat`. In case it doesn't open by itself, open [localhost:3000](localhost:3000) in your browser.
 4. Done. You're awesome.
 
@@ -107,13 +141,3 @@ If you create a new article, you need to add it to `src/SUMMARY.md` for it to be
 3. You're awesome. Probably. Now ping Igigog#6387 in Discord to get your pull request reviewed.
 
 4. Done. Your changes are added to the main book.
-
-___
-
-### P.S
-
-If you will be using VSCodium or VSCode, it is recommended to install markdown extensions to make life easier or to avoid messing up the book structure.
-
-For example such as:
-
-- [markdownlint](https://open-vsx.org/extension/DavidAnson/vscode-markdownlint) - This is a rule library for encouraging standards and consistency for Markdown files.

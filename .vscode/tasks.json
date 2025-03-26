@@ -2,7 +2,7 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Run Test mdbook Server",
+            "label": "Run Local mdbook Server",
             "type": "shell",
             "command": "${workspaceFolder}/dist/mdbook.exe",
             "args": ["serve", "--open"],
@@ -11,24 +11,47 @@
                 "isDefault": true
             },
             "problemMatcher": [],
+            "detail": "Run Local mdbook Server",
             "presentation": {
                 "reveal": "always",
                 "panel": "new"
             }
         },
-        {  // Not Working Will Fix Later. Need to Install Cargo and Book Dependecies in "lib" folder
-            "label": "Install Cargo",
+        {
+            "label": "Install Rust (Windows)",
             "type": "shell",
             "command": "powershell",
             "args": [
                 "-Command",
-                "New-Item -ItemType Directory -Force -Path lib | Out-Null; Invoke-WebRequest -Uri https://win.rustup.rs/x86_64 -OutFile rustup-init.exe; .\\rustup-init.exe -y --default-toolchain stable --profile minimal; Move-Item -Path $env:USERPROFILE\\.cargo -Destination lib\\cargo"
+                "Invoke-WebRequest -Uri https://win.rustup.rs -OutFile rustup-init.exe; .\\rustup-init.exe -y"
             ],
+            "problemMatcher": [],
+            "detail": "Intall Rust for Windows",
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "options": {
+                "shell": {
+                    "executable": "powershell.exe",
+                    "args": ["-NoProfile", "-ExecutionPolicy", "Bypass"]
+                }
+            }
+        },
+        {
+            "label": "Install Rust (Unix)",
+            "type": "shell",
+            "command": "curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh",
             "problemMatcher": [],
+            "detail": "Intall Rust for Unix",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
             "presentation": {
                 "reveal": "always",
                 "panel": "new"
@@ -37,19 +60,19 @@
         {
             "label": "Install Dependencies",
             "type": "shell",
-            "command": "powershell",
+            "command": "cargo",
             "args": [
-                "-NoProfile",
-                "-ExecutionPolicy",
-                "Bypass",
-                "-Command",
-                "Invoke-WebRequest -Uri 'https://github.com/phoenixr-codes/mdbook-whichlang/releases/latest/download/whichlang.js' -OutFile 'lib/whichlang.js'; "
+                "install",
+                "mdbook-admonish",
+                "mdbook-mermaid",
+                "mdbook-linkcheck"
             ],
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
             "problemMatcher": [],
+            "detail": "Intall mdbook Dependencies",
             "options": {
                 "cwd": "${workspaceFolder}"
             }

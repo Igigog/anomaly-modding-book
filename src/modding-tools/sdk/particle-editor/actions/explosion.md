@@ -16,27 +16,27 @@ An Explosion
   <tr>
     <td rowspan="10">Explosion</td>
     <td>Name</td>
-    <td></td>
+    <td>Action Name</td>
   </tr>
   <tr>
     <td>Center</td>
-    <td></td>
+    <td>Action center</td>
   </tr>
   <tr>
     <td>Velocity</td>
-    <td></td>
+    <td>Velocity</td>
   </tr>
   <tr>
     <td>Magnitude</td>
-    <td></td>
+    <td>Magnitude of impact of action</td>
   </tr>
   <tr>
     <td>Standart Dev</td>
-    <td></td>
+    <td>Standard deviation</td>
   </tr>
   <tr>
     <td>Epsilon</td>
-    <td></td>
+    <td>A small numerical constant used to avoid numerical stability problems</td>
   </tr>
   <tr>
     <td>Age</td>
@@ -52,7 +52,7 @@ An Explosion
   </tr>
   <tr>
     <td>Enabled</td>
-    <td></td>
+    <td>Enabling or disabling Action</td>
   </tr>
 </tbody>
 </table>

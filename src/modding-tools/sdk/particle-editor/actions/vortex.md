@@ -4,6 +4,8 @@ ___
 
 ## About
 
+![alt text](media/vortex.gif)
+
 Swirl particles around a vortex
 
 <table><thead>
@@ -16,27 +18,27 @@ Swirl particles around a vortex
   <tr>
     <td rowspan="9">Vortex</td>
     <td>Name</td>
-    <td></td>
+    <td>Action Name</td>
   </tr>
   <tr>
     <td>Center</td>
-    <td></td>
+    <td>Vortex center</td>
   </tr>
   <tr>
     <td>Axes</td>
-    <td></td>
+    <td>Vortex axis. This is the direction around which the particles will rotate</td>
   </tr>
   <tr>
     <td>Magnitude</td>
-    <td></td>
+    <td>Magnitude of impact of action</td>
   </tr>
   <tr>
     <td>Epsilon</td>
-    <td></td>
+    <td>A small numerical constant used to avoid numerical stability problems</td>
   </tr>
   <tr>
     <td>Max Radius</td>
-    <td></td>
+    <td>Maximum radius within which particles will be affected. Particles outside this radius will not be affected</td>
   </tr>
   <tr>
     <td>Allow Rotate</td>
@@ -48,7 +50,7 @@ Swirl particles around a vortex
   </tr>
   <tr>
     <td>Enabled</td>
-    <td></td>
+    <td>Enabling or disabling Action</td>
   </tr>
 </tbody>
 </table>

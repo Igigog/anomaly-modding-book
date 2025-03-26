@@ -1,5 +1,0 @@
-# Predicate
-
-___
-
-## About

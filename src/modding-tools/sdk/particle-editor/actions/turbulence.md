@@ -4,7 +4,7 @@ ___
 
 ## About
 
-A Turbulence
+Добавляет эффект турбулентности к движению частиц.
 
 <table><thead>
   <tr>
@@ -16,19 +16,19 @@ A Turbulence
   <tr>
     <td rowspan="8">Turbulence</td>
     <td>Name</td>
-    <td></td>
+    <td>Action Name</td>
   </tr>
   <tr>
     <td>Frequency</td>
-    <td></td>
+    <td>Turbulence Frequency. Determines how fast the turbulence effect changes in time or space</td>
   </tr>
   <tr>
     <td>Octaves</td>
-    <td></td>
+    <td>Number of octaves (levels of detail) for noise</td>
   </tr>
   <tr>
     <td>Magnitude</td>
-    <td></td>
+    <td>Magnitude of impact of action</td>
   </tr>
   <tr>
     <td>Delta</td>
@@ -44,7 +44,7 @@ A Turbulence
   </tr>
   <tr>
     <td>Enabled</td>
-    <td></td>
+    <td>Enabling or disabling Action</td>
   </tr>
 </tbody>
 </table>

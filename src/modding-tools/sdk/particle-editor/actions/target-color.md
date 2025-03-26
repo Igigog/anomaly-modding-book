@@ -4,6 +4,8 @@ ___
 
 ## About
 
+![alt text](media/target-color.gif)
+
 Change color of all particles toward the specified color
 
 <table><thead>
@@ -16,27 +18,27 @@ Change color of all particles toward the specified color
   <tr>
     <td rowspan="8">TargetColor</td>
     <td>Name</td>
-    <td></td>
+    <td>Action Name</td>
   </tr>
   <tr>
     <td>Color</td>
-    <td></td>
+    <td>Target color</td>
   </tr>
   <tr>
     <td>Alpha</td>
-    <td></td>
+    <td>Target alpha</td>
   </tr>
   <tr>
     <td>Scale</td>
-    <td></td>
+    <td>A coefficient that determines how fast the particles will change their color per frame. A value of 1.0 means that the particles will instantly reach the target color, while values less than 1.0 will change color smoothly</td>
   </tr>
   <tr>
     <td>TimeFrom</td>
-    <td></td>
+    <td>Start of interval (normalized value 0-1)</td>
   </tr>
   <tr>
     <td>TimeTo</td>
-    <td></td>
+    <td>End of interval (normalized value 0-1)</td>
   </tr>
   <tr>
     <td>Draw</td>
@@ -44,7 +46,7 @@ Change color of all particles toward the specified color
   </tr>
   <tr>
     <td>Enabled</td>
-    <td></td>
+    <td>Enabling or disabling Action</td>
   </tr>
 </tbody>
 </table>

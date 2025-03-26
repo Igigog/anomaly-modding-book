@@ -2,11 +2,11 @@
 
 ___
 
-- Program Developers:
-  - OGSR (Original Authors)
-  - i-love-kfc
-- Described Version: [0.1](https://disk.yandex.ru/d/CwLjWTuxPmSAHg)
-- [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3500-obnovlyonnyy-xrcompress)
+|  |  |
+|---|---|
+| Program Developer | OGSR (Original Authors)<br>i-love-kfc |
+| Described Version | [0.1](https://disk.yandex.ru/d/CwLjWTuxPmSAHg) |
+|  | [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3500-obnovlyonnyy-xrcompress) |
 
 ___
 

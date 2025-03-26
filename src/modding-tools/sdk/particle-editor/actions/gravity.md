@@ -6,7 +6,7 @@ ___
 
 Accelerate particles in the given direction
 
-![alt text](media/gravity-ezgif.com-resize.gif)
+![alt text](media/gravity.gif)
 
 <table><thead>
   <tr>
@@ -18,11 +18,11 @@ Accelerate particles in the given direction
   <tr>
     <td rowspan="4">Gravity</td>
     <td>Name</td>
-    <td>Имя</td>
+    <td>Action Name</td>
   </tr>
   <tr>
     <td>Direction</td>
-    <td>Направление гравитации</td>
+    <td>Gravity direction</td>
   </tr>
   <tr>
     <td>Draw</td>
@@ -30,7 +30,7 @@ Accelerate particles in the given direction
   </tr>
   <tr>
     <td>Enabled</td>
-    <td></td>
+    <td>Enabling or disabling Action</td>
   </tr>
 </tbody>
 </table>

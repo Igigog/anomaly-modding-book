@@ -17,7 +17,7 @@ Also, hardcore modding dudes are also welcome.
 
 The help of the community is always welcome.
 You can contribute to the development of this book, which will be used as a base in modding.
-So refer to this [article](src/meta/README.md) or open an [issue](https://github.com/Igigog/anomaly-modding-book/issues) and welcome!
+So refer to this [article](src/meta/contributing.md) or open an [issue](https://github.com/Igigog/anomaly-modding-book/issues) and welcome!
 
 ## Links
 
@@ -29,5 +29,4 @@ So refer to this [article](src/meta/README.md) or open an [issue](https://github
   - [mdbook admonish](https://github.com/tommilligan/mdbook-admonish) - A preprocessor for mdbook to add Material Design admonishments.
   - [mdbook whichlang](https://github.com/phoenixr-codes/mdbook-whichlang) - Powerful Code Blocks for mdBook
   - [mdbook mermaid](https://github.com/badboy/mdbook-mermaid) - A preprocessor for mdbook to add mermaid support
-  - [mdbook-github-authors](https://github.com/VectorInstitute/mdbook-github-authors) - A preprocessor for mdbook that creates chapter-level contributor sections featuring authors' GitHub profiles
-  - [mdbook-linkcheck](https://github.com/Michael-F-Bryan/mdbook-linkcheck) - A backend for `mdbook` which will check your links for you
+  - [mdbook-linkcheck](https://github.com/Michael-F-Bryan/mdbook-linkcheck) - A backend for mdbook which will check your links for you

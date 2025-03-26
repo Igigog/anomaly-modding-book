@@ -1,5 +1,7 @@
 # Line 86
 
+___
+
 ```ini
 [error]Expression    : FS.exist(file_name, "$game_spawn$", *m_spawn_name, ".spawn")
 [error]Function      : CALifeSpawnRegistry::load
@@ -12,4 +14,4 @@
 - Clarification: No [*.spawn](../file-formats/game-levels/spawn.md) file was found
 
 - Error fixing:
-  - Check that the [*.spawn](../file-formats/game-levels/spawn.md) file exists
+  - Check that the *.spawn file exists

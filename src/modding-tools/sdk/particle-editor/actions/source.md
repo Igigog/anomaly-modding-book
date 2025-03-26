@@ -32,7 +32,7 @@ Add particles in the specified domain
   </tr>
   <tr>
     <td rowspan="11">Domain</td>
-    <td rowspan="11">Создает Domain для спавна частиц. Типы Domain описываются их параметрами (Например вершинами, направлением нормалей или радиусом)</td>
+    <td rowspan="11">Domain for particle spawning</td>
     <td>Point</td>
     <td></td>
   </tr>
@@ -78,7 +78,7 @@ Add particles in the specified domain
   </tr>
   <tr>
     <td rowspan="11">Velocity</td>
-    <td rowspan="11">Изначальная скорость</td>
+    <td rowspan="11">Velocity</td>
     <td>Point</td>
     <td></td>
   </tr>
@@ -216,7 +216,7 @@ Add particles in the specified domain
   </tr>
   <tr>
     <td>Single Size</td>
-    <td>Size Value будет игнорироваться. Использоваться будет среднее значение.</td>
+    <td>Size will be the same in all axes</td>
     <td>-</td>
     <td>-</td>
   </tr>
@@ -272,13 +272,13 @@ Add particles in the specified domain
   </tr>
   <tr>
     <td>Starting Age</td>
-    <td>Стартовый "Возраст" частицы.</td>
+    <td>Starting Age of the particle</td>
     <td>-</td>
     <td>-</td>
   </tr>
   <tr>
     <td>Age Sigma</td>
-    <td>(Нужна проверка) Age Sigma может указывать на стандартное отклонение (σ) в распределении возраста частиц. Это означает, что возраст частиц будет варьироваться вокруг изначального значения "Возраста" в соответствии с нормальным распределением (гауссовым распределением)</td>
+    <td>The standard deviation in the distribution of particle ages. This means that the particle ages will vary around the original Age value</td>
     <td>-</td>
     <td>-</td>
   </tr>
@@ -296,13 +296,13 @@ Add particles in the specified domain
   </tr>
   <tr>
     <td>Draw</td>
-    <td>Отрисовывает Domain</td>
+    <td>Draws Domain</td>
     <td>-</td>
     <td>-</td>
   </tr>
   <tr>
     <td>Enabled</td>
-    <td>Включение или выключение Action'а</td>
+    <td>Enabling or disabling Action</td>
     <td>-</td>
     <td>-</td>
   </tr>
