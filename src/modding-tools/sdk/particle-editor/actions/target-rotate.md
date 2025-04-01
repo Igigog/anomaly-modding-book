@@ -4,6 +4,8 @@ ___
 
 ## About
 
+![alt text](media/target-rotate.gif)
+
 Change rotate of all particles toward the specified rotation
 
 <table><thead>

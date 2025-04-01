@@ -10,7 +10,7 @@ Steer particles away from a domain space. Works only with `Plane`, `Rectangle`, 
 
 <table><thead>
   <tr>
-    <th>Action</th>
+    <th>Key</th>
     <th>Value</th>
     <th>Value Description</th>
     <th>Parameter</th>

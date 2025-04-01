@@ -12,7 +12,7 @@ The formatting of articles is entirely at your discretion and will not be correc
 - Underlining after a heading
 - Use Markdownlint
   - Follow rules
-  - Rules `MD33` and `MD10` are disabled
+  - Rules `MD33`, `MD13` and `MD10`(for code blocks) are disabled
 - For a code block, specify the language of the code. For example:
 
     ```admonish example
@@ -35,7 +35,7 @@ Since the book uses additional preprocessors, the following features can be used
     ```
 ```
 
-- There is support for mermaid. Example:
+- There is support for [Mermaid](https://mermaid.js.org/). Example:
 
 ```admonish example
     ```mermaid

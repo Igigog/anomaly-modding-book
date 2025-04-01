@@ -4,7 +4,7 @@ ___
 
 ![alt text](images/light-animations-editor.png)
 
-Нужен для создания анимации света
+Needed to create a light animation
 
 ___
 
@@ -27,10 +27,10 @@ ___
 
 | Playback |  |
 |---|---|
-| \|<< |  |
-| - |  |
-| + |  |
-| >>\| |  |
+| \|<< | To first frame |
+| - | One frame back |
+| + | One frame forward |
+| >>\| | To last frame |
 
 | Frame |  |
 |---|---|

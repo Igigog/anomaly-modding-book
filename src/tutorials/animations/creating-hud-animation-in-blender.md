@@ -5,8 +5,8 @@ ___
 ## Need to know
 
 - How working in Blender and creating animations
-- Skeleton animations ([.skl](../../reference/file-formats/animations/skl-skls.md), [.skls](../../reference/file-formats/animations/skl-skls.md), [.omf](../../reference/file-formats/animations/omf.md))
-- Camera animations ([.anm](../../reference/file-formats/animations/anm.md))
+- Skeleton animations ([*.skl](../../reference/file-formats/animations/skl-skls.md), [*.skls](../../reference/file-formats/animations/skl-skls.md), [*.omf](../../reference/file-formats/animations/omf.md))
+- Camera animations ([*.anm](../../reference/file-formats/animations/anm.md))
 
 ## Related Videos
 
@@ -23,7 +23,7 @@ ___
 ## Creating animations
 
 1. Create or enter a Blender scene.
-2. Choose hand rig
+2. Choose [hand rig](../../resources/models-objects-locations.md#hands-rig) or create your own
 3. Choose weapon or object
 4. Add a Copy Transform modifier to the main bone of your chosen weapon or object
     4.1. Select lead_gun as the target
@@ -33,4 +33,5 @@ ___
 
 ## Export
 
-To export the animation you need to select armature and export in needed format (.omf or .skl/.skls or .anm)
+- To export the armature animation you need to select armature and export in needed format (\*.omf or \*.skl/*.skls)
+- To export the camera animation you need to select camera empty and export in *.anm

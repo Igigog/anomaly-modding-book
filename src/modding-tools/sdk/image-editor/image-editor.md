@@ -8,58 +8,93 @@ ___
 
 Allows you to edit texture parameters
 
+### General
+
 | Type | Description |
 |---|---|
 | 2D Texture | Just a texture |
 | [Cube Map](https://en.wikipedia.org/wiki/Cube_mapping) | Is a method of environment mapping that uses the six faces of a cube as the map shape |
-| Bump Map | [Bump](https://en.wikipedia.org/wiki/Bump_mapping) |
+| Bump Map | Bump |
 | Normal Map | Normal Map |
 | Terrain |  |
 
-Source
+### Source
 
 Shows the characteristics of the texture. Width, height and alpha channel.
 
+### Fromat
+
 | Format | Description |
 |---|---|
-| [DXT1](https://www.fsdeveloper.com/wiki/index.php?title=DXT_compression_explained#DXT1) | Compression without alpha channel support |
-| [DXT1 Alpha](https://www.fsdeveloper.com/wiki/index.php?title=DXT_compression_explained#DXT1_with_alpha) | Compression with alpha channel support |
-| [DXT3](https://www.fsdeveloper.com/wiki/index.php?title=DXT_compression_explained#DXT3) |  |
-| [DXT5](https://www.fsdeveloper.com/wiki/index.php?title=DXT_compression_explained#DXT5) | Compression with alpha channel support |
+| DXT1 |  |
+| DXT1 Alpha |  |
+| DXT3 |   |
+| DXT5 |  |
+| DBC7 |  |
 | 16 bit (1:5:5:5) |  |
 | 16 bit (5:6:5) |  |
 | 32 bit (8:8:8:8) |  |
-| [8 bit (alpha)](https://learn.microsoft.com/en-us/windows/win32/direct3d9/d3dformat) | 8-bit alpha only DirectX Format |
-| [8 bit (luminance)](https://learn.microsoft.com/en-us/windows/win32/direct3d9/d3dformat) | 8-bit luminance only DirectX Format |
-| [16 bit (alpha:luminance)](https://learn.microsoft.com/en-us/windows/win32/direct3d9/d3dformat) | 16-bit using 8 bits each for alpha and luminance DirectX Format |
+| 8 bit (alpha) |  |
+| 8 bit (luminance) |  |
+| 16 bit (alpha:luminance) |  |
+
+### MipMaps
 
 | MipMaps | Description |
 |---|---|
 | Enabled |  |
-| Filter | Advanced<br> Point<br> Box<br> Triangle<br> Quadratic<br> Cubic<br> Catrom<br> Michell<br> Gaussian<br> Sinc<br> Bessel<br> Hanning<br> Hamming<br> Blackman<br> Kaiser |
+| Advanced |  |
+| Point |  |
+| Box |  |
+| Triangle |  |
+| Quadratic |  |
+| Cubic |  |
+| Catrom |  |
+| Michell |  |
+| Gaussian |  |
+| Sinc |  |
+| Bessel |  |
+| Hanning |  |
+| Hamming |  |
+| Blackman |  |
+| Kaiser |  |
+
+### Bump
 
 | Bump | Description |
 |---|---|
 | Mode | None<br> Use<br> Use parallax |
 | Texture | Path to Bump Textures |
 
+### Details
+
 | Details | Description |
 |---|---|
-| Use As Diffuse |  |
-| Use As Bump (R2) |  |
+| Use As Diffuse | Use as diffuse detail map |
+| Use As Bump (R2) | Use as bump detail map |
 | Texture |  |
-| Scale |  |
+| Scale | Detail map scale |
+
+### Material
 
 | Material | Description |
-|---|:---:|
-| Base | OrenNayar <-> Blin<br> Blin <-> Phong<br> Phong <-> Metal<br> Metal <-> OrenNayar |
-| Weight |  |
+|---|---|
+| OrenNayar <-> Blin | `Oren-Nayar shading` is a lighting model used in computer graphics to render matte (rough) surfaces with respect to their microgeometry.<br> `Blinn shading` uses a combination of diffuse and specular light reflection to achieve a more realistic image of shiny objects |
+| Blin <-> Phong | `Blinn shading` uses a combination of diffuse and specular light reflection to achieve a more realistic image of shiny objects.<br> `Phong shading` model can achieve good visual results, making objects appear more three-dimensional and realistic, but at the same time it cannot always accurately reproduce lighting effects on more complex or uneven surfaces |
+| Phong <-> Metal | `Phong shading` model can achieve good visual results, making objects appear more three-dimensional and realistic, but at the same time it cannot always accurately reproduce lighting effects on more complex or uneven surfaces.<br> `Metal shading` is focuses on the realization of materials imitating metallic surfaces |
+| Metal <-> OrenNayar | `Metal shading` is focuses on the realization of materials imitating metallic surfaces.<br> `Oren-Nayar shading` is a lighting model used in computer graphics to render matte (rough) surfaces with respect to their microgeometry |
+| PBR |  |
+| Weight | “Weight” of shading model<br> 0 - full left<br> 1 - full right |
+
+### Flags
 
 | Flags | Description |
 |---|---|
 | Dither |  |
 | Dither Each MIP |  |
 | Implicit Lighted |  |
+
+### Fade
 
 | Fade | Description |
 |---|---|
@@ -69,6 +104,8 @@ Shows the characteristics of the texture. Width, height and alpha channel.
 | % of colot to fade in  |  |
 | Color |  |
 | Alpha |  |
+
+### Border
 
 | Border | Description |
 |---|---|

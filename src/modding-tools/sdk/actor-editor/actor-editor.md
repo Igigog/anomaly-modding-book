@@ -2,141 +2,241 @@
 
 ___
 
+![alt text](images/actor-editor.png)
+
+## About
+
 The Actor editor is usually needed to customize objects (NPCs, Objects, etc.)
 
 ___
 
-## Interface
-
-![actor editor centered](./images/actor-editor.png)
-
-### Toolbar
-
-![toolbar centered](./images/actor-editor-toolbar.png)
-
-___
-
-#### Scene
-
-File Button
+### File Button
 
 | Button | Description | Note |
 |---|---|---|
 | Clear | Clears scene | - |
 | Load | Loads an object into a new scene | - |
 | Save | Saves object | - |
-| Save As | Saves the object as | [.object](../../../reference/file-formats/models/object.md)<br> .lwo</br> |
-| Make Trumbnail | Creates trumbnail | Creates a thumbnail from the camera view |
+| Save as... | Saves the object as | [.object](../../../reference/file-formats/models/object.md)<br> .lwo</br> |
 | Open Recent | Opens recent | - |
-| Import | Imports the model into the scene | - |
+| Import... | Imports the model into the scene | - |
 | Optimize Motions |  |  |
-| Batch Convert |  |  |
+| Batch Convert... |  |  |
 | Export | Exports the model to formats  | [.ogf](../../../reference/file-formats/models/ogf.md)<br> [.omf](../../../reference/file-formats/animations/omf.md)<br> [.obj](../../../reference/file-formats/models/object.md)<br> [.dm](../../../reference/file-formats/models/dm.md)<br>C++ |
 | Quit | Exiting the program | - |
 
-___
+### Preview Object
 
-Preview Object Button
+| Button | Description |
+|---|---|
+| Custom... |  |
+| Clear |  |
+| Preference |  |
 
-| Button | Description | Note |
+### Editor
+
+<table><thead>
+  <tr>
+    <th>Option</th>
+    <th>Option</th>
+    <th></th>
+    <th>Description</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td rowspan="8">Editors</td>
+    <td rowspan="3">Image</td>
+    <td>Image Editor</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Synchronize Textures</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Check New Textures</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td rowspan="3">Sounds</td>
+    <td>Sound Editor</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Synchronize Sounds (Soft)</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Synchronize Sounds (Hard)</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Light Anim Editor</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Minimap Editor</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+</tbody>
+</table>
+
+### Options
+
+<table><thead>
+  <tr>
+    <th>Button</th>
+    <th>Options</th>
+    <th></th>
+    <th>Description</th>
+    <th></th>
+    <th>Description</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td rowspan="20">Options</td>
+    <td rowspan="10">Render</td>
+    <td>Quality</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td rowspan="3">Fill Mode</td>
+    <td rowspan="3"></td>
+    <td>Point</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Wireframe</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Solid</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td rowspan="2">Shader Mode</td>
+    <td rowspan="2"></td>
+    <td>Flat</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Gouraud</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Edged Faces</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>RenderHW</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Filter Linear</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Textures</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Draw Safe Rect</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Draw Grid</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td rowspan="3">Coordinate Axes</td>
+    <td>None</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Axis</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Cube</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Fog</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Mute Sounds</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Real Time</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Stats</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Preferences</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</tbody></table>
+
+### Windows
+
+| Button | Description |
+|---|---|
+| Log |  |
+| Post Process |  |
+| Theme |  |
+
+### Top Bar
+
+| Icon | Name | Description |
 |---|---|---|
-| Custom | After selecting an object in the library it loads the model | It cannot be edited |
-| Clear | Clears the scene of objects that were loaded via Preview Object | - |
-| Preference | Preference | - |
-
-___
-
-Images Button
-
-| Button | Description |
-|---|---|
-| Image Editor | Open [Image Editor](../image-editor/image-editor.md) |
-| Synchronize Textures | Synchronizes changes |
-| Check New Textures |  |
-
-___
-
-Sounds Button
-
-| Button | Description |
-|---|---|
-| Sound Editor | Open [Sound Editor](../sound-editor/sound-editor.md) |
-| Synchronize Sounds | Synchronizes changes |
-
-___
-
-Preferences Button
-
-Opens a window with preferences
-
-![preferences centered](./images/actor-editor-preferences.png)
-
-___
-
-##### Model
-
-Bone Parts Button
-
-Shows the [Bone Parts](../../../reference/file-formats/models/bone-parts.md) of the object's skeleton
-
-![bone-parts centered](images/actor-editor-bone-parts.png)
-
-Example Bone Parts of `stalker_animation.object`
-___
-
-Render Style
-
-| Render Style | Description |
-|---|---|
-| Editor | Editor Render Style |
-| Engine | Engine (X-Ray 1.6) Render Style |
-| Clip Maker |  |
-
-___
-
-##### Object Items
-
-Shows available items at the object (Surface, Object, Motions, Bones, etc.)
-___
-
-##### Item Properties
-
-Shows parameters of the selected element of the model object
-
-**For the object**
-
-| Flags | Description |
-|---|---|
-| Make Progressive |  |
-| HQ Geometry |  |
-
-| Transform | Description |
-|---|---|
-| Position |  |
-| Rotation |  |
-| BBox Min |  |
-| BBox Max |  |
-
-| LOD | Description |
-|---|---|
-| Reference | LOD Reference |
-
-**Summary**
-
-Displays information about the object
-
-| Game options | Description |
-|---|---|
-| User Data |  |
-
-**For surface**
-
-| Surface | Description |
-|---|---|
-| Name | Texture Name |
-| Texture | Path to texture |
-| Shader | Shader |
-| Compile | Compile Shader |
-| Game Mtl | Game Mtl Shader |
-| 2 Sided | Double-sided texture |
-| Face Count | Face Count |
+|  | Undo | Undo the last action |
+|  | Redo | Repeat the last action |
+|  | New | Clear/New Scene |
+|  | Open | Open file |
+|  | Save | Save file |
+|  | Open | Open "gamedata" folder |
+|  | Simulate | Activates physics simulation |

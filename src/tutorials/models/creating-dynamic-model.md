@@ -6,12 +6,11 @@ ___
 
 - How working in Blender and creating models
 - How working with Blender [X-Ray Addon](../../modding-tools/blender/blender-x-ray-addon-summary.md)
-- Familiarize yourself with the limitations and capabilities of the format [.object](../../reference/file-formats/models/object.md) (because you may export to it more often than to [.ogf](../../reference/file-formats/models/ogf.md)) to avoid errors
+- Familiarize yourself with the limitations and capabilities of the format [*.object](../../reference/file-formats/models/object.md) (because you may export to it more often than to [*.ogf](../../reference/file-formats/models/ogf.md)) to avoid errors
 - Familiarize yourself with [Dynamic Object](../../glossary/models/dynamic-object.md) model type
+- How [Smoothing](../../reference/models/smoothing.md) work in X-Ray
 
 ___
-
-At this point we have to decide what type of model we want to use (static, dynamic, or something else). (About the types of objects you can learn here)
 
 It was decided to make our object dynamic.
 To do this, you need to create a bone and a vertex group (so that the bone can affect exactly the vertices you choose).
@@ -54,16 +53,14 @@ The modifier has the following necessary items:
 - Object (![svg-icon object-logo](../../modding-tools/blender/icons/object-logo.svg))
 - Bind to (![svg-icon checkbox](../../modding-tools/blender/icons/checkbox.svg)) Vertex Groups
 
-In the "Object" (![svg-icon object-logo](../../modding-tools/blender/icons/object-logo.svg)) field, select our bone (you can select it with the pipette (![pipette](../../modding-tools/blender/icons/pipette.svg))).
+In the "Object" (![svg-icon object-logo](../../modding-tools/blender/icons/object-logo.svg)) field, select our bone (you can select it with the pipette (![svg-icon pipette](../../modding-tools/blender/icons/pipette.svg))).
 Also make sure that the checkbox next to "Vertex Groups" (![svg-icon checkbox](../../modding-tools/blender/icons/checkbox.svg)) is marked.
 These actions allowed us to bond our object and bone, but not yet to the fullest extent.
 
 Next step:
-First select the bone after selecting the model, press Ctrl + P. A list appears, select "Bone" (or other settings, because sometimes selecting "Bone" may not help).
+First select the bone after selecting the model, press Ctrl + P. A list appears, select "Deform"
 
 ![parenting centered]()
-
-> This allowed the bone and the model to be fully bonded together. Now when the bone moves or rotates, the model will move with it.
 
 Now you have to set the bone properties for X-Ray.
 
@@ -75,7 +72,7 @@ Select the bone and go to the "Bone Properties" (![svg-icon bone-properties-logo
 
 ![bone-properties-p2 centered]()
 
-We see the "X-Ray Engine: Bone" section.
+We see the [X-Ray Engine: Bone](../../modding-tools/blender/addon-panels/panel-bone.md) section.
 
 ![bone-section centered]()
 
@@ -105,7 +102,7 @@ To check the correctness of the shape and adjust the center of mass for the bone
 
 ![object-data-properties-panel centered]()
 
-Here we see the "X-Ray Engine: Skeleton" section and the two buttons we need:
+Here we see the [X-Ray Engine: Skeleton](../../modding-tools/blender/addon-panels/panel-armature.md) section and the two buttons we need:
 
 - Display Bone Shape
 - Display Bone Mass Centers
@@ -127,4 +124,10 @@ Here you will find the "X-Ray Engine: Object" section.
 
 Remember that our object, by design, will be dynamic, so click on the button "Object", where we select the type "Dynamic".
 
-The editing of the bone parameters is finished, the next step is Materials.
+## The final stage
+
+To check the model you can go the following ways:
+
+- Load the model into the [SDK](../../modding-tools/sdk/README.md) and check
+- Export the model in [*.ogf](../../reference/file-formats/models/ogf.md) format and add it directly to the game
+- [Check the model and parameters through third-party programs](../../modding-tools/README.md)

@@ -6,7 +6,7 @@ ___
 
 [Material List Here](../../../reference/materials/materials-list.md)
 
-![se-mp centered]()
+![se-mp centered](images/se-ip-material-pairs.png)
 
 | Parameters | Description |
 |---|---|

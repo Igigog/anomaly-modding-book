@@ -4,7 +4,7 @@ ___
 
 ## About
 
-![se-se centered]()
+![se-se centered](images/se-ip-sound-env.png)
 
 ### General
 

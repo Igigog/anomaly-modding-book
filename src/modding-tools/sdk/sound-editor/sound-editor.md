@@ -2,23 +2,15 @@
 
 ___
 
-A sound editor is needed to edit sound files in [.wav](https://en.wikipedia.org/wiki/WAV) format and convert to [.ogg](../../../reference/file-formats/audio-video/ogg.md)
+## About
+
+A sound editor is needed to edit sound files in [*.wav](https://en.wikipedia.org/wiki/WAV) format and convert to [*.ogg](../../../reference/file-formats/audio-video/ogg.md)
 
 ___
 
 ## Interface
 
 ![sound editor centered](./images/sound-editor.png)
-
-### Items
-
-> Contains track list
-
-![sound editor items centered](./images/sound-editor-items.png)
-
-### Toolbar
-
-![sound editor items centered](./images/sound-editor-toolbar.png)
 
 | Key | Description | Value |
 |---|---|---|
@@ -33,5 +25,5 @@ ___
 | File Length | File Length | - |
 | Total Time | Total Time | - |
 | Control | Control | Play<br> Stop |
-| Auto Play | Auto Play | on |
+| Auto Play | Auto Play | on<br> off |
 | MANAGE | Synchronizes changes | SyncCurrent |

@@ -2,6 +2,8 @@
 
 ___
 
+![alt text](media/target-size.gif)
+
 ## About
 
 Change sizes of all particles toward the specified size

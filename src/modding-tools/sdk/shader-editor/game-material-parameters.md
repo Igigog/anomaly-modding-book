@@ -4,7 +4,7 @@ ___
 
 ## About
 
-![se-m centered]()
+![se-m centered](images/se-ip-material.png)
 
 ### General
 
@@ -34,18 +34,18 @@ ___
 
 | Parameters | Description |
 |---|---|
-| Friction | friction coefficient |
-| Damping | softness coefficient of the material (collision energy loss) |
-| Spring | material stiffness coefficient (spring stiffness) |
-| Bounce start vel | initial velocity at which the bounce starts to work |
-| Bouncing | bounce coefficient |
+| Friction | Friction coefficient |
+| Damping | Softness coefficient of the material (collision energy loss) |
+| Spring | Material stiffness coefficient (spring stiffness) |
+| Bounce start vel | Initial velocity at which the bounce starts to work |
+| Bouncing | Bounce coefficient |
 
 ### Factors
 
 | Parameters | Description |
 |---|---|
 | Bounce Damage | the damage that is inflicted by bouncing? |
-| Injurius | radiation exposure by contact |
+| Injurius |  |
 | Shooting (1-went through) | material penetrability |
 | Shooting MP (1-went through) | material penetrability in Multiplayer? |
 | Transparency (1-full transp) | material transparency for AI |

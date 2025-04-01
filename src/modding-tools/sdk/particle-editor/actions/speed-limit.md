@@ -20,11 +20,11 @@ Clamp each particles speed to the given min and max
   </tr>
   <tr>
     <td>Min Speed</td>
-    <td></td>
+    <td>Min Speed</td>
   </tr>
   <tr>
     <td>Max Speed</td>
-    <td></td>
+    <td>Max Speed</td>
   </tr>
   <tr>
     <td>Draw</td>

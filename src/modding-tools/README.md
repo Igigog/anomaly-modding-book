@@ -25,8 +25,6 @@ ___
 
 - [AXRToolset](https://github.com/revolucas/AXRToolset) - AXRToolset is an AutoHotkey & Lua-based scripting engine that utilizes a Graphical User Interface to display scripted plugins that do various automated tasks. Although the current plugins are designed to aid in the development of S.T.A.L.K.E.R.: Call of Chernobyl, the engine itself can be used to create macros, scripts and other utilities for any application or purpose.
 
-- [Stalker Studio V.0.7 Beta](all-in-one/stalker-studio.md) - Different tools in one place
-
 ___
 
 ## Gamedata Extractors
@@ -64,22 +62,7 @@ These versions (SDK 0.4 and SDK 0.5/0.6) are not compatible with Anomaly!
 ```
 
 - [SDK 0.7 (Call of Pripyat)](https://www.moddb.com/games/stalker-call-of-pripyat/downloads/x-ray-16-engine-sdk-v07)
-  - [SDK 0.7 (Call of Pripyat)(RePack by DaaGuda V2)](https://mega.nz/folder/zFBiWSAJ#5_MSuGpVPb7QqcPH00nC7w) - Official SDK 0.7 repack with customized components and various fixes
-
-    - SDK 0.7 Easy:
-      - The easiest version, but gamedata and rawdata are excluded from its composition, there are no add-ons.
-      - For full functionality you will need to unpack gamedata from CoP 1.6.02.
-      - Weight: 22 MB
-
-    - SDK 0.7 Medium(Win32/Win64):
-      - The same as Easy, but with rawdata and some additions.
-      - Just to work fully need to unpack gamedata from CoP 1.6.02.
-      - Weight: 192.4 MB/190.2 MB
-
-    - SDK 0.7 Full(Win32/Win64):
-      - The heaviest version, it includes unpacked gamedata, rawdata with sources of CS, CoP objects (excluded objects from rawdata\objects\scenes folder because of its weight)
-      - Preinstalled add-ons from other suites.
-      - Weight: 2.64 GB/2.64
+  - [SDK 0.7 (Call of Pripyat)(RePack by DaaGuda V2)](https://mega.nz/folder/zFBiWSAJ#5_MSuGpVPb7QqcPH00nC7w) - Official SDK 0.7 repack with customized
 
 - [GUI for X-Ray SDK](https://github.com/Graff46/GUI_for_X-Ray_SDK) - A graphical shell for quickly calling the Actor Editor, Level Editor, and compilers for selected locations.
 

@@ -4,6 +4,8 @@ ___
 
 ## About
 
+![alt text](media/target-velocity.gif)
+
 Change velocity of all particles toward the specified
 
 <table><thead>
