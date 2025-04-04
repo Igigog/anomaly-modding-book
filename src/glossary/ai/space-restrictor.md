@@ -1,5 +1,0 @@
-# Space Restrictor
-
-___
-
-## About

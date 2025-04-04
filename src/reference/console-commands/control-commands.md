@@ -13,3 +13,4 @@ ___
 | g_crouch_toggle | Sit/stand mode | 'on/off' or '1/0' | - |
 | g_sprint_toggle | Sprint mode | 'on/off' or '1/0' | - |
 | g_walk_toggle |  | 'on/off' or '1/0' | - |
+| g_streff |  | -10.000 - 10.000 | Only in [-dbgdev](../../engine/command-line-keys.md) |

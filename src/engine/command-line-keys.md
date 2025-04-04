@@ -2,8 +2,8 @@
 
 ___
 
-| Key | Description | Extra |
----|---|
-!| -_g | Отключает проверку по \_g.script? (видимо реально так, при запуске выдает ошибку по луа) |
-!| -dbg | Включает дебаг |
-!-| -dbgdev | видимо тоже |
+| Key | Description |
+|---|---|
+| -_g |  |
+| -dbg | Enables debug |
+| -dbgdev | Enables extended debug |

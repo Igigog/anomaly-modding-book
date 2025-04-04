@@ -8,10 +8,11 @@ Needed to create a light animation
 
 ___
 
-Save - Save
-Reload - Reload
-
-Render Alpha - Will render alpha channel
+| Button | Description |
+|---|---|
+| Save | Save |
+| Reload | Reload |
+| Render Alpha | Will render alpha channel |
 
 ___
 

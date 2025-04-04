@@ -21,6 +21,10 @@ input-404 = "meta/404.md"
 enable = true
 level = 0
 
+[output.html.print]
+enable = false
+page-break = true
+
 # [output.linkcheck]
 
 [preprocessor.mermaid]

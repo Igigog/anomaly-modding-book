@@ -84,7 +84,7 @@ Shows the characteristics of the texture. Width, height and alpha channel.
 | Phong <-> Metal | `Phong shading` model can achieve good visual results, making objects appear more three-dimensional and realistic, but at the same time it cannot always accurately reproduce lighting effects on more complex or uneven surfaces.<br> `Metal shading` is focuses on the realization of materials imitating metallic surfaces |
 | Metal <-> OrenNayar | `Metal shading` is focuses on the realization of materials imitating metallic surfaces.<br> `Oren-Nayar shading` is a lighting model used in computer graphics to render matte (rough) surfaces with respect to their microgeometry |
 | PBR |  |
-| Weight | “Weight” of shading model<br> 0 - full left<br> 1 - full right |
+| Weight | “Weight” of shading model<br> range is 0 - 1 |
 
 ### Flags
 

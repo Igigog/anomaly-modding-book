@@ -6,7 +6,7 @@ ___
 
 |  |  |
 |---|---|
-| Program Developer | 2Xipp |
+| Program Developer | V2V |
 | Described Version | 0.30 |
 
 ___

@@ -8,7 +8,7 @@ ___
 |---|---|
 | Program Developer | RedPandaProject (BearIvan and other) (Original Authors)<br>ValeroK |
 | Described Version | [4.35](https://github.com/VaIeroK/XrayExportTool/releases/tag/4.4) |
-|  | [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3577-object-editor-v44/) |
+| Discussion Forum | [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3577-object-editor-v44/) |
 
 ___
 
@@ -32,7 +32,7 @@ Tool for fast editing and exporting raw stalker formats
 - Editing Userdata
 - Editing LOD
 - Editing Motion refs
-- Export models with original normals without X-Ray anti-aliasing groups
+- Export models with original normals without X-Ray smoothing groups
 - Generating LOD models
 - Removed the limit on the number of polygons for static meshes
 - Viewport displaying the model with textures
@@ -136,7 +136,7 @@ The default settings menu, where you can set the default values of the parameter
 |---|---|
 | 8 bit | Compression animation for the SoC format |
 | 16 bit | Compression animation for CoP format |
-| Use build-in motions | When activated, the program will use the downloaded animations instead of the motion references. If there are no animations, the reference animations will be used, if any. When deactivated, the loaded animations will be ignored. Affects everything except Object saves. |
+| Use build-in motions | When activated, the program will use loaded animations instead of the motion references. If there are no animations, the reference animations will be used, if any. When deactivated, the loaded animations will be ignored. Affects everything except Object saves. |
 
 | Field | Description |
 |---|---|

@@ -4,7 +4,7 @@ ___
 
 ## About
 
-Resource library. Contains resources such as partials, shaders, etc. in packaged format
+Resource library. Contains resources such as particles, shaders, etc. in packaged format
 
 ___
 

@@ -16,9 +16,9 @@ ___
 
 | Button | Description | HotKey |
 |:---:|---|---|
-| ![ppe-new](../icons/ppe-new.bmp) | New ppe file | Ctrl+N |
-| ![ppe-open](../icons/ppe-open.bmp) | Load ppe file | Ctrl+O |
-| ![ppe-save](../icons/ppe-save.bmp) | Save ppe file | Ctrl+S |
+|  | New ppe file | Ctrl+N |
+|  | Load ppe file | Ctrl+O |
+|  | Save ppe file | Ctrl+S |
 
 ### Add Color
 

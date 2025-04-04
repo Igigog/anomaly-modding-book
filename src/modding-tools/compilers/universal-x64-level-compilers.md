@@ -6,7 +6,7 @@ ___
 |---|---|
 | Program Developer | GCS Game Word<br>SkyLoader<br>Abramcumner<br>K.D. |
 | Described Version | 1.6 beta |
-|  | [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3341-universalnye-kompilyatory-urovney-h64) |
+| Discussion Forum | [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3341-universalnye-kompilyatory-urovney-h64) |
 
 ___
 

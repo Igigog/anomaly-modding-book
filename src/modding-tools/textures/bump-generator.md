@@ -8,7 +8,7 @@ ___
 |---|---|
 | Program Developer | i-love-kfc |
 | Described Version | [0.1](https://gitlab.com/i-love-kfc/bump-generator/-/releases/%D0%A0%D0%B5%D0%BB%D0%B8%D0%B7) |
-|  | [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3740-bump-generator) |
+| Discussion Forum | [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3740-bump-generator) |
 
 ___
 

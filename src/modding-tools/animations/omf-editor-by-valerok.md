@@ -8,7 +8,7 @@ ___
 |---|---|
 | Program Developer | Mortany (Original Author)<br>ValeroK |
 | Described Version | [1.2](https://github.com/VaIeroK/Omf-Editor/releases/tag/1.2) |
-|  | [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3550-omf-editor-v12) |
+| Discussion Forum | [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3550-omf-editor-v12) |
 
 ___
 

@@ -6,7 +6,7 @@ ___
 |---|---|
 | Program Developer | OGSR (Original Authors)<br>i-love-kfc |
 | Described Version | [0.1](https://disk.yandex.ru/d/CwLjWTuxPmSAHg) |
-|  | [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3500-obnovlyonnyy-xrcompress) |
+| Discussion Forum | [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3500-obnovlyonnyy-xrcompress) |
 
 ___
 
@@ -16,7 +16,7 @@ ___
 
 ## About
 
-Updated .db/.xdb archiver
+Updated [*.db](../../reference/file-formats/archives-resource-packs/db.md)/[*.xdb](../../reference/file-formats/archives-resource-packs/xr.md) archiver
 
 ![editor centered](images/xrcompress.png)
 

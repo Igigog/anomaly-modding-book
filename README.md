@@ -1,3 +1,4 @@
+<!-- markdownlint-disable -->
 [![Discord](https://img.shields.io/discord/1005783763877363722?label=Discord&logo=Discord)](https://discord.gg/8Pu2ekQYg3)
 
 # Anomaly modding book

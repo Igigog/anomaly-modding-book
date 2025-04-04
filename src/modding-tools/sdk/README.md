@@ -15,7 +15,3 @@ The SDK includes the following editors:
 - [Postprocess Editor](postprocess-editor/postprocess-editor.md)
 - [Shader Editor](shader-editor/shader-editor.md)
 - [Sound Editor](sound-editor/sound-editor.md)
-
-```admonish info
-Depending on the SDK version (Original or modified) this list of editors (and their versions) may differ.
-```

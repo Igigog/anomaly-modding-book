@@ -8,7 +8,7 @@ ___
 |---|---|
 | Program Developer | i-love-kfc (Original Author)<br>ValeroK |
 | Described Version | [1.1](https://github.com/VaIeroK/THM-Editor/releases/tag/1.1) |
-|  | [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3551-thm-editor-v10) |
+| Discussion Forum | [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3551-thm-editor-v10) |
 
 ___
 

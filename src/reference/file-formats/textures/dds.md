@@ -25,8 +25,6 @@ ___
 - 565 (RGB565)
 - RGB
 - RGBA
-- NVHS
-- NVHU
 - A8
 - L8
 - A8L8

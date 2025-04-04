@@ -1,4 +1,4 @@
-# *bone-parts*.ltx
+# *bone-parts*.*
 
 ___
 
