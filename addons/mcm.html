@@ -1,0 +1,688 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>MCM - Anomaly Modding Book</title>
+
+
+        <!-- Custom HTML head -->
+        <script defer data-domain="igigog.github.io" src="https://plausible.io/js/script.hash.js"></script>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../src/custom.css">
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Introduction</a></li><li class="chapter-item expanded affix "><li class="spacer"></li><li class="chapter-item expanded "><a href="../meta/index.html"><strong aria-hidden="true">1.</strong> Meta</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../meta/contributing/index.html"><strong aria-hidden="true">1.1.</strong> Contributing to this book</a></li></ol></li><li class="chapter-item expanded "><li class="spacer"></li><li class="chapter-item expanded "><a href="../getting-started/index.html"><strong aria-hidden="true">2.</strong> Mod Organizer</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../getting-started/installing-mo2.html"><strong aria-hidden="true">2.1.</strong> Installing MO2</a></li><li class="chapter-item expanded "><a href="../getting-started/addon-installers.html"><strong aria-hidden="true">2.2.</strong> Addon installers</a></li><li class="chapter-item expanded "><a href="../getting-started/package-naming.html"><strong aria-hidden="true">2.3.</strong> Package Naming for MO2</a></li><li class="chapter-item expanded "><a href="../getting-started/vs-code-game-files-setup.html"><strong aria-hidden="true">2.4.</strong> Configuring VSCode-like programs to handle game files</a></li></ol></li><li class="chapter-item expanded "><li class="spacer"></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Addons</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../addons/dltx.html"><strong aria-hidden="true">3.1.</strong> DLTX</a></li><li class="chapter-item expanded "><a href="../addons/dxml.html"><strong aria-hidden="true">3.2.</strong> DXML</a></li><li class="chapter-item expanded "><a href="../addons/mcm.html" class="active"><strong aria-hidden="true">3.3.</strong> MCM</a></li><li class="chapter-item expanded "><a href="../addons/pdb.html"><strong aria-hidden="true">3.4.</strong> PDB files</a></li><li class="chapter-item expanded "><a href="../addons/lua-unlocalizer.html"><strong aria-hidden="true">3.5.</strong> Lua Unlocalizer</a></li><li class="chapter-item expanded "><a href="../addons/useful-addons-scripts-utils.html"><strong aria-hidden="true">3.6.</strong> Useful addons, scripts and utils</a></li></ol></li><li class="chapter-item expanded "><li class="spacer"></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> Configs</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../configs/structure-of-files.html"><strong aria-hidden="true">4.1.</strong> Structure of Files</a></li><li class="chapter-item expanded "><a href="../configs/condlists.html"><strong aria-hidden="true">4.2.</strong> Condlists</a></li><li class="chapter-item expanded "><a href="../configs/inventory_icons.html"><strong aria-hidden="true">4.3.</strong> Inventory Icons</a></li><li class="chapter-item expanded "><a href="../configs/algoritm-of-logic.html"><strong aria-hidden="true">4.4.</strong> Algoritm of Logic</a></li></ol></li><li class="chapter-item expanded "><li class="spacer"></li><li class="chapter-item expanded "><a href="../scripting/index.html"><strong aria-hidden="true">5.</strong> Scripting</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../scripting/codebase_introduction.html"><strong aria-hidden="true">5.1.</strong> Introduction to codebase</a></li><li class="chapter-item expanded "><a href="../scripting/codestyle.html"><strong aria-hidden="true">5.2.</strong> Codestyle</a></li><li class="chapter-item expanded "><a href="../scripting/wetting_hands.html"><strong aria-hidden="true">5.3.</strong> Wetting our hands</a></li><li class="chapter-item expanded "><a href="../scripting/server_and_game_objects.html"><strong aria-hidden="true">5.4.</strong> Server and game objects</a></li><li class="chapter-item expanded "><a href="../scripting/callbacks.html"><strong aria-hidden="true">5.5.</strong> Callbacks</a></li><li class="chapter-item expanded "><a href="../scripting/time_events.html"><strong aria-hidden="true">5.6.</strong> Time events</a></li><li class="chapter-item expanded "><a href="../scripting/monkey-patching.html"><strong aria-hidden="true">5.7.</strong> Monkey patching</a></li><li class="chapter-item expanded "><a href="../scripting/script_animations.html"><strong aria-hidden="true">5.8.</strong> Script Animations</a></li><li class="chapter-item expanded "><a href="../scripting/script_attachments.html"><strong aria-hidden="true">5.9.</strong> Script Attachments</a></li></ol></li><li class="chapter-item expanded "><li class="spacer"></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> Modelling</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../blender/creating-model-in-blender.html"><strong aria-hidden="true">6.1.</strong> Creating model in Blender</a></li></ol></li><li class="chapter-item expanded "><li class="spacer"></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.</strong> Animating</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../blender/creating-hud-animation-in-blender.html"><strong aria-hidden="true">7.1.</strong> Creating an animation</a></li><li class="chapter-item expanded "><a href="../blender/creating-camera-animations.html"><strong aria-hidden="true">7.2.</strong> Creating animations for the camera</a></li><li class="chapter-item expanded "><a href="../blender/editing-existing-animations.html"><strong aria-hidden="true">7.3.</strong> Editing existing animations</a></li></ol></li><li class="chapter-item expanded "><li class="spacer"></li><li class="chapter-item expanded "><a href="../texturing/index.html"><strong aria-hidden="true">8.</strong> Texturing</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../texturing/сreating-and-preparing-textures.html"><strong aria-hidden="true">8.1.</strong> Creating and preparing textures</a></li><li class="chapter-item expanded "><a href="../texturing/working-correctly-with-icon-atlases.html"><strong aria-hidden="true">8.2.</strong> Working correctly with icon atlases</a></li></ol></li><li class="chapter-item expanded "><li class="spacer"></li><li class="chapter-item expanded "><a href="../mapping/index.html"><strong aria-hidden="true">9.</strong> Mapping</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../blender/creating-a-location-in-blender.html"><strong aria-hidden="true">9.1.</strong> Creating a location in Blender</a></li><li class="chapter-item expanded "><a href="../mapping/multimaterial-terrain.html"><strong aria-hidden="true">9.2.</strong> Multimaterial Terrain Guide</a></li></ol></li><li class="chapter-item expanded "><li class="spacer"></li><li class="chapter-item expanded "><a href="../quests/index.html"><strong aria-hidden="true">10.</strong> Quests</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../quests/introduction.html"><strong aria-hidden="true">10.1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../quests/npc_creation.html"><strong aria-hidden="true">10.2.</strong> NPC Creation</a></li><li class="chapter-item expanded "><a href="../quests/task_guide.html"><strong aria-hidden="true">10.3.</strong> Task Creation</a></li><li class="chapter-item expanded "><a href="../quests/dialogues.html"><strong aria-hidden="true">10.4.</strong> Dialogue Creation</a></li></ol></li><li class="chapter-item expanded "><li class="spacer"></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">11.</strong> Reference/General</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../terminology/terminology.html"><strong aria-hidden="true">11.1.</strong> Terminology</a></li><li class="chapter-item expanded "><a href="../main-folders-and-files/index.html"><strong aria-hidden="true">11.2.</strong> Main Folders And Files</a></li><li class="chapter-item expanded "><a href="../main-folders-and-files/file-formats/index.html"><strong aria-hidden="true">11.3.</strong> File Formats</a></li><li class="chapter-item expanded "><a href="../crash-list/crashes-list.html"><strong aria-hidden="true">11.4.</strong> Crash List</a></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">12.</strong> Reference/Configs</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../configs/items/outfits/o_(outfit).ltx.html"><strong aria-hidden="true">12.1.</strong> Outfits</a></li><li class="chapter-item expanded "><a href="../configs/items/weapons/w_(weapon).ltx.html"><strong aria-hidden="true">12.2.</strong> Weapons</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../configs/items/weapons/weapon_sounds.ltx.html"><strong aria-hidden="true">12.2.1.</strong> Weapon Sounds</a></li><li class="chapter-item expanded "><a href="../configs/items/weapons/weapon_ammo.ltx.html"><strong aria-hidden="true">12.2.2.</strong> Ammo</a></li></ol></li><li class="chapter-item expanded "><a href="../configs/items/trade/trade.ltx.html"><strong aria-hidden="true">12.3.</strong> Trade</a></li><li class="chapter-item expanded "><a href="../configs/creatures/m_(mutant).ltx.html"><strong aria-hidden="true">12.4.</strong> Creatures</a></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">13.</strong> Reference/Shaders</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../shaders/shaders-list/materials-list.html"><strong aria-hidden="true">13.1.</strong> Material Shaders List</a></li><li class="chapter-item expanded "><a href="../shaders/shaders-list/shaders-list.html"><strong aria-hidden="true">13.2.</strong> Shaders List</a></li><li class="chapter-item expanded "><a href="../shaders/shaders-list/compiler-shaders-list.html"><strong aria-hidden="true">13.3.</strong> Compiler Shaders List</a></li><li class="chapter-item expanded "><a href="../shaders/shaders-list/sound-envornment-list.html"><strong aria-hidden="true">13.4.</strong> Sound Envornment List</a></li></ol></li><li class="chapter-item expanded "><a href="../engine/index.html"><strong aria-hidden="true">14.</strong> Reference/Engine</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../engine/console-commands.html"><strong aria-hidden="true">14.1.</strong> Console commands</a></li><li class="chapter-item expanded "><a href="../engine/alife.html"><strong aria-hidden="true">14.2.</strong> A-Life (AI)</a></li><li class="chapter-item expanded "><a href="../engine/engine-classes.html"><strong aria-hidden="true">14.3.</strong> Engine Classes</a></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">15.</strong> Reference/Resources</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../resources/audio.html"><strong aria-hidden="true">15.1.</strong> Audio</a></li><li class="chapter-item expanded "><a href="../resources/models-objects-locations.html"><strong aria-hidden="true">15.2.</strong> Models</a></li><li class="chapter-item expanded "><a href="../resources/sdk-resources.html"><strong aria-hidden="true">15.3.</strong> SDK resources</a></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">16.</strong> Reference/Tools</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../modding-tools/modding-tools.html"><strong aria-hidden="true">16.1.</strong> Modding Tools List</a></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/index.html"><strong aria-hidden="true">16.2.</strong> In-Game Editors</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/item-spawner.html"><strong aria-hidden="true">16.2.1.</strong> Item Spawner</a></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/lightning-editor.html"><strong aria-hidden="true">16.2.2.</strong> Lightning Editor</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">16.2.3.</strong> NPC Logic/Execute</div></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/object-spawner.html"><strong aria-hidden="true">16.2.4.</strong> Object Spawner</a></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/outfits-weapon-stats-editor.html"><strong aria-hidden="true">16.2.5.</strong> Outfits/Weapons Stats Editor</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">16.2.6.</strong> Pocket Workshop</div></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/weapon-hud-editor.html"><strong aria-hidden="true">16.2.7.</strong> Weapon HUD Editor</a></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/weather-editor.html"><strong aria-hidden="true">16.2.8.</strong> Weather Editor</a></li></ol></li><li class="chapter-item expanded "><a href="../modding-tools/ltx-support.html"><strong aria-hidden="true">16.3.</strong> Ltx Support</a></li><li class="chapter-item expanded "><a href="../sdk/index.html"><strong aria-hidden="true">16.4.</strong> SDK 0.7</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../sdk/interface.html"><strong aria-hidden="true">16.4.1.</strong> Interface</a></li><li class="chapter-item expanded "><a href="../sdk/actor-editor.html"><strong aria-hidden="true">16.4.2.</strong> Actor Editor</a></li><li class="chapter-item expanded "><a href="../sdk/image-editor.html"><strong aria-hidden="true">16.4.3.</strong> Image Editor</a></li><li class="chapter-item expanded "><a href="../sdk/level-editor.html"><strong aria-hidden="true">16.4.4.</strong> Level Editor</a></li><li class="chapter-item expanded "><a href="../sdk/shader-editor.html"><strong aria-hidden="true">16.4.5.</strong> Shader Editor</a></li><li class="chapter-item expanded "><a href="../sdk/sound-editor.html"><strong aria-hidden="true">16.4.6.</strong> Sound Editor</a></li><li class="chapter-item expanded "><a href="../sdk/postprocess-editor.html"><strong aria-hidden="true">16.4.7.</strong> Postprocess Editor</a></li><li class="chapter-item expanded "><a href="../sdk/particle-editor.html"><strong aria-hidden="true">16.4.8.</strong> Particle Editor (Not finished)</a></li></ol></li><li class="chapter-item expanded "><a href="../blender/blender-x-ray-addon-summary.html"><strong aria-hidden="true">16.5.</strong> Blender X-Ray Addon</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../blender/advanced-settings.html"><strong aria-hidden="true">16.5.1.</strong> Advanced settings</a></li><li class="chapter-item expanded "><a href="../blender/x-ray-addon-panels.html"><strong aria-hidden="true">16.5.2.</strong> Panels</a></li><li class="chapter-item expanded "><a href="../blender/x-ray-side-panels.html"><strong aria-hidden="true">16.5.3.</strong> Side Panel</a></li></ol></li><li class="chapter-item expanded "><a href="../modding-tools/stalker-studio.html"><strong aria-hidden="true">16.6.</strong> Stalker Studio</a></li><li class="chapter-item expanded "><a href="../modding-tools/thm-editor-by-i-love-kfc.html"><strong aria-hidden="true">16.7.</strong> THM Editor</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../modding-tools/thm-editor-by-valerok.html"><strong aria-hidden="true">16.7.1.</strong> Modified THM Editor</a></li></ol></li><li class="chapter-item expanded "><a href="../modding-tools/bump-generator.html"><strong aria-hidden="true">16.8.</strong> Bump Generator</a></li><li class="chapter-item expanded "><a href="../modding-tools/savandt.html"><strong aria-hidden="true">16.9.</strong> Sound Attribute Viewer And Tweaker</a></li><li class="chapter-item expanded "><a href="../modding-tools/upgrade-editor.html"><strong aria-hidden="true">16.10.</strong> Upgrade Editor</a></li><li class="chapter-item expanded "><a href="../modding-tools/omf-editor-by-valerok.html"><strong aria-hidden="true">16.11.</strong> Modified OMF Editor</a></li><li class="chapter-item expanded "><a href="../modding-tools/ogf-editor-by-valerok.html"><strong aria-hidden="true">16.12.</strong> Modified OGF Editor</a></li><li class="chapter-item expanded "><a href="../modding-tools/xray-export-tool.html"><strong aria-hidden="true">16.13.</strong> X-Ray Export Tool</a></li><li class="chapter-item expanded "><a href="../modding-tools/universal-x64-level-compilers.html"><strong aria-hidden="true">16.14.</strong> Universal x64 level compilers</a></li><li class="chapter-item expanded "><a href="../modding-tools/xrcompress-by-i-love-kfc.html"><strong aria-hidden="true">16.15.</strong> xrCompress</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Anomaly Modding Book</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Igigog/anomaly-modding-book" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Igigog/anomaly-modding-book/edit/main/src/addons/mcm.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="anomaly-mcm-documentation"><a class="header" href="#anomaly-mcm-documentation">Anomaly MCM Documentation</a></h1>
+<h2 id="before-you-start"><a class="header" href="#before-you-start">Before you start</a></h2>
+<p>Oh hey, Igi here! As you'll see from these docs, setting up MCM takes a lot of somewhat arcane tables, and debugging MCM can be the biggest pain in the ass.
+To make my life quite a bit easier, I created <a href="https://www.moddb.com/mods/stalker-anomaly/addons/mcm-builder">MCM Builder</a> - a modding tool to create MCM pages
+in a clear object-oriented way. Really recommend to check it out. There are no docs for it, just check in the script what's available - it's very easy to read.</p>
+<p>This is how it looks like with MCM Builder:</p>
+<pre><code class="language-lua">Tree = mcm_builder.Tree
+Page = mcm_builder.Page
+Checkbox = mcm_builder.Checkbox
+Title = mcm_builder.Title
+Line = mcm_builder.Line
+Description = mcm_builder.Description
+
+function on_mcm_load()
+    local tree = Tree.new("MCM_Builder")
+    local page = Page.new("With Checkbox")
+    local check = Checkbox.new("My_cool_checkbox"):default(true)
+    page:add(check)
+
+    local page_two = Page.new("With_description_and_line")
+    local title = Title.new("uwu")
+                    :text("Title??? Omegalul")
+                    :color(200,100,50,255)
+    page_two:add(title)
+    page_two:add(Description.new("descr"):text("What a nice description"))
+    page_two:add(Line.new())
+
+    return tree:add_page(page):add_page(page_two):build()
+end
+</code></pre>
+<p>Now, to the actual guide.</p>
+<hr />
+<p>Courtesy of RavenAscendant</p>
+<p>Inspired by MCM mod for the Bethesda games, this provides similar functionality for Anomaly. Adds a "Mod Configuration Menu" (MCM), accessible in the in-game menu, that allows players to change settings for mods that are configured for MCM. MCM currently supports:</p>
+<ul>
+<li>Check boxes</li>
+<li>Input boxes</li>
+<li>Sliders</li>
+<li>Radio buttons (horizontal or vertical layout)</li>
+<li>Drop-down lists</li>
+<li>Key binds (with advanced functionality for double-presses, long-press, and modifiers)</li>
+<li>Simple formatting aids (line breaks, image boxes, section breaks, descriptions and tooltips)</li>
+</ul>
+<h2 id="table-of-contents"><a class="header" href="#table-of-contents">Table of Contents</a></h2>
+<ol>
+<li><a href="#adding_mcm_functionality">Adding MCM Functionality</a>
+<ul>
+<li><a href="#options-tree-in-mcm">Setting up your options tree in MCM</a></li>
+<li><a href="#using-mcm-options-in-your-mod">Using MCM options in your mod</a></li>
+<li><a href="#mcm-text-strings">Text Strings in MCM</a></li>
+<li><a href="#mcm-use-summary">Summary</a></li>
+</ul>
+</li>
+<li><a href="#saving-mcm-options">Saving MCM Options</a>
+<ul>
+<li><a href="#per-save-mcm-options">Per-save MCM options</a></li>
+</ul>
+</li>
+<li><a href="#list-mcm-parameters">List of MCM Parameters</a>
+<ul>
+<li><a href="#option-tree-parameters">Option tree parameters</a></li>
+<li><a href="#required-parameters">Required parameters</a></li>
+<li><a href="#dependent-parameters">Dependent parameters</a></li>
+<li><a href="#optional-parameters">Optional parameters</a></li>
+</ul>
+</li>
+<li><a href="#keybind-information">Additional key_bind information</a>
+<ul>
+<li><a href="#keybind-utilities">key_bind utilities</a></li>
+</ul>
+</li>
+<li><a href="#example-scripts">Example scripts</a></li>
+<li><a href="#best-practices">MCM best practices</a></li>
+</ol>
+<h2 id="adding-mcm-functionality"><a class="header" href="#adding-mcm-functionality"><a name="adding_mcm_functionality"></a> Adding MCM Functionality</a></h2>
+<p>In order to add MCM functionality to your mod, you'll need to create a script in <code>gamedata/scripts</code> ending in <code>mcm.script</code>. You can use a <code>_</code> to separate this suffix from the name of the script but this is not necessary. For example, both <code>mod_name_mcm.script</code> and <code>modnamemcm.script</code> will work.</p>
+<p>Within these scripts, MCM will execute the function <code>on_mcm_load()</code>. This function must define an options tree, where you'll set up the options for your mod - details on how to do so are in the sections below. The function <code>on_mcm_load()</code> must return this valid options tree to work.</p>
+<p>In addition to returning a valid options tree <code>op</code>, you may return a string to name a collection. This string can be anything, and is used to create a category for one or more options trees. Options that are grouped together will be presented together under a common heading, and clicking "Apply to All" in the MCM will apply to all options trees grouped under the same collection.</p>
+<p><strong>Note</strong>: The collection name will become the root name for your settings path and translation strings, instead of the mod name. As a root name, you should take care to ensure it will not conflict with another mod's name.</p>
+<h3 id="setting-up-your-options-tree-in-mcm"><a class="header" href="#setting-up-your-options-tree-in-mcm"><a name="options-tree-in-mcm"></a>Setting up your options tree in MCM</a></h3>
+<p>The basic structure of your <code>mod_name_mcm.script</code> structure is as follows:</p>
+<pre><code class="language-lua">function on_mcm_load()
+  op = { 
+    id = "modname", sh = true, gr =
+      {  -- options tree goes here
+        { id = "title1", type = "slide", link = "AMCM_Banner.dds", text = "ui_mcm_example_text", size = {512,50}, spacing = 20 },
+        { id = "value_1", type = "input", val = 2, def = some_value_here },
+      }
+    }
+  return op
+end
+</code></pre>
+<p>Your options tree is what will actually get displayed to the player in MCM. At minimum it must include some unique ID <code>id</code> (string), and at least one group <code>gr</code>. The group is a table that contains either a further sub-tree, or your options. You may also set whether each table is shown or hidden with the boolean value <code>sh</code>.</p>
+<p>Every item in the <code>gr</code> table (or tables) needs a ID <code>id</code>, and a type <code>type</code>. Certain types have <a href="#dependent-parameters">dependent variables</a> that must also be defined for them to work.</p>
+<h3 id="using-mcm-options-in-your-mod"><a class="header" href="#using-mcm-options-in-your-mod"><a name="using-mcm-options-in-your-mod"></a>Using MCM Options in your mod</a></h3>
+<p>In your mod, simply replace the value of the variable that you want to be controlled in MCM with <code>(your_mod_mcm.get_config("option_id"))</code>.</p>
+<p>For example, let us say we have a variable called <code>example_value</code> that we want to be boolean, and controlled using an MCM check box. You would need to define this value in your mod as:</p>
+<p><code>example_value = (my_mod_mcm.get_config("example_value"))</code></p>
+<p>And inside your <code>my_mod_mcm.script</code>, you would need an options tree as follows:</p>
+<pre><code class="language-lua">function on_mcm_load()
+  op = { 
+     id = "my_mod", sh = true, gr =
+      {
+        { id = "example_value", type = "check", val = 1, def = true },
+      }
+    }
+  return op
+end
+</code></pre>
+<p>Now, players should see an entry for "my_mod" in their MCM menu, with a single checkbox for "example_value" that they can set to be on or off.</p>
+<h3 id="text-strings-for-mcm"><a class="header" href="#text-strings-for-mcm"><a name="mcm-text-strings"></a>Text Strings for MCM</a></h3>
+<p>These work very similarly to the way <code>ui_options</code> does. The only difference is that all instances of <code>ui_mm_</code> are renamed to <code>ui_mcm_</code>.</p>
+<p>MCM takes text strings from your mod's <code>gamedata/config/text/&lt;eng or rus&gt;</code> folder for display. The file itself does not have any special naming requirements, only that it must be a <code>.xml</code> file. You will need at minimum:</p>
+<ul>
+<li>One entry for the name of your mod in the MCM menu, with the ID <code>ui_mcm_menu_modname</code></li>
+<li>One entry per option item, with the prefix <code>ui_mcm_</code>, such as <code>ui_mcm_example</code></li>
+<li>(Optional) Descriptive tooltips for option items, which should start with <code>ui_mcm</code> and end with <code>_desc</code>, for example <code>ui_mcm_example_desc</code></li>
+</ul>
+<p>Any descriptive strings will be displayed as a tooltip when the cursor hovers over that menu item.</p>
+<p>Option item names follow this format: <code>ui_mcm_(id of the first group)_(id of the Nth group)_(value name)</code>. Let's reuse the example <code>on_mcm_load()</code> from before:</p>
+<pre><code class="language-lua">function on_mcm_load()
+  op = { 
+     id = "modname", sh = true, gr =
+      {  -- options tree goes here
+        { id = "title1",  type = "slide", link = "AMCM_Banner.dds", text = "ui_mcm_example_text", size = {512,50}, spacing = 20 },
+        { id = "value_1",  type = "check", val = 1, def = some_value_here },
+      }
+    }
+  return op
+end
+</code></pre>
+<p>Here, we would need to define the following strings:</p>
+<ul>
+<li><code>ui_mcm_menu_modname</code> Should display in the MCM for your mod's name</li>
+<li><code>ui_mcm_modname_title1</code> Appears in the slide/header</li>
+<li><code>ui_mcm_example_text</code> Text that appears in the <code>text = </code> call of the first item</li>
+<li><code>ui_mcm_modname_value_1</code> Name of the <code>value_1</code> entry</li>
+<li>(optional) <code>ui_mcm_modname_value_1_desc</code> Text for the tooltip that would appear for <code>value_1</code></li>
+</ul>
+<p>If a string is missing or broken, the ID will be displayed instead.</p>
+<h3 id="summary"><a class="header" href="#summary"><a name="mcm-use-summary"></a>Summary</a></h3>
+<ul>
+<li>Create a <code>your_mod_name_mcm.script</code> file</li>
+<li>Make sure this script file defines an option tree</li>
+<li>Make sure this options tree reflects the settings you want to be adjustable</li>
+<li>Set up variables in your mod to use <code>(your_mod_mcm.get_config("option_id"))</code></li>
+<li>Create relevant text strings for your MCM Options
+<ul>
+<li>Each item in the options needs a <strong>name</strong>, and an optional <strong>_desc</strong> string, which shows up as a tooltip</li>
+</ul>
+</li>
+</ul>
+<h2 id="saving-mcm-settings"><a class="header" href="#saving-mcm-settings"><a name="saving-mcm-options"></a>Saving MCM settings</a></h2>
+<p>By default, MCM will read the current value of a given setting from the <code>axr_options.ltx</code> file without a <code>[curr]</code> functor, and will write values to <code>axr_options.ltx</code> if no <code>[functor]</code> is provided. For simple global settings, this will be more than adequate, and you will not need any functors.</p>
+<p>The easiest way to read your settings is to call <code>ui_mcm.get(path)</code>, where <code>path</code> is the id field of the nested tables, down to the option in the table that you returned in <code>on_mcm_load()</code>. This usually takes the form of <code>"modname/settingname"</code> but you can break your settings into multiple panels if desired, resulting in a longer path. You can reference the options section of <code>axr_configs</code> for how Anomaly options menus translate into paths - the same system is used here.</p>
+<p><code>ui_mcm.get(path)</code> is cached, and falls back to the value you set in <code>[def = ]</code>.</p>
+<p>As with <code>ui_options</code>, when MCM applies a settings change, it sends an <code>on_option_change</code> callback. You can use this to do a one-time read of your options into variables for your script. You can either get these values with <code>ui_mcm.get(path)</code>, or read them directly from <code>axr_configs</code> like so:</p>
+<pre><code class="language-lua">axr_main.config:r_value("mcm", path, type, default) --see _g for how r_value functions.
+</code></pre>
+<h3 id="per-save-mcm-settings"><a class="header" href="#per-save-mcm-settings"><a name="per-save-mcm-options"></a>Per-save MCM settings</a></h3>
+<p><em>This uses <a href="https://www.moddb.com/mods/stalker-anomaly/addons/151-mcm-13-mcm-savefile-storage">dph-hcl's orginal script</a>. Refer to their mod and script for more.</em></p>
+<blockquote>
+<p>dph-hcl's original function has been aliased here as <code>ui_mcm.store_in_save(path)</code>. This function can be called safely as MCM will simply print an error if dph-hcl's script is missing.</p>
+</blockquote>
+<p><strong>tl;dr</strong> You almost certainly don't need to set up per-save MCM settings. Your mod's MCM options will write to <code>axr_options.ltx</code> and that will work for 90% of cases.</p>
+<p>The cases where you might want per-save MCM settings are:</p>
+<ul>
+<li>You want to save mod settings to the savegame file instead of globally</li>
+<li>You're building your settings dynamically and can't rely on a consistent path</li>
+<li>You like to over-complicate things</li>
+</ul>
+<p>To store an option in a savegame instead of globally, call <code>ui_mcm.store_in_save(path)</code>. <code>path</code> can be a full option path, such as the one used by <code>ui_mcm.get(path)</code>, or a partial path. If a partial path is used, all options that contain that path will be stored in the save game. Partial paths must start with a valid root, and cannot end with a <code>/</code> character.</p>
+<p>For example, take the following options menu:</p>
+<pre><code class="language-lua">function on_mcm_load()
+  op =  
+  {
+    id = "example_example", gr =
+    {
+      { id= "example_one", sh = true, gr =
+        {
+          { id= "slide_example_example", type = "slide", link = "AMCM_Banner.dds", text = "ui_mcm_title_example_example", size = {512,50}, spacing = 20 },
+          { id = "1check1", type = "check", val = 1, def = false},
+          { id = "1check2", type = "check", val = 1, def = false},
+        }
+      },
+    }
+  }  
+  return op
+end
+</code></pre>
+<p>To store the second checkbox <code>1check2</code> in a savegame, you would call:</p>
+<pre><code class="language-lua">ui_mcm.store_in_save("example_example/example_one/1check2")
+</code></pre>
+<p>To store both <code>1check1</code> and <code>1check2</code> in a savegame, you would call:</p>
+<pre><code class="language-lua">ui_mcm.store_in_save("example_example/example_one")
+</code></pre>
+<p>To store all options of the mod <code>example_example</code> in a savegame, you would call:</p>
+<pre><code class="language-lua">ui_mcm.store_in_save("example_example")
+</code></pre>
+<p><code>ui_mcm.store_in_save(path)</code> can be called at any time. It could be done as late as <code>on_game_start()</code> if one wanted to have an MCM option for global vs save-specific option storing. However, calling <code>ui_mcm.get(path)</code> in <code>on_mcm_load()</code> is a bad idea. <code>on_mcm_load</code> is called as part of building the the options table. <code>ui_mcm.get()</code> relies on the option table. If <code>get</code> is called while the table is being built, the results can be unpredictable, ranging from no consequence to corruption of the options table or settings file.</p>
+<p>To prevent potential corruption, MCM detects if <code>get</code> is called while the options table is being built and crashes the game manually with a custom error message.</p>
+<h2 id="list-of-mcm-parameters"><a class="header" href="#list-of-mcm-parameters"><a name="list-mcm-parameters"></a>List of MCM Parameters</a></h2>
+<h3 id="option-tree-parameters"><a class="header" href="#option-tree-parameters"><a name="option-tree-parameters"></a>Option tree parameters</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Parameter</th><th>Type</th><th>Optionality</th><th>Description</th></tr></thead><tbody>
+<tr><td><code>id</code></td><td>String</td><td>Required</td><td>ID for the tree, should be different for each tree</td></tr>
+<tr><td><code>sh</code></td><td>Boolean</td><td>Optional</td><td>Determines whether to show (<code>true</code>) or hide (<code>false</code>) the tree</td></tr>
+<tr><td><code>text</code></td><td>String</td><td>Optional</td><td>Display text for the tree in tree select. Overrides default display text</td></tr>
+<tr><td><code>precondition</code></td><td>Table <code>{function, parameters}</code></td><td>Optional</td><td>Shows tree options if precondition returns <code>true</code>, hides if precondition returns <code>false</code></td></tr>
+<tr><td><code>output</code></td><td>String</td><td>Optional</td><td>Text to show when <code>precondition</code> fails</td></tr>
+<tr><td><code>gr</code></td><td>Table <code>{ ... }</code></td><td>Required</td><td>Table of a sub-tree or options list</td></tr>
+<tr><td><code>id_gr</code></td><td>String</td><td>Optional</td><td>Allows you to give option trees a group id. Must be used if <code>apply_to_all</code> is <code>true</code></td></tr>
+<tr><td><code>apply_to_all</code></td><td>Boolean</td><td>Optional</td><td>Each option tree with <code>apply_to_all = true</code> will have an "apply to all" button added to each option. Clicking it will apply option changes from this option, to all other trees from the same group. Trees with <code>apply_to_all</code> <strong>must</strong> have a group id</td></tr>
+</tbody></table>
+</div>
+<h3 id="required-parameters"><a class="header" href="#required-parameters"><a name="required-parameters"></a>Required parameters</a></h3>
+<p>The following option parameters are <strong>required</strong> for all options:</p>
+<ul>
+<li><code>id</code> (string) Option identity/name. Options are stored in <code>axr_main</code> or called in other scripts via its path (the IDs of sub-trees and options)</li>
+<li><code>type</code> (string) Type of the element. See below for list of possible values.</li>
+</ul>
+<h3 id="possible-types"><a class="header" href="#possible-types"><a name="possible-types"></a>Possible types</a></h3>
+<p>These are the possible option types - that is, these types accept user inputs and therefore can be used to change your mod's options.</p>
+<div class="table-wrapper"><table><thead><tr><th>Type</th><th>Description</th><th>Output</th></tr></thead><tbody>
+<tr><td><code>check</code></td><td>Checkbox input</td><td><em>On</em> or <em>off</em></td></tr>
+<tr><td><code>list</code></td><td>Drop-down list input</td><td>One out of a provided list of strings</td></tr>
+<tr><td><code>input</code></td><td>Free input box</td><td>May be set to whatever value is typed inside</td></tr>
+<tr><td><code>radio_h</code></td><td>Horizontal radio buttons (fits up to 8 items)</td><td>Exactly one value from the provided items</td></tr>
+<tr><td><code>radio_v</code></td><td>Vertical radio buttons (fits any number of items)</td><td>Exactly one value from the provided items</td></tr>
+<tr><td><code>track</code></td><td>Track bar or slider input</td><td>May be set to a numerical value between a provided <code>max</code> and <code>min</code></td></tr>
+<tr><td><code>key_bind</code></td><td>Keybind input</td><td>Creates a button that registers a keypress after being clicked. See additional documentation below. <strong>Keybinds must have val = 2</strong></td></tr>
+</tbody></table>
+</div>
+<p>Some types do not accept user input, and are designed to aid formatting and layout. Possible non-option types are:</p>
+<div class="table-wrapper"><table><thead><tr><th>Type</th><th>Description</th></tr></thead><tbody>
+<tr><td><code>line</code></td><td>Simple horizontal line for separating parts of the options menu</td></tr>
+<tr><td><code>image</code></td><td>Shows an image. Image box dimensions are 563x50px, with full-area coverage</td></tr>
+<tr><td><code>slide</code></td><td>Creates a graphical "section header" with an image box on the left, and text on the right</td></tr>
+<tr><td><code>title</code></td><td>Text title with user-defined text alignment</td></tr>
+<tr><td><code>desc</code></td><td>Left-aligned text description</td></tr>
+</tbody></table>
+</div>
+<h3 id="dependent-parameters"><a class="header" href="#dependent-parameters"><a name="dependent-parameters"></a>Dependent parameters</a></h3>
+<p>These parameters must be declared when certain other parameters are declared.</p>
+<div class="table-wrapper"><table><thead><tr><th>Parameter</th><th>Dependent parameter</th><th>Type</th><th>Description</th></tr></thead><tbody>
+<tr><td><code>val</code></td><td>Any option <code>type</code></td><td>Number</td><td>Tells the script what kind of value the option stores. Acceptable values are <code>0</code> (string), <code>1</code> (boolean), and <code>2</code> (float)</td></tr>
+<tr><td><code>cmd</code></td><td>Any option <code>type</code></td><td>String</td><td>Ties an option to a console command, so that when the option value is changed, it is applied directly to the command. The option will show the command's current value.<sup>1</sup></td></tr>
+<tr><td><code>def</code></td><td>Any option <code>type</code></td><td>Boolean / Number / String / Table <code>{function, parameters}</code></td><td><strong>Not required if <code>cmd</code> is used</strong>. Default value of an option when no cached values are found in <code>axr_options.ltx</code>. Type depends on the type of the element.</td></tr>
+<tr><td><code>min</code></td><td><code>input</code> / <code>track</code> if <code>val = 2</code></td><td>Number</td><td>Minimum viable value for an option. Ensures user input stays in a predefined range</td></tr>
+<tr><td><code>max</code></td><td><code>input</code> / <code>track</code> if <code>val = 2</code></td><td>Number</td><td>Maximum viable value for an option. Ensures user input stays in a predefined range</td></tr>
+<tr><td><code>step</code></td><td><code>input</code> / <code>track</code> if <code>val = 2</code></td><td>Number</td><td>How much a value can be changed in one step</td></tr>
+<tr><td><code>content</code></td><td><code>list</code> / <code>radio_h</code> / <code>radio_v</code></td><td>Table <code>{double pairs}</code> <br> Table <code>{function, parameters}</code></td><td>Declares an option's list of possible inputs.<sup>2</sup></td></tr>
+<tr><td><code>link</code></td><td><code>image</code> / <code>slide</code></td><td>String</td><td>Path and filename (including extension) of the texture that you want to show in the image or slide image area. The assumed root folder is <code>gamedata\textures</code></td></tr>
+<tr><td><code>text</code></td><td><code>slide</code> / <code>title</code> / <code>desc</code></td><td>String</td><td>String ID of the text to be shown</td></tr>
+</tbody></table>
+</div>
+<p><sup>1</sup>: cmd options don't get cached in <code>axr_options.ltx</code>, instead they get stored in <code>appdata/user.ltx</code>. The [def] parameter is not needed here since the engine applies default values to commands if they don't exist in <code>user.ltx</code>.</p>
+<p><sup>2</sup>: Pair-values for <code>radio_h</code> or <code>radio_v</code> are provided in the following format: <code>{ value, value string ID }</code></p>
+<p>Example:</p>
+<pre><code class="language-lua">-- for some group called groupID
+{ id = "somelist", type = "radio_h", val = 2, content = { {0, "somelist_off"}, {1, "somelist_half"}, {2, "somelist_full"} }, def = 0 }
+</code></pre>
+<p>In this example, you would need to provide three translation strings:</p>
+<ul>
+<li><code>ui_mcm_lst_somelist_off</code></li>
+<li><code>ui_mcm_lst_somelist_half</code></li>
+<li><code>ui_mcm_lst_somelist_full</code></li>
+</ul>
+<p>Because all lists and radio button elements share the same prefix, <code>ui_mcm_lst</code>, it is important that the value string ID is something unique.</p>
+<h3 id="optional-parameters"><a class="header" href="#optional-parameters"><a name="optional-parameters"></a>Optional parameters</a></h3>
+<p>These parameters are entirely optional, and can be used for further customization.</p>
+<div class="table-wrapper"><table><thead><tr><th>Parameter</th><th>Dependent parameter</th><th>Type</th><th>Description</th></tr></thead><tbody>
+<tr><td><code>force_horz</code></td><td><code>radio_h</code></td><td>Boolean</td><td>Forces radio buttons into horizontal layout, no matter how many items there are</td></tr>
+<tr><td><code>no_str</code></td><td><code>list</code> / <code>radio_h</code> / <code>radio_v</code> / <code>track</code></td><td>Boolean</td><td>If <code>true</code>, hides the content table translation string (i.e. the <code>opt_str_list_(string)</code>), instead showing the string from the table as-is without translations. For <code>track</code>, setting <code>no_str = true</code> hides the value next to the slider</td></tr>
+<tr><td><code>prec</code></td><td><code>track</code></td><td>Number</td><td>Stands for 'precision'. Input value will be rounded <strong>up</strong> to have no more than this number of decimal places (e.g. with <code>prec = 3</code>, input values will round up to no more than 3 decimal places). Defaults to 6. <br> Should always be equal to or exceed the number of decimal places in <code>step</code>. Unless using <code>cmd</code> to pass this value into a console command, or more than 6 decimal places are needed in your input, this can be omitted.</td></tr>
+<tr><td><code>precondition</code></td><td>Any option</td><td>Table <code>{function, parameters}</code></td><td>Shows the option if precondition returns <code>true</code>, hides if precondition returns <code>false</code></td></tr>
+<tr><td><code>functor</code></td><td>Any option</td><td>Table <code>{function, parameters}</code></td><td>Executes a function when the option's changes are applied. The value of the option is added to the end of the parameters list</td></tr>
+<tr><td><code>postcondition</code></td><td>Any option with defined <code>functor</code></td><td>Table <code>{function, parameters}</code></td><td>If <code>postcondition</code> returns <code>true</code>, executes functor; otherwise, does not execute the functor</td></tr>
+<tr><td><code>curr</code></td><td>Any option</td><td>Table <code>{function, parameters}</code></td><td>Get current value of an option by executing the declared function, instead of reading it from <code>axr_options.ltx</code></td></tr>
+<tr><td><code>hint</code></td><td>Any option</td><td>String</td><td>Overrides default naming rules to replace an option's translation with a chosen string. Should not include the <code>ui_mcm_</code> prefix nor the <code>_desc</code> suffix.<sup>3</sup></td></tr>
+<tr><td><code>clr</code></td><td><code>title</code> / <code>desc</code></td><td>Table <code>{a,r,g,b}</code></td><td>Determines color of the text in ARGB format</td></tr>
+<tr><td><code>align</code></td><td><code>title</code></td><td>String, <code>"l" "r" "c"</code></td><td>Determines alignment of the title, left <code>"l"</code>, right <code>"r"</code>, or center <code>"c"</code></td></tr>
+<tr><td><code>stretch</code></td><td><code>slide</code></td><td>Boolean</td><td>Determines if the slide texture should stretch (<code>true</code>) or not (<code>false</code>)</td></tr>
+<tr><td><code>pos</code></td><td><code>slide</code></td><td>Table <code>{x,y}</code></td><td>Custom position for the slide texture</td></tr>
+<tr><td><code>size</code></td><td><code>slide</code></td><td>Table <code>{w,h}</code></td><td>Custom size for the slide texture</td></tr>
+<tr><td><code>spacing</code></td><td><code>slide</code></td><td>Number</td><td>Adds a height offset in px, which can be used to add extra space</td></tr>
+</tbody></table>
+</div>
+<p><sup>3</sup>: For example, this entry would force the script to use  <code>ui_mcm_some_random_string</code> and <code>ui_mcm_some_random_string_desc</code> for the name and description of the option <code>example</code>.</p>
+<pre><code class="language-lua">{ id = "example", type = "check", val = 1, def = true, hint = "some_random_string" }
+</code></pre>
+<h3 id="additional-key_bind-information"><a class="header" href="#additional-key_bind-information"><a name="keybind-information"></a>Additional key_bind information</a></h3>
+<p>Keybinds are gathered into two meta lists for users' convenience, which show at the very top of MCM as a list of every keybind that MCM provides. This means it is very important that your translation strings clearly identify what the key does, and which addon the keybind comes from.</p>
+<p>The value stored by the key bind is the DIK_keys value of the key. The same number will be given to key-related callbacks.</p>
+<p>Note that <code>curr</code> and <code>functor</code> <strong>do not work</strong> for keybinds. If you need this for some reason, post an issue on github describing the use-case you had for them, and if it's cool enough they might get fixed.</p>
+<blockquote>
+<p>Old (pre 1.6.0) versions of MCM will not display <code>key_bind</code> and calling <code>ui_mcm.get</code> for it will return nil. Keep this in mind if you want to have backwards compatibility.</p>
+</blockquote>
+<h4 id="key_bind-utilities"><a class="header" href="#key_bind-utilities"><a name="keybind-utilities"></a>key_bind utilities</a></h4>
+<p>MCM can track the held status of the Control and Shift keys, as well as flag that is true if neither is pressed. It also provides functions for detecting when a key is double-tapped, held down, or single-pressed. This increases the number of key combinations available for key binding. Users can set a configurable multi tap window, a value between 100 and 1000 ms.</p>
+<p><strong>Tracking modifier keys</strong></p>
+<p>You can track the status of modifier keys by using <code>ui_mcm.get_mod_key(val)</code>, where <code>val</code> can be <code>0</code> (<code>MOD_NONE</code>), <code>1</code> (<code>MOD_SHIFT</code>), <code>2</code> (<code>MOD_CTRL</code>), or <code>3</code> (<code>MOD_ALT</code>). It will return the following flags based on <code>val</code>:</p>
+<pre><code class="language-lua">ui_mcm.MOD_NONE  ui_mcm.MOD_SHIFT and ui_mcm.MOD_CTRL ui_mcm.MOD_ALT
+</code></pre>
+<p>If these get latched, they will reset when Escape is pressed. <strong>Please report cases of latching.</strong></p>
+<p><strong>Tracking different types of key press</strong></p>
+<p>After you have filtered for your key, you can call one of the following from an <code>on_key_press</code> callback:</p>
+<p><code>ui_mcm.double_tap(id, key, [multi_tap])</code></p>
+<ul>
+<li><code>id</code>: a unique identifier for your event. One good way to do this is to use your scriptname and a number: <code>"ui_mcm01"</code></li>
+<li><code>key</code>: the key passed into the <code>on_key_press</code> callback</li>
+<li><code>multi_tap</code>: if true, timer is updated instead of cleared. This allows for the detection of triple/quad/etc. taps</li>
+</ul>
+<p>This returns <code>true</code> for a given id and key, if less than <code>X</code> ms has elapsed since the last time it was called with that id and key (<code>X</code> is a user configurable value between 100 ms and 1000 ms). Otherwise, it returns <code>false</code>.</p>
+<p>If <code>multi_tap</code> is <code>false</code>, the timer is reset when true is returned, preventing the function from returning true twice in a row. If <code>multi_tap</code> is <code>true</code>, the function will return true any time the gap between a call and the one before is within the window.</p>
+<p><code>ui_mcm.key_hold(id, key, [repeat])</code></p>
+<ul>
+<li><code>id</code>: a unique identifer for your event</li>
+<li><code>key</code>: the key passed into the <code>on_key_hold</code> callback</li>
+<li><code>repeat</code>: Optional, takes a number representing time in seconds. If the key continues to be held down, the function will return <code>true</code> again after <code>repeat</code> seconds, on a cycle.</li>
+</ul>
+<p>When called from the <code>on_key_hold</code> callback, it will return true after the key has been held down for <code>Y</code> ms (determined by applying a user-defined multiplier to <code>X</code> above) and then again every <code>repeat</code> seconds if <code>repeat</code> is provided. The sequence resets when key is released.</p>
+<p><code>ui_mcm.simple_press(id, key, functor)</code></p>
+<ul>
+<li><code>id</code>: a unique identifer for your event</li>
+<li><code>key</code>: the key passed into the <code>on_key_hold</code> callback</li>
+<li><code>function</code>: table {function, parameters} To be executed, when it is determined that the key press is not long or double (or multi-press in general)</li>
+</ul>
+<p>Unlike the other two, this does not return anything but instead you give it a function to execute. Using this function you gain exclusivity, your event won't fire when the key is double-tapped (or multi-tapped), or held (long press), at the cost of a little input delay. This delay is dependent on the double tap window, as defined by the user in the MCM Key Bind settings.</p>
+<p>The following option entries have translation strings provided by MCM and are set up to be ignored by pre-1.6.0 versions of MCM. Note the keybind conflict identification in MCM does <strong>not</strong> look for these, and reports conflicts on the keybind value alone.</p>
+<p>With shift and control, radio button:</p>
+<pre><code class="language-lua">{id = "modifier", type = ui_mcm.kb_mod_radio, val = 2, def = 0, hint = "mcm_kb_modifier", content= { {0,"mcm_kb_mod_none"} , {1,"mcm_kb_mod_shift"} , {2,"mcm_kb_mod_ctrl"},{3,"mcm_kb_mod_alt"}}},
+</code></pre>
+<p>With shift and control, list:</p>
+<pre><code class="language-lua">{id = "modifier", type = ui_mcm.kb_mod_list, val = 2, def = 0, hint = "mcm_kb_modifier" , content= { {0,"mcm_kb_mod_none"} , {1,"mcm_kb_mod_shift"} , {2,"mcm_kb_mod_ctrl"},{3,"mcm_kb_mod_alt"}}},
+</code></pre>
+<p>Single, double or long press, radio button:</p>
+<pre><code class="language-lua">{id = "mode", type = ui_mcm.kb_mod_radio, val = 2, def = 0, hint = "mcm_kb_mode" , content= { {0,"mcm_kb_mode_press"} , {1,"mcm_kb_mode_dtap"} , {2,"mcm_kb_mode_hold"}}},
+</code></pre>
+<p>Single, double or long press, radio button:</p>
+<pre><code class="language-lua">{id = "mode", type = ui_mcm.kb_mod_list, val = 2, def = 0, hint = "mcm_kb_mode" , content= { {0,"mcm_kb_mode_press"} , {1,"mcm_kb_mode_dtap"} , {2,"mcm_kb_mode_hold"}}},
+</code></pre>
+<p>An example script making use of all of these can be found at <a href="https://github.com/RAX-Anomaly/MiniMapToggle/blob/main/gamedata/scripts/mini_map_toggle_mcm.script">https://github.com/RAX-Anomaly/MiniMapToggle/blob/main/gamedata/scripts/mini_map_toggle_mcm.script</a>.</p>
+<h2 id="example-scripts"><a class="header" href="#example-scripts"><a name="example-scripts"></a>Example Scripts</a></h2>
+<p>See the original comments in the <code>ui_mcm</code> script for more.</p>
+<h3 id="example_mcmscript"><a class="header" href="#example_mcmscript">example_mcm.script</a></h3>
+<pre><code class="language-lua">--Change your defaults here if you don't have Mod Config Menu installed. This allows people without MCM to change values.
+local defaults = {
+  ["1check1"] = some_value_here,
+  ["1check2"] = some_value_here,
+  ["2slider1"] = some_value_here,
+  ["2radio2"] = some_value_here,
+}
+
+-- This section sets up MCM to read from this mod's keys, and falls back to the previously defined defaults table if MCM is not installed
+function get_config(key)
+  if ui_mcm then return ui_mcm.get("example_mod_name/"..key) else return defaults[key] end
+end
+
+-- This function actually adds the entry for this mod into the MCM
+function on_mcm_load()
+  op = { 
+      id= "example_example",
+      gr = {    
+          { id= "example_one", sh = true, gr = 
+            { -- option group 1
+              { id = "slide_example_example" , type = "slide" , link = "AMCM_Banner.dds", text = "ui_mcm_title_example_example", size = {512,50}, spacing = 20 },
+              { id = "1check1", type = "check", val = 1, def = false},
+              { id = "1keybind2", type = "key_bind", val = 2, def = DIK_keys.DIK_O},
+            }
+          },
+          { id= "example_two", sh = true, gr = 
+            { -- option group 2
+              { id = "slide_example_example" , type = "slide" , link = "AMCM_Banner.dds", text = "ui_mcm_title_example_example", size = {512,50}, spacing = 20 },
+              { id = "2slider1", type = "track", val = 2, min = 0.0, max = 1.0, step = 0.1, def = 0.5},
+              { id = "2radio2", type = "radio_h", val = 2, content =
+                {
+                  { 0, "3radio2_none"},
+                  { 1, "3radio2_some"},
+                  { 2, "3radio2_most"},
+                  { 3, "3radio2_all"},
+                },
+                def = 0
+              },
+            }
+          },
+        }
+      }  
+  return op
+end
+</code></pre>
+<h3 id="example-ui_mcm_mod_examplexml-strings"><a class="header" href="#example-ui_mcm_mod_examplexml-strings">Example ui_mcm_mod_example.xml strings</a></h3>
+<p>This is set up for the generic mcm.script example above.</p>
+<pre><code class="language-xml">&lt;string id="ui_mcm_menu_example_example"&gt;
+&lt;text&gt;Name of your mod as it appears in the MCM&lt;/text&gt;
+&lt;/string&gt;
+
+&lt;string id="ui_mcm_title_example_example"&gt;
+&lt;text&gt;Text shown by any option with `text = "ui_mcm_title_example_example"`, which would be all of the slides&lt;/text&gt;
+&lt;/string&gt;
+
+&lt;string id="ui_mcm_example_one_1check1"&gt;
+&lt;text&gt;Name of the 1check1 option&lt;/text&gt;
+&lt;/string&gt;
+
+&lt;string id="ui_mcm_example_one_1check1_desc"&gt;
+&lt;text&gt;Tooltip of the 1check1 option&lt;/text&gt;
+&lt;/string&gt;
+
+&lt;string id="ui_mcm_example_one_1keybind2"&gt;
+&lt;text&gt;Name of the 1keybind2 option&lt;/text&gt;
+&lt;/string&gt;
+
+&lt;string id="ui_mcm_example_one_1keybind2_desc"&gt;
+&lt;text&gt;Tooltip of the 1keybind2 option&lt;/text&gt;
+&lt;/string&gt;
+
+&lt;string id="ui_mcm_example_one_2slider1"&gt;
+&lt;text&gt;Name of the 2slider1 option&lt;/text&gt;
+&lt;/string&gt;
+
+&lt;string id="ui_mcm_example_one_2slider1_desc"&gt;
+&lt;text&gt;Tooltip of the 2slider1 option&lt;/text&gt;
+&lt;/string&gt;
+
+&lt;string id="ui_mcm_example_one_2radio2"&gt;
+&lt;text&gt;Name of the 2radio2 option&lt;/text&gt;
+&lt;/string&gt;
+
+&lt;string id="ui_mcm_example_one_2radio2_desc"&gt;
+&lt;text&gt;Tooltip of the 2radio2 option&lt;/text&gt;
+&lt;/string&gt;
+
+&lt;string id="ui_mcm_lst_3radio2_none"&gt;
+&lt;text&gt;Text for the 3radio2_none option&lt;/text&gt;
+&lt;/string&gt;
+
+&lt;string id="ui_mcm_lst_3radio2_some"&gt;
+&lt;text&gt;Text for the 3radio2_some option&lt;/text&gt;
+&lt;/string&gt;
+
+&lt;string id="ui_mcm_lst_3radio2_most"&gt;
+&lt;text&gt;Text for the 3radio2_most option&lt;/text&gt;
+&lt;/string&gt;
+
+&lt;string id="ui_mcm_lst_3radio2_all"&gt;
+&lt;text&gt;Text for the 3radio2_all option&lt;/text&gt;
+&lt;/string&gt;
+</code></pre>
+<h2 id="mcm-best-practices"><a class="header" href="#mcm-best-practices"><a name="best-practices"></a>MCM Best Practices</a></h2>
+<h3 id="options"><a class="header" href="#options">Options</a></h3>
+<ul>
+<li>The top id in the table you return to MCM should be <strong>as unique as possible</strong> to prevent conflicts with other mods</li>
+<li>Keybind names should be understandable outside of their menu, since they will be displayed in a meta-keybinds list at the top of MCM. Therefore, avoid generic names and be specific.</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../addons/dxml.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../addons/pdb.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../addons/dxml.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../addons/pdb.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

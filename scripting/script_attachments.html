@@ -1,0 +1,530 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Script Attachments - Anomaly Modding Book</title>
+
+
+        <!-- Custom HTML head -->
+        <script defer data-domain="igigog.github.io" src="https://plausible.io/js/script.hash.js"></script>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../src/custom.css">
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Introduction</a></li><li class="chapter-item expanded affix "><li class="spacer"></li><li class="chapter-item expanded "><a href="../meta/index.html"><strong aria-hidden="true">1.</strong> Meta</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../meta/contributing/index.html"><strong aria-hidden="true">1.1.</strong> Contributing to this book</a></li></ol></li><li class="chapter-item expanded "><li class="spacer"></li><li class="chapter-item expanded "><a href="../getting-started/index.html"><strong aria-hidden="true">2.</strong> Mod Organizer</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../getting-started/installing-mo2.html"><strong aria-hidden="true">2.1.</strong> Installing MO2</a></li><li class="chapter-item expanded "><a href="../getting-started/addon-installers.html"><strong aria-hidden="true">2.2.</strong> Addon installers</a></li><li class="chapter-item expanded "><a href="../getting-started/package-naming.html"><strong aria-hidden="true">2.3.</strong> Package Naming for MO2</a></li><li class="chapter-item expanded "><a href="../getting-started/vs-code-game-files-setup.html"><strong aria-hidden="true">2.4.</strong> Configuring VSCode-like programs to handle game files</a></li></ol></li><li class="chapter-item expanded "><li class="spacer"></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Addons</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../addons/dltx.html"><strong aria-hidden="true">3.1.</strong> DLTX</a></li><li class="chapter-item expanded "><a href="../addons/dxml.html"><strong aria-hidden="true">3.2.</strong> DXML</a></li><li class="chapter-item expanded "><a href="../addons/mcm.html"><strong aria-hidden="true">3.3.</strong> MCM</a></li><li class="chapter-item expanded "><a href="../addons/pdb.html"><strong aria-hidden="true">3.4.</strong> PDB files</a></li><li class="chapter-item expanded "><a href="../addons/lua-unlocalizer.html"><strong aria-hidden="true">3.5.</strong> Lua Unlocalizer</a></li><li class="chapter-item expanded "><a href="../addons/useful-addons-scripts-utils.html"><strong aria-hidden="true">3.6.</strong> Useful addons, scripts and utils</a></li></ol></li><li class="chapter-item expanded "><li class="spacer"></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> Configs</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../configs/structure-of-files.html"><strong aria-hidden="true">4.1.</strong> Structure of Files</a></li><li class="chapter-item expanded "><a href="../configs/condlists.html"><strong aria-hidden="true">4.2.</strong> Condlists</a></li><li class="chapter-item expanded "><a href="../configs/inventory_icons.html"><strong aria-hidden="true">4.3.</strong> Inventory Icons</a></li><li class="chapter-item expanded "><a href="../configs/algoritm-of-logic.html"><strong aria-hidden="true">4.4.</strong> Algoritm of Logic</a></li></ol></li><li class="chapter-item expanded "><li class="spacer"></li><li class="chapter-item expanded "><a href="../scripting/index.html"><strong aria-hidden="true">5.</strong> Scripting</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../scripting/codebase_introduction.html"><strong aria-hidden="true">5.1.</strong> Introduction to codebase</a></li><li class="chapter-item expanded "><a href="../scripting/codestyle.html"><strong aria-hidden="true">5.2.</strong> Codestyle</a></li><li class="chapter-item expanded "><a href="../scripting/wetting_hands.html"><strong aria-hidden="true">5.3.</strong> Wetting our hands</a></li><li class="chapter-item expanded "><a href="../scripting/server_and_game_objects.html"><strong aria-hidden="true">5.4.</strong> Server and game objects</a></li><li class="chapter-item expanded "><a href="../scripting/callbacks.html"><strong aria-hidden="true">5.5.</strong> Callbacks</a></li><li class="chapter-item expanded "><a href="../scripting/time_events.html"><strong aria-hidden="true">5.6.</strong> Time events</a></li><li class="chapter-item expanded "><a href="../scripting/monkey-patching.html"><strong aria-hidden="true">5.7.</strong> Monkey patching</a></li><li class="chapter-item expanded "><a href="../scripting/script_animations.html"><strong aria-hidden="true">5.8.</strong> Script Animations</a></li><li class="chapter-item expanded "><a href="../scripting/script_attachments.html" class="active"><strong aria-hidden="true">5.9.</strong> Script Attachments</a></li></ol></li><li class="chapter-item expanded "><li class="spacer"></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> Modelling</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../blender/creating-model-in-blender.html"><strong aria-hidden="true">6.1.</strong> Creating model in Blender</a></li></ol></li><li class="chapter-item expanded "><li class="spacer"></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.</strong> Animating</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../blender/creating-hud-animation-in-blender.html"><strong aria-hidden="true">7.1.</strong> Creating an animation</a></li><li class="chapter-item expanded "><a href="../blender/creating-camera-animations.html"><strong aria-hidden="true">7.2.</strong> Creating animations for the camera</a></li><li class="chapter-item expanded "><a href="../blender/editing-existing-animations.html"><strong aria-hidden="true">7.3.</strong> Editing existing animations</a></li></ol></li><li class="chapter-item expanded "><li class="spacer"></li><li class="chapter-item expanded "><a href="../texturing/index.html"><strong aria-hidden="true">8.</strong> Texturing</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../texturing/сreating-and-preparing-textures.html"><strong aria-hidden="true">8.1.</strong> Creating and preparing textures</a></li><li class="chapter-item expanded "><a href="../texturing/working-correctly-with-icon-atlases.html"><strong aria-hidden="true">8.2.</strong> Working correctly with icon atlases</a></li></ol></li><li class="chapter-item expanded "><li class="spacer"></li><li class="chapter-item expanded "><a href="../mapping/index.html"><strong aria-hidden="true">9.</strong> Mapping</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../blender/creating-a-location-in-blender.html"><strong aria-hidden="true">9.1.</strong> Creating a location in Blender</a></li><li class="chapter-item expanded "><a href="../mapping/multimaterial-terrain.html"><strong aria-hidden="true">9.2.</strong> Multimaterial Terrain Guide</a></li></ol></li><li class="chapter-item expanded "><li class="spacer"></li><li class="chapter-item expanded "><a href="../quests/index.html"><strong aria-hidden="true">10.</strong> Quests</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../quests/introduction.html"><strong aria-hidden="true">10.1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../quests/npc_creation.html"><strong aria-hidden="true">10.2.</strong> NPC Creation</a></li><li class="chapter-item expanded "><a href="../quests/task_guide.html"><strong aria-hidden="true">10.3.</strong> Task Creation</a></li><li class="chapter-item expanded "><a href="../quests/dialogues.html"><strong aria-hidden="true">10.4.</strong> Dialogue Creation</a></li></ol></li><li class="chapter-item expanded "><li class="spacer"></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">11.</strong> Reference/General</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../terminology/terminology.html"><strong aria-hidden="true">11.1.</strong> Terminology</a></li><li class="chapter-item expanded "><a href="../main-folders-and-files/index.html"><strong aria-hidden="true">11.2.</strong> Main Folders And Files</a></li><li class="chapter-item expanded "><a href="../main-folders-and-files/file-formats/index.html"><strong aria-hidden="true">11.3.</strong> File Formats</a></li><li class="chapter-item expanded "><a href="../crash-list/crashes-list.html"><strong aria-hidden="true">11.4.</strong> Crash List</a></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">12.</strong> Reference/Configs</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../configs/items/outfits/o_(outfit).ltx.html"><strong aria-hidden="true">12.1.</strong> Outfits</a></li><li class="chapter-item expanded "><a href="../configs/items/weapons/w_(weapon).ltx.html"><strong aria-hidden="true">12.2.</strong> Weapons</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../configs/items/weapons/weapon_sounds.ltx.html"><strong aria-hidden="true">12.2.1.</strong> Weapon Sounds</a></li><li class="chapter-item expanded "><a href="../configs/items/weapons/weapon_ammo.ltx.html"><strong aria-hidden="true">12.2.2.</strong> Ammo</a></li></ol></li><li class="chapter-item expanded "><a href="../configs/items/trade/trade.ltx.html"><strong aria-hidden="true">12.3.</strong> Trade</a></li><li class="chapter-item expanded "><a href="../configs/creatures/m_(mutant).ltx.html"><strong aria-hidden="true">12.4.</strong> Creatures</a></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">13.</strong> Reference/Shaders</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../shaders/shaders-list/materials-list.html"><strong aria-hidden="true">13.1.</strong> Material Shaders List</a></li><li class="chapter-item expanded "><a href="../shaders/shaders-list/shaders-list.html"><strong aria-hidden="true">13.2.</strong> Shaders List</a></li><li class="chapter-item expanded "><a href="../shaders/shaders-list/compiler-shaders-list.html"><strong aria-hidden="true">13.3.</strong> Compiler Shaders List</a></li><li class="chapter-item expanded "><a href="../shaders/shaders-list/sound-envornment-list.html"><strong aria-hidden="true">13.4.</strong> Sound Envornment List</a></li></ol></li><li class="chapter-item expanded "><a href="../engine/index.html"><strong aria-hidden="true">14.</strong> Reference/Engine</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../engine/console-commands.html"><strong aria-hidden="true">14.1.</strong> Console commands</a></li><li class="chapter-item expanded "><a href="../engine/alife.html"><strong aria-hidden="true">14.2.</strong> A-Life (AI)</a></li><li class="chapter-item expanded "><a href="../engine/engine-classes.html"><strong aria-hidden="true">14.3.</strong> Engine Classes</a></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">15.</strong> Reference/Resources</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../resources/audio.html"><strong aria-hidden="true">15.1.</strong> Audio</a></li><li class="chapter-item expanded "><a href="../resources/models-objects-locations.html"><strong aria-hidden="true">15.2.</strong> Models</a></li><li class="chapter-item expanded "><a href="../resources/sdk-resources.html"><strong aria-hidden="true">15.3.</strong> SDK resources</a></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">16.</strong> Reference/Tools</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../modding-tools/modding-tools.html"><strong aria-hidden="true">16.1.</strong> Modding Tools List</a></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/index.html"><strong aria-hidden="true">16.2.</strong> In-Game Editors</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/item-spawner.html"><strong aria-hidden="true">16.2.1.</strong> Item Spawner</a></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/lightning-editor.html"><strong aria-hidden="true">16.2.2.</strong> Lightning Editor</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">16.2.3.</strong> NPC Logic/Execute</div></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/object-spawner.html"><strong aria-hidden="true">16.2.4.</strong> Object Spawner</a></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/outfits-weapon-stats-editor.html"><strong aria-hidden="true">16.2.5.</strong> Outfits/Weapons Stats Editor</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">16.2.6.</strong> Pocket Workshop</div></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/weapon-hud-editor.html"><strong aria-hidden="true">16.2.7.</strong> Weapon HUD Editor</a></li><li class="chapter-item expanded "><a href="../modding-tools/in-game-editors/weather-editor.html"><strong aria-hidden="true">16.2.8.</strong> Weather Editor</a></li></ol></li><li class="chapter-item expanded "><a href="../modding-tools/ltx-support.html"><strong aria-hidden="true">16.3.</strong> Ltx Support</a></li><li class="chapter-item expanded "><a href="../sdk/index.html"><strong aria-hidden="true">16.4.</strong> SDK 0.7</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../sdk/interface.html"><strong aria-hidden="true">16.4.1.</strong> Interface</a></li><li class="chapter-item expanded "><a href="../sdk/actor-editor.html"><strong aria-hidden="true">16.4.2.</strong> Actor Editor</a></li><li class="chapter-item expanded "><a href="../sdk/image-editor.html"><strong aria-hidden="true">16.4.3.</strong> Image Editor</a></li><li class="chapter-item expanded "><a href="../sdk/level-editor.html"><strong aria-hidden="true">16.4.4.</strong> Level Editor</a></li><li class="chapter-item expanded "><a href="../sdk/shader-editor.html"><strong aria-hidden="true">16.4.5.</strong> Shader Editor</a></li><li class="chapter-item expanded "><a href="../sdk/sound-editor.html"><strong aria-hidden="true">16.4.6.</strong> Sound Editor</a></li><li class="chapter-item expanded "><a href="../sdk/postprocess-editor.html"><strong aria-hidden="true">16.4.7.</strong> Postprocess Editor</a></li><li class="chapter-item expanded "><a href="../sdk/particle-editor.html"><strong aria-hidden="true">16.4.8.</strong> Particle Editor (Not finished)</a></li></ol></li><li class="chapter-item expanded "><a href="../blender/blender-x-ray-addon-summary.html"><strong aria-hidden="true">16.5.</strong> Blender X-Ray Addon</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../blender/advanced-settings.html"><strong aria-hidden="true">16.5.1.</strong> Advanced settings</a></li><li class="chapter-item expanded "><a href="../blender/x-ray-addon-panels.html"><strong aria-hidden="true">16.5.2.</strong> Panels</a></li><li class="chapter-item expanded "><a href="../blender/x-ray-side-panels.html"><strong aria-hidden="true">16.5.3.</strong> Side Panel</a></li></ol></li><li class="chapter-item expanded "><a href="../modding-tools/stalker-studio.html"><strong aria-hidden="true">16.6.</strong> Stalker Studio</a></li><li class="chapter-item expanded "><a href="../modding-tools/thm-editor-by-i-love-kfc.html"><strong aria-hidden="true">16.7.</strong> THM Editor</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../modding-tools/thm-editor-by-valerok.html"><strong aria-hidden="true">16.7.1.</strong> Modified THM Editor</a></li></ol></li><li class="chapter-item expanded "><a href="../modding-tools/bump-generator.html"><strong aria-hidden="true">16.8.</strong> Bump Generator</a></li><li class="chapter-item expanded "><a href="../modding-tools/savandt.html"><strong aria-hidden="true">16.9.</strong> Sound Attribute Viewer And Tweaker</a></li><li class="chapter-item expanded "><a href="../modding-tools/upgrade-editor.html"><strong aria-hidden="true">16.10.</strong> Upgrade Editor</a></li><li class="chapter-item expanded "><a href="../modding-tools/omf-editor-by-valerok.html"><strong aria-hidden="true">16.11.</strong> Modified OMF Editor</a></li><li class="chapter-item expanded "><a href="../modding-tools/ogf-editor-by-valerok.html"><strong aria-hidden="true">16.12.</strong> Modified OGF Editor</a></li><li class="chapter-item expanded "><a href="../modding-tools/xray-export-tool.html"><strong aria-hidden="true">16.13.</strong> X-Ray Export Tool</a></li><li class="chapter-item expanded "><a href="../modding-tools/universal-x64-level-compilers.html"><strong aria-hidden="true">16.14.</strong> Universal x64 level compilers</a></li><li class="chapter-item expanded "><a href="../modding-tools/xrcompress-by-i-love-kfc.html"><strong aria-hidden="true">16.15.</strong> xrCompress</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Anomaly Modding Book</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Igigog/anomaly-modding-book" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Igigog/anomaly-modding-book/edit/main/src/scripting/script_attachments.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="script-attachments"><a class="header" href="#script-attachments">Script Attachments</a></h1>
+<hr />
+<h2 id="basics"><a class="header" href="#basics">Basics</a></h2>
+<p>Script attachments allow attaching any model to any game object or even other script attachments.<br />
+This opens up a lot of possibilities like weapon attachments no longer having to be part of the weapon model and much more.</p>
+<p>Script attachments are managed entirely by scripts, the engine does not store any attachment data in save files.<br />
+This means you'll have to keep track of your attachments and store serialized data of them in mdata if you want them to persist throughout saves.<br />
+Or find other means to reliably attach/remove them, like <code>actor_item_to_slot</code> and <code>actor_item_to_ruck</code> callbacks.</p>
+<h3 id="creating-a-script-attachment"><a class="header" href="#creating-a-script-attachment">Creating a script attachment</a></h3>
+<p>All you need to create a script attachment is a parent game_object/attachment and the model you want to use.</p>
+<p>One simple line will create the script attachment and attach it to its parent:</p>
+<pre><code class="language-lua">local test_att = db.actor:add_attachment(0, "path\\to\\model")
+</code></pre>
+<p>This adds a new script attachment into slot 0 of the actor game_object using the model we specified.</p>
+<p>Attachment slots range from 0 to 65535.<br />
+Creating an attachment in a slot that is already used by an attachment will delete the previous attachment.</p>
+<p>You can also attach attachments to other attachments:</p>
+<pre><code class="language-lua">local child_att = test_att:add_attachment(0, "path\\to\\other_model")
+local child_child_att = child_attachment:add_attachment(0, "path\\to\\another_model")
+</code></pre>
+<h3 id="how-do-i-remove-them"><a class="header" href="#how-do-i-remove-them">How do I remove them?</a></h3>
+<p>If you want to remove an attachment, just remove it from its parent:</p>
+<pre><code class="language-lua">test_att:remove_attachment(0)
+child_att = nil
+child_child_att = nil
+</code></pre>
+<p>This will remove the <code>child_att</code> we created in slot 0 of <code>test_att</code>.<br />
+Any child attachments of <code>child_att</code> will be removed as well.
+Make sure you don't keep references to deleted attachments in your scripts or you might get pure virtual function errors, similar to storing a reference to a destroyed game_object.</p>
+<h3 id="accessing-script-attachments-without-a-reference"><a class="header" href="#accessing-script-attachments-without-a-reference">Accessing script attachments without a reference</a></h3>
+<p>It's also possible to access a script attachment without it being stored in a variable.
+You can access it like this:</p>
+<pre><code class="language-lua">db.actor:get_attachment(0)
+</code></pre>
+<h3 id="getting-and-setting-parent"><a class="header" href="#getting-and-setting-parent">Getting and setting parent</a></h3>
+<p>If you need the parent object or parent attachment of an attachment for whatever reason, it's possible to access it like this:</p>
+<pre><code class="language-lua">local parent_tbl = test_att:get_parent()
+</code></pre>
+<p>We’ll receive a table, that looks like this:</p>
+<pre><code class="language-lua">parent_tbl = {
+	["object"] = userdata, -- (reference to db.actor)
+	["attachment"] = nil
+}
+</code></pre>
+<p>Now we know that the attachment is attached to a game_object and we have a reference to said game_object.</p>
+<pre><code class="language-lua">local parent_tbl = test_att:get_parent()
+if parent_tbl.object then
+	-- will print "parent is actor"
+	printf("parent is %s", parent_tbl.object:section())
+elseif parent_tbl.attachment then
+	printf("parent is attachment")
+end
+</code></pre>
+<p><br />
+<br />
+Maybe you want to transfer your script attachment to another parent game_object or attachment?
+Just use <code>set_parent</code>, it will transfer the attachment, as well as any child attachments to the new parent:</p>
+<pre><code class="language-lua">test_att:set_parent(npc)
+</code></pre>
+<p><strong>The attachment will overwrite an existing attachment of the new parent object, if it uses the same slot!</strong>
+<em>(Might get changed in the future)</em></p>
+<h3 id="parent-bone"><a class="header" href="#parent-bone">Parent Bone</a></h3>
+<p>By default the script attachment will attach to the root bone (bone 0) of the parent game_object or attachment.
+You can change the parent bone at any time using</p>
+<pre><code class="language-lua">test_att:set_parent_bone(15)
+</code></pre>
+<p>In this case it will set the parent bone to <code>bip01_head</code> of the parent npc object.
+Changing to a bone id that doesn't exist will default to the root bone.</p>
+<p>To get the current parent bone id you can use</p>
+<pre><code class="language-lua">local bone_id = test_att:get_parent_bone()
+</code></pre>
+<hr />
+<h2 id="attachment-position-rotation-and-scale"><a class="header" href="#attachment-position-rotation-and-scale">Attachment position, rotation and scale</a></h2>
+<p>Position and rotation work as an offset to the parent bone's position and rotation.
+Functions support both vectors and three numbers.<br />
+Scale can even be set with a single number, if the scale should be the same in all directions.</p>
+<h3 id="position"><a class="header" href="#position">Position</a></h3>
+<pre><code class="language-lua">get_position() -- returns vector
+set_position(vector)
+set_position(number, number, number)
+</code></pre>
+<h3 id="rotation"><a class="header" href="#rotation">Rotation</a></h3>
+<pre><code class="language-lua">get_rotation() -- returns vector
+set_rotation(vector)
+set_rotation(number, number, number)
+</code></pre>
+<h3 id="scale"><a class="header" href="#scale">Scale</a></h3>
+<pre><code class="language-lua">get_scale() -- returns vector
+set_scale(vector)
+set_scale(number, number, number)
+set_scale(number)
+</code></pre>
+<h3 id="attachment-origin"><a class="header" href="#attachment-origin">Attachment origin</a></h3>
+<pre><code class="language-lua">get_origin() -- returns vector
+set_origin(vector)
+set_origin(number, number, number)
+</code></pre>
+<p>It's also possible to change the origin point of an attachment.<br />
+By default the root bone of the attachment will be used as its origin point.</p>
+<p>Say, you want to rotate the attachment around its center, instead of its root bone:</p>
+<pre><code class="language-lua">local center = test_att:get_center()
+test_att:set_origin(center)
+</code></pre>
+<hr />
+<h2 id="flags"><a class="header" href="#flags">Flags</a></h2>
+<p>At the moment there are three flags that can be set for script attachments.</p>
+<pre><code class="language-lua">["eSA_RenderHUD"] = 1,
+["eSA_RenderWorld"] = 2,
+["eSA_CamAttached"] = 4,
+</code></pre>
+<p>By default the flags value is set to <code>2</code>, which means a new attachment will only render on the world model of its parent object.</p>
+<p>Using getter/setter we can read and change the flags value:</p>
+<pre><code class="language-lua">get_flags()
+set_flags(number)
+</code></pre>
+<p>If we want the attachment to render both in world and hud mode, we can do it as follows:</p>
+<pre><code class="language-lua">test_att:set_flags(3)
+</code></pre>
+<h3 id="cam-attached"><a class="header" href="#cam-attached">Cam attached?</a></h3>
+<p>Another very cool aspect of script attachments is the ability to have them attach to the player camera.
+Setting the flags value to <code>4</code> (<code>eSA_CamAttached</code>) will enable this behavior.</p>
+<p>When attached to the camera, the attachment will follow the position and direction of the first person camera and render at a fixed fov, so it should look similar on all resolutions and fov values.
+This is especially useful for things like 3D UIs or visible 3D helmets and gasmasks.</p>
+<hr />
+<h2 id="attachment-model"><a class="header" href="#attachment-model">Attachment model</a></h2>
+<p>To get the path of the model that is currently used for a script attachment use</p>
+<pre><code class="language-lua">local path = test_att:get_model()
+</code></pre>
+<p>The model can be changed at any time</p>
+<pre><code class="language-lua">test_att:set_model("path\\to\\new_model", false)
+</code></pre>
+<p>The boolean tells the engine if existing bone callbacks should be kept in place.<br />
+You can find out more about bone callbacks down below.</p>
+<h3 id="model-bones"><a class="header" href="#model-bones">Model bones</a></h3>
+<p>A bone's visibility can be read and changed using</p>
+<pre><code class="language-lua">get_bone_visible(number)
+set_bone_visible(number, boolean)
+</code></pre>
+<p>At the moment only bone IDs are supported (instead of names).</p>
+<h3 id="animations"><a class="header" href="#animations">Animations</a></h3>
+<p>If the model contains any motions or motion references, you can play them on the attachment model.<br />
+<strong>By default the engine will try to play the <code>idle</code> motion, so it's advised to always add one to your model if you're exporting it as a dynamic model.</strong></p>
+<pre><code class="language-lua">         -- Name    MixIn    Speed
+play_motion(string, boolean, number)
+</code></pre>
+<p><br />
+Example</p>
+<pre><code class="language-lua">-- returns animation length in milliseconds
+local anm_length = test_att:play_motion("reload", false, 1)
+
+-- if you want to stop the motion, just play "idle"
+-- if the animation is not looped, it will automatically play "idle" at the end
+test_att:play_motion("idle", true, 1)
+</code></pre>
+<hr />
+<h2 id="bone-callbacks"><a class="header" href="#bone-callbacks">Bone Callbacks</a></h2>
+<p>Bone callbacks are a powerful feature, they allow you to change the position of any bone of the attachment model in real time.<br />
+There are two types of bone callbacks.</p>
+<h3 id="copy-bone-callback"><a class="header" href="#copy-bone-callback">Copy Bone Callback</a></h3>
+<p>The first type of bone callbacks simply copies the position of a bone of the parent game_object/attachment and moves the selected attachment bone to that position.
+It's mainly useful if you want to attach something with multiple bones to a parent object and have it follow its animations.</p>
+<p>Usage</p>
+<pre><code class="language-lua">test_att:bone_callback(id1,id2,true)
+-- id1 is the ID of the bone of the attachment model we want to modify
+-- id2 is the ID of the bone of the parent model we want to copy
+-- setting the boolean to true tells the engine that we don't need to calculate
+-- animations for this bone (on the attachment model) - mainly for performance reasons
+</code></pre>
+<p><br />
+For example we can add an exoskeleton to the player model like this</p>
+<pre><code class="language-lua">-- attach exo model
+local exo_n = db.actor:add_attachment(3202, ogf_file_npc)
+
+-- set bone callbacks
+-- you can do for i=0,46
+-- i'm just copying the bones that are actually used by the exo here
+for i=0,14 do
+	exo_n:bone_callback(i,i,true)
+end
+
+for i=20,22 do
+	exo_n:bone_callback(i,i,true)
+end
+
+for i=33,35 do
+	exo_n:bone_callback(i,i,true)
+end
+</code></pre>
+<p><strong>You have to set the callback for bone 0 on actor, stalker and mutant models, otherwise the attachment will awkwardly shift around sometimes due to foot IK.</strong><br />
+<br />
+<br />
+Attaching something to the first person hands is a little more involved.<br />
+Since left and right arms use seperate models, we have to attach two script attachments:</p>
+<pre><code class="language-lua">local exo_r = db.actor:add_attachment(3200, ogf_file)
+
+-- an attachment for the right arm has to use bone 21 as its parent bone
+exo_r:set_parent_bone(21)
+
+-- set hud mode
+exo_r:set_flags(1)
+
+-- the model I'm using is for both arms so we have to hide the left part
+exo_r:set_bone_visible(1, false)
+
+-- we also need a bone callback to copy the root bone
+exo_r:bone_callback(0,0,true)
+
+-- copy the rest of the right arm bones
+for i=21,41 do
+	exo_r:bone_callback(i,i,true)
+end
+
+
+-- attaching to the left arm is simpler
+local exo_l = db.actor:add_attachment(3201, ogf_file)
+
+-- set hud mode
+exo_l:set_flags(1)
+
+-- hide right part
+exo_l:set_bone_visible(22, false)
+
+-- copy left arm bones
+for i=0,20 do
+	exo_l:bone_callback(i,i,true)
+end
+</code></pre>
+<h3 id="script-bone-callback"><a class="header" href="#script-bone-callback">Script Bone Callback</a></h3>
+<p>The second type of bone callbacks uses a lua function to modify the final position of a bone.<br />
+It is called each frame so don't use too many of them if you can avoid it :)</p>
+<p>We need a function for our callback.<br />
+It takes the matrix of the bone and does calculations on it to modify the final bone matrix.<br />
+See the following example from the lockpick UI</p>
+<pre><code class="language-lua">function cylinder_callback(mat)
+	-- temp copy of position since setHPB overwrites it
+	local temp = mat.c
+	local hpb = mat:getHPB()
+	-- apply our rotation
+	mat:setHPB(hpb.x, hpb.y + cylinder_rotation, hpb.z)
+	-- revert to saved position
+	mat.c = temp
+	-- return modified matrix to the engine
+	return mat
+end
+</code></pre>
+<p><br />
+Since we want the cylinder_rotation to be applied on top of an animated lock, we don't disable animation calculation this time (third argument is <code>false</code>).</p>
+<pre><code class="language-lua">lockpicker:bone_callback(1, cylinder_callback, false)
+</code></pre>
+<h3 id="removing-bone-callbacks"><a class="header" href="#removing-bone-callbacks">Removing Bone Callbacks</a></h3>
+<p>Bone callbacks can be removed like this</p>
+<pre><code class="language-lua">-- remove bone callback from bone with ID 1
+lockpicker:remove_bone_callback(1)
+</code></pre>
+<h3 id="persisting-through-model-change"><a class="header" href="#persisting-through-model-change">Persisting through model change</a></h3>
+<p>As mentioned before, you can tell the engine to keep existing bone callbacks in place when changing the attachment model by setting the second argument to true in <code>set_model</code></p>
+<pre><code class="language-lua">lockpicker:set_model("path\\to\\other_lock", true)
+</code></pre>
+<hr />
+<h2 id="attaching-script-ui"><a class="header" href="#attaching-script-ui">Attaching Script UI</a></h2>
+<p>Another nice to have feature, you can attach script 3D UI to attachments (UI like on the dosimeter or rf receiver)<br />
+Check <code>gamedata\scripts\ui_dosimeter.script</code> to see how script 3D UI works.</p>
+<p>Available functions:</p>
+<pre><code class="language-lua">get_ui()
+get_ui_bone()
+get_ui_rotation()
+
+set_ui(string)
+set_ui_bone(number)
+set_ui_position(vector)
+set_ui_position(number, number, number)
+set_ui_position()
+set_ui_rotation(vector)
+set_ui_rotation(number, number, number)
+</code></pre>
+<p><br />
+Let's say, we want to display the dosimeter UI on the attachment model:</p>
+<pre><code class="language-lua">test_att:set_ui("ui_dosimeter.get_UI")
+test_att:set_ui_bone(5)
+test_att:set_ui_position(0,0.1,0)
+test_att:set_ui_rotation(90,0,0)
+</code></pre>
+<p><br />
+You can even change the scale of the UI using bone callbacks!<br />
+Just change the scale of the bone the UI is attached to.<br />
+<em>(Better use a bone that is not actually used by the model, or you'll scale a part of it.)</em></p>
+<pre><code class="language-lua">test_att:bone_callback(5, scale_func, false)
+
+local scale_mat = matrix():scale(1.5, 1.5, 1.5)
+
+function scale_func(mat)
+	mat:mulA_43(scale_mat)
+	return mat
+end
+</code></pre>
+<h4 id="have-fun"><a class="header" href="#have-fun">Have fun!</a></h4>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../scripting/script_animations.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../blender/creating-model-in-blender.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../scripting/script_animations.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../blender/creating-model-in-blender.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
