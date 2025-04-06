@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding="windows-1251"?>
+
+<xml>
+
+<specific_character id="han_yue_ling" team_default = "1">
+    <name>han_yue_ling_name</name>
+    <icon>ui_inGame2_barman</icon>
+    <map_icon x="1" y="4"></map_icon>
+    <bio></bio>
+    <class>han_yue_ling</class>
+    <community>dolg</community>
+    <terrain_sect>stalker_terrain</terrain_sect>
+    <money min="1000000" max="1000000" infinitive="1"></money>
+    <rank>18490</rank>
+    <reputation>2408</reputation>
+    <visual>actors\barman\barman</visual>
+    <snd_config>characters_voice\human\stalker_1\</snd_config>
+    <supplies></supplies>
+</specific_character>
+
+</xml>

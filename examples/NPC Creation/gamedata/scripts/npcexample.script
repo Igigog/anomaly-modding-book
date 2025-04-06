@@ -1,0 +1,22 @@
+-- Bind function actor_on_first_update() to callback "actor_on_first_update"
+function on_game_start()
+    RegisterScriptCallback("actor_on_first_update",spawn_han_yue_ling)
+end
+
+function spawn_han_yue_ling()
+    -- Check if having info "han_yue_ling_init"
+    if not has_alife_info("han_yue_ling_init") then
+        -- Check if squad does not exist.
+        if not get_story_se_object("han_yue_ling_squad") then
+            -- Get smart terrain "bar_dolg_general"
+            local smart = SIMBOARD.smarts_by_names["bar_dolg_general"]
+            -- Spawn squad "han_yue_ling_squad"
+            local squad = SIMBOARD:create_squad(smart,"han_yue_ling_squad")
+        end
+        -- Check if squad exist (spawned successfully).
+        if get_story_se_object("han_yue_ling_squad") then
+            -- Give info so the game won't spawn another squad every time loading a save file.
+            give_info("han_yue_ling_init")
+        end
+    end
+end
