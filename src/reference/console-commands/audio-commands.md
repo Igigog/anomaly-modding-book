@@ -4,7 +4,7 @@ ___
 
 ## General settings
 
-| Сommand | Command description | Command's argument | Note |
+| Command | Command description | Command's argument | Note |
 |---|---|:---:|---|
 | snd_restart | Restart the sound engine | — | - |
 | snd_cache_size | Cache size | 8 - 256 | - |
@@ -14,7 +14,7 @@ ___
 
 ## Music
 
-| Сommand | Command description | Command's argument | Note |
+| Command | Command description | Command's argument | Note |
 |---|---|:---:|---|
 | snd_volume_eff | Volume of sounds | 0.000 - 1.000 | - |
 | snd_volume_music | Music volume | 0.000 - 1.000 | - |
@@ -22,6 +22,6 @@ ___
 
 ## Effects
 
-| Сommand | Command description | Command's argument | Note |
+| Command | Command description | Command's argument | Note |
 |---|---|:---:|---|
 | snd_efx | EAX sound effects | 'on/off' or '1/0' | - |

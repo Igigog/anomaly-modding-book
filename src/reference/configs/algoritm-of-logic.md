@@ -33,7 +33,7 @@ flowchart LR;
 Depending on the condition, the object will change the current section. Thus, if the current section is `sr_idle@has_item` then parameters such as `sr_idle@inside` will be ignored, because information about other sections besides the current one will be unknown.
 
 ```admonish warning title="Important!"
-Information about the current section is stored in game saves. So if you change your logic, you should check if it works in a new game, because the object will keep its state during the save, and this means the previous sections before the current one will not be called (as shown above, from the `sr_idle@has_item` section the object will never return to the `sr_idle@wait` section). This is implemented in the [load_obj](https://github.com/AziatkaVictor/ltx-support/blob/7392d65c6663abfe3715c3f2666c10d3bbfa9087/data/scripts/xr_logic.script#L1400-L1453) script from `xr_logiс.script`.
+Information about the current section is stored in game saves. So if you change your logic, you should check if it works in a new game, because the object will keep its state during the save, and this means the previous sections before the current one will not be called (as shown above, from the `sr_idle@has_item` section the object will never return to the `sr_idle@wait` section). This is implemented in the [load_obj](https://github.com/AziatkaVictor/ltx-support/blob/7392d65c6663abfe3715c3f2666c10d3bbfa9087/data/scripts/xr_logic.script#L1400-L1453) script from `xr_logic.script`.
 ```
 
 Now let's look at more complex logic:

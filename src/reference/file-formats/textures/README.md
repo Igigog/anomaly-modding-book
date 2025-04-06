@@ -8,5 +8,4 @@ ___
 - [_detail_map.dds](detail-map.md)
 - [*.seq](seq.md)
 - [_terrain_map.dds](terrain-map.md)
-- [*.tga](tga.md)
 - [*.thm](thm.md)

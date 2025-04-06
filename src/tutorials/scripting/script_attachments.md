@@ -297,7 +297,7 @@ end
 **You have to set the callback for bone 0 on actor, stalker and mutant models, otherwise the attachment will awkwardly shift around sometimes due to foot IK.**  
 
 Attaching something to the first person hands is a little more involved.  
-Since left and right arms use seperate models, we have to attach two script attachments:
+Since left and right arms use separate models, we have to attach two script attachments:
 
 ```lua,icon=.devicon-lua-plain
 local exo_r = db.actor:add_attachment(3200, ogf_file)

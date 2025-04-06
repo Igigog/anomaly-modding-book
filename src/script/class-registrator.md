@@ -2,7 +2,7 @@
 
 ## About
 
-There are no classes in Lua. Their support is implemented by exporting them from [C++](../glossary/coding/c++.md) to [Lua](../glossary/coding/lua.md) via [Luabind](../glossary/coding/luabind.md)
+There are no classes in Lua. Their support is implemented by exporting them from [C++](https://en.wikipedia.org/wiki/C%2B%2B) to [Lua](https://en.wikipedia.org/wiki/Lua_(programming_language)) via [Luabind](../glossary/glossary.md#Luabind)
 
 ## Exported Classes List
 

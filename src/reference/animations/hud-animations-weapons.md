@@ -12,7 +12,7 @@ animation parameter name = animation name(hands), animation name(weapon), playba
 | Parameter Name | Engine Class | Parameter Description | Example Value | Parameter Possible Values And Their Descriptions |
 |---|---|---|---|---|
 | anm_idle |  | Idle animation |  |  |
-| anm_idle_empty |  | Idel animation with empty magazine |  |  |
+| anm_idle_empty |  | Idle animation with empty magazine |  |  |
 | anm_idle_g |  | Idle animation with underbarrel grenade launcher |  |  |
 | anm_idle_empty_g |  | Idle animation with empty underbarrel grenade launcher |  |  |
 | anm_idle_w_gl |  | Idle animation with active underbarrel grenade launcher |  |  |

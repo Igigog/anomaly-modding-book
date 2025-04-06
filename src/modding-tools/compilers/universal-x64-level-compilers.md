@@ -45,8 +45,8 @@ Universal level compiler that supports the compilation format for games of all s
 - Fixed some crashes of the original compilers
 - Possibility to force the use of smoothing groups on a certain geometry even if the `-nosmg` key is present (To use smoothing groups on a model it is necessary to assign a compile shader with `_smg` in its name to its materials (e.g. `def_vertex\def_vertex_smg`). The compile shader itself is enough to declone from the original one and rename it with this postfix)
 - Possibility to disable tessellation on certain geometry (for example, on nosun boxes). To do this you need to name a compile shader with `_no_tess` in its name. Keep in mind that disabling tessellation can cause problems with UV
-- Ability to disable shadow baking from certain [MU models](../../glossary/models/multiply-usage.md). Compile shaders of MU models must have `_no_mu_shadow` in the name. The difference between this solution and the usual disabling of the `Cast Shadow` checkbox is that in this case self-darkening of the MU model will be applied and the model will not be highlighted
-- Added support for Interl Embree and Nvidia CUDA
+- Ability to disable shadow baking from certain [MU models](../../glossary/glossary.md#MultiplyUsageObject). Compile shaders of MU models must have `_no_mu_shadow` in the name. The difference between this solution and the usual disabling of the `Cast Shadow` checkbox is that in this case self-darkening of the MU model will be applied and the model will not be highlighted
+- Added support for Intel Embree and Nvidia CUDA
 
 It requires Microsoft Visual C++ 2017 Redistributable x64 installed.
 
@@ -186,7 +186,7 @@ ___
 | -qual_draft | set the quality of the scene in Draft (does not affect the exposed shaders) |
 | -qual_high | set the quality of the scene to High (does not affect the exposed shaders) |
 | -saveobj_base | save level objects as .obj models to temp folder (base UV) |
-| -saveobj_lmap | save level objects as .obj models to temp folder (lighmap UV) |
+| -saveobj_lmap | save level objects as .obj models to temp folder (lightmap UV) |
 | -saveobj_cform | save level collision as .obj models to temp folder |
 | -force_default_shader | forced replacement of "`def_vertex`" shaders with "`default`" |
 | -force_vertex_shader | forced replacement of "`default`" shaders with "`def_vertex`" |
@@ -194,7 +194,7 @@ ___
 | -old_merge | Use old merging algorithm |
 | -lmap_size \<NUM> | Lightmap size (`default: 1024`) |
 | -border \<NUM> | BORDER parameter, experimental key (`default: 1`) |
-| -subdiv_size \<NUM> | Box size for subdiving gemetry, experimental key (`default: 32`) |
+| -subdiv_size \<NUM> | Box size for subdiving geometry, experimental key (`default: 32`) |
 | -bparams_ext | Support for advanced level settings exported by Yara SDK |
 
 #### Grass

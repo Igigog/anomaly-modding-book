@@ -7,7 +7,7 @@ ___
 - How working in Blender and creating models
 - How working with Blender [X-Ray Addon](../../modding-tools/blender/blender-x-ray-addon-summary.md)
 - Familiarize yourself with the limitations and capabilities of the format [*.object](../../reference/file-formats/models/object.md) (because you may export to it more often than to [*.ogf](../../reference/file-formats/models/ogf.md)) to avoid errors
-- Familiarize yourself with [Dynamic Object](../../glossary/models/dynamic-object.md) model type
+- Familiarize yourself with [Dynamic Object](../../glossary/glossary.md#DynamicObject) model type
 - How [Smoothing](../../reference/models/smoothing.md) work in X-Ray
 
 ___

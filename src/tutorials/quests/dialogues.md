@@ -104,7 +104,7 @@ In order to do that, add in your
 </string>
 ```
 
-Now, if you load your mod, you whould see an dialogue option for the barkeep in Rostok "Hy barkeep, I made my own dialogue." and he will answer "Very impressive."
+Now, if you load your mod, you should see an dialogue option for the barkeep in Rostok "Hy barkeep, I made my own dialogue." and he will answer "Very impressive."
 
 ## Chapter 3 : Advanced dialogue tree
   

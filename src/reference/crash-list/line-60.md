@@ -13,4 +13,4 @@ ___
 - Clarification: Not supported [*.efd](../file-formats/ai/efd.md) file version
 
 - Error fixing:
-  - The *.efd file must be generated with a supported version of the Evaluation Function Contructor
+  - The *.efd file must be generated with a supported version of the Evaluation Function Constructor

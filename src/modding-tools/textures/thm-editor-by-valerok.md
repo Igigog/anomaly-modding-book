@@ -134,12 +134,12 @@ Different shading algorithms
 
 | Field | Description |
 |---|---|
-| OrenNayar Blin | `Oren-Nayar shading` is a lighting model used in computer graphics to render matte (rough) surfaces with respect to their microgeometry.<br> `Blinn shading` uses a combination of diffuse and specular light reflection to achieve a more realistic image of shiny objects. |
+| OrenNayar Blin | `Oren-Nayar shading` is a lighting model used in computer graphics to render matte (rough) surfaces with respect to their micro geometry.<br> `Blinn shading` uses a combination of diffuse and specular light reflection to achieve a more realistic image of shiny objects. |
 | Blinn Phong | `Blinn shading` uses a combination of diffuse and specular light reflection to achieve a more realistic image of shiny objects.<br> `Phong shading` model can achieve good visual results, making objects appear more three-dimensional and realistic, but at the same time it cannot always accurately reproduce lighting effects on more complex or uneven surfaces. |
 | Phong Metal | `Phong shading` model can achieve good visual results, making objects appear more three-dimensional and realistic, but at the same time it cannot always accurately reproduce lighting effects on more complex or uneven surfaces.<br> `Metal shading` is focuses on the realization of materials imitating metallic surfaces. |
-| Metal OrenNayar | `Metal shading` is focuses on the realization of materials imitating metallic surfaces.<br> `Oren-Nayar shading` is a lighting model used in computer graphics to render matte (rough) surfaces with respect to their microgeometry. |
+| Metal OrenNayar | `Metal shading` is focuses on the realization of materials imitating metallic surfaces.<br> `Oren-Nayar shading` is a lighting model used in computer graphics to render matte (rough) surfaces with respect to their micro geometry. |
 
-### Chechboxes
+### Checkboxes
 
 - [ ] SOC format - SoC format of *.thm
 
@@ -149,7 +149,7 @@ Different shading algorithms
 |---|---|
 | Border Color |  |
 | Fade Color |  |
-| Fade Amout |  |
+| Fade Amount |  |
 | Material Weight | Shading model weight (0.0 - 1.0) |
 | Detail Scale | [Detail Map](../../reference/file-formats/textures/detail-map.md) Scale |
 | Texture Width | Texture Width |

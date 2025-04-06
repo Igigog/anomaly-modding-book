@@ -214,7 +214,7 @@ function xr_conditions.has_more_money_than(a,b,c)
     
     -- a and b will be the game objects given as arguments to the xr_logic.pick_section_from_condlist call that evaluates this condlist
     -- most of the times a will be the actor game object and b one npc game object, but unless you're 100% sure of that (after testing or looking which pick_section_from_condlist parses it and with which arguments) 
-    -- dont ever rely on those, i've seen cases where b is a server object or even nil
+    -- don't ever rely on those, i've seen cases where b is a server object or even nil
 
     local amount = c and c[1] and tonumber(c[1])
     -- c is a table where condlist arguments for the function are passed

@@ -381,7 +381,7 @@ coefficients of parameter change rates during sleep
 
 </details>
 
-### Abilitys
+### Ability
 
 Unique abilitys for mutants. Each mutant may have its own individual abilities, or none at all.
 
@@ -591,12 +591,12 @@ ___
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 |---|---|---|---|
-| Gravi_Cooldown |  | 6840 | milisec |
+| Gravi_Cooldown |  | 6840 | milliseconds |
 | Gravi_MinDist |  | 1 | meter |
 | Gravi_MaxDist |  | 18 | meter |
 | Gravi_Speed |  | 33 | meter/sec |
 | Gravi_Step |  | 2 | meter |
-| Gravi_Time_To_Hold |  | 1940 | milisec |
+| Gravi_Time_To_Hold |  | 1940 | milliseconds |
 | Gravi_Radius |  | 3.0 |  |
 | Gravi_Impulse_To_Objects |  | 70.0 |  |
 | Gravi_Impulse_To_Enemy |  | 330.0 |  |
@@ -746,8 +746,8 @@ Parameters of a dog's behavior in the area designated for him home
 |---|---|---|---|
 | anim_factor |  | 50 | Specified in percent (from 1 to 100) |
 | corpse_use_timeout | timeout on using a corpse | 10 | Specified in seconds |
-| min_life_time | minimum waking time | 10 | сек (расчитывается min_life_time + rand(10) * min_life_time) |
-| min_sleep_time | minimum sleep time | 5 | сек. (расчитывается min_sleep_time + rand(5) * min_sleep_time) |
+| min_life_time | minimum waking time | 10 | сек (min_life_time + rand(10) * min_life_time) |
+| min_sleep_time | minimum sleep time | 5 | сек. (min_sleep_time + rand(5) * min_sleep_time) |
 | drive_out_time | the time during which the dog will try to chase the enemy away | 5 |  |
 | min_move_dist | the minimum length of the patrol section | 4 | Specified in minutes |
 | max_move_dist | maximum length of the patrol section | 6 | Specified in minutes |

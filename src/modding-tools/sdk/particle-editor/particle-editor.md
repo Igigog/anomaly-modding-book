@@ -1,4 +1,4 @@
-# Paricle Editor
+# Particle Editor
 
 ___
 

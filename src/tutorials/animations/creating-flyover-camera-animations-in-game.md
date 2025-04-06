@@ -4,7 +4,7 @@ ___
 
 ## Need to know
 
-- What is [.xrdemo](../../reference/file-formats/general/xrdemo.md)
+- What is [*.xrdemo](../../reference/file-formats/general/xrdemo.md)
 
 ___
 
@@ -18,4 +18,4 @@ Press `Esc` to save the animation and exit the flyover mode
 
 Now type `demo_play` "*your_file_name*" and you'll see your recorded flyover
 
-.xrdemo recordings are saved in `appdata\savedgames`
+*.xrdemo recordings are saved in `appdata\savedgames`

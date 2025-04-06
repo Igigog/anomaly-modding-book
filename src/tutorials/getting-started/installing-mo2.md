@@ -6,7 +6,7 @@ This guide is meant to show you how to setup Mod Organizer 2 and how to mod Anom
 
 Made by [Starcry](https://www.blogger.com/profile/07678551170854762591)
 
-![Mod Organiser logo centered](mo2-images/mo2anomaly.png)
+![Mod Organizer logo centered](mo2-images/mo2anomaly.png)
 
 ## What makes Mod Organizer 2 the superior mod manager?
 
@@ -92,13 +92,13 @@ To make things work together you need to maintain a load order, that means that 
 
 > A good start would be [Grok's Community Curated Add-ons List for Anomaly 1.5.1](https://www.moddb.com/mods/stalker-anomaly/addons/groks-anomaly-community-curated-add-ons-list).
 
-### Is it better to use a modpack or do everything yourself?
+### Is it better to use a mod pack or do everything yourself?
 
-If you are new to modding you might think simply downloading a modpack is the best option, but that might not be the case as most of the time modpacks are the vision of the person who created it - meaning it might have features you won't like and it can be difficult to remove them, you also can't know if it works fine as it's all packed into one folder.
+If you are new to modding you might think simply downloading a mod pack is the best option, but that might not be the case as most of the time mod packs are the vision of the person who created it - meaning it might have features you won't like and it can be difficult to remove them, you also can't know if it works fine as it's all packed into one folder.
 
-Using a modpack will also mean you won't be able to get help from the community with your crashes as only the modpack creator knows what changes were made and you'll have to rely on them to help you.
+Using a mod pack will also mean you won't be able to get help from the community with your crashes as only the mod pack creator knows what changes were made and you'll have to rely on them to help you.
 
-Most of the time modpacks aren't being updated frequently and it's near impossible to install any other addon with them.
+Most of the time mod packs aren't being updated frequently and it's near impossible to install any other addon with them.
 
 ___
 
@@ -120,7 +120,7 @@ As you can see in the picture below I get a popup when trying to install JSRS be
 
 ![Creating a new instance centered](mo2-images/11.png)
 
-In case you get this popup instead of the one above, you need to expand the filetree and have only option selected, after that you rightclick it and press "set as stalker directory"
+In case you get this popup instead of the one above, you need to expand the file tree and have only option selected, after that you rightclick it and press "set as stalker directory"
 
 ![Creating a new instance centered](mo2-images/12.png)
 
@@ -137,7 +137,7 @@ InstallDialog=true
 
 ### Reporting crashes
 
-Please ignore this if you are using a modpack and report any crashes to the modpack "creator".
+Please ignore this if you are using a mod pack and report any crashes to the mod pack "creator".
 
 If your game crashes and you don't know what caused it go to addon-discussion in Anomaly discord and post your load order along with a log from appdata/logs, it will be a text file named "xray_username".
 

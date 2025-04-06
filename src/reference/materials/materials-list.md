@@ -8,7 +8,7 @@ This section contains a list and description of the shaders that are available i
 
 ## List
 
-### [Static object](../../glossary/models/static-object.md) materials
+### [Static object](../../glossary/glossary.md#StaticObject) materials
 
 | Shader name and path | Description |
 |---|---|
@@ -47,7 +47,7 @@ This section contains a list and description of the shaders that are available i
 | material\wood | wooden surface, floor wooden steps |
 | material\wooden_board | wooden board, wooden wagon, box |
 
-### [Dynamic object](../../glossary/models/dynamic-object.md) materials
+### [Dynamic object](../../glossary/glossary.md#DynamicObject) materials
 
 | Shader name and path | Description |
 |---|---|

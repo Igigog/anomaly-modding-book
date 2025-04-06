@@ -70,7 +70,7 @@ ___
           </tr>
           <tr>
             <td>Optimize Motions</td>
-            <td>Goes through all the bones in the animation and optimizes their animation channels (e.g., position, rotation, scale) by removing    redundantkeyframes</td>
+            <td>Goes through all the bones in the animation and optimizes their animation channels (e.g., position, rotation, scale) by removing    redundant keyframes</td>
             <td></td>
           </tr>
           <tr>
@@ -608,8 +608,8 @@ ___
 |  | Open Level | Open Level |
 |  | Save Level | Save Level |
 |  | Build CFORM | Build CFORM |
-|  | Build AI-Map | Buiild AI-Map |
-|  | Build Game Graph | Buidl Game Graph |
+|  | Build AI-Map | Build AI-Map |
+|  | Build Game Graph | Build Game Graph |
 |  | Start Play in Editor | Start Play in Editor |
 |  |  | Play in Editor Settings |
 |  |  | Reload Configs |
@@ -619,6 +619,6 @@ ___
 |  |  | Open 'gamedata' folder |
 |  | Hint |  |
 |  | Volume |  |
-|  | Phys Simulation | Activates the physics si,ulation of the selected object(s) |
-|  | Use Pos | Use the position of the selected object when physics si,ulation is active. The position of the object will be applied when similating physics |
+|  | Phys Simulation | Activates the physics simulation of the selected object(s) |
+|  | Use Pos | Use the position of the selected object when physics simulation is active. The position of the object will be applied when simulating physics |
 |  | Preference | Preference |

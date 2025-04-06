@@ -37,7 +37,7 @@ Checkboxes
 
 | Checkboxes | Description |
 |---|---|
-| SOC Fromat thm | Generates SOC .thm file format |
+| SOC Format thm | Generates SOC .thm file format |
 
 ___
 

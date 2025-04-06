@@ -22,7 +22,7 @@ Allows you to edit texture parameters
 
 Shows the characteristics of the texture. Width, height and alpha channel.
 
-### Fromat
+### Format
 
 | Format | Description |
 |---|---|
@@ -79,10 +79,10 @@ Shows the characteristics of the texture. Width, height and alpha channel.
 
 | Material | Description |
 |---|---|
-| OrenNayar <-> Blin | `Oren-Nayar shading` is a lighting model used in computer graphics to render matte (rough) surfaces with respect to their microgeometry.<br> `Blinn shading` uses a combination of diffuse and specular light reflection to achieve a more realistic image of shiny objects |
+| OrenNayar <-> Blin | `Oren-Nayar shading` is a lighting model used in computer graphics to render matte (rough) surfaces with respect to their micro geometry.<br> `Blinn shading` uses a combination of diffuse and specular light reflection to achieve a more realistic image of shiny objects |
 | Blin <-> Phong | `Blinn shading` uses a combination of diffuse and specular light reflection to achieve a more realistic image of shiny objects.<br> `Phong shading` model can achieve good visual results, making objects appear more three-dimensional and realistic, but at the same time it cannot always accurately reproduce lighting effects on more complex or uneven surfaces |
 | Phong <-> Metal | `Phong shading` model can achieve good visual results, making objects appear more three-dimensional and realistic, but at the same time it cannot always accurately reproduce lighting effects on more complex or uneven surfaces.<br> `Metal shading` is focuses on the realization of materials imitating metallic surfaces |
-| Metal <-> OrenNayar | `Metal shading` is focuses on the realization of materials imitating metallic surfaces.<br> `Oren-Nayar shading` is a lighting model used in computer graphics to render matte (rough) surfaces with respect to their microgeometry |
+| Metal <-> OrenNayar | `Metal shading` is focuses on the realization of materials imitating metallic surfaces.<br> `Oren-Nayar shading` is a lighting model used in computer graphics to render matte (rough) surfaces with respect to their micro geometry |
 | PBR |  |
 | Weight | “Weight” of shading model<br> range is 0 - 1 |
 
@@ -101,7 +101,7 @@ Shows the characteristics of the texture. Width, height and alpha channel.
 | Enable Color |  |
 | Enable Alpha |  |
 | Delay 'n' MIP |  |
-| % of colot to fade in  |  |
+| % of color to fade in  |  |
 | Color |  |
 | Alpha |  |
 

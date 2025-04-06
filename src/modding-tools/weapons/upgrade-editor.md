@@ -58,11 +58,11 @@ Visual editor that makes it relatively quick and easy to create weapon upgrade s
 |---|---|
 | Set preview texture... | The texture of the item to be upgraded is selected |
 | Set upgrade texture... | The texture of the item's upgrades is selected |
-| Assotiate program with .upr | Assotiate program with .upr (Upgrades tree file) |
-| Remove .upr assotiation | Remove .upr assotiation |
+| Associate program with .upr | Associate program with .upr (Upgrades tree file) |
+| Remove .upr association | Remove .upr association |
 | Clear program's registry settings | ? |
 | Calculate treasures | ? |
-| Find parametr... | Finds upgrade parameters |
+| Find parameter... | Finds upgrade parameters |
 
 #### Help Button
 
@@ -98,7 +98,7 @@ ___
 | Button | Description |
 |---|---|
 | Background | On/Off background |
-| Aligment |  |
+| Alignment |  |
 
 #### Upgrades control
 
@@ -147,7 +147,7 @@ ___
 | R: | ? |
 | Freeze | Enables Freezing |
 
-#### Upgared groups
+#### Upgraded groups
 
 | Button | Description |
 |---|---|

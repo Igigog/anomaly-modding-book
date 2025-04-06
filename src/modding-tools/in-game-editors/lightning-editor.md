@@ -10,10 +10,10 @@ Allows you to change the various lighting settings of the weather preset
 
 First you need to select a weather file from the drop-down list and then edit it.
 
-### Keybinds
+### Key binds
 
 - `INSERT` to start
-- `Up` and `Down` keys to rotate through the avaiable commands
+- `Up` and `Down` keys to rotate through the available commands
 - `NUMPAD_8` and `NUMPAD_2` keys to increase/reduce the value of highlighted command
 - `Enter` key to save the adjusted commands to print_table.txt
 
@@ -25,7 +25,7 @@ The commands and their settings are assigned in the script "`ui_debug_lightning.
 
 `List of commands`
 
-| Сommand | Command description |
+| Command | Command description |
 |---|---|
 | r2_sun_lumscale | Sunlight intensity control |
 | r2_sun_lumscale_amb | Ambient light intensity control |

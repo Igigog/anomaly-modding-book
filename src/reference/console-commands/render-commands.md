@@ -2,7 +2,7 @@
 
 ___
 
-| Сommand | Command description | Command's argument | Note |
+| Command | Command description | Command's argument | Note |
 |---|---|:---:|---|
 | renderer | Render type (old) |  | - |
 | rs_vis_distance | Visibility range | 0.400 - 1.500 | - |
@@ -44,7 +44,7 @@ ___
 
 ## Brightness-Contrast-Gamma
 
-| Сommand | Command description | Command's argument | Note |
+| Command | Command description | Command's argument | Note |
 |---|---|:---:|---|
 | rs_c_brightness | Brightness | 0.500 - 1.500 | - |
 | rs_c_contrast | Contrast | 0.500 - 1.500 | - |
@@ -52,7 +52,7 @@ ___
 
 ## General Render Debug
 
-| Сommand | Command description | Command's argument | Note |
+| Command | Command description | Command's argument | Note |
 |---|---|:---:|---|
 | vid_bpp |  |  |  |
 | build_ssa |  | - |  |

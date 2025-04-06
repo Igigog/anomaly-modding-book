@@ -6,7 +6,7 @@ ___
 DirectX 9.0c - (Shader Model 3.0)
 ```
 
-| Сommand | Command description | Command's argument | Note |
+| Command | Command description | Command's argument | Note |
 |---|---|:---:|---|
 | r2_aa | "Pseudo-smoothing" on dynamic lighting | 'on/off' or '1/0' | - |
 | r2_aa_break | Distance at which the "Pseudo-smoothing" effect works | 0.000000e+00, 0.000000e+00, 0.000000e+00 - 1.000000e+00, 1.000000e+00, 1.000000e+00 | - |
@@ -107,7 +107,7 @@ DirectX 9.0c - (Shader Model 3.0)
 
 ## R2 Debug
 
-| Сommand | Command description | Command's argument | Note |
+| Command | Command description | Command's argument | Note |
 |---|---|:---:|---|
 | r2_use_nvdbt |  | - |  |
 | r2_mt |  | - |  |

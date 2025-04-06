@@ -2,7 +2,7 @@
 
 ___
 
-| Сommand | Command description | Command's argument | Note |
+| Command | Command description | Command's argument | Note |
 |---|---|:---:|---|
 | help | Outputs a list of console commands | - | - |
 | g_game_difficulty | Selects the game difficulty | gd_novice<br> gd_stalker<br> gd_veteran<br> gd_master |  |
@@ -22,5 +22,5 @@ ___
 | time_factor | Ability to change the game time | 0.001 - 1000.0 | - |
 | flush | Flush log | - | - |
 | clear_log |  | - | - |
-| cfg_load | Load confing file | - | - |
-| cfg_save | Save confing file | - | - |
+| cfg_load | Load config file | - | - |
+| cfg_save | Save config file | - | - |

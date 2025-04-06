@@ -6,7 +6,7 @@ ___
 
 ![alt text](../images/content-browser.png)
 
-| Icon | Name | Desciption |
+| Icon | Name | Description |
 |---|---|---|
 |  | Show THM | Will show *.thm files |
 |  | View Mode | View mode<br> Tile<br> List |

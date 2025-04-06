@@ -4,7 +4,7 @@ ___
 
 ## About
 
-In the active armature, it removes all rig bones, non-exported bones, contraints, and changes the parental relationships of the bones so that the armature has only what will be used for export. This operator can be useful for cleaning up armatures to make it easier to examine them and understand what data will be written to the file when exported. Extra bones and contraints that are only used in blender will not interfere with learning the game parameters.
+In the active armature, it removes all rig bones, non-exported bones, constraints, and changes the parental relationships of the bones so that the armature has only what will be used for export. This operator can be useful for cleaning up armatures to make it easier to examine them and understand what data will be written to the file when exported. Extra bones and constraints that are only used in blender will not interfere with learning the game parameters.
 
 ___
 

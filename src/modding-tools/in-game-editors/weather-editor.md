@@ -7,7 +7,7 @@ ___
 Weather editor allows you to change weather values in real-time. Minute precision
 
 - The GUI is interactive and easy to use, with ability to modify or create new weather files
-- Edited values are temporarly cached for the weathers, hours and minutes you worked on. You can return to them in case you turned off the editor (Avoid exiting or reloading when you have unsaved values)
+- Edited values are temporary cached for the weathers, hours and minutes you worked on. You can return to them in case you turned off the editor (Avoid exiting or reloading when you have unsaved values)
 - In Viewer mode, you can witness weather changes by the time slider
 
 ![weather-editor centered](images/weather-editor.png)
@@ -16,7 +16,7 @@ Weather editor allows you to change weather values in real-time. Minute precisio
 
 ![Viewer Mode centered](images/viewer-mode.png)
 
-### Keybinds
+### Key binds
 
 - `Up Arrow` - select previous parameter
 - `Down Arrow` - select next parameter
@@ -34,7 +34,7 @@ Weather editor allows you to change weather values in real-time. Minute precisio
 - `F` - reduce selected group value (all parameters within)
 - `T` - next moment
 - `G` - previous moment
-- `C` - copy select paramter value
+- `C` - copy select parameter value
 - `C + CTRL` - copy current moment settings
 - `V` - paste/apply copied parameter value
 - `V + CTRL` - paste/apply to current moment settings
@@ -52,7 +52,7 @@ Weather editor allows you to change weather values in real-time. Minute precisio
 | ![Alt text](icons/paste.png) | Paste settings |
 | ![Alt text](icons/view-mode.png) | Viewer Mode |
 | ![Alt text](icons/pause.png) | Pause in Viewer Mode |
-| ![Alt text](icons/resume.png) | Autoplay in Viewer Mode |
+| ![Alt text](icons/resume.png) | Auto play in Viewer Mode |
 | ![Alt text](icons/save.png) | Save to new file if you indicated the name in box below, otherwise save to current file. Name of custom files must start with "`w_`". |
 | ![Alt text](icons/clear-cache-values.png) | Clear cached values |
 | ![Alt text](icons/resume.png) | Resume weather, and exit |

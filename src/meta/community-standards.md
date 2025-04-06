@@ -1,4 +1,4 @@
-# Community Standarts
+# Community Standards
 
 ___
 
@@ -29,7 +29,7 @@ You can use any one that supports LUA and XML files.
 
 Also, you may need these extensions:
 
-- [ltx suport Overview](../modding-tools/coding/ltx-support.md)
+- [ltx support Overview](../modding-tools/coding/ltx-support.md)
 - [Encodex GitHub Source](https://github.com/Tosox/Encodex)
 
 ### Tools

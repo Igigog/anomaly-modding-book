@@ -60,47 +60,47 @@ You need to install the following extensions:
 4. [Open in External App by YuTengjing](https://marketplace.visualstudio.com/items?itemName=YuTengjing.open-in-external-app) - ability to open the file in other applications. Needed for [*.ogf](../../reference/file-formats/models/ogf.md), [*.object](../../reference/file-formats/models/object.md), [.dm](../../reference/file-formats/models/dm.md), [*.omf](../../reference/file-formats/animations/omf.md), [*.dds](../../reference/file-formats/textures/dds.md), [.thm](../../reference/file-formats/textures/thm.md), [*.ogm](../../reference/file-formats/audio-video/ogm.md) files
    - The extension can be configured by writing in `settings.json` in the `"openInExternalApp.openMapper": [` needed programs. Example:
 
-```json
-   "openInExternalApp.openMapper": [
+    ```json
+    "openInExternalApp.openMapper": [
 
-    // 3D models (ogf, dm, object)
-        {
-            "extensionName": "ogf",
-            "apps": "D:\\Нужное\\Modding Tools\\OGF.Editor\\OGF tool.exe"
-        },
-        {
-            "extensionName": "object",
-            "apps": "D:\\Нужное\\Modding Tools\\Object.Editor.4.35\\Object tool.exe"
-        },
-        {
-            "extensionName": "dm",
-            "apps": "D:\\Нужное\\Modding Tools\\OGF.Editor\\OGF tool.exe"
-        },
-    // Textures (thm, dds)
-        {
-            "extensionName": "thm",
-            "apps": "D:\\Нужное\\Modding Tools\\THM_Editor_by_ValeroK\\THM Editor.exe"
-        },
-        {
-            "extensionName": "dds",
-            "apps": "C:\\Program Files\\paint.net\\paintdotnet.exe"
-        },
+        // 3D models (ogf, dm, object)
+            {
+                "extensionName": "ogf",
+                "apps": "D:\\Needed\\Modding Tools\\OGF.Editor\\OGF tool.exe"
+            },
+            {
+                "extensionName": "object",
+                "apps": "D:\\Needed\\Modding Tools\\Object.Editor.4.35\\Object tool.exe"
+            },
+            {
+                "extensionName": "dm",
+                "apps": "D:\\Needed\\Modding Tools\\OGF.Editor\\OGF tool.exe"
+            },
+        // Textures (thm, dds)
+            {
+                "extensionName": "thm",
+                "apps": "D:\\Needed\\Modding Tools\\THM_Editor_by_ValeroK\\THM Editor.exe"
+            },
+            {
+                "extensionName": "dds",
+                "apps": "C:\\Program Files\\paint.net\\paintdotnet.exe"
+            },
 
-    // Video
-        {
-            "extensionName": "ogm",
-            "apps": "C:\\Program Files\\VideoLAN\\VLC\\vlc.exe"
-        },
-    // Animations
-        {
-            "extensionName": "omf",
-            "apps": "D:\\Нужное\\Modding Tools\\OMF.Editor.1.2\\OMF_Editor.exe"
-        },
-    ],
-```
+        // Video
+            {
+                "extensionName": "ogm",
+                "apps": "C:\\Program Files\\VideoLAN\\VLC\\vlc.exe"
+            },
+        // Animations
+            {
+                "extensionName": "omf",
+                "apps": "D:\\Needed\\Modding Tools\\OMF.Editor.1.2\\OMF_Editor.exe"
+            },
+        ],
+    ```
 
 5. HLSL support and preview for shaders:
    - [Shader languages support for VS Code by slevesque](https://marketplace.visualstudio.com/items?itemName=slevesque.shader)
    - [HLSL preview by A2K](https://marketplace.visualstudio.com/items?itemName=A2K.hlsl-preview)
 
-6. [TGA Image Preview by lunarwtr](https://marketplace.visualstudio.com/items?itemName=lunarwtr.tga-image-preview) - Preview [.tga](../../reference/file-formats/textures/tga.md) files
+6. [TGA Image Preview by lunarwtr](https://marketplace.visualstudio.com/items?itemName=lunarwtr.tga-image-preview) - Preview *.tga files

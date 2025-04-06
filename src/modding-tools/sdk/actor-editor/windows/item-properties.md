@@ -315,7 +315,7 @@ ___
   <tr>
     <td rowspan="7">Global</td>
     <td>Motion Count</td>
-    <td>Motion сount</td>
+    <td>Motion count</td>
     <td>-</td>
     <td>-</td>
   </tr>

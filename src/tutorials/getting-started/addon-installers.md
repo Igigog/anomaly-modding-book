@@ -25,7 +25,7 @@ BAIN installers present as a list of check boxes. Folders with 00 will be checke
 [DNPCAV](https://www.moddb.com/mods/stalker-anomaly/addons/dynamic-npc-armor-visuals) uses BAIN.
 
 The second is FOMOD
-Fomod installers can be made to look like a facy windows installer, have preview images, descriptions of what each component does.
+Fomod installers can be made to look like a fancy windows installer, have preview images, descriptions of what each component does.
 There is a tool that can help you build a FOMOD installer.
 
 [Guide and tool](https://wiki.nexusmods.com/index.php/How_to_create_mod_installers)

@@ -187,7 +187,7 @@ axr_main.config:r_value("mcm", path, type, default) --see _g for how r_value fun
 
 ### <a name="per-save-mcm-options"></a>Per-save MCM settings
 
-*This uses [dph-hcl's orginal script](https://www.moddb.com/mods/stalker-anomaly/addons/151-mcm-13-mcm-savefile-storage). Refer to their mod and script for more.*
+*This uses [dph-hcl's original script](https://www.moddb.com/mods/stalker-anomaly/addons/151-mcm-13-mcm-savefile-storage). Refer to their mod and script for more.*
 
 > dph-hcl's original function has been aliased here as `ui_mcm.store_in_save(path)`. This function can be called safely as MCM will simply print an error if dph-hcl's script is missing.
 
@@ -400,7 +400,7 @@ When called from the `on_key_hold` callback, it will return true after the key h
 
 `ui_mcm.simple_press(id, key, functor)`
 
-- `id`: a unique identifer for your event
+- `id`: a unique identifier for your event
 - `key`: the key passed into the `on_key_hold` callback
 - `function`: table {function, parameters} To be executed, when it is determined that the key press is not long or double (or multi-press in general)
 

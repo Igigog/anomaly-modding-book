@@ -2,7 +2,7 @@
 
 ___
 
-| Сommand | Command description | Command's argument | Note |
+| Command | Command description | Command's argument | Note |
 |---|---|:---:|---|
 | ai_aim_max_angle | The maximum angle at which the angular velocity of the character when aiming is calculated by the formula | 0.000 - 31.416 | - |
 | ai_aim_min_angle | The minimum angle at which the angular velocity of the character when aiming is calculated by the formula | 0.000 - 31.416 | - |
@@ -15,7 +15,7 @@ ___
 
 ## Ai Debug
 
-| Сommand | Command description | Command's argument | Note |
+| Command | Command description | Command's argument | Note |
 |---|---|:---:|---|
 | al_path |  |  | - |
 | al_time_factor |  |  | - |

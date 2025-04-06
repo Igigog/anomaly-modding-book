@@ -12,7 +12,7 @@ ___
 |---|---|
 | All |  |
 | Visible Only |  |
-| Invinsible Only |  |
+| Invisible Only |  |
 | Focus |  |
 | Show |  |
 | Hide |  |

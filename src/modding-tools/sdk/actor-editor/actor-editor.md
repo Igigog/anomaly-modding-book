@@ -63,7 +63,7 @@ The Actor editor is usually needed to customize objects (NPCs, Objects, etc.)
           </tr>
           <tr>
             <td>Optimize Motions</td>
-            <td>Goes through all the bones in the animation and optimizes their animation channels (e.g., position, rotation, scale) by removing    redundantkeyframes</td>
+            <td>Goes through all the bones in the animation and optimizes their animation channels (e.g., position, rotation, scale) by removing    redundant keyframes</td>
             <td></td>
           </tr>
           <tr>
@@ -137,7 +137,7 @@ The Actor editor is usually needed to customize objects (NPCs, Objects, etc.)
           </tr>
           <tr>
             <td>Synchronize Sounds (Soft)</td>
-            <td>Searches for new sounds in the file system and imports them. Deletes only those sounds that do not exist in the file system and are notused</     td>
+            <td>Searches for new sounds in the file system and imports them. Deletes only those sounds that do not exist in the file system and are not used</     td>
           </tr>
           <tr>
             <td>Synchronize Sounds (Hard)</td>
@@ -330,4 +330,4 @@ The Actor editor is usually needed to customize objects (NPCs, Objects, etc.)
 |  | Save | Save file |
 |  | Open Gamedata | Open "gamedata" folder |
 |  | Simulate | Activates physics simulation |
-|  | Make Thrumbnail |  |
+|  | Make Thumbnail |  |

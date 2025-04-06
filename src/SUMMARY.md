@@ -9,6 +9,7 @@
 - [Contributing to this book](meta/contributing.md)
   - [Book Structure Overview](meta/book-overview.md)
   - [Style Sheet](meta/style-sheet.md)
+- [Community Standards](meta/community-standards.md)
 - [Acknowledgements](meta/acknowledgements.md)
 - [Links](meta/links.md)
 
@@ -42,7 +43,7 @@
   - [Structure of Files](reference/configs/structure-of-files.md)
   - [Condlists](reference/configs/condlists.md)
   - [Inventory Icons](tutorials/configs/inventory_icons.md)
-  - [Algoritm of Logic](reference/configs/algoritm-of-logic.md)
+  - [Algorithm of Logic](reference/configs/algoritm-of-logic.md)
 
 - [Modelling](tutorials/models/README.md)
   - [Creating static model in Blender](tutorials/models/creating-static-model.md)
@@ -192,6 +193,9 @@
 - [Materials](reference/materials/README.md)
   - [Materials List](reference/materials/materials-list.md)
 
+- [Models]()
+  - [Smoothing](reference/models/smoothing.md)
+
 - [Audio](reference/audio/README.md)
   - [Sound Envornment List](reference/audio/sound-envornment-list.md)
 
@@ -199,24 +203,25 @@
 
 # Engine
 
-- [Engine](engine/README.md)
+- [Engine Overview](engine/README.md)
   - [X-Ray Coordinate System](engine/xray-coordinate-system.md)
   - [Engine Classes](engine/engine-classes.md)
-  - [Console Commands](reference/console-commands/general-game-console-commands.md)
-    - [Control](reference/console-commands/control-commands.md)
-    - [Demo Record](reference/console-commands/demo-record-commands.md)
-    - [Animations](reference/console-commands/animation-commands.md)
-    - [Audio](reference/console-commands/audio-commands.md)
-    - [Discord](reference/console-commands/discord-commands.md)
-    - [Debug](reference/console-commands/debug-commands.md)
-    - [AI](reference/console-commands/ai-commands.md)
-    - [HUD Camera](reference/console-commands/hud-camera-commands.md)
-    - [Render](reference/console-commands/render-commands.md)
-      - [R1 Render](reference/console-commands/r1-render-commands.md)
-      - [R2 Render](reference/console-commands/r2-render-commands.md)
-      - [R3 Render](reference/console-commands/r3-render-commands.md)
-      - [R4 Render](reference/console-commands/r4-render-commands.md)
-    - [UI](reference/console-commands/ui-commands.md)
+- [Console Commands](reference/console-commands/general-game-console-commands.md)
+  - [Control](reference/console-commands/control-commands.md)
+  - [Demo Record](reference/console-commands/demo-record-commands.md)
+  - [Animations](reference/console-commands/animation-commands.md)
+  - [Audio](reference/console-commands/audio-commands.md)
+  - [Discord](reference/console-commands/discord-commands.md)
+  - [Debug](reference/console-commands/debug-commands.md)
+  - [AI](reference/console-commands/ai-commands.md)
+  - [HUD Camera](reference/console-commands/hud-camera-commands.md)
+  - [Render](reference/console-commands/render-commands.md)
+    - [R1 Render](reference/console-commands/r1-render-commands.md)
+    - [R2 Render](reference/console-commands/r2-render-commands.md)
+    - [R3 Render](reference/console-commands/r3-render-commands.md)
+    - [R4 Render](reference/console-commands/r4-render-commands.md)
+  - [UI](reference/console-commands/ui-commands.md)
+- [Command-line Switches](engine/command-line-switches.md)
 
 ---
 

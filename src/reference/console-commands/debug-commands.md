@@ -2,7 +2,7 @@
 
 ___
 
-| Сommand | Command description | Command's argument | Note |
+| Command | Command description | Command's argument | Note |
 |---|---|:---:|---|
 | g_god | Enables God Mode | 'on/off' or '1/0' | - |
 | g_unlimitedammo | Enables Infinite Ammo Mode | 'on/off' or '1/0' | - |
@@ -17,7 +17,7 @@ ___
 
 ## Debug Console Commands (Debug Build)
 
-| Сommand | Command description | Command's argument | Note |
+| Command | Command description | Command's argument | Note |
 |---|---|:---:|---|
 | stat_models |  | - |  |
 | stat_memory_checkpoint |  | - |  |

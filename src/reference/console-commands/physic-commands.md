@@ -2,7 +2,7 @@
 
 ___
 
-| Сommand | Command description | Command's argument | Note |
+| Command | Command description | Command's argument | Note |
 |---|---|:---:|---|
 | g_dead_body_collision | Enables dead body collision | full<br> actor_only<br> off | - |
 | ph_gravity | Gravity | 0.000 - 1000.000 | - |
@@ -11,7 +11,7 @@ ___
 
 ## Physics Debug
 
-| Сommand | Command description | Command's argument | Note |
+| Command | Command description | Command's argument | Note |
 |---|---|:---:|---|
 | dbg_draw_ph_contacts |  |  | - |
 | dbg_draw_ph_enabled_aabbs |  |  | - |

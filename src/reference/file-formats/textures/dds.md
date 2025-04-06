@@ -12,7 +12,7 @@ ___
 
 ### Format
 
-- RGB - Diffuse colour
+- RGB - Diffuse color
 - A - Alpha (Used for translucent/transparent shaders like glass/grass)
 
 ### Supported texture compression formats

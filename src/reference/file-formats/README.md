@@ -36,7 +36,6 @@ ___
 | Extension | Description |
 |---|---|
 | [*.efd](../file-formats/ai/efd.md) | Table of AI heuristic parameters, contains constants for fine-tuning A-Life. They are used as input parameters in scripts |
-| [*.dat](../file-formats/ai/dat.md) |  |
 
 ___
 
@@ -60,7 +59,6 @@ ___
 | [*.cs](../file-formats/shaders/cs.md) | Compute shader |
 | [*.gs](../file-formats/shaders/gs.md) | Geometry shader |
 | [*.ds](../file-formats/shaders/ds.md) | Domain shader |
-| [*.h](../file-formats/engine/h.md) | Header file |
 | [*.hs](../file-formats/shaders/hs.md) | Hull shader |
 | [*.vs](../file-formats/shaders/vs.md) | Vertex shader |
 | [*.ps](../file-formats/shaders/ps.md) | Pixel shader |
@@ -81,7 +79,6 @@ ___
 | Extension | Description |
 |---|---|
 | [*.dm](../file-formats/models/dm.md) |  Effect of a dynamic weather environment (e.g., rain or lightning) |
-| [*.dti](../file-formats/models/dti.md) |  |
 | [*.object](../file-formats/models/object.md) | These files are intended for the X-Ray SDK to store 3D content in its original, uncompressed, lossless form. They are source files that store information before compilation into other game compressed formats.  |
 | [*.ogf](../file-formats/models/ogf.md) | Compiled object |
 | [*.bones](../file-formats/models/bones.md) | Skeleton bone data files |

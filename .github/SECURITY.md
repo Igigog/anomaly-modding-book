@@ -11,7 +11,7 @@ If you have found a vulnerability or want to contact the repository administrati
 You can do this via:
 
 - Open an [issue](https://github.com/Igigog/anomaly-modding-book/issues).
-- Contact via [Anomayl Modding Book Discord](https://discord.gg/8Pu2ekQYg3).
+- Contact via [Anomaly Modding Book Discord](https://discord.gg/8Pu2ekQYg3).
 
 ## Supported Versions
 

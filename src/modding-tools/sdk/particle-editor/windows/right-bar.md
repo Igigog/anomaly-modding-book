@@ -340,13 +340,13 @@ Different Properties are used for Particle Effect and Particle Group
       <tr>
         <th></th>
         <th></th>
-        <th>Desciption</th>
+        <th>Description</th>
         <th>Extra</th>
-        <th>Extra Desciption</th>
+        <th>Extra Description</th>
         <th>Extra</th>
-        <th>Extra Desciption</th>
+        <th>Extra Description</th>
         <th>Extra</th>
-        <th>Extra Desciption</th>
+        <th>Extra Description</th>
       </tr></thead>
     <tbody>
       <tr>
@@ -400,7 +400,7 @@ Different Properties are used for Particle Effect and Particle Group
       <tr>
         <td>Edit</td>
         <td></td>
-        <td>Append Efffect</td>
+        <td>Append Effect</td>
         <td></td>
         <td>-</td>
         <td>-</td>

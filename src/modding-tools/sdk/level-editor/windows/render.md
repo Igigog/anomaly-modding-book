@@ -17,7 +17,7 @@ ___
 |  | Local/World |  |  |
 |  | Object Snap Toggle |  |  |
 |  | Moving Snap To Object Toggle |  |  |
-|  | Normal Aligment |  |  |
+|  | Normal Alignment |  |  |
 |  | Grid Snap Toggle |  |  |
 |  | Vertex Snap Toggle |  |  |
 |  | Focus the whole scene |  |  |

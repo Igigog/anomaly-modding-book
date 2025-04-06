@@ -2,7 +2,7 @@
 
 ___
 
-| Сommand | Command description | Command's argument | Note |
+| Command | Command description | Command's argument | Note |
 |---|---|:---:|---|
 | bind | Assign a command to the button | Action, key prefixed with k (kLeft, etc.) | - |
 | mouse_invert | Inverts the mouse | 'on/off' or '1/0' | - |
@@ -13,4 +13,4 @@ ___
 | g_crouch_toggle | Sit/stand mode | 'on/off' or '1/0' | - |
 | g_sprint_toggle | Sprint mode | 'on/off' or '1/0' | - |
 | g_walk_toggle |  | 'on/off' or '1/0' | - |
-| g_streff |  | -10.000 - 10.000 | Only in [-dbgdev](../../engine/command-line-keys.md) |
+| g_streff |  | -10.000 - 10.000 | Only in [-dbgdev](../../engine/command-line-switches.md) |

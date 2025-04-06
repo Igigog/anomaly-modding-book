@@ -2,7 +2,7 @@
 
 ___
 
-| Сommand | Command description | Command's argument | Note |
+| Command | Command description | Command's argument | Note |
 |---|---|:---:|---|
 | g_ironsights_zoom_factor | Zoom factor of the mechanical sight | 1.000 - 2.000 | - |
 | head_bob_factor | Basic head bobbing factor | 0 - 2 | - |

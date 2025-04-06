@@ -201,7 +201,7 @@ game.set_hud_anm_time(path, time)
 
 This function alters the playback speed of the specified .anm file. **path** is still the same as it was mentioned earlier, and **time** is actually a speed value (float).
 
-The name may be a bit confusing, but judjing by the engine code it actually manipulates the .anm speed:
+The name may be a bit confusing, but judging by the engine code it actually manipulates the .anm speed:
 
 ```lua,icon=.devicon-lua-plain
 float speed = (anm->anm->anim_param().max_t - anm->anm->anim_param().t_current) / time;

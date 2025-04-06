@@ -6,7 +6,7 @@ ___
 DirectX 9.0 (Shader Model 2.0)
 ```
 
-| Сommand | Command description | Command's argument | Note |
+| Command | Command description | Command's argument | Note |
 |---|---|:---:|---|
 | r1_detail_textures | Detailed textures on static lighting | 'on/off' or '1/0' | - |
 | r1_dlights | Dynamic light sources on static lighting | 'on/off' or '1/0' | - |

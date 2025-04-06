@@ -1,4 +1,4 @@
-# Engine Shader Parametres
+# Engine Shader Parameters
 
 ___
 

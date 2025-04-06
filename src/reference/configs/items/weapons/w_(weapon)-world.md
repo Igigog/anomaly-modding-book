@@ -46,8 +46,8 @@ ___
 | sprint_allowed | this line means that you can run with the weapon | true |  | true - 1 - on (Yes)<br> false - 0 - off (No) |
 | kind | The type of item to group into the appropriate section in the [Item Spawner](../../../../modding-tools/in-game-editors/item-spawner.md) | w_rifle |  | w_rifle<br> w_misc<br> w_explosive<br> w_melee<br> w_pistol<br> w_smg<br> w_shotgun<br> w_sniper |
 | cost | Base price | 28780 |  |  |
-| hud | Section with parameters for [hud weapon](../../../../glossary/models/object-hud.md) | wpn_akm_hud |  | Section name |
-| visual | [World model](../../../../glossary/models/object-world.md) | dynamics\weapons\wpn_akm\wpn_akm.ogf |  | Path to file |
+| hud | Section with parameters for [hud weapon](../../../../glossary/glossary.md#_hud) | wpn_akm_hud |  | Section name |
+| visual | [World model](../../../../glossary/glossary.md#_world) | dynamics\weapons\wpn_akm\wpn_akm.ogf |  | Path to file |
 
 </details>
 
@@ -58,7 +58,7 @@ ___
 
 | Parameter Name | Parameter Description | Example Value | Value Data Type | Parameter Possible Values And Their Descriptions |
 |---|---|---|:---:|---|
-| position | position of the weapon in the hands of the NPC and the headspace when viewed from the 3rd person | -0.026, -0.175, 0.0 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |  |
+| position | position of the weapon in the hands when viewed from the 3rd person | -0.026, -0.175, 0.0 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |  |
 | orientation | how the weapon is rotated in the hands of the NPC and headgear, in the 3rd person view | 0, 0, 0 | X - (`+`) left / (`-`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) roll to the right / (`+`) roll to the left |  |
 | fire_point | coordinates of the fire particle from the shot, in the 3rd person view | 0, 0.218, 0.656 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |  |
 | fire_point2 | Coordinates of the fire particle from the shot, when viewed from the 3rd person from the holster | 0, 0.161, 0.583 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |  |
@@ -162,7 +162,7 @@ ___
 | fire_modes | Firing mode | 1, -1 | -1 - automatic<br> 1 - single<br> 2 - two-shot<br> 3 - three-shot |  |
 | wallmark_section | section of wallmarks that appear on the ground/geometry |  | Section name (by default it is in the system.ltx file) |  |
 | wm_size | texture size of the mark left on the ground after the explosion |  | The bigger the number, the bigger the mark |  |
-| allow_inertion | allow_inertion |  | true - 1 - on (Yes)<br> false - 0 - off (No) |  |
+| allow_inertion | allow inertia |  | true - 1 - on (Yes)<br> false - 0 - off (No) |  |
 | ph_mass | Weight of the unloaded weapon for the physical engine | 4 | Kilograms |  |
 
 </details>

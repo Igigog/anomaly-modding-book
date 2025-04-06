@@ -11,7 +11,7 @@ ___
 
 | Parameter name | Parameter description | Example value | Value Data Type | Possible parameter values and their descriptions |
 |---|---|---|:---:|---|
-| item_visual | Weapon [hud model](../../../../glossary/models/object-hud.md) | anomaly_weapons\wpn_akm\wpn_akm_hud.ogf |  | File path relative to the gamedata\meshes folder |
+| item_visual | Weapon [hud model](../../../../glossary/glossary.md#_hud) | anomaly_weapons\wpn_akm\wpn_akm_hud.ogf |  | File path relative to the gamedata\meshes folder |
 | attach_place_idx |  | 0 |  |  |
 | zoom_hide_crosshair | Hide crosshair when aiming | true |  | true - 1 - on (Yes)<br> false - 0 - off (No) |
 | hud_fov_addition_modifier |  |  |  |  |
@@ -55,10 +55,10 @@ Strafe works when moving the character (WASD)
 
 </details>
 
-## HUD Inertion
+## HUD Inertia
 
 <details>
-    <summary>HUD Inertion</summary>
+    <summary>HUD Inertia</summary>
 
 ```admonish info
 Inertia works when moving the mouse
@@ -67,8 +67,8 @@ Inertia works when moving the mouse
 | Parameter name | Parameter description | Example value | Value Data Type | Possible parameter values and their descriptions |
 |---|---|---|:---:|---|
 | inertion_min_angle_aim |  | 0 |  |  |
-| inertion_offset_LRUD | HUD inertion | 0.011, 0.011, 0.01, 0.005 | Vector4 | L - (`-`) left / (`+`) right<br> R - (`-`) right / (`+`) left<br> U - (`-`) up / (`+`) down<br> D - (`-`) down / (`+`) up |
-| inertion_offset_LRUD_aim | HUD inertion when aim | 0.011, 0.011, 0.01, 0.005 | Vector4 | L - (`-`) left / (`+`) right<br> R - (`-`) right / (`+`) left<br> U - (`-`) up / (`+`) down<br> D - (`-`) down / (`+`) up |
+| inertion_offset_LRUD | HUD inertia | 0.011, 0.011, 0.01, 0.005 | Vector4 | L - (`-`) left / (`+`) right<br> R - (`-`) right / (`+`) left<br> U - (`-`) up / (`+`) down<br> D - (`-`) down / (`+`) up |
+| inertion_offset_LRUD_aim | HUD inertia when aim | 0.011, 0.011, 0.01, 0.005 | Vector4 | L - (`-`) left / (`+`) right<br> R - (`-`) right / (`+`) left<br> U - (`-`) up / (`+`) down<br> D - (`-`) down / (`+`) up |
 
 </details>
 

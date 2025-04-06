@@ -75,7 +75,7 @@ Contains descriptions of various Stalker related terms used in modding and in X-
     <td>Area which, when entered by a stalker, "captures" that stalker and assigns them tasks to perform. These tasks are allocated by the smart terrain's controlling Gulag.</td>
   </tr>
   <tr id="SpaceRestrictor">
-    <td>Space Restictor</td>
+    <td>Space Restrictor</td>
     <td></td>
   </tr>
   <tr id="WayPoint">
@@ -109,7 +109,7 @@ Contains descriptions of various Stalker related terms used in modding and in X-
 <tbody>
   <tr id="Luabind">
     <td>Luabind</td>
-    <td>Luabind is a library that helps you create bindings between C++ and Lua. It has the ability to expose functions and classes, written in C++, to Lua. It will also supply the functionality to define classes in lua and let them derive from other lua classes or C++ classes. Lua classes can override virtual functions from their C++ baseclasses. It is written towards Lua 5.x, and does not work with Lua 4.</td>
+    <td>Luabind is a library that helps you create bindings between C++ and Lua. It has the ability to expose functions and classes, written in C++, to Lua. It will also supply the functionality to define classes in lua and let them derive from other lua classes or C++ classes. Lua classes can override virtual functions from their C++ base classes. It is written towards Lua 5.x, and does not work with Lua 4.</td>
   </tr>
   <tr id="LuaJIT">
     <td>LuaJIT</td>

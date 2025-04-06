@@ -25,7 +25,7 @@ Below I describe the setup steps needed to run and contribute to this book. *__B
 
 ## Forking book repository
 
-Contributing to this book follows the standart "Pull Request" workflow. That basically means that you will have your own copy of the book, and you will ask us to pull your changes into the main repository.
+Contributing to this book follows the standard "Pull Request" workflow. That basically means that you will have your own copy of the book, and you will ask us to pull your changes into the main repository.
 
 Here is the overview of steps needed for contributing:
 
@@ -56,7 +56,7 @@ Welp, let's get started. I hope you already have a GitHub account.
 
     ![centered](images/5.PNG)
 
-2. Open Poweshell Terminal session
+2. Open Powershell Terminal session
 3. Copy the link to your repo.
 
     ![centered](images/6.PNG)
@@ -73,8 +73,8 @@ Welp, let's get started. I hope you already have a GitHub account.
 
 To run the local version you need to install dependencies. This can be done in different ways
 
-1. `CRTL+Shift+B` -> `Intall Rust`(Choose `Windows` or `Unix`) - To install Rust
-2. `CRTL+Shift+B` -> `Intall Dependencies` - Various necessary dependencies
+1. `CTRL+Shift+B` -> `Install Rust`(Choose `Windows` or `Unix`) - To install Rust
+2. `CTRL+Shift+B` -> `Install Dependencies` - Various necessary dependencies
 
 Or
 
@@ -101,7 +101,7 @@ Or
 
 #### Running local copy
 
-1. `CRTL+Shift+B` -> `Run Local mdbook Server`
+1. `CTRL+Shift+B` -> `Run Local mdbook Server`
 
 Or
 

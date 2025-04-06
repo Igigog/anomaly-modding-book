@@ -4,7 +4,7 @@ ___
 
 ## Animations Debug
 
-| Сommand | Command description | Command's argument | Note |
+| Command | Command description | Command's argument | Note |
 |---|---|:---:|---|
 | dbg_imotion_draw_velocity |  |  |  |
 | dbg_imotion_collide_debug |  |  |  |

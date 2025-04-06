@@ -34,7 +34,7 @@ What files to pay attention to:
 
 ## Chapter 1.A: Creating your own mod files for character creation
 
-While it's possible to configurate the files already present, for independent addons it's advisable to create your own files.
+While it's possible to configure the files already present, for independent addons it's advisable to create your own files.
 
 One of the methods is by including your files:
 
@@ -74,7 +74,7 @@ NB: "my_mod_name" will stand for whatever name you choose.
 - you add a file: squad_descr_my_mod_name.ltx
 (This one you doesn't need an include, squad_descr.ltx does it automatically)
 
-For your own custom files, you can copy-paste already exisiting ones and rename them. In that case, be careful to delete everything in your copied file from the old file, except the opening and closing node. For exemple, in dialogs file, <game_dialogs> and </game_dialogs> have to remain, and your code has to be inbetween of these two nodes.
+For your own custom files, you can copy-paste already exisiting ones and rename them. In that case, be careful to delete everything in your copied file from the old file, except the opening and closing node. For example, in dialogs file, <game_dialogs> and </game_dialogs> have to remain, and your code has to be inbetween of these two nodes.
 
 ___
 

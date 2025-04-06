@@ -8,7 +8,7 @@ DirectX 10 - (Shader Model 4.0)
 DirectX 10.1 - (Shader Model 4.1)
 ```
 
-| Сommand | Command description | Command's argument | Note |
+| Command | Command description | Command's argument | Note |
 |---|---|:---:|---|
 | r3_dynamic_wet_surfaces | Wet surfaces | 'on/off' or '1/0' | - |
 | r3_dynamic_wet_surfaces_far | Max. rendering distance of the effect | 30 - 100 | - |
@@ -22,6 +22,6 @@ DirectX 10.1 - (Shader Model 4.1)
 
 ## R3 Debug
 
-| Сommand | Command description | Command's argument | Note |
+| Command | Command description | Command's argument | Note |
 |---|---|:---:|---|
 | r3_fog_reload |  | - | - |

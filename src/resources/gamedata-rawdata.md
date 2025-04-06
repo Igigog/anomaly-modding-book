@@ -14,7 +14,7 @@ ___
 
 ## SDK 0.7 (Call of Pripyat)
 
-- [gamedata]
+- gamedata
 - [rawdata](https://sharedby.blomp.com/eNU2m5)
 
 ## Anomaly

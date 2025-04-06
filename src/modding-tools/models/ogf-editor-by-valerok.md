@@ -73,7 +73,7 @@ Display information about the loaded OGF
 | Motions Refs | Motions Refs |
 | Motions | Motions |
 | Links | Links |
-| Verts | Verts |
+| Verts | Vertices |
 | Faces | Faces |
 
 | Field | Description |

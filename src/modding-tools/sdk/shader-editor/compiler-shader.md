@@ -1,4 +1,4 @@
-# Compiler Shader Parametres
+# Compiler Shader Parameters
 
 ___
 

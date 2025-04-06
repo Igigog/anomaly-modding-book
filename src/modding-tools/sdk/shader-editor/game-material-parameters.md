@@ -1,4 +1,4 @@
-# Material Parametres
+# Material Parameters
 
 ___
 
@@ -8,7 +8,7 @@ ___
 
 ### General
 
-| Paramater | Description |
+| Parameter | Description |
 |---|---|
 | Name | Material Name |
 | Desc | Material Description |

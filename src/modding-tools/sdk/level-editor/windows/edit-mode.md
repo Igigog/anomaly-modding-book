@@ -16,7 +16,7 @@ ___
 | Scene Object | Objects |
 | Light | Light sources |
 | Sound Source | Sound sources |
-| Sound Env | Sound envinronments |
+| Sound Env | Sound environments |
 | Glow | Glow objects |
 | Shape |  |
 | Spawn Element | Spawn elements |

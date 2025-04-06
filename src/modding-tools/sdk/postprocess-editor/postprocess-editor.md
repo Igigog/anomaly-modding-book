@@ -27,7 +27,7 @@ ___
 | Unit | Description | Buttons |
 |---|---|---|
 | Point List | Places points on the timeline | `+` - Adds a point<br> `-` - Removes a point<br> `Clear` - Clears the list of points<br> `CopyForm` - Copies points from another selected tab |
-| Color | Edits the color of a selected point | `Key Time(sec)` - the time of the point on the timeline<br> `R` - Red<br> `G` - Green<br> `B` - Blue<br> ![Alt text](../icons/ppe-palette.png) - Palette |
+| Color | Edits the color of a selected point | `Key Time(sec)` - the time of the point on the timeline<br> `R` - Red<br> `G` - Green<br> `B` - Blue<br> ![Alt text]() - Palette |
 
 ### Base Color
 
@@ -36,7 +36,7 @@ ___
 | Unit | Description | Buttons |
 |---|---|---|
 | Point List | Places points on the timeline | `+` - Adds a point<br> `-` - Removes a point<br> `Clear` - Clears the list of points<br> `CopyForm` - Copies points from another selected tab |
-| Color | Edits the color of a selected point | `Key Time(sec)` - the time of the point on the timeline<br> `R` - Red<br> `G` - Green<br> `B` - Blue<br> ![Alt text](../icons/ppe-palette.png) - Palette |
+| Color | Edits the color of a selected point | `Key Time(sec)` - the time of the point on the timeline<br> `R` - Red<br> `G` - Green<br> `B` - Blue<br> ![Alt text]() - Palette |
 
 ### Grey Color
 
@@ -45,7 +45,7 @@ ___
 | Unit | Description | Buttons |
 |---|---|---|
 | Point List | Places points on the timeline | `+` - Adds a point<br> `-` - Removes a point<br> `Clear` - Clears the list of points<br> `CopyForm` - Copies points from another selected tab |
-| Color | Edits the color of a selected point | `Key Time(sec)` - the time of the point on the timeline<br> `R` - Red<br> `G` - Green<br> `B` - Blue<br> `Inensity` - Gray intensity parameter<br> ![Alt text](../icons/ppe-palette.png) - Palette |
+| Color | Edits the color of a selected point | `Key Time(sec)` - the time of the point on the timeline<br> `R` - Red<br> `G` - Green<br> `B` - Blue<br> `Intensity` - Gray intensity parameter<br> ![Alt text]() - Palette |
 
 ### Duality
 
@@ -72,7 +72,7 @@ ___
 | Unit | Description | Buttons |
 |---|---|---|
 | Point List | Places points on the timeline | `+` - Adds a point<br> `-` - Removes a point<br> `Clear` - Clears the list of points<br> `CopyForm` - Copies points from another selected tab |
-| Color | Edits the color of a selected point | `Key Time(sec)` - the time of the point on the timeline<br> `R` - Red<br> `G` - Green<br> `B` - Blue<br> `Inensity` - Intensity<br> ![Alt text](../icons/ppe-palette.png) - Palette |
+| Color | Edits the color of a selected point | `Key Time(sec)` - the time of the point on the timeline<br> `R` - Red<br> `G` - Green<br> `B` - Blue<br> `Intensity` - Intensity<br> ![Alt text]() - Palette |
 
 ### Color Mapper
 
