@@ -6,14 +6,7 @@ ___
 
 Allows to apply several types of detail map to the main texture, supports mask technology
 
-### General
-
-| Parameter | Parameter Description |
-|---|---|
-| Priority |  |
-| Strict sorting |  |
-
-### Base Texture
+## Base Texture
 
 <table><thead>
   <tr>

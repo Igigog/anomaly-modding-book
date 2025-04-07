@@ -34,17 +34,17 @@ The Actor editor is usually needed to customize objects (NPCs, Objects, etc.)
           <tr>
             <td>Clear</td>
             <td>Clear scene</td>
-            <td></td>
+            <td>-</td>
           </tr>
           <tr>
             <td>Load</td>
             <td>Load an object into a new scene</td>
-            <td></td>
+            <td>-</td>
           </tr>
           <tr>
             <td>Save</td>
             <td>Save object</td>
-            <td></td>
+            <td>-</td>
           </tr>
           <tr>
             <td>Save as...</td>
@@ -54,22 +54,22 @@ The Actor editor is usually needed to customize objects (NPCs, Objects, etc.)
           <tr>
             <td>Open Recent</td>
             <td>Open recent</td>
-            <td></td>
+            <td>-</td>
           </tr>
           <tr>
             <td>Import...</td>
             <td>Imports the model into the scene</td>
-            <td></td>
+            <td>-</td>
           </tr>
           <tr>
             <td>Optimize Motions</td>
             <td>Goes through all the bones in the animation and optimizes their animation channels (e.g., position, rotation, scale) by removing    redundant keyframes</td>
-            <td></td>
+            <td>-</td>
           </tr>
           <tr>
             <td>Batch Convert...</td>
             <td></td>
-            <td></td>
+            <td>-</td>
           </tr>
           <tr>
             <td>Export</td>
@@ -94,15 +94,15 @@ The Actor editor is usually needed to customize objects (NPCs, Objects, etc.)
         <tbody>
           <tr>
             <td>Custom...</td>
-            <td></td>
+            <td>Custom object preview [In latest available SDK will crash]</td>
           </tr>
           <tr>
             <td>Clear</td>
-            <td></td>
+            <td>Clear thumbnail [In latest available SDK will crash]</td>
           </tr>
           <tr>
             <td>Preference</td>
-            <td></td>
+            <td>Editors preference [In latest available SDK will crash]</td>
           </tr>
         </tbody>
       </table>
@@ -170,7 +170,7 @@ The Actor editor is usually needed to customize objects (NPCs, Objects, etc.)
           <tr>
             <td rowspan="10">Render</td>
             <td>Quality</td>
-            <td></td>
+            <td>Render quality in percent</td>
             <td>-</td>
             <td>-</td>
           </tr>
@@ -330,4 +330,4 @@ The Actor editor is usually needed to customize objects (NPCs, Objects, etc.)
 |  | Save | Save file |
 |  | Open Gamedata | Open "gamedata" folder |
 |  | Simulate | Activates physics simulation |
-|  | Make Thumbnail |  |
+|  | Make Thumbnail | Make thumbnail |

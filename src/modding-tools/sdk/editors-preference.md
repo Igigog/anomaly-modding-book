@@ -12,7 +12,7 @@ Preferences across all editors
 
 | Button | Description |
 |---|---|
-| Discard Instance |  |
+| Discard Instance | Determines whether unused and unmodified objects should be automatically unloaded. This helps to save memory, but at the same time does not lose user edits |
 
 #### Skeleton
 
@@ -27,10 +27,10 @@ Preferences across all editors
 
 | Button | Description |
 |---|---|
-| Hint |  |
-| Pivot |  |
-| Animation Path |  |
-| LOD |  |
+| Hint | Show hints |
+| Pivot | Show objects pivot |
+| Animation Path | Show animations paths |
+| LOD | Show LODs |
 
 #### Loading
 
@@ -43,21 +43,21 @@ Preferences across all editors
 
 | Button | Description |
 |---|---|
-| Select ingroup |  |
+| Select ingroup | If enabled group selection affects all nested objects |
 
 ### Scene
 
 | Button | Description |
 |---|---|
-| Radius Render |  |
+| RadiusRender | Render radius |
 
 #### Common
 
 | Button | Description |
 |---|---|
-| Recent Count |  |
-| Undo Level |  |
-| More Stats Info |  |
+| Recent Count | Counter of the list of recently opened files |
+| Undo Level | Undo level |
+| More Stats Info | Provides additional statistical information |
 
 #### Grid
 
@@ -72,9 +72,9 @@ Preferences across all editors
 
 | Button | Description |
 |---|---|
-| Limited Depth |  |
-| Back Face Culling |  |
-| Depth Tolerance |  |
+| Limited Depth | If enabled, the selection of objects is limited to the far object in the selected area |
+| Back Face Culling | Allows to ignore polygons that are not visible to the camera |
+| Depth Tolerance | Adds a small indentation to ensure that objects on the border are guaranteed to be included |
 
 #### Sens
 
@@ -88,18 +88,18 @@ Preferences across all editors
 
 | Button | Description |
 |---|---|
-| Angle |  |
+| Angle | Step rotation angle |
 | Move |  |
 | Move To |  |
-| Scale Fixed |  |
+| Scale Fixed | Step for scaling |
 
 ### Viewport
 
 | Button | Description |
 |---|---|
-| Near Plane |  |
-| Far Plane |  |
-| FOV | Camera [fov](https://en.wikipedia.org/wiki/Field_of_view_in_video_games) |
+| Near Plane | Near camera cutoff plane |
+| Far Plane | Far camera cutoff plane |
+| FOV | Camera [FOV](https://en.wikipedia.org/wiki/Field_of_view_in_video_games) |
 | Clear Color |  |
 
 #### Buttons
@@ -113,10 +113,10 @@ Preferences across all editors
 
 | Button | Description |
 |---|---|
-| Move Sens |  |
-| Rotate Sens |  |
-| Fly Speed |  |
-| Fly Altitude |  |
+| Move Sens | Move sensitivity |
+| Rotate Sens | Rotate sensitivity |
+| Fly Speed | Fly speed |
+| Fly Altitude | Fly altitude |
 
 #### Fog
 
@@ -129,9 +129,9 @@ Preferences across all editors
 
 | Button | Description |
 |---|---|
-| xrLC |  |
-| xrAI |  |
-| xrDO |  |
+| xrLC | Path to xrLC (Level Compiler) |
+| xrAI | Path to xrAI (AI Compiler) |
+| xrDO | Path to xrDO (Detail Object Compiler) |
 
 ### Keyboard
 

@@ -11,4 +11,4 @@ ___
 ## Programs editing this file
 
 - [THM Editor by ValeroK](../../../modding-tools/textures/thm-editor-by-valerok.md) or [THM Editor by i-love-kfc](../../../modding-tools/textures/thm-editor-by-i-love-kfc.md)
-- [SDK 0.7](../../../modding-tools/sdk/README.md)
+- [SDK](../../../modding-tools/sdk/README.md)

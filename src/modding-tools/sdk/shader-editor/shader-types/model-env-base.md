@@ -4,16 +4,9 @@ ___
 
 ## About
 
-Similar to LEVEL: lmap*(env^base), only for dynamic objects
+Similar to [LEVEL: lmap*(env^base)](level-lmap-env-base.md), only for dynamic objects
 
-### General
-
-| Parameter | Parameter Description |
-|---|---|
-| Priority |  |
-| Strict sorting |  |
-
-### Base Texture
+## Base Texture
 
 <table><thead>
   <tr>

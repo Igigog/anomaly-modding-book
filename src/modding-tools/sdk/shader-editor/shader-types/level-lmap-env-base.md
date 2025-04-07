@@ -6,14 +6,7 @@ ___
 
 Lightmap type of shader with a feature set such as Environment map and Alpha-Blend
 
-### General
-
-| Parameter | Parameter Description |
-|---|---|
-| Priority |  |
-| Strict sorting |  |
-
-### Base Texture
+## Base Texture
 
 <table><thead>
   <tr>

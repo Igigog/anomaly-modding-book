@@ -6,14 +6,7 @@ ___
 
 A shader designed to apply vertex lighting to geometry to which alpha channel textures are assigned
 
-### General
-
-| Parameter | Parameter Description |
-|---|---|
-| Priority |  |
-| Strict sorting |  |
-
-### Base Texture
+## Base Texture
 
 <table><thead>
   <tr>

@@ -6,14 +6,7 @@ ___
 
 Default shader for dynamic geometry. Supports alpha channel and tessellation
 
-### General
-
-| Parameter | Parameter Description |
-|---|---|
-| Priority |  |
-| Strict sorting |  |
-
-### Base Texture
+## Base Texture
 
 <table><thead>
   <tr>

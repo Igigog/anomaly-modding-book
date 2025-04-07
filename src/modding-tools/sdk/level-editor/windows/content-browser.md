@@ -8,5 +8,5 @@ ___
 
 | Icon | Name | Description |
 |---|---|---|
-|  | Show THM | Will show *.thm files |
-|  | View Mode | View mode<br> Tile<br> List |
+| ![1](../icons/menu.svg) | Show THM | Will show *.thm files |
+| ![1](../icons/menu.svg) | View Mode | View mode<br> Tile<br> List |

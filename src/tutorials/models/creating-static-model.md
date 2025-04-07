@@ -71,7 +71,7 @@ There is no point in telling about each point here. (there is a separate section
 
 The items we need for the model now are:
 
-- [Shader](../../reference/shaders/shaders-list/shaders-list.md) (This setting is responsible for the appearance of the surface.)
+- [Shader](../../reference/shaders/shaders-list/engine-shaders-list.md) (This setting is responsible for the appearance of the surface.)
 - [Compile](../../reference/shaders/shaders-list/compiler-shaders-list.md) (Here are descriptions of the settings that the level geometry compiler uses)
 - [Material](../../reference/materials/materials-list.md) (Here you can select surface materials)
 

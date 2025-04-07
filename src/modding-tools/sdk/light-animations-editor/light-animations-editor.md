@@ -26,20 +26,20 @@ ___
 
 ___
 
-| Playback |  |
+| Playback Button | Description |
 |---|---|
 | \|<< | To first frame |
 | - | One frame back |
 | + | One frame forward |
 | >>\| | To last frame |
 
-| Frame |  |
+| Frame Button | Description |
 |---|---|
-| <- |  |
-| \|<< |  |
-| < |  |
-| + |  |
-| - |  |
-| > |  |
-| >>\| |  |
-| -> |  |
+| <- | Move selected keyframe one frame backward |
+| \|<< | ? |
+| < | One frame back |
+| + | Add keyframe |
+| - | Delete keyframe |
+| > | One frame forward |
+| >>\| | ? |
+| -> | Move selected keyframe one frame forward |

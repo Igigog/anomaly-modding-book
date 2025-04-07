@@ -58,7 +58,7 @@ ___
 | ai_dbg_destroy |  |  | - |
 | ai_dbg_serialize |  |  | - |
 | ai_dbg_dialogs |  |  | - |
-| ai_dbg_infoportion |  |  | - |
+| ai_dbg_infoportion | A debugging command to help track how NPCs in the game gain and lose Info Portions | 'on/off' or '1/0' | - |
 | ai_draw_game_graph |  |  | - |
 | ai_draw_game_graph_stalkers |  |  | - |
 | ai_draw_game_graph_object |  |  | - |

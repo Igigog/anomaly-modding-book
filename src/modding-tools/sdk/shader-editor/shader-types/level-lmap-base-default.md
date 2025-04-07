@@ -6,14 +6,7 @@ ___
 
 Default Lightmap shader type. This shader type is used in most of the geometry in the game. It can use tessellation
 
-### General
-
-| Parameter | Parameter Description |
-|---|---|
-| Priority |  |
-| Strict sorting |  |
-
-### Base Texture
+## Base Texture
 
 <table><thead>
   <tr>

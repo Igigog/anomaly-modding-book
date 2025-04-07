@@ -6,14 +6,7 @@ ___
 
 A shader designed to apply vertex lighting to the geometry that will use it
 
-### General
-
-| Parameter | Parameter Description |
-|---|---|
-| Priority |  |
-| Strict sorting |  |
-
-### Base Texture
+## Base Texture
 
 <table><thead>
   <tr>

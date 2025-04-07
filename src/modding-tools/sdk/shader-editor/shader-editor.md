@@ -245,3 +245,11 @@ Used to create/edit shaders
     </div>
   </div>
 </body>
+
+| Icon | Description |
+|---|---|
+|  | Undo the last action|
+|  | Repeat the last action |
+|  | Save all '.xr' |
+|  | Reload everything '.xr' |
+|  | Open folder 'GameData' |

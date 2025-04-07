@@ -1,4 +1,4 @@
-# internal shadow projecting Shader Type
+# INTERNAL: shadow projecting Shader Type
 
 ___
 
@@ -6,14 +6,7 @@ ___
 
 General shadow projection
 
-### General
-
-| Parameter | Parameter Description |
-|---|---|
-| Priority |  |
-| Strict sorting |  |
-
-### Base Texture
+## Base Texture
 
 <table><thead>
   <tr>

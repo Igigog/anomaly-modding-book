@@ -2,9 +2,13 @@
 
 ___
 
-Needed to create postprocess files ([.ppe](../../../reference/file-formats/postprocceses/ppe.md))
+> IX-SDK PPE Editor fully broken soo i will not finish this article until they fix editor
+
+Needed to create postprocess files ([*.ppe](../../../reference/file-formats/postprocceses/ppe.md))
 
 ___
+
+## About
 
 ![Alt text centered](./images/ppe-editor.png)
 
@@ -14,11 +18,11 @@ ___
 
 ### File Button
 
-| Button | Description | HotKey |
-|:---:|---|---|
-|  | New ppe file | Ctrl+N |
-|  | Load ppe file | Ctrl+O |
-|  | Save ppe file | Ctrl+S |
+| Button | Description |
+|---|---|
+| New | New ppe file |
+| Load | Load ppe file |
+| Save | Save ppe file |
 
 ### Add Color
 

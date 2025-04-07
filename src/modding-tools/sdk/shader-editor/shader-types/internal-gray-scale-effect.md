@@ -1,4 +1,4 @@
-# internal gray scale effect Shader Type
+# INTERNAL: gray-scale effect Shader Type
 
 ___
 
@@ -6,14 +6,7 @@ ___
 
 Discoloration effect
 
-### General
-
-| Parameter | Parameter Description |
-|---|---|
-| Priority |  |
-| Strict sorting |  |
-
-### Base Texture
+## Base Texture
 
 <table><thead>
   <tr>

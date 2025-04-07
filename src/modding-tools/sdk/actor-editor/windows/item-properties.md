@@ -32,7 +32,7 @@ ___
         <tr>
           <td rowspan="11">Global</td>
           <td>Bone Count</td>
-          <td></td>
+          <td>Bone count</td>
           <td>-</td>
           <td>-</td>
           <td>-</td>
@@ -42,13 +42,13 @@ ___
           <td rowspan="2">File</td>
           <td rowspan="2"></td>
           <td>Load</td>
-          <td></td>
+          <td>Load file</td>
           <td>-</td>
           <td>-</td>
         </tr>
         <tr>
           <td>Save</td>
-          <td></td>
+          <td>Save file</td>
           <td>-</td>
           <td>-</td>
         </tr>
@@ -201,65 +201,65 @@ ___
           <td rowspan="19">Joint</td>
           <td rowspan="19"></td>
           <td>Current Rotation</td>
-          <td></td>
+          <td>Bone current rotation</td>
           <td>-</td>
           <td>-</td>
         </tr>
         <tr>
           <td>Breakable</td>
-          <td></td>
+          <td>Allows bone to be breakable</td>
           <td>-</td>
           <td>-</td>
         </tr>
         <tr>
           <td>Break Force</td>
-          <td></td>
+          <td>Threshold breaking force</td>
           <td>-</td>
           <td>-</td>
         </tr>
         <tr>
           <td>Break Torque</td>
-          <td></td>
+          <td>Threshold fracture torque</td>
           <td>-</td>
           <td>-</td>
         </tr>
         <tr>
           <td rowspan="5">Type</td>
-          <td rowspan="5"></td>
+          <td rowspan="5">Joint type</td>
           <td>Rigid</td>
           <td></td>
         </tr>
         <tr>
           <td>Cloth</td>
-          <td></td>
+          <td><a href="../../../../glossary/glossary.md#Cloth">Cloth Joint</a></td>
         </tr>
         <tr>
           <td>Joint</td>
-          <td></td>
+          <td><a href="../../../../glossary/glossary.md#Joint">Universal Joint</a></td>
         </tr>
         <tr>
           <td>Wheel [Steer-X/Roll-Z]</td>
-          <td></td>
+          <td><a href="../../../../glossary/glossary.md#Wheel">Wheel Joint</a></td>
         </tr>
         <tr>
           <td>Slider</td>
-          <td></td>
+          <td><a href="../../../../glossary/glossary.md#Slider">Slider Joint</a></td>
         </tr>
         <tr>
           <td>Friction</td>
-          <td></td>
+          <td>Friction</td>
           <td>-</td>
           <td>-</td>
         </tr>
         <tr>
           <td>Spring Factor</td>
-          <td></td>
+          <td>Spring Factor</td>
           <td>-</td>
           <td>-</td>
         </tr>
         <tr>
           <td>Damping Factor</td>
-          <td></td>
+          <td>Damping Factor</td>
           <td>-</td>
           <td>-</td>
         </tr>
@@ -343,11 +343,11 @@ ___
     <td rowspan="2">Export Import</td>
     <td rowspan="2"></td>
     <td>Export</td>
-    <td></td>
+    <td>Export Motion Reference</td>
   </tr>
   <tr>
     <td>Import</td>
-    <td></td>
+    <td>Import Motion Reference</td>
   </tr>
   <tr>
     <td rowspan="23">Motion</td>
@@ -416,11 +416,11 @@ ___
   </tr>
   <tr>
     <td>Stop At End</td>
-    <td></td>
+    <td>Animation will stop at end</td>
   </tr>
   <tr>
     <td>No Mix</td>
-    <td></td>
+    <td>Animations will not mix</td>
   </tr>
   <tr>
     <td>Sync Part</td>
@@ -503,98 +503,98 @@ ___
     <td rowspan="5"></td>
     <td>Static</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
     <td>Dynamic</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
     <td>HOM</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
     <td>Multiply Usage</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
     <td>Sound Occluder</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
     <td rowspan="4">Flags</td>
     <td rowspan="4"></td>
     <td>Make Progressive</td>
     <td>Only for Dynamic Object Type</td>
-    <td></td>
-    <td></td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
     <td>Disable Mesh Optimization</td>
     <td>If not disabled, it optimizes the mesh by removing unnecessary edges and vertices, reallocating memory and updating linked data structures. Only for Dynamic Object Type</td>
-    <td></td>
-    <td></td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
     <td>HQ Geometry</td>
     <td>Only for Dynamic Object Type</td>
-    <td></td>
-    <td></td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
     <td>Using LOD</td>
     <td>Only for Multiply Usage Object Type</td>
-    <td></td>
-    <td></td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
     <td rowspan="5">Transform</td>
     <td rowspan="5"></td>
     <td>Position</td>
     <td>Object position</td>
-    <td></td>
-    <td></td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
     <td>Rotation</td>
     <td>Object rotation</td>
-    <td></td>
-    <td></td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
     <td>Scale</td>
     <td>Object scale</td>
-    <td></td>
-    <td></td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
     <td>BBox Min</td>
     <td>Object Bounding Box Min</td>
-    <td></td>
-    <td></td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
     <td>BBox Max</td>
     <td>Object <a href="https://en.wikipedia.org/wiki/Minimum_bounding_box">Bounding Box</a> Max</td>
-    <td></td>
-    <td></td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
     <td rowspan="3">LOD</td>
     <td rowspan="3"></td>
     <td>Reference</td>
     <td>LOD reference</td>
-    <td></td>
-    <td></td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
     <td rowspan="2">Action</td>
@@ -655,7 +655,7 @@ ___
   </tr>
   <tr>
     <td>2 Sided</td>
-    <td>Face Count</td>
+    <td>Copies and inverts polygons so that the back side of the face is also visible when rendered</td>
   </tr>
   <tr>
     <td>Face Count</td>

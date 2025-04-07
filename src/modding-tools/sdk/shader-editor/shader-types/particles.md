@@ -6,14 +6,7 @@ ___
 
 Practically identical to [basic (simple)](basic-simple.md), except that it does not support a certain set of functions that are needed only for static geometry
 
-### General
-
-| Parameter | Parameter Description |
-|---|---|
-| Priority |  |
-| Strict sorting |  |
-
-### Base Texture
+## Base Texture
 
 <table><thead>
   <tr>

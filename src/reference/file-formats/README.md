@@ -103,7 +103,7 @@ ___
 | Extension | Description |
 |---|---|
 | [*.db](../file-formats/archives-resource-packs/db.md) | archive of game resources. Used in late builds and the final version of the game, has several options (db."number", db."letter"). |
-| [*.xr](../file-formats/archives-resource-packs/xr.md) | resource library. Contains resources such as particles, [shaders](../shaders/shaders-list/shaders-list.md), etc. in a packed format. |
+| [*.xr](../file-formats/archives-resource-packs/xr.md) | resource library. Contains resources such as particles, [shaders](../shaders/shaders-list/engine-shaders-list.md), etc. in a packed format. |
 
 ___
 

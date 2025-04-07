@@ -64,7 +64,7 @@ Contains descriptions of various Stalker related terms used in modding and in X-
   </tr>
   <tr id="lvid">
     <td>lvid</td>
-    <td>Part of .ai. Ai grid node</td>
+    <td>Part of <a href="../reference/file-formats/game-levels/ai.md">*.ai</a>. Ai grid node</td>
   </tr>
   <tr id="SmartCover">
     <td>Smart Cover</td>
@@ -82,15 +82,22 @@ Contains descriptions of various Stalker related terms used in modding and in X-
     <td>Way Point</td>
     <td>A predetermined point on the map that serves as a reference point for NPCs. Waypoints indicate their movement pattern or where they should go.</td>
   </tr>
-</tbody></table>
+  <tr id="InfoPortion">
+    <td>Info Portion</td>
+    <td>It is a piece of information that can be passed between characters, saved in quests, or used for AI decision making.</td>
+  </tr>
+</tbody>
+</table>
 
 ## Animations
 
-<table><thead>
+<table>
+<thead>
   <tr>
     <th>Term</th>
     <th>Definition</th>
-  </tr></thead>
+  </tr>
+  </thead>
 <tbody>
   <tr id="_hudAnimations">
     <td>object_hud animations</td>
@@ -101,11 +108,13 @@ Contains descriptions of various Stalker related terms used in modding and in X-
 
 ## Coding
 
-<table><thead>
+<table>
+<thead>
   <tr>
     <th>Term</th>
     <th>Definition</th>
-  </tr></thead>
+  </tr>
+  </thead>
 <tbody>
   <tr id="Luabind">
     <td>Luabind</td>
@@ -120,11 +129,13 @@ Contains descriptions of various Stalker related terms used in modding and in X-
 
 ## Compilers
 
-<table><thead>
+<table>
+<thead>
   <tr>
     <th>Term</th>
     <th>Definition</th>
-  </tr></thead>
+  </tr>
+  </thead>
 <tbody>
   <tr id="xrAI">
     <td>xrAI</td>
@@ -143,7 +154,8 @@ Contains descriptions of various Stalker related terms used in modding and in X-
 
 ## Materials
 
-<table><thead>
+<table>
+<thead>
   <tr>
     <th>Term</th>
     <th>Definition</th>
@@ -158,11 +170,13 @@ Contains descriptions of various Stalker related terms used in modding and in X-
 
 ## Models
 
-<table><thead>
+<table>
+<thead>
   <tr>
     <th>Term</th>
     <th>Definition</th>
-  </tr></thead>
+  </tr>
+  </thead>
 <tbody>
   <tr id="DynamicObject">
     <td>Dynamic Object</td>
@@ -191,13 +205,48 @@ Contains descriptions of various Stalker related terms used in modding and in X-
 </tbody>
 </table>
 
+## Bones
+
+<table>
+  <thead>
+    <tr>
+      <th>Term</th>
+      <th>Definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr id="Rigid">
+      <td>Rigid</td>
+      <td></td>
+    </tr>
+    <tr id="Cloth">
+      <td>Cloth</td>
+      <td><a href="https://ode.org/wiki/index.php/Manual#Ball_and_Socket">Ball</a> joint . Allows rotation in all directions, but without translation</td>
+    </tr>
+    <tr id="Joint">
+      <td>Joint</td>
+      <td>Universal joint. Automatically selects the optimal physical connection type based on constraint analysis (between <a href="https://ode.org/wiki/index.php/Manual#Hinge">Hinge</a> and FullControl(partially constrained axes)) </td>
+    </tr>
+    <tr id="Wheel">
+      <td>Wheel</td>
+      <td><a href="https://ode.org/wiki/index.php/Manual#Hinge-2">Hinge-2</a> joint. Allows rotation around the first axis (suspension axis) and rotation around the second axis (wheel axis).</td>
+    </tr>
+    <tr id="Slider">
+      <td>Slider</td>
+      <td><a href="https://ode.org/wiki/index.php/Manual#Slider">Slider</a> joint. Allows movement along one axis only</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Optimization
 
-<table><thead>
+<table>
+<thead>
   <tr>
     <th>Term</th>
     <th>Definition</th>
-  </tr></thead>
+  </tr>
+  </thead>
 <tbody>
   <tr id="HOM">
     <td>HOM</td>
@@ -216,11 +265,13 @@ Contains descriptions of various Stalker related terms used in modding and in X-
 
 ## Shaders
 
-<table><thead>
+<table>
+<thead>
   <tr>
     <th>Term</th>
     <th>Definition</th>
-  </tr></thead>
+  </tr>
+  </thead>
 <tbody>
   <tr id="CompileShader">
     <td>Compile Shader</td>

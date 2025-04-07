@@ -6,14 +6,7 @@ ___
 
 Designed for detailed objects like grass. Supports alpha channel dissolution
 
-### General
-
-| Parameter | Parameter Description |
-|---|---|
-| Priority |  |
-| Strict sorting |  |
-
-### Base Texture
+## Base Texture
 
 <table><thead>
   <tr>

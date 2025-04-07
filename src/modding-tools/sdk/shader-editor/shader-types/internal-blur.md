@@ -1,4 +1,4 @@
-# internal blur Shader Type
+# INTERNAL: blur Shader Type
 
 ___
 
@@ -6,14 +6,7 @@ ___
 
 Blur effect
 
-### General
-
-| Parameter | Parameter Description |
-|---|---|
-| Priority |  |
-| Strict sorting |  |
-
-### Base Texture
+## Base Texture
 
 <table><thead>
   <tr>

@@ -6,14 +6,7 @@ ___
 
 A type of shader for flora and LOD.  Supports alpha channel dissolution
 
-### General
-
-| Parameter | Parameter Description |
-|---|---|
-| Priority |  |
-| Strict sorting |  |
-
-### Base Texture
+## Base Texture
 
 <table><thead>
   <tr>

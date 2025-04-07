@@ -1,4 +1,4 @@
-# basic (simple) Shader Type ()
+# basic (simple) Shader Type
 
 ___
 
@@ -6,14 +6,7 @@ ___
 
 A basic shader, with a wide range of features. Supports transformation, different types of blending, adjusting the effect of lighting on it and Z-buffering. Used for most effects, such as glow
 
-### General
-
-| Parameter | Parameter Description |
-|---|---|
-| Priority |  |
-| Strict sorting | Enables a mode that renders objects in a strictly defined order, usually to correctly render transparent or translucent surfaces |
-
-### Base Texture
+## Base Texture
 
 <table><thead>
   <tr>

@@ -13,4 +13,4 @@ ___
 - Clarification: No [*.efd](../file-formats/ai/efd.md) file was found
 
 - Error fixing:
-  - Check that the [*.efd](../file-formats/ai/efd.md) files exists
+  - Check that the *.efd files exists

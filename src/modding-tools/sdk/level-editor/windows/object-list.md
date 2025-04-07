@@ -1,4 +1,4 @@
-# Level Editor - Object List Tab
+# Level Editor - Object List Window
 
 ___
 

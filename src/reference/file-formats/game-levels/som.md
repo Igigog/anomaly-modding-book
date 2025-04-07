@@ -31,7 +31,7 @@ The structure of the file is similar to .hom
 
 #### Block 0x1 (mesh data)
 
-| Тип | Description | Note | Note 2 |
+| Type | Description | Note | Note 2 |
 |---|---|---|---|
 | fff | 3D coordinates of the first vertex of the triangle | - | - |
 | fff | 3D coordinates of the second vertex of the triangle | - | - |
@@ -48,7 +48,7 @@ ___
 ## Programs editing this file
 
 - [Blender (X-Ray Addon)](../../../modding-tools/blender/blender-x-ray-addon-summary.md)
-- [SDK 0.7](../../../modding-tools/sdk/README.md)
+- [SDK](../../../modding-tools/sdk/README.md)
 
 ___
 
