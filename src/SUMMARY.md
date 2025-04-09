@@ -24,6 +24,7 @@ ___
   - [PDB files](addons/pdb.md)
   - [Lua Unlocalizer](addons/lua-unlocalizer.md)
   - [Useful addons, scripts and utils](addons/useful-addons-scripts-utils.md)
+  - [Quality of life, tips and tricks](addons/qol-tips-and-tricks.md)
 
 ___
 
