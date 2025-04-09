@@ -69,6 +69,7 @@ ___
 - [Mapping](mapping/README.md)
   - [Creating a location in Blender](blender/creating-a-location-in-blender.md)
   - [Multimaterial Terrain Guide](mapping/multimaterial-terrain.md)
+  - [Level Editor tutorial](mapping/level-editor-tutorial.md)
   
 ___
 
