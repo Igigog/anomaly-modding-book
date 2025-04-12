@@ -43,9 +43,9 @@ So technically, these are both .anm files. I just decided there needs to be some
 
 ### *.ppe effects Theory
 
-These are camera animations with more possibilities: besides camera movements, they can also include, for example, duality effect (when drinking vodka or when there was an explosion next to the actor), grain effect in radiation zones etc. Vanilla night vision is also a [.ppe](../../reference/file-formats/postprocceses/ppe.md) effect.
+These are camera animations with more possibilities: besides camera movements, they can also include, for example, duality effect (when drinking vodka or when there was an explosion next to the actor), grain effect in radiation zones etc. Vanilla night vision is also a [*.ppe](../../reference/file-formats/postprocceses/ppe.md) effect.
 
-.ppe files work similarly to .anm files - they’re separate and go to **anims/** folder as well.
+*.ppe files work similarly to .anm files - they’re separate and go to **anims/** folder as well.
 
 ____
 
@@ -93,7 +93,7 @@ To make a test placeholder, you can also open any weapon config file and choose 
 
 The function that lets you play a motion is:
 
-```lua,icon=.devicon-lua-plain
+```lua
 game.play_hud_motion(hands, anim_section_name, motion_name, bMixIn, speed)
 ```
 
@@ -115,20 +115,20 @@ Now let’s have a closer look at its arguments.
 
 #### Supplementary functions
 
-```lua,icon=.devicon-lua-plain
+```lua
 game.hud_motion_allowed()
 ```
 
 Checks if a hands motion can be played at the moment. Useful as an additional safety check. Returns True or False.
 
-```lua,icon=.devicon-lua-plain
+```lua
 game.get_motion_length(anim_section_name, motion_name, speed)
 ```
 
 Gets the specified motion length. The parameters are identical to those in `play_hud_motion`.
 Note that it returns time in milliseconds, so in order to get the actual length you’ll need to divide the result by 1000. Useful to know when the motion is over.
 
-```lua,icon=.devicon-lua-plain
+```lua
 game.stop_hud_motion()
 ```
 
@@ -146,18 +146,18 @@ Example: you have an animation from FDDA that is currently being played. This fu
     3. Call `game.only_allow_movekeys(true)` if you don’t want the user to break an animation by pressing any action keys (like item quick use), and then restore the controls with `game.only_allow_movekeys(false)`.
     4. `hide_hud_inventory()` and `db.actor:activate_slot(0)` can be used to close the backpack inventory or force hide an active weapon if needed. Detectors can be manipulated in a similar way with:
 
-```lua,icon=.devicon-lua-plain
+```lua
     local det = db.actor:active_detector() or nil
     det:switch_state(2)
 ```
 
 and then restored with:
 
-```lua,icon=.devicon-lua-plain
+```lua
     det:switch_state(1)
 ```
 
-### .anm animations
+### *.anm animations
 
 It’s simpler to play these. Here we don’t need any configs. The files are played directly. The function is `game.play_hud_anm(path, hands, speed, power, looped, restart)`.
 
@@ -183,19 +183,19 @@ The arguments are:
 
 #### Supplementary functions
 
-```lua,icon=.devicon-lua-plain
+```lua
 game.stop_hud_anm(path, force
 ```
 
 Stops a specific .anm from playing. **path** is identical to the one above. **force** is a boolean parameter which makes it possible to force stop it - a bit more ‘harsh’ method.
 
-```lua,icon=.devicon-lua-plain
+```lua
 game.stop_all_hud_anms(boolean)
 ```
 
 Stops all .anm’s that are currently played.
 
-```lua,icon=.devicon-lua-plain
+```lua
 game.set_hud_anm_time(path, time)
 ```
 
@@ -203,13 +203,13 @@ This function alters the playback speed of the specified .anm file. **path** is 
 
 The name may be a bit confusing, but judging by the engine code it actually manipulates the .anm speed:
 
-```lua,icon=.devicon-lua-plain
+```lua
 float speed = (anm->anm->anim_param().max_t - anm->anm->anim_param().t_current) / time;
 ```
 
 And a descriptive example in `actor_effects.script`:
 
-```lua,icon=.devicon-lua-plain
+```lua
 game.play_hud_motion(1, mc_anm_sec, "anm_hide_hand", true, hide_hand_speed)
 new_speed = game.set_hud_anm_time(anm_name, ((mc_anm_time_1 + mc_anm_time_2) / 1000) + anm_additional_length)
 ```

@@ -2,7 +2,7 @@
 
 ___
 
-Contains descriptions of various Stalker related terms used in modding and in X-Ray Engine.
+Contains descriptions of various S.T.A.L.K.E.R. related terms used in modding and in X-Ray Engine.
 
 <style>
     :target {
@@ -59,11 +59,11 @@ Contains descriptions of various Stalker related terms used in modding and in X-
     <td>Gulags control a set of stalkers together by assigning them each tasks by task priority. For example a gulag could contain tasks for patrolling an area and sitting at a campfire. The priority of these tasks will mean that the first stalker "caught" by the gulag (that is, the first stalker to be given over to the gulag's control) will patrol the area with subsequent caught stalkers simply sitting at a fire. A stalker is "caught" by a gulag be entering the associated "Smart Terrain".</td>
   </tr>
   <tr id="gvid">
-    <td>gvid</td>
-    <td>Part of the graphpoint. Graphpoint index</td>
+    <td>gvid (game_vertex_id)</td>
+    <td>Part of the graphpoint. <a href="Graphpoint">Graph Point</a> index</td>
   </tr>
   <tr id="lvid">
-    <td>lvid</td>
+    <td>lvid (level_vertex_id)</td>
     <td>Part of <a href="../reference/file-formats/game-levels/ai.md">*.ai</a>. Ai grid node</td>
   </tr>
   <tr id="SmartCover">
@@ -99,9 +99,13 @@ Contains descriptions of various Stalker related terms used in modding and in X-
   </tr>
   </thead>
 <tbody>
-  <tr id="_hudAnimations">
-    <td>object_hud animations</td>
-    <td>Animations for the _hud object</td>
+  <tr id="_hud-animation">
+    <td>*_hud animation</td>
+    <td>Animations for the <a href="_hud-model">*_hud</a> object</td>
+  </tr>
+  <tr id="MotionMark">
+    <td>Motion Mark</td>
+    <td>Time intervals in the animation in which something happens</td>
   </tr>
 </tbody>
 </table>
@@ -118,11 +122,11 @@ Contains descriptions of various Stalker related terms used in modding and in X-
 <tbody>
   <tr id="Luabind">
     <td>Luabind</td>
-    <td>Luabind is a library that helps you create bindings between C++ and Lua. It has the ability to expose functions and classes, written in C++, to Lua. It will also supply the functionality to define classes in lua and let them derive from other lua classes or C++ classes. Lua classes can override virtual functions from their C++ base classes. It is written towards Lua 5.x, and does not work with Lua 4.</td>
+    <td><a href="https://www.rasterbar.com/products/luabind/docs.html">Luabind</a> is a library that helps you create bindings between C++ and Lua. It has the ability to expose functions and classes, written in C++, to Lua. It will also supply the functionality to define classes in lua and let them derive from other lua classes or C++ classes. Lua classes can override virtual functions from their C++ base classes. It is written towards Lua 5.x, and does not work with Lua 4.</td>
   </tr>
   <tr id="LuaJIT">
     <td>LuaJIT</td>
-    <td>LuaJIT is a Just-In-Time Compiler (JIT) for the Lua programming language. Anomaly uses LuaJIT 2.0.4</td>
+    <td><a href="https://luajit.org/luajit.html">LuaJIT</a> is a <a href="https://en.wikipedia.org/wiki/Just-in-time_compilation">Just-In-Time Compiler</a> (JIT) for the Lua programming language. Anomaly uses LuaJIT 2.0.4</td>
   </tr>
 </tbody>
 </table>
@@ -139,15 +143,15 @@ Contains descriptions of various Stalker related terms used in modding and in X-
 <tbody>
   <tr id="xrAI">
     <td>xrAI</td>
-    <td></td>
+    <td>AI Compiler</td>
   </tr>
   <tr id="xrDO">
     <td>xrDO</td>
-    <td></td>
+    <td>Detail Object Compiler</td>
   </tr>
   <tr id="xrLC">
     <td>xrLC</td>
-    <td></td>
+    <td>Level Compiler</td>
   </tr>
 </tbody>
 </table>
@@ -168,7 +172,7 @@ Contains descriptions of various Stalker related terms used in modding and in X-
 </tbody>
 </table>
 
-## Models
+## Objects
 
 <table>
 <thead>
@@ -186,13 +190,13 @@ Contains descriptions of various Stalker related terms used in modding and in X-
     <td>Multiply Usage Object</td>
     <td>Needed for automatic creation of LOD at compilation stage</td>
   </tr>
-  <tr id="_hud">
-    <td>object_hud</td>
-    <td>In stalker modding, object_hud is a model in front of the player in the hands of the character. Usually it is a model of a weapon, grenades, etc.</td>
+  <tr id="_hud-model">
+    <td>*_hud</td>
+    <td>*_hud is a model in front of the player in the hands of the character. Usually it is a model of a weapon, grenades, hands.</td>
   </tr>
-  <tr id="_world">
-    <td>object_world</td>
-    <td>Model, in-game world (NPC weapons, 3rd-person view). The difference from the _hud model is that the _world must have a collision to calculate the interaction with the game.</td>
+  <tr id="_world-model">
+    <td>*_world</td>
+    <td>*_world is a model in-game world (NPC weapons, 3rd-person view). The difference from the *_hud model is that the *_world must have a collision to calculate the interaction with the game.</td>
   </tr>
   <tr id="ProgressiveMeshes">
     <td>Progressive Meshes</td>
@@ -200,12 +204,20 @@ Contains descriptions of various Stalker related terms used in modding and in X-
   </tr>
   <tr id="StaticObject">
     <td>Static Object</td>
-    <td>Any static object at the level</td>
+    <td>Any static object at the level.</td>
+  </tr>
+    <tr id="SOM">
+    <td>SOM (Sound Occluder Mesh)</td>
+    <td>Geometry for calculating sound propagation.</td>
+  </tr>
+  <tr id="HOM">
+    <td>HOM (Hierarchical Occlusion Mapping)</td>
+    <td>Technique used in computer graphics to efficiently control the rendering of scene objects, especially in 3D applications. It builds a hierarchical structure to determine which objects or parts of the scene can be hidden from the camera by other objects, thus reducing the amount of computation required for rendering. This improves performance by avoiding rendering invisible objects.</td>
   </tr>
 </tbody>
 </table>
 
-## Bones
+## Joint Types
 
 <table>
   <thead>
@@ -217,7 +229,7 @@ Contains descriptions of various Stalker related terms used in modding and in X-
   <tbody>
     <tr id="Rigid">
       <td>Rigid</td>
-      <td></td>
+      <td>Joint type that completely restricts all transformations</td>
     </tr>
     <tr id="Cloth">
       <td>Cloth</td>
@@ -248,10 +260,6 @@ Contains descriptions of various Stalker related terms used in modding and in X-
   </tr>
   </thead>
 <tbody>
-  <tr id="HOM">
-    <td>HOM</td>
-    <td>Technique used in computer graphics to efficiently control the rendering of scene objects, especially in 3D applications. It builds a hierarchical structure to determine which objects or parts of the scene can be hidden from the camera by other objects, thus reducing the amount of computation required for rendering. This improves performance by avoiding rendering invisible objects.</td>
-  </tr>
   <tr id="Portal">
     <td>Portal</td>
     <td></td>
@@ -279,6 +287,27 @@ Contains descriptions of various Stalker related terms used in modding and in X-
   </tr>
   <tr id="EngineShader">
     <td>Engine Shader</td>
+    <td></td>
+  </tr>
+</tbody>
+</table>
+
+## Particles
+
+<table>
+<thead>
+  <tr>
+    <th>Term</th>
+    <th>Definition</th>
+  </tr>
+  </thead>
+<tbody>
+  <tr id="ParticleEffect">
+    <td>Particle Effect</td>
+    <td></td>
+  </tr>
+  <tr id="ParticleGroup">
+    <td>Particle Group</td>
     <td></td>
   </tr>
 </tbody>

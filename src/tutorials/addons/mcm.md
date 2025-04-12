@@ -10,7 +10,7 @@ in a clear object-oriented way. Really recommend to check it out. There are no d
 
 This is how it looks like with MCM Builder:
 
-```lua,icon=.devicon-lua-plain
+```lua
 Tree = mcm_builder.Tree
 Page = mcm_builder.Page
 Checkbox = mcm_builder.Checkbox
@@ -84,7 +84,7 @@ In addition to returning a valid options tree `op`, you may return a string to n
 
 The basic structure of your `mod_name_mcm.script` structure is as follows:
 
-```lua,icon=.devicon-lua-plain
+```lua
 function on_mcm_load()
   op = { 
     id = "modname", sh = true, gr =
@@ -111,7 +111,7 @@ For example, let us say we have a variable called `example_value` that we want t
 
 And inside your `my_mod_mcm.script`, you would need an options tree as follows:
 
-```lua,icon=.devicon-lua-plain
+```lua
 function on_mcm_load()
   op = { 
      id = "my_mod", sh = true, gr =
@@ -139,7 +139,7 @@ Any descriptive strings will be displayed as a tooltip when the cursor hovers ov
 
 Option item names follow this format: `ui_mcm_(id of the first group)_(id of the Nth group)_(value name)`. Let's reuse the example `on_mcm_load()` from before:
 
-```lua,icon=.devicon-lua-plain
+```lua
 function on_mcm_load()
   op = { 
      id = "modname", sh = true, gr =
@@ -181,7 +181,7 @@ The easiest way to read your settings is to call `ui_mcm.get(path)`, where `path
 
 As with `ui_options`, when MCM applies a settings change, it sends an `on_option_change` callback. You can use this to do a one-time read of your options into variables for your script. You can either get these values with `ui_mcm.get(path)`, or read them directly from `axr_configs` like so:
 
-```lua,icon=.devicon-lua-plain
+```lua
 axr_main.config:r_value("mcm", path, type, default) --see _g for how r_value functions.
 ```
 
@@ -203,7 +203,7 @@ To store an option in a savegame instead of globally, call `ui_mcm.store_in_save
 
 For example, take the following options menu:
 
-```lua,icon=.devicon-lua-plain
+```lua
 function on_mcm_load()
   op =  
   {
@@ -224,19 +224,19 @@ end
 
 To store the second checkbox `1check2` in a savegame, you would call:
 
-```lua,icon=.devicon-lua-plain
+```lua
 ui_mcm.store_in_save("example_example/example_one/1check2")
 ```
 
 To store both `1check1` and `1check2` in a savegame, you would call:
 
-```lua,icon=.devicon-lua-plain
+```lua
 ui_mcm.store_in_save("example_example/example_one")
 ```
 
 To store all options of the mod `example_example` in a savegame, you would call:
 
-```lua,icon=.devicon-lua-plain
+```lua
 ui_mcm.store_in_save("example_example")
 ```
 
@@ -312,7 +312,7 @@ These parameters must be declared when certain other parameters are declared.
 
 Example:
 
-```lua,icon=.devicon-lua-plain
+```lua
 -- for some group called groupID
 { id = "somelist", type = "radio_h", val = 2, content = { {0, "somelist_off"}, {1, "somelist_half"}, {2, "somelist_full"} }, def = 0 }
 ```
@@ -348,7 +348,7 @@ These parameters are entirely optional, and can be used for further customizatio
 
 <sup>3</sup>: For example, this entry would force the script to use  `ui_mcm_some_random_string` and `ui_mcm_some_random_string_desc` for the name and description of the option `example`.
 
-```lua,icon=.devicon-lua-plain
+```lua
 { id = "example", type = "check", val = 1, def = true, hint = "some_random_string" }
 ```
 
@@ -370,7 +370,7 @@ MCM can track the held status of the Control and Shift keys, as well as flag tha
 
 You can track the status of modifier keys by using `ui_mcm.get_mod_key(val)`, where `val` can be `0` (`MOD_NONE`), `1` (`MOD_SHIFT`), `2` (`MOD_CTRL`), or `3` (`MOD_ALT`). It will return the following flags based on `val`:
 
-```lua,icon=.devicon-lua-plain
+```lua
 ui_mcm.MOD_NONE  ui_mcm.MOD_SHIFT and ui_mcm.MOD_CTRL ui_mcm.MOD_ALT
 ```
 
@@ -410,25 +410,25 @@ The following option entries have translation strings provided by MCM and are se
 
 With shift and control, radio button:
 
-```lua,icon=.devicon-lua-plain
+```lua
 {id = "modifier", type = ui_mcm.kb_mod_radio, val = 2, def = 0, hint = "mcm_kb_modifier", content= { {0,"mcm_kb_mod_none"} , {1,"mcm_kb_mod_shift"} , {2,"mcm_kb_mod_ctrl"},{3,"mcm_kb_mod_alt"}}},
 ```
 
 With shift and control, list:
 
-```lua,icon=.devicon-lua-plain
+```lua
 {id = "modifier", type = ui_mcm.kb_mod_list, val = 2, def = 0, hint = "mcm_kb_modifier" , content= { {0,"mcm_kb_mod_none"} , {1,"mcm_kb_mod_shift"} , {2,"mcm_kb_mod_ctrl"},{3,"mcm_kb_mod_alt"}}},
 ```
 
 Single, double or long press, radio button:
 
-```lua,icon=.devicon-lua-plain
+```lua
 {id = "mode", type = ui_mcm.kb_mod_radio, val = 2, def = 0, hint = "mcm_kb_mode" , content= { {0,"mcm_kb_mode_press"} , {1,"mcm_kb_mode_dtap"} , {2,"mcm_kb_mode_hold"}}},
 ```
 
 Single, double or long press, radio button:
 
-```lua,icon=.devicon-lua-plain
+```lua
 {id = "mode", type = ui_mcm.kb_mod_list, val = 2, def = 0, hint = "mcm_kb_mode" , content= { {0,"mcm_kb_mode_press"} , {1,"mcm_kb_mode_dtap"} , {2,"mcm_kb_mode_hold"}}},
 ```
 
@@ -440,7 +440,7 @@ See the original comments in the `ui_mcm` script for more.
 
 ### example_mcm.script
 
-```lua,icon=.devicon-lua-plain
+```lua
 --Change your defaults here if you don't have Mod Config Menu installed. This allows people without MCM to change values.
 local defaults = {
   ["1check1"] = some_value_here,
@@ -491,7 +491,7 @@ end
 
 This is set up for the generic mcm.script example above.
 
-```xml,icon=.devicon-xml-plain
+```xml
 <string id="ui_mcm_menu_example_example">
 <text>Name of your mod as it appears in the MCM</text>
 </string>

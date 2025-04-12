@@ -4,7 +4,7 @@ ___
 
 ## About
 
-Used to create particles or groups of particles
+Used to create particle effects ([*.pe](../../../reference/file-formats/particles/pe.md)) or particle groups ([*.pg](../../../reference/file-formats/particles/pg.md)).
 
 ![alt text](images/particle-editor.png)
 
@@ -13,8 +13,6 @@ ___
 ## Interface
 
 <body>
-  <link rel="stylesheet" href="tables.css">
-  <script src="tables.js"></script>
   <div class="table-tabs">
     <div class="tab-buttons">
       <button class="tab-button active" onclick="openTable(event, 'File')">File</button>
@@ -32,27 +30,27 @@ ___
         <tbody>
           <tr>
             <td>Save</td>
-            <td></td>
+            <td>Save the particles in unpacked form(*.pe,\*.pg), in rawdata/particles</td>
           </tr>
           <tr>
-            <td>Load</td>
-            <td></td>
+            <td>Reload</td>
+            <td>Reload particles from rawdata/particles</td>
           </tr>
           <tr>
             <td>Save .xr</td>
-            <td></td>
+            <td>Save file .xr</td>
           </tr>
           <tr>
             <td>Load .xr</td>
-            <td></td>
+            <td>Load file .xr</td>
           </tr>
           <tr>
             <td>Validate</td>
-            <td></td>
+            <td>Validate particles</td>
           </tr>
           <tr>
             <td>Compact</td>
-            <td></td>
+            <td>Checks database integrity, corrects paths to effects, and organizes storage structure</td>
           </tr>
         </tbody>
       </table>
@@ -267,12 +265,12 @@ ___
 ### Top Bar
 
 | Icon | Name | Description |
-|---|---|---|
-|  | Undo | Undo the last action |
-|  | Redo | Repeat the last action |
-|  | Save | Save the particles in unpacked form(*.pe,\*.pg), in rawdata/particles |
-|  | Reload | Reload particles from rawdata/particles |
-|  | Open | Open file .xr |
-|  | Save | Save file .xr |
-|  | Open | Open folder Gamedata |
-|  | Validate | Particle Validation |
+|:---:|---|---|
+| ![1](../icons/undo.png) | Undo | Undo the last action |
+| ![1](../icons/redo.png) | Redo | Repeat the last action |
+| ![1](../icons/save.png) | Save | Save the particles in unpacked form(*.pe,\*.pg), in rawdata/particles |
+| ![1](../icons/RCRefresh.bmp) | Reload | Reload particles from rawdata/particles |
+| ![1](../icons/open.png) | Open | Open file .xr |
+| ![1](../icons/save.png) | Save | Save file .xr |
+| ![1](../icons/Btn_FolderOpen.bmp) | Open | Open folder Gamedata |
+| ![1](../icons/Validate.png) | Validate | Particle Validation |

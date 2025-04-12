@@ -11,8 +11,6 @@ Used to create/edit shaders
 ## Interface
 
 <body>
-  <link rel="stylesheet" href="tables.css">
-  <script src="tables.js"></script>
   <div class="table-tabs">
     <div class="tab-buttons">
       <button class="tab-button active" onclick="openTable(event, 'File')">File</button>

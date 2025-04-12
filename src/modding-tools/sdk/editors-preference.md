@@ -129,9 +129,9 @@ Preferences across all editors
 
 | Button | Description |
 |---|---|
-| xrLC | Path to xrLC (Level Compiler) |
-| xrAI | Path to xrAI (AI Compiler) |
-| xrDO | Path to xrDO (Detail Object Compiler) |
+| xrLC | Path to [xrLC](../../glossary/glossary.md#xrLC) |
+| xrAI | Path to [xrAI](../../glossary/glossary.md#xrAI) |
+| xrDO | Path to [xrDO](../../glossary/glossary.md#xrDO) |
 
 ### Keyboard
 

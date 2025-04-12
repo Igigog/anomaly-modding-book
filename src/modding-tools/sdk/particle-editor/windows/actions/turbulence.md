@@ -4,7 +4,7 @@ ___
 
 ## About
 
-Добавляет эффект турбулентности к движению частиц.
+Adds a turbulence effect to particle motion.
 
 <table><thead>
   <tr>

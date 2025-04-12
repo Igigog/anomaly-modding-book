@@ -1,6 +1,4 @@
 <!-- markdownlint-disable -->
-[![Discord](https://img.shields.io/discord/1005783763877363722?label=Discord&logo=Discord)](https://discord.gg/8Pu2ekQYg3)
-
 # Anomaly modding book
 
 Introductory book for Stalker Anomaly modding
@@ -22,9 +20,13 @@ So refer to this [article](src/meta/contributing.md) or open an [issue](https://
 
 ## Links
 
-- [Igigog](https://github.com/Igigog) - Book Creator
+[![Discord](https://img.shields.io/discord/1005783763877363722?label=Discord&logo=Discord)](https://discord.gg/8Pu2ekQYg3) - Anomaly Modding Book Discord
 
-- [The book itself](https://igigog.github.io/anomaly-modding-book/)
+[Anomaly Discord](https://discord.gg/c4RuJNs)
+
+[Igigog](https://github.com/Igigog) - Book Creator
+
+[TheParaziT](https://github.com/TheParaziT) - Repository Maintainer
 
 - [mdBook](https://github.com/rust-lang/mdBook) - The platform on which the book was written
   - [mdbook admonish](https://github.com/tommilligan/mdbook-admonish) - A preprocessor for mdbook to add Material Design admonishments.

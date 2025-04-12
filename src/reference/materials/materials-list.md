@@ -1,14 +1,12 @@
-# Materials List (gamemtl.xr)
+# Game Materials List (gamemtl.xr)
 
 ___
 
 ## About
 
-This section contains a list and description of the shaders that are available in the gamemtl.xr file. This file stores surface materials.
+This section contains a list and description of the Game Materials that are available in the gamemtl.xr file.
 
-## List
-
-### [Static object](../../glossary/glossary.md#StaticObject) materials
+## Static Object materials
 
 | Shader name and path | Description |
 |---|---|
@@ -47,7 +45,7 @@ This section contains a list and description of the shaders that are available i
 | material\wood | wooden surface, floor wooden steps |
 | material\wooden_board | wooden board, wooden wagon, box |
 
-### [Dynamic object](../../glossary/glossary.md#DynamicObject) materials
+## Dynamic Object materials
 
 | Shader name and path | Description |
 |---|---|
@@ -74,11 +72,6 @@ This section contains a list and description of the shaders that are available i
 | objects\small_metal_trash | Small metal trash (tubes, pieces, nuts, bolts) |
 | objects\small_weapon | Small weapon (pistol) |
 | objects\tin_can | Tin can |
-
-#### Creatures materials
-
-| Shader name and path | Description |
-|---|---|
 | creatures\actor | Person (actor) |
 | creatures\hoof | Mutant with hooves |
 | creatures\human | Human (NPC) |

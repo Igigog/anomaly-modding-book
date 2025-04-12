@@ -18,7 +18,7 @@ And are used like this:
 
 ## somescript.script
 
-```lua,icon=.devicon-lua-plain
+```lua
 local ini = ini_file("path\\to\\somefile.ltx")
 local condlist = ini:r_string_to_condlist("some_section","my_condlist")
 local result = xr_logic.pick_section_from_condlist(game_object_1, game_object_2, condlist)
@@ -26,7 +26,7 @@ local result = xr_logic.pick_section_from_condlist(game_object_1, game_object_2,
 
 The code above is the equivalent of:
 
-```lua,icon=.devicon-lua-plain
+```lua
 if                                                                  -- {
     xr_conditions.A(game_object_1, game_object_2, {"a1","a2"}) and  -- =A(a1:a2)
     not xr_conditions.B(game_object_1, game_object_2) and           -- !B
@@ -54,7 +54,7 @@ Condlist can have more than one condition block:
 
 this is the equivalent of:
 
-```lua,icon=.devicon-lua-plain
+```lua
 if                                                                     
     not db.actor:has_info("A") and
     not db.actor:has_info("B")    
@@ -88,13 +88,13 @@ on_complete = %=reward_stash(true)%
 
 This condlist has no condition (the part inside {}) and no return value, so calling
 
-```lua,icon=.devicon-lua-plain
+```lua
 xr_logic.pick_section_from_condlist()
 ```
 
 on this is the equivalent of just calling
 
-```lua,icon=.devicon-lua-plain
+```lua
 xr_effects.reward_stash(x, x, {"true"})
 ```
 
@@ -110,7 +110,7 @@ But in reality it's a condlist that always returns "true", the only way to know 
 
 Condlist can be also be parsed from a string
 
-```lua,icon=.devicon-lua-plain
+```lua
 local condlist1 = ini:r_string_to_condlist("some_section","my_condlist")
 local somestring = ini:r_string_ex("some_section","my_condlist")
 local condlist2 = xr_logic.parse_condlist(game_object, string1, string2, somestring)
@@ -209,7 +209,7 @@ If you want to make custom conditions either create new functions inside xr_cond
 
 ### my_conditions.script
 
-```lua,icon=.devicon-lua-plain
+```lua
 function xr_conditions.has_more_money_than(a,b,c)
     
     -- a and b will be the game objects given as arguments to the xr_logic.pick_section_from_condlist call that evaluates this condlist
@@ -239,7 +239,7 @@ You can do the same with xr_effects
 
 ### my_effects.script
 
-```lua,icon=.devicon-lua-plain
+```lua
 function xr_effects.give_tuna_to_actor(a,b,c)
     alife():create('conserva',vector(),0,0,0)
 end

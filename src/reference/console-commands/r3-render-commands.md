@@ -24,4 +24,4 @@ DirectX 10.1 - (Shader Model 4.1)
 
 | Command | Command description | Command's argument | Note |
 |---|---|:---:|---|
-| r3_fog_reload |  | - | - |
+| r3_fog_reload | Reloads volumetric fog parameters | - | - |

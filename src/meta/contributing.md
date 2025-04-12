@@ -1,4 +1,4 @@
-# Contributing to this book
+# Contributing
 
 ___
 

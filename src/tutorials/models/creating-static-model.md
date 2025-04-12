@@ -1,4 +1,4 @@
-# Creating and setting up a static model
+# Static Object Setup in Blender
 
 ___
 

@@ -54,15 +54,15 @@ ___
     <td rowspan="16">gamedata</td>
     <td rowspan="16">Folder with game files</td>
     <td>ai</td>
-    <td>Contains the [*.efd](file-formats/ai/efd.md) files needed for the AI</td>
+    <td>Contains the <a href="../file-formats/ai/efd.md">*.efd</a> files needed for the AI</td>
   </tr>
   <tr>
     <td>anims</td>
-    <td>Contains [*.anm](file-formats/animations/anm.md) files for camera animation and [*.ppe](file-formats/particles/pe.md) files for postprocessing</td>
+    <td>Contains <a href="../file-formats/animations/anm.md">*.anm</a> files for camera animation and <a href="../file-formats/postprocceses/ppe.md">*.ppe</a> files for postprocessing</td>
   </tr>
   <tr>
     <td>configs</td>
-    <td>Contains [*.ltx](file-formats/conf-script/ltx.md) for configuration files and [*.xml](file-formats/conf-script/xml.md) for text</td>
+    <td>Contains <a href="../file-formats/conf-script/ltx.md">*.ltx</a> for configuration files and <a href="../file-formats/conf-script/xml.md">*.xml</a> for text</td>
   </tr>
   <tr>
     <td>levels</td>
@@ -70,11 +70,11 @@ ___
   </tr>
   <tr>
     <td>meshes</td>
-    <td>Contains [*.ogf](file-formats/models/ogf.md), [*.dm](file-formats/models/dm.md), [*.omf](file-formats/animations/omf.md) file needed for models and skeleton animation</td>
+    <td>Contains <a href="../file-formats/models/ogf.md">*.ogf</a>, <a href="../file-formats/models/dm.md">*.dm</a>, <a href="../file-formats/animations/omf.md">*.omf</a> file needed for models and skeleton animation</td>
   </tr>
   <tr>
     <td>scripts</td>
-    <td>Contains [*.script](file-formats/conf-script/script.md) files for game scripts</td>
+    <td>Contains <a href="../file-formats/conf-script/script.md">*.script</a> files for game scripts</td>
   </tr>
   <tr>
     <td>shaders</td>
@@ -82,19 +82,19 @@ ___
   </tr>
   <tr>
     <td>sounds</td>
-    <td>Contains [*.ogg](file-formats/audio-video/ogg.md) files for various music, sounds, ambient, etc.</td>
+    <td>Contains <a href="../file-formats/audio-video/ogg.md">*.ogg</a> files for various music, sounds, ambient, etc.</td>
   </tr>
   <tr>
     <td>spawns</td>
-    <td>Contains a file `all.spawn` - it store all spawn spots on locations</td>
+    <td>Contains a <a href="../file-formats/game-levels/spawn.md">*.spawn</a> files - it store spawn spots on locations</td>
   </tr>
   <tr>
     <td>textures</td>
-    <td>Contains [*.dds](file-formats/textures/dds.md) textures</td>
+    <td>Contains <a href="../file-formats/textures/dds.md">*.dds</a> textures</td>
   </tr>
   <tr>
     <td>gamemtl.xr</td>
-    <td>Contains [game materials](../materials/materials-list.md)</td>
+    <td>Contains <a href="../materials/materials-list.md">Game Materials</a></td>
   </tr>
   <tr>
     <td>lanims.xr</td>
@@ -106,19 +106,19 @@ ___
   </tr>
   <tr>
     <td>senvironment.xr</td>
-    <td>Contains settings for [sound environment zones](../sound/sound-environments-list.md)</td>
+    <td>Contains settings for <a href="../audio/sound-environment-list.md">Sound Environment</a> zones</td>
   </tr>
   <tr>
     <td>shaders.xr</td>
-    <td>Database of the [shaders used by the graphics engine](../shaders/shaders-list/shaders-list.md)</td>
+    <td>Database of the <a href="../shaders/shaders-list/engine-shaders-list.md">shaders used by the graphics engine</a></td>
   </tr>
   <tr>
     <td>shaders_xrlc.xr</td>
-    <td>Database of [shaders used by the level compiler](../shaders/shaders-list/compiler-shaders-list.md)</td>
+    <td>Database of <a href="../shaders/shaders-list/compiler-shaders-list.md">shaders used by the level compiler</a></td>
   </tr>
   <tr>
     <td>tools</td>
-    <td>Contains some resources for modding, like a version icon for addons, a resource converter and .bat files for unpacking [*.db](file-formats/archives-resource-packs/db.md) files</td>
+    <td>Contains some resources for modding, like a version icon for addons, a resource converter and *.bat files for unpacking <a href="../file-formats/archives-resource-packs/db.md">*.db</a> files</td>
     <td>-</td>
     <td>-</td>
   </tr>

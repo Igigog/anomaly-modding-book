@@ -11,8 +11,6 @@ The Actor editor is usually needed to customize objects (NPCs, Objects, etc.)
 ## Interface
 
 <body>
-  <link rel="stylesheet" href="tables.css">
-  <script src="tables.js"></script>
   <div class="table-tabs">
     <div class="tab-buttons">
       <button class="tab-button active" onclick="openTable(event, 'File')">File</button>
@@ -68,7 +66,7 @@ The Actor editor is usually needed to customize objects (NPCs, Objects, etc.)
           </tr>
           <tr>
             <td>Batch Convert...</td>
-            <td></td>
+            <td>Batch file converting [Not Working]</td>
             <td>-</td>
           </tr>
           <tr>
@@ -79,7 +77,7 @@ The Actor editor is usually needed to customize objects (NPCs, Objects, etc.)
           <tr>
             <td>Quit</td>
             <td>Exiting the program</td>
-            <td></td>
+            <td>-</td>
           </tr>
         </tbody>
       </table>
@@ -322,12 +320,12 @@ The Actor editor is usually needed to customize objects (NPCs, Objects, etc.)
 ### Top Bar
 
 | Icon | Name | Description |
-|---|---|---|
-|  | Undo | Undo the last action |
-|  | Redo | Repeat the last action |
-|  | New | Clear/New Scene |
-|  | Open | Open file |
-|  | Save | Save file |
-|  | Open Gamedata | Open "gamedata" folder |
+|:---:|---|---|
+| ![1](../icons/undo.png) | Undo | Undo the last action |
+| ![1](../icons/redo.png) | Redo | Repeat the last action |
+| ![1](../icons/new.png) | New | Clear/New Scene |
+| ![1](../icons/open.png) | Open | Open file |
+| ![1](../icons/save.png) | Save | Save file |
+| ![1](../icons/Btn_FolderOpen.bmp) | Open Gamedata | Open "gamedata" folder |
 |  | Simulate | Activates physics simulation |
 |  | Make Thumbnail | Make thumbnail |

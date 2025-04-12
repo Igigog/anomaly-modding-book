@@ -23,7 +23,7 @@ To avoid bloating those two scripts you can define those functions in a separate
 
 *mytask.script*
 
-```lua,icon=.devicon-lua-plain
+```lua
 function task_status_functor.mytask_status_f(tsk,task_id)
 	-- your code
 	-- return "fail" or "complete" to fail/complete the task
@@ -78,7 +78,7 @@ Title and task functors must belong to task_functor namespace so you need to add
 
 *mytask.script*
 
-```lua,icon=.devicon-lua-plain
+```lua
 function task_functor.mytask_title_f(task_id,field,p,tsk)
     -- title of the task will be the text returned
     -- you will have to define your strings in an xml and "translate" the string id 
@@ -103,7 +103,7 @@ Edit the status and target functor to spawn a soldier squad at the fallen bridge
 
 *mytask.script*
 
-```lua,icon=.devicon-lua-plain
+```lua
 local squad_id
 function task_status_functor.mytask_status_f(tsk,task_id)
     -- if it's stage 1, then we're done
@@ -187,7 +187,7 @@ Also now that the task is handled by the task manager, inside functors you can a
 
 *mytask.script*
 
-```lua,icon=.devicon-lua-plain
+```lua
 function task_functor.mytask_target_f(task_id,field,p,tsk)
     if tsk.stage == 0 then
         return squad_id
@@ -227,7 +227,7 @@ on_complete = %=reward_random_money(5000:10000) =reward_stash(true) =complete_ta
 
 actually means that when the condlist is parsed (in this case when task is completed) it will execute the functions:
 
-```lua,icon=.devicon-lua-plain
+```lua
 -- give player from 5000 to 10000 cash (modified by economy settings)
 xr_effects.reward_random_money(nil, nil, {"5000","10000"})
 

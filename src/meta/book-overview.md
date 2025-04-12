@@ -1,8 +1,8 @@
-# Book Structure Overview
+# Book Structure
 
 ___
 
-## Root Folders
+## Root folders
 
 - .github - For GitHub.
 - .vscode - For VSCode specific files.
@@ -10,7 +10,7 @@ ___
 - src - Source Folder.
 - theme - Various additional files for the book and preprocessors.
 
-## Src Folder
+## Src folder
 
 Different types of technical documentation are used in this book. They are described below.
 
@@ -30,7 +30,7 @@ Glossary
 
 General info
 
-### Modding Tools
+### Modding tools
 
 Software Documentation.
 

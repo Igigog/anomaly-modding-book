@@ -1,4 +1,4 @@
-# Creating a dynamic model
+# Dynamic Object Setup in Blender
 
 ___
 

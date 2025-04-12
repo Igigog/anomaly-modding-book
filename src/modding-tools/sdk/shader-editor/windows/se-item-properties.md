@@ -3,8 +3,6 @@
 ___
 
 <body>
-  <link rel="stylesheet" href="tables.css">
-  <script src="tables.js"></script>
   <div class="table-tabs">
     <div class="tab-buttons">
       <button class="tab-button active" onclick="openTable(event, 'EngineShader')">Engine Shader</button>
@@ -273,7 +271,7 @@ ___
   </tr>
   <tr>
     <td>Transparency (1-full transp)</td>
-    <td>material transparency for AI</td>
+    <td></td>
   </tr>
   <tr>
     <td>Sound occlusion (1-full hear)</td>

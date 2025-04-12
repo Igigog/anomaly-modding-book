@@ -10,9 +10,9 @@ ___
 
 |  |  |
 |---|---|
-| Add Group |  |
-| Add Particle |  |
-| Clone |  |
-| Remove |  |
-| Items |  |
-| Reference List |  |
+| Add Group | Create Particle Group |
+| Add Particle | Create Particle Effect |
+| Clone | Clone selected |
+| Remove | Remove selected |
+| Items | Items list |
+| Reference List | Particle Effects reference for selected Particle Group |

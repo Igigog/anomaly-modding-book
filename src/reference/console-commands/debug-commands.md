@@ -2,18 +2,18 @@
 
 ___
 
-| Command | Command description | Command's argument | Note |
-|---|---|:---:|---|
-| g_god | Enables God Mode | 'on/off' or '1/0' | - |
-| g_unlimitedammo | Enables Infinite Ammo Mode | 'on/off' or '1/0' | - |
-| jump_to_level | Moving to the selected level | k00_marsh<br> l01_escape<br> l02_garbage<br> l03_agroprom<br> k01_darkscape<br> l04_darkvalley<br> l05_bar<br> l06_rostok<br> l07_military<br> l08_yantar<br> l09_deadcity<br> l10_limansk<br> l10_radar<br> l10_red_forest<br> l11_hospital<br> l11_pripyat<br> l12_stancia<br> l12_stancia_2<br> l13_generators<br> l03u_agr_underground<br> l04u_labx18<br> l08u_brainlab<br> l10u_bunker<br> l12u_sarcofag<br> l12u_control_monolith<br> l13u_warlab<br> zaton<br> jupiter<br> jupiter_underground<br> pripyat<br> labx8<br> k02_truck_cemetery<br> fake_start<br> y04_pole | - |
-| rs_stats | Display engine statistics on the screen | 'on/off' or '1/0' | - |
-| rs_cam_pos | Display camera coordinates | 'on/off' or '1/0' | - |
-| list_actions | Display a list of active console commands | - | - |
-| bind_list | Display a list of commands assigned to the keys | - | - |
-| hud_info |  | - | - |
-| render_memory_stats | Output information about memory usage | - | - |
-| stat_memory |  | - | - |
+| Command | Command description | Command's argument |
+|---|---|:---:|
+| g_god | Enables God Mode | 'on/off' or '1/0' |
+| g_unlimitedammo | Enables Infinite Ammo Mode | 'on/off' or '1/0' |
+| jump_to_level | Moving to the selected level | k00_marsh<br> l01_escape<br> l02_garbage<br> l03_agroprom<br> k01_darkscape<br> l04_darkvalley<br> l05_bar<br> l06_rostok<br> l07_military<br> l08_yantar<br> l09_deadcity<br> l10_limansk<br> l10_radar<br> l10_red_forest<br> l11_hospital<br> l11_pripyat<br> l12_stancia<br> l12_stancia_2<br> l13_generators<br> l03u_agr_underground<br> l04u_labx18<br> l08u_brainlab<br> l10u_bunker<br> l12u_sarcofag<br> l12u_control_monolith<br> l13u_warlab<br> zaton<br> jupiter<br> jupiter_underground<br> pripyat<br> labx8<br> k02_truck_cemetery<br> fake_start<br> y04_pole |
+| rs_stats | Display engine statistics on the screen | 'on/off' or '1/0' |
+| rs_cam_pos | Display camera coordinates | 'on/off' or '1/0' |
+| list_actions | Display a list of active console commands | - |
+| bind_list | Display a list of commands assigned to the keys | - |
+| hud_info |  | - |
+| render_memory_stats | Output information about memory usage | - |
+| stat_memory |  | - |
 
 ## Debug Console Commands (Debug Build)
 

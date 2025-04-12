@@ -13,8 +13,6 @@ ___
 ## Interface
 
 <body>
-  <link rel="stylesheet" href="tables.css">
-  <script src="tables.js"></script>
   <div class="table-tabs">
     <div class="tab-buttons">
       <button class="tab-button active" onclick="openTable(event, 'File')">File</button>
@@ -601,24 +599,24 @@ ___
 ### Top Bar
 
 | Icon | Name | Description |
-|---|---|---|
-|  | Undo | Undo the last action |
-|  | Redo | Repeat the last action |
-|  | New Scene | Clear/New Scene |
-|  | Open Level | Open Level |
-|  | Save Level | Save Level |
-|  | Build CFORM | Build CFORM |
-|  | Build AI-Map | Build AI-Map |
-|  | Build Game Graph | Build Game Graph |
-|  | Start Play in Editor | Start Play in Editor |
+|:---:|---|---|
+| ![1](../icons/undo.png) | Undo | Undo the last action |
+| ![1](../icons/redo.png) | Redo | Repeat the last action |
+| ![1](../icons/new.png) | New Scene | Clear/New Scene |
+| ![1](../icons/open.png) | Open Level | Open Level |
+| ![1](../icons/save.png) | Save Level | Save Level |
+| ![1](../icons/cform.png) | Build CFORM | Build CFORM |
+| ![1](../icons/aimap.png) | Build AI-Map | Build AI-Map |
+| ![1](../icons/ggraph.png) | Build Game Graph | Build Game Graph |
+| ![1](../icons/PlayInEditorPlay.png) | Start Play in Editor | Start Play in Editor |
 |  |  | Play in Editor Settings |
-|  |  | Reload Configs |
-|  |  | Build and Make |
-|  |  | Play Level |
-|  |  | Play Level in Game |
-|  |  | Open 'gamedata' folder |
+| ![1](../icons/RCRefresh.bmp) |  | Reload Configs |
+| ![1](../icons/BuildAll.png) |  | Build and Make |
+| ![1](../icons/PlayPC.png) |  | Play Level |
+| ![1](../icons/PlayCleanGame.png) |  | Play Level in Game |
+| ![1](../icons/Btn_FolderOpen.bmp) |  | Open 'gamedata' folder |
 |  | Hint |  |
 |  | Volume |  |
 |  | Phys Simulation | Activates the physics simulation of the selected object(s) |
 |  | Use Pos | Use the position of the selected object when physics simulation is active. The position of the object will be applied when simulating physics |
-|  | Preference | Preference |
+| ![1](../icons/win_preferences.png) | Preference | Preference |

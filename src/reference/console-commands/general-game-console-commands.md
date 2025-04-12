@@ -20,7 +20,7 @@ ___
 | cl_cod_pickup_mode | Selecting items from the radius around the scope | 'on/off' or '1/0' | - |
 | disconnect | Ends the game | - | - |
 | time_factor | Ability to change the game time | 0.001 - 1000.0 | - |
-| flush | Flush log | - | - |
-| clear_log |  | - | - |
+| flush |  | - | - |
+| clear_log | Clear console and [*.log](../file-formats/general/log.md) file | - | - |
 | cfg_load | Load config file | - | - |
 | cfg_save | Save config file | - | - |

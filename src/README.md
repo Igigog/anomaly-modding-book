@@ -17,6 +17,12 @@ Good luck, have fun, don't die
 
 Igigog#6387
 
+## Links
+
+[Anomaly Discord](https://discord.gg/c4RuJNs)
+
+[Anomaly Modding Book Discord](https://discord.gg/8Pu2ekQYg3)
+
 ___
 
 ```admonish warning

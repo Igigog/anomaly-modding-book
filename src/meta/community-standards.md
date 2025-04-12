@@ -23,7 +23,7 @@ IX-Ray is currently the most advanced project with engine and SDK support. So al
 
 - [SDK Overview](../modding-tools/sdk/README.md)
 
-### Code Editor
+### Code editor
 
 You can use any one that supports LUA and XML files.
 
@@ -36,19 +36,19 @@ Also, you may need these extensions:
 
 In some cases, it will be easier and faster to use a specific tool to solve problems. The following are examples
 
-#### Object Editor
+#### Object editor
 
 - [Object Editor Documentation](../modding-tools/models/xray-export-tool.md)
 
-#### OGF Editor
+#### OGF editor
 
 - [OGF Editor Documentation](../modding-tools/models/ogf-editor-by-valerok.md)
 
-#### OMG Editor
+#### OMG editor
 
 - [OMF Editor Documentation](../modding-tools/animations/omf-editor-by-valerok.md)
 
-#### THM Editor
+#### THM editor
 
 - [THM Editor Documentation](../modding-tools/textures/thm-editor-by-i-love-kfc.md)
 

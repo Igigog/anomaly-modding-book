@@ -6,12 +6,11 @@
 
 # Meta
 
-- [Contributing to this book](meta/contributing.md)
-  - [Book Structure Overview](meta/book-overview.md)
+- [Contributing](meta/contributing.md)
+  - [Book Structure](meta/book-overview.md)
   - [Style Sheet](meta/style-sheet.md)
 - [Community Standards](meta/community-standards.md)
 - [Acknowledgements](meta/acknowledgements.md)
-- [Links](meta/links.md)
 
 ---
 
@@ -26,18 +25,18 @@
 - [Getting Started](tutorials/README.md)
   - [Mod Organizer](tutorials/getting-started/mod-organizer.md)
     - [Installing MO2](tutorials/getting-started/installing-mo2.md)
-    - [Addon installers](tutorials/getting-started/addon-installers.md)
+    - [Addon Installers](tutorials/getting-started/addon-installers.md)
     - [Package Naming for MO2](tutorials/getting-started/package-naming.md)
-  - [Configuring VSCode-like programs to handle game files](tutorials/getting-started/vs-code-game-files-setup.md)
+  - [Configuring VSCode-like Programs to Handle Game Files](tutorials/getting-started/vs-code-game-files-setup.md)
   - [Files Extraction](tutorials/getting-started/extract-files.md)
 
 - [Addons](tutorials/addons/README.md)
   - [DLTX](tutorials/addons/dltx.md)
   - [DXML](tutorials/addons/dxml.md)
   - [MCM](tutorials/addons/mcm.md)
-  - [PDB files](tutorials/addons/pdb.md)
+  - [PDB Files](tutorials/addons/pdb.md)
   - [Lua Unlocalizer](tutorials/addons/lua-unlocalizer.md)
-  - [Useful addons, scripts and utils](tutorials/addons/useful-addons-scripts-utils.md)
+  - [Useful Addons, Scripts and Utils](tutorials/addons/useful-addons-scripts-utils.md)
 
 - [Configs](tutorials/configs/README.md)
   - [Structure of Files](reference/configs/structure-of-files.md)
@@ -46,18 +45,18 @@
   - [Algorithm of Logic](reference/configs/algoritm-of-logic.md)
 
 - [Modelling](tutorials/models/README.md)
-  - [Creating static model in Blender](tutorials/models/creating-static-model.md)
-  - [Creating dynamic model in Blender](tutorials/models/creating-dynamic-model.md)
+  - [Static Object Setup in Blender](tutorials/models/creating-static-model.md)
+  - [Dynamic Object Setup in Blender](tutorials/models/creating-dynamic-model.md)
 
 - [Animating](tutorials/animations/README.md)
-  - [Creating camera flyover in game](tutorials/animations/creating-flyover-camera-animations-in-game.md)
-  - [Creating HUD animation in Blender](tutorials/animations/creating-hud-animation-in-blender.md)
-  - [Creating camera animations in Blender](tutorials/animations/creating-camera-animations.md)
-  - [Editing existing animations in Blender](tutorials/animations/editing-existing-animations.md)
+  - [Creating Camera Flyover in Game](tutorials/animations/creating-flyover-camera-animations-in-game.md)
+  - [Creating HUD Animation in Blender](tutorials/animations/creating-hud-animation-in-blender.md)
+  - [Creating Camera Animations in Blender](tutorials/animations/creating-camera-animations.md)
+  - [Editing Existing Animations in Blender](tutorials/animations/editing-existing-animations.md)
 
 - [Texturing](tutorials/texturing/README.md)
-  - [Creating and preparing textures](tutorials/texturing/сreating-and-preparing-textures.md)
-  - [Working correctly with icon atlases](tutorials/texturing/working-correctly-with-icon-atlases.md)
+  - [Creating and Preparing Textures](tutorials/texturing/сreating-and-preparing-textures.md)
+  - [Working Correctly with Icon Atlases](tutorials/texturing/working-correctly-with-icon-atlases.md)
 
 - [Mapping](tutorials/mapping/README.md)
   - [Multimaterial Terrain Guide](reference/mapping/multimaterial-terrain.md)
@@ -152,7 +151,7 @@
   - [Particles](reference/file-formats/particles/README.md)
     - [*.pe](reference/file-formats/particles/pe.md)
     - [*.pg](reference/file-formats/particles/pg.md)
-  - [Postproccesing](reference/file-formats/postprocceses/README.md)
+  - [Postprocessing](reference/file-formats/postprocceses/README.md)
     - [*.ppe](reference/file-formats/postprocceses/ppe.md)
   - [Shaders](reference/file-formats/shaders/README.md)
     - [*.cs](reference/file-formats/shaders/cs.md)
@@ -186,6 +185,9 @@
     - [Mutants](reference/configs/creatures/m_(mutant).ltx.md)
     - [Stalkers](reference/configs/creatures/m_stalker.ltx.md)
 
+- [Models]()
+  - [Smoothing](reference/models/smoothing.md)
+
 - [Shaders](reference/shaders/README.md)
   - [Engine Shaders List](reference/shaders/shaders-list/engine-shaders-list.md)
   - [Compiler Shaders List](reference/shaders/shaders-list/compiler-shaders-list.md)
@@ -193,11 +195,8 @@
 - [Materials](reference/materials/README.md)
   - [Materials List](reference/materials/materials-list.md)
 
-- [Models]()
-  - [Smoothing](reference/models/smoothing.md)
-
 - [Audio](reference/audio/README.md)
-  - [Sound Environment List](reference/audio/sound-envornment-list.md)
+  - [Sound Environment List](reference/audio/sound-environment-list.md)
 
 ---
 
@@ -228,13 +227,13 @@
 # Script
 
 - [Scripting](tutorials/scripting/README.md)
-  - [Introduction to codebase](tutorials/scripting/codebase_introduction.md)
+  - [Introduction to Codebase](tutorials/scripting/codebase_introduction.md)
   - [Codestyle](tutorials/scripting/codestyle.md)
-  - [Wetting our hands](tutorials/scripting/wetting_hands.md)
-  - [Server and game objects](tutorials/scripting/server_and_game_objects.md)
+  - [Wetting Our Hands](tutorials/scripting/wetting_hands.md)
+  - [Server and Game Objects](tutorials/scripting/server_and_game_objects.md)
   - [Callbacks](tutorials/scripting/callbacks.md)
-  - [Time events](tutorials/scripting/time_events.md)
-  - [Monkey patching](tutorials/scripting/monkey-patching.md)
+  - [Time Events](tutorials/scripting/time_events.md)
+  - [Monkey Patching](tutorials/scripting/monkey-patching.md)
   - [Script Animations](tutorials/scripting/script_animations.md)
   - [Script Attachments](tutorials/scripting/script_attachments.md)
   - [Callbacks List](script/callbacks-list.md)
@@ -275,6 +274,7 @@
     - [Object Tools](modding-tools/sdk/level-editor/windows/object-tools.md)
     - [Render](modding-tools/sdk/level-editor/windows/render.md)
     - [Snap List](modding-tools/sdk/level-editor/windows/snap-list.md)
+    - [World Properties](modding-tools/sdk/level-editor/windows/world-properties.md)
   - [Shader Editor](modding-tools/sdk/shader-editor/shader-editor.md)
     - [Item Properties](modding-tools/sdk/shader-editor/windows/se-item-properties.md)
       - [basic (simple)](modding-tools/sdk/shader-editor/shader-types/basic-simple.md)
@@ -370,7 +370,7 @@
     - [Change Object Type](modding-tools/blender/addon-operators/operator-change-object-type.md)
     - [Change Shader Parameters](modding-tools/blender/addon-operators/operator-change-shader-parameters.md)
     - [Change Userdata](modding-tools/blender/addon-operators/operator-change-userdata.md)
-    - [Check For Updates](modding-tools/blender/addon-operators/operator-check-for-update.md)
+    - [Check for Updates](modding-tools/blender/addon-operators/operator-check-for-update.md)
     - [Check Invalid Faces](modding-tools/blender/addon-operators/operator-check-invalid-faces.md)
     - [Check Invalid Smooth Groups](modding-tools/blender/addon-operators/operator-check-invalid-smooth-groups.md)
     - [Check Smoothing Groups Incompatibility](modding-tools/blender/addon-operators/operator-check-smoothing-groups-incompatibility.md)
@@ -409,7 +409,7 @@
 
 - [Bump Generator](modding-tools/textures/bump-generator.md)
 
-- [Sound Attribute Viewer And Tweaker](modding-tools/audio-video/savandt.md)
+- [Sound Attribute Viewer and Tweaker](modding-tools/audio-video/savandt.md)
 
 - [ffmpeg2theora](modding-tools/audio-video/ffmpeg2theora.md)
 
@@ -421,7 +421,7 @@
 
 - [X-Ray Export Tool](modding-tools/models/xray-export-tool.md)
 
-- [Universal x64 level compilers](modding-tools/compilers/universal-x64-level-compilers.md)
+- [Universal x64 Level Compilers](modding-tools/compilers/universal-x64-level-compilers.md)
 
 - [xrCompress](modding-tools/compressors/xrcompress-by-i-love-kfc.md)
 

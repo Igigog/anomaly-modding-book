@@ -15,7 +15,7 @@ To use it in your mods, you have to create a new script file that is called `mod
 
 Then, in this file, type:
 
-```lua,icon=.devicon-lua-plain
+```lua
 function on_xml_read()
     RegisterScriptCallback("on_xml_read", function(xml_file_name, xml_obj)
         -- XML file i want to change
@@ -50,7 +50,7 @@ This is the simplest case of using DXML, where you just want to insert new data,
 
 To do this, you can use `xml_obj:insertFromXMLString` function as in example below:
 
-```lua,icon=.devicon-lua-plain
+```lua
 function on_xml_read()
     RegisterScriptCallback("on_xml_read", function(xml_file_name, xml_obj)
         -- XML file i want to change
@@ -105,7 +105,7 @@ The base folder for xml files to read is gamedata/configs, for example if the pa
 
 If the file has failed to read, the game will crash with the error message displaying what happened.
 
-```lua,icon=.devicon-lua-plain
+```lua
 function on_xml_read()
     RegisterScriptCallback("on_xml_read", function(xml_file_name, xml_obj)
         -- XML file i want to change
@@ -132,7 +132,7 @@ In order to correctly insert new main menu item, we need to find the <menu_main>
 
 To find an element, you can utilize CSS-like selectors in `query` function. An example of finding <menu_main> element would be:
 
-```lua,icon=.devicon-lua-plain
+```lua
 local res = xml_obj:query("menu_main")
 ```
 
@@ -148,7 +148,7 @@ The element is represented by table with following fields:
 
 Then we check if table is not empty (the element exists) and insert our xml string with new menu item in position before the end
 
-```lua,icon=.devicon-lua-plain
+```lua
 if is_not_empty(res) then
     local el = res[1]
     xml_obj:insertFromXMLString([[<btn name="btn_mcm" caption="ui_mm_menu_mcm"/>]], el, #el.kids)
@@ -156,7 +156,7 @@ if is_not_empty(res) then
 
 Full code would be:
 
-```lua,icon=.devicon-lua-plain
+```lua
 function on_xml_read()
     RegisterScriptCallback("on_xml_read", function(xml_file_name, xml_obj)
         -- XML file i want to change
@@ -180,7 +180,7 @@ But, if there is already an MCM menu, then you might get duplicated element insi
 
 Here, similar to CSS, we want to find `<btn>` element with attribute `name="btn_mcm"` first. if its found - then make early return from the function
 
-```lua,icon=.devicon-lua-plain
+```lua
     if is_not_empty(xml_obj:query("menu_main btn[name=btn_mcm]")) then
         printf("MCM button already exists")
         return
@@ -207,7 +207,7 @@ Getting and setting text is possible if element contains raw text inside, like `
 To get text, you can use `getText(element)` function and to set it use `setText(element)`.
 Example below of appending text to existing text in element
 
-```lua,icon=.devicon-lua-plain
+```lua
 function on_xml_read()
     RegisterScriptCallback("on_xml_read", function(xml_file_name, xml_obj)
         if xml_file_name == [[text\eng\_game_version.xml]]
@@ -256,7 +256,7 @@ To remove attributes of element, use `removeElementAttr` function
 * el - element found using `query`
 * args - list of attributes to remove ({attr1, attr2})
 
-```lua,icon=.devicon-lua-plain
+```lua
 function on_xml_read()
     RegisterScriptCallback("on_xml_read", function(xml_file_name, xml_obj)
         if xml_file_name == [[ui\ui_inventory.xml]]
@@ -283,7 +283,7 @@ For now, it is impossible to use xml_obj from DXML to process `gameplay\characte
 
 `on_specific_character_init` callback provides possibility to change NPCs' data. An example on how to use it:
 
-```lua,icon=.devicon-lua-plain
+```lua
 function on_game_start()
     RegisterScriptCallback("on_specific_character_init", function(character_id, data)
   
@@ -326,7 +326,7 @@ Full list of fields available in "data" table:
 
 `on_specific_character_dialog_list` callback provides possibility to change available dialogs for NPCs. The callback sends character id and dialog list class object, that can be used to manipulate available dialogs. An example on how to use it:
 
-```lua,icon=.devicon-lua-plain
+```lua
 function on_game_start()
     RegisterScriptCallback("on_specific_character_dialog_list", function(character_id, dialog_list)
 

@@ -2,16 +2,16 @@
 
 ___
 
-| Command | Command description | Command's argument | Note |
-|---|---|:---:|---|
-| ai_aim_max_angle | The maximum angle at which the angular velocity of the character when aiming is calculated by the formula | 0.000 - 31.416 | - |
-| ai_aim_min_angle | The minimum angle at which the angular velocity of the character when aiming is calculated by the formula | 0.000 - 31.416 | - |
-| ai_aim_min_speed | Minimum angular velocity of the character when aiming at a target | 0.000 - 31.416 | - |
-| ai_aim_predict_time | Time of the character's prediction of a change in target position | 0.000 - 10.000 | - |
-| ai_aim_use_smooth_aim |  | 'on/off' or '1/0' | - |
-| ai_die_in_anomaly | Enables NPCs to die in anomalies | 'on/off' or '1/0' | - |
-| ai_use_old_vision | Includes the old model of virtual character vision, in which random points on the surface of an ellipsoid inscribed into an axially oriented rectangular parallelepiped described around the object were taken to determine the visibility of the object. | 'on/off' or '1/0' | - |
-| ai_use_torch_dynamic_lights | Enables the use of flashlights by non-player characters (NPCs) | 'on/off' or '1/0' | - |
+| Command | Command description | Command's argument |
+|---|---|:---:|
+| ai_aim_max_angle | The maximum angle at which the angular velocity of the character when aiming is calculated by the formula | 0.000 - 31.416 |
+| ai_aim_min_angle | The minimum angle at which the angular velocity of the character when aiming is calculated by the formula | 0.000 - 31.416 |
+| ai_aim_min_speed | Minimum angular velocity of the character when aiming at a target | 0.000 - 31.416 |
+| ai_aim_predict_time | Time of the character's prediction of a change in target position | 0.000 - 10.000 |
+| ai_aim_use_smooth_aim |  | 'on/off' or '1/0' |
+| ai_die_in_anomaly | Enables NPCs to die in anomalies | 'on/off' or '1/0' |
+| ai_use_old_vision | Includes the old model of virtual character vision, in which random points on the surface of an ellipsoid inscribed into an axially oriented rectangular parallelepiped described around the object were taken to determine the visibility of the object. | 'on/off' or '1/0' |
+| ai_use_torch_dynamic_lights | Enables the use of flashlights by non-player characters (NPCs) | 'on/off' or '1/0' |
 
 ## Ai Debug
 

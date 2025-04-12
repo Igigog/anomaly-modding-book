@@ -7,8 +7,6 @@ ___
 ![alt text](../images/ae-ip-bones.png)
 
 <body>
-  <link rel="stylesheet" href="tables.css">
-  <script src="tables.js"></script>
   <div class="table-tabs">
     <div class="tab-buttons">
       <button class="tab-button active" onclick="openTable(event, 'Bones')">Bones</button>
@@ -169,19 +167,19 @@ ___
           <td rowspan="4">Flags</td>
           <td rowspan="4"></td>
           <td>No Pickable</td>
-          <td></td>
+          <td>Excludes a bone from collision handling</td>
         </tr>
         <tr>
           <td>No Physics</td>
-          <td></td>
+          <td>Excludes physics processing for bone</td>
         </tr>
         <tr>
           <td>Remove After Break</td>
-          <td></td>
+          <td>Allows removal of bone after an object has been destroyed</td>
         </tr>
         <tr>
           <td>No Fog Collider</td>
-          <td></td>
+          <td>Bone won't interact with a voluminous smoke</td>
         </tr>
         <tr>
           <td rowspan="3">Type</td>
@@ -227,7 +225,7 @@ ___
           <td rowspan="5">Type</td>
           <td rowspan="5">Joint type</td>
           <td>Rigid</td>
-          <td></td>
+          <td><a href="../../../../glossary/glossary.md#Rigid">Rigid Joint</a></td>
         </tr>
         <tr>
           <td>Cloth</td>
@@ -392,13 +390,13 @@ ___
   </tr>
   <tr>
     <td>Accrue</td>
-    <td></td>
+    <td>The speed at which the animation fades in (or blends in)</td>
     <td>-</td>
     <td>-</td>
   </tr>
   <tr>
     <td>Falloff</td>
-    <td></td>
+    <td>The speed at which the animation fades out (or blends out)</td>
     <td>-</td>
     <td>-</td>
   </tr>
@@ -412,7 +410,7 @@ ___
     <td rowspan="8">Cycle</td>
     <td rowspan="8"></td>
     <td>Bone Part</td>
-    <td></td>
+    <td>Part of the bones assigned to the animation</td>
   </tr>
   <tr>
     <td>Stop At End</td>
@@ -424,19 +422,19 @@ ___
   </tr>
   <tr>
     <td>Sync Part</td>
-    <td></td>
+    <td>Flag indicates that the animation should be synchronized with another animation</td>
   </tr>
   <tr>
     <td>UseFootSteps</td>
-    <td></td>
+    <td>Flag that helps the engine distinguish step animations from idle animations in order to properly apply inverse kinematics and manage transitions between states</td>
   </tr>
   <tr>
     <td>Move XForm</td>
-    <td></td>
+    <td>Root motion flag?</td>
   </tr>
   <tr>
     <td>Idle</td>
-    <td></td>
+    <td>Flag that helps the engine distinguish idle animations from moving (stepping) animations, in order to properly apply inverse kinematics and manage transitions between states</td>
   </tr>
   <tr>
     <td>UseWeaponBone</td>
@@ -446,11 +444,11 @@ ___
     <td rowspan="2">FX</td>
     <td rowspan="2"></td>
     <td>Start Bone</td>
-    <td></td>
+    <td>Type FX start bone</td>
   </tr>
   <tr>
     <td>Power</td>
-    <td></td>
+    <td>Maximum animation intensity</td>
   </tr>
   <tr>
     <td>RootStartTransform</td>
@@ -469,21 +467,21 @@ ___
     <td rowspan="2">Control-12</td>
     <td rowspan="2"></td>
     <td>Add</td>
-    <td></td>
+    <td>Add Left1 and Right1 Motion Marks</td>
   </tr>
   <tr>
     <td>Remove</td>
-    <td></td>
+    <td>Remove Left1 and Right1 Motion Marks</td>
   </tr>
   <tr>
     <td rowspan="2">Control-34</td>
     <td rowspan="2"></td>
     <td>Add</td>
-    <td></td>
+    <td>Add Left1, Right1, Left2 and Right2 Motion Marks</td>
   </tr>
   <tr>
     <td>Remove</td>
-    <td></td>
+    <td>Remove Left1, Right1, Left2 and Right2 Motion Marks</td>
   </tr>
 </tbody></table>
     </div>

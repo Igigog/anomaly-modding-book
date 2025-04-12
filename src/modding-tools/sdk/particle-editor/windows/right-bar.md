@@ -90,19 +90,19 @@ Different Properties are used for Particle Effect and Particle Group
         <td rowspan="3">Control</td>
         <td rowspan="3"></td>
         <td>Play</td>
-        <td></td>
+        <td>Play</td>
         <td>-</td>
         <td>-</td>
       </tr>
       <tr>
         <td>Stop</td>
-        <td></td>
+        <td>Instant stop</td>
         <td>-</td>
         <td>-</td>
       </tr>
       <tr>
         <td>Stop...</td>
-        <td></td>
+        <td>Deferred stop</td>
         <td>-</td>
         <td>-</td>
       </tr>
@@ -138,9 +138,9 @@ Different Properties are used for Particle Effect and Particle Group
       </tr>
       <tr>
         <td>Culling</td>
-        <td></td>
+        <td>Back-Face Culling</td>
         <td>CCW</td>
-        <td></td>
+        <td>Counter-Clockwise Culling</td>
       </tr>
       <tr>
         <td rowspan="4">Frame</td>
@@ -196,7 +196,7 @@ Different Properties are used for Particle Effect and Particle Group
         <td rowspan="5">Collision</td>
         <td rowspan="5"></td>
         <td>Collide With Dynamic</td>
-        <td></td>
+        <td>Collide with Dynamic Objects</td>
       </tr>
       <tr>
         <td>Destroy On Contact</td>
@@ -204,7 +204,7 @@ Different Properties are used for Particle Effect and Particle Group
       </tr>
       <tr>
         <td>Friction</td>
-        <td></td>
+        <td>Friction</td>
       </tr>
       <tr>
         <td>Resilence</td>
@@ -219,115 +219,115 @@ Different Properties are used for Particle Effect and Particle Group
         <td rowspan="28"></td>
         <td rowspan="28">Edit</td>
         <td rowspan="28"></td>
-        <td>Avoid</td>
+        <td><a href="actions/avoid.md">Avoid</a></td>
         <td></td>
       </tr>
       <tr>
-        <td>Bounce</td>
+        <td><a href="actions/bounce.md">Bounce</a></td>
         <td></td>
       </tr>
       <tr>
-        <td>Copy VertexB</td>
+        <td><a href="actions/copy-vertexb.md">Copy VertexB</a></td>
         <td></td>
       </tr>
       <tr>
-        <td>Damping</td>
+        <td><a href="actions/damping.md">Damping</a></td>
         <td></td>
       </tr>
       <tr>
-        <td>Explosion</td>
+        <td><a href="actions/explosion.md">Explosion</a></td>
         <td></td>
       </tr>
       <tr>
-        <td>Follow</td>
+        <td><a href="actions/follow.md">Follow</a></td>
         <td></td>
       </tr>
       <tr>
-        <td>Gravitate</td>
+        <td><a href="actions/gravitate.md">Gravitate</a></td>
         <td></td>
       </tr>
       <tr>
-        <td>Gravity</td>
+        <td><a href="actions/gravity.md">Gravity</a></td>
         <td></td>
       </tr>
       <tr>
-        <td>Jet</td>
+        <td><a href="actions/jet.md">Jet</a></td>
         <td></td>
       </tr>
       <tr>
-        <td>Kill Old</td>
+        <td><a href="actions/kill-old.md">Kill Old</a></td>
         <td></td>
       </tr>
       <tr>
-        <td>Match Velocity</td>
+        <td><a href="actions/match-velocity.md">Match Velocity</a></td>
         <td></td>
       </tr>
       <tr>
-        <td>Move</td>
+        <td><a href="actions/move.md">Move</a></td>
         <td></td>
       </tr>
       <tr>
-        <td>Orbit Line</td>
+        <td><a href="actions/orbit-line.md">Orbit Line</a></td>
         <td></td>
       </tr>
       <tr>
-        <td>Orbit Point</td>
+        <td><a href="actions/orbit-point.md">Orbit Point</a></td>
         <td></td>
       </tr>
       <tr>
-        <td>Random Accel</td>
+        <td><a href="actions/random-accel.md">Random Accel</a></td>
         <td></td>
       </tr>
       <tr>
-        <td>Random Displace</td>
+        <td><a href="actions/random-displace.md">Random Displace</a></td>
         <td></td>
       </tr>
       <tr>
-        <td>Random Velocity</td>
+        <td><a href="actions/random-velocity.md">Random Velocity</a></td>
         <td></td>
       </tr>
       <tr>
-        <td>Restore</td>
+        <td><a href="actions/restore.md">Restore</a></td>
         <td></td>
       </tr>
       <tr>
-        <td>Scatter</td>
+        <td><a href="actions/scatter.md">Scatter</a></td>
         <td></td>
       </tr>
       <tr>
-        <td>Sink Velocity</td>
+        <td><a href="actions/sink-velocity.md">Sink Velocity</a></td>
         <td></td>
       </tr>
       <tr>
-        <td>Sink</td>
+        <td><a href="actions/sink.md">Sink</a></td>
         <td></td>
       </tr>
       <tr>
-        <td>Source</td>
+        <td><a href="actions/source.md">Source</a></td>
         <td></td>
       </tr>
       <tr>
-        <td>Speed Limit</td>
+        <td><a href="actions/speed-limit.md">Speed Limit</a></td>
         <td></td>
       </tr>
       <tr>
-        <td>Target Color</td>
+        <td><a href="actions/target-color.md">Target Color</a></td>
         <td></td>
       </tr>
       <tr>
-        <td>Target Size</td>
+        <td><a href="actions/target-size.md">Target Size</a></td>
         <td></td>
       </tr>
       <tr>
-        <td>Target Velocity</td>
+        <td><a href="actions/target-velocity.md">Target Velocity</a></td>
         <td></td>
       </tr>
       <tr>
-        <td>Turbulence</td>
+        <td><a href="actions/turbulence.md">Turbulence</a></td>
         <td></td>
       </tr>
       <tr>
-        <td>Vortex</td>
+        <td><a href="actions/vortex.md">Vortex</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -375,7 +375,7 @@ Different Properties are used for Particle Effect and Particle Group
         <td rowspan="3">Control</td>
         <td rowspan="3"></td>
         <td>Play</td>
-        <td></td>
+        <td>Play</td>
         <td>-</td>
         <td>-</td>
         <td>-</td>
@@ -383,7 +383,7 @@ Different Properties are used for Particle Effect and Particle Group
       </tr>
       <tr>
         <td>Stop</td>
-        <td></td>
+        <td>Instant stop</td>
         <td>-</td>
         <td>-</td>
         <td>-</td>
@@ -391,7 +391,7 @@ Different Properties are used for Particle Effect and Particle Group
       </tr>
       <tr>
         <td>Stop...</td>
-        <td></td>
+        <td>Deferred stop</td>
         <td>-</td>
         <td>-</td>
         <td>-</td>
@@ -401,7 +401,7 @@ Different Properties are used for Particle Effect and Particle Group
         <td>Edit</td>
         <td></td>
         <td>Append Effect</td>
-        <td></td>
+        <td>Add Particle Effect</td>
         <td>-</td>
         <td>-</td>
         <td>-</td>
@@ -431,7 +431,7 @@ Different Properties are used for Particle Effect and Particle Group
         <td rowspan="12">Effect</td>
         <td rowspan="12"></td>
         <td>Preview</td>
-        <td></td>
+        <td>Preview Particle Effect</td>
         <td>-</td>
         <td>-</td>
         <td>-</td>
@@ -520,72 +520,3 @@ Different Properties are used for Particle Effect and Particle Group
     </tbody>
   </table>
 </div>
-
-<style>
-  .table-tabs {
-    margin: 20px 0;
-  }
-  
-  .tab-buttons {
-    display: flex;
-    gap: 5px;
-    margin-bottom: 10px;
-  }
-  
-  .tab-button {
-    padding: 8px 16px;
-    background: #e0e0e0;
-    border: none;
-    border-radius: 4px 4px 0 0;
-    cursor: pointer;
-    font-size: 14px;
-  }
-  
-  .tab-button:hover {
-    background: #d0d0d0;
-  }
-  
-  .tab-button.active {
-    background: #4CAF50;
-    color: white;
-  }
-  
-  .tab-content {
-    display: none;
-  }
-  
-  .tab-content table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  .tab-content th, .tab-content td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-  }
-  
-  .tab-content th {
-    background-color: #f2f2f2;
-  }
-</style>
-
-<script>
-  function openTable(evt, tableId) {
-    // Скрыть все таблицы
-    const tabContents = document.getElementsByClassName("tab-content");
-    for (let i = 0; i < tabContents.length; i++) {
-      tabContents[i].style.display = "none";
-    }
-
-    // Убрать активный класс у всех кнопок
-    const tabButtons = document.getElementsByClassName("tab-button");
-    for (let i = 0; i < tabButtons.length; i++) {
-      tabButtons[i].className = tabButtons[i].className.replace(" active", "");
-    }
-
-    // Показать выбранную таблицу и сделать кнопку активной
-    document.getElementById(tableId).style.display = "block";
-    evt.currentTarget.className += " active";
-  }
-</script>

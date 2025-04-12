@@ -20,7 +20,7 @@ ___
 <tbody>
   <tr>
     <td rowspan="2">Render</td>
-    <td rowspan="2"></td>
+    <td rowspan="2">Render mode</td>
     <td>Editor</td>
     <td></td>
   </tr>
@@ -30,51 +30,48 @@ ___
   </tr>
   <tr>
     <td>Auto Smooth</td>
-    <td></td>
+    <td>If enabled, the smooth edges smoothing mode is used. If not, the standard mode based on smoothing groups is used</td>
     <td>-</td>
     <td>-</td>
   </tr>
   <tr>
     <td>Bone View</td>
-    <td>Open Bone Node View Window</td>
+    <td>Open <a href="../windows/bones-node-view.md">Bone Node View window</a></td>
     <td>-</td>
     <td>-</td>
   </tr>
   <tr>
     <td>Bone Parts</td>
-    <td>Open Bone Parts Window</td>
+    <td>Open <a href="../windows/bone-parts.md">Bone Parts window</a></td>
     <td>-</td>
     <td>-</td>
   </tr>
   <tr>
     <td rowspan="3">Animation</td>
-    <td rowspan="3"></td>
+    <td rowspan="3">Animation bitrate</td>
     <td>8bit</td>
-    <td></td>
+    <td rowspan="3">Accuracy of storing keyframes and animation data (The higher the bit rate, the more accurately recorded movements, but the more the file weighs)</td>
   </tr>
   <tr>
     <td>16bit</td>
-    <td></td>
   </tr>
   <tr>
     <td>32bit</td>
-    <td></td>
   </tr>
   <tr>
     <td rowspan="3">Pick mode</td>
-    <td rowspan="3"></td>
+    <td rowspan="3">Pick mode</td>
     <td>None</td>
-    <td></td>
+    <td>Pick nothing</td>
   </tr>
   <tr>
     <td>Surface</td>
-    <td></td>
+    <td>Pick surfaces</td>
   </tr>
   <tr>
     <td>Bone</td>
-    <td></td>
+    <td>Pick bones</td>
   </tr>
-</tbody>
-</table>
+</tbody></table>
 
 Below will be parts of the model (bones, surfaces, etc.)

@@ -21,7 +21,7 @@ It consists of two blocks:
 | 0x0 | 4 | header (contains information about the format version) |
 | 0x1 | polygon count * 44 | vertex coordinates and polygon properties |
 
-The structure of the file is similar to .hom
+The structure of the file is similar to [*.hom](hom.md)
 
 #### Block 0x0 (header)
 

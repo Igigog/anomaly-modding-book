@@ -17,7 +17,7 @@ All you need to create a script attachment is a parent game_object/attachment an
 
 One simple line will create the script attachment and attach it to its parent:
 
-```lua,icon=.devicon-lua-plain
+```lua
 local test_att = db.actor:add_attachment(0, "path\\to\\model")
 ```
 
@@ -28,7 +28,7 @@ Creating an attachment in a slot that is already used by an attachment will dele
 
 You can also attach attachments to other attachments:
 
-```lua,icon=.devicon-lua-plain
+```lua
 local child_att = test_att:add_attachment(0, "path\\to\\other_model")
 local child_child_att = child_attachment:add_attachment(0, "path\\to\\another_model")
 ```
@@ -37,7 +37,7 @@ local child_child_att = child_attachment:add_attachment(0, "path\\to\\another_mo
 
 If you want to remove an attachment, just remove it from its parent:
 
-```lua,icon=.devicon-lua-plain
+```lua
 test_att:remove_attachment(0)
 child_att = nil
 child_child_att = nil
@@ -52,7 +52,7 @@ Make sure you don't keep references to deleted attachments in your scripts or yo
 It's also possible to access a script attachment without it being stored in a variable.
 You can access it like this:
 
-```lua,icon=.devicon-lua-plain
+```lua
 db.actor:get_attachment(0)
 ```
 
@@ -60,13 +60,13 @@ db.actor:get_attachment(0)
 
 If you need the parent object or parent attachment of an attachment for whatever reason, it's possible to access it like this:
 
-```lua,icon=.devicon-lua-plain
+```lua
 local parent_tbl = test_att:get_parent()
 ```
 
 We’ll receive a table, that looks like this:
 
-```lua,icon=.devicon-lua-plain
+```lua
 parent_tbl = {
 	["object"] = userdata, -- (reference to db.actor)
 	["attachment"] = nil
@@ -75,7 +75,7 @@ parent_tbl = {
 
 Now we know that the attachment is attached to a game_object and we have a reference to said game_object.
 
-```lua,icon=.devicon-lua-plain
+```lua
 local parent_tbl = test_att:get_parent()
 if parent_tbl.object then
 	-- will print "parent is actor"
@@ -88,7 +88,7 @@ end
 Maybe you want to transfer your script attachment to another parent game_object or attachment?
 Just use `set_parent`, it will transfer the attachment, as well as any child attachments to the new parent:
 
-```lua,icon=.devicon-lua-plain
+```lua
 test_att:set_parent(npc)
 ```
 
@@ -100,7 +100,7 @@ test_att:set_parent(npc)
 By default the script attachment will attach to the root bone (bone 0) of the parent game_object or attachment.
 You can change the parent bone at any time using
 
-```lua,icon=.devicon-lua-plain
+```lua
 test_att:set_parent_bone(15)
 ```
 
@@ -109,7 +109,7 @@ Changing to a bone id that doesn't exist will default to the root bone.
 
 To get the current parent bone id you can use
 
-```lua,icon=.devicon-lua-plain
+```lua
 local bone_id = test_att:get_parent_bone()
 ```
 
@@ -123,7 +123,7 @@ Scale can even be set with a single number, if the scale should be the same in a
 
 ### Position
 
-```lua,icon=.devicon-lua-plain
+```lua
 get_position() -- returns vector
 set_position(vector)
 set_position(number, number, number)
@@ -131,7 +131,7 @@ set_position(number, number, number)
 
 ### Rotation
 
-```lua,icon=.devicon-lua-plain
+```lua
 get_rotation() -- returns vector
 set_rotation(vector)
 set_rotation(number, number, number)
@@ -139,7 +139,7 @@ set_rotation(number, number, number)
 
 ### Scale
 
-```lua,icon=.devicon-lua-plain
+```lua
 get_scale() -- returns vector
 set_scale(vector)
 set_scale(number, number, number)
@@ -148,7 +148,7 @@ set_scale(number)
 
 ### Attachment origin
 
-```lua,icon=.devicon-lua-plain
+```lua
 get_origin() -- returns vector
 set_origin(vector)
 set_origin(number, number, number)
@@ -159,7 +159,7 @@ By default the root bone of the attachment will be used as its origin point.
 
 Say, you want to rotate the attachment around its center, instead of its root bone:
 
-```lua,icon=.devicon-lua-plain
+```lua
 local center = test_att:get_center()
 test_att:set_origin(center)
 ```
@@ -170,7 +170,7 @@ ____
 
 At the moment there are three flags that can be set for script attachments.
 
-```lua,icon=.devicon-lua-plain
+```lua
 ["eSA_RenderHUD"] = 1,
 ["eSA_RenderWorld"] = 2,
 ["eSA_CamAttached"] = 4,
@@ -180,14 +180,14 @@ By default the flags value is set to `2`, which means a new attachment will only
 
 Using getter/setter we can read and change the flags value:
 
-```lua,icon=.devicon-lua-plain
+```lua
 get_flags()
 set_flags(number)
 ```
 
 If we want the attachment to render both in world and hud mode, we can do it as follows:
 
-```lua,icon=.devicon-lua-plain
+```lua
 test_att:set_flags(3)
 ```
 
@@ -205,13 +205,13 @@ ____
 
 To get the path of the model that is currently used for a script attachment use
 
-```lua,icon=.devicon-lua-plain
+```lua
 local path = test_att:get_model()
 ```
 
 The model can be changed at any time
 
-```lua,icon=.devicon-lua-plain
+```lua
 test_att:set_model("path\\to\\new_model", false)
 ```
 
@@ -222,7 +222,7 @@ You can find out more about bone callbacks down below.
 
 A bone's visibility can be read and changed using
 
-```lua,icon=.devicon-lua-plain
+```lua
 get_bone_visible(number)
 set_bone_visible(number, boolean)
 ```
@@ -234,14 +234,14 @@ At the moment only bone IDs are supported (instead of names).
 If the model contains any motions or motion references, you can play them on the attachment model.  
 **By default the engine will try to play the `idle` motion, so it's advised to always add one to your model if you're exporting it as a dynamic model.**
 
-```lua,icon=.devicon-lua-plain
+```lua
          -- Name    MixIn    Speed
 play_motion(string, boolean, number)
 ```
 
 Example
 
-```lua,icon=.devicon-lua-plain
+```lua
 -- returns animation length in milliseconds
 local anm_length = test_att:play_motion("reload", false, 1)
 
@@ -264,7 +264,7 @@ It's mainly useful if you want to attach something with multiple bones to a pare
 
 Usage
 
-```lua,icon=.devicon-lua-plain
+```lua
 test_att:bone_callback(id1,id2,true)
 -- id1 is the ID of the bone of the attachment model we want to modify
 -- id2 is the ID of the bone of the parent model we want to copy
@@ -274,7 +274,7 @@ test_att:bone_callback(id1,id2,true)
 
 For example we can add an exoskeleton to the player model like this
 
-```lua,icon=.devicon-lua-plain
+```lua
 -- attach exo model
 local exo_n = db.actor:add_attachment(3202, ogf_file_npc)
 
@@ -299,7 +299,7 @@ end
 Attaching something to the first person hands is a little more involved.  
 Since left and right arms use separate models, we have to attach two script attachments:
 
-```lua,icon=.devicon-lua-plain
+```lua
 local exo_r = db.actor:add_attachment(3200, ogf_file)
 
 -- an attachment for the right arm has to use bone 21 as its parent bone
@@ -344,7 +344,7 @@ We need a function for our callback.
 It takes the matrix of the bone and does calculations on it to modify the final bone matrix.  
 See the following example from the lockpick UI
 
-```lua,icon=.devicon-lua-plain
+```lua
 function cylinder_callback(mat)
 	-- temp copy of position since setHPB overwrites it
 	local temp = mat.c
@@ -360,7 +360,7 @@ end
 
 Since we want the cylinder_rotation to be applied on top of an animated lock, we don't disable animation calculation this time (third argument is `false`).
 
-```lua,icon=.devicon-lua-plain
+```lua
 lockpicker:bone_callback(1, cylinder_callback, false)
 ```
 
@@ -368,7 +368,7 @@ lockpicker:bone_callback(1, cylinder_callback, false)
 
 Bone callbacks can be removed like this
 
-```lua,icon=.devicon-lua-plain
+```lua
 -- remove bone callback from bone with ID 1
 lockpicker:remove_bone_callback(1)
 ```
@@ -377,7 +377,7 @@ lockpicker:remove_bone_callback(1)
 
 As mentioned before, you can tell the engine to keep existing bone callbacks in place when changing the attachment model by setting the second argument to true in `set_model`
 
-```lua,icon=.devicon-lua-plain
+```lua
 lockpicker:set_model("path\\to\\other_lock", true)
 ```
 
@@ -390,7 +390,7 @@ Check `gamedata\scripts\ui_dosimeter.script` to see how script 3D UI works.
 
 Available functions:
 
-```lua,icon=.devicon-lua-plain
+```lua
 get_ui()
 get_ui_bone()
 get_ui_rotation()
@@ -407,7 +407,7 @@ set_ui_rotation(number, number, number)
 \
 Let's say, we want to display the dosimeter UI on the attachment model:
 
-```lua,icon=.devicon-lua-plain
+```lua
 test_att:set_ui("ui_dosimeter.get_UI")
 test_att:set_ui_bone(5)
 test_att:set_ui_position(0,0.1,0)
@@ -419,7 +419,7 @@ You can even change the scale of the UI using bone callbacks!
 Just change the scale of the bone the UI is attached to.  
 *(Better use a bone that is not actually used by the model, or you'll scale a part of it.)*
 
-```lua,icon=.devicon-lua-plain
+```lua
 test_att:bone_callback(5, scale_func, false)
 
 local scale_mat = matrix():scale(1.5, 1.5, 1.5)

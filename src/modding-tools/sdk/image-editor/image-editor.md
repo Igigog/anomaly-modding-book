@@ -24,19 +24,19 @@ Shows the characteristics of the texture. Width, height and alpha channel.
 
 ### Format
 
-| Format | Description |
-|---|---|
-| DXT1 |  |
-| DXT1 Alpha |  |
-| DXT3 |   |
-| DXT5 |  |
-| DBC7 |  |
-| 16 bit (1:5:5:5) |  |
-| 16 bit (5:6:5) |  |
-| 32 bit (8:8:8:8) |  |
-| 8 bit (alpha) |  |
-| 8 bit (luminance) |  |
-| 16 bit (alpha:luminance) |  |
+| Format | Description | Compression Level | Alpha Channel |
+|---|---|---|---|
+| DXT1 |  |  |  |
+| DXT1 Alpha |  |  |  |
+| DXT3 |   |  |  |
+| DXT5 |  |  |  |
+| DBC7 |  |  |  |
+| 16 bit (1:5:5:5) |  |  |  |
+| 16 bit (5:6:5) |  |  |  |
+| 32 bit (8:8:8:8) |  |  |  |
+| 8 bit (alpha) |  |  |  |
+| 8 bit (luminance) |  |  |  |
+| 16 bit (alpha:luminance) |  |  |  |
 
 ### MipMaps
 

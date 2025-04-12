@@ -8,7 +8,7 @@ There are no classes in Lua. Their support is implemented by exporting them from
 
 ### General
 
-```lua,icon=.devicon-lua-plain,filepath="..\scripts\class_registrator.script"
+```lua,filepath="..\scripts\class_registrator.script"
 c_register (object_factory, "ui_main_menu.main_menu",                                            "MAIN_MNU",  "main_menu")
 cs_register (object_factory, "ce_smart_zone",              "smart_terrain.se_smart_terrain",     "SMRTTRRN",  "smart_terrain")
 cs_register (object_factory, "CLevelChanger",              "se_level_changer.se_level_changer",  "LVL_CHNG",  "level_changer_s")
@@ -26,13 +26,13 @@ cs_register (object_factory, "CAI_Trader",                 "se_stalker.se_trader
 
 ### Artefacts
 
-```lua,icon=.devicon-lua-plain,filepath="..\scripts\class_registrator.script"
+```lua,filepath="..\scripts\class_registrator.script"
 cs_register (object_factory, "CElectricBall",  "se_artefact.se_artefact",  "SCRPTART",  "artefact_s")
 ```
 
 ### Monsters
 
-```lua,icon=.devicon-lua-plain,filepath="..\scripts\class_registrator.script"
+```lua,filepath="..\scripts\class_registrator.script"
 cs_register (object_factory, "CAI_Bloodsucker",  "se_monster.se_monster",  "SM_BLOOD",   "bloodsucker_s")
 cs_register (object_factory, "CAI_Boar",         "se_monster.se_monster",  "SM_BOARW",   "boar_s")
 cs_register (object_factory, "CAI_Dog",          "se_monster.se_monster",  "SM_DOG_S",   "dog_s")
@@ -55,7 +55,7 @@ cs_register (object_factory, "CPsyDogPhantom",   "se_monster.se_monster",  "SM_D
 
 ### Devices
 
-```lua,icon=.devicon-lua-plain,filepath="..\scripts\class_registrator.script"
+```lua,filepath="..\scripts\class_registrator.script"
 cs_register (object_factory, "CTorch",               "se_item.se_item_torch",  "TORCH_S",   "device_torch_s")
 -- cs_register (object_factory, "CFlashlight",       "se_item.se_item",        "D_FLALIT",  "device_flashlight") --61
 -- cs_register (object_factory, "CDosimeter",        "se_item.se_item",        "D_DSMETR",  "device_dosimeter") --59
@@ -69,7 +69,7 @@ cs_register (object_factory, "CPda",                 "se_item.se_pda",         "
 
 ### Outfits
 
-```lua,icon=.devicon-lua-plain,filepath="..\scripts\class_registrator.script"
+```lua,filepath="..\scripts\class_registrator.script"
 -- cs_register (object_factory, "CCustomOutfit",  "se_item.se_outfit",  "EQU_STLK",  "equ_stalker") --70
 -- cs_register (object_factory, "CCustomOutfit",  "se_item.se_outfit",  "E_STLK",    "equ_stalker_s")
 cs_register (object_factory, "CStalkerOutfit",    "se_item.se_outfit",  "E_STLK",    "equ_stalker_s")
@@ -78,7 +78,7 @@ cs_register (object_factory, "CHelmet",           "se_item.se_helmet",  "E_HLMET
 
 ### Weapons
 
-```lua,icon=.devicon-lua-plain,filepath="..\scripts\class_registrator.script"
+```lua,filepath="..\scripts\class_registrator.script"
 cs_register (object_factory, "CWeaponBinoculars",        "se_item.se_weapon_magazined",          "WP_BINOC",  "wpn_binocular_s")
 cs_register (object_factory, "CWeaponKnife",             "se_item.se_weapon",                    "WP_KNIFE",  "wpn_knife_s")
 cs_register (object_factory, "CWeaponBM16",              "se_item.se_weapon_shotgun",            "WP_BM16",   "wpn_bm16_s")
@@ -103,7 +103,7 @@ cs_register (object_factory, "CWeaponWalther",           "se_item.se_weapon_maga
 
 ### Anomaly Zones
 
-```lua,icon=.devicon-lua-plain,filepath="..\scripts\class_registrator.script"
+```lua,filepath="..\scripts\class_registrator.script"
 cs_register (object_factory, "CHairsZone",        "se_zones.se_zone_visual",  "ZS_BFUZZ",  "zone_bfuzz_s")
 cs_register (object_factory, "CMosquitoBald",     "se_zones.se_zone_anom",    "ZS_MBALD",  "zone_mbald_s")
 cs_register (object_factory, "CMincer",           "se_zones.se_zone_anom",    "ZS_GALAN",  "zone_galant_s")
@@ -116,7 +116,7 @@ cs_register (object_factory, "CNoGravityZone",    "se_zones.se_zone_anom",    "Z
 
 ### Ammo
 
-```lua,icon=.devicon-lua-plain,filepath="..\scripts\class_registrator.script"
+```lua,filepath="..\scripts\class_registrator.script"
 cs_register (object_factory, "CWeaponAmmo",  "se_item.se_ammo",  "AMMO_S",   "wpn_ammo_s")
 cs_register (object_factory, "CWeaponAmmo",  "se_item.se_ammo",  "S_VOG25",  "wpn_ammo_vog25_s")
 cs_register (object_factory, "CWeaponAmmo",  "se_item.se_ammo",  "S_OG7B",   "wpn_ammo_og7b_s")
@@ -125,20 +125,20 @@ cs_register (object_factory, "CWeaponAmmo",  "se_item.se_ammo",  "S_M209",   "wp
 
 ### Grenades
 
-```lua,icon=.devicon-lua-plain,filepath="..\scripts\class_registrator.script"
+```lua,filepath="..\scripts\class_registrator.script"
 cs_register (object_factory, "CF1",    "se_item.se_grenade",  "G_F1_S",    "wpn_grenade_f1_s")
 cs_register (object_factory, "CRGD5",  "se_item.se_grenade",  "G_RGD5_S",  "wpn_grenade_rgd5_s")
 ```
 
 ### Eatable
 
-```lua,icon=.devicon-lua-plain,filepath="..\scripts\class_registrator.script"
+```lua,filepath="..\scripts\class_registrator.script"
 cs_register (object_factory, "CFoodItem",  "se_item.se_eatable",  "S_FOOD",  "obj_food_s")
 ```
 
 ### Items
 
-```lua,icon=.devicon-lua-plain,filepath="..\scripts\class_registrator.script"
+```lua,filepath="..\scripts\class_registrator.script"
 cs_register (object_factory, "CScope",            "se_item.se_item",  "WP_SCOPE",  "wpn_scope_s")
 cs_register (object_factory, "CSilencer",         "se_item.se_item",  "WP_SILEN",  "wpn_silencer_s")
 cs_register (object_factory, "CGrenadeLauncher",  "se_item.se_item",  "WP_GLAUN",  "wpn_grenade_launcher_s")
@@ -146,18 +146,18 @@ cs_register (object_factory, "CGrenadeLauncher",  "se_item.se_item",  "WP_GLAUN"
 
 ### Inventory Box
 
-```lua,icon=.devicon-lua-plain,filepath="..\scripts\class_registrator.script"
+```lua,filepath="..\scripts\class_registrator.script"
 cs_register (object_factory, "CInventoryBox",  "se_item.se_invbox",  "S_INVBOX",  "inventory_box_s")
 ```
 
 ### Explosive
 
-```lua,icon=.devicon-lua-plain,filepath="..\scripts\class_registrator.script"
+```lua,filepath="..\scripts\class_registrator.script"
 cs_register (object_factory, "CExplosiveItem",  "se_item.se_explosive",  "S_EXPLO",  "obj_explosive_s")
 ```
 
 ### Online | Offline Group
 
-```lua,icon=.devicon-lua-plain,filepath="..\scripts\class_registrator.script"
+```lua,filepath="..\scripts\class_registrator.script"
 s_register (object_factory,  "sim_squad_scripted.sim_squad_scripted",  "ON_OFF_S",  "online_offline_group_s")
 ```

@@ -20,7 +20,7 @@ If a function or variable in a script is declared as local other scripts can’t
 
 The simplest monkey patch only changes variables.  Instant tooltip does this. It uses a callback to watch for the inventory UI being opened and when it is changes the delay for the tool tip:
 
-```lua,icon=.devicon-lua-plain
+```lua
 function on_game_start()
     RegisterScriptCallback("GUI_on_show", delay_change)
 end
@@ -43,7 +43,7 @@ The next method is unregistering a Callback.
 The most obvious use of this is to stop a game script Callback from being run at all so that you can completely replace its functionality, however there are some more fine tuned uses.
 The order in which Callbacks from various scripts are run is not something that can be relied upon. If you have something that needs to happen before or after a game script Callback the most reliable method is to unregister the games Callback and then call the function directly from your own Callback at the correct timing. Similarly you can use this method to prevent a Callback from running in particular cases. Such as preventing itms_manager.script from creating a half eaten chocolate bar when a chocolate bar is used:
 
-```lua,icon=.devicon-lua-plain
+```lua
 function on_game_start()
     UnregisterScriptCallback("actor_on_item_use", itms_manager.actor_on_item_use)
     RegisterScriptCallback("actor_on_item_use", test)
@@ -61,14 +61,14 @@ The above code has an example of the fact that functions are variables like any 
 
 The same way that scriptname.function can be used to call a function in another script it can also be used to save a copy of that function, this can be used to shorten a long function name
 
-```lua,icon=.devicon-lua-plain
+```lua
 ga = utils_item.get_ammo
 ga(section, id) -- this is the same as utils_item.get_ammo(section, id)
 ```
 
 The scriptname.function syntax can also be used to assign new code (example from first version of Headlamp Animation Fix).
 
-```lua,icon=.devicon-lua-plain
+```lua
 base_Hit_TorchToggle = actor_effects.Hit_TorchToggle
 
 function actor_effects.Hit_TorchToggle()
@@ -92,7 +92,7 @@ TL;DR: lua oop doesn’t use classes, but, for reasons, X-Ray’s lua does and w
 What the : (colon) operator really does.
 The : operator in lua is simply a shortcut. Any function defined with a : can be called without it.
 
-```lua,icon=.devicon-lua-plain
+```lua
 foo:start()
 foo.start(foo)
 ```
@@ -101,7 +101,7 @@ Those are equivalent.
 
 Similarly a function can be defined without it.
 
-```lua,icon=.devicon-lua-plain
+```lua
 function foo:start()
 …
 end
