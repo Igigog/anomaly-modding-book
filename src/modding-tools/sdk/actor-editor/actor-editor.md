@@ -321,11 +321,11 @@ The Actor editor is usually needed to customize objects (NPCs, Objects, etc.)
 
 | Icon | Name | Description |
 |:---:|---|---|
-| ![1](../icons/undo.png) | Undo | Undo the last action |
-| ![1](../icons/redo.png) | Redo | Repeat the last action |
-| ![1](../icons/new.png) | New | Clear/New Scene |
-| ![1](../icons/open.png) | Open | Open file |
-| ![1](../icons/save.png) | Save | Save file |
-| ![1](../icons/Btn_FolderOpen.bmp) | Open Gamedata | Open "gamedata" folder |
+| ![1](../../../assets/icons/sdk/undo.png) | Undo | Undo the last action |
+| ![1](../../../assets/icons/sdk/redo.png) | Redo | Repeat the last action |
+| ![1](../../../assets/icons/sdk/new.png) | New | Clear/New Scene |
+| ![1](../../../assets/icons/sdk/open.png) | Open | Open file |
+| ![1](../../../assets/icons/sdk/save.png) | Save | Save file |
+| ![1](../../../assets/icons/sdk/Btn_FolderOpen.bmp) | Open Gamedata | Open "gamedata" folder |
 |  | Simulate | Activates physics simulation |
 |  | Make Thumbnail | Make thumbnail |

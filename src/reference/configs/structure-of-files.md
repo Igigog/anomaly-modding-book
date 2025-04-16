@@ -136,7 +136,7 @@ As written above, the developers have made such a thing as "Condlist". What is i
 
 Example:
 
-```text
+```plaintext
 {Condition} %Action% Reference
 ```
 

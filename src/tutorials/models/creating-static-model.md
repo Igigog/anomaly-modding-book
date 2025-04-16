@@ -4,8 +4,8 @@ ___
 
 ## Need to know
 
-- How working in Blender and creating models
-- How working with Blender [X-Ray Addon](../../modding-tools/blender/blender-x-ray-addon-summary.md)
+- How to work in Blender
+- How to work with Blender [X-Ray Addon](../../modding-tools/blender/blender-x-ray-addon-summary.md)
 - Familiarize yourself with the limitations and capabilities of the format [*.object](../../reference/file-formats/models/object.md) (because you may export to it more often than to [*.ogf](../../reference/file-formats/models/ogf.md)) to avoid errors
 - Familiarize yourself with [Static Object](../../glossary/glossary.md#StaticObject) model type
 - How [Smoothing](../../reference/models/smoothing.md) work in X-Ray
@@ -40,7 +40,7 @@ In STALKER only the following texture maps are used:
 
 Here you need to add your created texture in [*.dds](../../reference/file-formats/textures/dds.md) format
 
-As a result, in the Shader Editor (![svg-icon shader-editor](../../modding-tools/blender/icons/shader-editor.svg)) our textures should look something like this:
+As a result, in the Shader Editor (![svg-icon shader-editor](../../../assets/icons/blender/shader-editor.svg)) our textures should look something like this:
 
 ![model-example-texture-shading](images/model-example-texture-shading.png)
 
@@ -61,7 +61,7 @@ ___
 
 ### Material
 
-Select our object and go to the "Material Properties" (![svg-icon material-properties-logo](../../modding-tools/blender/icons/material-properties-logo.svg)) tab.
+Select our object and go to the "Material Properties" (![svg-icon material-properties-logo](../../../assets/icons/blender/material-properties-logo.svg)) tab.
 
 Here we see the name of our material and a list of [X-Ray Engine: Material](../../modding-tools/blender/addon-panels/panel-material.md) with lots of items.
 

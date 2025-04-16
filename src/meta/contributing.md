@@ -83,19 +83,19 @@ Or
 
 - Preprocessor for mdbook to add Material Design admonishments
 
-    ```text
+    ```bash
     cargo install mdbook-admonish
     ```
 
 - Preprocessor for mdbook to add mermaid support
 
-    ```text
+    ```bash
     cargo install mdbook-mermaid
     ```
 
 - (Optional) Backend for mdbook which will check your links for you
 
-    ```text
+    ```bash
     cargo install mdbook-linkcheck
     ```
 

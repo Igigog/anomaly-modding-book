@@ -48,7 +48,7 @@ end
 
 Condlist can have more than one condition block:
 
-```text
+```lua
     my_condlist = {-A -B} X, {-A +B} Y, Z
 ```
 

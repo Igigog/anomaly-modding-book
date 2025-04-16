@@ -12,7 +12,7 @@ These folders should all be at the root level of the archive.
 
 Example: *addon.zip*
 
-```text
+```plaintext
 00 Main
 01 BAS patch
 02 Optional thing

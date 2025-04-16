@@ -8,7 +8,7 @@
 
 - [Contributing](meta/contributing.md)
   - [Book Structure](meta/book-overview.md)
-  - [Style Sheet](meta/style-sheet.md)
+  - [Book Style Sheet](meta/style-sheet.md)
 - [Community Standards](meta/community-standards.md)
 - [Acknowledgements](meta/acknowledgements.md)
 
@@ -44,7 +44,8 @@
   - [Inventory Icons](tutorials/configs/inventory_icons.md)
   - [Algorithm of Logic](reference/configs/algoritm-of-logic.md)
 
-- [Modelling](tutorials/models/README.md)
+- [Models](tutorials/models/README.md)
+  - [Model Binding in Blender](tutorials/models/binding-model.md)
   - [Static Object Setup in Blender](tutorials/models/creating-static-model.md)
   - [Dynamic Object Setup in Blender](tutorials/models/creating-dynamic-model.md)
 
@@ -172,12 +173,12 @@
 
 - [Configs](reference/configs/README.md)
   - [Items](reference/configs/items/README.md)
-    - [Weapons Parameters](reference/configs/items/weapons/README.md)
-      - [Weapon World](reference/configs/items/weapons/w_(weapon)-world.md)
-      - [Weapon HUD](reference/configs/items/weapons/w_(weapon)-hud.md)
-        - [Weapon HUD Animations](reference/animations/hud-animations-weapons.md)
-      - [Weapon Sounds](reference/configs/items/weapons/weapon_sounds.ltx.md)
-      - [Grenade](reference/configs/items/weapons/m_(grenade).md)
+    - [Weapons](reference/configs/items/weapons/README.md)
+      - [World](reference/configs/items/weapons/w_(weapon)-world.md)
+      - [HUD](reference/configs/items/weapons/w_(weapon)-hud.md)
+        - [HUD Animations](reference/animations/hud-animations-weapons.md)
+      - [Sounds](reference/configs/items/weapons/weapon_sounds.ltx.md)
+    - [Grenade](reference/configs/items/weapons/m_(grenade).md)
     - [Ammo](reference/configs/items/weapons/weapon_ammo.ltx.md)
     - [Outfits](reference/configs/items/outfits/o_(outfit).ltx.md)
     - [Trade](reference/configs/items/trade/trade.ltx.md)
@@ -188,15 +189,13 @@
 - [Models]()
   - [Smoothing](reference/models/smoothing.md)
 
-- [Shaders](reference/shaders/README.md)
-  - [Engine Shaders List](reference/shaders/shaders-list/engine-shaders-list.md)
-  - [Compiler Shaders List](reference/shaders/shaders-list/compiler-shaders-list.md)
+- [Engine Shaders List](reference/shaders/shaders-list/engine-shaders-list.md)
 
-- [Materials](reference/materials/README.md)
-  - [Materials List](reference/materials/materials-list.md)
+- [Compiler Shaders List](reference/shaders/shaders-list/compiler-shaders-list.md)
 
-- [Audio](reference/audio/README.md)
-  - [Sound Environment List](reference/audio/sound-environment-list.md)
+- [Materials List](reference/materials/materials-list.md)
+
+- [Sound Environment List](reference/audio/sound-environment-list.md)
 
 ---
 
@@ -267,6 +266,7 @@
   - [Minimap Editor](modding-tools/sdk/minimap-editor/minimap-editor.md)
   - [Image Editor](modding-tools/sdk/image-editor/image-editor.md)
   - [Level Editor](modding-tools/sdk/level-editor/level-editor.md)
+    - [Properties](modding-tools/sdk/level-editor/windows/properties.md)
     - [Content Browser](modding-tools/sdk/level-editor/windows/content-browser.md)
     - [Weather Properties](modding-tools/sdk/level-editor/windows/weather-properties.md)
     - [Edit Mode](modding-tools/sdk/level-editor/windows/edit-mode.md)

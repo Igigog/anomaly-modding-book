@@ -8,11 +8,11 @@ ___
 
 This panel stores the mesh parameters for *.object format.
 
-## Расположение
+## Location
 
 `Properties` window > `Data` tab of the mesh object
 
-## Параметры
+## Parameters
 
 ### Visible
 

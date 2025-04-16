@@ -600,23 +600,23 @@ ___
 
 | Icon | Name | Description |
 |:---:|---|---|
-| ![1](../icons/undo.png) | Undo | Undo the last action |
-| ![1](../icons/redo.png) | Redo | Repeat the last action |
-| ![1](../icons/new.png) | New Scene | Clear/New Scene |
-| ![1](../icons/open.png) | Open Level | Open Level |
-| ![1](../icons/save.png) | Save Level | Save Level |
-| ![1](../icons/cform.png) | Build CFORM | Build CFORM |
-| ![1](../icons/aimap.png) | Build AI-Map | Build AI-Map |
-| ![1](../icons/ggraph.png) | Build Game Graph | Build Game Graph |
-| ![1](../icons/PlayInEditorPlay.png) | Start Play in Editor | Start Play in Editor |
+| ![1](../../../assets/icons/sdk/undo.png) | Undo | Undo the last action |
+| ![1](../../../assets/icons/sdk/redo.png) | Redo | Repeat the last action |
+| ![1](../../../assets/icons/sdk/new.png) | New Scene | Clear/New Scene |
+| ![1](../../../assets/icons/sdk/open.png) | Open Level | Open Level |
+| ![1](../../../assets/icons/sdk/save.png) | Save Level | Save Level |
+| ![1](../../../assets/icons/sdk/cform.png) | Build CFORM | Build CFORM |
+| ![1](../../../assets/icons/sdk/aimap.png) | Build AI-Map | Build AI-Map |
+| ![1](../../../assets/icons/sdk/ggraph.png) | Build Game Graph | Build Game Graph |
+| ![1](../../../assets/icons/sdk/PlayInEditorPlay.png) | Start Play in Editor | Start Play in Editor |
 |  |  | Play in Editor Settings |
-| ![1](../icons/RCRefresh.bmp) |  | Reload Configs |
-| ![1](../icons/BuildAll.png) |  | Build and Make |
-| ![1](../icons/PlayPC.png) |  | Play Level |
-| ![1](../icons/PlayCleanGame.png) |  | Play Level in Game |
-| ![1](../icons/Btn_FolderOpen.bmp) |  | Open 'gamedata' folder |
+| ![1](../../../assets/icons/sdk/RCRefresh.bmp) |  | Reload Configs |
+| ![1](../../../assets/icons/sdk/BuildAll.png) |  | Build and Make |
+| ![1](../../../assets/icons/sdk/PlayPC.png) |  | Play Level |
+| ![1](../../../assets/icons/sdk/PlayCleanGame.png) |  | Play Level in Game |
+| ![1](../../../assets/icons/sdk/Btn_FolderOpen.bmp) |  | Open 'gamedata' folder |
 |  | Hint |  |
 |  | Volume |  |
 |  | Phys Simulation | Activates the physics simulation of the selected object(s) |
 |  | Use Pos | Use the position of the selected object when physics simulation is active. The position of the object will be applied when simulating physics |
-| ![1](../icons/win_preferences.png) | Preference | Preference |
+| ![1](../../../assets/icons/sdk/win_preferences.png) | Preference | Preference |

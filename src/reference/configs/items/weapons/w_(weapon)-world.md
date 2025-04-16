@@ -1,4 +1,4 @@
-# w_*Weapon*.ltx World Config File
+# w_*Weapon*.ltx \_world Config File
 
 ___
 
@@ -15,14 +15,6 @@ Parameters of the weapon are set for each sample in a separate [*.ltx](../../../
 - \[wpn_name_hud] - Secondary, where you set first-person view parameters only.
 
 ___
-
-## World Model Parameters
-
-\[wpn_name]: Here you can set additional characteristics of weapon from sections for example:
-
-- identity_immunities - a section that contains damage parameters for different game difficulty levels
-- weapon_probability
-- default_weapon_params
 
 ### General Parameters
 

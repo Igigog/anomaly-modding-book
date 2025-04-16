@@ -20,9 +20,9 @@ A simple [_bump.dds](../../reference/file-formats/textures/bump.md) and [_bump#.
 
 ## Features
 
-- Generates .bump and .bump# textures from normal maps (with the ability to use specular maps)
-- Generating .bump# for ready-made .bump
-- Supports .dds and .tga texture formats.
+- Generates _bump and \_bump# textures from normal maps (with the ability to use specular maps)
+- Generating _bump# for ready-made \_bump
+- Supports *.dds and \*.tga texture formats.
 
 ## Functionality
 
@@ -37,7 +37,7 @@ Checkboxes
 
 | Checkboxes | Description |
 |---|---|
-| SOC Format thm | Generates SOC .thm file format |
+| SOC Format thm | Generates SoC version *.thm file |
 
 ___
 

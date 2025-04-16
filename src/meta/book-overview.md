@@ -6,6 +6,7 @@ ___
 
 - .github - For GitHub.
 - .vscode - For VSCode specific files.
+- assets - Static layout of icons of various programs for easy use across tutorials, articles, etc.
 - dist - Contains a compiled version of mdbook for quick local verification.
 - src - Source Folder.
 - theme - Various additional files for the book and preprocessors.

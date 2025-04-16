@@ -19,15 +19,15 @@ Utility for editing [*.thm](../../reference/file-formats/textures/thm.md) files 
 
 ## Features
 
-- Changing any available information stored in a .thm file
-- Ability to fix incorrectly displayed textures when transferring .thm files from CS/COP
-- Ability to create a file from scratch (without loading another .thm file)
+- Changing any available information stored in a *.thm file
+- Ability to fix incorrectly displayed textures when transferring *.thm files from CS/COP
+- Ability to create a file from scratch (without loading another *.thm file)
 
 ## Functionality
 
 ### Buttons
 
-- Open thm - Opens a .thm file
+- Open thm - Opens a *.thm file
 - Save - Save file
 - Save As - Save as
 - Import DDS - Imports .dds texture
@@ -135,7 +135,7 @@ Different shading algorithms
 
 ### Checkboxes
 
-- [ ] SOC format - SoC format of .thm
+- [ ] SOC format - SoC format of *.thm
 
 ### Fields
 

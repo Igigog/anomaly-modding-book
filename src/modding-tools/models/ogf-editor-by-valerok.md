@@ -39,7 +39,7 @@ Tool for working with [*.ogf](../../reference/file-formats/models/ogf.md) and [*
 
 ### Buttons
 
-- #### File Button
+- #### File button
 
 | Button | Description |
 |---|---|
@@ -62,19 +62,19 @@ Tool for working with [*.ogf](../../reference/file-formats/models/ogf.md) and [*
 | Move/Rotate Model | Move/Rotate Model |
 | Converter | NPC CoP to SoC<br> NPC SoC to CoP<br> |
 
-- #### OGF Info Button
+- #### OGF Info button
 
 Display information about the loaded OGF
 
 | Field | Description |
 |---|---|
-| OGF Version | The .ogf version |
+| OGF Version | *.ogf file version |
 | Model Type | Model type |
-| Motions Refs | Motions Refs |
+| Motions Refs | Motions references |
 | Motions | Motions |
 | Links | Links |
-| Verts | Vertices |
-| Faces | Faces |
+| Verts | Vertices count |
+| Faces | Faces count |
 
 | Field | Description |
 |---|---|
@@ -82,9 +82,9 @@ Display information about the loaded OGF
 | Converter | Converter |
 | Creator | Creator |
 | Editor | Editor |
-| Export Time | Export Time |
-| Creation Time | Creation Time |
-| Modified Time | Modified Time |
+| Export Time | Export time |
+| Creation Time | Creation time |
+| Modified Time | Modified time |
 
 | Button |
 |---|
@@ -126,7 +126,7 @@ Section with texture and shader path editing. Also here can delete or move meshe
 | Field | Description |
 |---|---|
 | Texture Path: | Path to texture |
-| Shader Name: | Shader |
+| Shader Name: | Shader name |
 
 - #### User Data
 
@@ -160,19 +160,19 @@ Editing the bone parameter
 
 | Field | Description |
 |---|---|
-| Bone Name | Bone Name |
-| Parent Bone | Parent Bone |
+| Bone Name | Bone name |
+| Parent Bone | Parent bone |
 | Material | Material |
 | Mass | Mass |
 | Center Of Mass | Center of mass |
 | Position | Bone position |
 | Rotation | Bone rotation |
 
-- #### Lod
+- #### LOD
 
-Specifies the path to the Lod model
+Specifies the path to the LOD model
 
-- #### View Port
+- #### View port
 
 Viewport
 

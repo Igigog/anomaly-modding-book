@@ -40,28 +40,28 @@ Identifier for Custom Shape
 
 ### No Pickable
 
-TODO
+Excludes a bone from collision handling
 
 ### No Physics
 
-TODO
+Excludes physics processing for bone
 
 ### Remove After Break
 
-TODO
+Allows removal of bone after an object has been destroyed
 
 ### No Fog Collider
 
-TODO
+Bone won't interact with a voluminous smoke
 
 ### Joint Type
 
-- None - No type
-- Rigid - Rigid
-- Cloth - Cloth
-- Joint - Joint
-- Wheel - Wheel
-- Slider - Sliding along one axis
+- None - No joint
+- Rigid - Rigid Joint
+- Cloth - Cloth Joint
+- Joint - Universal Joint
+- Wheel - Wheel Joint
+- Slider - Sliding Joint
 - Custom - Custom type which is specified using the identifier in the Joint ID parameter
 
 ### Joint ID
@@ -70,15 +70,15 @@ Identifier for Custom joint
 
 ### Breakable
 
-TODO
+Allows bone to be breakable
 
 ### Force
 
-TODO
+Threshold breaking force
 
 ### Torque
 
-TODO
+Threshold fracture torque
 
 ### Friction
 

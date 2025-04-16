@@ -94,7 +94,7 @@ Parameters that are used by the addon inside blender, or during import/export, b
 
 Animation bake mode during exporting
 
-- Auto - Automatic mode. The addon itself will calculate whether to bake or not. If the object or bones with animation have constreints, baking will be used, and if there are no constreints, it will not be used
+- Auto - Automatic mode. The addon itself will calculate whether to bake or not. If the object or bones with animation have constraints, baking will be used, and if there are no constraints, it will not be used
 - On - Enable baking
 - Off - Disable baking
 

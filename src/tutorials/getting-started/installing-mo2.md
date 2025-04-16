@@ -83,10 +83,10 @@ On the image below you can see how my MO2 looks, I have a little over 100 addons
 
 After installing few addons you might notice these icons:
 
-- ![Creating a new instance](icons/conflict-overwritten.png) This little lightning icon with a red minus next to it shows that the addon is being overwritten.
-- ![Creating a new instance](icons/conflict-overwrite.png) A lightning icon with green plus means the addon is overwriting another addon.
-- ![Creating a new instance](icons/conflict-mixed.png) If you see both of these icons it means the addon is overwriting an addon and is being overwritten by one.
-- ![Creating a new instance](icons/conflict-redundant.png) And last is the grey icon, this icon is next to an addon which is being fully overwritten making it redundant.
+- ![Creating a new instance](../../assets/icons/mo2/conflict-overwritten.png) This little lightning icon with a red minus next to it shows that the addon is being overwritten.
+- ![Creating a new instance](../../assets/icons/mo2/conflict-overwrite.png) A lightning icon with green plus means the addon is overwriting another addon.
+- ![Creating a new instance](../../assets/icons/mo2/conflict-mixed.png) If you see both of these icons it means the addon is overwriting an addon and is being overwritten by one.
+- ![Creating a new instance](../../assets/icons/mo2/conflict-redundant.png) And last is the grey icon, this icon is next to an addon which is being fully overwritten making it redundant.
 
 To make things work together you need to maintain a load order, that means that you can't just install addons and expect them to all work together, you can start by keeping your load order clean, make some separators (right-click into empty area) like I have in my load order [here](https://imgur.com/a/6d29UzT), after that you can install patches if needed. You can always ask about load orders in the addon-discussion channel.
 

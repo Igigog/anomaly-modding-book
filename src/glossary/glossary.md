@@ -167,7 +167,7 @@ Contains descriptions of various S.T.A.L.K.E.R. related terms used in modding an
 <tbody>
   <tr id="GameMaterial">
     <td>Game Material</td>
-    <td></td>
+    <td>Responsible for the physical feature of the surface.</td>
   </tr>
 </tbody>
 </table>
@@ -283,11 +283,11 @@ Contains descriptions of various S.T.A.L.K.E.R. related terms used in modding an
 <tbody>
   <tr id="CompileShader">
     <td>Compile Shader</td>
-    <td></td>
+    <td>Shader used by the Level Compiler. Specifies to the compiler the features of the final game level geometry. The source geometry, depending on the compiler shader, may have different features.</td>
   </tr>
   <tr id="EngineShader">
     <td>Engine Shader</td>
-    <td></td>
+    <td>Shader responsible for the visual appearance of the surface.</td>
   </tr>
 </tbody>
 </table>
