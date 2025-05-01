@@ -1,4 +1,4 @@
-# _bump.dds
+# *_bump.dds
 
 ___
 
@@ -13,7 +13,7 @@ ___
 ### Format
 
 - R - Glossiness (Glossiness, aka inverted roughness. It works best in stalker, and allows for using better [BRDF](https://en.wikipedia.org/wiki/Bidirectional_reflectance_distribution_function))
-- G - Normal Z (Unused in Anomaly 1.6.0)
+- G - Normal Z (Unused)
 - B - Normal Y (DirectX format)
 - A - Normal X
 
@@ -27,8 +27,7 @@ ___
 - 565 (RGB565)
 - RGB
 - RGBA
-- NVHS
-- NVHU
+- BC7 (DX11)
 - A8
 - L8
 - A8L8

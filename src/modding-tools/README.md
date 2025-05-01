@@ -213,7 +213,6 @@ ___
 ## Upgrades
 
 - [Upgrades Editor](https://github.com/gunslingermod/compiled_toolz) - A visual editor that makes it relatively quick and easy to create weapon upgrade schemes
-  - [More](weapons/upgrade-editor.md)
 
 ___
 
@@ -230,14 +229,6 @@ ___
 - [NPC Editor](https://github.com/rayofhope-dev/npc-editor) - NPC editing tool (Currently not working for Anomaly!)
 
 - [NpcStalkerToolKit](https://disk.yandex.ru/d/QyDQTHHInCjDGg) - This program creates NPC in the game (but does not spawn them)
-
-___
-
-## AI
-
-- [.efd files decompressor](https://cdn.discordapp.com/attachments/385903500581928969/590555274079633408/EFD_Reader.7z)
-
-- [Game Graph Editor](https://cdn.discordapp.com/attachments/978593574893535274/979059136467726356/Game_Graph_Editor.rar)
 
 ___
 

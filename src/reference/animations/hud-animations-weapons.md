@@ -6,10 +6,9 @@ ___
 animation parameter name = animation name(hands), animation name(weapon), playback speed
 ```
 
-<details>
-    <summary>Idle animations</summary>
+Idle animations
 
-| Parameter Name | Engine Class | Parameter Description | Example Value | Parameter Possible Values And Their Descriptions |
+| Parameter Name | Engine Class |Parameter Description | Example Value | Possible Parameters |
 |---|---|---|---|---|
 | anm_idle |  | Idle animation |  |  |
 | anm_idle_empty |  | Idle animation with empty magazine |  |  |
@@ -27,12 +26,9 @@ animation parameter name = animation name(hands), animation name(weapon), playba
 | anm_idle_w_gl_aim |  | Aiming idle animation with active underbarrel grenade launcher |  |  |
 | anm_idle_empty_w_gl_aim |  | Aiming idle animation with empty active underbarrel grenade launcher |  |  |
 
-</details>
+Motion animations
 
-<details>
-    <summary>Motion animations</summary>
-
-| Parameter Name | Engine Class | Parameter Description | Example Value | Parameter Possible Values And Their Descriptions |
+| Parameter Name | Engine Class |Parameter Description | Example Value | Possible Parameters |
 |---|---|---|---|---|
 | anm_show_0 | WP_BM16 | Show animation with 0 bullets |  |  |
 | anm_show_1 | WP_BM16 | Show animation with 1 bullets |  |  |
@@ -90,22 +86,19 @@ animation parameter name = animation name(hands), animation name(weapon), playba
 | anm_hide_w_gl |  | Hiding animation with active underbarrel grenade launcher |  |  |
 | anm_hide_empty_w_gl |  | Hiding animation with active empty underbarrel grenade launcher |  |  |
 
-</details>
+Weapon animations
 
-<details>
-    <summary>Weapon animations</summary>
-
-| Parameter Name | Engine Class | Parameter Description | Example Value | Parameter Possible Values And Their Descriptions |
+| Parameter Name | Engine Class |Parameter Description | Example Value | Possible Parameters |
 |---|---|---|---|---|
 | anm_open | WP_RG6<br> WP_ASHTG |  | rg6_reload_start |  |
 | anm_add_cartridge | WP_RG6 |  | rg6_reload, rg6_reload_wep |  |
 | anm_close | WP_RG6 |  |  | rg6_reload_end |
 | anm_close_empty | WP_RG6 |  |  |  |
-| anm_reload_1 | WP_BM16<br> WeaponRevolver.h |  |  |  |
-| anm_reload_2 | WP_BM16<br> WeaponRevolver.h |  |  |  |
-| anm_reload_3 | WeaponRevolver.h |  |  |  |
-| anm_reload_4 | WeaponRevolver.h |  |  |  |
-| anm_reload_5 | WeaponRevolver.h |  |  |  |
+| anm_reload_1 | WP_BM16<br> CWeaponRevolver |  |  |  |
+| anm_reload_2 | WP_BM16<br> CWeaponRevolver |  |  |  |
+| anm_reload_3 | CWeaponRevolver |  |  |  |
+| anm_reload_4 | CWeaponRevolver |  |  |  |
+| anm_reload_5 | CWeaponRevolver |  |  |  |
 | anm_reload | Partial reload animation |  |  |  |
 | anm_reload_empty | Full reload animation |  |  |  |
 | anm_reload_g |  |  |  |  |
@@ -129,5 +122,3 @@ animation parameter name = animation name(hands), animation name(weapon), playba
 | anm_switch_empty |  | ? |  |  |
 | anm_switch_g |  |  |  |  |
 | anm_switch_g_empty |  |  |  |  |
-
-</details>

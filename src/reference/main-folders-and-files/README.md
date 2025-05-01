@@ -94,7 +94,7 @@ ___
   </tr>
   <tr>
     <td>gamemtl.xr</td>
-    <td>Contains <a href="../materials/materials-list.md">Game Materials</a></td>
+    <td>Contains <a href="../../glossary/glossary.md_game-material">Game Materials</a></td>
   </tr>
   <tr>
     <td>lanims.xr</td>
@@ -110,11 +110,11 @@ ___
   </tr>
   <tr>
     <td>shaders.xr</td>
-    <td>Database of the <a href="../shaders/shaders-list/engine-shaders-list.md">shaders used by the graphics engine</a></td>
+    <td>Contains <a href="../shaders/shaders-list/engine-shaders-list.md">Engine Shaders</a></td>
   </tr>
   <tr>
     <td>shaders_xrlc.xr</td>
-    <td>Database of <a href="../shaders/shaders-list/compiler-shaders-list.md">shaders used by the level compiler</a></td>
+    <td>Contains <a href="../shaders/shaders-list/compiler-shaders-list.md">Compiler Shaders</a></td>
   </tr>
   <tr>
     <td>tools</td>

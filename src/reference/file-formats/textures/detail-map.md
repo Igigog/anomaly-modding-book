@@ -1,4 +1,4 @@
-# *detail_map_name_(with bump or bump#)*.dds
+# *detail_map_name_(with \*_bump or *_bump#)*.dds
 
 ___
 

@@ -119,3 +119,6 @@ It is used for random distribution of objects on the level
     <td>-</td>
   </tr>
 </tbody></table>
+
+### AI Map
+

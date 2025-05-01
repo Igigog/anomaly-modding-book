@@ -8,7 +8,7 @@
 
 - [Contributing](meta/contributing.md)
   - [Book Structure](meta/book-overview.md)
-  - [Book Style Sheet](meta/style-sheet.md)
+  - [Book Style Sheet](meta/book-style-sheet.md)
 - [Community Standards](meta/community-standards.md)
 - [Acknowledgements](meta/acknowledgements.md)
 
@@ -28,7 +28,7 @@
     - [Addon Installers](tutorials/getting-started/addon-installers.md)
     - [Package Naming for MO2](tutorials/getting-started/package-naming.md)
   - [Configuring VSCode-like Programs to Handle Game Files](tutorials/getting-started/vs-code-game-files-setup.md)
-  - [Files Extraction](tutorials/getting-started/extract-files.md)
+  - [Unpacking Game Files](tutorials/getting-started/unpacking-game-files.md)
 
 - [Addons](tutorials/addons/README.md)
   - [DLTX](tutorials/addons/dltx.md)
@@ -45,11 +45,14 @@
   - [Algorithm of Logic](reference/configs/algoritm-of-logic.md)
 
 - [Models](tutorials/models/README.md)
-  - [Model Binding in Blender](tutorials/models/binding-model.md)
-  - [Static Object Setup in Blender](tutorials/models/creating-static-model.md)
-  - [Dynamic Object Setup in Blender](tutorials/models/creating-dynamic-model.md)
+  - [Model Binding in Blender](tutorials/models/binding-model-in-blender.md)
+  - [Setup Static Object in Blender](tutorials/models/setup-static-object-in-blender.md)
+  - [Setup Dynamic Object in Blender](tutorials/models/setup-dynamic-object-in-blender.md)
 
-- [Animating](tutorials/animations/README.md)
+- [Materials]()
+  - [Creating Game Material in SDK](tutorials/materials/creating-game-material-in-sdk.md)
+
+- [Animations](tutorials/animations/README.md)
   - [Creating Camera Flyover in Game](tutorials/animations/creating-flyover-camera-animations-in-game.md)
   - [Creating HUD Animation in Blender](tutorials/animations/creating-hud-animation-in-blender.md)
   - [Creating Camera Animations in Blender](tutorials/animations/creating-camera-animations.md)
@@ -189,6 +192,9 @@
 - [Models]()
   - [Smoothing](reference/models/smoothing.md)
 
+- [Animations]()
+  - [Skeletons Overview](reference/animations/skeletons-overview.md)
+
 - [Engine Shaders List](reference/shaders/shaders-list/engine-shaders-list.md)
 
 - [Compiler Shaders List](reference/shaders/shaders-list/compiler-shaders-list.md)
@@ -204,21 +210,21 @@
 - [Engine Overview](engine/README.md)
   - [X-Ray Coordinate System](engine/xray-coordinate-system.md)
   - [Engine Classes](engine/engine-classes.md)
-- [Console Commands](reference/console-commands/general-game-console-commands.md)
-  - [Control](reference/console-commands/control-commands.md)
-  - [Demo Record](reference/console-commands/demo-record-commands.md)
-  - [Animations](reference/console-commands/animation-commands.md)
-  - [Audio](reference/console-commands/audio-commands.md)
-  - [Discord](reference/console-commands/discord-commands.md)
-  - [Debug](reference/console-commands/debug-commands.md)
-  - [AI](reference/console-commands/ai-commands.md)
-  - [HUD Camera](reference/console-commands/hud-camera-commands.md)
-  - [Render](reference/console-commands/render-commands.md)
-    - [R1 Render](reference/console-commands/r1-render-commands.md)
-    - [R2 Render](reference/console-commands/r2-render-commands.md)
-    - [R3 Render](reference/console-commands/r3-render-commands.md)
-    - [R4 Render](reference/console-commands/r4-render-commands.md)
-  - [UI](reference/console-commands/ui-commands.md)
+- [Console Commands](engine/console-commands/general-game-console-commands.md)
+  - [Control](engine/console-commands/control-commands.md)
+  - [Demo Record](engine/console-commands/demo-record-commands.md)
+  - [Animations](engine/console-commands/animation-commands.md)
+  - [Audio](engine/console-commands/audio-commands.md)
+  - [Discord](engine/console-commands/discord-commands.md)
+  - [Debug](engine/console-commands/debug-commands.md)
+  - [AI](engine/console-commands/ai-commands.md)
+  - [HUD Camera](engine/console-commands/hud-camera-commands.md)
+  - [Render](engine/console-commands/render-commands.md)
+    - [R1 Render](engine/console-commands/r1-render-commands.md)
+    - [R2 Render](engine/console-commands/r2-render-commands.md)
+    - [R3 Render](engine/console-commands/r3-render-commands.md)
+    - [R4 Render](engine/console-commands/r4-render-commands.md)
+  - [UI](engine/console-commands/ui-commands.md)
 - [Command-line Switches](engine/command-line-switches.md)
 
 ---
@@ -296,7 +302,7 @@
       - [MODEL: env^base](modding-tools/sdk/shader-editor/shader-types/model-env-base.md)
       - [particles](modding-tools/sdk/shader-editor/shader-types/particles.md)
   - [Sound Editor](modding-tools/sdk/sound-editor/sound-editor.md)
-  - [Postprocess Editor]()
+  - [Postprocess Editor](modding-tools/sdk/postprocess-editor/postprocess-editor.md)
   - [Particle Editor](modding-tools/sdk/particle-editor/particle-editor.md)
     - [Left Bar Window](modding-tools/sdk/particle-editor/windows/left-bar.md)
     - [Right Bar Window](modding-tools/sdk/particle-editor/windows/right-bar.md)
@@ -412,8 +418,6 @@
 - [Sound Attribute Viewer and Tweaker](modding-tools/audio-video/savandt.md)
 
 - [ffmpeg2theora](modding-tools/audio-video/ffmpeg2theora.md)
-
-- [Upgrade Editor](modding-tools/weapons/upgrade-editor.md)
 
 - [Modified OMF Editor](modding-tools/animations/omf-editor-by-valerok.md)
 

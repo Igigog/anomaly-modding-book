@@ -126,21 +126,21 @@ Different Properties are used for Particle Effect and Particle Group
         <td rowspan="9">Sprite</td>
         <td rowspan="9"></td>
         <td>Texture</td>
-        <td></td>
+        <td>Selecting texture</td>
         <td>-</td>
         <td>-</td>
       </tr>
       <tr>
         <td>Shader</td>
-        <td></td>
+        <td>Selecting Engine Shader</td>
         <td>-</td>
         <td>-</td>
       </tr>
       <tr>
         <td>Culling</td>
-        <td>Back-Face Culling</td>
+        <td>Enable <a href="https://www.khronos.org/opengl/wiki/Face_Culling">Back-Face Culling</a></td>
         <td>CCW</td>
-        <td>Counter-Clockwise Culling</td>
+        <td>Enable <a href="https://www.khronos.org/opengl/wiki/Face_Culling">Counter-Clockwise Culling</a></td>
       </tr>
       <tr>
         <td rowspan="4">Frame</td>

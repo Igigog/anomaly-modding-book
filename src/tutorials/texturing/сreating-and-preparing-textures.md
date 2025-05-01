@@ -10,7 +10,7 @@ ___
 
 ## Beginning (Via Paint.net)
 
-First, familiarize yourself with the supported texture compression ([*.dds](../../reference/file-formats/textures/dds.md) [_bump.dds](../../reference/file-formats/textures/bump.md) [_bump#.dds](../../reference/file-formats/textures/bump_hash.md))
+First, familiarize yourself with the supported texture compression ([*.dds](../../reference/file-formats/textures/dds.md) [*_bump.dds](../../reference/file-formats/textures/bump.md) [*_bump#.dds](../../reference/file-formats/textures/bump_hash.md))
 
 ## Start
 

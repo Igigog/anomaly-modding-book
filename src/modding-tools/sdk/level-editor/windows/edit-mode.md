@@ -18,7 +18,7 @@ ___
 | Sound Source | Sound sources |
 | Sound Env | Sound environments |
 | Glow | Glow objects |
-| Shape |  |
+| Shape | Shape object |
 | Spawn Element | Spawn elements |
 | Way Points | Way Points |
 | Sector | Sectors |
@@ -26,7 +26,7 @@ ___
 | Group | Objects in groups |
 | Static Particles | Static particles |
 | Detail Objects | Detail objects |
-| AI Map | AI Map (AI Node) |
+| AI Map | AI Map |
 | Wallmarks | Wallmarks |
 | Fog Volumes | Fog volumes |
 | Puddles | Puddles |

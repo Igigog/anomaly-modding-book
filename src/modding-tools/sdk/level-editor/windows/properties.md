@@ -783,3 +783,203 @@ ___
 
 ### Static Particles
 
+<table><thead>
+  <tr>
+    <th></th>
+    <th>Description</th>
+    <th>Extra</th>
+    <th>Extra Description</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td>Name</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td rowspan="3">Transform</td>
+    <td rowspan="3"></td>
+    <td>Position</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Rotation</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Scale</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Reference</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td rowspan="2">Controls</td>
+    <td rowspan="2"></td>
+    <td>Play</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Stop</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td rowspan="8">Game Type</td>
+    <td rowspan="8"></td>
+    <td>single</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>deathmatch</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>team deathmatch</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>artefact hunt</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>capture the artefact</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>domination zone</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>team domination zone</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Free MP</td>
+    <td></td>
+  </tr>
+</tbody></table>
+
+### Fog Volume
+
+<table><thead>
+  <tr>
+    <th></th>
+    <th>Description</th>
+    <th>Extra</th>
+    <th>Extra Description</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td>Name</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td rowspan="3">Transform</td>
+    <td rowspan="3"></td>
+    <td>Position</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Rotation</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Scale</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Shape usage</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</tbody>
+</table>
+
+### Puddles
+
+<table><thead>
+  <tr>
+    <th></th>
+    <th>Description</th>
+    <th>Extra</th>
+    <th>Extra Description</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td>Name</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td rowspan="3">Transform</td>
+    <td rowspan="3"></td>
+    <td>Position</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Rotation</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Scale</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Shape usage</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</tbody>
+</table>
+
+### Wallmarks
+
+<table><thead>
+  <tr>
+    <th></th>
+    <th>Description</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td>Draw Wallmarks</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td rowspan="3">Aligment</td>
+    <td rowspan="3"></td>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+    <td>Width</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Height</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Rotate</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Shader</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Texture</td>
+    <td></td>
+  </tr>
+</tbody>
+</table>

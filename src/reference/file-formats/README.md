@@ -14,7 +14,7 @@ ___
 | [*.pdb](../file-formats/general/pdb.md) |  |
 | [*.scop](../file-formats/general/scop.md) | Save file |
 | [*.scoc](../file-formats/general/scoc.md) | Save file |
-| [*.xrdemo](../file-formats/general/xrdemo.md) | Recording camera flyover (demo). Created in the game with a [console command](../console-commands/general-game-console-commands.md). |
+| [*.xrdemo](../file-formats/general/xrdemo.md) | Recording camera flyover (demo). Created in the game with a [console command](../../engine/console-commands/general-game-console-commands.md). |
 | [*.ogm](../file-formats/audio-video/ogm.md) | The video format used by the game engine. |
 | [*.ogg](../file-formats/audio-video/ogg.md) | The sound format used by the game engine. |
 

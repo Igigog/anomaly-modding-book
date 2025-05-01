@@ -12,7 +12,7 @@ ___
 * Second, forget about the Stalker Icon Editor
 * Third, we need [Paint.net](https://www.getpaint.net/). That is, we use only two programs to work with the icons themselves, not counting the program for rendering them
 
-Next, you need to work with the source - [.tga](https://en.wikipedia.org/wiki/Truevision_TGA) ideal buffer format for these two programs, save it in 32-bit format.
+Next, you need to work with the source - [*.tga](https://en.wikipedia.org/wiki/Truevision_TGA) ideal buffer format for these two programs, save it in 32-bit format.
 
 ![tga options centered](images/tga-settings.png)![Save Settings centered](images/save-settings.png)
 

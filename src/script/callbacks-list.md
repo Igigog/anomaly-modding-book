@@ -7,7 +7,6 @@ Technically, this should cover all the callbacks available in vanilla, but remem
 ## Player
 
 ```lua
-Player :
 * on_before_level_changing                 Params: ()
 * on_level_changing                        Params: ()
 * actor_on_before_death                    Params: (<number>,<table>)
@@ -64,7 +63,6 @@ Player :
 ## NPCs
 
 ```lua
-NPCs :
 * npc_on_use                               Params: (<game_object>,<game_object>)
 * npc_on_choose_weapon                     Params: (<game_object>,<game_object>,<table>)
 * npc_on_item_take                         Params: (<game_object>,<game_object>)
@@ -89,7 +87,6 @@ NPCs :
 ## Mutants
 
 ```lua
-Mutants :
 * monster_on_update                        Params: (<game_object>,<table>)
 * monster_on_before_hit                    Params: (<game_object>,<SHit>,<number>,<table>)
 * monster_on_hit_callback                  Params: (<game_object>,<number>,<vector>,<game_object>,<number>)
@@ -104,7 +101,6 @@ Mutants :
 ## Physical objects
 
 ```lua
-Physical objects :
 * physic_object_on_hit_callback            Params: (<game_object>,<number>,<vector>,<game_object>,<number>)
 * physic_object_on_use_callback            Params: (<game_object>,<game_object>)
 ```
@@ -112,7 +108,6 @@ Physical objects :
 ## Vehicles
 
 ```lua
-Vehicles :
 * heli_on_hit_callback                     Params: (<game_object>,<number>,<nil>,<game_object>,<nil>)
 * vehicle_on_death_callback                Params: (<number>)
 ```
@@ -120,7 +115,6 @@ Vehicles :
 ## Squads
 
 ```lua
-Squads :
 * squad_on_npc_creation                    Params: (<server_object>,<server_object>,<server_object>)
 * squad_on_enter_smart                     Params: (<server_object>,<server_object>)
 * squad_on_leave_smart                     Params: (<server_object>,<server_object>)
@@ -143,7 +137,6 @@ it's up to the user to check for the case in which old level name/old game verte
 ## Smart terrains
 
 ```lua
-Smart terrains :
 * smart_terrain_on_update                  Params: (<server_object>)
 * on_try_respawn                           Params: (<server_object>,<table>)
 ```
@@ -151,7 +144,6 @@ Smart terrains :
 ## Server objects
 
 ```lua
-Server objects :
 * server_entity_on_register                Params: (<server_object>,<string>)
 * server_entity_on_unregister              Params: (<server_object>,<string>)
 * fill_start_position                      Params: ()
@@ -163,7 +155,6 @@ Server objects :
 ## GUI
 
 ```lua
-GUI :
 * ActorMenu_on_before_init_mode            Params: (<string>,<table>,<game_object>)
 * ActorMenu_on_mode_changed                Params: (<number>,<number>)
 * ActorMenu_on_item_drag_drop              Params: (<game_object>,<game_object>,<number>,<number>)
@@ -190,7 +181,6 @@ GUI :
 ## Technical
 
 ```lua
-Technical :
 * on_game_load                             Params: (<binder>)
 * on_key_press                             Params: (<number>)
 * on_key_release                           Params: (<number>)
@@ -206,7 +196,6 @@ Technical :
 ## Files
 
 ```lua
-Files :
 * save_state                               Params: (<table>)
 * load_state                               Params: (<table>)
 * on_pstor_save_all                        Params: (<game_object>,<?>)
@@ -216,7 +205,6 @@ Files :
 ## Others
 
 ```lua
-Others :
 * on_enemy_eval                            Params: (<game_object>,<game_object>,<table>)
 * on_before_surge                          Params: (<table>)
 * on_before_psi_storm                      Params: (<table>)

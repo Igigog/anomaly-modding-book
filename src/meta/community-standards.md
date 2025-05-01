@@ -29,8 +29,8 @@ You can use any one that supports LUA and XML files.
 
 Also, you may need these extensions:
 
-- [ltx support Overview](../modding-tools/coding/ltx-support.md)
-- [Encodex GitHub Source](https://github.com/Tosox/Encodex)
+- [ltx support](../modding-tools/coding/ltx-support.md) - Extension which adds support for [logic syntax](../reference/file-formats/conf-script/ltx.md) from S.T.A.L.K.E.R.
+- [Encodex](https://github.com/Tosox/Encodex) - Extension which automatically detects and switches the encoding of files across different formats
 
 ### Tools
 
@@ -44,7 +44,7 @@ In some cases, it will be easier and faster to use a specific tool to solve prob
 
 - [OGF Editor Documentation](../modding-tools/models/ogf-editor-by-valerok.md)
 
-#### OMG editor
+#### OMF editor
 
 - [OMF Editor Documentation](../modding-tools/animations/omf-editor-by-valerok.md)
 

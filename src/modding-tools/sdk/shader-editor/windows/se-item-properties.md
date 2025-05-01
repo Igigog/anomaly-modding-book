@@ -123,19 +123,19 @@ ___
 <tbody>
   <tr>
     <td>Translucency</td>
-    <td></td>
+    <td>Transparency level for vertices</td>
     <td>-</td>
     <td>-</td>
   </tr>
   <tr>
     <td>Ambient</td>
-    <td></td>
+    <td>Base ambient light for vertices</td>
     <td>-</td>
     <td>-</td>
   </tr>
   <tr>
     <td>LM density</td>
-    <td></td>
+    <td>Density (quality) of the lightmap for the surface</td>
     <td>-</td>
     <td>-</td>
   </tr>
@@ -143,23 +143,23 @@ ___
     <td rowspan="5">Flags</td>
     <td rowspan="5"></td>
     <td>Collision</td>
-    <td>Enable Collision for object with this shader</td>
+    <td>Enable collision for object with this shader</td>
   </tr>
   <tr>
     <td>Rendering</td>
-    <td>An object without this shader will not render in the game world</td>
+    <td>Enable rendering for object with this shader</td>
   </tr>
   <tr>
     <td>OptimizeUV</td>
-    <td></td>
+    <td>?</td>
   </tr>
   <tr>
     <td>Vertex light</td>
-    <td>Will use Vertex Lighting instead Per-Pixel Lightning</td>
+    <td>Will use Vertex Lighting instead lightmap</td>
   </tr>
   <tr>
     <td>Cast shadow</td>
-    <td>Enable shadow casting</td>
+    <td>Enable shadow casting for object with this shader</td>
   </tr>
 </tbody>
 </table>
@@ -183,19 +183,19 @@ ___
     <td rowspan="12">Flags</td>
     <td rowspan="12"></td>
     <td>Dynamic</td>
-    <td></td>
+    <td>Using material for a Dynamic Object</td>
   </tr>
   <tr>
     <td>Passable</td>
-    <td></td>
+    <td>Allows the material to be passable</td>
   </tr>
   <tr>
     <td>Breakable</td>
-    <td></td>
+    <td>Allows the material to be breakable. Only for Dynamic Object.</td>
   </tr>
   <tr>
     <td>Bounceable</td>
-    <td></td>
+    <td>Allows the material to be bounceable</td>
   </tr>
   <tr>
     <td>Skidmark</td>
@@ -203,31 +203,31 @@ ___
   </tr>
   <tr>
     <td>Bloodmark</td>
-    <td></td>
+    <td>Enables the possibility of blood marks appearing on this material</td>
   </tr>
   <tr>
     <td>Climable</td>
-    <td></td>
+    <td>Allows climbing on this material</td>
   </tr>
   <tr>
     <td>Liquid</td>
-    <td></td>
+    <td>Устанвливает материал как жидкость (для чего?)</td>
   </tr>
   <tr>
     <td>Suppress Shadows</td>
-    <td></td>
+    <td>Disables shadows for material</td>
   </tr>
   <tr>
     <td>Suppress Wallmarks</td>
-    <td></td>
+    <td>Disables wallamarks for material</td>
   </tr>
   <tr>
     <td>Actor Obstacle</td>
-    <td>An actor's ability to collide with the material?</td>
+    <td>Форсирование включенние коллизии (?)</td>
   </tr>
   <tr>
     <td>Bullet No Ricoshet</td>
-    <td>Will the bullet ricochet off the material</td>
+    <td>Disabling the recochet from the material</td>
   </tr>
   <tr>
     <td rowspan="5">Physics</td>
@@ -245,7 +245,7 @@ ___
   </tr>
   <tr>
     <td>Bounce start vel</td>
-    <td>Initial velocity at which the bounce starts to work</td>
+    <td></td>
   </tr>
   <tr>
     <td>Bouncing</td>
@@ -255,35 +255,35 @@ ___
     <td rowspan="8">Factors</td>
     <td rowspan="8"></td>
     <td>Bounce Damage</td>
-    <td>the damage that is inflicted by bouncing?</td>
+    <td></td>
   </tr>
   <tr>
     <td>Injurious</td>
-    <td></td>
+    <td>Скорость Ранения при касании?</td>
   </tr>
   <tr>
     <td>Shooting (1-went through)</td>
-    <td>material penetrability</td>
+    <td>Resistance to penetration factor</td>
   </tr>
   <tr>
     <td>Shooting MP (1-went through)</td>
-    <td>material penetrability in Multiplayer?</td>
+    <td>Resistance to penetration factor for Multiplayer</td>
   </tr>
   <tr>
     <td>Transparency (1-full transp)</td>
-    <td></td>
+    <td>Determining object visibility through materials to calculate NPC visibility</td>
   </tr>
   <tr>
     <td>Sound occlusion (1-full hear)</td>
-    <td>attenuation factor</td>
+    <td>Sound occlusion factor</td>
   </tr>
   <tr>
     <td>Flotation (1-full passable)</td>
-    <td>deceleration coefficient when passing through this material</td>
+    <td>Flotation factor</td>
   </tr>
   <tr>
     <td>Density Factor</td>
-    <td>how many m/s the bullet slows down when passing 1 m of material</td>
+    <td>Density factor</td>
   </tr>
 </tbody></table>
     </div>

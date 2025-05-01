@@ -1,4 +1,4 @@
-# Engine Shaders List (shaders.xr)
+# Engine Shaders List
 
 ___
 
@@ -6,23 +6,298 @@ ___
 
 This section contains a list and description of the shaders that are available in the shaders.xr file. This file contains descriptions of shader settings.
 
-## List
+<style>
+.main-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.main-table th, .main-table td {
+    padding: 12px 15px;
+}
+
+.main-table th {
+}
+
+.material-row {
+    transition: background-color 0.2s;
+}
+
+.material-row:hover {
+    background-color: #f9f9f9;
+}
+
+.expand-btn {
+    cursor: pointer;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    margin-right: 8px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    color: #555;
+    font-weight: bold;
+    line-height: 24px;
+    transition: all 0.3s;
+    user-select: none;
+}
+
+.expand-btn:hover {
+    background-color: #d0d0d0;
+}
+
+.expand-btn.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.details-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #fafafa;
+}
+
+.details-container.show {
+    max-height: 1500px;
+    transition: max-height 0.2s ease-in;
+}
+
+.nested-table {
+    width: calc(100% - 30px);
+    margin: 10px 15px;
+    border-collapse: collapse;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.nested-table td {
+    padding: 10px 15px;
+    border: 1px solid #e0e0e0;
+    background-color: white;
+}
+
+.nested-table tr:first-child td {
+    border-top: none;
+}
+
+.nested-table tr:last-child td {
+    border-bottom: none;
+}
+
+.nested-table tr td:first-child {
+    border-left: none;
+    font-weight: 500;
+    color: #333;
+}
+
+.nested-table tr td:last-child {
+    border-right: none;
+    color: #666;
+}
+</style>
 
 ### Shaders for static objects
 
-| Shader name | Shader Type | Description | Shader Properties |
-|---|---|---|---|
-| zfill | basic (simple) |  |  |
-| xwindow | LEVEL: diffuse*base | Old unused glass shader |  |
-| selflight | LEVEL: diffuse*base | Self-lighting material |  |
-| glass | basic (simple) |  |  |
-| friendly_indicator | basic (simple) |  |  |
-| font | basic (simple) |  |  |
-| default_pn_hm | LEVEL: lmap*base (default) |  |  |
-| default_pn | LEVEL: lmap*base (default) |  |  |
-| default_hm | LEVEL: lmap*base (default) |  |  |
-| default | LEVEL: lmap*base (default) | Basic lightmap shader |  |
-| clouds | basic (simple) |  |  |
+<table class="main-table" id="StaticObjectEngineShaderTable">
+    <thead>
+        <tr>
+            <th>Path and Shader Name</th>
+            <th>Shader Type</th>
+            <th>Description</th>
+            <th>Preview</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/zfill.html">+</span>
+                zfill
+            </td>
+            <td>basic (simple)</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/xwindow.html">+</span>
+                xwindow
+            </td>
+            <td>LEVEL: diffuse*base</td>
+            <td>Old unused glass shader</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/xwindow.html">+</span>
+                selflight
+            </td>
+            <td>LEVEL: diffuse*base</td>
+            <td>Self-lighting shader</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/glass.html">+</span>
+                glass
+            </td>
+            <td>basic (simple)</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/friendly-indicator.html">+</span>
+                friendly_indicator
+            </td>
+            <td>basic (simple)</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/font.html">+</span>
+                font
+            </td>
+            <td>basic (simple)</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/default_pn_hm.html">+</span>
+                default_pn_hm
+            </td>
+            <td>LEVEL: lmap*base (default)</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/default_pn.html">+</span>
+                default_pn
+            </td>
+            <td>LEVEL: lmap*base (default)</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/default_hm.html">+</span>
+                default_hm
+            </td>
+            <td>LEVEL: lmap*base (default)</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/default.html">+</span>
+                default
+            </td>
+            <td>LEVEL: lmap*base (default)</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/clouds.html">+</span>
+                clouds
+            </td>
+            <td>basic (simple)</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ### ufp Shaders
 
@@ -48,54 +323,730 @@ This section contains a list and description of the shaders that are available i
 
 ### Particles Shaders
 
-| Shader name | Shader Type | Description |
-|---|---|---|
-| particles\add |  |  |
-| particles\alpha_add |  |  |
-| particles\blend |  |  |
-| particles\dark |  |  |
-| particles\set |  |  |
-| particles\xadd |  |  |
-| particles\xblend |  |  |
-| particles\xdistort |  |  |
+<table class="main-table" id="ParticlesEngineShaderTable">
+    <thead>
+        <tr>
+            <th>Path and Shader Name</th>
+            <th>Shader Type</th>
+            <th>Description</th>
+            <th>Preview</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/add.html">+</span>
+                particles\add
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/alpha-add.html">+</span>
+                particles\alpha_add
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/blend.html">+</span>
+                particles\blend
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/dark.html">+</span>
+                particles\dark
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/set.html">+</span>
+                particles\set
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/xadd.html">+</span>
+                particles\xadd
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/xblend.html">+</span>
+                particles\xblend
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                particles\xdistort
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ### Shaders for dynamic objects
 
-| Shader name and path | Description | Shader Properties | Preview |
-|---|---|---|---|
-| models\antigas_glass | CubeMap reflection shader  | Name = sky\sky_5_cube<br> Alpha-Blend = 0 |  |
-| models\artefact | CubeMap reflection shader  | Name = sky\sky_18_cube<br> Alpha-Blend = 0 | ![Alt text](images/shaders-preview/models-artefact.png) |
-| models\artefact2 | CubeMap reflection shader | Name = sky\sky_20_cube<br> Alpha-Blend = 0 | ![Alt text](images/shaders-preview/models-artefact2.png) |
-| models\artifact-anim-env | CubeMap reflection shader | Name = sky\sky_11_cube<br> Alpha-Blend = 0 |  |
-| models\glass_stalker_refl | CubeMap reflection shader | Name = sky\sky_17_cube<br> Alpha-Blend = 0 |  |
-| models\lfo_black_lens_weapons |  |  |  |
-| models\lfo_black_soft_lens_weapons |  |  |  |
-| models\lfo_glass_lens_weapons |  |  |  |
-| models\lfo_light_dot_weapons |  |  |  |
-| models\lightplanes | self-lighting material with translucent and falloff effect |  | ![Alt text](images/shaders-preview/models-lightplanes.png) |
-| models\mirror |  |  | ![Alt text](images/shaders-preview/models-mirror.png) |
-| models\model | basic shader |  | ![Alt text](images/shaders-preview/models-model.png) |
-| models\model_aref | transparency. alpha test - trans (with gradients) |  | ![Alt text](images/shaders-preview/models-model_aref.png) |
-| models\model_fur | transparency. alpha test - aref (no gradients) |  | ![Alt text](images/shaders-preview/models-model_fur.png) |
-| models\hm |  |  | ![Alt text](images/shaders-preview/models-hm.png) |
-| models\pn |  |  | ![Alt text](images/shaders-preview/models-pn.png) |
-| models\pn_hm | enable tesselation on models (DX11 only) |  | ![Alt text](images/shaders-preview/models-pn_hm.png) |
-| models\pautina | material with transparency and falloff effect |  | ![Alt text](images/shaders-preview/models-pautina.png) |
-| models\selflight | basic self-lighting material |  | ![Alt text](images/shaders-preview/models-selflight.png) |
-| models\seftlight_det | uses an engine shader variable. For example, it is possible to make the detector screen turn off when the battery level is too low |  | ![Alt text](images/shaders-preview/models-seftlight_det.png) |
-| models\selflightl | self-lighting material with lower intensity |  | ![Alt text](images/shaders-preview/models-selflightl.png) |
-| models\transparent | transparency |  | ![Alt text](images/shaders-preview/models-transparent.png) |
-| models\water |  |  |  |
-| models\water_ryaska |  |  |  |
-| models\weapons | CubeMap reflection shader (variant 4) |  | ![Alt text](images/shaders-preview/models-weapons.png) |
-| models\window | Semi-transparent shader with CubeMap reflection |  | ![Alt text](images/shaders-preview/models-window.png) |
-| models\xanomaly |  |  | ![Alt text](images/shaders-preview/models-xanomaly.png) |
-| models\xdistor |  |  | ![Alt text](images/shaders-preview/models-xdistor.png) |
-| models\xdistorcolor |  |  | ![Alt text](images/shaders-preview/models-xdistorcolor.png) |
-| models\xdistorcolorl |  |  | ![Alt text](images/shaders-preview/models-xdistorcolorl.png) |
-| models\xdistorinv |  |  | ![Alt text](images/shaders-preview/models-xdistorinv.png) |
-| models\xmonolith |  |  | ![Alt text](images/shaders-preview/models-xmonolith.png) |
-| models\xwindows |  |  | ![Alt text](images/shaders-preview/models-xwindows.png) |
+<table class="main-table" id="DynamicObjectEngineShaderTable">
+    <thead>
+        <tr>
+            <th>Path and Shader Name</th>
+            <th>Shader Type</th>
+            <th>Description</th>
+            <th>Preview</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/add.html">+</span>
+                models\antigas_glass
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/alpha-add.html">+</span>
+                models\artefact
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/blend.html">+</span>
+                models\artefact2
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/dark.html">+</span>
+                models\artifact-anim-env
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/set.html">+</span>
+                models\glass_stalker_refl
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/xadd.html">+</span>
+                models\lfo_black_lens_weapons
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/xblend.html">+</span>
+                models\lfo_black_soft_lens_weapons
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                models\lfo_glass_lens_weapons
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                models\lfo_light_dot_weapons
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                models\lightplanes
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                models\mirror
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                models\model
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                models\model_aref
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                models\model_fur
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                models\hm
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                models\pn
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                models\pn_hm
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                models\pautina
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                models\selflight
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                models\seftlight_det
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                models\selflightl
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                models\transparent
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                models\water
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                models\water_ryaska
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                models\weapons
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                models\window
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                models\xanomaly
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/xdistor.html">+</span>
+                models\xdistor
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                models\xdistorcolor
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                models\xdistorcolorl
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                models\xdistorinv
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                models\xmonolith
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                models\xwindows
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ### Levels Shaders
 
@@ -183,24 +1134,207 @@ This section contains a list and description of the shaders that are available i
 
 ### HUD Shaders
 
-| Shader name and path | Description |
-|---|---|
-| hud\add |  |
-| hud\add-alpha |  |
-| hud\cursor |  |
-| hud\default |  |
-| hud\fog_of_war |  |
-| hud\hitmarker |  |
-| hud\p3d |  |
-| hud\set |  |
-| hud\seta |  |
+<table class="main-table" id="HUDEngineShaderTable">
+    <thead>
+        <tr>
+            <th>Path and Shader Name</th>
+            <th>Shader Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                hud\add
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                hud\add-alpha
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                hud\cursor
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                hud\default
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                hud\fog_of_war
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                hud\hitmarker
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                hud\p3d
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                hud\set
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                hud\seta
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ### Flora Shaders
 
-| Shader name and path | Description |
-|---|---|
-| flora\leaf_wave |  |
-| flora\trunk_wave |  |
+<table class="main-table" id="FloraEngineShaderTable">
+    <thead>
+        <tr>
+            <th>Path and Shader Name</th>
+            <th>Shader Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                flora\leaf_wave
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                flora\trunk_wave
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ### Effects Shaders
 
@@ -235,21 +1369,151 @@ This section contains a list and description of the shaders that are available i
 
 ### SDK Shaders
 
-| Shader name and path | Description |
-|---|---|
-| editor\ai_node |  |
-| editor\do_base |  |
-| editor\selection |  |
-| editor\spawn_icon |  |
-| editor\wire |  |
+<table class="main-table" id="SDKEngineShaderTable">
+    <thead>
+        <tr>
+            <th>Path and Shader Name</th>
+            <th>Shader Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                editor\ai_node
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                editor\do_base
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                editor\selection
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                editor\spawn_icon
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                editor\wire
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ### Details Shaders
 
-| Shader name and path | Description | Preview |
-|---|---|---|
-| details\blend |  | ![Alt text](images/shaders-preview/details-blend.png) |
-| details\lod |  | ![Alt text](images/shaders-preview/details-lod.png) |
-| details\set |  | ![Alt text](images/shaders-preview/details-set.png) |
+<table class="main-table" id="DetailObjectEngineShaderTable">
+    <thead>
+        <tr>
+            <th>Path and Shader Name</th>
+            <th>Shader Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                details\blend
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                details\lod
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                details\set
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
 
 ### Def_Shaders
 
@@ -275,7 +1539,98 @@ This section contains a list and description of the shaders that are available i
 
 ### Debug Shaders
 
-| Shader name and path | Description |
-|---|---|
-| debug\ai_nodes |  |
-| debug\wireframe |  |
+<table class="main-table" id="DebugEngineShaderTable">
+    <thead>
+        <tr>
+            <th>Path and Shader Name</th>
+            <th>Shader Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                debug\ai_nodes
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                debug\wireframe
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    // Обработчик для обеих таблиц
+    const handleTableClick = async (event) => {
+        const btn = event.target.closest('.expand-btn');
+        if (!btn) return;
+
+        const row = btn.closest('tr');
+        const detailsContainer = row.nextElementSibling.querySelector('.details-container');
+        const isOpening = !detailsContainer.classList.contains('show');
+        // Обновляем состояние кнопки
+        btn.classList.toggle('active', isOpening);
+        btn.textContent = isOpening ? '−' : '+';
+        if (isOpening) {
+            detailsContainer.classList.add('show');
+            // Загружаем данные только если они еще не загружены
+            if (btn.dataset.source && !btn.dataset.loaded) {
+                try {
+                    const response = await fetch(btn.dataset.source);
+                    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                    const html = await response.text();
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(html, 'text/html');
+                    const nestedTable = detailsContainer.querySelector('.nested-table');
+                    // Очищаем перед вставкой новых данных
+                    nestedTable.innerHTML = '';
+                    // Безопасное извлечение таблицы
+                    const sourceTable = doc.querySelector('table');
+                    if (sourceTable) {
+                        nestedTable.appendChild(sourceTable.cloneNode(true));
+                    } else {
+                        throw new Error('Таблица не найдена в ответе');
+                    }
+                    btn.dataset.loaded = 'true';
+                } catch (error) {
+                    console.error('Ошибка загрузки данных:', error);
+                    detailsContainer.innerHTML = '<div class="error-message">Ошибка загрузки данных. Пожалуйста, попробуйте позже.</div>';
+                }
+            }
+        } else {
+            // Небольшая задержка для плавного закрытия
+            setTimeout(() => {
+                detailsContainer.classList.remove('show');
+            }, 5);
+        }
+    };
+
+    const staticTable = document.getElementById('StaticObjectEngineShaderTable');
+    if (staticTable) staticTable.addEventListener('click', handleTableClick);
+});
+</script>
