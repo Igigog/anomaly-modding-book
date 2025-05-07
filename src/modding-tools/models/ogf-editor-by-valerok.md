@@ -16,7 +16,7 @@ ___
 
 Tool for working with [*.ogf](../../reference/file-formats/models/ogf.md) and [*.dm](../../reference/file-formats/models/dm.md) format
 
-![ogf-editor centered](images/ogf-editor-by-valerok.png)
+![ogf-editor centered](assets/images/ogf-editor-by-valerok.png)
 
 ## Features
 

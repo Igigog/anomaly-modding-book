@@ -99,13 +99,13 @@ Let us take the following icon sheet as an example.
 
 **File :** `gamedata\textures\ui\icons\my_icon_sheet.dds`
 
-![Image of an icon sheet](./images/modding_book_icons_1.png)
+![Image of an icon sheet](assets/images/modding_book_icons_1.png)
 
 You can imagine each slot having a coordinate on this grid. Coordinates start a (0, 0).
 
 **File :** `gamedata\textures\ui\icons\my_icon_sheet.dds`
 
-![Image of an icon sheet with coordinates shown](./images/modding_book_icons_2.png)
+![Image of an icon sheet with coordinates shown](assets/images/modding_book_icons_2.png)
 
 The coordinates for the box of Mon Cheri (the red box in the middle) are for example (4, 2).
 
@@ -120,7 +120,7 @@ inv_grid_y              = 2    ; where on the grid the icon is on the y axis
 
 **File :** `gamedata\textures\ui\icons\my_icon_sheet.dds`
 
-![Image of an icon sheet with coordinates shown](./images/modding_book_icons_3.png)
+![Image of an icon sheet with coordinates shown](assets/images/modding_book_icons_3.png)
 
 The size of the icon is 2 for the width, and 1 for the height.
 
@@ -135,4 +135,4 @@ inv_grid_height         = 1    ; how many slots tall it should be
 
 **File :** `gamedata\textures\ui\icons\my_icon_sheet.dds`
 
-![Image of an icon sheet with coordinates shown](./images/modding_book_icons_4.png)
+![Image of an icon sheet with coordinates shown](assets/images/modding_book_icons_4.png)

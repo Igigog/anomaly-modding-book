@@ -2,7 +2,7 @@
 
 ___
 
-![Alt text centered](images/n-panel-batch-tools.png)
+![Alt text centered](assets/images/n-panel-batch-tools.png)
 
 Allows editing of various material settings, baking, etc.
 

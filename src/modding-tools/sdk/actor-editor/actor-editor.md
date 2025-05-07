@@ -2,7 +2,7 @@
 
 ___
 
-![alt text](images/actor-editor.png)
+![alt text](assets/images/actor-editor.png)
 
 ## About
 
@@ -243,13 +243,13 @@ The Actor editor is usually needed to customize objects (NPCs, Objects, etc.)
           </tr>
           <tr>
             <td>Axis</td>
-            <td><img src=../images/ca-axis.png></td>
+            <td><img src=../assets/images/ca-axis.png></td>
             <td>-</td>
             <td>-</td>
           </tr>
           <tr>
             <td>Cube</td>
-            <td><img src=../images/ca-cube.png></td>
+            <td><img src=../assets/images/ca-cube.png></td>
             <td>-</td>
             <td>-</td>
           </tr>

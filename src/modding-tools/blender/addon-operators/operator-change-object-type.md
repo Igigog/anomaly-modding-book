@@ -2,7 +2,7 @@
 
 ___
 
-![alt text](images/operator-change-object-type.png)
+![alt text](assets/images/operator-change-object-type.png)
 
 ## About
 

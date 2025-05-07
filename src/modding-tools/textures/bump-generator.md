@@ -14,21 +14,21 @@ ___
 
 ## About
 
-A simple [_bump.dds](../../reference/file-formats/textures/bump.md) and [_bump#.dds](../../reference/file-formats/textures/bump_hash.md) texture generator from normal maps with the ability to use specular maps, also, is capable of generating .bump# for ready-made "green" .bumps.
+A simple [*_bump.dds](../../reference/file-formats/textures/bump.md) and [*_bump#.dds](../../reference/file-formats/textures/bump_hash.md) texture generator from normal maps with the ability to use specular maps, also, is capable of generating *_bump#.dds for ready-made "green" \*_bumps.dds.
 
-![bump-generator centered](images/bump-generator.png)
+![bump-generator centered](assets/images/bump-generator.png)
 
 ## Features
 
-- Generates _bump and \_bump# textures from normal maps (with the ability to use specular maps)
-- Generating _bump# for ready-made \_bump
+- Generates *_bump.dds and \*_bump#.dds textures from normal maps (with the ability to use specular maps)
+- Generating *_bump#.dds for ready-made \*_bump.dds
 - Supports *.dds and \*.tga texture formats.
 
 ## Functionality
 
 | Generate From | Description |
 |---|---|
-| From bump (For bump#) | Generates bump# from the bump map |
+| From bump (For *_bump#.dds) | Generates bump# from the bump map |
 | From Normal map | Generates bump from the normal map |
 | Read Specular map | Whether to use the Specular Map |
 | Bump height | Bump height |

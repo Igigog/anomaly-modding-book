@@ -7,7 +7,7 @@
 # Meta
 
 - [Contributing](meta/contributing.md)
-  - [Book Structure](meta/book-overview.md)
+  - [Book Structure](meta/book-structure.md)
   - [Book Style Sheet](meta/book-style-sheet.md)
 - [Community Standards](meta/community-standards.md)
 - [Acknowledgements](meta/acknowledgements.md)
@@ -49,8 +49,9 @@
   - [Setup Static Object in Blender](tutorials/models/setup-static-object-in-blender.md)
   - [Setup Dynamic Object in Blender](tutorials/models/setup-dynamic-object-in-blender.md)
 
-- [Materials]()
+- [Materials](tutorials/materials/README.md)
   - [Creating Game Material in SDK](tutorials/materials/creating-game-material-in-sdk.md)
+  - [Decompiling Game Materials](tutorials/materials/decompiling-game-materials.md)
 
 - [Animations](tutorials/animations/README.md)
   - [Creating Camera Flyover in Game](tutorials/animations/creating-flyover-camera-animations-in-game.md)
@@ -61,6 +62,9 @@
 - [Texturing](tutorials/texturing/README.md)
   - [Creating and Preparing Textures](tutorials/texturing/сreating-and-preparing-textures.md)
   - [Working Correctly with Icon Atlases](tutorials/texturing/working-correctly-with-icon-atlases.md)
+
+- [Audio | Video](tutorials/audio-video/README.md)
+  - [Convert to *.ogm](tutorials/audio-video/convert-to-ogm.md)
 
 - [Mapping](tutorials/mapping/README.md)
   - [Multimaterial Terrain Guide](reference/mapping/multimaterial-terrain.md)
@@ -166,33 +170,48 @@
     - [*.s](reference/file-formats/shaders/s.md)
     - [*.vs](reference/file-formats/shaders/vs.md)
   - [Textures](reference/file-formats/textures/README.md)
-    - [_bump.dds](reference/file-formats/textures/bump.md)
-    - [_bump#.dds](reference/file-formats/textures/bump_hash.md)
+    - [*_bump.dds](reference/file-formats/textures/bump.md)
+    - [*_bump#.dds](reference/file-formats/textures/bump_hash.md)
     - [*.dds](reference/file-formats/textures/dds.md)
-    - [_detail_map.dds](reference/file-formats/textures/detail-map.md)
+    - [*_detail_map.dds](reference/file-formats/textures/detail-map.md)
     - [*.seq](reference/file-formats/textures/seq.md)
-    - [_terrain_map.dds](reference/file-formats/textures/terrain-map.md)
+    - [*_terrain_map.dds](reference/file-formats/textures/terrain-map.md)
     - [*.thm](reference/file-formats/textures/thm.md)
 
 - [Configs](reference/configs/README.md)
   - [Items](reference/configs/items/README.md)
     - [Weapons](reference/configs/items/weapons/README.md)
-      - [World](reference/configs/items/weapons/w_(weapon)-world.md)
-      - [HUD](reference/configs/items/weapons/w_(weapon)-hud.md)
+      - [World](reference/configs/items/weapons/weapon-world.md)
+      - [HUD](reference/configs/items/weapons/weapon-hud.md)
         - [HUD Animations](reference/animations/hud-animations-weapons.md)
-      - [Sounds](reference/configs/items/weapons/weapon_sounds.ltx.md)
-    - [Grenade](reference/configs/items/weapons/m_(grenade).md)
-    - [Ammo](reference/configs/items/weapons/weapon_ammo.ltx.md)
-    - [Outfits](reference/configs/items/outfits/o_(outfit).ltx.md)
-    - [Trade](reference/configs/items/trade/trade.ltx.md)
+      - [Sounds](reference/configs/items/weapons/weapon-sounds.md)
+    - [Grenade](reference/configs/items/weapons/grenade.md)
+    - [Ammo](reference/configs/items/weapons/weapon-ammo.md)
+    - [Outfits](reference/configs/items/outfits/outfit.md)
+    - [Trade](reference/configs/items/trade/trade.md)
   - [Creatures](reference/configs/creatures/README.md)
-    - [Mutants](reference/configs/creatures/m_(mutant).ltx.md)
-    - [Stalkers](reference/configs/creatures/m_stalker.ltx.md)
+    - [Mutants](reference/configs/creatures/mutants/mutant-general.md)
+      - [Bloodsucker](reference/configs/creatures/mutants/bloodsucker.md)
+      - [Burer](reference/configs/creatures/mutants/burer.md)
+      - [Cat](reference/configs/creatures/mutants/cat.md)
+      - [Chimera](reference/configs/creatures/mutants/chimera.md)
+      - [Controller](reference/configs/creatures/mutants/controller.md)
+      - [Crow](reference/configs/creatures/mutants/crow.md)
+      - [Dog](reference/configs/creatures/mutants/dog.md)
+      - [Phantom](reference/configs/creatures/mutants/phantom.md)
+      - [Poltergeist](reference/configs/creatures/mutants/poltergeist.md)
+      - [Psevdogaint](reference/configs/creatures/mutants/psevdogaint.md)
+      - [Snork](reference/configs/creatures/mutants/snork.md)
+      - [Zombie](reference/configs/creatures/mutants/zombie.md)
+    - [Stalkers](reference/configs/creatures/stalker.md)
+  - [Fluids](reference/configs/fluid/fluid-overview.md)
+    - [Fluid Volume](reference/configs/fluid/fluid-volume.md)
+    - [Fluid Emmiter](reference/configs/fluid/fluid-emmiter.md)
 
-- [Models]()
+- [Models](reference/models/README.md)
   - [Smoothing](reference/models/smoothing.md)
 
-- [Animations]()
+- [Animations](reference/animations/README.md)
   - [Skeletons Overview](reference/animations/skeletons-overview.md)
 
 - [Engine Shaders List](reference/shaders/shaders-list/engine-shaders-list.md)
@@ -248,7 +267,7 @@
 
 # Modding Tools
 
-- [Modding Tools List](modding-tools/README.md) 
+- [Modding Tools List](modding-tools/README.md)
 
 - [In-Game Editors](modding-tools/in-game-editors/README.md)
   - [Item Spawner](modding-tools/in-game-editors/item-spawner.md)
@@ -257,8 +276,6 @@
   - [Outfits/Weapons Stats Editor](modding-tools/in-game-editors/outfits-weapon-stats-editor.md)
   - [Weapon HUD Editor](modding-tools/in-game-editors/weapon-hud-editor.md)
   - [Weather Editor](modding-tools/in-game-editors/weather-editor.md)
-
-- [Ltx Support](modding-tools/coding/ltx-support.md)
 
 - [SDK](modding-tools/sdk/README.md)
   - [Editor Preferences](modding-tools/sdk/editors-preference.md)
@@ -337,6 +354,7 @@
       - [Vortex](modding-tools/sdk/particle-editor/windows/actions/vortex.md)
 
 - [Blender X-Ray Addon](modding-tools/blender/blender-x-ray-addon-summary.md)
+  - [Installation](modding-tools/blender/installation.md)
   - [Preference Panel](modding-tools/blender/addon-preference-panels/README.md)
     - [Paths](modding-tools/blender/addon-preference-panels/preference-panel-paths.md)
     - [Defaults](modding-tools/blender/addon-preference-panels/preference-panel-defaults.md)
@@ -409,6 +427,15 @@
     - [Update Blender Transforms](modding-tools/blender/addon-operators/operator-update-blender-transforms.md)
     - [Update X-Ray Transforms](modding-tools/blender/addon-operators/operator-update-x-ray-transforms.md)
     - [Verify UV](modding-tools/blender/addon-operators/operator-verify-uv.md)
+
+- [Ltx Support](modding-tools/coding/ltx-support.md)
+
+- [Achive Compilers/Decompilers](modding-tools/achive-compilers-decompilers/README.md)
+  - [gamemtl_xr_cdc](modding-tools/achive-compilers-decompilers/gamemtl-xr-cdc.md)
+  - [lanims_xr_cdc](modding-tools/achive-compilers-decompilers/lanims-xr-cdc.md)
+  - [senvironment_xr_cdc](modding-tools/achive-compilers-decompilers/senvironment-xr-cdc.md)
+  - [shaders_xr_cdc](modding-tools/achive-compilers-decompilers/shaders-xr-cdc.md)
+  - [shaders_xrlc_xr_cdc](modding-tools/achive-compilers-decompilers/shaders-xrlc-xr-cdc.md)
 
 - [THM Editor](modding-tools/textures/thm-editor-by-i-love-kfc.md)
   - [Modified THM Editor](modding-tools/textures/thm-editor-by-valerok.md)

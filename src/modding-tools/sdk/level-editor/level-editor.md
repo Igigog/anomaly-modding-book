@@ -6,7 +6,7 @@ ___
 
 Level Editor is used to create locations
 
-![alt text](images/level-editor.png)
+![alt text](assets/images/level-editor.png)
 
 ___
 
@@ -452,13 +452,13 @@ ___
           </tr>
           <tr>
             <td>Axis</td>
-            <td><img src=../images/ca-axis.png></td>
+            <td><img src=../assets/images/ca-axis.png></td>
             <td>-</td>
             <td>-</td>
           </tr>
           <tr>
             <td>Cube</td>
-            <td><img src=../images/ca-cube.png></td>
+            <td><img src=../assets/images/ca-cube.png></td>
             <td>-</td>
             <td>-</td>
           </tr>

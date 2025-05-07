@@ -16,7 +16,7 @@ ___
 
 Tool for fast editing and exporting raw stalker formats
 
-![object-tool](images/object-tool-by-valerok.png)
+![object-tool](assets/images/object-tool-by-valerok.png)
 
 ## Features
 

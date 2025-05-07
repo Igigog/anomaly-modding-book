@@ -2,7 +2,7 @@
 
 ___
 
-![alt text](images/operator-remove-level-shader-nodes.png)
+![alt text](assets/images/operator-remove-level-shader-nodes.png)
 
 ## About
 

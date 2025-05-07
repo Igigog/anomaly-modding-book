@@ -6,7 +6,7 @@ ___
 
 In this spawner you can spawn all item sections for the player
 
-![item-spawner centered](images/item-spawner.png)
+![item-spawner centered](assets/images/item-spawner.png)
 
 In the left column, select the type of item
 

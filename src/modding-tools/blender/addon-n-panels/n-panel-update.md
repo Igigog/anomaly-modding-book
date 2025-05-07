@@ -2,7 +2,7 @@
 
 ___
 
-![Alt text centered](images/n-panel-update.png)
+![Alt text centered](assets/images/n-panel-update.png)
 
 Allows to check for addon updates
 

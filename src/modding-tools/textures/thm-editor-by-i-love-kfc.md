@@ -15,7 +15,7 @@ ___
 
 Utility for editing [*.thm](../../reference/file-formats/textures/thm.md) files without the need to use the SDK
 
-![thm-editor centered](images/thm-editor-by-i-love-kfc.png)
+![thm-editor centered](assets/images/thm-editor-by-i-love-kfc.png)
 
 ## Features
 

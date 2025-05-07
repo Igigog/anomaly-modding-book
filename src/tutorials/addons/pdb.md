@@ -56,19 +56,19 @@ ___
 
 Download the Anomaly Modded Exes from [here](https://github.com/themrdemonized/xray-monolith/releases/latest).
 
-![img_pdb_assets](images/img_pdb_exes.png)
+![img_pdb_assets](assets/images/img_pdb_exes.png)
 
 Download the first archive in the list, and install them in your game's `bin` folder.
 
-![img_pdb_install](images/img_pdb_install.png)
+![img_pdb_install](assets/images/img_pdb_install.png)
 
 Download the PDB archive that corresponds to the version of DirectX you are using.
 If you use DX11-AVX, download the `DX11-AVX_pdb.zip`, if you use DX10, download the `DX10_pdb.zip`, etc.
 
 |                                   |                                            |
 |:---------------------------------:|:------------------------------------------:|
-| ![img](images/img_pdb_dx_mo2.png) | ![img_pdb_pdb.png](images/img_pdb_pdb.png) |
+| ![img](assets/images/img_pdb_dx_mo2.png) | ![img_pdb_pdb.png](assets/images/img_pdb_pdb.png) |
 
 Place the PDB files in the same folder as the executable you are using (i.e. in your game's `bin` folder).
 
-![img.png](images/img_pdb_folder.png)
+![img.png](assets/images/img_pdb_folder.png)

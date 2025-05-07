@@ -2,7 +2,7 @@
 
 ___
 
-![Alt text centered](images/n-panel-verify.png)
+![Alt text centered](assets/images/n-panel-verify.png)
 
 This panel stores operators to check objects for errors
 

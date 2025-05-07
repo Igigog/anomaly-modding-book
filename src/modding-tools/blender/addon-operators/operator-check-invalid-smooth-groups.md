@@ -2,7 +2,7 @@
 
 ___
 
-![alt text](images/operator-check-invalid-smooth-groups.png)
+![alt text](assets/images/operator-check-invalid-smooth-groups.png)
 
 ## About
 

@@ -18,7 +18,7 @@ ___
 
 Updated [*.db](../../reference/file-formats/archives-resource-packs/db.md)/[*.xdb](../../reference/file-formats/archives-resource-packs/xr.md) archiver
 
-![editor centered](images/xrcompress.png)
+![editor centered](assets/images/xrcompress.png)
 
 ## Features
 

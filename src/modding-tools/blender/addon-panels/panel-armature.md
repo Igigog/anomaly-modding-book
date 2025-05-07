@@ -2,7 +2,7 @@
 
 ___
 
-![alt text](images/panel-armature.png)
+![alt text](assets/images/panel-armature.png)
 
 ## About
 

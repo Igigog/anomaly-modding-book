@@ -2,11 +2,9 @@
 
 ___
 
-## Parameter writing formula
-
-| Sound | Name of the sound | Volume | Delay |
-|---|---|---|---|
-| Sound | Name of the sound | Volume (0.0 - 1.0) | Delay in seconds |
+```admonish tip title="Formula"
+sound parameter name = sound name, volume (0.0 - 1.0), delay in seconds
+```
 
 ## General Sounds Parameters
 

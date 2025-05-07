@@ -2,7 +2,7 @@
 
 ___
 
-![alt text](images/operator-colorize-objects.png)
+![alt text](assets/images/operator-colorize-objects.png)
 
 ## About
 

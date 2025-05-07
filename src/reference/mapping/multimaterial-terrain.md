@@ -19,7 +19,7 @@ A terrain is a regular 3d model consisting of many polygons. They can have diffe
 - `Game Mlt` - actually the material itself, which determines the sounds of footsteps on the given surface, bullet hits, etc.
 - `Shader` – determines the appearance of this material
 
-![Alt text](../../tutorials/mapping/images/surface.png)
+![Alt text](../../tutorials/mapping/assets/images/surface.png)
 > Terrane settings in SDK Actor Editor
 
 Also, a terrane has a texture, but it defines nothing more than its color in the game - it doesn't even have a bump. And, of course, this texture is common for all the materials in a given terrane. So there is no sense to dwell on it for a long time. Also in our analysis we will skip the Compile parameter.
@@ -30,7 +30,7 @@ Let's talk more about the material shader. As already mentioned, it is responsib
 
 Customization of shaders and their detail-textures is done in SDK Shader Editor. Opening any terrane shader in it (so-called level-shaders) we will see that all of them have... Wait, why do they need 4 textures? Which of them will be displayed in the game?
 
-![Alt text](../../tutorials/mapping/images/rgba.png)
+![Alt text](../../tutorials/mapping/assets/images/rgba.png)
 > RGBA channels of one of the level shaders
 
 To understand this, let's take a close look at these textures. Each of them is assigned in some one of the channels - R (red), G (green), B (blue) or A (alpha). You have already guessed that these are the channels of the RGBA color model, namely - the channels of the terrane mask, with the help of which the game engine understands which texture of a given shader should be shown in the game. Let's look into this in more detail.
@@ -45,27 +45,27 @@ The terrane mask uses only four colors - red, green, blue and black - the very s
 
 For example, the game sees a polygon with the material "grass". At the same time, the game sees that this polygon is painted with a green color mask. Based on this, the game decides that in the shader of this material it should take a texture from the G channel. Of course, in a properly configured shader, the grass texture we want should be assigned to this channel. Same with the red, blue and black colors of the mask.
 
-![Alt text](../../tutorials/mapping/images/earth-grass-mix.png)
+![Alt text](../../tutorials/mapping/assets/images/earth-grass-mix.png)
 > Green grass meets red earth (Blender)
 
-![Alt text](../../tutorials/mapping/images/earth-grass-mix_ingame.png)
+![Alt text](../../tutorials/mapping/assets/images/earth-grass-mix_ingame.png)
 > The same stretch of terrane in the game
 
 The principle of shader operation seems to be clear. But why do you need other texture channels in the shader, if only one is used for rendering? They are responsible for smooth transition of this material to other ones. We decided for ourselves that channel G on our mask is grass, channel R is earth, channel B is asphalt, and channel A is sometimes sand, sometimes something else. In fact, we could do it the other way around - give R to grass, B to earth, etc. But it doesn't matter at all, because we decide in the shader settings what texture to feed through what color.
 
 So, let's assume that our green grass polygons met with red earth polygons. You have already guessed about the ground material, that in the R-channel of its shader the ground texture must be assigned - it is this texture that will be rendered. What do we need to do to make a smooth transition between the ground and the grass? The obvious solution comes to mind - to make a smooth transition between red and green on the mask, i.e. just blur the boundary between the colors. However, this will do nothing, there will be no smooth transition in the game anyway. The engine has another mechanism for that.
 
-![Alt text](../../tutorials/mapping/images/earth-grass-mix_example.png)
+![Alt text](../../tutorials/mapping/assets/images/earth-grass-mix_example.png)
 > Example of properly configured channels for transition
 
 Let's remember the unused channels in shaders. For grass, the G channel is responsible for texture rendering - RBAs remain free. For the ground, the R channel is responsible for rendering the texture - GBAs remain free. In order to make a smooth transition between grass and earth, you need to do a very simple action - in the grass in channel R to assign the texture of the earth, and in the earth in channel G - the texture of grass. And indeed, if polygons of green grass meet polygons of red earth, the grass begins to change to the texture that is assigned to it in the channel R, and the earth begins to change the texture to the texture that is assigned to it in the channel G. As a result, both grass and earth from their sides generate a smooth transition to the neighboring material, and at the junction of these materials you can't see a seam (unless, of course, we made a mistake and assigned the same textures in the corresponding shader channels).
 
-![Alt text](../../tutorials/mapping/images/earth-grass-mix_example_wrong.png)
+![Alt text](../../tutorials/mapping/assets/images/earth-grass-mix_example_wrong.png)
 > The ground in channel G was mistakenly labeled gravel
 
 All this is difficult to understand from the first time, but try. You can clearly see the principle of smooth transition generation if you assign wrong textures to shaders. For example, let's try to assign sand to the grass in channel R and gravel to the ground in channel G. In the game it will look like this: in the place where the transition of grass to earth should have taken place, a smooth transition of grass to sand will be generated on the grass side, and on the earth side - the transition of earth to pebbles. And at the junction of sand and pebbles, logically, there would be a visible seam. On the one hand, because the textures are not the same, and on the other hand - because the generation of a smooth transition has already occurred earlier.
 
-![Alt text](../../tutorials/mapping/images/must-be-details.png)
+![Alt text](../../tutorials/mapping/assets/images/must-be-details.png)
 > The ground in channel G was mistakenly labeled gravel
 
 As you have already guessed, the same is true for combining channel B with channel G, channel A with channel R, etc. In any combinations, one thing is important - all shaders must have the same detail-textures in their respective channels. The only difference is that for one shader, for example, our earth, channel R will be responsible for rendering a texture, and for others - for transitioning to this texture. The same is true for the other G, B and A channels.
@@ -79,7 +79,7 @@ ___
 
 Now let's try to understand how we can "legally" bypass this limitation. To understand the text below you must understand exactly how the standard terrane rendering system works and how terrane shaders are organized.
 
-![Alt text](../../tutorials/mapping/images/scheme_1.png)
+![Alt text](../../tutorials/mapping/assets/images/scheme_1.png)
 > Scheme 1. The most complex in this document
 
 Take a look at scheme 1. We see the familiar grass (green), earth (red) and asphalt (blue). All of these materials, as we know, can be combined with each other in any form. Notice the red square inside the blue square. What kind of material is that? In the standard scheme of building terrane shaders, it should be a ground, because we have agreed that all terrane shaders must have a ground in the red channel, otherwise the generation of a smooth transition between materials will be disturbed. But there is one important trick in this scheme - the left red square does not intersect with the blue square, nor with the second red square. Now strain yourself, it's going to be tricky.
@@ -93,7 +93,7 @@ channel B must be set to asphalt.
 
 Can the blue square intersect with the left red square? No, because they have different textures in the R channel, and crossing them will render the wrong transition (see example above). So if asphalt will never make contact with the ground, then we don't have to set asphalt to ground and ground to asphalt. Take a few minutes to think about what you've read. When the idea becomes more or less clear - keep reading.
 
-![Alt text](../../tutorials/mapping/images/scheme_2.png)
+![Alt text](../../tutorials/mapping/assets/images/scheme_2.png)
 > Scheme 2. Slightly easier, but much more interesting
 
 Let's complicate the task - add a new blue square inside the red square. If you have understood the new idea of shader customization, you can guess that this new blue square does not have to be asphalt - let it be, for example, gravel (see Scheme 2).

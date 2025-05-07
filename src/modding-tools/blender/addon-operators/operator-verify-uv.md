@@ -2,7 +2,7 @@
 
 ___
 
-![alt text](images/operator-verify-uv.png)
+![alt text](assets/images/operator-verify-uv.png)
 
 ## About
 

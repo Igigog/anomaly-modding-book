@@ -2,7 +2,7 @@
 
 ___
 
-![alt text](images/n-panel-viewer.png)
+![alt text](assets/images/n-panel-viewer.png)
 
 ## About
 

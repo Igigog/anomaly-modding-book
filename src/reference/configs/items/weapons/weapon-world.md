@@ -38,8 +38,8 @@ ___
 | sprint_allowed | this line means that you can run with the weapon | true |  | true - 1 - on (Yes)<br> false - 0 - off (No) |
 | kind | The type of item to group into the appropriate section in the [Item Spawner](../../../../modding-tools/in-game-editors/item-spawner.md) | w_rifle |  | w_rifle<br> w_misc<br> w_explosive<br> w_melee<br> w_pistol<br> w_smg<br> w_shotgun<br> w_sniper |
 | cost | Base price | 28780 |  |  |
-| hud | Section with parameters for [*_hud model](../../../../glossary/glossary.md#_hud-model) | wpn_akm_hud |  | Section name |
-| visual | [*_world model](../../../../glossary/glossary.md#_world-model) | dynamics\weapons\wpn_akm\wpn_akm.ogf |  | Path to file |
+| hud | Section with parameters for [*_hud model](../../../../glossary/glossary.html#_hud-model) | wpn_akm_hud |  | Section name |
+| visual | [*_world model](../../../../glossary/glossary.html#_world-model) | dynamics\weapons\wpn_akm\wpn_akm.ogf |  | Path to file |
 
 </details>
 
@@ -50,14 +50,14 @@ ___
 
 | Parameter Name | Parameter Description | Example Value | Value Data Type | Parameter Possible Values And Their Descriptions |
 |---|---|---|:---:|---|
-| position | position of the weapon in the hands when viewed from the 3rd person | -0.026, -0.175, 0.0 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |  |
-| orientation | how the weapon is rotated in the hands of the NPC and headgear, in the 3rd person view | 0, 0, 0 | X - (`+`) left / (`-`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) roll to the right / (`+`) roll to the left |  |
-| fire_point | coordinates of the fire particle from the shot, in the 3rd person view | 0, 0.218, 0.656 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |  |
-| fire_point2 | Coordinates of the fire particle from the shot, when viewed from the 3rd person from the holster | 0, 0.161, 0.583 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |  |
+| position | position of the weapon in the hands when viewed from the 3rd person | -0.026, -0.175, 0.0 | X -- (`-`) left / (`+`) right<br> Y -- (`+`) up / (`-`) down<br> Z -- (`-`) forward / (`+`) backward |  |
+| orientation | how the weapon is rotated in the hands of the NPC and headgear, in the 3rd person view | 0, 0, 0 | X -- (`+`) left / (`-`) right<br> Y -- (`+`) up / (`-`) down<br> Z -- (`-`) roll to the right / (`+`) roll to the left |  |
+| fire_point | coordinates of the fire particle from the shot, in the 3rd person view | 0, 0.218, 0.656 | X -- (`-`) left / (`+`) right<br> Y -- (`+`) up / (`-`) down<br> Z -- (`-`) forward / (`+`) backward |  |
+| fire_point2 | Coordinates of the fire particle from the shot, when viewed from the 3rd person from the holster | 0, 0.161, 0.583 | X -- (`-`) left / (`+`) right<br> Y -- (`+`) up / (`-`) down<br> Z -- (`-`) forward / (`+`) backward |  |
 | strap_bone0 | the name of the first NPC model bone where the weapon is located when hidden | bip01_spine2 | Bone Name |  |
 | strap_bone1 | The name of the second NPC model bone that holds the weapon when hidden | bip01_spine1 | Bone Name |  |
-| strap_position | the position of the weapon on the NPC's back, when viewed from the third person | -0.26, -0.11, 0.25 | X - (`-`) left / (`+`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) forward / (`+`) backward |  |
-| strap_orientation | how the weapon is rotated on the NPC's back in 3rd person view | -15, -9, 110 | X - (`+`) left / (`-`) right<br> Y - (`+`) up / (`-`) down<br> Z - (`-`) roll to the right / (`+`) roll to the left |  |
+| strap_position | the position of the weapon on the NPC's back, when viewed from the third person | -0.26, -0.11, 0.25 | X -- (`-`) left / (`+`) right<br> Y -- (`+`) up / (`-`) down<br> Z -- (`-`) forward / (`+`) backward |  |
+| strap_orientation | how the weapon is rotated on the NPC's back in 3rd person view | -15, -9, 110 | X -- (`+`) left / (`-`) right<br> Y -- (`+`) up / (`-`) down<br> Z -- (`-`) roll to the right / (`+`) roll to the left |  |
 
 </details>
 
@@ -204,8 +204,8 @@ ___
 
 | Parameter Name | Parameter Description | Example Value | Value Data Type | Parameter Possible Values And Their Descriptions |
 |---|---|---|:---:|---|
-| shell_point | coordinates of the shell partylock, when viewed from the 3rd person | 0, 0.216, 0.174 | x - left/+right, y + up/down, z - forward/+backward |  |
-| shell_dir | how the shell particle is rotated when viewed from the 3rd person | 0, 0, 0.4 | x - left/+right, y + up/down, z - forward/+backward |  |
+| shell_point | coordinates of the shell partylock, when viewed from the 3rd person | 0, 0.216, 0.174 | X -- left/+right, Y -- +up/down, Z -- forward/+backward |  |
+| shell_dir | how the shell particle is rotated when viewed from the 3rd person | 0, 0, 0.4 | X -- left/+right, Y -- +up/down, Z -- forward/+backward |  |
 | shell_particles | shell particle | weapons\762x39 | Particles file path relative to particles.xr |  |
 
 </details>

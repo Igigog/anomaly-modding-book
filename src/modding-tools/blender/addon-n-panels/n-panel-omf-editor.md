@@ -2,7 +2,7 @@
 
 ___
 
-![Alt text centered](images/n-panel-omf-editor.png)
+![Alt text centered](assets/images/n-panel-omf-editor.png)
 
 ## About
 

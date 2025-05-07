@@ -2,7 +2,7 @@
 
 ___
 
-![alt text](images/operator-rename-actions.png)
+![alt text](assets/images/operator-rename-actions.png)
 
 ## About
 

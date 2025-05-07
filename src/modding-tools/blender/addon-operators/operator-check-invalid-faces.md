@@ -2,7 +2,7 @@
 
 ___
 
-![alt text](images/operator-check-invalid-faces.png)
+![alt text](assets/images/operator-check-invalid-faces.png)
 
 ## About
 

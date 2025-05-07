@@ -2,7 +2,7 @@
 
 ___
 
-![alt text](images/operator-change-hq-export.png)
+![alt text](assets/images/operator-change-hq-export.png)
 
 ## About
 

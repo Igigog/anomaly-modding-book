@@ -2,7 +2,7 @@
 
 ___
 
-![alt text](images/operator-add-x-ray-camera.png)
+![alt text](assets/images/operator-add-x-ray-camera.png)
 
 ## About
 

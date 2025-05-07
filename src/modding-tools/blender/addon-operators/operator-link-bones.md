@@ -2,7 +2,7 @@
 
 ___
 
-![alt text](images/operator-link-bones.png)
+![alt text](assets/images/operator-link-bones.png)
 
 ## About
 

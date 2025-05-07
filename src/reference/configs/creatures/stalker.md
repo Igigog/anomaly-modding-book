@@ -2,12 +2,7 @@
 
 ___
 
-## Default parameters that any stalker have
-
-### General parameters
-
-<details>
-    <summary>General parameters</summary>
+## General
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 |---|---|---|---|
@@ -33,14 +28,14 @@ ___
 | ph_character_have_wounded_state |  |  |  |
 | fire_queue_section |  |  |  |
 
-### Visual
+## Visual
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 |---|---|---|---|
 | visual |  |  |  |
 | destroyed_vis_name |  |  |  |
 
-### AI
+## AI
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 |---|---|---|---|
@@ -136,7 +131,7 @@ ___
 | far_plane_factor |  |  |  |
 | fog_density_factor |  |  |  |
 
-### Movement
+## Movement
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 |---|---|---|---|
@@ -170,7 +165,7 @@ ___
 
 | damage |  |  |  |
 
-### Sounds
+## Sounds
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 |---|---|---|---|
@@ -216,7 +211,7 @@ ___
 |  |  |  |  |
 |  |  |  |  |
 
-### Condition
+## Condition
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 |---|---|---|---|
@@ -240,7 +235,7 @@ ___
 | sleep_psy_health |  |  |  |
 |  |  |  |  |
 
-### Weapon
+## Weapon
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 |---|---|---|---|
@@ -259,7 +254,7 @@ ___
 | MaxMissDistance |  |  |  |
 | MaxMissFactor |  |  |  |
 
-#### Fire Queue
+### Fire Queue
 
 | Parameter Name | Parameter Description | Example value | Parameter Possible Values and their descriptions |
 |---|---|---|---|

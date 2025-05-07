@@ -2,7 +2,7 @@
 
 ___
 
-![Alt text centered](images/n-panel-custom-properties.png)
+![Alt text centered](assets/images/n-panel-custom-properties.png)
 
 Needed for custom properties
 

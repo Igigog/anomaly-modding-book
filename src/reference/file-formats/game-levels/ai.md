@@ -6,6 +6,6 @@ ___
 
 AI location grid.
 
-![alt text centered](images/ai-map.png)
+![alt text centered](assets/images/ai-map.png)
 
-Store [lvid](../../../glossary/glossary.md#lvid)'s
+Store [lvid](../../../glossary/glossary.html#lvid)'s

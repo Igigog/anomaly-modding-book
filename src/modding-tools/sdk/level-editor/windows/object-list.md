@@ -4,7 +4,7 @@ ___
 
 ## About
 
-![alt text](../images/object-list.png)
+![alt text](../assets/images/object-list.png)
 
 ## Interface
 

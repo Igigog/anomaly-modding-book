@@ -4,7 +4,7 @@ ___
 
 ## About
 
-![alt text](../images/render.png)
+![alt text](../assets/images/render.png)
 
 | Icon | Name | Description | Note |
 |:---:|---|---|---|

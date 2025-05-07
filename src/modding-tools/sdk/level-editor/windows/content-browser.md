@@ -4,9 +4,9 @@ ___
 
 ## About
 
-![alt text](../images/content-browser.png)
+![alt text](../assets/images/content-browser.png)
 
 | Icon | Name | Description |
 |---|---|---|
-| ![1](../icons/menu.svg) | Show THM | Will show *.thm files |
-| ![1](../icons/menu.svg) | View Mode | View mode<br> Tile<br> List |
+| ![1](../assets/icons/menu.svg) | Show THM | Will show *.thm files |
+| ![1](../assets/icons/menu.svg) | View Mode | View mode<br> Tile<br> List |

@@ -16,7 +16,7 @@ ___
 
 Utility designed to simplify working with X-Ray Engine sound files in [*.ogg](../../reference/file-formats/audio-video/ogg.md) format.
 
-![editor centered](images/savandt.png)
+![editor centered](assets/images/savandt.png)
 
 ## Features
 

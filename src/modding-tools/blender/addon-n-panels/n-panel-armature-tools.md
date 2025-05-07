@@ -2,7 +2,7 @@
 
 ___
 
-![Alt text centered](images/n-panel-armature-tools.png)
+![Alt text centered](assets/images/n-panel-armature-tools.png)
 
 ## About
 

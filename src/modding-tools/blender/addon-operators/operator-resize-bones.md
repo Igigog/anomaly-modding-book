@@ -2,7 +2,7 @@
 
 ___
 
-![alt text](images/operator-resize-bones.png)
+![alt text](assets/images/operator-resize-bones.png)
 
 ## About
 

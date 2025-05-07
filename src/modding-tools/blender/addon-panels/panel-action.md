@@ -2,7 +2,7 @@
 
 ___
 
-![alt text](images/panel-action.png)
+![alt text](assets/images/panel-action.png)
 
 ## About
 

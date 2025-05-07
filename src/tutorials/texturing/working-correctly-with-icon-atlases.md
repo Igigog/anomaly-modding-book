@@ -14,12 +14,12 @@ ___
 
 Next, you need to work with the source - [*.tga](https://en.wikipedia.org/wiki/Truevision_TGA) ideal buffer format for these two programs, save it in 32-bit format.
 
-![tga options centered](images/tga-settings.png)![Save Settings centered](images/save-settings.png)
+![tga options centered](assets/images/tga-settings.png)![Save Settings centered](assets/images/save-settings.png)
 
 To add new icons, use Paint.net. We make a new layer, paste on it the picture we need and adjust to the size (bilinear method), select the area, cut and paste to the main layer, thereby erasing the previous icon, if any. We save and go to Photoshop. Here we turn on the grid (Ctrl+'), its size is adjusted here, by default it is 50 pixels.
 
-![Photoshop grid centered](images/photoshop-grid.png)
-![Alt text centered](images/preferences.png)
+![Photoshop grid centered](assets/images/photoshop-grid.png)
+![Alt text centered](assets/images/preferences.png)
 
 ```admonish warning title="Important!"
 DO NOT USE THE RIGHTMOST AND BOTTOMMOST CELLS, THEY ARE NOT WHOLE AND ARE SMALLER THAN THE REST BY A FEW PIXELS.
@@ -33,7 +33,7 @@ Next, we go to "layers" and unlock the layer - this opens us information in the 
 In CS5/CS6 you can get coordinates on F8 (in the new versions have simplified access and it is on the properties fold).
 ```
 
-![Properties centered](images/properties.png)
+![Properties centered](assets/images/properties.png)
 
 Here is the position of the X - 950, divide by 50 and we get 19 - this is the number written in inv_grid_x. Similar story with the player. W - Width 50, divide by 50, we get inv_grid_width equal to one. It's the same with height.
 
@@ -47,15 +47,15 @@ ___
 
 ### To save in Photoshop
 
-![Photoshop save centered](images/photoshop-save.png)
-![Nvidia save options centered](images/nvidia-save-options.png)
+![Photoshop save centered](assets/images/photoshop-save.png)
+![Nvidia save options centered](assets/images/nvidia-save-options.png)
 
 ___
 
 ### To save in Paint.net
 
-![Alt text centered](images/image_(7).png)
-![Alt text centered](images/image_(8).png)
+![Alt text centered](assets/images/image_(7).png)
+![Alt text centered](assets/images/image_(8).png)
 
 ___
 

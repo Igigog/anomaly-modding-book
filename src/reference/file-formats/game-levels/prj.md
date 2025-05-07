@@ -4,4 +4,4 @@ ___
 
 ## About
 
-Project for level compiler (precompiled ([*.level](dot-level.md)))
+Project for level compiler (precompiled [*.level](dot-level.md))

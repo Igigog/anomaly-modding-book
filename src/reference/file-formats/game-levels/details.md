@@ -4,7 +4,7 @@ ___
 
 ## About
 
-Detailed objects (grass, cigarette butts, construction debris) on the level
+[Detailed Objects](../../../glossary/glossary.html#detail-object) on the level
 
 ___
 
@@ -30,7 +30,7 @@ The dimensions of all cells along the X and Z axes are the same and equal to 2 m
 
 The height of the slot (the dimensions of the parallelepiped along the Y axis) in all the slots is individual.
 
-![level-details-slot-in-level-editor centered](./images/Level_details_slot_in_level_editor.png)
+![level-details-slot-in-level-editor centered](assets//images/Level_details_slot_in_level_editor.png)
 
 slot in the Level Editor
 
@@ -115,7 +115,7 @@ Let us denote the densities as follows:
 
 If you look at the slot from above, the densities will look like this:
 
-![level-details-slot-density-example centered](./images/Level_details_slot_density_example.png)
+![level-details-slot-density-example centered](assets//images/Level_details_slot_density_example.png)
 
 Mesh density, slot view from above
 

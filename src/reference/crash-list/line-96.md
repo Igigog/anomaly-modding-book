@@ -7,7 +7,7 @@ ___
 [error]Function      : CGameFont::Initialize
 [error]File          : GameFont.cpp
 [error]Line          : 96
-[error]Description   : ["path and ui_font_hud_01.ini"]
+[error]Description   : ["path and file name"]
 ```
 
 - Clarification: No ui_font_hud_01.ini file was found

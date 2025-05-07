@@ -4,7 +4,7 @@ ___
 
 ## About
 
-![alt text](../images/bones-node-view.png)
+![alt text](../assets/images/bones-node-view.png)
 
 ### Bone Node
 

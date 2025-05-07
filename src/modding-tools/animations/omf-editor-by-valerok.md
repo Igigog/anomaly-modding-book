@@ -16,7 +16,7 @@ ___
 
 Modified tool for working with [*.omf](../../reference/file-formats/animations/omf.md) format.
 
-![editor centered](images/omf-editor-by-valerok.png)
+![editor centered](assets/images/omf-editor-by-valerok.png)
 
 ## Features
 

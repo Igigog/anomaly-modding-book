@@ -2,7 +2,7 @@
 
 ___
 
-![alt text](images/light-animations-editor.png)
+![alt text](assets/images/light-animations-editor.png)
 
 Needed to create a light animation
 

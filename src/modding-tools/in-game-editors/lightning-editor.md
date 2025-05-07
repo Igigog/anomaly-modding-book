@@ -6,7 +6,7 @@ ___
 
 Allows you to change the various lighting settings of the weather preset
 
-![lightning-editor centered](images/lightning-editor.png)
+![lightning-editor centered](assets/images/lightning-editor.png)
 
 First you need to select a weather file from the drop-down list and then edit it.
 

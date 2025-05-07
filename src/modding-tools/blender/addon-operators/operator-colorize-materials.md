@@ -2,7 +2,7 @@
 
 ___
 
-![alt text centered](images/operator-colorize-materials.png)
+![alt text centered](assets/images/operator-colorize-materials.png)
 
 ## About
 

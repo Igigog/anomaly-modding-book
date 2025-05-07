@@ -18,7 +18,7 @@ The editor was created for Gunslinger Mod so some parameters will be incompatibl
 
 Visual editor that makes it relatively quick and easy to create weapon upgrade schemes
 
-![editor centered](images/upgrades-editor.png)
+![editor centered](assets/images/upgrades-editor.png)
 
 ## Features
 

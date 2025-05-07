@@ -10,11 +10,11 @@ Weather editor allows you to change weather values in real-time. Minute precisio
 - Edited values are temporary cached for the weathers, hours and minutes you worked on. You can return to them in case you turned off the editor (Avoid exiting or reloading when you have unsaved values)
 - In Viewer mode, you can witness weather changes by the time slider
 
-![weather-editor centered](images/weather-editor.png)
+![weather-editor centered](assets/images/weather-editor.png)
 
 > Viewer Mode
 
-![Viewer Mode centered](images/viewer-mode.png)
+![Viewer Mode centered](assets/images/viewer-mode.png)
 
 ### Key binds
 
@@ -48,24 +48,22 @@ Weather editor allows you to change weather values in real-time. Minute precisio
 
 | Icon | Description |
 |---|:---:|
-| ![Alt text](icons/copy.png) | Copy settings |
-| ![Alt text](icons/paste.png) | Paste settings |
-| ![Alt text](icons/view-mode.png) | Viewer Mode |
-| ![Alt text](icons/pause.png) | Pause in Viewer Mode |
-| ![Alt text](icons/resume.png) | Auto play in Viewer Mode |
-| ![Alt text](icons/save.png) | Save to new file if you indicated the name in box below, otherwise save to current file. Name of custom files must start with "`w_`". |
-| ![Alt text](icons/clear-cache-values.png) | Clear cached values |
-| ![Alt text](icons/resume.png) | Resume weather, and exit |
-| ![Alt text](icons/exit.png) | Exit (weather will still paused in engine) |
-| ![Alt text](icons/about.png) | About |
+| ![Alt text](assets/icons/copy.png) | Copy settings |
+| ![Alt text](assets/icons/paste.png) | Paste settings |
+| ![Alt text](assets/icons/view-mode.png) | Viewer Mode |
+| ![Alt text](assets/icons/pause.png) | Pause in Viewer Mode |
+| ![Alt text](assets/icons/resume.png) | Auto play in Viewer Mode |
+| ![Alt text](assets/icons/save.png) | Save to new file if you indicated the name in box below, otherwise save to current file. Name of custom files must start with "`w_`". |
+| ![Alt text](assets/icons/clear-cache-values.png) | Clear cached values |
+| ![Alt text](assets/icons/resume.png) | Resume weather, and exit |
+| ![Alt text](assets/icons/exit.png) | Exit (weather will still paused in engine) |
+| ![Alt text](assets/icons/about.png) | About |
 
 ___
 
 ## Technical part
 
 The settings of the editor and its parameters can be found in the file "`ui_debug_weather.script`"
-
-`Full parameter list`
 
 | Name | Description | Note |
 |---|---|---|
@@ -85,8 +83,8 @@ The settings of the editor and its parameters can be found in the file "`ui_debu
 | sky_texture | Sky Texture |  |
 | sun | Sun | The list is taken from the file "`suns.ltx`" |
 | sun_color |  |  |
-| sun_longitude | Sun Longitude | Unused |
-| sun_altitude | Sun Altitude | Unused |
+| sun_longitude | Sun Longitude |  |
+| sun_altitude | Sun Altitude |  |
 | sun_shafts_intensity | Sun Shaft Intensity |  |
 | thunderbolt_collection |  | The list is taken from the file "`thunderbolt_collections.ltx`" |
 | thunderbolt_duration | Thunderbolt Duration |  |

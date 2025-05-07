@@ -2,7 +2,7 @@
 
 ___
 
-![alt text](images/operator-create-ik.png)
+![alt text](assets/images/operator-create-ik.png)
 
 ## About
 

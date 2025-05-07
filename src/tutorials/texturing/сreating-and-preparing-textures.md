@@ -21,10 +21,10 @@ To do this, you can use any program of yours that can do such a thing. (or you c
 The most commonly used program for this is Paint.net. We download the texture and save it as [*.dds](../../reference/file-formats/textures/dds.md).
 The Save Settings window appears.
 
-![save-texture](images/save-texture.png)
+![save-texture](assets/images/save-texture.png)
 
 We have to choose the texture compression that suits us.
 
-![select-compressions](images/compressions.png)
+![select-compressions](assets/images/compressions.png)
 
 Save our texture.

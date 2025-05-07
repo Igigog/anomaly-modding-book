@@ -1,4 +1,4 @@
-# .anm (Animated paths)
+# .anm (Animated Paths)
 
 ___
 

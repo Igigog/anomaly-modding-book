@@ -6,7 +6,7 @@ ___
 
 It is used for random distribution of objects on the level
 
-![alt text](../images/object-tools.png)
+![alt text](../assets/images/object-tools.png)
 
 <table><thead>
   <tr>

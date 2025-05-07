@@ -4,7 +4,7 @@ ___
 
 ## About
 
-![alt text](images/shader-editor.png)
+![alt text](assets/images/shader-editor.png)
 
 Used to create/edit shaders
 
@@ -174,13 +174,13 @@ Used to create/edit shaders
           </tr>
           <tr>
             <td>Axis</td>
-            <td><img src=../images/ca-axis.png></td>
+            <td><img src=../assets/images/ca-axis.png></td>
             <td>-</td>
             <td>-</td>
           </tr>
           <tr>
             <td>Cube</td>
-            <td><img src=../images/ca-cube.png></td>
+            <td><img src=../assets/images/ca-cube.png></td>
             <td>-</td>
             <td>-</td>
           </tr>

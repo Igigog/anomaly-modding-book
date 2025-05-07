@@ -10,7 +10,7 @@ ___
 
 ## About
 
-![Alt text centered](./images/ppe-editor.png)
+![Alt text centered](assets//images/ppe-editor.png)
 
 ___
 

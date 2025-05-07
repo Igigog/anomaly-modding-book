@@ -44,9 +44,9 @@ ___
 | Extension | Description |
 |---|---|
 | [*.bump](../file-formats/textures/bump.md) | Normal map in A(BGR) format |
-| [*.bump#](../file-formats/textures/bump_hash.md) | File that fixes DXT compression errors in [.bump](../file-formats/textures/bump.md) |
+| [*.bump#](../file-formats/textures/bump_hash.md) | File that fixes DXT compression errors in [*_bump.dds](../file-formats/textures/bump.md) |
 | [*.dds](../file-formats/textures/dds.md) | Graphic file used by DirectX to store textures |
-| [detail_map.dds](../file-formats/textures/detail-map.md) | Same as a regular [.dds](../file-formats/textures/dds.md) texture, needed as an extra map in a [.thm](../file-formats/textures/thm.md) |
+| [*_detail_map.dds](../file-formats/textures/detail-map.md) | Same as a regular [*.dds](../file-formats/textures/dds.md) texture, needed as an extra map in a [*.thm](../file-formats/textures/thm.md) |
 | [*.tga](../file-formats/textures/thm.md) | A bitmap graphics format with support for color depth of 1-32 bits per pixel, alpha channels, and RLE compression. Used as a source format. |
 | [*.thm](../file-formats/textures/thm.md) | They are used to set the parameters of textures - bump, detail, and more. |
 
@@ -103,7 +103,7 @@ ___
 | Extension | Description |
 |---|---|
 | [*.db](../file-formats/archives-resource-packs/db.md) | archive of game resources. Used in late builds and the final version of the game, has several options (db."number", db."letter"). |
-| [*.xr](../file-formats/archives-resource-packs/xr.md) | resource library. Contains resources such as particles, [shaders](../shaders/shaders-list/engine-shaders-list.md), etc. in a packed format. |
+| [*.xr](../file-formats/archives-resource-packs/xr.md) | resource library. Contains resources such as particles, [Engine Shaders](../shaders/shaders-list/engine-shaders-list.md), [Compile Shaders](../shaders/shaders-list/compiler-shaders-list.md). in a packed format. |
 
 ___
 

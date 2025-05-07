@@ -2,7 +2,7 @@
 
 ___
 
-![Alt text centered](images/n-panel-export.png)
+![Alt text centered](assets/images/n-panel-export.png)
 
 ## About
 

@@ -4,7 +4,7 @@ ___
 
 ## About
 
-![alt text](../images/bone-parts.png)
+![alt text](../assets/images/bone-parts.png)
 
 |  |  |
 |---|---|

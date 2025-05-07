@@ -2,7 +2,7 @@
 
 ___
 
-![alt text](images/panel-object.png)
+![alt text](assets/images/panel-object.png)
 
 ## About
 
@@ -22,11 +22,11 @@ If enabled the object is a root object.
 
 Object Type.
 
-- `Static` - [Static](../../../glossary/glossary.md#StaticObject) (Level geometry).
-- `Dynamic` - [Dynamic](../../../glossary/glossary.md#DynamicObject) (Object with a skeleton).
-- `Progressive Dynamic` - [Dynamic](../../../glossary/glossary.md#ProgressiveMeshes) with levels of detail (in game, the object will change the number of polygons, depending on the distance to the game camera)
+- `Static` - [Static](../../../glossary/glossary.html#static-object) (Level geometry).
+- `Dynamic` - [Dynamic](../../../glossary/glossary.html#dynamic-object) (Object with a skeleton).
+- `Progressive Dynamic` - [Dynamic](../../../glossary/glossary.html#progressive-meshes) with levels of detail (in game, the object will change the number of polygons, depending on the distance to the game camera)
 - `HOM` - Level geometry cutoff (used to create [*.hom](../../../reference/file-formats/game-levels/hom.md) files)
-- `Multiple Usage` - [Multiple used objects](../../../glossary/glossary.md#MultiplyUsageObject) (trees, transportation, rocks, etc.)
+- `Multiple Usage` - [Multiple used objects](../../../glossary/glossary.html#multiply-usage-object) (trees, transportation, rocks, etc.)
 - `Sound Occluder` - Level sound cutoff (used to create [*.som](../../../reference/file-formats/game-levels/som.md) files)
 - `Custom` - Customizable (object type is implemented in the form of flags, so this type has the ability to specify each flag arbitrarily)
 

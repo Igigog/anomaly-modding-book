@@ -2,7 +2,7 @@
 
 ___
 
-![alt text](images/operator-change-userdata.png)
+![alt text](assets/images/operator-change-userdata.png)
 
 ## About
 

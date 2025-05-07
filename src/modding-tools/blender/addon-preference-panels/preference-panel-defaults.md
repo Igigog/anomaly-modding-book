@@ -2,7 +2,7 @@
 
 ___
 
-![defaults centered](images/Defaults.png)
+![defaults centered](assets/images/Defaults.png)
 
 ## About
 

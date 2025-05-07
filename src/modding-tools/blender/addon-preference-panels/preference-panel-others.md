@@ -2,7 +2,7 @@
 
 ___
 
-![formats centered](images/Others.png)
+![formats centered](assets/images/Others.png)
 
 ## About
 

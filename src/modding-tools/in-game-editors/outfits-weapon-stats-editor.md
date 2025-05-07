@@ -6,9 +6,9 @@ ___
 
 Allows you to edit outfit and weapon parameters
 
-![outfits-stats-editor centered](images/outfits-stats-editor.png)
+![outfits-stats-editor centered](assets/images/outfits-stats-editor.png)
 
-![weapon-stats-editor centered](images/weapon-stats-editor.png)
+![weapon-stats-editor centered](assets/images/weapon-stats-editor.png)
 
 ```admonish warning
 - Items configs must be unpacked before working with the editor, they must be in (gamedata/configs/items)

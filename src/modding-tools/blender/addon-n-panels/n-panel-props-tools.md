@@ -2,7 +2,7 @@
 
 ___
 
-![Alt text centered](images/n-panel-props-tools.png)
+![Alt text centered](assets/images/n-panel-props-tools.png)
 
 ## About
 

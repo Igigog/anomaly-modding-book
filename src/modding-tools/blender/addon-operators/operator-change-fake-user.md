@@ -2,7 +2,7 @@
 
 ___
 
-![alt text](images/operator-change-fake-user.png)
+![alt text](assets/images/operator-change-fake-user.png)
 
 ## About
 

@@ -4,7 +4,7 @@ ___
 
 ## About
 
-![alt text](../images/snap-list.png)
+![alt text](../assets/images/snap-list.png)
 
 ## Interface
 

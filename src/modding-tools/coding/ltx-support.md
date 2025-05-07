@@ -1,8 +1,8 @@
-# ![Title centered](images/ltx-support-Title.gif)
+# ![Title centered](assets/images/ltx-support-Title.gif)
 
 Extension for [Visual Studio Code](https://code.visualstudio.com/), which adds support for [logic syntax](../../reference/file-formats/conf-script/ltx.md) from **S.T.A.L.K.E.R. Call of Pripyat**. The plugin adds a lot of big and not so big features that should make it easier to work on modifications, as well as help newcomers start making your first mod. Perhaps the most important aspect of the extension is that it tries as much as possible to adapt to projects.
 
-![Demonstration centered](images/ltx-support-Demonstration.gif)
+![Demonstration centered](assets/images/ltx-support-Demonstration.gif)
 
 Currently implemented VSCode features such as:
 

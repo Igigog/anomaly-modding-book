@@ -94,7 +94,7 @@ ___
   </tr>
   <tr>
     <td>gamemtl.xr</td>
-    <td>Contains <a href="../../glossary/glossary.md_game-material">Game Materials</a></td>
+    <td>Contains <a href="../../glossary/glossary.html#game-material">Game Materials</a></td>
   </tr>
   <tr>
     <td>lanims.xr</td>

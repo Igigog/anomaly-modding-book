@@ -6,7 +6,7 @@ This guide is meant to show you how to setup Mod Organizer 2 and how to mod Anom
 
 Made by [Starcry](https://www.blogger.com/profile/07678551170854762591)
 
-![Mod Organizer logo centered](mo2-images/mo2anomaly.png)
+![Mod Organizer logo centered](assets/mo2-images/mo2anomaly.png)
 
 ## What makes Mod Organizer 2 the superior mod manager?
 
@@ -23,32 +23,32 @@ Important note: Many antivirus softwares will block MO2 and Anomaly files causin
 1. [Download](https://github.com/Modorganizer2/modorganizer/releases) the latest version of MO2
 (Scroll down, download the .exe and install it)
 
-    ![download page centered](mo2-images/0.png)
+    ![download page centered](assets/mo2-images/0.png)
 
 2. After getting this error and clicking "OK" select "Create a portable instance" and press next.
 
-    ![error centered](mo2-images/error.png)
+    ![error centered](assets/mo2-images/error.png)
 
-    ![portable instance centered](mo2-images/portable.png)
+    ![portable instance centered](assets/mo2-images/portable.png)
 
 3. Click "Browse..." and select your S.T.A.L.K.E.R Anomaly folder, name the instance whatever you want and click next.
 
     > Note if you have an error when selecting the game directory:
     Sometimes MO2 won't detect the game if the directory isn't named "S.T.A.L.K.E.R. Anomaly", in case your problem remains and you have Windows 7 try downloading and double clicking [this Windows file](https://www.microsoft.com/en-us/download/details.aspx?id=47442).
 
-    ![Creating a new instance centered](mo2-images/newinstance.png)
+    ![Creating a new instance centered](assets/mo2-images/newinstance.png)
 
 4. The next page will show you where you'r mods and other files for Anomaly mods will be stored, you can leave it as it is and click next.
 
-    ![Creating a new instance centered](mo2-images/1.png)
+    ![Creating a new instance centered](assets/mo2-images/1.png)
 
 5. Click next again as linking an account to Nexus is not needed.
 
-    ![Creating a new instance centered](mo2-images/2.png)
+    ![Creating a new instance centered](assets/mo2-images/2.png)
 
 6. After that you should see something like this.
 
-    ![Creating a new instance centered](mo2-images/3.png)
+    ![Creating a new instance centered](assets/mo2-images/3.png)
 
 7. Congratulations, you paired MO2 with Anomaly successfully.
 After you click finish MO2 will start up.
@@ -59,7 +59,7 @@ ___
 
 After MO2 boots up you will get 2 popups, one is for an optional tutorial and the other one is for Nexus which we won't need.
 
-![Creating a new instance centered](mo2-images/4.png)
+![Creating a new instance centered](assets/mo2-images/4.png)
 
 In case you skipped the tutorial or didn't fully understand it here's a quick explanation of the most important features:
 
@@ -71,7 +71,7 @@ In case you skipped the tutorial or didn't fully understand it here's a quick ex
 
 - <text style="color: blue">Blue</text> highlight is used for starting the game, if you don't start your game with this button your mods won't be activated.
 
-![Creating a new instance centered](mo2-images/5.png)
+![Creating a new instance centered](assets/mo2-images/5.png)
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 On the image below you can see how my MO2 looks, I have a little over 100 addons and a lot of conflicts.
 
-![Creating a new instance centered](mo2-images/6.png)
+![Creating a new instance centered](assets/mo2-images/6.png)
 
 After installing few addons you might notice these icons:
 
@@ -118,15 +118,15 @@ Remember that every addon you install needs to have only one gamedata folder, if
 
 As you can see in the picture below I get a popup when trying to install JSRS because it has multiple files, select one and install it, then do it again with the second file (Applies for every addon).
 
-![Creating a new instance centered](mo2-images/11.png)
+![Creating a new instance centered](assets/mo2-images/11.png)
 
 In case you get this popup instead of the one above, you need to expand the file tree and have only option selected, after that you rightclick it and press "set as stalker directory"
 
-![Creating a new instance centered](mo2-images/12.png)
+![Creating a new instance centered](assets/mo2-images/12.png)
 
-![Creating a new instance centered](mo2-images/13.png)
+![Creating a new instance centered](assets/mo2-images/13.png)
 
-![Creating a new instance centered](mo2-images/14.png)
+![Creating a new instance centered](assets/mo2-images/14.png)
 
 In case MO2 crashes when clicking on "manual" addon installation add this text to file ModOrganizer.ini found in Modding/Mo2/:
 
@@ -162,4 +162,4 @@ Credits:
 - d_nan: did absolutely nothing
 - Caesar_salad: also did absolutely nothing
 
-![Creating a new instance centered](mo2-images/fuckjsgme3.png)
+![Creating a new instance centered](assets/mo2-images/fuckjsgme3.png)

@@ -16,7 +16,7 @@ ___
 
 The [THM Editor](thm-editor-by-i-love-kfc.md) from i-love-kfc was taken as the basis, finalized and fixed. Allows you to work with [.thm](../../reference/file-formats/textures/thm.md) files.
 
-![thm-editor-by-valerok centered](images/thm-editor-by-valerok.png)
+![thm-editor-by-valerok centered](assets/images/thm-editor-by-valerok.png)
 
 ## Features
 

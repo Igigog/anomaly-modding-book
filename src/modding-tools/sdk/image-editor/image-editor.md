@@ -2,7 +2,7 @@
 
 ___
 
-![image-editor centered](images/image-editor.png)
+![image-editor centered](assets/images/image-editor.png)
 
 ## About
 

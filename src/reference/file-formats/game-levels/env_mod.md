@@ -4,4 +4,4 @@ ___
 
 ## About
 
-Local environment modifiers (environment) specify areas on the location with lighting different from the main weather cycle
+Local environment modifiers specify areas on the location with lighting different from the main weather cycle

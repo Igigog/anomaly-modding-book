@@ -4,7 +4,7 @@ ___
 
 ## About
 
-![alt text](../images/ae-ip-bones.png)
+![alt text](../assets/images/ae-ip-bones.png)
 
 <body>
   <div class="table-tabs">
@@ -225,23 +225,23 @@ ___
           <td rowspan="5">Type</td>
           <td rowspan="5">Joint type</td>
           <td>Rigid</td>
-          <td><a href="../../../../glossary/glossary.md#Rigid">Rigid Joint</a></td>
+          <td><a href="../../../../glossary/glossary.html#rigid-joint">Rigid Joint</a></td>
         </tr>
         <tr>
           <td>Cloth</td>
-          <td><a href="../../../../glossary/glossary.md#Cloth">Cloth Joint</a></td>
+          <td><a href="../../../../glossary/glossary.html#cloth-joint">Cloth Joint</a></td>
         </tr>
         <tr>
           <td>Joint</td>
-          <td><a href="../../../../glossary/glossary.md#Joint">Universal Joint</a></td>
+          <td><a href="../../../../glossary/glossary.html#joint">Universal Joint</a></td>
         </tr>
         <tr>
           <td>Wheel [Steer-X/Roll-Z]</td>
-          <td><a href="../../../../glossary/glossary.md#Wheel">Wheel Joint</a></td>
+          <td><a href="../../../../glossary/glossary.html#wheel-joint">Wheel Joint</a></td>
         </tr>
         <tr>
           <td>Slider</td>
-          <td><a href="../../../../glossary/glossary.md#Slider">Slider Joint</a></td>
+          <td><a href="../../../../glossary/glossary.html#slider-joint">Slider Joint</a></td>
         </tr>
         <tr>
           <td>Friction</td>

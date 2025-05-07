@@ -3,7 +3,7 @@
 ___
 
 ```admonish tip title="Formula"
-animation parameter name = animation name(hands), animation name(weapon), playback speed
+animation parameter name = animation name (hands), animation name (weapon), playback speed
 ```
 
 Idle animations
@@ -55,30 +55,30 @@ Motion animations
 | anm_idle_moving_crouch_empty |  | Crouch moving animation with empty magazine |  |  |
 | anm_idle_aim_moving_crouch |  | Aiming crouch moving animation |  |  |
 | anm_idle_moving_crouch_empty_g |  | Crouch moving animation with empty underbarrel grenade launcher |  |  |
-| anm_idle_moving_crouch_empty_w_gl | Crouch moving animation with active empty underbarrel grenade launcher |  |  |  |
+| anm_idle_moving_crouch_empty_w_gl |  | Crouch moving animation with active empty underbarrel grenade launcher |  |  |
 | anm_idle_moving_crouch_g_aim |  | Aiming crouch moving animation with underbarrel grenade launcher |  |  |
 | anm_idle_moving_crouch_w_gl_aim |  | Aiming crouch moving animation with active underbarrel grenade launcher |  |  |
-| anm_idle_sprint_0 | WP_BM16 |  | Spring moving animation with 0 bullets |  |
-| anm_idle_sprint_1 | WP_BM16 |  | Spring moving animation with 1 bullets |  |
-| anm_idle_sprint_2 | WP_BM16 |  | Spring moving animation with 2 bullets |  |
+| anm_idle_sprint_0 | WP_BM16 | Spring moving animation with 0 bullets |  |  |
+| anm_idle_sprint_1 | WP_BM16 | Spring moving animation with 1 bullets |  |  |
+| anm_idle_sprint_2 | WP_BM16 | Spring moving animation with 2 bullets |  |  |
 | anm_idle_sprint |  | Spring moving animation |  |  |
 | anm_idle_sprint_empty |  | Spring moving animation with empty magazine |  |  |
 | anm_idle_sprint_g |  | Spring moving animation with underbarrel grenade launcher |  |  |
 | anm_idle_sprint_empty_g |  | Spring moving animation with empty underbarrel grenade launcher |  |  |
 | anm_idle_sprint_w_gl |  | Spring moving animation with active underbarrel grenade launcher |  |  |
 | anm_idle_sprint_empty_w_gl |  | Spring moving animation with active empty underbarrel grenade launcher |  |  |
-| anm_bore_0 | WP_BM16 |  | Boredom animation with 0 bullets |  |
-| anm_bore_1 | WP_BM16 |  | Boredom animation with 1 bullets |  |
-| anm_bore_2 | WP_BM16 |  | Boredom animation with 2 bullets |  |
+| anm_bore_0 | WP_BM16 | Boredom animation with 0 bullets |  |  |
+| anm_bore_1 | WP_BM16 | Boredom animation with 1 bullets |  |  |
+| anm_bore_2 | WP_BM16 | Boredom animation with 2 bullets |  |  |
 | anm_bore |  | Boredom animation |  |  |
 | anm_bore_empty |  | Boredom animation with empty magazine |  |  |
 | anm_bore_g |  | Boredom animation with underbarrel grenade launcher |  |  |
 | anm_bore_empty_g |  | Boredom animation with empty underbarrel grenade launcher |  |  |
 | anm_bore_w_gl |  | Boredom animation with active underbarrel grenade launcher |  |  |
 | anm_bore_empty_w_gl |  | Boredom animation with active empty underbarrel grenade launcher |  |  |
-| anm_hide_0 | WP_BM16 |  | Hiding animation with 0 bullets |  |
-| anm_hide_1 | WP_BM16 |  | Hiding animation with 1 bullets |  |
-| anm_hide_2 | WP_BM16 |  | Hiding animation with 2 bullets |  |
+| anm_hide_0 | WP_BM16 | Hiding animation with 0 bullets |  |  |
+| anm_hide_1 | WP_BM16 | Hiding animation with 1 bullets |  |  |
+| anm_hide_2 | WP_BM16 | Hiding animation with 2 bullets |  |  |
 | anm_hide |  | Hiding animation |  |  |
 | anm_hide_empty |  | Hiding animation with empty magazine |  |  |
 | anm_hide_g |  | Hiding animation with underbarrel grenade launcher |  |  |
@@ -92,15 +92,15 @@ Weapon animations
 |---|---|---|---|---|
 | anm_open | WP_RG6<br> WP_ASHTG |  | rg6_reload_start |  |
 | anm_add_cartridge | WP_RG6 |  | rg6_reload, rg6_reload_wep |  |
-| anm_close | WP_RG6 |  |  | rg6_reload_end |
+| anm_close | WP_RG6 |  | rg6_reload_end |  |
 | anm_close_empty | WP_RG6 |  |  |  |
 | anm_reload_1 | WP_BM16<br> CWeaponRevolver |  |  |  |
 | anm_reload_2 | WP_BM16<br> CWeaponRevolver |  |  |  |
 | anm_reload_3 | CWeaponRevolver |  |  |  |
 | anm_reload_4 | CWeaponRevolver |  |  |  |
 | anm_reload_5 | CWeaponRevolver |  |  |  |
-| anm_reload | Partial reload animation |  |  |  |
-| anm_reload_empty | Full reload animation |  |  |  |
+| anm_reload |  | Partial reload animation |  |  |
+| anm_reload_empty |  | Full reload animation |  |  |
 | anm_reload_g |  |  |  |  |
 | anm_reload_w_gl |  |  |  |  |
 | anm_reload_empty_w_gl |  |  |  |  |
@@ -114,8 +114,8 @@ Weapon animations
 | anm_shots_g |  |  |  |  |
 | anm_shots_w_gl |  |  |  |  |
 | anm_shot_w_gl_l |  | Lash shot animation with active underbarrel grenade launcher |  |  |
-| anm_shot_1 | WP_BM16 |  | Shot animation with 1 bullets |  |
-| anm_shot_2 | WP_BM16 |  | Shot animation with 2 bullets |  |
+| anm_shot_1 | WP_BM16 | Shot animation with 1 bullets |  |  |
+| anm_shot_2 | WP_BM16 | Shot animation with 2 bullets |  |  |
 | anm_switch_mode |  | Firemode switch animation |  |  |
 | anm_switch_mode_empty |  | Firemode switch animation with empty magazine |  |  |
 | anm_switch |  | ? |  |  |

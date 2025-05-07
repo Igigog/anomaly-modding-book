@@ -2,7 +2,7 @@
 
 ___
 
-![alt text](images/operator-change-shader-parameters.png)
+![alt text](assets/images/operator-change-shader-parameters.png)
 
 ## About
 

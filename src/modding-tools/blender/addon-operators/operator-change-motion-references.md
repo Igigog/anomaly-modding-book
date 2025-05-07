@@ -2,7 +2,7 @@
 
 ___
 
-![alt text](images/operator-change-motion-reference.png)
+![alt text](assets/images/operator-change-motion-reference.png)
 
 ## About
 

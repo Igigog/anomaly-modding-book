@@ -4,7 +4,7 @@ ___
 
 ## About
 
-![alt text](../images/pe-right-bar.png)
+![alt text](../assets/images/pe-right-bar.png)
 
 ## Interface
 

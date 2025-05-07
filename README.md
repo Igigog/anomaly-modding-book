@@ -24,9 +24,9 @@ So refer to this [article](src/meta/contributing.md) or open an [issue](https://
 
 [Anomaly Discord](https://discord.gg/c4RuJNs)
 
-[Igigog](https://github.com/Igigog) - Book Creator
+[Igigog](https://github.com/Igigog) - Book creator
 
-[TheParaziT](https://github.com/TheParaziT) - Repository Maintainer
+[TheParaziT](https://github.com/TheParaziT) - Repository maintainer
 
 - [mdBook](https://github.com/rust-lang/mdBook) - The platform on which the book was written
   - [mdbook admonish](https://github.com/tommilligan/mdbook-admonish) - A preprocessor for mdbook to add Material Design admonishments.

@@ -4,25 +4,59 @@ ___
 
 ## About
 
-Игровой материал определяет физический особенности поверхности. Все параметры материалов можно посмотреть в Shader Editor. Давайте например создадим три материала.
+The Game Material defines the physical features of the surface. All material parameters can be viewed in [SDK Shader Editor](../../modding-tools/sdk/shader-editor/shader-editor.md). For example, let's create three different materials.
 
-## Создание Static Object материала
+## Creating Static Object material
 
-Для примера создадим материал для статического обьекта. Что значит, что материал может использоваться только для статических обьектов.
+For this example, I'll create the material of a thick concrete wall.
 
-Заходим в Shader Editor.
+Go into the Shader Editor.
 
-Нажимаем Create. Выбираем Static. Создатся новый материал для статического обьекта.
+Click `Create` -> Select `Static`. This will create a new material for the [Static Object](../../glossary/glossary.html#static-object).
 
-Теперь можем переименовать материал. Нажмите правой кнопкой мыши на материал -> Rename.
+Now we can rename the material. Right click on the material -> `Rename`.
 
-Далее нам нужно определить нужные нам параметры материала. Я выбрал такие:
+Next, we need to determine the material parameters we need. I chose these ([parameter values in the Shader Editor](../../modding-tools/sdk/shader-editor/windows/se-item-properties.md)):
 
 - Dynamic - False
 - Passable - False
 - Bounceable - False
 - Skidmark - False
-- Bloodmark - False
+- Bloodmark - True
+- Climable - False
+- Liquid - False
+- Suppress Shadows - False
+- Suppress Wallmarks - False
+- Actor Obstacle - True
+- Bullet No Ricoshet - False
+- Friction - 1.000
+- Damping - 1.000
+- Spring - 1.000
+- Bounce start vel - 0.00
+- Bouncing - 0.100
+- Bounce Damage - 1.0
+- Injurius - 0.00
+- Shooting - 0.00
+- Shooting MP - 0.00
+- Transparency - 0.00
+- Sound occlusion - 0.00
+- Flotation - 1.00
+- Density Factor - 0.00
+
+## Creating breakable material
+
+A breakable material must be created for a [Dynamic Object](../../glossary/glossary.html#dynamic-object). To create a Breakable object, see this tutorial.
+
+Click `Create` -> Select `Dynamic`.
+
+To create a breakable material, you only need to enable one `Breakable` flag:
+
+- Dynamic - True
+- Breakable - True
+- Passable - False
+- Bounceable - False
+- Skidmark - False
+- Bloodmark - True
 - Climable - False
 - Liquid - False
 - Suppress Shadows - False
@@ -43,12 +77,31 @@ ___
 - Flotation - 1.00
 - Density Factor - 0.00
 
-## Создание разрушаемого материала
+## Creating climbable material
 
-Разрушаемый материал обязан быть создан для Динамического Обьекта. Для создания Разрушаемого Обьекта смотрите этот туториал.
+To create a climbable material, you only need to enable one `Climable` flag.
 
-Для создания разрушаемого материала нужно лишь включить один флаг Breakable.
-
-## Создание climbable материала
-
-Для создания Climbable материала нужно лишь включить один флаг Climable.
+- Dynamic - False
+- Passable - False
+- Bounceable - False
+- Skidmark - False
+- Bloodmark - True
+- Climable - True
+- Liquid - False
+- Suppress Shadows - False
+- Suppress Wallmarks - False
+- Actor Obstacle - False
+- Bullet No Ricoshet - False
+- Friction - 1.000
+- Damping - 1.000
+- Spring - 1.000
+- Bounce start vel - 0.00
+- Bouncing - 0.100
+- Bounce Damage - 1.0
+- Injurius - 0.00
+- Shooting - 0.00
+- Shooting MP - 0.00
+- Transparency - 0.00
+- Sound occlusion - 0.00
+- Flotation - 1.00
+- Density Factor - 0.00

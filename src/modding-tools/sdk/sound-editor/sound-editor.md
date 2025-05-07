@@ -10,7 +10,7 @@ ___
 
 ## Interface
 
-![sound editor centered](images/sound-editor.png)
+![sound editor centered](assets/images/sound-editor.png)
 
 | Key | Description | Value |
 |---|---|---|

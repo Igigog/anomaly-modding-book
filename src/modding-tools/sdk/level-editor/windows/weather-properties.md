@@ -4,7 +4,7 @@ ___
 
 ## About
 
-![alt text](../images/weather-properties.png)
+![alt text](../assets/images/weather-properties.png)
 
 ### Time Settings
 

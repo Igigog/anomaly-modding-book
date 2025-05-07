@@ -2,7 +2,7 @@
 
 ___
 
-![alt text](images/operator-create-level-shader-nodes.png)
+![alt text](assets/images/operator-create-level-shader-nodes.png)
 
 ## About
 

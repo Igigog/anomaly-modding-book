@@ -4,7 +4,7 @@ ___
 
 ## About
 
-![alt text](../images/key-form.png)
+![alt text](../assets/images/key-form.png)
 
 |  |  |
 |---|---|

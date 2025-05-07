@@ -4,12 +4,12 @@ ___
 
 ## About
 
-![alt text](../images/edit-mode.png)
+![alt text](../assets/images/edit-mode.png)
 
 | Icon | Description |
 |:---:|---|
-| ![checkmark](../icons/checkmark.svg) | Enables group display in [Render Window](render.md) |
-| ![circle](../icons/circle.svg) | Enables the ability to select items in this group in [Render Window](render.md) |
+| ![checkmark](../assets/icons/checkmark.svg) | Enables group display in [Render Window](render.md) |
+| ![circle](../assets/icons/circle.svg) | Enables the ability to select items in this group in [Render Window](render.md) |
 
 | Name | Description |
 |---|---|

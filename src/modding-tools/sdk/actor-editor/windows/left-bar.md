@@ -4,7 +4,7 @@ ___
 
 ## About
 
-![alt text](../images/left-bar.png)
+![alt text](../assets/images/left-bar.png)
 
 ## Interface
 

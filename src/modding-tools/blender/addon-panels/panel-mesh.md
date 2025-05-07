@@ -2,7 +2,7 @@
 
 ___
 
-![alt text](images/panel-mesh.png)
+![alt text](assets/images/panel-mesh.png)
 
 ## About
 

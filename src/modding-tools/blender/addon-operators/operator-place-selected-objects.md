@@ -2,7 +2,7 @@
 
 ___
 
-![alt text](images/operator-place-selected-objects.png)
+![alt text](assets/images/operator-place-selected-objects.png)
 
 ## About
 
