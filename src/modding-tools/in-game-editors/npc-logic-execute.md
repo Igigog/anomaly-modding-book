@@ -4,9 +4,7 @@ ___
 
 ## General information
 
-
-
-![npc-logic-execute centered](images/npc-logic-execute.png)
+![npc-logic-execute centered](assets/images/npc-logic-execute.png)
 
 ___
 

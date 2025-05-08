@@ -1,10 +1,9 @@
-name: Check Markdown links
+name: Check Local Markdown Links
 
 on:
   push:
     branches: 
       - main
-      - book-rewrite
   pull_request:
     types: [assigned, opened, synchronize, reopened]
 

@@ -1,0 +1,15 @@
+
+name: Book Request Information
+description: Request Information
+labels: [Book Request Information]
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: >
+        Provide Request Information
+    validations:
+      required: true
+

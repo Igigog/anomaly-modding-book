@@ -5,7 +5,7 @@ ___
 ## All soundtracks from the original trilogy
 
 | Artist | Soundtrack name | Preview | Note |
-:---:|---|:---:|---|
+|:---:|---|:---:|---|
 | MoozE | Theme of Escape | [Preview](https://youtu.be/pv1CgfFY6nY) |  |
 | MoozE | Stalker_extract (Alternative Version of "Theme of Escape") | [Preview](https://youtu.be/WF2kj3btLlQ) | Cut from the original game |
 | MoozE | Theme of Garbage | [Preview](https://youtu.be/7GXAGQgC9XI) |  |
@@ -72,7 +72,7 @@ ___
 ## All soundtracks from Anomaly
 
 | Artist | Soundtrack name | Preview |
-:---:|---|:---:|
+|:---:|---|:---:|
 | Gates of Morheim | Dying Machine | [Preview](https://gatesofmorheim.bandcamp.com/track/dying-machine-2) |
 | Gates of Morheim | Mechanical Consciousness | [Preview](https://gatesofmorheim.bandcamp.com/track/mechanical-consciousness) |
 | Gates of Morheim | Steel Dawn | [Preview](https://gatesofmorheim.bandcamp.com/track/steel-dawn) |

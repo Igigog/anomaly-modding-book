@@ -6,7 +6,7 @@ ___
 
 In this spawner you can spawn all item sections for the player
 
-![item-spawner centered](images/item-spawner.png)
+![item-spawner centered](assets/images/item-spawner.png)
 
 In the left column, select the type of item
 
@@ -20,14 +20,14 @@ ___
 
 ## Technical part
 
-Items appear in the list because of the "`kind`" or `engine class` parameter in their [.ltx](../../main-folders-and-files/file-formats/README.md#ltx-files) file. The spawner script can be found in the file "`ui_debug_main.script`"
+Items appear in the list because of the "`kind`" or `engine class` parameter in their [*.ltx](../../reference/file-formats/conf-script/ltx.md) file. The spawner script can be found in the file "`ui_debug_main.script`"
 
 `Full list`
 
-| Name | Tehnical type (kind or Engine Class) name |
----|---|
-| Artefacts | <abbr title="kind">i_arty</abbr><br><abbr title="kind">i_arty_junk</abbr><br><abbr title="Engine Class">ARTEFACT<br>SCRPTART</abbr> |
-| Artefacts (Conteiner) | <abbr title="kind">i_arty_cont</abbr> |
+| Name | Technical type (kind or Engine Class) name |
+|---|---|
+| Artifacts | <abbr title="kind">i_arty</abbr><br><abbr title="kind">i_arty_junk</abbr><br><abbr title="Engine Class">ARTEFACT<br>SCRPTART</abbr> |
+| Artifacts (Container) | <abbr title="kind">i_arty_cont</abbr> |
 | Items (Food) | <abbr title="kind">i_mutant_cooked</abbr><br><abbr title="kind">i_mutant_raw</abbr><br><abbr title="kind">i_food</abbr><br><abbr title="Engine Class">II_FOOD<br>S_FOOD |
 | Items (Drink) | <abbr title="kind">i_drink</abbr><br><abbr title="Engine Class">II_BOTTL |
 | Items (Medical) | <abbr title="kind">i_medical</abbr><br><abbr title="Engine Class">II_BANDG<br>II_MEDKI<br>II_ANTIR |

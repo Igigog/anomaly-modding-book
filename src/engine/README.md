@@ -6,9 +6,7 @@ ___
 
 The X-Ray "Monolith" Engine is an Anomaly mod open for use and modification. It is based on X-Ray 1.6 Engine (CoP), Open X-Ray Call of Chernobyl Edition and some modifications.
 
-To compile the engine open the solution in VS2015, select all projects and configurations in Batch build and start a build.
-
-- [Source](https://bitbucket.org/anomalymod/xray-monolith/)
+- [Source Code](https://bitbucket.org/anomalymod/xray-monolith/)
 
 ### Some Main Features
 
@@ -18,6 +16,10 @@ To compile the engine open the solution in VS2015, select all projects and confi
 - Multi threaded sound prefetching
 - Discord integration
 - Animation Blending/Movement layers
+
+## Technical Info
+
+- [Coordinate System](xray-coordinate-system.md)
 
 ___
 
@@ -29,8 +31,8 @@ Community fork of the Monolith engine curated by demonized. This engine is encou
 
 ### Key Features
 
-- [DLTX](../addons/dltx.md) by MerelyMezz with edits and bugfixes by demonized
-- [DXML](../addons/dxml.md) by demonized
+- [DLTX](../tutorials/addons/dltx.md) by MerelyMezz with edits and bugfixes by demonized
+- [DXML](../tutorials/addons/dxml.md) by demonized
 - BaS engine edits by Mortan
 - Additional edits and bugfixes by demonized
 - Shader Scopes by CrookR and enhanced by Edzan

@@ -6,14 +6,14 @@ ___
 
 Allows you to change the various lighting settings of the weather preset
 
-![lightning-editor centered](images/lightning-editor.png)
+![lightning-editor centered](assets/images/lightning-editor.png)
 
 First you need to select a weather file from the drop-down list and then edit it.
 
-### Keybinds
+### Key binds
 
 - `INSERT` to start
-- `Up` and `Down` keys to rotate through the avaiable commands
+- `Up` and `Down` keys to rotate through the available commands
 - `NUMPAD_8` and `NUMPAD_2` keys to increase/reduce the value of highlighted command
 - `Enter` key to save the adjusted commands to print_table.txt
 
@@ -23,21 +23,21 @@ ___
 
 The commands and their settings are assigned in the script "`ui_debug_lightning.script`"
 
-`List of commands` (Full list of commands can be found [here](../../engine/console-commands.md))
+`List of commands`
 
-| Сommand | Command description |
----|---|
-| r2_sun_lumscale |  |
-| r2_sun_lumscale_amb |  |
-| r2_sun_lumscale_hemi |  |
+| Command | Command description |
+|---|---|
+| r2_sun_lumscale | Sunlight intensity control |
+| r2_sun_lumscale_amb | Ambient light intensity control |
+| r2_sun_lumscale_hemi | hemispherical lighting |
 | r2_tonemap_amount |  |
 | r2_tonemap_lowlum |  |
-| r2_tonemap_middlegray |  |
+| r2_tonemap_middlegray | Controls the setting that controls the middle gray value for Tone Mapping technologies |
 | r2_gloss_min |  |
 | r2_gloss_factor |  |
 | r2_ls_bloom_kernel_b |  |
-| r2_ls_bloom_kernel_g |  |
-| r2_ls_bloom_kernel_scale |  |
+| r2_ls_bloom_kernel_g | "Shape" of bloom. High value = more blurry bloom |
+| r2_ls_bloom_kernel_scale | Size of bloom effect |
 | r2_sun_shafts_min |  |
 | r2_sun_shafts_value |  |
 | r__optimize_dynamic_geom |  |

@@ -1,10 +1,9 @@
-name: Markdown lint
+name: Check HTTPS Markdown Links
 
 on:
   push:
     branches:
       - main
-      - book-rewrite
   pull_request:
     types: [assigned, opened, synchronize, reopened]
 

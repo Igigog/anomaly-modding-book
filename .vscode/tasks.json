@@ -1,0 +1,97 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Local mdBook Server",
+            "type": "shell",
+            "command": "${workspaceFolder}/dist/mdbook.exe",
+            "args": ["serve", "--open"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "detail": "Run serve --open command",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "Clean mdBook Artifacts",
+            "type": "shell",
+            "command": "${workspaceFolder}/dist/mdbook.exe",
+            "args": ["clean"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "detail": "Run clean command",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "Install Rust (Windows)",
+            "type": "shell",
+            "command": "powershell",
+            "args": [
+                "-Command",
+                "Invoke-WebRequest -Uri https://win.rustup.rs -OutFile rustup-init.exe; .\\rustup-init.exe -y"
+            ],
+            "problemMatcher": [],
+            "detail": "Intall Rust for Windows",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "options": {
+                "shell": {
+                    "executable": "powershell.exe",
+                    "args": ["-NoProfile", "-ExecutionPolicy", "Bypass"]
+                }
+            }
+        },
+        {
+            "label": "Install Rust (Unix)",
+            "type": "shell",
+            "command": "curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh",
+            "problemMatcher": [],
+            "detail": "Intall Rust for Unix",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "Install Dependencies",
+            "type": "shell",
+            "command": "cargo",
+            "args": [
+                "install",
+                "mdbook-admonish",
+                "mdbook-mermaid",
+                "mdbook-linkcheck"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "detail": "Intall mdbook Dependencies",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            }
+        }
+    ]
+}

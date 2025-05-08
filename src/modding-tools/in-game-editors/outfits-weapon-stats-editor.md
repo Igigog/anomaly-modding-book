@@ -6,16 +6,16 @@ ___
 
 Allows you to edit outfit and weapon parameters
 
-![outfits-stats-editor centered](images/outfits-stats-editor.png)
+![outfits-stats-editor centered](assets/images/outfits-stats-editor.png)
 
-![weapon-stats-editor centered](images/weapon-stats-editor.png)
+![weapon-stats-editor centered](assets/images/weapon-stats-editor.png)
 
-> Attention
-
+```admonish warning
 - Items configs must be unpacked before working with the editor, they must be in (gamedata/configs/items)
 - Don't forget to make a backup of the configs for reference.
+```
 
-### Keybinds
+### Key binds
 
 - `Arrow keys` - parameters navigation.
 - `Numpad 8/2` - increase/reduce selected value.
@@ -29,20 +29,20 @@ Allows you to edit outfit and weapon parameters
 
 To work it is necessary to put on the outfit or weapon to be edited
 
-### Left Colomn
+### Left Column
 
 The column on the left shows the items parameters (yellow color highlights the values of the item selected for comparison with the currently worn item)
 
 - `Copy` - copies parameters
 - `Paste` - pastes parameters
 - `Apply` - applies parameters
-- `Reset` - resets the items parameters to their original values (Modified values are cached temporarly for the item you're working on, you can return to it if you turn the editor off)
+- `Reset` - resets the items parameters to their original values (Modified values are cached temporary for the item you're working on, you can return to it if you turn the editor off)
 
-### Middle Colomn
+### Middle Column
 
 The column in the middle has items (outfits/weapons) sections for comparison with the current items worn
 
-### Right Colomn
+### Right Column
 
 The column on the right shows a comparison of items parameters
 

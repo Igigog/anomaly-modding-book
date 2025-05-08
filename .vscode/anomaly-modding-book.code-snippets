@@ -1,0 +1,113 @@
+{
+    "File Format Template": {
+      "scope": "markdown",
+      "prefix": "amb-ff-templ",
+      "body": [
+        "# File Format Template",
+        "",
+        "___",
+        "",
+        "## About",
+        "",
+        "Write something general for the file format (For example, what it is used for)",
+        "",
+        "___",
+        "",
+        "## Technical Part",
+        "",
+        "If you have information on how the format works",
+        "",
+        "___",
+        "",
+        "## Programs Editing This File",
+        "",
+        "Write about programs that can edit or create this file format if necessary and insert a link to them (if available)",
+        "",
+        "___",
+        "",
+        "## Sources",
+        "",
+        "If you have taken information about this file format from some source, please specify the source",
+        ""
+      ],
+      "description": "File Format Template"
+    },
+
+    "Resource Template": {
+      "scope": "markdown",
+      "prefix": "amb-res-templ",
+      "body": [
+        "# Resource Template",
+        "",
+        "___",
+        "",
+        "## About",
+        "",
+        "Write about your resource (e.g. what it is for)",
+        "",
+        "___",
+        "",
+        "## Sources",
+        "",
+        "If you have taken this resource from any source, please specify the source",
+        ""
+      ],
+      "description": "Resource Template"
+    },
+
+    "Tool Template": {
+      "scope": "markdown",
+      "prefix": "amb-t-templ",
+      "body": [
+        "# Tool Template",
+        "",
+        "___",
+        "",
+        "## About",
+        "",
+        "Write something general about the tool (e.g. why it is needed)",
+        "",
+        "___",
+        "",
+        "## Features",
+        "",
+        "Describe the tool's features",
+        "",
+        "___",
+        "",
+        "## Sources",
+        "",
+        "If you have taken descriptions of the tool or the tool itself from any source, please specify the source",
+        ""
+      ],
+      "description": "Tool Template"
+    },
+
+    "Tutorial Template": {
+      "scope": "markdown",
+      "prefix": "amb-tut-templ",
+      "body": [
+        "# Tutorial Template",
+        "",
+        "___",
+        "",
+        "## About",
+        "",
+        "",
+        "",
+        "___",
+        "",
+        "## Needs",
+        "",
+        "",
+        "",
+        "___",
+        "",
+        "## Sources",
+        "",
+        "",
+        ""
+      ],
+      "description": "Tutorial Template"
+    },
+}
