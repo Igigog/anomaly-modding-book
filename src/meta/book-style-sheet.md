@@ -45,7 +45,7 @@ The formatting of articles is entirely at your discretion and will not be correc
     ```
 ```
 
-- When using svg icons, you can specify svg-icon in the alternative name so that the icon will change brightness depending on the theme (for example, in a light theme the icon will be dark, in a dark theme - light). Example:
+- When using svg icons, you can specify `svg-icon` in the alternative name so that the icon will change brightness depending on the theme (for example, in a light theme the icon will be dark, in a dark theme - light). Example:
 
 ```admonish example
     ```markdown

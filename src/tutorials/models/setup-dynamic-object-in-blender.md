@@ -8,126 +8,75 @@ ___
 - How to work with Blender [X-Ray Addon](../../modding-tools/blender/blender-x-ray-addon-summary.md)
 - Familiarize yourself with the limitations and capabilities of the format [*.object](../../reference/file-formats/models/object.md) (because you may export to it more often than to [*.ogf](../../reference/file-formats/models/ogf.md)) to avoid errors
 - Familiarize yourself with [Dynamic Object](../../glossary/glossary.html#dynamic-object) model type
-- How [Model Smoothing](../../reference/models/smoothing.md) work in X-Ray
 
 ___
 
-It was decided to make our object dynamic.
-To do this, you need to create a bone and a vertex group (so that the bone can affect exactly the vertices you choose).
-Select the model and go to the `Object Data Properties` (![12 svg-icon]()) tab
-Image here
+## About
 
-Under "Vertex Groups" click on the plus sign (a "Vertex Group" with the name "Group" (![svg-icon vertex-group-logo]()) will be added) and double-click to rename it (the same name will be needed later for the bone).
+If you want your model to interact with the world and be subject to game physics, Dynamic Objects are just right for the task.
 
-![vertex-group centered]()
+## Start
 
-The next step is to create a bone (`Shift + A` > `Armature` > `Single Bone`).
+You must have a model downloaded or created by you.
 
-![bone-create centered]()
+You must have one UV map per mesh.
 
-To make our model move like the bone in the future, we need to rename the bone to the name that was given to `Vertex Groups`.
+For my example, I'll have a model with this UV map.
 
-![bone-properties centered]()
+Сreate an armature (`Shift + A` > `Armature`).
 
-And rename the bone.
+```admonish tip
+When you create an armature, you may not see the created bone as it is rendered behind the object. To see the bone, go to `Object Data Properties`![Object Data Properties svg-icon](../../assets/icons/blender/armature-data.svg) and in `Viewport Display` -> click the `In Front` checkbox.
+```
 
-![bone-rename centered]()
+```admonish note
+It is important to remember that in X-Ray, the bones act as a place to anchor the collision shape.
+```
 
-Select our object and switch to `Wireframe`![Wireframe svg-icon](../../assets/icons/blender/wire.svg) mode.
-Place the bone approximately in the center of the model.
+Go to `Edit Mode` and name the bone as you wish.
 
-![bone-place]()
+![Creating Armature centered](assets/gifs/setup-dynamic-object-armature-creation.gif)
 
-After that, apply the bone transformations (`Ctrl + A` > `All Transform`).
+## Binding
 
-Select our model and go to the "Modifier Properties" tab.
+Next, we need to bind our model to the bone we created.
 
-![modifier-properties centered]()
+With the Shift key held down, select the model and then the armature.
 
-In the `Modifier Properties` tab, add the `Armature` modifier (Add Modifier > Armature (under Deform)).
+Press `CTRL + P` -> `With Automatic Weights`.
 
-![armature-modif-create centered]()
+![Model Binding centered](assets/gifs/setup-dynamic-object-binding.gif)
 
-The modifier has the following necessary items:
+```admonish tip
+In Blender, there are several choices of binding methods. In this case (where there is a single bone), the method via `With Automatic Weights` is appropriate. For cases where there are more bones, you will most likely need manual binding via `Weight Paint` or other methods.
+```
 
-- Object
-- Bind to Vertex Groups
+## Shape
 
-In the `Object` field, select our bone you can select it with the pipette.
-Also make sure that the checkbox next to `Vertex Groups` is marked.
-These actions allowed us to bond our object and bone, but not yet to the fullest extent.
-
-Next step:
-First select the bone after selecting the model, press `Ctrl + P`. A list appears, select `Deform`
-
-![parenting centered]()
-
-Now you have to set the bone properties for X-Ray.
-
-___
-
-### Bone
-
-Select the bone and go to the `Bone Properties` tab.
-
-![bone-properties-p2 centered]()
+Select the bone and go to the `Bone Properties`![Bone Properties svg-icon](../../assets/icons/blender/bone.svg) tab.
 
 We see the [X-Ray Engine: Bone](../../modding-tools/blender/addon-panels/panel-bone.md) section.
 
-![bone-section centered]()
+![X-Ray Engine: Bone centered](assets/images/x-ray-bone.png)
 
 The desired field is `Shape Type` (where you choose the type of shape (for collision)).
-From the whole list, our object is more suitable for the `Box` type. Let's choose it.
+
+From the whole list, our object is more suitable for the `Cylinder` type. Let's choose it.
+
 Next, click the `Edit Shape` button to check and edit the Shape itself.
-The Shape of the bone appears and it does not match the model.
-The Shape that just appeared is automatically selected and the `Object Properties` tab is selected.
 
-![bone-shape]()
+```admonish tip
+To see `Bone Shapes`, go to `Object Data Properties`![Object Data Properties svg-icon](../../assets/icons/blender/armature-data.svg). In [X-Ray Engine: Armature](../../modding-tools/blender/addon-panels/panel-armature.md) -> `Display Bone Shapes`.
+```
 
-In the same tab we see the `X-Ray Engine: Edit Helper` section with three buttons:
+My model fits quite nicely into the Bone Shape.
 
-- ![svg-icon apply-shape]() Apply Shape (accepts changes to the bone shape)
-- ![svg-icon fit-shape]() Fit Shape (Blender will automatically try to fit the Shape to the size of the object)
-- ![svg-icon close-folder]() Cancel (closes Shape editing mode)
+![Model Bone Shape centered](assets/images/setup-dynamic-object-bone-shape.png)
 
-![edit-helper centered]()
+## Finish
 
-Apply Shape may help in some cases, but not in this one (nothing happens after clicking), so you need to adjust the Shape manually.
-Without going into Edit mode, press "S" and start fitting the Shape to the model. Going through the combinations, changing the shape of the Shape, we finally create an acceptable Shape.
+Go to `Object Properties`.
 
-![bone-shape-p2]()
+In [X-Ray Engine: Object](../../modding-tools/blender/addon-panels/panel-object.md) select `Dynamic` in the `Type` list.
 
-Accept the transformation by clicking on "Apply Shape" (![svg-icon apply-shape]()). Everything will apply and the Shape will disappear.
-To check the correctness of the shape and adjust the center of mass for the bone, go to the "Object Data Properties" (![svg-icon object-data-properties-skeleton-logo]()) panel.
-
-![object-data-properties-panel centered]()
-
-Here we see the [X-Ray Engine: Skeleton](../../modding-tools/blender/addon-panels/panel-armature.md) section and the two buttons we need:
-
-- Display Bone Shape
-- Display Bone Mass Centers
-
-![x-ray-engine-skeleton centered]()
-
-Click on "Display Bone Shape" to check the bone shape
-
-![display-bone-shape]()
-
-And by clicking on "Display Bone Mass Centers" a Cross will appear, from which you can understand where the center of mass is located (its mass and location can be edited in the tab "Bone Properties").
-
-![display-bone-mass centered]()
-
-Go to the `Object Properties` tab.
-Here you will find the `X-Ray Engine: Object" section.
-
-![x-ray-engine-object centered]()
-
-Remember that our object, by design, will be dynamic, so click on the button `Object`, where we select the type `Dynamic`.
-
-## The final stage
-
-To check the model you can go the following ways:
-
-- Load the model into the [SDK](../../modding-tools/sdk/README.md) and check
-- Export the model in [*.ogf](../../reference/file-formats/models/ogf.md) format and add it directly to the game
-- [Check the model and parameters through third-party programs](../../modding-tools/README.md)
+This completes the setup of the Dynamic Object. You can safely export it in the model format you need.

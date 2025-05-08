@@ -1,7 +1,7 @@
-# Configs
+# Configs References
 
 ___
 
 ## About
 
-blah blah
+Configs related

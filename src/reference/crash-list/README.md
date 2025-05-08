@@ -1,6 +1,10 @@
-# Crashes List
+# Crash List References
 
 ___
+
+## About
+
+When working with the X-Ray Engine, various crashes may occur. Here you can find a list of crashes.
 
 ## Error description
 

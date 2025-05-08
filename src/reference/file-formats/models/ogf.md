@@ -1,4 +1,4 @@
-# *.ogf (Open Graphics Format)
+# *.ogf
 
 ___
 

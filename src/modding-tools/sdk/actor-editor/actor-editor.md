@@ -92,15 +92,15 @@ The Actor editor is usually needed to customize objects (NPCs, Objects, etc.)
         <tbody>
           <tr>
             <td>Custom...</td>
-            <td>Custom object preview [In latest available SDK will crash]</td>
+            <td>Custom object preview</td>
           </tr>
           <tr>
             <td>Clear</td>
-            <td>Clear thumbnail [In latest available SDK will crash]</td>
+            <td>Clear thumbnail</td>
           </tr>
           <tr>
             <td>Preference</td>
-            <td>Editors preference [In latest available SDK will crash]</td>
+            <td>Editors preference</td>
           </tr>
         </tbody>
       </table>

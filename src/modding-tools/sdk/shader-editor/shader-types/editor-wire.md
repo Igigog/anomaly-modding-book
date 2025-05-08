@@ -4,7 +4,7 @@ ___
 
 ## About
 
-Wireframe shader
+Wireframe shader in SDK
 
 ## Base Texture
 

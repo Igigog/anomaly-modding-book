@@ -8,7 +8,6 @@ This place will introduce you to the concepts of modding Anomaly, from installin
 
 Choose a chapter from our table of contents and start reading. I recommend starting with:
 
-- [Community Standards](meta/community-standards.md)
 - [Mod Organizer guide](tutorials/getting-started/installing-mo2.md).
 
 If you want to contribute - feel free to send your articles (markdown-formatted) per Discord or learn [ways to contribute](meta/contributing.md).

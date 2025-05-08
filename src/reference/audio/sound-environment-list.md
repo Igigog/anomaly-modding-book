@@ -108,7 +108,7 @@ Contains settings for different sound zones in senvironment.xr file.
     <tbody>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="sounds/identity.html">+</span>
+                <span class="expand-btn" data-source="sounds-list/identity.html">+</span>
                 identity
             </td>
             <td></td>
@@ -124,7 +124,7 @@ Contains settings for different sound zones in senvironment.xr file.
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="sounds/default.html">+</span>
+                <span class="expand-btn" data-source="sounds-list/default.html">+</span>
                 default
             </td>
             <td></td>
@@ -140,7 +140,7 @@ Contains settings for different sound zones in senvironment.xr file.
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="sounds/forest.html">+</span>
+                <span class="expand-btn" data-source="sounds-list/forest.html">+</span>
                 forest
             </td>
             <td></td>
@@ -156,7 +156,7 @@ Contains settings for different sound zones in senvironment.xr file.
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="sounds/house.html">+</span>
+                <span class="expand-btn" data-source="sounds-list/house.html">+</span>
                 house
             </td>
             <td></td>
@@ -172,7 +172,7 @@ Contains settings for different sound zones in senvironment.xr file.
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="sounds/long-corridor.html">+</span>
+                <span class="expand-btn" data-source="sounds-list/long-corridor.html">+</span>
                 long_corridor
             </td>
             <td></td>
@@ -188,7 +188,7 @@ Contains settings for different sound zones in senvironment.xr file.
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="sounds/mountains.html">+</span>
+                <span class="expand-btn" data-source="sounds-list/mountains.html">+</span>
                 mountains
             </td>
             <td></td>
@@ -204,7 +204,7 @@ Contains settings for different sound zones in senvironment.xr file.
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="sounds/open-space.html">+</span>
+                <span class="expand-btn" data-source="sounds-list/open-space.html">+</span>
                 open_space
             </td>
             <td></td>
@@ -220,7 +220,7 @@ Contains settings for different sound zones in senvironment.xr file.
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="sounds/plant.html">+</span>
+                <span class="expand-btn" data-source="sounds-list/plant.html">+</span>
                 plant
             </td>
             <td></td>
@@ -236,7 +236,7 @@ Contains settings for different sound zones in senvironment.xr file.
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="sounds/room.html">+</span>
+                <span class="expand-btn" data-source="sounds-list/room.html">+</span>
                 room
             </td>
             <td></td>
@@ -252,7 +252,7 @@ Contains settings for different sound zones in senvironment.xr file.
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="sounds/yard.html">+</span>
+                <span class="expand-btn" data-source="sounds-list/yard.html">+</span>
                 yard
             </td>
             <td></td>

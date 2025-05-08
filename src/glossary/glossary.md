@@ -242,13 +242,9 @@ Contains descriptions of various S.T.A.L.K.E.R. related terms used in modding an
     <td>Sound Occluder Mesh</td>
     <td>Geometry for calculating sound propagation.</td>
   </tr>
-  <tr id="hierarchical-occlusion-mapping">
-    <td>Hierarchical Occlusion Mapping</td>
-    <td>Technique used in computer graphics to efficiently control the rendering of scene objects, especially in 3D applications. It builds a hierarchical structure to determine which objects or parts of the scene can be hidden from the camera by other objects, thus reducing the amount of computation required for rendering. This improves performance by avoiding rendering invisible objects.</td>
-  </tr>
     <tr id="custom-data">
     <td>Custom Data</td>
-    <td>Parameters (in *.ltx format) written directly into the object.</td>
+    <td>Parameters (in <a href="../reference/file-formats/conf-script/ltx.md">*.ltx</a> format) written directly into the object.</td>
   </tr>
 </tbody>
 </table>

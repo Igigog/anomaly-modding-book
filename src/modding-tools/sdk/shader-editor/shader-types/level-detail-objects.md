@@ -4,7 +4,7 @@ ___
 
 ## About
 
-Designed for detailed objects like grass. Supports alpha channel dissolution
+Designed for Detail Objects. Supports alpha channel dissolution
 
 ## Base Texture
 

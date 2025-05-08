@@ -8,7 +8,7 @@ ___
 |---|---|
 | Program Developer | K.D. |
 | Described Version | 0.2 |
-| Discussion Forum | [Official Site](https://www.amk-team.ru/forum/topic/11568-universal-acdc-i-drugie-perl-skripty/) |
+| Discussion Forum | [AMK Forum](https://www.amk-team.ru/forum/topic/11568-universal-acdc-i-drugie-perl-skripty/) |
 
 ___
 

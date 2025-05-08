@@ -17,6 +17,6 @@ The SDK includes the following editors:
 - [Light Animations Editor](light-animations-editor/light-animations-editor.md)
 - [Minimap Editor](minimap-editor/minimap-editor.md)
 - [Particle Editor](particle-editor/particle-editor.md)
-- [Postprocess Editor](postprocess-editor/postprocess-editor.md)
+- Postprocess Editor
 - [Shader Editor](shader-editor/shader-editor.md)
 - [Sound Editor](sound-editor/sound-editor.md)

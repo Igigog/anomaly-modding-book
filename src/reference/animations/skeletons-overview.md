@@ -119,7 +119,7 @@ ___
     <tbody>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="skeletons/human.html">+</span>
+                <span class="expand-btn" data-source="skeletons-list/human.html">+</span>
                 Human
             </td>
             <td>Human skeleton. Used for stalkers.</td>
@@ -135,7 +135,7 @@ ___
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="skeletons/bloodsucker.html">+</span>
+                <span class="expand-btn" data-source="skeletons-list/bloodsucker.html">+</span>
                 Bloodsucker
             </td>
             <td>Bloodsucker skeleton.</td>
@@ -151,7 +151,7 @@ ___
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="skeletons/boar.html">+</span>
+                <span class="expand-btn" data-source="skeletons-list/boar.html">+</span>
                 Boar
             </td>
             <td>Boar skeleton.</td>
@@ -167,7 +167,7 @@ ___
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="skeletons/burer.html">+</span>
+                <span class="expand-btn" data-source="skeletons-list/burer.html">+</span>
                 Burer
             </td>
             <td>Burer skeleton.</td>
@@ -183,7 +183,7 @@ ___
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="skeletons/cat.html">+</span>
+                <span class="expand-btn" data-source="skeletons-list/cat.html">+</span>
                 Cat
             </td>
             <td>Cat skeleton.</td>
@@ -199,7 +199,7 @@ ___
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="skeletons/chimera.html">+</span>
+                <span class="expand-btn" data-source="skeletons-list/chimera.html">+</span>
                 Chimera
             </td>
             <td>Chimera skeleton.</td>
@@ -215,7 +215,7 @@ ___
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="skeletons/controller.html">+</span>
+                <span class="expand-btn" data-source="skeletons-list/controller.html">+</span>
                 Controller
             </td>
             <td>Controller skeleton.</td>
@@ -231,7 +231,7 @@ ___
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="skeletons/crow.html">+</span>
+                <span class="expand-btn" data-source="skeletons-list/crow.html">+</span>
                 Crow
             </td>
             <td>Crow skeleton.</td>
@@ -247,7 +247,7 @@ ___
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="skeletons/dog.html">+</span>
+                <span class="expand-btn" data-source="skeletons-list/dog.html">+</span>
                 Dog
             </td>
             <td>Dog skeleton.</td>
@@ -263,7 +263,7 @@ ___
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="skeletons/flesh.html">+</span>
+                <span class="expand-btn" data-source="skeletons-list/flesh.html">+</span>
                 Flesh
             </td>
             <td>Flesh skeleton.</td>
@@ -279,7 +279,7 @@ ___
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="skeletons/hud.html">+</span>
+                <span class="expand-btn" data-source="skeletons-list/hud.html">+</span>
                 hud
             </td>
             <td>Hud skeleton.</td>

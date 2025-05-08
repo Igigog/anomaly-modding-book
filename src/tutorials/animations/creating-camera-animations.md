@@ -12,7 +12,7 @@ ___
 ## Creating animations
 
 1. Create or enter a Blender scene.
-2. In the N-panel in the X-Ray panel in the Add rollout, click on the "Add X-Ray Camera" button.
+2. In the N-panel in the X-Ray panel in the [Add](../../modding-tools/blender/addon-n-panels/n-panel-add.md) rollout, click on the [Add X-Ray Camera](../../modding-tools/blender/addon-operators/operator-add-x-ray-camera.md) button.
 3. Choose a empty object
 4. Animate it
 

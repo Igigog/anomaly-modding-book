@@ -9,7 +9,6 @@
 - [Contributing](meta/contributing.md)
   - [Book Structure](meta/book-structure.md)
   - [Book Style Sheet](meta/book-style-sheet.md)
-- [Community Standards](meta/community-standards.md)
 - [Acknowledgements](meta/acknowledgements.md)
 
 ---
@@ -185,36 +184,18 @@
       - [HUD](reference/configs/items/weapons/weapon-hud.md)
         - [HUD Animations](reference/animations/hud-animations-weapons.md)
       - [Sounds](reference/configs/items/weapons/weapon-sounds.md)
-    - [Grenade](reference/configs/items/weapons/grenade.md)
     - [Ammo](reference/configs/items/weapons/weapon-ammo.md)
     - [Outfits](reference/configs/items/outfits/outfit.md)
     - [Trade](reference/configs/items/trade/trade.md)
-  - [Creatures](reference/configs/creatures/README.md)
-    - [Mutants](reference/configs/creatures/mutants/mutant-general.md)
-      - [Bloodsucker](reference/configs/creatures/mutants/bloodsucker.md)
-      - [Burer](reference/configs/creatures/mutants/burer.md)
-      - [Cat](reference/configs/creatures/mutants/cat.md)
-      - [Chimera](reference/configs/creatures/mutants/chimera.md)
-      - [Controller](reference/configs/creatures/mutants/controller.md)
-      - [Crow](reference/configs/creatures/mutants/crow.md)
-      - [Dog](reference/configs/creatures/mutants/dog.md)
-      - [Phantom](reference/configs/creatures/mutants/phantom.md)
-      - [Poltergeist](reference/configs/creatures/mutants/poltergeist.md)
-      - [Psevdogaint](reference/configs/creatures/mutants/psevdogaint.md)
-      - [Snork](reference/configs/creatures/mutants/snork.md)
-      - [Zombie](reference/configs/creatures/mutants/zombie.md)
-    - [Stalkers](reference/configs/creatures/stalker.md)
-  - [Fluids](reference/configs/fluid/fluid-overview.md)
-    - [Fluid Volume](reference/configs/fluid/fluid-volume.md)
-    - [Fluid Emmiter](reference/configs/fluid/fluid-emmiter.md)
+  - [Fluids](reference/configs/fluids/fluid-overview.md)
+    - [Fluid Volume](reference/configs/fluids/fluid-volume.md)
+    - [Fluid Emmiter](reference/configs/fluids/fluid-emmiter.md)
 
 - [Models](reference/models/README.md)
   - [Smoothing](reference/models/smoothing.md)
 
 - [Animations](reference/animations/README.md)
   - [Skeletons Overview](reference/animations/skeletons-overview.md)
-
-- [Engine Shaders List](reference/shaders/shaders-list/engine-shaders-list.md)
 
 - [Compiler Shaders List](reference/shaders/shaders-list/compiler-shaders-list.md)
 
@@ -228,7 +209,6 @@
 
 - [Engine Overview](engine/README.md)
   - [X-Ray Coordinate System](engine/xray-coordinate-system.md)
-  - [Engine Classes](engine/engine-classes.md)
 - [Console Commands](engine/console-commands/general-game-console-commands.md)
   - [Control](engine/console-commands/control-commands.md)
   - [Demo Record](engine/console-commands/demo-record-commands.md)
@@ -319,7 +299,6 @@
       - [MODEL: env^base](modding-tools/sdk/shader-editor/shader-types/model-env-base.md)
       - [particles](modding-tools/sdk/shader-editor/shader-types/particles.md)
   - [Sound Editor](modding-tools/sdk/sound-editor/sound-editor.md)
-  - [Postprocess Editor](modding-tools/sdk/postprocess-editor/postprocess-editor.md)
   - [Particle Editor](modding-tools/sdk/particle-editor/particle-editor.md)
     - [Left Bar Window](modding-tools/sdk/particle-editor/windows/left-bar.md)
     - [Right Bar Window](modding-tools/sdk/particle-editor/windows/right-bar.md)

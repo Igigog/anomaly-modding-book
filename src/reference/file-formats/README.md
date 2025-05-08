@@ -1,4 +1,4 @@
-# File Formats
+# File Formats References
 
 ___
 
@@ -103,7 +103,7 @@ ___
 | Extension | Description |
 |---|---|
 | [*.db](../file-formats/archives-resource-packs/db.md) | archive of game resources. Used in late builds and the final version of the game, has several options (db."number", db."letter"). |
-| [*.xr](../file-formats/archives-resource-packs/xr.md) | resource library. Contains resources such as particles, [Engine Shaders](../shaders/shaders-list/engine-shaders-list.md), [Compile Shaders](../shaders/shaders-list/compiler-shaders-list.md). in a packed format. |
+| [*.xr](../file-formats/archives-resource-packs/xr.md) | resource library. Contains resources such as particles, Engine Shaders, [Compile Shaders](../shaders/shaders-list/compiler-shaders-list.md). in a packed format. |
 
 ___
 
@@ -116,7 +116,7 @@ ___
 | [*.prj](../file-formats/game-levels/prj.md) | Level precompilation file |
 | [*.ai](../file-formats/game-levels/ai.md) | AI location grid. Created during compilation |
 | [*.cform](../file-formats/game-levels/cform.md) | Geometry for calculating collisions. Calculated by the level compiler. Contains a solid map structure. All tangible objects with materials live here. Because of this, the game knows with what sound and property objects should react when they are hit by bullets or walked on |
-| [*.details](../file-formats/game-levels/details.md) | Detailed objects (grass, cigarette butts, construction debris) on the level. Created through LevelEditor SDK at compile time. |
+| [*.details](../file-formats/game-levels/details.md) | Detail Objects (grass, cigarette butts, construction debris) on the level. Created through LevelEditor SDK at compile time. |
 | [*.env_mod](../file-formats/game-levels/env_mod.md) | local environment modifiers (environment), set areas on the location with lighting different from the main weather cycle. |
 | [*.fog_vol](../file-formats/game-levels/fog_vol.md) | Volumetric fog |
 | [*.game](../file-formats/game-levels/game.md) | Coordinates of the player's spawn in the multiplayer game. Outdated file. |

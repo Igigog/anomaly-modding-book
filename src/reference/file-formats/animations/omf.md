@@ -1,4 +1,4 @@
-# *.omf (Open Motions Format)
+# *.omf
 
 ___
 

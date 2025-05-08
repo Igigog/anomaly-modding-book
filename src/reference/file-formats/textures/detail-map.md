@@ -10,7 +10,7 @@ ___
 
 ## Technical information
 
-The same as the [*.dds](dds.md). But overlaid on top of an existing texture, for more detail
+Overlaid on top of an existing texture, for more detail
 
 ___
 

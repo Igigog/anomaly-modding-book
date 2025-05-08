@@ -24,75 +24,75 @@ ___
     <td rowspan="18">Type</td>
     <td rowspan="18">Shader type</td>
     <td><a href="../shader-types/basic-simple.md">basic (simple)</a></td>
-    <td></td>
+    <td>A basic shader, with a wide range of features. Supports transformation, different types of blending, adjusting the effect of lighting on it and Z-buffering. Used for most effects, such as glow</td>
   </tr>
   <tr>
     <td><a href="../shader-types/editor-selection.md">EDITOR: selection</a></td>
-    <td></td>
+    <td>Designed to display object selection in the SDK</td>
   </tr>
   <tr>
     <td><a href="../shader-types/editor-wire.md">EDITOR: wire</a></td>
-    <td></td>
+    <td>Wireframe shader in SDK</td>
   </tr>
   <tr>
     <td><a href="../shader-types/internal-blur.md">INTERNAL: blur</a></td>
-    <td></td>
+    <td>Blur effect</td>
   </tr>
   <tr>
     <td><a href="../shader-types/internal-gray-scale-effect.md">INTERNAL: gray-scale effect</a></td>
-    <td></td>
+    <td>Discoloration effect</td>
   </tr>
   <tr>
     <td><a href="../shader-types/internal-shadow-projecting.md">INTERNAL: shadow projecting</a></td>
-    <td></td>
+    <td>General shadow projection</td>
   </tr>
   <tr>
     <td><a href="../shader-types/level-detail-objects.md">LEVEL: detail objects</a></td>
-    <td></td>
+    <td>Designed for Detail Objects. Supports alpha channel dissolution</td>
   </tr>
   <tr>
     <td><a href="../shader-types/level-diffuse-base-aref.md">LEVEL: diffuse*base.aref</a></td>
-    <td></td>
+    <td>A shader designed to apply vertex lighting to geometry to which alpha channel textures are assigned</td>
   </tr>
   <tr>
     <td><a href="../shader-types/level-diffuse-base.md">LEVEL: diffuse*base</a></td>
-    <td></td>
+    <td>A shader designed to apply vertex lighting to the geometry that will use it</td>
   </tr>
   <tr>
     <td><a href="../shader-types/level-implicit-detail.md">LEVEL: implicit**detail</a></td>
-    <td></td>
+    <td>Allows to apply several types of detail map to the main texture, supports mask technology</td>
   </tr>
   <tr>
     <td><a href="../shader-types/level-lmap-base-aref.md">LEVEL: lmap*base.aref</a></td>
-    <td></td>
+    <td>A shader designed to apply lightmap lighting to geometry to which alpha channel textures are assigned</td>
   </tr>
   <tr>
     <td><a href="../shader-types/level-lmap-base-default.md">LEVEL: lmap*base (default)</a></td>
-    <td></td>
+    <td>Default Lightmap shader type. This shader type is used in most of the geometry in the game. It can use tessellation</td>
   </tr>
   <tr>
     <td><a href="../shader-types/level-lmap-env-base.md">LEVEL: lmap*(env^base)</a></td>
-    <td></td>
+    <td>Lightmap type of shader with a feature set such as Environment map and Alpha-Blend</td>
   </tr>
   <tr>
     <td><a href="../shader-types/level-lmap-env-const-base.md">LEVEL: (lmap+env*const)*base</a></td>
-    <td></td>
+    <td>A type of shader with a wide range of functions. Through it you can transform ID0 textures, assign Environment map to them and customize them, with changing RGBA constants</td>
   </tr>
   <tr>
     <td><a href="../shader-types/level-trees-bushes.md">LEVEL: trees/bushes</a></td>
-    <td></td>
+    <td>A type of shader for flora and LOD.  Supports alpha channel</td>
   </tr>
   <tr>
     <td><a href="../shader-types/model-default.md">MODEL: Default</a></td>
-    <td></td>
+    <td>Default shader for Dynamic Object. Supports alpha channel and tessellation</td>
   </tr>
   <tr>
     <td><a href="../shader-types/model-env-base.md">MODEL: env^base</a></td>
-    <td></td>
+    <td>Similar to LEVEL: lmap*(env^base), only for Dynamic Objects</td>
   </tr>
   <tr>
     <td><a href="../shader-types/particles.md">particles</a></td>
-    <td></td>
+    <td>Practically identical to basic (simple), except that it does not support a certain set of functions that are needed only for Static Object</td>
   </tr>
   <tr>
     <td>Owner</td>
@@ -211,7 +211,7 @@ ___
   </tr>
   <tr>
     <td>Liquid</td>
-    <td>Устанвливает материал как жидкость (для чего?)</td>
+    <td>Flags the material as a liquid (?)</td>
   </tr>
   <tr>
     <td>Suppress Shadows</td>
@@ -223,7 +223,7 @@ ___
   </tr>
   <tr>
     <td>Actor Obstacle</td>
-    <td>Форсирование включенние коллизии (?)</td>
+    <td>Forcing collision inclusion (?)</td>
   </tr>
   <tr>
     <td>Bullet No Ricoshet</td>
@@ -259,7 +259,7 @@ ___
   </tr>
   <tr>
     <td>Injurious</td>
-    <td>Скорость Ранения при касании?</td>
+    <td>Speed of wound on touch (?)</td>
   </tr>
   <tr>
     <td>Shooting (1-went through)</td>

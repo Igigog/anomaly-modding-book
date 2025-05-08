@@ -87,7 +87,7 @@ Versions of the SDK tools may differ depending on the version of the SDK itself
 - Dialog Editor
 - [Level Editor](sdk/level-editor/level-editor.md)
 - [Particle Editor](sdk/particle-editor/particle-editor.md)
-- [Postprocess Editor](sdk/postprocess-editor/postprocess-editor.md)
+- Postprocess Editor
 - [ShaderEditor](sdk/shader-editor/shader-editor.md)
 - xrLC_net - Level compiler by machines connected to a local network
 
