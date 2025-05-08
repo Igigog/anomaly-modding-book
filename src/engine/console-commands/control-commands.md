@@ -3,7 +3,7 @@
 ___
 
 | Command | Command description | Command's argument | Note |
-|---|---|:---:|---|
+|---|---|---|---|
 | bind | Assign a command to the button | Action, key prefixed with k (kLeft, etc.) | - |
 | mouse_invert | Inverts the mouse | 'on/off' or '1/0' | - |
 | mouse_sens | Mouse sensitivity | 0.001 - 0.600 | - |

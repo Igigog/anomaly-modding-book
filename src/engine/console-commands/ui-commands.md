@@ -3,7 +3,7 @@
 ___
 
 | Command | Command description | Command's argument | Note |
-|---|---|:---:|---|
+|---|---|---|---|
 | cl_dynamiccrosshair | Dynamic crosshair | 'on/off' or '1/0' | - |
 | g_crosshair_color | Changes the color of the crosshair | (0 - 255, 0 - 255, 0 - 255, 0 - 255) | Argument is taken in [RGBA](https://en.wikipedia.org/wiki/RGBA_color_model) format<br> <br>First value (0 - 255) - Red</br> Second value (0 - 255) - Green<br> Third value (0 - 255) - Blue<br> Fourth value (0 - 255) - Alpha |
 | g_feel_grenade | "Sensitivity" grenade | 'on/off' or '1/0' | - |
@@ -13,6 +13,6 @@ ___
 
 ## UI Debug
 
-| Command | Command description | Command's argument | Note |
-|---|---|:---:|---|
-| show_wnd_rect_all | Toggle borders of ui elements |  | - |
+| Command | Command description | Command's argument |
+|---|---|---|
+| show_wnd_rect_all | Toggle borders of ui elements |  |

@@ -81,7 +81,7 @@
                 "install",
                 "mdbook-admonish",
                 "mdbook-mermaid",
-                "mdbook-linkcheck"
+                "mdbook-linkcheck2"
             ],
             "group": {
                 "kind": "build",

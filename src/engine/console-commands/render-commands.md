@@ -3,7 +3,7 @@
 ___
 
 | Command | Command description | Command's argument |
-|---|---|:---:|
+|---|---|---|
 | renderer | Render type (old) | - |
 | rs_vis_distance | Visibility range | 0.400 - 1.500 |
 | r__actor_shadow | Player shadow | 'on/off' or '1/0' |
@@ -45,25 +45,25 @@ ___
 ## Brightness-Contrast-Gamma
 
 | Command | Command description | Command's argument | Note |
-|---|---|:---:|---|
+|---|---|---|---|
 | rs_c_brightness | Brightness | 0.500 - 1.500 | - |
 | rs_c_contrast | Contrast | 0.500 - 1.500 | - |
 | rs_c_gamma | Gamma | 0.500 - 1.500 | Not working |
 
 ## General Render Debug
 
-| Command | Command description | Command's argument | Note |
-|---|---|:---:|---|
-| vid_bpp |  |  |  |
-| build_ssa |  | - |  |
-| r__lsleep_frames |  | 4.0 - 30.0 |  |
-| r__ssa_glod_start |  | 128 - 512 |  |
-| r__ssa_glod_end |  | 16 - 96 |  |
-| r__wallmark_shift_pp |  | 0.0 - 1.0 |  |
-| r__wallmark_shift_v |  | 0.0 - 1.0 |  |
-| r__detail_l_ambient |  | 0.5 - 0.95 |  |
-| r__detail_l_aniso |  | 0.1 - 0.5 |  |
-| r__d_tree_w_amp |  | 0.001 - 1.0 |  |
-| r__d_tree_w_rot |  | 0.01 - 0.5 |  |
-| r__d_tree_w_speed |  | 1.0 - 10.0 |  |
-| r__d_tree_wave |  |  |  |
+| Command | Command description | Command's argument |
+|---|---|---|
+| vid_bpp |  |  |
+| build_ssa |  | - |
+| r__lsleep_frames |  | 4.0 - 30.0 |
+| r__ssa_glod_start |  | 128 - 512 |
+| r__ssa_glod_end |  | 16 - 96 |
+| r__wallmark_shift_pp |  | 0.0 - 1.0 |
+| r__wallmark_shift_v |  | 0.0 - 1.0 |
+| r__detail_l_ambient |  | 0.5 - 0.95 |
+| r__detail_l_aniso |  | 0.1 - 0.5 |
+| r__d_tree_w_amp |  | 0.001 - 1.0 |
+| r__d_tree_w_rot |  | 0.01 - 0.5 |
+| r__d_tree_w_speed |  | 1.0 - 10.0 |
+| r__d_tree_wave |  |  |

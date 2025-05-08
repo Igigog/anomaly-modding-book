@@ -7,7 +7,7 @@ DirectX 9.0c - (Shader Model 3.0)
 ```
 
 | Command | Command description | Command's argument | Note |
-|---|---|:---:|---|
+|---|---|---|---|
 | r2_aa | "Pseudo-smoothing" on dynamic lighting | 'on/off' or '1/0' | - |
 | r2_aa_break | Distance at which the "Pseudo-smoothing" effect works | 0.000000e+00, 0.000000e+00, 0.000000e+00 - 1.000000e+00, 1.000000e+00, 1.000000e+00 | - |
 | r2_aa_kernel | The basic value of the "Pseudo-smoothing" effect | 0.300 - 0.700 | - |
@@ -107,14 +107,14 @@ DirectX 9.0c - (Shader Model 3.0)
 
 ## R2 Debug
 
-| Command | Command description | Command's argument | Note |
-|---|---|:---:|---|
-| r2_use_nvdbt |  | - |  |
-| r2_mt |  | - |  |
-| r2_dhemi_count |  | 4 - 25 |  |
-| r2_dhemi_sky_scale |  | 0.0 - 100.0 |  |
-| r2_dhemi_light_scale |  | 0.0 - 100.0 |  |
-| r2_dhemi_light_flow |  | 0.0 - 1.0 |  |
-| r2_dhemi_smooth |  | 0.0 - 10.0 |  |
-| rs_hom_depth_draw |  | 'on/off' or '1/0' |  |
-| r2_shadow_cascede_zcul |  | 'on/off' or '1/0' |  |
+| Command | Command description | Command's argument |
+|---|---|---|
+| r2_use_nvdbt |  | - |
+| r2_mt |  | - |
+| r2_dhemi_count |  | 4 - 25 |
+| r2_dhemi_sky_scale |  | 0.0 - 100.0 |
+| r2_dhemi_light_scale |  | 0.0 - 100.0 |
+| r2_dhemi_light_flow |  | 0.0 - 1.0 |
+| r2_dhemi_smooth |  | 0.0 - 10.0 |
+| rs_hom_depth_draw |  | 'on/off' or '1/0' |
+| r2_shadow_cascede_zcul |  | 'on/off' or '1/0' |

@@ -1,4 +1,4 @@
-# Scripted animations
+# Scripted Animations
 
 ____
 

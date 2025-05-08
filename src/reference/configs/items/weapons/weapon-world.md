@@ -1,4 +1,4 @@
-# w_*Weapon*.ltx \_world Config File
+# Weapon World Config File
 
 ___
 
@@ -118,18 +118,18 @@ ___
 | hit_impulse | The force that the flying bullet transmits to the victim affects the ragdoll-body behavior | 34 | The more, the farther the body will fly away |
 | hit_power | damage dealt | 0.58, 0.58, 0.58, 0.58 | Specifies a value for the level of difficulty in descending order, i.e. from master to beginner |
 | hit_type | Type of damage inflicted; used to calculate damage; armor suits (and others) are set to be immune to each type of damage separately | fire_wound | burn<br> light_burn<br> shock<br> strike<br> wound - stabbing<br> radiation<br> telepatic<br> fire_wound - fire damage<br> chemical_burn<br> explosion - shrapnel damage<br> wound_2 - cutting<br> |
-| fire_distance | effective range of the shot after which the bullet disappears | 900 | Specified in meters |
-| bullet_speed | initial bullet speed | 715 | Specified in meters per second |
-| rpm | Shooting speed | 600 | Specifies the number of shots per minute |
+| fire_distance | Effective range of the shot after which the bullet disappears | 900 | Specified in meters |
+| bullet_speed | Initial bullet speed | 715 | Specified in meters per second |
+| rpm | Rounds per minute | 600 | Specifies the number of shots per minute |
 | rpm_mode_2 |  |  |  |
 | rpm_anim_fix | New shot animation behavior | true | true - 1 - on (Yes)<br> false - 0 - off (No) |
 | rpm_empty_click | Misfire/empty magazine sound frequency | 200 |  |
-| fire_dispersion_base | The dispersion (angle of the bullets) introduced by the weapon; affects accuracy; added to the disp_base in actor.ltx | 0.45 | Specified in degrees |
-| PDM_disp_accel_factor | Multiplier by which fire_dispersion_base is multiplied when the protagonist runs | 2.5 | Specified in numbers |
-| PDM_disp_base | Multiplier by which fire_dispersion_base is multiplied when the protagonist is standing at full height | 1.15 | Specified in numbers |
-| PDM_disp_crouch | Multiplier by which fire_dispersion_base is multiplied when the protagonist goes crouched | 1.0 | Specified in numbers |
-| PDM_disp_crouch_no_acc | Multiplier by which fire_dispersion_base is multiplied when the protagonist stands still while ducking | 1.0 | Specified in numbers |
-| PDM_disp_vel_factor | Multiplier by which fire_dispersion_base is multiplied when the protagonist spins a weapon or runs | 2.5 | Specified in numbers |
+| fire_dispersion_base | The dispersion (angle of the bullets) introduced by the weapon; affects accuracy; added to the `disp_base` in `actor.ltx` | 0.45 | Specified in degrees |
+| PDM_disp_accel_factor | Multiplier by which `fire_dispersion_base` is multiplied when the protagonist runs | 2.5 | Specified in numbers |
+| PDM_disp_base | Multiplier by which `fire_dispersion_base` is multiplied when the protagonist is standing at full height | 1.15 | Specified in numbers |
+| PDM_disp_crouch | Multiplier by which `fire_dispersion_base` is multiplied when the protagonist goes crouched | 1.0 | Specified in numbers |
+| PDM_disp_crouch_no_acc | Multiplier by which `fire_dispersion_base` is multiplied when the protagonist stands still in a crouch | 1.0 | Specified in numbers |
+| PDM_disp_vel_factor | Multiplier by which `fire_dispersion_base` is multiplied when the protagonist spins a weapon or runs | 2.5 | Specified in numbers |
 
 #### Ammo
 

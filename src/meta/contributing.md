@@ -81,22 +81,22 @@ Or
 1. Download and install [Rust](https://www.rust-lang.org/tools/install)
 2. Install the following dependencies:
 
-- Preprocessor for mdbook to add Material Design admonishments
+- Preprocessor for mdBook to add Material Design admonishments
 
     ```bash
     cargo install mdbook-admonish
     ```
 
-- Preprocessor for mdbook to add mermaid support
+- Preprocessor for mdBook to add mermaid support
 
     ```bash
     cargo install mdbook-mermaid
     ```
 
-- (Optional) Backend for mdbook which will check your links for you
+- (Optional) Backend for mdBook which will check your links for you
 
     ```bash
-    cargo install mdbook-linkcheck
+    cargo install mdbook-linkcheck2
     ```
 
 #### Running local copy
