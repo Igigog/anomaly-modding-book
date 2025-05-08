@@ -12,17 +12,17 @@ To launch the Level Editor, we have to launch one of the .bat files which is inc
 
 ![IX-Ray SDK launchers](images/ix-ray-sdk-launchers.png)
 
-**It should look like this after opening the Level Editor for the first time!**
+It should look like this after opening the Level Editor for the first time!
 
 ![IX-Ray SDK insides](images/level-editor-ix-ray.png)
 
-**After the Level Editor has launched, it may look scary at first, but the IX-Ray Level Editor supports draggable windows, so you can drag them to your liking, including properties per window.**
+After the Level Editor has launched, it may look scary at first, but the IX-Ray Level Editor supports draggable windows, so you can drag them to your liking, including properties per window.
 
 ![IX-Ray SDK insides 2](images/level-editor-ix-ray-2.png)
 
-**It's very confusing when you're using the Level Editor for the first time ever, but you'll get the hang of it after using it for a while.**
+It's very confusing when you're using the Level Editor for the first time ever, but you'll get the hang of it after using it for a while.
 
-## Level Editor basics
+## Level Editor Basics
 
 After adjusting the windows, I'll explain what each window does in depth and what purpose it serves, but firstly, we have to learn the basics of the SDK.
 
@@ -36,6 +36,134 @@ After adjusting the windows, I'll explain what each window does in depth and wha
 
 Now that we know how to move around in the Level Editor, I'll talk about the SDK windows and what do they do.
 
+Firstly, I'll explain the things that are located in the top toolbar by order.
+
+The **File** tab has basic needs for opening or saving levels, or opening recent levels.
+
+The **Scene** tab has a lot of buttons, but most are self-explanatory, but I'll explain what each one of them does.
+
+* World Properties - enabling it will show the world properties of a level, such as build quality, basic information about the level, and more.
+
+* Export Archive - exports the level into an archive (it can take a long time depending how complex the level is).
+
+* Validate - checks the level for discrepancies and/or errors.
+
+* Summary Info - summarizes the whole level. 
+
+* Highlight Texture - highlights textures in the level.
+
+* Clear Debug Draw - clears the debug draw list.
+
+* Export Entire Scene as Obj - exports the whole level geometry in .obj format.
+
+* Export Selection as Obj - exports ONLY selected objects in .obj format.
+
+The **Compile** window has buttons which are used for building and/or compiling a level (using the built-in SDK compilers).
+
+![Compile window](images/compile-parameters.png)
+
+* Make - used for building an entire level or only parts of it, it has subwindows which have more buttons and shortcuts.
+
+![Building parameters](images/compile-make-parameters.png)
+
+* Make All - builds the geometry, spawn elements, the AI, everything in the level.
+
+* Make Game - builds the spawn elements in the level.
+
+* Make Puddles - IX-Ray Engine exclusive, this is not used, nor does it work in Anomaly.
+
+* Make Details - builds detail objects in the level, which is usually grass and other stuff if it's used.
+
+* Make HOM - builds .hom (Hierarchical Occlusion Mapping) objects if the level has them, it is used for optimization.
+
+* Make SOM - builds .som (Sound Occlusion Mapping) objects if the level has them, it is used to calculate sound propagation.
+
+* Make AI-Map - builds the AI grid in the level.
+
+That is all that's in the **Make** subwindow, now moving onto the **Compile** subwindow.
+
+![Compiling parameters](images/compiling-prameters.png)
+
+* Geometry & Light - compiles the static geometry with lighting in the level.
+
+* Detail Object Light - compiles the detail objects with lighting in the level.
+
+There are two subwindows inside which are **AI-Map** and **Spawn**, I'm gonna explain the **AI-Map** subwindow.
+
+![Compiling AI-Map](images/compile-ai-map.png)
+
+The "High" and "Low" sound confusing, but they're actually quality settings for the AI-Map.
+
+* High - compiles the AI-Map in standard quality.
+
+* Low - compiles the AI-Map in draft quality (useful for testing and saving computation time, do not use it on the final build of your level).
+
+* Verify - verifies the compiled AI-Map if the level has it, it's used to check for discrepancies in the AI grid.
+
+That is all for the **AI-Map** subwindow, I'm gonna explain the **Spawn** subwindow.
+
+![Compiling spawn elements](images/compile-spawns.png)
+
+* Only Current Level - compiles spawn elements ONLY for the current level you are editing.
+
+* All levels - compiles spawn elements for all levels into one big all.spawn file (I'll explain what's that later).
+
+That's all for the **Spawn** subwindow and the **Compile** window, now I'm gonna talk about the **Objects** window.
+
+![Objects buttons](images/objects-buttons.png)
+
+* Library Editor - it is used for editing parameters of a static object and for generating LODs, primarily on trees to save performance.
+
+Clicking on the **Library Editor** opens the **Object Libary** (the main UI) and another **Render** instance, and it looks like this.
+
+![Object Library and Render](images/object-libary-and-render.png)
+
+A lot of the buttons are self-explanatory so there's no need for me to explain them.
+
+* Multi Rename - renames multiple static objects at once.
+
+* Multi Replace - allows you to change the reference of a static object and replacing it with a new one, it is extremely useful.
+
+That is all for the **Objects** window, now I'm gonna talk about the **Images** window.
+
+![Image window](images/image-window.png)
+
+* Image Editor - allows us to edit the parameters of all textures in the gamedata folder, it takes info from .thm files. It looks like this.
+
+![Image editor](images/image-editor.png)
+
+Most of the parameters should be familiar to those who have worked with textures before, but I'll explain the important ones.
+
+**Format** - recompresses the texture into the format the user chose and updates .thm file info.
+
+**Details** - additional parameters for the texture that affects how it looks in-game, and those are:
+
+**Use As Diffuse** (uses the color of the detail texture into the main texture)
+
+**Use As Bump** (R2 - DX9 renderers, same thing from the **Use As Diffuse**, but for bump maps).
+
+**Texture** - defines what texture will be used as the detail texture for the main texture.
+ 
+**Scale** - defines how far will the detail texture tile along with the main texture.
+
+**Material** - additional parameters for the texture.
+
+**Base** - allows us to control the texture's shading bases.
+
+**Weight** - it is used to determine how smooth will the texture blend with another texture, mainly used for ground textures on the terrain.
+
+**Fade** and **Border** tabs are similar to mipmaps, but have their own use, most textures don't use them and leave them untouched.
+
+That is all for the tools in the top toolbar, now I'm gonna explain the ones in the **Render** window.
+
+To un-do and re-do actions we've made, we can do so by clicking either one of these buttons that's located in the main toolbar.
+
+![IX-Ray SDK undo and redo](images/undo-redo.png)
+
+To clear or open a new scene, we can do so by clicking this button.
+
+![IX-Ray SDK scenes](images/open-clear-scene.png)
+
 To adjust the SDK's keybinding, its FOV, and a lot of other stuff, we have to open the "Preferences" tab which is located on the main toolbar.
 
 ![IX-Ray SDK Level Editor preferences](images/editor-preferences.png)
@@ -44,15 +172,7 @@ To see the log while using the Level Editor, hover your mouse to the "Windows" t
 
 ![IX-Ray SDK windows tab](images/windows-tab.png)
 
-To undo and redo actions we've made, we can do so by clicking either one of these buttons that's located on the main toolbar.
-
-![IX-Ray SDK undo and redo](images/undo-redo.png)
-
-To clear or open a new scene, we can do so by clicking this button.
-
-![IX-Ray SDK scenes](images/open-clear-scene.png)
-
-Now that we know how to move around in the Level Editor and how to use some of its features, I'll talk about the SDK windows and what do they do.
+Now that we know how to use some of its features, I'll talk about other SDK features.
 
 ## Edit Mode
 
