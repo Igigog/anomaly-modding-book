@@ -29,7 +29,7 @@ So refer to this [article](src/meta/contributing.md) or open an [issue](https://
 [TheParaziT](https://github.com/TheParaziT) - Repository maintainer
 
 - [mdBook](https://github.com/rust-lang/mdBook) - The platform on which the book was written
-  - [mdbook admonish](https://github.com/tommilligan/mdbook-admonish) - A preprocessor for mdbook to add Material Design admonishments.
+  - [mdbook admonish](https://github.com/tommilligan/mdbook-admonish) - A preprocessor for mdBook to add Material Design admonishments.
   - [mdbook whichlang](https://github.com/phoenixr-codes/mdbook-whichlang) - Powerful Code Blocks for mdBook
-  - [mdbook mermaid](https://github.com/badboy/mdbook-mermaid) - A preprocessor for mdbook to add mermaid support
-  - [mdbook-linkcheck](https://github.com/Michael-F-Bryan/mdbook-linkcheck) - A backend for mdbook which will check your links for you
+  - [mdbook mermaid](https://github.com/badboy/mdbook-mermaid) - A preprocessor for mdBook to add mermaid support
+  - [mdbook-linkcheck](https://github.com/Michael-F-Bryan/mdbook-linkcheck) - A backend for mdBook which will check your links for you

@@ -4,7 +4,7 @@ ___
 
 ## About
 
-Contains settings for different sound zones in senvironment.xr file.
+Contains settings for different sound zones in `senvironment.xr` file.
 
 <style>
 .main-table {

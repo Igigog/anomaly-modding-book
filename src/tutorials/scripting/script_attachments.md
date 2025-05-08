@@ -108,6 +108,7 @@ In this case it will set the parent bone to `bip01_head` of the parent npc objec
 Changing to a bone id that doesn't exist will default to the root bone.
 
 To get the current parent bone id you can use
+
 ```lua
 local bone_id = test_att:get_parent_bone()
 ```
@@ -429,4 +430,6 @@ function scale_func(mat)
 end
 ```
 
-#### Have fun!
+```admonish success
+ Have fun!
+```

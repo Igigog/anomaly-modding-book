@@ -4,7 +4,7 @@ ___
 
 ## About
 
-This section contains a list and description of the Game Materials that are available in the gamemtl.xr file.
+This section contains a list and description of the Game Materials that are available in the `gamemtl.xr` file.
 
 ## Static Object materials
 
