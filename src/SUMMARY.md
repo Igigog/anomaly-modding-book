@@ -43,6 +43,17 @@
   - [Inventory Icons](tutorials/configs/inventory_icons.md)
   - [Algorithm of Logic](reference/configs/algoritm-of-logic.md)
 
+- [Scripting](tutorials/scripting/README.md)
+  - [Introduction to Codebase](tutorials/scripting/codebase_introduction.md)
+  - [Codestyle](tutorials/scripting/codestyle.md)
+  - [Wetting Our Hands](tutorials/scripting/wetting_hands.md)
+  - [Server and Game Objects](tutorials/scripting/server_and_game_objects.md)
+  - [Callbacks](tutorials/scripting/callbacks.md)
+  - [Time Events](tutorials/scripting/time_events.md)
+  - [Monkey Patching](tutorials/scripting/monkey-patching.md)
+  - [Script Animations](tutorials/scripting/script_animations.md)
+  - [Script Attachments](tutorials/scripting/script_attachments.md)
+
 - [Models](tutorials/models/README.md)
   - [Model Binding in Blender](tutorials/models/binding-model-in-blender.md)
   - [Setup Static Object in Blender](tutorials/models/setup-static-object-in-blender.md)
@@ -228,20 +239,10 @@
 
 ---
 
-# Script
+# Scripts
 
-- [Scripting](tutorials/scripting/README.md)
-  - [Introduction to Codebase](tutorials/scripting/codebase_introduction.md)
-  - [Codestyle](tutorials/scripting/codestyle.md)
-  - [Wetting Our Hands](tutorials/scripting/wetting_hands.md)
-  - [Server and Game Objects](tutorials/scripting/server_and_game_objects.md)
-  - [Callbacks](tutorials/scripting/callbacks.md)
-  - [Time Events](tutorials/scripting/time_events.md)
-  - [Monkey Patching](tutorials/scripting/monkey-patching.md)
-  - [Script Animations](tutorials/scripting/script_animations.md)
-  - [Script Attachments](tutorials/scripting/script_attachments.md)
-  - [Callbacks List](script/callbacks-list.md)
-  - [Class Registrator](script/class-registrator.md)
+- [Callbacks List](script/callbacks-list.md)
+- [Class Registrator](script/class-registrator.md)
 
 ---
 
