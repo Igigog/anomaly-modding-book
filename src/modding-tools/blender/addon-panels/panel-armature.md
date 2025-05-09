@@ -32,7 +32,7 @@ Display bone limits.
 
 Limits have bones with Joint, Slider, and Wheel types.
 
-Для всех этих типов Gizmo лимитов разные.
+Gizmo limits are different for all of these types of Gizmo.
 Colors of limits are different for different axes:
 
 - Red - X-axis
@@ -45,8 +45,8 @@ For Joint bones, the rotation limits for all axes are displayed as arcs.
 
 For Slider bones, two limits are displayed:
 
-- Z-axis rotation limit - arc
-- Z-axis displacement limit - line
+- Z-axis rotation limit - Arc
+- Z-axis displacement limit - Line
 
 For Wheel bones, one X-axis rotation limit is displayed as an arc.
 
@@ -78,4 +78,4 @@ ___
 
 ## Sources
 
-[Source](https://github.com/PavelBlend/blender-xray/wiki/Panel-XRay-Engine-Armature)
+[Blender X-Ray Addon Wiki on GitHub](https://github.com/PavelBlend/blender-xray/wiki/Panel-XRay-Engine-Armature)

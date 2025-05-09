@@ -10,4 +10,4 @@ ___
 
 ## Sources
 
-[Source](https://github.com/PavelBlend/blender-xray/wiki/Panel-Batch-Tools#set-object-asset-author)
+[Blender X-Ray Addon Wiki on GitHub](https://github.com/PavelBlend/blender-xray/wiki/Panel-Batch-Tools#set-object-asset-author)

@@ -310,3 +310,7 @@ Inner angle of spotlight cone.
 ### Outer Angle Phi
 
 Outer angle of spotlight cone.
+
+## Sources
+
+[Blender X-Ray Addon Wiki on GitHub](https://github.com/PavelBlend/blender-xray/wiki/Panel-XRay-Engine-Object)

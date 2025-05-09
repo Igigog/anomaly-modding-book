@@ -14,6 +14,7 @@ Allows editing of various material settings, baking, etc.
 - [Place Selected Objects](../addon-operators/operator-place-selected-objects.md)
 - [Change Shader Parameters](../addon-operators/operator-change-shader-parameters.md)
 - [Create Level Shader Nodes](../addon-operators/operator-create-level-shader-nodes.md)
+- [Create Bump Nodes](../addon-operators/operator-create-bump-nodes.md)
 - [Remove Level Shader Nodes](../addon-operators/operator-remove-level-shader-nodes.md)
 - [Change Fake User](../addon-operators/operator-change-fake-user.md)
 - [Rename Actions](../addon-operators/operator-rename-actions.md)
@@ -23,4 +24,4 @@ ___
 
 ## Sources
 
-[Source](https://github.com/PavelBlend/blender-xray/wiki/Panel-Batch-Tools)
+[Blender X-Ray Addon Wiki on GitHub](https://github.com/PavelBlend/blender-xray/wiki/Panel-Batch-Tools)

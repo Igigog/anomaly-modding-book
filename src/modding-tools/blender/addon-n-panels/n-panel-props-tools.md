@@ -16,10 +16,11 @@ ___
 - [Change HQ Export](../addon-operators/operator-change-hq-export.md)
 - [Change Userdata](../addon-operators/operator-change-userdata.md)
 - [Change LOD Reference](../addon-operators/operator-change-lod-reference.md)
+- [Change Motions](../addon-operators/operator-change-motions.md)
 - [Change Motion Reference](../addon-operators/operator-change-motion-references.md)
 
 ___
 
 ## Sources
 
-[Source](https://github.com/PavelBlend/blender-xray/wiki/Panel-Props-Tools)
+[Blender X-Ray Addon Wiki on GitHub](https://github.com/PavelBlend/blender-xray/wiki/Panel-Props-Tools)

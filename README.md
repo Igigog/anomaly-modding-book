@@ -1,5 +1,5 @@
 <!-- markdownlint-disable -->
-# Anomaly modding book
+# Anomaly Modding Book
 
 Introductory book for Stalker Anomaly modding
 

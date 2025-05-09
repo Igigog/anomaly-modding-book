@@ -36,4 +36,4 @@ ___
 
 ## Sources
 
-[Source](https://github.com/PavelBlend/blender-xray/wiki/Panel-Props-Tools#change-lod-reference)
+[Blender X-Ray Addon Wiki on GitHub](https://github.com/PavelBlend/blender-xray/wiki/Panel-Props-Tools#change-lod-reference)

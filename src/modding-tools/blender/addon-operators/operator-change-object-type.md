@@ -6,7 +6,7 @@ ___
 
 ## About
 
-Changes the type of the object. The type is set in the Type parameter from the X-Ray Engine: Object panel
+Changes the type of the object. The type is set in the Type parameter from the X-Ray Engine: Object panel.
 
 ### Mode
 
@@ -16,10 +16,10 @@ Changes the type of the object. The type is set in the Type parameter from the X
 
 ### Type
 
-Value for the Type parameter from the X-Ray Engine panel: Object
+Value for the Type parameter from the X-Ray Engine: Object panel.
 
 ___
 
 ## Sources
 
-[Source](https://github.com/PavelBlend/blender-xray/wiki/Panel-Props-Tools#change-object-type)
+[Blender X-Ray Addon Wiki on GitHub](https://github.com/PavelBlend/blender-xray/wiki/Panel-Props-Tools#change-object-type)

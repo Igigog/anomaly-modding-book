@@ -177,6 +177,8 @@ ___
 
 - [OggCommentDecompiler](https://ap-pro.ru/applications/core/interface/file/attachment.php?id=22581) - Saves comments in a [*.ltx](../reference/file-formats/conf-script/ltx.md) file, whose name and path are equivalent to the sound file
 
+- [Convert Audio Comment OGG](https://github.com/antglobes/CACO) - Convert Audio Comment Ogg
+
 ___
 
 ## Animations

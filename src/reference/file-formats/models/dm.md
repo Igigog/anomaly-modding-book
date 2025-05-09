@@ -12,7 +12,7 @@ ___
 
 It works like this: UV descends down the Y coordinates to the texture
 
-![example](assets//images/dm.gif)
+![example](assets/gifs//dm.gif)
 
 ### Format limitations
 

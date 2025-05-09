@@ -12,9 +12,11 @@ This panel stores operators to check objects for errors
 - [Check Invalid Faces](../addon-operators/operator-check-invalid-faces.md)
 - [Check Invalid Smooth Groups](../addon-operators/operator-check-invalid-smooth-groups.md)
 - [Check Smoothing Groups Incompatibility](../addon-operators/operator-check-smoothing-groups-incompatibility.md)
+- [Check Material Parameters](../addon-operators/operator-check-material-parameters.md)
+- [Select Verticies by Weights Count](../addon-operators/operator-select-vertices-by-weights-count.md)
 
 ___
 
 ## Sources
 
-[Source](https://github.com/PavelBlend/blender-xray/wiki/Panel-Verify)
+[Blender X-Ray Addon Wiki on GitHub](https://github.com/PavelBlend/blender-xray/wiki/Panel-Verify)
