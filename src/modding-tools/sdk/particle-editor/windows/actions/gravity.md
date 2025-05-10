@@ -4,9 +4,9 @@ ___
 
 ## About
 
-Accelerate particles in the given direction
+Accelerate particles in the given direction.
 
-![alt text](media/gravity.gif)
+![alt text](media/gifs/gravity.gif)
 
 <table><thead>
   <tr>
@@ -18,7 +18,7 @@ Accelerate particles in the given direction
   <tr>
     <td rowspan="4">Gravity</td>
     <td>Name</td>
-    <td>Action Name</td>
+    <td>Action name</td>
   </tr>
   <tr>
     <td>Direction</td>

@@ -4,7 +4,7 @@ ___
 
 ## About
 
-Clamp each particles speed to the given min and max
+Limits the velocity of each particle to a given minimum and maximum velocity.
 
 <table><thead>
   <tr>
@@ -16,15 +16,15 @@ Clamp each particles speed to the given min and max
   <tr>
     <td rowspan="5">SpeedLimit</td>
     <td>Name</td>
-    <td>Action Name</td>
+    <td>Action name</td>
   </tr>
   <tr>
     <td>Min Speed</td>
-    <td>Min Speed</td>
+    <td>Minimum speed</td>
   </tr>
   <tr>
     <td>Max Speed</td>
-    <td>Max Speed</td>
+    <td>Maximum speed</td>
   </tr>
   <tr>
     <td>Draw</td>

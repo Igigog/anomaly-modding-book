@@ -4,9 +4,9 @@ ___
 
 ## About
 
-![alt text](media/target-color.gif)
+Change the color of all particles to the specified color.
 
-Change color of all particles toward the specified color
+![alt text](media/gifs/target-color.gif)
 
 <table><thead>
   <tr>
@@ -18,7 +18,7 @@ Change color of all particles toward the specified color
   <tr>
     <td rowspan="8">TargetColor</td>
     <td>Name</td>
-    <td>Action Name</td>
+    <td>Action name</td>
   </tr>
   <tr>
     <td>Color</td>

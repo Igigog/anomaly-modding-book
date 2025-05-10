@@ -16,11 +16,11 @@ Adds a turbulence effect to particle motion.
   <tr>
     <td rowspan="8">Turbulence</td>
     <td>Name</td>
-    <td>Action Name</td>
+    <td>Action name</td>
   </tr>
   <tr>
     <td>Frequency</td>
-    <td>Turbulence Frequency. Determines how fast the turbulence effect changes in time or space</td>
+    <td>Turbulence frequency. Determines how fast the turbulence effect changes in time or space</td>
   </tr>
   <tr>
     <td>Octaves</td>

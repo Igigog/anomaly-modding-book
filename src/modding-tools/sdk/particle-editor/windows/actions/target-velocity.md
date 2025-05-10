@@ -4,9 +4,9 @@ ___
 
 ## About
 
-![alt text](media/target-velocity.gif)
+Changes the velocity of all particles to the specified velocity.
 
-Change velocity of all particles toward the specified
+![alt text](media/gifs/target-velocity.gif)
 
 <table><thead>
   <tr>
@@ -18,11 +18,11 @@ Change velocity of all particles toward the specified
   <tr>
     <td rowspan="6">TargetVelocity</td>
     <td>Name</td>
-    <td>Action Name</td>
+    <td>Action name</td>
   </tr>
   <tr>
     <td>Velocity</td>
-    <td>Target Velocity</td>
+    <td>Target velocity</td>
   </tr>
   <tr>
     <td>Scale</td>

@@ -2,11 +2,11 @@
 
 ___
 
-![alt text](media/target-size.gif)
-
 ## About
 
-Change sizes of all particles toward the specified size
+Changes the size of all particles to the specified size.
+
+![alt text](media/gifs/target-size.gif)
 
 <table><thead>
   <tr>
@@ -18,11 +18,11 @@ Change sizes of all particles toward the specified size
   <tr>
     <td rowspan="5">TargetSize</td>
     <td>Name</td>
-    <td>Action Name</td>
+    <td>Action name</td>
   </tr>
   <tr>
     <td>Size</td>
-    <td>Target Size</td>
+    <td>Target size</td>
   </tr>
   <tr>
     <td>Scale</td>

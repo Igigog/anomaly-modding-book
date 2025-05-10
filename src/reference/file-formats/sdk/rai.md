@@ -4,7 +4,7 @@ ___
 
 ## About
 
-Used to store parameters for random placement of objects in the level editor
+Used to store parameters for random placement of objects in the SDK Level Editor
 
 ___
 

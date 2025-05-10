@@ -4,9 +4,9 @@ ___
 
 ## About
 
-![alt text](media/jet.gif)
+Simulates a jet that accelerates particles in a certain direction.
 
-Simulates a jet that accelerates particles in a certain direction
+![alt text](media/gifs/jet.gif)
 
 <table><thead>
   <tr>
@@ -20,13 +20,13 @@ Simulates a jet that accelerates particles in a certain direction
   <tr>
     <td rowspan="19">Jet</td>
     <td>Name</td>
-    <td>Action Name</td>
+    <td>Action name</td>
     <td>-</td>
     <td>-</td>
   </tr>
   <tr>
     <td rowspan="11">Accelerate</td>
-    <td rowspan="11">Domen Type</td>
+    <td rowspan="11">Domain Type</td>
     <td>Point</td>
     <td>Single point</td>
   </tr>

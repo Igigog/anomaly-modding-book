@@ -1,4 +1,4 @@
-# Server and game objects
+# Server and Game Objects
 
 ___
 

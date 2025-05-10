@@ -4,9 +4,9 @@ ___
 
 ## About
 
-Remove old particles
+Removes particles based on their age.
 
-![alt text](media/source-kill.gif)
+![alt text](media/gifs/source-kill.gif)
 
 <table><thead>
   <tr>
@@ -18,11 +18,11 @@ Remove old particles
   <tr>
     <td rowspan="5">KillOld</td>
     <td>Name</td>
-    <td>Action Name</td>
+    <td>Action name</td>
   </tr>
   <tr>
     <td>Age Limit</td>
-    <td>Age Limit</td>
+    <td>Age limit</td>
   </tr>
   <tr>
     <td>Kill Less Than</td>

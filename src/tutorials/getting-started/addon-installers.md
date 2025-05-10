@@ -1,4 +1,4 @@
-# Addon installers
+# Addon Installers
 
 ___
 

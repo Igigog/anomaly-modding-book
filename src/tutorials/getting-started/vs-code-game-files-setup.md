@@ -1,4 +1,4 @@
-# Configuring VSCode-like programs to handle game files
+# Configuring VSCode-like Programs to Handle Game Files
 
 ___
 

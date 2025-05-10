@@ -4,7 +4,7 @@ ___
 
 ## About
 
-Accelerate toward the next particle in the group
+Accelerate toward the next particle in the group.
 
 <table><thead>
   <tr>
@@ -16,7 +16,7 @@ Accelerate toward the next particle in the group
   <tr>
     <td rowspan="6">Follow</td>
     <td>Name</td>
-    <td>Action Name</td>
+    <td>Action name</td>
   </tr>
   <tr>
     <td>Magnitude</td>

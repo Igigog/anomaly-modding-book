@@ -16,7 +16,7 @@ Immediately replace position with a position from the
   <tr>
     <td rowspan="6">MatchVelocity</td>
     <td>Name</td>
-    <td>Action Name</td>
+    <td>Action name</td>
   </tr>
   <tr>
     <td>Magnitude</td>

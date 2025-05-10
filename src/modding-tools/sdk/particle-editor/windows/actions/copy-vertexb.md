@@ -4,7 +4,7 @@ ___
 
 ## About
 
-Set the secondary position from current position
+Set the secondary position from current position.
 
 <table><thead>
   <tr>
@@ -16,7 +16,7 @@ Set the secondary position from current position
   <tr>
     <td rowspan="4">Copy VertexB</td>
     <td>Name</td>
-    <td>Action Name</td>
+    <td>Action name</td>
   </tr>
   <tr>
     <td>Copy Position</td>

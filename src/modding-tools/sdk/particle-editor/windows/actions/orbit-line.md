@@ -2,9 +2,9 @@
 
 ## About
 
-![alt text](media/orbit-line.gif)
+Effect of orbital motion of particles around a given line (axis). The particles are attracted to the nearest point on the line with a force depending on the distance.
 
-Effect of orbital motion of particles around a given line (axis). The particles are attracted to the nearest point on the line with a force depending on the distance
+![alt text](media/gifs/orbit-line.gif)
 
 <table><thead>
   <tr>
@@ -16,7 +16,7 @@ Effect of orbital motion of particles around a given line (axis). The particles 
   <tr>
     <td rowspan="9">OrbitLine</td>
     <td>Name</td>
-    <td>Action Name</td>
+    <td>Action name</td>
   </tr>
   <tr>
     <td>Position</td>

@@ -2,6 +2,8 @@
 
 ___
 
+## About
+
 Contains descriptions of various S.T.A.L.K.E.R. related terms used in modding and in X-Ray Engine.
 
 <style>
@@ -246,6 +248,11 @@ Contains descriptions of various S.T.A.L.K.E.R. related terms used in modding an
     <td>Custom Data</td>
     <td>Parameters (in <a href="../reference/file-formats/conf-script/ltx.md">*.ltx</a> format) written directly into the object.</td>
   </tr>
+  </tr>
+    <tr id="hom-object">
+    <td>HOM Object</td>
+    <td></td>
+  </tr>
 </tbody>
 </table>
 
@@ -336,11 +343,11 @@ Contains descriptions of various S.T.A.L.K.E.R. related terms used in modding an
 <tbody>
   <tr id="particle-effect">
     <td>Particle Effect</td>
-    <td>Single Particle Effect. </td>
+    <td>Single Particle Effect. Stored in <a href="../reference/file-formats/particles/pe.md">*.pe</a> files.</td>
   </tr>
   <tr id="particle-group">
     <td>Particle Group</td>
-    <td>Particle Effects Group</td>
+    <td>Particle Effects Group. Stored in <a href="../reference/file-formats/particles/pg.md">*.pg</a> files.</td>
   </tr>
 </tbody>
 </table>

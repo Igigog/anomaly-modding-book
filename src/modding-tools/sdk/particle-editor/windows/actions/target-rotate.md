@@ -4,9 +4,9 @@ ___
 
 ## About
 
-![alt text](media/target-rotate.gif)
+Changes the rotation of all particles to the specified rotation.
 
-Change rotate of all particles toward the specified rotation
+![alt text](media/gifs/target-rotate.gif)
 
 <table><thead>
   <tr>
@@ -18,7 +18,7 @@ Change rotate of all particles toward the specified rotation
   <tr>
     <td rowspan="5">TargetRotate</td>
     <td>Name</td>
-    <td>Action Name</td>
+    <td>Action name</td>
   </tr>
   <tr>
     <td>Rotation</td>

@@ -4,9 +4,9 @@ ___
 
 ## About
 
-Add particles in the specified domain
+Spawns particles in the specified domain.
 
-![alt text](media/source-kill.gif)
+![alt text](media/gifs/source-kill.gif)
 
 <table><thead>
   <tr>
@@ -20,7 +20,7 @@ Add particles in the specified domain
   <tr>
     <td rowspan="65">Source</td>
     <td>Name</td>
-    <td>Action Name</td>
+    <td>Action name</td>
     <td>-</td>
     <td>-</td>
   </tr>

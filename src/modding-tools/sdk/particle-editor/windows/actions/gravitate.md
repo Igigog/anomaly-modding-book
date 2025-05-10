@@ -4,7 +4,7 @@ ___
 
 ## About
 
-Accelerate each particle toward each other particle
+Accelerate each particle toward each other particle.
 
 <table><thead>
   <tr>

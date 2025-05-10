@@ -4,9 +4,9 @@ ___
 
 ## About
 
-![alt text](media/sink.gif)
-
 Kill particles with positions on wrong side of the specified
+
+![alt text](media/gifs/sink.gif)
 
 <table><thead>
   <tr>
@@ -18,7 +18,7 @@ Kill particles with positions on wrong side of the specified
   <tr>
     <td rowspan="6">Sink</td>
     <td>Name</td>
-    <td>Action Name</td>
+    <td>Action name</td>
   </tr>
   <tr>
     <td>Kill Inside</td>
@@ -26,7 +26,7 @@ Kill particles with positions on wrong side of the specified
   </tr>
   <tr>
     <td>Domain</td>
-    <td>Domain Type</td>
+    <td>Domain type</td>
   </tr>
   <tr>
     <td>Allow Rotate</td>

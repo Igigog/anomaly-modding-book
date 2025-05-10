@@ -4,9 +4,9 @@ ___
 
 ## About
 
-![alt text](media/vortex.gif)
+Swirling of particles around a vortex.
 
-Swirl particles around a vortex
+![alt text](media/gifs/vortex.gif)
 
 <table><thead>
   <tr>
@@ -18,7 +18,7 @@ Swirl particles around a vortex
   <tr>
     <td rowspan="9">Vortex</td>
     <td>Name</td>
-    <td>Action Name</td>
+    <td>Action name</td>
   </tr>
   <tr>
     <td>Center</td>

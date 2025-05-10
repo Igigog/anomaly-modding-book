@@ -16,7 +16,7 @@ Kill particles with velocities on wrong side of the
   <tr>
     <td rowspan="6">SinkVelocity</td>
     <td>Name</td>
-    <td>Action Name</td>
+    <td>Action name</td>
   </tr>
   <tr>
     <td>Kill Inside</td>
@@ -24,7 +24,7 @@ Kill particles with velocities on wrong side of the
   </tr>
   <tr>
     <td>Domain</td>
-    <td>Domain Type</td>
+    <td>Domain type</td>
   </tr>
   <tr>
     <td>Allow Rotate</td>

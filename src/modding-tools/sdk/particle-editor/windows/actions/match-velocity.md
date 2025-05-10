@@ -4,7 +4,7 @@ ___
 
 ## About
 
-Modify each particles velocity to be similar to that
+Modify each particles velocity to be similar to that.
 
 <table><thead>
   <tr>
@@ -16,7 +16,7 @@ Modify each particles velocity to be similar to that
   <tr>
     <td rowspan="6">MatchVelocity</td>
     <td>Name</td>
-    <td>Action Name</td>
+    <td>Action name</td>
   </tr>
   <tr>
     <td>Magnitude</td>

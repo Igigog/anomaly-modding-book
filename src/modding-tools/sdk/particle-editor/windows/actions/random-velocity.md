@@ -18,7 +18,7 @@ Immediately replace velocity with a velocity from the
   <tr>
     <td rowspan="15">RandomVelocity</td>
     <td>Name</td>
-    <td>Action Name</td>
+    <td>Action name</td>
     <td>-</td>
     <td>-</td>
   </tr>

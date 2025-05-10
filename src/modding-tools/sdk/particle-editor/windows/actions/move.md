@@ -4,9 +4,9 @@ ___
 
 ## About
 
-Move particles positions based on velocities
+Move particles positions based on velocities.
 
-![alt text](media/move.gif)
+![alt text](media/gifs/move.gif)
 
 <table><thead>
   <tr>
@@ -18,7 +18,7 @@ Move particles positions based on velocities
   <tr>
     <td rowspan="3">Move</td>
     <td>Name</td>
-    <td>Action Name</td>
+    <td>Action name</td>
   </tr>
   <tr>
     <td>Draw</td>

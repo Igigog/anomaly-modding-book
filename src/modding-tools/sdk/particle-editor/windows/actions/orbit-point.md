@@ -2,11 +2,11 @@
 
 ___
 
-![alt text](media/orbit-point.gif)
-
 ## About
 
-Realizes the physics of particle attraction/repulsion relative to a given point in 3D space
+Realizes the physics of particle attraction/repulsion relative to a given point in 3D space.
+
+![alt text](media/gifs/orbit-point.gif)
 
 <table><thead>
   <tr>
@@ -18,7 +18,7 @@ Realizes the physics of particle attraction/repulsion relative to a given point 
   <tr>
     <td rowspan="8">OrbitPoint</td>
     <td>Name</td>
-    <td>Action Name</td>
+    <td>Action name</td>
   </tr>
   <tr>
     <td>Center</td>

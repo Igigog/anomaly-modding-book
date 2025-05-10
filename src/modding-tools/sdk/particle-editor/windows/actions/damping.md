@@ -4,9 +4,9 @@ ___
 
 ## About
 
-Simulate air by slowing down particle velocities
+Simulate air by slowing down particle velocities.
 
-![alt text](media/damping.gif)
+![alt text](media/gifs/damping.gif)
 
 <table><thead>
   <tr>
@@ -18,7 +18,7 @@ Simulate air by slowing down particle velocities
   <tr>
     <td rowspan="6">Damping</td>
     <td>Name</td>
-    <td>Action Name</td>
+    <td>Action name</td>
   </tr>
   <tr>
     <td>Damping</td>

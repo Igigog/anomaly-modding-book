@@ -4,7 +4,7 @@ ___
 
 ## About
 
-Accelerate particles in random directions
+Accelerate particles in random directions.
 
 <table><thead>
   <tr>
@@ -18,7 +18,7 @@ Accelerate particles in random directions
   <tr>
     <td rowspan="14">RandomAccel</td>
     <td>Name</td>
-    <td>Action Name</td>
+    <td>Action name</td>
     <td>-</td>
     <td>-</td>
   </tr>

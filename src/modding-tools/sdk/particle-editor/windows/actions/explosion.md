@@ -4,7 +4,7 @@ ___
 
 ## About
 
-An Explosion
+Simulates the effect of an explosion.
 
 <table><thead>
   <tr>
@@ -16,7 +16,7 @@ An Explosion
   <tr>
     <td rowspan="10">Explosion</td>
     <td>Name</td>
-    <td>Action Name</td>
+    <td>Action name</td>
   </tr>
   <tr>
     <td>Center</td>

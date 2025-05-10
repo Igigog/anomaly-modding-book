@@ -2,11 +2,11 @@
 
 ___
 
-![alt text](media/avoid.gif)
-
 ## About
 
-Steer particles away from a domain space. Works only with `Plane`, `Rectangle`, `Triangle`, `Disc`, `Sphere` domain types
+Steer particles away from a domain space. Works only with `Plane`, `Rectangle`, `Triangle`, `Disc`, `Sphere` domain types.
+
+![alt text](media/gifs/avoid.gif)
 
 <table><thead>
   <tr>
@@ -20,13 +20,13 @@ Steer particles away from a domain space. Works only with `Plane`, `Rectangle`, 
   <tr>
     <td rowspan="18">Avoid</td>
     <td>Name</td>
-    <td>Action Name</td>
+    <td>Action name</td>
     <td>-</td>
     <td>-</td>
   </tr>
   <tr>
     <td rowspan="11">Position</td>
-    <td rowspan="11">Domen Type</td>
+    <td rowspan="11">Domain Type</td>
     <td>Point</td>
     <td>Single point</td>
   </tr>

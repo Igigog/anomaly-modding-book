@@ -16,7 +16,7 @@ Over time restore particles to their secondary positions
   <tr>
     <td rowspan="4">Restore</td>
     <td>Name</td>
-    <td>Action Name</td>
+    <td>Action name</td>
   </tr>
   <tr>
     <td>Time</td>

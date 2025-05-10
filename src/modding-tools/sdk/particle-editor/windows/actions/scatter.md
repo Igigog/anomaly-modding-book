@@ -4,7 +4,7 @@ ___
 
 ## About
 
-Scatter particles from center
+Scatter particles from center.
 
 <table><thead>
   <tr>
@@ -16,7 +16,7 @@ Scatter particles from center
   <tr>
     <td rowspan="8">Scatter</td>
     <td>Name</td>
-    <td>Action Name</td>
+    <td>Action name</td>
   </tr>
   <tr>
     <td>Center</td>

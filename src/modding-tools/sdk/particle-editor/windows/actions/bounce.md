@@ -4,9 +4,9 @@ ___
 
 ## About
 
-![alt text](media/bounce.gif)
+Bounce particles off a domain of space. Works only with `Plane`, `Rectangle`, `Triangle`, `Disc`, `Sphere` domain types.
 
-Bounce particles off a domain of space. Works only with `Plane`, `Rectangle`, `Triangle`, `Disc`, `Sphere` domain types
+![alt text](media/gifs/bounce.gif)
 
 <table><thead>
   <tr>
@@ -20,13 +20,13 @@ Bounce particles off a domain of space. Works only with `Plane`, `Rectangle`, `T
   <tr>
     <td rowspan="18">Bounce</td>
     <td>Name</td>
-    <td>Action Name</td>
+    <td>Action name</td>
     <td>-</td>
     <td>-</td>
   </tr>
   <tr>
     <td rowspan="11">Position</td>
-    <td rowspan="11">Domen Type</td>
+    <td rowspan="11">Domain Type</td>
     <td>Point</td>
     <td>Single point</td>
   </tr>
