@@ -1,4 +1,4 @@
-# Оператор Check Material Parameters
+# Check Material Parameters Operator
 
 ___
 

@@ -182,7 +182,7 @@
     - [*.vs](reference/file-formats/shaders/vs.md)
   - [SDK File Formats](reference/file-formats/sdk/README.md)
     - [*.dti](reference/file-formats/sdk/dti.md)
-    - [*.rai](reference/file-formats/game-levels/rai.md)
+    - [*.rai](reference/file-formats/sdk/rai.md)
   - [Textures File Formats](reference/file-formats/textures/README.md)
     - [*_bump.dds](reference/file-formats/textures/bump.md)
     - [*_bump#.dds](reference/file-formats/textures/bump_hash.md)
