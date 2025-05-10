@@ -1,0 +1,36 @@
+.table-tabs {
+    margin: 20px 0;
+  }
+  
+.tab-buttons {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+  
+.tab-button {
+  padding: 6px 12px;
+  background:rgb(255, 255, 255);
+  border: none;
+  border-radius: 4px 4px 0 0;
+  cursor: pointer;
+  font-size: 12px;
+}
+  
+.tab-button:hover {
+  background:rgba(255, 255, 255, 0.5);
+}
+  
+.tab-button.active {
+  background: #4CAF50;
+  color: white;
+}
+  
+.tab-content {
+  display: none;
+}
+  
+.tab-content table {
+  width: 100%;
+  border-collapse: collapse;
+}
