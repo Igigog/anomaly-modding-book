@@ -69,9 +69,9 @@ At the moment there are three types (or rendering modes) of script attachments.
 
 ```lua
 script_attachment_type = {
-	["Hud"]         = 1,
-	["World"]       = 2,
-	["CamAttached"] = 4,
+	["Hud"]         = 0,
+	["World"]       = 1,
+	["CamAttached"] = 2,
 }
 ```
 
@@ -83,7 +83,7 @@ set_type(number)
 
 If we want the attachment to render in hud mode, we can do it as follows:
 ```lua
-test_att:set_type(1)
+test_att:set_type(0)
 -- or
 test_att:set_type(script_attachment_type.Hud)
 ```
@@ -91,7 +91,7 @@ test_att:set_type(script_attachment_type.Hud)
 ### Cam attached?
 
 Another very cool aspect of script attachments is the ability to have them attach to the player camera.
-Setting the flags value to `4` (`script_attachment_type.CamAttached`) will enable this behavior.
+Setting the flags value to `2` (`script_attachment_type.CamAttached`) will enable this behavior.
 
 When attached to the camera, the attachment will follow the position and direction of the first person camera and render at a fixed fov, so it should look similar on all resolutions and fov values.  
 This is especially useful for things like 3D UIs or visible 3D helmets and gasmasks.
