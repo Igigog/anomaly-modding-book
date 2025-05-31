@@ -138,8 +138,6 @@ ___
 
 - [ThmValidator](https://sharedby.blomp.com/tnT8vj) - Allows you to check the [*.thm](../reference/file-formats/textures/thm.md) files in the selected directory and automatically fix the most common bugs that occur during manual editing.
 
-- [xrAutoUI](https://cdn.discordapp.com/attachments/978593574893535274/1083798175896326206/xrAutoUI.exe) - Auto-transfer UI from 4:3 to 16:9
-
 - Any program capable of creating textures or opening [*.dds](../reference/file-formats/textures/dds.md) files (e.g. [Paint.net](https://www.getpaint.net/))
 
 ___
