@@ -2,7 +2,7 @@
 
 ___
 
-## General information
+## About
 
 Spawns sections of physical objects or living creatures
 
@@ -19,8 +19,6 @@ ___
 ## Technical part
 
 Sections appear in the list because of the specified `engine class` in their [*.ltx](../../reference/file-formats/conf-script/ltx.md) file. The spawner script can be found in the file "`ui_debug_main.script`"
-
-`Full list`
 
 | Name | Engine Class |
 |---|---|

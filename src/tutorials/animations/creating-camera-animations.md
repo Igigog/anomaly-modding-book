@@ -1,4 +1,4 @@
-# Creating camera animations in Blender
+# Creating Camera Animations in Blender
 
 ___
 

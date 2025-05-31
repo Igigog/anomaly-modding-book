@@ -62,7 +62,7 @@ ___
 
 ## Anomaly Addon Dependencies
 
-Various utility scripts of objectionable quality for STALKER: Anomaly
+Various utility scripts of objectionable quality for S.T.A.L.K.E.R.: Anomaly
 
 ### Anomaly Addon Dependencies Sources
 

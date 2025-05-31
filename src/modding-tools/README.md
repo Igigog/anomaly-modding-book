@@ -50,12 +50,12 @@ ___
 Official SDK with community enhancements:
 
 - [SDK 0.4 (Shadows of Chernobyl)](https://sharedby.blomp.com/gI0i4B)
-  - [SDK 0.4 by Yara](https://bitbucket.org/Yar0s1av/xray_stalker_sdk_04_fixed/src/master/) - This is a compiled from source SDK 0.4, which has dozens of fixes and improvements.
+  - [SDK 0.4 by Yara](https://drive.google.com/file/d/12tR-JjG8lCsV13g9CFFsS-chyRzI0JuC/view) - This is a compiled from source SDK 0.4, which has dozens of fixes and improvements.
   - [SDK 0.4 by YUSHAT](http://files.xray-engine.org/yurshat/repack/xray_sdk_yurshat_repack.rar)
   - [SDK 0.4 by Political](https://disk.yandex.ru/d/KmVOitON3GnyuU)
 
 - [SDK 0.5 (Clear Sky)](https://sharedby.blomp.com/AWr3Vs)
-  - [SDK B.O.R.S.C.H.T for CS by Lightning in a vacuum](https://bitbucket.org/stalker/xray-csky_borscht_sdk/src/master/)
+  - [SDK B.O.R.S.C.H.T for CS by Lightning in a vacuum](https://bitbucket.org/stalker/xray-borscht/src/master/)
 
 ```admonish warning
 These versions (SDK 0.4 and SDK 0.5/0.6) are not compatible with Anomaly!

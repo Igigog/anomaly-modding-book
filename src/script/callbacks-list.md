@@ -1,5 +1,9 @@
 # Callbacks List
 
+___
+
+## About
+
 The following is a non-exhaustive list of callbacks available in Anomaly 1.5.2.
 
 Technically, this should cover all the callbacks available in vanilla, but remember that addons (like the modded exes) can add additional callbacks too.

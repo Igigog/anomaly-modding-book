@@ -2,6 +2,8 @@
 
 ___
 
+## Release build
+
 | Command | Command description | Command's argument | Note |
 |---|---|---|---|
 | demo_play | Plays the selected demo_record | "name" of demo | - |

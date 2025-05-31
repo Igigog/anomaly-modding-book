@@ -54,4 +54,4 @@ ___
 
 ## Sources
 
-[Source](http://stalkerin.gameru.net/wiki/index.php?title=Level.som)
+[Source (Wayback Machine)](https://web.archive.org/web/20200918231516/http://stalkerin.gameru.net/wiki/index.php?title=Level.som)

@@ -11,8 +11,6 @@ TheParaziT
 - How to work in [SDK Particle Editor](../../modding-tools/sdk/particle-editor/particle-editor.md)
 - What is a [Particle Effect](../../glossary/glossary.html#particle-effect) and [Particle Group](../../glossary/glossary.html#particle-group)
 
-___
-
 ## About
 
 Particle Editor позволяет создавать сложные частицы и группы частиц, которые могут использоваться повсеместно в игре.
@@ -67,7 +65,7 @@ Particle Editor позволяет создавать сложные части�
 
 Все это создает Box Domain прямо в центре.
 
-Для KillOld требуется настройка времени жизни частиц, которые требуется удалить.
+Для KillOld требуется настройка времени жизни частиц, которые будут удаляться.
 
 - Name --- Kill Dust Particles
 - Age Limit --- 5.000

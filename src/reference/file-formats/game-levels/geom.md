@@ -233,4 +233,4 @@ ___
 
 ## Sources
 
-[Source](http://stalkerin.gameru.net/wiki/index.php?title=Level.geom)
+[Source (Wayback Machine)](https://web.archive.org/web/20200919002943/http://stalkerin.gameru.net/wiki/index.php?title=Level.geom)

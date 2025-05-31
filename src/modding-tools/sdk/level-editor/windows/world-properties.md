@@ -21,110 +21,110 @@ ___
     <td rowspan="22">Scene</td>
     <td>Name</td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
     <td>Name prefix</td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
     <td rowspan="11">Build options</td>
     <td rowspan="11"></td>
     <td>Level path</td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
     <td>Custom data</td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
     <td>Quality</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Quality presets for level compilation</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
     <td rowspan="6">Lighting</td>
     <td rowspan="6"></td>
     <td>Hemisphere quality [0 - 3]</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Quality of Hemisphere lighting</td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
     <td>Sun shadow quality [0 - 3]</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Quality of sun shadows</td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
     <td>Pixel per meter</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
     <td>Error (LM collapsing)</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
     <td>Error (LM zero)</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
     <td>Jitter samples</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Number of jittering samples</td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
     <td rowspan="2">Optimizing</td>
     <td rowspan="2"></td>
     <td>Normal smooth angle</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
     <td>Weld distance</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Vertex welding distance</td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
     <td>Map version</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Level version</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
     <td rowspan="8">Usage</td>
@@ -133,50 +133,50 @@ ___
     <td rowspan="8"></td>
     <td>single</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
     <td>deatmatch</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
     <td>team deathmatch</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
     <td>artefact hunt</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
     <td>capture the artefact</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
     <td>domination zone</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
     <td>team domination zone</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
     <td>Free MP</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>-</td>
+    <td>-</td>
   </tr>
   <tr>
     <td rowspan="2">Glow</td>

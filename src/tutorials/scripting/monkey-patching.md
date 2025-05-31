@@ -6,7 +6,7 @@ Courtesy of RavenAscendant#7504
 
 All code snippets used in the guide are licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License
 
-This guide is specifically written for modding [Anomaly](https://www.moddb.com/mods/stalker-anomaly). Much of it will apply with minor changes to any STALKER modding. The concept is not limited to STALKER or even lua, Minecraft modding makes extensive use of monkey patching in Java.
+This guide is specifically written for modding [Anomaly](https://www.moddb.com/mods/stalker-anomaly). Much of it will apply with minor changes to any S.T.A.L.K.E.R. modding. The concept is not limited to S.T.A.L.K.E.R. or even lua, Minecraft modding makes extensive use of monkey patching in Java.
 
 Monkey patching is the practice of modifying code at run time. Instead of modifying the script file directly the modifications are done in memory by a second script. The primary reason for doing this in Anomaly is compatibility. If two addons are distributed with an edited version of the same Anomaly game script the two addons will be incompatible without  patch. Worse than incompatible they will most likely cause crashes if installed together. Monkey patching doesn’t guarantee compatibility, if two addons change the same thing in different ways it is unlikely to behave properly, however the likelihood of crashing is significantly reduced.
 
@@ -115,7 +115,7 @@ When calling a function the : acts like . but also passes the table to it’s le
 
 When defining a function : acts like . but also inserts the variable self at the beginning of the parameter list. This syntax allows lua oop to have a familiar syntax.
 
-## LUAJit Classes TODO
+## LuaJit Classes TODO
 
 Some closing notes.
 

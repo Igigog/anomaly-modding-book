@@ -50,7 +50,7 @@ For more complex tasks, you may also need to create custom squads of NPCs, for w
 - `gamedata/configs/gameplay/dialogs_my_task.xml`:  
    where your custom dialogs will be.
 
-Note that, to ensure maximum compatibility, it is highly discouraged to edit and redistribute modified vanilla files. Instead, you can use [DLTX](https://igigog.github.io/anomaly-modding-book/addons/dltx.html) and [DXML](https://igigog.github.io/anomaly-modding-book/addons/dxml.html) to modify those files at runtime, ensuring high compatibility with other addons.
+Note that, to ensure maximum compatibility, it is highly discouraged to edit and redistribute modified vanilla files. Instead, you can use [DLTX](../addons/dltx.md) and [DXML](../addons/dxml.md) to modify those files at runtime, ensuring high compatibility with other addons.
 
 ___
 

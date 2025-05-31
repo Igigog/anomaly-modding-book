@@ -16,4 +16,4 @@ FIREBREATH Hands Rig
 
 [GitHub](https://github.com/firebreath1001/Stalker-Hand-Rig)
 
-![Rig Prev centered](assets/images/FIREBREATH_rig_preview.png)
+![Rig Prev centered](assets/images/FIREBREATH-rig-preview.png)

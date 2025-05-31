@@ -2,7 +2,7 @@
 
 ___
 
-## General information
+## About
 
 Allows you to edit outfit and weapon parameters
 

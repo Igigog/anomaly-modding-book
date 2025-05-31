@@ -57,4 +57,4 @@ ___
 
 ## Sources
 
-[Source](http://stalkerin.gameru.net/wiki/index.php?title=Level.hom)
+[Source (Wayback Machine)](https://web.archive.org/web/20200918231330/http://stalkerin.gameru.net/wiki/index.php?title=Level.hom)

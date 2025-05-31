@@ -2,6 +2,8 @@
 
 ___
 
+![alt text](assets/images/panel-bone.png)
+
 ## About
 
 This page describes the X-Ray Engine: Bone panel. Some parameters from this panel are displayed only for certain joint types (Joint Type parameter)

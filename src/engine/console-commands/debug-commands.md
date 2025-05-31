@@ -2,6 +2,8 @@
 
 ___
 
+## Release build
+
 | Command | Command description | Command's argument |
 |---|---|---|
 | g_god | Enables God Mode | 'on/off' or '1/0' |
@@ -15,7 +17,7 @@ ___
 | render_memory_stats | Output information about memory usage | - |
 | stat_memory |  | - |
 
-## Debug Console Commands (Debug Build)
+## Debug build
 
 | Command | Command description | Command's argument |
 |---|---|---|

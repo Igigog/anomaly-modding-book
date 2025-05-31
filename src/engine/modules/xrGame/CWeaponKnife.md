@@ -14,5 +14,5 @@ Knife Engine Class
 | Base Class | CWeapon |
 | Header | src/xrGame/WeaponKnife.h |
 | Realization | src/xrGame/WeaponKnife.cpp |
-| Exported LUA class | WP_KNIFE |
+| Exported Lua class | WP_KNIFE |
 | Libs | luabind |

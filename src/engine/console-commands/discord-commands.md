@@ -2,6 +2,8 @@
 
 ___
 
+## Release build
+
 | Command | Command description | Command's argument |
 |---|---|---|
 | discord_status | Displays status in Discord | 'on/off' or '1/0' |

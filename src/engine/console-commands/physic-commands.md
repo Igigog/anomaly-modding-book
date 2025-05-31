@@ -2,6 +2,8 @@
 
 ___
 
+## Release build
+
 | Command | Command description | Command's argument |
 |---|---|---|
 | g_dead_body_collision | Enables dead body collision | full<br> actor_only<br> off |
@@ -9,7 +11,7 @@ ___
 | ph_frequency | The more, the better the collision calculations | 50.0000 - 200.0000 |
 | ph_iterations | Number of iterations to calculate the dynamics | 15 - 50 |
 
-## Physics Debug
+## Debug build
 
 | Command | Command description | Command's argument |
 |---|---|---|

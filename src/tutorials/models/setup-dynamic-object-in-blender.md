@@ -51,7 +51,7 @@ Press `CTRL + P` -> `With Automatic Weights`.
 In Blender, there are several choices of binding methods. In this case (where there is a single bone), the method via `With Automatic Weights` is appropriate. For cases where there are more bones, you will most likely need manual binding via `Weight Paint` or other methods.
 ```
 
-## Shape
+## Bone
 
 Select the bone and go to the `Bone Properties`![Bone Properties svg-icon](../../assets/icons/blender/bone.svg) tab.
 
@@ -73,9 +73,21 @@ My model fits quite nicely into the Bone Shape.
 
 ![Model Bone Shape centered](assets/images/setup-dynamic-object-bone-shape.png)
 
+Next, choose [Rigid](../../glossary/glossary.html#rigid-joint) in `Joint Type`.
+
+## Surface
+
+Navigate to `Material Properties`![Material Properties svg-icon](../../assets/icons/blender/material.svg).
+
+In [X-Ray Engine: Material](../../modding-tools/blender/addon-panels/panel-material.md) you need to select the Compiler, Engine shaders and Game Material you want.
+
+```admonish note
+Since the object is dynamic, you need to choose the right Engine Shader and [Game Material](../../reference/materials/materials-list.md) for Dynamic Objects!
+```
+
 ## Finish
 
-Go to `Object Properties`.
+Go to `Object Properties`![Object Properties svg-icon](../../assets/icons/blender/object-data.svg).
 
 In [X-Ray Engine: Object](../../modding-tools/blender/addon-panels/panel-object.md) select `Dynamic` in the `Type` list.
 

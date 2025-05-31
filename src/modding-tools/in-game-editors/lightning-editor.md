@@ -2,7 +2,7 @@
 
 ___
 
-## General information
+## About
 
 Allows you to change the various lighting settings of the weather preset
 
@@ -23,16 +23,14 @@ ___
 
 The commands and their settings are assigned in the script "`ui_debug_lightning.script`"
 
-`List of commands`
-
 | Command | Command description |
 |---|---|
-| r2_sun_lumscale | Sunlight intensity control |
-| r2_sun_lumscale_amb | Ambient light intensity control |
-| r2_sun_lumscale_hemi | hemispherical lighting |
+| r2_sun_lumscale | Sunlight intensity |
+| r2_sun_lumscale_amb | Ambient light intensity |
+| r2_sun_lumscale_hemi | Hemispherical lighting |
 | r2_tonemap_amount |  |
 | r2_tonemap_lowlum |  |
-| r2_tonemap_middlegray | Controls the setting that controls the middle gray value for Tone Mapping technologies |
+| r2_tonemap_middlegray | Controls the middle gray value for Tone Mapping |
 | r2_gloss_min |  |
 | r2_gloss_factor |  |
 | r2_ls_bloom_kernel_b |  |
@@ -54,6 +52,6 @@ The commands and their settings are assigned in the script "`ui_debug_lightning.
 | r2_tnmp_w |  |
 | r2_tnmp_gamma |  |
 | r2_tnmp_exposure |  |
-| r3_dynamic_wet_surfaces_near |  |
-| r3_dynamic_wet_surfaces_far |  |
-| r3_dynamic_wet_surfaces_sm_res |  |
+| r3_dynamic_wet_surfaces_near | Minimum rendering distance of the wet surface effect |
+| r3_dynamic_wet_surfaces_far | Maximum rendering distance of the wet surface effect |
+| r3_dynamic_wet_surfaces_sm_res | Shadow map resolution for rendering wet surfaces |

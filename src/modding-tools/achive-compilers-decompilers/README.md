@@ -4,4 +4,4 @@ ___
 
 ## About
 
-Programs written in Perl
+Programs written in Active Perl

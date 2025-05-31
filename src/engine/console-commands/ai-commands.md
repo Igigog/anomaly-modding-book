@@ -2,6 +2,8 @@
 
 ___
 
+## Release build
+
 | Command | Command description | Command's argument |
 |---|---|---|
 | ai_aim_max_angle | The maximum angle at which the angular velocity of the character when aiming is calculated by the formula | 0.000 - 31.416 |
@@ -13,7 +15,7 @@ ___
 | ai_use_old_vision | Includes the old model of virtual character vision, in which random points on the surface of an ellipsoid inscribed into an axially oriented rectangular parallelepiped described around the object were taken to determine the visibility of the object. | 'on/off' or '1/0' |
 | ai_use_torch_dynamic_lights | Enables the use of flashlights by non-player characters (NPCs) | 'on/off' or '1/0' |
 
-## Ai Debug
+## Debug build
 
 | Command | Command description | Command's argument | Note |
 |---|---|---|---|

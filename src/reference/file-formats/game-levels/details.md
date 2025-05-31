@@ -140,4 +140,4 @@ ___
 
 ## Sources
 
-[Source](http://stalkerin.gameru.net/wiki/index.php?title=Level.details)
+[Source (Wayback Machine)](https://web.archive.org/web/20200918234908/http://stalkerin.gameru.net/wiki/index.php?title=Level.details)

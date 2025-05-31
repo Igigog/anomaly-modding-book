@@ -2,6 +2,8 @@
 
 ___
 
+![alt text](assets/images/panel-material.png)
+
 ## About
 
 This panel stores material parameters (Surface in X-Ray SDK)

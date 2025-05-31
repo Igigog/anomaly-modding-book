@@ -2,6 +2,8 @@
 
 ___
 
+## Release build
+
 | Command | Command description | Command's argument |
 |---|---|---|
 | g_ironsights_zoom_factor | Zoom factor of the mechanical sight | 1.000 - 2.000 |

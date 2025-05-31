@@ -8,7 +8,7 @@ ___
 
 ## 1. About
 
-Modding STALKER has this annoying tendency to result in conflicts when two different mods overwrite the same [*.ltx](../../reference/file-formats/conf-script/ltx.md) file, but not the same variables and sections within that file.
+Modding S.T.A.L.K.E.R. has this annoying tendency to result in conflicts when two different mods overwrite the same [*.ltx](../../reference/file-formats/conf-script/ltx.md) file, but not the same variables and sections within that file.
 
 DLTX aims to mitigate this by allowing a mod author to only override the values that they actually wish to change in a separate file, which should greatly reduce the amount of needless mod conflicts and the need to manually merge mods.
 

@@ -7,14 +7,14 @@ ___
 |  |  |
 |---|---|
 | Program Developer | RedPandaProject (BearIvan and other) (Original Authors)<br>ValeroK |
-| Described Version | [4.35](https://github.com/VaIeroK/XrayExportTool/releases/tag/4.4) |
+| Described Version | [4.4](https://github.com/VaIeroK/XrayExportTool/releases/tag/4.4) |
 | Discussion Forum | [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3577-object-editor-v44/) |
 
 ___
 
 ## About
 
-Tool for fast editing and exporting raw stalker formats
+Tool for fast editing and exporting raw S.T.A.L.K.E.R. formats
 
 ![object-tool](assets/images/object-tool-by-valerok.png)
 

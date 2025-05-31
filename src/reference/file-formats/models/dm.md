@@ -12,7 +12,7 @@ ___
 
 It works like this: UV descends down the Y coordinates to the texture
 
-![example](assets/gifs//dm.gif)
+![example](assets/gifs/dm.gif)
 
 ### Format limitations
 
@@ -123,5 +123,5 @@ ___
 
 ## Sources
 
-[Source 1](http://stalkerin.gameru.net/wiki/index.php?title=%D0%A4%D0%BE%D1%80%D0%BC%D0%B0%D1%82_%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2_*.dm)
+[Source 1 (Wayback Machine)](https://web.archive.org/web/20200918231136/http://stalkerin.gameru.net/wiki/index.php?title=%D0%A4%D0%BE%D1%80%D0%BC%D0%B0%D1%82_%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2_*.dm)
 [Source 2](https://github.com/PavelBlend/blender-xray/wiki/Formats#dm)
