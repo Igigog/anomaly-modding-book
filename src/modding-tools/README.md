@@ -173,8 +173,6 @@ ___
 
 - [OGG Editor](https://disk.yandex.ru/d/Dcyo0Nt3A3b5g) - This utility is designed to quickly view and edit audio comments
 
-- [StkOggCommentViewer](https://cdn.discordapp.com/attachments/978593574893535274/979058737270644776/StkOggCommentViewer.exe) - Allows viewing comments in an [*.ogg](../reference/file-formats/audio-video/ogg.md) file
-
 - [OggCommentDecompiler](https://ap-pro.ru/applications/core/interface/file/attachment.php?id=22581) - Saves comments in a [*.ltx](../reference/file-formats/conf-script/ltx.md) file, whose name and path are equivalent to the sound file
 
 - [Convert Audio Comment OGG](https://github.com/antglobes/CACO) - Convert Audio Comment Ogg
@@ -247,8 +245,6 @@ ___
     - [GUI for Converter](https://modsfire.com/download/Fzg5Q2L2pcEHA8m/e9f70) - GUI for converter
   - [More](https://modfaq.ru/X-Ray_Converter)
 
-- [Particle Editor Tools](https://cdn.discordapp.com/attachments/978593574893535274/979057726623735828/Particle_Editor_Tools.rar) - Decompiling/compiling particle.xr file
-
 - [Universal ACDC](https://disk.yandex.ru/d/-GBYa8DxQv8MF) - Perl script, to unpack and pack all.spawn
   - [Universal ACDC by PSIget](https://github.com/PSIget/Universal-ACDC) - A modyfied ACDC version
 - [gamemtl_xr_cdc](https://disk.yandex.ru/d/hR79KfSn3PLtSK) - To decompile [gamemtl.xr](../reference/main-folders-and-files/README.md#files)
@@ -272,9 +268,7 @@ ___
 
 ## .db | .xdb archivers
 
-- [DB_Compressor by d_μaμ](https://cdn.discordapp.com/attachments/616764067670917131/846799604438532107/DB_Compressor.rar)
-- [xrCompress by i-love-kfc](https://ap-pro.ru/forums/topic/3500-obnovlyonnyy-xrcompress/) - .db/.xdb archiver
-  - [More](compressors/xrcompress-by-i-love-kfc.md)
+- [xrCompress by i-love-kfc](compressors/xrcompress-by-i-love-kfc.md) - .db/.xdb archiver
 
 ___
 
