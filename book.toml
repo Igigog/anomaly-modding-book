@@ -40,7 +40,7 @@ level = 0
 enable = false
 page-break = true
 
-[output.linkcheck2]
+#[output.linkcheck2]
 
 [preprocessor.mermaid]
 command = "mdbook-mermaid"
