@@ -1,0 +1,8 @@
+ignore:
+  urls:
+    - https://www.moddb.com/*
+    - https://www.khronos.org/*
+    - https://rutracker.org/forum/viewtopic.php?t=4008371
+    - https://forums.getpaint.net/topic/4175-grid-maker-plugin/
+    - https://ap-pro.ru/applications/core/interface/file/attachment.php?id=22581
+    - https://modsfire.com/download/Fzg5Q2L2pcEHA8m/e9f70

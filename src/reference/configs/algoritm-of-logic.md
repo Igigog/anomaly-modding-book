@@ -24,10 +24,10 @@ The implementation is not the most correct, there are better options, but it is 
 ```mermaid
 flowchart LR;
     logic-->|Getting started|wait(sr_idle wait);
-    wait-->|A player inside the restrictor|inside(sr_idle inside);
-    inside-->|A player has an item|has_item(sr_idle has_item);
-    has_item-->|A player has no item|inside(sr_idle inside);
-    has_item-->|A player leaves restrictor|nil;
+    wait-->|Player inside the restrictor|inside(sr_idle inside);
+    inside-->|Player has an item|has_item(sr_idle has_item);
+    has_item-->|Player has no item|inside(sr_idle inside);
+    has_item-->|Player leaves restrictor|nil;
 ```
 
 Depending on the condition, the object will change the current section. Thus, if the current section is `sr_idle@has_item` then parameters such as `sr_idle@inside` will be ignored, because information about other sections besides the current one will be unknown.
@@ -68,14 +68,14 @@ This logic is already bigger than the previous one, but it is not complicated at
 flowchart LR;
     logic-->|Getting started|start(sr_idle start);
 
-    start-->|A player is inside and screen in not black|weaponWait(sr_no_weapon wait);
+    start-->|Player is inside and screen in not black|weaponWait(sr_no_weapon wait);
 
-    wait-->|A player inside unarmed Checking info|weaponWait(sr_no_weapon wait);
-    wait-->|A player inside pri_a16_sr_light|weaponWait(sr_no_weapon wait);
+    wait-->|Player inside unarmed Checking info|weaponWait(sr_no_weapon wait);
+    wait-->|Player inside pri_a16_sr_light|weaponWait(sr_no_weapon wait);
     wait-->|Checking info|waitB305(sr_idle wait_b305);
     wait-->|Checking info|waitStalkers(sr_idle wait_stalkers);
 
-    weaponWait-->|A player outside|wait(sr_idle wait);
+    weaponWait-->|Player outside|wait(sr_idle wait);
     weaponWait-->|Checking info|waitStalkers(sr_idle wait_stalkers);
 
     waitStalkers-->|Checking info|weaponWait(sr_no_weapon wait);

@@ -1,7 +1,7 @@
 <!-- markdownlint-disable -->
 # Anomaly Modding Book
 
-Introductory book for Stalker Anomaly modding
+Introductory book for S.T.A.L.K.E.R. Anomaly modding
 
 ## Why was this book made?
 

@@ -25,7 +25,7 @@ IX-Ray is currently the most advanced project with engine and SDK support. So al
 
 ### Code editor
 
-You can use any one that supports LUA and XML files.
+You can use any one that supports Lua and XML files.
 
 Also, you may need these extensions:
 

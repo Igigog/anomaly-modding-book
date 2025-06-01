@@ -112,7 +112,7 @@ Contains settings for different sound zones in `senvironment.xr` file.
                 identity
             </td>
             <td></td>
-            <td><audio controls src="audio/default.mp3"></audio></td>
+            <td><audio controls src="assets/audio/default.mp3"></audio></td>
         </tr>
         <tr>
             <td colspan="3" style="padding: 0;">
@@ -128,7 +128,7 @@ Contains settings for different sound zones in `senvironment.xr` file.
                 default
             </td>
             <td></td>
-            <td><audio controls src="audio/default.mp3"></audio></td>
+            <td><audio controls src="assets/audio/default.mp3"></audio></td>
         </tr>
         <tr>
             <td colspan="3" style="padding: 0;">
@@ -144,7 +144,7 @@ Contains settings for different sound zones in `senvironment.xr` file.
                 forest
             </td>
             <td></td>
-            <td><audio controls src="audio/forest.mp3"></audio></td>
+            <td><audio controls src="assets/audio/forest.mp3"></audio></td>
         </tr>
         <tr>
             <td colspan="3" style="padding: 0;">
@@ -160,7 +160,7 @@ Contains settings for different sound zones in `senvironment.xr` file.
                 house
             </td>
             <td></td>
-            <td><audio controls src="audio/house.mp3"></audio></td>
+            <td><audio controls src="assets/audio/house.mp3"></audio></td>
         </tr>
         <tr>
             <td colspan="3" style="padding: 0;">
@@ -176,7 +176,7 @@ Contains settings for different sound zones in `senvironment.xr` file.
                 long_corridor
             </td>
             <td></td>
-            <td><audio controls src="audio/long-corridor.mp3"></audio></td>
+            <td><audio controls src="assets/audio/long-corridor.mp3"></audio></td>
         </tr>
         <tr>
             <td colspan="3" style="padding: 0;">
@@ -192,7 +192,7 @@ Contains settings for different sound zones in `senvironment.xr` file.
                 mountains
             </td>
             <td></td>
-            <td><audio controls src="audio/mountains.mp3"></audio></td>
+            <td><audio controls src="assets/audio/mountains.mp3"></audio></td>
         </tr>
         <tr>
             <td colspan="3" style="padding: 0;">
@@ -208,7 +208,7 @@ Contains settings for different sound zones in `senvironment.xr` file.
                 open_space
             </td>
             <td></td>
-            <td><audio controls src="audio/open-space.mp3"></audio></td>
+            <td><audio controls src="assets/audio/open-space.mp3"></audio></td>
         </tr>
         <tr>
             <td colspan="3" style="padding: 0;">
@@ -224,7 +224,7 @@ Contains settings for different sound zones in `senvironment.xr` file.
                 plant
             </td>
             <td></td>
-            <td><audio controls src="audio/plant.mp3"></audio></td>
+            <td><audio controls src="assets/audio/plant.mp3"></audio></td>
         </tr>
         <tr>
             <td colspan="3" style="padding: 0;">
@@ -240,7 +240,7 @@ Contains settings for different sound zones in `senvironment.xr` file.
                 room
             </td>
             <td></td>
-            <td><audio controls src="audio/room.mp3"></audio></td>
+            <td><audio controls src="assets/audio/room.mp3"></audio></td>
         </tr>
         <tr>
             <td colspan="3" style="padding: 0;">
@@ -256,7 +256,7 @@ Contains settings for different sound zones in `senvironment.xr` file.
                 yard
             </td>
             <td></td>
-            <td><audio controls src="audio/yard.mp3"></audio></td>
+            <td><audio controls src="assets/audio/yard.mp3"></audio></td>
         </tr>
         <tr>
             <td colspan="3" style="padding: 0;">

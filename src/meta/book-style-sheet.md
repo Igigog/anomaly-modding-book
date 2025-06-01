@@ -4,7 +4,7 @@ ___
 
 ## Glossary
 
-Add only Stalker related terms, either those that cannot be found in open sources or there is little information about them and they are important to fully understand the context.
+Add only S.T.A.L.K.E.R. related terms, either those that cannot be found in open sources or there is little information about them and they are important to fully understand the context.
 
 ## Formatting
 

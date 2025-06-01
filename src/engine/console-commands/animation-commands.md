@@ -2,7 +2,7 @@
 
 ___
 
-## Animations Debug
+## Debug build
 
 | Command | Command description | Command's argument |
 |---|---|---|

@@ -55,4 +55,4 @@ ___
 
 ## Sources
 
-[Source](http://stalkerin.gameru.net/wiki/index.php?title=Level.cform)
+[Source (Wayback Machine)](https://web.archive.org/web/20200919000210/http://stalkerin.gameru.net/wiki/index.php?title=Level.cform)

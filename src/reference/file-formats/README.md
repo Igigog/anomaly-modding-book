@@ -54,7 +54,7 @@ This section describes the extensions that are found in the game files and the S
 | [*.hs](../file-formats/shaders/hs.md) | Hull shader |
 | [*.vs](../file-formats/shaders/vs.md) | Vertex shader |
 | [*.ps](../file-formats/shaders/ps.md) | Pixel shader |
-| [*.s](../file-formats/shaders/s.md) | Script shader. LUA version of engine blenders |
+| [*.s](../file-formats/shaders/s.md) | Script shader. Lua version of engine blenders |
 
 ## Postprocess
 

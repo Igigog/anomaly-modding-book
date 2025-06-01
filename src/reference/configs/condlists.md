@@ -5,6 +5,8 @@ ___
 Courtesy of tdef#6225
 Transferred to modding book by demonized#1084
 
+## About
+
 Condition list or condlist is one way to write dynamic configuration files and have this structure:
 
 ## somefile.ltx

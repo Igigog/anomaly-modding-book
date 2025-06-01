@@ -2,7 +2,7 @@
 
 ___
 
-## General information
+## About
 
 ![npc-logic-execute centered](assets/images/npc-logic-execute.png)
 

@@ -64,4 +64,4 @@ ___
 
 ## Sources
 
-[Source](https://www.gameru.net/forum/index.php?showtopic=41944)
+[Source (Wayback Machine)](https://web.archive.org/web/20130511164115/https://www.gameru.net/forum/index.php?showtopic=41944)

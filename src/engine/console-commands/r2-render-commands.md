@@ -6,21 +6,23 @@ ___
 DirectX 9.0c - (Shader Model 3.0)
 ```
 
+## Release build
+
 | Command | Command description | Command's argument | Note |
 |---|---|---|---|
-| r2_aa | "Pseudo-smoothing" on dynamic lighting | 'on/off' or '1/0' | - |
+| r2_aa | Enable "Pseudo-smoothing" on dynamic lighting | 'on/off' or '1/0' | - |
 | r2_aa_break | Distance at which the "Pseudo-smoothing" effect works | 0.000000e+00, 0.000000e+00, 0.000000e+00 - 1.000000e+00, 1.000000e+00, 1.000000e+00 | - |
-| r2_aa_kernel | The basic value of the "Pseudo-smoothing" effect | 0.300 - 0.700 | - |
+| r2_aa_kernel | Basic value of the "Pseudo-smoothing" effect | 0.300 - 0.700 | - |
 | r2_aa_weight | Controls the blurring of the fake AA more accurately | 0.000000e+00, 0.000000e+00, 0.000000e+00 - 1.000000e+00, 1.000000e+00, 1.000000e+00 | - |
 | r2_allow_r1_lights |  | 'on/off' or '1/0' | - |
-| r2_detail_bump | Detail textures | 'on/off' or '1/0' | - |
+| r2_detail_bump | Enable bump for Detail textures | 'on/off' or '1/0' | - |
 | r2_dof |  |  | - |
-| r2_dof_enable | Enables depth of field | 'on/off' or '1/0' | - |
+| r2_dof_enable | Enable depth of field | 'on/off' or '1/0' | - |
 | r2_dof_radius | Doesn't work. In vanilla game that command controls blur radius | 0.05 - 1.0 | - |
 | r2_dof_sky | Sky depth | -10000.0 - 10000.0 | - |
 | r2_drops_control | Controls rain drops shader | 0.000000e+00, 0.000000e+00, 0.000000e+00 - 1.000000e+00, 2.000000e+00, 1.000000e+00 | - |
 | r2_exp_donttest_shad |  | 'on/off' or '1/0' | - |
-| r2_gi | Global illumination | 'on/off' or '1/0' | - |
+| r2_gi | Enalbe Global illumination | 'on/off' or '1/0' | - |
 | r2_gi_clip | Global illumination effect range | 0.000 - 0.100 | - |
 | r2_gi_depth | Shadow depth of the global illumination effect | 1 - 5 | - |
 | r2_gi_photons | Number of rays to trace the global illumination effect | 8 - 256 | - |
@@ -41,32 +43,32 @@ DirectX 9.0c - (Shader Model 3.0)
 | r2_ls_ssm_kernel |  | 0.100 - 3.000 | - |
 | r2_mask_control | Controls gasmask shader | 0.000000e+00, 0.000000e+00, 0.000000e+00, 0.000000e+00 - 1.000000e+01, 3.000000e+00, 1.000000e+00, 1.000000e+00 | - |
 | r2_mblur | Motion blur intensity | 0.0 - 1.0 | - |
-| r2_mblur_enabled | Enables motion blur effect | 'on/off' or '1/0' | - |
+| r2_mblur_enabled | Enable motion blur effect | 'on/off' or '1/0' | - |
 | r2_parallax_h | Parallax strength | 0.0 - 0.5 | - |
 | r2_qsync |  | 0 - 1 | - |
-| r2_shadow_cascede_old | Enables 'SoC-like' shadow mapping | 'on/off' or '1/0' | - |
+| r2_shadow_cascede_old | Enable 'SoC-like' shadow mapping | 'on/off' or '1/0' | - |
 | r2_slight_fade |  | 0.200 - 1.000 | - |
-| r2_smaa | Subpixel Morphological Anti-aliasing | off<br> low<br> medium<br> high<br> ultra | - |
-| r2_soft_particles | Soft particles | 'on/off' or '1/0' | - |
-| r2_soft_water | Soft Water | 'on/off' or '1/0' | - |
+| r2_smaa | Enable Subpixel Morphological Anti-aliasing | off<br> low<br> medium<br> high<br> ultra | - |
+| r2_soft_particles | Enable soft particles | 'on/off' or '1/0' | - |
+| r2_soft_water | Enable soft Water | 'on/off' or '1/0' | - |
 | r2_ss_sunshafts_length | Length of screen-space sun rays | 0.2 - 1.5 | - |
 | r2_ss_sunshafts_radius |  | 0.500 - 2.000 | - |
-| r2_ssa_lod_a | Level of detail of dynamic objects | 16.0 - 96.0 | - |
-| r2_ssa_lod_b | Level of detail of static objects | 32.0 - 96.0 | - |
-| r2_ssao | Screen space ambient occlusion effect quality | st_opt_off<br> st_opt_low<br> st_opt_medium<br> st_opt_high<br> st_opt_ultra | - |
-| r2_ssao_blur | Doesn't work. | 'on/off' or '1/0' | - |
-| r2_ssao_half_data | Enables half-resolution depth buffer for AO | 'on/off' or '1/0' | - |
+| r2_ssa_lod_a |  | 16.0 - 96.0 | - |
+| r2_ssa_lod_b |  | 32.0 - 96.0 | - |
+| r2_ssao | Enable Screen Space Ambient Occlusion | st_opt_off<br> st_opt_low<br> st_opt_medium<br> st_opt_high<br> st_opt_ultra | - |
+| r2_ssao_blur | Doesn't work | 'on/off' or '1/0' | - |
+| r2_ssao_half_data | Enable half-resolution depth buffer for Ambient Occlusion | 'on/off' or '1/0' | - |
 | r2_ssao_hbao | Horizon-Based Ambient Occlusion | 'on/off' or '1/0' | - |
 | r2_ssao_hdao | High-definition Ambient Occlusion | 'on/off' or '1/0' | - |
 | r2_ssao_mode | Ambient occlusion type | disabled<br> default<br> hdao<br> hbao | - |
 | r2_ssao_opt_data |  | 'on/off' or '1/0' | - |
-| r2_steep_parallax | Steep parallax occlusion mapping | 'on/off' or '1/0' | - |
-| r2_sun | Shadows from the sun | 'on/off' or '1/0' | - |
+| r2_steep_parallax | Enable [Steep Parallax Occlusion Mapping](https://en.wikipedia.org/wiki/Parallax_mapping#Steep_parallax_mapping) | 'on/off' or '1/0' | - |
+| r2_sun | Enable sun shadows | 'on/off' or '1/0' | - |
 | r2_sun_depth_far_bias |  | -0.500 - 0.500 | - |
 | r2_sun_depth_far_scale |  | 0.500 - 1.500 | - |
 | r2_sun_depth_near_bias |  | -0.500 - 0.500 | - |
 | r2_sun_depth_near_scale |  | 0.500 - 1.500 | - |
-| r2_sun_details | Shadows of grass and other detailed objects | 'on/off' or '1/0' | - |
+| r2_sun_details | Enable sun shadows for grass and other detailed objects | 'on/off' or '1/0' | - |
 | r2_sun_far |  | 51.000 - 180.000 | - |
 | r2_sun_focus | Focus of sun shadows | 'on/off' or '1/0' | - |
 | r2_sun_lumscale | Sun light brightness | 0.0 - 3.0 | - |
@@ -100,12 +102,12 @@ DirectX 9.0c - (Shader Model 3.0)
 | r2_tonemap_middlegray | Controls the overall appearance of the HDR effect | 0.000 - 2.000 | - |
 | r2_volumetric_lights | Volumetric light | 'on/off' or '1/0' | - |
 | r2_wait_sleep |  | 0 - 1 | - |
-| r2_water_reflections |  | 'on/off' or '1/0' | - |
+| r2_water_reflections | Enable water reflections | 'on/off' or '1/0' | - |
 | r2_zfill |  | 'on/off' or '1/0' | - |
 | r2_zfill_depth |  | 0.001 - 0.500 | - |
 | r2em |  | 0.000 - 4.000 | - |
 
-## R2 Debug
+## Debug build
 
 | Command | Command description | Command's argument |
 |---|---|---|

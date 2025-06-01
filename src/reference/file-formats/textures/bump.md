@@ -12,7 +12,7 @@ ___
 
 ### Format
 
-- R - Glossiness (Glossiness, aka inverted roughness. It works best in stalker, and allows for using better [BRDF](https://en.wikipedia.org/wiki/Bidirectional_reflectance_distribution_function))
+- R - Glossiness (Glossiness, aka inverted roughness. It works best in S.T.A.L.K.E.R., and allows for using better [BRDF](https://en.wikipedia.org/wiki/Bidirectional_reflectance_distribution_function))
 - G - Normal Z (Unused)
 - B - Normal Y (DirectX format)
 - A - Normal X

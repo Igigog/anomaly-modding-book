@@ -2,7 +2,7 @@
 
 ___
 
-## General information
+## About
 
 Weather editor allows you to change weather values in real-time. Minute precision
 
@@ -68,28 +68,28 @@ The settings of the editor and its parameters can be found in the file "`ui_debu
 | Name | Description | Note |
 |---|---|---|
 | ambient | Ambient | The list is taken from the file "`ambients.ltx`" |
-| ambient_color | Ambient Color |  |
-| clouds_color | Clouds Color |  |
-| clouds_texture | Clouds Texture |  |
+| ambient_color | Ambient color |  |
+| clouds_color | Clouds color |  |
+| clouds_texture | Clouds texture |  |
 | far_plane |  |  |
-| fog_color | Fog Color |  |
-| fog_density | Fog Density |  |
-| fog_distance | Fog Distance |  |
-| hemisphere_color | Hemisphere Color |  |
-| rain_density | Rain Density |  |
-| rain_color | Rain Color |  |
-| sky_color | Sky Color |  |
-| sky_rotation | Sky Rotation |  |
-| sky_texture | Sky Texture |  |
+| fog_color | Fog color |  |
+| fog_density | Fog density |  |
+| fog_distance | Fog distance |  |
+| hemisphere_color | Hemisphere color |  |
+| rain_density | Rain density |  |
+| rain_color | Rain color |  |
+| sky_color | Sky color |  |
+| sky_rotation | Sky rotation |  |
+| sky_texture | Sky texture |  |
 | sun | Sun | The list is taken from the file "`suns.ltx`" |
 | sun_color |  |  |
-| sun_longitude | Sun Longitude |  |
-| sun_altitude | Sun Altitude |  |
-| sun_shafts_intensity | Sun Shaft Intensity |  |
+| sun_longitude | Sun longitude |  |
+| sun_altitude | Sun altitude |  |
+| sun_shafts_intensity | Sun shaft intensity |  |
 | thunderbolt_collection |  | The list is taken from the file "`thunderbolt_collections.ltx`" |
-| thunderbolt_duration | Thunderbolt Duration |  |
-| thunderbolt_period | Thunderbolt Period |  |
-| water_intensity | Water Intensity |  |
-| wind_velocity | Wind Velocity |  |
-| tree_amplitude_intensity | Tree Amplitude Intensity |  |
-| wind_direction | Wind Direction |  |
+| thunderbolt_duration | Thunderbolt duration |  |
+| thunderbolt_period | Thunderbolt period |  |
+| water_intensity | Water intensity |  |
+| wind_velocity | Wind velocity |  |
+| tree_amplitude_intensity | Tree amplitude intensity |  |
+| wind_direction | Wind direction |  |

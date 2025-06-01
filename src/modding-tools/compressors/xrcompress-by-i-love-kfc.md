@@ -6,7 +6,7 @@ ___
 |---|---|
 | Program Developer | OGSR (Original Authors)<br>i-love-kfc |
 | Described Version | [0.1](https://disk.yandex.ru/d/CwLjWTuxPmSAHg) |
-| Discussion Forum | [Ap-pro forum topic](https://ap-pro.ru/forums/topic/3500-obnovlyonnyy-xrcompress) |
+| Discussion Forum | [Ap-pro forum topic (Wayback Machine)](https://web.archive.org/web/20220706063210/https://ap-pro.ru/forums/topic/3500-obnovlyonnyy-xrcompress/) |
 
 ___
 

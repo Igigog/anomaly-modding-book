@@ -57,7 +57,7 @@ This will allow us (if you make for example a model library or work in the SDK) 
 
 ![Static Object Placement centered](assets/gifs/setup-static-object-placement.gif)
 
-## Material
+## Surface
 
 Select our object and go to the `Material Properties`![Material Properties svg-icon](../../assets/icons/blender/material.svg) tab.
 

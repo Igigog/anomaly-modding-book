@@ -50,12 +50,12 @@ ___
 Official SDK with community enhancements:
 
 - [SDK 0.4 (Shadows of Chernobyl)](https://sharedby.blomp.com/gI0i4B)
-  - [SDK 0.4 by Yara](https://bitbucket.org/Yar0s1av/xray_stalker_sdk_04_fixed/src/master/) - This is a compiled from source SDK 0.4, which has dozens of fixes and improvements.
+  - [SDK 0.4 by Yara](https://drive.google.com/file/d/12tR-JjG8lCsV13g9CFFsS-chyRzI0JuC/view) - This is a compiled from source SDK 0.4, which has dozens of fixes and improvements.
   - [SDK 0.4 by YUSHAT](http://files.xray-engine.org/yurshat/repack/xray_sdk_yurshat_repack.rar)
   - [SDK 0.4 by Political](https://disk.yandex.ru/d/KmVOitON3GnyuU)
 
 - [SDK 0.5 (Clear Sky)](https://sharedby.blomp.com/AWr3Vs)
-  - [SDK B.O.R.S.C.H.T for CS by Lightning in a vacuum](https://bitbucket.org/stalker/xray-csky_borscht_sdk/src/master/)
+  - [SDK B.O.R.S.C.H.T for CS by Lightning in a vacuum](https://bitbucket.org/stalker/xray-borscht/src/master/)
 
 ```admonish warning
 These versions (SDK 0.4 and SDK 0.5/0.6) are not compatible with Anomaly!
@@ -138,8 +138,6 @@ ___
 
 - [ThmValidator](https://sharedby.blomp.com/tnT8vj) - Allows you to check the [*.thm](../reference/file-formats/textures/thm.md) files in the selected directory and automatically fix the most common bugs that occur during manual editing.
 
-- [xrAutoUI](https://cdn.discordapp.com/attachments/978593574893535274/1083798175896326206/xrAutoUI.exe) - Auto-transfer UI from 4:3 to 16:9
-
 - Any program capable of creating textures or opening [*.dds](../reference/file-formats/textures/dds.md) files (e.g. [Paint.net](https://www.getpaint.net/))
 
 ___
@@ -172,8 +170,6 @@ ___
   - [More](audio-video/savandt.md)
 
 - [OGG Editor](https://disk.yandex.ru/d/Dcyo0Nt3A3b5g) - This utility is designed to quickly view and edit audio comments
-
-- [StkOggCommentViewer](https://cdn.discordapp.com/attachments/978593574893535274/979058737270644776/StkOggCommentViewer.exe) - Allows viewing comments in an [*.ogg](../reference/file-formats/audio-video/ogg.md) file
 
 - [OggCommentDecompiler](https://ap-pro.ru/applications/core/interface/file/attachment.php?id=22581) - Saves comments in a [*.ltx](../reference/file-formats/conf-script/ltx.md) file, whose name and path are equivalent to the sound file
 
@@ -247,8 +243,6 @@ ___
     - [GUI for Converter](https://modsfire.com/download/Fzg5Q2L2pcEHA8m/e9f70) - GUI for converter
   - [More](https://modfaq.ru/X-Ray_Converter)
 
-- [Particle Editor Tools](https://cdn.discordapp.com/attachments/978593574893535274/979057726623735828/Particle_Editor_Tools.rar) - Decompiling/compiling particle.xr file
-
 - [Universal ACDC](https://disk.yandex.ru/d/-GBYa8DxQv8MF) - Perl script, to unpack and pack all.spawn
   - [Universal ACDC by PSIget](https://github.com/PSIget/Universal-ACDC) - A modyfied ACDC version
 - [gamemtl_xr_cdc](https://disk.yandex.ru/d/hR79KfSn3PLtSK) - To decompile [gamemtl.xr](../reference/main-folders-and-files/README.md#files)
@@ -272,9 +266,7 @@ ___
 
 ## .db | .xdb archivers
 
-- [DB_Compressor by d_μaμ](https://cdn.discordapp.com/attachments/616764067670917131/846799604438532107/DB_Compressor.rar)
-- [xrCompress by i-love-kfc](https://ap-pro.ru/forums/topic/3500-obnovlyonnyy-xrcompress/) - .db/.xdb archiver
-  - [More](compressors/xrcompress-by-i-love-kfc.md)
+- [xrCompress by i-love-kfc](compressors/xrcompress-by-i-love-kfc.md) - .db/.xdb archiver
 
 ___
 

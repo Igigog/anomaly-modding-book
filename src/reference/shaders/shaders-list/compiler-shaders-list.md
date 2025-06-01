@@ -110,7 +110,7 @@ This section contains a list and description of the shaders that are available i
                 <span class="expand-btn" data-source="compiler-shaders/def-ghost-vertex.html">+</span>
                 def_shaders/def_ghost_vertex
             </td>
-            <td>Semi-transparent vertex shader with UV optimization, shadow cast and without collision</td>
+            <td>Semi-transparent vertex shader with UV optimization, rendering, shadow casting and without collision</td>
         </tr>
         <tr>
             <td colspan="3" style="padding: 0;">
@@ -125,7 +125,7 @@ This section contains a list and description of the shaders that are available i
                 <span class="expand-btn" data-source="compiler-shaders/def-ghost.html">+</span>
                 def_shaders/def_ghost
             </td>
-            <td>Semi-transparent lightmap shader without collision</td>
+            <td>Semi-transparent lightmap shader with UV opimization, rendering, shadow casting and without collision</td>
         </tr>
         <tr>
             <td colspan="3" style="padding: 0;">
@@ -140,7 +140,7 @@ This section contains a list and description of the shaders that are available i
                 <span class="expand-btn" data-source="compiler-shaders/def-kolizion-lm.html">+</span>
                 def_shaders/def_kolizion_lm
             </td>
-            <td>Invisible lightmap shader with collision</td>
+            <td>Invisible lightmap shader with collision and without UV opimization, rendering, shadow casting</td>
         </tr>
         <tr>
             <td colspan="3" style="padding: 0;">
@@ -155,7 +155,7 @@ This section contains a list and description of the shaders that are available i
                 <span class="expand-btn" data-source="compiler-shaders/def-kolizion-vertex.html">+</span>
                 def_shaders/def_kolizion_vertex
             </td>
-            <td>invisible [geometry shader](https://en.wikipedia.org/wiki/Shader#Geometry_shaders) with collision</td>
+            <td>Invisible vertex shader with collision and without UV opimization, rendering, shadow casting</td>
         </tr>
         <tr>
             <td colspan="3" style="padding: 0;">
@@ -170,7 +170,7 @@ This section contains a list and description of the shaders that are available i
                 <span class="expand-btn" data-source="compiler-shaders/def-kolizion.html">+</span>
                 def_shaders/def_kolizion
             </td>
-            <td>[geometry shader](https://en.wikipedia.org/wiki/Shader#Geometry_shaders) with collision</td>
+            <td></td>
         </tr>
         <tr>
             <td colspan="3" style="padding: 0;">
@@ -185,7 +185,7 @@ This section contains a list and description of the shaders that are available i
                 <span class="expand-btn" data-source="compiler-shaders/def-normals.html">+</span>
                 def_shaders/def_normals
             </td>
-            <td></td>
+            <td>Semi-transparent lightmap shader with UV optimization, rendering, shadow cast, collision</td>
         </tr>
         <tr>
             <td colspan="3" style="padding: 0;">
@@ -200,7 +200,7 @@ This section contains a list and description of the shaders that are available i
                 <span class="expand-btn" data-source="compiler-shaders/def-noshadow-pol.html">+</span>
                 def_shaders/def_noshadow_pol
             </td>
-            <td></td>
+            <td>Lightmap shader with UV optimization, rendering, collision and without shadow casting</td>
         </tr>
         <tr>
             <td colspan="3" style="padding: 0;">
@@ -215,7 +215,7 @@ This section contains a list and description of the shaders that are available i
                 <span class="expand-btn" data-source="compiler-shaders/def-noshadow.html">+</span>
                 def_shaders/def_noshadow
             </td>
-            <td></td>
+            <td>Semi-transparent lightmap shader with UV optimization, rendering, collision and no shadow casting</td>
         </tr>
         <tr>
             <td colspan="3" style="padding: 0;">

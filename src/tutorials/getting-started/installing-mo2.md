@@ -155,8 +155,6 @@ If you have any ideas what I should change, fix or add in this guide feel free t
 
 Inspired by [lazy stalker guide](https://lazystalker.blogspot.com/2020/11/mod-organizer-2-stalker-anomaly-addons.html).
 
-Link to my patreon [here ( ͡° ͜ʖ ͡°)](https://cdn.discordapp.com/attachments/831306141904404491/833351054707654706/provak.png).
-
 Credits:
 
 - d_nan: did absolutely nothing

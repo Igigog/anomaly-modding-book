@@ -51,6 +51,6 @@ This list is only for the vanilla version of the game! If you use engine edits, 
 
 - [Line 96](line-96.md)
 
-## LUA
+## Lua
 
 - [Line 204](line-204.md)

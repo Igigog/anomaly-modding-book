@@ -6,6 +6,8 @@ ___
 DirectX 11 - (Shader Model 5.0)
 ```
 
+## Release build
+
 | Command | Command description | Command's argument |
 |---|---|---|
 | r4_enable_tessellation | Tessellation | 'on/off' or '1/0' |

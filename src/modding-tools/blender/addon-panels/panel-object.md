@@ -233,7 +233,12 @@ Specifies an object of light sources. This object must have glow objects as chil
 
 ### Visual Type
 
-Type of visual object.
+- Normal
+- Hierarchy
+- Progressive
+- Tree Static
+- Tree Progressive
+- LoD
 
 ### Use Fastpath Geometry
 
@@ -277,7 +282,7 @@ Basic diffuse color.
 
 ### Specular
 
-Цвет бликов.
+Specular color.
 
 ### Ambient
 

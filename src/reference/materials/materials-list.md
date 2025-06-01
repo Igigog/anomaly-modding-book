@@ -292,7 +292,7 @@ This section contains a list and description of the Game Materials that are avai
                 <span class="expand-btn" data-source="static/fake.html">+</span>
                 material\fake
             </td>
-            <td>Collision material</td>
+            <td>Special fake material.</td>
         </tr>
         <tr>
             <td colspan="2" style="padding: 0;">
@@ -307,7 +307,7 @@ This section contains a list and description of the Game Materials that are avai
                 <span class="expand-btn" data-source="static/fake-ladders.html">+</span>
                 material\fake_ladders
             </td>
-            <td>Invisible ladder</td>
+            <td>Special material for invisible ladder.</td>
         </tr>
         <tr>
             <td colspan="2" style="padding: 0;">
@@ -322,7 +322,7 @@ This section contains a list and description of the Game Materials that are avai
                 <span class="expand-btn" data-source="static/fake-ladders-woods.html">+</span>
                 material\fake_ladders_woods
             </td>
-            <td>Invisible wooden ladder</td>
+            <td>Special material for invisible wooden ladder.</td>
         </tr>
         <tr>
             <td colspan="2" style="padding: 0;">
@@ -457,7 +457,7 @@ This section contains a list and description of the Game Materials that are avai
                 <span class="expand-btn" data-source="static/occ.html">+</span>
                 material\occ
             </td>
-            <td>Occlusion geometry material</td>
+            <td>Special material for occlusal geometry. Used for <a  href="../../glossary/glossary.html#hierarchical-occluder-mesh">HOM</a> or <a href="../../glossary/glossary.html#sound-occluder-mesh">SOM</a> Objects.</td>
         </tr>
         <tr>
             <td colspan="2" style="padding: 0;">

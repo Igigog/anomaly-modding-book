@@ -109,7 +109,7 @@ Contains descriptions of various S.T.A.L.K.E.R. related terms used in modding an
     <td>Motion Mark</td>
     <td>Time intervals in the animation in which something happens</td>
   </tr>
-    <tr id="motion-reference">
+  <tr id="motion-reference">
     <td>Motion Reference</td>
     <td>Reference to the animation library (<a href="../reference/file-formats/animations/omf.md">*.omf</a>)</td>
   </tr>
@@ -194,7 +194,7 @@ Contains descriptions of various S.T.A.L.K.E.R. related terms used in modding an
   </tr>
   <tr id="multiply-usage-object">
     <td>Multiply Usage Object</td>
-    <td>Needed for automatic creation of LOD at compilation stage</td>
+    <td>An object that creates an Imposter texture of the same object.</td>
   </tr>
   <tr id="_hud-model">
     <td>*_hud</td>
@@ -203,10 +203,6 @@ Contains descriptions of various S.T.A.L.K.E.R. related terms used in modding an
   <tr id="_world-model">
     <td>*_world</td>
     <td>*_world is a model in-game world (NPC weapons, 3rd-person view). The difference from the *_hud model is that the *_world must have a collision to calculate the interaction with the game.</td>
-  </tr>
-  <tr id="progressive-meshes">
-    <td>Progressive Meshes</td>
-    <td>One of the methods of dynamic level of detail. Only for Dynamic Objects.</td>
   </tr>
   <tr id="static-object">
     <td>Static Object</td>
@@ -222,19 +218,19 @@ Contains descriptions of various S.T.A.L.K.E.R. related terms used in modding an
   </tr>
   <tr id="light-source-object">
     <td>Light Source Object</td>
-    <td>Light source</td>
+    <td>Light source.</td>
   </tr>
   <tr id="sound-source-object">
     <td>Sound Source Object</td>
-    <td>Sound source</td>
+    <td>Sound source.</td>
   </tr>
   <tr id="sound-environment-object">
     <td>Sound Environment Object</td>
-    <td></td>
+    <td>Object with environmental sound effects.</td>
   </tr>
   <tr id="glow-object">
     <td>Glow Object</td>
-    <td>Glow object</td>
+    <td>Glow object.</td>
   </tr>
   <tr id="fog-volume-object">
     <td>Fog Volume Object</td>
@@ -249,9 +245,9 @@ Contains descriptions of various S.T.A.L.K.E.R. related terms used in modding an
     <td>Parameters (in <a href="../reference/file-formats/conf-script/ltx.md">*.ltx</a> format) written directly into the object.</td>
   </tr>
   </tr>
-    <tr id="hom-object">
-    <td>HOM Object</td>
-    <td></td>
+    <tr id="hierarchical-occluder-mesh">
+    <td>Hierarchical Occluder Mesh</td>
+    <td>Geometry defining the visibility of an object to remove from the renderer.</td>
   </tr>
 </tbody>
 </table>
@@ -306,6 +302,14 @@ Contains descriptions of various S.T.A.L.K.E.R. related terms used in modding an
   <tr id="sector">
     <td>Sector</td>
     <td>Sector is part of Portal Rendering. An area or section of virtual space that contains objects and geometry for rendering. Sectors help organize the scene, allowing you to control visibility and performance, especially in large worlds.</td>
+  </tr>
+    <tr id="hierarchical-occlusion-mapping">
+    <td>Hierarchical Occlusion Mapping</td>
+    <td>Technique in computer graphics that uses a multi-resolution representation of occlusion information to efficiently culling objects that are not visible.</td>
+  </tr>
+  <tr id="progressive-meshes">
+    <td>Progressive Meshes</td>
+    <td>One of the methods of dynamic level of detail. Only for <a href="dynamic-object">Dynamic Objects</a>.</td>
   </tr>
 </tbody>
 </table>

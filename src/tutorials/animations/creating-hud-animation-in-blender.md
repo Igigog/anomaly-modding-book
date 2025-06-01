@@ -1,4 +1,4 @@
-# Creating HUD animation in Blender
+# Creating HUD Animation in Blender
 
 ___
 

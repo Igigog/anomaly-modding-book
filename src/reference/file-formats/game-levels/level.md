@@ -197,4 +197,4 @@ ___
 
 ## Sources
 
-[Source](http://stalkerin.gameru.net/wiki/index.php?title=Level)
+[Source (Wayback Machine)](https://web.archive.org/web/20220807151701/http://stalkerin.gameru.net/wiki/index.php?title=Level)

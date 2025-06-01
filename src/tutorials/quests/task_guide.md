@@ -29,7 +29,7 @@ Before we start, keep in mind tasks often take part at the junction of a lot of 
 
 This guide aims to address how to work on tasks, and specifically tasks, while sometimes making connections to other things. You'll most likely need to get familiar (either before, or along the way) with those other systems in order to create your task, depending on how complex you want it.
 
-Make sure to check the [Anomaly Modding Book](https://igigog.github.io/anomaly-modding-book/index.html) to see if guides exists for these other aspects not detailed here.
+Make sure to check the [Anomaly Modding Book](../../README.md) to see if guides exists for these other aspects not detailed here.
 
 Without going into details, to create a task, you will at least need to play with the following files.
 
@@ -50,7 +50,7 @@ For more complex tasks, you may also need to create custom squads of NPCs, for w
 - `gamedata/configs/gameplay/dialogs_my_task.xml`:  
    where your custom dialogs will be.
 
-Note that, to ensure maximum compatibility, it is highly discouraged to edit and redistribute modified vanilla files. Instead, you can use [DLTX](https://igigog.github.io/anomaly-modding-book/addons/dltx.html) and [DXML](https://igigog.github.io/anomaly-modding-book/addons/dxml.html) to modify those files at runtime, ensuring high compatibility with other addons.
+Note that, to ensure maximum compatibility, it is highly discouraged to edit and redistribute modified vanilla files. Instead, you can use [DLTX](../addons/dltx.md) and [DXML](../addons/dxml.md) to modify those files at runtime, ensuring high compatibility with other addons.
 
 ___
 
