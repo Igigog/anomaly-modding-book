@@ -22,6 +22,7 @@ The formatting of articles is entirely at your discretion and will not be correc
 
 - [HTML](https://en.wikipedia.org/wiki/HTML), [CSS](https://en.wikipedia.org/wiki/CSS), [JavaScript](https://en.wikipedia.org/wiki/JavaScript) and [Handlebars](https://handlebarsjs.com/) are allowed
 - Underlining `___` after a heading
+- To link to some page in a book, it is better to use a relative link in markdown format rather than http
 - Use [Markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
   - Follow rules
   - Rules `MD33`, `MD13` and `MD10` (for code blocks) are disabled

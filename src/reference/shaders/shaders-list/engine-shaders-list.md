@@ -301,25 +301,111 @@ This section contains a list and description of the shaders that are available i
 
 ### ufp Shaders
 
-| Shader name | Shader Type | Description |
-|---|---|---|
-| ufp_blend |  |  |
-
-### Test Shaders
-
-| Shader name | Shader Type | Description |
-|---|---|---|
-| test\aaaaaaaa__ |  |  |
-| test\aass |  |  |
+<table class="main-table" id="SkyEngineShaderTable">
+    <thead>
+        <tr>
+            <th>Path and Shader Name</th>
+            <th>Shader Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/add.html">+</span>
+                ufp_blend
+            </td>
+            <td>particles</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ### Sky Shaders
 
-| Shader name | Shader Type | Description |
-|---|---|---|
-| sky\background |  |  |
-| sky\clouds |  |  |
-| sky\clouds_old |  |  |
-| sky\skydome |  |  |
+<table class="main-table" id="SkyEngineShaderTable">
+    <thead>
+        <tr>
+            <th>Path and Shader Name</th>
+            <th>Shader Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/add.html">+</span>
+                sky\background
+            </td>
+            <td>basic (simple)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/add.html">+</span>
+                sky\clouds
+            </td>
+            <td>basic (simple)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/add.html">+</span>
+                sky\clouds_old
+            </td>
+            <td>basic (simple)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="particles/add.html">+</span>
+                sky\skydome
+            </td>
+            <td>basic (simple)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ### Particles Shaders
 
@@ -1050,87 +1136,1281 @@ This section contains a list and description of the shaders that are available i
 
 ### Levels Shaders
 
-| Shader name | Shader Type | Description | Shader Properties |
-|---|---|---|---|
-| levels\agroprom_asfalt | LEVEL: implicit**detail | Agroprom asphalt terrain shader | Name = detail\ground_asphalt_01<br> R2-R = detail\ground_grass_01<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\agroprom_grass | LEVEL: implicit**detail | Agroprom grass terrain shader | Name = detail\ground_grass_01<br> R2-R = detail\ground_grass_01<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\agroprom_gravel | LEVEL: implicit**detail | Agroprom gravel terrain shader | Name = detail\ground_earth_01<br> R2-R = detail\ground_grass_01<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\bar_asfalt | LEVEL: implicit**detail |  | Name = detail\ground_asphalt_01<br> R2-R = detail\ground_grass_01<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\bar_asphalt |  |  | Name = detail\ground_asphalt_01<br> R2-R = detail\ground_grass_01<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\bar_grass |  |  | Name = detail\ground_grass_01<br> R2-R = detail\ground_grass_01<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\bar_gravel |  |  | Name = detail\ground_earth_01<br> R2-R = detail\ground_grass_02<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\darkcape_asfalt |  |  | Name = detail\ground_grass_02<br> R2-R = detail\ground_grass_02<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\darkcape_grass |  |  | Name = detail\ground_grass_02<br> R2-R = detail\ground_grass_02<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\darksc_asfalt |  |  | Name = detail\ground_asphalt_01<br> R2-R = detail\ground_grass_02<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\darksc_grass |  |  | Name = detail\ground_grass_02<br> R2-R = detail\ground_grass_02<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\darkvalley_asfalt |  |  | Name = detail\ground_asphalt_01<br> R2-R = detail\ground_grass_01<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\darkvalley_grass |  |  | Name = detail\ground_grass_01<br> R2-R = detail\ground_grass_01<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\darkvalley_sand |  |  | Name = detail\ground_earth_01<br> R2-R = detail\ground_grass_01<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\dead_city_asfalt |  |  | Name = detail\ground_asphalt_01<br> R2-R = detail\ground_grass_02<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\dead_city_grass |  |  | Name = detail\ground_grass_02<br> R2-R = detail\ground_grass_02<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\dead_city_ground |  |  | Name = detail\ground_earth_01<br> R2-R = detail\ground_grass_02<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\deadcity_asfalt |  |  | Name = detail\ground_asphalt_01<br> R2-R = detail\ground_grass_01<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\deadcity_earth |  |  | Name = detail\ground_earth_01<br> R2-R = detail\ground_grass_02<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\dead_city_grass |  |  | Name = detail\ground_grass_02<br> R2-R = detail\ground_grass_02<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\escape_asfalt |  |  | Name = detail\ground_asphalt_01<br> R2-R = detail\ground_grass_01<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\escape_asfalt_noblend |  |  | Name = detail\ground_asphalt_01<br> R2-R = detail\ground_grass_01<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\escape_grass |  |  | Name = detail\ground_grass_01<br> R2-R = detail\ground_grass_01<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\escape_sand |  |  | Name = detail\ground_earth_01<br> R2-R = detail\ground_grass_01<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\garbage_asfalt |  |  | Name = detail\ground_asphalt_01<br> R2-R = detail\ground_grass_01<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_earth_04 |
-| levels\garbage_earth |  |  | Name = detail\ground_earth_01<br> R2-R = detail\ground_grass_01<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_earth_04 |
-| levels\garbage_grass |  |  | Name = detail\ground_grass_01<br> R2-R = detail\ground_grass_01<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_earth_04 |
-| levels\generator_asfalt |  |  | Name = detail\ground_asphalt_01<br> R2-R = detail\ground_grass_02<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_02<br> R2-A = detail\ground_mud_01 |
-| levels\generator_earth |  |  | Name = detail\ground_earth_02<br> R2-R = detail\ground_grass_02<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_02<br> R2-A = detail\ground_mud_01 |
-| levels\generators_art |  |  | Name = detail\ground_grass_02<br> R2-R = detail\ground_grass_02<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_02<br> R2-A = detail\ground_mud_01 |
-| levels\hospital_grass |  |  | Name = detail\ground_grass_02<br> R2-R = detail\ground_grass_02<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\hospital_sand |  |  | Name = detail\ground_earth_02<br> R2-R = detail\ground_grass_01<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\jupiter_asfalt |  |  | Name = detail\ground_asphalt_01<br> R2-R = detail\ground_grass_01<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\detail_grnd_plates |
-| levels\jupiter_earth |  |  | Name = detail\ground_earth_01<br> R2-R = detail\ground_grass_01<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\detail_grnd_plates |
-| levels\jupiter_grass |  |  | Name = detail\ground_grass_01<br> R2-R = detail\ground_grass_01<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\detail_grnd_plates |
-| levels\jupiter_plates |  |  | Name = detail\detail_grnd_plates<br> R2-R = detail\ground_grass_01<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\detail_grnd_plates |
-| levels\l01_escape_asfalt |  |  | Name = detail\ground_grass_01<br> R2-R = detail\ground_grass_01<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\l01_escape_asfalt_noblend |  |  | Name = detail\ground_asphalt_01<br> R2-R = detail\ground_asphalt_01<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_asphalt_01<br> R2-A = detail\ground_asphalt_01 |
-| levels\l01_escape_detritus |  |  | Name = detail\ground_earth_01<br> R2-R = detail\ground_grass_01<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\l01_escape_grass |  |  | Name = detail\ground_grass_01<br> R2-R = detail\ground_grass_01<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\l01_escape_sand |  |  | Name = detail\ground_earth_01<br> R2-R = detail\ground_grass_01<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\limansk_asfalt |  |  | Name = detail\ground_asphalt_01<br> R2-R = detail\ground_grass_02<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\limansk_earth |  |  | Name = detail\ground_earth_01<br> R2-R = detail\ground_grass_02<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\limansk_grass |  |  | Name = detail\ground_grass_02<br> R2-R = detail\ground_grass_02<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\maedow_asfalt |  |  | Name = detail\ground_asphalt_01<br> R2-R = detail\ground_grass_01<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\maedow_grass |  |  | Name = detail\ground_grass_02<br> R2-R = detail\ground_grass_01<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\maedow_sand |  |  | Name = detail\ground_earth_01<br> R2-R = detail\ground_grass_01<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\marsh_earth |  |  | Name = detail\ground_earth_01<br> R2-R = detail\ground_grass_02<br> R2-G = detail\ground_mud_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_marsh_01 |
-| levels\military_asfalt |  |  | Name = detail\ground_asphalt_01<br> R2-R = detail\ground_grass_02<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\military_grass |  |  | Name = detail\ground_grass_02<br> R2-R = detail\ground_grass_02<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\military_sand |  |  | Name = detail\ground_earth_01<br> R2-R = detail\ground_grass_02<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\pripyat_asfalt |  |  | Name = detail\ground_asphalt_01<br> R2-R = detail\ground_grass_02<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\pripyat_earth |  |  | Name = detail\ground_earth_01<br> R2-R = detail\ground_grass_02<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\pripyat_gras2 |  |  | Name = detail\ground_grass_02<br> R2-R = detail\ground_grass_02<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\pripyat_grass |  |  | Name = detail\ground_grass_02<br> R2-R = detail\ground_grass_02<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\radar_asfalt |  |  | Name = detail\ground_asphalt_01<br> R2-R = detail\ground_grass_01<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\radar_grass |  |  | Name = detail\ground_grass_01<br> R2-R = detail\ground_grass_01<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\red_forest_asfalt |  |  | Name = detail\ground_asphalt_01<br> R2-R = detail\ground_grass_03<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\red_forest_earth |  |  | Name = detail\ground_earth_01<br> R2-R = detail\ground_grass_03<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\red_forest_grass |  |  | Name = detail\ground_grass_03<br> R2-R = detail\ground_grass_03<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\red_forest_leaves |  |  | Name = detail\ground_earth_01<br>  R2-R = detail\ground_grass_03<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\red_forest_sand |  |  | Name = detail\ground_earth_01<br> R2-R = detail\ground_grass_03<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\stancia |  |  | Name = detail\ground_asphalt_01<br> R2-R = detail\ground_grass_02<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\stancia_asfalt |  |  | Name = detail\ground_asphalt_01<br> R2-R = detail\ground_grass_02<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\stancia_build_kanal |  |  | Name = detail\ground_earth_01<br> R2-R = detail\ground_grass_02<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\stancia_kanal |  |  | Name = detail\ground_mud_01<br> R2-R = detail\ground_grass_02<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\truckscemetery |  |  | Name = detail\ground_mud_01<br> R2-R = detail\ground_grass_01<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\truckscemetery_asfalt |  |  | Name = detail\ground_asphalt_01<br> R2-R = detail\ground_grass_01<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\truckscemetery_grass |  |  | Name = detail\ground_grass_01<br> R2-R = detail\ground_grass_01<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_01<br> R2-A = detail\ground_mud_01 |
-| levels\yantar_asfalt |  |  | Name = detail\ground_asphalt_01<br> R2-R = detail\ground_grass_03<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_04<br> R2-A = detail\ground_mud_01 |
-| levels\yantar_earth |  |  | Name = detail\ground_earth_04<br> R2-R = detail\ground_grass_03<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_04<br> R2-A = detail\ground_mud_01 |
-| levels\zaton_asfalt |  |  | Name = detail\ground_asphalt_01<br> R2-R = detail\ground_grass_02<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_02<br> R2-A = detail\ground_mud_01 |
-| levels\zaton_cracked |  |  | Name = detail\ground_earth_02<br> R2-R = detail\ground_grass_02<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_02<br> R2-A = detail\ground_mud_01 |
-| levels\zaton_earth |  |  | Name = detail\ground_earth_04<br> R2-R = detail\ground_grass_02<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_02<br> R2-A = detail\ground_mud_01 |
-| levels\zaton_earth_2 |  |  | Name = detail\ground_earth_02<br> R2-R = detail\ground_grass_02<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_02<br> R2-A = detail\ground_mud_01 |
-| levels\zaton_grass |  |  | Name = detail\ground_grass_02<br> R2-R = detail\ground_grass_02<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_02<br> R2-A = detail\ground_mud_01 |
-| levels\zaton_pebbles |  |  | Name = detail\detail_grnd_pebbles<br> R2-R = detail\ground_grass_02<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_02<br> R2-A = detail\ground_mud_01 |
-| levels\zaton_plates |  |  | Name = detail\detail_grnd_plates<br> R2-R = detail\ground_grass_02<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_02<br> R2-A = detail\ground_mud_01 |
-| levels\zaton_sand |  |  | Name = detail\ground_earth_02<br> R2-R = detail\ground_grass_02<br> R2-G = detail\ground_asphalt_01<br> R2-B = detail\ground_earth_02<br> R2-A = detail\ground_mud_01 |
+<table class="main-table" id="LevelEngineShaderTable">
+    <thead>
+        <tr>
+            <th>Path and Shader Name</th>
+            <th>Shader Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\agroprom_asfalt
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\agroprom_grass
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\agroprom_gravel
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\bar_asfalt
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\bar_asphalt
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\bar_grass
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\bar_gravel
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\darkcape_asfalt
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\darkcape_grass
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\darksc_asfalt
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\darksc_grass
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\darkvalley_asfalt
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\darkvalley_grass
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\darkvalley_sand
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\dead_city_asfalt
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\dead_city_grass
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\dead_city_ground
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\deadcity_asfalt
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\deadcity_earth
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\dead_city_grass
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\escape_asfalt
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\escape_asfalt_noblend
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\escape_grass
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\escape_sand
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\garbage_asfalt
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\garbage_earth
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\garbage_grass
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\generator_asfalt
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\generator_earth
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\generators_art
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\hospital_grass
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\hospital_sand
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\jupiter_asfalt
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\jupiter_earth
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\jupiter_grass
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\jupiter_plates
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\l01_escape_asfalt
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\l01_escape_asfalt_noblend
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\l01_escape_detritus
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\l01_escape_grass
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\l01_escape_sand
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\limansk_asfalt
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\limansk_earth
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\limansk_grass
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\maedow_asfalt
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\maedow_grass
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\maedow_sand
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\marsh_earth
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\military_asfalt
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\military_grass
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\military_sand
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\pripyat_asfalt
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\pripyat_earth
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\pripyat_gras2
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\pripyat_grass
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\radar_asfalt
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\radar_grass
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\red_forest_asfalt
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\red_forest_earth
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\red_forest_grass
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\red_forest_leaves
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\red_forest_sand
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\stancia
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\stancia_asfalt
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\stancia_build_kanal
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\stancia_kanal
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\truckscemetery
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\truckscemetery_asfalt
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\truckscemetery_grass
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\yantar_asfalt
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\yantar_earth
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\zaton_asfalt
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\zaton_cracked
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\zaton_earth
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\zaton_earth_2
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\zaton_grass
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\zaton_pebbles
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\zaton_plates
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                levels\zaton_sand
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ### HUD Shaders
 
@@ -1338,34 +2618,401 @@ This section contains a list and description of the shaders that are available i
 
 ### Effects Shaders
 
-| Shader name and path | Description |
-|---|---|
-| effects\bullet_tracer |  |
-| effects\flame |  |
-| effects\flare |  |
-| effects\fx_refl_pod |  |
-| effects\glow |  |
-| effects\lightning |  |
-| effects\lightplanes |  |
-| effects\moon |  |
-| effects\rain |  |
-| effects\screen_add |  |
-| effects\screen_blend |  |
-| effects\screen_noise |  |
-| effects\screen_set |  |
-| effects\shadow |  |
-| effects\shadow_blur |  |
-| effects\shadow_world |  |
-| effects\sun |  |
-| effects\wallmark |  |
-| effects\wallmarkblend |  |
-| effects\wallmarkmult |  |
-| effects\wallmarkset |  |
-| effects\water | pure water shader |
-| effects\waterryaska | crayfish shader |
-| effects\waterstuden | swamp shader |
-| effects\watertest |  |
-| effects\watertest-1 |  |
+<table class="main-table" id="EffectsEngineShaderTable">
+    <thead>
+        <tr>
+            <th>Path and Shader Name</th>
+            <th>Shader Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                effects\bullet_tracer
+            </td>
+            <td>basic (simple)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                effects\flame
+            </td>
+            <td>basic (simple)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                effects\flare
+            </td>
+            <td>basic (simple)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                effects\fx_refl_pod
+            </td>
+            <td>basic (simple)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                effects\glow
+            </td>
+            <td>basic (simple)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                effects\lightning
+            </td>
+            <td>basic (simple)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                effects\lightplanes
+            </td>
+            <td>LEVEL: diffuse*base</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                effects\moon
+            </td>
+            <td>basic (simple)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                effects\rain
+            </td>
+            <td>basic (simple)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                effects\screen_add
+            </td>
+            <td>basic (simple)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                effects\screen_blend
+            </td>
+            <td>basic (simple)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                effects\screen_noise
+            </td>
+            <td>basic (simple)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                effects\screen_set
+            </td>
+            <td>basic (simple)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                effects\shadow
+            </td>
+            <td>basic (simple)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                effects\shadow_blur
+            </td>
+            <td>basic (simple)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                effects\shadow_world
+            </td>
+            <td>INTERNAL: shadow projecting</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                effects\sun
+            </td>
+            <td>basic (simple)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                effects\wallmark
+            </td>
+            <td>basic (simple)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                effects\wallmarkblend
+            </td>
+            <td>basic (simple)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                effects\wallmarkmult
+            </td>
+            <td>basic (simple)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                effects\wallmarkset
+            </td>
+            <td>basic (simple)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                effects\water
+            </td>
+            <td>basic (simple)</td>
+            <td>pure water shader</td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                effects\waterryaska
+            </td>
+            <td>basic (simple)</td>
+            <td>crayfish shader</td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                effects\waterstuden
+            </td>
+            <td>basic (simple)</td>
+            <td>swamp shader</td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ### SDK Shaders
 
@@ -1517,25 +3164,289 @@ This section contains a list and description of the shaders that are available i
 
 ### Def_Shaders
 
-| Shader name and path | Description | Preview |
-|---|---|---|
-| def_shaders\def_add |  | ![def_add](images/shaders-preview/def_add.png) |
-| def_shaders\def_aref |  | ![def_aref](images/shaders-preview/def_aref.png) |
-| def_shaders\def_aref_v |  | ![def_aref_v](images/shaders-preview/def_aref_v.png) |
-| def_shaders\def_objects_lod |  | ![def_objects_lod](images/shaders-preview/def_objects_lod.png) |
-| def_shaders\def_objects_lod_trans |  | ![Alt text](images/shaders-preview/def_objects_lod_trans.png) |
-| def_shaders\def_refl_alpha |  | ![Alt text](images/shaders-preview/def_refl_alpha.png) |
-| def_shaders\def_refl_alpha_heli |  | ![Alt text](images/shaders-preview/def_refl_alpha_heli.png) |
-| def_shaders\def_refl_trans |  | ![Alt text](images/shaders-preview/def_refl_trans.png) |
-| def_shaders\def_trans |  | ![Alt text](images/shaders-preview/def_trans.png) |
-| def_shaders\def_trans_v |  | ![Alt text](images/shaders-preview/def_trans_v.png) |
-| def_shaders\def_trans_v_tuchi |  | ![Alt text](images/shaders-preview/def_trans_v_tuchi.png) |
-| def_shaders\def_vertex |  | ![Alt text](images/shaders-preview/def_vertex.png) |
-| def_shaders\def_vertex_hm |  | ![Alt text](images/shaders-preview/def_vertex.png) |
-| def_shaders\def_vertex_pn |  | ![Alt text](images/shaders-preview/def_vertex.png) |
-| def_shaders\def_vertex_pn_hm |  | ![Alt text](images/shaders-preview/def_vertex.png) |
-| def_shaders\lod |  | ![Alt text](images/shaders-preview/lod.png) |
-| def_shaders\lod_old |  | ![Alt text](images/shaders-preview/lod.png) |
+<table class="main-table" id="DefaultEngineShaderTable">
+    <thead>
+        <tr>
+            <th>Path and Shader Name</th>
+            <th>Shader Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="engine-shaders/default/def_add.html">+</span>
+                def_shaders\def_add
+            </td>
+            <td>basic (simple)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="engine-shaders/default/def_aref.html">+</span>
+                def_shaders\def_aref
+            </td>
+            <td>LEVEL: lmap*base.aref</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="engine-shaders/default/def_aref_v.html">+</span>
+                def_shaders\def_aref_v
+            </td>
+            <td>LEVEL: diffuse*base.aref</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="engine-shaders/default/def_objects_lod.html">+</span>
+                def_shaders\def_objects_lod
+            </td>
+            <td>LEVEL: trees/bushes</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="engine-shaders/default/def_objects_lod_trans.html">+</span>
+                def_shaders\def_objects_lod_trans
+            </td>
+            <td>LEVEL: trees/bushes</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="engine-shaders/default/def_refl_alpha.html">+</span>
+                def_shaders\def_refl_alpha
+            </td>
+            <td>LEVEL: lmap*(env^base)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="engine-shaders/default/def_refl_alpha_heli.html">+</span>
+                def_shaders\def_refl_alpha_heli
+            </td>
+            <td>LEVEL: lmap*(env^base)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="engine-shaders/default/def_refl_trans.html">+</span>
+                def_shaders\def_refl_trans
+            </td>
+            <td>LEVEL: lmap*(env^base)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="engine-shaders/default/def_trans.html">+</span>
+                def_shaders\def_trans
+            </td>
+            <td>LEVEL: lmap*base.aref</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="engine-shaders/default/def_trans_v.html">+</span>
+                def_shaders\def_trans_v
+            </td>
+            <td>LEVEL: diffuse*base.aref</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="engine-shaders/default/def_trans_v_tuchi.html">+</span>
+                def_shaders\def_trans_v_tuchi
+            </td>
+            <td>LEVEL: diffuse*base.aref</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="engine-shaders/default/def_vertex.html">+</span>
+                def_shaders\def_vertex
+            </td>
+            <td>LEVEL: diffuse*base</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="engine-shaders/default/def_vertex_hm.html">+</span>
+                def_shaders\def_vertex_hm
+            </td>
+            <td>LEVEL: diffuse*base</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="engine-shaders/default/def_vertex_pn.html">+</span>
+                def_shaders\def_vertex_pn
+            </td>
+            <td>LEVEL: diffuse*base</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="engine-shaders/default/def_vertex_pn_hm.html">+</span>
+                def_shaders\def_vertex_pn_hm
+            </td>
+            <td>LEVEL: diffuse*base</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="engine-shaders/default/lod.html">+</span>
+                def_shaders\lod
+            </td>
+            <td>basic (simple)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="engine-shaders/default/lod_old.html">+</span>
+                def_shaders\lod_old
+            </td>
+            <td>LEVEL: diffuse*base.aref</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ### Debug Shaders
 
@@ -1550,10 +3461,10 @@ This section contains a list and description of the shaders that are available i
     <tbody>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/debug/ai-nodes.html">+</span>
                 debug\ai_nodes
             </td>
-            <td></td>
+            <td>basic (simple)</td>
             <td></td>
         </tr>
         <tr>
@@ -1566,10 +3477,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/debug/wireframe.html">+</span>
                 debug\wireframe
             </td>
-            <td></td>
+            <td>basic (simple)</td>
             <td></td>
         </tr>
         <tr>
@@ -1630,7 +3541,29 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    const staticTable = document.getElementById('StaticObjectEngineShaderTable');
-    if (staticTable) staticTable.addEventListener('click', handleTableClick);
+    const StaticEngineTableTable = document.getElementById('StaticObjectEngineShaderTable');
+    const SkyEngineTableTable = document.getElementById('SkyEngineShaderTable');
+    const ParticleEngineTable = document.getElementById('ParticlesEngineShaderTable');
+    const DynamicEngineTable = document.getElementById('DynamicObjectEngineShaderTable');
+    const LevelEngineTable = document.getElementById('LevelEngineShaderTable');
+    const HUDEngineTable = document.getElementById('HUDEngineShaderTable');
+    const FloraEngineTable = document.getElementById('FloraEngineShaderTable');
+    const EffectsEngineTable = document.getElementById('EffectsEngineShaderTable');
+    const SDKEngineTable = document.getElementById('SDKEngineShaderTable');
+    const DetailEngineTable = document.getElementById('DetailObjectEngineShaderTable');
+    const DebugEngineTable = document.getElementById('DebugEngineShaderTable');
+    const DefaultEngineTable = document.getElementById('DefaultEngineShaderTable');
+    if (StaticEngineTableTable) StaticEngineTableTable.addEventListener('click', handleTableClick);
+    if (SkyEngineTableTable) SkyEngineTableTable.addEventListener('click', handleTableClick);
+    if (ParticleEngineTable) ParticleEngineTable.addEventListener('click', handleTableClick);
+    if (DynamicEngineTable) DynamicEngineTable.addEventListener('click', handleTableClick);
+    if (LevelEngineTable) LevelEngineTable.addEventListener('click', handleTableClick);
+    if (HUDEngineTable) HUDEngineTable.addEventListener('click', handleTableClick);
+    if (FloraEngineTable) FloraEngineTable.addEventListener('click', handleTableClick);
+    if (EffectsEngineTable) EffectsEngineTable.addEventListener('click', handleTableClick);
+    if (SDKEngineTable) SDKEngineTable.addEventListener('click', handleTableClick);
+    if (DetailEngineTable) DetailEngineTable.addEventListener('click', handleTableClick);
+    if (DebugEngineTable) DebugEngineTable.addEventListener('click', handleTableClick);
+    if (DefaultEngineTable) DefaultEngineTable.addEventListener('click', handleTableClick);
 });
 </script>

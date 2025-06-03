@@ -40,8 +40,7 @@ ___
 ## Converters
 
 - converter.exe (tools/) - Converts files from one format to another.
-- [X-Ray Export Tool](https://github.com/VaIeroK/XrayExportTool) - Tool for fast editing and exporting raw stalker formats
-  - [More](models/xray-export-tool.md)
+- [X-Ray Export Tool](models/xray-export-tool.md) - Tool for fast editing and exporting raw stalker formats
 
 ___
 
@@ -125,16 +124,12 @@ ___
 - [BumpGenerator](https://sharedby.blomp.com/MT4WEx) - Intended for DXT compression of bumps together with simultaneous generation of bump#maps (the purpose of which is to correct errors introduced by compression). It works similarly to a similar function in SDK. As input textures, both standard ("blue") bump textures and bump textures used directly in the game with rearranged channels are supported.
   - [Source Code](https://github.com/gunslingermod/BumpGenerator)
 
-- [Bump Generator by i-love-kfc](https://gitlab.com/i-love-kfc/bump-generator) - A simple bump and bump# texture generator from normal maps with the ability to use gloss maps, also, is capable of generating bump# for ready-made "green" bumps.
-  - [More](textures/bump-generator.md)
+- [Bump Generator by i-love-kfc](textures/bump-generator.md) - A simple bump and bump# texture generator from normal maps with the ability to use gloss maps, also, is capable of generating bump# for ready-made "green" bumps.
 
 - [BumpX_GUI](https://github.com/PiratBuildov/BumpX_GUI) - WinForms GUI for BumpX v07
 
-- [THM Editor](https://gitlab.com/i-love-kfc/thm-editor/) - Utility for editing [*.thm](../reference/file-formats/textures/thm.md) files without the need to use the SDK
-  - [More](textures/thm-editor-by-i-love-kfc.md)
-
-- [THM Editor by Valerok](https://github.com/VaIeroK/THM-Editor) - ValeroK's version of the original THM Editor
-  - [More](textures/thm-editor-by-valerok.md)
+- [THM Editor](textures/thm-editor-by-i-love-kfc.md) - Utility for editing [*.thm](../reference/file-formats/textures/thm.md) files without the need to use the SDK
+  - [THM Editor by Valerok](textures/thm-editor-by-valerok.md) - ValeroK's version of the original THM Editor
 
 - [ThmValidator](https://sharedby.blomp.com/tnT8vj) - Allows you to check the [*.thm](../reference/file-formats/textures/thm.md) files in the selected directory and automatically fix the most common bugs that occur during manual editing.
 
@@ -166,8 +161,7 @@ ___
 
 - [Audacity](https://www.audacityteam.org/)
 
-- [Sound Attribute Viewer And Tweaker](https://www.metacognix.com/files/stlkrsoc/index.html#:~:text=Sound%20Attribute%20Viewer%20and%20Tweaker,of%20NPCs%20to%20the%20sounds.) - Simple program that can reduce the work needed to view and/or edit STALKER sound file attributes used by all three STALKER games to determine initial volume, volume drop-off, and sensitivity of NPCs to the sounds
-  - [More](audio-video/savandt.md)
+- [Sound Attribute Viewer And Tweaker](audio-video/savandt.md) - Simple program that can reduce the work needed to view and/or edit STALKER sound file attributes used by all three STALKER games to determine initial volume, volume drop-off, and sensitivity of NPCs to the sounds
 
 - [OGG Editor](https://disk.yandex.ru/d/Dcyo0Nt3A3b5g) - This utility is designed to quickly view and edit audio comments
 
@@ -180,8 +174,7 @@ ___
 ## Animations
 
 - [OMF Editor](https://github.com/mortany/omf_editor) - Tool for working with [*.omf](../reference/file-formats/animations/omf.md) format.
-- [OMF Editor by Valerok](https://github.com/VaIeroK/Omf-Editor) - Modified tool for working with [*.omf](../reference/file-formats/animations/omf.md) format.
-  - [More](animations/omf-editor-by-valerok.md)
+- [OMF Editor by Valerok](animations/omf-editor-by-valerok.md) - Modified tool for working with [*.omf](../reference/file-formats/animations/omf.md) format.
 
 - OmfSpisok - utility for one-click output .txt list of connected *.omf files from \*.ogf file
 
@@ -190,8 +183,7 @@ ___
 ## Models
 
 - [OGF Editor](https://github.com/mortany/OGF-tool) - Tool for working with [*.ogf](../reference/file-formats/models/ogf.md) format
-- [OGF Editor by Valerok](https://github.com/VaIeroK/OGF-tool) - Tool for working with *.ogf and [*.dm](../reference/file-formats/models/dm.md) format
-  - [More](models/ogf-editor-by-valerok.md)
+- [OGF Editor by Valerok](models/ogf-editor-by-valerok.md) - Tool for working with *.ogf and [*.dm](../reference/file-formats/models/dm.md) format
 
 - [MeshToolz](https://github.com/gunslingermod/MeshToolz) - Swiss knife for low-level editing of OGF models. Want to copy a piece of one model to another? Easy. Change texture paths and bindings? No problem. Move and scale an item by snapping it to another bone? No problem. Can work both interactively and in script processing mode.
   - [Scripts For MeshToolz](https://github.com/gunslingermod/additional_scopes)
@@ -238,10 +230,7 @@ ___
 
 ## Decompilers | Compilers
 
-- [X-Ray Converter](https://disk.yandex.ru/d/nivUmGybuCXSC) - Multifunctional utility for working with game file formats and X-Ray SDK
-  - [X-Ray Converter Extra](https://disk.yandex.ru/d/7137tI653PRnrU) - Improved components for the converter
-    - [GUI for Converter](https://modsfire.com/download/Fzg5Q2L2pcEHA8m/e9f70) - GUI for converter
-  - [More](https://modfaq.ru/X-Ray_Converter)
+- [xray_re-tools](https://github.com/abramcumner/xray_re-tools) - X-Ray unofficial toolset for complex use with official S.T.A.L.K.E.R. MOD SDK.
 
 - [Universal ACDC](https://disk.yandex.ru/d/-GBYa8DxQv8MF) - Perl script, to unpack and pack all.spawn
   - [Universal ACDC by PSIget](https://github.com/PSIget/Universal-ACDC) - A modyfied ACDC version
@@ -259,8 +248,7 @@ ___
 
 ## Level Compilers
 
-- [Universal x64 level compilers](https://drive.google.com/file/d/1_sllfHcPL0pwsStf2x4lpPusbb6EZK8_/view) - Universal level compiler that supports the compilation format for games of all series and has many keys to compile
-  - [More](compilers/universal-x64-level-compilers.md)
+- [Universal x64 level compilers](compilers/universal-x64-level-compilers.md) - Universal level compiler that supports the compilation format for games of all series and has many keys to compile
 
 ___
 

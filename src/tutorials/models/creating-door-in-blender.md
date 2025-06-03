@@ -31,11 +31,13 @@ The second bone must be named `door`.
 
 #### Bone
 
-We need to set up a `door` bone.
+We need to set up a `door` and fixation bone.
 
 Go to `Bone Properties`![Bone Properties svg-icon](../../assets/icons/blender/bone.svg) tab.
 
-In X-Ray Engine: Bone, be sure to select `Box` in Shape Type
+For `door` bone:
+
+In [X-Ray Engine: Bone](../../modding-tools/blender/addon-panels/panel-bone.md), be sure to select `Box` in Shape Type
 
 ![alt text centered](assets/images/creating-door-in-blender-bone-shape.png)
 
@@ -46,14 +48,29 @@ For Joint Type, you can select `Joint` or `Slider`
 
 For bone, you must configure the maximum bone limits.
 
-For example for my door with type `Joint`
+Example for door with type `Joint`
 
 Limit Y:
 
 - Min - 0 --- Minimum Y-axis door limit
 - Max - 90d --- Maximum Y-axis door limit
 
-### Example 2
+For fixation bone:
+
+- Shape Type - None
+- Joint Type - Rigid
+
+### Example 2 - Slide Door
+
+```admonish tip
+This type of door can also be suitable for sliding drawers
+```
+
+Just like in the previous example, we need to create two bones
+
+
+
+But this time, for the `door` bone select `Slider` in `Joint Type`.
 
 ## Finish
 

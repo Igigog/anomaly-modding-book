@@ -26,7 +26,11 @@ Choose your model and duplicate it.
 When breaking a model, a separate, already broken model will be spawned. It can be divided parts of the original object or the same object, but with a different number of bones and Bone Shapes.
 ```
 
-For example for my model, I want to separate parts of the original model:
+```admonish note
+Note that the broken parts should repeat the place as in the original model. For example:
+```
+
+We need to divide the parts of the original model into component parts:
 
 ![Model Separated centered](assets/images/creating-brekable-object-separated.png)
 
@@ -34,9 +38,9 @@ For example for my model, I want to separate parts of the original model:
 
 [Main article: Setup Dynamic Object in Blender](setup-dynamic-object-in-blender.md)
 
-For the main object we need to create a bone and a Bone Shape.
+For the main object we need to create a bone and a Bone Shape and Joint Type - Rigid.
 
-
+![alt text centered](assets/images/creating-breakable-object-model-with-bone-shape.png)
 
 For parts of the object we will also need to create our own bones and Bone Shapes.
 

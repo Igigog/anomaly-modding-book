@@ -242,7 +242,7 @@ Contains descriptions of various S.T.A.L.K.E.R. related terms used in modding an
   </tr>
     <tr id="custom-data">
     <td>Custom Data</td>
-    <td>Parameters (in <a href="../reference/file-formats/conf-script/ltx.md">*.ltx</a> format) written directly into the object.</td>
+    <td>Custom or additional parameters (in <a href="../reference/file-formats/conf-script/ltx.md">*.ltx</a> format).</td>
   </tr>
   </tr>
     <tr id="hierarchical-occluder-mesh">
