@@ -105,18 +105,16 @@ This section contains a list and description of the shaders that are available i
             <th>Path and Shader Name</th>
             <th>Shader Type</th>
             <th>Description</th>
-            <th>Preview</th>
         </tr>
     </thead>
     <tbody>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="static/zfill.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/static/zfill.html">+</span>
                 zfill
             </td>
             <td>basic (simple)</td>
             <td></td>
-            <td></td>
         </tr>
         <tr>
             <td colspan="3" style="padding: 0;">
@@ -128,12 +126,11 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="static/xwindow.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/static/xwindow.html">+</span>
                 xwindow
             </td>
             <td>LEVEL: diffuse*base</td>
             <td>Old unused glass shader</td>
-            <td></td>
         </tr>
         <tr>
             <td colspan="3" style="padding: 0;">
@@ -145,12 +142,11 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="static/xwindow.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/static/selflight.html">+</span>
                 selflight
             </td>
             <td>LEVEL: diffuse*base</td>
             <td>Self-lighting shader</td>
-            <td></td>
         </tr>
         <tr>
             <td colspan="3" style="padding: 0;">
@@ -162,12 +158,11 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="static/glass.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/static//glass.html">+</span>
                 glass
             </td>
             <td>basic (simple)</td>
             <td></td>
-            <td></td>
         </tr>
         <tr>
             <td colspan="3" style="padding: 0;">
@@ -179,12 +174,11 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="static/friendly-indicator.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/static/friendly-indicator.html">+</span>
                 friendly_indicator
             </td>
             <td>basic (simple)</td>
             <td></td>
-            <td></td>
         </tr>
         <tr>
             <td colspan="3" style="padding: 0;">
@@ -196,12 +190,11 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="static/font.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/static/font.html">+</span>
                 font
             </td>
             <td>basic (simple)</td>
             <td></td>
-            <td></td>
         </tr>
         <tr>
             <td colspan="3" style="padding: 0;">
@@ -213,12 +206,11 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="static/default_pn_hm.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/static/default-pn-hm.html">+</span>
                 default_pn_hm
             </td>
             <td>LEVEL: lmap*base (default)</td>
             <td></td>
-            <td></td>
         </tr>
         <tr>
             <td colspan="3" style="padding: 0;">
@@ -230,12 +222,11 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="static/default_pn.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/static/default-pn.html">+</span>
                 default_pn
             </td>
             <td>LEVEL: lmap*base (default)</td>
             <td></td>
-            <td></td>
         </tr>
         <tr>
             <td colspan="3" style="padding: 0;">
@@ -247,12 +238,11 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="static/default_hm.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/static/default-hm.html">+</span>
                 default_hm
             </td>
             <td>LEVEL: lmap*base (default)</td>
             <td></td>
-            <td></td>
         </tr>
         <tr>
             <td colspan="3" style="padding: 0;">
@@ -264,12 +254,11 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="static/default.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/static/default.html">+</span>
                 default
             </td>
             <td>LEVEL: lmap*base (default)</td>
             <td></td>
-            <td></td>
         </tr>
         <tr>
             <td colspan="3" style="padding: 0;">
@@ -281,11 +270,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="static/clouds.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/static/clouds.html">+</span>
                 clouds
             </td>
             <td>basic (simple)</td>
-            <td></td>
             <td></td>
         </tr>
         <tr>
@@ -312,7 +300,7 @@ This section contains a list and description of the shaders that are available i
     <tbody>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/add.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/particles/ufp-blend.html">+</span>
                 ufp_blend
             </td>
             <td>particles</td>
@@ -342,7 +330,7 @@ This section contains a list and description of the shaders that are available i
     <tbody>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/add.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/sky/background.html">+</span>
                 sky\background
             </td>
             <td>basic (simple)</td>
@@ -358,7 +346,7 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/add.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/sky/clouds.html">+</span>
                 sky\clouds
             </td>
             <td>basic (simple)</td>
@@ -374,7 +362,7 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/add.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/sky/clouds-old.html">+</span>
                 sky\clouds_old
             </td>
             <td>basic (simple)</td>
@@ -390,7 +378,7 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/add.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/sky/skydome.html">+</span>
                 sky\skydome
             </td>
             <td>basic (simple)</td>
@@ -415,17 +403,15 @@ This section contains a list and description of the shaders that are available i
             <th>Path and Shader Name</th>
             <th>Shader Type</th>
             <th>Description</th>
-            <th>Preview</th>
         </tr>
     </thead>
     <tbody>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/add.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/particles/add.html">+</span>
                 particles\add
             </td>
-            <td></td>
-            <td></td>
+            <td>particles</td>
             <td></td>
         </tr>
         <tr>
@@ -438,11 +424,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/alpha-add.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/particles/alpha-add.html">+</span>
                 particles\alpha_add
             </td>
-            <td></td>
-            <td></td>
+            <td>particles</td>
             <td></td>
         </tr>
         <tr>
@@ -455,11 +440,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/blend.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/particles/blend.html">+</span>
                 particles\blend
             </td>
-            <td></td>
-            <td></td>
+            <td>particles</td>
             <td></td>
         </tr>
         <tr>
@@ -472,11 +456,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/dark.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/particles/dark.html">+</span>
                 particles\dark
             </td>
-            <td></td>
-            <td></td>
+            <td>particles</td>
             <td></td>
         </tr>
         <tr>
@@ -489,11 +472,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/set.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/particles/set.html">+</span>
                 particles\set
             </td>
-            <td></td>
-            <td></td>
+            <td>particles</td>
             <td></td>
         </tr>
         <tr>
@@ -506,11 +488,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/xadd.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/particles/xadd.html">+</span>
                 particles\xadd
             </td>
-            <td></td>
-            <td></td>
+            <td>basic (simple)</td>
             <td></td>
         </tr>
         <tr>
@@ -523,11 +504,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/xblend.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/particles/xblend.html">+</span>
                 particles\xblend
             </td>
-            <td></td>
-            <td></td>
+            <td>basic (simple)</td>
             <td></td>
         </tr>
         <tr>
@@ -540,11 +520,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/particles/xdistort.html">+</span>
                 particles\xdistort
             </td>
-            <td></td>
-            <td></td>
+            <td>basic (simple)</td>
             <td></td>
         </tr>
         <tr>
@@ -566,17 +545,15 @@ This section contains a list and description of the shaders that are available i
             <th>Path and Shader Name</th>
             <th>Shader Type</th>
             <th>Description</th>
-            <th>Preview</th>
         </tr>
     </thead>
     <tbody>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/add.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/dynamic/antigas-glass.html">+</span>
                 models\antigas_glass
             </td>
-            <td></td>
-            <td></td>
+            <td>MODEL: env^base</td>
             <td></td>
         </tr>
         <tr>
@@ -589,11 +566,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/alpha-add.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/dynamic/artefact.html">+</span>
                 models\artefact
             </td>
-            <td></td>
-            <td></td>
+            <td>MODEL: env^base</td>
             <td></td>
         </tr>
         <tr>
@@ -606,11 +582,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/blend.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/dynamic/artefact2.html">+</span>
                 models\artefact2
             </td>
-            <td></td>
-            <td></td>
+            <td>MODEL: env^base</td>
             <td></td>
         </tr>
         <tr>
@@ -623,11 +598,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/dark.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/dynamic/artifact-anim-env.html">+</span>
                 models\artifact-anim-env
             </td>
-            <td></td>
-            <td></td>
+            <td>MODEL: env^base</td>
             <td></td>
         </tr>
         <tr>
@@ -640,11 +614,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/set.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/dynamic/glass-stalker-refl.html">+</span>
                 models\glass_stalker_refl
             </td>
-            <td></td>
-            <td></td>
+            <td>MODEL: env^base</td>
             <td></td>
         </tr>
         <tr>
@@ -657,11 +630,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/xadd.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/dynamic/lfo-black-lens-weapons.html">+</span>
                 models\lfo_black_lens_weapons
             </td>
-            <td></td>
-            <td></td>
+            <td>MODEL: Default</td>
             <td></td>
         </tr>
         <tr>
@@ -674,11 +646,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/xblend.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/dynamic/lfo-black-soft-lens-weapons.html">+</span>
                 models\lfo_black_soft_lens_weapons
             </td>
-            <td></td>
-            <td></td>
+            <td>MODEL: Default</td>
             <td></td>
         </tr>
         <tr>
@@ -691,11 +662,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/dynamic/lfo-glass-lens-weapons.html">+</span>
                 models\lfo_glass_lens_weapons
             </td>
-            <td></td>
-            <td></td>
+            <td>MODEL: Default</td>
             <td></td>
         </tr>
         <tr>
@@ -708,11 +678,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/dynamic/lfo-light-dot-weapons.html">+</span>
                 models\lfo_light_dot_weapons
             </td>
-            <td></td>
-            <td></td>
+            <td>MODEL: Default</td>
             <td></td>
         </tr>
         <tr>
@@ -725,11 +694,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/dynamic/lightplanes.html">+</span>
                 models\lightplanes
             </td>
-            <td></td>
-            <td></td>
+            <td>MODEL: Default</td>
             <td></td>
         </tr>
         <tr>
@@ -742,11 +710,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/dynamic/mirror.html">+</span>
                 models\mirror
             </td>
-            <td></td>
-            <td></td>
+            <td>MODEL: env^base</td>
             <td></td>
         </tr>
         <tr>
@@ -759,11 +726,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/dynamic/model.html">+</span>
                 models\model
             </td>
-            <td></td>
-            <td></td>
+            <td>MODEL: Default</td>
             <td></td>
         </tr>
         <tr>
@@ -776,11 +742,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/dynamic/model-aref.html">+</span>
                 models\model_aref
             </td>
-            <td></td>
-            <td></td>
+            <td>MODEL: Default</td>
             <td></td>
         </tr>
         <tr>
@@ -793,28 +758,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/dynamic/model-fur.html">+</span>
                 models\model_fur
             </td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td colspan="3" style="padding: 0;">
-                <div class="details-container">
-                    <table class="nested-table">
-                    </table>
-                </div>
-            </td>
-        </tr>
-        <tr class="material-row">
-            <td>
-                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
-                models\hm
-            </td>
-            <td></td>
-            <td></td>
+            <td>MODEL: Default</td>
             <td></td>
         </tr>
         <tr>
@@ -827,11 +774,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
-                models\pn
+                <span class="expand-btn" data-source="engine-shaders/dynamic/model-hm.html">+</span>
+                models\model_hm
             </td>
-            <td></td>
-            <td></td>
+            <td>MODEL: Default</td>
             <td></td>
         </tr>
         <tr>
@@ -844,11 +790,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
-                models\pn_hm
+                <span class="expand-btn" data-source="engine-shaders/dynamic/model-pn.html">+</span>
+                models\model_pn
             </td>
-            <td></td>
-            <td></td>
+            <td>MODEL: Default</td>
             <td></td>
         </tr>
         <tr>
@@ -861,11 +806,26 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/dynamic/model-pn-hm.html">+</span>
+                models\model_pn_hm
+            </td>
+            <td>MODEL: Default</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="engine-shaders/dynamic/pautina.html">+</span>
                 models\pautina
             </td>
-            <td></td>
-            <td></td>
+            <td>MODEL: Default</td>
             <td></td>
         </tr>
         <tr>
@@ -878,28 +838,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/dynamic/selflight.html">+</span>
                 models\selflight
             </td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td colspan="3" style="padding: 0;">
-                <div class="details-container">
-                    <table class="nested-table">
-                    </table>
-                </div>
-            </td>
-        </tr>
-        <tr class="material-row">
-            <td>
-                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
-                models\seftlight_det
-            </td>
-            <td></td>
-            <td></td>
+            <td>MODEL: Default</td>
             <td></td>
         </tr>
         <tr>
@@ -912,11 +854,26 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/dynamic/selflight-det.html">+</span>
+                models\selflight_det
+            </td>
+            <td>MODEL: Default</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="engine-shaders/dynamic/selflightl.html">+</span>
                 models\selflightl
             </td>
-            <td></td>
-            <td></td>
+            <td>MODEL: Default</td>
             <td></td>
         </tr>
         <tr>
@@ -929,11 +886,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/dynamic/transparent.html">+</span>
                 models\transparent
             </td>
-            <td></td>
-            <td></td>
+            <td>MODEL: Default</td>
             <td></td>
         </tr>
         <tr>
@@ -946,11 +902,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/dynamic/water.html">+</span>
                 models\water
             </td>
-            <td></td>
-            <td></td>
+            <td>MODEL: env^base</td>
             <td></td>
         </tr>
         <tr>
@@ -963,11 +918,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/dynamic/water-ryaska.html">+</span>
                 models\water_ryaska
             </td>
-            <td></td>
-            <td></td>
+            <td>MODEL: env^base</td>
             <td></td>
         </tr>
         <tr>
@@ -980,11 +934,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/dynamic/weapons.html">+</span>
                 models\weapons
             </td>
-            <td></td>
-            <td></td>
+            <td>MODEL: env^base</td>
             <td></td>
         </tr>
         <tr>
@@ -997,11 +950,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/dynamic/window.html">+</span>
                 models\window
             </td>
-            <td></td>
-            <td></td>
+            <td>MODEL: env^base</td>
             <td></td>
         </tr>
         <tr>
@@ -1014,11 +966,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/dynamic/xanomaly.html">+</span>
                 models\xanomaly
             </td>
-            <td></td>
-            <td></td>
+            <td>MODEL: Default</td>
             <td></td>
         </tr>
         <tr>
@@ -1031,11 +982,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/xdistor.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/dynamic/xdistor.html">+</span>
                 models\xdistor
             </td>
-            <td></td>
-            <td></td>
+            <td>MODEL: Default</td>
             <td></td>
         </tr>
         <tr>
@@ -1048,11 +998,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/dynamic/xdistorcolor.html">+</span>
                 models\xdistorcolor
             </td>
-            <td></td>
-            <td></td>
+            <td>MODEL: Default</td>
             <td></td>
         </tr>
         <tr>
@@ -1065,11 +1014,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/dynamic/xdistorcolorl.html">+</span>
                 models\xdistorcolorl
             </td>
-            <td></td>
-            <td></td>
+            <td>MODEL: Default</td>
             <td></td>
         </tr>
         <tr>
@@ -1082,11 +1030,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/dynamic/xdistorinv.html">+</span>
                 models\xdistorinv
             </td>
-            <td></td>
-            <td></td>
+            <td>MODEL: Default</td>
             <td></td>
         </tr>
         <tr>
@@ -1099,11 +1046,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/dynamic/xmonolith.html">+</span>
                 models\xmonolith
             </td>
-            <td></td>
-            <td></td>
+            <td>MODEL: Default</td>
             <td></td>
         </tr>
         <tr>
@@ -1116,11 +1062,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="particles/xdistort.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/dynamic/xwindows.html">+</span>
                 models\xwindows
             </td>
-            <td></td>
-            <td></td>
+            <td>MODEL: Default</td>
             <td></td>
         </tr>
         <tr>
@@ -1147,10 +1092,10 @@ This section contains a list and description of the shaders that are available i
     <tbody>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/agroprom-asfalt.html">+</span>
                 levels\agroprom_asfalt
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1163,10 +1108,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/agroprom-grass.html">+</span>
                 levels\agroprom_grass
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1179,10 +1124,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/agroprom-gravel.html">+</span>
                 levels\agroprom_gravel
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1195,10 +1140,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/bar-asfalt.html">+</span>
                 levels\bar_asfalt
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1211,10 +1156,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/bar-asphalt.html">+</span>
                 levels\bar_asphalt
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1227,10 +1172,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/bar-grass.html">+</span>
                 levels\bar_grass
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1243,10 +1188,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/bar-gravel.html">+</span>
                 levels\bar_gravel
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1259,10 +1204,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/darkcape-asfalt.html">+</span>
                 levels\darkcape_asfalt
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1275,10 +1220,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/darkcape-grass.html">+</span>
                 levels\darkcape_grass
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1291,10 +1236,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/darksc-asfalt.html">+</span>
                 levels\darksc_asfalt
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1307,10 +1252,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/darksc-grass.html">+</span>
                 levels\darksc_grass
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1323,10 +1268,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/darkvalley-asfalt.html">+</span>
                 levels\darkvalley_asfalt
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1339,10 +1284,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/darkvalley-grass.html">+</span>
                 levels\darkvalley_grass
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1355,10 +1300,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/darkvalley-sand.html">+</span>
                 levels\darkvalley_sand
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1371,10 +1316,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/dead-city-asfalt.html">+</span>
                 levels\dead_city_asfalt
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1387,10 +1332,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/dead-city-grass.html">+</span>
                 levels\dead_city_grass
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1403,10 +1348,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/dead-city-ground.html">+</span>
                 levels\dead_city_ground
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1419,10 +1364,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/deadcity-asfalt.html">+</span>
                 levels\deadcity_asfalt
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1435,10 +1380,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/deadcity-earth.html">+</span>
                 levels\deadcity_earth
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1451,10 +1396,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/dead-city-grass.html">+</span>
                 levels\dead_city_grass
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1467,10 +1412,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/escape-asfalt.html">+</span>
                 levels\escape_asfalt
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1483,10 +1428,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/escape-asfalt-noblend.html">+</span>
                 levels\escape_asfalt_noblend
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1499,10 +1444,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/escape-grass.html">+</span>
                 levels\escape_grass
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1515,10 +1460,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/escape-sand.html">+</span>
                 levels\escape_sand
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1531,10 +1476,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/garbage-asfalt.html">+</span>
                 levels\garbage_asfalt
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1547,10 +1492,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/garbage-earth.html">+</span>
                 levels\garbage_earth
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1563,10 +1508,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/garbage-grass.html">+</span>
                 levels\garbage_grass
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1579,10 +1524,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/generator-asfalt.html">+</span>
                 levels\generator_asfalt
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1595,10 +1540,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/generator-earth.html">+</span>
                 levels\generator_earth
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1611,10 +1556,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/generators-art.html">+</span>
                 levels\generators_art
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1627,10 +1572,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/hospital-grass.html">+</span>
                 levels\hospital_grass
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1643,10 +1588,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/hospital-sand.html">+</span>
                 levels\hospital_sand
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1659,10 +1604,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/jupiter-asfal.html">+</span>
                 levels\jupiter_asfalt
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1675,10 +1620,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/jupiter-earth.html">+</span>
                 levels\jupiter_earth
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1691,10 +1636,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/jupiter-grass.html">+</span>
                 levels\jupiter_grass
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1707,10 +1652,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/jupiter-plates.html">+</span>
                 levels\jupiter_plates
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1723,10 +1668,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/l01-escape-asfalt.html">+</span>
                 levels\l01_escape_asfalt
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1739,10 +1684,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/l01-escape-asfalt-noblend.html">+</span>
                 levels\l01_escape_asfalt_noblend
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1755,10 +1700,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/l01-escape-detritus.html">+</span>
                 levels\l01_escape_detritus
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1771,10 +1716,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/l01-escape-grass.html">+</span>
                 levels\l01_escape_grass
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1787,10 +1732,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/l01-escape-sand.html">+</span>
                 levels\l01_escape_sand
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1803,10 +1748,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/limansk-asfalt.html">+</span>
                 levels\limansk_asfalt
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1819,10 +1764,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/limansk-earth.html">+</span>
                 levels\limansk_earth
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1835,10 +1780,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/limansk-grass.html">+</span>
                 levels\limansk_grass
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1851,10 +1796,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/maedow-asfalt.html">+</span>
                 levels\maedow_asfalt
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1867,10 +1812,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/maedow-grass.html">+</span>
                 levels\maedow_grass
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1883,10 +1828,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/maedow-sand.html">+</span>
                 levels\maedow_sand
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1899,10 +1844,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/marsh-earth.html">+</span>
                 levels\marsh_earth
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1915,10 +1860,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/military-asfalt.html">+</span>
                 levels\military_asfalt
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1931,10 +1876,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/military-grass.html">+</span>
                 levels\military_grass
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1947,10 +1892,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/military-sand.html">+</span>
                 levels\military_sand
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1963,10 +1908,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/pripyat-asfalt.html">+</span>
                 levels\pripyat_asfalt
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1979,10 +1924,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/pripyat-earth.html">+</span>
                 levels\pripyat_earth
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -1995,10 +1940,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/pripyat-gras2.html">+</span>
                 levels\pripyat_gras2
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -2011,10 +1956,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/pripyat-grass.html">+</span>
                 levels\pripyat_grass
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -2027,10 +1972,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/radar-asfalt.html">+</span>
                 levels\radar_asfalt
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -2043,10 +1988,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/radar-grass.html">+</span>
                 levels\radar_grass
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -2059,10 +2004,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/red-forest-asfalt.html">+</span>
                 levels\red_forest_asfalt
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -2075,10 +2020,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/red-forest-earth.html">+</span>
                 levels\red_forest_earth
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -2091,10 +2036,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/red-forest-grass.html">+</span>
                 levels\red_forest_grass
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -2107,10 +2052,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/red-forest-leaves.html">+</span>
                 levels\red_forest_leaves
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -2123,10 +2068,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/red-forest-sand.html">+</span>
                 levels\red_forest_sand
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -2139,10 +2084,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/stancia.html">+</span>
                 levels\stancia
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -2155,10 +2100,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/stancia-asfalt.html">+</span>
                 levels\stancia_asfalt
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -2171,10 +2116,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/stancia-build-kanal.html">+</span>
                 levels\stancia_build_kanal
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -2187,10 +2132,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/stancia-kanal.html">+</span>
                 levels\stancia_kanal
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -2203,10 +2148,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/truckscemetery.html">+</span>
                 levels\truckscemetery
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -2219,10 +2164,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/truckscemetery-asfalt.html">+</span>
                 levels\truckscemetery_asfalt
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -2235,10 +2180,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/truckscemetery-grass.html">+</span>
                 levels\truckscemetery_grass
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -2251,10 +2196,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/yantar-asfalt.html">+</span>
                 levels\yantar_asfalt
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -2267,10 +2212,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/yantar-earth.html">+</span>
                 levels\yantar_earth
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -2283,10 +2228,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/zaton-asfalt.html">+</span>
                 levels\zaton_asfalt
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -2299,10 +2244,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/zaton-cracked.html">+</span>
                 levels\zaton_cracked
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -2315,10 +2260,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/zaton-earth.html">+</span>
                 levels\zaton_earth
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -2331,10 +2276,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/zaton-earth-2.html">+</span>
                 levels\zaton_earth_2
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -2347,10 +2292,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/zaton-grass.html">+</span>
                 levels\zaton_grass
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -2363,10 +2308,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/zaton-pebbles.html">+</span>
                 levels\zaton_pebbles
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -2379,10 +2324,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/zaton-plates.html">+</span>
                 levels\zaton_plates
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -2395,10 +2340,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/level/zaton-sand.html">+</span>
                 levels\zaton_sand
             </td>
-            <td></td>
+            <td>LEVEL: Implicit**detail</td>
             <td></td>
         </tr>
         <tr>
@@ -2425,10 +2370,10 @@ This section contains a list and description of the shaders that are available i
     <tbody>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/hud/add.html">+</span>
                 hud\add
             </td>
-            <td></td>
+            <td>basic (simple)</td>
             <td></td>
         </tr>
         <tr>
@@ -2441,10 +2386,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/hud/add-alpha.html">+</span>
                 hud\add-alpha
             </td>
-            <td></td>
+            <td>basic (simple)</td>
             <td></td>
         </tr>
         <tr>
@@ -2457,10 +2402,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/hud/cursor.html">+</span>
                 hud\cursor
             </td>
-            <td></td>
+            <td>basic (simple)</td>
             <td></td>
         </tr>
         <tr>
@@ -2473,10 +2418,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/hud/default.html">+</span>
                 hud\default
             </td>
-            <td></td>
+            <td>basic (simple)</td>
             <td></td>
         </tr>
         <tr>
@@ -2489,10 +2434,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/hud/fog-of-war.html">+</span>
                 hud\fog_of_war
             </td>
-            <td></td>
+            <td>basic (simple)</td>
             <td></td>
         </tr>
         <tr>
@@ -2505,10 +2450,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/hud/hitmarker.html">+</span>
                 hud\hitmarker
             </td>
-            <td></td>
+            <td>basic (simple)</td>
             <td></td>
         </tr>
         <tr>
@@ -2521,10 +2466,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/hud/p3d.html">+</span>
                 hud\p3d
             </td>
-            <td></td>
+            <td>MODEL: Default</td>
             <td></td>
         </tr>
         <tr>
@@ -2537,10 +2482,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/hud/set.html">+</span>
                 hud\set
             </td>
-            <td></td>
+            <td>basic (simple)</td>
             <td></td>
         </tr>
         <tr>
@@ -2553,10 +2498,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/hud/seta.html">+</span>
                 hud\seta
             </td>
-            <td></td>
+            <td>basic (simple)</td>
             <td></td>
         </tr>
         <tr>
@@ -2583,10 +2528,10 @@ This section contains a list and description of the shaders that are available i
     <tbody>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/flora/leaf-wave.html">+</span>
                 flora\leaf_wave
             </td>
-            <td></td>
+            <td>LEVEL: trees/bushes</td>
             <td></td>
         </tr>
         <tr>
@@ -2599,10 +2544,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/flora/trunk-wave.html">+</span>
                 flora\trunk_wave
             </td>
-            <td></td>
+            <td>LEVEL: trees/bushes</td>
             <td></td>
         </tr>
         <tr>
@@ -2629,7 +2574,7 @@ This section contains a list and description of the shaders that are available i
     <tbody>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/effects/bullet-tracer.html">+</span>
                 effects\bullet_tracer
             </td>
             <td>basic (simple)</td>
@@ -2645,7 +2590,7 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/effects/flame.html">+</span>
                 effects\flame
             </td>
             <td>basic (simple)</td>
@@ -2661,7 +2606,7 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/effects/flare.html">+</span>
                 effects\flare
             </td>
             <td>basic (simple)</td>
@@ -2677,7 +2622,7 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/effects/fx-refl-pod.html">+</span>
                 effects\fx_refl_pod
             </td>
             <td>basic (simple)</td>
@@ -2693,7 +2638,7 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/effects/glow.html">+</span>
                 effects\glow
             </td>
             <td>basic (simple)</td>
@@ -2709,7 +2654,7 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/effects/lightning.html">+</span>
                 effects\lightning
             </td>
             <td>basic (simple)</td>
@@ -2725,7 +2670,7 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/effects/lightplanes.html">+</span>
                 effects\lightplanes
             </td>
             <td>LEVEL: diffuse*base</td>
@@ -2741,7 +2686,7 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/effects/moon.html">+</span>
                 effects\moon
             </td>
             <td>basic (simple)</td>
@@ -2757,7 +2702,7 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/effects/rain.html">+</span>
                 effects\rain
             </td>
             <td>basic (simple)</td>
@@ -2773,7 +2718,7 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/effects/screen-add.html">+</span>
                 effects\screen_add
             </td>
             <td>basic (simple)</td>
@@ -2789,7 +2734,7 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/effects/screen-blend.html">+</span>
                 effects\screen_blend
             </td>
             <td>basic (simple)</td>
@@ -2805,7 +2750,7 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/effects/screen-noise.html">+</span>
                 effects\screen_noise
             </td>
             <td>basic (simple)</td>
@@ -2821,7 +2766,7 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/effects/screen-set.html">+</span>
                 effects\screen_set
             </td>
             <td>basic (simple)</td>
@@ -2837,7 +2782,7 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/effects/shadow.html">+</span>
                 effects\shadow
             </td>
             <td>basic (simple)</td>
@@ -2853,7 +2798,7 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/effects/shadow-blur.html">+</span>
                 effects\shadow_blur
             </td>
             <td>basic (simple)</td>
@@ -2869,7 +2814,7 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/effects/shadow-world.html">+</span>
                 effects\shadow_world
             </td>
             <td>INTERNAL: shadow projecting</td>
@@ -2885,7 +2830,7 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/effects/sun.html">+</span>
                 effects\sun
             </td>
             <td>basic (simple)</td>
@@ -2901,7 +2846,7 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/effects/wallmark.html">+</span>
                 effects\wallmark
             </td>
             <td>basic (simple)</td>
@@ -2917,7 +2862,7 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/effects/wallmarkblend.html">+</span>
                 effects\wallmarkblend
             </td>
             <td>basic (simple)</td>
@@ -2933,7 +2878,7 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/effects/wallmarkmult.html">+</span>
                 effects\wallmarkmult
             </td>
             <td>basic (simple)</td>
@@ -2949,7 +2894,7 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/effects/wallmarkset.html">+</span>
                 effects\wallmarkset
             </td>
             <td>basic (simple)</td>
@@ -2965,7 +2910,7 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/effects/water.html">+</span>
                 effects\water
             </td>
             <td>basic (simple)</td>
@@ -2981,7 +2926,7 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/effects/waterryaska.html">+</span>
                 effects\waterryaska
             </td>
             <td>basic (simple)</td>
@@ -2997,7 +2942,7 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/effects/waterstuden.html">+</span>
                 effects\waterstuden
             </td>
             <td>basic (simple)</td>
@@ -3027,10 +2972,10 @@ This section contains a list and description of the shaders that are available i
     <tbody>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/editors/ai-nodes.html">+</span>
                 editor\ai_node
             </td>
-            <td></td>
+            <td>basic (simple)</td>
             <td></td>
         </tr>
         <tr>
@@ -3043,10 +2988,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/editors/do-base.html">+</span>
                 editor\do_base
             </td>
-            <td></td>
+            <td>basic (simple)</td>
             <td></td>
         </tr>
         <tr>
@@ -3059,10 +3004,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/editors/selection.html">+</span>
                 editor\selection
             </td>
-            <td></td>
+            <td>EDITOR: selection</td>
             <td></td>
         </tr>
         <tr>
@@ -3075,10 +3020,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/editors/spawn-icon.html">+</span>
                 editor\spawn_icon
             </td>
-            <td></td>
+            <td>basic (simple)</td>
             <td></td>
         </tr>
         <tr>
@@ -3091,10 +3036,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/editors/wire.html">+</span>
                 editor\wire
             </td>
-            <td></td>
+            <td>EDITOR: wire</td>
             <td></td>
         </tr>
         <tr>
@@ -3121,10 +3066,10 @@ This section contains a list and description of the shaders that are available i
     <tbody>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/details/blend.html">+</span>
                 details\blend
             </td>
-            <td></td>
+            <td>LEVEL: detail objects</td>
             <td></td>
         </tr>
         <tr>
@@ -3137,10 +3082,10 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/details/lod.html">+</span>
                 details\lod
             </td>
-            <td></td>
+            <td>basic (simple)</td>
             <td></td>
         </tr>
         <tr>
@@ -3153,16 +3098,16 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="debug/wireframe.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/details/set.html">+</span>
                 details\set
             </td>
-            <td></td>
+            <td>LEVEL: detail objects</td>
             <td></td>
         </tr>
     </tbody>
 </table>
 
-### Def_Shaders
+### Default Shaders
 
 <table class="main-table" id="DefaultEngineShaderTable">
     <thead>
@@ -3175,7 +3120,7 @@ This section contains a list and description of the shaders that are available i
     <tbody>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="engine-shaders/default/def_add.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/default/def-add.html">+</span>
                 def_shaders\def_add
             </td>
             <td>basic (simple)</td>
@@ -3191,7 +3136,7 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="engine-shaders/default/def_aref.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/default/def-aref.html">+</span>
                 def_shaders\def_aref
             </td>
             <td>LEVEL: lmap*base.aref</td>
@@ -3207,7 +3152,7 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="engine-shaders/default/def_aref_v.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/default/def-aref-v.html">+</span>
                 def_shaders\def_aref_v
             </td>
             <td>LEVEL: diffuse*base.aref</td>
@@ -3223,7 +3168,7 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="engine-shaders/default/def_objects_lod.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/default/def-objects-lod.html">+</span>
                 def_shaders\def_objects_lod
             </td>
             <td>LEVEL: trees/bushes</td>
@@ -3239,7 +3184,7 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="engine-shaders/default/def_objects_lod_trans.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/default/def-objects-lod-trans.html">+</span>
                 def_shaders\def_objects_lod_trans
             </td>
             <td>LEVEL: trees/bushes</td>
@@ -3255,7 +3200,7 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="engine-shaders/default/def_refl_alpha.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/default/def-refl-alpha.html">+</span>
                 def_shaders\def_refl_alpha
             </td>
             <td>LEVEL: lmap*(env^base)</td>
@@ -3271,7 +3216,7 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="engine-shaders/default/def_refl_alpha_heli.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/default/def-refl-alpha-heli.html">+</span>
                 def_shaders\def_refl_alpha_heli
             </td>
             <td>LEVEL: lmap*(env^base)</td>
@@ -3287,7 +3232,7 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="engine-shaders/default/def_refl_trans.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/default/def-refl-trans.html">+</span>
                 def_shaders\def_refl_trans
             </td>
             <td>LEVEL: lmap*(env^base)</td>
@@ -3303,7 +3248,7 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="engine-shaders/default/def_trans.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/default/def-trans.html">+</span>
                 def_shaders\def_trans
             </td>
             <td>LEVEL: lmap*base.aref</td>
@@ -3319,7 +3264,7 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="engine-shaders/default/def_trans_v.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/default/def-trans-v.html">+</span>
                 def_shaders\def_trans_v
             </td>
             <td>LEVEL: diffuse*base.aref</td>
@@ -3335,7 +3280,7 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="engine-shaders/default/def_trans_v_tuchi.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/default/def-trans-v-tuchi.html">+</span>
                 def_shaders\def_trans_v_tuchi
             </td>
             <td>LEVEL: diffuse*base.aref</td>
@@ -3351,7 +3296,7 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="engine-shaders/default/def_vertex.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/default/def-vertex.html">+</span>
                 def_shaders\def_vertex
             </td>
             <td>LEVEL: diffuse*base</td>
@@ -3367,7 +3312,7 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="engine-shaders/default/def_vertex_hm.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/default/def-vertex-hm.html">+</span>
                 def_shaders\def_vertex_hm
             </td>
             <td>LEVEL: diffuse*base</td>
@@ -3383,7 +3328,7 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="engine-shaders/default/def_vertex_pn.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/default/def-vertex-pn.html">+</span>
                 def_shaders\def_vertex_pn
             </td>
             <td>LEVEL: diffuse*base</td>
@@ -3399,7 +3344,7 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="engine-shaders/default/def_vertex_pn_hm.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/default/def-vertex-pn-hm.html">+</span>
                 def_shaders\def_vertex_pn_hm
             </td>
             <td>LEVEL: diffuse*base</td>
@@ -3431,7 +3376,7 @@ This section contains a list and description of the shaders that are available i
         </tr>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="engine-shaders/default/lod_old.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/default/lod-old.html">+</span>
                 def_shaders\lod_old
             </td>
             <td>LEVEL: diffuse*base.aref</td>

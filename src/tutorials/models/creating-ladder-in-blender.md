@@ -44,7 +44,7 @@ Create a separate material for our plane.
 
 In [X-Ray Engine: Material](../../modding-tools/blender/addon-panels/panel-material.md) for plane (fake ladder) choose:
 
-- Shader --- blah --- (list of all Engine Shaders)
+- Shader --- `any Engine Shader for Static Object` --- (list of all Engine Shaders)
 - Compiler --- blah --- ([list of all Compiler Shaders](../../reference/shaders/shaders-list/compiler-shaders-list.md))
 - Material --- `materials/fake_ladder` --- This material has the `Climable` flag set, which means that this material is climbable ([list of all Game Materials](../../reference/materials/materials-list.md))
 

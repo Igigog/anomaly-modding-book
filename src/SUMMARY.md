@@ -216,6 +216,8 @@
 - [Animations](reference/animations/README.md)
   - [Skeletons Overview](reference/animations/skeletons-overview.md)
 
+- [Engine Shader List](reference/shaders/shaders-list/engine-shaders-list.md)
+
 - [Compiler Shaders List](reference/shaders/shaders-list/compiler-shaders-list.md)
 
 - [Materials List](reference/materials/materials-list.md)

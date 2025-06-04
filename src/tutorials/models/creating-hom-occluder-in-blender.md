@@ -37,7 +37,7 @@ Create a separate material for our HOM occluder.
 
 In [X-Ray Engine: Material](../../modding-tools/blender/addon-panels/panel-material.md) choose:
 
-- Shader --- blah --- (list of all Engine Shaders)
+- Shader --- `any Engine Shader for Static Object` --- ([list of all Engine Shaders](../../reference/shaders/shaders-list/engine-shaders-list.md))
 - Compiler --- blah --- ([list of all Compiler Shaders](../../reference/shaders/shaders-list/compiler-shaders-list.md))
 - Material --- `materials/occ` --- This material does not include rendering parameters that are unnecessary for the calculation ([list of all Game Materials](../../reference/materials/materials-list.md))
 

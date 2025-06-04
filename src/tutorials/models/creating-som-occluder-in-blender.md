@@ -31,7 +31,7 @@ Create a separate material for our SOM occluder.
 
 В [X-Ray Engine: Material](../../modding-tools/blender/addon-panels/panel-material.md) выберете:
 
-- Shader --- blah (list of all Engine Shaders)
+- Shader --- `any Engine Shader for Static Object` --- (list of all Engine Shaders)
 - Compiler --- blah ([list of all Compiler Shaders](../../reference/shaders/shaders-list/compiler-shaders-list.md))
 - Material ---  blah ([list of all Game Materials](../../reference/materials/materials-list.md))
 

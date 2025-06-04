@@ -79,7 +79,11 @@ Next, choose [Rigid](../../glossary/glossary.html#rigid-joint) in `Joint Type`.
 
 Navigate to `Material Properties`![Material Properties svg-icon](../../assets/icons/blender/material.svg).
 
-In [X-Ray Engine: Material](../../modding-tools/blender/addon-panels/panel-material.md) you need to select the Compiler, Engine shaders and Game Material you want.
+In [X-Ray Engine: Material](../../modding-tools/blender/addon-panels/panel-material.md) you need to choose:
+
+- Compiler
+- Engine (choose Engine Shader for Dynamic Object)
+- Game Material (choose Game Material for Dynamic Object)
 
 ```admonish note
 Since the object is dynamic, you need to choose the right Engine Shader and [Game Material](../../reference/materials/materials-list.md) for Dynamic Objects!
