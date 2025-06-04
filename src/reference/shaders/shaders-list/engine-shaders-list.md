@@ -289,7 +289,7 @@ This section contains a list and description of the shaders that are available i
 
 ### ufp Shaders
 
-<table class="main-table" id="SkyEngineShaderTable">
+<table class="main-table" id="UFPEngineShaderTable">
     <thead>
         <tr>
             <th>Path and Shader Name</th>
@@ -2972,7 +2972,7 @@ This section contains a list and description of the shaders that are available i
     <tbody>
         <tr class="material-row">
             <td>
-                <span class="expand-btn" data-source="engine-shaders/editors/ai-nodes.html">+</span>
+                <span class="expand-btn" data-source="engine-shaders/editors/ai-node.html">+</span>
                 editor\ai_node
             </td>
             <td>basic (simple)</td>
@@ -3487,6 +3487,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const StaticEngineTableTable = document.getElementById('StaticObjectEngineShaderTable');
+    const UFPEngineTableTable = document.getElementById('UFPEngineShaderTable');
     const SkyEngineTableTable = document.getElementById('SkyEngineShaderTable');
     const ParticleEngineTable = document.getElementById('ParticlesEngineShaderTable');
     const DynamicEngineTable = document.getElementById('DynamicObjectEngineShaderTable');
@@ -3499,6 +3500,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const DebugEngineTable = document.getElementById('DebugEngineShaderTable');
     const DefaultEngineTable = document.getElementById('DefaultEngineShaderTable');
     if (StaticEngineTableTable) StaticEngineTableTable.addEventListener('click', handleTableClick);
+    if (UFPEngineTableTable) UFPEngineTableTable.addEventListener('click', handleTableClick);
     if (SkyEngineTableTable) SkyEngineTableTable.addEventListener('click', handleTableClick);
     if (ParticleEngineTable) ParticleEngineTable.addEventListener('click', handleTableClick);
     if (DynamicEngineTable) DynamicEngineTable.addEventListener('click', handleTableClick);
