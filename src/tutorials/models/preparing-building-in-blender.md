@@ -7,12 +7,13 @@ ___
 - How to work in Blender
 - How to work with Blender [X-Ray Addon](../../modding-tools/blender/blender-x-ray-addon-summary.md)
 - What is a [Static Object](../../glossary/glossary.html#static-object)
+- What is a [Portal](../../glossary/glossary.html#portal) and [Sector](../../glossary/glossary.html#sector)
 
 ___
 
 ## About
 
-Buildings should be created according to a special pipeline. This is necessary for future creation of [Sectors](../../glossary/glossary.html#sector) and [Portals](../../glossary/glossary.html#portal) for optimization.
+Buildings should be created according to a special pipeline. This is necessary for future creation of `Sectors` and `Portals` for optimization.
 
 ## Start
 

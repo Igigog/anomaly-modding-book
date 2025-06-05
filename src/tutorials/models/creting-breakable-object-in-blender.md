@@ -7,6 +7,7 @@ ___
 - How to work in Blender
 - How to work with Blender [X-Ray Addon](../../modding-tools/blender/blender-x-ray-addon-summary.md)
 - What is a [Dynamic Object](../../glossary/glossary.html#dynamic-object)
+- What is a [Game Material](../../glossary/glossary.html#game-material)
 
 ___
 
@@ -42,9 +43,17 @@ For the main object we need to create a bone and a Bone Shape and Joint Type - R
 
 ![alt text centered](assets/images/creating-breakable-object-model-with-bone-shape.png)
 
-For parts of the object we will also need to create our own bones and Bone Shapes.
+For parts of the object we will also need to create our own bones and `Bone Shapes`.
+
+![alt text centered](assets/images/creating-breakable-object-separated-bone-shapes.png)
 
 ## Surface
+
+### Shader
+
+### Compiler
+
+### Material
 
 [Main article: Creating Game Material in SDK](../materials/creating-game-material-in-sdk.md)
 

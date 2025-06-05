@@ -7,6 +7,7 @@ ___
 - How to work in Blender
 - How to work with Blender [X-Ray Addon](../../modding-tools/blender/blender-x-ray-addon-summary.md)
 - What is a [Static Object](../../glossary/glossary.html#static-object)
+- What is a [Game Material](../../glossary/glossary.html#game-material)
 
 ___
 
@@ -44,9 +45,17 @@ Create a separate material for our plane.
 
 In [X-Ray Engine: Material](../../modding-tools/blender/addon-panels/panel-material.md) for plane (fake ladder) choose:
 
-- Shader --- `any Engine Shader for Static Object` --- (list of all Engine Shaders)
-- Compiler --- blah --- ([list of all Compiler Shaders](../../reference/shaders/shaders-list/compiler-shaders-list.md))
-- Material --- `materials/fake_ladder` --- This material has the `Climable` flag set, which means that this material is climbable ([list of all Game Materials](../../reference/materials/materials-list.md))
+### Shader
+
+Choose any Engine Shader for Static Object. ([list of all Engine Shaders](../../reference/shaders/shaders-list/engine-shaders-list.md))
+
+### Compiler
+
+Any. ([list of all Compiler Shaders](../../reference/shaders/shaders-list/compiler-shaders-list.md))
+
+### Material
+
+Select a suitable Game Material that has the `Climable` flag checked. Example `materials/fake_ladder`. ([list of all Game Materials](../../reference/materials/materials-list.md))
 
 ### Example 2
 

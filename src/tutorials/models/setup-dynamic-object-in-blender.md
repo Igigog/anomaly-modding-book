@@ -81,9 +81,15 @@ Navigate to `Material Properties`![Material Properties svg-icon](../../assets/ic
 
 In [X-Ray Engine: Material](../../modding-tools/blender/addon-panels/panel-material.md) you need to choose:
 
-- Compiler
-- Engine (choose Engine Shader for Dynamic Object)
-- Game Material (choose Game Material for Dynamic Object)
+### Engine
+
+Choose Engine Shader for Dynamic Object
+
+### Compiler
+
+### Material
+
+Choose Game Material for Dynamic Object
 
 ```admonish note
 Since the object is dynamic, you need to choose the right Engine Shader and [Game Material](../../reference/materials/materials-list.md) for Dynamic Objects!
@@ -93,6 +99,6 @@ Since the object is dynamic, you need to choose the right Engine Shader and [Gam
 
 Go to `Object Properties`![Object Properties svg-icon](../../assets/icons/blender/object-data.svg).
 
-In [X-Ray Engine: Object](../../modding-tools/blender/addon-panels/panel-object.md) select `Dynamic` in the `Type` list.
+In [X-Ray Engine: Object](../../modding-tools/blender/addon-panels/panel-object.md) select `Dynamic` or `Progressive Dynamic` in the `Type` list.
 
 This completes the setup of the Dynamic Object. You can safely export it in the model format you need.

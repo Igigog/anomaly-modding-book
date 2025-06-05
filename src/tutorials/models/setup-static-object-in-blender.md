@@ -67,9 +67,17 @@ Here we see the name of our material and a list of [X-Ray Engine: Material](../.
 
 The items we need for the model now are:
 
-- [Shader](../../reference/shaders/shaders-list/engine-shaders-list.md) (Engine Shader; This setting is responsible for the appearance of the surface.) --- Choose Engine Shader for Static Object
-- [Compile](../../reference/shaders/shaders-list/compiler-shaders-list.md) (Compile Shader; Here are descriptions of the settings that the level geometry compiler uses)
-- [Material](../../reference/materials/materials-list.md) (Here you can select Game Material) --- Choose Game Material for Static Object
+### Shader
+
+Choose Engine Shader for Static Object
+
+### Compile
+
+Compile Shader; Here are descriptions of the settings that the level geometry compiler uses
+
+### Material
+
+Choose Game Material for Static Object
 
 ## Finish
 

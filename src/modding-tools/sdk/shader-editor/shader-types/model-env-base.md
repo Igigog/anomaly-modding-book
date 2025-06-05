@@ -11,16 +11,20 @@ Similar to [LEVEL: lmap*(env^base)](level-lmap-env-base.md), only for dynamic ob
 <table><thead>
   <tr>
     <th></th>
+    <th>Description</th>
     <th>Options</th>
     <th>Description</th>
     <th>Options</th>
+    <th>Description</th>
     <th>Options</th>
     <th>Description</th>
   </tr></thead>
 <tbody>
   <tr>
     <td rowspan="10">Name</td>
+    <td rowspan="10"></td>
     <td>Custom</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -32,9 +36,11 @@ Similar to [LEVEL: lmap*(env^base)](level-lmap-env-base.md), only for dynamic ob
     <td></td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>$base0</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -46,9 +52,11 @@ Similar to [LEVEL: lmap*(env^base)](level-lmap-env-base.md), only for dynamic ob
     <td></td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>$base2</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -60,9 +68,11 @@ Similar to [LEVEL: lmap*(env^base)](level-lmap-env-base.md), only for dynamic ob
     <td></td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>$base4</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -74,9 +84,11 @@ Similar to [LEVEL: lmap*(env^base)](level-lmap-env-base.md), only for dynamic ob
     <td></td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>$base6</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -88,17 +100,21 @@ Similar to [LEVEL: lmap*(env^base)](level-lmap-env-base.md), only for dynamic ob
     <td></td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td rowspan="20">Transform</td>
+    <td rowspan="20"></td>
     <td rowspan="11">Custom</td>
     <td rowspan="11"></td>
     <td>Programmable</td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td rowspan="8">TCM</td>
+    <td rowspan="8"></td>
     <td>Scale enabled</td>
     <td></td>
   </tr>
@@ -134,14 +150,17 @@ Similar to [LEVEL: lmap*(env^base)](level-lmap-env-base.md), only for dynamic ob
     <td>Spherical Reflection</td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>Cube Reflection</td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>$null</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -153,9 +172,11 @@ Similar to [LEVEL: lmap*(env^base)](level-lmap-env-base.md), only for dynamic ob
     <td></td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>$base1</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -167,9 +188,11 @@ Similar to [LEVEL: lmap*(env^base)](level-lmap-env-base.md), only for dynamic ob
     <td></td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>$base3</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -181,9 +204,11 @@ Similar to [LEVEL: lmap*(env^base)](level-lmap-env-base.md), only for dynamic ob
     <td></td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>$base5</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -195,9 +220,11 @@ Similar to [LEVEL: lmap*(env^base)](level-lmap-env-base.md), only for dynamic ob
     <td></td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>$base7</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -210,16 +237,20 @@ Similar to [LEVEL: lmap*(env^base)](level-lmap-env-base.md), only for dynamic ob
 <table><thead>
   <tr>
     <th></th>
+    <th>Description</th>
     <th>Options</th>
     <th>Description</th>
     <th>Options</th>
+    <th>Description</th>
     <th>Options</th>
     <th>Description</th>
   </tr></thead>
 <tbody>
   <tr>
     <td rowspan="10">Name</td>
+    <td rowspan="10"></td>
     <td>Custom</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -231,9 +262,11 @@ Similar to [LEVEL: lmap*(env^base)](level-lmap-env-base.md), only for dynamic ob
     <td></td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>$base0</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -245,9 +278,11 @@ Similar to [LEVEL: lmap*(env^base)](level-lmap-env-base.md), only for dynamic ob
     <td></td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>$base2</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -259,9 +294,11 @@ Similar to [LEVEL: lmap*(env^base)](level-lmap-env-base.md), only for dynamic ob
     <td></td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>$base4</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -273,9 +310,11 @@ Similar to [LEVEL: lmap*(env^base)](level-lmap-env-base.md), only for dynamic ob
     <td></td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>$base6</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -287,17 +326,21 @@ Similar to [LEVEL: lmap*(env^base)](level-lmap-env-base.md), only for dynamic ob
     <td></td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td rowspan="20">Transform</td>
+    <td rowspan="20"></td>
     <td rowspan="11">Custom</td>
     <td rowspan="11"></td>
     <td>Programmable</td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td rowspan="8">TCM</td>
+    <td rowspan="8"></td>
     <td>Scale enabled</td>
     <td></td>
   </tr>
@@ -333,14 +376,17 @@ Similar to [LEVEL: lmap*(env^base)](level-lmap-env-base.md), only for dynamic ob
     <td>Spherical Reflection</td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>Cube Reflection</td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>$null</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -352,9 +398,11 @@ Similar to [LEVEL: lmap*(env^base)](level-lmap-env-base.md), only for dynamic ob
     <td></td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>$base1</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -366,9 +414,11 @@ Similar to [LEVEL: lmap*(env^base)](level-lmap-env-base.md), only for dynamic ob
     <td></td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>$base3</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -380,9 +430,11 @@ Similar to [LEVEL: lmap*(env^base)](level-lmap-env-base.md), only for dynamic ob
     <td></td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>$base5</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -394,6 +446,7 @@ Similar to [LEVEL: lmap*(env^base)](level-lmap-env-base.md), only for dynamic ob
     <td></td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>$base7</td>
@@ -401,12 +454,15 @@ Similar to [LEVEL: lmap*(env^base)](level-lmap-env-base.md), only for dynamic ob
     <td></td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>Alpha-Blend</td>
+    <td></td>
     <td>-</td>
     <td></td>
     <td>-</td>
+    <td></td>
     <td>-</td>
     <td>-</td>
   </tr>

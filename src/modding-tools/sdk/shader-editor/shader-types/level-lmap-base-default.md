@@ -11,16 +11,20 @@ Default Lightmap shader type. This shader type is used in most of the geometry i
 <table><thead>
   <tr>
     <th></th>
+    <th>Description</th>
     <th>Options</th>
     <th>Description</th>
     <th>Options</th>
+    <th>Description</th>
     <th>Options</th>
     <th>Description</th>
   </tr></thead>
 <tbody>
   <tr>
     <td rowspan="10">Name</td>
+    <td rowspan="10"></td>
     <td>Custom</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -32,9 +36,11 @@ Default Lightmap shader type. This shader type is used in most of the geometry i
     <td></td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>$base0</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -46,9 +52,11 @@ Default Lightmap shader type. This shader type is used in most of the geometry i
     <td></td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>$base2</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -60,9 +68,11 @@ Default Lightmap shader type. This shader type is used in most of the geometry i
     <td></td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>$base4</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -74,9 +84,11 @@ Default Lightmap shader type. This shader type is used in most of the geometry i
     <td></td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>$base6</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -88,17 +100,21 @@ Default Lightmap shader type. This shader type is used in most of the geometry i
     <td></td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td rowspan="20">Transform</td>
+    <td rowspan="20"></td>
     <td rowspan="11">Custom</td>
     <td rowspan="11"></td>
     <td>Programmable</td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td rowspan="8">TCM</td>
+    <td rowspan="8"></td>
     <td>Scale enabled</td>
     <td></td>
   </tr>
@@ -134,14 +150,17 @@ Default Lightmap shader type. This shader type is used in most of the geometry i
     <td>Spherical Reflection</td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>Cube Reflection</td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>$null</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -153,9 +172,11 @@ Default Lightmap shader type. This shader type is used in most of the geometry i
     <td></td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>$base1</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -167,9 +188,11 @@ Default Lightmap shader type. This shader type is used in most of the geometry i
     <td></td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>$base3</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -181,9 +204,11 @@ Default Lightmap shader type. This shader type is used in most of the geometry i
     <td></td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>$base5</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -195,6 +220,7 @@ Default Lightmap shader type. This shader type is used in most of the geometry i
     <td></td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>$base7</td>
@@ -202,10 +228,13 @@ Default Lightmap shader type. This shader type is used in most of the geometry i
     <td></td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td rowspan="4">Tessellation</td>
+    <td rowspan="4"></td>
     <td>NO_TESS</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -217,6 +246,7 @@ Default Lightmap shader type. This shader type is used in most of the geometry i
     <td></td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>TESS_HM</td>
@@ -224,9 +254,11 @@ Default Lightmap shader type. This shader type is used in most of the geometry i
     <td></td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>TESS_PN+HM</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
