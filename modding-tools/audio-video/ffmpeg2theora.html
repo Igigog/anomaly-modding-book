@@ -1,0 +1,335 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ffmpeg2theora - Anomaly Modding Book</title>
+
+
+        <!-- Custom HTML head -->
+        <script defer data-domain="igigog.github.io" src="https://plausible.io/js/script.hash.js"></script><script defer data-domain="igigog.github.io" src="https://plausible.io/js/script.hash.js"></script>
+        <script defer src="https://cloud.umami.is/script.js" data-website-id="af269dba-ec2d-471b-a4c9-44023cb64adc"></script>
+
+        <meta name="description" content="Introductory book for S.T.A.L.K.E.R. Anomaly modding">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../theme/css/custom.css">
+        <link rel="stylesheet" href="../../theme/css/tables.css">
+        <link rel="stylesheet" href="../../theme/css/mdbook-admonish.css">
+        <link rel="stylesheet" href="../../theme/css/whichlang.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Anomaly Modding Book</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/Igigog/anomaly-modding-book" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Igigog/anomaly-modding-book/edit/main/src/modding-tools/audio-video/ffmpeg2theora.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="ffmpeg2theora"><a class="header" href="#ffmpeg2theora">ffmpeg2theora</a></h1>
+<hr />
+<h2 id="info"><a class="header" href="#info">Info</a></h2>
+<div class="table-wrapper"><table><thead><tr><th></th><th></th></tr></thead><tbody>
+<tr><td>Program Developer</td><td>V2V</td></tr>
+<tr><td>Described Version</td><td>0.30</td></tr>
+</tbody></table>
+</div>
+<hr />
+<h2 id="about"><a class="header" href="#about">About</a></h2>
+<p>This package provides a command-line tool to encode/recode various video formats (basically everything that ffmpeg can read) into <a href="https://en.wikipedia.org/wiki/Theora">Theora</a>, the free video codec.</p>
+<h3 id="general-output"><a class="header" href="#general-output">General output</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Key</th><th>Description</th></tr></thead><tbody>
+<tr><td>-o, --output</td><td>Alternative output filename</td></tr>
+<tr><td>--no-skeleton</td><td>Disables *.ogg skeleton metadata output</td></tr>
+<tr><td>--skeleton-3</td><td>Outputs Skeleton Version 3, without keyframe indexes</td></tr>
+<tr><td>-s, --starttime</td><td>Start encoding at this time (in sec.)</td></tr>
+<tr><td>-e, --endtime</td><td>End encoding at this time (in sec.)</td></tr>
+<tr><td>-p, --preset</td><td>Encode file with preset. Right now there is preview, pro and videobin. Run <code>-p info</code> for more informations</td></tr>
+</tbody></table>
+</div>
+<h3 id="video-output"><a class="header" href="#video-output">Video output</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Key</th><th>Description</th></tr></thead><tbody>
+<tr><td>-v, --videoquality</td><td>[0 to 10] Encoding quality for video (default: 6) use higher values for better quality</td></tr>
+<tr><td>-V, --videobitrate</td><td>Encoding bitrate for video (kb/s)</td></tr>
+<tr><td>--soft-target</td><td>Use a large reservoir and treat the rate as a soft target; rate control is less strict but resulting quality is usually higher/smoother overall. Soft target also allows an optional -v setting to specify a minimum allowed quality.</td></tr>
+<tr><td>--two-pass</td><td>Compress input using two-pass rate control. This option requires that the input to the to the encoder is seekable and performs both passes automatically.</td></tr>
+<tr><td>--first-pass &lt;filename&gt;</td><td>Perform first-pass of a two-pass rate controlled encoding, saving pass data to &lt;filename&gt; for a later second pass</td></tr>
+<tr><td>--second-pass &lt;filename&gt;</td><td>Perform second-pass of a two-pass rate controlled encoding, reading first-pass data from &lt;filename&gt;.  The first pass data must come from a first encoding pass using identical input video to work properly.</td></tr>
+<tr><td>--optimize</td><td>Optimize video output filesize (slower) (same as <code>--speedlevel 0</code>)</td></tr>
+<tr><td>--speedlevel</td><td>Encoding is faster with higher values the cost is quality and bandwidth (default 1) available values depend on the version of libtheora your version supports speedlevels 0 to -1</td></tr>
+<tr><td>-x, --width</td><td>Scale to given width (in pixels)</td></tr>
+<tr><td>-y, --height</td><td>Scale to given height (in pixels)</td></tr>
+<tr><td>--max_size</td><td>Scale output frame to be within box of given size, height optional (%d[x%d], i.e. 640x480)</td></tr>
+<tr><td>--aspect</td><td>Define frame aspect ratio: i.e. 4:3 or 16:9</td></tr>
+<tr><td>--pixel-aspect</td><td>Define pixel aspect ratio: i.e. 1:1 or 4:3, overwrites frame aspect ratio</td></tr>
+<tr><td>-F, --framerate</td><td>Output framerate e.g 25:2 or 16</td></tr>
+<tr><td>--croptop, --cropbottom, --cropleft, --cropright</td><td>crop input by given pixels before resizing</td></tr>
+<tr><td>-K, --keyint</td><td>[1 to 2147483647] Keyframe interval (default: 64)</td></tr>
+<tr><td>-d --buf-delay &lt;n&gt;</td><td>Buffer delay (in frames). Longer delays allow smoother rate adaptation and provide better overall quality, but require more client side buffering and add latency. The default value is the keyframe interval for one-pass encoding (or somewhat larger if <code>--soft-target</code> is used) and infinite for two-pass encoding. (only works in bitrate mode)</td></tr>
+<tr><td>--no-upscaling</td><td>Only scale video or resample audio if input is bigger than provided parameters</td></tr>
+<tr><td>--resize-method &lt;method&gt;</td><td>Use this method for rescaling the video. See <code>--resize-method help</code> for a list of available resizing methods</td></tr>
+</tbody></table>
+</div>
+<h3 id="video-transfer"><a class="header" href="#video-transfer">Video transfer</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Key</th><th>Description</th><th>Note</th></tr></thead><tbody>
+<tr><td>--pp</td><td>Video Postprocessing, denoise, deblock, deinterlacer use <code>--pp help</code> for a list of available filters.</td><td>-</td></tr>
+<tr><td>-C, --contrast</td><td>[0.1 to 10.0] Contrast correction (default: 1.0)</td><td>Note: lower values make the video darker.</td></tr>
+<tr><td>-B, --brightness</td><td>[-1.0 to 1.0] Brightness correction (default: 0.0)</td><td>Note: lower values make the video darker.</td></tr>
+<tr><td>-G, --gamma</td><td>[0.1 to 10.0] Gamma correction (default: 1.0)</td><td>Note: lower values make the video darker.</td></tr>
+<tr><td>-Z, --saturation</td><td>[0.1 to 10.0] Saturation correction (default: 1.0)</td><td>Note: lower values make the video grey.</td></tr>
+</tbody></table>
+</div>
+<h3 id="audio-output"><a class="header" href="#audio-output">Audio output</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Key</th><th>Description</th></tr></thead><tbody>
+<tr><td>-a, --audioquality</td><td>[-2 to 10] Encoding quality for audio (default: 1) use higher values for better quality</td></tr>
+<tr><td>-A, --audiobitrate</td><td>[32 to 500] Encoding bitrate for audio (kb/s)</td></tr>
+<tr><td>-c, --channels</td><td>Set number of output channels</td></tr>
+<tr><td>-H, --samplerate</td><td>Set output samplerate (in Hz)</td></tr>
+<tr><td>--noaudio</td><td>Disable audio from input</td></tr>
+<tr><td>--novideo</td><td>Disable video from input</td></tr>
+</tbody></table>
+</div>
+<h3 id="input"><a class="header" href="#input">Input</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Key</th><th>Description</th></tr></thead><tbody>
+<tr><td>--deinterlace</td><td>Force deinterlace, otherwise only material marked as interlaced will be deinterlaced</td></tr>
+<tr><td>--no-deinterlace</td><td>Force deinterlace off</td></tr>
+<tr><td>-f, --format</td><td>Specify input format</td></tr>
+<tr><td>--inputfps &lt;fps&gt;</td><td>Override input fps</td></tr>
+<tr><td>--audiostream &lt;id&gt;</td><td>By default the first audio stream is selected, use this to select another audio stream</td></tr>
+<tr><td>--videostream &lt;id&gt;</td><td>By default the first video stream is selected, use this to select another video stream</td></tr>
+<tr><td>--nosync</td><td>So not use A/V sync from input container. Try this if you have issues with A/V sync</td></tr>
+</tbody></table>
+</div>
+<h3 id="subtitles"><a class="header" href="#subtitles">Subtitles</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Key</th><th>Description</th></tr></thead><tbody>
+<tr><td>--subtitles &lt;file&gt;</td><td>Use subtitles from the given file (SubRip (*.srt) format)</td></tr>
+<tr><td>--subtitles-encoding &lt;encoding&gt;</td><td>Set encoding of the subtitles file. supported are utf-8, utf8, iso-8859-1, latin1</td></tr>
+<tr><td>--subtitles-language &lt;language&gt;</td><td>Set subtitles language (de, en_GB, etc)</td></tr>
+<tr><td>--subtitles-category &lt;category&gt;</td><td>Set subtitles category (default “subtitles”)</td></tr>
+<tr><td>--subtitles-ignore-non-utf8</td><td>Ignores any non UTF-8 sequence in UTF-8 text</td></tr>
+<tr><td>--nosubtitles</td><td>Disables subtitles from input (equivalent to <code>--subtitles=none</code>)</td></tr>
+<tr><td>--subtitle-types=[all,text,spu,none]</td><td>Select what subtitle types to include from the input video (default text)</td></tr>
+</tbody></table>
+</div>
+<h3 id="metadata"><a class="header" href="#metadata">Metadata</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Key</th><th>Description</th></tr></thead><tbody>
+<tr><td>--artist</td><td>Name of artist (director)</td></tr>
+<tr><td>--title</td><td>Title</td></tr>
+<tr><td>--date</td><td>Date</td></tr>
+<tr><td>--location</td><td>Location</td></tr>
+<tr><td>--organization</td><td>Name of organization (studio)</td></tr>
+<tr><td>--copyright</td><td>Copyright</td></tr>
+<tr><td>--license</td><td>License</td></tr>
+<tr><td>--contact</td><td>Contact link</td></tr>
+<tr><td>--nometadata</td><td>Disables metadata from input</td></tr>
+<tr><td>--no-oshash</td><td>Do not include oshash of source file (SOURCE_OSHASH)</td></tr>
+</tbody></table>
+</div>
+<h3 id="keyframe-indexing"><a class="header" href="#keyframe-indexing">Keyframe indexing</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Key</th><th>Description</th></tr></thead><tbody>
+<tr><td>--index-interval &lt;n&gt;</td><td>Set minimum distance between indexed keyframes to &lt;n&gt; ms (default: 2000)</td></tr>
+<tr><td>--theora-index-reserve &lt;n&gt;</td><td>Reserve &lt;n&gt; bytes for Theora keyframe index</td></tr>
+<tr><td>--vorbis-index-reserve &lt;n&gt;</td><td>Reserve &lt;n&gt; bytes for Vorbis keyframe index</td></tr>
+<tr><td>--kate-index-reserve &lt;n&gt;</td><td>Reserve &lt;n&gt; bytes for Kate keyframe index</td></tr>
+</tbody></table>
+</div>
+<h3 id="other"><a class="header" href="#other">Other</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Key</th><th>Description</th></tr></thead><tbody>
+<tr><td>-P, --pid fname</td><td>Write the process’ id to a file</td></tr>
+<tr><td>-h, --help</td><td>Help</td></tr>
+<tr><td>--info</td><td>Output *.json info about input file, use <code>-o</code> to save *.json to file</td></tr>
+<tr><td>--frontend</td><td>Print status information in *.json, one *.json dict per line</td></tr>
+</tbody></table>
+</div>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../modding-tools/audio-video/savandt.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../modding-tools/animations/omf-editor-by-valerok.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../modding-tools/audio-video/savandt.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../modding-tools/animations/omf-editor-by-valerok.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../../theme/js/tables.js"></script>
+        <script src="../../theme/js/mermaid.min.js"></script>
+        <script src="../../theme/js/mermaid-init.js"></script>
+        <script src="../../theme/js/whichlang.js"></script>
+
+
+    </div>
+    </body>
+</html>

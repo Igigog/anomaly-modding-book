@@ -1,0 +1,1350 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Materials List - Anomaly Modding Book</title>
+
+
+        <!-- Custom HTML head -->
+        <script defer data-domain="igigog.github.io" src="https://plausible.io/js/script.hash.js"></script><script defer data-domain="igigog.github.io" src="https://plausible.io/js/script.hash.js"></script>
+        <script defer src="https://cloud.umami.is/script.js" data-website-id="af269dba-ec2d-471b-a4c9-44023cb64adc"></script>
+
+        <meta name="description" content="Introductory book for S.T.A.L.K.E.R. Anomaly modding">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../theme/css/custom.css">
+        <link rel="stylesheet" href="../../theme/css/tables.css">
+        <link rel="stylesheet" href="../../theme/css/mdbook-admonish.css">
+        <link rel="stylesheet" href="../../theme/css/whichlang.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Anomaly Modding Book</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/Igigog/anomaly-modding-book" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Igigog/anomaly-modding-book/edit/main/src/reference/materials/materials-list.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="game-materials-list"><a class="header" href="#game-materials-list">Game Materials List</a></h1>
+<hr />
+<h2 id="about"><a class="header" href="#about">About</a></h2>
+<p>This section contains a list and description of the Game Materials that are available in the <code>gamemtl.xr</code> file.</p>
+<h2 id="static-object-materials"><a class="header" href="#static-object-materials">Static Object materials</a></h2>
+<style>
+.main-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.main-table th, .main-table td {
+    padding: 12px 15px;
+}
+
+.main-table th {
+}
+
+.material-row {
+    transition: background-color 0.2s;
+}
+
+.material-row:hover {
+    background-color: #f9f9f9;
+}
+
+.expand-btn {
+    cursor: pointer;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    margin-right: 8px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    color: #555;
+    font-weight: bold;
+    line-height: 24px;
+    transition: all 0.3s;
+    user-select: none;
+}
+
+.expand-btn:hover {
+    background-color: #d0d0d0;
+}
+
+.expand-btn.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.details-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #fafafa;
+}
+
+.details-container.show {
+    max-height: 1500px;
+    transition: max-height 0.2s ease-in;
+}
+
+.nested-table {
+    width: calc(100% - 30px);
+    margin: 10px 15px;
+    border-collapse: collapse;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.nested-table td {
+    padding: 10px 15px;
+    border: 1px solid #e0e0e0;
+    background-color: white;
+}
+
+.nested-table tr:first-child td {
+    border-top: none;
+}
+
+.nested-table tr:last-child td {
+    border-bottom: none;
+}
+
+.nested-table tr td:first-child {
+    border-left: none;
+    font-weight: 500;
+    color: #333;
+}
+
+.nested-table tr td:last-child {
+    border-right: none;
+    color: #666;
+}
+</style>
+<table class="main-table" id="StaticObjectMaterialsTable">
+    <thead>
+        <tr>
+            <th>Path and material name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/default.html">+</span>
+                default
+            </td>
+            <td>Standard Static Object material</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/asphalt.html">+</span>
+                material\asphalt
+            </td>
+            <td>Asphalt</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/bricks.html">+</span>
+                material\bricks
+            </td>
+            <td>Bricks</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/bush.html">+</span>
+                material\bush
+            </td>
+            <td>Bush</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/bush-sux.html">+</span>
+                material\bush_sux
+            </td>
+            <td>Dead bush</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/cloth.html">+</span>
+                material\cloth
+            </td>
+            <td>Fabric</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/concrete.html">+</span>
+                material\concrete
+            </td>
+            <td>Monolithic concrete</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/death.html">+</span>
+                material\death
+            </td>
+            <td>Deadly earth (non-standard material)</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/dirt.html">+</span>
+                material\dirt
+            </td>
+            <td>Wet mud or swamp</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/earth.html">+</span>
+                material\earth
+            </td>
+            <td>Dry or hard earth</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/earth-death.html">+</span>
+                material\earth_death
+            </td>
+            <td>Dry solid earth (non-standard material)</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/earth-slide.html">+</span>
+                material\earth_slide
+            </td>
+            <td>Dry or hard earth</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/fake.html">+</span>
+                material\fake
+            </td>
+            <td>Special fake material.</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/fake-ladders.html">+</span>
+                material\fake_ladders
+            </td>
+            <td>Special material for invisible ladder.</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/fake-ladders-woods.html">+</span>
+                material\fake_ladders_woods
+            </td>
+            <td>Special material for invisible wooden ladder.</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/fake-slide.html">+</span>
+                material\fake_slide
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/flooring-tile.html">+</span>
+                material\flooring_tile
+            </td>
+            <td>Flooring tile</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/glass.html">+</span>
+                material\glass
+            </td>
+            <td>Glass</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/grass.html">+</span>
+                material\grass
+            </td>
+            <td>Ground covered with grass</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/gravel.html">+</span>
+                material\gravel
+            </td>
+            <td>Gravel</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/metal.html">+</span>
+                material\metal
+            </td>
+            <td>Solid metal (thick piece or tank) </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/metall-pipe.html">+</span>
+                material\metall_pipe
+            </td>
+            <td>Metal pipe</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/metal-plate.html">+</span>
+                material\metal_plate
+            </td>
+            <td>Metal plate</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/occ.html">+</span>
+                material\occ
+            </td>
+            <td>Special material for occlusal geometry. Used for <a  href="../../glossary/glossary.html#hierarchical-occluder-mesh">HOM</a> or <a href="../../glossary/glossary.html#sound-occluder-mesh">SOM</a> Objects.</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/sand.html">+</span>
+                material\sand
+            </td>
+            <td>Sand</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/setka-rabica.html">+</span>
+                material\setka_rabica
+            </td>
+            <td>Barbed wire</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/shifer.html">+</span>
+                material\shifer
+            </td>
+            <td>Slate</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/stucco.html">+</span>
+                material\stucco
+            </td>
+            <td>Stucco</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/tin.html">+</span>
+                material\tin
+            </td>
+            <td>Tin or roof of houses</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/tree-trunk.html">+</span>
+                material\tree_trunk
+            </td>
+            <td>Wood (trunk)</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/water.html">+</span>
+                material\water
+            </td>
+            <td>Water</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/water-radiation.html">+</span>
+                material\water_radiation
+            </td>
+            <td>Radioactive water</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/wood.html">+</span>
+                material\wood
+            </td>
+            <td>Wooden surface</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="static/wooden-board.html">+</span>
+                material\wooden_board
+            </td>
+            <td>Wooden board</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<h2 id="dynamic-object-materials"><a class="header" href="#dynamic-object-materials">Dynamic Object materials</a></h2>
+<table class="main-table" id="DynamicObjectMaterialsTable">
+    <thead>
+        <tr>
+            <th>Path and material name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="dynamic/default-object.html">+</span>
+                default_object
+            </td>
+            <td>Standard Dynamic Object material</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="dynamic/barrel.html">+</span>
+                objects\barrel
+            </td>
+            <td>Barrel</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="dynamic/bolt.html">+</span>
+                objects\bolt
+            </td>
+            <td>Bolt</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="dynamic/bottle.html">+</span>
+                objects\bottle
+            </td>
+            <td>Bottle</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="dynamic/bullet.html">+</span>
+                objects\bullet
+            </td>
+            <td>Bullet and grenade fragment</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="dynamic/car-cabine.html">+</span>
+                objects\car_cabine
+            </td>
+            <td>Car body</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="dynamic/car-wheel.html">+</span>
+                objects\car_wheel
+            </td>
+            <td>Car wheel</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="dynamic/clothes.html">+</span>
+                objects\clothes
+            </td>
+            <td>Rag or cloth</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="dynamic/concreate-box.html">+</span>
+                objects\concrete_box
+            </td>
+            <td>Concrete block</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="dynamic/fuel-can.html">+</span>
+                objects\fuel_can
+            </td>
+            <td>Gasoline canister</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="dynamic/glass.html">+</span>
+                objects\glass
+            </td>
+            <td>Breakable glass</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="dynamic/knife.html">+</span>
+                objects\knife
+            </td>
+            <td>Knife</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="dynamic/large-furnitura.html">+</span>
+                objects\large_furnitura
+            </td>
+            <td>Large furniture (chairs, tables, cabinets)</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="dynamic/large-metal-trash.html">+</span>
+                objects\large_metal_trash
+            </td>
+            <td>Large pieces of junk metal (fittings, pieces of iron)</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="dynamic/large-weapon.html">+</span>
+                objects\large_weapon
+            </td>
+            <td>Heavy weapons (assault rifle, grenade launcher, rifle)</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="dynamic/metal-box.html">+</span>
+                objects\metal_box
+            </td>
+            <td>Metal box</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="dynamic/monster-body.html">+</span>
+                objects\monster_body
+            </td>
+            <td>Dead mutant body</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="dynamic/shell.html">+</span>
+                objects\shell
+            </td>
+            <td>Shell</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="dynamic/small-box.html">+</span>
+                objects\small_box
+            </td>
+            <td>Small box (ammo, PDA, first aid kit)</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="dynamic/small-metal-trash.html">+</span>
+                objects\small_metal_trash
+            </td>
+            <td>Small metal trash (tubes, pieces, nuts, bolts)</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="dynamic/small-weapon.html">+</span>
+                objects\small_weapon
+            </td>
+            <td>Small weapon (pistol)</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="dynamic/tin-can.html">+</span>
+                objects\tin_can
+            </td>
+            <td>Tin can</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="dynamic/actor.html">+</span>
+                creatures\actor
+            </td>
+            <td>Person (Actor)</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="dynamic/hoof.html">+</span>
+                creatures\hoof
+            </td>
+            <td>Mutant with hooves</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="dynamic/human.html">+</span>
+                creatures\human
+            </td>
+            <td>Human (NPC)</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="dynamic/human-head.html">+</span>
+                creatures\human_head
+            </td>
+            <td>Human head</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="dynamic/large.html">+</span>
+                creatures\large
+            </td>
+            <td>Big mutant</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="dynamic/medium.html">+</span>
+                creatures\medium
+            </td>
+            <td>Medium mutant</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="dynamic/phantom.html">+</span>
+                creatures\phantom
+            </td>
+            <td>Phantom</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr class="material-row">
+            <td>
+                <span class="expand-btn" data-source="dynamic/small.html">+</span>
+                creatures\small
+            </td>
+            <td>Small mutant</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 0;">
+                <div class="details-container">
+                    <table class="nested-table">
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    // Обработчик для обеих таблиц
+    const handleTableClick = async (event) => {
+        const btn = event.target.closest('.expand-btn');
+        if (!btn) return;
+
+        const row = btn.closest('tr');
+        const detailsContainer = row.nextElementSibling.querySelector('.details-container');
+        const isOpening = !detailsContainer.classList.contains('show');
+        // Обновляем состояние кнопки
+        btn.classList.toggle('active', isOpening);
+        btn.textContent = isOpening ? '−' : '+';
+        if (isOpening) {
+            detailsContainer.classList.add('show');
+            // Загружаем данные только если они еще не загружены
+            if (btn.dataset.source && !btn.dataset.loaded) {
+                try {
+                    const response = await fetch(btn.dataset.source);
+                    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                    const html = await response.text();
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(html, 'text/html');
+                    const nestedTable = detailsContainer.querySelector('.nested-table');
+                    // Очищаем перед вставкой новых данных
+                    nestedTable.innerHTML = '';
+                    // Безопасное извлечение таблицы
+                    const sourceTable = doc.querySelector('table');
+                    if (sourceTable) {
+                        nestedTable.appendChild(sourceTable.cloneNode(true));
+                    } else {
+                        throw new Error('Таблица не найдена в ответе');
+                    }
+                    btn.dataset.loaded = 'true';
+                } catch (error) {
+                    console.error('Ошибка загрузки данных:', error);
+                    detailsContainer.innerHTML = '<div class="error-message">Ошибка загрузки данных. Пожалуйста, попробуйте позже.</div>';
+                }
+            }
+        } else {
+            // Небольшая задержка для плавного закрытия
+            setTimeout(() => {
+                detailsContainer.classList.remove('show');
+            }, 5);
+        }
+    };
+
+    const staticTable = document.getElementById('StaticObjectMaterialsTable');
+    const dynamicTable = document.getElementById('DynamicObjectMaterialsTable');
+    if (staticTable) staticTable.addEventListener('click', handleTableClick);
+    if (dynamicTable) dynamicTable.addEventListener('click', handleTableClick);
+});
+</script>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../reference/shaders/shaders-list/compiler-shaders-list.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../reference/audio/sound-environment-list.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../reference/shaders/shaders-list/compiler-shaders-list.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../reference/audio/sound-environment-list.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../../theme/js/tables.js"></script>
+        <script src="../../theme/js/mermaid.min.js"></script>
+        <script src="../../theme/js/mermaid-init.js"></script>
+        <script src="../../theme/js/whichlang.js"></script>
+
+
+    </div>
+    </body>
+</html>
