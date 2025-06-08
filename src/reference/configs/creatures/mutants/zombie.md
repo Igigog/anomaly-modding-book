@@ -4,5 +4,5 @@ ___
 
 | Parameter Name | Parameter Description | Example Value | Possible Parameters |
 |---|---|---|---|
-| FakeDeathCount | max count of fake death | 4 |  |
-| StartFakeDeathHealthThreshold | health threshold after which fake death begins | 0.6 |  |
+| FakeDeathCount | Max count of fake death | 4 |  |
+| StartFakeDeathHealthThreshold | Health threshold after which fake death begins | 0.6 |  |

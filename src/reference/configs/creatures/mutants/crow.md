@@ -1,4 +1,4 @@
-# AI_Crow
+# AI_Crow (Crow)
 
 ___
 

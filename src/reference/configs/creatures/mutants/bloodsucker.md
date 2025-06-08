@@ -56,6 +56,4 @@ ___
 | Parameter Name | Parameter Description | Example Value | Possible Parameters |
 |---|---|---|---|
 | Predator_Visual | Visual in invisibility | monsters\krovosos\krovosos_xray |  |
-
-
 | collision_hit_off | Disables collision handling |  |  |

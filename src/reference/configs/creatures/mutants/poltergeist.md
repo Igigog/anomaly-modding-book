@@ -1,7 +1,6 @@
-### SM_POLTR (poltergeist)
+# SM_POLTR (Poltergeist)
 
-<details>
-    <summary>SM_POLTR</summary>
+___
 
 | Parameter Name | Parameter Description | Example Value | Possible Parameters |
 |---|---|---|---|

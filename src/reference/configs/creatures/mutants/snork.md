@@ -23,4 +23,4 @@ ___
 
 | Parameter Name | Parameter Description | Example Value | Possible Parameters |
 |---|---|---|---|
-| sound_landing | Sound on landing | monsters\biting\def_ |  |
+| sound_landing | Sound of landing | monsters\biting\def_ |  |

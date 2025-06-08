@@ -57,8 +57,4 @@ ___
 ## Particles
 
 | Control_Hit |  |  |  |
-
-## hz
-
 | stamina_hit |  |  |  |
-| Friend_Community_Overrides |  |  |  |

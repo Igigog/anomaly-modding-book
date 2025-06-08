@@ -164,13 +164,10 @@ ___
 
 | Parameter Name | Parameter Description | Example Value | Possible Parameters |
 |---|---|---|---|
-| overheat_time_quant |  |  |  |
-| overheat_decr_quant |  |  |  |
-| overheat_threshold |  |  |  |
-| overheat_particles |  |  |  |
-
-| lock_enter |  |  |  |  |
-| lock_exit |  |  |  |  |
+| overheat_time_quant | Determines how quickly the weapon overheats when fired |  |  |
+| overheat_decr_quant | Determines how fast the weapon cools down when not firing |  |  |
+| overheat_threshold | Maximum allowable overheating level at which the weapon stops firing |  |  |
+| overheat_particles | Indicates the particle effect that is played when overheating occurs |  |  |
 
 ### Silencer
 
@@ -235,7 +232,7 @@ ___
 
 | Parameter Name | Parameter Description | Example Value | Possible Parameters |
 |---|---|---|---|
-| cam_return | Whether to return the camera to its original position | 0 |  |
+| cam_return | Whether to return the camera to its original position | 0 | 1 or 0 |
 | cam_relax_speed | camera return speed | 10 |  |
 | cam_dispersion | angle increase with each shot | 0.762 |  |
 | cam_dispersion_frac | barrel will rise by cam_dispersion*cam_dispersion_frac +- cam_dispersion*(1-cam_dispersion_frac) | 1.0 |  |
@@ -248,7 +245,7 @@ ___
 
 | Parameter Name | Parameter Description | Example Value | Possible Parameters |
 |---|---|---|---|
-| zoom_cam_relax_speed | similar to the return speed of the camera in the aiming mode | 10 |  |
+| zoom_cam_relax_speed | Similar to return speed of the camera in the aiming mode | 10 |  |
 | zoom_cam_dispersion | Similar to cam_dispersion in the aiming mode | 0.732 |  |
 | zoom_cam_dispersion_frac | Similar to cam_dispersion_frac in aiming mode | 0.7 |  |
 | zoom_cam_dispersion_inc | Similar to cam_dispersion_inc in aiming mode | 0.0625 |  |
@@ -262,8 +259,8 @@ ___
 |---|---|---|---|
 | ef_main_weapon_type | NPC weapon type | 2 | 0 - pistol<br> 1 -shotgun<br> 2 - assault rifle<br> 3 - rifle<br> 4 - grenade launcher<br> |
 | ef_weapon_type | NPC fire mode | 8 | 5 - fire single shots<br> 6 - fire in bursts<br> 7 - aim and fire single shots<br> 8 - aim and fire (sniper)<br> 9 - grenade launcher |
-| cam_relax_speed_ai |  | 360 |  |
-| zoom_cam_relax_speed_ai |  | 360 |  |
+| cam_relax_speed_ai | Determines the recovery (return) speed of the camera after recoil for NPCs (if not specified, cam_relax_speed is used) | 360 |  |
+| zoom_cam_relax_speed_ai | Determines the speed of camera recovery (return) after recoil for NPCs in aiming mode (if not specified, cam_relax_speed_ai is used) | 360 |  |
 | holder_fov_modifier | NPC angle of view multiplier (eye_fov) with this weapon | 1.0 | Specified in numbers |
 | holder_range_modifier | NPC range multiplier (eye_range) with this weapon | 1.0 | Specified in numbers |
 | min_radius |  |  |  |

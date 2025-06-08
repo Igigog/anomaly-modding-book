@@ -73,11 +73,12 @@
   - [Creating Camera Animations in Blender](tutorials/animations/creating-camera-animations.md)
   - [Editing Existing Animations in Blender](tutorials/animations/editing-existing-animations.md)
 
-- [Texturing](tutorials/texturing/README.md)
+- [Textures](tutorials/texturing/README.md)
   - [Creating and Preparing Textures](tutorials/texturing/сreating-and-preparing-textures.md)
   - [Working Correctly with Icon Atlases](tutorials/texturing/working-correctly-with-icon-atlases.md)
 
 - [Audio | Video](tutorials/audio-video/README.md)
+  - [Setup *.ogg](tutorials/audio-video/setup-ogg.md)
   - [Convert to *.ogm](tutorials/audio-video/convert-to-ogm.md)
 
 - [Mapping](tutorials/mapping/README.md)
@@ -192,6 +193,7 @@
     - [*.dds](reference/file-formats/textures/dds.md)
       - [*_bump.dds](reference/file-formats/textures/bump.md)
       - [*_bump#.dds](reference/file-formats/textures/bump_hash.md)
+      - [*_cube_map.dds](reference/file-formats/textures/cube-map.md)
       - [*_detail_map.dds](reference/file-formats/textures/detail-map.md)
       - [*_terrain_map.dds](reference/file-formats/textures/terrain-map.md)
       - [*_terrain_mask.dds](reference/file-formats/textures/terrain-mask.md)

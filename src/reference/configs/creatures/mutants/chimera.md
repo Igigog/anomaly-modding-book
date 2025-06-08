@@ -6,10 +6,10 @@ ___
 
 | Parameter Name | Parameter Description | Example Value | Possible Parameters |
 |---|---|---|---|
-| attack_radius | run around radius | 10 |  |
-| prepare_jump_timeout |  | 2000 | Specified in milliseconds |
-| attack_jump_timeout |  | 1000 | Specified in milliseconds |
-| stealth_timeout |  | 2000 | Specified in milliseconds |
+| attack_radius | Attack radius | 10 |  |
+| prepare_jump_timeout | Delay between preparation jumps | 2000 | Specified in milliseconds |
+| attack_jump_timeout | Delay between attack jumps | 1000 | Specified in milliseconds |
+| stealth_timeout | Time that a chimera can remain stealthy before attacking | 2000 | Specified in milliseconds |
 | force_attack_distance |  | 8 |  |
-| num_attack_jumps |  | 4 |  |
-| num_prepare_jumps |  | 2 |  |
+| num_attack_jumps | Maximum number of attack jumps a chimera can make in a row | 4 |  |
+| num_prepare_jumps | Maximum number of preparation jumps the chimera makes before resuming attacks | 2 |  |

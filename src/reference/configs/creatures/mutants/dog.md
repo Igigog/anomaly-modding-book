@@ -13,5 +13,5 @@ Parameters of a dog's behavior in the area designated for him home
 | min_life_time | minimum waking time | 10 | сек (min_life_time + rand(10) * min_life_time) |
 | min_sleep_time | minimum sleep time | 5 | сек. (min_sleep_time + rand(5) * min_sleep_time) |
 | drive_out_time | the time during which the dog will try to chase the enemy away | 5 |  |
-| min_move_dist | the minimum length of the patrol section | 4 | Specified in minutes |
-| max_move_dist | maximum length of the patrol section | 6 | Specified in minutes |
+| min_move_dist | Minimum length of the patrol section | 4 | Specified in minutes |
+| max_move_dist | Maximum length of the patrol section | 6 | Specified in minutes |
