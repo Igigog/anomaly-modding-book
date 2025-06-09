@@ -53,6 +53,7 @@
   - [Monkey Patching](tutorials/scripting/monkey-patching.md)
   - [Script Animations](tutorials/scripting/script-animations.md)
   - [Script Attachments](tutorials/scripting/script-attachments.md)
+  - [ImGui](tutorials/scripting/imgui.md)
 
 - [Models](tutorials/models/README.md)
   - [Binding Model in Blender](tutorials/models/binding-model-in-blender.md)
