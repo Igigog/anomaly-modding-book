@@ -1,0 +1,340 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Editor Preferences - Anomaly Modding Book</title>
+
+
+        <!-- Custom HTML head -->
+        <script defer data-domain="igigog.github.io" src="https://plausible.io/js/script.hash.js"></script><script defer data-domain="igigog.github.io" src="https://plausible.io/js/script.hash.js"></script>
+        <script defer src="https://cloud.umami.is/script.js" data-website-id="af269dba-ec2d-471b-a4c9-44023cb64adc"></script>
+
+        <meta name="description" content="Introductory book for S.T.A.L.K.E.R. Anomaly modding">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../theme/css/custom.css">
+        <link rel="stylesheet" href="../../theme/css/tables.css">
+        <link rel="stylesheet" href="../../theme/css/mdbook-admonish.css">
+        <link rel="stylesheet" href="../../theme/css/whichlang.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Anomaly Modding Book</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/Igigog/anomaly-modding-book" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Igigog/anomaly-modding-book/edit/main/src/modding-tools/sdk/editors-preference.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="editor-preference"><a class="header" href="#editor-preference">Editor Preference</a></h1>
+<hr />
+<h2 id="about"><a class="header" href="#about">About</a></h2>
+<p>Preferences across all editors</p>
+<h3 id="objects"><a class="header" href="#objects">Objects</a></h3>
+<h4 id="library"><a class="header" href="#library">Library</a></h4>
+<div class="table-wrapper"><table><thead><tr><th>Button</th><th>Description</th></tr></thead><tbody>
+<tr><td>Discard Instance</td><td>Determines whether unused and unmodified objects should be automatically unloaded. This helps to save memory, but at the same time does not lose user edits</td></tr>
+</tbody></table>
+</div>
+<h4 id="skeleton"><a class="header" href="#skeleton">Skeleton</a></h4>
+<div class="table-wrapper"><table><thead><tr><th>Button</th><th>Description</th></tr></thead><tbody>
+<tr><td>Draw Joints</td><td>Draw Joints</td></tr>
+<tr><td>Draw Bone Axis</td><td>Draw Bone Axis</td></tr>
+<tr><td>Draw Bone Names</td><td>Draw Bone Names</td></tr>
+<tr><td>Draw Bone Shapes</td><td>Draw Bone Shapes</td></tr>
+</tbody></table>
+</div>
+<h4 id="show"><a class="header" href="#show">Show</a></h4>
+<div class="table-wrapper"><table><thead><tr><th>Button</th><th>Description</th></tr></thead><tbody>
+<tr><td>Hint</td><td>Show hints</td></tr>
+<tr><td>Pivot</td><td>Show objects pivot</td></tr>
+<tr><td>Animation Path</td><td>Show animations paths</td></tr>
+<tr><td>LOD</td><td>Show LODs</td></tr>
+</tbody></table>
+</div>
+<h4 id="loading"><a class="header" href="#loading">Loading</a></h4>
+<div class="table-wrapper"><table><thead><tr><th>Button</th><th>Description</th></tr></thead><tbody>
+<tr><td>Deffered Loading RB</td><td>Deferred render buffers loading. If enabled disables (calculating normal for each polygon, building information about adjacent polygons, calculating vertex normals, creating GPU buffer for rendering)</td></tr>
+<tr><td>Deffered Loading CF</td><td>Defer the creation of a collision model</td></tr>
+</tbody></table>
+</div>
+<h4 id="groupobject"><a class="header" href="#groupobject">GroupObject</a></h4>
+<div class="table-wrapper"><table><thead><tr><th>Button</th><th>Description</th></tr></thead><tbody>
+<tr><td>Select ingroup</td><td>If enabled group selection affects all nested objects</td></tr>
+</tbody></table>
+</div>
+<h3 id="scene"><a class="header" href="#scene">Scene</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Button</th><th>Description</th></tr></thead><tbody>
+<tr><td>RadiusRender</td><td>Render radius</td></tr>
+</tbody></table>
+</div>
+<h4 id="common"><a class="header" href="#common">Common</a></h4>
+<div class="table-wrapper"><table><thead><tr><th>Button</th><th>Description</th></tr></thead><tbody>
+<tr><td>Recent Count</td><td>Counter of the list of recently opened files</td></tr>
+<tr><td>Undo Level</td><td>Undo level</td></tr>
+<tr><td>More Stats Info</td><td>Provides additional statistical information</td></tr>
+</tbody></table>
+</div>
+<h4 id="grid"><a class="header" href="#grid">Grid</a></h4>
+<div class="table-wrapper"><table><thead><tr><th>Button</th><th>Description</th></tr></thead><tbody>
+<tr><td>Cell Size</td><td>Grip cell size</td></tr>
+<tr><td>Cell Count</td><td>Grip cell count</td></tr>
+</tbody></table>
+</div>
+<h3 id="tools"><a class="header" href="#tools">Tools</a></h3>
+<h4 id="box-pick"><a class="header" href="#box-pick">Box Pick</a></h4>
+<div class="table-wrapper"><table><thead><tr><th>Button</th><th>Description</th></tr></thead><tbody>
+<tr><td>Limited Depth</td><td>If enabled, the selection of objects is limited to the far object in the selected area</td></tr>
+<tr><td>Back Face Culling</td><td>Allows to ignore polygons that are not visible to the camera</td></tr>
+<tr><td>Depth Tolerance</td><td>Adds a small indentation to ensure that objects on the border are guaranteed to be included</td></tr>
+</tbody></table>
+</div>
+<h4 id="sens"><a class="header" href="#sens">Sens</a></h4>
+<div class="table-wrapper"><table><thead><tr><th>Button</th><th>Description</th></tr></thead><tbody>
+<tr><td>Move</td><td></td></tr>
+<tr><td>Rotate</td><td></td></tr>
+<tr><td>Scale</td><td></td></tr>
+</tbody></table>
+</div>
+<h4 id="snap"><a class="header" href="#snap">Snap</a></h4>
+<div class="table-wrapper"><table><thead><tr><th>Button</th><th>Description</th></tr></thead><tbody>
+<tr><td>Angle</td><td>Step rotation angle</td></tr>
+<tr><td>Move</td><td></td></tr>
+<tr><td>Move To</td><td></td></tr>
+<tr><td>Scale Fixed</td><td>Step for scaling</td></tr>
+</tbody></table>
+</div>
+<h3 id="viewport"><a class="header" href="#viewport">Viewport</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Button</th><th>Description</th></tr></thead><tbody>
+<tr><td>Near Plane</td><td>Near camera cutoff plane</td></tr>
+<tr><td>Far Plane</td><td>Far camera cutoff plane</td></tr>
+<tr><td>FOV</td><td>Camera <a href="https://en.wikipedia.org/wiki/Field_of_view_in_video_games">FOV</a></td></tr>
+<tr><td>Clear Color</td><td></td></tr>
+</tbody></table>
+</div>
+<h4 id="buttons"><a class="header" href="#buttons">Buttons</a></h4>
+<div class="table-wrapper"><table><thead><tr><th>Button</th><th>Description</th></tr></thead><tbody>
+<tr><td>Axis</td><td></td></tr>
+<tr><td>Old Camera Control</td><td></td></tr>
+</tbody></table>
+</div>
+<h4 id="camera"><a class="header" href="#camera">Camera</a></h4>
+<div class="table-wrapper"><table><thead><tr><th>Button</th><th>Description</th></tr></thead><tbody>
+<tr><td>Move Sens</td><td>Move sensitivity</td></tr>
+<tr><td>Rotate Sens</td><td>Rotate sensitivity</td></tr>
+<tr><td>Fly Speed</td><td>Fly speed</td></tr>
+<tr><td>Fly Altitude</td><td>Fly altitude</td></tr>
+</tbody></table>
+</div>
+<h4 id="fog"><a class="header" href="#fog">Fog</a></h4>
+<div class="table-wrapper"><table><thead><tr><th>Button</th><th>Description</th></tr></thead><tbody>
+<tr><td>Color</td><td></td></tr>
+<tr><td>Fogness</td><td></td></tr>
+</tbody></table>
+</div>
+<h3 id="compilers-path"><a class="header" href="#compilers-path">Compilers Path</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Button</th><th>Description</th></tr></thead><tbody>
+<tr><td>xrLC</td><td>Path to <a href="../../glossary/glossary.html#xr-lc">xrLC</a></td></tr>
+<tr><td>xrAI</td><td>Path to <a href="../../glossary/glossary.html#xr-ai">xrAI</a></td></tr>
+<tr><td>xrDO</td><td>Path to <a href="../../glossary/glossary.html#xr-do">xrDO</a></td></tr>
+</tbody></table>
+</div>
+<h3 id="keyboard"><a class="header" href="#keyboard">Keyboard</a></h3>
+<h3 id="keybar"><a class="header" href="#keybar">Keybar</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Button</th><th>Description</th></tr></thead><tbody>
+<tr><td>Show Footsteps 12</td><td></td></tr>
+<tr><td>Show Footsteps 34</td><td></td></tr>
+</tbody></table>
+</div>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../modding-tools/sdk/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../modding-tools/sdk/actor-editor/actor-editor.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../modding-tools/sdk/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../modding-tools/sdk/actor-editor/actor-editor.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../../theme/js/tables.js"></script>
+        <script src="../../theme/js/mermaid.min.js"></script>
+        <script src="../../theme/js/mermaid-init.js"></script>
+        <script src="../../theme/js/whichlang.js"></script>
+
+
+    </div>
+    </body>
+</html>
