@@ -1,0 +1,424 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Weapon HUD - Anomaly Modding Book</title>
+
+
+        <!-- Custom HTML head -->
+        <script defer data-domain="igigog.github.io" src="https://plausible.io/js/script.hash.js"></script><script defer data-domain="igigog.github.io" src="https://plausible.io/js/script.hash.js"></script>
+        <script defer src="https://cloud.umami.is/script.js" data-website-id="af269dba-ec2d-471b-a4c9-44023cb64adc"></script>
+
+        <meta name="description" content="Introductory book for S.T.A.L.K.E.R. Anomaly modding">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../../../favicon.svg">
+        <link rel="shortcut icon" href="../../../../favicon.png">
+        <link rel="stylesheet" href="../../../../css/variables.css">
+        <link rel="stylesheet" href="../../../../css/general.css">
+        <link rel="stylesheet" href="../../../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../../../../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../../../../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../../../theme/css/custom.css">
+        <link rel="stylesheet" href="../../../../theme/css/tables.css">
+        <link rel="stylesheet" href="../../../../theme/css/mdbook-admonish.css">
+        <link rel="stylesheet" href="../../../../theme/css/whichlang.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../../../../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Anomaly Modding Book</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/Igigog/anomaly-modding-book" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Igigog/anomaly-modding-book/edit/main/src/reference/configs/items/weapons/weapon-hud.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="weapon-hud-parameters"><a class="header" href="#weapon-hud-parameters">Weapon HUD Parameters</a></h1>
+<hr />
+<h2 id="about"><a class="header" href="#about">About</a></h2>
+<p>1213</p>
+<h2 id="general"><a class="header" href="#general">General</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example Value</th><th>Possible Parameters</th></tr></thead><tbody>
+<tr><td>item_visual</td><td>Weapon <a href="../../../../glossary/glossary.html#_hud-model">hud model</a></td><td>anomaly_weapons\wpn_akm\wpn_akm_hud.ogf</td><td>File path relative to the <code>gamedata\meshes</code> folder</td></tr>
+<tr><td>attach_place_idx</td><td></td><td>0</td><td>0<br> 1</td></tr>
+<tr><td>zoom_hide_crosshair</td><td>Hide crosshair when aiming</td><td>true</td><td><code>true</code> or <code>1</code> or <code>on</code> - Yes<br> <code>false</code> or <code>0</code> or <code>off</code> - No</td></tr>
+</tbody></table>
+</div>
+<h2 id="custom-ui"><a class="header" href="#custom-ui">Custom UI</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example Value</th><th>Possible Parameters</th></tr></thead><tbody>
+<tr><td>custom_ui_func</td><td>Loads a UI element via Lua script</td><td>tasks_measure.get_UI</td><td>Function reference</td></tr>
+<tr><td>custom_ui_bone</td><td>Custom 3D UI bone</td><td>wpn_body</td><td>Bone name</td></tr>
+<tr><td>custom_ui_pos</td><td>Custom 3D UI position</td><td>-0.0242,0.02947,-0.0219</td><td>X — (<code>-</code>) left / (<code>+</code>) right<br> Y — (<code>+</code>) up / (<code>-</code>) down<br> Z — (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>custom_ui_rot</td><td>Custom 3D UI rotation</td><td>0,90,0</td><td>X — (<code>+</code>) yaw left / (<code>-</code>) yaw right<br> Y — (<code>+</code>) pitch up / (<code>-</code>) pitch down<br> Z — (<code>-</code>) roll right / (<code>+</code>) roll left</td></tr>
+</tbody></table>
+</div>
+<h2 id="strafe"><a class="header" href="#strafe">Strafe</a></h2>
+<div id="admonition-info" class="admonition admonish-info" role="note" aria-labelledby="admonition-info-title">
+<div class="admonition-title">
+<div id="admonition-info-title">
+<p>Info</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-info"></a>
+</div>
+<div>
+<p>Strafe works when moving the character (WASD)</p>
+</div>
+</div>
+<div class="table-wrapper"><table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example Value</th><th>Possible Parameters</th></tr></thead><tbody>
+<tr><td>strafe_enabled</td><td>Enabling HUD strafing</td><td>true</td><td><code>true</code> or <code>1</code> or <code>on</code> - Yes<br> <code>false</code> or <code>0</code> or <code>off</code> - No</td></tr>
+<tr><td>strafe_hud_offset_pos</td><td>HUD offset position</td><td>0,0.002,0</td><td>X — (<code>-</code>) left / (<code>+</code>) right<br> Y — (<code>+</code>) up / (<code>-</code>) down<br> Z — (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>strafe_hud_offset_rot</td><td>HUD offset rotation</td><td>1,-0.75,4.5</td><td>X — (<code>+</code>) yaw left / (<code>-</code>) yaw right<br> Y — (<code>+</code>) pitch up / (<code>-</code>) pitch down<br> Z — (<code>-</code>) roll right / (<code>+</code>) roll left</td></tr>
+<tr><td>strafe_hud_offset_pos_16x9</td><td>HUD offset position for 16x9</td><td>0,0.0023,0</td><td>X — (<code>-</code>) left / (<code>+</code>) right<br> Y — (<code>+</code>) up / (<code>-</code>) down<br> Z — (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>strafe_hud_offset_rot_16x9</td><td>HUD offset rotation for 16x9</td><td>1,-1,5</td><td>X — (<code>+</code>) yaw left / (<code>-</code>) yaw right<br> Y — (<code>+</code>) pitch up / (<code>-</code>) pitch down<br> Z — (<code>-</code>) roll right / (<code>+</code>) roll left</td></tr>
+<tr><td>strafe_aim_enabled</td><td>Enabling HUD strafing in aiming</td><td>true</td><td><code>true</code> or <code>1</code> or <code>on</code> - Yes<br> <code>false</code> or <code>0</code> or <code>off</code> - No</td></tr>
+<tr><td>strafe_aim_hud_offset_pos</td><td>HUD position in aiming</td><td>0,0.002,0</td><td>X — (<code>-</code>) left / (<code>+</code>) right<br> Y — (<code>+</code>) up / (<code>-</code>) down<br> Z — (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>strafe_aim_hud_offset_rot</td><td>HUD rotation while aiming</td><td>0,-0.3,1.25</td><td>X — (<code>+</code>) yaw left / (<code>-</code>) yaw right<br> Y — (<code>+</code>) pitch up / (<code>-</code>) pitch down<br> Z — (<code>-</code>) roll right / (<code>+</code>) roll left</td></tr>
+<tr><td>strafe_aim_hud_offset_pos_16x9</td><td>HUD position while aiming 16x9</td><td>0,0.0023,0</td><td>X — (<code>-</code>) left / (<code>+</code>) right<br> Y — (<code>+</code>) up / (<code>-</code>) down<br> Z — (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>strafe_aim_hud_offset_rot_16x9</td><td>HUD rotation while aiming 16x9</td><td>0,-0.5,1.75</td><td>X — (<code>+</code>) yaw left / (<code>-</code>) yaw right<br> Y — (<code>+</code>) pitch up / (<code>-</code>) pitch down<br> Z — (<code>-</code>) roll right / (<code>+</code>) roll left</td></tr>
+<tr><td>strafe_transition_time</td><td>time to return to the original weapon position</td><td>0.75</td><td></td></tr>
+<tr><td>strafe_aim_transition_time</td><td>time to return to the original weapon position</td><td>0.35</td><td></td></tr>
+<tr><td>strafe_cam_limit_aim_factor</td><td></td><td>0.9</td><td></td></tr>
+<tr><td>strafe_cam_min_angle</td><td></td><td>0</td><td></td></tr>
+</tbody></table>
+</div>
+<h2 id="inertia"><a class="header" href="#inertia">Inertia</a></h2>
+<div id="admonition-info-1" class="admonition admonish-info" role="note" aria-labelledby="admonition-info-1-title">
+<div class="admonition-title">
+<div id="admonition-info-1-title">
+<p>Info</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-info-1"></a>
+</div>
+<div>
+<p>Inertia works when moving the mouse</p>
+</div>
+</div>
+<div class="table-wrapper"><table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example Value</th><th>Possible Parameters</th></tr></thead><tbody>
+<tr><td>inertion_min_angle_aim</td><td></td><td>0</td><td></td></tr>
+<tr><td>inertion_offset_LRUD</td><td>Inertia offset</td><td>0.011, 0.011, 0.01, 0.005</td><td>L — (<code>-</code>) left / (<code>+</code>) right<br> R — (<code>-</code>) right / (<code>+</code>) left<br> U — (<code>-</code>) up / (<code>+</code>) down<br> D — (<code>-</code>) down / (<code>+</code>) up</td></tr>
+<tr><td>inertion_offset_LRUD_aim</td><td>HUD inertia when aim</td><td>0.011, 0.011, 0.01, 0.005</td><td>L — (<code>-</code>) left / (<code>+</code>) right<br> R — (<code>-</code>) right / (<code>+</code>) left<br> U — (<code>-</code>) up / (<code>+</code>) down<br> D — (<code>-</code>) down / (<code>+</code>) up</td></tr>
+</tbody></table>
+</div>
+<h2 id="visual-recoil"><a class="header" href="#visual-recoil">Visual recoil</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example Value</th><th>Possible Parameters</th></tr></thead><tbody>
+<tr><td>shooting_hud_effect</td><td>Enable Visual Recoil</td><td>true</td><td><code>true</code> or <code>1</code> or <code>on</code> - Yes<br> <code>false</code> or <code>0</code> or <code>off</code> - No</td></tr>
+<tr><td>shooting_max_LRUD</td><td>Maximum LRUD position when firing</td><td>0.005,0.005,0.005,0</td><td>L — (<code>-</code>) left / (<code>+</code>) right<br> R — (<code>-</code>) right / (<code>+</code>) left<br> U — (<code>-</code>) up / (<code>+</code>) down<br> D — (<code>-</code>) down / (<code>+</code>) up</td></tr>
+<tr><td>shooting_max_LRUD_aim</td><td>Maximum LRUD position when firing while aim</td><td>0.0025,0.0025,0,0</td><td>L — (<code>-</code>) left / (<code>+</code>) right<br> R — (<code>-</code>) right / (<code>+</code>) left<br> U — (<code>-</code>) up / (<code>+</code>) down<br> D — (<code>-</code>) down / (<code>+</code>) up</td></tr>
+<tr><td>shooting_backward_offset</td><td></td><td>0.02,0.015</td><td></td></tr>
+<tr><td>shooting_ret_speed</td><td>time to return to the original weapon position</td><td>7.5</td><td></td></tr>
+<tr><td>shooting_ret_aim_speed</td><td>time to return to the original weapon position</td><td>15</td><td></td></tr>
+<tr><td>shooting_min_LRUD_power</td><td></td><td>0.01</td><td></td></tr>
+</tbody></table>
+</div>
+<h2 id="collision"><a class="header" href="#collision">Collision</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example Value</th><th>Possible Parameters</th></tr></thead><tbody>
+<tr><td>nearwall_dist_min</td><td>Minimum distance at which the collision work</td><td></td><td></td></tr>
+<tr><td>nearwall_dist_max</td><td>Maximum distance at which the collision work</td><td></td><td></td></tr>
+<tr><td>nearwall_target_hud_fov</td><td>How much is the maximal shift of the hud fov</td><td></td><td></td></tr>
+<tr><td>nearwall_speed_mod</td><td>Shift speed</td><td></td><td></td></tr>
+</tbody></table>
+</div>
+<h2 id="movement-layers"><a class="header" href="#movement-layers">Movement layers</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example Value</th><th>Possible Parameters</th></tr></thead><tbody>
+<tr><td>movement_layer_0</td><td>aim walk</td><td>movement\aim_walk.anm</td><td>File path and animation name</td></tr>
+<tr><td>movement_layer_1</td><td>aim crouch</td><td>movement\aim_walk.anm</td><td>File path and animation name</td></tr>
+<tr><td>movement_layer_2</td><td>crouch</td><td>movement\newwalk.anm</td><td>File path and animation name</td></tr>
+<tr><td>movement_layer_3</td><td>walk</td><td>movement\newwalk.anm</td><td>File path and animation name</td></tr>
+<tr><td>movement_layer_4</td><td>run</td><td>movement\newwalk.anm</td><td>File path and animation name</td></tr>
+<tr><td>movement_layer_5</td><td>sprint</td><td>movement\newrunreload.anm</td><td>File path and animation name</td></tr>
+</tbody></table>
+</div>
+<h2 id="empty-click-animation"><a class="header" href="#empty-click-animation">Empty click animation</a></h2>
+<div id="admonition-info-2" class="admonition admonish-info" role="note" aria-labelledby="admonition-info-2-title">
+<div class="admonition-title">
+<div id="admonition-info-2-title">
+<p>Info</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-info-2"></a>
+</div>
+<div>
+<p>Weapon animation parameters when attempting to shoot with an empty magazine</p>
+</div>
+</div>
+<div class="table-wrapper"><table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example Value</th><th>Possible Parameters</th></tr></thead><tbody>
+<tr><td>empty_click_anm</td><td>Weapon animation when attempting to shoot with an empty magazine</td><td>script\misfire.anm</td><td>File path and animation name</td></tr>
+<tr><td>empty_click_anm_speed</td><td>Animation speed</td><td>2</td><td>-</td></tr>
+<tr><td>empty_click_anm_power</td><td>Animation power</td><td>1</td><td>-</td></tr>
+</tbody></table>
+</div>
+<h2 id="item-position-and-rotation"><a class="header" href="#item-position-and-rotation">Item position and rotation</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example Value</th><th>Possible Parameters</th></tr></thead><tbody>
+<tr><td>item_position</td><td>Item (Weapon) position in relation to the arms</td><td>0, 0, 0</td><td>X — (<code>-</code>) left / (<code>+</code>) right<br> Y — (<code>+</code>) up / (<code>-</code>) down<br> Z — (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>item_orientation</td><td>Item (Weapon) orientation in relation to the arms</td><td>0, 0, 0</td><td>X — (<code>+</code>) yaw left / (<code>-</code>) yaw right<br> Y — (<code>+</code>) pitch up / (<code>-</code>) pitch down<br> Z — (<code>-</code>) roll right / (<code>+</code>) roll left</td></tr>
+</tbody></table>
+</div>
+<h2 id="hud-position-and-rotation"><a class="header" href="#hud-position-and-rotation">HUD position and rotation</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example Value</th><th>Possible Parameters</th></tr></thead><tbody>
+<tr><td>hands_position</td><td>HUD position</td><td>-0.072, -0.15, 0.1</td><td>X — (<code>-</code>) left / (<code>+</code>) right<br> Y — (<code>+</code>) up / (<code>-</code>) down<br> Z — (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>hands_position_16x9</td><td>HUD position for 16x9 monitors</td><td>-0.072, -0.15, 0.1</td><td>X — (<code>-</code>) left / (<code>+</code>) right<br> Y — (<code>+</code>) up / (<code>-</code>) down<br> Z — (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>hands_orientation</td><td>HUD orientation</td><td>0.55, 2.39, 0.15</td><td>X — (<code>+</code>) yaw left / (<code>-</code>) yaw right<br> Y — (<code>+</code>) pitch up / (<code>-</code>) pitch down<br> Z — (<code>-</code>) roll right / (<code>+</code>) roll left</td></tr>
+<tr><td>hands_orientation_16x9</td><td>HUD orientation for 16x9 monitors</td><td>0.55, 2.39, 0.15</td><td>X — (<code>+</code>) yaw left / (<code>-</code>) yaw right<br> Y — (<code>+</code>) pitch up / (<code>-</code>) pitch down<br> Z — (<code>-</code>) roll right / (<code>+</code>) roll left</td></tr>
+</tbody></table>
+</div>
+<h2 id="hud-aiming-position-and-rotation"><a class="header" href="#hud-aiming-position-and-rotation">HUD aiming position and rotation</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example Value</th><th>Possible Parameters</th></tr></thead><tbody>
+<tr><td>aim_hud_offset_pos</td><td></td><td>-0.0818, 0.05494, -0.25</td><td>X — (<code>-</code>) left / (<code>+</code>) right<br> Y — (<code>+</code>) up / (<code>-</code>) down<br> Z — (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>aim_hud_offset_pos_16x9</td><td></td><td>-0.0818, 0.05494, -0.25</td><td>X — (<code>-</code>) left / (<code>+</code>) right<br> Y — (<code>+</code>) up / (<code>-</code>) down<br> Z — (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>aim_hud_offset_rot</td><td></td><td>0.0407, 0.00886, -0.00495</td><td>X — (<code>+</code>) yaw left / (<code>-</code>) yaw right<br> Y — (<code>+</code>) pitch up / (<code>-</code>) pitch down<br> Z — (<code>-</code>) roll right / (<code>+</code>) roll left</td></tr>
+<tr><td>aim_hud_offset_rot_16x9</td><td></td><td>0.0407, 0.00886, -0.00495</td><td>X — (<code>+</code>) yaw left / (<code>-</code>) yaw right<br> Y — (<code>+</code>) pitch up / (<code>-</code>) pitch down<br> Z — (<code>-</code>) roll right / (<code>+</code>) roll left</td></tr>
+</tbody></table>
+</div>
+<h2 id="ugl-position-and-rotation"><a class="header" href="#ugl-position-and-rotation">UGL position and rotation</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example Value</th><th>Possible Parameters</th></tr></thead><tbody>
+<tr><td>gl_hud_offset_pos</td><td></td><td>-0.0491, 0.005, -0.155</td><td>X — (<code>-</code>) left / (<code>+</code>) right<br> Y — (<code>+</code>) up / (<code>-</code>) down<br> Z — (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>gl_hud_offset_pos_16x9</td><td></td><td>-0.0491, 0.005, -0.155</td><td>X — (<code>-</code>) left / (<code>+</code>) right<br> Y — (<code>+</code>) up / (<code>-</code>) down<br> Z — (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>gl_hud_offset_rot</td><td></td><td>-0.067, 0.0063, -0.02</td><td>X — (<code>+</code>) yaw left / (<code>-</code>) yaw right<br> Y — (<code>+</code>) pitch up / (<code>-</code>) pitch down<br> Z — (<code>-</code>) roll right / (<code>+</code>) roll left</td></tr>
+<tr><td>gl_hud_offset_rot_16x9</td><td></td><td>-0.067, 0.0063, -0.02</td><td>X — (<code>+</code>) yaw left / (<code>-</code>) yaw right<br> Y — (<code>+</code>) pitch up / (<code>-</code>) pitch down<br> Z — (<code>-</code>) roll right / (<code>+</code>) roll left</td></tr>
+</tbody></table>
+</div>
+<h2 id="lowered-state"><a class="header" href="#lowered-state">Lowered state</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example Value</th><th>Possible Parameters</th></tr></thead><tbody>
+<tr><td>safemode_anm</td><td>Weapon animation when weapon goes to safe mode</td><td>script\to_lower.anm</td><td>Path and animation name</td></tr>
+<tr><td>safemode_anm_speed</td><td>Animation speed</td><td>1.2</td><td></td></tr>
+<tr><td>safemode_anm_power</td><td>Animation power</td><td>1</td><td></td></tr>
+<tr><td>safemode_anm2</td><td>Weapon animation when weapon comes out of safe mode</td><td>script\from_lower.anm</td><td>Path and animation name</td></tr>
+<tr><td>safemode_anm_speed2</td><td>Animation speed</td><td>1.3</td><td></td></tr>
+<tr><td>safemode_anm_power2</td><td>Animation power</td><td>0.6</td><td></td></tr>
+<tr><td>lowered_hud_offset_pos</td><td></td><td>0, 0, 0</td><td>X — (<code>-</code>) left / (<code>+</code>) right<br> Y — (<code>+</code>) up / (<code>-</code>) down<br> Z — (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>lowered_hud_offset_rot</td><td></td><td>0, 0, 0</td><td>X — (<code>+</code>) yaw left / (<code>-</code>) yaw right<br> Y — (<code>+</code>) pitch up / (<code>-</code>) pitch down<br> Z — (<code>-</code>) roll right / (<code>+</code>) roll left</td></tr>
+<tr><td>lowered_hud_offset_pos_16x9</td><td></td><td>0, 0, 0</td><td>X — (<code>-</code>) left / (<code>+</code>) right<br> Y — (<code>+</code>) up / (<code>-</code>) down<br> Z — (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>lowered_hud_offset_rot_16x9</td><td></td><td>0, 0, 0</td><td>X — (<code>+</code>) yaw left / (<code>-</code>) yaw right<br> Y — (<code>+</code>) pitch up / (<code>-</code>) pitch down<br> Z — (<code>-</code>) roll right / (<code>+</code>) roll left</td></tr>
+</tbody></table>
+</div>
+<h2 id="leaning-state"><a class="header" href="#leaning-state">Leaning state</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example Value</th><th>Possible Parameters</th></tr></thead><tbody>
+<tr><td>lean_hud_offset_pos</td><td></td><td>0, 0, 0</td><td>X — (<code>-</code>) left / (<code>+</code>) right<br> Y — (<code>+</code>) up / (<code>-</code>) down<br> Z — (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>lean_hud_offset_rot</td><td></td><td>0, 0, 0</td><td>X — (<code>+</code>) yaw left / (<code>-</code>) yaw right<br> Y — (<code>+</code>) pitch up / (<code>-</code>) pitch down<br> Z — (<code>-</code>) roll right / (<code>+</code>) roll left</td></tr>
+<tr><td>lean_hud_offset_pos_16x9</td><td></td><td>0, 0, 0</td><td>X — (<code>-</code>) left / (<code>+</code>) right<br> Y — (<code>+</code>) up / (<code>-</code>) down<br> Z — (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>lean_hud_offset_rot_16x9</td><td></td><td>0, 0, 0</td><td>X — (<code>+</code>) yaw left / (<code>-</code>) yaw right<br> Y — (<code>+</code>) pitch up / (<code>-</code>) pitch down<br> Z — (<code>-</code>) roll right / (<code>+</code>) roll left</td></tr>
+</tbody></table>
+</div>
+<h2 id="alternative-aiming-position-and-rotation"><a class="header" href="#alternative-aiming-position-and-rotation">Alternative aiming position and rotation</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example Value</th><th>Possible Parameters</th></tr></thead><tbody>
+<tr><td>aim_hud_offset_alt_pos</td><td></td><td>0, 0, 0</td><td>X — (<code>-</code>) left / (<code>+</code>) right<br> Y — (<code>+</code>) up / (<code>-</code>) down<br> Z — (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>aim_hud_offset_alt_rot</td><td></td><td>0, 0, 0</td><td>X — (<code>+</code>) yaw left / (<code>-</code>) yaw right<br> Y — (<code>+</code>) pitch up / (<code>-</code>) pitch down<br> Z — (<code>-</code>) roll right / (<code>+</code>) roll left</td></tr>
+<tr><td>scope_zoom_factor_alt</td><td></td><td></td><td></td></tr>
+</tbody></table>
+</div>
+<h2 id="shell"><a class="header" href="#shell">Shell</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example Value</th><th>Possible Parameters</th></tr></thead><tbody>
+<tr><td>shell_bone</td><td>bone which will be considered the origin of coordinates for the shell sprite in 1st person view</td><td>wpn_body</td><td>Bone name</td></tr>
+<tr><td>shell_dir</td><td>the offset parameter of the shells after departure, in 1st person view</td><td>0, 1, 0</td><td>X — (<code>-</code>) left / (<code>+</code>) right<br> Y — (<code>+</code>) up / (<code>-</code>) down<br> Z — (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>shell_point</td><td>Coordinates of the bullets ejection point in 1st person view</td><td>0, 0.064, 0.19</td><td>X — (<code>-</code>) left / (<code>+</code>) right<br> Y — (<code>+</code>) up / (<code>-</code>) down<br> Z — (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+</tbody></table>
+</div>
+<h2 id="particles"><a class="header" href="#particles">Particles</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example Value</th><th>Possible Parameters</th></tr></thead><tbody>
+<tr><td>fire_bone</td><td></td><td>wpn_body</td><td>Bone name</td></tr>
+<tr><td>fire_bone2</td><td></td><td>wpn_body</td><td>Bone name</td></tr>
+<tr><td>fire_point</td><td></td><td>0, 0.051841, 0.535482</td><td>X — (<code>-</code>) left / (<code>+</code>) right<br> Y — (<code>+</code>) up / (<code>-</code>) down<br> Z — (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>fire_point2</td><td></td><td>0, -0.011, 0.553</td><td>X — (<code>-</code>) left / (<code>+</code>) right<br> Y — (<code>+</code>) up / (<code>-</code>) down<br> Z — (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+</tbody></table>
+</div>
+<h2 id="camera"><a class="header" href="#camera">Camera</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example Value</th><th>Possible Parameters</th></tr></thead><tbody>
+<tr><td>freeelook_z_offset_mul</td><td>Camera displacement along the z-axis when the camera moves freely</td><td>0.4</td><td>Z — (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>camera_move_epsilon</td><td></td><td></td><td></td></tr>
+<tr><td>disp_min</td><td></td><td></td><td></td></tr>
+<tr><td>speed_min</td><td></td><td></td><td></td></tr>
+<tr><td>zoom_aim_disp_k</td><td></td><td></td><td></td></tr>
+<tr><td>zoom_aim_speed_k</td><td></td><td></td><td></td></tr>
+<tr><td>delta_time</td><td></td><td></td><td></td></tr>
+<tr><td>cam_return_stop</td><td></td><td></td><td></td></tr>
+<tr><td>zoom_rotate_time_k</td><td></td><td></td><td></td></tr>
+<tr><td>hud_fov_addition_modifier</td><td></td><td></td><td></td></tr>
+</tbody></table>
+</div>
+<h2 id="sources"><a class="header" href="#sources">Sources</a></h2>
+<p><a href="https://modfaq.ru/%D0%9F%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D1%8B_%D0%BE%D1%80%D1%83%D0%B6%D0%B8%D1%8F">Source</a></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../../../reference/configs/items/weapons/weapon-world.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../../../reference/animations/hud-animations-weapons.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../../../reference/configs/items/weapons/weapon-world.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../../../reference/animations/hud-animations-weapons.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../../../elasticlunr.min.js"></script>
+        <script src="../../../../mark.min.js"></script>
+        <script src="../../../../searcher.js"></script>
+
+        <script src="../../../../clipboard.min.js"></script>
+        <script src="../../../../highlight.js"></script>
+        <script src="../../../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../../../../theme/js/tables.js"></script>
+        <script src="../../../../theme/js/mermaid.min.js"></script>
+        <script src="../../../../theme/js/mermaid-init.js"></script>
+        <script src="../../../../theme/js/whichlang.js"></script>
+
+
+    </div>
+    </body>
+</html>
