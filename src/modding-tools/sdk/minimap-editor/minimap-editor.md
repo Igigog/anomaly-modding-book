@@ -4,7 +4,7 @@ ___
 
 ## About
 
-![alt text](assets/images/minimap-editor.png)
+![alt text centered](assets/images/minimap-editor.png)
 
 <table><thead>
   <tr>

@@ -4,17 +4,19 @@ ___
 
 ## About
 
-![alt text](../assets/images/object-list.png)
+A window with all object types placed on the level.
+
+![alt text centered](../assets/images/object-list.png)
 
 ## Interface
 
 |  |  |
 |---|---|
-| All |  |
-| Visible Only |  |
-| Invisible Only |  |
-| Focus |  |
-| Show |  |
-| Hide |  |
-| Label |  |
-| Find |  |
+| All | List of all objects on the level |
+| Visible Only | List of only objects visible to the camera on the level |
+| Invisible Only | List of only objects not visible to the camera on the level |
+| Focus | Focusing on a selected object |
+| Show | Show object |
+| Hide | Hide object |
+| Label | Object list |
+| Find | Search bar |

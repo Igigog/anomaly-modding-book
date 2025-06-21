@@ -18,7 +18,9 @@ ___
 
 ## About
 
-SOM occluders are needed to calculate sound propagation.
+SOM occluders are needed to calculate the occlusion of the sound, since the sound engine cannot do this in real time. The occlusion will be calculated depending on the `Game Material` settings.
+
+![alt text svg-icon](assets/svgs/som-occluder-example.svg)
 
 ## Start
 
@@ -28,9 +30,13 @@ Building example:
 
 ![alt text centered](assets/images/creating-som-occluder-in-blender-example.png)
 
-Create a cube and simply replicate the interior of the building.
+Create a mesh that simply represents your model.
 
 ![alt text centered](assets/images/creating-som-occluder-in-blender-result.png)
+
+```admonish tip
+You can simply duplicate your model, but remember that the fewer polygons and the better SOM Occluder represents your model, the better.
+```
 
 ## Surface
 
@@ -46,18 +52,18 @@ In [X-Ray Engine: Material](../../modding-tools/blender/addon-panels/panel-mater
 
 ### Shader
 
-Choose any Engine Shader for Static Object ([list of all Engine Shaders](../../reference/shaders/shaders-list/engine-shaders-list.md))
+Choose any [Engine Shader](../../glossary/glossary.html#engine-shader) for Static Object ([list of all Engine Shaders](../../reference/shaders/shaders-list/engine-shaders-list.md))
 
 ### Compiler
 
-Any Compiler Shader ([list of all Compiler Shaders](../../reference/shaders/shaders-list/compiler-shaders-list.md))
+Any [Compiler Shader](../../glossary/glossary.html#compiler-shader) ([list of all Compiler Shaders](../../reference/shaders/shaders-list/compiler-shaders-list.md))
 
 ### Material
 
-Choose or create new Game Material ([list of all Game Materials](../../reference/materials/materials-list.md))
+Choose or create new [Game Material](../../glossary/glossary.html#game-material) ([list of all Game Materials](../../reference/materials/materials-list.md))
 
 ```admonish note
-In Game Material for the SOM occluder the main factor will be `Sound occludion`
+In Game Material for the SOM occluder the main factor will be `Sound occlusion`
 ```
 
 ## Finish

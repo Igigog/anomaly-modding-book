@@ -6,7 +6,7 @@ ___
 
 Used to create particle effects ([*.pe](../../../reference/file-formats/particles/pe.md)) or particle groups ([*.pg](../../../reference/file-formats/particles/pg.md)).
 
-![alt text](assets/images/particle-editor.png)
+![alt text centered](assets/images/particle-editor.png)
 
 ___
 

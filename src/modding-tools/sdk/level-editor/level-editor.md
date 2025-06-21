@@ -6,7 +6,7 @@ ___
 
 Level Editor is used to create locations
 
-![alt text](assets/images/level-editor.png)
+![alt text centered](assets/images/level-editor.png)
 
 ___
 
@@ -68,7 +68,7 @@ ___
           </tr>
           <tr>
             <td>Optimize Motions</td>
-            <td>Goes through all the bones in the animation and optimizes their animation channels (e.g., position, rotation, scale) by removing    redundant keyframes</td>
+            <td>Goes through all the bones in the animation and optimizes their animation channels (e.g., position, rotation, scale) by removing redundant keyframes</td>
             <td></td>
           </tr>
           <tr>
@@ -96,7 +96,8 @@ ___
             <th>Button</th>
             <th>Description</th>
             <th>Note</th>
-          </tr></thead>
+          </tr>
+        </thead>
         <tbody>
           <tr>
             <td>World Properties</td>
@@ -151,7 +152,8 @@ ___
             <th>Extra Description</th>
             <th>Extra</th>
             <th>Extra Description</th>
-          </tr></thead>
+          </tr>
+        </thead>
         <tbody>
           <tr>
             <td rowspan="7">Make</td>
@@ -276,7 +278,8 @@ ___
           <tr>
             <th>Button</th>
             <th>Description</th>
-          </tr></thead>
+          </tr>
+        </thead>
         <tbody>
           <tr>
             <td>Library Editor</td>
@@ -303,7 +306,8 @@ ___
           <tr>
             <th>Button</th>
             <th>Description</th>
-          </tr></thead>
+          </tr>
+        </thead>
         <tbody>
           <tr>
             <td>Image Editor</td>
@@ -338,7 +342,8 @@ ___
           <tr>
             <th>Button</th>
             <th>Description</th>
-          </tr></thead>
+          </tr>
+        </thead>
         <tbody>
           <tr>
             <td>Sound Editor</td>
@@ -372,7 +377,8 @@ ___
             <th>Description</th>
             <th>1</th>
             <th>Description</th>
-          </tr></thead>
+          </tr>
+        </thead>
         <tbody>
           <tr>
             <td rowspan="10">Render</td>
@@ -506,7 +512,8 @@ ___
           <tr>
             <th>Button</th>
             <th>Description</th>
-          </tr></thead>
+          </tr>
+        </thead>
         <tbody>
           <tr>
             <td>Light Anim Editor</td>
@@ -545,7 +552,8 @@ ___
           <tr>
             <th>Button</th>
             <th>Description</th>
-          </tr></thead>
+          </tr>
+        </thead>
         <tbody>
           <tr>
             <td>Wiki</td>
@@ -564,7 +572,8 @@ ___
           <tr>
             <th>Button</th>
             <th>Description</th>
-          </tr></thead>
+          </tr>
+        </thead>
         <tbody>
           <tr>
             <td>Reinit</td>

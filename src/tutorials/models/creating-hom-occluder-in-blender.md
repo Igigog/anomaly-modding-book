@@ -29,6 +29,10 @@ All we need to do is create a mesh that simplistically represents our model:
 
 ![Model Result centered](assets/images/creating-hom-occluder-in-blender-result.png)
 
+```admonish tip
+You can simply duplicate your model, but remember that the fewer polygons and the better HOM Occluder represents your model, the better.
+```
+
 ## Surface
 
 Go to `Material Properties`![Material Properties svg-icon](../../assets/icons/blender/material.svg).
@@ -37,9 +41,17 @@ Create a separate material for our HOM occluder.
 
 In [X-Ray Engine: Material](../../modding-tools/blender/addon-panels/panel-material.md) choose:
 
-- Shader --- `any Engine Shader for Static Object` --- ([list of all Engine Shaders](../../reference/shaders/shaders-list/engine-shaders-list.md))
-- Compiler --- blah --- ([list of all Compiler Shaders](../../reference/shaders/shaders-list/compiler-shaders-list.md))
-- Material --- `materials/occ` --- This material does not include rendering parameters that are unnecessary for the calculation ([list of all Game Materials](../../reference/materials/materials-list.md))
+### Shader
+
+Any [Engine Shader](../../glossary/glossary.html#engine-shader) for Static Object ([list of all Engine Shaders](../../reference/shaders/shaders-list/engine-shaders-list.md))
+
+### Compiler
+
+Any [Compiler Shader](../../glossary/glossary.html#compiler-shader) ([list of all Compiler Shaders](../../reference/shaders/shaders-list/compiler-shaders-list.md))
+
+### Material
+
+Any [Game Material](../../glossary/glossary.html#game-material) (Example `materials/occ` - This material does not include rendering parameters that are unnecessary for the calculation) ([list of all Game Materials](../../reference/materials/materials-list.md))
 
 ## Finish
 

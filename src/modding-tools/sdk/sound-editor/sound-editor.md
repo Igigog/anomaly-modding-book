@@ -6,11 +6,9 @@ ___
 
 A sound editor is needed to edit sound files in [*.wav](https://en.wikipedia.org/wiki/WAV) format and convert to [*.ogg](../../../reference/file-formats/audio-video/ogg.md)
 
-___
+![sound editor centered](assets/images/sound-editor.png)
 
 ## Interface
-
-![sound editor centered](assets/images/sound-editor.png)
 
 | Key | Description | Value |
 |---|---|---|

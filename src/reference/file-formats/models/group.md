@@ -4,9 +4,9 @@ ___
 
 ## About
 
-Source file that stores a list of static objects in a group
+Source file storing the list of objects in the group.
 
-- Features and limitations are similar to [*.level](../game-levels/dot-level.md) format
+- Features and limitations are similar to [*.level](../game-levels/dot-level.md) format.
 
 ___
 

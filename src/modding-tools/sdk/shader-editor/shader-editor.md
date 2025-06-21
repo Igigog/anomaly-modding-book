@@ -4,9 +4,9 @@ ___
 
 ## About
 
-![alt text](assets/images/shader-editor.png)
-
 Used to create/edit shaders
+
+![alt text centered](assets/images/shader-editor.png)
 
 ## Interface
 

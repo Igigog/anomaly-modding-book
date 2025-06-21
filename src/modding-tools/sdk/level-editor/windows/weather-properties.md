@@ -1,10 +1,10 @@
-# Weather Properties Window
+# Level Editor - Weather Properties Window
 
 ___
 
 ## About
 
-![alt text](../assets/images/weather-properties.png)
+![alt text centred](../assets/images/weather-properties.png)
 
 ### Time Settings
 

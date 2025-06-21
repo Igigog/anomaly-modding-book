@@ -2,9 +2,11 @@
 
 ___
 
-![alt text](assets/images/light-animations-editor.png)
+## About
 
 Needed to create a light animation
+
+![alt text centered](assets/images/light-animations-editor.png)
 
 ___
 

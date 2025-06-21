@@ -45,17 +45,17 @@ Create a separate material for our plane.
 
 In [X-Ray Engine: Material](../../modding-tools/blender/addon-panels/panel-material.md) for plane (fake ladder) choose:
 
-### Shader
+#### Shader
 
-Choose any Engine Shader for Static Object. ([list of all Engine Shaders](../../reference/shaders/shaders-list/engine-shaders-list.md))
+Choose any [Engine Shader](../../glossary/glossary.html#engine-shader) for Static Object. ([list of all Engine Shaders](../../reference/shaders/shaders-list/engine-shaders-list.md))
 
-### Compiler
+#### Compiler
 
-Any. ([list of all Compiler Shaders](../../reference/shaders/shaders-list/compiler-shaders-list.md))
+Any [Compiler Shader](../../glossary/glossary.html#compiler-shader). ([list of all Compiler Shaders](../../reference/shaders/shaders-list/compiler-shaders-list.md))
 
-### Material
+#### Material
 
-Select a suitable Game Material that has the `Climable` flag checked. Example `materials/fake_ladder`. ([list of all Game Materials](../../reference/materials/materials-list.md))
+Select a suitable [Game Material](../../glossary/glossary.html#game-material) that has the `Climable` flag checked. Example `materials/fake_ladder`. ([list of all Game Materials](../../reference/materials/materials-list.md))
 
 ### Example 2
 

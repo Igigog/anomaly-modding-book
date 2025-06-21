@@ -6,12 +6,12 @@ ___
 
 Window for working with objects. Allows to place [*.objects](../../../../reference/file-formats/models/object.md), [*.groups](../../../../reference/file-formats/models/group.md), spawn elements on scene, convert *.tga to [*.dds](../../../../reference/file-formats/textures/dds.md), delete files. (Under development)
 
-![alt text](../assets/images/content-browser.png)
+![alt text centered](../assets/images/content-browser.png)
 
 | Icon | Name | Description |
 |---|---|---|
-| ![1](../assets/icons/menu.svg) | Show THM | Will show [*.thm](../../../../reference/file-formats/textures/thm.md) files |
-| ![1](../assets/icons/menu.svg) | View Mode | View mode<br> Tile<br> List |
+| ![1 svg-icon](../../../../assets/icons/sdk/menu.svg) | Show THM | Will show [*.thm](../../../../reference/file-formats/textures/thm.md) files |
+| ![1 svg-icon](../../../../assets/icons/sdk/menu.svg) | View Mode | View mode<br> Tile<br> List |
 
 Right-click to open the context menu:
 

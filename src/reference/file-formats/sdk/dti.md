@@ -1,4 +1,4 @@
-# *.dti (Detail Object Indices)
+# *.dti (Detail Indices)
 
 ___
 

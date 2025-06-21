@@ -4,7 +4,9 @@ ___
 
 ## About
 
-![alt text](../assets/images/pe-left-bar.png)
+Window with the list of particles in the file particles.xr
+
+![alt text centered](../assets/images/pe-left-bar.png)
 
 ## Interface
 

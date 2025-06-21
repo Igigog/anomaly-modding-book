@@ -64,8 +64,12 @@
   - [Creating Ladder in Blender](tutorials/models/creating-ladder-in-blender.md)
   - [Creating SOM Occluder in Blender](tutorials/models/creating-som-occluder-in-blender.md)
 
-- [Game Materials](tutorials/materials/README.md)
+- [SDK](tutorials/sdk/README.md)
+  - [Creating Sound Environment in SDK](tutorials/sdk/creating-sound-environment-object-in-sdk.md)
   - [Creating Game Material in SDK](tutorials/materials/creating-game-material-in-sdk.md)
+  - [Creating and Placing Group in SDK](tutorials/sdk/сreating-and-placing-group-in-sdk.md)
+
+- [Game Materials](tutorials/materials/README.md)
   - [Decompiling Game Materials](tutorials/materials/decompiling-game-materials.md)
 
 - [Animations](tutorials/animations/README.md)
@@ -287,6 +291,7 @@
   - [Level Editor](modding-tools/sdk/level-editor/level-editor.md)
     - [Properties](modding-tools/sdk/level-editor/windows/properties.md)
     - [Content Browser](modding-tools/sdk/level-editor/windows/content-browser.md)
+    - [Detail Object List](modding-tools/sdk/level-editor/windows/detail-object-list.md)
     - [Weather Properties](modding-tools/sdk/level-editor/windows/weather-properties.md)
     - [Edit Mode](modding-tools/sdk/level-editor/windows/edit-mode.md)
     - [Object List](modding-tools/sdk/level-editor/windows/object-list.md)

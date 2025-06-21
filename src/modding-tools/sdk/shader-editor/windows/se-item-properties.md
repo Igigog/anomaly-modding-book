@@ -2,6 +2,10 @@
 
 ___
 
+## About
+
+Window with shader properties.
+
 <body>
   <div class="table-tabs">
     <div class="tab-buttons">

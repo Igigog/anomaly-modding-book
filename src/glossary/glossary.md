@@ -60,13 +60,17 @@ Contains descriptions of various S.T.A.L.K.E.R. related terms used in modding an
     <td>Gulag</td>
     <td>Gulags control a set of stalkers together by assigning them each tasks by task priority. For example a gulag could contain tasks for patrolling an area and sitting at a campfire. The priority of these tasks will mean that the first stalker "caught" by the gulag (that is, the first stalker to be given over to the gulag's control) will patrol the area with subsequent caught stalkers simply sitting at a fire. A stalker is "caught" by a gulag be entering the associated "Smart Terrain".</td>
   </tr>
+    <tr id="ai-map">
+    <td>AI Map</td>
+    <td>AI Map consisting of nodes</td>
+  </tr>
   <tr id="gvid">
     <td>gvid (game_vertex_id)</td>
     <td><a href="graph-point">Graph Point</a> index </td>
   </tr>
   <tr id="lvid">
     <td>lvid (level_vertex_id)</td>
-    <td>Part of <a href="../reference/file-formats/game-levels/ai.md">*.ai</a>. Ai grid node</td>
+    <td>Part of <a href="../reference/file-formats/game-levels/ai.md">*.ai</a>. AI Map node</td>
   </tr>
   <tr id="smart-cover">
     <td>Smart Cover</td>
