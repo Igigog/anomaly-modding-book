@@ -1,0 +1,304 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>X-Ray Engine: Bone - Anomaly Modding Book</title>
+
+
+        <!-- Custom HTML head -->
+        <script defer data-domain="igigog.github.io" src="https://plausible.io/js/script.hash.js"></script><script defer data-domain="igigog.github.io" src="https://plausible.io/js/script.hash.js"></script>
+        <script defer src="https://cloud.umami.is/script.js" data-website-id="af269dba-ec2d-471b-a4c9-44023cb64adc"></script>
+
+        <meta name="description" content="Introductory book for S.T.A.L.K.E.R. Anomaly modding">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../../favicon.svg">
+        <link rel="shortcut icon" href="../../../favicon.png">
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../../../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../../theme/css/custom.css">
+        <link rel="stylesheet" href="../../../theme/css/tables.css">
+        <link rel="stylesheet" href="../../../theme/css/mdbook-admonish.css">
+        <link rel="stylesheet" href="../../../theme/css/whichlang.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../../../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Anomaly Modding Book</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/Igigog/anomaly-modding-book" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Igigog/anomaly-modding-book/edit/main/src/modding-tools/blender/addon-panels/panel-bone.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="x-ray-engine-bone"><a class="header" href="#x-ray-engine-bone">X-Ray Engine: Bone</a></h1>
+<hr />
+<p><img src="assets/images/panel-bone.png" alt="alt text" /></p>
+<h2 id="about"><a class="header" href="#about">About</a></h2>
+<p>This page describes the X-Ray Engine: Bone panel. Some parameters from this panel are displayed only for certain joint types (Joint Type parameter)</p>
+<h2 id="location"><a class="header" href="#location">Location</a></h2>
+<p><code>Properties</code> window &gt; <code>Bone</code> tab</p>
+<h2 id="parameters"><a class="header" href="#parameters">Parameters</a></h2>
+<h3 id="exportable"><a class="header" href="#exportable">Exportable</a></h3>
+<p>If on, the bone will be exportable and will be saved when exporting to <a href="../../../reference/file-formats/models/object.html">*.object</a> and <a href="../../../reference/file-formats/models/ogf.html">*.ogf</a>. If off, it will not be used during export. Usually this parameter should be turned off for additional rig bones, for example, for bones of inverse kinematics. This parameter should be turned on for deforming bones or for bones that must be in the skeleton.</p>
+<h3 id="material"><a class="header" href="#material">Material</a></h3>
+<p>Bone Shape Material</p>
+<h3 id="length"><a class="header" href="#length">Length</a></h3>
+<p>TODO</p>
+<h3 id="shape-type"><a class="header" href="#shape-type">Shape Type</a></h3>
+<p>Shape Type</p>
+<ul>
+<li>None - No Shape</li>
+<li>Box - Parallelepiped</li>
+<li>Cylinder - Cylinder</li>
+<li>Sphere - Sphere</li>
+<li>Custom - Customizable type which is specified using the identifier in the Shape ID parameter</li>
+</ul>
+<h3 id="shape-id"><a class="header" href="#shape-id">Shape ID</a></h3>
+<p>Identifier for Custom Shape</p>
+<h3 id="no-pickable"><a class="header" href="#no-pickable">No Pickable</a></h3>
+<p>Excludes a bone from collision handling</p>
+<h3 id="no-physics"><a class="header" href="#no-physics">No Physics</a></h3>
+<p>Excludes physics processing for bone</p>
+<h3 id="remove-after-break"><a class="header" href="#remove-after-break">Remove After Break</a></h3>
+<p>Allows removal of bone after an object has been destroyed</p>
+<h3 id="no-fog-collider"><a class="header" href="#no-fog-collider">No Fog Collider</a></h3>
+<p>Bone won’t interact with a voluminous smoke</p>
+<h3 id="joint-type"><a class="header" href="#joint-type">Joint Type</a></h3>
+<ul>
+<li>None - No joint</li>
+<li>Rigid - Rigid Joint</li>
+<li>Cloth - Cloth Joint</li>
+<li>Joint - Universal Joint</li>
+<li>Wheel - Wheel Joint</li>
+<li>Slider - Sliding Joint</li>
+<li>Custom - Custom type which is specified using the identifier in the Joint ID parameter</li>
+</ul>
+<h3 id="joint-id"><a class="header" href="#joint-id">Joint ID</a></h3>
+<p>Identifier for Custom joint</p>
+<h3 id="breakable"><a class="header" href="#breakable">Breakable</a></h3>
+<p>Allows bone to be breakable</p>
+<h3 id="force"><a class="header" href="#force">Force</a></h3>
+<p>Threshold breaking force</p>
+<h3 id="torque"><a class="header" href="#torque">Torque</a></h3>
+<p>Threshold fracture torque</p>
+<h3 id="friction"><a class="header" href="#friction">Friction</a></h3>
+<p>Shape friction</p>
+<h3 id="spring"><a class="header" href="#spring">Spring</a></h3>
+<p>Shape spring</p>
+<h3 id="damping"><a class="header" href="#damping">Damping</a></h3>
+<p>Shape damping</p>
+<h3 id="limit-xyz-minmax"><a class="header" href="#limit-xyz-minmax">Limit X/Y/Z: Min/Max</a></h3>
+<p>Rotation limits for bones with type Joint. These are set using the minimum and maximum rotation angle.</p>
+<h3 id="limit-xyz-springdamping"><a class="header" href="#limit-xyz-springdamping">Limit X/Y/Z: Spring/Damping</a></h3>
+<p>Spring and damping for bones with Joint type.</p>
+<h3 id="slide-z-springdamping"><a class="header" href="#slide-z-springdamping">Slide Z: Spring/Damping</a></h3>
+<p>Spring and damping during sliding for Slider type bones.</p>
+<h3 id="rotate-z-springdamping"><a class="header" href="#rotate-z-springdamping">Rotate Z: Spring/Damping</a></h3>
+<p>Spring and damping during rotation for Slider type bones.</p>
+<h3 id="steer-minmax"><a class="header" href="#steer-minmax">Steer: Min/Max</a></h3>
+<p>Amplitude of rotation of the front wheels of the vehicle while turning the steering wheel. Set the minimum and maximum angle.</p>
+<h3 id="slide-z-minmax"><a class="header" href="#slide-z-minmax">Slide Z: Min/Max</a></h3>
+<p>Sliding limits for bones with Slider type. Specified by means of a minimum and maximum value, which is specified in meters.</p>
+<h3 id="rotate-z-minmax"><a class="header" href="#rotate-z-minmax">Rotate Z: Min/Max</a></h3>
+<p>Rotation limits for bones with Slider type. Specified using the minimum and maximum rotation angle.</p>
+<h3 id="mass"><a class="header" href="#mass">Mass</a></h3>
+<p>Bone shape mass value in kilograms.</p>
+<h3 id="center-of-mass"><a class="header" href="#center-of-mass">Center of Mass</a></h3>
+<p>Shape center of mass coordinate.</p>
+<h2 id="operators"><a class="header" href="#operators">Operators</a></h2>
+<h3 id="edit-shape"><a class="header" href="#edit-shape">Edit Shape</a></h3>
+<p>Turns on the mode of shape editing. After launching the operator, a shape object will be added to the scene and can be transformed. In the Properties window in the Object tab of the X-Ray Engine: Edit Helper panel, operators for working with a shape will be displayed.</p>
+<h3 id="edit-center"><a class="header" href="#edit-center">Edit Center</a></h3>
+<p>Enables the center of mass editing mode. After you run the operator, a pacifier object will be added to the scene and can be moved. In the Properties window in the Object tab of the X-Ray Engine: Edit Helper panel, operators for working with the center of mass will be displayed</p>
+<hr />
+<h2 id="sources"><a class="header" href="#sources">Sources</a></h2>
+<p><a href="https://github.com/PavelBlend/blender-xray/wiki/Panel-XRay-Engine-Bone">Blender X-Ray Addon Wiki on GitHub</a></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../../modding-tools/blender/addon-panels/panel-armature.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../../modding-tools/blender/addon-panels/panel-material.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../../modding-tools/blender/addon-panels/panel-armature.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../../modding-tools/blender/addon-panels/panel-material.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../../elasticlunr.min.js"></script>
+        <script src="../../../mark.min.js"></script>
+        <script src="../../../searcher.js"></script>
+
+        <script src="../../../clipboard.min.js"></script>
+        <script src="../../../highlight.js"></script>
+        <script src="../../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../../../theme/js/tables.js"></script>
+        <script src="../../../theme/js/mermaid.min.js"></script>
+        <script src="../../../theme/js/mermaid-init.js"></script>
+        <script src="../../../theme/js/whichlang.js"></script>
+
+
+    </div>
+    </body>
+</html>

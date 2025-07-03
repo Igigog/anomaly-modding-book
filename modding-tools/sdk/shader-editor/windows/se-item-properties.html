@@ -1,0 +1,656 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Item Properties - Anomaly Modding Book</title>
+
+
+        <!-- Custom HTML head -->
+        <script defer data-domain="igigog.github.io" src="https://plausible.io/js/script.hash.js"></script><script defer data-domain="igigog.github.io" src="https://plausible.io/js/script.hash.js"></script>
+        <script defer src="https://cloud.umami.is/script.js" data-website-id="af269dba-ec2d-471b-a4c9-44023cb64adc"></script>
+
+        <meta name="description" content="Introductory book for S.T.A.L.K.E.R. Anomaly modding">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../../../favicon.svg">
+        <link rel="shortcut icon" href="../../../../favicon.png">
+        <link rel="stylesheet" href="../../../../css/variables.css">
+        <link rel="stylesheet" href="../../../../css/general.css">
+        <link rel="stylesheet" href="../../../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../../../../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../../../../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../../../theme/css/custom.css">
+        <link rel="stylesheet" href="../../../../theme/css/tables.css">
+        <link rel="stylesheet" href="../../../../theme/css/mdbook-admonish.css">
+        <link rel="stylesheet" href="../../../../theme/css/whichlang.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../../../../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Anomaly Modding Book</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/Igigog/anomaly-modding-book" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Igigog/anomaly-modding-book/edit/main/src/modding-tools/sdk/shader-editor/windows/se-item-properties.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="shader-editor---item-properties"><a class="header" href="#shader-editor---item-properties">Shader Editor - Item Properties</a></h1>
+<hr />
+<h2 id="about"><a class="header" href="#about">About</a></h2>
+<p>Window with shader properties.</p>
+<body>
+  <div class="table-tabs">
+    <div class="tab-buttons">
+      <button class="tab-button active" onclick="openTable(event, 'EngineShader')">Engine Shader</button>
+      <button class="tab-button" onclick="openTable(event, 'CompilerShader')">Compiler Shader</button>
+      <button class="tab-button" onclick="openTable(event, 'GameMaterials')">Game Materials</button>
+      <button class="tab-button" onclick="openTable(event, 'GameMaterialPairs')">Game Material Pairs</button>
+      <button class="tab-button" onclick="openTable(event, 'SoundEnvironment')">Sound Environment</button>
+    </div>
+    <div id="EngineShader" class="tab-content" style="display: block;">
+    <table><thead>
+  <tr>
+    <th></th>
+    <th>Description</th>
+    <th>Extra</th>
+    <th>Extra Description</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td rowspan="18">Type</td>
+    <td rowspan="18">Shader type</td>
+    <td><a href="../shader-types/basic-simple.html">basic (simple)</a></td>
+    <td>A basic shader, with a wide range of features. Supports transformation, different types of blending, adjusting the effect of lighting on it and Z-buffering. Used for most effects, such as glow</td>
+  </tr>
+  <tr>
+    <td><a href="../shader-types/editor-selection.html">EDITOR: selection</a></td>
+    <td>Designed to display object selection in the SDK</td>
+  </tr>
+  <tr>
+    <td><a href="../shader-types/editor-wire.html">EDITOR: wire</a></td>
+    <td>Wireframe shader in SDK</td>
+  </tr>
+  <tr>
+    <td><a href="../shader-types/internal-blur.html">INTERNAL: blur</a></td>
+    <td>Blur effect</td>
+  </tr>
+  <tr>
+    <td><a href="../shader-types/internal-gray-scale-effect.html">INTERNAL: gray-scale effect</a></td>
+    <td>Discoloration effect</td>
+  </tr>
+  <tr>
+    <td><a href="../shader-types/internal-shadow-projecting.html">INTERNAL: shadow projecting</a></td>
+    <td>General shadow projection</td>
+  </tr>
+  <tr>
+    <td><a href="../shader-types/level-detail-objects.html">LEVEL: detail objects</a></td>
+    <td>Designed for Detail Objects. Supports alpha channel dissolution</td>
+  </tr>
+  <tr>
+    <td><a href="../shader-types/level-diffuse-base-aref.html">LEVEL: diffuse*base.aref</a></td>
+    <td>A shader designed to apply vertex lighting to geometry to which alpha channel textures are assigned</td>
+  </tr>
+  <tr>
+    <td><a href="../shader-types/level-diffuse-base.html">LEVEL: diffuse*base</a></td>
+    <td>A shader designed to apply vertex lighting to the geometry that will use it</td>
+  </tr>
+  <tr>
+    <td><a href="../shader-types/level-implicit-detail.html">LEVEL: implicit**detail</a></td>
+    <td>Allows to apply several types of detail map to the main texture, supports mask technology</td>
+  </tr>
+  <tr>
+    <td><a href="../shader-types/level-lmap-base-aref.html">LEVEL: lmap*base.aref</a></td>
+    <td>A shader designed to apply lightmap lighting to geometry to which alpha channel textures are assigned</td>
+  </tr>
+  <tr>
+    <td><a href="../shader-types/level-lmap-base-default.html">LEVEL: lmap*base (default)</a></td>
+    <td>Default Lightmap shader type. This shader type is used in most of the geometry in the game. It can use tessellation</td>
+  </tr>
+  <tr>
+    <td><a href="../shader-types/level-lmap-env-base.html">LEVEL: lmap*(env^base)</a></td>
+    <td>Lightmap type of shader with a feature set such as Environment map and Alpha-Blend</td>
+  </tr>
+  <tr>
+    <td><a href="../shader-types/level-lmap-env-const-base.html">LEVEL: (lmap+env*const)*base</a></td>
+    <td>A type of shader with a wide range of functions. Through it you can transform ID0 textures, assign Environment map to them and customize them, with changing RGBA constants</td>
+  </tr>
+  <tr>
+    <td><a href="../shader-types/level-trees-bushes.html">LEVEL: trees/bushes</a></td>
+    <td>A type of shader for flora and LOD.  Supports alpha channel</td>
+  </tr>
+  <tr>
+    <td><a href="../shader-types/model-default.html">MODEL: Default</a></td>
+    <td>Default shader for Dynamic Object. Supports alpha channel and tessellation</td>
+  </tr>
+  <tr>
+    <td><a href="../shader-types/model-env-base.html">MODEL: env^base</a></td>
+    <td>Similar to LEVEL: lmap*(env^base), only for Dynamic Objects</td>
+  </tr>
+  <tr>
+    <td><a href="../shader-types/particles.html">particles</a></td>
+    <td>Practically identical to basic (simple), except that it does not support a certain set of functions that are needed only for Static Object</td>
+  </tr>
+  <tr>
+    <td>Owner</td>
+    <td>Owner name</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td rowspan="2">General</td>
+    <td rowspan="2"></td>
+    <td>Priority</td>
+    <td>Priority for strict sorting</td>
+  </tr>
+  <tr>
+    <td>Strict sorting</td>
+    <td>Enables a mode that renders objects in a strictly defined order, usually to correctly render transparent or translucent surfaces</td>
+  </tr>
+</tbody></table>
+    </div>
+    <div id="CompilerShader" class="tab-content" style="display: none;">
+    <table><thead>
+  <tr>
+    <th></th>
+    <th>Description</th>
+    <th>Extra</th>
+    <th>Extra Description</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td>Translucency</td>
+    <td>Transparency level for vertices</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Ambient</td>
+    <td>Base ambient light for vertices</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>LM density</td>
+    <td>Density (quality) of the lightmap for the surface</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td rowspan="5">Flags</td>
+    <td rowspan="5"></td>
+    <td>Collision</td>
+    <td>Enable collision for object with this shader</td>
+  </tr>
+  <tr>
+    <td>Rendering</td>
+    <td>Enable rendering for object with this shader</td>
+  </tr>
+  <tr>
+    <td>OptimizeUV</td>
+    <td>?</td>
+  </tr>
+  <tr>
+    <td>Vertex light</td>
+    <td>Will use Vertex Lighting instead lightmap</td>
+  </tr>
+  <tr>
+    <td>Cast shadow</td>
+    <td>Enable shadow casting for object with this shader</td>
+  </tr>
+</tbody>
+</table>
+    </div>
+    <div id="GameMaterials" class="tab-content" style="display: none;">
+    <table><thead>
+  <tr>
+    <th></th>
+    <th>Description</th>
+    <th>Extra</th>
+    <th>Extra Description</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td>Desc</td>
+    <td>Material description</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td rowspan="12">Flags</td>
+    <td rowspan="12"></td>
+    <td>Dynamic</td>
+    <td>Using material for a Dynamic Object</td>
+  </tr>
+  <tr>
+    <td>Passable</td>
+    <td>Allows the material to be passable</td>
+  </tr>
+  <tr>
+    <td>Breakable</td>
+    <td>Allows the material to be breakable. Only for Dynamic Object.</td>
+  </tr>
+  <tr>
+    <td>Bounceable</td>
+    <td>Allows the material to be bounceable</td>
+  </tr>
+  <tr>
+    <td>Skidmark</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Bloodmark</td>
+    <td>Enables the possibility of blood marks appearing on this material</td>
+  </tr>
+  <tr>
+    <td>Climable</td>
+    <td>Allows climbing on this material</td>
+  </tr>
+  <tr>
+    <td>Liquid</td>
+    <td>Flags the material as a liquid (?)</td>
+  </tr>
+  <tr>
+    <td>Suppress Shadows</td>
+    <td>Disables shadows for material</td>
+  </tr>
+  <tr>
+    <td>Suppress Wallmarks</td>
+    <td>Disables wallamarks for material</td>
+  </tr>
+  <tr>
+    <td>Actor Obstacle</td>
+    <td>Forcing collision inclusion (?)</td>
+  </tr>
+  <tr>
+    <td>Bullet No Ricoshet</td>
+    <td>Disabling the recochet from the material</td>
+  </tr>
+  <tr>
+    <td rowspan="5">Physics</td>
+    <td rowspan="5"></td>
+    <td>Friction</td>
+    <td>Friction coefficient</td>
+  </tr>
+  <tr>
+    <td>Damping</td>
+    <td>Softness coefficient of the material (collision energy loss)</td>
+  </tr>
+  <tr>
+    <td>Spring</td>
+    <td>Material stiffness coefficient (spring stiffness)</td>
+  </tr>
+  <tr>
+    <td>Bounce start vel</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Bouncing</td>
+    <td>Bounce coefficient</td>
+  </tr>
+  <tr>
+    <td rowspan="8">Factors</td>
+    <td rowspan="8"></td>
+    <td>Bounce Damage</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Injurious</td>
+    <td>Speed of wound on touch (?)</td>
+  </tr>
+  <tr>
+    <td>Shooting (1-went through)</td>
+    <td>Resistance to penetration factor</td>
+  </tr>
+  <tr>
+    <td>Shooting MP (1-went through)</td>
+    <td>Resistance to penetration factor for Multiplayer</td>
+  </tr>
+  <tr>
+    <td>Transparency (1-full transp)</td>
+    <td>Determining object visibility through materials to calculate NPC visibility</td>
+  </tr>
+  <tr>
+    <td>Sound occlusion (1-full hear)</td>
+    <td>Sound occlusion factor</td>
+  </tr>
+  <tr>
+    <td>Flotation (1-full passable)</td>
+    <td>Flotation factor</td>
+  </tr>
+  <tr>
+    <td>Density Factor</td>
+    <td>Density factor</td>
+  </tr>
+</tbody></table>
+    </div>
+    <div id="GameMaterialPairs" class="tab-content" style="display: none;">
+    <table><thead>
+  <tr>
+    <th></th>
+    <th>Description</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td>Command</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Parent</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Breaking Sounds</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Step Sounds</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Collide Sounds</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Collide Particles</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Collide Marks</td>
+    <td></td>
+  </tr>
+</tbody>
+</table>
+    </div>
+    <div id="SoundEnvironment" class="tab-content" style="display: none;">
+    <table><thead>
+  <tr>
+    <th></th>
+    <th></th>
+    <th>Description</th>
+    <th>Extra</th>
+    <th>Extra Description</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td rowspan="5">Environment</td>
+    <td rowspan="2">Set</td>
+    <td rowspan="2"></td>
+    <td>Identity</td>
+    <td>Sets the parameters to the parameters from Identity</td>
+  </tr>
+  <tr>
+    <td>Reset</td>
+    <td>Resets parameters</td>
+  </tr>
+  <tr>
+    <td>Preset</td>
+    <td></td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Size</td>
+    <td>This setting sets the perceived size of the audio environment. The larger the number, the larger and wider the environmental space will "sound"</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Diffusion</td>
+    <td>Controls the master density of audio reflections and reverberations, i.e. how thick the reverb and echo effects will be</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td rowspan="2">Room</td>
+    <td>Room</td>
+    <td>This controls the initial volume level and amount of reverb and echo effects; "0" equates to full effects, while "-10000" equates to no effects</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>RoomHF</td>
+    <td>Sets the high frequency attenuation via a low-pass filter for Room setting and audio reflection; "0" equates to no low-pass filter, while "-10000" equates to no sound reflected</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td rowspan="2">Distance Effects</td>
+    <td>RoomRolloffFactor</td>
+    <td>This setting attenuates reflected sound based on how far from the audio source the player is; the higher the value, the more a sound will decay the greater the player's distance from the source of the audio</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>AirAbsorptionHF</td>
+    <td>This setting attenuates high frequencies based on the distance between the player and the audio source, but simulates a denser environment. The higher the value, the less absorbent the environment is (e.g. a low value would mimic thick fog, a high value would mimic a dry desert or tundra)</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td rowspan="2">Reflections</td>
+    <td>Reflections</td>
+    <td>This sets the amount of initial echoes dependant upon the Room setting. "1000" equates to maximum initial reflections, while "-10000" equates to no initial reflections</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>ReflectionsDelay</td>
+    <td>Sets the amount of time (in milliseconds) from the initial perception of the audio source, to the first percieved echo. The higher the value, the longer the amount of time between first hearing a sound, and hearing any echoes of that sound</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td rowspan="2">Reverb</td>
+    <td>Reverb</td>
+    <td>This setting controls the amount of late reverberations dependant upon the Room setting. "2000" equates to maximum late reverberations, while "-10000" equates to no late reverberations</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>ReverbDelay</td>
+    <td>This sets the length of time (in milliseconds) from the initial perception of audio reflections, to the first percieved reverberation. The higher the value, the longer the amount of time between the first echo and it's resounding reverberation</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td rowspan="2">Decay</td>
+    <td>DecayTime</td>
+    <td>Controls the decay time of the audio reverberation; how quickly the reverberation fades away. The smaller the value, the quicker reverberations fade out, and the smaller the percieved room size is; the higher the value, the longer it takes for reverberations to fade out</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>DecayHFRatio</td>
+    <td>Sets the ratio of high frequency reverberation decay relative to actual reverberation decay time. The higher the value, the brighter the high frequency reverberation decay; the lower the value, the more dull the high frequency reverberation</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+</tbody></table>
+    </div>
+  </div>
+</body>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../../../modding-tools/sdk/shader-editor/shader-editor.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../../../modding-tools/sdk/shader-editor/shader-types/basic-simple.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../../../modding-tools/sdk/shader-editor/shader-editor.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../../../modding-tools/sdk/shader-editor/shader-types/basic-simple.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../../../elasticlunr.min.js"></script>
+        <script src="../../../../mark.min.js"></script>
+        <script src="../../../../searcher.js"></script>
+
+        <script src="../../../../clipboard.min.js"></script>
+        <script src="../../../../highlight.js"></script>
+        <script src="../../../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../../../../theme/js/tables.js"></script>
+        <script src="../../../../theme/js/mermaid.min.js"></script>
+        <script src="../../../../theme/js/mermaid-init.js"></script>
+        <script src="../../../../theme/js/whichlang.js"></script>
+
+
+    </div>
+    </body>
+</html>

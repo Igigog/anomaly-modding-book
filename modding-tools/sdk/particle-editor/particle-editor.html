@@ -1,0 +1,488 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Particle Editor - Anomaly Modding Book</title>
+
+
+        <!-- Custom HTML head -->
+        <script defer data-domain="igigog.github.io" src="https://plausible.io/js/script.hash.js"></script><script defer data-domain="igigog.github.io" src="https://plausible.io/js/script.hash.js"></script>
+        <script defer src="https://cloud.umami.is/script.js" data-website-id="af269dba-ec2d-471b-a4c9-44023cb64adc"></script>
+
+        <meta name="description" content="Introductory book for S.T.A.L.K.E.R. Anomaly modding">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../../favicon.svg">
+        <link rel="shortcut icon" href="../../../favicon.png">
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../../../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../../theme/css/custom.css">
+        <link rel="stylesheet" href="../../../theme/css/tables.css">
+        <link rel="stylesheet" href="../../../theme/css/mdbook-admonish.css">
+        <link rel="stylesheet" href="../../../theme/css/whichlang.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../../../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Anomaly Modding Book</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/Igigog/anomaly-modding-book" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Igigog/anomaly-modding-book/edit/main/src/modding-tools/sdk/particle-editor/particle-editor.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="particle-editor"><a class="header" href="#particle-editor">Particle Editor</a></h1>
+<hr />
+<h2 id="about"><a class="header" href="#about">About</a></h2>
+<p>Used to create particle effects (<a href="../../../reference/file-formats/particles/pe.html">*.pe</a>) or particle groups (<a href="../../../reference/file-formats/particles/pg.html">*.pg</a>).</p>
+<p><img src="assets/images/particle-editor.png" alt="alt text centered" /></p>
+<hr />
+<h2 id="interface"><a class="header" href="#interface">Interface</a></h2>
+<body>
+  <div class="table-tabs">
+    <div class="tab-buttons">
+      <button class="tab-button active" onclick="openTable(event, 'File')">File</button>
+      <button class="tab-button" onclick="openTable(event, 'Editors')">Editors</button>
+      <button class="tab-button" onclick="openTable(event, 'Options')">Options</button>
+      <button class="tab-button" onclick="openTable(event, 'Windows')">Windows</button>
+    </div>
+    <div id="File" class="tab-content" style="display: block;">
+      <table>
+        <thead>
+          <tr>
+            <th>Button</th>
+            <th>Description</th>
+          </tr></thead>
+        <tbody>
+          <tr>
+            <td>Save</td>
+            <td>Save the particles in unpacked form(*.pe,\*.pg), in rawdata/particles</td>
+          </tr>
+          <tr>
+            <td>Reload</td>
+            <td>Reload particles from rawdata/particles</td>
+          </tr>
+          <tr>
+            <td>Save .xr</td>
+            <td>Save file .xr</td>
+          </tr>
+          <tr>
+            <td>Load .xr</td>
+            <td>Load file .xr</td>
+          </tr>
+          <tr>
+            <td>Validate</td>
+            <td>Validate particles</td>
+          </tr>
+          <tr>
+            <td>Compact</td>
+            <td>Checks database integrity, corrects paths to effects, and organizes storage structure</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="Editors" class="tab-content" style="display: none;">
+      <table>
+        <thead>
+          <tr>
+            <th>Option</th>
+            <th>1</th>
+            <th>Description</th>
+          </tr></thead>
+        <tbody>
+          <tr>
+            <td rowspan="3">Image</td>
+            <td>Image Editor</td>
+            <td>Open Image Editor</td>
+          </tr>
+          <tr>
+            <td>Synchronize Textures</td>
+            <td>The function updates textures in the project by checking changes in the file  system   and synchronizing them</td>
+          </tr>
+          <tr>
+            <td>Check New Textures</td>
+            <td>Searches for new textures in the file system and imports them</td>
+          </tr>
+          <tr>
+            <td rowspan="3">Sounds</td>
+            <td>Sound Editor</td>
+            <td>Open Sound Editor</td>
+          </tr>
+          <tr>
+            <td>Synchronize Sounds (Soft)</td>
+            <td>Searches for new sounds in the file system and imports them. Deletes only those   sounds that do not exist in the file system and are not     used</td>
+          </tr>
+          <tr>
+            <td>Synchronize Sounds (Hard)</td>
+            <td>Searches for new sounds in the file system and imports them. Deletes all sounds   missing from the file system without checking if they   are   used</td>
+          </tr>
+          <tr>
+            <td>Light Anim Editor</td>
+            <td>-</td>
+            <td>Open <a href="../light-animations-editor/light-animations-editor.html">Light  Animation Editor</a></td>
+          </tr>
+          <tr>
+            <td>Minimap Editor</td>
+            <td>-</td>
+            <td>Open <a href="../minimap-editor/minimap-editor.html">Minimap Editor</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="Options" class="tab-content" style="display: none;">
+      <table>
+        <thead>
+          <tr>
+            <th>Options</th>
+            <th>1</th>
+            <th>Description</th>
+            <th>1</th>
+            <th>Description</th>
+          </tr></thead>
+        <tbody>
+          <tr>
+            <td rowspan="10">Render</td>
+            <td>Quality</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td rowspan="3">Fill Mode</td>
+            <td rowspan="3">Fill Mode</td>
+            <td>Point</td>
+            <td>Vertex point fill mode</td>
+          </tr>
+          <tr>
+            <td>Wireframe</td>
+            <td>Wireframe fill mode</td>
+          </tr>
+          <tr>
+            <td>Solid</td>
+            <td>Solid fill mode</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Shader Mode</td>
+            <td rowspan="2">Shader Mode</td>
+            <td>Flat</td>
+            <td><a href="https://en.wikipedia.org/wiki/Shading#Flat_shading">Flat Shading</a></td>
+          </tr>
+          <tr>
+            <td>Gouraud</td>
+            <td><a href="https://en.wikipedia.org/wiki/Gouraud_shading">Gouraud Shading</a></td>
+          </tr>
+          <tr>
+            <td>Edged Faces</td>
+            <td>Enables drawing of edges (wireframe) of a 3D mesh</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>RenderHW</td>
+            <td>Enables GPU rendering</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Filter Linear</td>
+            <td>Enables linear texture filtering</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Textures</td>
+            <td>Enables texture display (TODO Not Working)</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Draw Safe Rect</td>
+            <td></td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Draw Grid</td>
+            <td>Draw viewport grid</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td rowspan="3">Coordinate Axes</td>
+            <td>None</td>
+            <td>None</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Axis</td>
+            <td><img src=../assets/images/ca-axis.png></td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Cube</td>
+            <td><img src=../assets/images/ca-cube.png></td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Fog</td>
+            <td>-</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Mute Sounds</td>
+            <td>-</td>
+            <td>Mute Sounds</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Real Time</td>
+            <td>-</td>
+            <td>Real Time</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Stats</td>
+            <td>-</td>
+            <td>Displaying statistics</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Preferences</td>
+            <td>-</td>
+            <td>Open <a href="../editors-preference.html">Preference window</a></td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="Windows" class="tab-content" style="display: none;">
+      <table>
+        <thead>
+          <tr>
+            <th>Button</th>
+            <th>Description</th>
+          </tr></thead>
+        <tbody>
+          <tr>
+            <td>Log</td>
+            <td>Open Log window</td>
+          </tr>
+          <tr>
+            <td>Theme</td>
+            <td>Editor theme</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+<h3 id="top-bar"><a class="header" href="#top-bar">Top Bar</a></h3>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">Icon</th><th>Name</th><th>Description</th></tr></thead><tbody>
+<tr><td style="text-align: center"><img src="../../../assets/icons/sdk/undo.png" alt="1" /></td><td>Undo</td><td>Undo the last action</td></tr>
+<tr><td style="text-align: center"><img src="../../../assets/icons/sdk/redo.png" alt="1" /></td><td>Redo</td><td>Repeat the last action</td></tr>
+<tr><td style="text-align: center"><img src="../../../assets/icons/sdk/save.png" alt="1" /></td><td>Save</td><td>Save the particles in unpacked form(*.pe,*.pg), in rawdata/particles</td></tr>
+<tr><td style="text-align: center"><img src="../../../assets/icons/sdk/RCRefresh.bmp" alt="1" /></td><td>Reload</td><td>Reload particles from rawdata/particles</td></tr>
+<tr><td style="text-align: center"><img src="../../../assets/icons/sdk/open.png" alt="1" /></td><td>Open</td><td>Open file .xr</td></tr>
+<tr><td style="text-align: center"><img src="../../../assets/icons/sdk/save.png" alt="1" /></td><td>Save</td><td>Save file .xr</td></tr>
+<tr><td style="text-align: center"><img src="../../../assets/icons/sdk/Btn_FolderOpen.bmp" alt="1" /></td><td>Open</td><td>Open folder Gamedata</td></tr>
+<tr><td style="text-align: center"><img src="../../../assets/icons/sdk/Validate.png" alt="1" /></td><td>Validate</td><td>Particle Validation</td></tr>
+</tbody></table>
+</div>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../../modding-tools/sdk/sound-editor/sound-editor.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../../modding-tools/sdk/particle-editor/windows/left-bar.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../../modding-tools/sdk/sound-editor/sound-editor.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../../modding-tools/sdk/particle-editor/windows/left-bar.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../../elasticlunr.min.js"></script>
+        <script src="../../../mark.min.js"></script>
+        <script src="../../../searcher.js"></script>
+
+        <script src="../../../clipboard.min.js"></script>
+        <script src="../../../highlight.js"></script>
+        <script src="../../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../../../theme/js/tables.js"></script>
+        <script src="../../../theme/js/mermaid.min.js"></script>
+        <script src="../../../theme/js/mermaid-init.js"></script>
+        <script src="../../../theme/js/whichlang.js"></script>
+
+
+    </div>
+    </body>
+</html>

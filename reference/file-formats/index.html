@@ -1,0 +1,325 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>File Formats - Anomaly Modding Book</title>
+
+
+        <!-- Custom HTML head -->
+        <script defer data-domain="igigog.github.io" src="https://plausible.io/js/script.hash.js"></script><script defer data-domain="igigog.github.io" src="https://plausible.io/js/script.hash.js"></script>
+        <script defer src="https://cloud.umami.is/script.js" data-website-id="af269dba-ec2d-471b-a4c9-44023cb64adc"></script>
+
+        <meta name="description" content="Introductory book for S.T.A.L.K.E.R. Anomaly modding">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../theme/css/custom.css">
+        <link rel="stylesheet" href="../../theme/css/tables.css">
+        <link rel="stylesheet" href="../../theme/css/mdbook-admonish.css">
+        <link rel="stylesheet" href="../../theme/css/whichlang.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Anomaly Modding Book</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/Igigog/anomaly-modding-book" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Igigog/anomaly-modding-book/edit/main/src/reference/file-formats/README.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="file-formats-references"><a class="header" href="#file-formats-references">File Formats References</a></h1>
+<hr />
+<h2 id="about"><a class="header" href="#about">About</a></h2>
+<p>This section describes the extensions that are found in the game files and the SDK.</p>
+<h2 id="general"><a class="header" href="#general">General</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Extension</th><th>Description</th></tr></thead><tbody>
+<tr><td><a href="../file-formats/general/log.html">*.log</a></td><td>Event log. It contains records of program start, operation and termination</td></tr>
+<tr><td><a href="../file-formats/general/pdb.html">*.pdb</a></td><td></td></tr>
+<tr><td><a href="../file-formats/general/scop.html">*.scop</a></td><td>Save file</td></tr>
+<tr><td><a href="../file-formats/general/scoc.html">*.scoc</a></td><td>Save file</td></tr>
+<tr><td><a href="../file-formats/general/xrdemo.html">*.xrdemo</a></td><td>Recording camera flyover (demo). Created in the game with a <a href="../../engine/console-commands/general-game-console-commands.html">console command</a>.</td></tr>
+<tr><td><a href="../file-formats/audio-video/ogm.html">*.ogm</a></td><td>The video format used by the game engine.</td></tr>
+<tr><td><a href="../file-formats/audio-video/ogg.html">*.ogg</a></td><td>The sound format used by the game engine.</td></tr>
+</tbody></table>
+</div>
+<h2 id="configuration-and-script-files"><a class="header" href="#configuration-and-script-files">Configuration and script files</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Extension</th><th>Description</th></tr></thead><tbody>
+<tr><td><a href="../file-formats/conf-script/ltx.html">*.ltx</a></td><td>Configuration file, custom ini-like format</td></tr>
+<tr><td><a href="../file-formats/conf-script/script.html">*.script</a></td><td>Game script</td></tr>
+<tr><td><a href="../file-formats/conf-script/xml.html">*.xml</a></td><td>Carry in text format data related to in-game text, UI element placement, and characters and information within the game world</td></tr>
+<tr><td><a href="../file-formats/textures/seq.html">*.seq</a></td><td>Text file containing a description of the frame sequence in the 2D animation</td></tr>
+</tbody></table>
+</div>
+<h2 id="ai"><a class="header" href="#ai">AI</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Extension</th><th>Description</th></tr></thead><tbody>
+<tr><td><a href="../file-formats/ai/efd.html">*.efd</a></td><td>Table of AI heuristic parameters, contains constants for fine-tuning A-Life. They are used as input parameters in scripts</td></tr>
+</tbody></table>
+</div>
+<h2 id="textures"><a class="header" href="#textures">Textures</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Extension</th><th>Description</th></tr></thead><tbody>
+<tr><td><a href="../file-formats/textures/bump.html">*.bump</a></td><td>Normal map in A(BGR) format</td></tr>
+<tr><td><a href="../file-formats/textures/bump_hash.html">*.bump#</a></td><td>File that fixes DXT compression errors in <a href="../file-formats/textures/bump.html">*_bump.dds</a></td></tr>
+<tr><td><a href="../file-formats/textures/dds.html">*.dds</a></td><td>Graphic file used by DirectX to store textures</td></tr>
+<tr><td><a href="../file-formats/textures/detail-map.html">*_detail_map.dds</a></td><td>Same as a regular <a href="../file-formats/textures/dds.html">*.dds</a> texture, needed as an extra map in a <a href="../file-formats/textures/thm.html">*.thm</a></td></tr>
+<tr><td><a href="../file-formats/textures/thm.html">*.tga</a></td><td>A bitmap graphics format with support for color depth of 1-32 bits per pixel, alpha channels, and RLE compression. Used as a source format.</td></tr>
+<tr><td><a href="../file-formats/textures/thm.html">*.thm</a></td><td>They are used to set the parameters of textures - bump, detail, and more.</td></tr>
+</tbody></table>
+</div>
+<h2 id="shaders"><a class="header" href="#shaders">Shaders</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Extension</th><th>Description</th></tr></thead><tbody>
+<tr><td><a href="../file-formats/shaders/cs.html">*.cs</a></td><td>Compute shader</td></tr>
+<tr><td><a href="../file-formats/shaders/gs.html">*.gs</a></td><td>Geometry shader</td></tr>
+<tr><td><a href="../file-formats/shaders/ds.html">*.ds</a></td><td>Domain shader</td></tr>
+<tr><td><a href="../file-formats/shaders/hs.html">*.hs</a></td><td>Hull shader</td></tr>
+<tr><td><a href="../file-formats/shaders/vs.html">*.vs</a></td><td>Vertex shader</td></tr>
+<tr><td><a href="../file-formats/shaders/ps.html">*.ps</a></td><td>Pixel shader</td></tr>
+<tr><td><a href="../file-formats/shaders/s.html">*.s</a></td><td>Script shader. Lua version of engine blenders</td></tr>
+</tbody></table>
+</div>
+<h2 id="postprocess"><a class="header" href="#postprocess">Postprocess</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Extension</th><th>Description</th></tr></thead><tbody>
+<tr><td><a href="../file-formats/postprocceses/ppe.html">*.ppe</a></td><td>Postprocess file format. Color-noise effects of the actor’s screen</td></tr>
+</tbody></table>
+</div>
+<h2 id="models"><a class="header" href="#models">Models</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Extension</th><th>Description</th></tr></thead><tbody>
+<tr><td><a href="../file-formats/models/dm.html">*.dm</a></td><td>Effect of a dynamic weather environment (e.g., rain or lightning)</td></tr>
+<tr><td><a href="../file-formats/models/object.html">*.object</a></td><td>These files are intended for the X-Ray SDK to store 3D content in its original, uncompressed, lossless form. They are source files that store information before compilation into other game compressed formats.</td></tr>
+<tr><td><a href="../file-formats/models/ogf.html">*.ogf</a></td><td>Compiled object</td></tr>
+<tr><td><a href="../file-formats/models/bones.html">*.bones</a></td><td>Skeleton bone data files</td></tr>
+<tr><td><a href="../file-formats/models/bone-parts.html"><em>bone_parts</em>.*</a></td><td>Bone part description file for an object/NPC</td></tr>
+<tr><td><a href="../file-formats/models/group.html">*.group</a></td><td>Object groups</td></tr>
+</tbody></table>
+</div>
+<h2 id="animations"><a class="header" href="#animations">Animations</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Extension</th><th>Description</th></tr></thead><tbody>
+<tr><td><a href="../file-formats/animations/anm.html">*.anm</a></td><td>A set of coordinates, which works as an animation of the actor’s camera movement. It is also used for anomalies, which need to be given a path.</td></tr>
+<tr><td><a href="../file-formats/animations/skl-skls.html">*.skl</a></td><td>Skeletal animation</td></tr>
+<tr><td><a href="../file-formats/animations/skl-skls.html">*.skls</a></td><td>Skeletal animations(.skl) in a container</td></tr>
+<tr><td><a href="../file-formats/animations/omf.html">*.omf</a></td><td>A specialized S.T.A.L.K.E.R. game format containing animations. This is a separate dedicated file used in conjunction with <a href="../file-formats/models/ogf.html">*.ogf</a> models. Was created in order to optimize process when some different models use the same list of animations.</td></tr>
+</tbody></table>
+</div>
+<h2 id="archives-and-resource-packages"><a class="header" href="#archives-and-resource-packages">Archives and Resource Packages</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Extension</th><th>Description</th></tr></thead><tbody>
+<tr><td><a href="../file-formats/archives-resource-packs/db.html">*.db</a></td><td>archive of game resources. Used in late builds and the final version of the game, has several options (db.“number”, db.“letter”).</td></tr>
+<tr><td><a href="../file-formats/archives-resource-packs/xr.html">*.xr</a></td><td>resource library. Contains resources such as particles, Engine Shaders, <a href="../shaders/shaders-list/compiler-shaders-list.html">Compile Shaders</a>. in a packed format.</td></tr>
+</tbody></table>
+</div>
+<h2 id="game-level"><a class="header" href="#game-level">Game level</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Extension</th><th>Description</th></tr></thead><tbody>
+<tr><td><a href="../file-formats/game-levels/err.html">*.err</a></td><td>Contains information about geometry errors during level compilation</td></tr>
+<tr><td><a href="../file-formats/game-levels/level.html">level</a></td><td>File with general information about the game location (light sources, object names, texture and shader names, sectors and portals). Created during compilation</td></tr>
+<tr><td><a href="../file-formats/game-levels/prj.html">*.prj</a></td><td>Level precompilation file</td></tr>
+<tr><td><a href="../file-formats/game-levels/ai.html">*.ai</a></td><td>AI location grid. Created during compilation</td></tr>
+<tr><td><a href="../file-formats/game-levels/cform.html">*.cform</a></td><td>Geometry for calculating collisions. Calculated by the level compiler. Contains a solid map structure. All tangible objects with materials live here. Because of this, the game knows with what sound and property objects should react when they are hit by bullets or walked on</td></tr>
+<tr><td><a href="../file-formats/game-levels/details.html">*.details</a></td><td>Detail Objects (grass, cigarette butts, construction debris) on the level. Created through LevelEditor SDK at compile time.</td></tr>
+<tr><td><a href="../file-formats/game-levels/env_mod.html">*.env_mod</a></td><td>local environment modifiers (environment), set areas on the location with lighting different from the main weather cycle.</td></tr>
+<tr><td><a href="../file-formats/game-levels/fog_vol.html">*.fog_vol</a></td><td>Volumetric fog</td></tr>
+<tr><td><a href="../file-formats/game-levels/game.html">*.game</a></td><td>Coordinates of the player’s spawn in the multiplayer game. Outdated file.</td></tr>
+<tr><td><a href="../file-formats/game-levels/geom.html">*.geom</a></td><td>Contains vertices (position, normals, texture coordinates, etc.), indices, and information for smooth geometry detail.</td></tr>
+<tr><td><a href="../file-formats/game-levels/geomx.html">*.geomx</a></td><td>It contains only geometry. In the renderer it is used in the shadow rendering passes, due to the fact that there is less information - loading data into the buffers - faster.</td></tr>
+<tr><td><a href="../file-formats/game-levels/gtc.html">*.gtc</a></td><td>Cross table of correspondence between the location graph and the AI grid. Created during compilation</td></tr>
+<tr><td><a href="../file-formats/game-levels/hom.html">*.hom</a></td><td>Mapping of hierarchical cutoffs</td></tr>
+<tr><td><a href="../file-formats/game-levels/dot-level.html">*.level</a></td><td>List of SDK scene objects</td></tr>
+<tr><td><a href="../file-formats/game-levels/lights.html">*.lights</a></td><td>Light sources for xrLC</td></tr>
+<tr><td><a href="../file-formats/game-levels/ps_static.html">*.ps_static</a></td><td>Particle systems. Flies, steam from pipes, etc.</td></tr>
+<tr><td><a href="../file-formats/game-levels/graph.html">*.graph</a></td><td>Global graph of AI navigation. Used, among other things, for moving AI objects outside the active level.</td></tr>
+<tr><td><a href="../file-formats/game-levels/spawn.html">*.spawn</a></td><td>A file storing spawn data.</td></tr>
+<tr><td><a href="../file-formats/game-levels/snd_env.html">*.snd_env</a></td><td>Volumetric sound sources.</td></tr>
+<tr><td><a href="../file-formats/game-levels/snd_static.html">*.snd_static</a></td><td>Static point sources of sound. Sound of flies, etc.</td></tr>
+<tr><td><a href="../file-formats/game-levels/som.html">*.som</a></td><td>Geometry for calculating sound propagation.</td></tr>
+<tr><td><a href="../file-formats/game-levels/wallmarks.html">*.wallmarks</a></td><td>Decals. Bloodstains, faction emblems on walls, etc. Used for the compiled level.</td></tr>
+<tr><td><a href="../file-formats/game-levels/part.html">*.part</a></td><td>Scene objects</td></tr>
+</tbody></table>
+</div>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../reference/main-folders-and-files/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../reference/file-formats/binary-files.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../reference/main-folders-and-files/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../reference/file-formats/binary-files.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../../theme/js/tables.js"></script>
+        <script src="../../theme/js/mermaid.min.js"></script>
+        <script src="../../theme/js/mermaid-init.js"></script>
+        <script src="../../theme/js/whichlang.js"></script>
+
+
+    </div>
+    </body>
+</html>
