@@ -59,6 +59,9 @@ To play a motion, we need a few components:
 
 1. An [*.ltx](../../reference/file-formats/conf-script/ltx.md) file containing the basic parameters of the motion we’re going to use.
 2. A script function to play it.
+3. An *.omf file that contains the motion we want to play.
+   1) Currently knows paths:
+      1) **gamedata\meshes\anomaly_weapons\hud_hands_animation** - for hud hands animations
 
 #### Setting up motion parameters
 
@@ -156,6 +159,9 @@ and then restored with:
 ```lua
     det:switch_state(1)
 ```
+
+#### Tips
+1. You can use console command `time_factor N` where N goes float from 0 to 1 to slow down the game time. This can be useful for testing purposes.
 
 ### *.anm animations
 
