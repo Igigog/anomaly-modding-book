@@ -14,7 +14,7 @@ First a caution, it is always better to simply use call backs. There are a signi
 
 In general Anomaly scripts are loaded in alphabetical order. When you monkey patch a script that hasn’t loaded you force it to load. If two monkey patches are applied the script that comes last wins. Starting the name of your script with a z means that it will load after most other scripts. While only sometimes necessary and very rarely problematic, the strong suggestion to do so in an earlier version of this guide has resulted in a convention of starting monkey patch scripts with z or zzz.  
 
-If a function or variable in a script is declared as local other scripts can’t manipulate it. None of the below techniques will work on local functions or variables.
+If a function or variable in a script is declared as `local` other scripts can’t manipulate it, so you have to [unlocalize](../../tutorials/addons/lua-unlocalizer.md) it first.
 
 ## Patching Variables
 
