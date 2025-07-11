@@ -1,0 +1,462 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Weapon World - Anomaly Modding Book</title>
+
+
+        <!-- Custom HTML head -->
+        <script defer data-domain="igigog.github.io" src="https://plausible.io/js/script.hash.js"></script><script defer data-domain="igigog.github.io" src="https://plausible.io/js/script.hash.js"></script>
+        <script defer src="https://cloud.umami.is/script.js" data-website-id="af269dba-ec2d-471b-a4c9-44023cb64adc"></script>
+
+        <meta name="description" content="Introductory book for S.T.A.L.K.E.R. Anomaly modding">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../../../favicon.svg">
+        <link rel="shortcut icon" href="../../../../favicon.png">
+        <link rel="stylesheet" href="../../../../css/variables.css">
+        <link rel="stylesheet" href="../../../../css/general.css">
+        <link rel="stylesheet" href="../../../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../../../../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../../../../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../../../theme/css/custom.css">
+        <link rel="stylesheet" href="../../../../theme/css/tables.css">
+        <link rel="stylesheet" href="../../../../theme/css/mdbook-admonish.css">
+        <link rel="stylesheet" href="../../../../theme/css/whichlang.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../../../../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Anomaly Modding Book</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/Igigog/anomaly-modding-book" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Igigog/anomaly-modding-book/edit/main/src/reference/configs/items/weapons/weapon-world.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="weapon-world-config-file"><a class="header" href="#weapon-world-config-file">Weapon World Config File</a></h1>
+<hr />
+<h2 id="about"><a class="header" href="#about">About</a></h2>
+<p>Configuration parameters for weapons</p>
+<hr />
+<h3 id="general"><a class="header" href="#general">General</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example Value</th><th>Possible Parameters</th></tr></thead><tbody>
+<tr><td>GroupControlSection</td><td></td><td>spawn_group</td><td></td></tr>
+<tr><td>$npc</td><td>use NPC of this weapon</td><td>on</td><td>true - 1 - on (Yes)<br> false - 0 - off (No)</td></tr>
+<tr><td>$prefetch</td><td>Preload queue</td><td>8</td><td></td></tr>
+<tr><td>$spawn</td><td>Weapon Directory in the Level Editor</td><td>“weapons\ak-74”</td><td>“weapons\ <em>wpn_name</em>”</td></tr>
+<tr><td>scheduled</td><td>online/offline switch; Works only for “live” objects with AI</td><td>off</td><td>true - 1 - on (Yes)<br> false - 0 - off (No)</td></tr>
+<tr><td>cform</td><td>Skeleton model</td><td>skeleton</td><td>skeleton <br>sphear box</td></tr>
+<tr><td>parent_section</td><td></td><td>wpn_akm</td><td></td></tr>
+<tr><td>class</td><td>Engine weapon class</td><td>WP_AK74</td><td>WP_BINOC <br>WP_KNIFE <br>WP_BM16 <br>WP_GROZA <br>WP_SVD <br>WP_AK74 <br>WP_LR300 <br>WP_HPSA <br>WP_PM <br>WP_RG6 <br>WP_RPG7 <br>WP_SHOTG <br>WP_ASHTG <br>WP_MAGAZ <br>WP_SVU <br>WP_USP45 <br>WP_VAL <br>WP_VINT <br>WP_WALTH W_STMGUN</td></tr>
+<tr><td>animation_slot</td><td>Animation slot number</td><td>2</td><td>1 - pistol <br>2 - automatic rifle <br>3 - rifle, shotgun <br>4 - RPG <br>5 - knife <br>7 - bolt, grenade <br>8 - submachine gun with integrated underbarrel grenade launcher <br>9 - Shotgun <br>10 - Drum Gun <br>13 - binoculars</td></tr>
+<tr><td>hand_dependence</td><td></td><td>1</td><td>0 - no hands <br>1 - one hand <br>2 - two hands</td></tr>
+<tr><td>single_handed</td><td>held with one hand</td><td>0</td><td>true - 1 - on (Yes)<br> false - 0 - off (No)</td></tr>
+<tr><td>default_to_ruck</td><td>whether the weapon will be moved to the backpack instead of the slot when picked up</td><td>false</td><td>true - 1 - on (Yes)<br> false - 0 - off (No)</td></tr>
+<tr><td>sprint_allowed</td><td>this line means that you can run with the weapon</td><td>true</td><td>true - 1 - on (Yes)<br> false - 0 - off (No)</td></tr>
+<tr><td>kind</td><td>The type of item to group into the appropriate section in the <a href="../../../../modding-tools/in-game-editors/item-spawner.html">Item Spawner</a></td><td>w_rifle</td><td>w_rifle<br> w_misc<br> w_explosive<br> w_melee<br> w_pistol<br> w_smg<br> w_shotgun<br> w_sniper</td></tr>
+<tr><td>cost</td><td>Base price</td><td>28780</td><td></td></tr>
+<tr><td>hud</td><td>Section with parameters for <a href="../../../../glossary/glossary.html#_hud-model">*_hud model</a></td><td>wpn_akm_hud</td><td>Section name</td></tr>
+<tr><td>visual</td><td><a href="../../../../glossary/glossary.html#_world-model">*_world model</a></td><td>dynamics\weapons\wpn_akm\wpn_akm.ogf</td><td>Path to file</td></tr>
+</tbody></table>
+</div>
+<h3 id="positionorientation"><a class="header" href="#positionorientation">Position/Orientation</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example Value</th><th>Possible Parameters</th></tr></thead><tbody>
+<tr><td>position</td><td>position of the weapon in the hands when viewed from the 3rd person</td><td>-0.026, -0.175, 0.0</td><td>X – (<code>-</code>) left / (<code>+</code>) right<br> Y – (<code>+</code>) up / (<code>-</code>) down<br> Z – (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>orientation</td><td>how the weapon is rotated in the hands of the NPC and headgear, in the 3rd person view</td><td>0, 0, 0</td><td>X – (<code>+</code>) left / (<code>-</code>) right<br> Y – (<code>+</code>) up / (<code>-</code>) down<br> Z – (<code>-</code>) roll to the right / (<code>+</code>) roll to the left</td></tr>
+<tr><td>fire_point</td><td>coordinates of the fire particle from the shot, in the 3rd person view</td><td>0, 0.218, 0.656</td><td>X – (<code>-</code>) left / (<code>+</code>) right<br> Y – (<code>+</code>) up / (<code>-</code>) down<br> Z – (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>fire_point2</td><td>Coordinates of the fire particle from the shot, when viewed from the 3rd person from the holster</td><td>0, 0.161, 0.583</td><td>X – (<code>-</code>) left / (<code>+</code>) right<br> Y – (<code>+</code>) up / (<code>-</code>) down<br> Z – (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>strap_bone0</td><td>the name of the first NPC model bone where the weapon is located when hidden</td><td>bip01_spine2</td><td>Bone Name</td></tr>
+<tr><td>strap_bone1</td><td>The name of the second NPC model bone that holds the weapon when hidden</td><td>bip01_spine1</td><td>Bone Name</td></tr>
+<tr><td>strap_position</td><td>the position of the weapon on the NPC’s back, when viewed from the third person</td><td>-0.26, -0.11, 0.25</td><td>X – (<code>-</code>) left / (<code>+</code>) right<br> Y – (<code>+</code>) up / (<code>-</code>) down<br> Z – (<code>-</code>) forward / (<code>+</code>) backward</td></tr>
+<tr><td>strap_orientation</td><td>how the weapon is rotated on the NPC’s back in 3rd person view</td><td>-15, -9, 110</td><td>X – (<code>+</code>) left / (<code>-</code>) right<br> Y – (<code>+</code>) up / (<code>-</code>) down<br> Z – (<code>-</code>) roll to the right / (<code>+</code>) roll to the left</td></tr>
+</tbody></table>
+</div>
+<h3 id="inventory"><a class="header" href="#inventory">Inventory</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example Value</th><th>Possible Parameters</th></tr></thead><tbody>
+<tr><td>icons_texture</td><td>texture where the weapon icon will be taken from</td><td>ui\ui_icon_spas</td><td></td></tr>
+<tr><td>inv_grid_height</td><td>icon height</td><td>2</td><td>number of 50x50 pixels cells</td></tr>
+<tr><td>inv_grid_width</td><td>icon width</td><td>5</td><td>number of 50x50 pixels cells</td></tr>
+<tr><td>inv_grid_x</td><td>the coordinate of the upper left corner of the icon on a 50x50 pixel grid on the X axis</td><td>35</td><td>number of cells indented to the right</td></tr>
+<tr><td>inv_grid_y</td><td>The coordinate of the upper left corner of the icon on a 50x50 pixel grid on the Y axis</td><td>0</td><td>number of cells indenting downward</td></tr>
+<tr><td>inv_name</td><td>The name in the inventory</td><td>st_wpn_akm</td><td>Section name, in <a href="../../../file-formats/conf-script/xml.html">*.xml</a> files included in the string_table section of <code>gamedata\configs\text\*localization*\st_items_weapons.xml</code></td></tr>
+<tr><td>inv_name_short</td><td>short name in the inventory</td><td>st_wpn_akm</td><td>Section name, in <a href="../../../file-formats/conf-script/xml.html">*.xml</a> files included in the string_table section of <code>gamedata\configs\text\*localization*\st_items_weapons.xml</code></td></tr>
+<tr><td>inv_weight</td><td>the inventory weight of the unloaded weapon</td><td>3.3</td><td>The number is given in kilograms</td></tr>
+<tr><td>description</td><td>Description in inventory</td><td>st_wpn_akm_descr</td><td>Section name, in <a href="../../../file-formats/conf-script/xml.html">*.xml</a> files included in the string_table section of <code>gamedata\configs\text\*localization*\st_items_weapons.xml</code></td></tr>
+<tr><td>slot</td><td>Inventory slot number</td><td>2</td><td>0 - knives<br>1 - pistols<br>2 - shotguns, machine guns, rifles, grenade launchers<br>3 - grenades (may be crashing)<br>4 - binoculars<br>5 - bolts (may be crashing)<br>6 - outfits (may be crashing)</td></tr>
+<tr><td>highlight_equipped</td><td></td><td></td><td>true - 1 - on (Yes)<br> false - 0 - off (No)</td></tr>
+</tbody></table>
+</div>
+<h3 id="multiplayer"><a class="header" href="#multiplayer">Multiplayer</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example Value</th><th>Possible Parameters</th></tr></thead><tbody>
+<tr><td>weapon_class</td><td>is used exclusively for the purchase menu in multiplayer</td><td></td><td>shotgun<br> assault_rifle<br> sniper_rifle<br> heavy_weapon</td></tr>
+<tr><td>startup_ammo</td><td>startup amount of ammo in multiplayer</td><td>The number of rounds of ammunition is indicated</td><td></td></tr>
+<tr><td>kill_msg_x</td><td>the coordinate of the upper left corner of the kill icon on the X axis</td><td></td><td></td></tr>
+<tr><td>kill_msg_y</td><td>top-left corner coordinate of the kill icon on the Y axis</td><td></td><td></td></tr>
+<tr><td>kill_msg_width</td><td>kill icon width</td><td></td><td>Specified in pixels</td></tr>
+<tr><td>kill_msg_height</td><td>kill icon height</td><td></td><td>Specified in pixels</td></tr>
+</tbody></table>
+</div>
+<h3 id="particles"><a class="header" href="#particles">Particles</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example Value</th><th>Possible Parameters</th></tr></thead><tbody>
+<tr><td>flame_particles</td><td>Gunshot fire particle</td><td>weapons\generic_weapon05</td><td>Specifies the path to the file</td></tr>
+<tr><td>smoke_particles</td><td>shot smoke particle</td><td>weapons\generic_shoot_00</td><td>Specifies the path to the file</td></tr>
+<tr><td>light_disabled</td><td>flash off when shot</td><td>false</td><td>true - 1 - on (Yes)<br> false - 0 - off (No)</td></tr>
+<tr><td>light_color</td><td>Parameters for changing the color of the shot fire particle</td><td>0.6, 0.5, 0.3</td><td>RGB Color</td></tr>
+<tr><td>light_range</td><td>the radius of the fire partition from the shot</td><td>5</td><td></td></tr>
+<tr><td>light_time</td><td>time of light playback when shot</td><td>0.2</td><td></td></tr>
+<tr><td>light_var_color</td><td>Parameter of variation of the color of the fire particle from the shot</td><td>0.05</td><td>RGB Color</td></tr>
+<tr><td>light_var_range</td><td>varies the radius of the fire particle from the shot</td><td>0.5</td><td>Value 60.0 = 10 seconds</td></tr>
+</tbody></table>
+</div>
+<h3 id="upgradesrepairs"><a class="header" href="#upgradesrepairs">Upgrades/repairs</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example Value</th><th>Possible Parameters</th></tr></thead><tbody>
+<tr><td>upgrades</td><td></td><td>up_gr_firstab_akm, up_gr_seconab_akm, up_gr_thirdab_akm, up_gr_fourtab_akm, up_gr_fifthab_akm, up_gr_fifthcd_akm</td><td></td></tr>
+<tr><td>installed_upgrades</td><td>installed upgrades</td><td></td><td></td></tr>
+<tr><td>upgrade_scheme</td><td>upgrade_scheme</td><td>upgrade_scheme_ak74</td><td></td></tr>
+<tr><td>repair_type</td><td>item type for repair tools</td><td>rifle_7</td><td>pistol<br> shotgun<br> rifle_5<br> rifle_7</td></tr>
+</tbody></table>
+</div>
+<h4 id="upgrades-icons"><a class="header" href="#upgrades-icons">Upgrades Icons</a></h4>
+<div class="table-wrapper"><table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example Value</th><th>Possible Parameters</th></tr></thead><tbody>
+<tr><td>upgr_icon_x</td><td>X coordinate of the upper left corner of the weapon icon in the upgrade window</td><td>300</td><td>Specified in pixels</td></tr>
+<tr><td>upgr_icon_y</td><td>Y coordinate of the upper left corner of the weapon icon in the upgrade window</td><td>0</td><td>Specified in pixels</td></tr>
+<tr><td>upgr_icon_width</td><td>icon width in the upgrade window</td><td>300</td><td>Specified in pixels</td></tr>
+<tr><td>upgr_icon_height</td><td>icon height in the upgrade window</td><td>100</td><td>Specified in pixels</td></tr>
+</tbody></table>
+</div>
+<h3 id="parameters-of-the-weapon-itself"><a class="header" href="#parameters-of-the-weapon-itself">Parameters of the weapon itself</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example Value</th><th>Possible Parameters</th></tr></thead><tbody>
+<tr><td>fire_modes</td><td>Firing mode</td><td>1, -1</td><td>-1 - automatic<br> 1 - single<br> 2 - two-shot<br> 3 - three-shot</td></tr>
+<tr><td>wallmark_section</td><td>section of wallmarks that appear on the ground/geometry</td><td></td><td>Section name (by default it is in the system.ltx file)</td></tr>
+<tr><td>wm_size</td><td>texture size of the mark left on the ground after the explosion</td><td></td><td>The bigger the number, the bigger the mark</td></tr>
+<tr><td>allow_inertion</td><td>allow inertia</td><td></td><td>true - 1 - on (Yes)<br> false - 0 - off (No)</td></tr>
+<tr><td>ph_mass</td><td>Weight of the unloaded weapon for the physical engine</td><td>4</td><td>Kilograms</td></tr>
+</tbody></table>
+</div>
+<h4 id="shot"><a class="header" href="#shot">Shot</a></h4>
+<div class="table-wrapper"><table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example Value</th><th>Possible Parameters</th></tr></thead><tbody>
+<tr><td>hit_impulse</td><td>The force that the flying bullet transmits to the victim affects the ragdoll-body behavior</td><td>34</td><td>The more, the farther the body will fly away</td></tr>
+<tr><td>hit_power</td><td>damage dealt</td><td>0.58, 0.58, 0.58, 0.58</td><td>Specifies a value for the level of difficulty in descending order, i.e. from master to beginner</td></tr>
+<tr><td>hit_type</td><td>Type of damage inflicted; used to calculate damage; armor suits (and others) are set to be immune to each type of damage separately</td><td>fire_wound</td><td>burn<br> light_burn<br> shock<br> strike<br> wound - stabbing<br> radiation<br> telepatic<br> fire_wound - fire damage<br> chemical_burn<br> explosion - shrapnel damage<br> wound_2 - cutting<br></td></tr>
+<tr><td>fire_distance</td><td>Effective range of the shot after which the bullet disappears</td><td>900</td><td>Specified in meters</td></tr>
+<tr><td>bullet_speed</td><td>Initial bullet speed</td><td>715</td><td>Specified in meters per second</td></tr>
+<tr><td>rpm</td><td>Rounds per minute</td><td>600</td><td>Specifies the number of shots per minute</td></tr>
+<tr><td>rpm_mode_2</td><td></td><td></td><td></td></tr>
+<tr><td>rpm_anim_fix</td><td>New shot animation behavior</td><td>true</td><td>true - 1 - on (Yes)<br> false - 0 - off (No)</td></tr>
+<tr><td>rpm_empty_click</td><td>Misfire/empty magazine sound frequency</td><td>200</td><td></td></tr>
+<tr><td>fire_dispersion_base</td><td>The dispersion (angle of the bullets) introduced by the weapon; affects accuracy; added to the <code>disp_base</code> in <code>actor.ltx</code></td><td>0.45</td><td>Specified in degrees</td></tr>
+<tr><td>PDM_disp_accel_factor</td><td>Multiplier by which <code>fire_dispersion_base</code> is multiplied when the protagonist runs</td><td>2.5</td><td>Specified in numbers</td></tr>
+<tr><td>PDM_disp_base</td><td>Multiplier by which <code>fire_dispersion_base</code> is multiplied when the protagonist is standing at full height</td><td>1.15</td><td>Specified in numbers</td></tr>
+<tr><td>PDM_disp_crouch</td><td>Multiplier by which <code>fire_dispersion_base</code> is multiplied when the protagonist goes crouched</td><td>1.0</td><td>Specified in numbers</td></tr>
+<tr><td>PDM_disp_crouch_no_acc</td><td>Multiplier by which <code>fire_dispersion_base</code> is multiplied when the protagonist stands still in a crouch</td><td>1.0</td><td>Specified in numbers</td></tr>
+<tr><td>PDM_disp_vel_factor</td><td>Multiplier by which <code>fire_dispersion_base</code> is multiplied when the protagonist spins a weapon or runs</td><td>2.5</td><td>Specified in numbers</td></tr>
+</tbody></table>
+</div>
+<h4 id="ammo"><a class="header" href="#ammo">Ammo</a></h4>
+<div class="table-wrapper"><table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example Value</th><th>Possible Parameters</th></tr></thead><tbody>
+<tr><td>ammo_class</td><td>ammo type for this weapon</td><td>ammo_7.62x39_fmj, ammo_7.62x39_fmj_bad, ammo_7.62x39_fmj_verybad, ammo_7.62x39_ap, ammo_7.62x39_ap_bad, ammo_7.62x39_ap_verybad</td><td>The names of the ammunition sections are indicated, separated by commas</td></tr>
+<tr><td>ammo_elapsed</td><td>magazine capacity at the moment of spawning</td><td>30</td><td>indicate the value equal to ammo_mag_size</td></tr>
+<tr><td>ammo_mag_size</td><td>ammunition capacity</td><td>30</td><td>The number of bullets is indicated</td></tr>
+</tbody></table>
+</div>
+<h3 id="particle-shell-parameters"><a class="header" href="#particle-shell-parameters">Particle shell parameters</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example Value</th><th>Possible Parameters</th></tr></thead><tbody>
+<tr><td>shell_point</td><td>coordinates of the shell partylock, when viewed from the 3rd person</td><td>0, 0.216, 0.174</td><td>X – left/+right, Y – +up/down, Z – forward/+backward</td></tr>
+<tr><td>shell_dir</td><td>how the shell particle is rotated when viewed from the 3rd person</td><td>0, 0, 0.4</td><td>X – left/+right, Y – +up/down, Z – forward/+backward</td></tr>
+<tr><td>shell_particles</td><td>shell particle</td><td>weapons\762x39</td><td>Particles file path relative to particles.xr</td></tr>
+</tbody></table>
+</div>
+<h3 id="scopes"><a class="header" href="#scopes">Scopes</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example Value</th><th>Possible Parameters</th></tr></thead><tbody>
+<tr><td>scopes</td><td>Name of the gun sight section</td><td>1p29, kobra, ps01</td><td>Sections to models with these sights are indicated</td></tr>
+<tr><td>scope_status</td><td>Scope status</td><td>0</td><td>0 - not available<br> 1 - built-in<br> 2 - removable</td></tr>
+<tr><td>scope_zoom_factor</td><td>scope magnification</td><td>0</td><td>For the sight specified in the parameter scopes, the value can already be more</td></tr>
+<tr><td>scope_nightvision</td><td></td><td></td><td></td></tr>
+<tr><td>scope_dynamic_zoom</td><td></td><td></td><td></td></tr>
+<tr><td>scope_alive_detector</td><td></td><td></td><td></td></tr>
+<tr><td>scope_texture</td><td></td><td></td><td></td></tr>
+<tr><td>scope_texture_alt</td><td></td><td></td><td></td></tr>
+</tbody></table>
+</div>
+<h3 id="overheat"><a class="header" href="#overheat">Overheat</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example Value</th><th>Possible Parameters</th></tr></thead><tbody>
+<tr><td>overheat_time_quant</td><td>Determines how quickly the weapon overheats when fired</td><td></td><td></td></tr>
+<tr><td>overheat_decr_quant</td><td>Determines how fast the weapon cools down when not firing</td><td></td><td></td></tr>
+<tr><td>overheat_threshold</td><td>Maximum allowable overheating level at which the weapon stops firing</td><td></td><td></td></tr>
+<tr><td>overheat_particles</td><td>Indicates the particle effect that is played when overheating occurs</td><td></td><td></td></tr>
+</tbody></table>
+</div>
+<h3 id="silencer"><a class="header" href="#silencer">Silencer</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example Value</th><th>Possible Parameters</th></tr></thead><tbody>
+<tr><td>silencer_name</td><td>Name of the silencer section of the gun</td><td>wpn_sil_pbs1</td><td></td></tr>
+<tr><td>silencer_status</td><td>silencer status</td><td>2</td><td>0 - not available<br> 1 - built-in<br> 2 - removable</td></tr>
+<tr><td>silencer_light_color</td><td>Parameters for changing the color of the particle of the smoke from the shot from the weapon with silencer</td><td>0.6, 0.5, 0.3</td><td></td></tr>
+<tr><td>silencer_light_range</td><td>the radius of the particle of the haze when firing</td><td>0.01</td><td></td></tr>
+<tr><td>silencer_light_time</td><td>light time</td><td>0.2</td><td></td></tr>
+<tr><td>silencer_light_var_color</td><td>Parameter for varying the color of the particle of smoke from a shot from a weapon with silencer</td><td>0.05</td><td></td></tr>
+<tr><td>silencer_light_var_range</td><td>variation of the radius of the particle of the smoke from the shot from the weapon with silencer</td><td>0.5</td><td></td></tr>
+<tr><td>silencer_smoke_particles</td><td>particle smoke effect for a shot with silencer</td><td>weapons\generic_shoot_00</td><td>Particles file path relative to particles.xr</td></tr>
+<tr><td>silencer_x</td><td>the coordinates of the silencer icon superimposed on top of the weapon icon on the X coordinate</td><td>235</td><td>Specified in numbers</td></tr>
+<tr><td>silencer_y</td><td>the coordinates of the silencer icon superimposed over the weapon icon in Y coordinate</td><td>10</td><td>Specified in numbers</td></tr>
+</tbody></table>
+</div>
+<h3 id="underbarrel-grenade-launcher"><a class="header" href="#underbarrel-grenade-launcher">Underbarrel Grenade Launcher</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example Value</th><th>Possible Parameters</th></tr></thead><tbody>
+<tr><td>grenade_class</td><td>type of underbarrel grenades</td><td>ammo_vog-25, ammo_vog-25_bad, ammo_vog-25_verybad</td><td></td></tr>
+<tr><td>grenade_launcher_name</td><td>name of the section of the underbarrel grenade launcher</td><td>wpn_addon_grenade_launcher</td><td></td></tr>
+<tr><td>grenade_launcher_status</td><td>the status of the underbarrel grenade launcher</td><td>0</td><td>0 - not available<br> 1 - built-in<br> 2 - removable</td></tr>
+<tr><td>launch_speed</td><td>launch speed of the underbarrel grenade launcher</td><td>0</td><td></td></tr>
+<tr><td>grenade_flame_particles</td><td>particle of the fire from the underbarrel grenade launcher</td><td>weapons\generic_weapon01</td><td>Particles file path relative to particles.xr</td></tr>
+<tr><td>grenade_launcher_x</td><td>grenade launcher icon coordinates superimposed over the weapon icon on the X coordinate</td><td>127</td><td>Specified in numbers</td></tr>
+<tr><td>grenade_launcher_y</td><td>grenade_launcher icon coordinates superimposed over the weapon icon on the Y coordinate</td><td>18</td><td>Specified in numbers</td></tr>
+<tr><td>gl_zoom_factor</td><td></td><td></td><td></td></tr>
+</tbody></table>
+</div>
+<h3 id="aiming"><a class="header" href="#aiming">Aiming</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example Value</th><th>Possible Parameters</th></tr></thead><tbody>
+<tr><td>use_aim_bullet</td><td>A game mechanic in which the first bullet fired after drawing and aiming the weapon does more damage to certain limbs</td><td>false</td><td>true (Yes) - false (No)</td></tr>
+<tr><td>time_to_aim</td><td>Time during which the use_aim_bullet parameter can be activated when aiming and drawing a weapon</td><td>0.0</td><td>Specified in seconds</td></tr>
+<tr><td>zoom_dof</td><td></td><td>0.5, 1.0, 180</td><td></td></tr>
+<tr><td>zoom_enabled</td><td>the ability to aim</td><td>true</td><td>true (Yes) - false (No)</td></tr>
+<tr><td>zoom_rotate_time</td><td>the speed at which the weapon goes to the “aiming” state, in seconds</td><td>0.25</td><td>Specified in seconds</td></tr>
+<tr><td>reload_dof</td><td></td><td>0.0, 0.5, 5, 2</td><td></td></tr>
+<tr><td>control_inertion_factor</td><td>Usability; aka inertia; affects how easily the weapon can be controlled with the mouse</td><td>1.0f</td><td></td></tr>
+<tr><td>crosshair_inertion</td><td></td><td>5.8</td><td></td></tr>
+</tbody></table>
+</div>
+<h3 id="misfire"><a class="header" href="#misfire">Misfire</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example Value</th><th>Possible Parameters</th></tr></thead><tbody>
+<tr><td>misfire_probability</td><td>misfire_probability</td><td>0.005</td><td>0 - never jams<br> 1 - always jams</td></tr>
+<tr><td>misfire_start_condition</td><td>the wear at which there is a chance of misfire</td><td>0.7</td><td></td></tr>
+<tr><td>misfire_start_prob</td><td>misfire chance of misfire when wear is greater than misfireStartCondition</td><td>0.007</td><td></td></tr>
+<tr><td>misfire_end_condition</td><td>the chance of misfire when worn out is greater than misfireEndCondition</td><td>0.05</td><td></td></tr>
+<tr><td>misfire_end_prob</td><td>wear rate at which the chance of misfire becomes constant</td><td>0.11</td><td></td></tr>
+</tbody></table>
+</div>
+<h3 id="condition"><a class="header" href="#condition">Condition</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example Value</th><th>Possible Parameters</th></tr></thead><tbody>
+<tr><td>condition_queue_shot_dec</td><td>condition_shot_dec</td><td>0.0008</td><td></td></tr>
+<tr><td>condition_shot_dec</td><td>increase wear on each shot</td><td>0.0008</td><td>0 - no wear<br> 1 - maximum wear</td></tr>
+<tr><td>fire_dispersion_condition_factor</td><td>the effect of wear on the variance of the weapon as a percentage</td><td>0.001</td><td></td></tr>
+</tbody></table>
+</div>
+<h3 id="Сamera"><a class="header" href="#Сamera">Сamera</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example Value</th><th>Possible Parameters</th></tr></thead><tbody>
+<tr><td>cam_return</td><td>Whether to return the camera to its original position</td><td>0</td><td>1 or 0</td></tr>
+<tr><td>cam_relax_speed</td><td>camera return speed</td><td>10</td><td></td></tr>
+<tr><td>cam_dispersion</td><td>angle increase with each shot</td><td>0.762</td><td></td></tr>
+<tr><td>cam_dispersion_frac</td><td>barrel will rise by cam_dispersion<em>cam_dispersion_frac +- cam_dispersion</em>(1-cam_dispersion_frac)</td><td>1.0</td><td></td></tr>
+<tr><td>cam_dispersion_inc</td><td>increase cam_dispersion with each shot</td><td>0.0725</td><td></td></tr>
+<tr><td>cam_max_angle</td><td>maximum vertical recoil angle</td><td>50.0</td><td></td></tr>
+<tr><td>cam_max_angle_horz</td><td>maximum horizontal recoil angle</td><td>50.0</td><td></td></tr>
+<tr><td>cam_step_angle_horz</td><td>barrel shift horizontally during firing</td><td>1.38</td><td></td></tr>
+</tbody></table>
+</div>
+<h3 id="camera-when-aiming"><a class="header" href="#camera-when-aiming">Camera when aiming</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example Value</th><th>Possible Parameters</th></tr></thead><tbody>
+<tr><td>zoom_cam_relax_speed</td><td>Similar to return speed of the camera in the aiming mode</td><td>10</td><td></td></tr>
+<tr><td>zoom_cam_dispersion</td><td>Similar to cam_dispersion in the aiming mode</td><td>0.732</td><td></td></tr>
+<tr><td>zoom_cam_dispersion_frac</td><td>Similar to cam_dispersion_frac in aiming mode</td><td>0.7</td><td></td></tr>
+<tr><td>zoom_cam_dispersion_inc</td><td>Similar to cam_dispersion_inc in aiming mode</td><td>0.0625</td><td></td></tr>
+<tr><td>zoom_cam_max_angle</td><td>Similar to cam_max_angle in aiming mode</td><td>50.0</td><td></td></tr>
+<tr><td>zoom_cam_max_angle_horz</td><td>Similar to cam_max_angle_horz in aiming mode</td><td>50.0</td><td></td></tr>
+<tr><td>zoom_cam_step_angle_horz</td><td>Similar to cam_step_angle_horz in aiming mode</td><td>1.28</td><td></td></tr>
+</tbody></table>
+</div>
+<h3 id="ai"><a class="header" href="#ai">AI</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Parameter Name</th><th>Parameter Description</th><th>Example Value</th><th>Possible Parameters</th></tr></thead><tbody>
+<tr><td>ef_main_weapon_type</td><td>NPC weapon type</td><td>2</td><td>0 - pistol<br> 1 -shotgun<br> 2 - assault rifle<br> 3 - rifle<br> 4 - grenade launcher<br></td></tr>
+<tr><td>ef_weapon_type</td><td>NPC fire mode</td><td>8</td><td>5 - fire single shots<br> 6 - fire in bursts<br> 7 - aim and fire single shots<br> 8 - aim and fire (sniper)<br> 9 - grenade launcher</td></tr>
+<tr><td>cam_relax_speed_ai</td><td>Determines the recovery (return) speed of the camera after recoil for NPCs (if not specified, cam_relax_speed is used)</td><td>360</td><td></td></tr>
+<tr><td>zoom_cam_relax_speed_ai</td><td>Determines the speed of camera recovery (return) after recoil for NPCs in aiming mode (if not specified, cam_relax_speed_ai is used)</td><td>360</td><td></td></tr>
+<tr><td>holder_fov_modifier</td><td>NPC angle of view multiplier (eye_fov) with this weapon</td><td>1.0</td><td>Specified in numbers</td></tr>
+<tr><td>holder_range_modifier</td><td>NPC range multiplier (eye_range) with this weapon</td><td>1.0</td><td>Specified in numbers</td></tr>
+<tr><td>min_radius</td><td></td><td></td><td></td></tr>
+<tr><td>max_radius</td><td></td><td></td><td></td></tr>
+</tbody></table>
+</div>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../../../reference/configs/items/weapons/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../../../reference/configs/items/weapons/weapon-hud.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../../../reference/configs/items/weapons/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../../../reference/configs/items/weapons/weapon-hud.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../../../elasticlunr.min.js"></script>
+        <script src="../../../../mark.min.js"></script>
+        <script src="../../../../searcher.js"></script>
+
+        <script src="../../../../clipboard.min.js"></script>
+        <script src="../../../../highlight.js"></script>
+        <script src="../../../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../../../../theme/js/tables.js"></script>
+        <script src="../../../../theme/js/mermaid.min.js"></script>
+        <script src="../../../../theme/js/mermaid-init.js"></script>
+        <script src="../../../../theme/js/whichlang.js"></script>
+
+
+    </div>
+    </body>
+</html>

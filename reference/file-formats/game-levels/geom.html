@@ -1,0 +1,447 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>*.geom - Anomaly Modding Book</title>
+
+
+        <!-- Custom HTML head -->
+        <script defer data-domain="igigog.github.io" src="https://plausible.io/js/script.hash.js"></script><script defer data-domain="igigog.github.io" src="https://plausible.io/js/script.hash.js"></script>
+        <script defer src="https://cloud.umami.is/script.js" data-website-id="af269dba-ec2d-471b-a4c9-44023cb64adc"></script>
+
+        <meta name="description" content="Introductory book for S.T.A.L.K.E.R. Anomaly modding">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../../favicon.svg">
+        <link rel="shortcut icon" href="../../../favicon.png">
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../../../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../../theme/css/custom.css">
+        <link rel="stylesheet" href="../../../theme/css/tables.css">
+        <link rel="stylesheet" href="../../../theme/css/mdbook-admonish.css">
+        <link rel="stylesheet" href="../../../theme/css/whichlang.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../../../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Anomaly Modding Book</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/Igigog/anomaly-modding-book" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Igigog/anomaly-modding-book/edit/main/src/reference/file-formats/game-levels/geom.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="geom"><a class="header" href="#geom">*.geom</a></h1>
+<hr />
+<blockquote>
+<p>The format was disassembled by Haper (not completely disassembled, adjustments are needed)</p>
+</blockquote>
+<h2 id="about"><a class="header" href="#about">About</a></h2>
+<p>Contains all visible map geometry. It contains all vertices with normals and coordinates for textures and indexes for building geometry, as well as synchronization.</p>
+<hr />
+<h2 id="technical-information"><a class="header" href="#technical-information">Technical information</a></h2>
+<h2 id="the-file-consists-of-the-following-blocks"><a class="header" href="#the-file-consists-of-the-following-blocks">The file consists of the following blocks</a></h2>
+<div class="table-wrapper"><table><thead><tr><th></th><th>Block code</th></tr></thead><tbody>
+<tr><td><a href="#map-compiler-version-the-block-is-the-same-for-all-maps">Map compiler version</a></td><td>1</td></tr>
+<tr><td><a href="#vertex-description">Vertex description</a></td><td>9</td></tr>
+<tr><td><a href="#indexes-description">Indexes description</a></td><td>10</td></tr>
+<tr><td><a href="#synchronization-description">Synchronization description</a></td><td>11</td></tr>
+</tbody></table>
+</div>
+<hr />
+<h3 id="types-of-variables"><a class="header" href="#types-of-variables">Types of variables</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Type code</th><th>Value</th></tr></thead><tbody>
+<tr><td>1</td><td>DWord(4) + DWord(4)</td></tr>
+<tr><td>4</td><td>Byte(1) + Byte(1) + Byte(1) + Byte(1)</td></tr>
+<tr><td>6</td><td>Word(2)/32768 + Word(2)/32768</td></tr>
+<tr><td>7</td><td>(Byte(1)-128)/128 + (Byte(1)-128)/128 + (Byte(1)-128)/128 + (Byte(1)-128)/128</td></tr>
+</tbody></table>
+</div>
+<h3 id="map-compiler-version-the-block-is-the-same-for-all-maps"><a class="header" href="#map-compiler-version-the-block-is-the-same-for-all-maps">Map compiler version (the block is the same for all maps)</a></h3>
+<div class="table-wrapper"><table><thead><tr><th></th><th>Value</th><th>Size</th></tr></thead><tbody>
+<tr><td>Block code</td><td>1</td><td>Word(2)</td></tr>
+<tr><td>Data compression (0 - no, 32768 - yes)</td><td>0</td><td>Word(2)</td></tr>
+<tr><td>Block size (bytes)</td><td>4</td><td>DWord(4)</td></tr>
+<tr><td>Version number (same for all)</td><td>13</td><td>DWord(4)</td></tr>
+</tbody></table>
+</div>
+<h3 id="vertex-description"><a class="header" href="#vertex-description">Vertex description</a></h3>
+<div class="table-wrapper"><table><thead><tr><th></th><th>Value</th><th>Size</th></tr></thead><tbody>
+<tr><td>Block code</td><td>9</td><td>Word(2)</td></tr>
+<tr><td>Data compression (0 - no, 32768 - yes)</td><td>0</td><td>Word(2)</td></tr>
+<tr><td>Block size (bytes)</td><td>4</td><td>DWord(4)</td></tr>
+<tr><td>Number of vertex description blocks</td><td>-</td><td>DWord(4)</td></tr>
+<tr><td>Vertex description block</td><td>-</td><td>-</td></tr>
+</tbody></table>
+</div>
+<h4 id="vertex-description-block"><a class="header" href="#vertex-description-block">Vertex description block</a></h4>
+<div class="table-wrapper"><table><thead><tr><th></th><th>Value</th><th>Size</th></tr></thead><tbody>
+<tr><td>Beginning of a new block</td><td>0</td><td>DWord(4)</td></tr>
+<tr><td>Beginning of the vertex format description</td><td>2</td><td>DWord(4)</td></tr>
+<tr><td>Vertex format</td><td>-</td><td>-</td></tr>
+<tr><td>End of vertex format description</td><td>255</td><td>DWord(4)</td></tr>
+<tr><td>Beginning of the vertex description</td><td>17</td><td>DWord(4)</td></tr>
+<tr><td>Number of vertices</td><td>-</td><td>DWord(4)</td></tr>
+<tr><td>Vertexes</td><td>-</td><td>-</td></tr>
+</tbody></table>
+</div><div id="admonition-a-few-words-about-the-vertex-format" class="admonition admonish-note" role="note" aria-labelledby="admonition-a-few-words-about-the-vertex-format-title">
+<div class="admonition-title">
+<div id="admonition-a-few-words-about-the-vertex-format-title">
+<p>A few words about the vertex format</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-a-few-words-about-the-vertex-format"></a>
+</div>
+<div>
+<p>As you already know, there are several vertex description blocks in the file. Not all objects in the game are the same: you have to specify coordinates of lightmaps for brushes, and coordinates of textures for trees can be simplified. Therefore, vertices specified in different blocks may be different. The vertex format is specified using several structures - this is the standard D3D vertex buffer format. That is, the file contains ready assembled vertex buffers for D3D:</p>
+</div>
+</div>
+<div class="table-wrapper"><table><thead><tr><th></th><th>Value</th><th>Size</th></tr></thead><tbody>
+<tr><td>???(always zero)</td><td>0</td><td>Word(2)</td></tr>
+<tr><td>Offset</td><td>-</td><td>Word(2)</td></tr>
+<tr><td>Type of variables</td><td>-</td><td>Word(2)</td></tr>
+<tr><td>What the variables describe</td><td>-</td><td>Word(2)</td></tr>
+</tbody></table>
+</div>
+<blockquote>
+<p>At the very beginning of any vertex are the coordinates of its placement, so the vertex format does not include a description of the coordinates. There are only three vertex formats in the 2215 maps:</p>
+</blockquote>
+<h4 id="vegetation"><a class="header" href="#vegetation">Vegetation</a></h4>
+<div class="table-wrapper"><table><thead><tr><th></th><th>Value</th><th>Size</th></tr></thead><tbody>
+<tr><td>zero</td><td>0</td><td>Word(2)</td></tr>
+<tr><td>Offset</td><td>12</td><td>Word(2)</td></tr>
+<tr><td>Type of variables</td><td>4</td><td>Word(2)</td></tr>
+<tr><td>Normals</td><td>3</td><td>Word(2)</td></tr>
+<tr><td>Light factor(?)</td><td>?</td><td>Word(2)</td></tr>
+<tr><td>Offset</td><td>16</td><td>Word(2)</td></tr>
+<tr><td>Type of variables</td><td>4</td><td>Word(2)</td></tr>
+<tr><td>Tangents</td><td>6</td><td>Word(2)</td></tr>
+<tr><td>Texture corrector X coordinate</td><td>0/1</td><td>Word(2)</td></tr>
+<tr><td>Offset</td><td>20</td><td>Word(2)</td></tr>
+<tr><td>Type of variables</td><td>4</td><td>Word(2)</td></tr>
+<tr><td>Bi-Tangents</td><td>7</td><td>Word(2)</td></tr>
+<tr><td>Texture corrector Y coordinate</td><td>0/1</td><td>Word(2)</td></tr>
+<tr><td>Offset</td><td>24</td><td>Word(2)</td></tr>
+<tr><td>Type of variables</td><td>7</td><td>Word(2)</td></tr>
+<tr><td>Texture coordinates</td><td>5</td><td>Word(2)</td></tr>
+</tbody></table>
+</div>
+<blockquote>
+<p>Thus, the total length of one vegetation vertex equals 32 bytes.</p>
+</blockquote>
+<h4 id="brush"><a class="header" href="#brush">Brush</a></h4>
+<div class="table-wrapper"><table><thead><tr><th></th><th>Value</th><th>Size</th></tr></thead><tbody>
+<tr><td>zero</td><td>0</td><td>Word(2)</td></tr>
+<tr><td>Offset</td><td>12</td><td>Word(2)</td></tr>
+<tr><td>Type of variables</td><td>4</td><td>Word(2)</td></tr>
+<tr><td>Normals</td><td>3</td><td>Word(2)</td></tr>
+<tr><td>Light factor(?)</td><td>?</td><td>Word(2)</td></tr>
+<tr><td>Offset</td><td>16</td><td>Word(2)</td></tr>
+<tr><td>Type of variables</td><td>4</td><td>Word(2)</td></tr>
+<tr><td>Tangents</td><td>6</td><td>Word(2)</td></tr>
+<tr><td>Texture corrector X coordinate</td><td>0/1</td><td>Word(2)</td></tr>
+<tr><td>Offset</td><td>20</td><td>Word(2)</td></tr>
+<tr><td>Type of variables</td><td>4</td><td>Word(2)</td></tr>
+<tr><td>Bi-Tangents</td><td>7</td><td>Word(2)</td></tr>
+<tr><td>Texture corrector Y coordinate</td><td>0/1</td><td>Word(2)</td></tr>
+<tr><td>Offset</td><td>24</td><td>Word(2)</td></tr>
+<tr><td>Type of variables</td><td>1</td><td>Word(2)</td></tr>
+<tr><td>Texture coordinates</td><td>5</td><td>Word(2)</td></tr>
+<tr><td>zero</td><td>0</td><td>Word(2)</td></tr>
+<tr><td>Offset</td><td>32</td><td>Word(2)</td></tr>
+<tr><td>Type of variables</td><td>6</td><td>Word(2)</td></tr>
+<tr><td>Lightmap coordinates</td><td>261</td><td>Word(2)</td></tr>
+</tbody></table>
+</div>
+<blockquote>
+<p>The total length of one brash vertex is 36 bytes.</p>
+</blockquote>
+<h4 id="entity"><a class="header" href="#entity">Entity</a></h4>
+<div class="table-wrapper"><table><thead><tr><th></th><th>Value</th><th>Size</th></tr></thead><tbody>
+<tr><td>zero</td><td>0</td><td>Word(2)</td></tr>
+<tr><td>Offset</td><td>12</td><td>Word(2)</td></tr>
+<tr><td>Type of variables</td><td>4</td><td>Word(2)</td></tr>
+<tr><td>Normals</td><td>3</td><td>Word(2)</td></tr>
+<tr><td>Light factor(?)</td><td>?</td><td>Word(2)</td></tr>
+<tr><td>Offset</td><td>16</td><td>Word(2)</td></tr>
+<tr><td>Type of variables</td><td>4</td><td>Word(2)</td></tr>
+<tr><td>Tangents</td><td>6</td><td>Word(2)</td></tr>
+<tr><td>Texture corrector X coordinate</td><td>0/1</td><td>Word(2)</td></tr>
+<tr><td>Offset</td><td>20</td><td>Word(2)</td></tr>
+<tr><td>Type of variables</td><td>4</td><td>Word(2)</td></tr>
+<tr><td>Bi-Tangents</td><td>7</td><td>Word(2)</td></tr>
+<tr><td>Texture corrector Y coordinate</td><td>0/1</td><td>Word(2)</td></tr>
+<tr><td>Offset</td><td>24</td><td>Word(2)</td></tr>
+<tr><td>Type of variables</td><td>4</td><td>Word(2)</td></tr>
+<tr><td>???</td><td>10</td><td>Word(2)</td></tr>
+<tr><td>zero</td><td>0</td><td>Word(2)</td></tr>
+<tr><td>Offset</td><td>28</td><td>Word(2)</td></tr>
+<tr><td>Type of variables</td><td>1</td><td>Word(2)</td></tr>
+<tr><td>Texture coordinates</td><td>5</td><td>Word(2)</td></tr>
+</tbody></table>
+</div>
+<blockquote>
+<p>The total length of one vertex of an entity is 36 bytes.
+Based on this, we get, for example, this view of the vertex:</p>
+</blockquote>
+<h4 id="brush-1"><a class="header" href="#brush-1">Brush</a></h4>
+<div class="table-wrapper"><table><thead><tr><th></th><th>Value</th><th>Offset</th><th>Size</th></tr></thead><tbody>
+<tr><td>Coordinate X</td><td>30.76</td><td>0</td><td>DWord(4)</td></tr>
+<tr><td>Coordinate Z</td><td>0.2</td><td>4</td><td>DWord(4)</td></tr>
+<tr><td>Coordinate Y</td><td>51.4</td><td>8</td><td>DWord(4)</td></tr>
+<tr><td>Normal at X</td><td>127</td><td>12</td><td>Byte(1)</td></tr>
+<tr><td>Normal at Z</td><td>255</td><td>13</td><td>Byte(1)</td></tr>
+<tr><td>Normal at Y</td><td>127</td><td>14</td><td>Byte(1)</td></tr>
+<tr><td>Light factor(?)</td><td>1</td><td>15</td><td>Byte(1)</td></tr>
+<tr><td>Tangent at X</td><td>127</td><td>16</td><td>Byte(1)</td></tr>
+<tr><td>Tangent at Z</td><td>255</td><td>17</td><td>Byte(1)</td></tr>
+<tr><td>Tangent at Y</td><td>255</td><td>18</td><td>Byte(1)</td></tr>
+<tr><td>Texture corrector X coordinate</td><td>0</td><td>19</td><td>Byte(1)</td></tr>
+<tr><td>Bi-Tangent at X</td><td>0</td><td>20</td><td>Byte(1)</td></tr>
+<tr><td>Bi-Tangent at Z</td><td>127</td><td>21</td><td>Byte(1)</td></tr>
+<tr><td>Bi-Tangent at Y</td><td>127</td><td>22</td><td>Byte(1)</td></tr>
+<tr><td>Texture corrector Y coordinate</td><td>0</td><td>23</td><td>Byte(1)</td></tr>
+<tr><td>Texture coordinate X</td><td>3.1802</td><td>24</td><td>Single(4)</td></tr>
+<tr><td>Texture coordinate Y</td><td>2.2143</td><td>28</td><td>Single(4)</td></tr>
+<tr><td>Lightmap coordinate X</td><td>0.4023</td><td>32</td><td>ShortSingle(2)</td></tr>
+<tr><td>Lightmap coordinate Y</td><td>0.000097</td><td>34</td><td>ShortSingle(2)</td></tr>
+</tbody></table>
+</div>
+<h3 id="indexes-description"><a class="header" href="#indexes-description">Indexes description</a></h3>
+<div class="table-wrapper"><table><thead><tr><th></th><th>Value</th><th>Size</th></tr></thead><tbody>
+<tr><td>Block code</td><td>10</td><td>Word(2)</td></tr>
+<tr><td>Data compression (0 - no, 32768 - yes)</td><td></td><td>Word(2)</td></tr>
+<tr><td>Block size (bytes)</td><td>-</td><td>DWord(4)</td></tr>
+<tr><td>Number of index description blocks</td><td>-</td><td>DWord(4)</td></tr>
+<tr><td>Index description block</td><td>-</td><td>-</td></tr>
+</tbody></table>
+</div>
+<h4 id="index-description-block"><a class="header" href="#index-description-block">Index description block</a></h4>
+<div class="table-wrapper"><table><thead><tr><th></th><th>Value</th><th>Size</th></tr></thead><tbody>
+<tr><td>Number of indexes in a block</td><td>-</td><td>DWord(4)</td></tr>
+<tr><td>Indexes</td><td>-</td><td>DWord(4)</td></tr>
+</tbody></table>
+</div>
+<blockquote>
+<p>Index: Word(2)
+The number of indexes must always be a multiple of three, because triangles are constructed using indexes.</p>
+</blockquote>
+<h3 id="synchronization-description"><a class="header" href="#synchronization-description">Synchronization description</a></h3>
+<blockquote>
+<p>(what they synchronize is still a mystery to scientists)</p>
+</blockquote>
+<div class="table-wrapper"><table><thead><tr><th></th><th>Value</th><th>Size</th></tr></thead><tbody>
+<tr><td>Block code</td><td>11</td><td>Word(2)</td></tr>
+<tr><td>Data compression (0 - no, 32768 - yes)</td><td>0</td><td>Word(2)</td></tr>
+<tr><td>Block size (bytes)</td><td>-</td><td>DWord(4)</td></tr>
+<tr><td>Number of synchronization units</td><td>-</td><td>DWord(4)</td></tr>
+<tr><td>Synchronization units</td><td>-</td><td>-</td></tr>
+</tbody></table>
+</div>
+<h4 id="synchronization-block"><a class="header" href="#synchronization-block">Synchronization block</a></h4>
+<div class="table-wrapper"><table><thead><tr><th></th><th>Value</th><th>Size</th></tr></thead><tbody>
+<tr><td>???</td><td>0</td><td>DWord(4)</td></tr>
+<tr><td>???</td><td>0</td><td>DWord(4)</td></tr>
+<tr><td>???</td><td>0</td><td>DWord(4)</td></tr>
+<tr><td>???</td><td>0</td><td>DWord(4)</td></tr>
+<tr><td>Number of synchronization units</td><td>-</td><td>DWord(4)</td></tr>
+<tr><td>Synchronization units</td><td>-</td><td>-</td></tr>
+</tbody></table>
+</div>
+<h5 id="synchronization-unit"><a class="header" href="#synchronization-unit">Synchronization unit</a></h5>
+<div class="table-wrapper"><table><thead><tr><th></th><th>Value</th><th>Size</th></tr></thead><tbody>
+<tr><td>???</td><td></td><td>DWord(4)</td></tr>
+<tr><td>???</td><td></td><td>Word(2)</td></tr>
+<tr><td>???</td><td></td><td>Word(2)</td></tr>
+</tbody></table>
+</div>
+<hr />
+<h2 id="sources"><a class="header" href="#sources">Sources</a></h2>
+<p><a href="https://web.archive.org/web/20200919002943/http://stalkerin.gameru.net/wiki/index.php?title=Level.geom">Source (Wayback Machine)</a></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../../reference/file-formats/game-levels/game.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../../reference/file-formats/game-levels/geomx.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../../reference/file-formats/game-levels/game.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../../reference/file-formats/game-levels/geomx.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../../elasticlunr.min.js"></script>
+        <script src="../../../mark.min.js"></script>
+        <script src="../../../searcher.js"></script>
+
+        <script src="../../../clipboard.min.js"></script>
+        <script src="../../../highlight.js"></script>
+        <script src="../../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../../../theme/js/tables.js"></script>
+        <script src="../../../theme/js/mermaid.min.js"></script>
+        <script src="../../../theme/js/mermaid-init.js"></script>
+        <script src="../../../theme/js/whichlang.js"></script>
+
+
+    </div>
+    </body>
+</html>

@@ -1,0 +1,558 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Glossary - Anomaly Modding Book</title>
+
+
+        <!-- Custom HTML head -->
+        <script defer data-domain="igigog.github.io" src="https://plausible.io/js/script.hash.js"></script><script defer data-domain="igigog.github.io" src="https://plausible.io/js/script.hash.js"></script>
+        <script defer src="https://cloud.umami.is/script.js" data-website-id="af269dba-ec2d-471b-a4c9-44023cb64adc"></script>
+
+        <meta name="description" content="Introductory book for S.T.A.L.K.E.R. Anomaly modding">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/css/custom.css">
+        <link rel="stylesheet" href="../theme/css/tables.css">
+        <link rel="stylesheet" href="../theme/css/mdbook-admonish.css">
+        <link rel="stylesheet" href="../theme/css/whichlang.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Anomaly Modding Book</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/Igigog/anomaly-modding-book" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Igigog/anomaly-modding-book/edit/main/src/glossary/glossary.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="glossary"><a class="header" href="#glossary">Glossary</a></h1>
+<hr />
+<h2 id="about"><a class="header" href="#about">About</a></h2>
+<p>Contains descriptions of various S.T.A.L.K.E.R. related terms used in modding and in X-Ray Engine.</p>
+<style>
+    :target {
+        animation: highlight 2s;
+    }
+    @keyframes highlight {
+        0%   { background-color: yellow; }
+        100% { background-color: transparent; }
+    }
+</style>
+<h2 id="ai"><a class="header" href="#ai">AI</a></h2>
+<table><thead>
+  <tr>
+    <th>Term</th>
+    <th>Definition</th>
+  </tr></thead>
+<tbody>
+  <tr id="ai-offline">
+    <td>Offline</td>
+    <td>Simulation of life in any given radius from the player will be calculated by a simplified formula</td>
+  </tr>
+  <tr id="ai-online">
+    <td>Online</td>
+    <td>Simulating life within any given radius of the player will be completely calculated</td>
+  </tr>
+  <tr id="alife">
+    <td>A-Life</td>
+    <td>Simulates the life of the game world as an independent ecosystem</td>
+  </tr>
+  <tr id="anim-point">
+    <td>Anim Point</td>
+    <td>Key positions in which the animation should be played</td>
+  </tr>
+  <tr id="finite-state-machine">
+    <td>Finite State Machine</td>
+    <td>Common and convenient technique for programming the behavior of bots (NPCs) in computer games.</td>
+  </tr>
+  <tr id="goal-oriented-action-planning">
+    <td>Goal Oriented Action Planning</td>
+    <td>AI design technique in which a chain of behaviors of agents (NPCs, abstract entities, "living" obstacles) is automatically selected in real time to satisfy a goal.</td>
+  </tr>
+  <tr id="motivation-graph">
+    <td>Motivation Graph</td>
+    <td>Decision-making method described in AI Game Programming Wisdom 2, which, according to the authors, is something between Decision Trees and Neural Networks.</td>
+  </tr>
+  <tr id="graph-point">
+    <td>Graph Point</td>
+    <td>Monsters and stalkers in offline move on graph points</td>
+  </tr>
+  <tr id="gulag">
+    <td>Gulag</td>
+    <td>Gulags control a set of stalkers together by assigning them each tasks by task priority. For example a gulag could contain tasks for patrolling an area and sitting at a campfire. The priority of these tasks will mean that the first stalker "caught" by the gulag (that is, the first stalker to be given over to the gulag's control) will patrol the area with subsequent caught stalkers simply sitting at a fire. A stalker is "caught" by a gulag be entering the associated "Smart Terrain".</td>
+  </tr>
+    <tr id="ai-map">
+    <td>AI Map</td>
+    <td>AI Map consisting of nodes</td>
+  </tr>
+  <tr id="gvid">
+    <td>gvid (game_vertex_id)</td>
+    <td><a href="graph-point">Graph Point</a> index </td>
+  </tr>
+  <tr id="lvid">
+    <td>lvid (level_vertex_id)</td>
+    <td>Part of <a href="../reference/file-formats/game-levels/ai.html">*.ai</a>. AI Map node</td>
+  </tr>
+  <tr id="smart-cover">
+    <td>Smart Cover</td>
+    <td>A system designed to control the behavior of NPCs when using cover.</td>
+  </tr>
+  <tr id="smart-terrain">
+    <td>Smart Terrain</td>
+    <td>Area which, when entered by a stalker, "captures" that stalker and assigns them tasks to perform. These tasks are allocated by the smart terrain's controlling Gulag.</td>
+  </tr>
+  <tr id="space-restrictor">
+    <td>Space Restrictor</td>
+    <td>An object that defines zones with special properties or restrictions in the game space.</td>
+  </tr>
+  <tr id="way-point">
+    <td>Way Point</td>
+    <td>A predetermined point on the map that serves as a reference point for NPCs. Waypoints indicate their movement pattern or where they should go.</td>
+  </tr>
+  <tr id="info-portion">
+    <td>Info Portion</td>
+    <td>It is a piece of information that can be passed between characters, saved in quests, or used for AI decision making.</td>
+  </tr>
+</tbody>
+</table>
+<h2 id="animations"><a class="header" href="#animations">Animations</a></h2>
+<table>
+<thead>
+  <tr>
+    <th>Term</th>
+    <th>Definition</th>
+  </tr>
+  </thead>
+<tbody>
+  <tr id="_hud-animation">
+    <td>*_hud animation</td>
+    <td>Animations for the <a href="_hud-model">*_hud</a> object</td>
+  </tr>
+  <tr id="motion-mark">
+    <td>Motion Mark</td>
+    <td>Time intervals in the animation in which something happens</td>
+  </tr>
+  <tr id="motion-reference">
+    <td>Motion Reference</td>
+    <td>Reference to the animation library (<a href="../reference/file-formats/animations/omf.html">*.omf</a>)</td>
+  </tr>
+</tbody>
+</table>
+<h2 id="coding"><a class="header" href="#coding">Coding</a></h2>
+<table>
+<thead>
+  <tr>
+    <th>Term</th>
+    <th>Definition</th>
+  </tr>
+  </thead>
+<tbody>
+  <tr id="luabind">
+    <td>Luabind</td>
+    <td><a href="https://www.rasterbar.com/products/luabind/docs.html">Luabind</a> is a library that helps you create bindings between C++ and Lua. It has the ability to expose functions and classes, written in C++, to Lua. It will also supply the functionality to define classes in lua and let them derive from other lua classes or C++ classes. Lua classes can override virtual functions from their C++ base classes. It is written towards Lua 5.x, and does not work with Lua 4.</td>
+  </tr>
+  <tr id="luajit">
+    <td>LuaJIT</td>
+    <td><a href="https://luajit.org/luajit.html">LuaJIT</a> is a <a href="https://en.wikipedia.org/wiki/Just-in-time_compilation">Just-In-Time Compiler</a> (JIT) for the Lua programming language. Anomaly uses LuaJIT 2.0.4</td>
+  </tr>
+</tbody>
+</table>
+<h2 id="compilers"><a class="header" href="#compilers">Compilers</a></h2>
+<table>
+<thead>
+  <tr>
+    <th>Term</th>
+    <th>Definition</th>
+  </tr>
+  </thead>
+<tbody>
+  <tr id="xr-ai">
+    <td>xrAI</td>
+    <td>AI Compiler</td>
+  </tr>
+  <tr id="xr-do">
+    <td>xrDO</td>
+    <td>Detail Object Compiler</td>
+  </tr>
+  <tr id="xr-lc">
+    <td>xrLC</td>
+    <td>Level Compiler</td>
+  </tr>
+</tbody>
+</table>
+<h2 id="materials"><a class="header" href="#materials">Materials</a></h2>
+<table>
+<thead>
+  <tr>
+    <th>Term</th>
+    <th>Definition</th>
+  </tr></thead>
+<tbody>
+  <tr id="game-material">
+    <td>Game Material</td>
+    <td>Responsible for the physical feature of the surface (friction, damping & etc.).</td>
+  </tr>
+</tbody>
+</table>
+<h2 id="objects"><a class="header" href="#objects">Objects</a></h2>
+<table>
+<thead>
+  <tr>
+    <th>Term</th>
+    <th>Definition</th>
+  </tr>
+  </thead>
+<tbody>
+  <tr id="dynamic-object">
+    <td>Dynamic Object</td>
+    <td>An object that uses bones</td>
+  </tr>
+  <tr id="multiply-usage-object">
+    <td>Multiply Usage Object</td>
+    <td>An object that creates an Imposter texture of the same object.</td>
+  </tr>
+  <tr id="_hud-model">
+    <td>*_hud</td>
+    <td>*_hud is a model in front of the player in the hands of the character. Usually it is a model of a weapon, grenades, hands.</td>
+  </tr>
+  <tr id="_world-model">
+    <td>*_world</td>
+    <td>*_world is a model in-game world (NPC weapons, 3rd-person view). The difference from the *_hud model is that the *_world must have a collision to calculate the interaction with the game.</td>
+  </tr>
+  <tr id="static-object">
+    <td>Static Object</td>
+    <td>Static object</td>
+  </tr>
+  <tr id="detail-object">
+    <td>Detail Object</td>
+    <td>Static object (grass, rocks, debris and other landscape details) with high optimization to display a large number of small objects without significant performance loss.</td>
+  </tr>
+  <tr id="scene-object">
+    <td>Scene Object</td>
+    <td>An object in the SDK that represents a reference object that uses a model to visualize and interact with the environment.</td>
+  </tr>
+  <tr id="light-source-object">
+    <td>Light Source Object</td>
+    <td>Light source.</td>
+  </tr>
+  <tr id="sound-source-object">
+    <td>Sound Source Object</td>
+    <td>Sound source.</td>
+  </tr>
+  <tr id="sound-environment-object">
+    <td>Sound Environment Object</td>
+    <td>Object with environmental sound effects.</td>
+  </tr>
+  <tr id="glow-object">
+    <td>Glow Object</td>
+    <td>Glow object.</td>
+  </tr>
+  <tr id="fog-volume-object">
+    <td>Fog Volume Object</td>
+    <td>A object to simulate dynamic volumetric fog, smoke and other gaseous effects.</td>
+  </tr>
+  <tr id="sound-occluder-mesh">
+    <td>Sound Occluder Mesh</td>
+    <td>Geometry for calculating sound propagation.</td>
+  </tr>
+    <tr id="custom-data">
+    <td>Custom Data</td>
+    <td>Custom or additional parameters (in <a href="../reference/file-formats/conf-script/ltx.html">*.ltx</a> format).</td>
+  </tr>
+  </tr>
+    <tr id="hierarchical-occluder-mesh">
+    <td>Hierarchical Occluder Mesh</td>
+    <td>Geometry defining the visibility of an object to remove from the renderer.</td>
+  </tr>
+</tbody>
+</table>
+<h2 id="joint-types"><a class="header" href="#joint-types">Joint Types</a></h2>
+<table>
+  <thead>
+    <tr>
+      <th>Term</th>
+      <th>Definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr id="rigid-joint">
+      <td>Rigid</td>
+      <td>Joint type that completely restricts all transformations.</td>
+    </tr>
+    <tr id="cloth-joint">
+      <td>Cloth</td>
+      <td><a href="https://ode.org/wiki/index.php/Manual#Ball_and_Socket">Ball</a> joint . Allows rotation in all directions, but without translation.</td>
+    </tr>
+    <tr id="joint">
+      <td>Joint</td>
+      <td>Universal joint. Automatically selects the optimal physical connection type based on constraint analysis (between <a href="https://ode.org/wiki/index.php/Manual#Hinge">Hinge</a> and FullControl(partially constrained axes)).</td>
+    </tr>
+    <tr id="wheel-joint">
+      <td>Wheel</td>
+      <td><a href="https://ode.org/wiki/index.php/Manual#Hinge-2">Hinge-2</a> joint. Allows rotation around the first axis (suspension axis) and rotation around the second axis (wheel axis).</td>
+    </tr>
+    <tr id="slider-joint">
+      <td>Slider</td>
+      <td><a href="https://ode.org/wiki/index.php/Manual#Slider">Slider</a> joint. Allows movement along one axis only.</td>
+    </tr>
+  </tbody>
+</table>
+<h2 id="optimization"><a class="header" href="#optimization">Optimization</a></h2>
+<table>
+<thead>
+  <tr>
+    <th>Term</th>
+    <th>Definition</th>
+  </tr>
+  </thead>
+<tbody>
+  <tr id="portal">
+    <td>Portal</td>
+    <td>A portal between the two sectors.</td>
+  </tr>
+  <tr id="sector">
+    <td>Sector</td>
+    <td>Sector is part of Portal Rendering. An area or section of virtual space that contains objects and geometry for rendering. Sectors help organize the scene, allowing you to control visibility and performance, especially in large worlds.</td>
+  </tr>
+    <tr id="hierarchical-occlusion-mapping">
+    <td>Hierarchical Occlusion Mapping</td>
+    <td>Technique in computer graphics that uses a multi-resolution representation of occlusion information to efficiently culling objects that are not visible.</td>
+  </tr>
+  <tr id="progressive-meshes">
+    <td>Progressive Meshes</td>
+    <td>One of the methods of dynamic level of detail. Only for <a href="dynamic-object">Dynamic Objects</a>.</td>
+  </tr>
+</tbody>
+</table>
+<h2 id="shaders"><a class="header" href="#shaders">Shaders</a></h2>
+<table>
+<thead>
+  <tr>
+    <th>Term</th>
+    <th>Definition</th>
+  </tr>
+  </thead>
+<tbody>
+  <tr id="compile-shader">
+    <td>Compile Shader</td>
+    <td>Shader used by the Level Compiler. Specifies to the compiler the features of the final game level geometry. The source geometry, depending on the compiler shader, may have different features.</td>
+  </tr>
+  <tr id="engine-shader">
+    <td>Engine Shader</td>
+    <td>Shader responsible for the visual appearance of the surface.</td>
+  </tr>
+</tbody>
+</table>
+<h2 id="particles"><a class="header" href="#particles">Particles</a></h2>
+<table>
+<thead>
+  <tr>
+    <th>Term</th>
+    <th>Definition</th>
+  </tr>
+  </thead>
+<tbody>
+  <tr id="particle-effect">
+    <td>Particle Effect</td>
+    <td>Single Particle Effect. Stored in <a href="../reference/file-formats/particles/pe.html">*.pe</a> files.</td>
+  </tr>
+  <tr id="particle-group">
+    <td>Particle Group</td>
+    <td>Particle Effects Group. Stored in <a href="../reference/file-formats/particles/pg.html">*.pg</a> files.</td>
+  </tr>
+</tbody>
+</table>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../meta/acknowledgements.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../tutorials/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../meta/acknowledgements.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../tutorials/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../theme/js/tables.js"></script>
+        <script src="../theme/js/mermaid.min.js"></script>
+        <script src="../theme/js/mermaid-init.js"></script>
+        <script src="../theme/js/whichlang.js"></script>
+
+
+    </div>
+    </body>
+</html>

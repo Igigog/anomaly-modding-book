@@ -1,0 +1,1320 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Properties - Anomaly Modding Book</title>
+
+
+        <!-- Custom HTML head -->
+        <script defer data-domain="igigog.github.io" src="https://plausible.io/js/script.hash.js"></script><script defer data-domain="igigog.github.io" src="https://plausible.io/js/script.hash.js"></script>
+        <script defer src="https://cloud.umami.is/script.js" data-website-id="af269dba-ec2d-471b-a4c9-44023cb64adc"></script>
+
+        <meta name="description" content="Introductory book for S.T.A.L.K.E.R. Anomaly modding">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../../../favicon.svg">
+        <link rel="shortcut icon" href="../../../../favicon.png">
+        <link rel="stylesheet" href="../../../../css/variables.css">
+        <link rel="stylesheet" href="../../../../css/general.css">
+        <link rel="stylesheet" href="../../../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../../../../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../../../../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../../../theme/css/custom.css">
+        <link rel="stylesheet" href="../../../../theme/css/tables.css">
+        <link rel="stylesheet" href="../../../../theme/css/mdbook-admonish.css">
+        <link rel="stylesheet" href="../../../../theme/css/whichlang.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../../../../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Anomaly Modding Book</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/Igigog/anomaly-modding-book" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Igigog/anomaly-modding-book/edit/main/src/modding-tools/sdk/level-editor/windows/properties.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="level-editor---properties-window"><a class="header" href="#level-editor---properties-window">Level Editor - Properties Window</a></h1>
+<hr />
+<h2 id="about"><a class="header" href="#about">About</a></h2>
+<p>Allows to setup various parameters of the selected object.</p>
+<div id="admonition-note" class="admonition admonish-note" role="note" aria-labelledby="admonition-note-title">
+<div class="admonition-title">
+<div id="admonition-note-title">
+<p>Note</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-note"></a>
+</div>
+<div>
+<p>All types of objects have different parameters. Depending on the type of selected object, the parameters will change.</p>
+</div>
+</div>
+<body>
+  <div class="table-tabs">
+    <div class="tab-buttons">
+      <button class="tab-button active" onclick="openTable(event, 'Scene Object')">Scene Object</button>
+      <button class="tab-button" onclick="openTable(event, 'Light')">Light</button>
+      <button class="tab-button" onclick="openTable(event, 'Sound source')">Sound source</button>
+      <button class="tab-button" onclick="openTable(event, 'Sound env')">Sound env</button>
+      <button class="tab-button" onclick="openTable(event, 'Glow')">Glow</button>
+      <button class="tab-button" onclick="openTable(event, 'Shape')">Shape</button>
+      <button class="tab-button" onclick="openTable(event, 'Spawn Element')">Spawn Element</button>
+      <button class="tab-button" onclick="openTable(event, 'Way Points')">Way Points</button>
+      <button class="tab-button" onclick="openTable(event, 'Sector')">Sector</button>
+      <button class="tab-button" onclick="openTable(event, 'Portal')">Portal</button>
+      <button class="tab-button" onclick="openTable(event, 'Group')">Group</button>
+      <button class="tab-button" onclick="openTable(event, 'Static Particles')">Static Particles</button>
+      <button class="tab-button" onclick="openTable(event, 'Wallmarks')">Wallmarks</button>
+      <button class="tab-button" onclick="openTable(event, 'Fog Volume')">Fog Volume</button>
+      <button class="tab-button" onclick="openTable(event, 'Puddles')">Puddles</button>
+    </div>
+    <div id="Scene Object" class="tab-content" style="display: block">
+      <table><thead>
+      <tr>
+        <th>1</th>
+        <th>Description</th>
+        <th>1</th>
+        <th>Description</th>
+      </tr></thead>
+    <tbody>
+      <tr>
+        <td>Name</td>
+        <td></td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td rowspan="3">Transform</td>
+        <td rowspan="3"></td>
+        <td>Position</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Rotation</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Scale</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Reference</td>
+        <td></td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Flags</td>
+        <td></td>
+        <td>Motionable</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td rowspan="5">Surfaces</td>
+        <td rowspan="5"></td>
+        <td>Texture</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Shader</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Compile</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Game Mtl</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Action</td>
+        <td></td>
+      </tr>
+    </tbody>
+    </table>
+    </div>
+    <div id="Light" class="tab-content" style="display: none">
+      <table><thead>
+      <tr>
+        <th></th>
+        <th>Description</th>
+        <th>Extra</th>
+        <th>Extra Description</th>
+        <th>Extra</th>
+        <th>Extra Description</th>
+      </tr></thead>
+    <tbody>
+      <tr>
+        <td>Name</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td rowspan="3">Transform</td>
+        <td rowspan="3"></td>
+        <td>Position</td>
+        <td></td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Rotation</td>
+        <td></td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Scale</td>
+        <td></td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>In group editable</td>
+        <td></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Type</td>
+        <td></td>
+        <td>Point</td>
+        <td></td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Color</td>
+        <td></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Brightness</td>
+        <td></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td rowspan="3">Light Control</td>
+        <td></td>
+        <td>$static</td>
+        <td></td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>$hemi</td>
+        <td></td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>$sun</td>
+        <td></td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td rowspan="3">Usage</td>
+        <td></td>
+        <td>LightMap</td>
+        <td></td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Dynamic</td>
+        <td></td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Animated</td>
+        <td></td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Range</td>
+        <td></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td rowspan="5">Attenuation</td>
+        <td rowspan="5"></td>
+        <td>Constant</td>
+        <td></td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Linear</td>
+        <td></td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Quadratic</td>
+        <td></td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Auto</td>
+        <td></td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Graphic</td>
+        <td></td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td rowspan="6">Fuzzy</td>
+        <td rowspan="6"></td>
+        <td>Count</td>
+        <td></td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Generate</td>
+        <td></td>
+        <td>Random</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td rowspan="2">Shape</td>
+        <td rowspan="2"></td>
+        <td>Sphere</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Box</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Radius</td>
+        <td></td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Half Dimension</td>
+        <td></td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Use in D3D</td>
+        <td></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+    </tbody></table>
+    </div>
+    <div id="Sound source" class="tab-content" style="display: none">
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Description</th>
+            <th>Extra</th>
+            <th>Extra Description</th>
+            <th>Extra</th>
+            <th>Extra Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Name</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td rowspan="3">Transform</td>
+            <td rowspan="3"></td>
+            <td>Position</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Rotation</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Scale</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td rowspan="3">Custom</td>
+            <td rowspan="3"></td>
+            <td>Play</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Stop</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Simulate</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td rowspan="6">Source</td>
+            <td rowspan="6"></td>
+            <td>WAVE name</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Frequency</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Volume</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Min dist</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Max dist</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Max ai dist</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td rowspan="9">Game</td>
+            <td rowspan="9"></td>
+            <td rowspan="3">Active time</td>
+            <td rowspan="3"></td>
+            <td>Hint</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>From</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>To</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td rowspan="3">Play time</td>
+            <td rowspan="3"></td>
+            <td>Hint</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>From</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>To</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td rowspan="3">Pause delt</td>
+            <td rowspan="3"></td>
+            <td>Hint</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>From</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>To</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="Sound env" class="tab-content" style="display: none">
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Description</th>
+            <th>Extra</th>
+            <th>Extra Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Name</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td rowspan="3">Transform</td>
+            <td rowspan="3"></td>
+            <td>Position</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Rotation</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Scale</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Environment Inner</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Envirment Outer</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="Glow" class="tab-content" style="display: none">
+      <table><thead>
+      <tr>
+        <th></th>
+        <th>Description</th>
+        <th>Extra</th>
+        <th>Extra Description</th>
+      </tr></thead>
+    <tbody>
+      <tr>
+        <td>Name</td>
+        <td></td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td rowspan="3">Transform</td>
+        <td rowspan="3"></td>
+        <td>Position</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Rotation</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Scale</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>In group editable</td>
+        <td></td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Texture</td>
+        <td></td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Shader</td>
+        <td></td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Radius</td>
+        <td></td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+    </tbody>
+    </table>
+    </div>
+    <div id="Shape" class="tab-content" style="display: none">
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Description</th>
+            <th>Extra</th>
+            <th>Extra Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Name</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td rowspan="3">Transform</td>
+            <td rowspan="3"></td>
+            <td>Position</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Rotation</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Scale</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Shape usage</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="Spawn Element" class="tab-content" style="display: none">
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Description</th>
+            <th>Extra</th>
+            <th>Extra Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Name</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td rowspan="3">Transform</td>
+            <td rowspan="3"></td>
+            <td>Position</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Rotation</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Scale</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Profile (spawn section)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Custom data</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td rowspan="4">Alife</td>
+            <td rowspan="4"></td>
+            <td>Interactive</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Used AI Locations</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Story ID</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Spawn Story ID</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>restrictor type</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>check for separator</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td rowspan="6">Game Type</td>
+            <td rowspan="6"></td>
+            <td>Single</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>DM</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>TDM</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ArtefactHunt</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>CTA</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>FMP</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>MP respawn</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="Way Points" class="tab-content" style="display: none">
+      <table>
+        <thead>
+          <tr>
+            <th>1</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Way Name</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="Sector" class="tab-content" style="display: none">
+      <table>
+        <thead>
+          <tr>
+            <th>1</th>
+            <th>Description</th>
+            <th>1</th>
+            <th>Description</th>
+            <th>1</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Name</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td rowspan="3">Transform</td>
+            <td rowspan="3"></td>
+            <td>Position</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Rotation</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Scale</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Color</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td rowspan="8">Sector_*Name*</td>
+            <td rowspan="8"></td>
+            <td rowspan="3">Contents</td>
+            <td rowspan="3"></td>
+            <td>Objects</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Meshes</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Faces</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td rowspan="5">Change LevelMap to</td>
+            <td rowspan="5"></td>
+            <td>default</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>#0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>#1</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>#2</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>#3</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="Portal" class="tab-content" style="display: none">
+      <table>
+        <thead>
+          <tr>
+            <th>1</th>
+            <th>Description</th>
+            <th>1</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Name</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td rowspan="3">Transform</td>
+            <td rowspan="3"></td>
+            <td>Postion</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Rotation</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Scale</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="Group" class="tab-content" style="display: none">
+    <table><thead>
+      <tr>
+        <th></th>
+        <th>Description</th>
+        <th>Extra</th>
+        <th>Extra Description</th>
+      </tr></thead>
+    <tbody>
+      <tr>
+        <td>Name</td>
+        <td></td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td rowspan="3">Transform</td>
+        <td rowspan="3"></td>
+        <td>Position</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Rotation</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Scale</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Reference</td>
+        <td></td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td rowspan="2">FreezeObjects</td>
+        <td rowspan="2"></td>
+        <td>Unique</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Reference</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="4">Ниже находятся названия обьектов в группе (Нажатием галочки по обьекту делает его редактируемым в своей категории типа обьекта)</td>
+      </tr>
+    </tbody>
+    </table>
+    </div>
+    <div id="Static Particles" class="tab-content" style="display: none">
+      <table><thead>
+      <tr>
+        <th></th>
+        <th>Description</th>
+        <th>Extra</th>
+        <th>Extra Description</th>
+      </tr></thead>
+    <tbody>
+      <tr>
+        <td>Name</td>
+        <td></td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td rowspan="3">Transform</td>
+        <td rowspan="3"></td>
+        <td>Position</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Rotation</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Scale</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>In group editable</td>
+        <td></td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Reference</td>
+        <td></td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Controls</td>
+        <td rowspan="2"></td>
+        <td>Play</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Stop</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td rowspan="8">Game Type</td>
+        <td rowspan="8"></td>
+        <td>single</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>deathmatch</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>team deathmatch</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>artefact hunt</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>capture the artefact</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>domination zone</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>team domination zone</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Free MP</td>
+        <td></td>
+      </tr>
+    </tbody></table>
+    </div>
+    <div id="Wallmarks" class="tab-content" style="display: none">
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Draw Wallmarks</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td rowspan="3">Aligment</td>
+            <td rowspan="3"></td>
+          </tr>
+          <tr></tr>
+          <tr></tr>
+          <tr>
+            <td>Width</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Height</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Rotate</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Shader</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Texture</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="Fog Volume" class="tab-content" style="display: none">
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Description</th>
+            <th>Extra</th>
+            <th>Extra Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Name</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td rowspan="3">Transform</td>
+            <td rowspan="3"></td>
+            <td>Position</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Rotation</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Scale</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Shape usage</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="Puddles" class="tab-content" style="display: none">
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Description</th>
+            <th>Extra</th>
+            <th>Extra Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Name</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td rowspan="3">Transform</td>
+            <td rowspan="3"></td>
+            <td>Position</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Rotation</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Scale</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Shape usage</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../../../modding-tools/sdk/level-editor/level-editor.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../../../modding-tools/sdk/level-editor/windows/content-browser.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../../../modding-tools/sdk/level-editor/level-editor.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../../../modding-tools/sdk/level-editor/windows/content-browser.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../../../elasticlunr.min.js"></script>
+        <script src="../../../../mark.min.js"></script>
+        <script src="../../../../searcher.js"></script>
+
+        <script src="../../../../clipboard.min.js"></script>
+        <script src="../../../../highlight.js"></script>
+        <script src="../../../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../../../../theme/js/tables.js"></script>
+        <script src="../../../../theme/js/mermaid.min.js"></script>
+        <script src="../../../../theme/js/mermaid-init.js"></script>
+        <script src="../../../../theme/js/whichlang.js"></script>
+
+
+    </div>
+    </body>
+</html>
