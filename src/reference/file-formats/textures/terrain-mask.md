@@ -4,7 +4,7 @@ ___
 
 ## About
 
-Terrain mask. Grass is filled in the level based on its colors.
+A mask for [Detail Objects](../../../glossary/glossary.html#detail-object). Fills in the level according to its colors.
 
 ## Programs editing this file
 

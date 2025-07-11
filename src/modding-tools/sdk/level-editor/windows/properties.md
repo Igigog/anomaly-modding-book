@@ -589,7 +589,7 @@ All types of objects have different parameters. Depending on the type of selecte
         <thead>
           <tr>
             <th></th>
-            <th>Description (У НИХ КАПЕЦ ВСЕ РАЗНОЕ НУЖНО БОЛЬШЕ ПРОВЕРОК)</th>
+            <th>Description</th>
             <th>Extra</th>
             <th>Extra Description</th>
           </tr>
