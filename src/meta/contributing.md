@@ -101,7 +101,7 @@ Or
 
 #### Running local copy
 
-1. `CTRL+Shift+B` -> `Run Local mdbook Server`
+1. `CTRL+Shift+B` -> `Build Local mdBook Server`
 
 Or
 

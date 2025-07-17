@@ -35,6 +35,7 @@
   - [MCM](tutorials/addons/mcm.md)
   - [PDB Files](tutorials/addons/pdb.md)
   - [Lua Unlocalizer](tutorials/addons/lua-unlocalizer.md)
+  - [Lua Debugger](tutorials/addons/lua-debugger.md)
   - [Useful Addons, Scripts and Utils](tutorials/addons/useful-addons-scripts-utils.md)
 
 - [Configs](tutorials/configs/README.md)

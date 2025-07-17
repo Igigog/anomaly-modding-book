@@ -11,7 +11,7 @@
                 "isDefault": true
             },
             "problemMatcher": [],
-            "detail": "Run serve --open command",
+            "detail": "Run 'serve --open' command",
             "presentation": {
                 "reveal": "always",
                 "panel": "new"
@@ -27,7 +27,7 @@
                 "isDefault": true
             },
             "problemMatcher": [],
-            "detail": "Run clean command",
+            "detail": "Run 'clean' command",
             "presentation": {
                 "reveal": "always",
                 "panel": "new"
