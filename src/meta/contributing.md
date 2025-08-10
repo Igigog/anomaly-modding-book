@@ -23,7 +23,7 @@ ___
 
 ## Second way to contribute
 
-If you want to add entirely new articles via only a web interface (because you can't or do not want to install new software on your computer for instance) and don't mind that you won't be able to preview the exact way the file will look in the book then this section may be for you, but you should consider using the third method as it is the intended way to interface with the software that runs the book. Lastly the github web client doesn't have a way for you to save your work in progress without committing them which can be awkward, this can mostly be gotten around by, doing all your edits in a branch or using one of the web markdown editors mentioned in the forward. 
+If you want to add entirely new articles via only a web interface (because you can't or do not want to install new software on your computer for instance) and don't mind that you won't be able to preview the exact way the file will look in the book then this section may be for you, but you should consider using the third method as it is the intended way to interface with the software that runs the book. Lastly the github web client doesn't have a way for you to save your work in progress without committing them which can be awkward (clutters up the commit history), this can mostly be gotten around by using one of the web markdown editors mentioned in the forward. 
 
 First you will need to fork the book, if you have already submitted simple changes via the first method this will already have been done. Otherwise you can follow these steps:
 
