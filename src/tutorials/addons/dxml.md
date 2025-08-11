@@ -291,7 +291,7 @@ function on_game_start()
         if character_id == "sim_default_csky_0_default_0" then
   
             -- change appearance of this npc to Beard
-            data.visual = "actors\stalker_neutral\stalker_neutral_3_face_1"
+            data.visual = [[actors\stalker_neutral\stalker_neutral_3_face_1]]
         end
     end)
 end
