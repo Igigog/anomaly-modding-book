@@ -78,6 +78,7 @@
   - [Creating HUD Animation in Blender](tutorials/animations/creating-hud-animation-in-blender.md)
   - [Creating Camera Animations in Blender](tutorials/animations/creating-camera-animations.md)
   - [Editing Existing Animations in Blender](tutorials/animations/editing-existing-animations.md)
+  - [Creatin Motion Marks in Blender](tutorials/animations/creating-motion-marks-in-blender.md)
 
 - [Textures](tutorials/texturing/README.md)
   - [Creating and Preparing Textures](tutorials/texturing/сreating-and-preparing-textures.md)

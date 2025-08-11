@@ -6,7 +6,7 @@ ___
 
 - How working in Blender and creating animations
 - Skeleton animations ([*.skl](../../reference/file-formats/animations/skl-skls.md), [*.skls](../../reference/file-formats/animations/skl-skls.md), [*.omf](../../reference/file-formats/animations/omf.md))
-- Camera animations ([*.anm](../../reference/file-formats/animations/anm.md), [*.omf](../../reference/file-formats/animations/omf.md)) 
+- Camera animations ([*.anm](../../reference/file-formats/animations/anm.md), [*.omf](../../reference/file-formats/animations/omf.md))
 
 ## Related Videos
 
@@ -21,7 +21,8 @@ ___
 ___
 
 ## Articles
-* [Creating hud hands animation in Blender](creating-hud-hands-animation-in-blender.md#beginning)
+
+- [Creating hud hands animation in Blender](creating-hud-hands-animation-in-blender.md#beginning)
 
 ## Creating animations
 

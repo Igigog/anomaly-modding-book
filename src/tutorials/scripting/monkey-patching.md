@@ -14,7 +14,7 @@ First a caution, it is always better to simply use call backs. There are a signi
 
 In general Anomaly scripts are loaded in alphabetical order. When you monkey patch a script that hasn’t loaded you force it to load. If two monkey patches are applied the script that comes last wins. Starting the name of your script with a z means that it will load after most other scripts. While only sometimes necessary and very rarely problematic, the strong suggestion to do so in an earlier version of this guide has resulted in a convention of starting monkey patch scripts with z or zzz.  
 
-If a function or variable in a script is declared as `local` other scripts can’t manipulate it, so you have to [unlocalize](../../tutorials/addons/lua-unlocalizer.md) it first. If you don't want to use the unlocalizer there are some tips at the end of this guide. 
+If a function or variable in a script is declared as `local` other scripts can’t manipulate it, so you have to [unlocalize](../../tutorials/addons/lua-unlocalizer.md) it first. If you don't want to use the unlocalizer there are some tips at the end of this guide.
 
 ## Patching Variables
 
@@ -90,7 +90,7 @@ It is important to understand that no matter what name you give a function it ca
 
 TL;DR: lua oop doesn’t use classes, but, for reasons, X-Ray’s lua does and we can patch either or both the classes or the instance objects.
 
-### What the : (colon) operator really does.
+### What the : (colon) operator really does
 
 The : operator in lua is simply a shortcut. Any function defined with a : can be called without it.
 
@@ -115,17 +115,18 @@ end
 
 When calling a function the : acts like . but also passes the table to it’s left as an invisible first parameter to the function on the right.
 
-When defining a function : acts like . but also inserts the variable self at the beginning of the parameter list. This syntax allows lua oop to have a familiar syntax. 
+When defining a function : acts like . but also inserts the variable self at the beginning of the parameter list. This syntax allows lua oop to have a familiar syntax.
 
 While the C++ term “member functions” is not technically correct lua terminology it will be used to refer to functions defined and invoked with the colon operator in this guide.
 
 It is important to remember that member functions in lua do not have any special access to the table they are stored in. The self table is passed into the function, literally or by the use of the : operator. If invoked without being passed the self variable the function will not have that access and fail. Similarly a function not stored in the table will have the same access to the table if passed it.
 
 ### Monkey patching member functions in the “class” definition
- 
-Remembering that the “class” is simply a table acting as a template and the rules of the : operator monkey patching a member function is a simple extension of what was described earlier. The first step of making a copy of the original function must be done using simple dot notation as the colon operator can only be used to define or call functions in a table. To avoid collision with other monkey patches it is best to not store your copy in the template table but rather as a variable in your script. Doing this will make it so that the copy cannot be called using the colon operator and must be passed the self table before any other parameters. Defining your replacement function can be done with either syntax but it is simplest to match the original syntax in the script you are patching. 
+
+Remembering that the “class” is simply a table acting as a template and the rules of the : operator monkey patching a member function is a simple extension of what was described earlier. The first step of making a copy of the original function must be done using simple dot notation as the colon operator can only be used to define or call functions in a table. To avoid collision with other monkey patches it is best to not store your copy in the template table but rather as a variable in your script. Doing this will make it so that the copy cannot be called using the colon operator and must be passed the self table before any other parameters. Defining your replacement function can be done with either syntax but it is simplest to match the original syntax in the script you are patching.
 
 This patch tracks when the putall function is running.
+
 ```lua
 LMode_PutAllBase =ui_inventory.UIInventory.LMode_PutAll
 
@@ -135,21 +136,19 @@ function ui_inventory.UIInventory:LMode_PutAll()
     PUTALL = false
 end
 ```
+
 Note how the copy of the function was stored `UIInventory.LMode_PutAll` despite the fact the function is defined as `UIInventory:LMode_PutAll`, you must use dot to copy functions.
 Additionally note how `self` was passed into the copy of the put all function, this is done because the function was defined as `UIInventory:LMode_PutAll` and therefore needs to have `self` as its first parameter. `self` is being provided to the patch function invisibly because it is defined with :
 
-
 ### Monkey patching the instanced object
 
-Just as classes are simply tables used as templates so too the instanced objects are simply tables made from templates. It is possible to add, change and remove fields and functions in the instanced object as well. The first example in this doc about changing variables is actually changing member variables of an instance of the UIInventory class.  Patching functions this way works the same as patching the “class”, since both are tables. The only difference is that patching an instance object only affects that one object, not others instanced from the class. Meanwhile patching the class affects all objects instanced from it, even those instanced before the patch was applied(assuming the object was not patched directly), as well as classes inherited from the class you are patching, assuming the function was not overridden. 
+Just as classes are simply tables used as templates so too the instanced objects are simply tables made from templates. It is possible to add, change and remove fields and functions in the instanced object as well. The first example in this doc about changing variables is actually changing member variables of an instance of the UIInventory class.  Patching functions this way works the same as patching the “class”, since both are tables. The only difference is that patching an instance object only affects that one object, not others instanced from the class. Meanwhile patching the class affects all objects instanced from it, even those instanced before the patch was applied(assuming the object was not patched directly), as well as classes inherited from the class you are patching, assuming the function was not overridden.
   
+### Some closing notes
 
+#### Dealing with local
 
-### Some closing notes.
-
-#### Dealing with local.
 The unlocalizer is a great tool but in addition to only being available for modded exe's it can rarely have odd side effects. If you want to avoid using it to maintain compatibility with vanilla anomaly here are some tips:
-
 
 Sometimes you can get lucky if you dig a bit deeper. Actor_effects.actor_on_item_use is declared local. Not only can you not change it, you also cannot unregister the callback that it is assigned to. However all `Actor_effects.actor_on_item_use` does is call `Actor_effects.play_item_fx(obj:section())` which is not local.  `Actor_effects.actor_on_item_use` can be modified or disabled by patching `Actor_effects.play_item_fx`. (Be careful tho, that particular function is called from other places as well, and if you don’t want to disable them then you may need to get very creative or are out of luck.)
 
