@@ -161,6 +161,7 @@ and then restored with:
 ```
 
 #### Tips
+
 1. You can use console command `time_factor N` where N goes float from 0 to 1 to slow down the game time. This can be useful for testing purposes.
 
 ### *.anm animations

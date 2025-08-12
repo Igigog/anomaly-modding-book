@@ -24,6 +24,7 @@ This adds a new script attachment with the name `name` the actor game_object usi
 Attachments can have any name and creating an attachment with a name that is already used by an attachment will delete the previous attachment.  
 
 You can also attach attachments to other attachments:
+
 ```lua
 local child_att = test_att:add_attachment("child", "path\\to\\other_model")
 local child_child_att = child_attachment:add_attachment("child_child", "path\\to\\another_model")
@@ -32,6 +33,7 @@ local child_child_att = child_attachment:add_attachment("child_child", "path\\to
 ### How do I remove them?
 
 If you want to remove an attachment, just remove it from its parent:
+
 ```lua
 test_att:remove_attachment("child")
 child_att = nil
@@ -43,6 +45,7 @@ Any child attachments of `child_att` will be removed as well.
 Make sure you don't keep references to deleted attachments in your scripts or you might get pure virtual function errors, similar to storing a reference to a destroyed game_object.
 
 `remove_attachment` also accepts script_attachment objects, so it's possible to do this:
+
 ```lua
 test_att:remove_attachment(child_att)
 child_att = nil
@@ -53,6 +56,7 @@ child_child_att = nil
 
 It's possible to access a script attachment without it being stored in a variable.
 You can access it using its name:
+
 ```lua
 db.actor:get_attachment("name")
 ```
@@ -76,12 +80,14 @@ script_attachment_type = {
 ```
 
 Using getter/setter we can read and change the attachment type:
+
 ```lua
 get_type()
 set_type(number)
 ```
 
 If we want the attachment to render in hud mode, we can do it as follows:
+
 ```lua
 test_att:set_type(0)
 -- or
@@ -99,6 +105,7 @@ This is especially useful for things like 3D UIs or visible 3D helmets and gasma
 ### Attachment names
 
 The name of an attachment can be read or set at any time:
+
 ```lua
 test_att:get_name()
 test_att:set_name("new_name")
@@ -107,17 +114,22 @@ test_att:set_name("new_name")
 ### Getting and setting parent
 
 If you need the parent object or parent attachment of an attachment for whatever reason, it's possible to access it like this:
+
 ```lua
 local parent_tbl = test_att:get_parent()
 ```
+
 We’ll receive a table, that looks like this:
+
 ```lua
 parent_tbl = {
 	["object"] = userdata, -- (reference to db.actor)
 	["attachment"] = nil
 }
 ```
+
 Now we know that the attachment is attached to a game_object and we have a reference to said game_object.
+
 ```lua
 local parent_tbl = test_att:get_parent()
 if parent_tbl.object then
@@ -130,9 +142,11 @@ end
 
 Maybe you want to transfer your script attachment to another parent game_object or attachment?
 Just use `set_parent`, it will transfer the attachment, as well as any child attachments to the new parent:
+
 ```lua
 test_att:set_parent(npc)
 ```
+
 **The attachment will overwrite an existing attachment of the new parent object, if it uses the same name!**
 *(Might get changed in the future)*
 
@@ -142,15 +156,18 @@ test_att:set_parent(npc)
 
 By default the script attachment will attach to the root bone (bone 0) of the parent game_object or attachment.
 You can change the parent bone at any time using
+
 ```lua
 test_att:set_parent_bone(15)
 -- or
 test_att:set_parent_bone("bip01_head")
 ```
+
 In this case it will set the parent bone to `bip01_head` of the parent npc object.
 Changing to a bone that doesn't exist will default to the root bone.
 
 To get the current parent bone id you can use
+
 ```lua
 local bone_id = test_att:get_parent_bone()
 ```
@@ -200,10 +217,12 @@ You can change the origin point of an attachment.
 By default the root bone of the attachment will be used as its origin point.
 
 Say, you want to rotate the attachment around its center, instead of its root bone:
+
 ```lua
 local center = test_att:get_center()
 test_att:set_origin(center)
 ```
+
 `get_center()` can be used to get the center position of an attachment model (also works on game objects).  
 
 ____
@@ -211,20 +230,24 @@ ____
 ## Attachment model
 
 To get the path of the model that is currently used for a script attachment use
+
 ```lua
 local path = test_att:get_model()
 ```
 
 The model can be changed at any time
+
 ```lua
 test_att:set_model("path\\to\\new_model", false)
 ```
+
 The boolean tells the engine if existing bone callbacks should be kept in place.  
 You can find out more about bone callbacks <a href="script-attachments.html#bone-callbacks">down below</a>.
 
 ### Model bones
 
 The bone methods are similar to the ones we have for game_objects, accepting both IDs and bone names:
+
 ```lua
 bone_id(string)
 bone_name(number)
@@ -250,12 +273,15 @@ list_bones()
 
 If the model contains any motions or motion references, you can play them on the attachment model.  
 **By default the engine will try to play the `idle` motion, so it's advised to always add one to your model if you're exporting it as a dynamic model.**
+
 ```lua
          -- Name    MixIn    Speed
 play_motion(string, boolean, number)
 ```
+
 \
 Example
+
 ```lua
 -- returns animation length in milliseconds
 local anm_length = test_att:play_motion("reload", false, 1)
@@ -278,6 +304,7 @@ The first type of bone callbacks simply copies the position of a bone of the par
 It's mainly useful if you want to attach something with multiple bones to a parent object and have it follow its animations.
 
 Usage
+
 ```lua
 test_att:bone_callback(attachment_bone, parent_bone, true)
 -- attachment_bone is the name or ID of the bone of the attachment model we want to modify
@@ -285,8 +312,10 @@ test_att:bone_callback(attachment_bone, parent_bone, true)
 -- setting the boolean to true tells the engine that we don't need to calculate
 -- animations for this bone (on the attachment model) - mainly for performance reasons
 ```
+
 \
 For example we can add an exoskeleton to the player model like this
+
 ```lua
 -- attach exo model
 local exo_n = db.actor:add_attachment("exoskeleton_body", ogf_file_npc)
@@ -306,11 +335,13 @@ for i=33,35 do
 	exo_n:bone_callback(i,i,true)
 end
 ```
+
 **You have to set the callback for bone 0 on actor, stalker and mutant models, otherwise the attachment will awkwardly shift around sometimes due to foot IK.**  
 \
 \
 Attaching something to the first person hands is a little more involved.  
 Since left and right arms use seperate models, we have to attach two script attachments:
+
 ```lua
 local exo_r = db.actor:add_attachment("exoskeleton_right_arm", ogf_file)
 
@@ -347,7 +378,6 @@ for i=0,20 do
 end
 ```
 
-
 ### Script Bone Callback
 
 The second type of bone callbacks uses a lua function to modify the final position of a bone.  
@@ -356,6 +386,7 @@ It is called each frame so don't use too many of them if you can avoid it :)
 We need a function for our callback.  
 It takes the matrix of the bone and does calculations on it to modify the final bone matrix.  
 See the following example from the lockpick UI
+
 ```lua
 function cylinder_callback(mat)
 	-- temp copy of position since setHPB overwrites it
@@ -369,8 +400,10 @@ function cylinder_callback(mat)
 	return mat
 end
 ```
+
 \
 Since we want the cylinder_rotation to be applied on top of an animated lock, we don't disable animation calculation this time (third argument is `false`).
+
 ```lua
 lockpicker:bone_callback(1, cylinder_callback, false)
 ```
@@ -378,6 +411,7 @@ lockpicker:bone_callback(1, cylinder_callback, false)
 ### Removing Bone Callbacks
 
 Bone callbacks can be removed like this
+
 ```lua
 -- remove bone callback from bone with ID 1
 lockpicker:remove_bone_callback(1)
@@ -386,6 +420,7 @@ lockpicker:remove_bone_callback(1)
 ### Persisting through model change
 
 As mentioned before, you can tell the engine to keep existing bone callbacks in place when changing the attachment model by setting the second argument to true in `set_model`
+
 ```lua
 lockpicker:set_model("path\\to\\other_lock", true)
 ```
@@ -400,6 +435,7 @@ Another nice to have feature, you can attach script 3D UI to attachments (UI lik
 Check `gamedata\scripts\ui_dosimeter.script` to see how script 3D UI works.
 
 Available functions:
+
 ```lua
 get_ui()
 get_ui_bone()
@@ -414,18 +450,22 @@ set_ui_position()
 set_ui_rotation(vector)
 set_ui_rotation(number, number, number)
 ```
+
 \
 Let's say, we want to display the dosimeter UI on the attachment model:
+
 ```lua
 test_att:set_ui("ui_dosimeter.get_UI")
 test_att:set_ui_bone(5)
 test_att:set_ui_position(0,0.1,0)
 test_att:set_ui_rotation(90,0,0)
 ```
+
 \
 You can even change the scale of the UI using bone callbacks!  
 Just change the scale of the bone the UI is attached to.  
 *(Better use a bone that is not actually used by the model, or you'll scale a part of it.)*
+
 ```lua
 test_att:bone_callback(5, scale_func, false)
 
@@ -441,6 +481,7 @@ end
 
 First create an attachment_script_light, it can use the same functions and properties as a regular script_light.  
 *(Make sure to keep a reference to the script light or it will be garbage collected)*
+
 ```lua
 att_light = attachment_script_light()
 att_light.type = 2
@@ -448,26 +489,34 @@ att_light.hud_mode = true
 att_light:set_cone(math.rad(0.5))
 att_light.color = fcolor():set(1,0,0,1)
 ```
+
 \
 attachment_script_light position and direction work as an offset to the attachment position/direction
+
 ```lua
 att_light:set_position(0,0,2)
 att_light:set_direction(0,90,0)
 ```
+
 \
 Finally use `attach_light` to attach the light to your script attachment
+
 ```lua
 att:attach_light(att_light)
 ```
+
 \
 Similar to script 3D UI you can get/set which bone the light is attached to
+
 ```lua
 set_light_bone(number)
 set_light_bone(string)
 get_light_bone()
 ```
+
 \
 If you don't have a reference to the attached light you can get one using
+
 ```lua
 att_light = att:get_light()
 ```
@@ -476,6 +525,7 @@ att_light = att:get_light()
 
 Similar to inventories, it's possible to iterate all attachments of an object or attachment  
 This example prints the name, followed by the model of every attachment attached to `obj`.
+
 ```lua
 local function it_att(name, attachment)
 	printf(name)

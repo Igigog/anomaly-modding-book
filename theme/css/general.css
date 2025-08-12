@@ -241,3 +241,42 @@ sup {
 .result-no-output {
     font-style: italic;
 }
+
+.table-tabs {
+    margin: 20px 0;
+  }
+  
+.tab-buttons {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+  
+.tab-button {
+  padding: 6px 12px;
+  background: var(--button-bg);
+  color: var(--button-fg);
+  border: none;
+  border-radius: 4px 4px 0 0;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background 0.2s ease;
+}
+  
+.tab-button:hover {
+  background: var(--button-hover-bg);
+}
+  
+.tab-button.active {
+  background: var(--button-active-bg);
+  color: var(--button-active-fg);
+}
+  
+.tab-content {
+  display: none;
+}
+  
+.tab-content table {
+  width: 100%;
+  border-collapse: collapse;
+}

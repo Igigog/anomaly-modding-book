@@ -16,7 +16,6 @@ edit-url-template = "https://github.com/Igigog/anomaly-modding-book/edit/main/{p
 
 additional-css = [
     "theme/css/custom.css",
-    "theme/css/tables.css",
     "theme/css/mdbook-admonish.css",
     "theme/css/whichlang.css",
     ]

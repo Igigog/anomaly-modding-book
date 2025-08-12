@@ -61,6 +61,12 @@
     --copy-button-filter: invert(45%) sepia(6%) saturate(621%) hue-rotate(198deg) brightness(99%) contrast(85%);
     /* Same as `--sidebar-active` */
     --copy-button-filter-hover: invert(68%) sepia(55%) saturate(531%) hue-rotate(341deg) brightness(104%) contrast(101%);
+
+    --button-bg: rgba(255, 255, 255, 0.08);
+    --button-fg: #c8c9db;
+    --button-hover-bg: rgba(255, 255, 255, 0.15);
+    --button-active-bg: #ffb454;
+    --button-active-fg: #14191f;
 }
 
 .coal {
@@ -110,6 +116,12 @@
     --copy-button-filter: invert(26%) sepia(8%) saturate(575%) hue-rotate(169deg) brightness(87%) contrast(82%);
     /* Same as `--sidebar-active` */
     --copy-button-filter-hover: invert(36%) sepia(70%) saturate(503%) hue-rotate(167deg) brightness(98%) contrast(89%);
+
+    --button-bg: #43484d;
+    --button-fg: #a1adb8;
+    --button-hover-bg: #4d545a;
+    --button-active-bg: #3473ad;
+    --button-active-fg: #ffffff;
 }
 
 .light, html:not(.js) {
@@ -159,6 +171,12 @@
     --copy-button-filter: invert(45.49%);
     /* Same as `--sidebar-active` */
     --copy-button-filter-hover: invert(14%) sepia(93%) saturate(4250%) hue-rotate(243deg) brightness(99%) contrast(130%);
+
+    --button-bg: #f0f0f0;
+    --button-fg: #333333;
+    --button-hover-bg: #e0e0e0;
+    --button-active-bg: #1f1fff;
+    --button-active-fg: #ffffff;
 }
 
 .navy {
@@ -208,6 +226,12 @@
     --copy-button-filter: invert(51%) sepia(10%) saturate(393%) hue-rotate(198deg) brightness(86%) contrast(87%);
     /* Same as `--sidebar-active` */
     --copy-button-filter-hover: invert(46%) sepia(20%) saturate(1537%) hue-rotate(156deg) brightness(85%) contrast(90%);
+
+    --button-bg: #2d334f;
+    --button-fg: #c8c9db;
+    --button-hover-bg: #353b5a;
+    --button-active-bg: #2b79a2;
+    --button-active-fg: #ffffff;
 }
 
 .rust {
@@ -255,6 +279,12 @@
     --copy-button-filter: invert(51%) sepia(10%) saturate(393%) hue-rotate(198deg) brightness(86%) contrast(87%);
     /* Same as `--sidebar-active` */
     --copy-button-filter-hover: invert(77%) sepia(16%) saturate(1798%) hue-rotate(328deg) brightness(98%) contrast(83%);
+
+    --button-bg: #b38f6b;
+    --button-fg: #3b2e2a;
+    --button-hover-bg: #c9a989;
+    --button-active-bg: #e69f67;
+    --button-active-fg: #262625;
 }
 
 @media (prefers-color-scheme: dark) {
