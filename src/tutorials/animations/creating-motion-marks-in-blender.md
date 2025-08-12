@@ -12,7 +12,7 @@ ___
 
 ## About
 
-Motion Marks can be useful for creating events in animations (e.g., enabling IK on NPC legs, marking the end of a reload animation, etc.).
+Motion Marks can be useful for creating marks in animations (e.g., enabling IK on NPC legs, marking the end of a reload animation, etc.).
 
 ```admonish info
 In the [Blender X‑Ray Addon](../../modding-tools/blender/blender-x-ray-addon-summary.md), Motion Marks are implemented via [Custom Properties](https://docs.blender.org/manual/en/latest/files/custom_properties.html).
@@ -26,7 +26,7 @@ To preserve these marks when exporting, you must set the export format to `CS/Co
 
 To get started you’ll need to create an animation.
 
-Pick any bone and open its `Bone Properties`![alt text svg-icon](../../assets/icons/blender/bone.svg). Add a Custom Property to the bone. Click `Edit Property`![alt text svg-icon](../../assets/icons/blender/preferences.svg)t the Motion Mark to be called. to rename it to whatever you wan
+Pick any bone and open its `Bone Properties`![alt text svg-icon](../../assets/icons/blender/bone.svg). Add a Custom Property to the bone. Click `Edit Property`![alt text svg-icon](../../assets/icons/blender/preferences.svg) to rename Custom Property (Motion Mark).
 
 - Open `Dope Sheet` or `Timeline` and select the animation you want to work with.
 - In the N‑panel, find the X‑Ray section.

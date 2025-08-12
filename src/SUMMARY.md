@@ -97,9 +97,6 @@
   - [Task Creation](tutorials/quests/task_guide.md)
   - [Dialogue Creation](tutorials/quests/dialogues.md)
 
-- [Levels](tutorials/levels/README.md)
-  - [Test Level](tutorials/levels/test-level.md)
-
 ---
 
 # References
@@ -147,12 +144,9 @@
     - [*.xml](reference/file-formats/conf-script/xml.md)
   - [Game Levels File Formats](reference/file-formats/game-levels/README.md)
     - [*.ai](reference/file-formats/game-levels/ai.md)
-    - [*.aimap](reference/file-formats/game-levels/aimap.md)
     - [*.cform](reference/file-formats/game-levels/cform.md)
     - [*.details](reference/file-formats/game-levels/details.md)
-    - [*.level](reference/file-formats/game-levels/dot-level.md)
     - [*.env_mod](reference/file-formats/game-levels/env_mod.md)
-    - [*.err](reference/file-formats/game-levels/err.md)
     - [*.fog_vol](reference/file-formats/game-levels/fog_vol.md)
     - [*.game](reference/file-formats/game-levels/game.md)
     - [*.geom](reference/file-formats/game-levels/geom.md)
@@ -163,7 +157,6 @@
     - [level](reference/file-formats/game-levels/level.md)
     - [*.lights](reference/file-formats/game-levels/lights.md)
     - [*.part](reference/file-formats/game-levels/part.md)
-    - [*.prj](reference/file-formats/game-levels/prj.md)
     - [*.ps_static](reference/file-formats/game-levels/ps_static.md)
     - [*.snd_env](reference/file-formats/game-levels/snd_env.md)
     - [*.snd_static](reference/file-formats/game-levels/snd_static.md)
@@ -197,7 +190,11 @@
     - [*.s](reference/file-formats/shaders/s.md)
     - [*.vs](reference/file-formats/shaders/vs.md)
   - [SDK File Formats](reference/file-formats/sdk/README.md)
+    - [*.aimap](reference//file-formats/sdk/aimap.md)
+    - [*.level](reference/file-formats/sdk/dot-level.md)
     - [*.dti](reference/file-formats/sdk/dti.md)
+    - [*.err](reference/file-formats/sdk/err.md)
+    - [*.prj](reference/file-formats/sdk/prj.md)
     - [*.rai](reference/file-formats/sdk/rai.md)
   - [Textures File Formats](reference/file-formats/textures/README.md)
     - [*.dds](reference/file-formats/textures/dds.md)
