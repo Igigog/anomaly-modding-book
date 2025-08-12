@@ -19,6 +19,7 @@ Pressing Esc or F11 will hide it again - you can also transfer the input back to
 In this case, pressing F11 will bring the input back to the ImGui overlay.
 
 Some resources to get you started on ImGui:
+
 - <a href="https://pthom.github.io/imgui_manual_online/manual/imgui_manual.html">Interactive ImGui Demo</a>
 - <a href="https://github.com/ocornut/imgui/wiki/Debug-Tools">ImGui Debug Tools</a> (accessible in-game from the `About` menu)
 
@@ -32,20 +33,26 @@ The main differences:
 - `ImGui.` instead of `ImGui::`
 
 - Some functions return multiple values, so the following C++ code
-	```c++
-	bool expanded = ImGui::Begin("My Test Window", &my_window_visible, 0)
-	```
-	turns into
-	```lua
-	expanded, my_window_visible = ImGui.Begin("My Test Window", my_window_visible, 0)
-	```
+
+```c++
+bool expanded = ImGui::Begin("My Test Window", &my_window_visible, 0)
+```
+
+turns into
+
+```lua
+expanded, my_window_visible = ImGui.Begin("My Test Window", my_window_visible, 0)
+```
+
 - `ImGui.Text()` and `ImGui.TextUnformatted()` do the same thing, use `string.format()` to format strings
 - The `InputText` functions have their return values swapped
-	```lua
-	multiline_text, changed = ImGui.InputTextMultiline("##Multiline", multiline_text, 500, vector2():set(500,500))
-	-- vs. other functions
-	changed, test_value = ImGui.DragFloat("Test", test_value, 0.01, 0, 10)
-	```
+
+```lua
+multiline_text, changed = ImGui.InputTextMultiline("##Multiline", multiline_text, 500, vector2():set(500,500))
+-- vs. other functions
+changed, test_value = ImGui.DragFloat("Test", test_value, 0.01, 0, 10)
+```
+
 - Scripted ImGui uses XRay types (`vector2, vector, vector4, fcolor`)
 
 Check `lua_help_imgui.script` for a full list of functions and enums.
@@ -271,6 +278,7 @@ You can add custom fonts by putting `.ttf` or `.otf` files into `gamedata\textur
 Optionally, font configurations can be changed by adding a `.ltx` file with the same name into the fonts folder
 
 Example font configuration to change the font size (fonts use `sizepixels = 16` by default)
+
 ```ini
 [font]
 sizepixels = 19

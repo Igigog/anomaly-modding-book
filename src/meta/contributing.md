@@ -1,14 +1,16 @@
 # Contributing
 
 ___
+
 ## Forward
+
 For all of these methods you will need a github account. It's free and Microsoft has only barely begun to enshittify it.
 
 Simple changes like correcting word choice, or adding a couple sentences to an existing guide can be done via the first method with no real knowledge of github or markdown. Changing formatting and adding links or images will require a familiarity with markdown, or a markdown editor. There are extensions for google docs that can export to markdown. [StackEdit](https://stackedit.io/) is an online markdown editor that will let you format text using normal word processor tools and dispaly both the raw markdown and the final file side by side and can be a nice way to learn markdown. Lastly the github web editor can be toggled back and forth between editing the raw mark down and previewing the final formatting, but lacks a spell check.
 
 The book has advanced styling that can only be previewed using the third contribution method, anything you preview in a markdown editor or the web github editor will not look exactly like it will in the book.
 
-The style sheet article includes some basic markdown tips and the structure article will tell you where you should put new files. 
+The style sheet article includes some basic markdown tips and the structure article will tell you where you should put new files.
 
 ___
 
@@ -23,7 +25,7 @@ ___
 
 ## Second way to contribute
 
-If you want to add entirely new articles via only a web interface (because you can't or do not want to install new software on your computer for instance) and don't mind that you won't be able to preview the exact way the file will look in the book then this section may be for you, but you should consider using the third method as it is the intended way to interface with the software that runs the book. Lastly the github web client doesn't have a way for you to save your work in progress without committing them which can be awkward (clutters up the commit history), this can mostly be gotten around by using one of the web markdown editors mentioned in the forward. 
+If you want to add entirely new articles via only a web interface (because you can't or do not want to install new software on your computer for instance) and don't mind that you won't be able to preview the exact way the file will look in the book then this section may be for you, but you should consider using the third method as it is the intended way to interface with the software that runs the book. Lastly the github web client doesn't have a way for you to save your work in progress without committing them which can be awkward (clutters up the commit history), this can mostly be gotten around by using one of the web markdown editors mentioned in the forward.
 
 First you will need to fork the book, if you have already submitted simple changes via the first method this will already have been done. Otherwise you can follow these steps:
 
@@ -39,9 +41,6 @@ First you will need to fork the book, if you have already submitted simple chang
 Next you need to navigate to the folder where your file will be created, see the Book Structure article. In the upper right of the window will be an add file button. You can upload a file you already have or create a new one directly.
 
 If you create a new article, you need to add it to `src/SUMMARY.md` for it to be shown.
-
-
-
 
 ___
 

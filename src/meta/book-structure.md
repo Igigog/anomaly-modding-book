@@ -17,7 +17,7 @@ Different types of technical documentation are used in this book. They are descr
 
 ### Engine
 
-This is engine related Code и API Documentation.
+This is engine related Code and API Documentation.
 
 ### Script
 
