@@ -190,7 +190,7 @@
     - [*.s](reference/file-formats/shaders/s.md)
     - [*.vs](reference/file-formats/shaders/vs.md)
   - [SDK File Formats](reference/file-formats/sdk/README.md)
-    - [*.aimap](reference//file-formats/sdk/aimap.md)
+    - [*.aimap](reference/file-formats/sdk/aimap.md)
     - [*.level](reference/file-formats/sdk/dot-level.md)
     - [*.dti](reference/file-formats/sdk/dti.md)
     - [*.err](reference/file-formats/sdk/err.md)
