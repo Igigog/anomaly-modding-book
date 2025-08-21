@@ -1,5 +1,5 @@
 export default {
-    site: 'https://igigog.github.io/anomaly-modding-book/',
+    site: 'http://localhost:3000',
     debug: true,
     crawler: true,
     scanner: {

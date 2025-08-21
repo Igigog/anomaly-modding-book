@@ -4,7 +4,7 @@ ___
 
 ## About
 
-Configuration parameters for weapons
+Configuration parameters for weapons.
 
 ___
 
@@ -263,5 +263,5 @@ ___
 | zoom_cam_relax_speed_ai | Determines the speed of camera recovery (return) after recoil for NPCs in aiming mode (if not specified, cam_relax_speed_ai is used) | 360 |  |
 | holder_fov_modifier | NPC angle of view multiplier (eye_fov) with this weapon | 1.0 | Specified in numbers |
 | holder_range_modifier | NPC range multiplier (eye_range) with this weapon | 1.0 | Specified in numbers |
-| min_radius |  |  |  |
-| max_radius |  |  |  |
+| min_radius | Minimum effective range for AI usage |  |  |
+| max_radius | Maximum effective range for AI usage |  |  |

@@ -15,12 +15,12 @@ ___
 | corpse_visual | Dead mutant model | monsters\krovosos\krovosos_dead |  |
 | destroyed_vis_name | visual, what remains when destroying a monster in an anomaly |  |  |
 | cform | parameter for dynamic objects; necessary for correct creation of the skeleton model | skeleton | skeleton |
-| class | engine mutant class | SM_BLOOD | SM_BLOOD -  |
+| class | Engine mutant class | SM_BLOOD | SM_BLOOD -  |
 | script_binding  |  | bind_monster.bind |  |
 | rank |  | 16 |  |
 | spec_rank | Monster rank displayed in statistics | normal |  |
 | community | What type of monster belongs to | bloodsucker | Taken from game_relations.ltx |
-| species | biological species | bloodsucker |  |
+| species | Biological species | bloodsucker |  |
 | monster_type |  |  | indoor<br> outdoor |
 | can_spawn_phantom | Can spawn phantoms | true | `true` or `1` or `on` - Yes<br> `false` or `0` or `off` - No |
 | spawn_phantom |  | m_phantom_bloodsucker |  |
@@ -35,7 +35,7 @@ ___
 
 | Parameter Name | Parameter Description | Example Value | Possible Parameters |
 |---|---|---|---|
-| berserk_always |  | true | `true` or `1` or `on` - Yes<br> `false` or `0` or `off` - No |
+| berserk_always | Boolean flag determining if monster is always in berserk state | true | `true` or `1` or `on` - Yes<br> `false` or `0` or `off` - No |
 | DayTime_Begin | Beginning of a mutant's day | 22 | Game Time |
 | DayTime_End | End of a mutant's day | 5 | Game Time |
 | Min_Satiety | Minimum hunger value | 0.000055 |  |

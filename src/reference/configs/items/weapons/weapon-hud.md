@@ -4,7 +4,7 @@ ___
 
 ## About
 
-1213
+Configuration parameters for HUD weapons.
 
 ## General
 
@@ -168,19 +168,19 @@ Weapon animation parameters when attempting to shoot with an empty magazine
 | aim_hud_offset_alt_rot |  | 0, 0, 0 | X --- (`+`) yaw left / (`-`) yaw right<br> Y --- (`+`) pitch up / (`-`) pitch down<br> Z --- (`-`) roll right / (`+`) roll left |
 | scope_zoom_factor_alt |  |  |  |
 
-## Shell
+## Shell particles
 
 | Parameter Name | Parameter Description | Example Value | Possible Parameters |
 |---|---|---|---|
-| shell_bone | bone which will be considered the origin of coordinates for the shell sprite in 1st person view | wpn_body | Bone name |
-| shell_dir | the offset parameter of the shells after departure, in 1st person view | 0, 1, 0 | X --- (`-`) left / (`+`) right<br> Y --- (`+`) up / (`-`) down<br> Z --- (`-`) forward / (`+`) backward |
+| shell_bone | Bone which will be considered the origin of coordinates for the shell sprite in 1st person view | wpn_body | Bone name |
+| shell_dir | Offset parameter of the shells after departure, in 1st person view | 0, 1, 0 | X --- (`-`) left / (`+`) right<br> Y --- (`+`) up / (`-`) down<br> Z --- (`-`) forward / (`+`) backward |
 | shell_point | Coordinates of the bullets ejection point in 1st person view | 0, 0.064, 0.19 | X --- (`-`) left / (`+`) right<br> Y --- (`+`) up / (`-`) down<br> Z --- (`-`) forward / (`+`) backward |
 
-## Particles
+## Fire particles
 
 | Parameter Name | Parameter Description | Example Value | Possible Parameters |
 |---|---|---|---|
-| fire_bone |  | wpn_body | Bone name |
+| fire_bone | Bone which will be considered the origin of coordinates for the fire sprite in 1st person view | wpn_body | Bone name |
 | fire_bone2 |  | wpn_body | Bone name |
 | fire_point |  | 0, 0.051841, 0.535482 | X --- (`-`) left / (`+`) right<br> Y --- (`+`) up / (`-`) down<br> Z --- (`-`) forward / (`+`) backward |
 | fire_point2 |  | 0, -0.011, 0.553 | X --- (`-`) left / (`+`) right<br> Y --- (`+`) up / (`-`) down<br> Z --- (`-`) forward / (`+`) backward |

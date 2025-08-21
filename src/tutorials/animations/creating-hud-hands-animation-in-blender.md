@@ -1,4 +1,4 @@
-# Creating a hud hands animation in Blender
+# Creating a HUD Hands Animation in Blender
 
 ## Beginning
 
@@ -21,7 +21,7 @@
 
 * In `3d Viewport` > `X-Ray` > `Add` > `Add X-Ray Camera` select `HUD SoC/CS`
 * Select the camera in the `Outliner` editor
-* With `File` > `Import` > `X-Ray Animation Path` import any .anm from `gamedata\anims\camera_effects`
+* With `File` > `Import` > `X-Ray Animation Path` import any [*.anm](../../reference/file-formats/animations/anm.md) from `gamedata\anims\camera_effects`
 * In the `Dope Sheet` editor select the imported camera animation
 * Make sure the camera movement is playing
   * I noticed that when you are importing camera animation without selecting the camera, it will not work properly, so make sure you select the camera before importing (lol)
@@ -30,19 +30,19 @@
 * In `Properties` editor go to `Data` > `Lens`
 * Adjust FoV to your game settings (65 for the Gamma)
 
-## Creating a .omf file
+## Creating a *.omf file
 
 ### Preparing the scene
 
 * Create new Blender project
-* Import through `File` > `Import` > `X-Ray Game Object` any hands .ogf file, for example, any from `gamedata\meshes\anomaly_weapons\hands`
+* Import through `File` > `Import` > `X-Ray Game Object` any hands *.ogf file, for example, any from `gamedata\meshes\anomaly_weapons\hands`
 * Select the imported object
 * In `Properties` editor go to `Data` > `Bone Collections` > `Add Bone Collection`
 * In `3d Viewport` editor go to the `Pose Mode`
 * Select all the bones in the `3d Viewport` editor
 * In the `Bone Collections` select the newly created bone collection and click on `Assign Selected Bones`
 
-### Exporting the .omf file
+### Exporting the *.omf file
 
 * Import your .skl file(s) through `File` > `Import` > `X-Ray Skeletal Animation`
 * In the `Dope Sheet` editor select and play your animation and make sure it works
@@ -50,13 +50,13 @@
 * Both SoC and CS/CoP formats worked for me and I haven't seen someone using `High Quality Motions` checkbox, so you can choose any of formats
 * Select `Export Mode`
   * Overwrite - obvious
-  * Add - adds the animation to the existing .omf file
+  * Add - adds the animation to the existing *.omf file
     * This also can be done via `3d Viewport` > `X-Ray` > `OMF Editor` > `Merge OMF`
 
-### Managing the .omf file
+### Managing the *.omf file
 
 * Open the OMF Editor
-* Open your .omf file
+* Open your *.omf file
 * Refer to the [OMF Editor documentation](../../modding-tools/animations/omf-editor-by-valerok.md#about) for more information on how to use it
   * Usually you want to control [SDK Flags](../../modding-tools/animations/omf-editor-by-valerok.md#animation-options) for each specific animation
 
