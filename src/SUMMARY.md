@@ -435,6 +435,8 @@
     - [Update X-Ray Transforms](modding-tools/blender/addon-operators/operator-update-x-ray-transforms.md)
     - [Verify UV](modding-tools/blender/addon-operators/operator-verify-uv.md)
 
+- [Evaluation Function Constructor](modding-tools/ai/evaluation-function-constructor.md)
+
 - [Ltx Support](modding-tools/coding/ltx-support.md)
 
 - [Achive Compilers/Decompilers](modding-tools/achive-compilers-decompilers/README.md)
