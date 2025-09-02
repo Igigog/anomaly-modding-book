@@ -49,6 +49,7 @@ jobs:
           cargo install mdbook
           cargo install mdbook-admonish
           cargo install mdbook-mermaid
+          cargo install mdbook-linkcheck
 
       - name: Build book
         run: mdbook build
