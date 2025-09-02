@@ -48,7 +48,7 @@ In this category you can switch off support for import/export of formats. If for
 ### X-Ray Engine: Mesh
 
 - [*.object](../../../reference/file-formats/models/object.md)
-- [*.level](../../../reference/file-formats/game-levels/dot-level.md)
+- [*.level](../../../reference/file-formats/sdk/dot-level.md)
 - [*.part](../../../reference/file-formats/game-levels/part.md)
 - [*.group](../../../reference/file-formats/models/group.md)
 
@@ -61,7 +61,7 @@ To hide parameters from the `Object` block, you need to disable such formats:
 - [*.skls](../../../reference/file-formats/animations/skl-skls.md)
 - [*.ogf](../../../reference/file-formats/models/ogf.md)
 - [*.omf](../../../reference/file-formats/animations/omf.md)
-- [*.level](../../../reference/file-formats/game-levels/dot-level.md)
+- [*.level](../../../reference/file-formats/sdk/dot-level.md)
 - [*.part](../../../reference/file-formats/game-levels/part.md)
 - [*.group](../../../reference/file-formats/models/group.md)
 

@@ -103,7 +103,7 @@ Welp, let's get started. I hope you already have a GitHub account.
 
 5. You're awesome.
 
-#### Dependencies
+#### Dependencies (Optional)
 
 To run the local version you need to install dependencies. This can be done in different ways
 
@@ -130,7 +130,7 @@ Or
 - (Optional) Backend for mdBook which will check your links for you
 
     ```bash
-    cargo install mdbook-linkcheck2
+    cargo install mdbook-linkcheck
     ```
 
 #### Running local copy

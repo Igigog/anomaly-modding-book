@@ -93,9 +93,9 @@ This section describes the extensions that are found in the game files and the S
 
 | Extension | Description |
 |---|---|
-| [*.err](../file-formats/game-levels/err.md) | Contains information about geometry errors during level compilation |
+| [*.err](../file-formats/sdk/err.md) | Contains information about geometry errors during level compilation |
 | [level](../file-formats/game-levels/level.md) | File with general information about the game location (light sources, object names, texture and shader names, sectors and portals). Created during compilation |
-| [*.prj](../file-formats/game-levels/prj.md) | Level precompilation file |
+| [*.prj](../file-formats/sdk/prj.md) | Level precompilation file |
 | [*.ai](../file-formats/game-levels/ai.md) | AI location grid. Created during compilation |
 | [*.cform](../file-formats/game-levels/cform.md) | Geometry for calculating collisions. Calculated by the level compiler. Contains a solid map structure. All tangible objects with materials live here. Because of this, the game knows with what sound and property objects should react when they are hit by bullets or walked on |
 | [*.details](../file-formats/game-levels/details.md) | Detail Objects (grass, cigarette butts, construction debris) on the level. Created through LevelEditor SDK at compile time. |
@@ -106,7 +106,7 @@ This section describes the extensions that are found in the game files and the S
 | [*.geomx](../file-formats/game-levels/geomx.md) | It contains only geometry. In the renderer it is used in the shadow rendering passes, due to the fact that there is less information - loading data into the buffers - faster. |
 | [*.gtc](../file-formats/game-levels/gtc.md) | Cross table of correspondence between the location graph and the AI grid. Created during compilation |
 | [*.hom](../file-formats/game-levels/hom.md) | Mapping of hierarchical cutoffs |
-| [*.level](../file-formats/game-levels/dot-level.md) | List of SDK scene objects |
+| [*.level](../file-formats/sdk/dot-level.md) | List of SDK scene objects |
 | [*.lights](../file-formats/game-levels/lights.md) | Light sources for xrLC |
 | [*.ps_static](../file-formats/game-levels/ps_static.md) | Particle systems. Flies, steam from pipes, etc. |
 | [*.graph](../file-formats/game-levels/graph.md) | Global graph of AI navigation. Used, among other things, for moving AI objects outside the active level. |

@@ -6,7 +6,7 @@ ___
 
 Source file storing the list of objects in the group.
 
-- Features and limitations are similar to [*.level](../game-levels/dot-level.md) format.
+- Features and limitations are similar to [*.level](../sdk/dot-level.md) format.
 
 ___
 

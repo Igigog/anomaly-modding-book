@@ -23,11 +23,11 @@ By default, all exporters have the Alt modifier. Default key settings:
 | [*.bones](../../../reference/file-formats/models/bones.md) | Ctrl + F6 | Ctrl + Alt + F6 |
 | [*.dm](../../../reference/file-formats/models/dm.md) | Ctrl + F7 | Ctrl + Alt + F7 |
 | [*.details](../../../reference/file-formats/game-levels/details.md) | Ctrl + F8 | Ctrl + Alt + F8 |
-| [*.level](../../../reference/file-formats/game-levels/dot-level.md) | Shift + Ctrl + F5 | Shift + Ctrl + Alt + F5 |
+| [*.level](../../../reference/file-formats/sdk/dot-level.md) | Shift + Ctrl + F5 | Shift + Ctrl + Alt + F5 |
 | [level](../../../reference/file-formats/game-levels/level.md) | Shift + Ctrl + F6 | Shift + Ctrl + Alt + F6 |
 | [*.part](../../../reference/file-formats/game-levels/part.md) | Shift + Ctrl + F7 | Shift + Ctrl + Alt + F7 |
 | [*.group](../../../reference/file-formats/models/group.md) | Shift + Ctrl + F8 | Shift + Ctrl + Alt + F8 |
-| [*.err](../../../reference/file-formats/game-levels/err.md) |  |  |
+| [*.err](../../../reference/file-formats/sdk/err.md) |  |  |
 
 ### Enable/Disable
 

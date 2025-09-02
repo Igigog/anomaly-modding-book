@@ -1,7 +1,6 @@
 [book]
 authors = ["Igor Anpilogov"]
 language = "en"
-multilingual = false
 src = "src"
 title = "Anomaly Modding Book"
 description = "Introductory book for S.T.A.L.K.E.R. Anomaly modding"
@@ -39,7 +38,7 @@ level = 0
 enable = false
 page-break = true
 
-#[output.linkcheck2]
+[output.linkcheck]
 
 [preprocessor.mermaid]
 command = "mdbook-mermaid"

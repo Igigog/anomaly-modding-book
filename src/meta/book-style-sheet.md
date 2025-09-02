@@ -78,10 +78,4 @@ Since the book uses additional preprocessors, the following features can be used
     ```
 ```
 
-To check markdown for broken links you can use the `mdbook-linkcheck` backend. To enable it, open the `book.toml` file and uncomment a line (remove the hash).
-
-```toml
-# [output.linkcheck]
-```
-
 Then [run the local version of the book](contributing.md#running-local-copy). In the Terminal there will be a message about broken links (if there are any).

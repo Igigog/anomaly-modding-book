@@ -1,27 +1,3 @@
 # Game Levels File Formats
 
 ___
-
-- [*.ai](ai.md)
-- [*.cform](cform.md)
-- [*.details](details.md)
-- [*.level](dot-level.md)
-- [*.env_mod](env_mod.md)
-- [*.err](err.md)
-- [*.fog_vol](fog_vol.md)
-- [*.game](game.md)
-- [*.geom](geom.md)
-- [*.geomx](geomx.md)
-- [*.graph](graph.md)
-- [*.gtc](gtc.md)
-- [*.hom](hom.md)
-- [level](level.md)
-- [*.lights](lights.md)
-- [*.part](part.md)
-- [*.prj](prj.md)
-- [*.ps_static](ps_static.md)
-- [*.snd_env](snd_env.md)
-- [*.snd_static](snd_static.md)
-- [*.som](som.md)
-- [*.spawn](spawn.md)
-- [*.wallmarks](wallmarks.md)

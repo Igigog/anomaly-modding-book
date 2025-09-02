@@ -76,6 +76,7 @@
 - [Animations](tutorials/animations/README.md)
   - [Creating Camera Flyover in Game](tutorials/animations/creating-flyover-camera-animations-in-game.md)
   - [Creating HUD Animation in Blender](tutorials/animations/creating-hud-animation-in-blender.md)
+  - [Creating HUD Hands Animation in Blender](tutorials/animations/creating-hud-hands-animation-in-blender.md)
   - [Creating Camera Animations in Blender](tutorials/animations/creating-camera-animations.md)
   - [Editing Existing Animations in Blender](tutorials/animations/editing-existing-animations.md)
   - [Creating Motion Marks in Blender](tutorials/animations/creating-motion-marks-in-blender.md)
