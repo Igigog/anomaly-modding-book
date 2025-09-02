@@ -1,39 +1,66 @@
-name: Deploy
+name: Deploy mdBook
+
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   pull_request:
-    types: [assigned, opened, synchronize, reopened]
+    branches: [main]
 
 jobs:
-  deploy:
+  test:
+    name: Test build
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-      with:
-        fetch-depth: 0
-    - name: Install mdBook and plugins
-      run: |
-        mkdir mdbook
-        curl -sSL https://github.com/rust-lang/mdBook/releases/download/v0.4.48/mdbook-v0.4.48-x86_64-unknown-linux-gnu.tar.gz | tar -xz --directory=./mdbook
-        curl -sSL https://github.com/tommilligan/mdbook-admonish/releases/download/v1.20.0/mdbook-admonish-v1.20.0-x86_64-unknown-linux-gnu.tar.gz | tar -xz --directory=./mdbook
-        curl -sSL https://github.com/badboy/mdbook-mermaid/releases/download/v0.15.0/mdbook-mermaid-v0.15.0-x86_64-unknown-linux-gnu.tar.gz | tar -xz --directory=./mdbook
-        cargo install mdbook-linkcheck2
-        echo `pwd`/mdbook >> $GITHUB_PATH
-    - name: Deploy GitHub Pages
-      run: |
-        # This assumes your book is in the root of your repository.
-        # Just add a `cd` here if you need to change to another directory.
-        mdbook build
-        git worktree add gh-pages gh-pages
-        git config user.name "Deploy from CI"
-        git config user.email ""
-        cd gh-pages
-        # Delete the ref to avoid keeping history.
-        git update-ref -d refs/heads/gh-pages
-        rm -rf *
-        mv ../book/* .
-        git add .
-        git commit -m "Deploy $GITHUB_SHA to gh-pages"
-        git push --force
+      - uses: actions/checkout@v5
+
+      - name: Setup Rust
+        uses: actions-rust-lang/setup-rust-toolchain@v1
+
+      - name: Install mdBook and plugins
+        run: |
+          cargo install mdbook
+          cargo install mdbook-admonish
+          cargo install mdbook-mermaid
+          cargo install mdbook-linkcheck
+
+      - name: Build and test book
+        run: |
+          mdbook build
+          mdbook test
+
+  deploy:
+    name: Deploy to GitHub Pages
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    permissions:
+      contents: write
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Setup Rust
+        uses: actions-rust-lang/setup-rust-toolchain@v1
+
+      - name: Install mdBook and plugins
+        run: |
+          cargo install mdbook
+          cargo install mdbook-admonish
+          cargo install mdbook-mermaid
+
+      - name: Build book
+        run: mdbook build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: ./book
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
