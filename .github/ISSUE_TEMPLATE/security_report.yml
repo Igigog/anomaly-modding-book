@@ -1,0 +1,15 @@
+
+name: Security Policy Report
+description: Security Policy Report
+labels: [Security Policy]
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: >
+        Provide Security Policy Report
+    validations:
+      required: true
+

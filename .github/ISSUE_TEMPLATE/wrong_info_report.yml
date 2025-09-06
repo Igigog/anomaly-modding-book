@@ -1,0 +1,15 @@
+
+name: Book Wrong Information
+description: Report Wrong Information
+labels: [Book Wrong Information]
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: >
+        Provide Wrong Information
+    validations:
+      required: true
+
