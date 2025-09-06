@@ -1,41 +1,33 @@
-# Website
+<!-- markdownlint-disable -->
+# Anomaly Modding Book
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+Introductory book for S.T.A.L.K.E.R. Anomaly modding
 
-## Installation
+## 📖 About the project
 
-```bash
-yarn
-```
+The book is for people who need some help with modding and you can find it in this book!
 
-## Local Development
+> [!IMPORTANT]  
+> Please keep in mind that the book is still being written, and the information provided here may not be accurate, or may not be provided at all!
 
-```bash
-yarn start
-```
+## 🤝 Found something blank, incomplete, or wrong?
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+The help of the community is always welcome.
+You can contribute to the development of this book, which will be used as a base in modding.
+So refer to this article or open an [issue](https://github.com/Igigog/anomaly-modding-book/issues) and welcome!
 
-## Build
+## 👥 Project participants
 
-```bash
-yarn build
-```
+Founder and main author:
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+- [Igigog](https://github.com/Igigog)
 
-## Deployment
+Lead maintainer:
 
-Using SSH:
+- [TheParaziT](https://github.com/TheParaziT)
 
-```bash
-USE_SSH=true yarn deploy
-```
+Community:
 
-Not using SSH:
+- [Anomaly Modding Book Discord ![Discord](https://img.shields.io/discord/1005783763877363722?label=Discord&logo=Discord)](https://discord.gg/8Pu2ekQYg3)
 
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+- [Official Anomaly Discord ![Discord](https://img.shields.io/discord/1005783763877363722?label=Discord&logo=Discord)](https://discord.gg/c4RuJNs)
