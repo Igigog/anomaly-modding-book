@@ -1,43 +1,41 @@
-<!-- markdownlint-disable -->
-# Anomaly Modding Book
+# Website
 
-Introductory book for S.T.A.L.K.E.R. Anomaly modding
+This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
-## 📖 About the project
+## Installation
 
-The book is for people who need some help with modding and you can find it in this book!
+```bash
+yarn
+```
 
-> [!IMPORTANT]  
-> Please keep in mind that the book is still being written, and the information provided here may not be accurate, or may not be provided at all!
+## Local Development
 
-## 🤝 Found something blank, incomplete, or wrong?
+```bash
+yarn start
+```
 
-The help of the community is always welcome.
-You can contribute to the development of this book, which will be used as a base in modding.
-So refer to this [article](src/meta/contributing.md) or open an [issue](https://github.com/Igigog/anomaly-modding-book/issues) and welcome!
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-## 👥 Project participants
+## Build
 
-Founder and main author:
+```bash
+yarn build
+```
 
-- [Igigog](https://github.com/Igigog)
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-Lead maintainer:
+## Deployment
 
-- [TheParaziT](https://github.com/TheParaziT)
+Using SSH:
 
-Community:
+```bash
+USE_SSH=true yarn deploy
+```
 
-- [Anomaly Modding Book Discord ![Discord](https://img.shields.io/discord/1005783763877363722?label=Discord&logo=Discord)](https://discord.gg/8Pu2ekQYg3)
+Not using SSH:
 
-- [Official Anomaly Discord ![Discord](https://img.shields.io/discord/1005783763877363722?label=Discord&logo=Discord)](https://discord.gg/c4RuJNs)
+```bash
+GIT_USER=<Your GitHub username> yarn deploy
+```
 
-## 🛠 Tools
-
-The project was created using the following tools:
-
-- [mdBook](https://github.com/rust-lang/mdBook) - The platform on which this book was written.
-  - [mdbook admonish](https://github.com/tommilligan/mdbook-admonish) - A preprocessor for mdBook to add Material Design admonishments.
-  - [mdbook whichlang](https://github.com/phoenixr-codes/mdbook-whichlang) - Powerful Code Blocks for mdBook.
-  - [mdbook mermaid](https://github.com/badboy/mdbook-mermaid) - A preprocessor for mdBook to add mermaid support.
-  - [mdbook-linkcheck](https://github.com/Michael-F-Bryan/mdbook-linkcheck) - A backend for mdBook which will check your links for you.
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.

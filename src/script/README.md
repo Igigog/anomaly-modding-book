@@ -1,5 +1,0 @@
-# Scripting
-
-___
-
-## About

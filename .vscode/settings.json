@@ -1,0 +1,23 @@
+{
+  "files.associations": {
+    "docusaurus.config.js": "javascript",
+    "sidebars.js": "javascript"
+  },
+  "emmet.includeLanguages": {
+    "markdown": "html"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "on",
+      "other": "on"
+    }
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/build": true,
+    "**/.docusaurus": true
+  }
+}
