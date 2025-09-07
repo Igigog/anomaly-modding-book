@@ -6,7 +6,7 @@ ___
 
 - How to work in Blender
 - How to work with Blender [X-Ray Addon](../../modding-tools/blender/blender-x-ray-addon-summary.md)
-- Familiarize yourself with the limitations and capabilities of the format [*.object](../../reference/file-formats/models/object.md) (because you may export to it more often than to [*.ogf](../../reference/file-formats/models/ogf.md)) to avoid errors
+- Familiarize yourself with the limitations and capabilities of the format [*.object](../../references/file-formats/models/object.md) (because you may export to it more often than to [*.ogf](../../references/file-formats/models/ogf.md)) to avoid errors
 - Familiarize yourself with [Static Object](../../glossary/glossary.html#static-object) model type
 
 ___
@@ -32,12 +32,12 @@ Textures can be created in any program designed for this purpose, or you can sim
 :::note[Important note about texture maps]
 In X-Ray Monolith only the following texture maps are used:
 
-- Diffuse color ([*.dds](../../reference/file-formats/textures/dds.md))
-- Bump maps ([*_bump.dds](../../reference/file-formats/textures/bump.md) and [*_bump#.dds](../../reference/file-formats/textures/bump_hash.md))
+- Diffuse color ([*.dds](../../references/file-formats/textures/dds.md))
+- Bump maps ([*_bump.dds](../../references/file-formats/textures/bump.md) and [*_bump#.dds](../../references/file-formats/textures/bump_hash.md))
 
 :::
 
-Here you need to add your created textures in [*.dds](../../reference/file-formats/textures/dds.md) and [*_bump.dds](../../reference/file-formats/textures/bump.md) (if you have) format
+Here you need to add your created textures in [*.dds](../../references/file-formats/textures/dds.md) and [*_bump.dds](../../references/file-formats/textures/bump.md) (if you have) format
 
 As a result, in the `Shader Editor`![Shader Editor svg-icon](../../../static/icons/blender/shader.svg) our textures should look something like this:
 

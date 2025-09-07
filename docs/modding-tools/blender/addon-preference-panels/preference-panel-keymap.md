@@ -14,20 +14,20 @@ By default, all exporters have the Alt modifier. Default key settings:
 
 | Format | Import | Export |
 |---|---|---|
-| [*.object](../../../reference/file-formats/models/object.md) | F5 | Alt + F5 |
-| [*.skl](../../../reference/file-formats/animations/skl-skls.md) | F6 |  |
-| [*.skls](../../../reference/file-formats/animations/skl-skls.md) | F6 | Alt + F6 |
-| [*.ogf](../../../reference/file-formats/models/ogf.md) | F7 | Alt + F7 |
-| [*.omf](../../../reference/file-formats/animations/omf.md) | F8 | Alt + F8 |
-| [*.anm](../../../reference/file-formats/animations/anm.md) | Ctrl + F5 | Ctrl + Alt + F5 |
-| [*.bones](../../../reference/file-formats/models/bones.md) | Ctrl + F6 | Ctrl + Alt + F6 |
-| [*.dm](../../../reference/file-formats/models/dm.md) | Ctrl + F7 | Ctrl + Alt + F7 |
-| [*.details](../../../reference/file-formats/game-levels/details.md) | Ctrl + F8 | Ctrl + Alt + F8 |
-| [*.level](../../../reference/file-formats/sdk/dot-level.md) | Shift + Ctrl + F5 | Shift + Ctrl + Alt + F5 |
-| [level](../../../reference/file-formats/game-levels/level.md) | Shift + Ctrl + F6 | Shift + Ctrl + Alt + F6 |
-| [*.part](../../../reference/file-formats/game-levels/part.md) | Shift + Ctrl + F7 | Shift + Ctrl + Alt + F7 |
-| [*.group](../../../reference/file-formats/models/group.md) | Shift + Ctrl + F8 | Shift + Ctrl + Alt + F8 |
-| [*.err](../../../reference/file-formats/sdk/err.md) |  |  |
+| [*.object](../../../references/file-formats/models/object.md) | F5 | Alt + F5 |
+| [*.skl](../../../references/file-formats/animations/skl-skls.md) | F6 |  |
+| [*.skls](../../../references/file-formats/animations/skl-skls.md) | F6 | Alt + F6 |
+| [*.ogf](../../../references/file-formats/models/ogf.md) | F7 | Alt + F7 |
+| [*.omf](../../../references/file-formats/animations/omf.md) | F8 | Alt + F8 |
+| [*.anm](../../../references/file-formats/animations/anm.md) | Ctrl + F5 | Ctrl + Alt + F5 |
+| [*.bones](../../../references/file-formats/models/bones.md) | Ctrl + F6 | Ctrl + Alt + F6 |
+| [*.dm](../../../references/file-formats/models/dm.md) | Ctrl + F7 | Ctrl + Alt + F7 |
+| [*.details](../../../references/file-formats/game-levels/details.md) | Ctrl + F8 | Ctrl + Alt + F8 |
+| [*.level](../../../references/file-formats/sdk/dot-level.md) | Shift + Ctrl + F5 | Shift + Ctrl + Alt + F5 |
+| [level](../../../references/file-formats/game-levels/level.md) | Shift + Ctrl + F6 | Shift + Ctrl + Alt + F6 |
+| [*.part](../../../references/file-formats/game-levels/part.md) | Shift + Ctrl + F7 | Shift + Ctrl + Alt + F7 |
+| [*.group](../../../references/file-formats/models/group.md) | Shift + Ctrl + F8 | Shift + Ctrl + Alt + F8 |
+| [*.err](../../../references/file-formats/sdk/err.md) |  |  |
 
 ### Enable/Disable
 

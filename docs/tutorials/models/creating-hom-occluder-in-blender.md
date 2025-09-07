@@ -46,15 +46,15 @@ In [X-Ray Engine: Material](../../modding-tools/blender/addon-panels/panel-mater
 
 ### Shader
 
-Any [Engine Shader](../../glossary/glossary.html#engine-shader) for Static Object ([list of all Engine Shaders](../../reference/shaders/shaders-list/engine-shaders-list.md))
+Any [Engine Shader](../../glossary/glossary.html#engine-shader) for Static Object ([list of all Engine Shaders](../../references/shaders/shaders-list/engine-shaders-list.md))
 
 ### Compiler
 
-Any [Compiler Shader](../../glossary/glossary.html#compiler-shader) ([list of all Compiler Shaders](../../reference/shaders/shaders-list/compiler-shaders-list.md))
+Any [Compiler Shader](../../glossary/glossary.html#compiler-shader) ([list of all Compiler Shaders](../../references/shaders/shaders-list/compiler-shaders-list.md))
 
 ### Material
 
-Any [Game Material](../../glossary/glossary.html#game-material) (Example `materials/occ` - This material does not include rendering parameters that are unnecessary for the calculation) ([list of all Game Materials](../../reference/materials/materials-list.md))
+Any [Game Material](../../glossary/glossary.html#game-material) (Example `materials/occ` - This material does not include rendering parameters that are unnecessary for the calculation) ([list of all Game Materials](../../references/materials/materials-list.md))
 
 ## Finish
 

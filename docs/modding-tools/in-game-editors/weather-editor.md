@@ -48,16 +48,16 @@ Weather editor allows you to change weather values in real-time. Minute precisio
 
 | Icon | Description |
 |---|:---:|
-| ![Alt text](assets/icons/copy.png) | Copy settings |
-| ![Alt text](assets/icons/paste.png) | Paste settings |
-| ![Alt text](assets/icons/view-mode.png) | Viewer Mode |
-| ![Alt text](assets/icons/pause.png) | Pause in Viewer Mode |
-| ![Alt text](assets/icons/resume.png) | Auto play in Viewer Mode |
-| ![Alt text](assets/icons/save.png) | Save to new file if you indicated the name in box below, otherwise save to current file. Name of custom files must start with "`w_`". |
-| ![Alt text](assets/icons/clear-cache-values.png) | Clear cached values |
-| ![Alt text](assets/icons/resume.png) | Resume weather, and exit |
-| ![Alt text](assets/icons/exit.png) | Exit (weather will still paused in engine) |
-| ![Alt text](assets/icons/about.png) | About |
+| ![Alt text](../../../static/icons/in-game-editors/copy.png) | Copy settings |
+| ![Alt text](../../../static/icons/in-game-editors/paste.png) | Paste settings |
+| ![Alt text](../../../static/icons/in-game-editors/view-mode.png) | Viewer Mode |
+| ![Alt text](../../../static/icons/in-game-editors/pause.png) | Pause in Viewer Mode |
+| ![Alt text](../../../static/icons/in-game-editors/resume.png) | Auto play in Viewer Mode |
+| ![Alt text](../../../static/icons/in-game-editors/save.png) | Save to new file if you indicated the name in box below, otherwise save to current file. Name of custom files must start with "`w_`". |
+| ![Alt text](../../../static/icons/in-game-editors/clear-cache-values.png) | Clear cached values |
+| ![Alt text](../../../static/icons/in-game-editors/resume.png) | Resume weather, and exit |
+| ![Alt text](../../../static/icons/in-game-editors/exit.png) | Exit (weather will still paused in engine) |
+| ![Alt text](../../../static/icons/in-game-editors/about.png) | About |
 
 ___
 

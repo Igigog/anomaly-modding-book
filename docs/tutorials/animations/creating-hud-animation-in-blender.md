@@ -5,8 +5,8 @@ ___
 ## Need to know
 
 - How working in Blender and creating animations
-- Skeleton animations ([*.skl](../../reference/file-formats/animations/skl-skls.md), [*.skls](../../reference/file-formats/animations/skl-skls.md), [*.omf](../../reference/file-formats/animations/omf.md))
-- Camera animations ([*.anm](../../reference/file-formats/animations/anm.md), [*.omf](../../reference/file-formats/animations/omf.md))
+- Skeleton animations ([*.skl](../../references/file-formats/animations/skl-skls.md), [*.skls](../../references/file-formats/animations/skl-skls.md), [*.omf](../../references/file-formats/animations/omf.md))
+- Camera animations ([*.anm](../../references/file-formats/animations/anm.md), [*.omf](../../references/file-formats/animations/omf.md))
 
 ## Related Videos
 

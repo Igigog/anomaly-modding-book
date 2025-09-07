@@ -6,7 +6,7 @@ ___
 
 - How to work in Blender
 - How to work with Blender [X-Ray Addon](../../modding-tools/blender/blender-x-ray-addon-summary.md)
-- Familiarize yourself with the limitations and capabilities of the format [*.object](../../reference/file-formats/models/object.md) (because you may export to it more often than to [*.ogf](../../reference/file-formats/models/ogf.md)) to avoid errors
+- Familiarize yourself with the limitations and capabilities of the format [*.object](../../references/file-formats/models/object.md) (because you may export to it more often than to [*.ogf](../../references/file-formats/models/ogf.md)) to avoid errors
 - Familiarize yourself with [Dynamic Object](../../glossary/glossary.html#dynamic-object) model type
 
 ___
@@ -92,7 +92,7 @@ Choose Engine Shader for Dynamic Object
 Choose Game Material for Dynamic Object
 
 :::note
-Since the object is dynamic, you need to choose the right Engine Shader and [Game Material](../../reference/materials/materials-list.md) for Dynamic Objects!
+Since the object is dynamic, you need to choose the right Engine Shader and [Game Material](../../references/materials/materials-list.md) for Dynamic Objects!
 :::
 
 ## Finish

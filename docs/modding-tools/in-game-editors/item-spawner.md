@@ -20,7 +20,7 @@ ___
 
 ## Technical part
 
-Items appear in the list because of the "`kind`" or `engine class` parameter in their [*.ltx](../../reference/file-formats/conf-script/ltx.md) file. The spawner script can be found in the file "`ui_debug_main.script`"
+Items appear in the list because of the "`kind`" or `engine class` parameter in their [*.ltx](../../references/file-formats/conf-script/ltx.md) file. The spawner script can be found in the file "`ui_debug_main.script`"
 
 | Name | Technical type (kind or Engine Class) name |
 |---|---|

@@ -39,15 +39,15 @@ Tool for fast editing and exporting raw S.T.A.L.K.E.R. formats
 
 | Supported formats |
 |---|
-| [*.object](../../reference/file-formats/models/object.md) |
-| [*.ogf](../../reference/file-formats/models/ogf.md) |
-| [*.omf](../../reference/file-formats/animations/omf.md) |
-| [*.skl](../../reference/file-formats/animations/skl-skls.md) |
-| [*.skls](../../reference/file-formats/animations/skl-skls.md) |
-| [*.bones](../../reference/file-formats/models/bones.md) |
-| [*.dm](../../reference/file-formats/models/dm.md) |
+| [*.object](../../references/file-formats/models/object.md) |
+| [*.ogf](../../references/file-formats/models/ogf.md) |
+| [*.omf](../../references/file-formats/animations/omf.md) |
+| [*.skl](../../references/file-formats/animations/skl-skls.md) |
+| [*.skls](../../references/file-formats/animations/skl-skls.md) |
+| [*.bones](../../references/file-formats/models/bones.md) |
+| [*.dm](../../references/file-formats/models/dm.md) |
 | [*.obj (wavefront)](https://en.wikipedia.org/wiki/Wavefront_.obj_file) |
-| [*.ltx (bone parts)](../../reference/file-formats/models/bone-parts.md) |
+| [*.ltx (bone parts)](../../references/file-formats/models/bone-parts.md) |
 
 ## Functionality
 

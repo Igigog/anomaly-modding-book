@@ -12,7 +12,7 @@ ___
 ## Need to know
 
 - How to work in [SDK](../../modding-tools/sdk/README.md)
-- What is a [*.group](../../reference/file-formats/models/group.md)
+- What is a [*.group](../../references/file-formats/models/group.md)
 
 ___
 

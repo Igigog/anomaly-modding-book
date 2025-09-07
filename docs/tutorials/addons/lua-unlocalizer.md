@@ -17,9 +17,9 @@ This addons allows to unlocalize variables for lua environment, making them glob
 
 ## Usage
 
-* In brackets you define the script file name as a section, without "[*.script](../../reference/file-formats/conf-script/script.md)" part.
+* In brackets you define the script file name as a section, without "[*.script](../../references/file-formats/conf-script/script.md)" part.
 * Under the section put all variables that should be unlocalized, only their names are required.
-* All unlocalizers [*.ltx](../../reference/file-formats/conf-script/ltx.md) files should be put into `gamedata/configs/unlocalizers` folder. They can be named as you like.
+* All unlocalizers [*.ltx](../../references/file-formats/conf-script/ltx.md) files should be put into `gamedata/configs/unlocalizers` folder. They can be named as you like.
 
 * Supported local definitions (if local is declared like in the list below, it is possible to unlocalize it)
 

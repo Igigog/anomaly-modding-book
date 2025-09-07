@@ -35,13 +35,13 @@ ___
 
 ## Programs editing this file
 
-- [Blender (X-Ray Addon)](../../../modding-tools/blender/blender-x-ray-addon-summary.md)
+- [Blender (X-Ray Addon)](../../../modding-tools/blender/README.md)
 - [X-Ray Export Tool (Object Tool)](../../../modding-tools/models/xray-export-tool.md)
 - [Ogf Editor by ValeroK](../../../modding-tools/models/ogf-editor-by-valerok.md) - (Only as a converter!)
-- [SDK](../../../modding-tools/sdk/README.md)
+- SDK
 
 ___
 
 ## Sources
 
-[Source](https://github.com/PavelBlend/blender-xray/wiki/Formats#object)
+[Blender X-Ray Wiki](https://github.com/PavelBlend/blender-xray/wiki/Formats#object)

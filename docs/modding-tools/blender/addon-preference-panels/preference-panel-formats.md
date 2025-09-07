@@ -14,65 +14,65 @@ In this category you can switch off support for import/export of formats. If for
 
 ### X-Ray Engine: Action
 
-- [*.object](../../../reference/file-formats/models/object.md)
-- [*.skl](../../../reference/file-formats/animations/skl-skls.md)
-- [*.skls](../../../reference/file-formats/animations/skl-skls.md)
-- [*.ogf](../../../reference/file-formats/models/ogf.md)
-- [*.omf](../../../reference/file-formats/animations/omf.md)
-- [*.anm](../../../reference/file-formats/animations/anm.md)
+- [*.object](../../../references/file-formats/models/object.md)
+- [*.skl](../../../references/file-formats/animations/skl-skls.md)
+- [*.skls](../../../references/file-formats/animations/skl-skls.md)
+- [*.ogf](../../../references/file-formats/models/ogf.md)
+- [*.omf](../../../references/file-formats/animations/omf.md)
+- [*.anm](../../../references/file-formats/animations/anm.md)
 
 ### X-Ray Engine: Armature
 
-- [*.object](../../../reference/file-formats/models/object.md)
-- [*.skl](../../../reference/file-formats/animations/skl-skls.md)
-- [*.skls](../../../reference/file-formats/animations/skl-skls.md)
-- [*.ogf](../../../reference/file-formats/models/ogf.md)
-- [*.omf](../../../reference/file-formats/animations/omf.md)
-- [*.bones](../../../reference/file-formats/models/bones.md)
+- [*.object](../../../references/file-formats/models/object.md)
+- [*.skl](../../../references/file-formats/animations/skl-skls.md)
+- [*.skls](../../../references/file-formats/animations/skl-skls.md)
+- [*.ogf](../../../references/file-formats/models/ogf.md)
+- [*.omf](../../../references/file-formats/animations/omf.md)
+- [*.bones](../../../references/file-formats/models/bones.md)
 
 ### X-Ray Engine: Bone
 
-- [*.object](../../../reference/file-formats/models/object.md)
-- [*.skl](../../../reference/file-formats/animations/skl-skls.md)
-- [*.skls](../../../reference/file-formats/animations/skl-skls.md)
-- [*.ogf](../../../reference/file-formats/models/ogf.md)
-- [*.omf](../../../reference/file-formats/animations/omf.md)
-- [*.bones](../../../reference/file-formats/models/bones.md)
+- [*.object](../../../references/file-formats/models/object.md)
+- [*.skl](../../../references/file-formats/animations/skl-skls.md)
+- [*.skls](../../../references/file-formats/animations/skl-skls.md)
+- [*.ogf](../../../references/file-formats/models/ogf.md)
+- [*.omf](../../../references/file-formats/animations/omf.md)
+- [*.bones](../../../references/file-formats/models/bones.md)
 
 ### X-Ray Engine: Material
 
 `Shader`, `Compile`, `Material`, `Two Sided` parameters are always displayed and cannot be disabled. To hide parameters from `Level Visual` and `Level CForm` blocks, it is necessary to disable these formats:
 
-- [level](../../../reference/file-formats/game-levels/level.md)
+- [level](../../../references/file-formats/game-levels/level.md)
 
 ### X-Ray Engine: Mesh
 
-- [*.object](../../../reference/file-formats/models/object.md)
-- [*.level](../../../reference/file-formats/sdk/dot-level.md)
-- [*.part](../../../reference/file-formats/game-levels/part.md)
-- [*.group](../../../reference/file-formats/models/group.md)
+- [*.object](../../../references/file-formats/models/object.md)
+- [*.level](../../../references/file-formats/sdk/dot-level.md)
+- [*.part](../../../references/file-formats/game-levels/part.md)
+- [*.group](../../../references/file-formats/models/group.md)
 
 ### X-Ray Engine: Object
 
 To hide parameters from the `Object` block, you need to disable such formats:
 
-- [*.object](../../../reference/file-formats/models/object.md)
-- [*.skl](../../../reference/file-formats/animations/skl-skls.md)
-- [*.skls](../../../reference/file-formats/animations/skl-skls.md)
-- [*.ogf](../../../reference/file-formats/models/ogf.md)
-- [*.omf](../../../reference/file-formats/animations/omf.md)
-- [*.level](../../../reference/file-formats/sdk/dot-level.md)
-- [*.part](../../../reference/file-formats/game-levels/part.md)
-- [*.group](../../../reference/file-formats/models/group.md)
+- [*.object](../../../references/file-formats/models/object.md)
+- [*.skl](../../../references/file-formats/animations/skl-skls.md)
+- [*.skls](../../../references/file-formats/animations/skl-skls.md)
+- [*.ogf](../../../references/file-formats/models/ogf.md)
+- [*.omf](../../../references/file-formats/animations/omf.md)
+- [*.level](../../../references/file-formats/sdk/dot-level.md)
+- [*.part](../../../references/file-formats/game-levels/part.md)
+- [*.group](../../../references/file-formats/models/group.md)
 
 To hide the `Details` block:
 
-- [*.dm](../../../reference/file-formats/models/dm.md)
-- [*.details](../../../reference/file-formats/game-levels/details.md)
+- [*.dm](../../../references/file-formats/models/dm.md)
+- [*.details](../../../references/file-formats/game-levels/details.md)
 
 To hide the `Level` block:
 
-- [level](../../../reference/file-formats/game-levels/level.md)
+- [level](../../../references/file-formats/game-levels/level.md)
 
 ___
 

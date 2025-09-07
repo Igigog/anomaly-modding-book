@@ -14,19 +14,19 @@ ___
 
 ## About
 
-Modified tool for working with [*.omf](../../reference/file-formats/animations/omf.md) format.
+Modified tool for working with [*.omf](../../references/file-formats/animations/omf.md) format.
 
 ![editor centered](assets/images/omf-editor-by-valerok.png)
 
 ## Features
 
-- Merge multiple [*.omf](../../reference/file-formats/animations/omf.md) files
+- Merge multiple [*.omf](../../references/file-formats/animations/omf.md) files
 - Clone, delete, save selected animations
 - Working with motion marks
 - Working with flags
-- Ability to save in [*.skls](../../reference/file-formats/animations/skl-skls.md), [*.skl](../../reference/file-formats/animations/skl-skls.md)
+- Ability to save in [*.skls](../../references/file-formats/animations/skl-skls.md), [*.skl](../../references/file-formats/animations/skl-skls.md)
 - Fix Gunslinger mod animations
-- Displaying of bone parts animation, possibility to convert into [*.ltx](../../reference/file-formats/conf-script/ltx.md) format for import into SDK
+- Displaying of bone parts animation, possibility to convert into [*.ltx](../../references/file-formats/conf-script/ltx.md) format for import into SDK
 - A lot of bug fixes and crashes from the original version.
 - Changing of name of bones
 - Viewing Bone Parts

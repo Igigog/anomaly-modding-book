@@ -4,7 +4,7 @@ ___
 
 ## About
 
-[*.ogg](../../reference/file-formats/audio-video/ogg.md) is a special sound format. It needs setup for proper playback in the game world and AI response.
+[*.ogg](../../references/file-formats/audio-video/ogg.md) is a special sound format. It needs setup for proper playback in the game world and AI response.
 
 ## Setup via SDK
 

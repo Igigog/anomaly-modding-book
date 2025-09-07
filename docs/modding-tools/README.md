@@ -128,12 +128,12 @@ ___
 
 - [BumpX_GUI](https://github.com/PiratBuildov/BumpX_GUI) - WinForms GUI for BumpX v07
 
-- [THM Editor](textures/thm-editor-by-i-love-kfc.md) - Utility for editing [*.thm](../reference/file-formats/textures/thm.md) files without the need to use the SDK
+- [THM Editor](textures/thm-editor-by-i-love-kfc.md) - Utility for editing [*.thm](../references/file-formats/textures/thm.md) files without the need to use the SDK
   - [THM Editor by Valerok](textures/thm-editor-by-valerok.md) - ValeroK's version of the original THM Editor
 
-- [ThmValidator](https://sharedby.blomp.com/tnT8vj) - Allows you to check the [*.thm](../reference/file-formats/textures/thm.md) files in the selected directory and automatically fix the most common bugs that occur during manual editing.
+- [ThmValidator](https://sharedby.blomp.com/tnT8vj) - Allows you to check the [*.thm](../references/file-formats/textures/thm.md) files in the selected directory and automatically fix the most common bugs that occur during manual editing.
 
-- Any program capable of creating textures or opening [*.dds](../reference/file-formats/textures/dds.md) files (e.g. [Paint.net](https://www.getpaint.net/))
+- Any program capable of creating textures or opening [*.dds](../references/file-formats/textures/dds.md) files (e.g. [Paint.net](https://www.getpaint.net/))
 
 ___
 
@@ -149,7 +149,7 @@ ___
 
 ## Parameters | LTX
 
-- [STLKObjectMan](https://drive.google.com/file/d/1OM2gZtj_Ubg7H03iI-Z_z3EAkwn1_S2R/view) - Universal parameters editor. Modifies [*.ltx](../reference/file-formats/conf-script/ltx.md) and [*.xml](../reference/file-formats/conf-script/xml.md) files. **not compatible with Anomaly due to modified config files**
+- [STLKObjectMan](https://drive.google.com/file/d/1OM2gZtj_Ubg7H03iI-Z_z3EAkwn1_S2R/view) - Universal parameters editor. Modifies [*.ltx](../references/file-formats/conf-script/ltx.md) and [*.xml](../references/file-formats/conf-script/xml.md) files. **not compatible with Anomaly due to modified config files**
 
 - [StalkerElementFinder](https://disk.yandex.ru/d/Rv-Mt1IAXyTihA%D0%B0) - A program for finding elements and resources
 
@@ -165,7 +165,7 @@ ___
 
 - [OGG Editor](https://disk.yandex.ru/d/Dcyo0Nt3A3b5g) - This utility is designed to quickly view and edit audio comments
 
-- [OggCommentDecompiler](https://ap-pro.ru/applications/core/interface/file/attachment.php?id=22581) - Saves comments in a [*.ltx](../reference/file-formats/conf-script/ltx.md) file, whose name and path are equivalent to the sound file
+- [OggCommentDecompiler](https://ap-pro.ru/applications/core/interface/file/attachment.php?id=22581) - Saves comments in a [*.ltx](../references/file-formats/conf-script/ltx.md) file, whose name and path are equivalent to the sound file
 
 - [Convert Audio Comment OGG](https://github.com/antglobes/CACO) - Convert Audio Comment Ogg
 
@@ -173,8 +173,8 @@ ___
 
 ## Animations
 
-- [OMF Editor](https://github.com/mortany/omf_editor) - Tool for working with [*.omf](../reference/file-formats/animations/omf.md) format.
-- [OMF Editor by Valerok](animations/omf-editor-by-valerok.md) - Modified tool for working with [*.omf](../reference/file-formats/animations/omf.md) format.
+- [OMF Editor](https://github.com/mortany/omf_editor) - Tool for working with [*.omf](../references/file-formats/animations/omf.md) format.
+- [OMF Editor by Valerok](animations/omf-editor-by-valerok.md) - Modified tool for working with [*.omf](../references/file-formats/animations/omf.md) format.
 
 - OmfSpisok - utility for one-click output .txt list of connected *.omf files from \*.ogf file
 
@@ -182,8 +182,8 @@ ___
 
 ## Models
 
-- [OGF Editor](https://github.com/mortany/OGF-tool) - Tool for working with [*.ogf](../reference/file-formats/models/ogf.md) format
-- [OGF Editor by Valerok](models/ogf-editor-by-valerok.md) - Tool for working with *.ogf and [*.dm](../reference/file-formats/models/dm.md) format
+- [OGF Editor](https://github.com/mortany/OGF-tool) - Tool for working with [*.ogf](../references/file-formats/models/ogf.md) format
+- [OGF Editor by Valerok](models/ogf-editor-by-valerok.md) - Tool for working with *.ogf and [*.dm](../references/file-formats/models/dm.md) format
 
 - [MeshToolz](https://github.com/gunslingermod/MeshToolz) - Swiss knife for low-level editing of OGF models. Want to copy a piece of one model to another? Easy. Change texture paths and bindings? No problem. Move and scale an item by snapping it to another bone? No problem. Can work both interactively and in script processing mode.
   - [Scripts For MeshToolz](https://github.com/gunslingermod/additional_scopes)
@@ -234,12 +234,12 @@ ___
 
 - [Universal ACDC](https://disk.yandex.ru/d/-GBYa8DxQv8MF) - Perl script, to unpack and pack all.spawn
   - [Universal ACDC by PSIget](https://github.com/PSIget/Universal-ACDC) - A modyfied ACDC version
-- [gamemtl_xr_cdc](https://disk.yandex.ru/d/hR79KfSn3PLtSK) - To decompile [gamemtl.xr](../reference/main-folders-and-files/README.md#files)
-- [lanims_xr_cdc](https://disk.yandex.ru/d/qKhybMU-3PLtTj) - To decompile [lanims.xr](../reference/main-folders-and-files/README.md#files)
-- [shaders_xr_cdc](https://disk.yandex.ru/d/RcMprj9W3PLtdj) - To decompile [shaders.xr](../reference/main-folders-and-files/README.md#files)
-- [shaders_xrlc_xr_cdc](https://disk.yandex.ru/d/FoQnY1VV3PLteX) - To decompile [shaders.xrlc](../reference/main-folders-and-files/README.md#files)
-- [senvironment_xr_cdc](https://disk.yandex.ru/d/jBnrr3Xg3PLtcc) - To decompile [senvironment.xrlc](../reference/main-folders-and-files/README.md#files)
-- [particles_xr_cdc (Unpacking to binary files only)](https://disk.yandex.ru/d/LCkINfLw3PLtV5) - To decompile [particles.xrlc](../reference/main-folders-and-files/README.md#files)
+- [gamemtl_xr_cdc](https://disk.yandex.ru/d/hR79KfSn3PLtSK) - To decompile [gamemtl.xr](../references/main-folders-and-files/README.md#files)
+- [lanims_xr_cdc](https://disk.yandex.ru/d/qKhybMU-3PLtTj) - To decompile [lanims.xr](../references/main-folders-and-files/README.md#files)
+- [shaders_xr_cdc](https://disk.yandex.ru/d/RcMprj9W3PLtdj) - To decompile [shaders.xr](../references/main-folders-and-files/README.md#files)
+- [shaders_xrlc_xr_cdc](https://disk.yandex.ru/d/FoQnY1VV3PLteX) - To decompile [shaders.xrlc](../references/main-folders-and-files/README.md#files)
+- [senvironment_xr_cdc](https://disk.yandex.ru/d/jBnrr3Xg3PLtcc) - To decompile [senvironment.xrlc](../references/main-folders-and-files/README.md#files)
+- [particles_xr_cdc (Unpacking to binary files only)](https://disk.yandex.ru/d/LCkINfLw3PLtV5) - To decompile [particles.xrlc](../references/main-folders-and-files/README.md#files)
 - [converter-level](https://disk.yandex.ru/d/czZSLCzT3UrDa5)
   - The program requires Old Version Active Perl **(at least version 5 and up to about version 5.24)** to be installed.
   - You also need [stkutils](https://disk.yandex.ru/d/nnjntzYZQv8sD) (put it in the folder with the script or in C:\Perl\lib)

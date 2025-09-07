@@ -14,7 +14,7 @@ ___
 
 ## About
 
-Tool for working with [*.ogf](../../reference/file-formats/models/ogf.md) and [*.dm](../../reference/file-formats/models/dm.md) format
+Tool for working with [*.ogf](../../references/file-formats/models/ogf.md) and [*.dm](../../references/file-formats/models/dm.md) format
 
 ![ogf-editor centered](assets/images/ogf-editor-by-valerok.png)
 
@@ -24,7 +24,7 @@ Tool for working with [*.ogf](../../reference/file-formats/models/ogf.md) and [*
 - Ability to work with meshes in *.ogf
 - Viewport
 - Integration with OGF Viewer and [OMF Editor](../../modding-tools/animations/omf-editor-by-valerok.md)
-- Saving *.ogf in [*.object](../../reference/file-formats/models/object.md), [*.skl](../../reference/file-formats/animations/skl-skls.md), [*.skls](../../reference/file-formats/animations/skl-skls.md), [*.bones](../../reference/file-formats/models/bones.md) formats
+- Saving *.ogf in [*.object](../../references/file-formats/models/object.md), [*.skl](../../references/file-formats/animations/skl-skls.md), [*.skls](../../references/file-formats/animations/skl-skls.md), [*.bones](../../references/file-formats/models/bones.md) formats
 - Hotkeys
 - Fix Gunslinger models (models are fixed automatically when you save them)
 

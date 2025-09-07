@@ -57,7 +57,7 @@ For parts of the object we will also need to create our own bones and `Bone Shap
 
 [Main article: Creating Game Material in SDK](../materials/creating-game-material-in-sdk.md)
 
-The main object needs to be matched with a suitable Game Material (where the `Breakable` flag is set). [List of all materials](../../reference/materials/materials-list.md).
+The main object needs to be matched with a suitable Game Material (where the `Breakable` flag is set). [List of all materials](../../references/materials/materials-list.md).
 
 ## Finish
 

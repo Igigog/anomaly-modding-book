@@ -24,4 +24,4 @@ Put the `gamemtl.xr` file we need into the unzipped folder.
 
 Then we can run already ready *.bat files for compilation, decompilation or work through the command line ([List of commands here](../../modding-tools/achive-compilers-decompilers/gamemtl-xr-cdc.md))
 
-As a result, we should have a folder with decompiled Game Materials in [*.ltx](../../reference/file-formats/conf-script/ltx.md) format.
+As a result, we should have a folder with decompiled Game Materials in [*.ltx](../../references/file-formats/conf-script/ltx.md) format.

@@ -10,7 +10,7 @@ This panel contains parameters and operators, which are necessary to customize t
 
 ## Position Parameter
 
-Position of the object in `X-Ray` engine format, which is used for `hud`-models of weapons. When copying positions from configs, it is necessary not to change the order of axes and not to change the sign of values (write the same as in the weapon config in the [hud-section](../../../reference/configs/items/weapons/weapon-hud.md))
+Position of the object in `X-Ray` engine format, which is used for `hud`-models of weapons. When copying positions from configs, it is necessary not to change the order of axes and not to change the sign of values (write the same as in the weapon config in the [hud-section](../../../references/configs/items/weapons/weapon-hud.md))
 
 ## Orientation Parameter
 

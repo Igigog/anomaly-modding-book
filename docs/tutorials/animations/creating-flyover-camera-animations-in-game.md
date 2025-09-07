@@ -4,7 +4,7 @@ ___
 
 ## Need to know
 
-- What is [*.xrdemo](../../reference/file-formats/general/xrdemo.md)
+- What is [*.xrdemo](../../references/file-formats/general/xrdemo.md)
 
 ___
 

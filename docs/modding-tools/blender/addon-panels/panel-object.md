@@ -25,14 +25,14 @@ Object Type.
 - `Static` - [Static](../../../glossary/glossary.html#static-object) (Level geometry).
 - `Dynamic` - [Dynamic](../../../glossary/glossary.html#dynamic-object) (Object with a skeleton).
 - `Progressive Dynamic` - [Dynamic](../../../glossary/glossary.html#progressive-meshes) with levels of detail (in game, the object will change the number of polygons, depending on the distance to the game camera)
-- `HOM` - Level geometry cutoff (used to create [*.hom](../../../reference/file-formats/game-levels/hom.md) files)
+- `HOM` - Level geometry cutoff (used to create [*.hom](../../../references/file-formats/game-levels/hom.md) files)
 - `Multiple Usage` - [Multiple used objects](../../../glossary/glossary.html#multiply-usage-object) (trees, transportation, rocks, etc.)
-- `Sound Occluder` - Level sound cutoff (used to create [*.som](../../../reference/file-formats/game-levels/som.md) files)
+- `Sound Occluder` - Level sound cutoff (used to create [*.som](../../../references/file-formats/game-levels/som.md) files)
 - `Custom` - Customizable (object type is implemented in the form of flags, so this type has the ability to specify each flag arbitrarily)
 
 ### HQ Export
 
-Parameter which is similar to HQ Geometry parameter in [Actor Editor](../../sdk/actor-editor/actor-editor.md) from X-Ray SDK 0.7. If it is enabled, when exporting [*.object](../../../reference/file-formats/models/object.md) file to [*.ogf](../../../reference/file-formats/models/ogf.md) using Actor Editor, mesh optimization will not be used
+Parameter which is similar to HQ Geometry parameter in [Actor Editor](../../sdk/actor-editor/actor-editor.md) from X-Ray SDK 0.7. If it is enabled, when exporting [*.object](../../../references/file-formats/models/object.md) file to [*.ogf](../../../references/file-formats/models/ogf.md) using Actor Editor, mesh optimization will not be used
 
 ### LOD Reference
 

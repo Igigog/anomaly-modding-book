@@ -105,6 +105,18 @@ const config: Config = {
         },
         {
           type: 'docSidebar',
+          sidebarId: 'engineSidebar',
+          position: 'left',
+          label: 'Engine'
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'scriptSidebar',
+          position: 'left',
+          label: 'Script'
+        },
+        {
+          type: 'docSidebar',
           sidebarId: 'forcontributorsSidebar',
           position: 'left',
           label: 'For Contributors'

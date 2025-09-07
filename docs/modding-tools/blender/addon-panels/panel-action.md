@@ -6,7 +6,7 @@ ___
 
 ## About
 
-This page describes the X-Ray Engine: Action panel. This panel stores animation parameters for skeleton animations ([*.skl](../../../reference/file-formats/animations/skl-skls.md), [*.skls](../../../reference/file-formats/animations/skl-skls.md), [*.omf](../../../reference/file-formats/animations/omf.md), [*.object](../../../reference/file-formats/models/object.md), [*.ogf](../../../reference/file-formats/models/ogf.md)) or path animations ([*.anm](../../../reference/file-formats/animations/anm.md))
+This page describes the X-Ray Engine: Action panel. This panel stores animation parameters for skeleton animations ([*.skl](../../../references/file-formats/animations/skl-skls.md), [*.skls](../../../references/file-formats/animations/skl-skls.md), [*.omf](../../../references/file-formats/animations/omf.md), [*.object](../../../references/file-formats/models/object.md), [*.ogf](../../../references/file-formats/models/ogf.md)) or path animations ([*.anm](../../../references/file-formats/animations/anm.md))
 
 ## Location
 
@@ -88,7 +88,7 @@ TODO
 
 #### Motion Marks List
 
-This list stores the names of Custom Properties bones that will be used as Motion Marks. Motion Marks support [*.object](../../../reference/file-formats/models/object.md), [*.skl](../../../reference/file-formats/animations/skl-skls.md), [*.skls](../../../reference/file-formats/animations/skl-skls.md), [*.ogf](../../../reference/file-formats/models/ogf.md), [*.omf](../../../reference/file-formats/animations/omf.md) formats for CS and CoP. To save them to a file, you need to set CS/CoP format when exporting. The Marks Bone parameter specifies the bone whose Custom Properties should be used. The elements of the list are the names of Custom Properties of the bone. Custom Properties need to be animated so that the animation (action) has animation keys for this property. If the property value in a particular frame is zero (or False), then the current frame does not belong to the label interval. For all other values, the keys belong to the label interval.
+This list stores the names of Custom Properties bones that will be used as Motion Marks. Motion Marks support [*.object](../../../references/file-formats/models/object.md), [*.skl](../../../references/file-formats/animations/skl-skls.md), [*.skls](../../../references/file-formats/animations/skl-skls.md), [*.ogf](../../../references/file-formats/models/ogf.md), [*.omf](../../../references/file-formats/animations/omf.md) formats for CS and CoP. To save them to a file, you need to set CS/CoP format when exporting. The Marks Bone parameter specifies the bone whose Custom Properties should be used. The elements of the list are the names of Custom Properties of the bone. Custom Properties need to be animated so that the animation (action) has animation keys for this property. If the property value in a particular frame is zero (or False), then the current frame does not belong to the label interval. For all other values, the keys belong to the label interval.
 
 ### Addon Parameters
 

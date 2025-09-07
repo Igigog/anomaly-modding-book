@@ -5,7 +5,7 @@ ___
 ## Need to know
 
 - How working in Blender and creating animations
-- Familiarize yourself with the [.anm](../../reference/file-formats/animations/anm.md) file format
+- Familiarize yourself with the [.anm](../../references/file-formats/animations/anm.md) file format
 
 ___
 

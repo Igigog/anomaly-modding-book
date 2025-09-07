@@ -14,7 +14,7 @@ ___
 
 ## About
 
-A simple [*_bump.dds](../../reference/file-formats/textures/bump.md) and [*_bump#.dds](../../reference/file-formats/textures/bump_hash.md) texture generator from normal maps with the ability to use specular maps, also, is capable of generating *_bump#.dds for ready-made "green" \*_bumps.dds.
+A simple [*_bump.dds](../../references/file-formats/textures/bump.md) and [*_bump#.dds](../../references/file-formats/textures/bump_hash.md) texture generator from normal maps with the ability to use specular maps, also, is capable of generating *_bump#.dds for ready-made "green" \*_bumps.dds.
 
 ![bump-generator centered](assets/images/bump-generator.png)
 

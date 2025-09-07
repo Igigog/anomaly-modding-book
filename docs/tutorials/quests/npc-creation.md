@@ -60,7 +60,7 @@ story_id                    = bar_visitors_barman_stalker_trader
 This is an example of a section.
 
 - `[bar_visitors_barman_stalker_trader]:stalker_silent`  
-  Refer to [LTX docs](../../reference/configs/structure-of-files.md) to understand section definition and inheritance.
+  Refer to [LTX docs](../../references/configs/structure-of-files.md) to understand section definition and inheritance.
 
 - `$spawn`  
   This on is not important, ignore.
