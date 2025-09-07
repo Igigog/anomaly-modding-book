@@ -1,4 +1,4 @@
-# Outfit Config File
+# Outfit
 
 ___
 
@@ -74,7 +74,7 @@ ___
 | upgr_icon_width | Width of the icon in the repair window | 309 | Specified in pixels |
 | upgr_icon_height | icon height in the repair window | 142 | Specified in pixels |
 
-### Armor Outfit Parameters
+## Armor Outfit Parameters
 
 | Parameter Name | Parameter Description | Example Value | Possible Parameters |
 |---|---|---|---|
@@ -86,7 +86,7 @@ ___
 | additional_inventory_weight | Maximum weight at which the protagonist can walk and additional carrying weight| 5 | Specified in kilograms |
 | additional_inventory_weight2 |  | 5 | Specified in kilograms |
 
-### Parameters that affect the protagonist
+## Parameters that affect the protagonist
 
 | Parameter Name | Parameter Description | Example Value | Possible Parameters |
 |---|---|---|---|
@@ -97,7 +97,7 @@ ___
 | health_restore_speed | Responsible for restoring health |  | Specified in percent |
 | power_restore_speed | Responsible for restoring powers |  | Specified in percent |
 
-### Parameters of the wearer's protection against various types of impacts provided by the outfits
+## Parameters of the wearer's protection against various types of impacts provided by the outfits
 
 | Parameter Name | Parameter Description | Example Value | Possible Parameters |
 |---|---|---|---|
@@ -111,7 +111,7 @@ ___
 | wound_protection | Protection from Wounds | 0.31 |  |
 | fire_wound_protection | Protection from firearms | 0.25 |  |
 
-### Immunities
+## Immunities
 
 | Parameter Name | Parameter Description | Example Value | Possible Parameters |
 |---|---|---|---|
@@ -125,7 +125,7 @@ ___
 | telepatic_immunity | Immunity to psi exposure | 0.0 |  |
 | wound_immunity | Immunity to the effects of wounds | 0.122 |  |
 
-### AI
+## AI
 
 | Parameter Name | Parameter Description | Example Value | Possible Parameters |
 |---|---|---|---|

@@ -23,13 +23,13 @@ First, we need a model that you have made or downloaded. I'll have one of those:
 
 Choose your model and duplicate it.
 
-```admonish note
+:::note
 When breaking a model, a separate, already broken model will be spawned. It can be divided parts of the original object or the same object, but with a different number of bones and Bone Shapes.
-```
+:::
 
-```admonish note
+:::note
 Note that the broken parts should repeat the place as in the original model. For example:
-```
+:::
 
 We need to divide the parts of the original model into component parts:
 

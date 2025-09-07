@@ -4,9 +4,9 @@ ___
 
 ## About
 
-```admonish Warning
-Keep in mind that the decompiled location drops in quality when compiling later (if you use a decompiled location)
-```
+:::warning
+This method is considered obsolete. Keep in mind that the decompiled location drops in quality when compiling later (if you use a decompiled location).
+:::
 
 ## Via Blender
 

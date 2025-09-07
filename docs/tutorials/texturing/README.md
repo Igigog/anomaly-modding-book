@@ -1,4 +1,4 @@
-# Textures Tutorials
+# Textures
 
 ___
 

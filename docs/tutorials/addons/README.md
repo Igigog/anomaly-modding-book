@@ -1,4 +1,4 @@
-# Addons Tutorials
+# Addons
 
 ___
 

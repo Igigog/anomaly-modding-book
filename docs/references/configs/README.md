@@ -1,4 +1,4 @@
-# Configs References
+# Configs
 
 ___
 

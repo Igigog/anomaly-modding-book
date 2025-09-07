@@ -29,12 +29,13 @@ For my example, I'll have a model with this UV map.
 
 Textures can be created in any program designed for this purpose, or you can simply download them.
 
-```admonish note Title = "Important note about texture maps"
+:::note[Important note about texture maps]
 In X-Ray Monolith only the following texture maps are used:
 
 - Diffuse color ([*.dds](../../reference/file-formats/textures/dds.md))
 - Bump maps ([*_bump.dds](../../reference/file-formats/textures/bump.md) and [*_bump#.dds](../../reference/file-formats/textures/bump_hash.md))
-```
+
+:::
 
 Here you need to add your created textures in [*.dds](../../reference/file-formats/textures/dds.md) and [*_bump.dds](../../reference/file-formats/textures/bump.md) (if you have) format
 
@@ -47,9 +48,9 @@ As a result, in the `Shader Editor`![Shader Editor svg-icon](../../../static/ico
 First, the model itself will be set up.
 You can start by positioning the model over the origin in this way
 
-```admonish tip
+:::tip
 (The ["Drop It"](https://andreasaust.gumroad.com/l/drop_it) addon for Blender is highly recommended for such actions)
-```
+:::
 
 Then apply the coordinates with `Ctrl + A` > `All Transform`.
 

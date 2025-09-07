@@ -34,7 +34,7 @@ The main differences:
 
 - Some functions return multiple values, so the following C++ code
 
-```c++
+```cpp
 bool expanded = ImGui::Begin("My Test Window", &my_window_visible, 0)
 ```
 
@@ -332,5 +332,3 @@ ImGui.PushStyleVar(ImGuiStyleVar.WindowPadding, vector2():set(20,20))
 ImGui.PopStyleColor(3)
 ImGui.PopStyleVar(2)
 ```
-
-#### Gobo-bo!

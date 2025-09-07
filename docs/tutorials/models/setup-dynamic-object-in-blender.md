@@ -25,13 +25,13 @@ For my example, I'll have a model with this UV map.
 
 Сreate an armature (`Shift + A` > `Armature`).
 
-```admonish tip
-When you create an armature, you may not see the created bone as it is rendered behind the object. To see the bone, go to `Object Data Properties`![Object Data Properties svg-icon](../../assets/icons/blender/armature-data.svg) and in `Viewport Display` -> click the `In Front` checkbox.
-```
+:::tip
+When you create an armature, you may not see the created bone as it is rendered behind the object. To see the bone, go to `Object Data Properties`![Object Data Properties svg-icon](../../../static/icons/blender/armature-data.svg) and in `Viewport Display` -> click the `In Front` checkbox.
+:::
 
-```admonish note
+:::note
 It is important to remember that in X-Ray, the bones act as a place to anchor the collision shape.
-```
+:::
 
 Go to `Edit Mode` and name the bone as you wish.
 
@@ -47,9 +47,9 @@ Press `CTRL + P` -> `With Automatic Weights`.
 
 ![Model Binding centered](assets/gifs/setup-dynamic-object-binding.gif)
 
-```admonish tip
+:::tip
 In Blender, there are several choices of binding methods. In this case (where there is a single bone), the method via `With Automatic Weights` is appropriate. For cases where there are more bones, you will most likely need manual binding via `Weight Paint` or other methods.
-```
+:::
 
 ## Bone
 
@@ -65,9 +65,9 @@ From the whole list, our object is more suitable for the `Cylinder` type. Let's 
 
 Next, click the `Edit Shape` button to check and edit the Shape itself.
 
-```admonish tip
+:::tip
 To see `Bone Shapes`, go to `Object Data Properties`![Object Data Properties svg-icon](../../../static/icons/blender/armature-data.svg). In [X-Ray Engine: Armature](../../modding-tools/blender/addon-panels/panel-armature.md) -> `Display Bone Shapes`.
-```
+:::
 
 My model fits quite nicely into the Bone Shape.
 
@@ -91,9 +91,9 @@ Choose Engine Shader for Dynamic Object
 
 Choose Game Material for Dynamic Object
 
-```admonish note
+:::note
 Since the object is dynamic, you need to choose the right Engine Shader and [Game Material](../../reference/materials/materials-list.md) for Dynamic Objects!
-```
+:::
 
 ## Finish
 

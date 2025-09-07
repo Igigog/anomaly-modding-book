@@ -1,4 +1,4 @@
-# SDK Tutorials
+# SDK
 
 ___
 

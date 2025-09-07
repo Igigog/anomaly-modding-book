@@ -1,4 +1,4 @@
-# Weapon HUD Parameters
+# Weapon HUD
 
 ___
 

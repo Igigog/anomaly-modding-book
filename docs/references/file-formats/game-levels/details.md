@@ -19,7 +19,7 @@ It consists of three [RIFF](https://en.wikipedia.org/wiki/Resource_Interchange_F
 | Block ID | Size (bytes) | Description |
 |---|---|---|
 | 0x0 | 24 | headline |
-| 0x1 | - | object models (in [.dm](../models/dm.md) format) |
+| 0x1 | - | object models (in [*.dm](../models/dm.md) format) |
 | 0x2 | - | table of 2x2 meter cells, setting the density and species diversity of objects on the map |
 
 Block order in version 3: 0x1, 0x2, 0x0

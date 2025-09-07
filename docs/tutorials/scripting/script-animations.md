@@ -68,8 +68,7 @@ To play a motion, we need a few components:
 1. Create a config [*.ltx](../../reference/file-formats/conf-script/ltx.md) file in **configs/items/items** and give it any name, but make sure it starts with **items_**. Example: **items_my_anims.ltx**.
 2. Set the parameters. We’ll examine them by looking at this example.
 
-```ini,lang=LTX
-
+```ini
 [anim_my_sec]
 
     hands_position              = 0.033, -0.155, 0.1
@@ -81,7 +80,6 @@ To play a motion, we need a few components:
     hands_orientation_16x9      = 0, 0, 0
 
     anm_my_anim                 = name_of_motion_that_will_be_played
-
 ```
 
 **\[anim_my_sec]** is an animation section name. It’ll be used in the script.

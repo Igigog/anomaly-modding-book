@@ -29,11 +29,11 @@ All we need to do is add a plane to the entire area where the climbing possibili
 
 ![alt text centered](assets/images/creating-ladder-in-blender-plane.png)
 
-```admonish note
+:::note
 Green color is the plane on which the player can climb.
 
 Red - ladder model
-```
+:::
 
 ### Surface
 

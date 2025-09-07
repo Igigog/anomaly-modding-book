@@ -1,7 +1,19 @@
 [
   {
-    "id": "123",
-    "title": "123",
+    "id": "book-structure",
+    "title": "Book Structure",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "book-style-sheet",
+    "title": "Book Style Sheet",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "contributing",
+    "title": "Contributing",
     "linkTo": [],
     "referencedBy": []
   },
@@ -19,7 +31,7 @@
   },
   {
     "id": "README",
-    "title": "Textures Tutorials",
+    "title": "Textures",
     "linkTo": [],
     "referencedBy": []
   },
@@ -504,12 +516,6 @@
     "referencedBy": []
   },
   {
-    "id": "blender-x-ray-addon-summary",
-    "title": "Blender X-Ray Addon",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
     "id": "installation",
     "title": "Installation",
     "linkTo": [],
@@ -524,6 +530,12 @@
   {
     "id": "universal-x64-level-compilers",
     "title": "Universal x64 level compilers",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "REAMDE",
+    "title": "Compressors",
     "linkTo": [],
     "referencedBy": []
   },
@@ -572,12 +584,6 @@
   {
     "id": "weather-editor",
     "title": "Weather Editor",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "intro",
-    "title": "intro",
     "linkTo": [],
     "referencedBy": []
   },
@@ -762,12 +768,6 @@
     "referencedBy": []
   },
   {
-    "id": "fluid-overview",
-    "title": "Fluid Config File",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
     "id": "fluid-volume",
     "title": "Fluid Volume",
     "linkTo": [],
@@ -775,55 +775,55 @@
   },
   {
     "id": "backpack",
-    "title": "Backpack Config File",
+    "title": "Backpack",
     "linkTo": [],
     "referencedBy": []
   },
   {
     "id": "helmet",
-    "title": "Helmet Config File",
+    "title": "Helmet",
     "linkTo": [],
     "referencedBy": []
   },
   {
     "id": "outfit",
-    "title": "Outfit Config File",
+    "title": "Outfit",
     "linkTo": [],
     "referencedBy": []
   },
   {
     "id": "trade",
-    "title": "Trader profile",
+    "title": "Trader Profile",
     "linkTo": [],
     "referencedBy": []
   },
   {
     "id": "grenade",
-    "title": "Grenade World Config File",
+    "title": "Grenade World",
     "linkTo": [],
     "referencedBy": []
   },
   {
     "id": "weapon-ammo",
-    "title": "Weapon Ammo Config File",
+    "title": "Weapon Ammo",
     "linkTo": [],
     "referencedBy": []
   },
   {
     "id": "weapon-hud",
-    "title": "Weapon HUD Parameters",
+    "title": "Weapon HUD",
     "linkTo": [],
     "referencedBy": []
   },
   {
     "id": "weapon-sounds",
-    "title": "Weapon Sounds Config File",
+    "title": "Weapon Sounds",
     "linkTo": [],
     "referencedBy": []
   },
   {
     "id": "weapon-world",
-    "title": "Weapon World Config File",
+    "title": "Weapon World",
     "linkTo": [],
     "referencedBy": []
   },
@@ -1285,7 +1285,7 @@
   },
   {
     "id": "lua-unlocalizer",
-    "title": "Lua variables unlocalizer",
+    "title": "Lua Variables Unlocalizer",
     "linkTo": [],
     "referencedBy": []
   },
@@ -1350,7 +1350,7 @@
     "referencedBy": []
   },
   {
-    "id": "inventory_icons",
+    "id": "inventory-icons",
     "title": "Inventory Icons",
     "linkTo": [],
     "referencedBy": []
@@ -1482,12 +1482,6 @@
     "referencedBy": []
   },
   {
-    "id": "setup-creature-in-blender",
-    "title": "Setup Creature in Blender",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
     "id": "setup-detail-object-in-blender",
     "title": "Setup Detail Object in Blender",
     "linkTo": [],
@@ -1615,7 +1609,7 @@
   },
   {
     "id": "working-correctly-with-icon-atlases",
-    "title": "Working correctly with icon atlases",
+    "title": "Working Correctly With Icon Atlases",
     "linkTo": [],
     "referencedBy": []
   },

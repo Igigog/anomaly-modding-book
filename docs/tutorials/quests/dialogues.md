@@ -20,7 +20,9 @@ In this file you construct the dialogue tree.
 
 In this file you write the text of your dialogue.
 
-> NB:If you're doing a custom NPC, it's advisable to not use preexisting files but to add your own. You can check under "NPC creation" how to include your own files. If you're adding dialogue to a preexisting NPC, you will have to add your `<actor_dialog>XXX</actor_dialog>` in his file, but you can use a 'custom dialogs_*.xml' file for the dialogue tree.
+:::note
+If you're doing a custom NPC, it's advisable to not use preexisting files but to add your own. You can check under "NPC creation" how to include your own files. If you're adding dialogue to a preexisting NPC, you will have to add your `<actor_dialog>XXX</actor_dialog>` in his file, but you can use a 'custom dialogs_*.xml' file for the dialogue tree.
+:::
 
 **File :** `_unpacked\configs\gameplay\text\eng\st_dialogs_*.xml` doesn't need to be included.
 
@@ -50,7 +52,7 @@ In this example we will use a preexisting dialogs file, although it's strongly r
 
 The basic structure of a dialogue tree is the following:
 
-```xml,filepath="_unpacked\configs\gameplay\dialogs_bar.xml"
+```xml title="_unpacked\configs\gameplay\dialogs_bar.xml"
 <dialog id="my_custom_dialogue_1">
   <phrase_list>
     <phrase id="0">
@@ -84,7 +86,9 @@ The basic structure of a dialogue tree is the following:
 
   This handles which dialogue branch will be shown next.
 
-> NB:Notice that every node starts with `<XXX>` and is closed with a "/" : `</XXX>`. This is essential - take care to always close your nodes or the game will crash on boot.
+:::note
+Notice that every node starts with `<XXX>` and is closed with a "/" : `</XXX>`. This is essential - take care to always close your nodes or the game will crash on boot.
+:::
 
 ### Step 3
 
@@ -92,9 +96,7 @@ Now we need to add the text of the dialogue.
 
 In order to do that, add in your
 
-**File :** `_configs\gameplay\text\eng\st_dialogs_*.xml`
-
-```xml,filepath="_configs\gameplay\text\eng\st_dialogs_*.xml"
+```xml title="_configs\gameplay\text\eng\st_dialogs_*.xml"
 <string id="my_custom_dialogue_1_0">
   <text>Hy barkeep, I made my own dialogue.</text>
 </string>
@@ -200,12 +202,10 @@ Let's imagine the actor has a quest consisting in bringing a tuna can "conserva"
 So we have to write two functions, the first for the \<precondition> (so that you can only submit the quest if you have a tuna can in your inventory) and the second in order to give the tuna can.
 
 Create the file "my_script_for_mod.script"
-  
-**File :** `_gamedata\scripts\my_script_for_mod.script`  
 
 First we create the precondition:
 
-```lua,filepath="_gamedata\scripts\my_script_for_mod.script"
+```lua title="_gamedata\scripts\my_script_for_mod.script"
 function my_condition()
   if db.actor:object("conserva") then
     return true
@@ -321,4 +321,6 @@ If the player uses branch 2 - it will lead to branch 4 which triggers the tuna -
   
 Of course you can use `has_info` and `dont_has_info` also in the different dialogue branches in order to make the dialogue tree more complex.
 
-> NB:I never tried it, but I believe you cannot use precondition, `has_info` and `dont_has_info` to curtail the NPC replies. The NPC should always have only one `<next>`.
+:::note
+I never tried it, but I believe you cannot use precondition, `has_info` and `dont_has_info` to curtail the NPC replies. The NPC should always have only one `<next>`.
+:::

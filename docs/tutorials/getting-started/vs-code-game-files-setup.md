@@ -2,14 +2,16 @@
 
 ___
 
+## About
+
 Here will talk about setting up VSCode similar programs to work with game files.
 
 - This article is based on [Liner's article](https://ap-pro.ru/forums/topic/3406-nastroyka-skriptov-stalkera-kak-proekt-v-visual-studio-code/) on setting up scripts as projects in VSCode
 - In this article the setup will be done in VSCodium.
 
-```admonish warning
+:::warning
 Not all files can be configured because there are no extensions for their viewing, reading (for example preview .dds textures and others). Some files can only be opened with third-party applications!
-```
+:::
 
 ___
 
@@ -17,13 +19,11 @@ ___
 
 Just install [VSCodium](https://vscodium.com/)
 
-___
-
-## Step 2. Configuring Extension Associations with a Programming Language
+## Step 2. Configuring extension associations
 
 In the `settings.json` file, in the `"files.associations": {` specify:
 
-```json
+```json title="settings.json"
 "*.script": "lua",
 "*.ps": "hlsl",
 "*.cs": "hlsl",
@@ -37,9 +37,9 @@ In the `settings.json` file, in the `"files.associations": {` specify:
 "*.part1": "ini"
 ```
 
-> At the moment these are all the extensions that can be opened in VSCodium
-
-___
+:::info
+At the moment these are all the extensions that can be opened in VSCodium
+:::
 
 ## Step 3: Installing extensions
 
@@ -60,7 +60,7 @@ You need to install the following extensions:
 4. [Open in External App by YuTengjing](https://marketplace.visualstudio.com/items?itemName=YuTengjing.open-in-external-app) - ability to open the file in other applications. Needed for [*.ogf](../../reference/file-formats/models/ogf.md), [*.object](../../reference/file-formats/models/object.md), [.dm](../../reference/file-formats/models/dm.md), [*.omf](../../reference/file-formats/animations/omf.md), [*.dds](../../reference/file-formats/textures/dds.md), [.thm](../../reference/file-formats/textures/thm.md), [*.ogm](../../reference/file-formats/audio-video/ogm.md) files
    - The extension can be configured by writing in `settings.json` in the `"openInExternalApp.openMapper": [` needed programs. Example:
 
-    ```json
+    ```json title="settings.json"
     "openInExternalApp.openMapper": [
 
         // 3D models (ogf, dm, object)

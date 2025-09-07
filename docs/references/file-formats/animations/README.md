@@ -1,8 +1,5 @@
-# Animations File Formats
+# Animations
 
 ___
 
-- [*.anm](anm.md)
-- [*.omf](omf.md)
-- [*.skl](skl-skls.md)
-- [*.skls](skl-skls.md)
+## About

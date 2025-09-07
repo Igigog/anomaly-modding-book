@@ -1,4 +1,4 @@
-# SDK File Formats
+# SDK
 
 ___
 

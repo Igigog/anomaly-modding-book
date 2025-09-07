@@ -147,8 +147,10 @@ Just use `set_parent`, it will transfer the attachment, as well as any child att
 test_att:set_parent(npc)
 ```
 
+:::warning
 **The attachment will overwrite an existing attachment of the new parent object, if it uses the same name!**
 *(Might get changed in the future)*
+:::
 
 ### Parent Bone
 
@@ -536,5 +538,3 @@ local function it_att(name, attachment)
 end
 obj:iterate_attachments(it_att)
 ```
-
-#### Have fun!

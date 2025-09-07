@@ -1,4 +1,4 @@
-# Animations References
+# Animations
 
 ___
 

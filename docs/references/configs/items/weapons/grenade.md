@@ -1,4 +1,4 @@
-# Grenade World Config File
+# Grenade World
 
 ___
 

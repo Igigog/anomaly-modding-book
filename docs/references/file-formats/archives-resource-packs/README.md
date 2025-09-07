@@ -1,6 +1,5 @@
-# Archives | Resources File Formats
+# Archives | Resources
 
 ___
 
-- [*.db](db.md)
-- [*.xr](xr.md)
+## About

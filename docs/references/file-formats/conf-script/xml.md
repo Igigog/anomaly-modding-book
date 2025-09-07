@@ -10,7 +10,8 @@ XML files are used to save text strings used for translation. All XML files are 
 2. Every string must have an unique id assigned to it.
 3. There is a single namespace for all xml files of one language. That means, no matter in which file you are saving your strings, they will be available in one place, namely `game.translate_string(*id*)`.
 
-~~~admonish example title='XML file will look something like this:'
+:::info
+
 ```xml
 <?xml version="1.0" encoding="windows-1251"?>
 <string_table>
@@ -24,7 +25,8 @@ XML files are used to save text strings used for translation. All XML files are 
 ...
 </string_table>
 ```
-~~~
+
+:::
 
 ___
 

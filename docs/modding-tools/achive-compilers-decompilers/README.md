@@ -3,5 +3,3 @@
 ___
 
 ## About
-
-Programs written in Active Perl

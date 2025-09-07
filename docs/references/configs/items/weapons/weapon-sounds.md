@@ -1,4 +1,4 @@
-# Weapon Sounds Config File
+# Weapon Sounds
 
 ___
 

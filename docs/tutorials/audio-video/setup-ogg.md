@@ -8,15 +8,15 @@ ___
 
 ## Setup via SDK
 
-```admonish note
+:::note
 The sound file must be in the source *.wav format.
-```
+:::
 
 To convert *.wav to \*.ogg with SDK setup, you need to drop the file into the `rawdata\sounds` folder
 
-```admonish tip
+:::tip
 If there is no `sounds` folder in `rawdata`, you can just create a folder.
-```
+:::
 
 Open [Actor Editor](../../modding-tools/sdk/actor-editor/actor-editor.md) -> `Editors` -> `Sounds` -> [Sound Editor](../../modding-tools/sdk/sound-editor/sound-editor.md).
 
@@ -28,9 +28,9 @@ In the window that opens you will see your file, click on it and setup.
 
 ## Setup via SAVANT
 
-```admonish note
+:::note
 The sound file must be in the *.ogg format.
-```
+:::
 
 [Sound Attribute Viewer And Tweaker](../../modding-tools/audio-video/savandt.md) - This is a fan program for editing *.ogg.
 

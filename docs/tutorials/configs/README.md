@@ -1,6 +1,5 @@
-# Confings Tutorials
+# Confings
 
 ___
 
 ## About
-

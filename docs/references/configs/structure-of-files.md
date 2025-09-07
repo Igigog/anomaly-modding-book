@@ -2,13 +2,13 @@
 
 ___
 
+## About
+
 The files may differ from each other, depending on their purpose, but they all have properties in common.
 
-___
-
-```admonish warning
+:::warning
 Note this article describes the structure from CoP or SoC and may not apply to Anomaly!
-```
+:::
 
 ## Section definition
 
@@ -18,7 +18,7 @@ For starters, any information is stored in "sections". These are a kind of objec
 
 By definition `section` is a text representation of a regular `map` type:
 
-```ini,lang=LTX
+```ini
 [section_name]
 key1 = value1
 key2 = value2
@@ -32,19 +32,19 @@ Depending on the context, values would have different requirements:
 
 [condlists](./condlists.md)
 
-```ini,lang=LTX
+```ini
 my_condlist_key = {-A -B} X, {-A +B} Y, Z
 ```
 
 list of items
 
-```ini,lang=LTX
+```ini
 my_list_key = 1,2,3
 ```
 
 string, number, boolean types
 
-```ini,lang=LTX
+```ini
 [section_name]
 int_key = 1
 string_key = st_some_translation_value
@@ -65,16 +65,12 @@ To inherit a section, you use `:` and list other sections:
 
 To use a different section in your file, usually for inheritance, you have to include it relatively to your file:
 
-`/base/file_a.ltx`
-
-```ini,lang=LTX
+```ini title="/base/file_a.ltx"
 [section_a]
 key1 = value1
 ```
 
-`/file_b.ltx`
-
-```ini,lang=LTX
+```ini title="/file_b.ltx"
 #include "base/file_a.ltx"
 
 [section_b]:section_a
@@ -85,7 +81,7 @@ key2 = value2
 
 Let's take the another look at `stalker_sim_squad_novice` section of the `squad_desct.ltx` configuration file as an example:
 
-```ini,lang=LTX
+```ini title="squad_desct.ltx"
 [stalker_sim_squad_novice]:online_offline_group
 faction = stalker
 npc_random = sim_default_stalker_0, sim_default_stalker_1, sim_default_stalker_2
@@ -101,7 +97,7 @@ In this case we can notice the following:
 - Declaring the `faction`, `npc_random` and `npc_in_squad` parameters
 - `online_offline_group` inheritance. Like any other inheritance, it inherits the parent's information, which can be overwritten if desired. In this case it inherits from the file `m_online_offline_group.ltx`:
 
-```ini,lang=LTX
+```ini
 [online_offline_group]
 GroupControlSection = spawn_group
 class = ON_OFF_S
@@ -114,7 +110,7 @@ ___
 
 As we discussed above, any section can have parameters. Until now, however, these were just static, simple parameters of the config file. I now propose to parse a slightly more structurally complex parameter from the game logic file:
 
-```ini,lang=LTX
+```ini
 on_info = {-dont_have_info} %+add_info =play_sound(sound_name)% sr_idle@end
 ```
 
@@ -158,7 +154,7 @@ Example entry, in this case we have this condition:
 - Player has an item called `item_name`
 - Checking that it is not day
 
-```ini,lang=LTX
+```ini
 {-info1 +info2 =actor_has_item(item_name) !is_day}
 ```
 
@@ -177,7 +173,7 @@ Example entry, in this case we have this action:
 - Issue `task_name`
 - Retrieve `item_name`
 
-```ini,lang=LTX
+```ini
 %-info1 +info2 =give_task(task_name) =remove_item(item_name)%
 ```
 
@@ -195,7 +191,7 @@ ___
 
 The main feature of Condlist is that you can specify several Condlists in one parameter. For example:
 
-```ini,lang=LTX
+```ini
 [hit]
 on_info = {=hit_by_actor =hitted_on_bone(head_boss:boss_jaw:brow:ear_r:eye_l:eye_r:) -zat_b106_one_shot} %+zat_b106_one_shot +zat_b108_actor_damaged_chimera +zat_b106_ahtung%, {=hit_by_actor !hitted_on_bone(head_boss:boss_jaw:brow:ear_r:eye_l:eye_r:) -zat_b108_actor_damaged_chimera} %+zat_b108_actor_damaged_chimera%
 ```

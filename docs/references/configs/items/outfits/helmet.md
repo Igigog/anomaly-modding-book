@@ -1,4 +1,4 @@
-# Helmet Config File
+# Helmet
 
 ___
 

@@ -36,9 +36,9 @@ Just import your model into the scene. Resize it if necessary. I will use this m
 
 ## Posing
 
-```admonish tip
+:::tip
 If you use the standard animations your model must be in the same pose as the reference model (have the same height and proportions) (For stalkers the bind pose is [T-pose](https://en.wikipedia.org/wiki/T-pose)), but in theory you can not put your model in the right pose, but then there may be problems with animations (the animation itself will be played correctly, but the geometry attached to the bones may move incorrectly (Because of the large distance between the bones and the geometry, the geometry can shift a lot from bone movement)).
-```
+:::
 
 You can adjust the character's original pose in a number of ways:
 
@@ -66,6 +66,6 @@ You can just move the character's bones or import the animation to check the bin
 
 ![Final Result centered](assets/gifs/binding-model-final.gif)
 
-```admonish info
+:::info
 For a good result, your model should be initially modeled in the standard pose, to avoid manual editing of the model and possible breakage of the mesh, made for animation ([Topology for animation example](https://www.youtube.com/watch?v=7DAFS8sga2k)). `Weigh Paint` is used to better bind the model, third-party addons for Blender can only help for fast work, but they are not 100% accurate. Just remember, Weight Painting is a very time-consuming process, and the accuracy of your model's binding to the skeleton can be highly dependent on the pose and its offset from the reference skeleton.
-```
+:::

@@ -1,4 +1,4 @@
-# Weapon World Config File
+# Weapon World
 
 ___
 

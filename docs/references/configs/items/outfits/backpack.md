@@ -1,4 +1,4 @@
-# Backpack Config File
+# Backpack
 
 ___
 

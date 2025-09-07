@@ -62,9 +62,9 @@ For fixation bone:
 
 ### Example 2 - Slide Door
 
-```admonish tip
+:::tip
 This type of door can also be suitable for sliding drawers
-```
+:::
 
 Just like in the previous example, we need to create two bones
 

@@ -32,15 +32,15 @@ Go to Bone Properties and in X-Ray Engine: Bone, choose:
 
 ![alt text centered](assets/images/creating-hanging-object-in-blender-bone-shapes.png)
 
-```admonish tip
+:::tip
 Also for more accurate weight you can adjust the mass and center of mass for the bones
-```
+:::
 
 ## Finish
 
-```admonish tip
+:::tip
 If you plan to place the object on the ceiling, it is better to flip the object to the intended attachment point on top and apply all transformations to the armature and model. This will allow you to easily fix the object in the SDK at the desired angle.
-```
+:::
 
 Go to `Object Properties`![Object Properties svg-icon](../../../static/icons/blender/object-data.svg).
 

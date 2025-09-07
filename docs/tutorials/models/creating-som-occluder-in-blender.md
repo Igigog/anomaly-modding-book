@@ -34,9 +34,9 @@ Create a mesh that simply represents your model.
 
 ![alt text centered](assets/images/creating-som-occluder-in-blender-result.png)
 
-```admonish tip
+:::tip
 You can simply duplicate your model, but remember that the fewer polygons and the better SOM Occluder represents your model, the better.
-```
+:::
 
 ## Surface
 
@@ -44,9 +44,9 @@ Go to `Material Properties`![Material Properties svg-icon](../../../static/icons
 
 Create a separate material for our SOM occluder.
 
-```admonish note
+:::note
 If you go to have the sound cut off on both sides, select the `2 Sided` flag
-```
+:::
 
 In [X-Ray Engine: Material](../../modding-tools/blender/addon-panels/panel-material.md) choose:
 
@@ -62,9 +62,9 @@ Any [Compiler Shader](../../glossary/glossary.html#compiler-shader) ([list of al
 
 Choose or create new [Game Material](../../glossary/glossary.html#game-material) ([list of all Game Materials](../../reference/materials/materials-list.md))
 
-```admonish note
+:::note
 In Game Material for the SOM occluder the main factor will be `Sound occlusion`
-```
+:::
 
 ## Finish
 

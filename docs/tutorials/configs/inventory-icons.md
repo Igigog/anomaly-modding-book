@@ -4,36 +4,25 @@ ___
 
 Written by @nltp_ashes
 
-Table of content :
-
-- [I. Item config](inventory_icons.md#i-item-config)
-- [I.A. Defining an icon sheet](inventory_icons.md#ia-defining-an-icon-sheet)
-- [I.B Placement on the icon sheet](inventory_icons.md#ib-placement-on-the-icon-sheet)
-- [II. Icon sheet](inventory_icons.md#ii-icon-sheet)
-- [II.A. Generalities](inventory_icons.md#iia-generalities)
-- [II.B. Setting up icons within the sheet](inventory_icons.md#iib-setting-up-icons-within-the-sheet)
-
 ___
+
+## About
 
 Items in S.T.A.L.K.E.R. have icons. They are used in the inventory, when picking them off the ground, on the main HUD when attached to the belt, and so on.  
 
 This guide aims to help you understand how icons are assigned to an item, how the icon system works, and ultimately, how to properly create your own icons.
 
-___
-
-## I. Item config
+## Item config
 
 Let's start from the end : the item's config. To assign an icon to an item, you need to consider two things. Which icon sheet to use, and where your icon is on this sheet.
 
 ___
 
-### I.A. Defining an icon sheet
+### Defining an icon sheet
 
 First, icons textures are contained in icon sheets : textures containing multiple icons. In your item's config, you must (or not) define the icon sheet to use :
 
-**File :** `gamedata\configs\items\items\items_my_item.ltx`
-
-```ini,lang=LTX
+```ini title="gamedata\configs\items\items\items_my_item.ltx"
 [my_item]
 icons_texture           = ui\icons\my_icon_sheet
 ...
@@ -45,13 +34,11 @@ If you do not define this field, the game will default back to the vanilla icon 
 
 ___
 
-### I.B Placement on the icon sheet
+### Placement on the icon sheet
 
 Like will be later explained, your icon will be somewhere on this icon sheet. Thus, you need to define the coordinates of the icon on the sheet, and the size of the icon.
 
-**File :** `gamedata\configs\items\my_item.ltx`
-
-```ini,lang=LTX
+```ini title="gamedata\configs\items\my_item.ltx"
 [my_item]
 ...
 inv_grid_width          = 2    ; how many slots wide it should be
@@ -62,13 +49,13 @@ inv_grid_y              = 2    ; where on the grid the icon is on the y axis
 
 ___
 
-## II. Icon sheet
+## Icon sheet
 
 Now that we understand how the icon sheet is used, it's time to... well, create an icon sheet.
 
 ___
 
-### II.A. Generalities
+### Generalities
 
 To create and edit your icon sheet, you'll need a specialized software program. Many exist, and it's really up to your personal preferences. I personally use [Paint.NET](https://www.getpaint.net/download.html) (Free), but you can use [GIMP](https://www.gimp.org/downloads/) (Free), [ImageMagick](https://imagemagick.org/script/download.php) (Free), [Adobe Photoshop](https://www.adobe.com/products/photoshop.html) (Paid), etc.
 
@@ -89,7 +76,7 @@ Your icon(s) should :
 
 ___
 
-### II.B. Setting up icons within the sheet
+### Setting up icons within the sheet
 
 Let us take the following icon sheet as an example.
 
@@ -109,9 +96,7 @@ You can imagine each slot having a coordinate on this grid. Coordinates start a 
 
 The coordinates for the box of Mon Cheri (the red box in the middle) are for example (4, 2).
 
-**File :** `gamedata\configs\items\my_item.ltx`
-
-```ini,lang=LTX
+```ini title="gamedata\configs\items\my_item.ltx"
 [my_item]
 ...
 inv_grid_x              = 4    ; where on the grid the icon is on the x axis
@@ -124,9 +109,7 @@ inv_grid_y              = 2    ; where on the grid the icon is on the y axis
 
 The size of the icon is 2 for the width, and 1 for the height.
 
-**File :** `gamedata\configs\items\my_item.ltx`
-
-```ini,lang=LTX
+```ini title="gamedata\configs\items\my_item.ltx"
 [my_item]
 ...
 inv_grid_width          = 2    ; how many slots wide it should be

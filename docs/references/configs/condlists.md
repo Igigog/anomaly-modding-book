@@ -9,18 +9,14 @@ Transferred to modding book by demonized#1084
 
 Condition list or condlist is one way to write dynamic configuration files and have this structure:
 
-## somefile.ltx
-
-```ini,lang=LTX
+```ini title="somefile.ltx"
 [some_section]
 my_condlist = {=A(a1:a2) !B +C -D ~30} X %=E(e1) +F -G%, Y
 ```
 
 And are used like this:
 
-## somescript.script
-
-```lua
+```lua title="somescript.script"
 local ini = ini_file("path\\to\\somefile.ltx")
 local condlist = ini:r_string_to_condlist("some_section","my_condlist")
 local result = xr_logic.pick_section_from_condlist(game_object_1, game_object_2, condlist)
@@ -74,7 +70,7 @@ end
 
 All condlist elements are optional, these are all valid condlist:
 
-```ini,lang=LTX
+```ini
 cond1 =                      ;returns nil
 cond2 = true                 ;returns "true"
 cond3 = %=f%                 ;returns nil and executes xr_effects.f(a,b) --> remember that a and b depend on the arguments of pick_section_from_condlist 
@@ -84,7 +80,7 @@ cond5 = {+info1} %=f1%       ;same effect of previous one but easier to read
 
 The return value can be ignored to use condlist as a way to run functions listed from a config file, one example are the on_complete lines in task manager files:
 
-```ini,lang=LTX
+```ini
 on_complete = %=reward_stash(true)%
 ```
 
@@ -104,7 +100,7 @@ Remember that both the return on pick_section_from_condlist and arguments passed
 
 Some config lines are condlist even if they aren't obvious, for example one line can be
 
-```ini,lang=LTX
+```ini
 something = true
 ```
 
@@ -124,9 +120,9 @@ Now we examine some condlist in Anomaly, what they mean and some examples of edi
 
 ## Example 1
 
-Near the end of tm_dynamic.ltx in configs/misc
+Near the end of `tm_dynamic.ltx` in `configs/misc`
 
-```ini,lang=LTX,filepath=configs/misc/tm_dynamic.ltx
+```ini title="configs/misc/tm_dynamic.ltx"
 [simulation_task_52]
 icon = ui_inGame2_PD_Torgovets_informatsiey
 storyline = false
@@ -153,7 +149,7 @@ on_fail      = %=remove_quest_item(simulation_task_52) -simulation_task_52_dead_
 
 If we change precondition line to
 
-```ini,lang=LTX
+```ini
 precondition = {=is_rain} true, false
 ```
 
@@ -161,7 +157,7 @@ Then npc will propose this quest only if you ask them while it's raining
 
 If we change it to
 
-```ini,lang=LTX
+```ini
 precondition = false
 ```
 
@@ -172,7 +168,7 @@ depending on the pick_section_from_condlist return value
 
 If we change on_complete to
 
-```ini,lang=LTX
+```ini
 on_complete = aslkdjslakd %=inc_goodwill_by_tasker_comm(simulation_task_52:50) =reward_stash(true) =reward_random_money(10500:18500) =reward_random_item(beer:vodka:vodka2:cigarettes_lucky_3:cigarettes_russian_3) -simulation_task_52_dead_spawned -simulation_task_52_item_spawned -simulation_task_52_target_found =remove_quest_item(simulation_task_52) =forget_dead_npcs(simulation_task_52) =pstor_reset(simulation_task_52)%
 ```
 
@@ -180,7 +176,7 @@ Everything will still work as before, because the code that runs the pick_sectio
 
 ## Example 2
 
-```ini,lang=LTX,filepath=configs/scripts/escape/devushka.ltx
+```ini title="configs/scripts/escape/devushka.ltx"
 [walker@devushka]
 path_walk = guard_2_walk
 path_look = guard_2_look
@@ -197,9 +193,9 @@ invulnerable = {=is_warfare} false, {!actor_enemy} true, false
 on_game_timer = 2400 | remark@smoking_stand
 ```
 
-we change on_info3 to
+we change `on_info3` to
 
-```ini,lang=LTX
+```ini
 on_info3 = {=is_rain =is_actor_enemy_to_faction(freedom)} walker@rain
 ```
 
@@ -209,9 +205,7 @@ Now Hip will seek shelter from rain only if we are enemy to Freedom, women be li
 
 If you want to make custom conditions either create new functions inside xr_conditions or make your own script file defining functions inside xr_conditions scope
 
-### my_conditions.script
-
-```lua
+```lua title="my_conditions.script"
 function xr_conditions.has_more_money_than(a,b,c)
     
     -- a and b will be the game objects given as arguments to the xr_logic.pick_section_from_condlist call that evaluates this condlist
@@ -231,7 +225,7 @@ end
 
 Now we have has_more_money_than available as conditions for condlist, now we can do
 
-```ini,lang=LTX
+```ini
 on_info = {=has_more_money_than(50000)} walker@surge
 ```
 
@@ -239,17 +233,15 @@ So Hip will stay outside during blowouts unless we have more than 50k rubles
 
 You can do the same with xr_effects
 
-### my_effects.script
-
-```lua
+```lua title="my_effects.script"
 function xr_effects.give_tuna_to_actor(a,b,c)
     alife():create('conserva',vector(),0,0,0)
 end
 ```
 
-Then change on_info2 to
+Then change `on_info2` to
 
-```ini,lang=LTX
+```ini
 on_info2 = {=is_night} walker@sleeper_1 %=give_tuna_to_actor%
 ```
 

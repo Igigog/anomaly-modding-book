@@ -66,7 +66,7 @@ This movement is stored in 3 float numbers (4 bytes each).
 
 Below is a pseudocode that describes one animation:
 
-```C++
+```cpp
 name = string
 length = uint32
 for bone in bones {
@@ -105,7 +105,7 @@ for bone in bones {
 Stores bone parts and animation parameters.
 The code that describes this chunk is shown below:
 
-```C++
+```cpp
 params_version = uint16 // parameter format version
 partition_count = uint16 // number of bone parts
 for (i=0, i<partition_count, i++) {

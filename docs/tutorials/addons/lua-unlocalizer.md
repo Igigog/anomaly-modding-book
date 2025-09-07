@@ -1,4 +1,4 @@
-# Lua variables unlocalizer
+# Lua Variables Unlocalizer
 
 ___
 
@@ -31,7 +31,7 @@ This addons allows to unlocalize variables for lua environment, making them glob
 
 Example in `gamedata/configs/unlocalizers/unlocalizer_text.ltx`. `RENDERER` and `STATIC_LIGHT` variables are local in `actor_effects.script` file, this will make them global.
 
-```ini,lang=LTX
+```ini title="gamedata/configs/unlocalizers/unlocalizer_text.ltx"
 [actor_effects]
 RENDERER
 STATIC_LIGHT

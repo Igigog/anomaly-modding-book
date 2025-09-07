@@ -1,4 +1,4 @@
-# Weapon Ammo Config File
+# Weapon Ammo
 
 ___
 

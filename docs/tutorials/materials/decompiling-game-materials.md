@@ -6,9 +6,9 @@ ___
 
 In some cases it is necessary to decompile the contents of gamemtl.xr.
 
-```admonish warning
+:::warning
 This method of decompilation is considered obsolete. All editing of Game Materials should be done through [SDK Shader Editor](../../modding-tools/sdk/shader-editor/shader-editor.md), as there is a risk of corrupting the game archive.
-```
+:::
 
 ## Preparing and installing ActivePerl
 

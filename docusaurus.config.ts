@@ -25,11 +25,6 @@ const config: Config = {
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/anomaly-modding-book/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'theparazit', // Usually your GitHub org/user name.
-  projectName: 'Anomaly Modding Book', // Usually your repo name.
-
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
@@ -53,6 +48,8 @@ const config: Config = {
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
+          blogTitle: '1213',
+          blogDescription: '213',
           showReadingTime: true,
           feedOptions: {
             type: ['rss', 'atom'],
@@ -116,7 +113,7 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/Igigog/anomaly-modding-book',
           label: 'GitHub',
           position: 'right',
         },

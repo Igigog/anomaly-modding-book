@@ -1,7 +1,5 @@
-# Configurations | Scripts File Formats
+# Configurations | Scripts
 
 ___
 
-- [*.ltx](ltx.md)
-- [*.script](script.md)
-- [*.xml](xml.md)
+## About

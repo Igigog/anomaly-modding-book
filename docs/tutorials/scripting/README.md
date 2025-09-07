@@ -1,4 +1,4 @@
-# Scripting Tutorials
+# Scripting
 
 ___
 
@@ -8,7 +8,7 @@ ___
 
 So, well, scripting.
 
-Writing scripts for this game is hard, really. You will want to start with  [Lua book](https://www.lua.org/pil/contents.html) to learn the basics of Lua programming language. I don't know how good it is at teaching general programming concepts, but you surely are brave enough to not concede before a mere programming skill? Right?)
+Writing scripts for this game is hard, really. You will want to start with  [Lua book](https://www.lua.org/pil/contents.html) to learn the basics of Lua programming language. I don't know how good it is at teaching general programming concepts, but you surely are brave enough to not concede before a mere programming skill? Right?
 
 Anyway, the whole programming thing is kinda hard, so feel free to ask questions in [Anomaly Discord](https://discord.gg/c4RuJNs). Channel *#modding-coding* is just for you.
 

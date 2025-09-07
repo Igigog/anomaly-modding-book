@@ -6,17 +6,17 @@ ___
 
 In X-Ray, cubmaps are used for Sky Box and for reflective surfaces (mirrors, glass).
 
-```admonish tip
+:::tip
 Cubmaps can be created in different ways (addons, procedural textures or HDRi maps) and in different programs.
-```
+:::
 
-```admonish info
+:::info
 In X-rays, Сubemaps are based on six projections arranged in a specific order, where:
 
 ![alt text centered](assets/images/cubemap-coordinates.png)
-```
+:::
 
-```admonish info
+:::info
 They may look different in the view of different programs
 
 In the `Gimp` view, it might look like this (texture with six layers)
@@ -26,7 +26,7 @@ In the `Gimp` view, it might look like this (texture with six layers)
 In `Photoshop` view, it may look different (six projections)
 
 ![alt text](assets/images/cubemap-photoshop-example.png)
-```
+:::
 
 ## Start
 
@@ -40,9 +40,9 @@ Find and add the [Sky Texture Node](https://docs.blender.org/manual/en/4.3/rende
 
 ![alt text centered](assets/images/creating-cubemap-in-blender-node-example.png)
 
-```admonish tip
+:::tip
 If you are using `Nishita`, you will need to uncheck `Sun Disc`, as the sun positions are set in a separate `suns.ltx` file
-```
+:::
 
 Switch Render Engine to `Cycles` in `Render Properties` ![alt text svg-icon](../../../static/icons/blender/scene.svg).
 
@@ -56,15 +56,15 @@ Scene should look like this.
 
 Перейдите в режим просмотра из камеры, она должна выглядить так.
 
-```admonish tip
+:::tip
 Для примера я добавил куб, чтобы было понятнее
-```
+:::
 
 Перейдите в Output Properties, нужно настроить разрешение камеры.
 
-```admonish note
+:::note
 Так как в игре будет шесть проекций, нам нужно расчитать разрешение камеры.
-```
+:::
 
 Для примера одна сторона будет в 2048x2048 разрешении
 

@@ -6,8 +6,9 @@ ___
 
 Contain some game functions, command sequences, written in [Lua](https://en.wikipedia.org/wiki/Lua_(programming_language)) scripting language.
 
-~~~admonish example title='Script file might look like:'
-```lua,filepath="...\scripts\actor_status_thirst.script"
+:::info
+
+```lua title="...\scripts\actor_status_thirst.script"
 function create()
 	printdbg("- Water deprivation | Enabled")
 	feature_state = true
@@ -26,7 +27,8 @@ function create()
 	})
 end
 ```
-~~~
+
+:::
 
 ___
 

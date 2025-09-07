@@ -1,4 +1,4 @@
-# Items Configs
+# Items
 
 ___
 

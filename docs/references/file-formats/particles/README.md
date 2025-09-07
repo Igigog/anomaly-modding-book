@@ -1,6 +1,5 @@
-# Particles File Formats
+# Particles
 
 ___
 
-- [*.pe](pe.md)
-- [*.pg](pg.md)
+## About

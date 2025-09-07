@@ -23,11 +23,11 @@ The idea is to separate the inside and outside of the building.
 
 ![alt text centered](assets/images/creating-building-in-blender-result.png)
 
-```admonish note
+:::note
 Orange indicates the outer side.
 
 Blue indicates the inner side.
-```
+:::
 
 ## Finish
 

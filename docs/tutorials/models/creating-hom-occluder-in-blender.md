@@ -29,9 +29,9 @@ All we need to do is create a mesh that simplistically represents our model:
 
 ![Model Result centered](assets/images/creating-hom-occluder-in-blender-result.png)
 
-```admonish tip
+:::tip
 You can simply duplicate your model, but remember that the fewer polygons and the better HOM Occluder represents your model, the better.
-```
+:::
 
 ## Surface
 

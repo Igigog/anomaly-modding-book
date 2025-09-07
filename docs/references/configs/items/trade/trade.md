@@ -1,4 +1,4 @@
-# Trader profile
+# Trader Profile
 
 ___
 
@@ -9,7 +9,7 @@ ___
 
 Let's explore abstract simplified trader profile `trade_bandit.ltx`:
 
-```ini,lang=LTX,filepath="..\configs\items\trade\trade_bandit.ltx"
+```ini title="..\configs\items\trade\trade_bandit.ltx"
 #include "presets\trade_discounts.ltx"
 #include "presets\trade_presets.ltx"
 
@@ -53,7 +53,7 @@ Accept a [condlist](../../condlists.md) of [sections](../../structure-of-files.m
 
 To conclude, this:
 
-```ini,lang=LTX
+```ini
 buy_condition = {=actor_goodwill_ge(bandit:400)} trade_generic_buy_everything, trade_generic_buy
 [trade_generic_buy]
 jgut = 0.1
@@ -80,7 +80,7 @@ Defines what items trader have in stock
 Accept a [section](../../structure-of-files.md) of items.
 Those items follow simple rule:
 
-```ini,lang=LTX
+```ini
 [supplies_1]
 toolkit_r5 = 2, 0.1
 
@@ -91,7 +91,7 @@ toolkit_r5 = 3, 1
 Trader have `10%` chance to add `2` `toolkit_r5` to his stock.
 If count > 1 then chance is calculated for each item separately
 
-```admonish note title="Author note"
+:::note[Author note]
 It's important to distinct `sell_condition` from `buy_supplies`:
 
 - `sell_condition` - define at what condition which items trader will sell to actor
@@ -99,7 +99,7 @@ It's important to distinct `sell_condition` from `buy_supplies`:
 - `buy_supplies` - define what items trader have in stock
 
 So you can combine these options to create complex trader profiles.
-```
+:::
 
 ## 4. buy_item_condition_factor
 
@@ -120,7 +120,7 @@ Defines buy/sell discounts for trader
 
 Accepts section with specific properties:
 
-```ini,lang=LTX
+```ini
 [discount_barman_special]
 buy                                      = 0.2
 sell                                     = 0.7

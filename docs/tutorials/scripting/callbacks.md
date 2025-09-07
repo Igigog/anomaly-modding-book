@@ -50,9 +50,7 @@ Once you have created your callback, you can fire it whenever you want using `Se
 
 In the following example, we will create a callback that fires when the key **F** is pressed. To make the example more descriptive, it will be split in two files.
 
-**File :** `gamedata\scripts\script_a.script`
-
-```lua,filepath="gamedata\scripts\script_a.script"
+```lua title="gamedata\scripts\script_a.script"
 -- A counter of how many times the player has paid respects
 local respects_counter = 0
 
@@ -76,9 +74,7 @@ function some_key_was_press(dik)
 end
 ```
 
-**File :** `gamedata\scripts\script_b.script`
-
-```lua,filepath="gamedata\scripts\script_b.script"
+```lua title="gamedata\scripts\script_b.script"
 -- Register callbacks
 function on_game_start()
     RegisterScriptCallback("modding_book_on_pay_respects", is_paying_respects)
