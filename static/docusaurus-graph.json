@@ -523,19 +523,13 @@
   },
   {
     "id": "ltx-support",
-    "title": "![Title centered](assets/images/ltx-support-Title.gif)",
+    "title": "LTX Support",
     "linkTo": [],
     "referencedBy": []
   },
   {
     "id": "universal-x64-level-compilers",
     "title": "Universal x64 level compilers",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "REAMDE",
-    "title": "Compressors",
     "linkTo": [],
     "referencedBy": []
   },
@@ -624,12 +618,6 @@
     "referencedBy": []
   },
   {
-    "id": "animation-naming-convension",
-    "title": "animation-naming-convension",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
     "id": "hud-animations-artefact",
     "title": "Artefact HUD Animations",
     "linkTo": [],
@@ -668,12 +656,6 @@
   {
     "id": "algoritm-of-logic",
     "title": "Algorithm of Logic",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "condlists",
-    "title": "Condition Lists Tutorial",
     "linkTo": [],
     "referencedBy": []
   },
@@ -720,12 +702,6 @@
     "referencedBy": []
   },
   {
-    "id": "mutant",
-    "title": "m_*Mutant*.ltx Config File",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
     "id": "phantom",
     "title": "AI_PHANT (Phantom)",
     "linkTo": [],
@@ -757,7 +733,7 @@
   },
   {
     "id": "stalker",
-    "title": "m_*stalker*.ltx Config File",
+    "title": "m_*stalker*.ltx",
     "linkTo": [],
     "referencedBy": []
   },
@@ -824,12 +800,6 @@
   {
     "id": "weapon-world",
     "title": "Weapon World",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "physic-object",
-    "title": "Physic Object Config File",
     "linkTo": [],
     "referencedBy": []
   },
@@ -1321,7 +1291,7 @@
   },
   {
     "id": "creating-hud-hands-animation-in-blender",
-    "title": "Creating a hud hands animation in Blender",
+    "title": "Creating HUD Hands Animation in Blender",
     "linkTo": [],
     "referencedBy": []
   },
@@ -1346,6 +1316,12 @@
   {
     "id": "setup-ogg",
     "title": "Setup *.ogg",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "condlists",
+    "title": "Condition Lists Tutorial",
     "linkTo": [],
     "referencedBy": []
   },
@@ -1524,13 +1500,13 @@
     "referencedBy": []
   },
   {
-    "id": "npc_creation",
+    "id": "npc-creation",
     "title": "NPC Creation",
     "linkTo": [],
     "referencedBy": []
   },
   {
-    "id": "task_guide",
+    "id": "task-guide",
     "title": "Task Guide",
     "linkTo": [],
     "referencedBy": []

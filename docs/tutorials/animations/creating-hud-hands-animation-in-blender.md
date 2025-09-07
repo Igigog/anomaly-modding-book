@@ -1,4 +1,13 @@
-# Creating a hud hands animation in Blender
+# Creating HUD Hands Animation in Blender
+
+___
+
+<Authors
+  authors={["saloeater"]}
+  size="medium"
+  showTitle={true}
+  showDescription={true}
+/>
 
 ## Beginning
 
@@ -30,7 +39,7 @@
 * In `Properties` editor go to `Data` > `Lens`
 * Adjust FoV to your game settings (65 for the Gamma)
 
-## Creating a .omf file
+## Creating a *.omf file
 
 ### Preparing the scene
 
@@ -42,7 +51,7 @@
 * Select all the bones in the `3d Viewport` editor
 * In the `Bone Collections` select the newly created bone collection and click on `Assign Selected Bones`
 
-### Exporting the .omf file
+### Exporting the *.omf file
 
 * Import your .skl file(s) through `File` > `Import` > `X-Ray Skeletal Animation`
 * In the `Dope Sheet` editor select and play your animation and make sure it works
@@ -53,7 +62,7 @@
   * Add - adds the animation to the existing .omf file
     * This also can be done via `3d Viewport` > `X-Ray` > `OMF Editor` > `Merge OMF`
 
-### Managing the .omf file
+### Managing the *.omf file
 
 * Open the OMF Editor
 * Open your .omf file

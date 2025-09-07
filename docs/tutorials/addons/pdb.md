@@ -2,9 +2,12 @@
 
 ___
 
-Written by @nltp_ashes
-
-___
+<Authors
+  authors={["nltp_ashes"]}
+  size="medium"
+  showTitle={true}
+  showDescription={true}
+/>
 
 ## 1. About
 
@@ -54,7 +57,7 @@ ___
 
 ## 3. Installation
 
-Download the Anomaly Modded Exes from [here](https://github.com/themrdemonized/xray-monolith/releases/latest).
+Download the [Anomaly Modded Exes](https://github.com/themrdemonized/xray-monolith/releases/latest).
 
 ![img_pdb_assets](assets/images/img_pdb_exes.png)
 

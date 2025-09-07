@@ -1,8 +1,13 @@
 # NPC Creation
 
-Authors: GhenTuong (original), @nltp_ashes (formatting), Igigog
-
 ___
+
+<Authors
+  authors={["ghentuong","nltp_ashes", "igigog"]}
+  size="medium"
+  showTitle={true}
+  showDescription={true}
+/>
 
 All the code for this article is available in the [examples folder](https://github.com/Igigog/anomaly-modding-book/tree/main/examples/NPC%20Creation) of the repository
 

@@ -28,3 +28,31 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* src/css/custom.css */
+.social-icon {
+  transition: all 0.2s ease-in-out;
+  opacity: 0.8;
+}
+
+.social-icon:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Специфичные цвета для иконок */
+.social-icon-vk:hover {
+  color: #4a76a8; /* VK blue */
+}
+
+.social-icon-telegram:hover {
+  color: #0088cc; /* Telegram blue */
+}
+
+.social-icon-moddb:hover {
+  color: #ff6600; /* ModDB orange */
+}
+
+.social-icon-discord:hover {
+  color: #5865f2; /* Discord blurple */
+}

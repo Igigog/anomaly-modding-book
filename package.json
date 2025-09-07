@@ -19,18 +19,23 @@
     "@docusaurus/plugin-ideal-image": "^3.8.1",
     "@docusaurus/preset-classic": "3.8.1",
     "@docusaurus/theme-mermaid": "^3.8.1",
+    "@iconify/react": "^6.0.1",
     "@mdx-js/react": "^3.0.0",
+    "@types/js-yaml": "^4.0.9",
     "clsx": "^2.0.0",
     "docusaurus-graph": "^2.0.0",
+    "js-yaml-loader": "^1.2.2",
     "prism-react-renderer": "^2.3.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.8.1",
     "@docusaurus/tsconfig": "3.8.1",
     "@docusaurus/types": "3.8.1",
-    "typescript": "~5.6.2"
+    "typescript": "~5.6.2",
+    "yaml-loader": "^0.8.1"
   },
   "browserslist": {
     "production": [

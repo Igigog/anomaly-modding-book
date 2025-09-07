@@ -1,6 +1,5 @@
-# Creatures Configs
+# Creatures
 
 ___
 
 ## About
-

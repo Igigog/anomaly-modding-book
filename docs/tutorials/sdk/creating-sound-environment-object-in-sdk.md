@@ -2,9 +2,12 @@
 
 ___
 
-## Authors
-
-TheParaziT
+<Authors
+  authors={["theparazit"]}
+  size="medium"
+  showTitle={true}
+  showDescription={true}
+/>
 
 ## Need to know
 

@@ -1,4 +1,4 @@
-# m_*stalker*.ltx Config File
+# m_*stalker*.ltx
 
 ___
 

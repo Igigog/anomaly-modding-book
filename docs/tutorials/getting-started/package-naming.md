@@ -2,7 +2,12 @@
 
 ___
 
-_by [Ishmaeel](https://github.com/Ishmaeel)_
+<Authors
+  authors={["ishmaeel"]}
+  size="medium"
+  showTitle={true}
+  showDescription={true}
+/>
 
 While installing an addon, Mod Organizer 2 can extract a nice name from the archive (ZIP/7Z/RAR):
 

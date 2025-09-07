@@ -2,8 +2,12 @@
 
 ___
 
-_by [SaloEater](https://github.com/SaloEater)_
-___
+<Authors
+  authors={["saloeater"]}
+  size="medium"
+  showTitle={true}
+  showDescription={true}
+/>
 
 ## 0. Overview
 

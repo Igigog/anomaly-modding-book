@@ -2,6 +2,13 @@
 
 ___
 
+<Authors
+  authors={["theparazit"]}
+  size="medium"
+  showTitle={true}
+  showDescription={true}
+/>
+
 ## About
 
 In X-Ray, cubmaps are used for Sky Box and for reflective surfaces (mirrors, glass).

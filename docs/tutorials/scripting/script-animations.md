@@ -2,6 +2,13 @@
 
 ____
 
+<Authors
+  authors={["etherealstalkermodding"]}
+  size="medium"
+  showTitle={true}
+  showDescription={true}
+/>
+
 ## Theory
 
 The first thing to know is that animations can be divided into a few categories:

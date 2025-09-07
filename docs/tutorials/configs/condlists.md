@@ -2,8 +2,12 @@
 
 ___
 
-Courtesy of tdef#6225
-Transferred to modding book by demonized#1084
+<Authors
+  authors={["tdef", "themrdemonized", "proflander"]}
+  size="medium"
+  showTitle={true}
+  showDescription={true}
+/>
 
 ## About
 

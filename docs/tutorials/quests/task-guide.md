@@ -2,9 +2,12 @@
 
 ___
 
-Written by @nltp_ashes
-
-___
+<Authors
+  authors={["nltp_ashes"]}
+  size="medium"
+  showTitle={true}
+  showDescription={true}
+/>
 
 ## Intorduction
 

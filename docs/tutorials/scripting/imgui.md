@@ -2,6 +2,13 @@
 
 ____
 
+<Authors
+  authors={["lucy"]}
+  size="medium"
+  showTitle={true}
+  showDescription={true}
+/>
+
 ## Basics
 
 Dear ImGui is a bloat-free graphical user interface library for C++.  

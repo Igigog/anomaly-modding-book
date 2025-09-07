@@ -2,15 +2,14 @@
 
 ___
 
-> Written by the New Project mod team
+<Authors
+  authors={["new_project_mod_team"]}
+  size="medium"
+  showTitle={true}
+  showDescription={true}
+/>
 
-- [VK](https://vk.com/stalker_new_project)
-- [AP-PRO](https://ap-pro.ru/forums/topic/1902-stalker-new-project)
-- [ModDB](https://www.moddb.com/mods/stalker-new-project)
-- [Telegram](https://t.me/stalker_new_project)
-- [Discord](https://discord.gg/chZans7pUU)
-
-___
+## Start
 
 So first, let's try to understand how the rendering system works in general
 

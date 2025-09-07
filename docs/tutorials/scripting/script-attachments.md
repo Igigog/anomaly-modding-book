@@ -2,6 +2,13 @@
 
 ____
 
+<Authors
+  authors={["lucy"]}
+  size="medium"
+  showTitle={true}
+  showDescription={true}
+/>
+
 ## Basics
 
 Script attachments are used to attach any model to any game object or even other script attachments.  

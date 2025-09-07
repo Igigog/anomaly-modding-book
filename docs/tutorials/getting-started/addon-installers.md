@@ -2,7 +2,12 @@
 
 ___
 
-Courtesy of RavenAscendant#7504
+<Authors
+  authors={["ravenascendant"]}
+  size="medium"
+  showTitle={true}
+  showDescription={true}
+/>
 
 MO2 supports 2 kinds of installers.
 BAIN is the simpler.

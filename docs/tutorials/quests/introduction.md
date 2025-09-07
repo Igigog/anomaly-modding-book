@@ -2,7 +2,12 @@
 
 ___
 
-Courtesy of tdef#6225
+<Authors
+  authors={["tdef"]}
+  size="medium"
+  showTitle={true}
+  showDescription={true}
+/>
 
 A quest is defined by adding a section inside `\configs\misc\task\task_manager.ltx` or any of the files included by it.
 

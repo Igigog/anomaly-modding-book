@@ -1,7 +1,6 @@
 igigog:
   name: Igor Anpilogov
   title: Creator of Anomaly Modding Book
-  url: https://github.com/Igigog
   image_url: https://github.com/Igigog.png
   email: contact_github@igisaur.com
   socials:
@@ -10,7 +9,88 @@ igigog:
 theparazit:
   name: TheParaziT
   title: Anomaly Modding Book maintainer
-  url: https://github.com/TheParaziT
   image_url: https://github.com/TheParaziT.png
   socials:
     github: TheParaziT
+
+nltp_ashes:
+  name: NLTP_ASHES
+  image_url: https://github.com/nltp-ashes.png
+  socials:
+    github: nltp-ashes
+
+ravenascendant:
+  name: RavenAscendant
+  image_url: https://github.com/ravenascendant.png
+  socials:
+    github: ravenascendant
+  
+ishmaeel:
+  name: Ishmaeel
+  image_url: https://github.com/Ishmaeel.png
+  socials:
+    github: Ishmaeel
+
+сomradeсatilina:
+  name: ComradeCatilina
+  image_url: https://github.com/ComradeCatilina.png
+  socials:
+    github: ComradeCatilina
+
+ghentuong:
+  name: GhenTuong
+  image_url: https://github.com/GhenTuong.png
+  socials:
+    github: GhenTuong
+
+lucy:
+  name: Lucy
+  image_url: https://github.com/xr-lucy.png
+  socials:
+    github: xr-lucy
+
+etherealstalkermodding:
+  name: EtherealStalkerModding
+  image_url: https://github.com/EtherealStalkerModding.png
+  socials:
+    github: EtherealStalkerModding
+
+hrusteckiy:
+  name: Hrusteckiy
+  image_url: https://github.com/Hrusteckiy.png
+  socials:
+    github: Hrusteckiy
+    website: https://amk-team.ru/forum/profile/57247-hrust/
+    vk: https://vk.com/hrusteckiy
+    discord: hrusteckiy
+
+themrdemonized:
+  name: themrdemonized
+  image_url: https://github.com/themrdemonized.png
+  socials:
+    github: themrdemonized
+
+saloeater:
+  name: SaloEater
+  image_url: https://github.com/SaloEater.png
+  socials:
+    github: SaloEater
+
+proflander:
+  name: Prof. Lander
+  image_url: https://github.com/ProfLander.png
+  socials:
+    github: ProfLander
+
+tdef:
+  name: tdef
+
+new_project_mod_team:
+  name: New Project Mod Team
+  image_url: https://sun9-39.userapi.com/s/v1/ig2/jhsbnNOyzTwEkEOCyzAH0OMArBe7p8W3QlvOtK-WoH9JrAWlQSIbdBkeJpXyfBd_M_AQSOczTJt0EqGs9VKLIGYv.jpg?quality=95&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,1000x1000&from=bu&cs=1000x0
+  socials:
+    website: https://ap-pro.ru/forums/topic/1902-stalker-new-project
+    vk: https://vk.com/stalker_new_project
+    telegram: https://t.me/stalker_new_project
+    discord: https://discord.gg/chZans7pUU
+    moddb: https://www.moddb.com/mods/stalker-new-project

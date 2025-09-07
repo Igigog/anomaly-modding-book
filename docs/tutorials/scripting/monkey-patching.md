@@ -2,7 +2,12 @@
 
 ___
 
-Courtesy of RavenAscendant#7504
+<Authors
+  authors={["ravenascendant"]}
+  size="medium"
+  showTitle={true}
+  showDescription={true}
+/>
 
 All code snippets used in the guide are licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License
 

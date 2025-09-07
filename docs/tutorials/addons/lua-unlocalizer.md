@@ -2,9 +2,14 @@
 
 ___
 
-## Intro
+<Authors
+  authors={["themrdemonized"]}
+  size="medium"
+  showTitle={true}
+  showDescription={true}
+/>
 
-by demonized#1084
+## About
 
 Lua variables unlocalizer is a part of [modded exes repo, version 2023.03.09+](https://github.com/themrdemonized/xray-monolith)
 

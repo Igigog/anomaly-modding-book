@@ -2,7 +2,12 @@
 
 ___
 
-Written by ComradeCatilina
+<Authors
+  authors={["сomradeсatilina"]}
+  size="medium"
+  showTitle={true}
+  showDescription={true}
+/>
 
 ## Chapter 1 : Concerned Files
 
