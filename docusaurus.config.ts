@@ -16,8 +16,6 @@ const config: Config = {
   markdown: {
     mermaid: true,
   },
-  plugins: ['docusaurus-graph'],
-  // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
@@ -44,7 +42,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/TheParaziT/anomaly-modding-book/',
         },
         blog: {
           blogTitle: 'Blog',
@@ -57,7 +55,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/TheParaziT/anomaly-modding-book/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -143,7 +141,35 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Glossary',
+              to: '/docs/intro',
+            },
+            {
+              label: 'Tutorials',
+              to: '/docs/intro',
+            },
+            {
+              label: 'References',
+              to: '/docs/intro',
+            },
+            {
+              label: 'Modding Tools',
+              to: '/docs/intro',
+            },
+            {
+              label: 'Resources',
+              to: '/docs/intro',
+            },
+            {
+              label: 'Engine API',
+              to: '/docs/intro',
+            },
+            {
+              label: 'Scripting API',
+              to: '/docs/intro',
+            },
+            {
+              label: 'For Contrubutors',
               to: '/docs/intro',
             },
           ],
@@ -153,7 +179,7 @@ const config: Config = {
           items: [
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: 'https://discord.gg/8Pu2ekQYg3',
             },
           ],
         },
@@ -166,7 +192,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/Igigog/anomaly-modding-book',
+              href: 'https://github.com/TheParaziT/anomaly-modding-book',
             },
           ],
         },
