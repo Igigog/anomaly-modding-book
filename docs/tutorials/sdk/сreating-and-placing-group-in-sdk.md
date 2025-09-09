@@ -24,26 +24,26 @@ Groups in the SDK are useful because you can combine several types of objects in
 
 For example, let's make a group of a [Static Object](../../glossary/glossary.html#static-object), its [HOM Occluder](../../glossary/glossary.html#hierarchical-occluder-mesh), a [Sound Source](../../glossary/glossary.html#sound-source-object) and a [Light Source](../../glossary/glossary.html#light-source-object).
 
-Open [Level Editor](../../modding-tools/sdk/level-editor/level-editor.md).
+Open [Level Editor](../../modding-tools/sdk/level-editor/README.md).
 
 I added a static barrel model and its HOM Occluder with the same coordinates to the level.
 Then I added a sound and light source.
 
 ![alt text centered](assets/images/group-objects.png)
 
-```admonish note
+:::note
 Before creating a group, you need to select the desired objects in their category. For example, if you put two Static Objects, they should be selected in their `Scene Object` category, the same for other types of objects.
-```
+:::
 
-In the [Edit Mode](../../modding-tools/sdk/level-editor/windows/edit-mode.md) window, select `Group`.
-Open the [Object Tools](../../modding-tools/sdk/level-editor/windows/object-tools.md) window. In it, click `Commands` -> `Group`.
+In the [Edit Mode](../../modding-tools/sdk/level-editor/edit-mode.md) window, select `Group`.
+Open the [Object Tools](../../modding-tools/sdk/level-editor/object-tools.md) window. In it, click `Commands` -> `Group`.
 
 ![alt text centered](assets/gifs/group-objects.gif)
 
-Here you can also setup the group (in the [Properties](../../modding-tools/sdk/level-editor/windows/properties.md) and [Object Tools](../../modding-tools/sdk/level-editor/windows/object-tools.md) windows), ungroup it or save it.
+Here you can also setup the group (in the [Properties](../../modding-tools/sdk/level-editor/properties.md) and [Object Tools](../../modding-tools/sdk/level-editor/object-tools.md) windows), ungroup it or save it.
 
 ## Placing group
 
-To place an already prepared saved group on a level, select `Group` in the [Edit Mode](../../modding-tools/sdk/level-editor/windows/edit-mode.md) window, go to [Object Tools](../../modding-tools/sdk/level-editor/windows/object-tools.md) in `Current Object`, click `Select ...` and select the desired group. Then in the [Render](../../modding-tools/sdk/level-editor/windows/render.md) window select `Add Mode` and add your group to the scene.
+To place an already prepared saved group on a level, select `Group` in the [Edit Mode](../../modding-tools/sdk/level-editor/edit-mode.md) window, go to [Object Tools](../../modding-tools/sdk/level-editor/object-tools.md) in `Current Object`, click `Select ...` and select the desired group. Then in the [Render](../../modding-tools/sdk/level-editor/render.md) window select `Add Mode` and add your group to the scene.
 
 ![alt text centered](assets/gifs/place-group-objects.gif)

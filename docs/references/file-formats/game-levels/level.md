@@ -172,9 +172,9 @@ ___
  </tbody>
 </table>
 
-```admonish
+:::note
 Zero texture is specified without the file name and consists only of the symbol #0. So, after the field "number of textures" right after the symbol #0, do not be alarmed :)
-```
+:::
 
 ### Sectors
 

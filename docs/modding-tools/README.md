@@ -56,9 +56,9 @@ Official SDK with community enhancements:
 - [SDK 0.5 (Clear Sky)](https://sharedby.blomp.com/AWr3Vs)
   - [SDK B.O.R.S.C.H.T for CS by Lightning in a vacuum](https://bitbucket.org/stalker/xray-borscht/src/master/)
 
-```admonish warning
+:::warning
 These versions (SDK 0.4 and SDK 0.5/0.6) are not compatible with Anomaly!
-```
+:::
 
 - [SDK 0.7 (Call of Pripyat)](https://www.moddb.com/games/stalker-call-of-pripyat/downloads/x-ray-16-engine-sdk-v07)
   - [SDK 0.7 (Call of Pripyat)(RePack by DaaGuda V2)](https://mega.nz/folder/zFBiWSAJ#5_MSuGpVPb7QqcPH00nC7w) - Official SDK 0.7 repack with customized
@@ -78,9 +78,9 @@ These versions (SDK 0.4 and SDK 0.5/0.6) are not compatible with Anomaly!
 
 ### SDK tools
 
-```admonish info
+:::info
 Versions of the SDK tools may differ depending on the version of the SDK itself
-```
+:::
 
 - [Actor Editor](sdk/actor-editor/actor-editor.md)
 - Dialog Editor

@@ -1,4 +1,4 @@
-# INTERNAL: blur Shader Type
+# INTERNAL: blur
 
 ___
 

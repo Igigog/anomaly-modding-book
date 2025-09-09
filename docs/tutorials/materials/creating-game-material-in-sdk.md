@@ -16,7 +16,7 @@ Click `Create` -> Select `Static`. This will create a new material for the [Stat
 
 Now we can rename the material. Right click on the material -> `Rename`.
 
-Next, we need to determine the material parameters we need. I chose these ([parameter values in the Shader Editor](../../modding-tools/sdk/shader-editor/windows/se-item-properties.md)):
+Next, we need to determine the material parameters we need. I chose these ([parameter values in the Shader Editor](../../modding-tools/sdk/shader-editor/se-item-properties.md)):
 
 - Dynamic - False
 - Passable - False

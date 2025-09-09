@@ -1,4 +1,4 @@
-# INTERNAL: gray-scale effect Shader Type
+# INTERNAL: gray-scale effect
 
 ___
 

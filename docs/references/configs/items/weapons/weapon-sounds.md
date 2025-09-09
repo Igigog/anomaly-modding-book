@@ -4,9 +4,9 @@ ___
 
 ## About
 
-```admonish tip title="Formula"
+:::tip[Formula]
 sound parameter name = sound name, volume (0.0 - 1.0), delay in seconds
-```
+:::
 
 ## General
 

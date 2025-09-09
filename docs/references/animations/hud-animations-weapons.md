@@ -1,4 +1,4 @@
-# Weapon HUD Animations
+# Weapon HUD
 
 ___
 

@@ -25,9 +25,9 @@ ___
 
 ## Strafe
 
-```admonish info
+:::info
 Strafe works when moving the character (WASD)
-```
+:::
 
 | Parameter Name | Parameter Description | Example Value | Possible Parameters |
 |---|---|---|---|
@@ -48,9 +48,9 @@ Strafe works when moving the character (WASD)
 
 ## Inertia
 
-```admonish info
+:::info
 Inertia works when moving the mouse
-```
+:::
 
 | Parameter Name | Parameter Description | Example Value | Possible Parameters |
 |---|---|---|---|
@@ -92,9 +92,9 @@ Inertia works when moving the mouse
 
 ## Empty click animation
 
-```admonish info
+:::info
 Weapon animation parameters when attempting to shoot with an empty magazine
-```
+:::
 
 | Parameter Name | Parameter Description | Example Value | Possible Parameters |
 |---|---|---|---|

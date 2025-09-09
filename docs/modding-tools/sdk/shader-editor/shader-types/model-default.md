@@ -1,4 +1,4 @@
-# MODEL: (default) Shader Type
+# MODEL: (default)
 
 ___
 

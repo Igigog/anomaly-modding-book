@@ -1,4 +1,4 @@
-# EDITOR: selection Shader Type
+# EDITOR: selection
 
 ___
 

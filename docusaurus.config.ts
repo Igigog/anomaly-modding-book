@@ -26,6 +26,7 @@ const config: Config = {
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
+
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
@@ -46,8 +47,8 @@ const config: Config = {
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
-          blogTitle: '1213',
-          blogDescription: '213',
+          blogTitle: 'Blog',
+          blogDescription: 'Just a blog',
           showReadingTime: true,
           feedOptions: {
             type: ['rss', 'atom'],
@@ -81,6 +82,12 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
+          sidebarId: 'glossarySidebar',
+          position: 'left',
+          label: 'Glossary',
+        },
+        {
+          type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
           label: 'Tutorials',
@@ -105,15 +112,15 @@ const config: Config = {
         },
         {
           type: 'docSidebar',
-          sidebarId: 'engineSidebar',
+          sidebarId: 'engineapiSidebar',
           position: 'left',
-          label: 'Engine'
+          label: 'Engine API'
         },
         {
           type: 'docSidebar',
-          sidebarId: 'scriptSidebar',
+          sidebarId: 'scriptingapiSidebar',
           position: 'left',
-          label: 'Script'
+          label: 'Scripting API'
         },
         {
           type: 'docSidebar',
@@ -167,7 +174,7 @@ const config: Config = {
       copyright: `Copyright © ${new Date().getFullYear()} Anomaly Modding Book. Built with Docusaurus.`,
     },
     prism: {
-      additionalLanguages: ['lua', 'ini',],
+      additionalLanguages: ['lua', 'ini', 'bash'],
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },

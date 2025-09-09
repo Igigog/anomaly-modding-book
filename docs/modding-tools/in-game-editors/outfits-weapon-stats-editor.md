@@ -10,10 +10,12 @@ Allows you to edit outfit and weapon parameters
 
 ![weapon-stats-editor centered](assets/images/weapon-stats-editor.png)
 
-```admonish warning
+:::warning
+
 - Items configs must be unpacked before working with the editor, they must be in (gamedata/configs/items)
 - Don't forget to make a backup of the configs for reference.
-```
+
+:::
 
 ### Key binds
 

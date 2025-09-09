@@ -1,4 +1,4 @@
-# LEVEL: diffuse*base Shader Type
+# LEVEL: diffuse*base
 
 ___
 

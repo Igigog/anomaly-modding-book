@@ -1,4 +1,4 @@
-# Detectors HUD Animations
+# Detectors HUD
 
 ___
 

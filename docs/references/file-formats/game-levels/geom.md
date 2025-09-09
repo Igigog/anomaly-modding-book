@@ -63,9 +63,9 @@ ___
 | Number of vertices | - | DWord(4) |
 | Vertexes | - | - |
 
-```admonish title="A few words about the vertex format"
+:::note[A few words about the vertex format]
 As you already know, there are several vertex description blocks in the file. Not all objects in the game are the same: you have to specify coordinates of lightmaps for brushes, and coordinates of textures for trees can be simplified. Therefore, vertices specified in different blocks may be different. The vertex format is specified using several structures - this is the standard D3D vertex buffer format. That is, the file contains ready assembled vertex buffers for D3D:
-```
+:::
 
 |  | Value | Size |
 |---|---|---|

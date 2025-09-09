@@ -1,4 +1,4 @@
-# MODEL: env*base Shader Type
+# MODEL: env*base
 
 ___
 

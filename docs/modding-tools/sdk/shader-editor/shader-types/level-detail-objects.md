@@ -1,4 +1,4 @@
-# LEVEL: detail objects Shader Type
+# LEVEL: detail objects
 
 ___
 

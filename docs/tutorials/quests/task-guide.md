@@ -15,7 +15,7 @@ Before we start, keep in mind tasks often take part at the junction of a lot of 
 
 This guide aims to address how to work on tasks, and specifically tasks, while sometimes making connections to other things. You'll most likely need to get familiar (either before, or along the way) with those other systems in order to create your task, depending on how complex you want it.
 
-Make sure to check the [Anomaly Modding Book](../../README.md) to see if guides exists for these other aspects not detailed here.
+Make sure to check the Anomaly Modding Book to see if guides exists for these other aspects not detailed here.
 
 Without going into details, to create a task, you will at least need to play with the following files.
 

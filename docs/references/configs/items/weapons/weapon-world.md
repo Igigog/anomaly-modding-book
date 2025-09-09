@@ -121,7 +121,7 @@ ___
 | fire_distance | Effective range of the shot after which the bullet disappears | 900 | Specified in meters |
 | bullet_speed | Initial bullet speed | 715 | Specified in meters per second |
 | rpm | Rounds per minute | 600 | Specifies the number of shots per minute |
-| rpm_mode_2 |  |  |  |
+| rpm_mode_2 | Rounds per minute for burst mode |  | Specifies the number of shots per minute |
 | rpm_anim_fix | New shot animation behavior | true | true - 1 - on (Yes) false - 0 - off (No) |
 | rpm_empty_click | Misfire/empty magazine sound frequency | 200 |  |
 | fire_dispersion_base | The dispersion (angle of the bullets) introduced by the weapon; affects accuracy; added to the `disp_base` in `actor.ltx` | 0.45 | Specified in degrees |

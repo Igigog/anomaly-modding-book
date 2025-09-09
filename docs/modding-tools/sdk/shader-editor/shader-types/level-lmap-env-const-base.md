@@ -1,4 +1,4 @@
-# LEVEL: (lmap+env*const)*base Shader Type
+# LEVEL: (lmap+env*const)*base
 
 ___
 

@@ -1,4 +1,4 @@
-# LEVEL: diffuse*base.aref Shader Type
+# LEVEL: diffuse*base.aref
 
 ___
 

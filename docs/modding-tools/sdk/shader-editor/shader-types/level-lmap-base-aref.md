@@ -1,4 +1,4 @@
-# LEVEL: lmap*base.aref Shader Type
+# LEVEL: lmap*base.aref
 
 ___
 

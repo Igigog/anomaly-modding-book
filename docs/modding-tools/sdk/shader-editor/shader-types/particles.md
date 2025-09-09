@@ -1,4 +1,4 @@
-# particles Shader Type
+# particles
 
 ___
 

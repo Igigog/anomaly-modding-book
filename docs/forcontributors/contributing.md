@@ -133,9 +133,9 @@ Or
 3. Run `run.bat`. In case it doesn't open by itself, open [localhost:3000](localhost:3000) in your browser.
 4. Done. You're awesome.
 
-```admonish warning
+:::warning
 If you create a new article, you need to add it to `src/SUMMARY.md` for it to be shown.
-```
+:::
 
 #### Uploading your changes
 

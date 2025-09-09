@@ -1,4 +1,4 @@
-# EDITOR: wire Shader Type
+# EDITOR: wire
 
 ___
 

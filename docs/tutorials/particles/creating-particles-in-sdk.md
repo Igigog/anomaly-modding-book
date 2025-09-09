@@ -11,7 +11,7 @@ ___
 
 ## Need to know
 
-- How to work in [SDK Particle Editor](../../modding-tools/sdk/particle-editor/particle-editor.md)
+- How to work in [SDK Particle Editor](../../modding-tools/sdk/particle-editor/README.md)
 - What is a [Particle Effect](../../glossary/glossary.html#particle-effect) and [Particle Group](../../glossary/glossary.html#particle-group)
 
 ## About
@@ -36,9 +36,9 @@ Particle Editor позволяет создавать сложные части�
 
 Добавляем три Actions:
 
-- [Source](../../modding-tools/sdk/particle-editor/windows/actions/source.md) - Для спавна частиц
-- [Turbulence](../../modding-tools/sdk/particle-editor/windows/actions/turbulence.md)
-- [KillOld](../../modding-tools/sdk/particle-editor/windows/actions/kill-old.md) - Для удаления частиц
+- [Source](../../modding-tools/sdk/particle-editor/actions/source.md) - Для спавна частиц
+- [Turbulence](../../modding-tools/sdk/particle-editor/actions/turbulence.md)
+- [KillOld](../../modding-tools/sdk/particle-editor/actions/kill-old.md) - Для удаления частиц
 
 Для Source Action потребуется настройка домейна.
 

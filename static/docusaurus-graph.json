@@ -1,139 +1,13 @@
 [
   {
-    "id": "command-line-switches",
-    "title": "Command-line Switches",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "ai-commands",
-    "title": "AI",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "animation-commands",
-    "title": "Animations",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "audio-commands",
-    "title": "Audio",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "control-commands",
-    "title": "Control",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "debug-commands",
-    "title": "Debug",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "demo-record-commands",
-    "title": "Demo Record",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "discord-commands",
-    "title": "Discord",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "general-game-console-commands",
-    "title": "General",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "hud-camera-commands",
-    "title": "HUD Camera",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "hud-commands",
-    "title": "HUD",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "physic-commands",
-    "title": "Physics",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
     "id": "README",
     "title": "Textures",
     "linkTo": [],
     "referencedBy": []
   },
   {
-    "id": "r1-render-commands",
-    "title": "R1 Render",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "r2-render-commands",
-    "title": "R2 Render",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "r3-render-commands",
-    "title": "R3 Render",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "r4-render-commands",
-    "title": "R4 Render",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "ui-commands",
-    "title": "UI",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "data-types",
-    "title": "Data Types",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "engine-classes",
-    "title": "Engine Classes List",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "engine-compilation",
-    "title": "Engine Compilation",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
     "id": "CWeaponKnife",
     "title": "CWeaponKnife",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "xray-coordinate-system",
-    "title": "X-Ray Coordinate System",
     "linkTo": [],
     "referencedBy": []
   },
@@ -152,6 +26,12 @@
   {
     "id": "contributing",
     "title": "Contributing",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "glossary",
+    "title": "Glossary",
     "linkTo": [],
     "referencedBy": []
   },
@@ -1009,67 +889,67 @@
   },
   {
     "id": "basic-simple",
-    "title": "basic (simple) Shader Type",
+    "title": "basic (simple)",
     "linkTo": [],
     "referencedBy": []
   },
   {
     "id": "editor-selection",
-    "title": "EDITOR: selection Shader Type",
+    "title": "EDITOR: selection",
     "linkTo": [],
     "referencedBy": []
   },
   {
     "id": "editor-wire",
-    "title": "EDITOR: wire Shader Type",
+    "title": "EDITOR: wire",
     "linkTo": [],
     "referencedBy": []
   },
   {
     "id": "internal-blur",
-    "title": "INTERNAL: blur Shader Type",
+    "title": "INTERNAL: blur",
     "linkTo": [],
     "referencedBy": []
   },
   {
     "id": "internal-gray-scale-effect",
-    "title": "INTERNAL: gray-scale effect Shader Type",
+    "title": "INTERNAL: gray-scale effect",
     "linkTo": [],
     "referencedBy": []
   },
   {
     "id": "internal-shadow-projecting",
-    "title": "INTERNAL: shadow projecting Shader Type",
+    "title": "INTERNAL: shadow projecting",
     "linkTo": [],
     "referencedBy": []
   },
   {
     "id": "level-detail-objects",
-    "title": "LEVEL: detail objects Shader Type",
+    "title": "LEVEL: detail objects",
     "linkTo": [],
     "referencedBy": []
   },
   {
     "id": "level-diffuse-base-aref",
-    "title": "LEVEL: diffuse*base.aref Shader Type",
+    "title": "LEVEL: diffuse*base.aref",
     "linkTo": [],
     "referencedBy": []
   },
   {
     "id": "level-diffuse-base",
-    "title": "LEVEL: diffuse*base Shader Type",
+    "title": "LEVEL: diffuse*base",
     "linkTo": [],
     "referencedBy": []
   },
   {
     "id": "level-implicit-detail",
-    "title": "LEVEL: implicit**detail Shader Type",
+    "title": "LEVEL: implicit**detail",
     "linkTo": [],
     "referencedBy": []
   },
   {
     "id": "level-lmap-base-aref",
-    "title": "LEVEL: lmap*base.aref Shader Type",
+    "title": "LEVEL: lmap*base.aref",
     "linkTo": [],
     "referencedBy": []
   },
@@ -1081,37 +961,43 @@
   },
   {
     "id": "level-lmap-env-base",
-    "title": "LEVEL: lmap*(env^base) Shader Type",
+    "title": "LEVEL: lmap*(env^base)",
     "linkTo": [],
     "referencedBy": []
   },
   {
     "id": "level-lmap-env-const-base",
-    "title": "LEVEL: (lmap+env*const)*base Shader Type",
+    "title": "LEVEL: (lmap+env*const)*base",
     "linkTo": [],
     "referencedBy": []
   },
   {
     "id": "level-trees-bushes",
-    "title": "LEVEL: trees/bushes Shader Type",
+    "title": "LEVEL: trees/bushes",
     "linkTo": [],
     "referencedBy": []
   },
   {
     "id": "model-default",
-    "title": "MODEL: (default) Shader Type",
+    "title": "MODEL: (default)",
     "linkTo": [],
     "referencedBy": []
   },
   {
     "id": "model-env-base",
-    "title": "MODEL: env*base Shader Type",
+    "title": "MODEL: env*base",
     "linkTo": [],
     "referencedBy": []
   },
   {
     "id": "particles",
-    "title": "particles Shader Type",
+    "title": "particles",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "bump-gen-tool",
+    "title": "Stalker Bump Gen Tool",
     "linkTo": [],
     "referencedBy": []
   },
@@ -1172,6 +1058,12 @@
   {
     "id": "hud-animations-weapons",
     "title": "Weapon HUD Animations",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "sound-environment-list",
+    "title": "Sound Environment List",
     "linkTo": [],
     "referencedBy": []
   },
@@ -1328,6 +1220,132 @@
   {
     "id": "structure-of-files",
     "title": "Structure of Files",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "command-line-switches",
+    "title": "Command-line Switches",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "ai-commands",
+    "title": "AI",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "animation-commands",
+    "title": "Animations",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "audio-commands",
+    "title": "Audio",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "control-commands",
+    "title": "Control",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "debug-commands",
+    "title": "Debug",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "demo-record-commands",
+    "title": "Demo Record",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "discord-commands",
+    "title": "Discord",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "general-game-console-commands",
+    "title": "General",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "hud-camera-commands",
+    "title": "HUD Camera",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "hud-commands",
+    "title": "HUD",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "physic-commands",
+    "title": "Physics",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "r1-render-commands",
+    "title": "R1 Render",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "r2-render-commands",
+    "title": "R2 Render",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "r3-render-commands",
+    "title": "R3 Render",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "r4-render-commands",
+    "title": "R4 Render",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "ui-commands",
+    "title": "UI",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "data-types",
+    "title": "Data Types",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "engine-classes",
+    "title": "Engine Classes List",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "engine-compilation",
+    "title": "Engine Compilation",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "xray-coordinate-system",
+    "title": "X-Ray Coordinate System",
     "linkTo": [],
     "referencedBy": []
   },
@@ -1740,6 +1758,18 @@
     "referencedBy": []
   },
   {
+    "id": "callbacks-list",
+    "title": "Callbacks List",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "class-registrator",
+    "title": "Class Registrator",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
     "id": "audio",
     "title": "Audio",
     "linkTo": [],
@@ -1770,14 +1800,20 @@
     "referencedBy": []
   },
   {
-    "id": "callbacks-list",
-    "title": "Callbacks List",
+    "id": "dltx",
+    "title": "DLTX",
     "linkTo": [],
     "referencedBy": []
   },
   {
-    "id": "class-registrator",
-    "title": "Class Registrator",
+    "id": "dxml",
+    "title": "DXML",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "lua-debugger",
+    "title": "Lua Debugger",
     "linkTo": [],
     "referencedBy": []
   },
@@ -1788,8 +1824,14 @@
     "referencedBy": []
   },
   {
+    "id": "mcm",
+    "title": "Anomaly MCM Documentation",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
     "id": "useful-addons-scripts-utils",
-    "title": "Useful addons, scripts and utils",
+    "title": "Useful Addons, Scripts and Utils",
     "linkTo": [],
     "referencedBy": []
   },
@@ -1832,6 +1874,12 @@
   {
     "id": "convert-to-ogm",
     "title": "Convert to *.ogm",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "creating-sound-environment-object-in-sdk",
+    "title": "Creating Sound Environment in SDK",
     "linkTo": [],
     "referencedBy": []
   },
@@ -1998,12 +2046,6 @@
     "referencedBy": []
   },
   {
-    "id": "static-object-optimization-workflow",
-    "title": "Static Object Optimization Workflow",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
     "id": "creating-particles-in-sdk",
     "title": "Creating Particles in SDK",
     "linkTo": [],
@@ -2084,12 +2126,6 @@
   {
     "id": "wetting-hands",
     "title": "Wetting Our Hands",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "creating-sound-environment-object-in-sdk",
-    "title": "Creating Sound Environment in SDK",
     "linkTo": [],
     "referencedBy": []
   },

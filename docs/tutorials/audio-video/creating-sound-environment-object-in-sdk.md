@@ -24,14 +24,14 @@ ___
 
 Open [Level Editor](../../modding-tools/sdk/level-editor/level-editor.md).
 
-In the [Edit Mode](../../modding-tools/sdk/level-editor/windows/edit-mode.md) window, select `Sound Env` ![alt text](../../../static/icons/sdk/circle.svg).
+In the [Edit Mode](../../modding-tools/sdk/level-editor/edit-mode.md) window, select `Sound Env` ![alt text](../../../static/icons/sdk/circle.svg).
 
 ![alt text centered](assets/images/select-sound-env.png)
 
-Next, in the [Render](../../modding-tools/sdk/level-editor/windows/render.md) window enable the Add mode and click the left mouse button in the same window. The object should be added.
+Next, in the [Render](../../modding-tools/sdk/level-editor/render.md) window enable the Add mode and click the left mouse button in the same window. The object should be added.
 
 ![alt text centered](assets/gifs/place-env.gif)
 
-In the [Properties](../../modding-tools/sdk/level-editor/windows/properties.md) window, you are left to setup the object.
+In the [Properties](../../modding-tools/sdk/level-editor/properties.md) window, you are left to setup the object.
 
 ![alt text centered](assets/images/sound-env-properties.png)

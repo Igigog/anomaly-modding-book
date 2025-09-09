@@ -4,10 +4,18 @@ ___
 
 ## Info
 
-|  |  |
-|---|---|
-| Program Developer | Dmitriy Iassenev (GSC Game World) |
-| Described Version | 0.564 |
+<table>
+  <tbody>
+    <tr>
+      <td>Program Developer</td>
+      <td>Dmitriy Iassenev (GSC Game World)</td>
+    </tr>
+    <tr>
+      <td>Described Version</td>
+      <td>0.564</td>
+    </tr>
+  </tbody>
+</table>
 
 ___
 
@@ -17,17 +25,71 @@ Program for creating evaluation functions.
 
 ## Switches
 
-| Key | Description |
-|---|---|
-| -p \<name> | Obligatory switch with project name |
-| -pa | Perform operations for all projects |
-| -c\[d] | Convert text to binary data and generate initial patterns.d - Show duplicates being found in text data |
-| -g\{c,p\[s],b} | gc - Generate configurations from atomic features based on test data.gp - generate patterns from configurations being generated.gps - Show all configurations during generation.gb - Generate pattern basis from patterns being generated |
-| -f\[p,u] | Fit weights of pattern configurations.p - Force to use probabilistic weight fitting algorithm.u - Force to use previous parameters if exist |
-| -l | List stats on test data |
-| -s | List sorted stats on test data |
-| -w | List pattern configuration weights |
-| -b\[f] | Build evaluation function.f - Save parameters in float (default is double) |
-| -v | Validate evaluation function |
-| -a | Append log file |
-| -h, -?, -i | Help |
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>-p &lt;name&gt;</td>
+      <td>Obligatory switch with project name</td>
+    </tr>
+    <tr>
+      <td>-pa</td>
+      <td>Perform operations for all projects</td>
+    </tr>
+    <tr>
+      <td>-c[d]</td>
+      <td>
+        Convert text to binary data and generate initial patterns. <br />d - Show duplicates being found in text data
+      </td>
+    </tr>
+    <tr>
+      <td>
+        -g\{{"c,p\[s],b"}}
+      </td>
+      <td>
+        gc - Generate configurations from atomic features based on test data. <br />gp - generate patterns from configurations being generated. <br />gps - Show all configurations during generation. <br />gb - Generate pattern basis from patterns being generated
+      </td>
+    </tr>
+    <tr>
+      <td>-f[p,u]</td>
+      <td>
+        Fit weights of pattern configurations. <br />p - Force to use probabilistic weight fitting algorithm. <br />u - Force to use previous parameters if exist
+      </td>
+    </tr>
+    <tr>
+      <td>-l</td>
+      <td>List stats on test data</td>
+    </tr>
+    <tr>
+      <td>-s</td>
+      <td>List sorted stats on test data</td>
+    </tr>
+    <tr>
+      <td>-w</td>
+      <td>List pattern configuration weights</td>
+    </tr>
+    <tr>
+      <td>-b[f]</td>
+      <td>
+        Build evaluation function. <br />f - Save parameters in float (default is double)
+      </td>
+    </tr>
+    <tr>
+      <td>-v</td>
+      <td>Validate evaluation function</td>
+    </tr>
+    <tr>
+      <td>-a</td>
+      <td>Append log file</td>
+    </tr>
+    <tr>
+      <td>-h, -?, -i</td>
+      <td>Help</td>
+    </tr>
+  </tbody>
+</table>

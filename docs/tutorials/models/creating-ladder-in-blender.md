@@ -5,7 +5,7 @@ ___
 ## Need to know
 
 - How to work in Blender
-- How to work with Blender [X-Ray Addon](../../modding-tools/blender/blender-x-ray-addon-summary.md)
+- How to work with Blender [X-Ray Addon](../../modding-tools/blender/README.md)
 - What is a [Static Object](../../glossary/glossary.html#static-object)
 - What is a [Game Material](../../glossary/glossary.html#game-material)
 

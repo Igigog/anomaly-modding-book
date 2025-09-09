@@ -1,4 +1,4 @@
-# INTERNAL: shadow projecting Shader Type
+# INTERNAL: shadow projecting
 
 ___
 

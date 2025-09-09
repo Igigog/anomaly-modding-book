@@ -89,10 +89,6 @@ Utility for editing [*.thm](../../references/file-formats/textures/thm.md) files
 
 ### MIP Filter
 
-```admonish tip
-Different algorithms of MIP-map filtering
-```
-
 | Field | Description | Preview |
 |---|---|---|
 | Box | Simplest MIP-map generation algorithm. However, the box filter has a number of limitations that can be quite noticeable with certain textures. For example, if a texture contains very narrow features (e.g., lines), then aliasing artifacts may be very pronounced |  |
@@ -113,9 +109,9 @@ Different algorithms of MIP-map filtering
 
 ### Material
 
-```admonish tip
+:::info
 Different shading algorithms
-```
+:::
 
 | Field | Description |
 |---|---|

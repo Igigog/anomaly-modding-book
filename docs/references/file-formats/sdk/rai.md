@@ -10,4 +10,4 @@ ___
 
 ## Programs editing this file
 
-- [SDK Level Editor](../../../modding-tools/sdk/level-editor/level-editor.md)
+- [SDK Level Editor](../../../modding-tools/sdk/level-editor/README.md)

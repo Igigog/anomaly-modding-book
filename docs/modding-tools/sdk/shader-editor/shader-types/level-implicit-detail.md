@@ -1,4 +1,4 @@
-# LEVEL: implicit**detail Shader Type
+# LEVEL: implicit**detail
 
 ___
 

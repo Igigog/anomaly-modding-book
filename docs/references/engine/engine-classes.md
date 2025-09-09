@@ -2,9 +2,9 @@
 
 ___
 
-```admonish warning
+:::warning
 This article is under construction
-```
+:::
 
 ## Client classes
 

@@ -1,4 +1,4 @@
-# LEVEL: trees/bushes Shader Type
+# LEVEL: trees/bushes
 
 ___
 

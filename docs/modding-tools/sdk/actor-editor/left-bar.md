@@ -36,13 +36,13 @@ ___
   </tr>
   <tr>
     <td>Bone View</td>
-    <td>Open <a href="../windows/bones-node-view.md">Bone Node View window</a></td>
+    <td>Open <a href="../bones-node-view.md">Bone Node View window</a></td>
     <td>-</td>
     <td>-</td>
   </tr>
   <tr>
     <td>Bone Parts</td>
-    <td>Open <a href="../windows/bone-parts.md">Bone Parts window</a></td>
+    <td>Open <a href="../bone-parts.md">Bone Parts window</a></td>
     <td>-</td>
     <td>-</td>
   </tr>

@@ -1,4 +1,4 @@
-# LEVEL: lmap*(env^base) Shader Type
+# LEVEL: lmap*(env^base)
 
 ___
 

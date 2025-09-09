@@ -1,4 +1,4 @@
-# Artefact HUD Animations
+# Artefact HUD
 
 ___
 

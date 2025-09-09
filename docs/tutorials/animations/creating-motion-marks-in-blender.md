@@ -43,6 +43,6 @@ Pick any bone and open its `Bone Properties`![alt text](../../../static/icons/bl
 
 ![alt text centered](assets/gifs/creating-motion-mark-example.gif)
 
-In the SDK (specifically in the [Key Form](../../modding-tools/sdk/actor-editor/windows/key-form.md)), Motion Marks look like this:
+In the SDK (specifically in the [Key Form](../../modding-tools/sdk/actor-editor/key-form.md)), Motion Marks look like this:
 
 ![alt text centered](assets/images/motion-marks-in-sdk.png)

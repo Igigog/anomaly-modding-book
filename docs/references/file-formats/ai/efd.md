@@ -58,7 +58,7 @@ ___
 
 ## Programs editing this file
 
-- Evaluation Function Constructor
+- [Evaluation Function Constructor](../../../modding-tools/ai/evaluation-function-constructor.md)
 
 ___
 
