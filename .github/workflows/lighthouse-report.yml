@@ -19,17 +19,32 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci
+        run: |
+          npm ci
+          npm install -g @lhci/cli
+          npm install xml-js
 
       - name: Build project
         run: npm run build
 
+      - name: Extract URLs from sitemap
+        id: sitemap
+        run: |
+          node -e "
+          const fs = require('fs');
+          const convert = require('xml-js');
+          const sitemap = fs.readFileSync('./build/sitemap.xml', 'utf8');
+          const result = convert.xml2js(sitemap, {compact: true});
+          const urls = result.urlset.url.map(item => item.loc._text);
+          fs.writeFileSync('./urls.json', JSON.stringify(urls));
+          console.log('Found URLs:', urls.length);
+          "
+
       - name: Run Lighthouse CI
+        id: lhci
         uses: treosh/lighthouse-ci-action@v12
         with:
-          urls: |
-            https://theparazit.github.io/anomaly-modding-book/
-            https://theparazit.github.io/anomaly-modding-book/blog
+          configPath: './lighthouserc.js'
           uploadArtifacts: true
           temporaryPublicStorage: true
         env:
