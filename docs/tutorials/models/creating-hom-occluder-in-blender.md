@@ -1,3 +1,7 @@
+---
+tags: [Blender, 3D Model]
+---
+
 # Creating HOM Occluder in Blender
 
 ___

@@ -1,3 +1,7 @@
+---
+tags: [Blender, 3D Model]
+---
+
 # Creating SOM Occluder in Blender
 
 ___

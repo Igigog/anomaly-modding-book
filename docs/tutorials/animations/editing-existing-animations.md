@@ -1,3 +1,7 @@
+---
+tags: [Blender, 3D Animation]
+---
+
 # Editing Existing Animations in Blender
 
 ___

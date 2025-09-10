@@ -1,3 +1,7 @@
+---
+tags: [Texture, Modding Tool]
+---
+
 # Modified THM Editor by ValeroK
 
 ___

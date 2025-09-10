@@ -1,3 +1,7 @@
+---
+tags: [LUA]
+---
+
 # Lua Variables Unlocalizer
 
 ___

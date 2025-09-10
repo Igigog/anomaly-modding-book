@@ -1,3 +1,7 @@
+---
+tags: [Texture, Modding Tool]
+---
+
 # Bump Generator
 
 ___

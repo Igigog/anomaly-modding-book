@@ -1,3 +1,7 @@
+---
+tags: [Blender, Modding Tool]
+---
+
 # Blender X-Ray Addon
 
 ___

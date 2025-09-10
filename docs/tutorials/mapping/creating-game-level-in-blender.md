@@ -1,3 +1,7 @@
+---
+tags: [Blender]
+---
+
 # Creating Location in Blender
 
 ___

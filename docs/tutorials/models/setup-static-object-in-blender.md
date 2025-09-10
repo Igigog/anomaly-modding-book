@@ -1,3 +1,7 @@
+---
+tags: [Blender, 3D Model]
+---
+
 # Setup Static Object in Blender
 
 ___

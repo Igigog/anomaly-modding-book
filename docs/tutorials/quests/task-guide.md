@@ -1,3 +1,7 @@
+---
+tags: [LTX, XML, LUA]
+---
+
 # Task Guide
 
 ___

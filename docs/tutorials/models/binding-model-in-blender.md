@@ -1,3 +1,7 @@
+---
+tags: [Blender, 3D Model]
+---
+
 # Binding Model in Blender
 
 ___

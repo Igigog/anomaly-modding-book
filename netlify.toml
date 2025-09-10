@@ -1,5 +1,0 @@
-[[redirects]]
-  from = "https://igigog.github.io/anomaly-modding-book/*"
-  to = "https://anomaly-modding-book.netlify.app/:splat"
-  status = 301
-  force = true

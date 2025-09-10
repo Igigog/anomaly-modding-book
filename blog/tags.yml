@@ -1,4 +1,79 @@
 releases:
   label: 'Releases'
-  permalink: '/releases'
   description: 'Blog posts related to releases'
+
+SDK:
+  label: 'SDK'
+  description: 'SDK related'
+
+Modding Tool:
+  label: 'Modding Tool'
+  description: 'Modding tool related'
+
+3D Animation:
+  label: '3D Animation'
+  description: '3D Animation related'
+
+UI:
+  label: 'UI'
+  description: 'UI related'
+
+3D Model:
+  label: '3D Model'
+  description: '3D Model related'
+
+2D Animation:
+  label: '2D Animation'
+  description: '2D Animation related'
+
+Texture:
+  label: 'Texture'
+  description: 'Texture related'
+
+Shader:
+  label: 'Shader'
+  description: 'Shader related'
+
+Blender:
+  label: 'Blender'
+  description: 'Blender related'
+
+C++:
+  label: 'C++'
+  description: 'C++ related'
+
+LTX:
+  label: '*.ltx'
+  description: 'ltx related'
+
+LUA:
+  label: 'LUA'
+  description: 'LUA related'
+
+XML:
+  label: 'XML'
+  description: 'XML related'
+
+AI:
+  label: 'AI'
+  description: 'AI related'
+
+Alife:
+  label: 'ALife'
+  description: 'ALife related'
+
+Audio:
+  label: 'Audio'
+  description: 'Audio related'
+
+Video:
+  label: 'Video'
+  description: 'Video related'
+
+Level Compiler:
+  label: 'Level Compiler'
+  description: 'Level Compiler related'
+
+Decompilation:
+  label: 'Decompilation'
+  description: 'Decompilation related'

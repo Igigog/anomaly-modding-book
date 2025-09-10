@@ -1,3 +1,7 @@
+---
+tags: [Texture, Modding Tool]
+---
+
 # Stalker Bump Gen Tool
 
 ___

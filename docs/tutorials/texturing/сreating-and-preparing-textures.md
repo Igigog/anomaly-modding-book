@@ -1,4 +1,8 @@
-# Creating and preparing textures
+---
+tags: [Texture]
+---
+
+# Creating and Preparing Textures
 
 ___
 

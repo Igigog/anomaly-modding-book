@@ -1,3 +1,7 @@
+---
+tags: [Texture]
+---
+
 # Texturing
 
 ___

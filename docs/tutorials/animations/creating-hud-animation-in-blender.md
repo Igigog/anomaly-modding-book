@@ -1,3 +1,7 @@
+---
+tags: [Blender, 3D Animation]
+---
+
 # Creating HUD Animation in Blender
 
 ___

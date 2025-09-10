@@ -1,3 +1,7 @@
+---
+tags: [Decompilation]
+---
+
 # Decompiling Game Materials
 
 ___

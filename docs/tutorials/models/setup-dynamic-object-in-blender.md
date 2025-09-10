@@ -1,3 +1,7 @@
+---
+tags: [Blender, 3D Model]
+---
+
 # Setup Dynamic Object in Blender
 
 ___

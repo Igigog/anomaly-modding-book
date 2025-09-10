@@ -1,3 +1,7 @@
+---
+tags: [Blender, 3D Animation, SDK]
+---
+
 # Creating Motion Marks in Blender
 
 ___

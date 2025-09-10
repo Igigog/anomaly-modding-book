@@ -1,3 +1,7 @@
+---
+tags: [LTX, Modding Tool]
+---
+
 # Upgrade Editor
 
 ___

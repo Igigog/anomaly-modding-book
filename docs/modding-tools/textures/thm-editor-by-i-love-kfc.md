@@ -1,3 +1,7 @@
+---
+tags: [Texture, Modding Tool]
+---
+
 # THM Editor
 
 ___

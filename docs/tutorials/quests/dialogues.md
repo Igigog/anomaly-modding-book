@@ -1,3 +1,7 @@
+---
+tags: [XML, LUA]
+---
+
 # Dialogues
 
 ___

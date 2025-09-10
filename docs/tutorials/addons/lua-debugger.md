@@ -1,3 +1,7 @@
+---
+tags: [LUA]
+---
+
 # Lua Debugger
 
 ___

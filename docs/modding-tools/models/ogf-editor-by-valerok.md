@@ -1,3 +1,7 @@
+---
+tags: [3D Model, Modding Tool]
+---
+
 # Modified OGF Editor by ValeroK
 
 ___

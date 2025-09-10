@@ -1,3 +1,7 @@
+---
+tags: [Texture, LTX]
+---
+
 # Inventory Icons
 
 ___

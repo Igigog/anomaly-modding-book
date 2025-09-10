@@ -1,3 +1,7 @@
+---
+tags: [Blender, 3D Model]
+---
+
 # Preparing Building in Blender
 
 ___

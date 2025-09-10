@@ -1,3 +1,7 @@
+---
+tags: [Texture]
+---
+
 # Working Correctly With Icon Atlases
 
 ___

@@ -1,3 +1,7 @@
+---
+tags: [Blender]
+---
+
 # Creating Cubemap in Blender
 
 ___

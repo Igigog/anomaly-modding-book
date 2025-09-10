@@ -1,3 +1,7 @@
+---
+tags: [3D Model, Modding Tool]
+---
+
 # Object Tool (or XRay Export Tool)
 
 ___

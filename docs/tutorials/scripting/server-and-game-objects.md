@@ -1,3 +1,7 @@
+---
+tags: [LUA]
+---
+
 # Server and Game Objects
 
 ___

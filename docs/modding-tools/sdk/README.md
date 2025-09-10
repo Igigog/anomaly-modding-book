@@ -1,3 +1,7 @@
+---
+tags: [SDK, Modding Tool]
+---
+
 # IX-Ray SDK
 
 ___

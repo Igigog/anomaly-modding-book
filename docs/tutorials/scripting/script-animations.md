@@ -1,3 +1,7 @@
+---
+tags: [LUA, 3D Animation]
+---
+
 # Scripted Animations
 
 ____

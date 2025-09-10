@@ -1,3 +1,7 @@
+---
+tags: [SDK, Audio]
+---
+
 # Creating Sound Environment in SDK
 
 ___

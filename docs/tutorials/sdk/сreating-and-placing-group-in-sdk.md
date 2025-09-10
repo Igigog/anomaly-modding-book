@@ -1,3 +1,7 @@
+---
+tags: [SDK]
+---
+
 # Creating and Placing Group in SDK
 
 ___
