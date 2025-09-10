@@ -21,15 +21,15 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build project (если нужно)
+      - name: Build project
         run: npm run build
 
       - name: Run Lighthouse CI
         uses: treosh/lighthouse-ci-action@v12
         with:
           urls: |
-            https://example.com/
-            https://example.com/blog
+            https://theparazit.github.io/anomaly-modding-book/
+            https://theparazit.github.io/anomaly-modding-book/blog
           uploadArtifacts: true
           temporaryPublicStorage: true
         env:

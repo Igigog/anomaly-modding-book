@@ -4,7 +4,7 @@ ___
 
 ## About
 
-Отладочный интерфейс для взаимодействия с логикой NPC
+Debugging interface for interacting with NPC logic.
 
 ![npc-logic-execute centered](assets/images/npc-logic-execute.png)
 
@@ -12,19 +12,19 @@ ___
 
 |  |  |
 |---|---|
-| Active Section | Активная секция конфигурации |
-| Active Logic | Активная логическая схема |
-| INI Filename | Файл конфигурации |
-| Set logic | Применяет новую логику и схему к NPC |
-| Revert logic | Восстанавливает оригинальную логику |
+| Active Section | Active configuration section |
+| Active Logic | Active logic scheme |
+| INI Filename | Configuration file |
+| Set logic | Applies new logic and scheme to NPCs |
+| Revert logic | Restores the original logic |
 
 ### Function executer
 
-Содержит текстовое поле для ввода произвольного Lua-кода.
+Contains a text field for entering arbitrary Lua code.
 
 |  |  |
 |---|---|
-| Execute | Выполняет введенный код |
+| Execute | Executes the entered code |
 
 ___
 

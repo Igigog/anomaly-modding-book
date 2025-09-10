@@ -79,7 +79,7 @@ Contains descriptions of various S.T.A.L.K.E.R. related terms used in modding an
       <td>lvid (level_vertex_id)</td>
       <td>
         Part of{" "}
-        <a href="https://www.tablesgenerator.com/references/file-formats/game-levels/ai.md">
+        <a href="../references/file-formats/game-levels/ai.md">
           *.ai
         </a>
         . AI Map node
@@ -143,7 +143,7 @@ Contains descriptions of various S.T.A.L.K.E.R. related terms used in modding an
       <td>Motion Reference</td>
       <td>
         Reference to the animation library (
-        <a href="https://www.tablesgenerator.com/references/file-formats/animations/omf.md">*.omf
+        <a href="../references/file-formats/animations/omf.md">*.omf
         </a>)
       </td>
     </tr>
@@ -304,7 +304,7 @@ Contains descriptions of various S.T.A.L.K.E.R. related terms used in modding an
       <td>Custom Data</td>
       <td>
         Custom or additional parameters (in{" "}
-        <a href="https://www.tablesgenerator.com/references/file-formats/conf-script/ltx.md">
+        <a href="../references/file-formats/conf-script/ltx.md">
           *.ltx
         </a>{" "}
         format).
@@ -438,7 +438,7 @@ Contains descriptions of various S.T.A.L.K.E.R. related terms used in modding an
       <td>Particle Effect</td>
       <td>
         Single Particle Effect. Stored in{" "}
-        <a href="https://www.tablesgenerator.com/references/file-formats/particles/pe.md">
+        <a href="../references/file-formats/particles/pe.md">
           *.pe
         </a>{" "}
         files.
@@ -448,7 +448,7 @@ Contains descriptions of various S.T.A.L.K.E.R. related terms used in modding an
       <td>Particle Group</td>
       <td>
         Particle Effects Group. Stored in{" "}
-        <a href="https://www.tablesgenerator.com/references/file-formats/particles/pg.md">
+        <a href="../references/file-formats/particles/pg.md">
           *.pg
         </a>{" "}
         files.

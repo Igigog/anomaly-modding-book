@@ -12,7 +12,6 @@ The formatting of articles is entirely at your discretion and will not be correc
 
 - For first level headings, use `Title Case` (All First Letters of Words Capitalized)
 - For headings after the first level, use `Sentence case` (Only the first letter of the first word and proper names)
-- Whenever possible, fully utilize [Markdown syntax](https://rust-lang.github.io/mdBook/format/markdown.html)
 - File naming in `kebab-case`
 - When referring to file formats, use the following extension syntax (if the file has an extension):
 
@@ -37,33 +36,15 @@ The formatting of articles is entirely at your discretion and will not be correc
 
 - Files should end with a single newline character
 
-- To center the image when using markdown, you can specify `centered` in the alternate title. Example:
+- [Admonishments](https://docusaurus.io/docs/markdown-features/admonitions) support.
 
 :::info
-    ```markdown
-    ![image centered](../path/to/image.png)
-    ```
-:::
-
-- When using svg icons, you can specify `svg-icon` in the alternative name so that the icon will change brightness depending on the theme (for example, in a light theme the icon will be dark, in a dark theme - light). Example:
-
-:::info
-    ```markdown
-    ![image svg-icon](../path/to/image.svg)
-    ```
-:::
-
-Since the book uses additional preprocessors, the following features can be used:
-
-- For admonishments (For more examples check [Admonish Reference Page](https://tommilligan.github.io/mdbook-admonish/reference.html))
-
-:::info
-    ```admonish example
+    :::info
     Example
-    ```
+    :::
 :::
 
-- There is support for [Mermaid](https://mermaid.js.org/). Example:
+- [Mermaid](https://mermaid.js.org/) support.
 
 :::info
     ```mermaid

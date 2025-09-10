@@ -9,25 +9,19 @@ const config: Config = {
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
+    v4: true,
   },
 
   themes: ['@docusaurus/theme-mermaid'],
   markdown: {
     mermaid: true,
   },
-  url: 'https://your-docusaurus-site.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
+
+  url: 'https://theparazit.github.io',
   baseUrl: '/anomaly-modding-book/',
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
-
-
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -37,10 +31,20 @@ const config: Config = {
     [
       'classic',
       {
+        sitemap: {
+          lastmod: 'date',
+          changefreq: 'weekly',
+          priority: 0.5,
+          ignorePatterns: ['/tags/**'],
+          filename: 'sitemap.xml',
+          createSitemapItems: async (params) => {
+            const {defaultCreateSitemapItems, ...rest} = params;
+            const items = await defaultCreateSitemapItems(rest);
+            return items.filter((item) => !item.url.includes('/page/'));
+          },
+        },
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/TheParaziT/anomaly-modding-book/',
         },
@@ -52,11 +56,8 @@ const config: Config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/TheParaziT/anomaly-modding-book/',
-          // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -69,8 +70,6 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
     navbar: {
       title: 'Anomaly Modding Book',
       logo: {
@@ -142,35 +141,35 @@ const config: Config = {
           items: [
             {
               label: 'Glossary',
-              to: '/docs/intro',
+              to: '/docs/glossary/',
             },
             {
               label: 'Tutorials',
-              to: '/docs/intro',
+              to: '/docs/tutorials/',
             },
             {
               label: 'References',
-              to: '/docs/intro',
+              to: '/docs/references/',
             },
             {
               label: 'Modding Tools',
-              to: '/docs/intro',
+              to: '/docs/modding-tools/',
             },
             {
               label: 'Resources',
-              to: '/docs/intro',
+              to: '/docs/resources/',
             },
             {
               label: 'Engine API',
-              to: '/docs/intro',
+              to: '/docs/engineapi/',
             },
             {
               label: 'Scripting API',
-              to: '/docs/intro',
+              to: '/docs/scriptingapi/',
             },
             {
               label: 'For Contrubutors',
-              to: '/docs/intro',
+              to: '/docs/forcontributors/',
             },
           ],
         },
