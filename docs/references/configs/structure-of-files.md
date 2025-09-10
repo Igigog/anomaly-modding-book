@@ -1,3 +1,7 @@
+---
+tags: [LTX]
+---
+
 # Structure of Files
 
 ___

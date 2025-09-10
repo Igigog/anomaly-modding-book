@@ -1,3 +1,7 @@
+---
+tags: [LTX]
+---
+
 # Algorithm of Logic
 
 ___

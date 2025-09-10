@@ -1,7 +1,6 @@
 ---
 title: S.T.A.L.K.E.R. Anomaly Release in GOG!
 authors: [theparazit]
-image: https://i.imgur.com/mErPwqL.png
 hide_table_of_contents: false
 ---
 

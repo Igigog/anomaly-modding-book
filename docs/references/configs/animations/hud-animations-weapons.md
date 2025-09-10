@@ -110,10 +110,10 @@ animation parameter name = animation name (hands), animation name (weapon), play
 | anm_attack2 |  |  |  |  |
 | anm_shots |  |  |  |  |
 | anm_shot_l |  | Last shot animation |  |  |
-| anm_shot_g_l |  | Lash shot animation with underbarrel grenade launcher |  |  |
+| anm_shot_g_l |  | Last shot animation with underbarrel grenade launcher |  |  |
 | anm_shots_g |  |  |  |  |
 | anm_shots_w_gl |  |  |  |  |
-| anm_shot_w_gl_l |  | Lash shot animation with active underbarrel grenade launcher |  |  |
+| anm_shot_w_gl_l |  | Last shot animation with active underbarrel grenade launcher |  |  |
 | anm_shot_1 | WP_BM16 | Shot animation with 1 bullets |  |  |
 | anm_shot_2 | WP_BM16 | Shot animation with 2 bullets |  |  |
 | anm_switch_mode |  | Firemode switch animation |  |  |
