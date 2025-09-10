@@ -18,7 +18,7 @@ const config: Config = {
   },
 
   url: 'https://theparazit.github.io',
-  baseUrl: '/anomaly-modding-book/',
+  baseUrl: '/',
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',

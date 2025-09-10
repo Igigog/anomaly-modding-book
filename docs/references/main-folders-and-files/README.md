@@ -1,4 +1,4 @@
-# Main Folders And Files References
+# Main Folders And Files
 
 ___
 
@@ -67,7 +67,7 @@ ___
       <td>ai</td>
       <td>
         Contains the{" "}
-        <a href="https://www.tablesgenerator.com/file-formats/ai/efd.md">
+        <a href="../file-formats/ai/efd.md">
           *.efd
         </a>{" "}
         files needed for the AI
@@ -77,11 +77,11 @@ ___
       <td>anims</td>
       <td>
         Contains{" "}
-        <a href="https://www.tablesgenerator.com/file-formats/animations/anm.md">
+        <a href="../file-formats/animations/anm.md">
           *.anm
         </a>{" "}
         files for camera animation and{" "}
-        <a href="https://www.tablesgenerator.com/file-formats/postprocceses/ppe.md">
+        <a href="../file-formats/postprocceses/ppe.md">
           *.ppe
         </a>{" "}
         files for postprocessing
@@ -91,11 +91,11 @@ ___
       <td>configs</td>
       <td>
         Contains{" "}
-        <a href="https://www.tablesgenerator.com/file-formats/conf-script/ltx.md">
+        <a href="../file-formats/conf-script/ltx.md">
           *.ltx
         </a>{" "}
         for configuration files and{" "}
-        <a href="https://www.tablesgenerator.com/file-formats/conf-script/xml.md">
+        <a href="../file-formats/conf-script/xml.md">
           *.xml
         </a>{" "}
         for text
@@ -109,15 +109,15 @@ ___
       <td>meshes</td>
       <td>
         Contains{" "}
-        <a href="https://www.tablesgenerator.com/file-formats/models/ogf.md">
+        <a href="../file-formats/models/ogf.md">
           *.ogf
         </a>
         ,{" "}
-        <a href="https://www.tablesgenerator.com/file-formats/models/dm.md">
+        <a href="../file-formats/models/dm.md">
           *.dm
         </a>
         ,{" "}
-        <a href="https://www.tablesgenerator.com/file-formats/animations/omf.md">
+        <a href="../file-formats/animations/omf.md">
           *.omf
         </a>{" "}
         file needed for models and skeleton animation
@@ -127,7 +127,7 @@ ___
       <td>scripts</td>
       <td>
         Contains{" "}
-        <a href="https://www.tablesgenerator.com/file-formats/conf-script/script.md">
+        <a href="../file-formats/conf-script/script.md">
           *.script
         </a>{" "}
         files for game scripts
@@ -141,7 +141,7 @@ ___
       <td>sounds</td>
       <td>
         Contains{" "}
-        <a href="https://www.tablesgenerator.com/file-formats/audio-video/ogg.md">
+        <a href="../file-formats/audio-video/ogg.md">
           *.ogg
         </a>{" "}
         files for various music, sounds, ambient, etc.
@@ -151,7 +151,7 @@ ___
       <td>spawns</td>
       <td>
         Contains a{" "}
-        <a href="https://www.tablesgenerator.com/file-formats/game-levels/spawn.md">
+        <a href="../file-formats/game-levels/spawn.md">
           *.spawn
         </a>{" "}
         files - it store spawn spots on locations
@@ -161,7 +161,7 @@ ___
       <td>textures</td>
       <td>
         Contains{" "}
-        <a href="https://www.tablesgenerator.com/file-formats/textures/dds.md">
+        <a href="../file-formats/textures/dds.md">
           *.dds
         </a>{" "}
         textures
@@ -216,7 +216,7 @@ ___
       <td>tools</td>
       <td>
         Contains some resources for modding, like a version icon for addons, a resource converter and *.bat files for unpacking{" "}
-        <a href="https://www.tablesgenerator.com/file-formats/archives-resource-packs/db.md">
+        <a href="../file-formats/archives-resource-packs/db.md">
           *.db
         </a>{" "}
         files
