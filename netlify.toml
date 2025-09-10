@@ -1,0 +1,2 @@
+[[plugins]]
+    package = "@dev0ph3r/netlify-plugin-discord"
