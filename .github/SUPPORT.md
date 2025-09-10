@@ -8,7 +8,3 @@
 ## Where NOT to look for help?
 
 - Do not create Issues with “How to make a mod ...” questions.  
-
-## Want to help the project?
-
-- Check out the file contributing.md.

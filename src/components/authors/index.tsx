@@ -7,7 +7,8 @@ import {
   FaStackOverflow,
   FaEnvelope,
   FaGlobe,
-  FaLink
+  FaLink,
+  FaYoutube
 } from 'react-icons/fa';
 import { SiX } from 'react-icons/si';
 import { FaDiscord, FaTelegram } from 'react-icons/fa';
@@ -31,7 +32,8 @@ const socialIconMap = {
   vk: SiVk,
   telegram: FaTelegram,
   moddb: SiModin,
-  discord: FaDiscord
+  discord: FaDiscord,
+  youtube: FaYoutube
 };
 
 const sizeMap = {
@@ -69,8 +71,12 @@ function normalizeSocialLink(platform: string, handleOrUrl: string): string {
     case 'moddb':
       return `https://www.moddb.com/members/${handleOrUrl}`;
     case 'discord':
-      // Discord использует специальные ссылки-приглашения
       return handleOrUrl.startsWith('https://') ? handleOrUrl : `https://discord.gg/${handleOrUrl}`;
+    case 'youtube':
+      if (handleOrUrl.includes('youtube.com') || handleOrUrl.includes('youtu.be')) {
+        return handleOrUrl;
+      }
+      return `https://youtube.com/${handleOrUrl}`;
     default:
       return handleOrUrl;
   }

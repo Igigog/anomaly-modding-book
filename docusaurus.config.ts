@@ -11,7 +11,9 @@ const config: Config = {
   future: {
     v4: true,
   },
-
+  plugins: [
+    'docusaurus-plugin-image-zoom',
+  ],
   themes: ['@docusaurus/theme-mermaid'],
   markdown: {
     mermaid: true,
@@ -70,6 +72,13 @@ const config: Config = {
   ],
 
   themeConfig: {
+    zoom: {
+      selector: '.markdown :not(em) > img',
+      background: {
+        light: 'rgb(255, 255, 255)',
+        dark: 'rgb(50, 50, 50)'
+      },
+    },
     navbar: {
       title: 'Anomaly Modding Book',
       logo: {
