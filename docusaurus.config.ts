@@ -17,7 +17,7 @@ const config: Config = {
     mermaid: true,
   },
 
-  url: 'https://theparazit.github.io',
+  url: 'https://anomaly-modding-book.netlify.app',
   baseUrl: '/',
 
   onBrokenLinks: 'warn',
