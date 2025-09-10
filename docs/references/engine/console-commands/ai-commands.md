@@ -1,3 +1,8 @@
+---
+tags: [Console Commands]
+description: AI Console Commands
+---
+
 # AI
 
 ___

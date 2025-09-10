@@ -77,3 +77,15 @@ Level Compiler:
 Decompilation:
   label: 'Decompilation'
   description: 'Decompilation related'
+
+Unfinished:
+  label: 'Unfinished Article'
+  description: 'Unfinished Articles'
+
+Under Construction:
+  label: 'Under Construction'
+  description: 'Under Construction Articles'
+
+Console Commands:
+  label: 'Console Commands'
+  description: 'Console Commands related'

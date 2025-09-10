@@ -1,3 +1,8 @@
+---
+tags: [Console Commands]
+description: Demo Console Commands
+---
+
 # Demo Record
 
 ___

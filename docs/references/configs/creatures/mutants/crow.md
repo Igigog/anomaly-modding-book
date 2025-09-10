@@ -1,3 +1,7 @@
+---
+tags: [LTX]
+---
+
 # AI_Crow (Crow)
 
 ___

@@ -1,6 +1,14 @@
+---
+tags: [Unfinished]
+---
+
 # AI_PHANT (Phantom)
 
 ___
+
+:::warning
+This article is under construction
+:::
 
 | Parameter Name | Parameter Description | Example Value | Possible Parameters |
 |---|---|---|---|

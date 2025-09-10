@@ -1,6 +1,14 @@
+---
+tags: [Unfinished]
+---
+
 # SM_POLTR (Poltergeist)
 
 ___
+
+:::warning
+This article is under construction
+:::
 
 | Parameter Name | Parameter Description | Example Value | Possible Parameters |
 |---|---|---|---|

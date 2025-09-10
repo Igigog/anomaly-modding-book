@@ -1,6 +1,14 @@
+---
+tags: [Unfinished]
+---
+
 # SM_DOG_S (Dog)
 
 ___
+
+:::warning
+This article is under construction
+:::
 
 ## Mob-home
 

@@ -1,3 +1,8 @@
+---
+tags: [Console Commands]
+description: UI Console Commands
+---
+
 # UI
 
 ___

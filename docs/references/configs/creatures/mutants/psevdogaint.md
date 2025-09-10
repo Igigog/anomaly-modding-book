@@ -1,6 +1,14 @@
+---
+tags: [Unfinished]
+---
+
 # SM_GIANT (Psevdogaint)
 
 ___
+
+:::warning
+This article is under construction
+:::
 
 ## step effector
 

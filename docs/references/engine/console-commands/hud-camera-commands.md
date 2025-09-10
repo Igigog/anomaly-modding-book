@@ -1,3 +1,8 @@
+---
+tags: [Console Commands]
+description: HUD Camera Console Commands
+---
+
 # HUD Camera
 
 ___

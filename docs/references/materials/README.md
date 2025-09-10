@@ -1,5 +1,0 @@
-# Game Materials
-
-___
-
-## About

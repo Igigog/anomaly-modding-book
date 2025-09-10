@@ -1,3 +1,8 @@
+---
+tags: [Console Commands]
+description: Control Console Commands
+---
+
 # Control
 
 ___

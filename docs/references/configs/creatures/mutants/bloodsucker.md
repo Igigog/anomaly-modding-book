@@ -1,6 +1,14 @@
+---
+tags: [Unfinished]
+---
+
 # SM_BLOOD (Bloodsucker)
 
 ___
+
+:::warning
+This article is under construction
+:::
 
 ## Sounds
 

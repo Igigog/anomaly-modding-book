@@ -1,3 +1,8 @@
+---
+tags: [Console Commands]
+description: Animations Console Commands
+---
+
 # Animations
 
 ___
