@@ -46,7 +46,7 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           editUrl:
-            'https://github.com/TheParaziT/anomaly-modding-book/',
+            'https://github.com/TheParaziT/anomaly-modding-book/blob/main/',
         },
         blog: {
           blogTitle: 'Blog',
