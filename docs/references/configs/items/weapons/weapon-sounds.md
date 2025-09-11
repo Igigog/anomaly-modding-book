@@ -1,3 +1,7 @@
+---
+tags: [LTX, Weapon]
+---
+
 # Weapon Sounds
 
 ___

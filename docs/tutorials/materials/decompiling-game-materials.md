@@ -1,5 +1,5 @@
 ---
-tags: [Decompilation]
+tags: [Decompilation, Game Material, Shader]
 ---
 
 # Decompiling Game Materials

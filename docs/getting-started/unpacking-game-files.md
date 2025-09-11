@@ -1,3 +1,7 @@
+---
+tags: [Modding Tool]
+---
+
 # Unpacking Game Files
 
 ___

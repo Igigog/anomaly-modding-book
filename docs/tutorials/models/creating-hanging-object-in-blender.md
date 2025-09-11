@@ -6,6 +6,10 @@ tags: [Blender, 3D Model]
 
 ___
 
+:::warning
+This article is under construction
+:::
+
 ## About
 
 Hanging objects (lamps or signs) such objects have special bones that allow them to imitate ropes or any other kind of rope.

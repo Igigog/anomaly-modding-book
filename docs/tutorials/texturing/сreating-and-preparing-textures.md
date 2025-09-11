@@ -8,9 +8,11 @@ ___
 
 ## Related Videos
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HwTYYH5zLjo?start=418" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+import YouTubeVideo from '@site/src/components/YouTubeVideo';
 
-___
+<div className="video-grid">
+  <YouTubeVideo id="HwTYYH5zLjo"/>
+</div>
 
 ## Beginning (Via Paint.net)
 

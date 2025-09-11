@@ -2,58 +2,59 @@
 
 ___
 
-## Glossary
+## About
 
-Add only S.T.A.L.K.E.R. related terms, either those that cannot be found in open sources or there is little information about them and they are important to fully understand the context.
+This guide describes the consistent standards for writing and formatting articles for our documentation on Docusaurus. Following these rules ensures the integrity, maintainability, and professional appearance of the entire project. The content of articles is entirely at your discretion and will not be corrected (except for syntax corrections, errors, additions, and minor edits), but we recommend following these guidelines:
 
-## Formatting
+## Glossary and terminology
 
-The formatting of articles is entirely at your discretion and will not be corrected (except for syntax corrections, errors, additions and minor edits), but it is advisable to use the following rules:
+Objective: To create a glossary of specific terms unique to the S.T.A.L.K.E.R. universe.
 
-- For first level headings, use `Title Case` (All First Letters of Words Capitalized)
-- For headings after the first level, use `Sentence case` (Only the first letter of the first word and proper names)
-- File naming in `kebab-case`
-- When referring to file formats, use the following extension syntax (if the file has an extension):
+- What to include:
+  - Terms for which there is no or little information available in open sources.
+  - Terms that are critical to understanding the context of a mod or project.
+- What not to include: Commonly used words and concepts that are easy to find in standard dictionaries or wikis.
 
-    :::info
-        *.ltx
-    :::
+## Formatting and syntax
 
-- Underlining `___` after a heading
-- To link to some page in a book, it is better to use a relative link in markdown format rather than http
-- Use [Markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
-  - Follow rules
-  - Rules `MD33`, `MD13` and `MD10` (for code blocks) are disabled
-- For a code block, specify the language of the code. For example:
+1. Structure and headings
 
-    :::info
-        ```lua
-        function actor_proxy:__init()
-	        self.initialized = false
-        end
-        ```
-    :::
+    - First-level heading (H1): Used only once at the beginning of the document as its title. Docusaurus automatically uses the file name as H1, so it is often not written in the file itself. `Title Case` format.
+      - Example: `# This Is a Title`
+    - Second and subsequent level headings (H2, H3, ...): `Sentence case` format.
+      - Example: `## This is a subheading`, `### This is a sub-subheading`
+    - Separator: After the first-level heading (page title), use triple underscores `___` to visually separate metadata from content.
 
-- Files should end with a single newline character
+2. Naming files and folders
 
-- [Admonishments](https://docusaurus.io/docs/markdown-features/admonitions) support.
+    - Format: `kebab-case`.
+    - Example:
+      - `anomaly-compass.md`
+      - `guides/quick-start-guide.md`
+      - `api/actor-proxy-class.md`
 
-:::info
-    :::info
-    Example
-    :::
-:::
+3. Links
 
-- [Mermaid](https://mermaid.js.org/) support.
+    - Always use relative paths in Markdown format instead of absolute HTTP links.
 
-:::info
-    ```mermaid
-    flowchart LR
+4. Code blocks and file formats
 
-    1 --> 2
-    1 --> 3
-    1 --> 4
-    1 --> 5
-    1 --> 6
-    ```
-:::
+    - Specify the language: Always specify the code language for syntax highlighting.
+    - File formats: When mentioning file extensions, use *. at the beginning.
+
+5. Admonitions
+
+    - Docusaurus provides convenient and stylish blocks for highlighting information.
+
+6. Blank line
+
+    - All files must end with a single blank line character. This is standard for Unix systems and the requirements of many linters.
+
+## Tools
+
+To maintain a consistent style, use the Markdownlint extension.
+
+- Disabled rules:
+  - MD033 (no-inline-html)
+  - MD013 (line-length)
+  - MD010 (no-hard-tabs)

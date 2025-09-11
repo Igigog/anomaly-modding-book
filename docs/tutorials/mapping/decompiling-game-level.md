@@ -1,5 +1,5 @@
 ---
-tags: [Blender, Decompilation]
+tags: [Blender, Game Level, Decompilation]
 ---
 
 # Decompiling Game Level

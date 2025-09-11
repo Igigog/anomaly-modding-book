@@ -89,3 +89,23 @@ Under Construction:
 Console Commands:
   label: 'Console Commands'
   description: 'Console Commands related'
+
+Game Material:
+  label: 'Game Material'
+  description: 'Game Materials related'
+
+Game Level:
+  label: 'Game Level'
+  description: 'Game Levels related'
+
+In-Game:
+  label: 'In-Game'
+  description: 'In-Game related'
+
+Engine:
+  label: 'Engine'
+  description: 'Engine related'
+
+Weapon:
+  label: 'Weapon'
+  description: 'Weapon related'

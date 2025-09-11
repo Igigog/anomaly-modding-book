@@ -21,15 +21,12 @@ ___
 
 ## Related Videos
 
-___
+import YouTubeVideo from '@site/src/components/YouTubeVideo';
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HwTYYH5zLjo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-___
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/E_wMIdK0Ls0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-___
+<div className="video-grid">
+  <YouTubeVideo id="HwTYYH5zLjo"/>
+  <YouTubeVideo id="E_wMIdK0Ls0"/>
+</div>
 
 ## Beginning
 

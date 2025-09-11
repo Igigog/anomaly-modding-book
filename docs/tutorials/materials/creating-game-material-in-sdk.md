@@ -1,3 +1,7 @@
+---
+tags: [SDK, Game Material, Shader]
+---
+
 # Creating Game Material in SDK
 
 ___

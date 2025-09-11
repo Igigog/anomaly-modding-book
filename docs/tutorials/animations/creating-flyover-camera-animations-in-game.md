@@ -1,3 +1,7 @@
+---
+tags: [In-Game, Console Commands]
+---
+
 # Creating Camera Flyover in Game
 
 ___

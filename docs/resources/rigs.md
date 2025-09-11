@@ -1,3 +1,7 @@
+---
+tags: [3D Animation]
+---
+
 # Rigs
 
 ___

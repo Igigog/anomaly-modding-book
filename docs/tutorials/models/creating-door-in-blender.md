@@ -6,6 +6,10 @@ tags: [Blender, 3D Model]
 
 ___
 
+:::warning
+This article is under construction
+:::
+
 ## Need to know
 
 - How to work in Blender
@@ -37,7 +41,7 @@ The second bone must be named `door`.
 
 We need to set up a `door` and fixation bone.
 
-Go to `Bone Properties`![Bone Properties svg-icon](../../../static/icons/blender/bone.svg) tab.
+Go to `Bone Properties`![Bone Properties](../../../static/icons/blender/bone.svg) tab.
 
 For `door` bone:
 

@@ -1,10 +1,7 @@
 {
   "files.associations": {
-    "docusaurus.config.js": "javascript",
-    "sidebars.js": "javascript"
-  },
-  "emmet.includeLanguages": {
-    "markdown": "html"
+    "docusaurus.config.js": "typescript",
+    "sidebars.js": "typescript"
   },
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",

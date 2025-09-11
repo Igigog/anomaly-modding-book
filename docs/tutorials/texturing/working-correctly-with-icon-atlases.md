@@ -13,7 +13,7 @@ ___
   showDescription={true}
 />
 
-> Greetings, this is comrade [Hrusteckiy](#hrust-contacts) - UI-programmer, whose work can be seen in the New Project, Last Fallout Overhaul, Oblivion, Hike, and many others, also made 100x100 icons for the original game. Noticed that many modders suffer from improper saving textures and work with them. This guide will make their life easier and teach them to do without mistakes (by the way, came to this myself through their own messes).
+> Greetings, this is comrade Hrusteckiy - UI-programmer, whose work can be seen in the New Project, Last Fallout Overhaul, Oblivion, Hike, and many others, also made 100x100 icons for the original game. Noticed that many modders suffer from improper saving textures and work with them. This guide will make their life easier and teach them to do without mistakes (by the way, came to this myself through their own messes).
 
 ___
 
@@ -73,10 +73,3 @@ ___
 ## Sources
 
 [Ap-pro Topic](https://ap-pro.ru/forums/topic/4205-pravilnaya-rabota-s-atlasami-ikonok/)
-
-### Hrust Contacts
-
-* [VK](https://vk.com/hrusteckiy)
-* [AMK](https://amk-team.ru/forum/profile/57247-hrust/)
-* [Ap-Pro](https://ap-pro.ru/profile/4757-hrust/)
-* Discord - Hrust#8964
