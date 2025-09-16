@@ -1,4 +1,4 @@
-import React, { JSX } from 'react';
+import React, { JSX, useState } from 'react';
 import authorsGlobal from 'js-yaml-loader!../../../blog/authors.yml';
 import {
   FaGithub,
@@ -8,10 +8,12 @@ import {
   FaEnvelope,
   FaGlobe,
   FaLink,
-  FaYoutube
+  FaYoutube,
+  FaDiscord,
+  FaTelegram,
+  FaCopy
 } from 'react-icons/fa';
 import { SiX } from 'react-icons/si';
-import { FaDiscord, FaTelegram } from 'react-icons/fa';
 import { SiVk, SiModin} from 'react-icons/si';
 
 interface AuthorsProps {
@@ -82,12 +84,31 @@ function normalizeSocialLink(platform: string, handleOrUrl: string): string {
   }
 }
 
+interface Author {
+  key: string;
+  name: string;
+  image_url?: string;
+  url?: string;
+  title?: string;
+  description?: string;
+  socials?: Record<string, string>;
+  discord_username?: string;
+}
+
 export default function Authors({ 
   authors, 
   size = 'medium',
   showTitle = true,
   showDescription = false 
 }: AuthorsProps): JSX.Element {
+  const [copiedUsername, setCopiedUsername] = useState<string | null>(null);
+
+  const handleCopyUsername = (username: string) => {
+    navigator.clipboard.writeText(username);
+    setCopiedUsername(username);
+    setTimeout(() => setCopiedUsername(null), 2000);
+  };
+
   if (!authors || authors.length === 0) {
     return (
       <div style={{ marginTop: 20, marginBottom: 20 }}>
@@ -171,44 +192,89 @@ export default function Authors({
                 </div>
               )}
 
-              {author.socials && (
-                <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
-                  {Object.entries(author.socials)
-                    .filter(([_, value]) => value && value !== '')
-                    .map(([platform, handleOrUrl]) => {
-                      const SocialIcon = socialIconMap[platform as keyof typeof socialIconMap] || FaLink;
-                      const normalizedUrl = normalizeSocialLink(platform, handleOrUrl as string);
-                      
-                      return (
-                        <a
-                          key={platform}
-                          href={normalizedUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          title={`${author.name} on ${platform}`}
-                          style={{
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            width: iconSize + 8,
-                            height: iconSize + 8,
-                            borderRadius: '4px',
-                            color: 'inherit',
-                            transition: 'background-color 0.2s ease'
-                          }}
-                          onMouseEnter={(e) => {
-                            e.currentTarget.style.backgroundColor = 'var(--ifm-color-emphasis-200)';
-                          }}
-                          onMouseLeave={(e) => {
-                            e.currentTarget.style.backgroundColor = 'transparent';
-                          }}
-                        >
-                          <SocialIcon size={iconSize} />
-                        </a>
-                      );
-                    })}
-                </div>
-              )}
+              <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', alignItems: 'center' }}>
+                {author.socials && Object.entries(author.socials)
+                  .filter(([_, value]) => value && value !== '')
+                  .map(([platform, handleOrUrl]) => {
+                    const SocialIcon = socialIconMap[platform as keyof typeof socialIconMap] || FaLink;
+                    const normalizedUrl = normalizeSocialLink(platform, handleOrUrl as string);
+                    
+                    return (
+                      <a
+                        key={platform}
+                        href={normalizedUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title={`${author.name} on ${platform}`}
+                        style={{
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          width: iconSize + 8,
+                          height: iconSize + 8,
+                          borderRadius: '4px',
+                          color: 'inherit',
+                          transition: 'background-color 0.2s ease'
+                        }}
+                        onMouseEnter={(e) => {
+                          e.currentTarget.style.backgroundColor = 'var(--ifm-color-emphasis-200)';
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.backgroundColor = 'transparent';
+                        }}
+                      >
+                        <SocialIcon size={iconSize} />
+                      </a>
+                    );
+                  })
+                }
+
+                {author.discord_username && (
+                  <button
+                    onClick={() => handleCopyUsername(author.discord_username)}
+                    title={`Copy Discord nickname: ${author.discord_username}`}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      width: iconSize + 8,
+                      height: iconSize + 8,
+                      borderRadius: '4px',
+                      border: 'none',
+                      background: 'transparent',
+                      color: 'inherit',
+                      cursor: 'pointer',
+                      position: 'relative',
+                      transition: 'background-color 0.2s ease'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.backgroundColor = 'var(--ifm-color-emphasis-200)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.backgroundColor = 'transparent';
+                    }}
+                  >
+                    <FaDiscord size={iconSize} />
+                    {copiedUsername === author.discord_username && (
+                      <span style={{
+                        position: 'absolute',
+                        top: '-25px',
+                        left: '50%',
+                        transform: 'translateX(-50%)',
+                        background: '#333',
+                        color: '#fff',
+                        padding: '4px 8px',
+                        borderRadius: '4px',
+                        fontSize: '12px',
+                        whiteSpace: 'nowrap',
+                        zIndex: 10
+                      }}>
+                        Copied!
+                      </span>
+                    )}
+                  </button>
+                )}
+              </div>
             </div>
           </div>
         ))}

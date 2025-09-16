@@ -1,10 +1,3 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-/* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
@@ -15,9 +8,13 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  
+  --color-vk: #4a76a8;
+  --color-telegram: #0088cc;
+  --color-moddb: #ff6600;
+  --color-discord: #5865f2;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
@@ -32,27 +29,16 @@
 .social-icon {
   transition: all 0.2s ease-in-out;
   opacity: 0.8;
-}
-
-.social-icon:hover {
-  opacity: 1;
-  transform: scale(1.1);
-}
-
-.social-icon-vk:hover {
-  color: #4a76a8;
-}
-
-.social-icon-telegram:hover {
-  color: #0088cc;
-}
-
-.social-icon-moddb:hover {
-  color: #ff6600;
-}
-
-.social-icon-discord:hover {
-  color: #5865f2;
+  
+  &:hover {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  
+  &.social-icon-vk:hover { color: var(--color-vk); }
+  &.social-icon-telegram:hover { color: var(--color-telegram); }
+  &.social-icon-moddb:hover { color: var(--color-moddb); }
+  &.social-icon-discord:hover { color: var(--color-discord); }
 }
 
 .video-grid {
@@ -60,6 +46,11 @@
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1.5rem;
   margin: 2rem 0;
+  
+  @media (max-width: 996px) {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 }
 
 .video-container {
@@ -68,6 +59,17 @@
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  padding-top: 56.25%;
+  
+  [data-theme='dark'] & {
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  @media (max-width: 996px) {
+    border-radius: 8px;
+  }
 }
 
 .responsive-iframe {
@@ -79,23 +81,66 @@
   border: none;
 }
 
-.video-container {
-  width: 100%;
-  padding-top: 56.25%;
+[data-theme='light'] {
+  img[src$='.svg'], .theme-aware-svg { filter: brightness(0.8); }
 }
 
-[data-theme='dark'] .video-container {
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-  background-color: rgba(255, 255, 255, 0.05);
+[data-theme='dark'] {
+  img[src$='.svg'], .theme-aware-svg { filter: brightness(1.2); }
 }
 
-@media screen and (max-width: 996px) {
-  .video-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+.navbar-item-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+  transition: background var(--ifm-transition-fast);
+  
+  &:hover {
+    background: var(--ifm-color-emphasis-200);
+    text-decoration: none;
   }
   
-  .video-container {
-    border-radius: 8px;
+  &::before {
+    content: '';
+    width: 1.2rem;
+    height: 1.2rem;
+    display: inline-block;
+    background-color: var(--ifm-navbar-link-color);
+    transition: background-color var(--ifm-transition-fast);
+    mask: var(--icon-url) no-repeat center / contain;
+    -webkit-mask: var(--icon-url) no-repeat center / contain;
   }
+  
+  &:hover::before {
+    background-color: var(--ifm-navbar-link-hover-color);
+  }
+  
+  &.navbar-github-item { --icon-url: url('https://api.iconify.design/mdi:rocket-launch.svg'); }
+  &.navbar-glossary-item { --icon-url: url('https://api.iconify.design/mdi:book.svg'); }
+  &.navbar-tutorial-item { --icon-url: url('https://api.iconify.design/mdi:cast-tutorial.svg'); }
+  &.navbar-reference-item { --icon-url: url('https://api.iconify.design/mingcute:list-search-line.svg'); }
+  &.navbar-moddingtool-item { --icon-url: url('https://api.iconify.design/mynaui:tool.svg'); }
+  &.navbar-resource-item { --icon-url: url('https://api.iconify.design/carbon:software-resource.svg'); }
+  &.navbar-engineapi-item { --icon-url: url('https://api.iconify.design/tabler:engine.svg'); }
+  &.navbar-scriptingapi-item { --icon-url: url('https://api.iconify.design/mdi-light:script.svg'); }
+  &.navbar-forcontributors-item { --icon-url: url('https://api.iconify.design/ooui:user-contributions-rtl.svg'); }
+}
+
+/* Уменьшение отступов в навбаре */
+.navbar__inner {
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.navbar__item {
+  padding: 0.4rem 0.6rem;
+}
+
+/* Компактные иконки */
+.navbar-item-with-icon::before {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.3rem;
 }

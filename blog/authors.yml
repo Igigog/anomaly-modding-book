@@ -58,11 +58,11 @@ etherealstalkermodding:
 hrusteckiy:
   name: Hrusteckiy
   image_url: https://github.com/Hrusteckiy.png
+  discord_username: hrusteckiy
   socials:
     github: Hrusteckiy
     website: https://amk-team.ru/forum/profile/57247-hrust/
     vk: https://vk.com/hrusteckiy
-    discord: hrusteckiy
 
 themrdemonized:
   name: themrdemonized
@@ -82,8 +82,60 @@ proflander:
   socials:
     github: ProfLander
 
+igelbox:
+  name: igelbox
+  image_url: https://github.com/igelbox.png
+  socials:
+    github: igelbox
+
+pavel_blend:
+  name: Pavel_Blend
+  image_url: https://github.com/PavelBlend.png
+  socials:
+    github: PavelBlend
+    youtube: https://www.youtube.com/@PavelBlend
+
+mortany:
+  name: Mortany
+  image_url: https://github.com/mortany.png
+  socials:
+    github: mortany
+
+vaierok:
+  name: VaIeroK
+  image_url: https://github.com/VaIeroK.png
+  socials:
+    github: VaIeroK
+
+skyloaderr:
+  name: SkyLoaderr
+  image_url: https://github.com/SkyLoaderr.png
+  socials:
+    github: SkyLoaderr
+
+abramcumner:
+  name: Abramcumner
+  image_url: https://github.com/abramcumner.png
+  socials:
+    github: Abramcumner
+
+redpandaprojects:
+  name: RedPandaProjects
+  image_url: https://github.com/RedPandaProjects.png
+  socials:
+    github: RedPandaProjects
+
+kd:
+  name: K.D.
+
+nat_vac:
+  name: NatVac
+
 tdef:
   name: tdef
+
+i_love_kfc:
+  name: i-love-kfc
 
 new_project_mod_team:
   name: New Project Mod Team
@@ -104,3 +156,17 @@ ix_ray_platform:
     moddb: https://www.moddb.com/mods/ix-ray-platform
     youtube: https://www.youtube.com/@ixray-platform
     github: https://github.com/ixray-team
+
+ogsr_team:
+  name: OGSR Team
+  image_url: https://github.com/OGSR.png
+  socials:
+    github: https://github.com/OGSR
+    youtube: https://www.youtube.com/@OGSR
+
+gsc_game_world:
+  name: GSC Game World
+  image_url: https://www.gsc-game.com/src/img/logo.svg
+  socials:
+    youtube: https://www.youtube.com/@GSCGameWorldOfficial
+    x: https://x.com/GSC_GW

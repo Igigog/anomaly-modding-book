@@ -2,6 +2,14 @@
 
 ___
 
+## Related Videos
+
+import YouTubeVideo from '@site/src/components/YouTubeVideo';
+
+<div className="video-grid">
+  <YouTubeVideo id="LcJtmbx1Xjc?si=1XevfsEHQHKvUIOK"/>
+</div>
+
 1. [Download the latest version of the addon](https://github.com/PavelBlend/blender-xray/releases)
 
 2. Go into Blender. Click "Edit" > Preferences

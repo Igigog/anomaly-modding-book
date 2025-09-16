@@ -43,6 +43,8 @@ We need to set up a `door` and fixation bone.
 
 Go to `Bone Properties`![Bone Properties](../../../static/icons/blender/bone.svg) tab.
 
+<img src="/icons/blender/bone.svg" alt="Bone Properties" class="theme-aware-svg" />
+
 For `door` bone:
 
 In [X-Ray Engine: Bone](../../modding-tools/blender/addon-panels/panel-bone.md), be sure to select `Box` in Shape Type

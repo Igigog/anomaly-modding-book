@@ -14,7 +14,16 @@ const config: Config = {
   plugins: [
     'docusaurus-plugin-image-zoom',
   ],
-  themes: ['@docusaurus/theme-mermaid'],
+  themes: [
+    '@docusaurus/theme-mermaid',
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        hashed: true,
+        language: ["en"],
+      },
+    ],
+  ],
   markdown: {
     mermaid: true,
   },
@@ -70,7 +79,6 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
-
   themeConfig: {
     zoom: {
       selector: '.markdown :not(em) > img',
@@ -91,54 +99,63 @@ const config: Config = {
           sidebarId: 'gettingstartedSidebar',
           position: 'left',
           label: 'Getting Started',
+          className: 'navbar-item-with-icon navbar-github-item',
         },
         {
           type: 'docSidebar',
           sidebarId: 'glossarySidebar',
           position: 'left',
           label: 'Glossary',
+          className: 'navbar-item-with-icon navbar-glossary-item',
         },
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
           label: 'Tutorials',
+          className: 'navbar-item-with-icon navbar-tutorial-item',
         },
         {
           type: 'docSidebar',
           sidebarId: 'referencesSidebar',
           position: 'left',
-          label: 'References'
+          label: 'References',
+          className: 'navbar-item-with-icon navbar-reference-item',
         },
         {
           type: 'docSidebar',
           sidebarId: 'moddingtoolsSidebar',
           position: 'left',
-          label: 'Modding Tools'
+          label: 'Modding Tools',
+          className: 'navbar-item-with-icon navbar-moddingtool-item',
         },
         {
           type: 'docSidebar',
           sidebarId: 'resourcesSidebar',
           position: 'left',
-          label: 'Resources'
+          label: 'Resources',
+          className: 'navbar-item-with-icon navbar-resource-item',
         },
         {
           type: 'docSidebar',
           sidebarId: 'engineapiSidebar',
           position: 'left',
-          label: 'Engine API'
+          label: 'Engine API',
+          className: 'navbar-item-with-icon navbar-engineapi-item',
         },
         {
           type: 'docSidebar',
           sidebarId: 'scriptingapiSidebar',
           position: 'left',
-          label: 'Scripting API'
+          label: 'Scripting API',
+          className: 'navbar-item-with-icon navbar-scriptingapi-item',
         },
         {
           type: 'docSidebar',
           sidebarId: 'forcontributorsSidebar',
           position: 'left',
-          label: 'For Contributors'
+          label: 'For Contributors',
+          className: 'navbar-item-with-icon navbar-forcontributors-item',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
@@ -154,6 +171,10 @@ const config: Config = {
         {
           title: 'Docs',
           items: [
+            {
+              label: 'Getting Started',
+              to: '/docs/getting-started/',
+            },
             {
               label: 'Glossary',
               to: '/docs/glossary/',

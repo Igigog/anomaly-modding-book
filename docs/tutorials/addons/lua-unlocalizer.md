@@ -1,5 +1,6 @@
 ---
 tags: [LUA]
+description: Addons allows to unlocalize variables for lua environment, making them global to the script namespace
 ---
 
 # Lua Variables Unlocalizer
