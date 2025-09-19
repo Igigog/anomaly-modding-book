@@ -128,7 +128,6 @@
   &.navbar-forcontributors-item { --icon-url: url('https://api.iconify.design/ooui:user-contributions-rtl.svg'); }
 }
 
-/* Уменьшение отступов в навбаре */
 .navbar__inner {
   gap: 0.5rem;
   padding: 0.5rem 0;
@@ -138,9 +137,270 @@
   padding: 0.4rem 0.6rem;
 }
 
-/* Компактные иконки */
 .navbar-item-with-icon::before {
   width: 1rem;
   height: 1rem;
   margin-right: 0.3rem;
+}
+
+/* Glossary Styles */
+.glossary-container {
+  margin: 2rem 0;
+}
+
+.glossary-controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.glossary-search,
+.glossary-filter {
+  padding: 0.5rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 4px;
+  background-color: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+}
+
+.glossary-search {
+  flex: 1;
+  min-width: 200px;
+}
+
+.glossary-filter {
+  min-width: 150px;
+}
+
+.glossary-stats {
+  margin-bottom: 1rem;
+  font-style: italic;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.glossary-table-container {
+  overflow-x: auto;
+  margin-bottom: 2rem;
+}
+
+.glossary-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.glossary-table th,
+.glossary-table td {
+  padding: 12px;
+  text-align: left; /* Базовое выравнивание по левому краю */
+  vertical-align: top; /* Выравнивание содержимого по верхнему краю */
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.glossary-table th:nth-child(1),
+.glossary-table td:nth-child(1) { /* Term */
+  text-align: left;
+}
+
+.glossary-table th:nth-child(2),
+.glossary-table td:nth-child(2) { /* Definition */
+  text-align: left;
+}
+
+.glossary-table th:nth-child(3),
+.glossary-table td:nth-child(3) { /* Category */
+  text-align: center;
+}
+
+.glossary-table th:nth-child(4),
+.glossary-table td:nth-child(4) { /* Related Concepts */
+  text-align: left;
+}
+
+.glossary-table th:nth-child(5),
+.glossary-table td:nth-child(5) { /* Actions */
+  text-align: center;
+}
+
+.glossary-term {
+  font-weight: 600;
+  min-width: 150px;
+}
+
+.term-anchor {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+.term-anchor:hover {
+  text-decoration: underline;
+}
+
+.glossary-category {
+  min-width: 120px;
+}
+
+.glossary-related {
+  min-width: 150px;
+}
+
+/* Стили для related terms */
+.related-tag {
+  display: inline-block;
+  margin: 2px 4px;
+  padding: 2px 8px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.related-tag a {
+  color: var(--ifm-color-content);
+  text-decoration: none;
+}
+
+.related-tag a:hover {
+  color: var(--ifm-color-primary);
+}
+
+.glossary-actions {
+  width: 60px;
+  text-align: center;
+}
+
+/* Стили для кнопки */
+.copy-link-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.copy-link-button:hover {
+  background-color: var(--ifm-color-emphasis-200);
+}
+
+.sortable {
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+}
+
+.sortable:hover {
+  background-color: var(--ifm-color-emphasis-200);
+}
+
+.sort-indicator {
+  margin-left: 0.5rem;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+}
+
+.sort-asc .sort-indicator {
+  border-bottom: 4px solid var(--ifm-color-content);
+  border-top: none;
+}
+
+.sort-desc .sort-indicator {
+  border-top: 4px solid var(--ifm-color-content);
+  border-bottom: none;
+}
+
+.glossary-empty {
+  text-align: center;
+  padding: 2rem;
+  color: var(--ifm-color-emphasis-600);
+  font-style: italic;
+}
+
+.glossary-intro {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.glossary-footer {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+/* Темная тема */
+[data-theme='dark'] .related-tag {
+  background-color: var(--ifm-color-secondary-darkest);
+}
+
+[data-theme='dark'] .copy-link-button:hover {
+  background-color: var(--ifm-color-emphasis-700);
+}
+
+/* Адаптивность */
+@media (max-width: 996px) {
+  .glossary-controls {
+    flex-direction: column;
+  }
+  
+  .glossary-search,
+  .glossary-filter {
+    width: 100%;
+  }
+  
+  .glossary-table {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .glossary-table {
+    display: block;
+  }
+  
+  .glossary-table thead {
+    display: none;
+  }
+  
+  .glossary-table tbody,
+  .glossary-table tr,
+  .glossary-table td {
+    display: block;
+    width: 100%;
+  }
+  
+  .glossary-table tr {
+    margin-bottom: 1rem;
+    border: 1px solid var(--ifm-table-border-color);
+    border-radius: 4px;
+  }
+  
+  .glossary-table td {
+    border: none;
+    border-bottom: 1px solid var(--ifm-table-border-color);
+    position: relative;
+    padding-left: 50%;
+  }
+  
+  .glossary-table td:last-child {
+    border-bottom: none;
+  }
+  
+  .glossary-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0.75rem;
+    width: 45%;
+    padding-right: 0.75rem;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  /* Добавляем метки для мобильных устройств */
+  .glossary-term::before { content: "Term: "; }
+  .glossary-definition::before { content: "Definition: "; }
+  .glossary-category::before { content: "Category: "; }
+  .glossary-related::before { content: "Related: "; }
+  .glossary-actions::before { content: "Actions: "; }
 }

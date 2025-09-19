@@ -4,16 +4,46 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Anomaly Modding Book',
-  tagline: 'Introductory book for S.T.A.L.K.E.R. Anomaly modding',
+  tagline: 'The Complete Guide to S.T.A.L.K.E.R. Anomaly Modding',
   favicon: 'img/favicon.ico',
-
-  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
+  
+  url: 'https://anomaly-modding-book.netlify.app',
+  baseUrl: '/',
+  trailingSlash: false,
+  
   future: {
     v4: true,
   },
+  
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+        direction: 'ltr',
+      },
+    },
+  },
+  
+  onBrokenLinks: 'warn',
+  onBrokenMarkdownLinks: 'warn',
+  onDuplicateRoutes: 'warn',
+  
   plugins: [
     'docusaurus-plugin-image-zoom',
+    [
+      '@docusaurus/plugin-ideal-image',
+      {
+        quality: 70,
+        max: 1030,
+        min: 640,
+        steps: 2,
+        disableInDev: false,
+      },
+    ],
   ],
+  
   themes: [
     '@docusaurus/theme-mermaid',
     [
@@ -21,22 +51,15 @@ const config: Config = {
       {
         hashed: true,
         language: ["en"],
+        indexDocs: true,
+        indexBlog: true,
+        docsRouteBasePath: '/docs',
+        blogRouteBasePath: '/blog',
+        searchResultLimits: 10,
+        searchResultContextMaxLength: 50,
       },
     ],
   ],
-  markdown: {
-    mermaid: true,
-  },
-
-  url: 'https://anomaly-modding-book.netlify.app',
-  baseUrl: '/',
-
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
-  },
 
   presets: [
     [
@@ -54,45 +77,76 @@ const config: Config = {
             return items.filter((item) => !item.url.includes('/page/'));
           },
         },
+        
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl:
-            'https://github.com/TheParaziT/anomaly-modding-book/blob/main/',
+          editUrl: 'https://github.com/TheParaziT/anomaly-modding-book/blob/main/',
+          showLastUpdateTime: true,
+          showLastUpdateAuthor: true,
+          remarkPlugins: [],
+          rehypePlugins: [],
         },
+        
         blog: {
-          blogTitle: 'Blog',
-          blogDescription: 'Just a blog',
+          blogTitle: 'Anomaly Modding Blog',
+          blogDescription: 'Latest news about S.T.A.L.K.E.R. Anomaly modding',
+          blogSidebarTitle: 'Recent Posts',
+          blogSidebarCount: 10,
           showReadingTime: true,
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
+            copyright: `Copyright © ${new Date().getFullYear()} Anomaly Modding Book.`,
           },
-          editUrl:
-            'https://github.com/TheParaziT/anomaly-modding-book/',
+          editUrl: 'https://github.com/TheParaziT/anomaly-modding-book/blob/main/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
+          postsPerPage: 10,
         },
+        
         theme: {
           customCss: './src/css/custom.css',
         },
       } satisfies Preset.Options,
     ],
   ],
+  
   themeConfig: {
     zoom: {
       selector: '.markdown :not(em) > img',
       background: {
-        light: 'rgb(255, 255, 255)',
-        dark: 'rgb(50, 50, 50)'
+        light: 'rgba(240, 240, 240, 0.9)',
+        dark: 'rgba(50, 50, 50, 0.9)'
+      },
+      config: {
       },
     },
+    
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: false,
+      respectPrefersColorScheme: true,
+    },
+    
+    metadata: [
+      {name: 'keywords', content: 'stalker, anomaly, modding, guide, tutorial, xray-engine'},
+      {property: 'og:type', content: 'website'},
+      {property: 'og:image:width', content: '1200'},
+      {property: 'og:image:height', content: '630'},
+    ],
+    
     navbar: {
       title: 'Anomaly Modding Book',
       logo: {
-        alt: 'Anomaly Modding Book Site Logo',
+        alt: 'Anomaly Modding Book Logo',
         src: 'img/logo.svg',
+        width: 32,
+        height: 32,
+        href: '/',
+        target: '_self',
       },
+      hideOnScroll: false,
       items: [
         {
           type: 'docSidebar',
@@ -102,10 +156,9 @@ const config: Config = {
           className: 'navbar-item-with-icon navbar-github-item',
         },
         {
-          type: 'docSidebar',
-          sidebarId: 'glossarySidebar',
-          position: 'left',
+          to: '/glossary',
           label: 'Glossary',
+          position: 'left',
           className: 'navbar-item-with-icon navbar-glossary-item',
         },
         {
@@ -157,87 +210,82 @@ const config: Config = {
           label: 'For Contributors',
           className: 'navbar-item-with-icon navbar-forcontributors-item',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/Igigog/anomaly-modding-book',
-          label: 'GitHub',
-          position: 'right',
-        },
+          to: '/blog', 
+          label: 'Blog', 
+          position: 'left'},
       ],
     },
+    
     footer: {
       style: 'dark',
+      logo: {
+        alt: 'Anomaly Modding Book',
+        src: 'img/logo.svg',
+        href: '/',
+        width: 50,
+        height: 50,
+      },
       links: [
         {
-          title: 'Docs',
+          title: 'Learn',
           items: [
-            {
-              label: 'Getting Started',
-              to: '/docs/getting-started/',
-            },
-            {
-              label: 'Glossary',
-              to: '/docs/glossary/',
-            },
-            {
-              label: 'Tutorials',
-              to: '/docs/tutorials/',
-            },
-            {
-              label: 'References',
-              to: '/docs/references/',
-            },
-            {
-              label: 'Modding Tools',
-              to: '/docs/modding-tools/',
-            },
-            {
-              label: 'Resources',
-              to: '/docs/resources/',
-            },
-            {
-              label: 'Engine API',
-              to: '/docs/engineapi/',
-            },
-            {
-              label: 'Scripting API',
-              to: '/docs/scriptingapi/',
-            },
-            {
-              label: 'For Contrubutors',
-              to: '/docs/forcontributors/',
-            },
+            {label: 'Getting Started', to: '/docs/getting-started'},
+            {label: 'Glossary', to: '/glossary'},
+            {label: 'Tutorials', to: '/docs/tutorials'},
+            {label: 'References', to: '/docs/references'},
+            {label: 'Resources', to: '/docs/resources'},
+            {label: 'Modding Tools', to: '/docs/modding-tools'},
+            {label: 'Engine API', to: '/docs/engineapi'},
+            {label: 'Scripting API', to: '/docs/scriptingapi'},
           ],
         },
         {
           title: 'Community',
           items: [
-            {
-              label: 'Discord',
-              href: 'https://discord.gg/8Pu2ekQYg3',
-            },
+            {label: 'Discord', href: 'https://discord.gg/8Pu2ekQYg3'},
+            {label: 'GitHub', href: 'https://github.com/TheParaziT/anomaly-modding-book'},
+            {label: 'Contribute', to: '/docs/forcontributors'},
           ],
         },
         {
           title: 'More',
           items: [
+            {label: 'Blog', to: '/blog'},
             {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/TheParaziT/anomaly-modding-book',
+              label: 'Netlify Status',
+              href: 'https://status.netlify.com',
             },
           ],
         },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Anomaly Modding Book. Built with Docusaurus.`,
     },
+    
     prism: {
-      additionalLanguages: ['lua', 'ini', 'bash'],
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+      defaultLanguage: 'lua',
+      additionalLanguages: ['lua', 'ini', 'bash', 'json', 'cpp'],
+      magicComments: [
+        {
+          className: 'theme-code-block-highlighted-line',
+          line: 'highlight-next-line',
+          block: {start: 'highlight-start', end: 'highlight-end'},
+        },
+      ],
+    },
+
+    docs: {
+      sidebar: {
+        hideable: true,
+        autoCollapseCategories: true,
+      },
+    },
+    
+    tableOfContents: {
+      minHeadingLevel: 2,
+      maxHeadingLevel: 5,
     },
   } satisfies Preset.ThemeConfig,
 };
