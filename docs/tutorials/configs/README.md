@@ -1,4 +1,4 @@
-# Confings
+# Configs
 
 ___
 
