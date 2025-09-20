@@ -1,3 +1,7 @@
+---
+description: Minimap editor documentation
+---
+
 # Minimap Editor
 
 ___

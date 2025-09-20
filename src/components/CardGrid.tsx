@@ -1,12 +1,6 @@
 import React from 'react';
-import type { ReactNode } from 'react';
-import UniversalCard, { UniversalCardProps } from './UniversalCard';
-
-interface CardGridProps {
-  children?: ReactNode;
-  items?: UniversalCardProps[];
-  columns?: 2 | 3 | 4;
-}
+import UniversalCard from './UniversalCard';
+import type { CardGridProps } from '../types';
 
 export default function CardGrid({ 
   children, 

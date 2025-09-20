@@ -1,3 +1,7 @@
+---
+description: Class registrator documentation
+---
+
 # Class Registrator
 
 ___

@@ -1,3 +1,7 @@
+---
+description: Level Editor Properties documentation
+---
+
 # Properties
 
 ___

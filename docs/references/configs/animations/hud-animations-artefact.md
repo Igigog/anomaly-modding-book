@@ -1,3 +1,7 @@
+---
+description: Configuration documentation for artefact HUD animations
+---
+
 # Artefact HUD
 
 ___

@@ -1,3 +1,7 @@
+---
+description: NPC Logic/Execute in-game editor
+---
+
 # NPC Logic/Execute
 
 ___
@@ -31,3 +35,5 @@ ___
 ## Technical part
 
 Script can be found in the file "`ui_debug_launcher.script`"
+
+```

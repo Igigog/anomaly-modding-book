@@ -1,3 +1,7 @@
+---
+description: Guide describing the purpose of key folders and files in the game directory structure
+---
+
 # Main Folders And Files
 
 ___

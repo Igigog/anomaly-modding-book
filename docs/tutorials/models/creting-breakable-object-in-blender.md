@@ -1,5 +1,6 @@
 ---
 tags: [Blender, 3D Model]
+description: Guide for creating breakable objects in Blender
 ---
 
 # Creating Breakable Object in Blender

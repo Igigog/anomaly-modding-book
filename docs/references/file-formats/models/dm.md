@@ -1,4 +1,6 @@
-# *.dm (Detail Model)
+---
+description: Documentation for DM file format
+---
 
 ___
 

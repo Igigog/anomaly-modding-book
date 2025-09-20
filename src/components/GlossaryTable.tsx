@@ -1,15 +1,11 @@
 import React, { useState, useMemo } from 'react';
 import clsx from 'clsx';
-import { GlossaryTerm, GlossaryData } from '../types/glossary';
-
-interface GlossaryTableProps {
-  data: GlossaryData;
-}
+import type { GlossaryTerm, GlossaryData, GlossaryTableProps, SortConfig } from '../types';
 
 const GlossaryTable: React.FC<GlossaryTableProps> = ({ data }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
-  const [sortConfig, setSortConfig] = useState<{ key: keyof GlossaryTerm; direction: 'asc' | 'desc' }>({ 
+  const [sortConfig, setSortConfig] = useState<SortConfig<GlossaryTerm>>({ 
     key: 'term', 
     direction: 'asc' 
   });

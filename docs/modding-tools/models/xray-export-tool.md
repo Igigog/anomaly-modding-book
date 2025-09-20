@@ -1,5 +1,6 @@
 ---
 tags: [3D Model, Modding Tool]
+description: Object Tool (or XRay Export Tool) for model export
 ---
 
 # Object Tool (or XRay Export Tool)

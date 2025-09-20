@@ -1,3 +1,7 @@
+---
+description: Particle Editor Right bar documentation
+---
+
 # Right Bar
 
 ___

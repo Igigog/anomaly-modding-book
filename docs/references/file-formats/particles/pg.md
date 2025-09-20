@@ -1,3 +1,7 @@
+---
+description: Documentation for PG (Particle Group) file format
+---
+
 # *.pg (Particle Group)
 
 ___

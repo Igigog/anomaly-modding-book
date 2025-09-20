@@ -1,3 +1,7 @@
+---
+description: Level Editor Snap list documentation
+---
+
 # Snap List
 
 ___

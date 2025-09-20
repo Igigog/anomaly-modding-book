@@ -1,5 +1,6 @@
 ---
 tags: [LTX]
+description: Documentation of the structure of configuration files
 ---
 
 # Structure of Files

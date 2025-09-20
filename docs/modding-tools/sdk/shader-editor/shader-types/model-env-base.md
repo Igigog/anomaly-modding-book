@@ -1,3 +1,8 @@
+---
+tags: [LTX, XML, LUA]
+description: Comprehensive guide for creating and managing quests and tasks in the game
+---
+
 # MODEL: env*base
 
 ___

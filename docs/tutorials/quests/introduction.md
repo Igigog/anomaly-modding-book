@@ -1,3 +1,7 @@
+---
+description: Introduction to quest creation and management in the game
+---
+
 # Introduction TO REDO
 
 ___

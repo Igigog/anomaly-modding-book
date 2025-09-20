@@ -15,13 +15,7 @@ import {
 } from 'react-icons/fa';
 import { SiX } from 'react-icons/si';
 import { SiVk, SiModin} from 'react-icons/si';
-
-interface AuthorsProps {
-  authors: string[];
-  size?: 'small' | 'medium' | 'large';
-  showTitle?: boolean;
-  showDescription?: boolean;
-}
+import type { AuthorsProps, Author } from '../../types';
 
 const socialIconMap = {
   github: FaGithub,
@@ -84,16 +78,6 @@ function normalizeSocialLink(platform: string, handleOrUrl: string): string {
   }
 }
 
-interface Author {
-  key: string;
-  name: string;
-  image_url?: string;
-  url?: string;
-  title?: string;
-  description?: string;
-  socials?: Record<string, string>;
-  discord_username?: string;
-}
 
 export default function Authors({ 
   authors, 

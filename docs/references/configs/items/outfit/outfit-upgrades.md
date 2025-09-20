@@ -1,3 +1,7 @@
+---
+description: Configuration documentation for outfit upgrades
+---
+
 # Outfit Upgrades
 
 ___

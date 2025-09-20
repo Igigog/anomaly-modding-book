@@ -1,3 +1,7 @@
+---
+description: Level Editor Content browser documentation
+---
+
 # Content Browser
 
 ___

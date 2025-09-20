@@ -1,3 +1,7 @@
+---
+description: Comprehensive guide for contributors on how to contribute to the project using different methods
+---
+
 # Contributing
 
 ___

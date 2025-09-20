@@ -1,3 +1,7 @@
+---
+description: Description of the book structure and organization for contributors
+---
+
 # Book Structure
 
 ___

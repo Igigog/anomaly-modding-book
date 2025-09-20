@@ -1,5 +1,6 @@
 ---
 tags: [Blender, 3D Model]
+description: Tutorial for creating doors in Blender for the game
 ---
 
 # Creating Door in Blender

@@ -1,9 +1,5 @@
 import React from 'react';
-
-interface YouTubeVideoProps {
-  id: string;
-  title: string;
-}
+import type { YouTubeVideoProps } from '../types';
 
 export default function YouTubeVideo({ id, title }: YouTubeVideoProps) {
   return (

@@ -1,5 +1,5 @@
 ---
-description: Useful Addons, Scripts and Utils for Developers
+description: Collection of useful addons, scripts and utilities
 ---
 
 # Useful Addons, Scripts and Utils

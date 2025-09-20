@@ -1,5 +1,6 @@
 ---
 tags: [Blender, 3D Animation]
+description: Guide for creating camera animations in Blender
 ---
 
 # Creating Camera Animations in Blender

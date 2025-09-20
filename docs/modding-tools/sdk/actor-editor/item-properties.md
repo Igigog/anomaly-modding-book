@@ -1,3 +1,7 @@
+---
+description: Actor Editor Item properties documentation
+---
+
 # Item Properties
 
 ___

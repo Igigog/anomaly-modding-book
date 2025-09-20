@@ -1,4 +1,8 @@
-# basic (simple)
+---
+description: Basic simple shader type
+---
+
+# Basic Simple
 
 ___
 

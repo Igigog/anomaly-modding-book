@@ -1,5 +1,6 @@
 ---
 tags: [Blender, 3D Model]
+description: Guide for creating SOM occluders in Blender
 ---
 
 # Creating SOM Occluder in Blender

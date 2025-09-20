@@ -1,3 +1,7 @@
+---
+description: Actor Editor Left bar documentation
+---
+
 # Left Bar
 
 ___

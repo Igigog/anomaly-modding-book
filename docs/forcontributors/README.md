@@ -1,3 +1,7 @@
+---
+description: Documentation for contributors
+---
+
 # For Contributors
 
 ___

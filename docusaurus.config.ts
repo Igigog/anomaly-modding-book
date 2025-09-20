@@ -6,7 +6,10 @@ const config: Config = {
   title: 'Anomaly Modding Book',
   tagline: 'Introductory book for S.T.A.L.K.E.R. Anomaly modding',
   favicon: 'img/favicon.ico',
-  
+  markdown: {
+    mermaid: true,
+  },
+
   url: 'https://anomaly-modding-book.netlify.app',
   baseUrl: '/',
   trailingSlash: false,

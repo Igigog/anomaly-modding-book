@@ -1,16 +1,6 @@
 import React from 'react';
-import type { ReactNode } from 'react';
 import Link from '@docusaurus/Link';
-
-interface UniversalCardProps {
-  title: string;
-  content: string | ReactNode;
-  image?: string;
-  link: string;
-  linkText?: string;
-  internal?: boolean;
-  className?: string;
-}
+import type { UniversalCardProps } from '../types';
 
 export default function UniversalCard({
   title,

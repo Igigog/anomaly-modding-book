@@ -1,5 +1,5 @@
 ---
-tags: [SDK, Modding Tool]
+description: Documentation for the IX-Ray SDK modding tool
 ---
 
 # IX-Ray SDK

@@ -1,3 +1,7 @@
+---
+description: Guide for creating and managing author profiles in the documentation
+---
+
 # Creating Author
 
 ___

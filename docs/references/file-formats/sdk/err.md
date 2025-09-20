@@ -1,3 +1,7 @@
+---
+description: Documentation for ERR file format
+---
+
 # *.err
 
 ___

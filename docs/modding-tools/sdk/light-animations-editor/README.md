@@ -1,3 +1,7 @@
+---
+description: Light animations editor documentation
+---
+
 # Light Animations Editor
 
 ___

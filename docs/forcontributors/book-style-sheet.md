@@ -1,3 +1,7 @@
+---
+description: Guidelines for writing and formatting articles consistently across the documentation
+---
+
 # Book Style Sheet
 
 ___

@@ -1,3 +1,7 @@
+---
+description: Documentation for PE (Particle Effect) file format
+---
+
 # *.pe (Particle Effect)
 
 ___
