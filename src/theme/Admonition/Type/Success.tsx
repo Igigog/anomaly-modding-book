@@ -10,7 +10,7 @@ const defaultProps = {
   title: 'Шутка',
 };
 
-export default function AdmonitionTypeSuccess(props: Props): JSX.Element {
+export default function AdmonitionTypeSuccess(props: Props): React.JSX.Element {
   return (
     <AdmonitionLayout
       {...defaultProps}

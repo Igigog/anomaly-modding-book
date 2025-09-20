@@ -6,7 +6,7 @@ export default function CardGrid({
   children, 
   items = [],
   columns = 3
-}: CardGridProps): JSX.Element {
+}: CardGridProps): React.JSX.Element {
   const columnClass = `col col--${12/columns}`;
   
   return (

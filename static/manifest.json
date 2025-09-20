@@ -1,0 +1,25 @@
+{
+  "name": "Anomaly Modding Book",
+  "short_name": "AMB",
+  "description": "Introductory book for S.T.A.L.K.E.R. Anomaly modding",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#25c2a0",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/img/favicon.ico",
+      "sizes": "16x16 32x32",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/img/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "reference", "games"],
+  "lang": "en",
+  "orientation": "portrait-primary"
+}

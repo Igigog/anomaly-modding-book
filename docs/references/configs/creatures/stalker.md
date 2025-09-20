@@ -165,12 +165,6 @@ This article is under construction
 
 | use_limping_state |  |  |  |
 | limping_threshold |  |  |  |
-
-
-
-
-
-
 | damage |  |  |  |
 
 ## Sounds
