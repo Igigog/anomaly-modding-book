@@ -28,23 +28,22 @@ Should be located in `configs/items/outfits/upgrades/` folder in a file that sta
 
 Upgrade column is defined with `elements` property that contains 1 or 2 upgrade cells.
 
-There is no requirements for the name, but you better follow this naming convention to make it easier to understand what this upgrade is about:
+You must follow the naming convention strictly:
 
 `up_gr_firstab_ps5_3`, where
 ___
-`up_gr` - default identifier for outfit upgrade section
+`up_gr` - default identifier for upgrade column section
 ___
 `first` - what row of upgrades this is, allowed values:
 ```first, secon, third, fourt, fifth``` - [code](https://github.com/Tosox/STALKER-Anomaly-gamedata/blob/v1.5.2/gamedata/scripts/utils_item.script#L1076)
 ___
-`ab` - tiers of upgrade cells in this column, allowed values from 'a' to 'f' - [code](https://github.com/Tosox/STALKER-Anomaly-gamedata/blob/v1.5.2/gamedata/scripts/utils_item.script#L1083)
-
+`ab` - tiers of upgrade cells in this column, should have consequent letter matching those letters of upgrade cells - [code](https://github.com/Tosox/STALKER-Anomaly-gamedata/blob/v1.5.2/gamedata/scripts/utils_item.script#L1083). Even if you have only one upgrade cell in this column, you should still use two letters i.e. `ab` instead of only `a`
 ___
 The rest is just to make the section's name unique and easy to understand what it is about:
 
 `ps5` - file with outfits that is using this file
 ___
-`3` - something like a tier of this upgrade column
+`3` - something like a tier of this upgrade tree
 
 
 Let's continue with our example:
@@ -92,10 +91,10 @@ icon                    = ui_inGame2_upgrade_outfit_armour_3
 Rest of upgrade cells for this outfit are here - [code](https://github.com/Tosox/STALKER-Anomaly-gamedata/blob/v1.5.2/gamedata/configs/items/outfits/upgrades/up_ps5_3.ltx#L30)
 
 ### 3.1. Section name
-Now here you must follow the naming convention strictly:
+You must follow the naming convention strictly:
 `up_firsta_ps5_3`, where
 ___
-`up_gr` - default identifier for outfit upgrade section
+`up` - default identifier for upgrade cell section
 ___
 `first` - what row of upgrades this is, allowed values:
 ```first, secon, third, fourt, fifth``` - [code](https://github.com/Tosox/STALKER-Anomaly-gamedata/blob/v1.5.2/gamedata/scripts/utils_item.script#L1076)
@@ -116,14 +115,12 @@ The rest is just to make the name unique and easy to understand what it is about
 
 `ps5` - file with outfits that is using this file
 ___
-`3` - something like a tier of this upgrade column
+`3` - something like a tier of this upgrade tree
 
 ### 3.2. Properties
-`scheme_index = 0, 0` - first `0` is the column # and second `0` is the row # inside of this column, so if you add another upgrade cell to this column, you should change it to `0, 1`
-
-Indices should match those cells used in 
+`scheme_index = 0, 0` - have no usage now, a legacy property from engine upgrade UI 
 ___
-`known` - should be always `1` due to [code](https://github.com/themrdemonized/xray-monolith/blob/4401c6d995751a276e0377407a8a19e657289571/src/xrGame/inventory_upgrade_base.cpp#L108) where `loading` is always `false`
+`known` - have no usage now, a legacy property from engine upgrade UI
 ___
 `effects` - upgrade column that will be unlocked after this upgrade is installed, should point to another upgrade column section
 ___
@@ -131,19 +128,19 @@ ___
 ___
 `precondition_functor` - defines what function will be used to check if player can see this upgrade in the list of available upgrades, by default should be `inventory_upgrades.precondition_functor_a`
 ___
-`precondition_parameter` - an additional parameter for `precondition_functor`, by default should be `a & b`, but has no usage - [code](https://github.com/Tosox/STALKER-Anomaly-gamedata/blob/v1.5.2/gamedata/scripts/inventory_upgrades.script#L368)
+`precondition_parameter` - an additional parameter for `precondition_functor`, by default should be `a & b`
 ___
 `effect_functor` - defines what function will be used after installing upgrade, by default should be `inventory_upgrades.effect_functor_a`
 ___
-`effect_parameter` - an additional parameter for `effect_functor`, by default should be `something_here`, but has no usage - [code](https://github.com/Tosox/STALKER-Anomaly-gamedata/blob/v1.5.2/gamedata/scripts/inventory_upgrades.script#L420 )
+`effect_parameter` - an additional parameter for `effect_functor`, by default should be `something_here`
 ___
 `prereq_functor` - defines what function will be displaying the reasons for which the upgrade is not available (in the description)
 ___
-`prereq_tooltip_functor` - has no usage - [code](https://github.com/themrdemonized/xray-monolith/blob/4401c6d995751a276e0377407a8a19e657289571/src/xrGame/inventory_upgrade.cpp#L78)
+`prereq_tooltip_functor` - has no usage, by default should be `inventory_upgrades.prereq_tooltip_functor_a`
 ___
 `prereq_params` - parameters for `prereq_functor`, by default should be empty
 ___
-`property` - defines what type of tools required to install this upgrades, allowed values are [code](https://github.com/Tosox/STALKER-Anomaly-gamedata/blob/v1.5.2/gamedata/scripts/utils_item.script#L1091)
+`property` - defines what type of tools required to install this upgrades, allowed values are [here](https://github.com/Tosox/STALKER-Anomaly-gamedata/blob/v1.5.2/gamedata/scripts/utils_item.script#L1091)
 ___
 `name` - regular translation string [identifier](../../text/text.md)
 ___
