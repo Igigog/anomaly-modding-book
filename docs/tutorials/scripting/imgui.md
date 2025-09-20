@@ -343,3 +343,7 @@ ImGui.PushStyleVar(ImGuiStyleVar.WindowPadding, vector2():set(20,20))
 ImGui.PopStyleColor(3)
 ImGui.PopStyleVar(2)
 ```
+
+:::success
+Gobo-bo!
+:::

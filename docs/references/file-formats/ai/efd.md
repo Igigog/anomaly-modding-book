@@ -6,13 +6,9 @@ ___
 
 Table of AI heuristic parameters, contains constants for fine-tuning A-Life. They are used as input parameters in scripts.
 
-___
-
 ## Example
 
-`anomalydetectprobability.efd`
-
-```ini
+```ini title="anomalydetectprobability.efd"
 [values]
 offset_0: value_0 = 1
 offset_4: value_1 = 1
@@ -54,14 +50,17 @@ offset_144: value_36 = 49.9851608276367
 offset_148: value_37 = 79.9762573242188
 ```
 
-___
-
 ## Programs editing this file
 
-- [Evaluation Function Constructor](../../../modding-tools/ai/evaluation-function-constructor.md)
+import UniversalCard from '@site/src/components/UniversalCard';
 
-___
+<UniversalCard
+  title="Evaluation Function Constructor"
+  content="Program for creating evaluation functions."
+  link="../../../modding-tools/ai/evaluation-function-constructor"
+  internal={true}
+/>
 
 ## Sources
 
-[Source (Wayback Machine)](https://web.archive.org/web/20130511164115/https://www.gameru.net/forum/index.php?showtopic=41944)
+[gameru (Wayback Machine)](https://web.archive.org/web/20130511164115/https://www.gameru.net/forum/index.php?showtopic=41944)

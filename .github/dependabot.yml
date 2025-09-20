@@ -6,8 +6,3 @@ updates:
       interval: "weekly"
     allow:
       - dependency-type: "production"
-
-  - package-ecosystem: "github-actions"
-    directory: "/"
-    schedule:
-      interval: "monthly"

@@ -10,10 +10,12 @@ showDescription={true}
 />
 
 ## 1. Outfit's upgrade definition
+
 Each outfit can have a `upgrades` property that defines first upgrade column. Each item in this list means a new row of an upgrade column.
 
 Let's define an outfit that can have two upgrade slots:
-```
+
+```ini
 [dolg_red_outfit]
 upgrades = up_gr_firstab_ps5_3, up_gr_seconab_ps5_3, up_gr_thirdab_ps5_3
 upgrade_scheme = up_scheme_ps5_1
@@ -24,6 +26,7 @@ Keep upgrades strictly in ascending order from `first` to `fifth`
 `upgrade_scheme` defines an UI template for this outfit, see [section 5](#5-upgrade-scheme)
 
 ## 2. Upgrade column
+
 Should be located in `configs/items/outfits/upgrades/` folder in a file that starts with `up_` prefix, for example `up_ps5_3.ltx`
 
 Upgrade column is defined with `elements` property that contains 1 or 2 upgrade cells.
@@ -45,9 +48,9 @@ The rest is just to make the section's name unique and easy to understand what i
 ___
 `3` - something like a tier of this upgrade tree
 
-
 Let's continue with our example:
-```
+
+```ini
 [up_gr_firstab_ps5_3]
 elements                = up_firsta_ps5_3
 
@@ -63,10 +66,12 @@ If you specify 2 upgrade cells, that they are exclusive and player would be able
 Rest of columns for this outfit are here - [code](https://github.com/Tosox/STALKER-Anomaly-gamedata/blob/v1.5.2/gamedata/configs/items/outfits/upgrades/up_ps5_3.ltx#L262)
 
 ## 3. Upgrade cell
+
 Should be located in `configs/items/outfits/upgrades/` folder in a file that starts with `up_` prefix, for example `up_ps5_3.ltx`
 
 Let's start with an example first:
-```
+
+```ini
 [up_firsta_ps5_3]
 scheme_index            = 0, 0
 known                   = 1
@@ -91,6 +96,7 @@ icon                    = ui_inGame2_upgrade_outfit_armour_3
 Rest of upgrade cells for this outfit are here - [code](https://github.com/Tosox/STALKER-Anomaly-gamedata/blob/v1.5.2/gamedata/configs/items/outfits/upgrades/up_ps5_3.ltx#L30)
 
 ### 3.1. Section name
+
 You must follow the naming convention strictly:
 `up_firsta_ps5_3`, where
 ___
@@ -118,7 +124,8 @@ ___
 `3` - something like a tier of this upgrade tree
 
 ### 3.2. Properties
-`scheme_index = 0, 0` - have no usage now, a legacy property from engine upgrade UI 
+
+`scheme_index = 0, 0` - have no usage now, a legacy property from engine upgrade UI
 ___
 `known` - have no usage now, a legacy property from engine upgrade UI
 ___
@@ -149,10 +156,12 @@ ___
 `icon` - an icon name from `configs/ui`
 
 ## 4. Upgrade result
+
 Should be located in `configs/items/outfits/upgrades/` folder in a file that starts with `up_` prefix, for example `up_ps5_3.ltx`
 
 Let's start with an example first:
-```
+
+```ini
 [up_sect_firsta_ps5_3]:up_sect_prop_armor_5
 
 [up_sect_prop_armor_5]
@@ -177,10 +186,12 @@ ___
 All other properties are basically the same as for outfits, see [upgrade presets](https://github.com/Tosox/STALKER-Anomaly-gamedata/blob/v1.5.2/gamedata/configs/items/outfits/upgrades/upgrade_presets.ltx) or [outfits definitions](https://github.com/Tosox/STALKER-Anomaly-gamedata/tree/v1.5.2/gamedata/configs/items/outfits)
 
 ## 5 Upgrade scheme
-Should be located in `configs/ui/inventory_upgrade.xml` or `configs/ui/inventory_upgrade_outfit.xml` 
+
+Should be located in `configs/ui/inventory_upgrade.xml` or `configs/ui/inventory_upgrade_outfit.xml`
 
 Let's start with an example first:
-```
+
+```ini
 <template name="up_scheme_ps5_1">
     <column>
         <cell x="0" y="24" point_x="138" point_y="210"/>
@@ -202,16 +213,19 @@ Let's start with an example first:
 </template>
 ```
 
-This is an inverted upgrades tree structure. Basically, that first column with 3 cells responsible for placing first column of each row of upgrades that are 
+This is an inverted upgrades tree structure. Basically, that first column with 3 cells responsible for placing first column of each row of upgrades that are
 `up_gr_firstab_ps5_3, up_gr_seconab_ps5_3, up_gr_thirdab_ps5_3`.
 
 Second column with 4 cells responsible for placing second column of each row of upgrades that are descendants to each row of first column upgrades, and so on.
 
 ### 5.1 Template name
+
 Should be a unique name
 
 ### 5.2 Columns
+
 Each `<column>` section defines a row of upgrade rows
 
 ### 5.3 Cells
+
 Each `<cell>` section defines a cell in an upgrade cell and it's position on the screen

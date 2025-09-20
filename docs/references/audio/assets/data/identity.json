@@ -1,0 +1,16 @@
+{
+  "parameters": [
+    { "name": "Size", "value": "1.400" },
+    { "name": "Diffusion", "value": "1.000" },
+    { "name": "Room", "value": "0" },
+    { "name": "RoomHF", "value": "0" },
+    { "name": "RoomRolloffFactor", "value": "0.000" },
+    { "name": "AirAbsorptionHF", "value": "0.000" },
+    { "name": "Reflections", "value": "-370" },
+    { "name": "ReflectionsDelay", "value": "0.007" },
+    { "name": "Reverb", "value": "3" },
+    { "name": "ReverbDelay", "value": "0.011" },
+    { "name": "DecayTime", "value": "1.490" },
+    { "name": "DecayHFRatio", "value": "0.540" }
+  ]
+}

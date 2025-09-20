@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Anomaly Modding Book',
-  tagline: 'The Complete Guide to S.T.A.L.K.E.R. Anomaly Modding',
+  tagline: 'Introductory book for S.T.A.L.K.E.R. Anomaly modding',
   favicon: 'img/favicon.ico',
   
   url: 'https://anomaly-modding-book.netlify.app',
